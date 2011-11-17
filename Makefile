@@ -10,15 +10,15 @@ PYTHON = python
 .PHONY: all clean html latexpdf epub htmlhelp website website-dirs
 
 # Languages that can be built.
-LANGS = fr
+LANGS = fr en
 DEST = website
 
 # Dependencies to perform before running other builds.
 # Clone the en/Makefile everywhere.
 SPHINX_DEPENDENCIES = $(foreach lang, $(LANGS), $(lang)/Makefile)
 
-# Copy-paste the english Makefile everwhere its needed.
-%/Makefile: en/Makefile
+# Copy-paste the french Makefile everwhere its needed.
+%/Makefile: fr/Makefile
 	cp $< $@
 
 #

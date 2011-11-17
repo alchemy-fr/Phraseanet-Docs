@@ -222,4 +222,4 @@ texinfo_documents = [
 #texinfo_show_urls = 'footnote'
 
 # Languages available.
-languages = ['fr']
+languages = ['fr','en']
