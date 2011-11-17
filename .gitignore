@@ -1,1 +1,4 @@
 nbproject
+*.pyc
+_build/*
+.DS_Store
