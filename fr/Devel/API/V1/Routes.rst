@@ -1,6 +1,17 @@
 Routes
 ======
 
+
+.. toctree::
+    :hidden:
+
+    Route/Databox/List
+    Route/Databox/Collections
+    Route/Databox/Status
+    Route/Databox/Metadatas
+    Route/Databox/TermsOfUse
+
+
 Phraseanet API provides routes to access resources using canonical URL. 
 These resources are listed below.
 
@@ -14,10 +25,10 @@ For example, you can get the permalinks of a record with the following route:
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
 |          | General                              | Aspect                                         | Act                                                  |
 +==========+======================================+================================================+======================================================+
-| databox  |* :ref:`list <route-databox-list>`    |* :ref:`collections <route-databox-collections>`|                                                      |
-|          |                                      |* :ref:`status <route-databox-status>`          |                                                      |
-|          |                                      |* :ref:`metadatas <route-databox-metadatas>`    |                                                      |
-|          |                                      |* :ref:`termsOfUse <route-databox-termsofuse>`  |                                                      |
+| databox  |* :doc:`list <Route/Databox/List>`    |* :doc:`collections <Route/Databox/Collections>`|                                                      |
+|          |                                      |* :doc:`status <Route/Databox/Status>`          |                                                      |
+|          |                                      |* :doc:`metadatas <Route/Databox/Metadatas>`    |                                                      |
+|          |                                      |* :doc:`termsOfUse <Route/Databox/TermsOfUse>`  |                                                      |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
 | records  |* :ref:`search <route-records-search>`|* :ref:`metadatas <route-records-metadatas>`    |* :ref:`setstatus <route-records-setstatus>`          |
 |          |                                      |* :ref:`status <route-records-status>`          |* :ref:`setcollection <route-records-setcollection>`  |
@@ -31,35 +42,6 @@ For example, you can get the permalinks of a record with the following route:
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
 | feeds    |* :ref:`list <route-feeds-list>`      |* :ref:`content <route-feeds-content>`          |                                                      |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
-
-Databox 
---------------
-
-
-.. _route-databox-list:
-
-List
-~~~~
-
-.. _route-databox-collections:
-
-Collections
-~~~~~~~~~~~
-
-.. _route-databox-status:
-
-Status
-~~~~~~
-
-.. _route-databox-metadatas:
-
-Metadatas
-~~~~~~~~~
-
-.. _route-databox-termsofuse:
-
-Terms Of Use
-~~~~~~~~~~~~
 
 
 Records

@@ -110,11 +110,13 @@ Applications Clientes
 
   This flow is meant for mobile and desktop installed applications that want 
   access to user data.
+
   The native app flow is identical to the server-side flow with one exception: 
   a special redirect_uri. Instead of specifying an URL on your site, use the 
   special string: **urn:ietf:wg:oauth:2.0:oob**. The "oob" part stands for 
   "out of band" and the rest of the string identifies it as a part of 
   the OAuth 2.0 standard.
+
   When you use this redirect_uri, instead of redirecting the user's browser 
   to a page on your site with an authorization code, Phraseanet will display 
   the authorization code or error response in a text field with instructions 
