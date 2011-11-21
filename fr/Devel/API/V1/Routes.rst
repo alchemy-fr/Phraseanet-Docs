@@ -10,6 +10,15 @@ Routes
     Route/Databox/Status
     Route/Databox/Metadatas
     Route/Databox/TermsOfUse
+    Route/Records/Search
+    Route/Records/Metadatas
+    Route/Records/Status
+    Route/Records/Embed
+    Route/Records/Related
+    Route/Records/Record
+    Route/Records/SetStatus
+    Route/Records/SetMetadatas
+    Route/Records/SetCollection
 
 
 Phraseanet API provides routes to access resources using canonical URL. 
@@ -30,11 +39,11 @@ For example, you can get the permalinks of a record with the following route:
 |          |                                      |* :doc:`metadatas <Route/Databox/Metadatas>`    |                                                      |
 |          |                                      |* :doc:`termsOfUse <Route/Databox/TermsOfUse>`  |                                                      |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
-| records  |* :ref:`search <route-records-search>`|* :ref:`metadatas <route-records-metadatas>`    |* :ref:`setstatus <route-records-setstatus>`          |
-|          |                                      |* :ref:`status <route-records-status>`          |* :ref:`setcollection <route-records-setcollection>`  |
-|          |                                      |* :ref:`embed <route-records-embed>`            |* :ref:`setmetadatas <route-records-setmetadatas>`    |
-|          |                                      |* :ref:`related <route-records-related>`        |                                                      |
-|          |                                      |* :ref:`record <route-records-record>`          |                                                      |
+| records  |* :doc:`search <Route/Records/Search>`|* :doc:`metadatas <Route/Records/Metadatas>`    |* :doc:`setstatus <Route/Records/SetStatus>`          |
+|          |                                      |* :doc:`status <Route/Records/Status>`          |* :doc:`setcollection <Route/Records/SetCollection>`  |
+|          |                                      |* :doc:`embed <Route/Records/Embed>`            |* :doc:`setmetadatas <Route/Records/SetMetadatas>`    |
+|          |                                      |* :doc:`related <Route/Records/Related>`        |                                                      |
+|          |                                      |* :doc:`record <Route/Records/Record>`          |                                                      |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
 | baskets  |* :ref:`list <route-baskets-list>`    |* :ref:`content <route-baskets-content>`        |* :ref:`setname <route-baskets-setname>`              |
 |          |* :ref:`add <route-baskets-add>`      |                                                |* :ref:`setdescription <route-baskets-setdescription>`|
