@@ -25,6 +25,8 @@ Routes
     Route/Baskets/List
     Route/Baskets/SetDescription
     Route/Baskets/SetName
+    Route/Feeds/List
+    Route/Feeds/Content
 
 
 Phraseanet API provides routes to access resources using canonical URL. 
@@ -55,7 +57,7 @@ For example, you can get the permalinks of a record with the following route:
 |          |* :doc:`add <Route/Baskets/Add>`      |                                                |* :doc:`setdescription <Route/Baskets/SetDescription>`|
 |          |                                      |                                                |* :doc:`delete <Route/Baskets/Delete>`                |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
-| feeds    |* :ref:`list <route-feeds-list>`      |* :ref:`content <route-feeds-content>`          |                                                      |
+| feeds    |* :doc:`list <Route/Feeds/List>`      |* :doc:`content <Route/Feeds/Content>`          |                                                      |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
 
 
