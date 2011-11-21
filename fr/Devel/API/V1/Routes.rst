@@ -19,6 +19,12 @@ Routes
     Route/Records/SetStatus
     Route/Records/SetMetadatas
     Route/Records/SetCollection
+    Route/Baskets/Add
+    Route/Baskets/Content
+    Route/Baskets/Delete
+    Route/Baskets/List
+    Route/Baskets/SetDescription
+    Route/Baskets/SetName
 
 
 Phraseanet API provides routes to access resources using canonical URL. 
@@ -45,9 +51,9 @@ For example, you can get the permalinks of a record with the following route:
 |          |                                      |* :doc:`related <Route/Records/Related>`        |                                                      |
 |          |                                      |* :doc:`record <Route/Records/Record>`          |                                                      |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
-| baskets  |* :ref:`list <route-baskets-list>`    |* :ref:`content <route-baskets-content>`        |* :ref:`setname <route-baskets-setname>`              |
-|          |* :ref:`add <route-baskets-add>`      |                                                |* :ref:`setdescription <route-baskets-setdescription>`|
-|          |                                      |                                                |* :ref:`delete <route-baskets-delete>`                |
+| baskets  |* :doc:`list <Route/Baskets/List>`    |* :doc:`content <Route/Baskets/Content>`        |* :doc:`setname <Route/Baskets/SetName>`              |
+|          |* :doc:`add <Route/Baskets/Add>`      |                                                |* :doc:`setdescription <Route/Baskets/SetDescription>`|
+|          |                                      |                                                |* :doc:`delete <Route/Baskets/Delete>`                |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
 | feeds    |* :ref:`list <route-feeds-list>`      |* :ref:`content <route-feeds-content>`          |                                                      |
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
