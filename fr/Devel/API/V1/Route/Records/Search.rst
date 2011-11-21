@@ -1,5 +1,5 @@
-Records
-============
+Records Search
+==============
 
 About
 -----

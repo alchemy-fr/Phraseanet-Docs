@@ -1,5 +1,5 @@
-Records
-============
+Records SetMetadatas
+====================
 
 About
 -----
@@ -37,7 +37,7 @@ Response Fields
    metadatas 	The list of the metadatas of the record 
   ========== ================================
 
-**Examples :**
+** Example **
 
   .. code-block:: javascript
 

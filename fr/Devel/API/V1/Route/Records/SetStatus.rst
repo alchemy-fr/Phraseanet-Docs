@@ -1,5 +1,5 @@
-Records
-============
+Records SetStatus
+=================
 
 About
 -----
@@ -28,7 +28,7 @@ Parameters
    status           Array     The status to modify  
   ================ ========= =============
 
-** Examples **
+** Example **
 
   .. code-block:: javascript
 
