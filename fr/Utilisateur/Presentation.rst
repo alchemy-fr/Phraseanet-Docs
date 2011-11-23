@@ -112,8 +112,8 @@ Toutes les applications proposent en haut de la fenêtre la même barre de navig
 La partie gauche de la fenêtre affiche la liste les applications auxquelles vous avez accès.
 
 .. image:: ../images/Menu.jpg
-   :height: 200 px
-   :width: 400 px
+   :height: 40 px
+   :width: 600 px
    :alt: alternate text
    :align: center
 
