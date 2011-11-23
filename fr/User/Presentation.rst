@@ -91,9 +91,9 @@ Présentation des zones dans l'interface de Production
 Nous allons vous présenter ci-dessous l'interface de Production.
 
 .. image:: ../images/Production-zones.jpg
-   :align:   center
 
-   Les zones principales dans Production
+
+Les zones principales dans Production
 
   * La zone 1 représente l'espace de recherche: Entrez un mot clé
   * La zone 2 c'est la zone d'affichage des réponses
