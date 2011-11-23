@@ -1,17 +1,16 @@
 Glossaire
 =========
 
-.. _glossaire-panier:
+.. module:: glossaire
+   :synopsis: Glossaire Phraseanet
+.. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
-panier 
-******
+.. glossary::
 
-  Le panier est un ensemble qui regroupe des 
-  :ref:`enregistrements <glossaire-enregitsrement>`
+  panier
+    Le panier est un ensemble qui regroupe des 
+    :term:`enregistrements <enregistrement>`
 
-.. _glossaire-enregitsrement:
+  enregistrement
+    un enregistrement est l'élément essentiel de Phraseanet 
 
-enregistrement
-**************
-
-  un enregistrement est l'élément essentiel de Phraseanet 

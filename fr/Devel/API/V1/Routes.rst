@@ -1,7 +1,6 @@
 Routes
 ======
 
-
 .. toctree::
     :hidden:
 
@@ -27,7 +26,6 @@ Routes
     Route/Baskets/SetName
     Route/Feeds/List
     Route/Feeds/Content
-
 
 Phraseanet API provides routes to access resources using canonical URL. 
 These resources are listed below.

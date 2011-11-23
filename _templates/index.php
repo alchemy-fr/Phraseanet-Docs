@@ -1,21 +1,16 @@
 <?php
 
-require_once '../lib/Symfony/Component/HttpFoundation/Request.php';
-require_once '../lib/Symfony/Component/HttpFoundation/ParameterBag.php';
-require_once '../lib/Symfony/Component/HttpFoundation/FileBag.php';
-require_once '../lib/Symfony/Component/HttpFoundation/ServerBag.php';
-require_once '../lib/Symfony/Component/HttpFoundation/HeaderBag.php';
+require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/Request.php';
+require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/ParameterBag.php';
+require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/FileBag.php';
+require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/ServerBag.php';
+require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/HeaderBag.php';
 
 use Symfony\Component\HttpFoundation\Request;
 
 $available_languages = array('fr', 'en');
 
-$request = new Request();
-
-if (null === $request->get('Accept-Language'))
-{
-  $request->headers->set('Accept-Language', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
-}
+$request = Request::createFromGlobals();
 
 foreach ($request->getLanguages() as $language)
 {
