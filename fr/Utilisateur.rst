@@ -7,7 +7,7 @@
    Utilisateur/Manuel
    Utilisateur/Vocabulaire
 
-Bonjour à tous,
+Bonjour à tous et a toute,
 
 Vous êtes actuellement dans la section consacrée au guide utilisateur de Phraseanet. 
 
