@@ -8,8 +8,8 @@ Inscription
 -----------
 Cliquer sur Inscription dans la page d'accueil.
 
-Selon les choix de paramétrage du système, un lien permettant l’inscription de nouveaux utilisateurs 
-peut exister sur la page de connexion.
+Selon les choix de paramétrage du système, un lien permettant l’inscription de 
+nouveaux utilisateurs peut exister sur la page de connexion.
 
 L'écran Nouvel utilisateur s'ouvre :
 
@@ -23,10 +23,12 @@ L'écran Nouvel utilisateur s'ouvre :
   * Saisir son Identifiant (minimum 5 lettres).
   * Saisir son mot de passe.
   * Compléter les zones d'identité.
-  * Cocher les cases en regard des Base/Collection de données de documents souhaitées.
+  * Cocher les cases en regard des Base/Collection de données de documents 
+    souhaitées.
   * Cliquer sur le bouton Valider.
 
-La page d’accueil s’affiche et informe l’utilisateur que sa demande a été prise en compte.
+La page d’accueil s’affiche et informe l’utilisateur que sa demande a été prise 
+en compte.
 
 Authentification
 ----------------
@@ -39,7 +41,8 @@ IMAGE
   * Saisir son identifiant.
   * Saisir son mot de passe.
   * Cliquer sur Ok.
-  * En cas d’oubli du mot de passe suivre la procédure de récupération en cliquant sur « Mot de Passe oublié ». 
+  * En cas d’oubli du mot de passe suivre la procédure de récupération en 
+    cliquant sur « Mot de Passe oublié ». 
 
 Mon compte
 ----------
@@ -47,19 +50,20 @@ Dans la partie supérieure droite, se trouvent  vos informations de compte,
 l’aide en ligne et le lien pour se déconnecter.
 Cliquez sur "Mon compte" pour accéder à vos informations.
 
-IMAGE
+.. todo:: inserer une image
 
 Données personnelles
-Saisir et modifier ses informations personnelles et ses coordonnées (postales, mail, fax, tél) et 
-d’activer un compte FTP permettant l’envoi de documents vers un serveur FTP de l’utilisateur.
+Saisir et modifier ses informations personnelles et ses coordonnées (postales, 
+mail, fax, tél) et d’activer un compte FTP permettant l’envoi de documents 
+vers un serveur FTP de l’utilisateur.
 
 Saisir ou modifier les informations et cliquer sur « Valider ».
 
 Accès aux bases/collections
-Faire une demande pour accéder à de nouvelles bases/collections de documents et d'en visualiser l’état. 
-Cocher une ou plusieurs cases pour demander l'accès à de nouvelles Bases/Collections.
-Cliquer sur Envoyer.
-Un message vous confirme que la demande est en cours.
+Faire une demande pour accéder à de nouvelles bases/collections de documents et 
+d'en visualiser l’état. Cocher une ou plusieurs cases pour demander l'accès à 
+de nouvelles Bases/Collections.Cliquer sur Envoyer.Un message vous confirme que 
+la demande est en cours.
 
-IMAGE
+.. todo:: inserer une image
 
