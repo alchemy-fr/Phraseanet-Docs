@@ -23,11 +23,12 @@ L'écran *Nouvel utilisateur* s'ouvre :
   * Saisir son Identifiant (minimum 5 lettres).
   * Saisir son mot de passe.
   * Compléter les zones d'identité.
-  * Cocher les cases en regard des Base/Collection de données de documents souhaitées.
+  * Cocher les cases en regard des Base/Collection de données de documents 
+    souhaitées.
   * Cliquer sur le bouton Valider.
 
-La page d’accueil s’affiche et informe l’utilisateur que sa demande a été 
-prise en compte.
+La page d’accueil s’affiche et informe l’utilisateur que sa demande a été prise 
+en compte.
 
 Authentification
 ----------------
@@ -46,7 +47,8 @@ La page d’accueil permettant la connexion s'affiche :
   * Saisir son identifiant.
   * Saisir son mot de passe.
   * Cliquer sur Ok.
-  * En cas d’oubli du mot de passe suivre la procédure de récupération en cliquant sur « Mot de Passe oublié ». 
+  * En cas d’oubli du mot de passe suivre la procédure de récupération en 
+    cliquant sur « Mot de Passe oublié ». 
 
 Mon compte
 ----------
@@ -86,4 +88,6 @@ Un message vous confirme que la demande est en cours.
 	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
+
+
 

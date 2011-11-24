@@ -1,6 +1,10 @@
 Contributeur
 ============
 
+.. module:: contributeur
+   :synopsis: Guide contributeur de Phraseanet
+.. moduleauthor:: Team Phraseanet <info@phraseanet.com>
+
 .. toctree::
     :hidden:
 
