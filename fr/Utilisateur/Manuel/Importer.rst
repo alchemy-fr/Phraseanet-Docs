@@ -15,6 +15,15 @@ L'interface présente plusieurs zones de travail:
   * Upload permet de sélectionner les fichiers à ajouter.
   * Upload permet d'ajouter des nouveaux documents à des collections Phraseanet.
   * Upload permet d'appliquer des status aux documents. 
+  
+Voici une capture d'écran de l'interface d'Upload: 
+
+.. image:: ../../images/Upload-zones.jpg
+	   :height: 380 px
+	   :width: 650 px
+	   :alt: alternate text
+	   :align: center 
+
 
 Importer en trois étapes
 -------------------------
