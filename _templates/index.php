@@ -1,18 +1,65 @@
 <?php
 
-require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/Request.php';
-require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/ParameterBag.php';
-require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/FileBag.php';
-require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/ServerBag.php';
-require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/HeaderBag.php';
+/*
+ * PHP 5.3 Code is temporary disabled
 
-use Symfony\Component\HttpFoundation\Request;
+  require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/Request.php';
+  require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/ParameterBag.php';
+  require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/FileBag.php';
+  require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/ServerBag.php';
+  require_once dirname(__FILE__) . '/../lib/Symfony/Component/HttpFoundation/HeaderBag.php';
+
+  $request = Symfony\Component\HttpFoundation\Request::createFromGlobals();
+
+  foreach ($request->getLanguages() as $language)
+  {
+    if (in_array($language, $available_languages))
+    {
+      return header(sprintf('Location: /%s/', $language));
+    }
+  }
+
+  return header('Location: /fr/');
+
+ */
 
 $available_languages = array('fr', 'en');
 
-$request = Request::createFromGlobals();
+$languages = array();
 
-foreach ($request->getLanguages() as $language)
+foreach (splitHttpAcceptHeader($_SERVER['HTTP_ACCEPT_LANGUAGE']) as $lang => $q)
+{
+  if (strstr($lang, '-'))
+  {
+    $codes = explode('-', $lang);
+    if ($codes[0] == 'i')
+    {
+      if (count($codes) > 1)
+      {
+        $lang = $codes[1];
+      }
+    }
+    else
+    {
+      for ($i = 0, $max = count($codes); $i < $max; $i++)
+      {
+        if ($i == 0)
+        {
+          $lang = strtolower($codes[0]);
+        }
+        else
+        {
+          $lang .= '_' . strtoupper($codes[$i]);
+        }
+      }
+    }
+  }
+
+  $languages[] = $lang;
+}
+
+
+foreach ($languages as $language)
 {
   if (in_array($language, $available_languages))
   {
@@ -21,3 +68,31 @@ foreach ($request->getLanguages() as $language)
 }
 
 return header('Location: /fr/');
+
+function splitHttpAcceptHeader($header)
+{
+  $values = array();
+  foreach (array_filter(explode(',', $header)) as $value)
+  {
+    if (preg_match('/;\s*(q=.*$)/', $value, $match))
+    {
+      $q = (float) substr(trim($match[1]), 2);
+      $value = trim(substr($value, 0, -strlen($match[0])));
+    }
+    else
+    {
+      $q = 1;
+    }
+
+    if (0 < $q)
+    {
+      $values[trim($value)] = $q;
+    }
+  }
+
+  arsort($values);
+  reset($values);
+
+  return $values;
+}
+
