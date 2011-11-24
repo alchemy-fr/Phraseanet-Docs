@@ -64,7 +64,7 @@ website: website-dirs html epub
 	$(foreach lang, $(LANGS), cp -r build/epub/$(lang)/*.epub $(DEST)/_downloads/$(lang);)
 
 clean:
-	rm -rf build/*
+	rm -rf _build/*
 
 clean-website:
 	rm -rf $(DEST)/*
