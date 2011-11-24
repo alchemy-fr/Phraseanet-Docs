@@ -6,12 +6,12 @@
 
 Inscription
 -----------
-Cliquer sur Inscription dans la page d'accueil.
+Cliquer sur **Inscription** dans la page d'accueil.
 
-Selon les choix de paramétrage du système, un lien permettant l’inscription de nouveaux utilisateurs 
-peut exister sur la page de connexion.
+Selon les choix de paramétrage du système, un lien permettant l’inscription de 
+nouveaux utilisateurs peut exister sur la page de connexion.
 
-L'écran Nouvel utilisateur s'ouvre :
+L'écran *Nouvel utilisateur* s'ouvre :
 
 	.. image:: ../../images/Inscription1.jpg
 	   :height: 200 px
@@ -26,15 +26,22 @@ L'écran Nouvel utilisateur s'ouvre :
   * Cocher les cases en regard des Base/Collection de données de documents souhaitées.
   * Cliquer sur le bouton Valider.
 
-La page d’accueil s’affiche et informe l’utilisateur que sa demande a été prise en compte.
+La page d’accueil s’affiche et informe l’utilisateur que sa demande a été 
+prise en compte.
 
 Authentification
 ----------------
 Se connecter à l'adresse internet du site Phraseanet dans un navigateur Web.
+
 La page d’accueil permettant la connexion s'affiche :
 
-IMAGE
+	.. image:: ../../images/Authentification.jpg
+	   :height: 250 px
+	   :width: 400 px
+	   :alt: alternate text
+	   :align: center 
 
+	   
   * Sélectionner la langue dans la liste déroulante.
   * Saisir son identifiant.
   * Saisir son mot de passe.
@@ -45,21 +52,38 @@ Mon compte
 ----------
 Dans la partie supérieure droite, se trouvent  vos informations de compte, 
 l’aide en ligne et le lien pour se déconnecter.
+
 Cliquez sur "Mon compte" pour accéder à vos informations.
 
-IMAGE
+	.. image:: ../../images/Moncompte.jpg
+	   :height: 250 px
+	   :width: 400 px
+	   :alt: alternate text
+	   :align: center 
 
-Données personnelles
-Saisir et modifier ses informations personnelles et ses coordonnées (postales, mail, fax, tél) et 
-d’activer un compte FTP permettant l’envoi de documents vers un serveur FTP de l’utilisateur.
+
+*Données personnelles*
+
+Saisir et modifier ses informations personnelles et ses coordonnées (postales, 
+mail, fax, tél) et d’activer un compte FTP permettant l’envoi de documents 
+vers un serveur FTP de l’utilisateur.
 
 Saisir ou modifier les informations et cliquer sur « Valider ».
 
-Accès aux bases/collections
-Faire une demande pour accéder à de nouvelles bases/collections de documents et d'en visualiser l’état. 
-Cocher une ou plusieurs cases pour demander l'accès à de nouvelles Bases/Collections.
+*Accès aux bases/collections*
+
+Faire une demande pour accéder à de nouvelles bases/collections de documents et 
+d'en visualiser l’état. 
+Cocher une ou plusieurs cases pour demander l'accès à de nouvelles Bases/
+Collections.
+
 Cliquer sur Envoyer.
+
 Un message vous confirme que la demande est en cours.
 
-IMAGE
+	.. image:: ../../images/Accesbasescoll.jpg
+	   :height: 100 px
+	   :width: 400 px
+	   :alt: alternate text
+	   :align: center 
 
