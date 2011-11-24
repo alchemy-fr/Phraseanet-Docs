@@ -73,10 +73,13 @@ Cliquer sur un fichier et le glisser/ déposer ailleurs dans la liste. Il est
 	   :alt: alternate text
 	   :align: center 
 
-Sélectionner la collection de destination et appliquer des status
-******************************************************************	
-Cliquer sur le menu déroulant des collections disponibles. **Choisissez la collection
-où vous souhaitez ajouter vos documents multimédia.**
+Sélectionner la collection 
+***************************	
+Il faut désormais sélectionner la collection de destination et vous pourrez également
+appliquer des status.
+
+Cliquer sur le menu déroulant des collections disponibles. 
+**Choisissez la collection où vous souhaitez ajouter vos documents multimédia.**
 
 Appliquer ensuite, si nécessaire (facultatif), un état aux status disponibles.
 
@@ -102,10 +105,17 @@ Les documents sont ajoutés à la collection de destination.
 Vous pouvez désormais aller consulter vos documents, à partir de *Phraseanet 
 Production* ou *Classic*.
 
+
 La Quarantaine
 --------------
 Après avoir été ajoutés, certains fichiers de type image peuvent être placés 
 en "quarantaine". 
+
+.. image:: ../../images/Upload-Quarantaine0.jpg
+	   :height: 300 px
+	   :width: 250 px
+	   :alt: alternate text
+	   :align: center 
 
 La quarantaine est un espace où sont isolés des fichiers en attente d'une action 
 utilisateur.
