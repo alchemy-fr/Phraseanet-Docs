@@ -1,6 +1,12 @@
 Bienvenue dans la documentation Phraseanet!
 ===========================================
 
+ 
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
 .. toctree::
    :maxdepth: 1
 
@@ -9,3 +15,4 @@ Bienvenue dans la documentation Phraseanet!
    Administrateur
    Contributeur
    Developpeur
+

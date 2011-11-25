@@ -210,17 +210,19 @@ Une fenêtre s’ouvre.
 	   :height: 170 px
 	   :width: 380 px
 	   :alt: alternate text
-	   :align: center 
+	   :align: center
 
-  * Cliquer sur le menu déroulant.
-  * Cliquer sur « Ajouter les documents bloqués » pour créer des nouveaux 
-    enregistrements pour chaque fichier en quarantaine
-  * Cliquer « Substituer quand possible ou ajouter les documents bloqués » 
-    permet de substituer tous les fichiers uniques en quarantaines et uniques 
-    dans la base.
+
+* Cliquer sur le menu déroulant.
+* Cliquer sur « Ajouter les documents bloqués » pour créer des nouveaux 
+  enregistrements pour chaque fichier en quarantaine
+* Cliquer « Substituer quand possible ou ajouter les documents bloqués » 
+  permet de substituer tous les fichiers uniques en quarantaines et uniques 
+  dans la base.
 
 La quarantaine permet aussi d’isoler des nouveaux fichiers ne répondant pas à 
 des critères.
+
   * Il est aussi possible de traiter en lot les fichiers bloqués 
     et « Ajouter les documents bloqués ».
   * Cliquer sur « Supprimer les documents bloqués » pour rejeter tous les fichiers 
