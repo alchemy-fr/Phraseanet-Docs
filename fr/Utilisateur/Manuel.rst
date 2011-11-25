@@ -8,6 +8,7 @@
    Manuel/Rechercher
    Manuel/Afficher
    Manuel/Editer
+   Manuel/Exporter
    
 
 
