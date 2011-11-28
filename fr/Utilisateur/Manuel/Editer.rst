@@ -340,3 +340,4 @@ documents sélectionnés.
      documents 
 * -> Cliquer sur Valider pour enregistrer les modifications ou poursuivre 
      l’indexation.
+
