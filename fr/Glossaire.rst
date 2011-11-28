@@ -6,6 +6,7 @@ Glossaire
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
 .. glossary::
+  :sorted:
 
   Document
     Un document est le fichier d'origine ajouté à une Base/Collection.

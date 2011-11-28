@@ -9,6 +9,7 @@
    Manuel/Afficher
    Manuel/Editer
    Manuel/Exporter
+   Manuel/Actions
    
 
 

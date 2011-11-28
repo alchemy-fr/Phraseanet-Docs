@@ -1,0 +1,188 @@
+﻿La Palette des Actions
+======================
+.. toctree::
+   :maxdepth: 3
+   
+**La Palette des Actions dans Phraseanet Production vous permet d'effectuer un grand 
+nombre d'actions sur vos documents.**
+
+  .. image:: ../../images/Palette.jpg
+	   :height: 50 px
+	   :width: 550 px
+	   :alt: alternate text
+	   :align: center 
+
+Les actions "Exporter", "Editer" et "Push" sont trois actiona majeures qui sont 
+accessibles via la Palette des Actions, reportez-vous aux pages qui y sont 
+consacrées à l'aide des liens ci-dessous.
+Pour les actions mineures (Propriétés, Déplacer, Imprimer, Outils Images et 
+Supprimer), voir plus bas.
+
+Les actions :
+
+  * :doc:`Exporter <Exporter>`
+  * :doc:`Editer <Editer>`
+  * :doc:`Push <Push>`
+  * Propriétés
+  * Déplacer
+  * Imprimer
+  * Outils
+  * Supprimer
+  
+Propriétés
+----------
+Cette action permet de changer:
+  * les status des documents
+  * les « types » des documents sélectionnés 
+
+Les Status sont comme des « Interrupteurs » en position « On » ou « Off » et sont 
+applicables sur les documents.
+La mise en œuvre se fait dans *Phraseanet Administration* qui permet le nommage 
+des Status et le choix de mini-logos pour les illustrer visuellement dans les 
+interfaces.
+A travers la gestion des utilisateurs, il est possible de définir pour chaque 
+Status activé si un utilisateur est « On » et/ou « Off » pour les documents.
+
+.. note:: Il existe 64 Status. 60 sont paramétrables et peuvent être utilisés pour 
+          des besoins de workflow ou la mise en place des restrictions d’accès aux documents 
+          entre autres. Le changement d’état des status est aussi disponible directement 
+          depuis la fenêtre Editer.
+
+Changer les status des documents
+********************************
+Cette action permet de changer les status des documents. 
+
+**Sélectionner une ou plusieurs vignettes, un panier ou un reportage puis cliquer sur 
+Propriétés.**
+
+  .. image:: ../../images/Actions-Proprietes-status.jpg
+	   :height: 170 px
+	   :width: 380 px
+	   :alt: alternate text
+	   :align: center 
+
+La fenêtre s'ouvre. Cocher la case correspondant au nouveau statut (plusieurs 
+statuts possibles). Cliquer sur Valider pour enregistrer les changements.
+
+Changer le type des documents
+*****************************
+Cette action permet de changer le type des documents.
+
+Elle est utile si des documents ajoutés n’ont pas été correctement interprétés 
+et qu’il faut les associer au bon type de fichier.
+
+**Sélectionner une ou plusieurs vignettes, un panier ou un reportage et cliquer sur 
+Propriétés.**
+
+  .. image:: ../../images/Actions-Proprietes-types.jpg
+	   :height: 220 px
+	   :width: 380 px
+	   :alt: alternate text
+	   :align: center 
+
+La fenêtre s'ouvre. Cliquer sur l’onglet Type. Changer le type des documents. 
+Cliquer sur Valider pour enregistrer les modifications.
+
+Déplacer
+--------
+Cette icône permet de déplacer des documents d'une collection à une autre. 
+
+**Sélectionner une ou plusieurs vignettes puis cliquer sur l'icône Déplacer.**
+
+La fenêtre Changer de collection s'ouvre. Sélectionner la collection dans laquelle 
+doit être dorénavant placé(s) le(s) document(s). Cliquer sur Ok. Le document ne 
+se trouve plus dans la collection d'origine, mais dans la collection choisie.
+
+  .. image:: ../../images/Actions-Deplacer.jpg
+	   :height: 150 px
+	   :width: 380 px
+	   :alt: alternate text
+	   :align: center 
+
+Imprimer
+--------
+Cette Action permet d'imprimer les vignettes, les images de choix, les 
+descriptions des documents.
+
+**Sélectionner un ou plusieurs documents puis cliquer sur « Imprimer ».**
+
+La fenêtre Imprimer s'ouvre. 
+
+  .. image:: ../../images/Actions-Imprimer1.jpg
+	   :height: 170 px
+	   :width: 380 px
+	   :alt: alternate text
+	   :align: center 
+
+Cocher les cases correspondant aux choix souhaités:
+  * Image de choix, pour n'imprimer que les images de choix.
+  * Image de choix et légende, pour imprimer les images de choix et la description du document.
+  * Image de choix et description avec planche contact, pour imprimer les images de choix, les descriptions et les vignettes regroupées dans une planche contact.
+  * Liste de vignettes, pour imprimer la liste des vignettes.
+  * Planche contact, pour imprimer les vignettes regroupées dans une planche contact.
+
+Cliquer sur Imprimer. Les documents demandés s'affichent sous forme d'un document 
+PDF (Format Acrobat de Adobe - un Reader Acrobat doit être installé sur le poste 
+de travail).
+
+  .. image:: ../../images/Actions-Imprimer2.jpg
+	   :height: 500 px
+	   :width: 380 px
+	   :alt: alternate text
+	   :align: center
+
+Imprimer le document PDF sur l'imprimante de son choix ou l'enregistrer sur le 
+disque dur de son poste de travail.
+
+Outils images
+-------------
+Cette icône permet de travailler sur les vignettes ou images de choix 
+(re-génération, substitution, rotation), sur le remplacement d’un document 
+d’origine, ou d’afficher toutes les informations EXIF existantes.
+
+**Sélectionner une image et cliquer sur l'icône Outils Images.**
+
+La fenêtre Outils Images s'ouvre. 
+
+  .. image:: ../../images/Actions-Outilsimages.jpg
+	   :height: 260 px
+	   :width: 380 px
+	   :alt: alternate text
+	   :align: center
+
+Choisir un des onglets proposés:
+
+  * Régénération sous-défs: Permet de créer une nouvelle vignette et une nouvelle 
+    Image de choix pour les documents sélectionnés.
+
+  * Retourner sous défs: une rotation des vignettes et Images de choix des 
+    documents sélectionnés.
+
+  * Substitution document: Permet de remplacer le document original par un autre 
+    (une case à cocher permet de choisir si la vignette et l’image de choix 
+    doivent être reconstruites).
+
+  * Substitution des sous-défs: Pour remplacer la vignette et l’image de choix 
+    par un autre fichier.
+
+  * Métadonnées: Permet d’afficher l’ensemble des informations Exif disponibles 
+    pour le document.
+
+Cliquer sur Valider.
+
+Corbeille
+---------
+Cette icône permet de supprimer un enregistrement (Panier, document de la 
+Base/Collection, Reportage).
+
+**Sélectionner l'élément puis cliquer sur l'icône Corbeille.**
+
+  .. image:: ../../images/Actions-Supprimer.jpg
+	   :height: 200 px
+	   :width: 300 px
+	   :alt: alternate text
+	   :align: center
+
+Un message demande confirmation afin de valider votre choix.
+
+
