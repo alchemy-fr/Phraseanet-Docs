@@ -28,11 +28,11 @@ La zone inférieure droite affiche des onglets d’assistance à l’indexation
 	   :alt: alternate text
 	   :align: center
 
-* Sélectionner des documents, un panier ou un reportage
+* -> Sélectionner des documents, un panier ou un reportage
 
-* Cliquer sur le bouton Editer 
+* -> Cliquer sur le bouton Editer 
 
-* La fenêtre **Editer** s'ouvre
+* => La fenêtre **Editer** s'ouvre
 
 Toutes les vignettes sont sélectionnées.
 Les champs dont le contenu est identique pour les documents sélectionnés
@@ -47,31 +47,31 @@ cliquant sur les vignettes et renseigner un ou plusieurs champs.
 Aucune modification ou ajout n’est validé tant que l’utilisateur n’a pas 
 cliqué sur le bouton  «Valider»
 
-*  Pour passer d'une rubrique à une autre, appuyer sur la touche **TAB**.
+*  -> Pour passer d'une rubrique à une autre, appuyer sur la touche **TAB**.
 
-*  Pour annuler les modifications en cours, cliquer sur Annuler ou appuyer sur 
-  la touche **Echap**.
+*  -> Pour annuler les modifications en cours, cliquer sur Annuler ou appuyer 
+   sur la touche **Echap**.
 
 Editer des champs de type date
 ******************************
 
 
-*  Sélectionner le ou les documents pour lesquels la date doit être modifiée 
-ou ajoutée
+*  -> Sélectionner le ou les documents pour lesquels la date doit être modifiée 
+   ou ajoutée
 
 
 
-* Saisir manuellement la date selon le format aaaammjj
-* Ou utiliser le calendrier proposé
-* Cliquer sur Valider pour enregistrer les modifications
+* -> Saisir manuellement la date selon le format aaaammjj
+* -> Ou utiliser le calendrier proposé
+* -> Cliquer sur Valider pour enregistrer les modifications
 
 
 Editer des champs de type texte intégral
 **************************************** 
 
-* Sélectionner le ou les documents sur lesquels apporter une  modification
-* Cliquer dans un champs de type texte
-* Saisir les informations souhaitées
+* -> Sélectionner le ou les documents sur lesquels apporter une  modification
+* -> Cliquer dans un champs de type texte
+* -> Saisir les informations souhaitées
 
 .. image:: ../../images/Prod-Editer-texte.jpg
 	   :height: 350 px
@@ -90,12 +90,11 @@ saisis sur chaque fiche en cliquant sur le bouton « ajouter ».
 	   :align: center
 
 
-    
 Editer des champs textuels multi-valués
 ***************************************
 
-* Sélectionner le ou les documents sur lesquels apporter une  modification
-* Cliquer dans un champs textuel de type multi-valué
+* -> Sélectionner le ou les documents sur lesquels apporter une  modification
+* -> Cliquer dans un champs textuel de type multi-valué
 
 Les informations déjà présentes dans les notices de chaque document sélectionné 
 sont affichées dans le champs ici « Mots Clés »
@@ -108,4 +107,79 @@ présents seulement sur certaines notices en Orange
 	   :alt: alternate text
 	   :align: center
 
-* Cliquer sur un des mots clés « Orange »
+* -> Cliquer sur un des mots clés « Orange »
+
+* => Le terme  s’affiche dans le masque de saisi
+
+Le terme  est absent des notices des document ou le symbole "plus" s'affiche 
+sous la vignette.
+
+* -> Cliquer sur le symbole « plus » pour ajouter le terme pour ce document
+* => Le symbole "plus" se transforme en symbole "moins"
+
+Pour ajouter le terme à toutes les notices sélectionnées
+
+* -> Appuyer sur la touche "entrée" du clavier ou cliquer sur le symbole "plus"
+  qui se trouve à gauche du masque de saisie.
+
+* -> Cliquer sur le symbole "moins" à gauche du masque de saisie pour 
+  supprimer le terme de toutes les notices.
+
+
+Editer à partir du thésaurus
+****************************
+ 
+L’onglet Thésaurus permet à l’utilisateur d’indexer rapidement à partir des 
+termes contenus dans le thésaurus associé à la base.
+Les saisies sont assistées pour les champs qui ont été liés à des branches de 
+thésaurus.
+
+* -> Cliquer sur l'onglet thésaurus
+* -> Sélectionner un champs du type textuel lié au thésaurus"
+* -> Commencer à saisir un terme
+ 
+
+* => L'onglet thésaurus s'actualise et affiche les termes commençant par...
+
+
+* -> Faire un double clic sur le terme à indexer
+
+
+* => il est immédiatement ajouté aux documents sélectionnés
+
+.. note:: Il est aussi possible de déployer "l'arbre" du thésaurus pour
+          chercher et sélectionner des termes à indexer. Cliquer sur les 
+          symboles "plus" qui se trouvent devant les termes.
+
+
+Editer à partir des valeurs suggérées
+************************************
+
+Si des valeurs suggérées ont été définies pour le champs la liste apparaît 
+sous forme de menu contextuel dans la fenêtre à gauche du nom du champ.
+
+
+.. todo:: faire un lien vers Préférences : Valeur suggérées dans la 
+          documentation Phraseanet Administrateur.
+
+.. image:: ../../images/Prod-Editer-valeurssugg.jpg
+	   :height: 436 px
+	   :width: 419 px
+	   :alt: alternate text
+	   :align: center
+
+
+
+
+
+Editer à partir des modèles
+*************************** 
+
+Editer à partir du presse papier
+******************************** 
+
+
+
+
+
+
