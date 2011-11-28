@@ -42,11 +42,11 @@ est indiqué.
 	   
 L'onglet Téléchargement
 -----------------------
-  * Glisser-déposer une ou plusieurs vignettes sur l'icône *Exporter*.
-  * La fenêtre de téléchargement s'ouvre.
-  * Utiliser les cases à cocher pour sélectionner quel élément exporter.
-  * Cliquer sur *Télécharger*.
-  * Suivre la procédure proposée par le navigateur.
+*  -> Sélectionner une ou plusieurs vignettes et cliquer sur l'icône *Exporter*.
+*  => La fenêtre de téléchargement s'ouvre.
+*  -> Utiliser les cases à cocher pour sélectionner quel élément exporter.
+*  -> Cliquer sur *Télécharger*.
+*  -> Suivre la procédure proposée par le navigateur.
 
   .. image:: ../../images/Exporter-telecharger.jpg
 	   :height: 170 px
@@ -56,16 +56,18 @@ L'onglet Téléchargement
 
 L'onglet Mail
 --------------
-  * Saisir l'adresse mail du destinataire, utiliser la « ; » en cas d’envoi vers 
-    plusieurs destinataires.
-  * Saisir l'objet du mail.
-  * Sélectionner quel fichier doit être joint au mail.
-  * Saisir le message du mail.
-  * Cliquer sur Envoyer.
+*  -> Saisir l'adresse mail du destinataire, utiliser la « ; » en cas d’envoi vers 
+   plusieurs destinataires.
+*  -> Saisir l'objet du mail.
+*  -> Sélectionner quel fichier doit être joint au mail.
+*  -> Saisir le message du mail.
+*  -> Cliquer sur Envoyer.
 
-Une fenêtre intermédiaire demande la confirmation à l’utilisateur, précisant le 
-nombre d’éléments à envoyer ainsi que le poids total de l’envoi.
-Cliquer sur Envoyer. Un message confirmant l’envoi de l’email apparaît.
+*  => Une fenêtre intermédiaire demande la confirmation à l’utilisateur, précisant 
+   le nombre d’éléments à envoyer ainsi que le poids total de l’envoi.
+
+*  -> Cliquer sur Envoyer. 
+*  => Un message confirmant l’envoi de l’email apparaît.
 
   .. image:: ../../images/Exporter-mail.jpg
 	   :height: 300 px
@@ -88,8 +90,8 @@ disposition des éléments sur son serveur FTP.
 Il est également possible de tester le serveur FTP de destination et/ou 
 d’envoyer les éléments.
 
-Finalement, une fenêtre intermédiaire s’ouvre et informe l’utilisateur de l’état de son 
-envoi.
+*  => Une fenêtre intermédiaire s’ouvre et informe l’utilisateur de l’état de son 
+   envoi.
 
   .. image:: ../../images/Exporter-FTP.jpg
 	   :height: 330 px
