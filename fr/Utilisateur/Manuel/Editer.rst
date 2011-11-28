@@ -141,6 +141,11 @@ thésaurus.
 
 * => L'onglet thésaurus s'actualise et affiche les termes commençant par...
 
+.. image:: ../../images/Prod-Editer-thesaurus.jpg
+	   :height: 153 px
+	   :width: 330 px
+	   :alt: alternate text
+	   :align: center
 
 * -> Faire un double clic sur le terme à indexer
 
@@ -155,8 +160,8 @@ thésaurus.
 Editer à partir des valeurs suggérées
 ************************************
 
-Si des valeurs suggérées ont été définies pour le champs la liste apparaît 
-sous forme de menu contextuel dans la fenêtre à gauche du nom du champ.
+Si des valeurs suggérées ont été définies pour le champs, la liste apparaît 
+sous forme de menu contextuel dans la fenêtre à gauche du nom du champs.
 
 
 .. todo:: faire un lien vers Préférences : Valeur suggérées dans la 
@@ -169,17 +174,172 @@ sous forme de menu contextuel dans la fenêtre à gauche du nom du champ.
 	   :align: center
 
 
+* -> Cliquer sur le menu contextuel
+* -> Faire un double clic pour sélectionner une valeur dans la liste
+
+
+* => la valeur est ajoutée au champs. 
+
+.. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste  en 
+          appuyant sur la touche "cmd" ou "ctrl"
+
+
+Utiliser l'onglet Presse Papier
+*****************************************
+
+* -> Cliquer sur l'onglet Presse Papier
+
+Copier et coller des termes ou des expressions dans ou depuis le presse papier
+vers des masques de saisie de champs
+
+
+Utiliser l'onglet  Rechercher/Remplacer
+***************************************
+
+L’onglet permet à l’utilisateur de chercher et remplacer des termes contenus 
+sur les documents en cours d’édition
+
+* -> Cliquer sur l’onglet Rechercher / Remplacer
+
+.. image:: ../../images/Prod-Editer-chercherremplacer.jpg
+	   :height: 327 px
+	   :width: 406 px
+	   :alt: alternate text
+	   :align: center
+
+* -> Restreindre si nécessaire la fonction à un champs en particulier, 
+     à partir du menu déroulant, par défaut dans tous les champs
+* -> Saisir le terme à Rechercher dans les notices des documents en cours 
+     d’édition
+* -> Saisir le terme de remplacement
+* -> Appliquer les options si nécessaire
+* -> Cliquer sur Valider
+
+* => Le nouveau terme remplace le précédent dans les notices 
+
+ 
+Utiliser l'onglet  Modèles
+**************************
+
+
+Cette fonction permet de créer et d'utiliser ensuite des modèles de notices
+pré remplies.
+
+Un modèle est créé à partir d'une notice en cours d'édition.
+
+
+* -> Cliquer sur l’onglet Modèles
+* -> Sélectionner une notice en cliquant sur une vignette
+
+.. note:: Si plusieurs documents sont sélectionnés, le modèle ne pourra 
+          reprendre que le contenu hétérogène des champs
+
+* -> Cliquer sur Ajouter
+
+.. image:: ../../images/Prod-Editer-modeles.jpg
+	   :height: 227 px
+	   :width: 365 px
+	   :alt: alternate text
+	   :align: center
+
+* -> Donner un titre au modèle
+* -> Choisir les champs à reprendre, les champs contenant des termes sont 
+     sélectionnés par défaut
+* -> Cliquer sur Valider pour enregistrer le modèle
+
+* => Le nouveau modèle est affiché dans la liste des modèles
+
+
+Appliquer un modèle à une sélection de documents
+
+* -> Sélectionner les documents
+* -> Faire un double clic sur le titre d'un modèle
+
+* => l'ensemble des informations contenus dans le modèle est appliqué aux 
+     documents
+
+.. note:: Il est possible de revoir les valeurs des champs d'un modèle en
+          cliquant sur la flèche se trouvant devant le titre du modèle.
+
+.. warning:: Un modèle est la propriété de l'utilisateur qui l'a créé, il ne
+             peut être utilisé que par lui.
+
+
+Editer des reportages
+*********************
+
+Chaque reportage dispose de sa propre notice descriptive. Il est donc possible
+d'éditer en lots ces notices de reportage.
+
+
+Editer Les notices de reportages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+En mode recherche reportage 
+
+* -> Sélectionner plusieurs reportages depuis les résultats
+* -> Cliquer sur Editer
+
+* => la fenêtre Editer s'ouvre
+
+Le principe de fonctionnement est identique à celle de l'édition des documents 
+mais seules les notices des reportages seront modifiées 
+(pas les notices des documents contenus dans les reportages).
+
+
+Editer un reportage et son contenu
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* -> Sélectionner un seul reportage depuis les résultats
+* ->cliquer sur Editer
+
+ou 
+
+* -> Cliquer sur Editer depuis la barre d'action locale du reportage quand 
+celui ci est dans la zone de travail.
+
+* => La fenêtre Editer s'ouvre
+
+
+.. image:: ../../images/Prod-Editer-reportage.jpg
+	   :height: 232 px
+	   :width: 476 px
+	   :alt: alternate text
+	   :align: center
+
+Les reportages ont par défaut une image de "dossier" pour les illustrer.
+
+* -> Cliquer sur le menu contextuel d’une des vignettes
+* -> Cliquer sur « Définir comme image principale
+* -> L’image du dossier est remplacée par la vignette du document choisi
+
+
+Pour compléter la notice du reportage
+
+* -> Cliquer sur l’image de représentation du reportage «  en haut à gauche de 
+     la fenêtre "Editer"
+* -> Seule la notice du reportage sera modifiée
+
+* -> Sélectionner l’image de représentation du reportage et les autres 
+     vignettes pour modifier à la fois la notice reportage et les notices des 
+     documents qui composent le reportage.
+* -> Compléter les champs à modifier
+ 	
+* -> Cliquer sur Valider pour enregistrer les modifications.
 
 
 
-Editer à partir des modèles
-*************************** 
+Editer les Status
+*****************
 
-Editer à partir du presse papier
-******************************** 
+La première ligne de la liste de champs permet de changer les status des 
+documents sélectionnés.
 
-
-
+* -> Cliquer sur la première ligne de la liste de champs "Status".
+* -> Cocher les cases correspondant au changement d’état à appliquer sur les 
+     documents 
+* -> Cliquer sur Valider pour enregistrer les modifications ou poursuivre 
+     l’indexation.
 
 
 
