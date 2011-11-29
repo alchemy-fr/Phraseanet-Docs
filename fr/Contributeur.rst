@@ -9,9 +9,11 @@ Contributeur
     :hidden:
 
     Contributeur/CodeGuidelines
+    Contributeur/DocumentationGuidelines
 
 Phraseanet est open source. Qu'il s'agisse de la documentation, des traductions,
-des librairies et du coeur applicatif, vous pouvez contribuer à son amélioration.
+des librairies et du coeur applicatif, vous pouvez contribuer à son 
+amélioration.
 
 Les contributions à Phraseanet sont ouvertes, vous pouvez faire vos 
 `pull-request <http://help.github.com/send-pull-requests/>`_ dans les 
