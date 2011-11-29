@@ -11,7 +11,7 @@ Gras/italique
 Pour mettre en gras un terme, il suffit de l'entourer de 2 étoiles et une seule
 pour l'italique:
 
-    **gras**et*italique*
+    ``**gras**`` et ``*italique*``
     
 voici la preuve: **gras** et *italique*.
 
@@ -27,10 +27,11 @@ Il ne faut pas oublier, lors du grande ligne, de mettre une indentation.
    
 En têtes
 --------
-On peut mettre ce que l'on veut. Voici ce que nous utilisons:: 
+On peut mettre ce que l'on veut. Voici ce que nous utilisons:
 
 	H1 -- Premier titre
 	===================
+
 	Voici le texte ensuite
 	
 	H2 -- Sous titre
@@ -44,6 +45,7 @@ On peut mettre ce que l'on veut. Voici ce que nous utilisons::
 
 Markups
 -------
+
 On peut s'en servir par exemple pour les notes comme "Tips" ou "PS/NB"
 
 Les markups les plus usités sont::
