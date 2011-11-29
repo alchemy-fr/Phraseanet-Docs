@@ -13,6 +13,7 @@
    Manuel/Push
    Manuel/Publier
    Manuel/Bridge
+   Manuel/Statistiques
    
 
 
