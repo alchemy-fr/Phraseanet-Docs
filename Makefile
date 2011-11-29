@@ -1,4 +1,3 @@
-
 # MakeFile for building all the docs at once.
 # Inspired by the Makefile used by bazaar. 
 # http://bazaar.launchpad.net/~bzr-pqm/bzr/2.3/
