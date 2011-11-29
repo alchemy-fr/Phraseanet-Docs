@@ -10,6 +10,9 @@
    Manuel/Editer
    Manuel/Exporter
    Manuel/Actions
+   Manuel/Push
+   Manuel/Publier
+   Manuel/Bridge
    
 
 

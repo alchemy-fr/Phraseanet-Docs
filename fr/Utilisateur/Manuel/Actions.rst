@@ -12,7 +12,7 @@ nombre d'actions sur vos documents.**
 	   :alt: alternate text
 	   :align: center 
 
-Les actions "Exporter", "Editer" et "Push" sont trois actiona majeures qui sont 
+Les actions "Exporter", "Editer" et "Push" sont trois actions majeures qui sont 
 accessibles via la Palette des Actions, reportez-vous aux pages qui y sont 
 consacrées à l'aide des liens ci-dessous.
 Pour les actions mineures (Propriétés, Déplacer, Imprimer, Outils Images et 
