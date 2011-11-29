@@ -7,15 +7,17 @@
 Dans *Production* et *Classic*, deux modes de recherche sont possibles:
 
 La zone de **Recherche simple** permet d'effectuer des recherches simples en 
-texte intégral dans les Bases/Collections de documents.
+texte intégral dans les :term:`bases <base>`/Collections de documents.
 
 **La Recherche avancée** permet d'effectuer des requêtes plus évoluées et de 
-mettre en place un certain nombre de filtres sur les bases et collections.
+mettre en place un certain nombre de filtres sur les :term:`bases <base>` 
+et collections.
 
 Phraseanet embarque deux moteurs de recherche (un moteur texte intégral et un 
 moteur thesaurus Le premier moteur est le moteur texte intégral. Il permet 
-d’effectuer des recherches sur tous les champs de toutes les base et toutes les 
-collections auxquels l’utilisateur et connecté.
+d’effectuer des recherches sur tous les champs de toutes 
+les :term:`bases <base>` et toutes les collections auxquels l’utilisateur 
+est connecté.
 Le deuxième moteur est le moteur de recherche du Thesaurus. Il n’est activé que 
 lorsqu’un thesaurus existe.
 
@@ -42,13 +44,14 @@ Recherche par opérateur ordinal
   * Dernier 100 (ou last 100): pour sélectionner les 100 derniers documents ajoutés 
     ou archivés dans la Base/Collection. 
 
-Le nombre de documents sélectionnés est valable par Bases/Collections ouvertes. 
+Le nombre de documents sélectionnés est valable par 
+:term:`bases <base>` / Collections ouvertes. 
 Si trois Bases/Collections sont ouvertes, la sélection comporte 300 documents (3 x 100)
 
   * Dernier « sans précision » (last) affiche par défaut les 12 derniers documents 
     ajoutés. 
-  * Tout (ou all): pour rechercher tous les documents des Bases/Collections 
-    sélectionnées.
+  * Tout (ou all): pour rechercher tous les documents 
+    des :term:`bases <base>` / Collections sélectionnées.
 
 Recherche sur un mot contenu dans la description
 ************************************************
@@ -58,7 +61,7 @@ Tour Eiffel.
 
 Attention, la recherche porte sur le mot entier, ainsi en saisissant *tou*, on 
 n'obtient pas de documents sur des tours. Par défaut, on recherche sur tous les 
-champs descripteurs de la Base/Collection.
+champs descripteurs de la :term:`base`/Collection.
 
 Un caractère peut être remplacé par ?. Ainsi, la recherche mo?s sélectionnera 
 notamment les documents dont la description contient mois ou mots.
@@ -145,8 +148,8 @@ La Recherche avancée
 --------------------
 Cliquer sur l'onglet de Recherche Avancée.
 
-  * Elle permet d’étendre ou réduire le nombre de bases/collections sur lesquelles 
-    effectuer la recherche. 
+  * Elle permet d’étendre ou réduire le nombre de :term:`bases <base>` / 
+    collections sur lesquelles effectuer la recherche. 
   * Elle permet de filtrer la recherche sur les documents ou les reportages ou 
     les deux, ainsi que sur les types de documents.
   * Elle permet de choisir le moteur Texte intégral et/ou le moteur Thesaurus.
@@ -161,12 +164,13 @@ Cliquer sur l'onglet de Recherche Avancée.
 	   :align: center
 
 	   
-  * Choisir les bases et collections où rechercher.
+  * Choisir les :term:`bases <base>` et collections où rechercher.
 
-NB : Il est possible de désélectionner toutes les bases et collections 
-en cliquant sur « Aucune » ou de cliquer directement sur les noms des bases 
-pour les sélectionner ou désélectionner individuellement ou encore dans les cases 
-à cocher proposées pour chaque collection disponible.
+NB : Il est possible de désélectionner toutes les :term:`bases <base>` 
+et collections en cliquant sur « Aucune » ou de cliquer directement sur les 
+noms des :term:`bases <base>` pour les sélectionner ou désélectionner 
+individuellement ou encore dans les cases à cocher proposées pour chaque 
+collection disponible.
 
 Choisir si la recherche doit se faire sur des reportages (uniquement les fiches 
 d’indexation des reportages) ou sur les documents.
@@ -182,7 +186,7 @@ Phraseanet embarque deux moteurs de recherche, le premier en texte intégral,
 le deuxième s’appuie uniquement sur le thesaurus, il recherche uniquement sur 
 les termes qui sont présents dans le thesaurus.
 NB : Les recherches à travers le thesaurus ne sont effectives que si un thesaurus 
-est associé à une base.
+est associé à une :term:`base`.
 Utilisation des status-bits en recherche.
 
 Si des status-bits ont été définis dans *Phraseanet Administrateur* et si des 
@@ -190,7 +194,7 @@ documents ont un ou plusieurs status-bit activé(s), il est alors possible de
 lancer une recherche sur ces status-bit* en cochant une ou plusieurs cases. 
 
   * Cliquer sur Chercher ou sur la touche « entrée » du clavier pour lancer la 
-    recherche dans les Bases/Collections. 
+    recherche dans les :term:`bases <base>` / Collections. 
 
 Les documents s'affichent dans la fenêtre résultat.
 

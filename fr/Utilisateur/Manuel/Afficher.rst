@@ -20,7 +20,7 @@ de visualisation et de recherche des documents.
 	   :align: center 
 	   
 .. note:: La zone d'affichage des résultats, dans Prod (comme ci-dessus) ou dans 
-Classic, est la zone centrale où apparaissent les images.
+  Classic, est la zone centrale où apparaissent les images.
 
 Présentation de la zone d'affichage
 -----------------------------------
@@ -189,8 +189,9 @@ les informations issues des champs remplis, tels que les mots clés, la légende
 	   :align: center 
 
 .. note:: Selon la configuration de la solution et l’existence d’un thesaurus 
-          attaché à la base, certains mots clés de la légende sont «cliquables". 
-          Soulignés de pointillés, ils permettent de rebondir sur d'autres recherches.
+          attaché à la :term:`base`, certains mots clés de la légende 
+          sont «cliquables". Soulignés de pointillés, ils permettent de 
+          rebondir sur d'autres recherches.
 		  
 Onglet Historique
 *****************
