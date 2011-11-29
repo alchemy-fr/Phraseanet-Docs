@@ -4,9 +4,6 @@ NGINX
 
   Exemple de fichier de configuration Nginx.
 
-  Pour un descriptif complet des options de configuration Nginx, référez-vous 
-  à la documentation complète de 
-  :doc:`Phraseanet sous Nginx <Configuration/Nginx>`
 
   .. code-block:: bash
 

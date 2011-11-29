@@ -50,14 +50,17 @@ Structure
 
   - Images ::
 
-      .. image:: ../images/gplv3.png
+      .. figure:: ../images/gplv3.png
         :align:  center
         :alt:    GPLv3 logo
+        
+        License GNU GPL v3
 
-    .. image:: ../images/gplv3.png
+    .. figure:: ../images/gplv3.png
       :align:  center
       :alt:    GPLv3 logo
 
+      Image Caption
 
 Formatage
 *********

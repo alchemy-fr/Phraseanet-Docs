@@ -1,8 +1,8 @@
 Configuration
 =============
 
-Le principal réglage de l’application est dans la structure XML des bases de 
-données à laquelle on accède via le module :
+Le principal réglage de l’application est dans la structure XML de la 
+:term:`bases <base>` à laquelle on accède via le module :
 
 administration > base de donnée > structure.
 

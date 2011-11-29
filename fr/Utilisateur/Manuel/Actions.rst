@@ -173,7 +173,7 @@ Cliquer sur Valider.
 Corbeille
 ---------
 Cette icône permet de supprimer un enregistrement (Panier, document de la 
-Base/Collection, Reportage).
+:term:`base`/Collection, Reportage).
 
 **Sélectionner l'élément puis cliquer sur l'icône Corbeille.**
 
