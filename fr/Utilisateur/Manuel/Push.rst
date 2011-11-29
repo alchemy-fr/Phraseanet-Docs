@@ -194,6 +194,7 @@ Une fois les utilisateurs, sélectionnés, vous pouvez diffuser votre sélection
 
 Réception
 ^^^^^^^^^
+
 .. note:: Si le destinataire est authentifié dans Phraseanet, celui-ci est alerté 
           en temps réel dans *Production* via une notification. Dans la zone des Paniers, 
           celui-ci passe en jaune pour signaler qu'il est non-lu.
@@ -228,6 +229,8 @@ Cette interface leur donne un accès immédiat aux documents pour appréciation,
 et/ou téléchargement. Pour les utilisateurs authentifiés, la validation est 
 également disponible sous forme d’un Panier.
 
+Envoi
+^^^^^^
 Le processus est le même que pour `Diffuser`_: L'émetteur doit d'abord sélectionner 
 un ou plusieurs destinataires (voir `Sélection des utilisateurs`_) puis 
 donner un nom au Panier (voir `Envoi de la sélection`_).
