@@ -41,12 +41,12 @@ Glossaire
     (en XML), et de ses sous résolutions.
 
   Base
-    Une base Phraseanet IV est un containeur de type MySQL (instance de base de 
+    Une base Phraseanet est un containeur de type MySQL (instance de base de 
     donnée). Une base dispose entre autres d’une structure documentaire « champs 
     d’indexation » et de façon plus générale de certains réglages. Une base de 
-    données peut contenir une ou plusieurs Collections Phraseanet IV qui 
+    données peut contenir une ou plusieurs Collections Phraseanet qui 
     reprendront les réglages de la base. La notion de base est surtout mise en 
-    avant dans Phraseanet IV Administration, Thesaurus
+    avant dans Phraseanet Administration, Thesaurus
 
   Collection
     Une collection est un sous ensemble d'une base. Elles permettent de mettre
