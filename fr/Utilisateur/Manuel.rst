@@ -3,6 +3,7 @@
 .. toctree::
    :maxdepth: 3
 
+   Manuel/General
    Manuel/Connexion
    Manuel/Importer
    Manuel/Rechercher
@@ -21,4 +22,4 @@
 
 Voici un manuel qui vous guidera dans votre utilisation de Phraseanet.
 
-   
+
