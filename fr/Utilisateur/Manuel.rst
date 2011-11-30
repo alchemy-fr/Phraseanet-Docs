@@ -10,10 +10,12 @@
    Manuel/Editer
    Manuel/Exporter
    Manuel/Actions
+   Manuel/Paniers
    Manuel/Push
    Manuel/Publier
    Manuel/Bridge
    Manuel/Statistiques
+
    
 
 

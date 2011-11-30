@@ -9,7 +9,7 @@
 Edition des documents
 ---------------------
 
-Cet action permet d'éditer la ou les fiches descriptives des Enregistrements, 
+Cette action permet d'éditer la ou les fiches descriptives des Enregistrements, 
 des Reportages, des Paniers, pour saisir, compléter ou modifier le contenu des 
 champs.
 Il est possible d’éditer à l’unité ou en lots et sous lots des 
@@ -22,7 +22,7 @@ La taille des vignettes est modifiable en déplaçant le curseur.
 La zone inférieure affiche la liste des champs descripteurs, 
 la liste des status, et réserve un espace pour afficher le contenu du champs 
 actif.
-La zone inférieure droite affiche des onglets d’assistance à l’indexation
+La zone inférieure droite affiche des onglets d’assistance à l’indexation.
 
 .. image:: ../../images/Prod-Editer.jpg
 	   :height: 350 px
