@@ -2,46 +2,49 @@
 ======================
 .. toctree::
    :maxdepth: 3
-   
-**La Palette des Actions dans Phraseanet Production vous permet d'effectuer un grand 
-nombre d'actions sur vos documents.**
 
-  .. image:: ../../images/Palette.jpg
-	   :height: 50 px
-	   :width: 550 px
-	   :alt: alternate text
-	   :align: center 
+.. topic:: L'essentiel
 
-Les actions "Exporter", "Editer" et "Push" sont trois actiona majeures qui sont 
-accessibles via la Palette des Actions, reportez-vous aux pages qui y sont 
-consacrées à l'aide des liens ci-dessous.
-Pour les actions mineures (Propriétés, Déplacer, Imprimer, Outils Images et 
-Supprimer), voir plus bas.
+    La Palette des Actions dans Phraseanet Production vous permet d'effectuer un 
+    grand nombre d'actions sur vos documents.
+	
+    .. image:: ../../images/Palette.jpg
+	     :height: 50 px
+	     :width: 550 px
+	     :alt: alternate text
+	     :align: center 
 
-Les actions :
+    Les actions "Exporter", "Editer" et "Push" sont trois actions majeures qui sont 
+    accessibles via la Palette des Actions, reportez-vous aux pages qui y sont 
+    consacrées à l'aide des liens ci-dessous.
+    
+    Pour les actions mineures (Propriétés, Déplacer, Imprimer, Outils Images et 
+    Supprimer), voir plus bas.
 
-  * :doc:`Exporter <Exporter>`
-  * :doc:`Editer <Editer>`
-  * :doc:`Push <Push>`
-  * Propriétés
-  * Déplacer
-  * Imprimer
-  * Outils
-  * Supprimer
+    Les actions :
+
+    * :doc:`Exporter <Exporter>`
+    * :doc:`Editer <Editer>`
+    * :doc:`Push <Push>`
+    * `Propriétés`_
+    * `Déplacer`_
+    * `Imprimer`_
+    * `Outils images`_
+    * `Supprimer`_
   
 Propriétés
 ----------
 Cette action permet de changer:
   * les status des documents
-  * les « types » des documents sélectionnés 
+  * les "types" des documents sélectionnés 
 
-Les Status sont comme des « Interrupteurs » en position « On » ou « Off » et sont 
+Les Status sont comme des "Interrupteurs" en position "On" ou "Off" et sont 
 applicables sur les documents.
 La mise en œuvre se fait dans *Phraseanet Administration* qui permet le nommage 
 des Status et le choix de mini-logos pour les illustrer visuellement dans les 
 interfaces.
 A travers la gestion des utilisateurs, il est possible de définir pour chaque 
-Status activé si un utilisateur est « On » et/ou « Off » pour les documents.
+Status activé si un utilisateur est "On" et/ou "Off" pour les documents.
 
 .. note:: Il existe 64 Status. 60 sont paramétrables et peuvent être utilisés pour 
           des besoins de workflow ou la mise en place des restrictions d’accès aux documents 
@@ -52,17 +55,21 @@ Changer les status des documents
 ********************************
 Cette action permet de changer les status des documents. 
 
-**Sélectionner une ou plusieurs vignettes, un panier ou un reportage puis cliquer sur 
-Propriétés.**
+  * Sélectionner une ou plusieurs vignettes, un panier ou un reportage puis cliquer sur 
+    Propriétés.
+
+La fenêtre s'ouvre. 
+
+  * Cocher la case correspondant au nouveau status (plusieurs 
+    status possibles). 
+  
+  * Cliquer sur Valider pour enregistrer les changements.
 
   .. image:: ../../images/Actions-Proprietes-status.jpg
 	   :height: 170 px
 	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
-
-La fenêtre s'ouvre. Cocher la case correspondant au nouveau statut (plusieurs 
-statuts possibles). Cliquer sur Valider pour enregistrer les changements.
 
 Changer le type des documents
 *****************************
@@ -71,8 +78,14 @@ Cette action permet de changer le type des documents.
 Elle est utile si des documents ajoutés n’ont pas été correctement interprétés 
 et qu’il faut les associer au bon type de fichier.
 
-**Sélectionner une ou plusieurs vignettes, un panier ou un reportage et cliquer sur 
-Propriétés.**
+  * Sélectionner une ou plusieurs vignettes, un panier ou un reportage et cliquer sur 
+    Propriétés.
+
+La fenêtre s'ouvre. 
+
+  * Cliquer sur l’onglet Type. Changer le type des documents. 
+
+  * Cliquer sur Valider pour enregistrer les modifications.
 
   .. image:: ../../images/Actions-Proprietes-types.jpg
 	   :height: 220 px
@@ -80,18 +93,19 @@ Propriétés.**
 	   :alt: alternate text
 	   :align: center 
 
-La fenêtre s'ouvre. Cliquer sur l’onglet Type. Changer le type des documents. 
-Cliquer sur Valider pour enregistrer les modifications.
-
 Déplacer
 --------
 Cette icône permet de déplacer des documents d'une collection à une autre. 
 
-**Sélectionner une ou plusieurs vignettes puis cliquer sur l'icône Déplacer.**
+  * Sélectionner une ou plusieurs vignettes puis cliquer sur l'icône Déplacer.
 
-La fenêtre Changer de collection s'ouvre. Sélectionner la collection dans laquelle 
-doit être dorénavant placé(s) le(s) document(s). Cliquer sur Ok. Le document ne 
-se trouve plus dans la collection d'origine, mais dans la collection choisie.
+La fenêtre Changer de collection s'ouvre. 
+
+  * Sélectionner la collection dans laquelle doit être dorénavant placé(s) 
+    le(s) document(s). 
+  * Cliquer sur Ok. 
+  
+Le document ne se trouve plus dans la collection d'origine, mais dans la collection choisie.
 
   .. image:: ../../images/Actions-Deplacer.jpg
 	   :height: 150 px
@@ -104,7 +118,7 @@ Imprimer
 Cette Action permet d'imprimer les vignettes, les images de choix, les 
 descriptions des documents.
 
-**Sélectionner un ou plusieurs documents puis cliquer sur « Imprimer ».**
+  * Sélectionner un ou plusieurs documents puis cliquer sur « Imprimer ».
 
 La fenêtre Imprimer s'ouvre. 
 
@@ -115,6 +129,7 @@ La fenêtre Imprimer s'ouvre.
 	   :align: center 
 
 Cocher les cases correspondant aux choix souhaités:
+
   * Image de choix, pour n'imprimer que les images de choix.
   * Image de choix et légende, pour imprimer les images de choix et la description du document.
   * Image de choix et description avec planche contact, pour imprimer les images de choix, les descriptions et les vignettes regroupées dans une planche contact.
@@ -140,7 +155,7 @@ Cette icône permet de travailler sur les vignettes ou images de choix
 (re-génération, substitution, rotation), sur le remplacement d’un document 
 d’origine, ou d’afficher toutes les informations EXIF existantes.
 
-**Sélectionner une image et cliquer sur l'icône Outils Images.**
+  * Sélectionner une image et cliquer sur l'icône Outils Images.
 
 La fenêtre Outils Images s'ouvre. 
 
@@ -170,12 +185,12 @@ Choisir un des onglets proposés:
 
 Cliquer sur Valider.
 
-Corbeille
+Supprimer
 ---------
 Cette icône permet de supprimer un enregistrement (Panier, document de la 
-Base/Collection, Reportage).
+:term:`base`/Collection, Reportage).
 
-**Sélectionner l'élément puis cliquer sur l'icône Corbeille.**
+  * Sélectionner l'élément puis cliquer sur l'icône Corbeille.
 
   .. image:: ../../images/Actions-Supprimer.jpg
 	   :height: 200 px

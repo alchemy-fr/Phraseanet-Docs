@@ -3,20 +3,19 @@
 .. toctree::
    :maxdepth: 3
 
-Vous pouvez importer des documents en utilisant l'interface **Phraseanet Upload**
+.. topic:: L'essentiel
 
-Présentation générale de l'interface d'Upload
----------------------------------------------
+    Vous pouvez importer des documents en utilisant l'interface **Phraseanet 
+    Upload**. C'est une application dédiée pour ajouter des documents à des 
+    collections sur lesquelles l'utilisateur dispose des droits d'ajout. 
+    L'interface présente plusieurs zones de travail: 
 
-*Phraseanet Upload* est une application dédiée pour ajouter des documents à 
-des collections sur lesquelles l'utilisateur dispose des droits d'ajout.
-L'interface présente plusieurs zones de travail:
+    * Sélectionnez vos fichiers à ajouter (1)
+    * Réordonnez-les éventuellement (2)
+    * Choisissez la collection où vont se trouver les documents et en-dessous, 
+      appliquez des Status si besoin (3)
+    * Zone indiquant l'état du transfert des documents (4)
 
-  * Upload permet de sélectionner les fichiers à ajouter.
-  * Upload permet d'ajouter des nouveaux documents à des collections Phraseanet.
-  * Upload permet d'appliquer des status aux documents. 
-  
-Voici une capture d'écran de l'interface d'Upload: 
 
 .. image:: ../../images/Upload-zones.jpg
 	   :height: 380 px
@@ -28,7 +27,7 @@ Voici une capture d'écran de l'interface d'Upload:
 Importer en trois étapes
 -------------------------
 Cliquer sur Upload dans la barre d'applications Phraseanet.
-*Phraseanet Upload* se lance dans un nouvel onglet du navigateur 
+*Phraseanet Upload* se lance dans un nouvel onglet du navigateur. 
 
 Ajouter des documents
 *********************
@@ -40,11 +39,10 @@ Ajouter des documents
 	   :alt: alternate text
 	   :align: center 
 
-Cliquer sur *Choisir les fichiers à ajouter*.
+  * Cliquer sur *Choisir les fichiers à ajouter*.
 
 L'application lance l'explorateur de fichiers, aller jusqu'au dossier où se 
-trouvent les fichiers à ajouter. 
-**Sélectionner le ou les fichiers à ajouter.**
+trouvent les fichiers à ajouter. Cliquer sur Ouvrir.
 
 .. image:: ../../images/Upload-fichiers.jpg
 	   :height: 240 px
@@ -52,7 +50,6 @@ trouvent les fichiers à ajouter.
 	   :alt: alternate text
 	   :align: center 
 	   
-Cliquer sur Ouvrir.
 *Phraseanet Upload* affiche la liste des fichiers sélectionnés.
 
 .. image:: ../../images/Upload-zone2.jpg
@@ -63,9 +60,13 @@ Cliquer sur Ouvrir.
 
 Réordonner avant import
 ***********************
+Cette étape est facultative. Mais si l'ordre dans lequel les images seront transférées 
+est important, il est utile dans ce cas d'utiliser cette zone de travail avant d'importer 
+les documents.
 
-Cliquer sur un fichier et le glisser/ déposer ailleurs dans la liste. Il est 
-également possible de cliquer sur "Inverser l'ordre".
+  * Cliquer sur un fichier et le glisser/ déposer ailleurs dans la liste. 
+
+Il est également possible de cliquer sur "Inverser l'ordre".
 
 .. image:: ../../images/Upload-reordonner.jpg
 	   :height: 250 px
@@ -78,18 +79,24 @@ Sélectionner la collection
 Il faut désormais sélectionner la collection de destination et vous pourrez également
 appliquer des status.
 
-Cliquer sur le menu déroulant des collections disponibles. 
-**Choisissez la collection où vous souhaitez ajouter vos documents multimédia.**
+  * Cliquer sur le menu déroulant des collections disponibles. 
 
-Appliquer ensuite, si nécessaire (facultatif), un état aux status disponibles.
+  * Choisissez la collection où vous souhaitez ajouter vos documents multimédia.
+
+Appliquer ensuite, si nécessaire, un état aux status disponibles.
+
 
 .. image:: ../../images/Upload-zone3.jpg
 	   :height: 270 px
-	   :width: 300 px
+	   :width: 290 px
 	   :alt: alternate text
 	   :align: center 
 
-Cliquer enfin sur **Démarrer**.
+Exemple de status appliqués aux images: public/privé, à éditer/édité, online/offline, 
+portrait/paysage, etc.
+
+  * Cliquer enfin sur **Démarrer** pour commencer le transfert.
+
 La liste des fichiers à ajouter est vidée et la liste des fichiers transférés 
 se remplit.
 
@@ -102,14 +109,14 @@ se remplit.
 Chaque fichier est transféré.
 Les documents sont ajoutés à la collection de destination.
 
-Vous pouvez désormais aller consulter vos documents, à partir de *Phraseanet 
-Production* ou *Classic*.
-
+Il est désormais possible d'aller consulter vos documents, à partir des interfaces 
+*Phraseanet Production* (consultation et gestion des documents) ou *Phraseanet 
+Classic* (simple consultation).
 
 La Quarantaine
 --------------
 Après avoir été ajoutés, certains fichiers de type image peuvent être placés 
-en "quarantaine". 
+en "quarantaine" (fichiers placés en jaune sur l'image ci-dessous).
 
 .. image:: ../../images/Upload-Quarantaine0.jpg
 	   :height: 300 px
@@ -125,7 +132,7 @@ modifiés puis ajoutés à nouveau.
 La quarantaine permet aussi d'isoler des fichiers photos ne répondant pas à des 
 critères paramétrés.
 
-**Voici le détail des cas de mise en quarantaine**
+**Voici des cas de mise en quarantaine:**
 
 Mise à jour de fichiers photos
 ******************************
@@ -146,11 +153,11 @@ ajoutées à l'application.
 	   :align: center 
 
 Les images ajoutées identifiées comme existantes sont présentées, 
-à gauche la version ajoutée; à droite la version déjà dans la base.
+à gauche la version ajoutée; à droite la version déjà dans la :term:`base`.
 
 Trois choix sont alors proposés à l’utilisateur:
 
-  * Ajouter le fichier comme nouveau document dans la base
+  * Ajouter le fichier comme nouveau document dans la :term:`base`
   * Rejeter le fichier
   * Remplacer le fichier existant
 
@@ -168,7 +175,7 @@ Fichiers à multiples versions
 ******************************
 D’autres versions d’un même fichier peuvent déjà être en attente en quarantaine.
 
-Cliquer sur « Voir/Cacher ».
+  * Cliquer sur « Voir/Cacher ».
 
 Choisir ensuite quelle version en quarantaine à ajouter, rejeter ou substituer.
 
@@ -178,7 +185,8 @@ Choisir ensuite quelle version en quarantaine à ajouter, rejeter ou substituer.
 	   :alt: alternate text
 	   :align: center 
 	   
-Un fichier en quarantaine peut être identifié à plusieurs documents dans la base.
+Un fichier en quarantaine peut être identifié à plusieurs documents dans 
+la :term:`base`.
 
 .. image:: ../../images/Upload-quarantaine-multiples2.jpg
 	   :height: 250 px
@@ -190,7 +198,7 @@ Les possibilités:
 
   * Choisir d’ajouter comme une nouvelle version, rejeter ou :
   * Cliquer sur le menu déroulant « Document à substituer »
-  * Choisir un des documents identifiés dans la base de données
+  * Choisir un des documents identifiés dans la :term:`base`
   * Enfin, cliquer sur la flèche verte.
 
 *Astuce: Traiter en lot*
@@ -218,7 +226,7 @@ Une fenêtre s’ouvre.
   enregistrements pour chaque fichier en quarantaine
 * Cliquer « Substituer quand possible ou ajouter les documents bloqués » 
   permet de substituer tous les fichiers uniques en quarantaines et uniques 
-  dans la base.
+  dans la :term:`base`.
 
 La quarantaine permet aussi d’isoler des nouveaux fichiers ne répondant pas à 
 des critères.
@@ -234,7 +242,7 @@ L’onglet de la quarantaine se vide.
 Fichiers non conformes
 **********************
 
-Si des critères ont été définis dans la structure de base concernant des 
+Si des critères ont été définis dans la structure concernant des 
 caractéristiques attendues pour des fichiers images ont été définit certaines 
 images peuvent être mises en quarantaine.
 Ces critères peuvent être des critères de dimensions spatiales, d’espaces 

@@ -1,7 +1,9 @@
+
 ﻿Editer
 =======
 .. toctree::
    :maxdepth: 3
+
    
 
 Edition des documents
@@ -130,7 +132,7 @@ Editer à partir du thésaurus
 ****************************
  
 L’onglet Thésaurus permet à l’utilisateur d’indexer rapidement à partir des 
-termes contenus dans le thésaurus associé à la base.
+termes contenus dans le thésaurus associé à la :term:`base`.
 Les saisies sont assistées pour les champs qui ont été liés à des branches de 
 thésaurus.
 
@@ -158,7 +160,7 @@ thésaurus.
 
 
 Editer à partir des valeurs suggérées
-************************************
+*************************************
 
 Si des valeurs suggérées ont été définies pour le champs, la liste apparaît 
 sous forme de menu contextuel dans la fenêtre à gauche du nom du champs.
@@ -185,7 +187,7 @@ sous forme de menu contextuel dans la fenêtre à gauche du nom du champs.
 
 
 Utiliser l'onglet Presse Papier
-*****************************************
+*******************************
 
 * -> Cliquer sur l'onglet Presse Papier
 
@@ -273,7 +275,7 @@ d'éditer en lots ces notices de reportage.
 
 
 Editer Les notices de reportages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 En mode recherche reportage 
 
@@ -296,7 +298,7 @@ Editer un reportage et son contenu
 ou 
 
 * -> Cliquer sur Editer depuis la barre d'action locale du reportage quand 
-celui ci est dans la zone de travail.
+  celui ci est dans la zone de travail.
 
 * => La fenêtre Editer s'ouvre
 
@@ -341,5 +343,5 @@ documents sélectionnés.
 * -> Cliquer sur Valider pour enregistrer les modifications ou poursuivre 
      l’indexation.
 
-
+Test
 

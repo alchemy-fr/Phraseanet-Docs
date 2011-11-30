@@ -11,6 +11,11 @@
    Manuel/Exporter
    Manuel/Actions
    Manuel/Paniers
+   Manuel/Push
+   Manuel/Publier
+   Manuel/Bridge
+   Manuel/Statistiques
+>>>>>>> branch 'master' of https://github.com/alchemy-fr/Phraseanet-Docs.git
    
 
 

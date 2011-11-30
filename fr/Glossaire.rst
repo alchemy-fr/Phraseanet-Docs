@@ -23,8 +23,8 @@ Glossaire
     Une métadonnée est littéralement une donnée sur une donnée. 
     Plus précisément, c'est un ensemble structuré d'informations décrivant une 
     ressource quelconque. Les métadonnées sont contenues à l’intérieur du 
-    fichier. L’IPTC le XMP et l’EXIF sont des métadonnées que l’on 
-    trouve dans un fichier JPEG par exemple.
+    fichier. L’:term:`IPTC` le :term:`XMP` et l’:term:`EXIF` sont des normes de 
+    métadonnées que l’on trouve utilisées dans un fichier JPEG par exemple.
     Les métadonnées peuvent être exploitées selon leur type, en lecture seule 
     ou en lecture/écriture.
 
@@ -41,12 +41,12 @@ Glossaire
     (en XML), et de ses sous résolutions.
 
   Base
-    Une base Phraseanet IV est un containeur de type MySQL (instance de base de 
+    Une base Phraseanet est un containeur de type MySQL (instance de base de 
     donnée). Une base dispose entre autres d’une structure documentaire « champs 
     d’indexation » et de façon plus générale de certains réglages. Une base de 
-    données peut contenir une ou plusieurs Collections Phraseanet IV qui 
+    données peut contenir une ou plusieurs Collections Phraseanet qui 
     reprendront les réglages de la base. La notion de base est surtout mise en 
-    avant dans Phraseanet IV Administration, Thesaurus
+    avant dans Phraseanet Administration, Thesaurus
 
   Collection
     Une collection est un sous ensemble d'une base. Elles permettent de mettre
@@ -70,20 +70,20 @@ Glossaire
     format de transmission des documents (textes, images, sons, multimédia) émis 
     par les agences de presse.
     
-    Se référer à : `IPTC <http://www.iptc.org>`_
+    .. seealso:: http://www.iptc.org
 
   XMP
     Extensible Metadata Platform (format de métadonnées) 
     Le XMP est un format de métadonnées permettant de décrire des fichiers 
     de type PDF, images ou graphiques
 
-    Se référer à : `XMP <http://fr.wikipedia.org/wiki/Extensible_Metadata_Platform>`_
+    .. seealso:: https://www.adobe.com/products/xmp/
 
   EXIF
     EXchangeable Image File. Métadonnées d'ordre technique contenues
     dans les fichiers image.
 
-    Se référer à : `EXIF <http://www.exif.org/>`_
+    .. seealso:: http://www.exif.org/
 
   Filigrane
     Marquage de l’image de choix à la volée selon le profil de l’utilisateur 
