@@ -10,6 +10,7 @@
    Manuel/Editer
    Manuel/Exporter
    Manuel/Actions
+   Manuel/Paniers
    
 
 
