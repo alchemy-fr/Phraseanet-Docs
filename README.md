@@ -10,3 +10,5 @@ easy_install sphinx
 make html
 ```
 
+See http://sphinx.pocoo.org/ for documentation
+

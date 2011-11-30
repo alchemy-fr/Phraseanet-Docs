@@ -132,7 +132,7 @@ Editer à partir du thésaurus
 ****************************
  
 L’onglet Thésaurus permet à l’utilisateur d’indexer rapidement à partir des 
-termes contenus dans le thésaurus associé à la base.
+termes contenus dans le thésaurus associé à la :term:`base`.
 Les saisies sont assistées pour les champs qui ont été liés à des branches de 
 thésaurus.
 
@@ -298,7 +298,7 @@ Editer un reportage et son contenu
 ou 
 
 * -> Cliquer sur Editer depuis la barre d'action locale du reportage quand 
-celui ci est dans la zone de travail.
+  celui ci est dans la zone de travail.
 
 * => La fenêtre Editer s'ouvre
 

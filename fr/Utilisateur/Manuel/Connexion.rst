@@ -23,7 +23,7 @@ L'écran *Nouvel utilisateur* s'ouvre :
   * Saisir son Identifiant (minimum 5 lettres).
   * Saisir son mot de passe.
   * Compléter les zones d'identité.
-  * Cocher les cases en regard des Base/Collection de données de documents 
+  * Cocher les cases en regard des :term:`base`/Collection de documents 
     souhaitées.
   * Cliquer sur le bouton Valider.
 
@@ -71,10 +71,12 @@ vers un serveur FTP de l’utilisateur.
 
   * Saisir ou modifier les informations et cliquer sur "Valider".
 
-*Accès aux bases/collections*
+*Accès aux :term:`bases <base>`/collections*
 
-  * Faire une demande pour accéder à de nouvelles bases/collections de documents et 
-    d'en visualiser l’état. 
+Faire une demande pour accéder à de nouvelles :term:`bases <base>`/collections 
+de documents et d'en visualiser l’état. 
+Cocher une ou plusieurs cases pour demander l'accès à de nouvelles 
+:term:`bases <base>` / Collections.
 
   * Cocher une ou plusieurs cases pour demander l'accès à de nouvelles Bases/
     Collections.

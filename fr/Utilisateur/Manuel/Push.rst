@@ -176,8 +176,8 @@ La nouvelle recherche enregistrée est désormais disponible.
 * Sélectionner des utilisateurs à partir de la liste des utilisateurs. 
 
 * Choisir à l’aide de la case à cocher qui se trouve en fin de ligne si les 
-utilisateurs sélectionnés pourront ou non télécharger les documents sur la 
-sélection proposée. 
+  utilisateurs sélectionnés pourront ou non télécharger les documents sur la 
+  sélection proposée. 
 
 .. note:: Cette option permet de donner uniquement sur la sélection l’accès 
           au téléchargement des documents à des utilisateurs n’ayant "normalement" pas 

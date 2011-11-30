@@ -40,7 +40,7 @@ des Reportages depuis la zone des Résultats ou depuis la zone des paniers.
 	   :align: center 
 
 L'export peut être effectué sur des lots de documents, en provenance 
-de plusieurs collections ou plusieurs bases de données différentes, sur 
+de plusieurs collections ou plusieurs :term:`bases <base>` différentes, sur 
 lesquelles l'utilisateur ne dispose peut-être pas de droits d'export.
 Dans ce cas, le nombre de documents sur lequel l'export est possible 
 est indiqué.

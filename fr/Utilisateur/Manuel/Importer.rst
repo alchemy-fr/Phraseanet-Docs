@@ -152,12 +152,12 @@ ajoutées à l'application.
 	   :alt: alternate text
 	   :align: center 
 
-Les images ajoutées identifiées comme existantes sont présentées: à gauche la 
-version ajoutée; à droite la version déjà dans la base.
+Les images ajoutées identifiées comme existantes sont présentées, 
+à gauche la version ajoutée; à droite la version déjà dans la :term:`base`.
 
 Trois choix sont alors proposés à l’utilisateur:
 
-  * Ajouter le fichier comme nouveau document dans la base
+  * Ajouter le fichier comme nouveau document dans la :term:`base`
   * Rejeter le fichier
   * Remplacer le fichier existant
 
@@ -185,7 +185,8 @@ Choisir ensuite quelle version en quarantaine à ajouter, rejeter ou substituer.
 	   :alt: alternate text
 	   :align: center 
 	   
-Un fichier en quarantaine peut être identifié à plusieurs documents dans la base.
+Un fichier en quarantaine peut être identifié à plusieurs documents dans 
+la :term:`base`.
 
 .. image:: ../../images/Upload-quarantaine-multiples2.jpg
 	   :height: 250 px
@@ -197,7 +198,7 @@ Les possibilités:
 
   * Choisir d’ajouter comme une nouvelle version, rejeter ou :
   * Cliquer sur le menu déroulant « Document à substituer »
-  * Choisir un des documents identifiés dans la base de données
+  * Choisir un des documents identifiés dans la :term:`base`
   * Enfin, cliquer sur la flèche verte.
 
 *Astuce: Traiter en lot*
@@ -225,7 +226,7 @@ Une fenêtre s’ouvre.
   enregistrements pour chaque fichier en quarantaine
 * Cliquer « Substituer quand possible ou ajouter les documents bloqués » 
   permet de substituer tous les fichiers uniques en quarantaines et uniques 
-  dans la base.
+  dans la :term:`base`.
 
 La quarantaine permet aussi d’isoler des nouveaux fichiers ne répondant pas à 
 des critères.
@@ -241,7 +242,7 @@ L’onglet de la quarantaine se vide.
 Fichiers non conformes
 **********************
 
-Si des critères ont été définis dans la structure de base concernant des 
+Si des critères ont été définis dans la structure concernant des 
 caractéristiques attendues pour des fichiers images ont été définit certaines 
 images peuvent être mises en quarantaine.
 Ces critères peuvent être des critères de dimensions spatiales, d’espaces 
