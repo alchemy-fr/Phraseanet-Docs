@@ -14,19 +14,24 @@ distribue Phraseanet depuis 2005.
 Elle fournit de nombreux services autour de la solution: contrats de support, 
 hébergement, formation, aide à l'installation...
 
+Pour plus d'informations, voici notre site web: `www.alchemy.fr <http://www.alchemy.fr/>`_ 
+
 Qu'est ce que Phraseanet?
 *************************
-Phraseanet est la solution phare d'Alchemy, une solution full web de gestion de 
-photothèques/médiathèques 
-qui permet aux entreprises, 
-collectivités et photographes de gérer leurs documents multimédia.
-Phraseanet gère aussi bien les images que les vidéos, les documents audio et PDF. 
-Appelée aussi Digital Asset Management.
+.. topic:: En bref
+
+    Phraseanet est la solution phare d'Alchemy, une solution full web de gestion de 
+    photothèques/médiathèques, appelée aussi solution de Digital Asset Management*, 
+    qui permet aux entreprises, collectivités et photographes de gérer leurs documents 
+    multimédia.
+
+    Phraseanet gère aussi bien les images que les vidéos, les documents audio et PDF. 
+
 Depuis 2010, Phraseanet est une solution Open Source distribuée sous licence 
 GNU GPL v3.
 Phraseanet est une application web: les utilisateurs n'ont besoin que d'un 
-navigateur web 
-standard (IE, Firefox, Safari, Chrome...) pour se connecter à leur photothèque.
+navigateur web standard (IE, Firefox, Safari, Chrome...) pour se connecter à 
+leur photothèque.
 La solution est compatible Windows, Mac, Linux.
 
 *Phraseanet en quelques dates:*
@@ -47,7 +52,8 @@ La solution est compatible Windows, Mac, Linux.
     la quarantaine dans le module d’Upload (gestion des doublons)...
 	
   * Sortie de la version 3.5  au mois d’octobre  2011. Nouveautés : moteur de 
-    recherche Sphinx, 1ère version d’API, le Bridge, nouvelle gestion des paniers et des publications,...
+    recherche Sphinx, 1ère version d’API, le Bridge, nouvelle gestion des paniers et 
+    des publications,...
 
 Présentation des modules
 ------------------------
@@ -70,16 +76,22 @@ Upload
 de votre disque dur. 
 Vous choisissez la collection dans laquelle vous souhaitez voir vos documents 
 archivés, vous les réordonnez éventuellement, puis effectuez l’import. 
-Ce gestionnaire de téléchargement vous permet de transfér vos documents 
+Ce gestionnaire de téléchargement vous permet de transférer vos documents 
 depuis un navigateur web à la vitesse d’un transfert FTP !
+
+:doc:`Voici la documentation complète qui vous expliquera comment importer des 
+documents dans votre base Phraseanet <Manuel/Importer>`
 
 Production & Classic
 ********************
-*Phraseanet Production* est le module le plus important. Il permet d’éditer, 
-d’organiser, de partager vos documents. 
+*Phraseanet Production* est le module le plus important. Il permet de:
+:doc:`rechercher <Manuel/Rechercher>`, :doc:`d'éditer <Manuel/Editer>`, 
+:doc:`de visualiser et d'organiser <Manuel/Afficher>`, 
+:doc:`de partager <Manuel/Push>` vos documents. 
 Cette interface est dédiée aux gestionnaires et contributeurs. 
+
 *Phraseanet Classic* est une vue dédiée aux utilisateurs finaux, permettant de 
-visualiser simplement les documents. 
+:doc:`consulter simplement les documents <Manuel/Afficher>`.
 
 Administration
 **************
@@ -94,12 +106,12 @@ très simple d’utilisation.
 
 Report
 ******
-Véritable application de statistiques, *Phraseanet Report* présente de très 
-nombreux détails sur l’activité de votre base Phraseanet : quelles ont été les 
-questions les plus posées, quels sont les utilisateurs les plus actifs sur le 
-système, et des informations telles que le nombre de connexions, le nombre de 
-téléchargements, le nombre de connexions ou de téléchargement par plateformes et 
-navigateurs, etc.
+Véritable application de :doc:`Statistiques <Manuel/Statistiques>`, *Phraseanet Report* 
+présente de très nombreux détails sur l’activité de votre base Phraseanet: 
+quelles ont été les questions les plus posées, quels sont les utilisateurs les 
+plus actifs sur le système, et des informations telles que le nombre de connexions, 
+le nombre de téléchargements, le nombre de connexions ou de téléchargement par 
+plateformes et navigateurs, etc.
 
 Thesaurus
 *********
@@ -110,16 +122,15 @@ Il représente un vrai plus dans l’utilisation d’une solution de photothèqu
 
 Lightbox
 ********
-Interface collaborative, *Phraseanet Lightbox* permet entre autres de connaître 
-les avis d’utilisateurs sur des documents. Elle permet aussi de pouvoir visualiser 
-et/ou télécharger des documents spécifiques envoyés par un autre utilisateur 
+Interface collaborative, *Phraseanet Lightbox* permet entre autres de :doc:`connaître 
+les avis d’utilisateurs sur des documents <Manuel/Push>`. Elle permet aussi de pouvoir 
+visualiser et/ou télécharger des documents spécifiques envoyés par un autre utilisateur 
 Phraseanet.
 
 Présentation des interfaces
 ---------------------------
 Menu général
 ************
-
 Phraseanet s'ouvre.
 La dernière application utilisée pour quitter se lance par défaut.
 Toutes les applications proposent en haut de la fenêtre la même barre de navigation.
@@ -133,10 +144,10 @@ vous avez accès.
    :alt: alternate text
    :align: center
 
-En cliquant sur le Nom d’une application, le navigateur internet lance celle-ci 
+En cliquant sur le nom d’une application, le navigateur internet lance celle-ci 
 dans un nouvel onglet.
 
-Dans la partie supérieure droite, se trouvent  vos informations de compte, 
+Dans la partie supérieure droite se trouvent  vos informations de compte, 
 l’aide en ligne et le lien pour se déconnecter.
 
 Présentation des zones dans l'interface de Production
@@ -149,13 +160,14 @@ Nous allons vous présenter ci-dessous l'interface de *Production*.
    :alt: alternate text
    :align: center
 
-Les zones principales dans Production
+Les zones principales dans l'interface *Phraseanet Production*
 
-  * La zone 1 représente l'espace de recherche: Entrez un mot clé
-  * La zone 2 c'est la zone d'affichage des réponses
-  * La zone 3 concerne les paniers: votre sélection de documents
-  * La zone 4 est la palette des actions. Elle permet d'effectuer des actions 
-    sur les documents: éditer, supprimer, partager,...
+  * La zone 1 représente l'espace de :doc:`recherche <Manuel/Rechercher>`: Entrez un mot clé
+  * La zone 2 c'est la zone :doc:`d'affichage des réponses <Manuel/Afficher>`
+  * La zone 3 concerne les :doc:`Paniers <Manuel/Paniers>`: votre sélection de documents
+  * La zone 4 est la :doc:`Palette des Actions <Manuel/Actions>`. Elle permet d'effectuer 
+    des actions sur les documents: :doc:`éditer <Manuel/Editer>`, :doc:`supprimer <Manuel/Actions>`, 
+    :doc:`partager <Manuel/Push>`,...
 
 
 

@@ -2,16 +2,18 @@
 =============
 .. toctree::
    :maxdepth: 3
-   
-De nombreuses statistiques sont accessibles dans Phraseanet. Dans l'interface 
-*Phraseanet Production*, elles sont directement visualisables dans l'onglet 
-"Popularité" du document (voir section :doc:`Afficher <Afficher>`). Elles font 
-également l'objet d'une interface dédiée, *Phraseanet Report*, dans laquelle 
-l'utilisateur peut trouver un tableau de bord général permettant de voir en un 
-coup d'oeil l'activité du site, mais aussi des rapports plus détaillés.
 
-En effet, cette application permet d'exécuter des statistiques sur une période, 
-sur un type d'information et sur pour une ou plusieurs bases de données et collections.
+.. topic:: L'essentiel
+
+    De nombreuses statistiques sont accessibles dans Phraseanet. Dans l'interface 
+    *Phraseanet Production*, elles sont directement visualisables dans l'onglet 
+    "Popularité" du document. (voir section :doc:`Afficher <Afficher>`). Elles 
+    font également l'objet d'une interface dédiée, *Phraseanet Report*, dans 
+    laquelle l'utilisateur peut trouver un tableau de bord général permettant 
+    de voir en un coup d'oeil l'activité du site, mais aussi des rapports plus 
+    détaillés. En effet, cette application permet d'exécuter des statistiques 
+    sur une période, sur un type d'information et sur pour une ou plusieurs bases 
+    de données et collections.
 
 Les rapports sont classés dans 4 onglets: 
 
