@@ -164,13 +164,13 @@ les plus fréquemment utilisés pour les connexions.
 En cliquant sur l'un de ces types de rapport, les statistiques 
 s'affichent immédiatement.
 
-*Exemple avec un rapport Plateformes et navigateurs:*
-
-  .. image:: ../../images/Statistiques-Connexions3.jpg
+  .. figure:: ../../images/Statistiques-Connexions3.jpg
      :height: 380 px
      :width: 500 px
      :alt: alternate text
      :align: center
+	 
+	 Exemple avec un rapport Plateformes et navigateurs
 
 Téléchargements
 ---------------
@@ -213,7 +213,6 @@ est présent dans un champs a été téléchargé sur la période.
 
 Activité du Site
 ----------------
-
 Ce dernier onglet se présente également de la même manière que 
 les deux précédents. 
 L'utilisateur doit aussi choisir la période et la :term:`base`, ensuite 
