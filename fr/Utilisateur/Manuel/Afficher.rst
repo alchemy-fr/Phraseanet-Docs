@@ -13,15 +13,26 @@
     interface de visualisation et de recherche des documents.
 
 
-.. image:: ../../images/Production-general.jpg
-	 :height: 400 px
+.. figure:: ../../images/Production-general.jpg
+	 :height: 430 px
 	 :width: 650 px
 	 :alt: alternate text
-	 :align: center 
+	 :align: center
+
+	 *Interface Phraseanet Production*
+
+.. note:: La zone d'affichage des résultats, dans *Prod* (ci-dessus) ou dans 
+          *Classic* (ci-dessous), est la zone centrale où apparaissent les images.
+
+.. figure:: ../../images/Classic-interface2.jpg
+	 :height: 430 px
+	 :width: 650 px
+	 :alt: alternate text
+	 :align: center
+
+	 *Interface Phraseanet Classic*
 
 
-.. note:: La zone d'affichage des résultats, dans *Prod* (comme ci-dessus) ou dans 
-          *Classic*, est la zone centrale où apparaissent les images.
 
 Présentation de la zone d'affichage
 -----------------------------------
@@ -47,7 +58,7 @@ document qui est affiché.
 gauche:**
 
   .. image:: ../../images/Affichage-nomcoll.jpg
-	   :height: 250 px
+	   :height: 230 px
 	   :width: 530 px
 	   :alt: alternate text
 	   :align: center 
@@ -62,8 +73,8 @@ Il est possible de mettre en page l’affichage de la description, la liste et
 le nom des champs affichés (voir Phraseanet Administration).
 
   .. image:: ../../images/Affichage-surlignagemc.jpg
-	   :height: 400 px
-	   :width: 530 px
+	   :height: 380 px
+	   :width: 510 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -149,8 +160,8 @@ Pour sélectionner tous les documents d’une recherche selon leur type, cliquer
 sur un des liens:
 
   .. image:: ../../images/Affichage-selection6a.jpg
-	   :height: 20 px
-	   :width: 370 px
+	   :height: 18 px
+	   :width: 350 px
 	   :alt: alternate text
 	   :align: center 
 

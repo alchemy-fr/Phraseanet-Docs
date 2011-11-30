@@ -14,14 +14,15 @@ distribue Phraseanet depuis 2005.
 Elle fournit de nombreux services autour de la solution: contrats de support, 
 hébergement, formation, aide à l'installation...
 
-Pour plus d'informations, voici notre site web: `www.alchemy.fr <http://www.alchemy.fr/>`_ 
+Pour plus d'informations sur l'entreprise, voici le site corporate: 
+`www.alchemy.fr <http://www.alchemy.fr/>`_ 
 
 Qu'est ce que Phraseanet?
 *************************
 .. topic:: En bref
 
     Phraseanet est la solution phare d'Alchemy, une solution full web de gestion de 
-    photothèques/médiathèques, appelée aussi solution de Digital Asset Management*, 
+    photothèques/médiathèques, appelée aussi solution de *Digital Asset Management*, 
     qui permet aux entreprises, collectivités et photographes de gérer leurs documents 
     multimédia.
 
@@ -34,41 +35,44 @@ navigateur web standard (IE, Firefox, Safari, Chrome...) pour se connecter à
 leur photothèque.
 La solution est compatible Windows, Mac, Linux.
 
+Pour plus d'informations sur Phraseanet, voici le site produit: 
+`www.phraseanet.com <http://www.phraseanet.com/>`_
+
 *Phraseanet en quelques dates:*
 
   * 2005 : Lancement de Phraseanet 1.0 en Avril
   * 2007 : Sortie de la version 2.1 en Septembre, avec une nouvelle interface, 
-    Thesaurus. 
+    *Thesaurus*. 
 	
-  * 2008 : Sortie de la version 2.2, avec la nouvelle application Check it.
+  * 2008 : Sortie de la version 2.2, avec la nouvelle application de validation.
   * 2010 : Sortie de la version 3.0 en Mars, en Open Source, avec le redesign 
-    de Prod, et l’ajout d’Upload et de Lightbox
+    de *Prod*, et l’ajout d’*Upload* et de *Lightbox*
 	
   * Sortie de la version 3.0.3 en Juillet, avec un renouveau de l’interface de 
-    Report. 
+    *Report*. 
 	
   * 2011:  Sortie de la version 3.1 au mois de février 2011. Nouvelle interface 
-    de Lightbox, compatible smartphones, le nouveau gestionnaire de commandes ; 
+    de *Lightbox*, compatible smartphones, le nouveau gestionnaire de commandes ; 
     la quarantaine dans le module d’Upload (gestion des doublons)...
 	
-  * Sortie de la version 3.5  au mois d’octobre  2011. Nouveautés : moteur de 
-    recherche Sphinx, 1ère version d’API, le Bridge, nouvelle gestion des paniers et 
+  * Sortie de la version 3.5 fin 2011. Nouveautés: moteur de 
+    recherche Sphinx, 1ère version d’API, le *Bridge*, nouvelle gestion des paniers et 
     des publications,...
 
 Présentation des modules
 ------------------------
 Phraseanet est un système complet pour l’archivage, l’organisation et la 
 diffusion de vos documents multimédia. 
+
 La solution se compose des 7 interfaces suivantes, accessibles à partir d’un 
 menu principal:
 
-- Phraseanet Upload
-- Phraseanet Production
-- Phraseanet Classic
-- Phraseanet Administration 
-- Phraseanet Report
-- Phraseanet Thesaurus
-- Phraseanet Lightbox
+* Phraseanet `Upload`_
+* Phraseanet `Production & Classic`_
+* Phraseanet `Administration`_
+* Phraseanet `Report`_
+* Phraseanet `Thesaurus`_
+* Phraseanet `Lightbox`_
 
 Upload
 ******
@@ -79,8 +83,7 @@ archivés, vous les réordonnez éventuellement, puis effectuez l’import.
 Ce gestionnaire de téléchargement vous permet de transférer vos documents 
 depuis un navigateur web à la vitesse d’un transfert FTP !
 
-:doc:`Voici la documentation complète qui vous expliquera comment importer des 
-documents dans votre base Phraseanet <Manuel/Importer>`
+:doc:`Comment importer des documents dans votre base Phraseanet <Manuel/Importer>`
 
 Production & Classic
 ********************
