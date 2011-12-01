@@ -1,17 +1,19 @@
 ﻿Statistiques
 =============
+.. toctree::
+   :maxdepth: 3
 
-De nombreuses statistiques sont accessibles dans Phraseanet. 
-Dans l'interface *Production*, elles sont directement visualisables dans 
-l'onglet "Popularité" du document (voir section :doc:`Afficher <Afficher>`). 
+.. topic:: L'essentiel
 
-Elles font également l'objet d'une interface dédiée, *Report*, dans laquelle 
-l'utilisateur peut trouver un tableau de bord général permettant de voir en un 
-coup d'oeil l'activité du site, mais aussi des rapports plus détaillés.
-
-En effet, cette application permet d'exécuter des statistiques sur une période, 
-sur un type d'information et sur pour une ou plusieurs :term:`bases <base>` et 
-collections.
+    De nombreuses statistiques sont accessibles dans Phraseanet. Dans l'interface 
+    *Phraseanet Production*, elles sont directement visualisables dans l'onglet 
+    "Popularité" du document. (:doc:`voir section Afficher <Afficher>`). Elles 
+    font également l'objet d'une interface dédiée, *Phraseanet Report*, dans 
+    laquelle l'utilisateur peut trouver un tableau de bord général permettant 
+    de voir en un coup d'oeil l'activité du site, mais aussi des rapports plus 
+    détaillés. En effet, cette application permet d'exécuter des statistiques 
+    sur une période, sur un type d'information et sur pour une ou plusieurs bases 
+    de données et collections.
 
 Les rapports sont classés dans 4 onglets: 
 
@@ -157,6 +159,8 @@ s'affichent immédiatement.
   .. image:: ../../images/Statistiques-Connexions3.jpg
      :alt: alternate text
      :align: center
+	 
+	 Exemple avec un rapport Plateformes et navigateurs
 
 Téléchargements
 ---------------
@@ -197,7 +201,6 @@ est présent dans un champs a été téléchargé sur la période.
 
 Activité du Site
 ----------------
-
 Ce dernier onglet se présente également de la même manière que 
 les deux précédents. 
 L'utilisateur doit aussi choisir la période et la :term:`base`, ensuite 

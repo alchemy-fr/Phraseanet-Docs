@@ -9,20 +9,22 @@
 Edition des documents
 ---------------------
 
-Cet action permet d'éditer la ou les fiches descriptives des Enregistrements, 
-des Reportages, des Paniers, pour saisir, compléter ou modifier le contenu des 
-champs.
-Il est possible d’éditer à l’unité ou en lots et sous lots des 
-Enregistrements, des Paniers, des Reportages depuis la zone des résultats ou
-depuis la zone des paniers 
-La fenêtre est découpée en 3 espaces :
-La barre de défilement affiche les documents sélectionnés. La taille de la 
-zone est modifiable
-La taille des vignettes est modifiable en déplaçant le curseur.
-La zone inférieure affiche la liste des champs descripteurs, 
-la liste des status, et réserve un espace pour afficher le contenu du champs 
-actif.
-La zone inférieure droite affiche des onglets d’assistance à l’indexation
+.. topic:: L'essentiel
+
+    Cette action permet d'éditer la ou les fiches descriptives des Enregistrements, 
+    des Reportages, des Paniers, pour saisir, compléter ou modifier le contenu des 
+    champs.
+    Il est possible d’éditer à l’unité ou en lots et sous lots des 
+    Enregistrements, des Paniers, des Reportages depuis la zone des résultats ou
+    depuis la zone des paniers 
+    La fenêtre est découpée en 3 espaces :
+    La barre de défilement affiche les documents sélectionnés. La taille de la 
+    zone est modifiable
+    La taille des vignettes est modifiable en déplaçant le curseur.
+    La zone inférieure affiche la liste des champs descripteurs, 
+    la liste des status, et réserve un espace pour afficher le contenu du champs 
+    actif.
+    La zone inférieure droite affiche des onglets d’assistance à l’indexation.
 
 .. image:: ../../images/Prod-Editer.jpg
 	   :alt: alternate text

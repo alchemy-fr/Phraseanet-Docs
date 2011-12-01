@@ -3,27 +3,41 @@
 .. toctree::
    :maxdepth: 3
    
+.. topic:: L'essentiel
 
-Visualisation des documents dans Phraseanet
--------------------------------------------
-**Vous pouvez visualiser vos images et autres documents à partir des interfaces 
-Phraseanet Production soit Classic**.
+    Vous pouvez visualiser vos images et autres documents à partir des interfaces 
+    *Phraseanet Production* soit *Classic*.
+	
+    *Production* est une interface dédiée à la consultation, à la recherche, 
+    gestion et à l'édition des documents, tandis que *Classic* n'est qu'une simple 
+    interface de visualisation et de recherche des documents.
 
-*Production* est une interface dédiée à la consultation, à la recherche, gestion 
-et à l'édition des documents, alors que *Classic* n'est qu'une simple interface 
-de visualisation et de recherche des documents.
 
-  .. image:: ../../images/Production-general.jpg
-	   :alt: alternate text
-	   :align: center 
-	   
-.. note:: La zone d'affichage des résultats, dans Prod (comme ci-dessus) ou dans 
-  Classic, est la zone centrale où apparaissent les images.
+.. figure:: ../../images/Production-general.jpg
+	 :height: 430 px
+	 :width: 650 px
+	 :alt: alternate text
+	 :align: center
+
+	 *Interface Phraseanet Production*
+
+.. note:: La zone d'affichage des résultats, dans *Prod* (ci-dessus) ou dans 
+          *Classic* (ci-dessous), est la zone centrale où apparaissent les images.
+
+.. figure:: ../../images/Classic-interface2.jpg
+	 :height: 430 px
+	 :width: 650 px
+	 :alt: alternate text
+	 :align: center
+
+	 *Interface Phraseanet Classic*
+
+
 
 Présentation de la zone d'affichage
 -----------------------------------
-Dans Production:
-**Le bandeau supérieur donne le nombre de réponses et affiche les « pages » 
+Dans *Production*:
+**Le bandeau supérieur donne le nombre de réponses et affiche les "pages" 
 de réponses.**
 
   .. image:: ../../images/Affichage-pages.jpg
@@ -34,7 +48,7 @@ Il permet de se déplacer de pages en pages en cliquant sur le
 numéro de la page, d'aller en fin de sélection en cliquant sur *Suivant* et de 
 revenir en début en cliquant sur *Précédent*.
 
-Les vignettes sont surmontées par le contenu d'un champ (ici « Objet »). 
+Les vignettes sont surmontées par le contenu d'un champ (ici "Objet"). 
 Le choix de ce champ est paramétrable. Par défaut, c’est le nom d’origine du 
 document qui est affiché.
 
@@ -42,6 +56,8 @@ document qui est affiché.
 gauche:**
 
   .. image:: ../../images/Affichage-nomcoll.jpg
+	   :height: 230 px
+	   :width: 530 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -50,19 +66,21 @@ gauche:**
 **Passer le curseur sur une vignette pour afficher la description du document.**
 Cette description est composée de champs.
 
-*Pour modifier cette description, utiliser la fonction Editer.*
+Pour modifier cette description, utiliser la fonction :doc:`Editer <Editer>`.
 Il est possible de mettre en page l’affichage de la description, la liste et 
 le nom des champs affichés (voir Phraseanet Administration).
 
   .. image:: ../../images/Affichage-surlignagemc.jpg
+	   :height: 380 px
+	   :width: 510 px
 	   :alt: alternate text
 	   :align: center 
 	   
-Dans l'exemple, le mot « plage » est surligné car il a servi de critère de 
+Dans l'exemple, le mot "plage" est surligné car il a servi de critère de 
 recherche.
 
-**Se positionner sur la « Loupe » pour afficher l’image de choix, lancer la lecture 
-d’un fichier audio, afficher un « résumé » pour les séquences vidéos…**
+**Se positionner sur la "Loupe" pour afficher l’image de choix, lancer la lecture 
+d’un fichier audio, afficher un "résumé" pour les séquences vidéos…**
    
   .. image:: ../../images/Affichage-Loupe.jpg
 	   :alt: alternate text
@@ -89,7 +107,7 @@ deux possibilités:
 Sélectionner une vignette dans la zone des résultats, dans les paniers ou dans 
 les reportages en cliquant dans son cadre.
 La couleur de fonds de la vignette change. (La couleur de sélection peut être 
-modifiée dans les Préférences d'affichage, voir plus bas).
+modifiée dans les `Préférences d'affichage`_).
 
   .. image:: ../../images/Affichage-selection1.jpg
 	   :alt: alternate text
@@ -106,7 +124,7 @@ deux vignettes sont sélectionnées.*
 	   :alt: alternate text
 	   :align: center 
 
-**Pour sélectionner plusieurs vignettes «en discontinu»**, appuyer sur le bouton 
+**Pour sélectionner plusieurs vignettes "en discontinu"**, appuyer sur le bouton 
 Alt et cliquer successivement sur les vignettes à sélectionner.
 
   .. image:: ../../images/Affichage-selection3.jpg
@@ -115,7 +133,7 @@ Alt et cliquer successivement sur les vignettes à sélectionner.
 
 **Pour sélectionner plusieurs vignettes sur plusieurs pages de résultats**, 
 sélectionner d’abord les images sur une page, cliquer sur la page à atteindre, 
-maintenir enfoncer la touche « Alt » du clavier puis cliquer sur une vignette 
+maintenir enfoncer la touche "Alt" du clavier puis cliquer sur une vignette 
 de la nouvelle page de résultats.
 
   .. image:: ../../images/Affichage-selection5.jpg
@@ -128,6 +146,8 @@ Pour sélectionner tous les documents d’une recherche selon leur type, cliquer
 sur un des liens:
 
   .. image:: ../../images/Affichage-selection6a.jpg
+	   :height: 18 px
+	   :width: 350 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -140,8 +160,8 @@ La vue détaillée
 Lancer la vue détaillée en faisant un double clic sur une vignette depuis la zone 
 des résultats ou depuis la zone des paniers.
 
-Une fenêtre s’ouvre. Elle affiche la liste de documents sous forme de « bandeau 
-d’image » en haut.
+Une fenêtre s’ouvre. Elle affiche la liste de documents sous forme de "bandeau 
+d’image" en haut.
 
   * Elle affiche l’image de choix du document cliqué.
 
@@ -152,7 +172,7 @@ d’image » en haut.
     appartient dans la partie droite de la fenêtre.
 
 Cliquer sur une vignette pour afficher l’image de choix ou utiliser les flèches 
-« gauche » et « droite » du clavier.
+"gauche" et "droite" du clavier.
 
 Onglet Description
 ******************
@@ -165,9 +185,8 @@ les informations issues des champs remplis, tels que les mots clés, la légende
 	   :align: center 
 
 .. note:: Selon la configuration de la solution et l’existence d’un thesaurus 
-          attaché à la :term:`base`, certains mots clés de la légende 
-          sont «cliquables". Soulignés de pointillés, ils permettent de 
-          rebondir sur d'autres recherches.
+          attaché à la base, certains mots clés de la légende sont "cliquables". 
+          Soulignés de pointillés, ils permettent de rebondir sur d'autres recherches.
 		  
 Onglet Historique
 *****************
@@ -188,7 +207,7 @@ document en temps réel.
   * Les statistiques de visualisation montrent d’abord sous forme de courbe le 
     nombre total de visualisations.
 
-  * Le diagramme «Camembert» montre les sources d’accès au document.
+  * Le diagramme "Camembert" montre les sources d’accès au document.
 
   .. image:: ../../images/Affichage-vuedetaillee3.jpg
 	   :alt: alternate text
@@ -197,11 +216,13 @@ document en temps réel.
 Les statistiques de téléchargement affichent jour par jour le nombre de 
 téléchargements du document.
 
-Cliquer sur «Fermer» ou sur la touche «Echap» pour fermer la fenêtre.
+Cliquer sur "Fermer" ou sur la touche "Echap" pour fermer la fenêtre.
+
+.. note:: Pour des rapports de statistiques détaillés concernant votre base Phraseanet, 
+          rendez-vous sur la page consacrée aux :doc:`Statistiques <Statistiques>`. 
 
 Préférences d'affichage
 -----------------------
-
 **L'utilisateur peut, dans Production, régler ses préférences pour l'affichage 
 des résultats.**
 
@@ -226,7 +247,7 @@ Parmi ces paramètres, l'utilisateur peut:
     la case Iconographe ou Graphiste.
 
   * Choisir d’afficher les informations techniques des documents (affichage du 
-    « i »), ou cocher la case « afficher dans la notice » pour que les 
+    "i"), ou cocher la case "afficher dans la notice" pour que les 
     informations soient ajoutées sous la notice documentaire au survol.
 
   * Afficher ou non les icônes de typage des documents

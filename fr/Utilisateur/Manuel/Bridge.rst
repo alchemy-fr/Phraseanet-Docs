@@ -3,23 +3,27 @@
 .. toctree::
    :maxdepth: 3
 
-**Le Bridge Phraseanet permet de publier ses photos et autres documents multimédia 
-vers des sites extérieurs, tels que:**
+.. topic:: L'essentiel
 
-  * Flickr
-  * Youtube
-  * Dailymotion
+    Le Bridge Phraseanet permet de publier ses photos et autres documents multimédia 
+    vers des sites extérieurs, tels que:
 
-Pour publier des documents multimédia vers ces sites, il est d'abord nécessaire de 
-sélectionner des documents, puis de lier ou de connecter son compte Flickr, Youtube 
-ou Dailymotion, à Phraseanet, et enfin d'en effectuer la publication.
+    * Flickr
+    * Youtube
+    * Dailymotion
 
-Sélection 
+    Pour publier des documents multimédia vers ces sites, il est d'abord nécessaire de 
+    sélectionner des documents, puis de lier ou de connecter son compte `Flickr 
+    <http://www.flickr.com/>`_, `YouTube <http://www.youtube.com/>`_ 
+    ou `Dailymotion <http://www.dailymotion.com/>`_, à Phraseanet, et enfin d'en 
+    effectuer la publication.
+
+Sélection
 ---------
 
   * Sélectionner une ou plusieurs images dans *Phraseanet Production*. 
   
-  * Cliquer, dans la Palette des Actions, sur la flèche du bouton de "Push".
+  * Cliquer, dans la :doc:`Palette des Actions <Actions>`, sur la flèche du bouton de "Push".
 
 Deux choix sont proposés: "Bridge" et "Publier":
 
@@ -29,7 +33,7 @@ Deux choix sont proposés: "Bridge" et "Publier":
 
   * Cliquer sur "Bridge"
 
-Authentification 
+Authentification
 ----------------
 
 La fenêtre du Bridge s'ouvre:
@@ -42,7 +46,7 @@ La fenêtre du Bridge s'ouvre:
 	   :align: center
 	   
 Le site demande de s'authentifier, puis d'accorder la permission à Phraseanet de se 
-connecter. 
+connecter.
 
 Une fois connecté, Bridge récupère les informations existantes dans Flickr. Par 
 exemple, dans notre cas, les photos existantes sont présentes dans l'onglet "Photos", 

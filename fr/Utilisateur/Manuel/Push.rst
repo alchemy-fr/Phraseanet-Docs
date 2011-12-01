@@ -3,13 +3,19 @@
 .. toctree::
    :maxdepth: 3
    
-**On utilise le "Push" dans Phraseanet pour envoyer virtuellement des documents à
-un ou plusieurs destinataires.**
+.. topic:: L'essentiel
 
-En cliquant dans la palette des actions sur le "Push", Phraseanet offre la possibilité de:
-  * Envoyer des documents à des destinataires et éventuellement d'en demander la validation
-  * Publier
-  * Utiliser le :doc:`Bridge <Bridge>`
+    On utilise le "Push" dans Phraseanet pour envoyer virtuellement des documents à
+    un ou plusieurs destinataires.
+
+    En cliquant dans la :doc:`Palette des Actions <Actions>` sur le "Push", Phraseanet 
+    offre la possibilité de:
+
+    * Envoyer des documents à des destinataires et éventuellement d'en demander la validation
+
+    * Publier
+
+    * Utiliser le :doc:`Bridge <Bridge>`
   
   .. image:: ../../images/Push-general.jpg
 	   :alt: alternate text
