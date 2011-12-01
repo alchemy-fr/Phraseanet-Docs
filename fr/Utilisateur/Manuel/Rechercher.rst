@@ -7,12 +7,12 @@
 
     Dans *Production* et *Classic*, deux modes de recherche sont possibles:
 
-    La zone de **Recherche simple** permet d'effectuer des recherches simples en 
+    La zone de `Recherche simple`_ permet d'effectuer des recherches simples en 
     texte intégral dans les :term:`bases <base>`/Collections de documents.
 
-    **La Recherche avancée** permet d'effectuer des requêtes plus évoluées et de 
-    mettre en place un certain nombre de filtres sur les :term:`bases <base>` 
-    et collections.
+    La :doc:`Recherche avancée <Onglets>` permet d'effectuer des requêtes plus 
+    évoluées et de mettre en place un certain nombre de filtres sur les 
+    :term:`bases <base>` et collections.
 
     Phraseanet embarque deux moteurs de recherche (un moteur texte intégral et un 
     moteur thesaurus Le premier moteur est le moteur texte intégral. Il permet 

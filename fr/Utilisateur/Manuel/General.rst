@@ -22,7 +22,7 @@ Upload
 ******
 *Phraseanet Upload* vous permet d’importer vos documents multimédia à partir 
 de votre disque dur. 
-Vous choisissez la collection dans laquelle vous souhaitez voir vos documents 
+Vous choisissez la :term:`collection <Collection>` dans laquelle vous souhaitez voir vos documents 
 archivés, vous les réordonnez éventuellement, puis effectuez l’import. 
 Ce gestionnaire de téléchargement vous permet de transférer vos documents 
 depuis un navigateur web à la vitesse d’un transfert FTP !

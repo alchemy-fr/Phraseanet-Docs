@@ -79,6 +79,22 @@ Les documents s'affichent dans la fenêtre Résultats.
 
 Propositions
 ------------
+Cet Onglet sert à interpréter les requêtes qui sont faites par l’utilisateur et 
+lui renvoyer des propositions en relation avec le thesaurus, de façon à étendre 
+une recherche en remontant d’un ou plusieurs niveaux ou au contraire à l’affiner 
+en précisant la requête avec un terme plus précis.
+Le mot Justice est saisi dans zone de recherche.
+La fenêtre « Résultat » affiche les résultats.
+Apres avoir effectué une recherche cliquer sur Propositions
+L’onglet s’affiche, le thesaurus interprète la requête et affiche les propositions 
+ 
+  .. image:: ../../images/....jpg
+	   :height: 300 px
+	   :width: 500 px
+	   :alt: alternate text
+	   :align: center
+
+Chaque proposition est cliquable et permet de lancer une nouvelle recherche.
 
 
 Thesaurus
