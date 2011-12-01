@@ -9,7 +9,7 @@
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo']
+extensions = ['sphinx.ext.todo','sphinx.ext.autosummary']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['../_templates']
@@ -25,7 +25,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Phraseanet'
-copyright = u'2011, Phraseanet Team'
+copyright = u'2004-2011, <a href="http://www.alchemy.fr" target="_blank">Alchemy</a>'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -71,7 +71,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'nature'
+html_theme = 'phraseanet'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -79,7 +79,7 @@ html_theme = 'nature'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = ['../_templates/']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -138,7 +138,7 @@ html_static_path = ['../_static']
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
-#html_use_opensearch = ''
+html_use_opensearch = 'yes'
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None

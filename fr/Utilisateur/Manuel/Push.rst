@@ -12,8 +12,6 @@ En cliquant dans la palette des actions sur le "Push", Phraseanet offre la possi
   * Utiliser le :doc:`Bridge <Bridge>`
   
   .. image:: ../../images/Push-general.jpg
-	   :height: 200 px
-	   :width: 200 px
 	   :alt: alternate text
 	   :align: center
 
@@ -38,8 +36,6 @@ utilisateurs.
   (cliquer sur "`Valider`_").
 
   .. image:: ../../images/Push1.jpg
-	   :height: 220 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -70,8 +66,6 @@ d’utilisateurs si nécessaire. Désélectionner un utilisateur en cliquant à 
 sur la ligne (repasse au gris).
 
   .. image:: ../../images/Push-Diffuser1.jpg
-	   :height: 270 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -85,8 +79,6 @@ Pour passer à la prochaine étape, rendez-vous plus bas sur "`Envoi de la séle
 Le bandeau du haut vous indique le nombre d'utilisateurs.
 
   .. image:: ../../images/Push-Diffuser2.jpg
-	   :height: 40 px
-	   :width: 550 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -114,16 +106,12 @@ Vous avez la possibilité de:
   * Cliquer sur Valider.
 
   .. image:: ../../images/Push-Diffuser3.jpg
-	   :height: 90 px
-	   :width: 250 px
 	   :alt: alternate text
 	   :align: center
 
 L’onglet propose de saisir les coordonnées du nouvel utilisateur.
 
   .. image:: ../../images/Push-Diffuser4.jpg
-	   :height: 350 px
-	   :width: 350 px
 	   :alt: alternate text
 	   :align: center
 
@@ -156,8 +144,6 @@ inclus lors de l’utilisation d’une des recherches enregistrées.
 * Choisir dans les menus les critères de filtres à utiliser. 
 
   .. image:: ../../images/Push-Diffuser5.jpg
-	   :height: 150 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center
 
@@ -203,8 +189,6 @@ Le destinataire peut voir, s'il est authentifié dans Phraseanet, ses paniers et
 validations en cliquant sur l'onglet Lightbox.
 
   .. image:: ../../images/Push-Diffuser7.jpg
-	   :height: 400 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center
 
@@ -213,8 +197,6 @@ validations en cliquant sur l'onglet Lightbox.
 Voici enfin le contenu du panier "Plages" dans l'interface *Lightbox*:
 
   .. image:: ../../images/Push-Diffuser6.jpg
-	   :height: 400 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center
 
@@ -238,8 +220,6 @@ donner un nom au Panier (voir `Envoi de la sélection`_).
 Nous nommons dans notre cas concret le Panier à valider: "Architecture".
 
   .. image:: ../../images/Push-Valider0.jpg
-	   :height: 200 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center
 
@@ -263,8 +243,6 @@ et que l'émetteur souhaite qu'il donne son avis sur ces documents.
 Il recevra également une notification de ce type s'il est authentifié dans Phraseanet:
 
   .. image:: ../../images/Push-Valider2.jpg
-	   :height: 40 px
-	   :width: 110 px
 	   :alt: alternate text
 	   :align: center
 
@@ -272,8 +250,6 @@ Dans la zone des Paniers, le panier en question sera de couleur jaune lui indiqu
 qu'il ne l'a pas encore visualisé.
 
   .. image:: ../../images/Push-Valider1.jpg
-	   :height: 150 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center
 
@@ -281,15 +257,11 @@ En visualisant le panier dans *Lightbox*, le destinataire voit le contenu de la
 sélection. Il faut ensuite valider, par un clic sur "Oui" ou "Non" chaque document:
 
   .. image:: ../../images/Push-Valider3.jpg
-	   :height: 390 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center
 
 Les destinataires peuvent, éventuellement, ajouter des commentaires sur les documents: 
 
   .. image:: ../../images/Push-Valider4.jpg
-	   :height: 370 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center

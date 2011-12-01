@@ -128,8 +128,6 @@ La partie gauche de la fenêtre affiche la liste les applications auxquelles
 vous avez accès.
 
 .. image:: ../images/Menu.jpg
-   :height: 30 px
-   :width: 500 px
    :alt: alternate text
    :align: center
 
@@ -144,8 +142,6 @@ Présentation des zones dans l'interface de Production
 Nous allons vous présenter ci-dessous l'interface de *Production*.
 
 .. image:: ../images/Production-zones.jpg
-   :height: 400 px
-   :width: 800 px
    :alt: alternate text
    :align: center
 

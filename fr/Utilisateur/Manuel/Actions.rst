@@ -7,8 +7,6 @@
 nombre d'actions sur vos documents.**
 
   .. image:: ../../images/Palette.jpg
-	   :height: 50 px
-	   :width: 550 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -56,8 +54,6 @@ Cette action permet de changer les status des documents.
 Propriétés.**
 
   .. image:: ../../images/Actions-Proprietes-status.jpg
-	   :height: 170 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -75,8 +71,6 @@ et qu’il faut les associer au bon type de fichier.
 Propriétés.**
 
   .. image:: ../../images/Actions-Proprietes-types.jpg
-	   :height: 220 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -94,8 +88,6 @@ doit être dorénavant placé(s) le(s) document(s). Cliquer sur Ok. Le document 
 se trouve plus dans la collection d'origine, mais dans la collection choisie.
 
   .. image:: ../../images/Actions-Deplacer.jpg
-	   :height: 150 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -109,8 +101,6 @@ descriptions des documents.
 La fenêtre Imprimer s'ouvre. 
 
   .. image:: ../../images/Actions-Imprimer1.jpg
-	   :height: 170 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -126,8 +116,6 @@ PDF (Format Acrobat de Adobe - un Reader Acrobat doit être installé sur le pos
 de travail).
 
   .. image:: ../../images/Actions-Imprimer2.jpg
-	   :height: 500 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center
 
@@ -145,8 +133,6 @@ d’origine, ou d’afficher toutes les informations EXIF existantes.
 La fenêtre Outils Images s'ouvre. 
 
   .. image:: ../../images/Actions-Outilsimages.jpg
-	   :height: 260 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center
 
@@ -178,8 +164,6 @@ Cette icône permet de supprimer un enregistrement (Panier, document de la
 **Sélectionner l'élément puis cliquer sur l'icône Corbeille.**
 
   .. image:: ../../images/Actions-Supprimer.jpg
-	   :height: 200 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center
 

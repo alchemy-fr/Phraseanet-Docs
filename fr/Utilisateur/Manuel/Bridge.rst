@@ -24,8 +24,6 @@ Sélection
 Deux choix sont proposés: "Bridge" et "Publier":
 
   .. image:: ../../images/Bridge-1.jpg
-	   :height: 400 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center
 
@@ -40,8 +38,6 @@ La fenêtre du Bridge s'ouvre:
     se connecter soit à son compte Flickr, Youtube ou Dailymotion...
 
   .. image:: ../../images/Bridge-1b.jpg
-	   :height: 400 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center
 	   
@@ -59,8 +55,6 @@ L'utilisateur voit dans ce cas trois onglets:
   * Fichiers Envoyés
 
   .. image:: ../../images/Bridge-3a.jpg
-	   :height: 460 px
-	   :width: 550 px
 	   :alt: alternate text
 	   :align: center
 
@@ -77,8 +71,6 @@ description.
     "Upload" en bas à gauche.
 
   .. image:: ../../images/Bridge-2.jpg
-	   :height: 490 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center
 
@@ -86,8 +78,6 @@ Ensuite, au fur et à mesure que les images sont envoyées, il est possible de v
 l'avancement du transfert par un simple clic sur l'onglet "Fichiers envoyés".
 
   .. image:: ../../images/Bridge-4.jpg
-	   :height: 500 px
-	   :width: 550 px
 	   :alt: alternate text
 	   :align: center
 
@@ -97,8 +87,6 @@ l'avancement du transfert par un simple clic sur l'onglet "Fichiers envoyés".
 Enfin, lancer Flickr. Les photos y sont bien présentes:
 
   .. image:: ../../images/Bridge-5.jpg
-	   :height: 500 px
-	   :width: 630 px
 	   :alt: alternate text
 	   :align: center
 

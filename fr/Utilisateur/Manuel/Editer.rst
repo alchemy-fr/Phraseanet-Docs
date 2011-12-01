@@ -25,8 +25,6 @@ actif.
 La zone inférieure droite affiche des onglets d’assistance à l’indexation
 
 .. image:: ../../images/Prod-Editer.jpg
-	   :height: 350 px
-	   :width: 712 px
 	   :alt: alternate text
 	   :align: center
 
@@ -76,8 +74,6 @@ Editer des champs de type texte intégral
 * -> Saisir les informations souhaitées
 
 .. image:: ../../images/Prod-Editer-texte.jpg
-	   :height: 350 px
-	   :width: 712 px
 	   :alt: alternate text
 	   :align: center
 
@@ -86,8 +82,6 @@ entre les différents documents, il est possible d’ajouter les nouveaux termes
 saisis sur chaque fiche en cliquant sur le bouton « ajouter ».
 
 .. image:: ../../images/Prod-Editer-texte-ajouter.jpg
-	   :height: 38 px
-	   :width: 262 px
 	   :alt: alternate text
 	   :align: center
 
@@ -104,8 +98,6 @@ Les mots clés communs à toutes les notices sont en caractères blancs, ceux
 présents seulement sur certaines notices en Orange
 
 .. image:: ../../images/Prod-Editer-textemulti.jpg
-	   :height: 350 px
-	   :width: 712 px
 	   :alt: alternate text
 	   :align: center
 
@@ -144,8 +136,6 @@ thésaurus.
 * => L'onglet thésaurus s'actualise et affiche les termes commençant par...
 
 .. image:: ../../images/Prod-Editer-thesaurus.jpg
-	   :height: 153 px
-	   :width: 330 px
 	   :alt: alternate text
 	   :align: center
 
@@ -170,8 +160,6 @@ sous forme de menu contextuel dans la fenêtre à gauche du nom du champs.
           documentation Phraseanet Administrateur.
 
 .. image:: ../../images/Prod-Editer-valeurssugg.jpg
-	   :height: 436 px
-	   :width: 419 px
 	   :alt: alternate text
 	   :align: center
 
@@ -204,8 +192,6 @@ sur les documents en cours d’édition
 * -> Cliquer sur l’onglet Rechercher / Remplacer
 
 .. image:: ../../images/Prod-Editer-chercherremplacer.jpg
-	   :height: 327 px
-	   :width: 406 px
 	   :alt: alternate text
 	   :align: center
 
@@ -239,8 +225,6 @@ Un modèle est créé à partir d'une notice en cours d'édition.
 * -> Cliquer sur Ajouter
 
 .. image:: ../../images/Prod-Editer-modeles.jpg
-	   :height: 227 px
-	   :width: 365 px
 	   :alt: alternate text
 	   :align: center
 
@@ -304,8 +288,6 @@ ou
 
 
 .. image:: ../../images/Prod-Editer-reportage.jpg
-	   :height: 232 px
-	   :width: 476 px
 	   :alt: alternate text
 	   :align: center
 

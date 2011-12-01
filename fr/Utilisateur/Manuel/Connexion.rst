@@ -14,8 +14,6 @@ nouveaux utilisateurs peut exister sur la page de connexion.
 L'écran *Nouvel utilisateur* s'ouvre :
 
 	.. image:: ../../images/Inscription1.jpg
-	   :height: 200 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -37,8 +35,6 @@ Se connecter à l'adresse internet du site Phraseanet dans un navigateur Web.
 La page d’accueil permettant la connexion s'affiche :
 
 	.. image:: ../../images/Authentification.jpg
-	   :height: 250 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -58,8 +54,6 @@ l’aide en ligne et le lien pour se déconnecter.
 Cliquez sur "Mon compte" pour accéder à vos informations.
 
 	.. image:: ../../images/Moncompte.jpg
-	   :height: 250 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -84,8 +78,6 @@ Cliquer sur Envoyer.
 Un message vous confirme que la demande est en cours.
 
 	.. image:: ../../images/Accesbasescoll.jpg
-	   :height: 100 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 

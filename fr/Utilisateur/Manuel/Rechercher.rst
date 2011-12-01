@@ -24,8 +24,6 @@ lorsqu’un thesaurus existe.
 La Recherche simple
 -------------------
   .. image:: ../../images/Rechercher-simple.jpg
-	   :height: 50 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center
 
@@ -94,8 +92,6 @@ Il est possible de limiter le cadre de la recherche à une rubrique de la descri
 Les mots, réponses aux questions sont surlignés dans la description.
 
   .. image:: ../../images/Rechercher-motdanslegende.jpg
-	   :height: 250 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center
 
@@ -158,8 +154,6 @@ Cliquer sur l'onglet de Recherche Avancée.
   * Enfin, elle permet de faire des recherches sur des champs de type numérique.
 
   .. image:: ../../images/Rechercher-avancee.jpg
-	   :height: 300 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center
 

@@ -5,17 +5,6 @@ Administrateur
    :synopsis: Guide administrateur de Phraseanet
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
-.. toctree::
-
-    Admin/Prerequis
-    Admin/Installation
-    Admin/Configuration
-    Admin/APIs
-    Admin/MoteurDeTaches
-    Admin/Console
-    Admin/Maintenance
-
-
 
 Phraseanet repose sur des base de données MySQL/InnoDB : les ApplicationBoxes 
 et les DataBoxes. 
@@ -32,3 +21,16 @@ scripts PHP tels que l'écriture des métadonnées, le calcul de sous-définitio
 l'indexation...
 
 Vous pouvez aussi piloter Phraseanet en console via l'application bin/console
+
+.. toctree::
+
+    Admin/Prerequis
+    Admin/Installation
+    Admin/Configuration
+    Admin/APIs
+    Admin/MoteurDeTaches
+    Admin/Console
+    Admin/Maintenance
+    Admin/Optimisation
+
+
