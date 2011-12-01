@@ -7,20 +7,20 @@
 
     Dans *Production* et *Classic*, deux modes de recherche sont possibles:
 
-La zone de **Recherche simple** permet d'effectuer des recherches simples en 
-texte intégral dans les :term:`bases <base>`/Collections de documents.
+    La zone de **Recherche simple** permet d'effectuer des recherches simples en 
+    texte intégral dans les :term:`bases <base>`/Collections de documents.
 
-**La Recherche avancée** permet d'effectuer des requêtes plus évoluées et de 
-mettre en place un certain nombre de filtres sur les :term:`bases <base>` 
-et collections.
+    **La Recherche avancée** permet d'effectuer des requêtes plus évoluées et de 
+    mettre en place un certain nombre de filtres sur les :term:`bases <base>` 
+    et collections.
 
-Phraseanet embarque deux moteurs de recherche (un moteur texte intégral et un 
-moteur thesaurus Le premier moteur est le moteur texte intégral. Il permet 
-d’effectuer des recherches sur tous les champs de toutes 
-les :term:`bases <base>` et toutes les collections auxquels l’utilisateur 
-est connecté.
-Le deuxième moteur est le moteur de recherche du Thesaurus. Il n’est activé que 
-lorsqu’un thesaurus existe.
+    Phraseanet embarque deux moteurs de recherche (un moteur texte intégral et un 
+    moteur thesaurus Le premier moteur est le moteur texte intégral. Il permet 
+    d’effectuer des recherches sur tous les champs de toutes 
+    les :term:`bases <base>` et toutes les collections auxquels l’utilisateur 
+    est connecté.
+    Le deuxième moteur est le moteur de recherche du Thesaurus. Il n’est activé que 
+    lorsqu’un thesaurus existe.
 
 Recherche simple
 ----------------
@@ -111,24 +111,24 @@ résultat du terme 1 apparaît à une distance spécifiée (n) du terme 2.
 Par exemple, (Tour PRES 2 Eiffel) sélectionnera les enregistrements dans lesquels 
 une distance de 2 mots maximum sépare le mot Tour du mot Eiffel. 
 
-*Note : Si aucune distance n’est précisée, l’opérateur PRES est traité comme un 
-opérateur ET.*
+.. note:: Si aucune distance n’est précisée, l’opérateur PRES est traité comme un 
+          opérateur ET.
 
 **L’opérateur AVANT** permet de repérer tous les enregistrements dans lesquels le 
 résultat du terme 1 apparaît avant le terme 2 et a une distance spécifiée (n). 
 Par exemple, (Tour AVANT 2 Eiffel) sélectionnera les enregistrements dans lesquels 
 le mot Tour est situé, au maximum, deux mots avant le mot Eiffel. 
 
-*Note : Il n'est pas nécessaire de spécifier la distance. Si la distance n'est 
-pas précisée, la valeur par défaut est 12.*
+.. note:: Il n'est pas nécessaire de spécifier la distance. Si la distance n'est 
+          pas précisée, la valeur par défaut est 12.
 
 **L’opérateur APRES** permet de repérer tous les enregistrements dans lesquels le 
 résultat du terme 1 apparaît après le terme 2 à une distance spécifie (n). 
 Par exemple, (Eiffel APRES 2 Tour) sélectionnera les enregistrements dans lesquels 
 le mot Eiffel est situé, au maximum, deux mots après le mot Tour.
 
-*Note: Il n'est pas nécessaire de spécifier la distance. 
-Si la distance n'est pas précisée, la valeur par défaut est 12.*
+.. note:: Il n'est pas nécessaire de spécifier la distance. 
+          Si la distance n'est pas précisée, la valeur par défaut est 12.
 
 Recherche avec comparaison numérique
 ************************************
@@ -147,66 +147,14 @@ slash /, un tiret -, un espace.
   * Recherche sur un mois : MM/AA, AAAA/MM, AAAAMM, MM/AAAA
   * Recherche sur une année : AAAA
 
-*Note : La saisie des champs de type date est stricte.*
+.. note:: La saisie des champs de type date est stricte.
 
-Recherche avancée
------------------
-Cliquer sur l'onglet de Recherche Avancée.
-
-  * Elle permet d’étendre ou réduire le nombre de :term:`bases <base>` / 
-    collections sur lesquelles effectuer la recherche. 
-  * Elle permet de filtrer la recherche sur les documents ou les reportages ou 
-    les deux, ainsi que sur les types de documents.
-  * Elle permet de choisir le moteur Texte intégral et/ou le moteur Thesaurus.
-  * Elle permet de reduire la recherche à un champs en particulier
-  * Elle permet de faire des recherches sur les Status Bits 
-  * Enfin, elle permet de faire des recherches sur des champs de type numérique.
-
-  .. image:: ../../images/Rechercher-avancee.jpg
-	   :height: 300 px
-	   :width: 500 px
-	   :alt: alternate text
-	   :align: center
-
-	   
-  * Choisir les :term:`bases <base>` et collections où rechercher.
-
-NB : Il est possible de désélectionner toutes les :term:`bases <base>` 
-et collections en cliquant sur « Aucune » ou de cliquer directement sur les 
-noms des :term:`bases <base>` pour les sélectionner ou désélectionner 
-individuellement ou encore dans les cases à cocher proposées pour chaque 
-collection disponible.
-
-.. note:: Il est possible de désélectionner toutes les bases et collections 
-          en cliquant sur "Aucune" ou de cliquer directement sur les noms des bases 
-          pour les sélectionner ou désélectionner individuellement ou encore dans 
-          les cases à cocher proposées pour chaque collection disponible.
-
-Choisir si la recherche doit se faire sur des reportages (uniquement les fiches 
-d’indexation des reportages) ou sur les documents.
-
-.. note:: Il n’est pas possible de chercher à la fois sur des reportages et des 
-          documents.
-
-Choisir le type de documents : par défaut tous les types
-
-Sélectionner le moteur de recherche à utiliser.
-Par défaut les deux moteurs sont actifs.
-Phraseanet embarque deux moteurs de recherche, le premier en texte intégral, 
-le deuxième s’appuie uniquement sur le thesaurus, il recherche uniquement sur 
-les termes qui sont présents dans le thesaurus.
-NB : Les recherches à travers le thesaurus ne sont effectives que si un thesaurus 
-est associé à une :term:`base`.
-Utilisation des status-bits en recherche.
-
-Si des status-bits ont été définis dans *Phraseanet Administrateur* et si des 
-documents ont un ou plusieurs status-bit activé(s), il est alors possible de 
-lancer une recherche sur ces status-bit* en cochant une ou plusieurs cases. 
-
-  * Cliquer sur Chercher ou sur la touche "entrée" du clavier pour lancer la 
-    recherche dans les :term:`bases <base>` / Collections. 
-
-Les documents s'affichent dans la fenêtre Résultat.
+La recherche avancée
+--------------------
+Pour la recherche avancée, se reporter à la section consacrée à la :doc:`Barre des Onglets <Onglets>` 
+dans l'interface de *Phraseanet Production*. En effet, la recherche avancée est 
+accessible à partir de la barre des onglets sur la partie gauche 
+de la fenêtre de *Production*.
 
 La recherche dans les interfaces
 --------------------------------

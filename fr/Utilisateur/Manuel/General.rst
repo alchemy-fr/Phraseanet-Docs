@@ -1,5 +1,8 @@
 ﻿Introduction
 ============
+.. toctree::
+   :maxdepth: 3
+
 Les modules
 -----------
 Phraseanet est un système complet pour l’archivage, l’organisation et la 

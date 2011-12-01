@@ -8,10 +8,11 @@
    Manuel/Importer
    Manuel/Rechercher
    Manuel/Afficher
+   Manuel/Actions
+   Manuel/Onglets
+   Manuel/Paniers
    Manuel/Editer
    Manuel/Exporter
-   Manuel/Actions
-   Manuel/Paniers
    Manuel/Push
    Manuel/Publier
    Manuel/Bridge
