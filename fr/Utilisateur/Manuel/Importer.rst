@@ -77,8 +77,6 @@ Appliquer ensuite, si nécessaire, un état aux status disponibles.
 
 
 .. image:: ../../images/Upload-zone3.jpg
-	   :height: 270 px
-	   :width: 290 px
 	   :alt: alternate text
 	   :align: center 
 

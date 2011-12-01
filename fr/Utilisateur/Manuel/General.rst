@@ -84,8 +84,6 @@ Toutes les applications proposent en haut de la fenêtre la même barre de navig
 vous avez accès.**
 
 .. image:: ../../images/Menu.jpg
-   :height: 30 px
-   :width: 500 px
    :alt: alternate text
    :align: center
 
@@ -100,8 +98,6 @@ Interface de Production
 Nous allons vous présenter ci-dessous l'interface de *Production*.
 
 .. figure:: ../../images/Production-zones.jpg
-   :height: 400 px
-   :width: 800 px
    :alt: alternate text
    :align: center
    

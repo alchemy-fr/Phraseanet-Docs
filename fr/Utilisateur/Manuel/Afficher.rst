@@ -14,8 +14,6 @@
 
 
 .. figure:: ../../images/Production-general.jpg
-	 :height: 430 px
-	 :width: 650 px
 	 :alt: alternate text
 	 :align: center
 
@@ -25,8 +23,6 @@
           *Classic* (ci-dessous), est la zone centrale où apparaissent les images.
 
 .. figure:: ../../images/Classic-interface2.jpg
-	 :height: 430 px
-	 :width: 650 px
 	 :alt: alternate text
 	 :align: center
 
@@ -56,8 +52,6 @@ document qui est affiché.
 gauche:**
 
   .. image:: ../../images/Affichage-nomcoll.jpg
-	   :height: 230 px
-	   :width: 530 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -71,8 +65,6 @@ Il est possible de mettre en page l’affichage de la description, la liste et
 le nom des champs affichés (voir Phraseanet Administration).
 
   .. image:: ../../images/Affichage-surlignagemc.jpg
-	   :height: 380 px
-	   :width: 510 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -146,8 +138,6 @@ Pour sélectionner tous les documents d’une recherche selon leur type, cliquer
 sur un des liens:
 
   .. image:: ../../images/Affichage-selection6a.jpg
-	   :height: 18 px
-	   :width: 350 px
 	   :alt: alternate text
 	   :align: center 
 

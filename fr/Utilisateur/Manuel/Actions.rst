@@ -9,8 +9,6 @@
     un grand nombre d'actions sur vos documents.
 	
     .. image:: ../../images/Palette.jpg
-	     :height: 50 px
-	     :width: 550 px
 	     :alt: alternate text
 	     :align: center 
 
@@ -105,8 +103,6 @@ La fenêtre "Changer de collection" s'ouvre.
 Le document ne se trouve plus dans la collection d'origine, mais dans la collection choisie.
 
   .. image:: ../../images/Actions-Deplacer.jpg
-	   :height: 150 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -118,8 +114,6 @@ Cette icône permet de supprimer un :term:`enregistrement <Enregistrement>`
   * Sélectionner l'élément puis cliquer sur l'icône Corbeille.
 
   .. image:: ../../images/Actions-Supprimer.jpg
-	   :height: 200 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center
 
@@ -194,8 +188,6 @@ La fenêtre s'ouvre.
   * Cliquer sur Valider pour enregistrer les changements.
 
   .. image:: ../../images/Actions-Proprietes-status.jpg
-	   :height: 170 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -216,7 +208,5 @@ La fenêtre s'ouvre.
   * Cliquer sur Valider pour enregistrer les modifications.
 
   .. image:: ../../images/Actions-Proprietes-types.jpg
-	   :height: 220 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
