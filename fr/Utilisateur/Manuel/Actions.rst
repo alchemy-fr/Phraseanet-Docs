@@ -8,7 +8,11 @@
     La Palette des Actions dans *Phraseanet Production* vous permet d'effectuer 
     un grand nombre d'actions sur vos documents.
 	
-    Plusieurs actions sont accessibles à partir de cette :term:`Palette 
+<<<<<<< .mine=======    .. image:: ../../images/Palette.jpg
+	     :alt: alternate text
+	     :align: center 
+
+>>>>>>> .theirs    Plusieurs actions sont accessibles à partir de cette :term:`Palette 
     <Palette des Actions>`, on peut différencier les fonctions de base des fonctions 
     étendues.
     **Ces différentes actions sont visibles en fonction des droits des utilisateurs**. 
@@ -68,8 +72,6 @@ descriptions des documents.
 La fenêtre Imprimer s'ouvre. 
 
   .. image:: ../../images/Actions-Imprimer1.jpg
-	   :height: 170 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -86,8 +88,6 @@ PDF (Format Acrobat de Adobe - un Reader Acrobat doit être installé sur le pos
 de travail).
 
   .. image:: ../../images/Actions-Imprimer2.jpg
-	   :height: 500 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center
 
@@ -126,8 +126,6 @@ La fenêtre "Changer de collection" s'ouvre.
 Le document ne se trouve plus dans la collection d'origine, mais dans la collection choisie.
 
   .. image:: ../../images/Actions-Deplacer.jpg
-	   :height: 150 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -139,8 +137,6 @@ Cette icône permet de supprimer un :term:`enregistrement <Enregistrement>`
   * Sélectionner l'élément puis cliquer sur l'icône Corbeille.
 
   .. image:: ../../images/Actions-Supprimer.jpg
-	   :height: 200 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center
 
@@ -157,8 +153,6 @@ d’origine, ou d’afficher toutes les informations :term:`EXIF <EXIF>` existan
 La fenêtre Outils Images s'ouvre. 
 
   .. image:: ../../images/Actions-Outilsimages.jpg
-	   :height: 260 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center
 
@@ -217,8 +211,6 @@ La fenêtre s'ouvre.
   * Cliquer sur Valider pour enregistrer les changements.
 
   .. image:: ../../images/Actions-Proprietes-status.jpg
-	   :height: 170 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -239,7 +231,5 @@ La fenêtre s'ouvre.
   * Cliquer sur Valider pour enregistrer les modifications.
 
   .. image:: ../../images/Actions-Proprietes-types.jpg
-	   :height: 220 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 

@@ -25,8 +25,6 @@
 Recherche simple
 ----------------
   .. image:: ../../images/Rechercher-simple.jpg
-	   :height: 50 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center
 
@@ -99,8 +97,6 @@ le mot marrakech dans le champs légende.
 Les mots, réponses aux questions sont surlignés dans la description.
 
   .. image:: ../../images/Rechercher-motdanslegende.jpg
-	   :height: 250 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center
 
@@ -172,8 +168,6 @@ Production
 Voici comment se présente la zone de recherche dans l'interface de Production.
 
   .. image:: ../../images/Rechercher-Prod1.jpg
-	   :height: 300 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: left
 	   
@@ -196,8 +190,6 @@ puisse choisir dans quelle(s) collection(s) effectuer sa recherche.
 Classic
 *******
   .. image:: ../../images/Rechercher-Classic1.jpg
-	   :height: 450 px
-	   :width: 200 px
 	   :alt: alternate text
 	   :align: right
 

@@ -36,8 +36,6 @@ Cliquer sur l'onglet de Recherche Avancée.
   * Enfin, elle permet de faire des recherches sur des champs de type numérique.
 
   .. image:: ../../images/Rechercher-avancee.jpg
-	   :height: 300 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center
 
@@ -89,8 +87,6 @@ Apres avoir effectué une recherche cliquer sur Propositions
 L’onglet s’affiche, le thesaurus interprète la requête et affiche les propositions 
  
   .. image:: ../../images/....jpg
-	   :height: 300 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center
 

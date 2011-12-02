@@ -1,5 +1,9 @@
 ﻿Manuel
 ======
+
+Voici un manuel qui vous guidera dans votre utilisation de Phraseanet.
+
+
 .. toctree::
    :maxdepth: 3
 
@@ -20,7 +24,4 @@
 
    
 
-
-Voici un manuel qui vous guidera dans votre utilisation de Phraseanet.
-
-
+   
