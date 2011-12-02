@@ -1,9 +1,21 @@
-﻿Onglet Paniers
-==============
+Paniers et Reportages
+=====================
 .. toctree::
    :maxdepth: 3
    
 .
+..note:: Les Paniers et Reportage sont regroupés dans le même onglet
+         Ils sont differenciés par la couleur bleu de la barre de titre des
+         reportages. 
+         Les reportages sont placés dans cet onglet quand l'utilisateur 
+         a besoin de travailler sur son contenu et peuvent être retirés de 
+         l'onglet. 
+
+ 
+
+
+Onglet Paniers
+-------------
 
 .. topic:: L'essentiel
 
@@ -37,8 +49,10 @@
 	   :align: center 
 
 
+
+
 Nouveau Panier
---------------
+**************
 
   * -> Cliquer sur le Menu Contextuel de l'onglet
   * -> Cliquer sur Nouveau
@@ -55,10 +69,11 @@ Nouveau Panier
 
 
 Ajouter des documents à un panier
----------------------------------
+*********************************
 
 A partir des résultats
-**********************
+^^^^^^^^^^^^^^^^^^^^^^
+
 
   * -> Pour mettre un ou plusieurs documents dans un Panier : 
        faire un glisser-déposer d'une ou plusieurs vignettes, soit en 
@@ -68,7 +83,7 @@ A partir des résultats
 .. note:: Les documents ajoutés sont affichés en dernier dans le panier.
 
 A partir de la vue détaillée
-****************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   * -> Sélectionner un panier en cliquant sur son titre
   * -> Lancer la vue détaillée sur une sélection de document
@@ -79,13 +94,13 @@ A partir de la vue détaillée
           lequel une action a eue lieu (filet autour de la barre du titre).
 
 Sélectionner des documents dans les paniers
--------------------------------------------
+*******************************************
 
 .. todo:: Créer un lien vers  la sélection des documents.
 
 
 Afficher le contenu d'un panier dans la vue détaillée
------------------------------------------------------
+*****************************************************
   
   * -> Faire un double clic sur une vignette
 
@@ -93,7 +108,7 @@ Afficher le contenu d'un panier dans la vue détaillée
 
 
 Déplacer et dupliquer des documents entre des paniers
------------------------------------------------------
+*****************************************************
 
 Pour déplacer un ou plusieurs document d'un panier vers un autre panier 
 
@@ -110,7 +125,7 @@ Pour dupliquer un ou plusieurs document d'un panier vers un autre panier
      destination.
 
 Retirer un document d'un panier
--------------------------------
+*******************************
 
 Pour retirer un document d'un panier
 
@@ -124,7 +139,7 @@ Pour retirer un document d'un panier
 
 
 Actions sur les paniers ou leur contenu
----------------------------------------
+***************************************
 
 Les actions sur les paniers fonctionnent de la même manière que les actions sur 
 les documents depuis la fenêtre des résultats. 
@@ -140,14 +155,14 @@ les documents depuis la fenêtre des résultats.
 
 
 Le menu contextuel des paniers
-------------------------------
+******************************
 
 * -> Cliquer sur la flèche du menu contextuel d'un panier
 * -> Selctionner une action
 
 
 Renommer un panier
-******************
+^^^^^^^^^^^^^^^^^^
 
 * -> Cliquer sur renommer
 * => la fenêtre s'ouvre 
@@ -157,7 +172,7 @@ Renommer un panier
 
 
 Réordonner un panier
-********************
+^^^^^^^^^^^^^^^^^^^^
 
 * -> Cliquer sur Ordonner
 * => la fenêtre s'ouvre
@@ -175,7 +190,7 @@ Réordonner un panier
 * -> valider 
 
 Supprimer un panier
-*******************
+^^^^^^^^^^^^^^^^^^^
 * -> Cliquer sur Supprimer
 
 * -> Une fenêtre s'ouvre pour confirmer la suppression définitive
@@ -183,8 +198,9 @@ Supprimer un panier
 
 
 
-Onglet Reportages
-=================
+﻿Onglet Reportages
+-----------------
+
 
 .. topic:: L'essentiel
 
@@ -199,7 +215,59 @@ Onglet Reportages
     fusionner les contenus documentaires. 
 
 
+.. note:: La plupart des fonctions disponibles sur les paniers sont aussi 
+          disponibles sur les reportages, seules les fonctions propres aux 
+          reportages sont documentées
 
+
+Nouveau Reportage
+^^^^^^^^^^^^^^^^^
+
+* -> Cliquer sur le menu contextuel de l'onglet Paniers
+* -> Cliquer sur Nouveau
+
+* => une fenêtre s'ouvre
+
+* -> Cocher la case Reportage
+* -> Choisir une collection
+* -> Donner un nom et une description au Reportage
+* -> Cliquer sur Valider
+
+* => Le Reportage est créé 
+* => Le Reportage est affiché "ouvert" dans l'onglet 
+
+
+Ajouter des documents à une Reportage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* -> Sélectionner des documents depuis les résultats ou depuis un panier
+* -> Glisser Déposer les documents sur la barre de titre du Reportage ou
+     directement dans le Reportage si celui-ci est ouvert.
+
+
+
+Attacher et détacher un reportage de l'onglet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Les reportages sont placés dans l'onglet afin de faciliter le travail de
+l'utilisateur.
+
+Il n'y a pas d'intérêt a conserver un Reportage "terminé" dans l'onglet
+
+Pour attacher un Reportage
+
+* -> faire une Recherche en mode Reportage 
+* -> Glisser et déposer le reportage depuis la grille des résultats dans
+     l'onglet des Paniers
+
+* => le reportage s'affiche
+
+Pour détacher une Reportage
+
+* -> Cliquer sur le menu contextuel du Reportage 
+* -> Cliquer sur détacher
+
+*=> Le reportage est détaché ( il n'apparait plus dans l'onglet)
 
 
 

@@ -216,4 +216,44 @@ Les 4 autres icônes permettent de:
   
 Interface Administration
 ------------------------
+Voici l'une des vues de *Phraseanet Administration*. Les onglets à gauche permettent 
+d'accéder entre autres de voir qui est connecté en temps réel sur la base, à la 
+liste des utilisateurs et de pouvoir leur changer et créer leurs droits (droits 
+de visualisation, téléchargement, filigranes, etc. sur les documents et sur les 
+collections). 
+
+*Administration* permet aussi d'accéder au setup, au réglage de la structure, etc.
+
+.. figure:: ../../images/General-Administration.jpg
+   :alt: alternate text
+   :align: center
+
+    .. todo:: il faudrait mettre un lien ver la page Administration (qui n'existe pas encore)
+			  
+Interface Report
+----------------
+Pour la présentation intégrale de l'interface de statistiques, reportez-vous à la 
+section :doc:`Statistiques <Statistiques>`.
+
+.. figure:: ../../images/General-Report.jpg
+   :alt: alternate text
+   :align: center
+   
+Interface Thesaurus
+-------------------
+Pour la présentation intégrale de l'interface de statistiques, reportez-vous à la 
+section :doc:`Thesaurus <Thesaurus>`.
+
+.. figure:: ../../images/General-Thesaurus.jpg
+   :alt: alternate text
+   :align: center
+
+Interface Lightbox
+------------------
+Pour visualiser l'interface de Lightbox, se reporter à la section consacrée au 
+:doc:`Push <Push>`. 
+
+.. figure:: ../../images/General-Lightbox.jpg
+   :alt: alternate text
+   :align: center
 
