@@ -4,7 +4,7 @@ Paniers et Reportages
    :maxdepth: 3
 
 .. note:: Les Paniers et Reportages sont regroupés dans le même onglet. Ils sont 
-          differenciés par la couleur bleue de la barre de titre des reportages. 
+          différenciés par la couleur bleue de la barre de titre des reportages. 
           Les reportages sont placés dans cet onglet quand l'utilisateur a besoin 
           de travailler sur son contenu et peuvent être retirés de l'onglet. 
 

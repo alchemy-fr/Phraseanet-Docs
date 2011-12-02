@@ -2,7 +2,7 @@
 
 REM Command file for Sphinx documentation
 
-set SPHINXBUILD=sphinx-build
+set SPHINXBUILD="c:\Python27\Scripts\sphinx-build.exe"
 set BUILDDIR=../_build
 set LANG=en
 set ALLSPHINXOPTS=-d %BUILDDIR%/doctrees/%LANG% %SPHINXOPTS% .
@@ -112,3 +112,5 @@ goto end
 )
 
 :end
+
+pause
