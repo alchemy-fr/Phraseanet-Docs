@@ -80,41 +80,93 @@ Phraseanet s'ouvre.
 La dernière application utilisée pour quitter se lance par défaut.
 Toutes les applications proposent en haut de la fenêtre la même barre de navigation.
 
-**La partie gauche de la fenêtre affiche la liste les applications auxquelles 
+**La partie gauche de la fenêtre affiche la liste les interfaces auxquelles 
 vous avez accès.**
 
-.. image:: ../../images/Menu.jpg
+.. image:: ../../images/General-menu.jpg
    :alt: alternate text
    :align: center
 
 En cliquant sur le nom d'une application, le navigateur internet lance celle-ci 
 dans un nouvel onglet.
 
-Dans la partie supérieure droite se trouvent  vos informations de compte, 
-l'aide en ligne et le lien pour se déconnecter.
+Dans la partie supérieure droite se trouvent vos notifications, vos informations 
+de compte, l'aide en ligne et le lien pour se déconnecter.
+
+.. image:: ../../images/General-menu2.jpg
+   :alt: alternate text
+   :align: center
 
 Interface de Production
 -----------------------
+Espaces de travail
+******************
 Nous allons vous présenter ci-dessous l'interface de *Production*.
+Phraseanet est une application s'exécutant dans un navigateur Web.
+Elle permet de réaliser des tâches complexes avec la simplicité de l'interface 
+d'une application de bureau.
+Elle intègre l’utilisation de la plupart des raccourcis claviers communément utilisés.
 
 .. figure:: ../../images/Production-zones.jpg
    :alt: alternate text
    :align: center
-   
+
 Un espace de travail divisé en quatre parties:
 
   * La :doc:`Recherche <Rechercher>`: Entrez un mot clé (1)
 
   * L':doc:`affichage des réponses <Afficher>` (2)
 
-  * La barre des :doc:`onglets <Paniers>`: vos paniers et reportages, la recherche 
+  * La barre des :doc:`onglets <Onglets>`: vos paniers et reportages, la recherche 
     avancée, la gestion des mots candidats... (3)
 
   * La :doc:`Palette des Actions <Actions>`. Elle permet d'effectuer 
     des actions sur les documents: :doc:`éditer <Editer>`, :doc:`supprimer <Actions>`, 
     :doc:`partager <Push>`,... (4)
 
+Personnalisation
+****************
+
+**Préférences d'affichage des résultats:**
+Cliquer ici: l':doc:`affichage des résultats <Afficher>`. 
+
+**Préférences d'affichage des paniers et reportages:**
+
+Cliquer sur le menu contextuel des paniers.
+
+.. figure:: ../../images/General-prefpaniers.jpg
+   :alt: alternate text
+   :align: center
+
+Cliquer sur Préférences
+
+Une fenêtre en « Overlay » s’ouvre:
+
+.. figure:: ../../images/General-prefpaniers2.jpg
+   :alt: alternate text
+   :align: center
+
+Cocher les cases pour afficher les status, la description et ou le titre des 
+documents dans la les paniers. 
+Fermer en cliquant sur la croix en haut à droite ou appuyer sur la touche "Echap" 
+du clavier.
+
+**Modifier la taille d’affichage de la zone de paniers**
+
+Cliquer sur l’onglet séparant la zone paniers de celle des résultats.
+
+.. figure:: ../../images/General-prefpaniers3.jpg
+   :alt: alternate text
+   :align: center
+
+Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones 
+d’affichage.
+
+Relâcher le curseur dès que le nombre de vignettes par ligne dans la zone des 
+paniers est atteint.
+
+L’application ajuste seule l’espace pour optimiser l’affichage.
+
 Publications
 ------------
 
-to do le 01/12/11 

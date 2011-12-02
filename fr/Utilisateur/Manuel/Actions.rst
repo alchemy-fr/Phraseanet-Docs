@@ -8,27 +8,24 @@
     La Palette des Actions dans *Phraseanet Production* vous permet d'effectuer 
     un grand nombre d'actions sur vos documents.
 	
-<<<<<<< .mine=======    .. image:: ../../images/Palette.jpg
-	     :alt: alternate text
-	     :align: center 
-
->>>>>>> .theirs    Plusieurs actions sont accessibles à partir de cette :term:`Palette 
+    Plusieurs actions sont accessibles à partir de cette :term:`Palette 
     <Palette des Actions>`, on peut différencier les fonctions de base des fonctions 
     étendues.
+	
     **Ces différentes actions sont visibles en fonction des droits des utilisateurs**. 
     Ces droits sont tous paramétrables dans l'interface *Phraseanet Administration*.
 	
-  **Les fonctions de base:**
+**Les fonctions de base:**
 	* :doc:`Exporter <Exporter>`
 	* `Imprimer`_
-	
-  **Les fonctions étendues:**
-	* :doc:`Editer <Editer>`
-	* :doc:`Push <Push>`
-	* `Déplacer`_
-	* `Supprimer`_
-	* `Outils images`_
-	* `Propriétés`_
+
+**Les fonctions étendues:**
+    * :doc:`Editer <Editer>`
+    * :doc:`Push <Push>`
+    * `Déplacer`_
+    * `Supprimer`_
+    * `Outils images`_
+    * `Propriétés`_
 
 Présentation de la Palette
 --------------------------

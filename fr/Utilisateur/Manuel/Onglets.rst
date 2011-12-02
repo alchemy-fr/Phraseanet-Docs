@@ -81,18 +81,53 @@ Cet Onglet sert à interpréter les requêtes qui sont faites par l’utilisateu
 lui renvoyer des propositions en relation avec le thesaurus, de façon à étendre 
 une recherche en remontant d’un ou plusieurs niveaux ou au contraire à l’affiner 
 en précisant la requête avec un terme plus précis.
-Le mot Justice est saisi dans zone de recherche.
-La fenêtre « Résultat » affiche les résultats.
-Apres avoir effectué une recherche cliquer sur Propositions
-L’onglet s’affiche, le thesaurus interprète la requête et affiche les propositions 
+
+Le mot "Justice" est saisi dans la zone de recherche.
+
+La fenêtre "Résultat" affiche les résultats.
+
+Apres avoir effectué une recherche, cliquer sur "Propositions".
+
+L’onglet s’affiche, le thesaurus interprète la requête et affiche les propositions. 
  
-  .. image:: ../../images/....jpg
+  .. image:: ../../images/Onglet-Propositions.jpg
 	   :alt: alternate text
 	   :align: center
 
 Chaque proposition est cliquable et permet de lancer une nouvelle recherche.
 
-
 Thesaurus
 ---------
+Cette recherche n’est active que si un ou plusieurs thesaurus sont disponibles. 
+L’onglet Thesaurus dans *Phraseanet Production* est lié à l’Application 
+*Phraseanet Thesaurus*.
+Les Thesauri ouverts sont présentés sous forme d’"arbres".
 
+Cliquer sur l’onglet Thesaurus 
+
+	  .. image:: ../../images/Rechercher-thesaurus1.jpg
+	   :alt: alternate text
+	   :align: center
+	
+Cliquer sur les branches du thesaurus pour le déployer.
+
+Double cliquer sur un terme pour lancer la recherche.
+
+	  .. image:: ../../images/Rechercher-thesaurus2.jpg
+	   :alt: alternate text
+	   :align: center
+
+Chercher dans thesaurus
+***********************
+La fenêtre Thesaurus est utilisée pour rechercher des termes présents dans les 
+thesauri ouverts.
+
+Dans le cadre d’une recherche de termes dans la fenêtre Thesaurus, il suffit de 
+taper au minimum les trois premiers caractères d’un terme, l’affichage se met à jour, 
+ne proposant plus que les branches et sous branches, jusqu’au terme trouvé.
+En cliquant un terme dans l’arbre, l’application lance une requête thesaurus sur 
+les bases ouvertes.
+
+	  .. image:: ../../images/Rechercher-thesaurus3.jpg
+	   :alt: alternate text
+	   :align: center

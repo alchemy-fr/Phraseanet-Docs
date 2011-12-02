@@ -146,11 +146,17 @@ slash /, un tiret -, un espace.
 .. note:: La saisie des champs de type date est stricte.
 
 Recherche avancée
---------------------
+-----------------
 Pour la recherche avancée, se reporter à la section consacrée à la :doc:`Barre des Onglets <Onglets>` 
 dans l'interface de *Phraseanet Production*. En effet, la recherche avancée est 
 accessible à partir de la barre des onglets sur la partie gauche 
 de la fenêtre de *Production*.
+
+Recherche à partir du Thesaurus
+-------------------------------
+La recherche à partir du Thesaurus se fait via la barre des Onglets dans *Phraseanet 
+Production*, tout comme la recherche avancée: se reporter à la section 
+:doc:`Barre des Onglets <Onglets>`.
 
 La recherche dans les interfaces
 --------------------------------
@@ -171,20 +177,26 @@ Voici comment se présente la zone de recherche dans l'interface de Production.
 	   :alt: alternate text
 	   :align: left
 	   
-Par défaut, c'est la `Recherche Simple`_ qui s'affiche. Pour accéder à la `Recherche 
-Avancée`_, cliquer sur le lien "Avancée" qui se trouve juste en-dessous du bouton 
-"Rechercher".
+Par défaut, c'est la `Recherche Simple`_ qui s'affiche. 
+
+Pour accéder à la `Recherche Avancée`_, cliquer sur le lien "Avancée" qui se 
+trouve juste en-dessous du bouton "Rechercher".
+
 Au clic dans le champ de recherche, l'onglet des Bases se déplie, pour que l'utilisateur 
 puisse choisir dans quelle(s) collection(s) effectuer sa recherche.
 
   * Entrer un mot clé dans le champ de recherche
+ 
   * Sélectionner s'il faut rechercher dans les Documents ou dans les Reportages 
     (par défaut rechercher dans les Documents)
+
   * Choisir, dans l'onglet Bases, dans quelle(s) collection(s) effectuer la 
     recherche (cocher les cases)
+
   * Eventuellement, sélectionner un type de document: ne rechercher que dans les 
     images, que dans les vidéos, que dans les documents de type audio, document, 
     flash...
+
   * Enfin, cliquer sur le bouton Rechercher.
 
 Classic
