@@ -347,3 +347,10 @@ div.body h6
 {
   background-color:none;
 }
+
+.languages{
+  margin:10px 0;
+}
+.languages span{
+  margin:0px 5px;
+}

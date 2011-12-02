@@ -198,9 +198,10 @@
 
   {%- block footer %}
       <div class="footer">
-      <a href="/en/">English</a>
-      <a href="/fr/">Français</a>
-      <br/>
+        <div class="languages">
+          <a href="/en/"><span>English</span></a>
+          <a href="/fr/"><span>Français</span></a>
+        </div>
       {%- if show_copyright %}
           {% trans copyright=copyright %}&copy; Copyright {{ copyright }}.{% endtrans %}
       {%- endif %}
