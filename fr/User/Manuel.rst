@@ -16,7 +16,7 @@ le Sommaire pour accéder directement aux différentes sections:
    Manuel/Afficher
    Manuel/Actions
    Manuel/Onglets
-   Manuel/Paniers et Reportages
+   Manuel/PaniersReportages
    Manuel/Editer
    Manuel/Exporter
    Manuel/Actions

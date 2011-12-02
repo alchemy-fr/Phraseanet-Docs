@@ -5,9 +5,9 @@ Bienvenue dans la documentation Phraseanet!
    :maxdepth: 1
 
    Glossaire
-   Devel/Index
-   Contrib/Index
-   Admin/Index
-   User/Index
+   Devel/index
+   Contrib/index
+   Admin/index
+   User/index
 
 
