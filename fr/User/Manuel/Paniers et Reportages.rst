@@ -3,19 +3,19 @@ Paniers et Reportages
 .. toctree::
    :maxdepth: 3
    
-.
+
 ..note:: Les Paniers et Reportage sont regroupés dans le même onglet
-         Ils sont differenciés par la couleur bleu de la barre de titre des
-         reportages. 
-         Les reportages sont placés dans cet onglet quand l'utilisateur 
-         a besoin de travailler sur son contenu et peuvent être retirés de 
-         l'onglet. 
+  Ils sont differenciés par la couleur bleu de la barre de titre des
+  reportages. 
+  Les reportages sont placés dans cet onglet quand l'utilisateur 
+  a besoin de travailler sur son contenu et peuvent être retirés de 
+  l'onglet. 
 
  
 
 
 Onglet Paniers
--------------
+--------------
 
 .. topic:: L'essentiel
 
@@ -198,7 +198,7 @@ Supprimer un panier
 
 
 
-﻿Onglet Reportages
+Onglet Reportages
 -----------------
 
 
@@ -221,7 +221,7 @@ Supprimer un panier
 
 
 Nouveau Reportage
-^^^^^^^^^^^^^^^^^
+*****************
 
 * -> Cliquer sur le menu contextuel de l'onglet Paniers
 * -> Cliquer sur Nouveau
@@ -238,7 +238,7 @@ Nouveau Reportage
 
 
 Ajouter des documents à une Reportage
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*************************************
 
 * -> Sélectionner des documents depuis les résultats ou depuis un panier
 * -> Glisser Déposer les documents sur la barre de titre du Reportage ou
@@ -247,7 +247,7 @@ Ajouter des documents à une Reportage
 
 
 Attacher et détacher un reportage de l'onglet
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*********************************************
 
 Les reportages sont placés dans l'onglet afin de faciliter le travail de
 l'utilisateur.
@@ -267,7 +267,7 @@ Pour détacher une Reportage
 * -> Cliquer sur le menu contextuel du Reportage 
 * -> Cliquer sur détacher
 
-*=> Le reportage est détaché ( il n'apparait plus dans l'onglet)
+* => Le reportage est détaché ( il n'apparait plus dans l'onglet)
 
 
 

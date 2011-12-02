@@ -224,11 +224,11 @@ collections).
 
 *Administration* permet aussi d'accéder au setup, au réglage de la structure, etc.
 
-.. figure:: ../../images/General-Administration.jpg
+.. image:: ../../images/General-Administration.jpg
    :alt: alternate text
    :align: center
 
-    .. todo:: il faudrait mettre un lien ver la page Administration (qui n'existe pas encore)
+.. todo:: il faudrait mettre un lien ver la page Administration (qui n'existe pas encore)
 			  
 Interface Report
 ----------------
