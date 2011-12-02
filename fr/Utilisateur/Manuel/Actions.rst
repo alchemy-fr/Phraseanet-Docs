@@ -8,12 +8,6 @@
     La Palette des Actions dans *Phraseanet Production* vous permet d'effectuer 
     un grand nombre d'actions sur vos documents.
 	
-    .. image:: ../../images/Palette.jpg
-	     :height: 50 px
-	     :width: 550 px
-	     :alt: alternate text
-	     :align: center 
-
     Plusieurs actions sont accessibles à partir de cette :term:`Palette 
     <Palette des Actions>`, on peut différencier les fonctions de base des fonctions 
     étendues.
@@ -32,6 +26,29 @@
 	* `Outils images`_
 	* `Propriétés`_
 
+Présentation de la Palette
+--------------------------
+La Palette des Actions se trouve dans l'interface de *Phraseanet Production* dans 
+la partie haute de la fenêtre, au-dessus de l'affichage des résultats.
+Jusqu'à la version 3.5, celle-ci se présentait ainsi:
+
+    .. image:: ../../images/Palette.jpg
+	     :height: 50 px
+	     :width: 550 px
+	     :alt: alternate text
+	     :align: center 
+
+A partir de la v3.5, la Palette comporte les mêmes actions, incluant de nouvelles 
+(par exemple le Bridge) mais se présente de manière différente, avec moins de boutons. 
+A la place, à droite de chaque action majeure se trouve une flèche sur laquelle 
+l'utilisateur doit cliquer pour dérouler l'ensemble des actions disponibles.
+
+    .. image:: ../../images/Actions-PaletteBeta.jpg
+	     :height: 200 px
+	     :width: 540 px
+	     :alt: alternate text
+	     :align: center 
+	
 Les fonctions de base
 ---------------------
 Exporter

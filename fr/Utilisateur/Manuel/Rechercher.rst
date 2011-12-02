@@ -149,7 +149,7 @@ slash /, un tiret -, un espace.
 
 .. note:: La saisie des champs de type date est stricte.
 
-La recherche avancée
+Recherche avancée
 --------------------
 Pour la recherche avancée, se reporter à la section consacrée à la :doc:`Barre des Onglets <Onglets>` 
 dans l'interface de *Phraseanet Production*. En effet, la recherche avancée est 
