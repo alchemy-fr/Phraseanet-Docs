@@ -1,5 +1,6 @@
-Paniers et Reportages
-=====================
+Thesaurus
+=========
+
 .. toctree::
    :maxdepth: 3
 
