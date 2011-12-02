@@ -1,7 +1,9 @@
 ﻿Manuel
 ======
 
-Voici un manuel qui vous guidera dans votre utilisation de Phraseanet.
+Voici un manuel qui vous guidera dans votre utilisation de Phraseanet. 
+
+le Sommaire pour accéder directement aux différentes sections:
 
 
 .. toctree::
@@ -14,7 +16,7 @@ Voici un manuel qui vous guidera dans votre utilisation de Phraseanet.
    Manuel/Afficher
    Manuel/Actions
    Manuel/Onglets
-   Paniers et Reportages <Manuel/Paniers et Reportages>
+   Manuel/Paniers et Reportages
    Manuel/Editer
    Manuel/Exporter
    Manuel/Actions
