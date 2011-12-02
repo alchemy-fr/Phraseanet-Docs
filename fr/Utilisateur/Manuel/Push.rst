@@ -11,9 +11,10 @@
     En cliquant dans la :doc:`Palette des Actions <Actions>` sur le "Push", Phraseanet 
     offre la possibilité de:
 
-    * Envoyer des documents à des destinataires et éventuellement d'en demander la validation
+    * Envoyer des documents à des destinataires et éventuellement d'en demander 
+      la validation (voir la section ci-dessous `Envoi et validation`_)
 
-    * Publier
+    * :doc:`Publier <Publier>`
 
     * Utiliser le :doc:`Bridge <Bridge>`
   
