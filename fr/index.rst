@@ -5,8 +5,9 @@ Bienvenue dans la documentation Phraseanet!
    :maxdepth: 1
 
    Glossaire
-   Developpeur
-   Contributeur
-   Administrateur
-   Utilisateur
+   Devel/Index
+   Contrib/Index
+   Admin/Index
+   User/Index
+
 

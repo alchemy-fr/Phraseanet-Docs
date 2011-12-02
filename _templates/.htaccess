@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteRule ^(Developer|Devel|Developpeur)/?$         index.php?section=Devel [L]
+RewriteRule ^(Contrib|Contributor|Contributeur)/?$    index.php?section=Contrib [L]
+RewriteRule ^(User|Utilisateur)/?$                    index.php?section=User [L]
+RewriteRule ^(Admin|Administrateur|Administrator)/?$  index.php?section=Admin [L]

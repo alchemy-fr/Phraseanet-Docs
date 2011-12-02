@@ -28,6 +28,7 @@ SPHINX_DEPENDENCIES = $(foreach lang, $(LANGS), $(lang)/Makefile)
 #
 html: $(foreach lang, $(LANGS), html-$(lang))
 	cp -f _templates/index.php	_build/html/index.php
+	cp -f _templates/.htaccess	_build/html/.htaccess
 	cp -Rf _templates/lib	_build/lib
 htmlhelp: $(foreach lang, $(LANGS), htmlhelp-$(lang))
 epub: $(foreach lang, $(LANGS), epub-$(lang))

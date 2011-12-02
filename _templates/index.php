@@ -13,10 +13,10 @@
 
   foreach ($request->getLanguages() as $language)
   {
-    if (in_array($language, $available_languages))
-    {
-      return header(sprintf('Location: /%s/', $language));
-    }
+  if (in_array($language, $available_languages))
+  {
+  return header(sprintf('Location: /%s/', $language));
+  }
   }
 
   return header('Location: /fr/');
@@ -24,6 +24,23 @@
  */
 
 $available_languages = array('fr', 'en');
+
+$section = '';
+
+if (isset($_GET['section']))
+{
+  switch ($_GET['section'])
+  {
+    case 'Devel':
+    case 'Contrib':
+    case 'User':
+    case 'Admin':
+      $section = $_GET['section'] . '/';
+      break;
+    default:
+      break;
+  }
+}
 
 $languages = array();
 
@@ -63,11 +80,11 @@ foreach ($languages as $language)
 {
   if (in_array($language, $available_languages))
   {
-    return header(sprintf('Location: /%s/', $language));
+    return header(sprintf('Location: %s/%s', $language, $section));
   }
 }
 
-return header('Location: /fr/');
+return header(sprintf('Location: fr/%s', $section));
 
 function splitHttpAcceptHeader($header)
 {
