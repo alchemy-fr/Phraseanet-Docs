@@ -11,7 +11,7 @@
    Manuel/Editer
    Manuel/Exporter
    Manuel/Actions
-   Manuel/Paniers
+   Manuel/Paniers et Reportages
    Manuel/Push
    Manuel/Publier
    Manuel/Bridge

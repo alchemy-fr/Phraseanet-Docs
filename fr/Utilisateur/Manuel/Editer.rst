@@ -6,8 +6,8 @@
 
    
 
-Edition des documents
----------------------
+Editer des documents
+--------------------
 
 .. topic:: L'essentiel
 
@@ -270,7 +270,7 @@ Appliquer un modèle à une sélection de documents
 
 
 Editer des reportages
-*********************
+---------------------
 
 Chaque reportage dispose de sa propre notice descriptive. Il est donc possible
 d'éditer en lots ces notices de reportage.
@@ -334,7 +334,7 @@ Pour compléter la notice du reportage
 
 
 Editer les Status
-*****************
+-----------------
 
 La première ligne de la liste de champs permet de changer les status des 
 documents sélectionnés.
