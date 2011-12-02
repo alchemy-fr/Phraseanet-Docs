@@ -29,13 +29,15 @@ Cliquer sur Upload dans la barre d'applications Phraseanet.
 
 Ajouter des documents
 *********************
+
 **Sélectionner les fichiers à ajouter**
 
 .. image:: ../../images/Upload-zone1.jpg
 	   :alt: alternate text
 	   :align: center 
 
-  * Cliquer sur *Choisir les fichiers à ajouter*.
+  
+* Cliquer sur *Choisir les fichiers à ajouter*.
 
 L'application lance l'explorateur de fichiers, aller jusqu'au dossier où se 
 trouvent les fichiers à ajouter. Cliquer sur Ouvrir.

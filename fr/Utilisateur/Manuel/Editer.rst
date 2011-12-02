@@ -159,7 +159,7 @@ sous forme de menu contextuel dans la fenêtre à gauche du nom du champs.
 
 
 .. todo:: faire un lien vers Préférences : Valeur suggérées dans la 
-          documentation Phraseanet Administrateur.
+   documentation Phraseanet Administrateur.
 
 .. image:: ../../images/Prod-Editer-valeurssugg.jpg
 	   :alt: alternate text
@@ -261,7 +261,7 @@ d'éditer en lots ces notices de reportage.
 
 
 Editer Les notices de reportages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+********************************
 
 En mode recherche reportage 
 
@@ -276,7 +276,7 @@ mais seules les notices des reportages seront modifiées
 
 
 Editer un reportage et son contenu
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**********************************
 
 * -> Sélectionner un seul reportage depuis les résultats
 * ->cliquer sur Editer
