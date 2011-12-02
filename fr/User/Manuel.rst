@@ -25,8 +25,9 @@ le Sommaire pour accéder directement aux différentes sections:
    Manuel/Bridge
    Manuel/Statistiques
    Manuel/Thesaurus
+   Manuel/Administration
 
 
-   
+
 
    

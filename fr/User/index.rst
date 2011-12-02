@@ -14,10 +14,9 @@
 
 Bonjour,
 
-Vous êtes actuellement dans la section consacrée au guide utilisateur de 
-Phraseanet. 
+Vous êtes actuellement dans la section consacrée au guide utilisateur.
 
-:doc:`Commencez par le sommaire! <Utilisateur/Manuel>`
+:doc:`Commencez par le sommaire! <Manuel>`
 
 
 
