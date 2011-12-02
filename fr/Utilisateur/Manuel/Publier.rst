@@ -42,8 +42,8 @@ La publication est faite.
 Elle est désormais disponible et visible dans les "Publications 
 Phraseanet". 
 
-Pour cela, l'utilisateur peut y accéder en cliquant sur le lien "Publications" 
-dans le menu principal: 
+**Pour cela, l'utilisateur peut y accéder en cliquant sur le lien "Publications" 
+dans le menu principal:** 
 
   .. image:: ../../images/Publier-menu.jpg
 	   :alt: alternate text
