@@ -29,13 +29,13 @@
       <h3>{{ _('Navigation') }}</h3>
       <ul>
         {%- for rellink in rellinks %}
-        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+        <li class="right" style="{% if loop.first %}margin-right: 10px;{% endif %}display:none;">
           <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}"
              {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
           {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
         {%- endfor %}
         {%- block rootrellink %}
-        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        <!--<li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>-->
         {%- endblock %}
         {%- for parent in parents %}
           <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
@@ -110,10 +110,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
-    <meta name="google-site-verification" content="m_R3ysKlXK0LcYZqQicoIkI3_uCDNwzlErI0t9G7iyg" />
     {{ metatags }}
     {%- block htmltitle %}
-    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    
+    {%- if prev %}
+      <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    {%- else %}
+      <title>Phraseanet Documentation</title>
+    {%- endif %}
     {%- endblock %}
     {{ css() }}
     {%- if not embedded %}
@@ -154,54 +158,68 @@
 {%- block extrahead %} {% endblock %}
   </head>
   <body>
-{%- block header %}{% endblock %}
+    <div id="wrapper">
+  {%- block header %}
+    <div id="header">
+      <a href="{{ pathto(master_doc) }}">Phraseanet Documentation</a>
+    </div>
+  {% endblock %}
+  {%- block navigation %}
+    <div id="menu">
+      <div id="navigation" class="related">
+      {{ toctree(collapse=True, maxdepth=-1, titles_only=False) }}
+      </div>
+      {%- block relbar1 %}{{ relbar() }}{% endblock %}
+    </div>
+  {% endblock %}
 
-{%- block relbar1 %}{{ relbar() }}{% endblock %}
 
-{%- block content %}
-  {%- block sidebar1 %} {# possible location for sidebar #} {% endblock %}
-
-    <div class="document">
-  {%- block document %}
-      <div class="documentwrapper">
-      {%- if render_sidebar %}
-        <div class="bodywrapper">
-      {%- endif %}
-          <div class="body">
-            {% block body %} {% endblock %}
+  {%- block content %}
+    {%- block sidebar1 %} {# possible location for sidebar #} {% endblock %}
+      <div class="document">
+    {%- block document %}
+        <div class="documentwrapper">
+        {%- if render_sidebar %}
+          <div class="bodywrapper">
+        {%- endif %}
+            <div class="body">
+              {% block body %} {% endblock %}
+            </div>
+        {%- if render_sidebar %}
           </div>
-      {%- if render_sidebar %}
+        {%- endif %}
         </div>
-      {%- endif %}
+    {%- endblock %}
+
+    {%- block sidebar2 %}{{ sidebar() }}{% endblock %}
+        <div class="clearer"></div>
       </div>
   {%- endblock %}
 
-  {%- block sidebar2 %}{{ sidebar() }}{% endblock %}
-      <div class="clearer"></div>
-    </div>
-{%- endblock %}
-
-{%- block relbar2 %}{{ relbar() }}{% endblock %}
-
-{%- block footer %}
-    <div class="footer">
-    {%- if show_copyright %}
-      {%- if hasdoc('copyright') %}
-        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-      {%- else %}
-        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+  {%- block footer %}
+      <div class="footer">
+      <a href="/en/">English</a>
+      <a href="/fr/">Français</a>
+      <br/>
+      {%- if show_copyright %}
+          {% trans copyright=copyright %}&copy; Copyright {{ copyright }}.{% endtrans %}
       {%- endif %}
-    {%- endif %}
-    {%- if last_updated %}
-      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-    {%- endif %}
-    {%- if show_sphinx %}
-      {% trans sphinx_version=sphinx_version|e %}Created using <a rel="nofollow" href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
-    {%- endif %}
+      {%- if last_updated %}
+        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+      {%- endif %}
+      {%- if show_sphinx %}
+        {% trans sphinx_version=sphinx_version|e %}Created using <a rel="nofollow" target="_blank" href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+      {%- endif %}
+      
+      </div>
+  {%- endblock %}
     </div>
-{%- endblock %}
     <script type="text/javascript">
-
+      $(document).ready(function(){
+        if(window.console)
+          console.log('loaded');
+          $('#navigation li a').wrapInner('<span>');
+      });
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-3475486-25']);
       _gaq.push(['_setDomainName', '.phraseanet.com']);

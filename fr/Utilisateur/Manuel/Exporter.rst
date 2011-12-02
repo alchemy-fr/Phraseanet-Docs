@@ -34,8 +34,6 @@ des Reportages depuis la zone des Résultats ou depuis la zone des paniers.
   * L'envoi par FTP: Permet d'envoyer les données vers un serveur FTP
 
   .. image:: ../../images/Exporter-general.jpg
-	   :height: 95 px
-	   :width: 220 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -54,8 +52,6 @@ L'onglet Téléchargement
   * Suivre la procédure proposée par le navigateur.
 
   .. image:: ../../images/Exporter-telecharger.jpg
-	   :height: 170 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -75,8 +71,6 @@ L'onglet Mail
   * Un message confirmant l’envoi de l’email apparaît.
 
   .. image:: ../../images/Exporter-mail.jpg
-	   :height: 300 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -98,8 +92,6 @@ d’envoyer les éléments.
 Une fenêtre intermédiaire s’ouvre et informe l’utilisateur de l’état de son envoi.
 
   .. image:: ../../images/Exporter-FTP.jpg
-	   :height: 330 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center
 

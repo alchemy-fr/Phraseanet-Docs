@@ -18,8 +18,6 @@
 
 
 .. image:: ../../images/Upload-zones.jpg
-	   :height: 380 px
-	   :width: 650 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -34,8 +32,6 @@ Ajouter des documents
 **Sélectionner les fichiers à ajouter**
 
 .. image:: ../../images/Upload-zone1.jpg
-	   :height: 130 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -45,16 +41,12 @@ L'application lance l'explorateur de fichiers, aller jusqu'au dossier où se
 trouvent les fichiers à ajouter. Cliquer sur Ouvrir.
 
 .. image:: ../../images/Upload-fichiers.jpg
-	   :height: 240 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 	   
 *Phraseanet Upload* affiche la liste des fichiers sélectionnés.
 
 .. image:: ../../images/Upload-zone2.jpg
-	   :height: 300 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -69,8 +61,6 @@ les documents.
 Il est également possible de cliquer sur "Inverser l'ordre".
 
 .. image:: ../../images/Upload-reordonner.jpg
-	   :height: 250 px
-	   :width: 170 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -87,8 +77,6 @@ Appliquer ensuite, si nécessaire, un état aux status disponibles.
 
 
 .. image:: ../../images/Upload-zone3.jpg
-	   :height: 270 px
-	   :width: 290 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -101,8 +89,6 @@ La liste des fichiers à ajouter est vidée et la liste des fichiers transféré
 se remplit.
 
 .. image:: ../../images/Upload-zone4.jpg
-	   :height: 300 px
-	   :width: 250 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -119,8 +105,6 @@ Après avoir été ajoutés, certains fichiers de type image peuvent être plac�
 en "quarantaine" (fichiers placés en jaune sur l'image ci-dessous).
 
 .. image:: ../../images/Upload-Quarantaine0.jpg
-	   :height: 300 px
-	   :width: 250 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -147,8 +131,6 @@ ajoutées à l'application.
   * Cliquer sur l'onglet quarantaine
 
 .. image:: ../../images/Upload-quarantaine.jpg
-	   :height: 250 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -164,8 +146,6 @@ Trois choix sont alors proposés à l’utilisateur:
 L'utilisateur doit cliquer l'une des icônes:
 
 .. image:: ../../images/Upload-quarantaine-icones.jpg
-	   :height: 40 px
-	   :width: 80 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -180,8 +160,6 @@ D’autres versions d’un même fichier peuvent déjà être en attente en quar
 Choisir ensuite quelle version en quarantaine à ajouter, rejeter ou substituer.
 
 .. image:: ../../images/Upload-quarantaine-multiples.jpg
-	   :height: 300 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -189,8 +167,6 @@ Un fichier en quarantaine peut être identifié à plusieurs documents dans
 la :term:`base`.
 
 .. image:: ../../images/Upload-quarantaine-multiples2.jpg
-	   :height: 250 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -207,16 +183,12 @@ Pour traiter vos documents dans la quarantaine en lot, cliquez d'abord sur
 *Ajouter / supprimer tous les candidats*:
 
 .. image:: ../../images/Upload-quarantaine-lot1.jpg
-	   :height: 80 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center 
 
 Une fenêtre s’ouvre.
 
 .. image:: ../../images/Upload-quarantaine-lot2.jpg
-	   :height: 170 px
-	   :width: 380 px
 	   :alt: alternate text
 	   :align: center
 
@@ -253,8 +225,6 @@ La raison de mise en quarantaine du fichier est donnée sous la vignette.
   * Cliquer sur la croix rouge pour rejeter le fichier
 
   .. image:: ../../images/Upload-quarantaine-nonconforme.jpg
-	   :height: 280 px
-	   :width: 350 px
 	   :alt: alternate text
 	   :align: center 
 	   

@@ -3,6 +3,7 @@ Installation
 
 .. toctree::
    :maxdepth: 3
+   :hidden:
 
    Configuration/Nginx
    Configuration/Apache
@@ -29,45 +30,13 @@ Verifiez votre configuration
 Configurez votre serveur web
 ----------------------------
 
-  :doc:`Sous Nginx <Configuration/Nginx>`
-  :doc:`Sous Apache <Configuration/Apache>`
+  * :doc:`Sous Nginx <Configuration/Nginx>`
+
+  * :doc:`Sous Apache <Configuration/Apache>`
 
 
-Apache 
-~~~~~~
-
-  Exemple de fichier de configuration Apache.
-
-  Pour un descriptif complet des options de configuration Apache, référez-vous 
-  à la documentation complète de 
-  :doc:`Phraseanet sous Apache 2 <Configuration/Apache>`
-
-  .. code-block:: bash
-
-     #/etc/apache2/sites-available/phraseanet.conf
-    <VirtualHost *:80>
-        ServerName sub.domain.tld
-        ServerAdmin email@example.com 
-
-        DocumentRoot "/var/www/Phraseanet/www"
-
-        <Directory "/var/www/Phraseanet/www">
-            DirectoryIndex index.php
-            Options Indexes FollowSymLinks
-            AllowOverride All
-        </Directory>
-
-        #publish thumbnail content
-        Alias /web /var/www/Phraseanet/datas/web
-
-        ErrorLog logs/phraseanet_error_log
-        CustomLog logs/phrseanet_access_log combined
-        LogLevel warn
-    </VirtualHost>
-
-
-  Si tout se passe correctement, vous pourrez vous rendre à l’Url décrite 
-  (sub.domain.tld dans l'exemple) et continuer la procédure d'installation.
+Si tout se passe correctement, vous pourrez vous rendre à l’Url décrite 
+(sub.domain.tld dans l'exemple) et continuer la procédure d'installation.
 
 Au total, l’installation se déroule en cinq étapes :
 

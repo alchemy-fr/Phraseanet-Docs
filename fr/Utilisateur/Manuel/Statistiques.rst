@@ -7,7 +7,7 @@
 
     De nombreuses statistiques sont accessibles dans Phraseanet. Dans l'interface 
     *Phraseanet Production*, elles sont directement visualisables dans l'onglet 
-    "Popularité" du document. (voir section :doc:`Afficher <Afficher>`). Elles 
+    "Popularité" du document. (:doc:`voir section Afficher <Afficher>`). Elles 
     font également l'objet d'une interface dédiée, *Phraseanet Report*, dans 
     laquelle l'utilisateur peut trouver un tableau de bord général permettant 
     de voir en un coup d'oeil l'activité du site, mais aussi des rapports plus 
@@ -18,8 +18,6 @@
 Les rapports sont classés dans 4 onglets: 
 
   .. image:: ../../images/Statistiques-General.jpg
-	   :height: 50 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center
 
@@ -38,16 +36,12 @@ Les statistiques proposées par le tableau de bord sont globales pour toutes les
 sur un mois glissant.
 
   .. image:: ../../images/Statistiques-Tableaudebord.jpg
-     :height: 300 px
-     :width: 600 px
      :alt: alternate text
      :align: center
 
 La page du tableau de bord comprend de nombreuses données statistiques. 
 
   .. image:: ../../images/Statistiques-Tableaudebord2.jpg
-     :height: 150 px
-     :width: 300 px
      :alt: alternate text
      :align: center
 
@@ -110,8 +104,6 @@ Il faut utiliser le premier calendrier de la liste pour remonter
 vers un passé plus lointain.
 
   .. image:: ../../images/Statistiques-Connexions1.jpg
-     :height: 250 px
-     :width: 550 px
      :alt: alternate text
      :align: center
 
@@ -127,8 +119,6 @@ Deux boutons permettent de sélectionner/désélectionner toutes
 les :term:`bases <base>`.
 
   .. image:: ../../images/Statistiques-Connexions2.jpg
-     :height: 190 px
-     :width: 450 px
      :alt: alternate text
      :align: center
 
@@ -164,9 +154,9 @@ les plus fréquemment utilisés pour les connexions.
 En cliquant sur l'un de ces types de rapport, les statistiques 
 s'affichent immédiatement.
 
-  .. figure:: ../../images/Statistiques-Connexions3.jpg
-     :height: 380 px
-     :width: 500 px
+*Exemple avec un rapport Plateformes et navigateurs:*
+
+  .. image:: ../../images/Statistiques-Connexions3.jpg
      :alt: alternate text
      :align: center
 	 
@@ -205,8 +195,6 @@ Active une option permettant de rechercher si un document en particulier
 est présent dans un champs a été téléchargé sur la période.
 
 .. figure:: ../../images/Statistiques-Telechargements.jpg
-  :figwidth:  480px
-  :width:     100%
   :align:     center
 
   Exemple de rapport de statistiques par document sur la bases
@@ -232,8 +220,6 @@ les types de rapports sélectionnables sont les suivants:
   Fournit des informations relatives à l'activité par heure (moyenne).
 
 .. figure:: ../../images/Statistiques-Activite.jpg
-  :figwidth:  480px
-  :width:     100%
   :align:     center
 
   Exemple de rapport incluant les données relatives aux questions les plus 
@@ -263,8 +249,6 @@ Pour naviguer dans la liste « onglets » des :term:`bases <base>`, positionner
 le curseur en début ou fin de liste.
 
   .. figure:: ../../images/Statistiques-Bases.jpg
-    :figwidth:  600px
-    :width:     100%
     :align:     center
 
 Certaines colonnes des tableaux de rapports proposés sont implémentées de:

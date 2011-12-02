@@ -14,8 +14,6 @@
 
 
 .. figure:: ../../images/Production-general.jpg
-	 :height: 430 px
-	 :width: 650 px
 	 :alt: alternate text
 	 :align: center
 
@@ -25,8 +23,6 @@
           *Classic* (ci-dessous), est la zone centrale où apparaissent les images.
 
 .. figure:: ../../images/Classic-interface2.jpg
-	 :height: 430 px
-	 :width: 650 px
 	 :alt: alternate text
 	 :align: center
 
@@ -41,8 +37,6 @@ Dans *Production*:
 de réponses.**
 
   .. image:: ../../images/Affichage-pages.jpg
-	   :height: 130 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -58,8 +52,6 @@ document qui est affiché.
 gauche:**
 
   .. image:: ../../images/Affichage-nomcoll.jpg
-	   :height: 230 px
-	   :width: 530 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -73,8 +65,6 @@ Il est possible de mettre en page l’affichage de la description, la liste et
 le nom des champs affichés (voir Phraseanet Administration).
 
   .. image:: ../../images/Affichage-surlignagemc.jpg
-	   :height: 380 px
-	   :width: 510 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -85,8 +75,6 @@ recherche.
 d’un fichier audio, afficher un "résumé" pour les séquences vidéos…**
    
   .. image:: ../../images/Affichage-Loupe.jpg
-	   :height: 400 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -97,8 +85,6 @@ d’un fichier audio, afficher un "résumé" pour les séquences vidéos…**
 original telles que : largeur, hauteur, type, poids, taille d’impression…**
 
   .. image:: ../../images/Affichage-i.jpg
-	   :height: 270 px
-	   :width: 500 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -116,8 +102,6 @@ La couleur de fonds de la vignette change. (La couleur de sélection peut être
 modifiée dans les `Préférences d'affichage`_).
 
   .. image:: ../../images/Affichage-selection1.jpg
-	   :height: 200 px
-	   :width: 350 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -129,8 +113,6 @@ vignette de la série à sélectionner. *Toutes les vignettes comprises entre ce
 deux vignettes sont sélectionnées.*
 
   .. image:: ../../images/Affichage-selection2.jpg
-	   :height: 230 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -138,8 +120,6 @@ deux vignettes sont sélectionnées.*
 Alt et cliquer successivement sur les vignettes à sélectionner.
 
   .. image:: ../../images/Affichage-selection3.jpg
-	   :height: 230 px
-	   :width: 400 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -149,8 +129,6 @@ maintenir enfoncer la touche "Alt" du clavier puis cliquer sur une vignette
 de la nouvelle page de résultats.
 
   .. image:: ../../images/Affichage-selection5.jpg
-	   :height: 40 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -160,8 +138,6 @@ Pour sélectionner tous les documents d’une recherche selon leur type, cliquer
 sur un des liens:
 
   .. image:: ../../images/Affichage-selection6a.jpg
-	   :height: 18 px
-	   :width: 350 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -195,8 +171,6 @@ Sur la partie droite, l'onglet *Description* ou *Notice* qui permet de visualise
 les informations issues des champs remplis, tels que les mots clés, la légende,...
 
   .. image:: ../../images/Affichage-vuedetaillee1.jpg
-	   :height: 450 px
-	   :width: 600 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -212,8 +186,6 @@ Cette onglet liste l’historique de toutes les opérations réalisées par les
 utilisateurs sur le document depuis son ajout.
   
   .. image:: ../../images/Affichage-vuedetaillee2.jpg
-	   :height: 430 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -228,8 +200,6 @@ document en temps réel.
   * Le diagramme "Camembert" montre les sources d’accès au document.
 
   .. image:: ../../images/Affichage-vuedetaillee3.jpg
-	   :height: 450 px
-	   :width: 320 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -247,8 +217,6 @@ Préférences d'affichage
 des résultats.**
 
   .. image:: ../../images/Affichage-Preferences.jpg
-	   :height: 160 px
-	   :width: 370 px
 	   :alt: alternate text
 	   :align: center 
 	   
@@ -256,8 +224,6 @@ Afficher les préférences d’affichage des résultats en cliquant sur *Préfé
 Une fenêtre en « Overlay » s’ouvre, comme ci-dessus. Puis les différents paramètres:
 
   .. image:: ../../images/Affichage-Preferences1.jpg
-	   :height: 300 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center
 
@@ -287,8 +253,6 @@ quelle recherche afficher automatiquement au démarrage: la dernière question p
 les publications ou bien encore l'aide :
 
   .. image:: ../../images/Affichage-Preferences2.jpg
-	   :height: 150 px
-	   :width: 300 px
 	   :alt: alternate text
 	   :align: center
 	   

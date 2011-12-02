@@ -8,6 +8,9 @@ Glossaire
 .. glossary::
   :sorted:
 
+  FTP
+    Le FTP est utilisé pour vos envois massifs de documents.
+
   Document
     Un document est le fichier d'origine ajouté à une Base/Collection.
 
@@ -103,8 +106,8 @@ Glossaire
     Actions Phraseanet permettant d'envoyer des documents vers des utilisateurs
     ou vers des applications
 
-  Barre d'actions
-    Barre des outils disponibles pour les utilisateurs selon leur droits,
+  Palette des Actions
+    Outils disponibles pour les utilisateurs selon leur droits,
     permettant de déclencher des actions sur des documents des paniers...
 
     

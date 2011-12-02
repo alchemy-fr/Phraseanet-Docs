@@ -30,3 +30,13 @@ NGINX
 
   N'oubliez pas de copier le fichier des règles de re-écriture 
   `rewrite_rules.inc` que vous trouverez dans config/nginx.rewrite.rules
+
+
+Configuration Auth Token
+------------------------
+
+Configuration Pseudo Stream H264
+--------------------------------
+
+Configuration XSendFile
+-----------------------
