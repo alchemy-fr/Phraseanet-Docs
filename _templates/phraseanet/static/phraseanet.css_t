@@ -89,10 +89,6 @@ div.footer a {
     overflow:hidden;
 }
 
-#navigation li a:hover span{
-  color:#FFFFFF;
-}
-
 #navigation li a span{
   padding:3px 8px;
   color:white;
@@ -116,6 +112,7 @@ div.footer a {
 }
 
 #navigation li a:hover span{
+  color:#FFFFFF;
   background-color:#63aef8;
   border-top:4px solid #63aef8;
   border-bottom:4px solid #63aef8;
@@ -346,4 +343,11 @@ div.body h5,
 div.body h6
 {
   background-color:none;
+}
+
+.languages{
+  margin:10px 0;
+}
+.languages span{
+  margin:0px 5px;
 }

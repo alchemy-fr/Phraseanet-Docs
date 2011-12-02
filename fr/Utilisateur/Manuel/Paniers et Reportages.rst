@@ -169,10 +169,8 @@ Réordonner un panier
 	   :align: center 
 
 * -> utiliser le menu de tri
-ou 
-* -> Inverser l'ordre
-ou
-* -> Sélectionner des documents et les glisser déplacer entre d'autres
+* -> **ou** Inverser l'ordre
+* -> **ou** Sélectionner des documents et les glisser déplacer entre d'autres
      documents 
 * -> valider 
 
@@ -185,7 +183,7 @@ Supprimer un panier
 
 
 
-﻿Onglet Reportages
+Onglet Reportages
 =================
 
 .. topic:: L'essentiel

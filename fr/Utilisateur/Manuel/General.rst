@@ -141,7 +141,7 @@ Cliquer ici: l':doc:`affichage des résultats <Afficher>`.
 
 Cliquer sur le menu contextuel des paniers.
 
-.. figure:: ../../images/General-Prefpaniers.jpg
+.. figure:: ../../images/General-prefpaniers.jpg
    :alt: alternate text
    :align: center
 
