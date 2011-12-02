@@ -154,13 +154,11 @@ les plus fréquemment utilisés pour les connexions.
 En cliquant sur l'un de ces types de rapport, les statistiques 
 s'affichent immédiatement.
 
-*Exemple avec un rapport Plateformes et navigateurs:*
-
-  .. image:: ../../images/Statistiques-Connexions3.jpg
-     :alt: alternate text
-     :align: center
+  .. figure:: ../../images/Statistiques-Connexions3.jpg
+    :alt: alternate text
+    :align: center
 	 
-	 Exemple avec un rapport Plateformes et navigateurs
+    Exemple avec un rapport Plateformes et navigateurs
 
 Téléchargements
 ---------------

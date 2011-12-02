@@ -271,3 +271,7 @@ Les destinataires peuvent, éventuellement, ajouter des commentaires sur les doc
   .. image:: ../../images/Push-Valider4.jpg
 	   :alt: alternate text
 	   :align: center
+
+A la fin de la validation, le destinataire peut cliquer sur "Envoyer mon rapport" 
+(bouton présent en-dessous des boutons Oui/Non) pour indiquer à l'émetteur qu'il 
+a terminé sa tâche. L'émetteur sera immédiatement averti.

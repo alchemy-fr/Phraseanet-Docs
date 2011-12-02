@@ -133,4 +133,17 @@ Meta Markups
 
     .. todo:: mettre à jour
 
+  - Topic  ::
+
+	.. topic:: Topic Title (par exemple: L'essentiel)
+
+		Subsequent indented lines comprise
+		the body of the topic, and are
+		interpreted as body elements.
+	
+.. topic:: Topic Title (par exemple: L'essentiel)
+
+    Subsequent indented lines comprise
+    the body of the topic, and are
+    interpreted as body elements.
 

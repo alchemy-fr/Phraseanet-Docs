@@ -168,9 +168,8 @@ Choisir un des onglets proposés:
   * Substitution des sous-défs: Pour remplacer la vignette et l’image de choix 
     par un autre fichier.
 
-  * :term:`Métadonnées <Métadonnées>`: Permet d’afficher l’ensemble des informations 
-    :term:`EXIF <EXIF>`disponibles 
-    pour le document.
+  * :term:`Métadonnées <Métadonnées>`: Permet d’afficher l’ensemble 
+    des informations :term:`EXIF <EXIF>` disponibles pour le document.
 
 Cliquer sur Valider.
 
