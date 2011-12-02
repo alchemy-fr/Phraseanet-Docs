@@ -216,7 +216,59 @@ Supprimer un panier
     fusionner les contenus documentaires. 
 
 
+.. note:: La plupart des fonctions disponibles sur les paniers sont aussi 
+          disponibles sur les reportages, seules les fonctions propres aux 
+          reportages sont documentées
 
+
+Nouveau Reportage
+^^^^^^^^^^^^^^^^^
+
+* -> Cliquer sur le menu contextuel de l'onglet Paniers
+* -> Cliquer sur Nouveau
+
+* => une fenêtre s'ouvre
+
+* -> Cocher la case Reportage
+* -> Choisir une collection
+* -> Donner un nom et une description au Reportage
+* -> Cliquer sur Valider
+
+* => Le Reportage est créé 
+* => Le Reportage est affiché "ouvert" dans l'onglet 
+
+
+Ajouter des documents à une Reportage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* -> Sélectionner des documents depuis les résultats ou depuis un panier
+* -> Glisser Déposer les documents sur la barre de titre du Reportage ou
+     directement dans le Reportage si celui-ci est ouvert.
+
+
+
+Attacher et détacher un reportage de l'onglet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Les reportages sont placés dans l'onglet afin de faciliter le travail de
+l'utilisateur.
+
+Il n'y a pas d'intérêt a conserver un Reportage "terminé" dans l'onglet
+
+Pour attacher un Reportage
+
+* -> faire une Recherche en mode Reportage 
+* -> Glisser et déposer le reportage depuis la grille des résultats dans
+     l'onglet des Paniers
+
+* => le reportage s'affiche
+
+Pour détacher une Reportage
+
+* -> Cliquer sur le menu contextuel du Reportage 
+* -> Cliquer sur détacher
+
+*=> Le reportage est détaché ( il n'apparait plus dans l'onglet)
 
 
 
