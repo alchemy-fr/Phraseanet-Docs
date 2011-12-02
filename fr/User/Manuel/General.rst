@@ -76,6 +76,8 @@ Phraseanet.
 
 Menu
 ----
+Accès aux interfaces
+********************
 Phraseanet s'ouvre.
 La dernière application utilisée pour quitter se lance par défaut.
 Toutes les applications proposent en haut de la fenêtre la même barre de navigation.
@@ -90,14 +92,49 @@ vous avez accès.**
 En cliquant sur le nom d'une application, le navigateur internet lance celle-ci 
 dans un nouvel onglet.
 
-Dans la partie supérieure droite se trouvent vos notifications, vos informations 
-de compte, l'aide en ligne et le lien pour se déconnecter.
+Accès aux notifications et autres données 
+******************************************
+Dans la partie supérieure droite se trouvent vos notifications, :doc:`vos 
+informations de compte <Connexion>`, l'aide en ligne et le lien pour se déconnecter.
+
+Les notifications
+^^^^^^^^^^^^^^^^^^
+Lorsque vous envoyez une :doc:`sélection d'images <PaniersReportages>` à un ou 
+plusieurs autres utilisateurs, pour par exemple leur demander leur avis (et donc 
+la validation) sur les documents (voir section :doc:`Push <Push>`), le destinataire 
+reçoit l'information en temps réel dans l'interface de *Production* s'il est connecté. 
+Celui-ci est également notifié par email de l'arrivée de la demande.
+
+Dans ce cas, l'onglet "Notifications" comporte une bulle avec le chiffre représentant 
+le nombre de demandes qu'il n'a pas encore lues:
 
 .. image:: ../../images/General-menu2.jpg
    :alt: alternate text
    :align: center
 
-Nous allons voir ci-dessous à quoi ressemblent véritablement les modules, pour 
+Cliquer sur l'onglet Notifications. La liste des notifications les plus récentes 
+apparaît. 
+
+Pour visualiser *toutes les notifications*, cliquer dessus. Une fenêtre 
+en Overlay s'affiche et les notifications plus anciennes sont chargées.
+
+.. image:: ../../images/General-notifications.jpg
+   :alt: alternate text
+   :align: center
+
+Aide
+^^^^
+En cliquant sur l'onglet "Aide", l'utilisateur est redirigé vers la documentation 
+en ligne.
+En cliquant sur la flèche près de l'aide, deux sous-onglets apparaîssent: les 
+*Raccourcis claviers*, et *A propos*.  
+
+.. image:: ../../images/General-menu3.jpg
+   :alt: alternate text
+   :align: center
+
+
+Nous allons maintenant voir ci-dessous à quoi ressemblent véritablement les modules, pour 
 vous aider à vous familiariser avec les différentes interfaces.
 
 Phraseanet est une application s'exécutant dans un navigateur Web.
@@ -228,7 +265,7 @@ collections).
    :alt: alternate text
    :align: center
 
-.. todo:: il faudrait mettre un lien ver la page Administration (qui n'existe pas encore)
+:doc:`Se reporter à la section dédiée à l'Administration.<Administration>`
 			  
 Interface Report
 ----------------
