@@ -141,7 +141,7 @@ Cliquer ici: l':doc:`affichage des résultats <Afficher>`.
 
 Cliquer sur le menu contextuel des paniers.
 
-.. figure:: ../../images/General-prefpaniers.jpg
+.. figure:: ../../images/General-Prefpaniers.jpg
    :alt: alternate text
    :align: center
 
@@ -149,7 +149,7 @@ Cliquer sur Préférences
 
 Une fenêtre en « Overlay » s’ouvre:
 
-.. figure:: ../../images/General-prefpaniers2.jpg
+.. figure:: ../../images/General-Prefpaniers2.jpg
    :alt: alternate text
    :align: center
 
@@ -162,7 +162,7 @@ du clavier.
 
 Cliquer sur l’onglet séparant la zone paniers de celle des résultats.
 
-.. figure:: ../../images/General-prefpaniers3.jpg
+.. figure:: ../../images/General-Prefpaniers3.jpg
    :alt: alternate text
    :align: center
 
@@ -176,10 +176,44 @@ L’application ajuste seule l’espace pour optimiser l’affichage.
 
 Interface Classic
 -----------------
-Classic est l'interface qui permet de consulter simplement ses documents.
+*Classic* est l'interface qui permet de consulter simplement ses documents.
+
+Comme dans l'interface de *Production*, l'espace de recherche figure dans le coin 
+gauche en haut de page; la barre des Onglets affichant cette fois trois onglets 
+(Collection, Propositions, Historique) est en-dessous; On retrouve également les 
+paniers en bas de page.
+
+Enfin, le reste de la fenêtre est consacrée à l'affichage des résultats.
 
 .. figure:: ../../images/General-Classic.jpg
    :alt: alternate text
    :align: center
 
+Sous chaque vignette se trouvent 5 icônes:
+
+.. figure:: ../../images/General-Classic2.jpg
+   :alt: alternate text
+   :align: center
+
+Ces icônes permettent:
+
+  * Agrandir la vignette: avec la loupe
+
+.. figure:: ../../images/General-Classic3.jpg
+   :alt: alternate text
+   :align: center
+
+Les 4 autres icônes permettent de: 
+
+  * consulter les informations relatives à l'image
+  * ajouter au panier
+  * imprimer
+  * exporter
+
+.. figure:: ../../images/General-Classic4.jpg
+   :alt: alternate text
+   :align: center
+  
+Interface Administration
+------------------------
 
