@@ -2,16 +2,11 @@ Paniers et Reportages
 =====================
 .. toctree::
    :maxdepth: 3
-   
 
-..note:: Les Paniers et Reportage sont regroupés dans le même onglet
-  Ils sont differenciés par la couleur bleu de la barre de titre des
-  reportages. 
-  Les reportages sont placés dans cet onglet quand l'utilisateur 
-  a besoin de travailler sur son contenu et peuvent être retirés de 
-  l'onglet. 
-
- 
+.. note:: Les Paniers et Reportages sont regroupés dans le même onglet. Ils sont 
+          differenciés par la couleur bleue de la barre de titre des reportages. 
+          Les reportages sont placés dans cet onglet quand l'utilisateur a besoin 
+          de travailler sur son contenu et peuvent être retirés de l'onglet. 
 
 
 Onglet Paniers
@@ -30,12 +25,14 @@ Onglet Paniers
     * Symbole Ampoule : Panier publié sur la page d'accueil
     * Infobulle Rouge : Panier faisant l'objet d'une demande de validation
     * Symbole RSS     : Panier publié
+    * Symbole Push	  : indiquant qu'un Panier a été reçu
 
     .. todo:: liste des symboles affichés dans les titres de panier
     
     * -> Cliquer sur la barre de titre pour ouvrir ou fermer un panier 
 
-    Chaque panier dispose d'un menu contextuel permettant d'accèder aux
+    Chaque panier dispose d'un menu contextuel permettant d'accéder à certaines 
+    actions.
     
     Les nouveaux paniers reçus sont d’une couleur différente "dorée" tant qu’ils 
     n’ont pas été ouverts.
@@ -47,9 +44,6 @@ Onglet Paniers
 	   :width: 438 px
 	   :alt: alternate text
 	   :align: center 
-
-
-
 
 Nouveau Panier
 **************
@@ -65,7 +59,7 @@ Nouveau Panier
   * -> Saisir le nom du nouveau panier et si besoin une description.
   * -> Cliquer sur le bouton Valider
 
-  * => Le nouveau panier est créé est s'affiche dans la liste. 
+  * => Le nouveau panier est créé et s'affiche dans la liste. 
 
 
 Ajouter des documents à un panier
@@ -86,17 +80,17 @@ A partir de la vue détaillée
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   * -> Sélectionner un panier en cliquant sur son titre
-  * -> Lancer la vue détaillée sur une sélection de document
+  * -> Lancer la vue détaillée sur une sélection de documents
   * -> Cliquer sur le picto "Panier" 
   * -> Le document est ajouté au panier actif 
 
 .. note:: Le panier actif est soit le panier ouvert soit le dernier panier sur
-          lequel une action a eue lieu (filet autour de la barre du titre).
+          lequel une action a eu lieu (filet autour de la barre du titre).
 
 Sélectionner des documents dans les paniers
 *******************************************
 
-.. todo:: Créer un lien vers  la sélection des documents.
+.. todo:: Créer un lien vers la sélection des documents.
 
 
 Afficher le contenu d'un panier dans la vue détaillée
@@ -104,15 +98,15 @@ Afficher le contenu d'un panier dans la vue détaillée
   
   * -> Faire un double clic sur une vignette
 
-  * => La fenêtre de la vue détaillé s'ouvre.
+  * => La fenêtre de la vue détaillée s'ouvre.
 
 
 Déplacer et dupliquer des documents entre des paniers
 *****************************************************
 
-Pour déplacer un ou plusieurs document d'un panier vers un autre panier 
+Pour déplacer un ou plusieurs documents d'un panier vers un autre panier:
 
-* -> Sélectionner les documents a déplacer
+* -> Sélectionner les documents à déplacer
 * -> Glisser et déposer les documents sur la barre de titre de panier de 
      destination.
 
@@ -120,7 +114,7 @@ Pour dupliquer un ou plusieurs document d'un panier vers un autre panier
 
 * -> Maintenir enfoncée la touche "ctrl" depuis un PC ou la touche "cmd" depuis
      un Macintosh
-* -> Sélectionner les documents a déplacer
+* -> Sélectionner les documents à déplacer
 * -> Glisser et déposer les documents sur la barre de titre de panier de 
      destination.
 
@@ -129,7 +123,7 @@ Retirer un document d'un panier
 
 Pour retirer un document d'un panier
 
-* -> Cliquer sur la "croix qui se trouve sous les vignette
+* -> Cliquer sur la "croix" qui se trouve sous les vignettes
 
 .. image:: ../../images/Prod-Bonglet-panierretirerdoc.jpg
 	   :height: 128 px
@@ -158,16 +152,16 @@ Le menu contextuel des paniers
 ******************************
 
 * -> Cliquer sur la flèche du menu contextuel d'un panier
-* -> Selctionner une action
+* -> Sélectionner une action
 
 
 Renommer un panier
 ^^^^^^^^^^^^^^^^^^
 
 * -> Cliquer sur renommer
-* => la fenêtre s'ouvre 
+* => La fenêtre s'ouvre 
 
-* -> donner un nouveau nom et si nécessaire une nouvelle description
+* -> Donner un nouveau nom et si nécessaire une nouvelle description
 * -> Cliquer sur Valider 
 
 
@@ -194,7 +188,7 @@ Supprimer un panier
 * -> Cliquer sur Supprimer
 
 * -> Une fenêtre s'ouvre pour confirmer la suppression définitive
-     du panier
+  du panier
 
 
 
@@ -242,7 +236,7 @@ Ajouter des documents à une Reportage
 
 * -> Sélectionner des documents depuis les résultats ou depuis un panier
 * -> Glisser Déposer les documents sur la barre de titre du Reportage ou
-     directement dans le Reportage si celui-ci est ouvert.
+  directement dans le Reportage si celui-ci est ouvert.
 
 
 
@@ -257,17 +251,17 @@ Il n'y a pas d'intérêt a conserver un Reportage "terminé" dans l'onglet
 Pour attacher un Reportage
 
 * -> faire une Recherche en mode Reportage 
-* -> Glisser et déposer le reportage depuis la grille des résultats dans
-     l'onglet des Paniers
+* -> Glisser et déposer le reportage depuis la grille des résultats dans l'onglet 
+  des Paniers
 
 * => le reportage s'affiche
 
-Pour détacher une Reportage
+Pour détacher un Reportage
 
 * -> Cliquer sur le menu contextuel du Reportage 
 * -> Cliquer sur détacher
 
-* => Le reportage est détaché ( il n'apparait plus dans l'onglet)
+* => Le reportage est détaché (il n'apparaît plus dans l'onglet)
 
 
 
