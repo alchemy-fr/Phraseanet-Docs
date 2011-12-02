@@ -13,13 +13,17 @@ dans la page des publications, mais également sous forme de flux RSS...
   * Cliquer sur la barre du panier souhaité pour le dérouler et faire apparaître le menu 
     du panier. 
 	
-  * Cliquer sur l'icône "Publier" (icône représentant les flux RSS).
+  * Cliquer sur l'icône "Publier" (icône orange représentant les flux RSS).
 
   .. image:: ../../images/Publier-Panier1.jpg
 	   :alt: alternate text
 	   :align: center 
    
-Une fenêtre s'ouvre.
+Une fenêtre s'ouvre:
+
+  .. image:: ../../images/Publier-Panier2.jpg
+	   :alt: alternate text
+	   :align: center 
 
 Plusieurs champs peuvent être remplis:
   * Le titre de la publication
@@ -33,12 +37,13 @@ Pour finir de remplir les informations:
   
   * Cliquer enfin sur "Mettre à jour" pour valider
 
-  .. image:: ../../images/Publier-Panier2.jpg
-	   :alt: alternate text
-	   :align: center 
+La publication est faite.
 
-La publication est faire, elle est désormais disponibles dans les "Publications 
-Phraseanet". Pour cela, cliquer sur "Publications" dans le menu principal: 
+Elle est désormais disponible et visible dans les "Publications 
+Phraseanet". 
+
+Pour cela, l'utilisateur peut y accéder en cliquant sur le lien "Publications" 
+dans le menu principal: 
 
   .. image:: ../../images/Publier-menu.jpg
 	   :alt: alternate text
