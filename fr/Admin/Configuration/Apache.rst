@@ -4,10 +4,6 @@ Apache
 
 Exemple de fichier de configuration Apache.
 
-Pour un descriptif complet des options de configuration Apache, référez-vous 
-à la documentation complète de 
-:doc:`Phraseanet sous Apache 2 <Configuration/Apache>`
-
 .. code-block:: bash
 
    #/etc/apache2/sites-available/phraseanet.conf
