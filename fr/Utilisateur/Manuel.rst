@@ -17,6 +17,8 @@ Voici un manuel qui vous guidera dans votre utilisation de Phraseanet.
    Manuel/Paniers
    Manuel/Editer
    Manuel/Exporter
+   Manuel/Actions
+   Manuel/Paniers et Reportages
    Manuel/Push
    Manuel/Publier
    Manuel/Bridge
