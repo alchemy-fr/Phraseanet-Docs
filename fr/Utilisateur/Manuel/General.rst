@@ -97,15 +97,22 @@ de compte, l'aide en ligne et le lien pour se déconnecter.
    :alt: alternate text
    :align: center
 
-Interface de Production
------------------------
-Espaces de travail
-******************
-Nous allons vous présenter ci-dessous l'interface de *Production*.
+Nous allons voir ci-dessous à quoi ressemblent véritablement les modules, pour 
+vous aider à vous familiariser avec les différentes interfaces.
+
 Phraseanet est une application s'exécutant dans un navigateur Web.
 Elle permet de réaliser des tâches complexes avec la simplicité de l'interface 
 d'une application de bureau.
 Elle intègre l’utilisation de la plupart des raccourcis claviers communément utilisés.
+
+Interface Production
+---------------------
+Espaces de travail
+******************
+*Production* est l'une des interfaces les plus importantes dans Phraseanet. En effet, 
+elle permet aux gestionnaires des photothèques de gérer leurs documents. Selon leurs 
+droits, ils peuvent éditer les documents, les partager, créer des paniers et bien 
+d'autres fonctions.
 
 .. figure:: ../../images/Production-zones.jpg
    :alt: alternate text
@@ -167,6 +174,12 @@ paniers est atteint.
 
 L’application ajuste seule l’espace pour optimiser l’affichage.
 
-Publications
-------------
+Interface Classic
+-----------------
+Classic est l'interface qui permet de consulter simplement ses documents.
+
+.. figure:: ../../images/General-Classic.jpg
+   :alt: alternate text
+   :align: center
+
 

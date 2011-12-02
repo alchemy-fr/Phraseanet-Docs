@@ -9,7 +9,7 @@
     *Phraseanet Production*. La barre présente 4 onglets et vous offre: 
     
     * un espace pour mettre de côté des sélections d'images et autres documents: 
-      ce sont les :doc:`Paniers et Reportages <Paniers>`
+      ce sont les :doc:`Paniers et Reportages <Paniers et Reportages>`
     
     * l'accès à `la recherche avancée`_
     
@@ -17,14 +17,15 @@
     
     * le `thesaurus`_ dans l'interface de *Phraseanet Production*
 
-
 Les Paniers et les Reportages
 -----------------------------
-Voir la section consacrée aux :doc:`Paniers et Reportages <Paniers>`.
+Voir la section consacrée aux :doc:`Paniers et Reportages <Paniers et Reportages>`.
 
 La recherche avancée
 --------------------
 Cliquer sur l'onglet de Recherche Avancée.
+    .. todo:: il faudrait remplacer la capture d'écran de la v3.1 pour mettre une 
+              capture de la recherche avancée sur la v3.5
 
   * Elle permet d'étendre ou réduire le nombre de :term:`bases <base>` / 
     collections sur lesquelles effectuer la recherche

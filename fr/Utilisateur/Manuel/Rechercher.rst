@@ -147,10 +147,10 @@ slash /, un tiret -, un espace.
 
 Recherche avancée
 -----------------
-Pour la recherche avancée, se reporter à la section consacrée à la :doc:`Barre des Onglets <Onglets>` 
-dans l'interface de *Phraseanet Production*. En effet, la recherche avancée est 
-accessible à partir de la barre des onglets sur la partie gauche 
-de la fenêtre de *Production*.
+Pour la recherche avancée, se reporter à la section consacrée à la :doc:`Barre des 
+Onglets <Onglets>` dans l'interface de *Phraseanet Production*. En effet, la 
+recherche avancée est accessible à partir de la barre des onglets sur la partie 
+gauche de la fenêtre de *Production*.
 
 Recherche à partir du Thesaurus
 -------------------------------
