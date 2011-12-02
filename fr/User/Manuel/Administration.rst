@@ -29,9 +29,10 @@ actions: gestion des utilisateurs, des bases et des collections,...
 
 Tableau de bord
 ---------------
-
+  .. to do:: DEV
 Setup
 -----
+  .. to do:: ici on parle des bases, de la structure, etc. (DEV)
 	   
 Utilisateurs connectés
 -----------------------
@@ -266,27 +267,194 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
 
   * Enfin, **Structure Base**, pour autoriser l'utilisateur à modifier la 
     structure de la base de données.
-		  
 
 	   
 Demandes
 ---------
+Cette fenêtre liste les demandes d'inscription des nouveaux utilisateurs dans 
+l'écran Inscription. Si un utilisateur a fait une demande sur plusieurs collections, 
+il y a autant de lignes de validation que de demandes. Un "rollover" sur le nom 
+permet d’afficher les informations relatives au demandeur.
 
-  .. image:: ../../images/.jpg
-	   :alt: alternate text
-	   :align: center 
+  .. to do:: guillaume stp capture des demandes je n'en ai pas
+
+Choisir les droits à attribuer par collections en cochant les cases. L'utilisateur peut:
+
+  * refuser l'accès à la collection demandée
+
+  * donner accès à la collection demandée aux documents de type sous résolution
+
+  * donner accès à la collection demandée, avec les documents en haute définition
+
+  * donner accès à la collection demandée, sans les documents en haute définition
+
+Cliquer sur Valider
+
 
 Planificateur
 -------------
+Cet écran permet de gérer les tâches d'archivage et autres traitements automatiques 
+des Bases/Collections de documents. Les tâches sont listées dans un tableau qui 
+indique l'identifiant de la tâche, si elle est ou non active, son nom.
 
-Conditions Générales d'Utilisation
+Le principe d’une Tâche d’archivage est de scruter un répertoire, d’en capturer 
+le contenu, de l’archiver (recopier les fichiers dans les répertoires de stockage 
+de la base de destination).
+
+  .. to do:: guillaume stp capture ici aussi des listes de tâches
+
+  * Pour démarrer une tâche, Cliquer sur le symbole, puis cliquer sur Start.
+
+  * Pour éditer une tâche, cliquer sur "Editer".
+
+  * Pour Arrêter une tâche, cliquer sur "Stop".
+
+  * Pour créer une nouvelle tâche, cliquer sur nouvelle tâche.
+
+  .. image:: ../../images/Administration-droits.jpg
+	   :alt: alternate text
+	   :align: center 
+
+Nouvelle tâche
+**************
+Cette fonction permet de créer une nouvelle tâche.
+
+Le paramétrage des Tâches dans Phraseanet permet de mettre en place des automatismes 
+de traitement. La solution est livrée en standard avec un certain de nombre de 
+tâches exploitables. 
+
+Les paramètres des tâches sont stockés sous forme de fichiers XML. Dans certains 
+cas, les fichiers XML de paramétrage proposent une interface de saisie.
+
+Après avoir cliqué sur *nouvelle tâche*:
+
+  * Sélectionner un des modèles de tâches disponibles.
+
+  * Renseigner les différents paramètres demandés.
+
+  * Ou modifier les paramètres directement dans la vue XML.
+
+  * Cliquer sur Valider pour enregistrer les modifications.
+
+Status Bits
+------------
+  .. to do:: je ne vois pas actuellement les status bits sur beta
+
+ 
+Conditions Générales d’Utilisation
 ----------------------------------
 
+  .. to do:: guillaume capture à faire je ne vois pas les CGU sur beta
+  
+Cliquer sur l'icône des CGU.
+
+Les conditions générales d’utilisation sont proposées aux utilisateurs au moment 
+de leur inscription.
+
+  * Saisir ou copier et coller un texte dans les différentes langues proposées.
+
+  * Cocher la case "Les utilisateurs…." pour faire valider aux utilisateurs déjà 
+    inscrits des conditions générales mises à jour.
+
+  * Cliquer sur Mettre à jour pour enregistrer les modifications.
+
+ 
+Ordre des Collections
+---------------------
+
+  .. to do:: capture à faire
+  
+Par défaut, les collections sont affichées dans les différentes applications selon 
+leur ordre de création. Selon les besoins, il est donc possible de modifier 
+l’ordre d’affichage dans les différentes interfaces.
+
+  * Cliquer sur l'icône
+
+  * Cliquer sur une collection
+
+  * Cliquer sur Monter ou Descendre ou cliquer sur Ordre Alphabétique
+
+  * Cliquer sur Valider pour enregistrer les changements
+
 Collections
-------------
+-----------
+
+  * Cliquer sur l'icône pour afficher les informations sur la collection.
+
+Cet écran donne les informations essentielles sur la collection, permet de la 
+renommer, de la désactiver (arrêter sa publication), de la vider, de la supprimer, 
+de démonter la collection du site et d'arrêter la publication.
+
+  * Cliquer sur *Montrer le détail* pour afficher le détail du contenu de la 
+    collection
+
+Le tableau liste les objets composant la collection (enregistrement, document, 
+sous résolutions, vignette), les nombres par objet, la taille en méga-octets, 
+la taille en giga-octets.
+
+Marquage
+*********
+Pour appliquer un marquage sur les documents publiés à partir de Phraseanet sur 
+d’autres sites, cocher une des trois options proposées.
+
+  * Cocher la case  "Par défaut" pour n’appliquer aucun marquage,
+Ou
+  * Cocher la case "Fichier de filigrane" pour appliquer le filigrane par défaut 
+    ou s’appuyer d'un fichier de filigrane préalablement chargé.
+Ou
+
+  * Cocher la case "Bandeau de Notice" pour ajouter un bandeau sous la dernière 
+    ligne de pixels des fichiers (ceci nécessite un paramétrage des informations 
+    à afficher sur le bandeau "champs, logo").
 
 
+  * Cliquer sur *Renommer* pour changer le nom de la collection. Saisir le nouveau 
+    nom dans le champ qui s'affiche et cliquer sur Renommer.
+
+  * Cliquer sur *Désactiver* pour la rendre inaccessible. Cela permet d'en 
+    interrompre la publication.
+
+  * Cliquer sur *Vider la collection* pour supprimer tous les enregistrements de 
+    la collection.
+
+  * Cliquer sur *Supprimer* la collection pour détruire totalement la collection 
+    (les données).
+
+Fonctions disponibles
+**********************
+Pour ajouter un logo symbolisant la collection (il apparaîtra dans les interfaces 
+*Classic* et *Production* sous les vignettes dans le coin inférieur droit):
+
+  * Cliquer sur le bouton *Parcourir* pour sélectionner le fichier contenant le 
+    logo (maximum 30 x 30 pixels).
+
+  * Cliquer sur *Envoyer le logo* pour télécharger le logo dans les bases Phraseanet.
+
+Pour ajouter un filigrane personnalisé à appliquer sur les sous résolution des 
+documents de la collection:
+
+  * Cliquer sur le bouton *Parcourir* pour sélectionner le fichier de filigrane 
+    (ce dernier doit être en niveau de gris).
+
+  * Cliquer sur *Envoyer le logo* pour charger le fichier dans l’application.
 
 
-	
-	
+Préférences : Valeurs suggérées
+-------------------------------
+  .. to do:: capture à faire je ne la vois pas dans beta, comme les status et autres
+
+Cliquer sur l'icône Réglages des Collections.
+
+Les valeurs suggérées sont éditables par collections et par champs. Cet écran 
+permet de paramétrer des menus de choix déroulants (liste qui apparaît dans la 
+fenêtre "Edition", permettant une indexation rapide).
+
+  * Sélectionner le champ dans lequel vous souhaitez travailler
+
+  * Pour ajouter une valeur, la saisir dans la zone prévue à cet effet, cliquer 
+    sur Ajouter
+
+Il est possible de trier les valeurs en cliquant sur une valeur puis sur "monter" 
+ou "descendre" ou de les classer par ordre Alphabétique en cliquant sur Tri Alpha.:
+
+Pour supprimer, cliquer sur une valeur puis cliquer sur Supprimer.	
