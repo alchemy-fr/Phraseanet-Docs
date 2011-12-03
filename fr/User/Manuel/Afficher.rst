@@ -144,12 +144,33 @@ documents de type "images" à afficher:
 	   :alt: alternate text
 	   :align: center 
 
-Pour placer une sélection de documents dans un Panier: Se reporter à la section 
-dédiée aux :doc:`Paniers et Reportages <PaniersReportages>`.
+Pour placer une sélection de documents dans un Panier: 
+
+  * Créer un panier: Se placer dans la barre des Onglets, au niveau des 
+    Paniers. Cliquer sur la flèche, puis cliquer sur le "plus" vert pour créer 
+    un nouveau panier (ou un reportage, choisir). Une fenêtre s'affiche, le nommer 
+    puis cliquer sur Valider.
+	
+  .. image:: ../../images/Affichage-Panier.jpg
+	   :alt: alternate text
+	   :align: center 
+
+  * Pour plus d'informations, se reporter à la section dédiée aux :doc:`Paniers 
+    et aux Reportages <PaniersReportages>`.
 
 .. note:: Une sélection de documents est faite, si vous créez un nouveau panier 
           ou un nouveau reportage, une case à cocher vous permet d’ajouter 
           *toute la sélection active* au panier ou au reportage.
+
+*Pour faire une sélection de documents au sein d'un Panier:*
+
+Ouvrir ou déployer un panier en cliquant sur le titre, dans la barre des Onglets.
+Cliquer sur les documents à sélectionner, comme vu précédemment, puis effectuer 
+une action à partir du menu apparent au sein des paniers.
+
+  .. image:: ../../images/Affichage-Panier2.jpg
+	   :alt: alternate text
+	   :align: center 
 
 La vue détaillée
 ----------------

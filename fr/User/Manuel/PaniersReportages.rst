@@ -3,8 +3,8 @@ Paniers et Reportages
 .. toctree::
    :maxdepth: 3
 
-.. note:: Les Paniers et Reportages sont regroupés dans le même onglet. Ils sont 
-          différenciés par la couleur bleue de la barre de titre des reportages. 
+.. note:: Les Paniers et les Reportages sont regroupés dans le même onglet. Ils 
+          sont différenciés par la *couleur bleue* de la barre de titre des reportages. 
           Les reportages sont placés dans cet onglet quand l'utilisateur a besoin 
           de travailler sur son contenu et peuvent être retirés de l'onglet. 
 
@@ -14,10 +14,10 @@ Onglet Paniers
 
 .. topic:: L'essentiel
 
-    Un panier sert à mettre de côté des documents pour travailler. 
-    Un panier n’est pas « cherchable ». 
-    Survoler la barre de titre d’un panier affiche son contenu 
-    (Titre, description, date, contenu...)
+    Un :term:`Panier <Panier>` sert à mettre de côté des documents pour travailler. 
+    Un panier n’est pas "cherchable". 
+    Survoler la barre de titre d’un panier affiche son contenu (Titre, description, 
+    date, contenu...)
     
     Les icônes affichées dans la barre de titre donnent les informations 
     suivantes :
@@ -25,39 +25,48 @@ Onglet Paniers
     * Symbole Ampoule : Panier publié sur la page d'accueil
     * Infobulle Rouge : Panier faisant l'objet d'une demande de validation
     * Symbole RSS     : Panier publié
-    * Symbole Push	  : indiquant qu'un Panier a été reçu
+    * Symbole Push	  : Indique qu'un Panier a été reçu
 
     .. todo:: liste des symboles affichés dans les titres de panier
     
-    * -> Cliquer sur la barre de titre pour ouvrir ou fermer un panier 
+    * -> Cliquer sur la barre de titre pour ouvrir ou fermer un panier. 
 
     Chaque panier dispose d'un menu contextuel permettant d'accéder à certaines 
     actions.
     
     Les nouveaux paniers reçus sont d’une couleur différente "dorée" tant qu’ils 
     n’ont pas été ouverts.
-    Les paniers ont une palette d'outils intégrée.
+    Les paniers disposent d'une palette d'outils intégrée, visible ci-dessous, 
+    avec l'ouverture du panier dénommé "Plages".
 
 
-.. image:: ../../images/Prod-Bonglet-DetailPanier.jpg
+.. figure:: ../../images/Prod-Bonglet-DetailPanier.jpg
 	   :height: 564 px
 	   :width: 438 px
 	   :alt: alternate text
-	   :align: center 
+	   :align: center
+
 
 Nouveau Panier
 **************
+  .. image:: ../../images/Paniers-Creation.jpg
+	   :alt: alternate text
+	   :align: center 
 
-  * -> Cliquer sur le Menu Contextuel de l'onglet
+  * -> Cliquer sur le Menu contextuel de l'onglet
   * -> Cliquer sur Nouveau
 
   * => une fenêtre s'ouvre
+  
+  .. image:: ../../images/Affichage-Panier.jpg
+	   :alt: alternate text
+	   :align: center 
 
-  * -> Cocher la case "Panier"
+  * -> Cocher la case "Panier".
   * -> Cocher le cas échéant la case "Ajouter ma sélection courante" pour
-       ajouter des documents préalablement sélectionnés dans les résultats
+    ajouter des documents préalablement sélectionnés dans les résultats.
   * -> Saisir le nom du nouveau panier et si besoin une description.
-  * -> Cliquer sur le bouton Valider
+  * -> Cliquer sur le bouton Valider.
 
   * => Le nouveau panier est créé et s'affiche dans la liste. 
 
@@ -69,10 +78,10 @@ A partir des résultats
 ^^^^^^^^^^^^^^^^^^^^^^
 
 
-  * -> Pour mettre un ou plusieurs documents dans un Panier : 
-       faire un glisser-déposer d'une ou plusieurs vignettes, soit en 
-       survolant le nom d’un Panier; son titre change de couleur et devient 
-       rouge, ou en déposant la sélection dans le panier ouvert. 
+  * -> Pour mettre un ou plusieurs documents dans un Panier: 
+    faire un glisser-déposer d'une ou plusieurs vignettes, soit en 
+    survolant le nom d’un Panier; son titre change de couleur et devient 
+    rouge, ou en déposant la sélection dans le panier ouvert. 
 
 .. note:: Les documents ajoutés sont affichés en dernier dans le panier.
 
@@ -90,8 +99,8 @@ A partir de la vue détaillée
 Sélectionner des documents dans les paniers
 *******************************************
 
-.. todo:: Créer un lien vers la sélection des documents.
-
+Pour sélectionner des documents, se reporter à la section présente 
+dans :doc:`Affichage <Afficher>`.
 
 Afficher le contenu d'un panier dans la vue détaillée
 *****************************************************
@@ -106,22 +115,22 @@ Déplacer et dupliquer des documents entre des paniers
 
 Pour déplacer un ou plusieurs documents d'un panier vers un autre panier:
 
-* -> Sélectionner les documents à déplacer
+* -> Sélectionner les documents à déplacer.
 * -> Glisser et déposer les documents sur la barre de titre de panier de 
-     destination.
+  destination.
 
-Pour dupliquer un ou plusieurs document d'un panier vers un autre panier
+Pour dupliquer un ou plusieurs document d'un panier vers un autre panier:
 
 * -> Maintenir enfoncée la touche "ctrl" depuis un PC ou la touche "cmd" depuis
-     un Macintosh
-* -> Sélectionner les documents à déplacer
+  un Macintosh.
+* -> Sélectionner les documents à déplacer.
 * -> Glisser et déposer les documents sur la barre de titre de panier de 
-     destination.
+  destination.
 
 Retirer un document d'un panier
 *******************************
 
-Pour retirer un document d'un panier
+Pour retirer un document d'un panier:
 
 * -> Cliquer sur la "croix" qui se trouve sous les vignettes
 
@@ -145,7 +154,7 @@ les documents depuis la fenêtre des résultats.
 	   :align: center 
 
 
-.. todo:: lien vers les actions
+Se reporter à la section :doc:`Palette des Actions <Actions>`.
 
 
 Le menu contextuel des paniers
@@ -158,7 +167,7 @@ Le menu contextuel des paniers
 Renommer un panier
 ^^^^^^^^^^^^^^^^^^
 
-* -> Cliquer sur renommer
+* -> Cliquer sur Renommer
 * => La fenêtre s'ouvre 
 
 * -> Donner un nouveau nom et si nécessaire une nouvelle description
@@ -177,11 +186,11 @@ Réordonner un panier
 	   :alt: alternate text
 	   :align: center 
 
-* -> utiliser le menu de tri
+* -> Utiliser le menu de tri
 * -> **ou** Inverser l'ordre
 * -> **ou** Sélectionner des documents et les glisser déplacer entre d'autres
-     documents 
-* -> valider 
+  documents 
+* -> Valider 
 
 Supprimer un panier
 ^^^^^^^^^^^^^^^^^^^
@@ -204,14 +213,14 @@ Onglet Reportages
     d’autres enregistrements, il peut donc être recherché.
     Un reportage appartient à une des collections de la base et dispose de sa 
     propre fiche documentaire.
-    Il est possible de décrire un reportage dès sa création ou a posteriori en 
+    Il est possible de décrire un reportage dès sa création ou *a posteriori* en 
     s’appuyant sur le contenu documentaire des enregistrements ajoutés et aussi 
     fusionner les contenus documentaires. 
 
 
 .. note:: La plupart des fonctions disponibles sur les paniers sont aussi 
-          disponibles sur les reportages, seules les fonctions propres aux 
-          reportages sont documentées
+          disponibles sur les Reportages, seules les fonctions propres aux 
+          reportages sont documentées.
 
 
 Nouveau Reportage
@@ -246,7 +255,7 @@ Attacher et détacher un reportage de l'onglet
 Les reportages sont placés dans l'onglet afin de faciliter le travail de
 l'utilisateur.
 
-Il n'y a pas d'intérêt a conserver un Reportage "terminé" dans l'onglet
+Il n'y a pas d'intérêt à conserver un Reportage "terminé" dans l'onglet.
 
 Pour attacher un Reportage
 
@@ -262,7 +271,4 @@ Pour détacher un Reportage
 * -> Cliquer sur détacher
 
 * => Le reportage est détaché (il n'apparaît plus dans l'onglet)
-
-
-
 
