@@ -27,12 +27,12 @@ Envoi et validation
 Premier cas d'utilisation du Push: l'envoi et la demande de validation vers d'autres 
 utilisateurs.
 
-.. note:: On parle d'envoi virtuel pour le Push, car contrairement à l'envoi par mail 
-          proposé à partir de l'icône "Exporter", la fonction Push ne transmet 
-          pas physiquement les documents, mais alerte par mail et met à la disposition 
-          des utilisateurs un panier qu'ils peuvent consulter et télécharger. 
-          Ces paniers peuvent aussi faire l'objet d'une demande de validation sur 
-          les éléments contenus.
+.. note:: On parle d'envoi virtuel pour le Push, car contrairement à l'envoi par 
+          mail proposé à partir de l'icône :doc:`Exporter <Exporter>`, la fonction 
+          Push ne transmet pas physiquement les documents, mais alerte par mail 
+          et met à la disposition des utilisateurs un panier qu'ils peuvent consulter 
+          et télécharger. Ces paniers peuvent aussi faire l'objet d'une demande 
+          de validation sur les éléments contenus.
 
 
 * Sélectionner un ou plusieurs documents puis cliquer sur le bouton central de "Push".

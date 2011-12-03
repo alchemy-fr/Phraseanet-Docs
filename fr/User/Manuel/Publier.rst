@@ -5,13 +5,14 @@
 
 Publication des paniers
 -----------------------
-Publier un panier permet de le mettre à disposition des utilisateurs de Phraseanet 
-dans la page des publications, mais également sous forme de flux RSS...
+Publier un :doc:`Panier <PaniersReportages>` permet de le mettre à disposition 
+des utilisateurs de Phraseanet dans la page des publications, mais également 
+sous forme de flux RSS...
 
   * Ouvrir l'onglet des Paniers dans *Phraseanet Production*.
 
-  * Cliquer sur la barre du panier souhaité pour le dérouler et faire apparaître le menu 
-    du panier. 
+  * Cliquer sur la barre de titre du panier souhaité pour le dérouler et faire 
+    apparaître son menu. 
 	
   * Cliquer sur l'icône "Publier" (icône orange représentant les flux RSS).
 

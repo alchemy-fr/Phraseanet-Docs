@@ -240,14 +240,26 @@ Nouveau Reportage
 * => Le Reportage est affiché "ouvert" dans l'onglet 
 
 
-Ajouter des documents à une Reportage
+Ajouter des documents à un Reportage
 *************************************
 
 * -> Sélectionner des documents depuis les résultats ou depuis un panier
 * -> Glisser Déposer les documents sur la barre de titre du Reportage ou
   directement dans le Reportage si celui-ci est ouvert.
 
+La bulle rouge indique le nombre de documents que l'on place dans le reportage 
+ouvert: 
 
+  .. image:: ../../images/Paniers-Ajoutreportage.jpg
+	   :alt: alternate text
+	   :align: center 
+
+Une fois le document placé dans le reportage, un message peut s'afficher pour nous 
+indiquer qu'il faut le rafraîchir afin de voir les documents qui y ont été ajoutés.
+	   
+  .. image:: ../../images/Paniers-Ajoutreportage2.jpg
+	   :alt: alternate text
+	   :align: center 
 
 Attacher et détacher un reportage de l'onglet
 *********************************************

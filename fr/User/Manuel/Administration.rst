@@ -11,7 +11,7 @@
     Elle permet la création et la gestion des bases/collections, de leur 
     structure, de créer des utilisateurs et de gérer leurs droits, mais aussi de 
     prendre en charge les demandes d'inscription, les tâches automatiques d'indexation, 
-    les valeurs suggérées, les statusbits, les logos de collections...
+    les valeurs suggérées, les :term:`Statusbit`, les logos de collections...
 	
 Cette interface comporte un cadre à gauche qui affiche les différents menus 
 cliquables sur les boutons.
@@ -51,7 +51,9 @@ En cliquant sur l'onglet "Utilisateurs", on voit apparaître au centre de la pag
 une liste des utilisateurs enregistrés dans Phraseanet.
 Cette liste comporte les noms, prénoms, emails, sociétés, des utilisateurs.
 C'est à partir de cette interface qu'on pourra entre autres gérer les droits 
-des utilisateurs. Cette fonction est très importante car d'elle dépend la visibilité 
+des utilisateurs. 
+
+Cette fonction est très importante car d'elle dépend la visibilité 
 dans les interfaces de certaines actions. Rappelons-le, dans Phraseanet, si un 
 utilisateur ne voit pas une fonction, c'est certainement parce qu'il n'a pas les 
 droits pour y accéder. Ou par exemple, si un utilisateur n'a pas le droit d'accéder 
@@ -59,8 +61,8 @@ droits pour y accéder. Ou par exemple, si un utilisateur n'a pas le droit d'acc
 Cela est également vrai pour les interfaces elles mêmes: certains utilisateurs 
 peuvent avoir seul accès à *Phraseanet Classic*, qui est une interface pour la 
 consultation des documents. Les administrateurs, eux, auront accès pour leur part 
-aux autres interfaces, telles que *Report* pour les statistiques ou encore *Administration* 
-dont il est objet ici.
+aux autres interfaces, telles que *Report* pour les statistiques ou encore 
+*Administration* dont il est objet ici.
 
 Au-dessus de cette liste, une zone de filtres pour effectuer une recherche parmi 
 les utilisateurs, ainsi que des liens:

@@ -4,7 +4,6 @@
 .. toctree::
    :maxdepth: 3
 
-   
 
 Editer des documents
 --------------------
@@ -14,16 +13,17 @@ Editer des documents
     Cette action permet d'éditer la ou les fiches descriptives des Enregistrements, 
     des Reportages, des Paniers, pour saisir, compléter ou modifier le contenu des 
     champs.
+
     Il est possible d’éditer à l’unité ou en lots et sous lots des 
     Enregistrements, des Paniers, des Reportages depuis la zone des résultats ou
-    depuis la zone des paniers 
-    La fenêtre est découpée en 3 espaces :
+    depuis la zone des paniers.
+
+    La fenêtre est découpée en 3 espaces:
     La barre de défilement affiche les documents sélectionnés. La taille de la 
-    zone est modifiable
+    zone est modifiable.
     La taille des vignettes est modifiable en déplaçant le curseur.
-    La zone inférieure affiche la liste des champs descripteurs, 
-    la liste des status, et réserve un espace pour afficher le contenu du champs 
-    actif.
+    La zone inférieure affiche la liste des champs descripteurs, la liste des 
+    status, et réserve un espace pour afficher le contenu du champs actif.
     La zone inférieure droite affiche des onglets d’assistance à l’indexation.
 
 .. image:: ../../images/Prod-Editer.jpg
@@ -32,26 +32,29 @@ Editer des documents
 
 * -> Sélectionner des documents, un panier ou un reportage
 
-* -> Cliquer sur le bouton Editer 
+* -> Cliquer sur le bouton *Editer* 
 
 * => La fenêtre **Editer** s'ouvre
 
 Toutes les vignettes sont sélectionnées.
+
 Les champs dont le contenu est identique pour les documents sélectionnés
 apparaissent en clair.
-Les champs dont le contenu est hétérogène apparaissent avec des xxxxx orange
+
+Les champs dont le contenu est hétérogène apparaissent avec des xxxxx orange.
+
 Il est possible de désélectionner / sélectionner les documents en cliquant 
-sur les vignettes et en utilisant les combinaisons de touche «Maj» ou «Alt» 
+sur les vignettes et en utilisant les combinaisons de touche "Maj" ou "Alt". 
 Cette fonction permet de commencer par renseigner tout ce qui est commun au 
 lot (toutes les vignettes des documents sélectionnées).
 L’utilisateur peut ensuite désélectionner une partie des documents en 
 cliquant sur les vignettes et renseigner un ou plusieurs champs.
 Aucune modification ou ajout n’est validé tant que l’utilisateur n’a pas 
-cliqué sur le bouton  «Valider»
+cliqué sur le bouton "Valider".
 
 *  -> Pour passer d'une rubrique à une autre, appuyer sur la touche **TAB**.
 
-*  -> Pour annuler les modifications en cours, cliquer sur Annuler ou appuyer 
+*  -> Pour annuler les modifications en cours, cliquer sur *Annuler* ou appuyer 
    sur la touche **Echap**.
 
 Editer des champs de type date
@@ -59,19 +62,18 @@ Editer des champs de type date
 
 
 *  -> Sélectionner le ou les documents pour lesquels la date doit être modifiée 
-   ou ajoutée
+   ou ajoutée.
 
-
-
+   
 * -> Saisir manuellement la date selon le format aaaammjj
 * -> Ou utiliser le calendrier proposé
-* -> Cliquer sur Valider pour enregistrer les modifications
+* -> Cliquer sur *Valider* pour enregistrer les modifications
 
 
 Editer des champs de type texte intégral
 **************************************** 
 
-* -> Sélectionner le ou les documents sur lesquels apporter une  modification
+* -> Sélectionner le ou les documents sur lesquels apporter une modification
 * -> Cliquer dans un champs de type texte
 * -> Saisir les informations souhaitées
 
@@ -79,9 +81,9 @@ Editer des champs de type texte intégral
 	   :alt: alternate text
 	   :align: center
 
-Si le champ contient déjà des valeurs et que celles sont hétérogènes « xxxxx » 
+Si le champ contient déjà des valeurs et que celles sont hétérogènes "xxxxx" 
 entre les différents documents, il est possible d’ajouter les nouveaux termes 
-saisis sur chaque fiche en cliquant sur le bouton « ajouter ».
+saisis sur chaque fiche en cliquant sur le bouton "ajouter".
 
 .. image:: ../../images/Prod-Editer-texte-ajouter.jpg
 	   :alt: alternate text
@@ -91,29 +93,29 @@ saisis sur chaque fiche en cliquant sur le bouton « ajouter ».
 Editer des champs textuels multi-valués
 ***************************************
 
-* -> Sélectionner le ou les documents sur lesquels apporter une  modification
+* -> Sélectionner le ou les documents sur lesquels apporter une modification
 * -> Cliquer dans un champs textuel de type multi-valué
 
 Les informations déjà présentes dans les notices de chaque document sélectionné 
-sont affichées dans le champs ici « Mots Clés »
+sont affichées dans le champs ici "Mots Clés".
 Les mots clés communs à toutes les notices sont en caractères blancs, ceux 
-présents seulement sur certaines notices en Orange
+présents seulement sur certaines notices en Orange.
 
 .. image:: ../../images/Prod-Editer-textemulti.jpg
 	   :alt: alternate text
 	   :align: center
 
-* -> Cliquer sur un des mots clés « Orange »
+* -> Cliquer sur un des mots clés "Orange".
 
-* => Le terme  s’affiche dans le masque de saisi
+* => Le terme s’affiche dans le masque de saisie.
 
-Le terme  est absent des notices des document ou le symbole "plus" s'affiche 
+Le terme est absent des notices des documents ou le symbole "plus" s'affiche 
 sous la vignette.
 
-* -> Cliquer sur le symbole « plus » pour ajouter le terme pour ce document
-* => Le symbole "plus" se transforme en symbole "moins"
+* -> Cliquer sur le symbole "plus" pour ajouter le terme pour ce document.
+* => Le symbole "plus" se transforme en symbole "moins".
 
-Pour ajouter le terme à toutes les notices sélectionnées
+Pour ajouter le terme à toutes les notices sélectionnées:
 
 * -> Appuyer sur la touche "entrée" du clavier ou cliquer sur le symbole "plus"
   qui se trouve à gauche du masque de saisie.
@@ -131,7 +133,7 @@ Les saisies sont assistées pour les champs qui ont été liés à des branches 
 thésaurus.
 
 * -> Cliquer sur l'onglet thésaurus
-* -> Sélectionner un champs du type textuel lié au thésaurus"
+* -> Sélectionner un champs du type textuel lié au thésaurus
 * -> Commencer à saisir un terme
  
 
@@ -144,7 +146,7 @@ thésaurus.
 * -> Faire un double clic sur le terme à indexer
 
 
-* => il est immédiatement ajouté aux documents sélectionnés
+* => il est immédiatement ajouté aux documents sélectionnés.
 
 .. note:: Il est aussi possible de déployer "l'arbre" du thésaurus pour
           chercher et sélectionner des termes à indexer. Cliquer sur les 
@@ -157,9 +159,9 @@ Editer à partir des valeurs suggérées
 Si des valeurs suggérées ont été définies pour le champs, la liste apparaît 
 sous forme de menu contextuel dans la fenêtre à gauche du nom du champs.
 
+:doc:`Se reporter à la section Préférences: Valeurs suggérées dans l'interface 
+Phraseanet Administration <Administration>`
 
-.. todo:: faire un lien vers Préférences : Valeur suggérées dans la 
-   documentation Phraseanet Administrateur.
 
 .. image:: ../../images/Prod-Editer-valeurssugg.jpg
 	   :alt: alternate text
@@ -172,7 +174,7 @@ sous forme de menu contextuel dans la fenêtre à gauche du nom du champs.
 
 * => la valeur est ajoutée au champs. 
 
-.. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste  en 
+.. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste en 
           appuyant sur la touche "cmd" ou "ctrl"
 
 
@@ -182,14 +184,14 @@ Utiliser l'onglet Presse Papier
 * -> Cliquer sur l'onglet Presse Papier
 
 Copier et coller des termes ou des expressions dans ou depuis le presse papier
-vers des masques de saisie de champs
+vers des masques de saisie de champs.
 
 
 Utiliser l'onglet  Rechercher/Remplacer
 ***************************************
 
 L’onglet permet à l’utilisateur de chercher et remplacer des termes contenus 
-sur les documents en cours d’édition
+sur les documents en cours d’édition.
 
 * -> Cliquer sur l’onglet Rechercher / Remplacer
 
@@ -198,9 +200,9 @@ sur les documents en cours d’édition
 	   :align: center
 
 * -> Restreindre si nécessaire la fonction à un champs en particulier, 
-     à partir du menu déroulant, par défaut dans tous les champs
+  à partir du menu déroulant, par défaut dans tous les champs
 * -> Saisir le terme à Rechercher dans les notices des documents en cours 
-     d’édition
+  d’édition
 * -> Saisir le terme de remplacement
 * -> Appliquer les options si nécessaire
 * -> Cliquer sur Valider
@@ -232,7 +234,7 @@ Un modèle est créé à partir d'une notice en cours d'édition.
 
 * -> Donner un titre au modèle
 * -> Choisir les champs à reprendre, les champs contenant des termes sont 
-     sélectionnés par défaut
+  sélectionnés par défaut
 * -> Cliquer sur Valider pour enregistrer le modèle
 
 * => Le nouveau modèle est affiché dans la liste des modèles
@@ -244,7 +246,7 @@ Appliquer un modèle à une sélection de documents
 * -> Faire un double clic sur le titre d'un modèle
 
 * => l'ensemble des informations contenus dans le modèle est appliqué aux 
-     documents
+  documents
 
 .. note:: Il est possible de revoir les valeurs des champs d'un modèle en
           cliquant sur la flèche se trouvant devant le titre du modèle.
@@ -279,12 +281,12 @@ Editer un reportage et son contenu
 **********************************
 
 * -> Sélectionner un seul reportage depuis les résultats
-* ->cliquer sur Editer
+* -> Cliquer sur Editer
 
 ou 
 
 * -> Cliquer sur Editer depuis la barre d'action locale du reportage quand 
-  celui ci est dans la zone de travail.
+  celui-ci est dans la zone de travail.
 
 * => La fenêtre Editer s'ouvre
 
@@ -296,19 +298,19 @@ ou
 Les reportages ont par défaut une image de "dossier" pour les illustrer.
 
 * -> Cliquer sur le menu contextuel d’une des vignettes
-* -> Cliquer sur « Définir comme image principale
+* -> Cliquer sur *Définir comme image principale*
 * -> L’image du dossier est remplacée par la vignette du document choisi
 
 
 Pour compléter la notice du reportage
 
 * -> Cliquer sur l’image de représentation du reportage «  en haut à gauche de 
-     la fenêtre "Editer"
+  la fenêtre "Editer"
 * -> Seule la notice du reportage sera modifiée
 
 * -> Sélectionner l’image de représentation du reportage et les autres 
-     vignettes pour modifier à la fois la notice reportage et les notices des 
-     documents qui composent le reportage.
+  vignettes pour modifier à la fois la notice reportage et les notices des 
+  documents qui composent le reportage.
 * -> Compléter les champs à modifier
  	
 * -> Cliquer sur Valider pour enregistrer les modifications.
@@ -323,9 +325,7 @@ documents sélectionnés.
 
 * -> Cliquer sur la première ligne de la liste de champs "Status".
 * -> Cocher les cases correspondant au changement d’état à appliquer sur les 
-     documents 
+  documents. 
 * -> Cliquer sur Valider pour enregistrer les modifications ou poursuivre 
-     l’indexation.
-
-Test
+  l’indexation.
 

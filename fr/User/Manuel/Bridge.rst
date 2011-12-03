@@ -23,7 +23,8 @@ Sélection
 
   * Sélectionner une ou plusieurs images dans *Phraseanet Production*. 
   
-  * Cliquer, dans la :doc:`Palette des Actions <Actions>`, sur la flèche du bouton de "Push".
+  * Cliquer, dans la :doc:`Palette des Actions <Actions>`, sur la flèche du bouton 
+    de "Push".
 
 Deux choix sont proposés: "Bridge" et "Publier":
 

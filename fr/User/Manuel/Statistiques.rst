@@ -21,12 +21,12 @@ Les rapports sont classés dans 4 onglets:
 	   :alt: alternate text
 	   :align: center
 
-Au lancement du module, un tableau de bord propose sur une période d’un mois 
+Au lancement du module, un *tableau de bord* propose sur une période d’un mois 
 un ensemble de statistiques généralistes.
 
 Les trois autres onglets proposent des statistiques qui concernent 
-respectivement les connexions des utilisateurs, les téléchargements de 
-documents et enfin l’activité du site.
+respectivement les *connexions des utilisateurs*, les *téléchargements* de 
+documents et enfin *l’activité du site*.
 
 Tableau de bord
 ---------------
@@ -214,7 +214,7 @@ les types de rapports sélectionnables sont les suivants:
 * Questions sans réponses:
   Liste des questions n’ayant fourni aucune réponse.
 
-* Activité du site
+* Activité du site:
   Fournit des informations relatives à l'activité par heure (moyenne).
 
 .. figure:: ../../images/Statistiques-Activite.jpg
@@ -243,7 +243,7 @@ sur le symbole de l'imprimante.
 Les rapports sont générés par :term:`base` et tiennent compte des filtres 
 d’exclusion de collections.
 
-Pour naviguer dans la liste « onglets » des :term:`bases <base>`, positionner 
+Pour naviguer dans la liste "onglets" des :term:`bases <base>`, positionner 
 le curseur en début ou fin de liste.
 
   .. figure:: ../../images/Statistiques-Bases.jpg
@@ -259,7 +259,7 @@ Les filtres sont en relation avec les valeurs disponibles dans la colonne.
   * regroupements logiques par valeurs identiques
 
 Certaines valeurs dans les colonnes sont des liens cliquables "soulignées" 
-et réagissant au survol, sont cliquables et affichent dans une fenêtre "Overlay" 
+et réagissant au survol, sont cliquables et affichent dans une fenêtre :term:`Overlay` 
 des informations en relation avec la valeur du lien.
 
 Les rapports, lorsqu’ils sont constitués d’un grand nombre de lignes, 
@@ -271,12 +271,3 @@ Cette information est affichée en bas de page et il est possible:
 
 .. note:: le total du nombre de lignes disponibles correspond au nombre total 
           de résultats.
-
-
-
-
-
-  
-  
-  
-  

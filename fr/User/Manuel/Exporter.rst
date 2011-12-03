@@ -8,20 +8,21 @@
     L'action "Exporter" est l'une des actions possibles dans *Phraseanet Production*,
     accessible via la :doc:`Palette des Actions <Actions>`.
     Plusieurs modes d'export sont proposés: utiliser le téléchargement, 
-    envoyer par email ou encore envoyer via le FTP.
+    envoyer par email ou encore envoyer via le :term:`FTP <FTP>`.
 
 Cette action permet d'exporter, au choix:
 
   * le document original
   * la prévisualisation
   * l'imagette
-  * les notices XML ou YAML  
+  * les notices :term:`XML <XML>` ou YAML  
 
 *Près de chaque format figurent les tailles respectives des éléments
 à exporter.*
 
 Il est possible d'exporter à l'unité ou en lots des enregistrements, des Paniers,
-des Reportages depuis la zone des Résultats ou depuis la zone des paniers.
+des Reportages depuis l'espace d':doc:`affichage des Résultats <Afficher>` ou 
+depuis les :doc:`Paniers <PaniersReportages>`.
 
 **En cliquant sur "Exporter", trois options d'export sont proposées dans des onglets:**
 
@@ -29,7 +30,7 @@ des Reportages depuis la zone des Résultats ou depuis la zone des paniers.
     dur dans un fichier compressé nommé par exemple Export.zip.
 
   * L'envoi par Mail: Permet d'envoyer à un destinataire, dans une pièce 
-    jointe à un mail, les données à transférer.
+    jointe à un e-mail, les données à transférer.
   
   * L'envoi par FTP: Permet d'envoyer les données vers un serveur FTP
 
@@ -80,7 +81,7 @@ Cet onglet permet de saisir manuellement les coordonnées du serveur FTP de
 destination mais peut aussi appeler des "pré-configurations".
 
 *Les Pré-configurations correspondent à des adresses FTP saisies dans la partie 
-"gestion des utilisateurs" de *Phraseanet Administration*.
+"gestion des utilisateurs" de :doc:`Phraseanet Administration <Administration>`.
 
 Il est possible de demander l’envoi d’un email de confirmation à l’utilisateur 
 envoyant les éléments et au destinataire pour l’informer de la mise à 
@@ -94,5 +95,3 @@ Une fenêtre intermédiaire s’ouvre et informe l’utilisateur de l’état de
   .. image:: ../../images/Exporter-FTP.jpg
 	   :alt: alternate text
 	   :align: center
-
-
