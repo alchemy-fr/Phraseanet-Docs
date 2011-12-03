@@ -56,13 +56,15 @@ gauche:**
 	   :align: center 
 	   
 .. note:: Le nom de la collection peut être substitué par un minilogo de collection.
+          Pour cela, rendez-vous dans :doc:`Phraseanet Administration <Administration>`.
 
 **Passer le curseur sur une vignette pour afficher la description du document.**
 Cette description est composée de champs.
 
 Pour modifier cette description, utiliser la fonction :doc:`Editer <Editer>`.
 Il est possible de mettre en page l’affichage de la description, la liste et 
-le nom des champs affichés (voir Phraseanet Administration).
+le nom des champs affichés (ceci est paramétrable dans l':doc:`Administration 
+<Administration>`).
 
   .. image:: ../../images/Affichage-surlignagemc.jpg
 	   :alt: alternate text
@@ -71,8 +73,8 @@ le nom des champs affichés (voir Phraseanet Administration).
 Dans l'exemple, le mot "plage" est surligné car il a servi de critère de 
 recherche.
 
-**Se positionner sur la "Loupe" pour afficher l’image de choix, lancer la lecture 
-d’un fichier audio, afficher un "résumé" pour les séquences vidéos…**
+**Se positionner sur la "Loupe" pour afficher l’image de choix**, mais aussi lancer 
+la lecture d’un fichier audio, afficher un "résumé" pour les séquences vidéos…
    
   .. image:: ../../images/Affichage-Loupe.jpg
 	   :alt: alternate text
@@ -81,15 +83,15 @@ d’un fichier audio, afficher un "résumé" pour les séquences vidéos…**
 .. note:: Si la loupe n’est pas visible, c’est que l’utilisateur n’a pas le droit 
           de voir les images de choix ou qu’il n’existe pas d’image de choix.
 
-**Se positionner sur le «i» pour obtenir les informations de production du document 
-original telles que : largeur, hauteur, type, poids, taille d’impression…**
+**Se positionner sur le "i" pour obtenir les informations de production du document 
+original** telles que : largeur, hauteur, type, poids, taille d’impression…
 
   .. image:: ../../images/Affichage-i.jpg
 	   :alt: alternate text
 	   :align: center 
 
-La Sélection dans l'affichage
------------------------------
+Sélectionner des documents
+---------------------------
 Pour sélectionner des documents pour les afficher ensuite dans la vue détaillée
 ou bien pour effectuer ensuite des actions diverses (édition, suppression, etc.),
 deux possibilités:
@@ -97,9 +99,9 @@ deux possibilités:
   * La sélection simple
 
 Sélectionner une vignette dans la zone des résultats, dans les paniers ou dans 
-les reportages en cliquant dans son cadre.
-La couleur de fonds de la vignette change. (La couleur de sélection peut être 
-modifiée dans les `Préférences d'affichage`_).
+les reportages en cliquant dans son cadre. La couleur de fonds de la vignette change. 
+
+La couleur de sélection peut être modifiée dans les `Préférences d'affichage`_.
 
   .. image:: ../../images/Affichage-selection1.jpg
 	   :alt: alternate text
@@ -107,8 +109,8 @@ modifiée dans les `Préférences d'affichage`_).
 
   * La sélection multiple
 
-**Pour sélectionner une série de vignettes continues**, appuyer sur le bouton Maj 
-(shift) et cliquer sur la première vignette de la série, puis sur la dernière 
+**Pour sélectionner une série de vignettes "continues"**, appuyer sur le bouton 
+Maj (shift) et cliquer sur la première vignette de la série, puis sur la dernière 
 vignette de la série à sélectionner. *Toutes les vignettes comprises entre ces 
 deux vignettes sont sélectionnées.*
 
@@ -135,15 +137,19 @@ de la nouvelle page de résultats.
   * La sélection par type de documents
 
 Pour sélectionner tous les documents d’une recherche selon leur type, cliquer 
-sur un des liens:
+sur la flèche à droite du carré blanc. Ici, on ne choisit par exemple que des 
+documents de type "images" à afficher:
 
-  .. image:: ../../images/Affichage-selection6a.jpg
+  .. image:: ../../images/Affichage-selectiontype.jpg
 	   :alt: alternate text
 	   :align: center 
 
+Pour placer une sélection de documents dans un Panier: Se reporter à la section 
+dédiée aux :doc:`Paniers et Reportages <PaniersReportages>`.
+
 .. note:: Une sélection de documents est faite, si vous créez un nouveau panier 
           ou un nouveau reportage, une case à cocher vous permet d’ajouter 
-          toute la sélection active au panier ou au reportage.
+          *toute la sélection active* au panier ou au reportage.
 
 La vue détaillée
 ----------------
@@ -164,11 +170,13 @@ d’image" en haut.
 Cliquer sur une vignette pour afficher l’image de choix ou utiliser les flèches 
 "gauche" et "droite" du clavier.
 
-Onglet Description
-******************
-Sur la partie gauche, l'utilisateur retrouve son image de choix. 
-Sur la partie droite, l'onglet *Description* ou *Notice* qui permet de visualiser 
-les informations issues des champs remplis, tels que les mots clés, la légende,...
+Onglet Notice
+**************
+Sur la partie gauche, l'utilisateur retrouve son image de choix.
+ 
+Sur la partie droite, l'onglet *Notice* (ou *Description* dans les anciennes 
+versions) qui permet de visualiser les informations issues des champs remplis, 
+tels que les mots clés, la légende,...
 
   .. image:: ../../images/Affichage-vuedetaillee1.jpg
 	   :alt: alternate text
@@ -182,7 +190,7 @@ Onglet Historique
 *****************
 Cliquer sur l’onglet *Historique* pour afficher le contenu.
 
-Cette onglet liste l’historique de toutes les opérations réalisées par les 
+Cet onglet liste l’historique de toutes les opérations réalisées par les 
 utilisateurs sur le document depuis son ajout.
   
   .. image:: ../../images/Affichage-vuedetaillee2.jpg

@@ -13,7 +13,8 @@
     étendues.
 	
     **Ces différentes actions sont visibles en fonction des droits des utilisateurs**. 
-    Ces droits sont tous paramétrables dans l'interface *Phraseanet Administration*.
+    Ces droits sont tous paramétrables dans l'interface :doc:`Phraseanet 
+    Administration <Administration>`.
 	
 **Les fonctions de base:**
 	* :doc:`Exporter <Exporter>`
@@ -40,9 +41,10 @@ Jusqu'à la version 3.5, celle-ci se présentait ainsi:
 	     :align: center 
 
 A partir de la v3.5, la Palette comporte les mêmes actions, incluant de nouvelles 
-(par exemple le Bridge) mais se présente de manière différente, avec moins de boutons. 
-A la place, à droite de chaque action majeure se trouve une flèche sur laquelle 
-l'utilisateur doit cliquer pour dérouler l'ensemble des actions disponibles.
+(par exemple le :doc:`Bridge <Bridge>`) mais se présente de manière différente, 
+avec moins de boutons. A la place, à droite de chaque action majeure se trouve 
+une flèche sur laquelle l'utilisateur doit cliquer pour dérouler l'ensemble des 
+actions disponibles.
 
     .. image:: ../../images/Actions-PaletteBeta.jpg
 	     :height: 200 px
@@ -81,7 +83,7 @@ Cocher les cases correspondant aux choix souhaités:
   * Planche contact, pour imprimer les vignettes regroupées dans une planche contact.
 
 Cliquer sur Imprimer. Les documents demandés s'affichent sous forme d'un document 
-PDF (Format Acrobat de Adobe - un Reader Acrobat doit être installé sur le poste 
+PDF (*Format Acrobat de Adobe* - un *Reader Acrobat* doit être installé sur le poste 
 de travail).
 
   .. image:: ../../images/Actions-Imprimer2.jpg
@@ -120,7 +122,8 @@ La fenêtre "Changer de collection" s'ouvre.
     le(s) document(s). 
   * Cliquer sur Ok. 
   
-Le document ne se trouve plus dans la collection d'origine, mais dans la collection choisie.
+Le document ne se trouve plus dans la collection d'origine, mais dans la collection 
+choisie.
 
   .. image:: ../../images/Actions-Deplacer.jpg
 	   :alt: alternate text
@@ -187,10 +190,11 @@ interfaces.
 A travers la gestion des utilisateurs, il est possible de définir pour chaque 
 Status activé si un utilisateur est "On" et/ou "Off" pour les documents.
 
-.. note:: Il existe 64 :term:`status <Statusbit>`. 60 sont paramétrables et peuvent 
-          être utilisés pour des besoins de workflow ou la mise en place des 
-          restrictions d’accès aux documents entre autres. Le changement d’état 
-          des status est aussi disponible directement depuis la fenêtre Editer.
+.. note:: Il existe 64 :term:`status <Statusbit>`. 60 sont paramétrables et 
+          peuvent être utilisés pour des besoins de workflow ou la mise en place 
+          des restrictions d’accès aux documents entre autres. 
+          Le changement d’état des status est aussi disponible directement depuis 
+          la fenêtre :doc:`Editer <Editer>`.
 
 **Changer les status des documents**
 

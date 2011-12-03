@@ -17,9 +17,19 @@
     
     * le `thesaurus`_ dans l'interface de *Phraseanet Production*
 
+Voici un aperçu de la barre des Onglets. Ci-dessous, on a cliqué sur l'onglet des 
+Paniers/Reportages.
+
+  .. image:: ../../images/Onglets-General.jpg
+	   :alt: alternate text
+	   :align: center
+
 Les Paniers et les Reportages
 -----------------------------
-Voir la section consacrée aux :doc:`Paniers et Reportages <Paniers et Reportages>`.
+Un espace de travail pour les mettre de côté vos sélections de documents. 
+D'ici, l'utilisateur peut effectuer un grand nombre d'actions sur ses paniers et 
+reportages, notamment envoyer ses documents à d'autres utilisateurs. :doc:`Se 
+reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`.
 
 La recherche avancée
 --------------------
@@ -27,7 +37,7 @@ Cliquer sur l'onglet de Recherche Avancée.
     .. todo:: il faudrait remplacer la capture d'écran de la v3.1 pour mettre une 
               capture de la recherche avancée sur la v3.5
 
-  * Elle permet d'étendre ou réduire le nombre de :term:`bases <base>` / 
+  * Elle permet d'étendre ou réduire le nombre de :term:`bases <base>` et 
     collections sur lesquelles effectuer la recherche
   * Elle permet de filtrer la recherche sur les documents ou les reportages ou 
     les deux, ainsi que sur les types de documents
@@ -59,22 +69,22 @@ Choisir le type de documents : par défaut tous les types
 Sélectionner le moteur de recherche à utiliser.
 Par défaut les deux moteurs sont actifs.
 Phraseanet embarque deux moteurs de recherche, le premier en texte intégral, 
-le deuxième s'appuie uniquement sur le thesaurus, il recherche uniquement sur 
+le deuxième s'appuie uniquement sur le thesaurus: il recherche uniquement sur 
 les termes qui sont présents dans le thesaurus.
 
 .. note:: Les recherches à travers le thesaurus ne sont effectives que si un thesaurus 
           est associé à une :term:`base`.
 
-Utilisation des status-bits en recherche.
+*Utilisation des status-bits en recherche.*
 
 Si des status-bits ont été définis dans *Phraseanet Administrateur* et si des 
 documents ont un ou plusieurs status-bit activé(s), il est alors possible de 
-lancer une recherche sur ces status-bit* en cochant une ou plusieurs cases. 
+lancer une recherche sur ces status-bit en cochant une ou plusieurs cases. 
 
 Cliquer sur Chercher ou sur la touche "entrée" du clavier pour lancer la 
 recherche dans les :term:`bases <base>` / Collections. 
 
-Les documents s'affichent dans la fenêtre Résultats.
+Les documents s'affichent dans la fenêtre *Résultats*.
 
 Propositions
 ------------
@@ -83,7 +93,7 @@ lui renvoyer des propositions en relation avec le thesaurus, de façon à étend
 une recherche en remontant d’un ou plusieurs niveaux ou au contraire à l’affiner 
 en précisant la requête avec un terme plus précis.
 
-Le mot "Justice" est saisi dans la zone de recherche.
+Par exemple: Le mot "Justice" est saisi dans la zone de recherche.
 
 La fenêtre "Résultat" affiche les résultats.
 
@@ -102,8 +112,8 @@ Thesaurus
 Onglet Thesaurus
 ****************
 Cette recherche n’est active que si un ou plusieurs thesaurus sont disponibles. 
-L’onglet Thesaurus dans *Phraseanet Production* est lié à l’Application 
-*Phraseanet Thesaurus*.
+L’onglet Thesaurus dans *Phraseanet Production* est lié à l'interface 
+:doc:`Phraseanet Thesaurus <Thesaurus>`.
 Les Thesauri ouverts sont présentés sous forme d’"arbres".
 
 Cliquer sur l’onglet Thesaurus 
@@ -157,8 +167,7 @@ Le menu contextuel du terme s’affiche:
 
   * Cliquer sur Supprimer 
 
-
-Chercher dans thesaurus
+Chercher dans Thesaurus
 ***********************
 La fenêtre Thesaurus est utilisée pour rechercher des termes présents dans les 
 thesauri ouverts.
