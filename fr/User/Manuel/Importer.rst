@@ -6,14 +6,14 @@
 .. topic:: L'essentiel
 
     Vous pouvez importer des documents en utilisant l'interface **Phraseanet 
-    Upload**. C'est une application dédiée pour ajouter des documents à des 
+    Upload**. C'est une interface dédiée à l'ajout de documents vers des 
     collections sur lesquelles l'utilisateur dispose des droits d'ajout. 
     L'interface présente plusieurs zones de travail: 
 
     * Sélectionnez vos fichiers à ajouter (1)
     * Réordonnez-les éventuellement (2)
     * Choisissez la collection où vont se trouver les documents et en-dessous, 
-      appliquez des Status si besoin (3)
+      appliquez des status si nécessaire (3)
     * Zone indiquant l'état du transfert des documents (4)
 
 
@@ -24,7 +24,8 @@
 
 Importer en trois étapes
 -------------------------
-Cliquer sur Upload dans la barre d'applications Phraseanet.
+Cliquer sur Upload dans le :doc:`menu <General>` Phraseanet.
+
 *Phraseanet Upload* se lance dans un nouvel onglet du navigateur. 
 
 Ajouter des documents
@@ -37,7 +38,7 @@ Ajouter des documents
 	   :align: center 
 
   
-* Cliquer sur *Choisir les fichiers à ajouter*.
+* Cliquer sur *Choisir des fichiers à ajouter*.
 
 L'application lance l'explorateur de fichiers, aller jusqu'au dossier où se 
 trouvent les fichiers à ajouter. Cliquer sur Ouvrir.
@@ -54,9 +55,9 @@ trouvent les fichiers à ajouter. Cliquer sur Ouvrir.
 
 Réordonner avant import
 ***********************
-Cette étape est facultative. Mais si l'ordre dans lequel les images seront transférées 
-est important, il est utile dans ce cas d'utiliser cette zone de travail avant d'importer 
-les documents.
+Cette étape est facultative. Mais si l'ordre dans lequel les images seront 
+transférées vous est important, il est utile dans ce cas d'utiliser cette zone 
+de travail avant de transférer les documents.
 
   * Cliquer sur un fichier et le glisser/ déposer ailleurs dans la liste. 
 
@@ -69,13 +70,13 @@ Il est également possible de cliquer sur "Inverser l'ordre".
 Sélectionner la collection 
 ***************************	
 Il faut désormais sélectionner la collection de destination et vous pourrez également
-appliquer des status.
+appliquer des :term:`status <Statusbit>`.
 
-  * Cliquer sur le menu déroulant des collections disponibles. 
+  * "Destination": Cliquer sur le menu déroulant des collections disponibles. 
 
   * Choisissez la collection où vous souhaitez ajouter vos documents multimédia.
 
-Appliquer ensuite, si nécessaire, un état aux status disponibles.
+  * Appliquer ensuite, si nécessaire, un état aux status disponibles.
 
 
 .. image:: ../../images/Upload-zone3.jpg
@@ -97,9 +98,9 @@ se remplit.
 Chaque fichier est transféré.
 Les documents sont ajoutés à la collection de destination.
 
-Il est désormais possible d'aller consulter vos documents, à partir des interfaces 
-*Phraseanet Production* (consultation et gestion des documents) ou *Phraseanet 
-Classic* (simple consultation).
+Il est désormais possible d'aller :doc:`consulter vos documents <Afficher>`, à 
+partir des interfaces *Phraseanet Production* (consultation et gestion des documents) 
+ou *Phraseanet Classic* (simple consultation).
 
 La Quarantaine
 --------------
@@ -115,7 +116,7 @@ utilisateur.
 La quarantaine ne s'active que si des fichiers photos sont identifiés comme 
 étant des nouvelles versions de documents existants préalablement téléchargés, 
 modifiés puis ajoutés à nouveau.
-La quarantaine permet aussi d'isoler des fichiers photos ne répondant pas à des 
+La quarantaine permet aussi d'isoler des fichiers photo ne répondant pas à des 
 critères paramétrés.
 
 **Voici des cas de mise en quarantaine:**
@@ -157,7 +158,7 @@ Fichiers à multiples versions
 ******************************
 D’autres versions d’un même fichier peuvent déjà être en attente en quarantaine.
 
-  * Cliquer sur « Voir/Cacher ».
+  * Cliquer sur "Voir/Cacher".
 
 Choisir ensuite quelle version en quarantaine à ajouter, rejeter ou substituer.
 
@@ -174,8 +175,8 @@ la :term:`base`.
 
 Les possibilités: 
 
-  * Choisir d’ajouter comme une nouvelle version, rejeter ou :
-  * Cliquer sur le menu déroulant « Document à substituer »
+  * Choisir d’ajouter comme une nouvelle version, rejeter ou:
+  * Cliquer sur le menu déroulant "Document à substituer"
   * Choisir un des documents identifiés dans la :term:`base`
   * Enfin, cliquer sur la flèche verte.
 
@@ -196,20 +197,20 @@ Une fenêtre s’ouvre.
 
 
 * Cliquer sur le menu déroulant.
-* Cliquer sur « Ajouter les documents bloqués » pour créer des nouveaux 
-  enregistrements pour chaque fichier en quarantaine
-* Cliquer « Substituer quand possible ou ajouter les documents bloqués » 
-  permet de substituer tous les fichiers uniques en quarantaines et uniques 
+* Cliquer sur "Ajouter les documents bloqués" pour créer des nouveaux 
+  enregistrements pour chaque fichier en quarantaine.
+* Cliquer sur "Substituer quand possible ou ajouter les documents bloqués" 
+  permet de substituer tous les fichiers uniques en quarantaine et uniques 
   dans la :term:`base`.
 
 La quarantaine permet aussi d’isoler des nouveaux fichiers ne répondant pas à 
 des critères.
 
   * Il est aussi possible de traiter en lot les fichiers bloqués 
-    et « Ajouter les documents bloqués ».
-  * Cliquer sur « Supprimer les documents bloqués » pour rejeter tous les fichiers 
+    et "Ajouter les documents bloqués".
+  * Cliquer sur "Supprimer les documents bloqués" pour rejeter tous les fichiers 
     en quarantaine.
-  * Cliquer sur « Valider » ou « Annuler » 
+  * Cliquer sur "Valider" ou "Annuler". 
 
 L’onglet de la quarantaine se vide.
 
@@ -217,10 +218,10 @@ Fichiers non conformes
 **********************
 
 Si des critères ont été définis dans la structure concernant des 
-caractéristiques attendues pour des fichiers images ont été définit certaines 
+caractéristiques attendues pour des fichiers images ont été définis, certaines 
 images peuvent être mises en quarantaine.
 Ces critères peuvent être des critères de dimensions spatiales, d’espaces 
-colorimétriques…
+colorimétriques,…
 La raison de mise en quarantaine du fichier est donnée sous la vignette.
 
   * Cliquer sur le + vert pour ajouter quand même ces fichiers 
@@ -229,5 +230,3 @@ La raison de mise en quarantaine du fichier est donnée sous la vignette.
   .. image:: ../../images/Upload-quarantaine-nonconforme.jpg
 	   :alt: alternate text
 	   :align: center 
-	   
-	   

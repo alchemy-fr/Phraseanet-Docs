@@ -9,7 +9,7 @@
     *Phraseanet Production*. La barre présente 4 onglets et vous offre: 
     
     * un espace pour mettre de côté des sélections d'images et autres documents: 
-      ce sont les :doc:`Paniers et Reportages <Paniers et Reportages>`
+      ce sont les :doc:`Paniers et Reportages <PaniersReportages>`
     
     * l'accès à `la recherche avancée`_
     

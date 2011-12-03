@@ -7,7 +7,7 @@
 
     Vous pouvez visualiser vos images et autres documents à partir des interfaces 
     *Phraseanet Production* soit *Classic*.
-	
+
     *Production* est une interface dédiée à la consultation, à la recherche, 
     gestion et à l'édition des documents, tandis que *Classic* n'est qu'une simple 
     interface de visualisation et de recherche des documents.
