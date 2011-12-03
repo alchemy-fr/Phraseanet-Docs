@@ -3,7 +3,7 @@
 
 Voici un manuel qui vous guidera dans votre utilisation de Phraseanet. 
 
-le Sommaire pour accéder directement aux différentes sections:
+Le Sommaire pour accéder directement aux différentes sections:
 
 
 .. toctree::

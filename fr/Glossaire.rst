@@ -16,8 +16,8 @@ Glossaire
 
   Sous résolutions
     Les fichiers générés lors de l'ajout d'un document. Elles sont classées 
-    selon trois groupes (Tout le monde/Sous résolutions/Documents)et sont
-    rattachées aux droits utilisateurs
+    selon trois groupes (Tout le monde/Sous résolutions/Documents) et sont
+    rattachées aux droits utilisateurs.
 
   Description
     Fiche documentaire d'un document, composée de plusieurs champs descripteurs.
@@ -26,7 +26,7 @@ Glossaire
     Une métadonnée est littéralement une donnée sur une donnée. 
     Plus précisément, c'est un ensemble structuré d'informations décrivant une 
     ressource quelconque. Les métadonnées sont contenues à l’intérieur du 
-    fichier. L’:term:`IPTC` le :term:`XMP` et l’:term:`EXIF` sont des normes de 
+    fichier. L’:term:`IPTC`, le :term:`XMP` et l’:term:`EXIF` sont des normes de 
     métadonnées que l’on trouve utilisées dans un fichier JPEG par exemple.
     Les métadonnées peuvent être exploitées selon leur type, en lecture seule 
     ou en lecture/écriture.
@@ -37,7 +37,7 @@ Glossaire
   
   Statusbit
     Etat de type Oui/Non qui peut être appliqué sur un document, paramétrable. 
-    Il est possible de définir et d’affecter jusqu'à 60 statuts sur un document
+    Il est possible de définir et d’affecter jusqu'à 60 status sur un document.
 
   Enregistrement
     Un enregistrement est constitué d'un document, de sa fiche descriptive 
@@ -49,7 +49,7 @@ Glossaire
     d’indexation » et de façon plus générale de certains réglages. Une base de 
     données peut contenir une ou plusieurs Collections Phraseanet qui 
     reprendront les réglages de la base. La notion de base est surtout mise en 
-    avant dans Phraseanet Administration, Thesaurus
+    avant dans *Phraseanet Administration* et *Thesaurus*.
 
   Collection
     Une collection est un sous ensemble d'une base. Elles permettent de mettre
@@ -66,7 +66,7 @@ Glossaire
     obligatoirement de la même base mais d’une ou plusieurs collections la 
     constituant. Un reportage dispose de sa propre fiche documentaire, 
     il s’agit donc d’un enregistrement à part entière. 
-    Un document peut appartenir à plusieurs reportages
+    Un document peut appartenir à plusieurs reportages.
      
   IPTC
     L'IPTC (International Press and Telecommunications Council) a défini le 
@@ -78,7 +78,7 @@ Glossaire
   XMP
     Extensible Metadata Platform (format de métadonnées) 
     Le XMP est un format de métadonnées permettant de décrire des fichiers 
-    de type PDF, images ou graphiques
+    de type PDF, images ou graphiques.
 
     .. seealso:: https://www.adobe.com/products/xmp/
 
@@ -91,7 +91,7 @@ Glossaire
   Filigrane
     Marquage de l’image de choix à la volée selon le profil de l’utilisateur 
     avec soit par défaut le nom de la collection en trois endroits de l’image, 
-    soit un logo à charger dans les préférences de collection
+    soit un logo à charger dans les préférences de collection.
 
   Overlay
     Fenêtre en surimpression, technologie d'affichage Internet consistant à 
@@ -100,14 +100,14 @@ Glossaire
   Bridge
     Action Phraseanet permettant de paramétrer et mettre en place  des ponts 
     vers des applications tierces (Youtube, Flickr, Dailymontion).
-    Disponible depuis la barre d'actions.
+    Disponible depuis la Palette des Actions.
     
   Push
     Actions Phraseanet permettant d'envoyer des documents vers des utilisateurs
-    ou vers des applications
+    ou vers des applications.
 
   Palette des Actions
-    Outils disponibles pour les utilisateurs selon leur droits,
+    Outils disponibles pour les utilisateurs selon leurs droits,
     permettant de déclencher des actions sur des documents des paniers...
 
     

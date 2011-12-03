@@ -15,7 +15,7 @@ Règles
 
   - Les lignes ne dépassent pas 80 caractères
   - Le texte est encodé en UTF-8
-  - La documentation n'est pas d'avantage optimisée pour le PDF ou le HTML
+  - La documentation n'est pas davantage optimisée pour le PDF ou le HTML
   - La documentation est publiée en GPL v3
 
 Mémo

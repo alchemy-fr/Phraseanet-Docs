@@ -42,13 +42,13 @@ La page d’accueil permettant la connexion s'affiche :
   * Saisir son identifiant.
   * Saisir son mot de passe.
   * Cliquer sur Ok.
-  * En cas d’oubli du mot de passe suivre la procédure de récupération en 
+  * En cas d’oubli du mot de passe, suivre la procédure de récupération en 
     cliquant sur "Mot de Passe oublié". 
 
 Mon compte
 ----------
-Dans la partie supérieure droite se trouvent vos informations de compte, 
-l’aide en ligne et le lien pour se déconnecter.
+Dans la partie supérieure droite du :doc:`menu <General>` se trouvent vos informations 
+de compte, l’aide en ligne et le lien pour se déconnecter.
 
 Cliquez sur "Mon compte" pour accéder à vos informations.
 
@@ -56,21 +56,18 @@ Cliquez sur "Mon compte" pour accéder à vos informations.
 	   :alt: alternate text
 	   :align: center 
 
-
 *Données personnelles*
 
 Pour saisir et modifier ses informations personnelles et ses coordonnées (postales, 
-mail, fax, tél) et activer un compte FTP permettant l’envoi de documents 
-vers un serveur FTP de l’utilisateur.
+mail, fax, tél) et activer un compte :term:`FTP <FTP>` permettant l’envoi de 
+documents vers un serveur FTP de l’utilisateur.
 
   * Saisir ou modifier les informations et cliquer sur "Valider".
 
-*Accès aux :term:`bases <base>`/collections*
+*Accès aux bases/collections*
 
 Faire une demande pour accéder à de nouvelles :term:`bases <base>`/collections 
 de documents et d'en visualiser l’état. 
-Cocher une ou plusieurs cases pour demander l'accès à de nouvelles 
-:term:`bases <base>` / Collections.
 
   * Cocher une ou plusieurs cases pour demander l'accès à de nouvelles Bases/
     Collections.
