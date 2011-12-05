@@ -30,6 +30,7 @@ actions: gestion des utilisateurs, des bases et des collections,...
 Tableau de bord
 ---------------
   .. to do:: DEV
+  
 Setup
 -----
   .. to do:: ici on parle des bases, de la structure, etc. (DEV)
@@ -70,10 +71,11 @@ les utilisateurs, ainsi que des liens:
   * Créer un nouvel utilisateur
   * Créer un nouveau modèle
   * Réglages d'accès invité (pour régler des droits par défaut pour l'accès invité).
-  L'accès invité peut être mis en place sur Phraseanet, si souhaité, pour donner 
-  la possibilité à des personnes non enregistrées sur le système d'avoir un accès 
-  (temporaire) à certains documents si ceux-ci en font la demande. Tout ceci est 
-  paramétrable dans cet onglet.
+  
+L'accès invité peut être mis en place sur Phraseanet, si souhaité, pour donner 
+la possibilité à des personnes non enregistrées sur le système d'avoir un accès 
+(temporaire) à certains documents si ceux-ci en font la demande. Tout ceci est 
+paramétrable dans cet onglet.
 
 Nouveaux utilisateurs
 *********************
@@ -400,9 +402,12 @@ Pour appliquer un marquage sur les documents publiés à partir de Phraseanet su
 d’autres sites, cocher une des trois options proposées.
 
   * Cocher la case  "Par défaut" pour n’appliquer aucun marquage,
+  
 Ou
+
   * Cocher la case "Fichier de filigrane" pour appliquer le filigrane par défaut 
     ou s’appuyer d'un fichier de filigrane préalablement chargé.
+
 Ou
 
   * Cocher la case "Bandeau de Notice" pour ajouter un bandeau sous la dernière 
