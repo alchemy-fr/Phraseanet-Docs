@@ -10,14 +10,8 @@ Serveur HTTP
 
 L'un des serveur au choix :
 
-  - Nginx >= 1.0
-
-  Phraseanet recommande l'utilisation du serveur Nginx.
-  Voir documentation de configuration spécifique
-
-  - Apache >= 2.2
-
-  Apache 2.2 +mod_rewrite +mod_xsendfile
+  - Nginx >= 1.0 (Recommandé) -- `configuration <Configuration/Nginx>`_
+  - ou Apache >= 2.2 -- `configuration <Configuration/Apache>`_
 
 Base de donnée
 --------------
@@ -30,40 +24,46 @@ comme remplacement à MySQL
 PHP
 ---
 
-  - PHP >= 5.3.4 avec les extensions :
+- PHP >= 5.3.4 avec les extensions :
 
-  +Dom +exif +ftp +gd2 +hash +iconv +xml +mbstring +mysql +pcre 
-      +SimpleXML +sockets +xsl +zlib +mail +mcrypt +pdo
-      +CURL +JSON +gettext
++Dom +exif +ftp +gd2 +hash +iconv +xml +mbstring +mysql +pcre 
+    +SimpleXML +sockets +xsl +zlib +mail +mcrypt +pdo
+    +CURL +JSON +gettext
 
 
 Spécifique Phraseanet
 ---------------------
 
-  - Extension php-phrasea
+- Extension php-phrasea
 
-    Il est nécessaire d'installer l'extension php-phrasea pour utiliser Phraseanet.
+  Il est nécessaire d'installer l'extension php-phrasea pour utiliser Phraseanet.
 
-    Téléchargez et installez la :
+  Téléchargez et installez la :
 
-    .. code-block:: bash
-      
-      git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
-      cd php-phrasea
-      ./configure
-      make
-      make install
+  .. code-block:: bash
 
-  - Phraseanet Indexer
+    git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
+    cd php-phrasea
+    ./configure
+    make
+    make install
 
-    Indexation texte-plein / thésaurus Phraseanet Indexer
-    C’est notre moteur d’indexation, il est nécessaire autant pour l’indexation 
-    texte-plein que pour l’indexation thésaurus.
+- Phraseanet Indexer
 
-    .. code-block:: bash
-      
-      git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
-      cd phraseanet_indexer
+  Indexation texte-plein / thésaurus Phraseanet Indexer
+  C’est notre moteur d’indexation, il est nécessaire autant pour l’indexation 
+  texte-plein que pour l’indexation thésaurus.
+
+  .. code-block:: bash
+
+    git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
+    cd phraseanet_indexer
+    aclocal
+    automake -a
+    autoconf
+    ./configure
+    make
+    make install
       
 
 Locales
@@ -120,8 +120,8 @@ des programmes externes suivant :
 
 
 
-APIs
-----
+Clefs d'APIs (optionnel)
+------------------------
 
   - Youtube
   - Dailymotion

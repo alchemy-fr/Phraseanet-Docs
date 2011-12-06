@@ -1,39 +1,28 @@
 Installation
 ============
 
+
+Après avoir télécharger les sources, vérifié les :doc:`prérequis <Prerequis>`, 
+vous pouvez vérifier votre configuration ; à la racine de votre installation :
+
+  .. code-block:: bash
+  
+    php bin/console system:configCheck
+
+  ..seealso :: Utilisation de l'application :doc:`Konsole Kommander <console>`
+
+Configuration du serveur web
+----------------------------
+
 .. toctree::
-   :maxdepth: 3
-   :hidden:
+   :maxdepth: 1
 
    Configuration/Nginx
    Configuration/Apache
 
-Phraseanet nécessite certains :doc:`prérequis <Prerequis>`, vérifiez votre 
-configuration avant de commencer.
 
-Téléchargez les sources
------------------------ 
-
-  .. code-block:: bash
-
-    git clone https://github.com/alchemy-fr/Phraseanet Phraseanet
-    cd Phraseanet
-
-Verifiez votre configuration
-----------------------------
-
-  .. code-block:: bash
-
-    php bin/console system:configCheck
-
-
-Configurez votre serveur web
-----------------------------
-
-  * :doc:`Sous Nginx <Configuration/Nginx>`
-
-  * :doc:`Sous Apache <Configuration/Apache>`
-
+Setup
+-----
 
 Si tout se passe correctement, vous pourrez vous rendre à l’Url décrite 
 (sub.domain.tld dans l'exemple) et continuer la procédure d'installation.
@@ -47,28 +36,11 @@ Au total, l’installation se déroule en cinq étapes :
  - Mise en place des tâches d’indexation et de sous-définitions
 
 
-Création des tâches essentielles
---------------------------------
+Démarrage des tâches
+--------------------
 
-Dans le module admin, rendez-vous sur la zone Gestionnaire de tâches. 
-Créez les tâches suivantes :
-
-   - Ecriture de meta-données
-   - Sous-définitions
-   - Indexation
-
-Les pré-réglages originaux suffisent dans un premier temps.
-La création de la tâche d’indexation est un plus compliquée :
-
-Créer la tâche. L’application va vous demander plusieurs informations dont
-
- - le chemin vers le binaire indexeur compilé précédemment
- - les paramètres de connexion à la base de donnée (ApplicationBox)
- - Un port de contrôle (le port de votre choix qui ne doit pas être déjà 
-   utilisé sur le serveur)
-
-Si toutes les tâches sont correctement configurées, vous pouvez démarrer le 
-planificateur en cliquant sur sa ligne
+Dans le module admin, rendez-vous sur la zone Gestionnaire de tâches. Lancez
+le planificateur de tâches.
 
 Félicitations, votre installation est terminée !
 

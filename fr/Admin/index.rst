@@ -23,7 +23,9 @@ l'indexation...
 Vous pouvez aussi piloter Phraseanet en console via l'application bin/console
 
 .. toctree::
+    :hidden:
 
+    Telechargement
     Prerequis
     Installation
     Configuration
