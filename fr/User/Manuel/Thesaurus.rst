@@ -8,7 +8,7 @@ Thesaurus
 .. topic:: L'essentiel
 
     Cette application permet de gérer le ou les thésaurus attachés aux bases 
-   de données Phraseanet IV
+    de données Phraseanet IV
 
     Un Thésaurus peut servir à gérer des synonymes, des traductions, 
     à aider les utilisateurs dans leur recherche. 
@@ -91,7 +91,7 @@ n'importe quelle branche existante depuis le branche racine intitulée
 
 * => Une fenêtre s'ouvre si le terme ne faisait pas partie de candidats
 
-.. image:: ../../images/Thesaurus-nouveautermeindexer.jpg
+.. image:: ../../images/Thesaurus-nouveautermereindexer.jpg
    :alt: alternate text
    :align: center
 
@@ -134,7 +134,7 @@ que besoins de synonymie.
 
 * => Une fenêtre s'ouvre si le terme ne faisait pas partie de candidats
 
-.. image:: ../../images/Thesaurus-nouveautermeindexer.jpg
+.. image:: ../../images/Thesaurus-nouveautermereindexer.jpg
    :alt: alternate text
    :align: center
 

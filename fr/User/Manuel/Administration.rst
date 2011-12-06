@@ -79,7 +79,8 @@ paramétrable dans cet onglet.
 
 Nouveaux utilisateurs
 *********************
-  .. image:: ../../images/General-administration.jpg
+
+  .. image:: ../../images/General-Administration.jpg
 	   :alt: alternate text
 	   :align: center 
 
