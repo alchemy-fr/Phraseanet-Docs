@@ -21,6 +21,12 @@ Les tâches disponibles
 Ces differentes taches sont gérées par un Plannificateur (scheduler),
 qui s'occupe de leur demarrage, de leur arret mais aussi de les relancer.
 
+Comment creer une nouvelle tache
+--------------------------------
+
+  - voir -- `nouvelle tache <../User/Manuel/Administration#nouvelle-tache>`_
+
+ 
 Le Plannificateur de taches
 ---------------------------
 
