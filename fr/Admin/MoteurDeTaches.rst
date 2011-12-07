@@ -2,11 +2,24 @@ Moteur de Tâches
 ================
 (Gestionnaire de tâches)
 
-L'application Phraseanet utilise un certain nombres de taches pour l'indexation,
-la creation des sous definitions ou encore la lecture/ecriture des matedonnées
-d'un document...
-Ces differentes taches sont gérées par un scheduler, qui s'occupe de leur
-demarrage, de leur arret mais aussi de les relancer.
+Phraseanet intègre un moteur de tâches afin de réaliser des opérations
+asynchrones.
+
+Les tâches disponibles
+
+      * Création de sous-définitions
+      * Déplacement de docs périmés
+      * Indexation
+      * API Bridge Uploader
+      * Archive dans la collection
+      * Batch upload process (XML Service)
+      * FTP Push
+      * FTP Pull
+      * Ecriture de méta-données
+      * Workflow 01
+
+Ces differentes taches sont gérées par un Plannificateur (scheduler),
+qui s'occupe de leur demarrage, de leur arret mais aussi de les relancer.
 
 Le Plannificateur de taches
 ---------------------------
