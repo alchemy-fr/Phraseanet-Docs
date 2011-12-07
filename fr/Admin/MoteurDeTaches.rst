@@ -120,6 +120,54 @@ dans une collection pré-selectionnnée.
                 deposé à la racine du HotFolder pour que la
                 tache puisse fonctionner.
 
+FTP Push
+********
+
+Permet de gerer une file d'attente de documents à envoyer par ftp.
+Cette fonction necessite l'activation de la fonction d'export ftp.
+
+   Parametres de la tache :
+
+      - proxy : adresse du proxy (optionnel)
+
+      - proxy port: Port du proxy (optionnel)
+
+      - periodicite de la tache : intervalle d'execution de la tache
+
+FTP Pull
+********
+
+Permet de recuperer en local des documents depuis un server FTP.
+
+   Parametres de la tache :
+
+      - proxy : adresse du proxy (optionnel)
+
+      - proxy port: Port du proxy (optionnel)
+
+      - host : adresse du serveur ftp 
+
+      - port : port du serveur ftp
+
+      - user : identifiant sur le serveur ftp
+
+      - password : Mot de passe sur le serveur ftp
+
+      - chemin distant : repetoire d'acces distant
+
+      - localpath : chemin de stockage local des fichiers récuperés
+
+      - mode passif : utiliser le mode passif
+      - SSL: connection en ssl (sécurisée)
+      - periodicite de la tache : intervalle d'execution de la tache
+
+
+NB: cette tache peut etre couplée avec la tache "Archiver dans la collection"
+afin de rapatrier et archiver des documents.
+
+Dans ce cas la variable "Hotfolder" de la tache d'archivage devra correspondre
+à la variable "localpath" décrite ci-dessus
+
 Déplacement des documents périmés
 *********************************
 
@@ -127,3 +175,5 @@ Cette tache permet d'effectuer automatiquement une action ("changement
 de collection" ou "application d'un status")
 sur des documents presents dans une base/collection, à la condition que
 des criteres de type date ou status bits, soient validés par ces documents.
+
+
