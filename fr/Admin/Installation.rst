@@ -9,7 +9,7 @@ vous pouvez vérifier votre configuration ; à la racine de votre installation :
   
     php bin/console system:configCheck
 
-  ..seealso :: Utilisation de l'application :doc:`Konsole Kommander <console>`
+  ..seealso :: Utilisation de l'application :doc:`Konsole Kommander <Console>`
 
 Configuration du serveur web
 ----------------------------

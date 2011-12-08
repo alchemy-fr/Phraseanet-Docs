@@ -48,9 +48,9 @@ Demarre, arrete et redemarre les differentes taches
     
       Le Plannificateur de tache (Scheduler) peut etre demarré depuis
       un gestionnaire comme Cron.
-      Dans le menu contextuel du plannificateur de tache, cliquer sur Preferences.
-      L'url dans cette fenetre permet via un navigateur ou wget de demarrer
-      le plannificateur de taches
+      Dans le menu contextuel du plannificateur de tache,
+      cliquer sur Preferences. L'url dans cette fenetre permet via
+      un navigateur ou wget de demarrer le plannificateur de taches
 
 
 La Tache d'indexation
@@ -69,7 +69,7 @@ L'indexeur doit etre parametré avec les informations ci-dessous :
 
     - Utilisateur : identiifiant de l'utilisateur MySQL
     - mot de passe : Mot de passe de l'utilisateur MySQL
-    - Port de controle :  Port de controle de l'indexer (choix aleatoire, selon les ports disponibles)
+    - Port de controle : Port de controle de l'indexer (ports disponibles)
 
 .. code-block:: bash
     
@@ -108,20 +108,20 @@ dans une collection pré-selectionnnée.
   Parametres de la tache :
 
 
-        - Archive dans la base et la collection : Choix de la 
-          colection de destination des fichiers
+      - Archive dans la base et la collection : Choix de la 
+        colection de destination des fichiers
 
-        - HotFolder : repertoire à scruter 
+      - HotFolder : repertoire à scruter 
 
-        - intervalle d'éxecution : intevalle entre deux execution de la tache 
+      - intervalle d'éxecution : intevalle entre deux execution de la tache 
 
-        - délais avant traitement. : Temps d'attente avant action 
+      - délais avant traitement. : Temps d'attente avant action 
 
-        - Déplacer les documents archivé dans "_archived" : garder 
-          ou pas un exemplaire du fichier traité
+      - Déplacer les documents archivé dans "_archived" : garder 
+        ou pas un exemplaire du fichier traité
 
-        - Déplacer les documents non-archivé dans "_error" : garder 
-          ou pas un exemplaire du fichier en erreur
+      - Déplacer les documents non-archivé dans "_error" : garder 
+        ou pas un exemplaire du fichier en erreur
 
    .. warning:: un fichier vide nommé ".phrasea.xml" doit etre
                 deposé à la racine du HotFolder pour que la
@@ -178,10 +178,11 @@ Dans ce cas la variable "Hotfolder" de la tache d'archivage devra correspondre
 Déplacement des documents périmés
 *********************************
 
-Cette tache permet d'effectuer automatiquement une action ("changement 
-de collection" ou "application d'un status")
-sur des documents presents dans une base/collection, à la condition que
-des criteres de type date ou status bits, soient validés par ces documents.
+Cette tache permet d'effectuer automatiquement une action ("changement de 
+`collection <../Glossaire.html?highlight=collection>`_ 
+" ou "application d'un status") sur des documents presents dans 
+une base/collection, à la condition que des criteres de type date
+ou status bits, soient validés par ces documents.
 
 API Bridge Uploader
 *******************
@@ -193,8 +194,9 @@ Workflow 01
 ***********
 
 Cette tache permet de deplacer un document d'une
-`collection <index.html?highlight=collection>`_ vers une autre.
-On peut aussi aojuter comme critere pour deplacer un document, un status-bit.
+`collection <../Glossaire.html?highlight=collection>`_ 
+vers une autre. On peut aussi ajouter comme critére pour deplacer 
+un document, un status-bit.
 
    Parametres de la tache :
 
