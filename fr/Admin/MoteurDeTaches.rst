@@ -182,4 +182,11 @@ de collection" ou "application d'un status")
 sur des documents presents dans une base/collection, à la condition que
 des criteres de type date ou status bits, soient validés par ces documents.
 
+API Bridge Uploader
+*******************
 
+Workflow 01
+***********
+
+Batch upload process (XML Service)
+**********************************

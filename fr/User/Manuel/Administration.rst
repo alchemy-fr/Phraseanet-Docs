@@ -316,7 +316,7 @@ de la base de destination).
 
   * Pour créer une nouvelle tâche, cliquer sur nouvelle tâche.
 
-  .. image:: ../../images/Administration-droits.jpg
+  .. image:: ../../images/Administration-taches.jpg
 	   :alt: alternate text
 	   :align: center 
 
@@ -324,9 +324,13 @@ Nouvelle tâche
 **************
 Cette fonction permet de créer une nouvelle tâche.
 
-Le paramétrage des Tâches dans Phraseanet permet de mettre en place des automatismes 
-de traitement. La solution est livrée en standard avec un certain de nombre de 
-tâches exploitables. 
+  .. image:: ../../images/Administration-nouvelletache.jpg
+	   :alt: alternate text
+	   :align: center
+
+Le paramétrage des Tâches dans Phraseanet permet de mettre en place des
+automatismes de traitement. La solution est livrée en standard
+avec un certain de nombre de tâches exploitables. 
 
 Les paramètres des tâches sont stockés sous forme de fichiers XML. Dans certains 
 cas, les fichiers XML de paramétrage proposent une interface de saisie.
