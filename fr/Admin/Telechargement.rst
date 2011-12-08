@@ -7,19 +7,14 @@ Vous les téléchargerez via la commande
 
   .. code-block:: bash
 
-    git clone --recursive git://github.com/alchemy-fr/Phraseanet.git
-
-*L'option recursive permet de télécharger les dépendances externes*
+    git clone git://github.com/alchemy-fr/Phraseanet.git Phraseanet
+    cd Phraseanet
+    ./vendors.php
 
   .. warning:: Phraseanet requiert deux dépendances que nous fournissons :
 
-  .. code-block:: bash
+  * http://github.com/alchemy-fr/Phraseanet-Extension
 
-    git clone git://github.com/alchemy-fr/Phraseanet-Extension.git
-
-
-  .. code-block:: bash
-
-    git clone git://github.com/alchemy-fr/Phraseanet-Indexer.git
+  * http://github.com/alchemy-fr/Phraseanet-Indexer
 
 Vérifiez les :doc:`prérequis <Prerequis>` et procédez à l'installation.
