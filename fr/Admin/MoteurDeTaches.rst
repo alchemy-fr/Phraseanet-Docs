@@ -202,5 +202,4 @@ un document, un status-bit.
     - Collection : collection d'origine ====>	collection de destination
     - Status : status-bit à l'origine   ====> status-bit final
 
-Batch upload process (XML Service)
-**********************************
+.. todo:: Batch upload process (XML Service)
