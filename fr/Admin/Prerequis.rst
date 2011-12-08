@@ -10,8 +10,8 @@ Serveur HTTP
 
 L'un des serveur au choix :
 
-  - Nginx >= 1.0 (Recommandé) -- `configuration <Configuration/Nginx>`_
-  - ou Apache >= 2.2 -- `configuration <Configuration/Apache>`_
+  - Nginx >= 1.0 (Recommandé) -- :doc:`configuration <Configuration/Nginx>`
+  - ou Apache >= 2.2 -- :doc:`configuration <Configuration/Apache>`
 
 Base de donnée
 --------------
