@@ -17,7 +17,7 @@ Les données physiques sont stockées dans des répertoires prédéfinis à
 l’installation de l’application.
 
 Une sauvegarde differentielle est preconisée pour ces fichiers.
-
+(le volume de données pouvant être très important).
 
 Les Bases MySQL
 ***************
