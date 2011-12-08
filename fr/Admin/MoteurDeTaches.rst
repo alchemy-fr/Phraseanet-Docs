@@ -65,7 +65,8 @@ L'indexeur doit etre parametré avec les informations ci-dessous :
     - chemin d'accès : Chemin vers l'executable phraseanet_indexer
     - Hote : Adresse du serveur MySQL
     - Port : Port du serveur MySQL
-    - Database : Base de donnée MySQL (ApplicationBox)
+    - Database :voir-`(ApplicationBox) <index.html?highlight=ApplicationBoxes>`_
+
     - Utilisateur : identiifiant de l'utilisateur MySQL
     - mot de passe : Mot de passe de l'utilisateur MySQL
     - Port de controle :  Port de controle de l'indexer (choix aleatoire, selon les ports disponibles)
@@ -184,9 +185,23 @@ des criteres de type date ou status bits, soient validés par ces documents.
 
 API Bridge Uploader
 *******************
+Cette tache s'occupe de traiter la liste des documents à uploder via 
+le module `Bridge <../User/Manuel/Bridge.html?highlight=bridge>`_
+, Vers Youtube, DailyMotion ou Flickr.
 
 Workflow 01
 ***********
+
+Cette tache permet de deplacer un document d'une
+`collection <index.html?highlight=collection>`_ vers une autre.
+On peut aussi aojuter comme critere pour deplacer un document, un status-bit.
+
+   Parametres de la tache :
+
+    - Database : choix de la `databox <index.html?highlight=DataBoxes>`_
+    - intervalle d'éxecution :  intervalle d'execution de la tache
+    - Collection : collection d'origine ====>	collection de destination
+    - Status : status-bit à l'origine   ====> status-bit final
 
 Batch upload process (XML Service)
 **********************************
