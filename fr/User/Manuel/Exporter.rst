@@ -80,8 +80,9 @@ L'onglet FTP
 Cet onglet permet de saisir manuellement les coordonnées du serveur FTP de 
 destination mais peut aussi appeler des "pré-configurations".
 
-*Les Pré-configurations correspondent à des adresses FTP saisies dans la partie 
-"gestion des utilisateurs" de :doc:`Phraseanet Administration <Administration>`.
+*Les Pré-configurations correspondent à des adresses FTP saisies 
+dans la partie "gestion des utilisateurs" 
+de :doc:`Phraseanet Administration <Administration>`.*
 
 Il est possible de demander l’envoi d’un email de confirmation à l’utilisateur 
 envoyant les éléments et au destinataire pour l’informer de la mise à 

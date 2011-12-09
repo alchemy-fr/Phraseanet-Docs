@@ -1,6 +1,5 @@
-Moteur de Tâches
-================
-(Gestionnaire de tâches)
+Gestionnaire de Tâches
+======================
 
 Phraseanet intègre un moteur de tâches afin de réaliser des opérations
 asynchrones.
