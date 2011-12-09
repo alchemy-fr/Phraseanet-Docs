@@ -10,8 +10,8 @@ Les tâches disponibles
       * Création de sous-définitions
       * Déplacement de docs périmés
       * Indexation
-      * API Bridge Uploader
-      * Archive dans la collection
+      * API :term:`Bridge` Uploader
+      * Archive dans la :term:`Collection`
       * Batch upload process (XML Service)
       * FTP Push
       * FTP Pull
@@ -102,12 +102,12 @@ Archiver dans la collection
 ***************************
 
 Cette tache permet de scrutter un repertoire d'inserer (archiver) son contenu
-dans une collection pré-selectionnnée.
+dans une :term:`Collection` pré-selectionnnée.
 
   Parametres de la tache :
 
 
-      - Archive dans la base et la collection : Choix de la 
+      - Archive dans la base et la :term:`Collection` : Choix de la 
         colection de destination des fichiers
 
       - HotFolder : repertoire à scruter 
@@ -185,8 +185,7 @@ de type date ou status bits, soient validés par ces documents.
 API Bridge Uploader
 *******************
 Cette tache s'occupe de traiter la liste des documents à uploder via 
-le module `Bridge <../User/Manuel/Bridge>`_
-, Vers Youtube, DailyMotion ou Flickr.
+le module :term:`Bridge`, Vers Youtube, DailyMotion ou Flickr.
 
 Workflow 01
 ***********
