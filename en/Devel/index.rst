@@ -1,11 +1,10 @@
 Developer
-=========
-
+===========
+.. module:: Developpeur
 .. toctree::
-   :maxdepth: 3
 
-   Devel/API
-   Devel/Forums
+   API
+   Forums
 
 Welcome to the Phraseanet Developer Wiki !
 

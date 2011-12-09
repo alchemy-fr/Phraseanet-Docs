@@ -2,7 +2,7 @@ NGINX
 =====
 
 
-Exemple de fichier de configuration Nginx.
+Nginx configuration sample.
 
 
 .. code-block:: bash
@@ -28,15 +28,15 @@ Exemple de fichier de configuration Nginx.
           }
   }
 
-.. note:: N'oubliez pas de copier le fichier des règles de re-écriture 
-  `rewrite_rules.inc` que vous trouverez dans config/nginx.rewrite.rules
+.. note:: Do not forget to copy the rewrite rules file `rewrite_rules.inc` that
+  you will find in `config/nginx.rewrite.rules`.
 
 
-Configuration Auth Token
+Auth Token Configuration
 ------------------------
 
-Configuration Pseudo Stream H264
+Pseudo Stream H264 Configuration
 --------------------------------
 
-Configuration XSendFile
+XSendFile Configuration
 -----------------------

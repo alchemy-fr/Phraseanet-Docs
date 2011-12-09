@@ -1,9 +1,9 @@
-Téléchargement
-==============
+Download
+========
 
-Les sources sont dispibles sur notre repository GitHub 
+Sources are available on our GitHub repository :  
 `https://github.com/alchemy-fr/Phraseanet <https://github.com/alchemy-fr/Phraseanet>`_
-Vous les téléchargerez via la commande
+you can fetch them with
 
   .. code-block:: bash
 
@@ -11,10 +11,10 @@ Vous les téléchargerez via la commande
     cd Phraseanet
     ./vendors.php
 
-  .. warning:: Phraseanet requiert deux dépendances que nous fournissons :
+  .. warning:: Phraseanet requires two dependencies that we provide :
 
   * http://github.com/alchemy-fr/Phraseanet-Extension
 
   * http://github.com/alchemy-fr/Phraseanet-Indexer
 
-Vérifiez les :doc:`prérequis <Prerequis>` et procédez à l'installation.
+Verify :doc:`prerequisite <Prerequisite>` and proceed to install.
