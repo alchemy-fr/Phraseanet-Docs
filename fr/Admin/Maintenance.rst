@@ -22,8 +22,7 @@ Une sauvegarde differentielle est preconisée pour ces fichiers.
 Les Bases MySQL
 ***************
 
-L' `ApplicationBox <index.html?highlight=ApplicationBoxes>`_ et les 
-`DataBoxes <index.html?highlight=DataBoxes>`_ sont les bases MySQL associées
+L'ApplicationBox et les DataBoxes sont les bases MySQL associées
 à une installation Phraseanet.
 
 Une sauvegarde à chaud de ces bases est envisageable.
@@ -56,6 +55,6 @@ Etat de maintenance
 -------------------
 
 Le bloc "Etat de maintenance" dans la 
-`configuration de l'application <../User/Manuel/Administration.html#setup>`_
+`configuration de l'application <../User/Manuel/Administration#setup>`_
 , permet d'activer les logs et d'alerter les utilisateurs
 (ex: maintenance en cours)
