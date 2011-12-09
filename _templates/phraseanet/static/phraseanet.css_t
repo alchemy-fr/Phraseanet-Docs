@@ -149,6 +149,10 @@ div.sphinxsidebar li.current li{
 div.sphinxsidebarwrapper{
     padding: 20px 0;
 }
+
+div.sphinxsidebarwrapper a.current{
+    text-decoration:underline;
+}
  
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
@@ -188,7 +192,7 @@ div.sphinxsidebar ul {
     color: #000;
     line-height:23px;
 }
- 
+
 div.sphinxsidebar a {
     color: #444;
 }
