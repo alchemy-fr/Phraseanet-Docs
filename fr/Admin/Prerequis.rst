@@ -73,10 +73,23 @@ Sur les systèmes Unix/GNU-Linux, il sera nécessaire d’installer les packs
 locales adéquats pour pouvoir bénéficier des traductions de messages via la lib 
 gettext.
 
+
 Exemple pour debian :
+
+  .. code-block:: bash
+
+    dpkg-reconfigure locales
+
+
+Exemple pour ubuntu :
 
  - Activation des locales désirées via le fichier /etc/locale.gen
  - execution de la commande /usr/sbin/locale-gen
+
+
+  .. note::
+
+    Les locales à installer doivent être les locales UTF-8.
 
 
 Programmes Externes

@@ -69,10 +69,22 @@ Locales
 On Unix / GNU-Linux systems, it is necessary to enable locales to use 
 Phraseanet in your languages.
 
+
 Debian example :
+
+  .. code-block:: bash
+
+    dpkg-reconfigure locales
+
+Ubuntu example :
 
  - Activate via /etc/locale.gen
  - Execute /usr/sbin/locale-gen
+
+
+  .. note::
+
+    Locales must be in UTF-8.
 
 
 Third Party Programs
