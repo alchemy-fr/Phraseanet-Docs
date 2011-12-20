@@ -54,7 +54,8 @@ au format twig.
 Etat de maintenance
 -------------------
 
-Le bloc "Etat de maintenance" dans la 
-`configuration de l'application <../User/Manuel/Administration#setup>`_
+Le bloc "Etat de maintenance" dans la  configuration de l'application
 , permet d'activer les logs et d'alerter les utilisateurs
 (ex: maintenance en cours)
+
+  Voir - Le Manuel Utilisateur / Administration / Setup
