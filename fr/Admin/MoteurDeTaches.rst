@@ -23,8 +23,8 @@ qui s'occupe de leur demarrage, de leur arret mais aussi de les relancer.
 Comment creer une nouvelle tache
 --------------------------------
 
-  - voir -- `nouvelle tache <../User/Manuel/Administration#nouvelle-tache>`_
-
+  - Voir la Rubrique "Nouvelle tâche" dans la partie Administration du manuel
+    utilisateur
  
 Le Plannificateur de taches
 ---------------------------
