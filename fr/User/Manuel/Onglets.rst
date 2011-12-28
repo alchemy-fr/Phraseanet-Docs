@@ -33,27 +33,17 @@ reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`
 
 La recherche avancée
 --------------------
-Cliquer sur l'onglet de Recherche Avancée.
-    .. todo:: il faudrait remplacer la capture d'écran de la v3.1 pour mettre une 
-              capture de la recherche avancée sur la v3.5
+Cliquer sur l'onglet de Recherche Avancée, qui se trouve dans la barre des onglets
+à compter de la version 3.5.
 
-  * Elle permet d'étendre ou réduire le nombre de :term:`bases <base>` et 
-    collections sur lesquelles effectuer la recherche
-  * Elle permet de filtrer la recherche sur les documents ou les reportages ou 
-    les deux, ainsi que sur les types de documents
-  * Elle permet de choisir le moteur Texte intégral et/ou le moteur Thesaurus.
-  * Elle permet de reduire la recherche à un champs en particulier
-  * Elle permet de faire des recherches sur les Status Bits 
-  * Enfin, elle permet de faire des recherches sur des champs de type numérique.
-
-  .. image:: ../../images/Rechercher-avancee.jpg
+  .. image:: ../../images/Rechercheavancee1.jpg
 	   :alt: alternate text
 	   :align: center
 
 Choisir les :term:`bases <base>` et collections où rechercher.
 
-.. note:: Il est possible de désélectionner toutes les :term:`bases <base>` 
-          et collections en cliquant sur "Aucune" ou de cliquer directement sur les 
+.. note:: Il est possible de désélectionner toutes les :term:`bases <base>` et 
+          collections en cliquant sur "Aucune" ou de cliquer directement sur les 
           noms des :term:`bases <base>` pour les sélectionner ou désélectionner 
           individuellement ou encore dans les cases à cocher proposées pour chaque 
           collection disponible.
@@ -64,25 +54,26 @@ d'indexation des reportages) ou sur les documents.
 .. note:: Il n'est pas possible de chercher à la fois sur des reportages et des 
           documents.
 
-Choisir le type de documents : par défaut tous les types
+Voici le nouvel onglet: 
 
-Sélectionner le moteur de recherche à utiliser.
-Par défaut les deux moteurs sont actifs.
-Phraseanet embarque deux moteurs de recherche, le premier en texte intégral, 
-le deuxième s'appuie uniquement sur le thesaurus: il recherche uniquement sur 
-les termes qui sont présents dans le thesaurus.
+  .. image:: ../../images/Rechercheavancee2.jpg
+	   :alt: alternate text
+	   :align: center
 
-.. note:: Les recherches à travers le thesaurus ne sont effectives que si un thesaurus 
-          est associé à une :term:`base`.
+  * Saisir les termes à chercher dans une des quatre zones de texte prévues à cet 
+    effet, puis choisissez les options de recherche disponibles.
 
-*Utilisation des status-bits en recherche.*
+  * Choisir une ou plusieurs collections.
 
-Si des status-bits ont été définis dans *Phraseanet Administrateur* et si des 
-documents ont un ou plusieurs status-bit activé(s), il est alors possible de 
-lancer une recherche sur ces status-bit en cochant une ou plusieurs cases. 
+  * Il est désormais possible de faire apparaître des critères de tri d’affichage 
+    des réponses : La version 3.5 intègre désormais des tris d’affichages sur les 
+    critères de dates.
 
-Cliquer sur Chercher ou sur la touche "entrée" du clavier pour lancer la 
-recherche dans les :term:`bases <base>` / Collections. 
+  * Choisir un ou plusieurs champs spécifiques.
+
+  * Sélectionner les status des documents.
+
+  * Recherche possible sur des intervalles de dates.
 
 Les documents s'affichent dans la fenêtre *Résultats*.
 
