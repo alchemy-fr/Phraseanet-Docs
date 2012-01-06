@@ -19,7 +19,6 @@ Le Sommaire pour accéder directement aux différentes sections:
    Manuel/PaniersReportages
    Manuel/Editer
    Manuel/Exporter
-   Manuel/Actions
    Manuel/Push
    Manuel/Publier
    Manuel/Bridge
