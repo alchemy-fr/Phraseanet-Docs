@@ -18,6 +18,9 @@ Vous aurez à votre écran une liste de commande de la sorte :
     about
       about:authors              List authors and contributors
       about:license              This program license
+	check
+	  check:config               check configuration file
+	  check:system               Check the configuration
     scheduler
       scheduler:start            Start the scheduler
       scheduler:state            Get scheduler state
@@ -25,7 +28,6 @@ Vous aurez à votre écran une liste de commande de la sorte :
     system
       system:backupDB            Backup Phraseanet Databases
       system:clearCache          Empty cache directories, clear Memcached, Redis if avalaible
-      system:configCheck         Check the configuration
       system:templateGenerator   Generate template files
       system:upgrade             Upgrade Phraseanet to the lastest version
     task
