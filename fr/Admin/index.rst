@@ -35,5 +35,4 @@ Vous pouvez aussi piloter Phraseanet en console via l'application bin/console
     Console
     Maintenance
     Optimisation
-
-
+    Faq
