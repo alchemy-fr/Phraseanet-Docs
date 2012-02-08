@@ -27,6 +27,7 @@ Apache Configuration sample.
       LogLevel warn
   </VirtualHost>
 
+*Note:* adapt the paths `logs/phraseanet_error/access_log` to your project path
 
 Auth Token Configuration
 ------------------------
