@@ -18,3 +18,11 @@ you can fetch them with
   * http://github.com/alchemy-fr/Phraseanet-Indexer
 
 Verify :doc:`prerequisite <Prerequisite>` and proceed to install.
+
+*Note:* We need to fetch some dependencies for inner folders:
+
+  .. code-block:: bash
+
+    cd lib/vendor/Silex/
+    git submodule update --init --recursive
+
