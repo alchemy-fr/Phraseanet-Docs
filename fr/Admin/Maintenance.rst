@@ -6,7 +6,7 @@ Sauvegarde
 
 Phraseanet dissocie le stockage des documents physiques
 (images, vidéos, audio, pdf ect ...) et les bases de données MySQL.
-La sauvegarde devra donc prendre en compte de façons synchrone ses
+La sauvegarde devra donc prendre en compte de façon synchrone ses
 deux éléments.
 S'ajoute à ces éléments, les fichiers sources de l'application.
 
@@ -16,7 +16,7 @@ Les données Physiques
 Les données physiques sont stockées dans des répertoires prédéfinis à
 l’installation de l’application.
 
-Une sauvegarde differentielle est preconisée pour ces fichiers.
+Une sauvegarde différentielle est préconisée pour ces fichiers.
 (le volume de données pouvant être très important).
 
 Les Bases MySQL

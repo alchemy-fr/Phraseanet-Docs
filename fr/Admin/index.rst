@@ -6,12 +6,12 @@ Administrateur
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
 
-Phraseanet repose sur des base de données MySQL/InnoDB : les ApplicationBoxes 
+Phraseanet repose sur des bases de données MySQL/InnoDB : les ApplicationBoxes 
 et les DataBoxes. 
 
 Les premières servent de base à l'applicatif Phraseanet et stockent les 
 utilisateurs, leurs paniers, leurs droits sur les dfifférentes collections et 
-des liens vers une ou plusieurs databoxes.
+des liens vers une ou plusieurs DataBoxes.
 
 Les databoxes sont des containers à enregistrements. Elles diffèrent par leurs
 structures documentaires.

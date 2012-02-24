@@ -2,13 +2,13 @@ Konsole Kommander
 =================
 
 Konsole Kommander est une application en ligne de commande pour piloter 
-Phraseanet. Elle s'execute simplement : 
+Phraseanet. Elle s'exécute simplement : 
 
   .. code-block:: bash
 
     php bin/console
 
-Vous aurez à votre écran une liste de commande de la sorte :
+Vous aurez sur votre écran une liste de commande de la sorte :
 
   .. code-block:: bash
 
@@ -18,10 +18,10 @@ Vous aurez à votre écran une liste de commande de la sorte :
     about
       about:authors              		List authors and contributors
       about:license              		This program license
-	check
-	  check:config               		check configuration file
-	  check:ensureProductionSettings	Ensure production settings
-	  check:system               		Check the configuration
+    check
+      check:config               		check configuration file
+      check:ensureProductionSettings    	Ensure production settings
+      check:system               		Check the configuration
     scheduler
       scheduler:start           		Start the scheduler
       scheduler:state            		Get scheduler state
@@ -35,7 +35,7 @@ Vous aurez à votre écran une liste de commande de la sorte :
       task:list                  		List tasks
       task:run                   		Run task
 
-Les commandes disponible sont listées.
+Les commandes disponibles sont listées.
 
 Pour obtenir de l'aide sur une commande : 
 

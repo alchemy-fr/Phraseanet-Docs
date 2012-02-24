@@ -17,25 +17,25 @@ Les tâches disponibles
       * Ecriture de méta-données
       * Workflow 01
 
-Ces differentes taches sont gérées par un Plannificateur (scheduler),
-qui s'occupe de leur demarrage, de leur arret mais aussi de les relancer.
+Ces différentes taches sont gérées par un Planificateur (scheduler),
+qui s'occupe de leur démarrage, de leur arrêt mais aussi de les relancer.
 
-Comment creer une nouvelle tache
+Comment créer une nouvelle tache
 --------------------------------
 
   - voir -- `nouvelle tache <../User/Manuel/Administration#nouvelle-tache>`_
 
  
-Le Plannificateur de taches
+Le Planificateur de taches
 ---------------------------
 
-Demarre, arrete et redemarre les differentes taches
+Démarre, arrête et redémarre les différentes taches
 
-  - demarrer les taches
+  - démarrer les taches
   
-      Menu contectuel > start
+      Menu contextuel > start
 
-  - arreter les taches
+  - arrêter les taches
 
       Menu contextuel > stop
 
@@ -43,31 +43,31 @@ Demarre, arrete et redemarre les differentes taches
 
       Menu contextuel > Show log
 
-  - Les Preferences du gestionnare de taches
+  - Les Préférences du gestionnaire de taches
     
-      Le Plannificateur de tache (Scheduler) peut etre demarré depuis
+      Le Planificateur de tache (Scheduler) peut être démarré depuis
       un gestionnaire comme Cron.
-      Dans le menu contextuel du plannificateur de tache,
-      cliquer sur Preferences. L'url dans cette fenetre permet via
-      un navigateur ou wget de demarrer le plannificateur de taches
+      Dans le menu contextuel du planificateur de tache,
+      cliquer sur Préférences. L'url dans cette fenêtre permet via
+      un navigateur ou wget de démarrer le planificateur de taches
 
 
 La Tache d'indexation
 ---------------------
 
-Permet de lancer l'excutable phraseanet_indexer.
-Cet executable indexe les informations descriptives des
+Permet de lancer l'exécutable phraseanet_indexer.
+Cet exécutable indexe les informations descriptives des
 documents dans les bases de données.
 
-L'indexeur doit etre parametré avec les informations ci-dessous :
+L'indexeur doit être paramétré avec les informations ci-dessous :
 
-    - chemin d'accès : Chemin vers l'executable phraseanet_indexer
-    - Hote : Adresse du serveur MySQL
+    - chemin d'accès : Chemin vers l'exécutable phraseanet_indexer
+    - Hôte : Adresse du serveur MySQL
     - Port : Port du serveur MySQL
     - Database :ApplicationBox
-    - Utilisateur : identiifiant de l'utilisateur MySQL
+    - Utilisateur : identifiant de l'utilisateur MySQL
     - mot de passe : Mot de passe de l'utilisateur MySQL
-    - Port de controle : Port de controle de l'indexer (ports disponibles)
+    - Port de contrôle : Port de contrôle de l'indexer (ports disponibles)
 
 .. code-block:: bash
     
@@ -75,10 +75,10 @@ L'indexeur doit etre parametré avec les informations ci-dessous :
     -p=password --socket=PortControle --default-character-set=utf8 -o
 
 
-La Tache de création des Sous Definitions
+La Tache de création des Sous Définitions
 -----------------------------------------
 
-S'occupent de créer les sous definitions (images de choix et vignettes) à partir
+S'occupent de créer les sous définitions (images de choix et vignettes) à partir
 du document original.
 
 
@@ -86,10 +86,10 @@ La Tache de Lecture/Ecriture des Metadonnées
 --------------------------------------------
 
 Lit et et indexe les metadonnées incluses dans un document en fonction 
-des pré-reglages de la structure de base. 
+des pré-réglages de la structure de base. 
 
 
-  .. warning:: Ces taches doivent etre demarrées pour le bon fontionnement de 
+  .. warning:: Ces taches doivent être démarrées pour le bon fonctionnement de 
     l'application.
 
 Autres Taches disponibles 
@@ -100,55 +100,55 @@ Les taches ci-dessous sont optionnelles :
 Archiver dans la collection
 ***************************
 
-Cette tache permet de scrutter un repertoire d'inserer (archiver) son contenu
-dans une :term:`Collection` pré-selectionnnée.
+Cette tache permet de scruter un répertoire d'inéerer (archiver) son contenu
+dans une :term:`Collection` pré-sélectionnée.
 
-  Parametres de la tache :
+  Paramètres de la tache :
 
 
       - Archive dans la base et la :term:`Collection` : Choix de la 
-        colection de destination des fichiers
+        collection de destination des fichiers
 
-      - HotFolder : repertoire à scruter 
+      - HotFolder : répertoire à scruter 
 
-      - intervalle d'éxecution : intevalle entre deux execution de la tache 
+      - intervalle d'exécution : intervalle entre deux exécution de la tache 
 
       - délais avant traitement. : Temps d'attente avant action 
 
-      - Déplacer les documents archivé dans "_archived" : garder 
+      - Déplacer les documents archivés dans "_archived" : garder 
         ou pas un exemplaire du fichier traité
 
-      - Déplacer les documents non-archivé dans "_error" : garder 
+      - Déplacer les documents non-archivés dans "_error" : garder 
         ou pas un exemplaire du fichier en erreur
 
-   .. warning:: un fichier vide nommé ".phrasea.xml" doit etre
-                deposé à la racine du HotFolder pour que la
+   .. warning:: un fichier vide nommé ".phrasea.xml" doit être
+                déposé à la racine du HotFolder pour que la
                 tache puisse fonctionner.
 
 FTP Push
 ********
 
-Permet de gerer une file d'attente de documents à envoyer par ftp.
-Cette fonction necessite l'activation de la fonction d'export ftp.
+Permet de gérer une file d'attente de documents à envoyer par ftp.
+Cette fonction nécessite l'activation de la fonction d'export ftp.
 
-   Parametres de la tache :
+   Paramètres de la tache :
 
-      - proxy : adresse du proxy (optionnel)
+      - proxy : adresse du proxy (optionnelle)
 
       - proxy port: Port du proxy (optionnel)
 
-      - periodicite de la tache : intervalle d'execution de la tache
+      - periodicite de la tache : intervalle d'exécution de la tache
 
 FTP Pull
 ********
 
-Permet de recuperer en local des documents depuis un server FTP.
+Permet de récupérer en local des documents depuis un server FTP.
 
-   Parametres de la tache :
+   Paramètres de la tache :
 
-      - proxy : adresse du proxy (optionnel)
+      - proxy : adresse du proxy (optionnelle)
 
-      - proxy port: Port du proxy (optionnel)
+      - proxy port: port du proxy (optionnel)
 
       - host : adresse du serveur ftp 
 
@@ -156,21 +156,21 @@ Permet de recuperer en local des documents depuis un server FTP.
 
       - user : identifiant sur le serveur ftp
 
-      - password : Mot de passe sur le serveur ftp
+      - password : mot de passe sur le serveur ftp
 
-      - chemin distant : repetoire d'acces distant
+      - chemin distant : répertoire d'accès distant
 
-      - localpath : chemin de stockage local des fichiers récuperés
+      - localpath : chemin de stockage local des fichiers récupérés
 
       - mode passif : utiliser le mode passif
-      - SSL: connection en ssl (sécurisée)
-      - periodicite de la tache : intervalle d'execution de la tache
+      - SSL: connexion en ssl (sécurisée)
+      - périodicité de la tache : intervalle d'exécution de la tache
 
 
-NB: cette tache peut etre couplée avec la tache "Archiver dans la collection"
+NB: cette tache peut être couplée avec la tache "Archiver dans la collection"
 afin de rapatrier et archiver des documents.
 
-Dans ce cas la variable "Hotfolder" de la tache d'archivage devra correspondre
+Dans ce cas, la variable "Hotfolder" de la tache d'archivage devra correspondre
 à la variable "localpath" décrite ci-dessus
 
 Déplacement des documents périmés
@@ -178,25 +178,25 @@ Déplacement des documents périmés
 
 Cette tache permet d'effectuer automatiquement une action ("changement de 
 collection " ou "application d'un status") sur des documents
-presents dans une base/collection, à la condition que des criteres
+présents dans une base/collection, à la condition que des critères
 de type date ou status bits, soient validés par ces documents.
 
 API Bridge Uploader
 *******************
-Cette tache s'occupe de traiter la liste des documents à uploder via 
-le module :term:`Bridge`, Vers Youtube, DailyMotion ou Flickr.
+Cette tache s'occupe de traiter la liste des documents à uploader via 
+le module :term:`Bridge`, vers Youtube, DailyMotion ou Flickr.
 
 Workflow 01
 ***********
 
-Cette tache permet de deplacer un document d'une collection 
-vers une autre. On peut aussi ajouter comme critére pour deplacer 
+Cette tache permet de déplacer un document d'une collection 
+vers une autre. On peut aussi ajouter comme critère pour déplacer 
 un document, un status-bit.
 
-   Parametres de la tache :
+   Paramètres de la tache :
 
     - Database : choix de la Base de données (databox)
-    - intervalle d'éxecution :  intervalle d'execution de la tache
+    - intervalle d'exécution :  intervalle d'exécution de la tache
     - Collection : collection d'origine ====>	collection de destination
     - Status : status-bit à l'origine   ====> status-bit final
 

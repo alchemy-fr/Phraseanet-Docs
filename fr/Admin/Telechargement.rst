@@ -1,7 +1,7 @@
 Téléchargement
 ==============
 
-Les sources sont dispibles sur notre repository GitHub 
+Les sources sont disponibles sur notre repository GitHub 
 `https://github.com/alchemy-fr/Phraseanet <https://github.com/alchemy-fr/Phraseanet>`_
 Vous les téléchargerez via la commande
 
@@ -9,7 +9,7 @@ Vous les téléchargerez via la commande
 
     git clone git://github.com/alchemy-fr/Phraseanet.git Phraseanet
     cd Phraseanet
-    ./vendors.php
+    ./builder.php
 
   .. warning:: Phraseanet requiert deux dépendances que nous fournissons :
 

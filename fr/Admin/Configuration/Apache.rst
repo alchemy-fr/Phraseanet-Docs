@@ -37,10 +37,10 @@ des videos.
 Mod Auth Token
 **************
 
-Telecharger
+Télécharger
 ^^^^^^^^^^^
 
-Telecharger les sources du module Auth Token pour apache
+Télécharger les sources du module Auth Token pour apache
 
 .. code-block:: bash
 
@@ -70,10 +70,10 @@ Editer le ficher de configuration d'apache
 Mod H264 Streaming
 ******************
 
-Telecharger
+Télécharger
 ^^^^^^^^^^^
 
-telecharger les sources du module H264 Streaming pour Apache.
+Télécharger les sources du module H264 Streaming pour Apache.
 
 .. code-block:: bash
 
@@ -95,8 +95,8 @@ Activer
 ^^^^^^^
 
 Editer le ficher de configuration d'apache
-(en general dans /etc/apache/httpd.conf)
-afin que les requetes se terminant par .mp4 soit prises en charge par le module
+(en général dans /etc/apache/httpd.conf)
+afin que les requêtes se terminant par .mp4 soit prises en charge par le module
 h264_streaming
 
 .. code-block:: bash
@@ -104,7 +104,7 @@ h264_streaming
   LoadModule h264_streaming_module /usr/lib/apache2/modules/mod_h264_streaming.so
   AddHandler h264-streaming.extensions .mp4
 
-Puis redemarrer Apache pour que les modifications soient prises en compte.
+Puis redémarrer Apache pour que les modifications soient prises en compte.
 
 Parametres videos
 *****************
@@ -132,7 +132,7 @@ le mode pseudo-streaming h264 dans le setup de votre installation,
 et renseigner votre passphrase, le point de montage de vos données
 ainsi que le path complet vers ces données.
 
-  .. warning:: si les videos précédemment archivées étaient en flv
+  .. warning:: si les vidéos précédemment archivées étaient en flv
     , alors il faudra reconstruire les sous-définitions (via le menu "outil")
     pour bénéficier du stream sur ces enregistrements.
 

@@ -8,7 +8,7 @@ Les changements :
     deux utilisateurs ne peuvent avoir la même adresse email.
 
   * Il n'y a plus de publications au travers de l'API MetaWeblog 
-    (Wordpress, Blogger...). Nous encourageons les developpeurs à utiliser nos
+    (Wordpress, Blogger...). Nous encourageons les développeurs à utiliser nos
     APIs pour ces cas d'utilisation, de manière à stabiliser ces connections.
 
   * Le système de publication a été re-écrit. Son fonctionnement est 
@@ -20,7 +20,7 @@ Quoi de neuf ?
 
   C'est la partie la plus intéressante !
 
-  * APIs : Vous pouvez maintenant acceder Phraseanet au travers d'APIs REST.
+  * APIs : Vous pouvez maintenant accéder Phraseanet au travers d'APIs REST.
 
   * Bridge : un nouveau composant qui vous permet d'envoyer vos documents vers
     d'autres applications comme Dailymotion, FlickR et Youtube.
