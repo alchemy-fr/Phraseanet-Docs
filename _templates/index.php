@@ -80,11 +80,11 @@ foreach ($languages as $language)
 {
   if (in_array($language, $available_languages))
   {
-    return header(sprintf('Location: /%s/%s', $language, $section));
+    return header(sprintf('Location: %s/%s', $language, $section));
   }
 }
 
-return header(sprintf('Location: /fr/%s', $section));
+return header(sprintf('Location: fr/%s', $section));
 
 function splitHttpAcceptHeader($header)
 {
