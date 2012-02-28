@@ -2,12 +2,13 @@ Installation
 ============
 
 
-Après avoir télécharger les sources, vérifié les :doc:`prérequis <Prerequis>`, 
-vous pouvez vérifier votre configuration ; à la racine de votre installation :
+Après avoir téléchargé les sources, vérifié les :doc:`prérequis <Prerequis>`, 
+vous pouvez vérifier votre configuration à la racine de votre installation :
 
   .. code-block:: bash
   
-    php bin/console system:configCheck
+    php bin/console check:system
+    php bin/console check:config
 
   .. seealso:: Utilisation de l'application :doc:`Konsole Kommander <Console>`
 
