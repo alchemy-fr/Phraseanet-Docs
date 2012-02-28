@@ -1,7 +1,7 @@
 Konsole Kommander
 =================
 
-Konsole Kommander is a commandline tool to manage Phraseanet. It is simple 
+Konsole Kommander is a commandline tool to manage Phraseanet. It is simple
 to use :
 
   .. code-block:: bash
@@ -24,7 +24,7 @@ You will see something like :
       scheduler:stop             Stop the scheduler
     system
       system:backupDB            Backup Phraseanet Databases
-      system:clearCache          Empty cache directories, clear Memcached, Redis if avalaible
+      system:clearCache          Empty cache directories, clear Memcached, Redis if available
       system:configCheck         Check the configuration
       system:templateGenerator   Generate template files
       system:upgrade             Upgrade Phraseanet to the lastest version
@@ -34,10 +34,9 @@ You will see something like :
 
 Commands are listed
 
-To get some halp about a command : 
+To get some halp about a command :
 
   .. code-block:: bash
 
     php bin/console help CommandName
 
-  

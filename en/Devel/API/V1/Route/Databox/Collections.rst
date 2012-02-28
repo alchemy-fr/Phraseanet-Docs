@@ -4,7 +4,7 @@ Databox Collections
 About
 -----
 
-  Return avalaible Collections on specified databox 
+  Return available Collections on specified databox
 
   .. code-block:: bash
 
@@ -21,9 +21,9 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information 
+   Parameters               Value          Information
   ======================== ============== =============
-   databox_id               94             The databox id on which the request is done 
+   databox_id               94             The databox id on which the request is done
   ======================== ============== =============
 
 Response Fields
@@ -32,7 +32,7 @@ Response Fields
   ============= ================================
   Field          Description
   ============= ================================
-   Collections   The list of avalaible collections 
+   Collections   The list of available collections
   ============= ================================
 
 Response sample

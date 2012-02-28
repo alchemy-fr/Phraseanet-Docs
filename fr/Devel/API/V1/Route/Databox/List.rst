@@ -4,7 +4,7 @@ Databox List
 About
 -----
 
-  Return avalaible Databoxes
+  Return available Databoxes
 
   .. code-block:: bash
 
@@ -28,7 +28,7 @@ Response Fields
   ========== ================================
   Field       Description
   ========== ================================
-  databoxes   The list of avalaible databoxes
+  databoxes   The list of available databoxes
   ========== ================================
 
 Response sample

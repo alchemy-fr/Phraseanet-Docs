@@ -4,7 +4,7 @@ Records Search
 About
 -----
 
-  Return the result of record search 
+  Return the result of record search
 
   .. code-block:: bash
 
@@ -21,22 +21,22 @@ Parameters
 ----------
 
   ============= =========== ========= =============
-   Parameters    Type        Example   Information 
+   Parameters    Type        Example   Information
   ============= =========== ========= =============
    query         string                Search query ; search query is the same syntax as in phraseanet. Default value is an string, which equals “all records”
    bases         array                 An array of base_ids ; If an empty array or no value are provided, the query is done on all collections
    page          int         1         The number of the requested page (first page is page 1)
    per_page      int         10        The number of records per page
-   ord           string                This feature is currently only avalaible with SphinxSearch Engine. Avalaible values are “asc” and “desc”
-   sort          string                This feature is currently only avalaible with SphinxSearch Engine. Avalaible values are “relevance” and “created_on” and “random”
-   record_type   string                The type of records to query. Avalaible values are “audio”, “video”, “image”, “document”, “flash”
-   search_type   int         0         A toggle to switch records search or stories search. AValaible values are 0 for records and 1 for stories
-   stemme        int         1         This feature is currently only avalaible with SphinxSearch Engine. Enable stemmed search
+   ord           string                This feature is currently only available with SphinxSearch Engine. Available values are “asc” and “desc”
+   sort          string                This feature is currently only available with SphinxSearch Engine. Available values are “relevance” and “created_on” and “random”
+   record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”
+   search_type   int         0         A toggle to switch records search or stories search. Available values are 0 for records and 1 for stories
+   stemme        int         1         This feature is currently only available with SphinxSearch Engine. Enable stemmed search
    datefield     string                Select a field to search with datemin and datemax filters
    datemin       date                  The minimum date (you need to set a datefield value to use this feature)
    datemax       date                  The maximum date (you need to set a datefield value to use this feature)
-   status        array 		
-   fields        array 		
+   status        array
+   fields        array
   ============= =========== ========= =============
 
 Response Fields
@@ -45,38 +45,38 @@ Response Fields
   ================== ================================
    Field              Description
   ================== ================================
-  total_pages         The total number of pages avalaibles
+  total_pages         The total number of pages available
   current_page        The number of the page related to the results
-  avalaible_results 	The amount of results avalaible through this query. This number may be lower than avalaible results ; SphinxSearch Engine has a limited number of results which can be retrieved and is, by default 1000. However, this limit can be configured
+  available_results 	The amount of results available through this query. This number may be lower than available results ; SphinxSearch Engine has a limited number of results which can be retrieved and is, by default 1000. However, this limit can be configured
   total_results       The amount of results corresponding to the query
   error               A string with an error from the searchengine
   warning             A string with a warning from the searchengine
   query_time          The time of the query execution by search engine in seconds
   search_indexes      The searchIndexes used by search engine
-  results             The list of avalaible collections
+  results             The list of available collections
   query               The query sent to the search engine
-  suggestions 	
+  suggestions
   ================== ================================
 
 Query Sample
 ------------
 
-Request all records, filter those on databox_id 58 on status 4 and those 
-on databox_id 52 on status 5 : On databox_id 52, only records 
-with status number 5 “off” are returned, and on databox_id 58, 
+Request all records, filter those on databox_id 58 on status 4 and those
+on databox_id 52 on status 5 : On databox_id 52, only records
+with status number 5 “off” are returned, and on databox_id 58,
 only records with status number 4 “on” are returned.
 
   .. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/records/search/
 
-Request all records on collection base_id 85 : 
+Request all records on collection base_id 85 :
 
   .. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/records/search/
 
-Search the query “house” in the “Object” or “Credit” fields : 
+Search the query “house” in the “Object” or “Credit” fields :
 
   .. code-block:: bash
 
@@ -101,7 +101,7 @@ Response sample
         "response": {
             "total_pages": 1,
             "current_page": 1,
-            "avalaible_results": 9,
+            "available_results": 9,
             "total_results": 9,
             "error": "",
             "warning": "",

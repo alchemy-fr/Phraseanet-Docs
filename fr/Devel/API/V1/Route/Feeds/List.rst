@@ -4,7 +4,7 @@ Feeds List
 About
 -----
 
-  List all avalaible feeds 
+  List all available feeds
 
   .. code-block:: bash
 
@@ -28,7 +28,7 @@ Response Fields
   ============= ================================
    Field         Description
   ============= ================================
-   feeds         The list of feeds 
+   feeds         The list of feeds
   ============= ================================
 
 Response sample

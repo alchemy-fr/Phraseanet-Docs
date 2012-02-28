@@ -29,14 +29,14 @@ Routes
     Route/Feeds/Content
 
 
-Phraseanet API provides routes to access resources using canonical URL. 
+Phraseanet API provides routes to access resources using canonical URL.
 These resources are listed below.
 
-For the moment, all these routes require authentication. 
+For the moment, all these routes require authentication.
 Phraseanet API uses POST and GET methods.
 
-For each resource, some aspects and actions are avalaible. 
-For example, you can get the permalinks of a record with the following route: 
+For each resource, some aspects and actions are available.
+For example, you can get the permalinks of a record with the following route:
 
 
 +----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+

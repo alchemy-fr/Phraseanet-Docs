@@ -4,7 +4,7 @@ Databox Status
 About
 -----
 
-  Return available Status on specified databox 
+  Return available Status on specified databox
 
   .. code-block:: bash
 
@@ -21,9 +21,9 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information 
+   Parameters               Value          Information
   ======================== ============== =============
-   databox_id               94             The databox id on which the request is done 
+   databox_id               94             The databox id on which the request is done
   ======================== ============== =============
 
 Response Fields
@@ -32,7 +32,7 @@ Response Fields
   ========== ================================
   Field       Description
   ========== ================================
-   status     The list of avalaible status
+   status     The list of available status
   ========== ================================
 
 Response sample
