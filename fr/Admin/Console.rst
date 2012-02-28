@@ -1,8 +1,8 @@
 Konsole Kommander
 =================
 
-Konsole Kommander est une application en ligne de commande pour piloter 
-Phraseanet. Elle s'exécute simplement : 
+Konsole Kommander est une application en ligne de commande pour piloter
+Phraseanet. Elle s'exécute simplement :
 
   .. code-block:: bash
 
@@ -28,7 +28,7 @@ Vous aurez sur votre écran une liste de commande de la sorte :
       scheduler:stop             		Stop the scheduler
     system
       system:backupDB            		Backup Phraseanet Databases
-      system:clearCache          		Empty cache directories, clear Memcached, Redis if avalaible
+      system:clearCache          		Empty cache directories, clear Memcached, Redis if available
       system:templateGenerator   		Generate template files
       system:upgrade             		Upgrade Phraseanet to the lastest version
     task

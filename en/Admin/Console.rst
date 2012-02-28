@@ -28,7 +28,7 @@ You will see something like :
       scheduler:stop         		    Stop the scheduler
     system
       system:backupDB          		  	Backup Phraseanet Databases
-      system:clearCache        		  	Empty cache directories, clear Memcached, Redis if avalaible
+      system:clearCache        		  	Empty cache directories, clear Memcached, Redis if available
       system:templateGenerator  		Generate template files
       system:upgrade            		Upgrade Phraseanet to the lastest version
     task
