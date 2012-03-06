@@ -115,10 +115,10 @@ dans une :term:`Collection` pré-sélectionnée.
 
       - délais avant traitement. : Temps d'attente avant action 
 
-      - Déplacer les documents archivé dans "_archived" : garder 
+      - Déplacer les documents archivés dans "_archived" : garder 
         ou pas un exemplaire du fichier traité
 
-      - Déplacer les documents non-archivé dans "_error" : garder 
+      - Déplacer les documents non-archivés dans "_error" : garder 
         ou pas un exemplaire du fichier en erreur
 
    .. warning:: un fichier vide nommé ".phrasea.xml" doit être
@@ -133,7 +133,7 @@ Cette fonction nécessite l'activation de la fonction d'export ftp.
 
    Paramètres de la tache :
 
-      - proxy : adresse du proxy (optionnel)
+      - proxy : adresse du proxy (optionnelle)
 
       - proxy port: Port du proxy (optionnel)
 
@@ -146,9 +146,9 @@ Permet de récupérer en local des documents depuis un server FTP.
 
    Paramètres de la tache :
 
-      - proxy : adresse du proxy (optionnel)
+      - proxy : adresse du proxy (optionnelle)
 
-      - proxy port: Port du proxy (optionnel)
+      - proxy port: port du proxy (optionnel)
 
       - host : adresse du serveur ftp 
 
@@ -156,7 +156,7 @@ Permet de récupérer en local des documents depuis un server FTP.
 
       - user : identifiant sur le serveur ftp
 
-      - password : Mot de passe sur le serveur ftp
+      - password : mot de passe sur le serveur ftp
 
       - chemin distant : répertoire d’accès distant
 
@@ -170,7 +170,7 @@ Permet de récupérer en local des documents depuis un server FTP.
 NB: cette tache peut être couplée avec la tache "Archiver dans la collection"
 afin de rapatrier et archiver des documents.
 
-Dans ce cas la variable "Hotfolder" de la tache d'archivage devra correspondre
+Dans ce cas, la variable "Hotfolder" de la tache d'archivage devra correspondre
 à la variable "localpath" décrite ci-dessus
 
 Déplacement des documents périmés
@@ -183,8 +183,8 @@ de type date ou status bits, soient validés par ces documents.
 
 API Bridge Uploader
 *******************
-Cette tache s'occupe de traiter la liste des documents à uploder via 
-le module :term:`Bridge`, Vers Youtube, DailyMotion ou Flickr.
+Cette tache s'occupe de traiter la liste des documents à uploader via 
+le module :term:`Bridge`, vers Youtube, DailyMotion ou Flickr.
 
 Workflow 01
 ***********

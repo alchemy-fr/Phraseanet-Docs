@@ -2,7 +2,7 @@ Configuration
 =============
 
 Le principal réglage de l’application est dans la structure XML de la 
-:term:`bases <base>` à laquelle on accède via le module :
+:term:`base <base>` à laquelle on accède via le module :
 
 administration > base de donnée > structure.
 
@@ -186,7 +186,7 @@ Exemple
   - subdefs
 
     Le noeud subdefs regroupe différents noeuds correspondant aux 
-    sous-définitions qui seront créees en fonction du type des documents 
+    sous-définitions qui seront créées en fonction du type des documents 
     qui seront archivés. 
 
     Généralement, cette partie de la structure n’a pas à être modifiée 
@@ -205,10 +205,10 @@ Exemple
 
   - statbits
 
-    Le noeuds statbits contient une liste de noeuds statbits composant les 
+    Le noeud statbits contient une liste de noeuds statbits composant les 
     différents status bits qui pourront être affectés aux documents. 
 
-    Il est vivement conseillé d’utiliser l’interface status-buts du module 
+    Il est vivement conseillé d’utiliser l’interface status-bits du module 
     administration pour modifier ces noeuds.
 
 

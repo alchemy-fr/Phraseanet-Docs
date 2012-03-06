@@ -8,16 +8,16 @@ nécessite quelques besoins spécifiques ou dépendances.
 Serveur HTTP
 ------------
 
-L'un des serveur au choix :
+L'un des serveurs au choix :
 
   - Nginx >= 1.0 (Recommandé) -- :doc:`configuration <Configuration/Nginx>`
   - ou Apache >= 2.2 -- :doc:`configuration <Configuration/Apache>`
 
-Base de donnée
---------------
+Base de données
+---------------
 
 Phraseanet requiert un moteur InnoDB. Nous recommendons vivement MariaDB 
-comme remplacement à MySQL
+comme remplacement à MySQL.
 
   - MariaDB >= 5.1
 
@@ -50,7 +50,7 @@ Spécifique Phraseanet
 
 - Phraseanet Indexer
 
-  Indexation texte-plein / thésaurus Phraseanet Indexer
+  Indexation texte-plein / thésaurus Phraseanet Indexer.
   C’est notre moteur d’indexation, il est nécessaire autant pour l’indexation 
   texte-plein que pour l’indexation thésaurus.
 
@@ -128,13 +128,13 @@ des programmes externes suivant :
     Extraction d'imagettes et de preview sur les documents office.
 
   - MP4Box
-    Déplacement des métadonnées des fichiers h264 en début de ficheir en vue de 
+    Déplacement des métadonnées des fichiers h264 en début de fichier en vue de 
     leur utilisation en pseudo-stream (voir documentation spécifique)
 
 
 
-Clefs d'APIs (optionnel)
-------------------------
+Clefs d'APIs (optionnelles)
+---------------------------
 
   - Youtube
   - Dailymotion
