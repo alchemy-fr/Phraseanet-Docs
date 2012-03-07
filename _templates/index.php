@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__ . '/../lib/Symfony/Component/HttpFoundation/Request.php';
-require_once __DIR__ . '/../lib/Symfony/Component/HttpFoundation/ParameterBag.php';
-require_once __DIR__ . '/../lib/Symfony/Component/HttpFoundation/FileBag.php';
-require_once __DIR__ . '/../lib/Symfony/Component/HttpFoundation/ServerBag.php';
-require_once __DIR__ . '/../lib/Symfony/Component/HttpFoundation/HeaderBag.php';
+require_once __DIR__ . '/../../lib/Symfony/Component/HttpFoundation/Request.php';
+require_once __DIR__ . '/../../lib/Symfony/Component/HttpFoundation/ParameterBag.php';
+require_once __DIR__ . '/../../lib/Symfony/Component/HttpFoundation/FileBag.php';
+require_once __DIR__ . '/../../lib/Symfony/Component/HttpFoundation/ServerBag.php';
+require_once __DIR__ . '/../../lib/Symfony/Component/HttpFoundation/HeaderBag.php';
 
 $request = Symfony\Component\HttpFoundation\Request::createFromGlobals();
 
