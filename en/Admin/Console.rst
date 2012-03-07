@@ -13,27 +13,29 @@ You will see something like :
   .. code-block:: bash
 
     Available commands:
-      help                       		Displays help for a command
-      list                       		Lists commands
+      help                             Displays help for a command
+      list                             Lists commands
     about
-      about:authors              		List authors and contributors
-      about:license              		This program license
-	check
-	  check:config           		    check configuration file
-	  check:ensureProductionSettings 	Ensure production settings
-	  check:system       		        Check the configuration
+      about:authors                    List authors and contributors
+      about:license                    This program license
+    check
+      check:config                     check configuration file
+      check:ensureDevSettings          Ensure development settings
+      check:ensureProductionSettings   Ensure production settings
+      check:system                     Check the configuration
     scheduler
-      scheduler:start       		    Start the scheduler
-      scheduler:state        		    Get scheduler state
-      scheduler:stop         		    Stop the scheduler
+      scheduler:start                  Start the scheduler
+      scheduler:state                  Get scheduler state
+      scheduler:stop                   Stop the scheduler
     system
-      system:backupDB          		  	Backup Phraseanet Databases
-      system:clearCache        		  	Empty cache directories, clear Memcached, Redis if available
-      system:templateGenerator  		Generate template files
-      system:upgrade            		Upgrade Phraseanet to the lastest version
+      system:backupDB                  Backup Phraseanet Databases
+      system:clearCache                Empty cache directories, clear Memcached, Redis if avalaible
+      system:mailCheck                 Check if email addresses are unique (mandatory since 3.5)
+      system:templateGenerator         Generate template files
+      system:upgrade                   Upgrade Phraseanet to the lastest version
     task
-      task:list                		 	List tasks
-      task:run                 			Run task
+      task:list                        List tasks
+      task:run                         Run task
 
 Commands are listed
 
