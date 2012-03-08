@@ -1,10 +1,11 @@
 Téléchargement
 ==============
 
-Les sources sont dispibles dans notre repository GitHub
+Les sources sont dispibles dans notre repository GitHub :
+
 `https://github.com/alchemy-fr/Phraseanet/downloads <https://github.com/alchemy-fr/Phraseanet/downloads>`_
 
-  .. warning:: Phraseanet requiert deux dépendances que nous fournissons :
+  .. note:: Phraseanet requiert deux dépendances que nous fournissons :
 
   * http://github.com/alchemy-fr/Phraseanet-Extension
 
