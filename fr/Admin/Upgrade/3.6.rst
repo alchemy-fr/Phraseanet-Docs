@@ -30,14 +30,14 @@ Quoi de neuf ?
   * Refactorisation de l'interface de Push / Validation.
 
   * Possibilité de création de listes d'utilisateurs dans le Push et la
-  Validation.
+    Validation.
 
   * Refactorisation de la WorkZone.
 
   * Ajout de la fonction "Archiver" aux paniers.
 
   * Ajout d'un navigateur de paniers permettant de revenir sur les paniers
-  archivés.
+    archivés.
 
   * Ajout d'une fonctionalité de stockage de ressources utilisateurs dans les
-  fiches descriptives.
+    fiches descriptives.
