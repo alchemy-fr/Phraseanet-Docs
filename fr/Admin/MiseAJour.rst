@@ -5,7 +5,6 @@ Mise à jour
 .. toctree::
 
     Upgrade/3.6
-    Upgrade/APIupgrade
 
 Lors de la publication d'une nouvelle version, pour procéder à la mise à jour
 de votre installation, suivez les étapes suivantes :
