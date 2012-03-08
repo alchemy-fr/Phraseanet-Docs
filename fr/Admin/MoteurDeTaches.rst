@@ -4,56 +4,38 @@ Gestionnaire de Tâches
 Phraseanet intègre un moteur de tâches afin de réaliser des opérations
 asynchrones.
 
-Les tâches disponibles
+Ces différentes tâches sont gérées par un Planificateur (Scheduler),
+qui s'occupe de leur démarrage, et de leur arrêt.
 
-      * Création de sous-définitions
-      * Déplacement de docs périmés
-      * Indexation
-      * API :term:`Bridge` Uploader
-      * Archive dans la :term:`Collection`
-      * Batch upload process (XML Service)
-      * FTP Push
-      * FTP Pull
-      * Ecriture de méta-données
-      * Workflow 01
-
-Ces différentes taches sont gérées par un Planificateur (scheduler),
-qui s'occupe de leur démarrage, de leur arrêt mais aussi de les relancer.
-
-Comment créer une nouvelle tache
---------------------------------
-
-  * Voir la Rubrique Nouvelle tâche du `manuel d'Administration
-    </User/Manuel/Administration>`_
+Pour la création des tâches, rendez vous dans `manuel d'Administration
+</User/Manuel/Administration>`_
 
 Le Planificateur de taches
 ---------------------------
 
-Démarre, arrête et redémarre les différentes taches
+Vous trouverez dans le menu contextuel du planificateur de tâches des menus pour
+démarrer, arreter, consulter les logs des tâches;
 
-  * démarrer les taches
+Arrêts et démarrages alternatifs
+********************************
 
-      Menu contextuel > start
-
-  * arrêter les taches
-
-      Menu contextuel > stop
-
-  * voir les logs
-
-      Menu contextuel > Show log
-
-  * Les Préférences du gestionnaire de tâches
-
-      Le Planificateur de tache (Scheduler) peut être démarré depuis
-      un gestionnaire comme Cron.
-      Dans le menu contextuel du planificateur de tache,
-      cliquer sur Préférences. L’URL dans cette fenêtre permet via
-      un navigateur ou wget de démarrer le planificateur de tâches
+Si vous souhaitez automatiser des arrêts et des démarrages du planificateur de
+tâches, vous pouvez utiliser l'utilitaire `KonsoleKommander <Console>`_ et l'une
+des commandes suivantes via Cron par exemple.
 
 
-La Tache d'indexation
----------------------
+  .. code-block:: bash
+
+    bin/console scheduler:start
+    bin/console scheduler:stop
+    bin/console scheduler:state
+    bin/console task:run
+
+Les tâches
+----------
+
+Indexation
+**********
 
 Permet de lancer l’exécutable phraseanet_indexer.
 Cet exécutable indexe les informations descriptives des
@@ -61,64 +43,63 @@ documents dans les bases de données.
 
 L’indexer doit être paramétré avec les informations ci-dessous :
 
-    * chemin d'accès : Chemin vers l’exécutable phraseanet_indexer
-    * Hôte : Adresse du serveur MySQL
-    * Port : Port du serveur MySQL
-    * Database :ApplicationBox
-    * Utilisateur : identifiant de l'utilisateur MySQL
-    * mot de passe : Mot de passe de l'utilisateur MySQL
-    * Port de contrôle : Port de contrôle de l'indexer (ports disponibles)
+  * chemin d'accès : Chemin vers l’exécutable phraseanet_indexer
+  * Hôte : Adresse du serveur MySQL
+  * Port : Port du serveur MySQL
+  * Database : Nom de la base de donnée MySQL
+  * Utilisateur : identifiant de l'utilisateur MySQL
+  * Mot de passe : Mot de passe de l'utilisateur MySQL
+  * Port de contrôle : Port de contrôle de l'indexer
 
 .. code-block:: bash
 
-    /usr/local/bin/phraseanet_indexer -h=host -P=port -b=database -u=user
-    -p=password --socket=PortControle --default-character-set=utf8 -o
+    /usr/local/bin/phraseanet_indexer -h=host \
+                                      -P=port \
+                                      -b=database \
+                                      -u=user \
+                                      -p=password \
+                                      --socket=13800 \
+                                      --default-character-set=utf8 \
+                                      -o
 
+  .. note:: Cette tâche est nécessaire au bon fonctionnement de l'application
 
-La Tache de création des Sous Définitions
------------------------------------------
+Création des Sous Définitions
+*****************************
 
-S'occupent de créer les sous définitions (images de choix et vignettes) à partir
+Cette tâche créé les sous définitions (images de choix et vignettes) à partir
 du document original.
 
+  .. note:: Cette tâche est nécessaire au bon fonctionnement de l'application
 
-La Tache de Lecture/Ecriture des Métadonnées
---------------------------------------------
+Ecriture des Métadonnées
+************************
 
-Lit et et indexe les métadonnées incluses dans un document en fonction
-des pré-réglages de la structure de base.
-
-
-  .. warning:: Ces taches doivent être démarrées pour le bon fonctionnement de
-    l'application.
-
-Autres Taches disponibles
--------------------------
-
-Les taches ci-dessous sont optionnelles :
+Cette tâche écrit les métadonnées dans un document en fonction des réglages de
+la structure documentaire.
 
 Archiver dans la collection
 ***************************
 
-Cette tache permet de scruter un répertoire d’insérer (archiver) son contenu
-dans une :term:`Collection` pré-sélectionnée.
+Cette tache permet de scruter un répertoire (Hot Folder) et d'archiver son
+contenu dans une :term:`Collection`.
 
-Paramètres de la tache
-^^^^^^^^^^^^^^^^^^^^^^
+Paramètrage
+^^^^^^^^^^^
 
-    * Archive dans la base et la :term:`Collection` : Choix de la
-      collection de destination des fichiers
-    * HotFolder : répertoire à scruter
-    * intervalle d’exécution : intervalle entre deux exécution de la tache
-    * délais avant traitement. : Temps d'attente avant action
-    * Déplacer les documents archivés dans "_archived" : garder
-      ou pas un exemplaire du fichier traité
-    * Déplacer les documents non-archivés dans "_error" : garder
-      ou pas un exemplaire du fichier en erreur
+  * Archive dans la base et la :term:`Collection` : Choix de la
+    collection de destination des fichiers
+  * HotFolder : répertoire à scruter
+  * intervalle d’exécution : intervalle entre deux exécution de la tâche
+  * délais avant traitement. : Temps d'attente avant action
+  * Déplacer les documents archivés dans "_archived" : garder
+    ou pas un exemplaire du fichier traité
+  * Déplacer les documents non-archivés dans "_error" : garder
+    ou pas un exemplaire du fichier en erreur
 
-   .. warning:: un fichier vide nommé ".phrasea.xml" doit être
-                déposé à la racine du HotFolder pour que la
-                tache puisse fonctionner.
+   .. warning:: Pour des raisons de sécurité, il faut créér un fichier
+      .phrasea.xml à la racine du HotFolder.
+
 
 FTP Push
 ********
@@ -126,37 +107,34 @@ FTP Push
 Permet de gérer une file d'attente de documents à envoyer par ftp.
 Cette fonction nécessite l'activation de la fonction d'export ftp.
 
-   Paramètres de la tache :
+Paramètrage
+^^^^^^^^^^^
 
-      * proxy : adresse du proxy (optionnelle)
-      * proxy port: Port du proxy (optionnel)
-      * périodicité de la tache : intervalle d’exécution de la tache
+  * proxy : adresse du proxy (optionnelle)
+  * proxy port: Port du proxy (optionnel)
+  * périodicité de la tache : intervalle d’exécution de la tache
 
 FTP Pull
 ********
 
-Permet de récupérer en local des documents depuis un server FTP.
+Permet de récupérer en local des documents depuis un server FTP. Peut être
+combinées avec la tache d'archivage afin de rapatrier et archiver des documents.
 
-   Paramètres de la tache :
+Paramètrage
+^^^^^^^^^^^
 
-      * proxy : adresse du proxy (optionnelle)
-      * proxy port: port du proxy (optionnel)
-      * host : adresse du serveur ftp
-      * port : port du serveur ftp
-      * user : identifiant sur le serveur ftp
-      * password : mot de passe sur le serveur ftp
-      * chemin distant : répertoire d’accès distant
-      * localpath : chemin de stockage local des fichiers récupérés
-      * mode passif : utiliser le mode passif
-      * SSL: connexion en ssl (sécurisée)
-      * périodicité de la tache : intervalle d’exécution de la tache
+  * proxy : adresse du proxy (optionnelle)
+  * proxy port: port du proxy (optionnel)
+  * host : adresse du serveur ftp
+  * port : port du serveur ftp
+  * user : identifiant sur le serveur ftp
+  * password : mot de passe sur le serveur ftp
+  * chemin distant : répertoire d’accès distant
+  * localpath : chemin de stockage local des fichiers récupérés
+  * mode passif : utiliser le mode passif
+  * SSL: connexion en ssl (sécurisée)
+  * périodicité de la tache : intervalle d’exécution de la tache
 
-
-NB: cette tache peut être couplée avec la tache "Archiver dans la collection"
-afin de rapatrier et archiver des documents.
-
-Dans ce cas, la variable "Hotfolder" de la tache d'archivage devra correspondre
-à la variable "localpath" décrite ci-dessus
 
 Déplacement des documents périmés
 *********************************
@@ -178,11 +156,12 @@ Cette tache permet de déplacer un document d'une collection
 vers une autre. On peut aussi ajouter comme critère pour déplacer
 un document, un status-bit.
 
-   Paramètres de la tache :
+Paramètrage
+^^^^^^^^^^^
 
-    * Database : choix de la Base de données (databox)
-    * intervalle d’exécution :  intervalle d’exécution de la tache
-    * Collection : collection d'origine ====>	collection de destination
-    * Status : status-bit à l'origine   ====> status-bit final
+  * Database : choix de la Base de données (databox)
+  * intervalle d’exécution :  intervalle d’exécution de la tache
+  * Collection : collection d'origine ====>	collection de destination
+  * Status : status-bit à l'origine   ====> status-bit final
 
 .. todo:: Batch upload process (XML Service)

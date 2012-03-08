@@ -112,7 +112,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
     {{ metatags }}
     {%- block htmltitle %}
-    
+
     {%- if prev %}
       <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
     {%- else %}
@@ -211,7 +211,7 @@
       {%- if show_sphinx %}
         {% trans sphinx_version=sphinx_version|e %}Created using <a rel="nofollow" target="_blank" href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
       {%- endif %}
-      
+
       </div>
   {%- endblock %}
     </div>
@@ -232,6 +232,32 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    </script> 
+      var patt = new RegExp('\/en\/');
+      var lang = patt.test(document.location.href) ? 'en' : 'fr';
+
+      // <![CDATA[
+      var uservoiceOptions = {
+        /* required */
+        key: 'phraseanet',
+        host: 'feedback.phraseanet.com',
+        forum: '36165',
+        showTab: true,
+        /* optional */
+        alignment: 'left',
+        background_color:'#f00',
+        text_color: 'white',
+        hover_color: '#06C',
+        lang: lang
+      };
+      function _loadUserVoice() {
+        var s = document.createElement('script');
+        s.setAttribute('type', 'text/javascript');
+        s.setAttribute('src', ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js");
+        document.getElementsByTagName('head')[0].appendChild(s);
+      }
+      _loadSuper = window.onload;
+      window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); };
+      // ]]>
+    </script>
   </body>
 </html>
