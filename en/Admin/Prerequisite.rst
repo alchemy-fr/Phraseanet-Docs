@@ -7,33 +7,52 @@ be checked.
 HTTP Server
 ------------
 
-One of these 
+One of these
 
-  - Nginx >= 1.0 (Recommanded) -- :doc:`configuration <Configuration/Nginx>`
-  - or Apache >= 2.2 -- :doc:`configuration <Configuration/Apache>`
+  * Nginx >= 1.0 (Recommanded) -- :doc:`configuration <Configuration/Nginx>`
+  * or Apache >= 2.2 -- :doc:`configuration <Configuration/Apache>`
 
 Database
 --------
 
-Phraseanet requires an InnoDB storage engine. We strongly recommend MariaDB as 
+Phraseanet requires an InnoDB storage engine. We strongly recommend MariaDB as
 a replacement for MySQL.
 
-  - MariaDB >= 5.1
+  * MariaDB >= 5.1
 
 PHP
 ---
 
-- PHP >= 5.3.4 with :
+  * PHP >= 5.3.4 with :
 
-+Dom +exif +ftp +gd2 +hash +iconv +xml +mbstring +mysql +pcre 
-+SimpleXML +sockets +xsl +zlib +mail +mcrypt +pdo
-+CURL +JSON +gettext
+    * Dom
+    * exif
+    * ftp
+    * gd2
+    * hash
+    * iconv
+    * xml
+    * mbstring
+    * mysql
+    * pcre
+    * SimpleXML
+    * sockets
+    * xsl
+    * zlib
+    * mail
+    * mcrypt
+    * pdo
+    * CURL
+    * JSON
+    * gettext
+    * twig (https://github.com/derickr/twig-ext/)
+    * Intl
 
 
 Phraseanet Specific
 -------------------
 
-- PHP-phrasea Extension 
+* PHP-phrasea Extension
 
   You have to install PHP-Phrasea to use Phraseanet.
 
@@ -47,7 +66,7 @@ Phraseanet Specific
     make
     make install
 
-- Phraseanet Indexer
+* Phraseanet Indexer
 
   It is our Index engine. It is required for thesaurus and full-text indexation.
 
@@ -61,12 +80,12 @@ Phraseanet Specific
     ./configure
     make
     make install
-      
+
 
 Locales
 -------
 
-On Unix / GNU-Linux systems, it is necessary to enable locales to use 
+On Unix / GNU-Linux systems, it is necessary to enable locales to use
 Phraseanet in your languages.
 
 
@@ -78,8 +97,8 @@ Debian example :
 
 Ubuntu example :
 
- - Activate via /etc/locale.gen
- - Execute /usr/sbin/locale-gen
+ * Activate via /etc/locale.gen
+ * Execute /usr/sbin/locale-gen
 
 
   .. note::
@@ -90,34 +109,34 @@ Ubuntu example :
 Third Party Programs
 --------------------
 
-To generate subviews, Phraseanet uses third party programs, depending 
+To generate subviews, Phraseanet uses third party programs, depending
 on their type
 
-  - Imagemagick >= 6.3.7
-    Thumbnails and previews extraction from bitmap. 
+  * Imagemagick >= 6.3.7
+    Thumbnails and previews extraction from bitmap.
 
-  - Ufraw 
-    ImageMagick deleagtion for RAW images 
-    
-  - FFmpeg, Mplayer
+  * Ufraw
+    ImageMagick deleagtion for RAW images
+
+  * FFmpeg <= 0.8, Mplayer
     Previews and Thumbnails extraction from videos and audios.
- 
-  - Ghostscript >= 9
+
+  * Ghostscript >= 9
     Previews and thumbnails extraction from graphix vectors and postscript.
 
-  - XPDF
+  * XPDF
     Text extraction from PDFs.
 
-  - SWFTools
-    Previews and thumbnails extraction from Adobe Flash files. 
+  * SWFTools
+    Previews and thumbnails extraction from Adobe Flash files.
 
-  - Exiftool
+  * Exiftool
     RDF metadatas extraction.
 
-  - Unoconv
+  * Unoconv
     Preview and thumbnails extraction from office documents.
 
-  - MP4Box
+  * MP4Box
     Preview extraction from videos.
 
 
@@ -125,10 +144,9 @@ on their type
 API keys (optionnal)
 --------------------
 
-  - Youtube
-  - Dailymotion
-  - FlickR
-  - Recpatcha
-  - Bit.ly
+  * Youtube
+  * Dailymotion
+  * FlickR
+  * Recpatcha
 
 

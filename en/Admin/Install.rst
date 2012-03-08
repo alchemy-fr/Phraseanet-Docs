@@ -1,11 +1,11 @@
 Install
 =======
 
-After having download sources, verify :doc:`prerequisite <Prerequisite>`, 
+After having download sources, verify :doc:`prerequisite <Prerequisite>`,
 you can verify your configuration. At root of Phraseanet :
 
   .. code-block:: bash
-  
+
     php bin/console check:system
 	php bin/console check:config
 
@@ -24,13 +24,13 @@ Web server configuration
 Setup
 -----
 
-If everything is OK, you will go the Url (sub.domain.tld in the examples) and 
+If everything is OK, you will go the Url (sub.domain.tld in the examples) and
 proceed installation
 
 Installation is in five steps :
 
- - ApplicationBox / Databox and admin creation.
- - Tasks creation
+ * ApplicationBox / Databox and admin creation.
+ * Tasks creation
 
 
 Task start

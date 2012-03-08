@@ -7,8 +7,8 @@ Upgrade Procedure
 
 When releasing a new version, we suggest you to follow the update procedure:
 
-  * Stop the processes launched by the scheduler
-    - from the “Administration” application - stop all the tasks running
+  * Stop the processes launched by the scheduler from the “Administration”
+    application.
 
   * Log out all the users (including yourself)
 
