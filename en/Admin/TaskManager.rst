@@ -73,18 +73,18 @@ Archive in collection
 
 This task watch a HotFolder and archive its content in a  :term:`Collection`.
 
-  Settings
-  ^^^^^^^^
+Settings
+^^^^^^^^
 
-  * Collection : the collection where the files are going
-  * HotFolder : the directory to watch
-  * Period : time to wait between to check in the folder
-  * Period before archive : time to wait before starting archive
-  * Move docs in "_archived" : keep a copy of archived documents
-  * Move docs in "_error" : keep a copy of failed documents
+* Collection : the collection where the files are going
+* HotFolder : the directory to watch
+* Period : time to wait between to check in the folder
+* Period before archive : time to wait before starting archive
+* Move docs in "_archived" : keep a copy of archived documents
+* Move docs in "_error" : keep a copy of failed documents
 
-   .. warning:: For security reasons, you have to write an empty .phrasea.xml
-      file at the root of the HotFolder.
+  .. warning:: For security reasons, you have to write an empty .phrasea.xml
+    file at the root of the HotFolder.
 
 
 FTP Push
@@ -92,12 +92,12 @@ FTP Push
 
 This tasks will upload your FTP export. It requires the activation of FTP export.
 
-  Settings
-  ^^^^^^^^
+Settings
+^^^^^^^^
 
-  * Proxy address (optionnal)
-  * Proxy port (optionnal)
-  * Period : time to wait between two checks
+* Proxy address (optionnal)
+* Proxy port (optionnal)
+* Period : time to wait between two checks
 
 FTP Pull
 ********
@@ -105,20 +105,20 @@ FTP Pull
 This tasks fetch data from FTP repository to a local storage. It can be
 combined with an archive task to fetch datas.
 
-  Settings
-  ^^^^^^^^
+Settings
+^^^^^^^^
 
-  * Proxy address (optionnal)
-  * Proxy port (optionnal)
-  * Period : time to wait between two checks
-  * FTP Host
-  * FTP Port
-  * FTP User
-  * FTP Password
-  * FTP Directory
-  * Local Directory : the directory where to retrieve the datas
-  * Passive mode
-  * SSL connexion
+* Proxy address (optionnal)
+* Proxy port (optionnal)
+* Period : time to wait between two checks
+* FTP Host
+* FTP Port
+* FTP User
+* FTP Password
+* FTP Directory
+* Local Directory : the directory where to retrieve the datas
+* Passive mode
+* SSL connexion
 
 Déplacement des documents périmés
 *********************************
@@ -138,11 +138,11 @@ Workflow 01
 This tasks do some actions (move to collection or chaneg status) on records
 depending of their status or some date fields.
 
-  Settings
-  ^^^^^^^^
-  * Databox
-  * Period : time to wait between two checks
-  * Collection : from =>to
-  * Status-bit : from => to
+Settings
+^^^^^^^^
+* Databox
+* Period : time to wait between two checks
+* Collection : from =>to
+* Status-bit : from => to
 
 .. todo:: Batch upload process (XML Service)

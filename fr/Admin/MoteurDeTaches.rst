@@ -84,8 +84,8 @@ Archiver dans la collection
 Cette tache permet de scruter un répertoire (Hot Folder) et d'archiver son
 contenu dans une :term:`Collection`.
 
-  Paramètrage
-  ^^^^^^^^^^^
+Paramètrage
+^^^^^^^^^^^
 
   * Archive dans la base et la :term:`Collection` : Choix de la
     collection de destination des fichiers
@@ -107,12 +107,12 @@ FTP Push
 Permet de gérer une file d'attente de documents à envoyer par ftp.
 Cette fonction nécessite l'activation de la fonction d'export ftp.
 
-  Paramètrage
-  ^^^^^^^^^^^
+Paramètrage
+^^^^^^^^^^^
 
-    * proxy : adresse du proxy (optionnelle)
-    * proxy port: Port du proxy (optionnel)
-    * périodicité de la tache : intervalle d’exécution de la tache
+  * proxy : adresse du proxy (optionnelle)
+  * proxy port: Port du proxy (optionnel)
+  * périodicité de la tache : intervalle d’exécution de la tache
 
 FTP Pull
 ********
@@ -120,20 +120,20 @@ FTP Pull
 Permet de récupérer en local des documents depuis un server FTP. Peut être
 combinées avec la tache d'archivage afin de rapatrier et archiver des documents.
 
-  Paramètrage
-  ^^^^^^^^^^^
+Paramètrage
+^^^^^^^^^^^
 
-    * proxy : adresse du proxy (optionnelle)
-    * proxy port: port du proxy (optionnel)
-    * host : adresse du serveur ftp
-    * port : port du serveur ftp
-    * user : identifiant sur le serveur ftp
-    * password : mot de passe sur le serveur ftp
-    * chemin distant : répertoire d’accès distant
-    * localpath : chemin de stockage local des fichiers récupérés
-    * mode passif : utiliser le mode passif
-    * SSL: connexion en ssl (sécurisée)
-    * périodicité de la tache : intervalle d’exécution de la tache
+  * proxy : adresse du proxy (optionnelle)
+  * proxy port: port du proxy (optionnel)
+  * host : adresse du serveur ftp
+  * port : port du serveur ftp
+  * user : identifiant sur le serveur ftp
+  * password : mot de passe sur le serveur ftp
+  * chemin distant : répertoire d’accès distant
+  * localpath : chemin de stockage local des fichiers récupérés
+  * mode passif : utiliser le mode passif
+  * SSL: connexion en ssl (sécurisée)
+  * périodicité de la tache : intervalle d’exécution de la tache
 
 
 Déplacement des documents périmés
@@ -156,8 +156,8 @@ Cette tache permet de déplacer un document d'une collection
 vers une autre. On peut aussi ajouter comme critère pour déplacer
 un document, un status-bit.
 
-  Paramètrage
-  ^^^^^^^^^^^
+Paramètrage
+^^^^^^^^^^^
 
   * Database : choix de la Base de données (databox)
   * intervalle d’exécution :  intervalle d’exécution de la tache
