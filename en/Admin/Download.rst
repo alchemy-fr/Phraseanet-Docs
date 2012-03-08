@@ -4,7 +4,7 @@ Download
 Sources are available on our GitHub repository :
 `https://github.com/alchemy-fr/Phraseanet/downloads <https://github.com/alchemy-fr/Phraseanet/downloads>`_
 
-  .. warning:: Phraseanet requires two dependencies that we provide :
+  .. note:: Phraseanet requires two dependencies that we provide :
 
   * http://github.com/alchemy-fr/Phraseanet-Extension
 
