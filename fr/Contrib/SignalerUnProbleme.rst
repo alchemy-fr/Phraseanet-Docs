@@ -8,12 +8,12 @@ l'utilisation de Phraseanet ?
 Vous devez ouvrir un rapport de bug, mais pour cela, veuillez vérifier les
 conditions suivantes :
 
- - Vous vous êtes assuré d'être en dernière version de Phraseanet
- - Vous vous êtes assuré d'avoir patché votre version après l'avoir mise à jour
- - Votre bug se reproduit systèmatiquement en enchainant une combinaison
+ * Vous vous êtes assuré d'être en dernière version de Phraseanet
+ * Vous vous êtes assuré d'avoir patché votre version après l'avoir mise à jour
+ * Votre bug se reproduit systèmatiquement en enchainant une combinaison
    d'actions précise.
- - Vous avez consulté la FAQ pour un remède a des problèmes connus
- - Vous avez vérifié que votre problème n'est pas déjà reporté
+ * Vous avez consulté la FAQ pour un remède a des problèmes connus
+ * Vous avez vérifié que votre problème n'est pas déjà reporté
 
 
 Si tout cela est bon (pfiou !), `ouvrez un ticket
@@ -25,7 +25,7 @@ Si tout cela est bon (pfiou !), `ouvrez un ticket
       bin/console system:doctor
 
 Surtout :
- - ne vous limitez pas au copier-coller du résultat
- - donner l'enchainement d'etapes le plus simple possible pour reproduire le
+ * ne vous limitez pas au copier-coller du résultat
+ * donner l'enchainement d'etapes le plus simple possible pour reproduire le
    probleme.
- - indiquez le navigateur utilisé et sa version.
+ * indiquez le navigateur utilisé et sa version.

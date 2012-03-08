@@ -13,10 +13,10 @@ marqueurs les plus utilisés.
 Règles
 ------
 
-  - Les lignes ne dépassent pas 80 caractères
-  - Le texte est encodé en UTF-8
-  - La documentation n'est pas davantage optimisée pour le PDF ou le HTML
-  - La documentation est publiée en GPL v3
+  * Les lignes ne dépassent pas 80 caractères
+  * Le texte est encodé en UTF-8
+  * La documentation n'est pas davantage optimisée pour le PDF ou le HTML
+  * La documentation est publiée en GPL v3
 
 Mémo
 ----
@@ -24,7 +24,7 @@ Mémo
 Structure
 *********
 
-  - Listes ::
+  * Listes ::
 
     * premièrement
     * deuxièmement
@@ -34,7 +34,7 @@ Structure
     * deuxièmement
     * troisièmement
 
-  - Titres et Sous-Titres ::
+  * Titres et Sous-Titres ::
 
       H1 -- Premier titre
       ===================
@@ -48,7 +48,7 @@ Structure
       H4 -- Sous sous section
       ^^^^^^^^^^^^^^^^^^^^^^^
 
-  - Images ::
+  * Images ::
 
       .. figure:: ../images/gplv3.png
         :align:  center
@@ -65,25 +65,25 @@ Structure
 Formatage
 *********
 
-  - Gras / Italique ::
+  * Gras / Italique ::
 
     **gras** et *italique*
 
     **gras** et *italique*
 
-  - Lien externe ::
+  * Lien externe ::
 
     `Example.com <http://www.example.com/>`_
 
     `Example.com <http://www.example.com/>`_
 
-  - Lien dans la documentation ::
+  * Lien dans la documentation ::
 
     :doc:`Ces règles <DocumentationGuidelines>`
 
     :doc:`Ces règles <DocumentationGuidelines>`
 
-  - Lien vers un terme du glossaire ::
+  * Lien vers un terme du glossaire ::
 
     :term:`enregistrement`
 
@@ -93,7 +93,7 @@ Formatage
 Meta Markups
 ************
 
-  - Notes::
+  * Notes::
 
       .. note::
         Une note
@@ -101,7 +101,7 @@ Meta Markups
     .. note::
       Une note
 
-  - Avertissement::
+  * Avertissement::
 
       .. warning::
         Un avertissement
@@ -109,31 +109,31 @@ Meta Markups
     .. warning::
       Un avertissement
 
-  - Version added ::
+  * Version added ::
 
     .. versionadded:: 3.5.0
 
     .. versionadded:: 3.5.0
 
-  - Version changed ::
+  * Version changed ::
 
     .. versionchanged:: 3.5.0
 
     .. versionchanged:: 3.5.0
 
-  - Références ::
+  * Références ::
 
     .. seealso:: documentation en ligne sur http://http://sphinx.pocoo.org/
 
     .. seealso:: documentation en ligne sur http://http://sphinx.pocoo.org/
 
-  - Todos (reste invisible) ::
+  * Todos (reste invisible) ::
 
     .. todo:: mettre à jour
 
     .. todo:: mettre à jour
 
-  - Topic  ::
+  * Topic  ::
 
 	.. topic:: Topic Title (par exemple: L'essentiel)
 

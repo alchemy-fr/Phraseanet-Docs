@@ -24,22 +24,22 @@ Les contributions à Phraseanet sont ouvertes, vous pouvez faire vos
 repository correspondants :
 
 
-- **Phraseanet**
+* **Phraseanet**
 
   https://github.com/alchemy-fr/Phraseanet
 
   Prenez soin de respecter les :doc:`règles de codage <CodeGuidelines>`
 
-- **Traduction**
+* **Traduction**
 
   https://translations.launchpad.net/phraseanettranslation/trunk/+pots/phraseanettrunktemplate
 
-- **Documentation**
+* **Documentation**
 
   https://github.com/alchemy-fr/Phraseanet-Docs
 
-    - Sphinx Tutorial : http://matplotlib.sourceforge.net/sampledoc/
-    - Markups Sphinx : http://sphinx.pocoo.org/markup/
+    * Sphinx Tutorial : http://matplotlib.sourceforge.net/sampledoc/
+    * Markups Sphinx : http://sphinx.pocoo.org/markup/
 
 * **Librairies clientes de l'API Phraseanet**
 
