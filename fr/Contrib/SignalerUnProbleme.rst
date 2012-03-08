@@ -9,11 +9,14 @@ Vous devez ouvrir un rapport de bug, mais pour cela, veuillez vérifier les
 conditions suivantes :
 
  * Vous vous êtes assuré d'être en dernière version de Phraseanet
- * Vous vous êtes assuré d'avoir patché votre version après l'avoir mise à jour
+ * Vous vous êtes assuré d'avoir patché votre version après l'avoir :doc:`mise 
+   à jour </Admin/MiseAJour>`
  * Votre bug se reproduit systèmatiquement en enchainant une combinaison
    d'actions précise.
- * Vous avez consulté la FAQ pour un remède a des problèmes connus
- * Vous avez vérifié que votre problème n'est pas déjà reporté
+ * Vous avez consulté la :doc:`FAQ </Admin/Faq>` pour un remède a des 
+   problèmes connus
+ * Vous avez vérifié que votre `problème n'est pas déjà reporté 
+   <https://github.com/alchemy-fr/Phraseanet/issues/>`_
 
 
 Si tout cela est bon (pfiou !), `ouvrez un ticket
