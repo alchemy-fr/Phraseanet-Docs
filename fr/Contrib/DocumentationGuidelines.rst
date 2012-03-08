@@ -1,10 +1,10 @@
 Standards de rédaction
 ======================
 
-Cette documentation est libre et participative. Vous pouvez l'éditer, 
+Cette documentation est libre et participative. Vous pouvez l'éditer,
 l'améliorer et la modifier à votre guise.
 
-Pour commencer, le plus simple sera d'imiter la documentation telle qu'elle 
+Pour commencer, le plus simple sera d'imiter la documentation telle qu'elle
 existe déjà.
 
 Vous trouverez aussi ci-dessous une liste de règles à respecter et un mémo des
@@ -26,12 +26,12 @@ Structure
 
   - Listes ::
 
-    * premièrement 
-    * deuxièmement 
+    * premièrement
+    * deuxièmement
     * troisièmement
 
-    * premièrement 
-    * deuxièmement 
+    * premièrement
+    * deuxièmement
     * troisièmement
 
   - Titres et Sous-Titres ::
@@ -53,7 +53,7 @@ Structure
       .. figure:: ../images/gplv3.png
         :align:  center
         :alt:    GPLv3 logo
-        
+
         License GNU GPL v3
 
     .. figure:: ../images/gplv3.png
@@ -115,7 +115,7 @@ Meta Markups
 
     .. versionadded:: 3.5.0
 
-  - Version changee ::
+  - Version changed ::
 
     .. versionchanged:: 3.5.0
 
@@ -140,7 +140,7 @@ Meta Markups
 		Subsequent indented lines comprise
 		the body of the topic, and are
 		interpreted as body elements.
-	
+
 .. topic:: Topic Title (par exemple: L'essentiel)
 
     Subsequent indented lines comprise
