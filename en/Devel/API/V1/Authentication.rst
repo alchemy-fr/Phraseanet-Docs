@@ -1,7 +1,7 @@
 Authentication
 ==============
 
-  The Phraseanet API v1 can only be accessed via 
+  The Phraseanet API v1 can only be accessed via
   `oAuth2.0 <http://oauth.net/2/>`_.
 
   OAauth2.0 allows a secure API authentication in a simple and standard way.
@@ -10,39 +10,39 @@ Authentication
 Libraries
 ---------
 
-  You can find libraries in most languages here : 
+  You can find libraries in most languages here :
   `oAuth2.0 libraries <http://oauth.net/code/>`_.
 
 Endpoints
 ---------
 
-  - Authorization endpoint : /api/oauthv2/authorize
-  - Access token endpoint : /api/oauthv2/token
+  * Authorization endpoint : /api/oauthv2/authorize
+  * Access token endpoint : /api/oauthv2/token
 
 Supported Access Grant Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  - authorization_code
+  * authorization_code
 
 Supported Authorization Response Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  - code
-  - token
-  - code_and_token
+  * code
+  * token
+  * code_and_token
 
-  At this time we do not expire OAuth access tokens, you should be prepared for 
-  this possibility in the future. Also remember that a user may revoke access 
+  At this time we do not expire OAuth access tokens, you should be prepared for
+  this possibility in the future. Also remember that a user may revoke access
   via the Phraseanet settings page at any time.
 
 Sign Up
 -------
 
-  For OAuth 2.0, all applications need to register their name and callback URL 
+  For OAuth 2.0, all applications need to register their name and callback URL
   in Phraseanet to get their API credentials.
 
-  From this registration process Phraseanet will provide you with your 
+  From this registration process Phraseanet will provide you with your
   "Client ID" and your "Client Secret".
 
-  The registration is done in the account settings. You can access this page 
+  The registration is done in the account settings. You can access this page
   by clicking your login in the menubar of Phraseanet.
 
 Obtaining an access token
@@ -84,9 +84,9 @@ Web based applications
   .. code-block:: javascript
 
       {
-        access_token: YOUR_ACCESS_TOKEN 
+        access_token: YOUR_ACCESS_TOKEN
       }
-  
+
 Pure AJAX application
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -108,18 +108,18 @@ Pure AJAX application
 Client-side application
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-  This flow is meant for mobile and desktop installed applications that want 
+  This flow is meant for mobile and desktop installed applications that want
   access to user data.
 
-  The native app flow is identical to the server-side flow with one exception: 
-  a special redirect_uri. Instead of specifying an URL on your site, use the 
-  special string: **urn:ietf:wg:oauth:2.0:oob**. The "oob" part stands for 
-  "out of band" and the rest of the string identifies it as a part of 
+  The native app flow is identical to the server-side flow with one exception:
+  a special redirect_uri. Instead of specifying an URL on your site, use the
+  special string: **urn:ietf:wg:oauth:2.0:oob**. The "oob" part stands for
+  "out of band" and the rest of the string identifies it as a part of
   the OAuth 2.0 standard.
 
-  When you use this redirect_uri, instead of redirecting the user's browser 
-  to a page on your site with an authorization code, Phraseanet will display 
-  the authorization code or error response in a text field with instructions 
+  When you use this redirect_uri, instead of redirecting the user's browser
+  to a page on your site with an authorization code, Phraseanet will display
+  the authorization code or error response in a text field with instructions
   for the user to copy and paste it in to your application.
 
   .. code-block:: bash
@@ -128,18 +128,18 @@ Client-side application
     ?client_id=YOUR_CLIENT_ID
     &redirect_uri=urn:ietf:wg:oauth:2.0:oob
     &response_type=code
-  
+
 
 Using your access token
------------------------ 
+-----------------------
 
-  You can use your access token to call a protected API by including it 
-  in an oauth_token query parameter or an Authorization header 
+  You can use your access token to call a protected API by including it
+  in an oauth_token query parameter or an Authorization header
   in all available endpoint.
   For example :
 
   .. code-block:: bash
 
       curl http://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
-  
+
 

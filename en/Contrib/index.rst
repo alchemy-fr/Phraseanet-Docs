@@ -22,22 +22,22 @@ You can contribute by `pushing your code <http://help.github.com/send-pull-reque
 into the following repositories :
 
 
-- **Phraseanet**
+* **Phraseanet**
 
   https://github.com/alchemy-fr/Phraseanet
 
   Please be sure to follow the :doc:`code guideliens <CodeGuidelines>`
 
-- **Translations**
+* **Translations**
 
   https://translations.launchpad.net/phraseanettranslation/trunk/+pots/phraseanettrunktemplate
 
-- **Documentation**
+* **Documentation**
 
   https://github.com/alchemy-fr/Phraseanet-Docs
 
-    - Sphinx Tutorial : http://matplotlib.sourceforge.net/sampledoc/
-    - Markups Sphinx : http://sphinx.pocoo.org/markup/
+    * Sphinx Tutorial : http://matplotlib.sourceforge.net/sampledoc/
+    * Markups Sphinx : http://sphinx.pocoo.org/markup/
 
 * **Phraseanet API client libraries**
 

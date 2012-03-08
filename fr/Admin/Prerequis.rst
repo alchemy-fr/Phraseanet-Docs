@@ -40,7 +40,7 @@ PHP
     * xsl +zlib
     * mail
     * mcrypt
-    * twig
+    * twig (https://github.com/derickr/twig-ext/)
     * intl
     * pdo
     * CURL
@@ -124,7 +124,7 @@ des programmes externes suivant :
     Utilisation via Imagemagick ; Extraction d'imagettes et de preview à partir
     de fichiers RAW.
 
-  * FFmpeg, Mplayer
+  * FFmpeg <= 0.8, Mplayer
     Extraction d'imagettes, de preview et calcul de videos au format web à
     partir de vidéos.
 

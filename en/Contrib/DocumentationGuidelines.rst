@@ -12,10 +12,10 @@ documentation.
 Rules
 -----
 
-  - Lines do not exceed 80 characters
-  - Text must be UTF-8 encoded
-  - Documentation should not be optimized for PDF nor HTML
-  - Documentation must be publishable as GPLv3
+  * Lines do not exceed 80 characters
+  * Text must be UTF-8 encoded
+  * Documentation should not be optimized for PDF nor HTML
+  * Documentation must be publishable as GPLv3
 
 Memo
 ----
@@ -23,7 +23,7 @@ Memo
 Structure
 *********
 
-  - Lists ::
+  * Lists ::
 
     * first
     * second
@@ -33,7 +33,7 @@ Structure
     * second
     * third
 
-  - Titles and Sub-Titles ::
+  * Titles and Sub-Titles ::
 
       H1 -- Titre
       ===========
@@ -47,7 +47,7 @@ Structure
       H4 -- Sub sub section
       ^^^^^^^^^^^^^^^^^^^^^
 
-  - Images ::
+  * Images ::
 
       .. figure:: ../images/gplv3.png
         :align:  center
@@ -64,25 +64,25 @@ Structure
 Format
 ******
 
-  - Bold / Italic ::
+  * Bold / Italic ::
 
     **bold** et *italic*
 
     **bold** et *italic*
 
-  - External link ::
+  * External link ::
 
     `Example.com <http://www.example.com/>`_
 
     `Example.com <http://www.example.com/>`_
 
-  - Internal link ::
+  * Internal link ::
 
     :doc:`These rules <DocumentationGuidelines>`
 
     :doc:`These rules <DocumentationGuidelines>`
 
-  - Glossary link ::
+  * Glossary link ::
 
     :term:`record`
 
@@ -92,7 +92,7 @@ Format
 Meta Markups
 ************
 
-  - Notes::
+  * Notes::
 
       .. note::
         A note
@@ -100,7 +100,7 @@ Meta Markups
     .. note::
       A note
 
-  - Warning::
+  * Warning::
 
       .. warning::
         Un warning
@@ -108,31 +108,31 @@ Meta Markups
     .. warning::
       Un warning
 
-  - Version added ::
+  * Version added ::
 
     .. versionadded:: 3.5.0
 
     .. versionadded:: 3.5.0
 
-  - Version changed ::
+  * Version changed ::
 
     .. versionchanged:: 3.5.0
 
     .. versionchanged:: 3.5.0
 
-  - References ::
+  * References ::
 
     .. seealso:: online documentation at http://http://sphinx.pocoo.org/
 
     .. seealso:: online documentation at http://http://sphinx.pocoo.org/
 
-  - Todos (invisible) ::
+  * Todos (invisible) ::
 
     .. todo:: upgrade when available
 
     .. todo:: upgrade when available
 
-  - Topic  ::
+  * Topic  ::
 
 	.. topic:: Topic Title (for exemple: The essential)
 

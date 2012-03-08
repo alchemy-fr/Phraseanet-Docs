@@ -36,9 +36,9 @@ la description de celui-ci.
 
   comment créer un stamplogo
 
-      - ajouter un ficher (logo)
-      - cliquer sur la collection puis sur reglage de collection
-      - cliquer sur "vue xml" et éditer le xml en suivant l’exemple ci-dessous
+    * ajouter un ficher (logo)
+    * cliquer sur la collection puis sur reglage de collection
+    * cliquer sur "vue xml" et éditer le xml en suivant l’exemple ci-dessous
 
   .. code-block:: xml
 
