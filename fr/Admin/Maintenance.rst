@@ -32,7 +32,7 @@ intégré à l'application permet de lancer une sauvegarde de l'ensemble des bas
 
   .. code-block:: bash
 
-      php bin/console system:backupDB /repertoire/de/sauvegarde/
+    php bin/console system:backupDB /repertoire/de/sauvegarde/
 
 
 Cette commande peut être incluse dans un script de sauvegarde.
@@ -41,15 +41,14 @@ Cette commande peut être incluse dans un script de sauvegarde.
 Les sources de L'application
 ****************************
 
-Les sources de l'application ne sont en général modifiées qu'en cas de 
+Les sources de l'application ne sont en général modifiées qu'en cas de
 Mise à jour.
 
 Néanmoins cela peu être judicieux de faire une sauvegarde ponctuelle
 des sources après l'installation et le paramétrage.
 
-NB: le répertoire $Sources/config contient des informations de connexion
-aux bases et est conçu pour recevoir des fichiers de templates modifiés
-au format twig.
+  .. note: Vous ne devriez normallement juste avoir à sauvegarder que le dossier
+     config  qui contient vos informations de setup
 
 Etat de maintenance
 -------------------
@@ -58,4 +57,4 @@ Le bloc "Etat de maintenance" dans la  configuration de l'application
 , permet d'activer les logs et d'alerter les utilisateurs
 (ex: maintenance en cours)
 
-  Voir - Le Manuel Utilisateur / Administration / Setup
+Please refer to the :doc:`admin manual </Admin/Configuration>`.
