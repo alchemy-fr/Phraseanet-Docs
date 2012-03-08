@@ -9,10 +9,14 @@ Les changements :
     sérialisées.
     Elles sont désormais stockées indépendamment les unes des autres.
 
-    Deux routes sont modifiées : records/metadatas et records/setmetadatas.
-    Une route est ajoutée pour faciliter l'affichage des fiches : records/caption.
+    Deux routes sont modifiées : :doc:`Records/Metadatas
+    </Devel/API/V1/Route/Records/Metadatas>` et :doc:`Records/SetMetadatas
+    </Devel/API/V1/Route/Records/SetMetadatas>`.
+    Une route est ajoutée pour faciliter l'affichage des fiches :
+    :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
 
-  .. seealso:: :doc:`documentation complète du passage en API 1.1 <APIupgrade>`
+  .. seealso:: :doc:`documentation complète du passage en API 1.1
+        </Devel/API/V1/Upgrade/1.1>`
 
   .. warning::
 
