@@ -1,4 +1,4 @@
-# Global configuration information used across all the 
+# Global configuration information used across all the
 # translations of documentation.
 #
 
@@ -25,7 +25,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Phraseanet'
-copyright = u'2004-2011, <a href="http://www.alchemy.fr" target="_blank">Alchemy</a>'
+copyright = u'2004-2012, <a href="http://www.alchemy.fr" target="_blank">Alchemy</a>'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
