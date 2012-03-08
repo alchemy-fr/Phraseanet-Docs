@@ -35,7 +35,7 @@ Results are presented with a hot air balloon
 --------------------------------------------
 
 Vérifiez que la tâche de création des sous-définitions est démarrée module
-Admin. Refer to the `documentation </Admin/TaskManager>`_.
+Admin. Refer to the `task manager documentation </Admin/TaskManager>`_.
 
 Results do not contains any thumbnails
 --------------------------------------
@@ -44,7 +44,7 @@ If there is no thumbnails (only titles), then the thumbnail folder is not
 correctly mount in the webserver.
 
 Verify that the /web alias is mounted in virtualhost and that it points to the
-correct folder. Refer to the `documentation </Admin/Install>`_.
+correct folder. Refer to the `installation documentation </Admin/Install>`_.
 
 When editing a lot of documents, an error message can happen
 ------------------------------------------------------------
