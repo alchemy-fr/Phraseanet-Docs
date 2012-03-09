@@ -9,10 +9,22 @@ Config.yml
 **********
 
 Config.yml est le fichier de configuration principal de l'application, il permet
-de configurer l'instance utilisée.
+de configurer un  "environement" et de l'utiliser.
+
+Vous pouvez, dans ce fichier, décrire plusieurs environnements et passer de l'un
+à l'autre gràce à la variable "environment"
+
+Il utilise le format `Yaml <https://wikipedia.org/wiki/Yaml>`_, très lisible
+et facilement compréhensible.
+
+Ce fichier requiert deux blocs minimaux :
+
+Dans l'exemple ci-dessous, l'environnement choisi est "dev", et l'on trouve
+en dessous la déclaration de cet environnement.
 
   .. code-block:: yaml
 
+    #config.yml
     environment: dev
     dev:
         phraseanet:
@@ -26,87 +38,94 @@ de configurer l'instance utilisée.
         cache: array_cache
         opcodecache: array_cache
 
-  * environment
 
-    * Sélectionner l'environnement de configuration qui sera chargé 
-      par l'application.
+Détaillons la composition d'un environnement
 
-  * phraseanet
+* phraseanet (configuration principale)
 
-    * servername: L'URI ou est installée l'application
-    * maintenance: Passer l'application en état de maintenance
-    * debug: Passer l'application en mode debug
-    * display_errors: Afficher les erreurs sur la sortie standard
-    * database: Nom du service de connexion à la base de donnée 
-      (voir connexion.yml)
+  * servername: L'URI ou est installée l'application (requis)
+  * maintenance: Passer l'application en état de maintenance
+  * debug: Passer l'application en mode debug
+  * display_errors: Afficher les erreurs sur la sortie standard
+  * database: Nom de la connexion à la base de donnée (requis) voir
+    connexion.yml
 
-  La configuration de Phraseanet permet de décrire les services 
-  (voir services.yml) qui seront utilisés par l'application.
+* template_engine : service de mise en page (requis)
+* orm : Service de mapping à la base de donnée (requis)
+* cache : service de cache principal :doc:`cache </Admin/Optimisation>`
+* opcodecache : service de cache opcode :doc:`opcodecache </Admin/Optimisation>`
 
-  * template_engine
-
-    * Nom du service de template
-
-  * orm
-
-    * Nom du service ORM
-
-  * :doc:`cache </Admin/Optimisation>`
-
-    * Nom du service de cache
-
-  * :doc:`opcodecache </Admin/Optimisation>`
-
-    * Nom du service opcachecode
+Les différents services sont déclarés dans le fichier service.yml.
 
 
 Connexions.yml
 **************
 
-  Connexions.yml permet de déclarer et nommer les propriétées des connexions
-  vers les bases de donnée utilisées par l'application
+Connexions.yml permet de déclarer et nommer des connexions vers des bases de
+données.
+La connexion est partagé par différent service (Phraseanet et ORM)
 
   .. code-block:: yaml
 
+    #connexions.yml
     main_connexion:
-      host: <HOST>
-      port: <PORT>
-      user: <USER>
-      password: <PASSWORD>
-      dbname: <DB_NAME>
-      driver: <DRIVER>
-      charset: <CHARSET>
+      host: localhost
+      port: 3306
+      user: phrasea_engine
+      password: s3cr3t
+      dbname: applicationBox
+      driver: pdo_mysql
+      charset: UTF8
 
-  * host: adresse du serveur 
-  * port: port du serveur
-  * user: identifiant compte utilisateur 
-  * password: mot de passe compte utilisateur
-  * dbname:  nom de base de donnée  (application box)
-  * driver: `driver 
-    <http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver>`_ 
-    base de donnée
-  * charset: type encodage charactère
+  * host: adresse du serveur MySQL
+  * port: port MySQL
+  * user: utilisateur MySQL
+  * password: mot de passe  MySQL
+  * dbname:  nom de la base de donnée (application box)
+  * driver: nom du driver `voir liste complète
+    <http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver>`_
+  * charset: encodage de la connexion
 
 Services.yml
 ************
+
+Le fichier service.yml décrit des services. Ces services sont utilisables dans
+le fichier config.yml.
+
+Vous trouverez un exemple de fichier de service dans config/services.sample.yml.
+
+Quatre groupes de services sont disponibles en standard dans l'application:
+ORM, TemplateEngine, Log, et Cache.
+
+
+Voici la structure générale d'un service :
+
   .. code-block:: yaml
 
+    ServiceGroupe:
+      ServiceName:
+        type: Namespace\Classe
+        options:
+          parametre1: valeur
+          parametre2: valeur
+
+
+Un service requiert un type , qui spécifie la classe PHP à charger.
+Le tableau d'option est optionnel et fonction du service.
+
+Voyons les options que vous pourrez trouver dans les principaux services de
+Phraseanet :
+
+Service d'ORM Doctrine
+^^^^^^^^^^^^^^^^^^^^^^
+
+Voici le service *doctrine_dev* :
+
+  .. code-block:: yaml
+
+    #services.yml
     Orm:
       doctrine_dev:
-        type: Orm\Doctrine
-        options:
-          debug: true
-          dbal: main_connexion
-          cache:
-            query:
-              service: Cache\array_cache
-            result:
-              service: Cache\array_cache
-            metadata:
-              service: Cache\array_cache
-          log:
-            service: Log\query_logger
-      doctrine_test:
         type: Orm\Doctrine
         options:
           debug: true
@@ -120,20 +139,31 @@ Services.yml
               service: Cache\array_cache
           log:
             service: Log\query_logger
-      doctrine_prod:
-        type: Orm\Doctrine
-        options:
-          debug: false
-          dbal: main_connexion
-          cache:
-            query:
-              service: Cache\apc_cache
-            result:
-              service: Cache\memcache_cache
-            metadata:
-              service: Cache\apc_cache
+
+
+
+  * debug : activation du debug
+  * dbal : Nom d'une connexion déclarée dans connexions.yml
+  * cache : paramètrage des options de cache
+
+    * query : utilisation du service **Cache\\array_cache** (voir ci dessous)
+    * result : utilisation du service **Cache\\array_cache** (voir ci dessous)
+    * metadata : utilisation du service **Cache\\apc_cache** (voir ci dessous)
+
+  * log : utilisation du service **Log\\query_logger** (voir ci dessous)
+
+
+
+Service de Mise En Page Twig
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Voici le service *twig_prod*
+
+  .. code-block:: yaml
+
+    #services.yml
     TemplateEngine:
-      twig:
+      twig_prod:
         type: TemplateEngine\Twig
         options:
           debug: false
@@ -141,14 +171,25 @@ Services.yml
           strict_variables: false
           autoescape: true
           optimizer: true
-      twig_debug:
-        type: TemplateEngine\Twig
-        options:
-          debug: true
-          charset: utf-8
-          strict_variables: true
-          autoescape: true
-          optimizer: true
+
+
+
+  * debug : activation du debug
+  * charset : encodage du système de mise en page.
+  * strict_variable : arrêter l'execution lors de l'appel à une variable
+    inconnue (pour les développeurs)
+  * optimizer : activer l'optimizer.
+
+
+Service de Log Doctrine Monolog
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Voici le service de log Doctrine Monolog. Ce service n'est utilisable que
+pour le log du service Doctrine.
+
+  .. code-block:: yaml
+
+    #services.yml
     Log:
       query_logger:
         type: Log\Doctrine\Monolog
@@ -158,74 +199,93 @@ Services.yml
           handler: rotate
           max_day: 2
           filename: doctrine-query.log
-      sql_logger:
-        type: Log\Doctrine\Phpecho
+
+  .. todo : a documenter par Nicolas Legoff
+
+
+Services de Cache ArrayCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
     Cache:
       array_cache:
         type: Cache\ArrayCache
+
+
+
+Services de Cache ApcCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
+    Cache:
+      apc_cache:
+        type: Cache\ApcCache
+
+
+
+Services de Cache MemcacheCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
+    Cache:
       memcache_cache:
         type: Cache\MemcacheCache
         options:
           host: localhost
           port: 11211
-      apc_cache:
-        type: Cache\ApcCache
-      xcache_cache:
-        type: Cache\XcacheCache
 
-Structure
----------
 
-Le principal réglage de l’application est dans la structure XML de la
-:term:`base <base>` à laquelle on accède via le module :
-
-administration > base de donnée > structure.
-
-    .. todo:: mettre à jour
-
-Réglage de collection
----------------------
+Réglages de collection
+----------------------
 
 * Ajout de valeurs suggérées
 
-Les valeurs suggérées sont des aides à la saisie.
-Elles permettent de créer des listes de termes que l'on retrouve
-lors de l’édition.
+Les valeurs suggérées sont des aides à la saisie que vous pouvez regler et que
+vous retrouverez lors de l'`editing </User/Manuel/Editer>`_
 
-* Ajout d'un Minilogo
+* Minilogo
 
-Logo représentatif de la collection
+Logo de la collection
 
-* Ajout d'un Fichier de Watermark (filigrane)
+* Watermark (filigrane)
 
-Le Fichier de filigrane ou watermark s'applique sur les documents
-en prévisualisation selon les droits de l'utilisateur connecté.
+Le Fichier de filigrane ou watermark s'applique sur les documents en
+prévisualisation.
 
-* Ajout d'un StampLogo
+* Stamp
 
-Logo accompagnant le document au téléchargement et pouvant être associé à
+Le Stamp est un logo ajouté au document et pouvant être associé à
 la description de celui-ci.
 
-  comment créer un stamplogo
+Pour utiliser cette option :
 
-    * ajouter un ficher (logo)
-    * cliquer sur la collection puis sur reglage de collection
-    * cliquer sur "vue xml" et éditer le xml en suivant l’exemple ci-dessous
+  * Ajouter un logo de Stamp
+  * Aller dans les règlages de collection
+  * Dans la "Vue XML", editer le XML et ajouter le block "stamp" comme
+    ci-dessous
 
   .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <baseprefs>
-      <status>0</status>
+
+      /**
+       * ....
+       */
 
       <stamp>
-            <logo position="left" width="25%"/>
-            <text size="50%">Titre: <field name="SujetTitre"/></text>
-            <text size="50%">Legende: <field name="Legende"/></text>
-            <text size="50%">Copyright: <field name="Copyright"/></text>
-            <text size="50%">Date : <field name="Date"/></text>
-            </stamp>
-      <sugestedValues>
-      </sugestedValues>
+        <logo position="left" width="25%"/>
+        <text size="50%">Titre: <field name="SujetTitre"/></text>
+        <text size="50%">Legende: <field name="Legende"/></text>
+        <text size="50%">Copyright: <field name="Copyright"/></text>
+        <text size="50%">Date : <field name="Date"/></text>
+      </stamp>
+
     </baseprefs>
 

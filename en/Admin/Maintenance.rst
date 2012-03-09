@@ -48,6 +48,6 @@ Maintenance
 
 You can setup your application in maintenance mode to prevent user from login
 and display an alert message on the frontpage.
-
+This configuration has to be done in the *config.yml* file.
 Please refer to the :doc:`admin manual </Admin/Configuration>`.
 

@@ -54,7 +54,6 @@ Etat de maintenance
 -------------------
 
 Le bloc "Etat de maintenance" dans la  configuration de l'application
-, permet d'activer les logs et d'alerter les utilisateurs
-(ex: maintenance en cours)
-
-Please refer to the :doc:`admin manual </Admin/Configuration>`.
+, permet d'activer les logs et d'alerter les utilisateurs (ex: maintenance en
+cours). Ce paramètrage se fait dans le fichier *config.yml*.
+Referez vous au :doc:`manuel administrateur </Admin/Configuration>`.

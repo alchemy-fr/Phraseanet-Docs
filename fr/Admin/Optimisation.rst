@@ -2,8 +2,22 @@ Optimisation
 ============
 
 
-Caches Opcodes
---------------
+APC / XCache
+------------
 
-Serveurs de cache
+
+Memcached / Redis
 -----------------
+
+
+Nginx
+-----
+
+
+MariaDB
+-------
+
+
+SphinxSearch
+------------
+
