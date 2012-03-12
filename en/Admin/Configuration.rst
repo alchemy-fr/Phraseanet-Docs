@@ -214,7 +214,7 @@ Doctrine activity.
 
 
 
-Services de Cache ArrayCache
+Cache service ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   .. code-block:: yaml
@@ -226,7 +226,7 @@ Services de Cache ArrayCache
 
 
 
-Services de Cache ApcCache
+Cache service ApcCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   .. code-block:: yaml
@@ -237,7 +237,7 @@ Services de Cache ApcCache
         type: Cache\ApcCache
 
 
-Services de Cache XCache
+Cache service XCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   .. code-block:: yaml
@@ -250,7 +250,7 @@ Services de Cache XCache
 
 
 
-Services de Cache MemcacheCache
+Cache service MemcacheCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   .. code-block:: yaml
@@ -273,7 +273,7 @@ Collection Settings
 * Suggested values
 
 Suggested values are help to edit your documents. You can edit it and find it
-ack in the `editing of document</User/Manual/Editing>`_
+ack in the `editing of document </User/Manual/Editing>`_
 
 * Minilogo
 
