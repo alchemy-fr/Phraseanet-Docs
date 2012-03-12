@@ -152,10 +152,12 @@ Voici le service *doctrine_dev* :
 
   * log : utilisation du service **Log\\query_logger** (voir ci dessous)
 
+  Pour plus d'informations sur les différents caches de Doctrine voir la 
+  `documentation doctrine <http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>`_
 
 
-Service de Mise En Page Twig
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Service de `Mise En Page <http://en.wikipedia.org/wiki/Template_engine_%28web%29>`_ Twig
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Voici le service *twig_prod*
 
@@ -178,8 +180,13 @@ Voici le service *twig_prod*
   * charset : encodage du système de mise en page.
   * strict_variable : arrêter l'execution lors de l'appel à une variable
     inconnue (pour les développeurs)
-  * optimizer : activer l'optimizer.
-
+  * autoescape: Activer la prise en charge automatiques des caractères 
+    d'auto échappement.
+  * optimizer : Activer 
+    `l'optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
+    
+  Pour plus de détails sur les options de l'environnement voir la
+  `documentation twig <http://twig.sensiolabs.org/doc/api.html#environment-options>`_
 
 Service de Log Doctrine Monolog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
