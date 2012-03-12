@@ -190,7 +190,28 @@ Doctrine activity.
           max_day: 2
           filename: doctrine-query.log
 
-  .. todo : a documenter par Nicolas Legoff
+
+  * output : Choose output format. 
+    Available mods.
+
+    * json : Formatting in `Json <https://wikipedia.org/wiki/Json>`_
+    * yaml : Formatting in `Yaml <https://wikipedia.org/wiki/Yaml>`_
+    * vdump : Display PHP output variable in a way that's readable by humans. 
+      see `var_dump <http://www.php.net/manual/fr/function.var-dump.php>`_
+
+  * channel : Channel's name used by the logger service.
+    It's a way to identify on which part of the application the log entry is 
+    related on.
+  * handler : Attribute a specific handler for the log service.
+
+    * stream : Store logs into a single file.
+    * rotate : Stores logs to files that are rotated every day and a limited 
+      number of files are kept.
+
+  * filename: File's name.
+  * max_day : Specify in days the frequency operated on files for the rotated 
+    handler.
+
 
 
 Services de Cache ArrayCache
@@ -216,6 +237,18 @@ Services de Cache ApcCache
         type: Cache\ApcCache
 
 
+Services de Cache XCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
+    Cache:
+      xcache_cache:
+        type: Cache\XcacheCache
+
+
+
 
 Services de Cache MemcacheCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -230,6 +263,8 @@ Services de Cache MemcacheCache
           host: localhost
           port: 11211
 
+* host: Memcache server address
+* port: Memcache server port
 
 
 Collection Settings

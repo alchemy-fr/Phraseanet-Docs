@@ -200,8 +200,28 @@ pour le log du service Doctrine.
           max_day: 2
           filename: doctrine-query.log
 
-  .. todo : a documenter par Nicolas Legoff
+  * output : Spécification du formatage de sortie. 
+    Trois modes sont possibles.
 
+    * json : Formatage en `Json <https://wikipedia.org/wiki/Json>`_
+    * yaml : Formatage en `Yaml <https://wikipedia.org/wiki/Yaml>`_
+    * vdump : Affiche les informations de la variable de sortie PHP de manière 
+      à ce qu'elle soit lisible. 
+      voir `var_dump <http://www.php.net/manual/fr/function.var-dump.php>`_
+
+  * channel : Nom du channel utilisé par le service de log.
+    C'est une façon d'identifier à quelle partie de l'application une entrée de 
+    log est liée.
+  * handler : Permet de spécifier le type de gestionnaire de log utilisé par le
+    service. 
+
+    * stream : Ecrire les logs dans un fichier.
+    * rotate : Ecrire les logs dans un fichiers qui sont renouvellés tous 
+      les jours et limiter le nombre de fichiers enregistrés.
+
+  * filename: Le nom du fichier de log.
+  * max_day : Spécifier en nombre de jour la fréquence de rotation opérée sur
+    les fichiers de logs dans le cas ou le handler de rotation est utilisé.
 
 Services de Cache ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -214,7 +234,6 @@ Services de Cache ArrayCache
         type: Cache\ArrayCache
 
 
-
 Services de Cache ApcCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -225,6 +244,16 @@ Services de Cache ApcCache
       apc_cache:
         type: Cache\ApcCache
 
+
+Services de Cache XCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
+    Cache:
+      xcache_cache:
+        type: Cache\XcacheCache
 
 
 Services de Cache MemcacheCache
@@ -240,6 +269,8 @@ Services de Cache MemcacheCache
           host: localhost
           port: 11211
 
+* host: Adresse du serveur Memcache
+* port: Port du serveur Memcache
 
 Réglages de collection
 ----------------------
