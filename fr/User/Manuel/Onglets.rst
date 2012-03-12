@@ -125,23 +125,3 @@ les bases ouvertes.
 	  .. image:: ../../images/Rechercher-thesaurus3.jpg
 	   :alt: alternate text
 	   :align: center
-
-Note
-----
-
-Depuis la version 3.6, la Barre des Onglets est rétractable: 
-
-  .. image:: ../../images/Onglets-Retractable0.jpg
-	   :alt: alternate text
-	   :align: center
-
-Un clic sur l'icône présente sur le côté droit permet de la masquer quasi - 
-entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la 
-consultation des Résultats :
-
-  .. image:: ../../images/Onglets-Retractable.jpg
-	   :alt: alternate text
-	   :align: center
-
-Un clic sur n'importe quelle partie de la Barre des Onglets la fait réapparaître 
-instantanément.

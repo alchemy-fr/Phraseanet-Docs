@@ -213,10 +213,6 @@ du clavier.
 
 Cliquer sur l’onglet séparant la zone paniers de celle des résultats.
 
-.. figure:: ../../images/General-Prefpaniers3.jpg
-   :alt: alternate text
-   :align: center
-
 Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones 
 d’affichage.
 
@@ -224,6 +220,23 @@ Relâcher le curseur dès que le nombre de vignettes par ligne dans la zone des
 paniers est atteint.
 
 .. note:: Ensuite, l'application ajuste seule l’espace pour optimiser l’affichage.
+
+A noter également: depuis la version 3.6, la Barre des Onglets est rétractable: 
+
+  .. image:: ../../images/Onglets-Retractable0.jpg
+	   :alt: alternate text
+	   :align: center
+
+Un clic sur l'icône présente sur le côté droit permet de la masquer quasi - 
+entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la 
+consultation des Résultats :
+
+  .. image:: ../../images/Onglets-Retractable.jpg
+	   :alt: alternate text
+	   :align: center
+
+Un clic sur n'importe quelle partie de la Barre des Onglets la fait réapparaître 
+instantanément.
 
 Interface Classic
 -----------------

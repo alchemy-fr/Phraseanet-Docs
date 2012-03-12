@@ -35,8 +35,6 @@ la partie haute de la fenêtre, au-dessus de l'affichage des résultats.
 Jusqu'à la version 3.5, celle-ci se présentait ainsi:
 
     .. image:: ../../images/Palette.jpg
-	     :height: 50 px
-	     :width: 550 px
 	     :alt: alternate text
 	     :align: center 
 
@@ -47,8 +45,6 @@ une flèche sur laquelle l'utilisateur doit cliquer pour dérouler l'ensemble de
 actions disponibles.
 
     .. image:: ../../images/Actions-PaletteBeta.jpg
-	     :height: 200 px
-	     :width: 540 px
 	     :alt: alternate text
 	     :align: center 
 	
@@ -106,7 +102,9 @@ Il est possible d'éditer les :term:`documents <Document>` à l'unité ou en lot
 Push
 *****
 On utilise le :term:`"push" <Push>` dans Phraseanet pour envoyer virtuellement des 
-documents à un ou plusieurs destinataires.
+documents à un ou plusieurs destinataires. Depuis la version 3.6, Push et Feedback 
+sont deux modules distincts. Vous retrouvez donc le *Feedback* également dans le 
+sous menu du bouton Push (également présents: *Bridge* et *Publier*).
 
 :doc:`Veuillez vous reporter à la section dédiée au Push <Push>`.
 
