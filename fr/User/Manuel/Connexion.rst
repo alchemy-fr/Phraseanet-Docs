@@ -8,7 +8,7 @@ Inscription
 -----------
   * Cliquer sur **Inscription** dans la page d'accueil.
 
-Selon les choix de paramétrage du système, un lien permettant l’inscription de 
+Selon les choix de paramétrage du système, un lien permettant l'inscription de 
 nouveaux utilisateurs peut exister sur la page de connexion.
 
 L'écran *Nouvel utilisateur* s'ouvre :
@@ -25,14 +25,14 @@ L'écran *Nouvel utilisateur* s'ouvre :
     souhaitées.
   * Cliquer sur le bouton Valider.
 
-La page d’accueil s’affiche et informe l’utilisateur que sa demande a été prise 
+La page d'accueil s'affiche et informe l'utilisateur que sa demande a été prise 
 en compte.
 
 Authentification
 ----------------
   * Se connecter à l'adresse internet du site Phraseanet dans un navigateur Web.
 
-La page d’accueil permettant la connexion s'affiche :
+La page d'accueil permettant la connexion s'affiche :
 
 	.. image:: ../../images/Authentification.jpg
 	   :alt: alternate text
@@ -41,44 +41,94 @@ La page d’accueil permettant la connexion s'affiche :
   * Sélectionner la langue dans la liste déroulante.
   * Saisir son identifiant.
   * Saisir son mot de passe.
-  * Cliquer sur Ok.
-  * En cas d’oubli du mot de passe, suivre la procédure de récupération en 
-    cliquant sur "Mot de Passe oublié". 
+  * Cliquer sur Ok. 
+  * En cas d'oubli du mot de passe, suivre la procédure de récupération en 
+    cliquant sur "Mot de Passe oublié". Cette procédure est décrite 
+    au paragraphe `Mot de passe perdu ?`_
+    
 
 Mon compte
 ----------
-Dans la partie supérieure droite du :doc:`menu <General>` se trouvent vos informations 
-de compte, l’aide en ligne et le lien pour se déconnecter.
 
-Cliquez sur "Mon compte" pour accéder à vos informations.
+Dans la partie supérieure droite de l'écran de Production se trouvent les liens 
+pour accéder aux informations de votre compte, à l'aide en ligne ainsi que le 
+lien de déconnexion. 
+Cliquez sur votre identifiant pour accéder à vos informations.
 
-	.. image:: ../../images/Moncompte.jpg
+.. image:: ../../images/Moncompte.jpg
+	   :alt: alternate text
+	   :align: center 
+	   
+Informations
+************
+La section Informations est consacrée aux données personnelles. Elle permet de 
+saisir ou de modifier les informations relatives à son identité à ses 
+coordonnées postales, téléphoniques, d'email, de paramétrer la réception des 
+notifications Phraseanet adressées par mail ou d'activer un compte FTP 
+permettant la réception de documents sur un serveur supportant ce type de 
+connexion.
+
+Accès
+*****
+La section *Accès* liste les bases et collections de l'application Phraseanet. 
+Elle mentionne les collections auxquelles l'utilisateur connecté a accès.
+L'utilisateur peut a tout moment effectuer une demande d'accès à une collection 
+à laquelle il n'a pas accés.
+
+Pour faire une demande pour accéder à de nouvelles bases ou collections de 
+documents et d'en visualiser l'état,
+
+	* Cocher une ou plusieurs cases pour demander l'accès à de nouvelles 
+	Bases/ Collections
+	
+	* Valider votre demande en cliquant sur le bouton *Valider*
+	
+Un message vous indique alors que votre demande d'accès est en cours.
+
+.. image:: ../../images/Accesbasescoll.jpg
 	   :alt: alternate text
 	   :align: center 
 
-*Données personnelles*
+Sessions
+********
+La section Sessions liste les sessions Phraseanet de l'utilisateur. Elle donne 
+des informations relatives aux dates de connexion et d'accès, aux adresses ip, 
+navigateurs et résolutions d'écran détectées.
 
-Pour saisir et modifier ses informations personnelles et ses coordonnées (postales, 
-mail, fax, tél) et activer un compte :term:`FTP <FTP>` permettant l’envoi de 
-documents vers un serveur FTP de l’utilisateur.
+Applications
+************
+La section *Applications* liste les applications tierces autorisées à se connecter
+à votre compte Phraseanet.
 
-  * Saisir ou modifier les informations et cliquer sur "Valider".
+Developpeur
+***********
+La section Développeur permet la mise en place de clés d'API afin que des 
+applications tierces puissent communiquer avec votre compte Phraseanet. Un lien 
+vers la documentation destinée aux développeurs est disponible dans cette section 
+afin que vous puissiez découvrir comment mettre en oeuvre les API Phraseanet.
 
-*Accès aux bases/collections*
+Mot de passe perdu ?
+--------------------
 
-Faire une demande pour accéder à de nouvelles :term:`bases <base>`/collections 
-de documents et d'en visualiser l’état. 
+En cas d'oubli du mot de passe, vous devez suivre la procédure de récupération 
+de mot de passe proposée à partir de la page d'identification. 
+Pour cela, cliquer sur le lien *Mot de Passe oublié*.
+Sur la page mot de passe oublié, remplissez le formulaire proposé avec l'adresse 
+email de votre compte Phraseanet.
 
-  * Cocher une ou plusieurs cases pour demander l'accès à de nouvelles Bases/
-    Collections.
+Une fois le formulaire complété et validé, vous recevrez alors un email vous 
+permettant de rejoindre, via un lien, l'interface de réinitialisation de mot 
+de passe. Ce lien n'est valide que pour une durée limitée dans le temps.
+Si vous ne recevez pas cet email, veuillez consulter le dossier des courriers 
+indésirables de votre programme de messagerie.
 
-  * Cliquer sur Envoyer.
+En cliquant sur le lien proposé par l'email reçu, vous rejoignez l'interface de 
+réinitialisation de mot de passe. 
+Suivez alors les instructions proposées à l'écran et validez le formulaire pour 
+réinitialiser votre mot de passe.
 
-Un message vous confirme que la demande est en cours.
+.. warning:: **Attention** : les mots de passe sont sensibles à la casse.
 
-	.. image:: ../../images/Accesbasescoll.jpg
-	   :alt: alternate text
-	   :align: center 
-
-
+Après réinitialisation du mot de passe, vous pouvez vous connecter au moyen du 
+formulaire disponible en page d’accueil de votre application Phraseanet.
 
