@@ -5,6 +5,11 @@
 
 .. topic:: L'essentiel
 
+    L'interface du module Production est repensée dans la version 3.6 de 
+    Phraseanet. La majorité des utilisateurs consultés ont trouvé intéressant 
+    de rassembler toutes les options relatives à la recherche documentaire au 
+    sein d’une même zone de l'écran du module Production.
+    
     Dans *Production* et *Classic*, deux modes de recherche sont possibles:
 
     La zone de `Recherche simple`_ permet d'effectuer des recherches simples en 
