@@ -10,9 +10,9 @@ Lors de la publication d'une nouvelle version, pour procéder à la mise à jour
 de votre installation, suivez les étapes suivantes :
 
   * Arrêt des processus lancés par le scheduler via l'interface
-    d'administration, stopper toutes les tâches en cours d'execution.
+    d'administration, stopper toutes les tâches en cours d'exécution.
 
-  * Deconnectez tous les utilisateurs (y compris vous-même) de l'application
+  * Déconnectez tous les utilisateurs (y compris vous-même) de l'application
 
   * Backup des bases de données et des anciennes sources.
 

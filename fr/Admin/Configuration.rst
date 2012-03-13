@@ -9,10 +9,10 @@ Config.yml
 **********
 
 Config.yml est le fichier de configuration principal de l'application, il permet
-de configurer un  "environement" et de l'utiliser.
+de configurer un  "environnement" et de l'utiliser.
 
 Vous pouvez, dans ce fichier, décrire plusieurs environnements et passer de l'un
-à l'autre gràce à la variable "environment"
+à l'autre grâce à la variable "environment"
 
 Il utilise le format `Yaml <https://wikipedia.org/wiki/Yaml>`_, très lisible
 et facilement compréhensible.
@@ -144,7 +144,7 @@ Voici le service *doctrine_dev* :
 
   * debug : activation du debug
   * dbal : Nom d'une connexion déclarée dans connexions.yml
-  * cache : paramètrage des options de cache
+  * cache : paramètre des options de cache
 
     * query : utilisation du service **Cache\\array_cache** (voir ci dessous)
     * result : utilisation du service **Cache\\array_cache** (voir ci dessous)
@@ -152,8 +152,7 @@ Voici le service *doctrine_dev* :
 
   * log : utilisation du service **Log\\query_logger** (voir ci dessous)
 
-  Pour plus d'informations sur les différents caches de Doctrine voir la 
-  `documentation doctrine <http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>`_
+  .. seealso:: Pour plus d'informations sur les différents caches doctrine http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm
 
 
 Service de `Mise En Page <http://en.wikipedia.org/wiki/Template_engine_%28web%29>`_ Twig
@@ -178,15 +177,14 @@ Voici le service *twig_prod*
 
   * debug : activation du debug
   * charset : encodage du système de mise en page.
-  * strict_variable : arrêter l'execution lors de l'appel à une variable
+  * strict_variable : arrêter l'exécution lors de l'appel à une variable
     inconnue (pour les développeurs)
   * autoescape: Activer la prise en charge automatiques des caractères 
     d'auto échappement.
   * optimizer : Activer 
     `l'optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
     
-  Pour plus de détails sur les options de l'environnement voir la
-  `documentation twig <http://twig.sensiolabs.org/doc/api.html#environment-options>`_
+  .. seealso:: Pour plus de détails sur les options de l'environnement twig http://twig.sensiolabs.org/doc/api.html#environment-options
 
 Service de Log Doctrine Monolog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -223,12 +221,12 @@ pour le log du service Doctrine.
     service. 
 
     * stream : Ecrire les logs dans un fichier.
-    * rotate : Ecrire les logs dans un fichiers qui sont renouvellés tous 
+    * rotate : Ecrire les logs dans un fichiers qui sont renouvelés tous 
       les jours et limiter le nombre de fichiers enregistrés.
 
   * filename: Le nom du fichier de log.
   * max_day : Spécifier en nombre de jour la fréquence de rotation opérée sur
-    les fichiers de logs dans le cas ou le handler de rotation est utilisé.
+    les fichiers de logs dans le cas ou le gestionnaire de rotation est utilisé.
 
 Services de Cache ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -276,15 +274,15 @@ Services de Cache MemcacheCache
           host: localhost
           port: 11211
 
-* host: Adresse du serveur Memcache
-* port: Port du serveur Memcache
+* host: Adresse du serveur Memcached
+* port: Port du serveur Memcached
 
 Réglages de collection
 ----------------------
 
 * Ajout de valeurs suggérées
 
-Les valeurs suggérées sont des aides à la saisie que vous pouvez regler et que
+Les valeurs suggérées sont des aides à la saisie que vous pouvez régler et que
 vous retrouverez lors de l'`editing </User/Manuel/Editer>`_
 
 * Minilogo
@@ -326,4 +324,3 @@ Pour utiliser cette option :
       </stamp>
 
     </baseprefs>
-
