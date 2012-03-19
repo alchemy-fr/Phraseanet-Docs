@@ -215,7 +215,7 @@ lien *Ajouter*.
 .. note:: Un dispositif de recherche et de filtres permet de limiter l'affichage des 
           utilisateurs par leurs identifiants, noms ou prénom, activité, société… *etc.*
     
-* Pour retourner au sommaire de la liste, cliquer sur le bouton *Voir*.
+* Pour retourner au sommaire de la liste, cliquer sur le bouton *Voir* .
     
 Partager une liste
 ******************

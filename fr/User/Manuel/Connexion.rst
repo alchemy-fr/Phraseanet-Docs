@@ -51,9 +51,9 @@ Mon compte
 ----------
 
 Dans la partie supérieure droite de l'écran de Production se trouvent les liens 
-pour accéder aux informations de votre compte, à l'aide en ligne ainsi que le 
-lien de déconnexion. 
-Cliquez sur votre identifiant pour accéder à vos informations.
+pour accéder aux informations de compte utilisateur, à l'aide en ligne ainsi que
+le lien de déconnexion. 
+Cliquer sur l'identifiant affiché pour accéder aux informations du compte.
 
 .. image:: ../../images/Moncompte.jpg
 	   :alt: alternate text
@@ -62,11 +62,10 @@ Cliquez sur votre identifiant pour accéder à vos informations.
 Informations
 ************
 La section Informations est consacrée aux données personnelles. Elle permet de 
-saisir ou de modifier les informations relatives à son identité à ses 
-coordonnées postales, téléphoniques, d'email, de paramétrer la réception des 
-notifications Phraseanet adressées par mail ou d'activer un compte FTP 
-permettant la réception de documents sur un serveur supportant ce type de 
-connexion.
+saisir ou de modifier les informations relatives à l'identité, aux coordonnées 
+postales, téléphoniques, d'email, de paramétrer la réception des notifications
+Phraseanet adressées par mail ou d'activer un compte FTP permettant la 
+réception de documents sur un serveur supportant ce type de connexion.
 
 Accès
 *****
@@ -81,9 +80,9 @@ documents et d'en visualiser l'état,
 	* Cocher une ou plusieurs cases pour demander l'accès à de nouvelles 
 	Bases/ Collections
 	
-	* Valider votre demande en cliquant sur le bouton *Valider*
+	* Valider la demande en cliquant sur le bouton *Valider*
 	
-Un message vous indique alors que votre demande d'accès est en cours.
+Un message indique alors que qu'une demande d'accès est en cours.
 
 .. image:: ../../images/Accesbasescoll.jpg
 	   :alt: alternate text
@@ -98,37 +97,37 @@ navigateurs et résolutions d'écran détectées.
 Applications
 ************
 La section *Applications* liste les applications tierces autorisées à se connecter
-à votre compte Phraseanet.
+au compte Phraseanet.
 
 Developpeur
 ***********
 La section Développeur permet la mise en place de clés d'API afin que des 
-applications tierces puissent communiquer avec votre compte Phraseanet. Un lien 
+applications tierces puissent communiquer avec un compte Phraseanet. Un lien 
 vers la documentation destinée aux développeurs est disponible dans cette section 
-afin que vous puissiez découvrir comment mettre en oeuvre les API Phraseanet.
+afin de découvrir comment mettre en oeuvre les API Phraseanet.
 
 Mot de passe perdu ?
 --------------------
 
-En cas d'oubli du mot de passe, vous devez suivre la procédure de récupération 
-de mot de passe proposée à partir de la page d'identification. 
+En cas d'oubli du mot de passe, suivre la procédure de récupération de mot de 
+passe proposée à partir de la page d'identification. 
 Pour cela, cliquer sur le lien *Mot de Passe oublié*.
-Sur la page mot de passe oublié, remplissez le formulaire proposé avec l'adresse 
-email de votre compte Phraseanet.
+Sur la page mot de passe oublié, remplir le formulaire proposé avec l'adresse 
+email lié au compte Phraseanet.
 
-Une fois le formulaire complété et validé, vous recevrez alors un email vous 
-permettant de rejoindre, via un lien, l'interface de réinitialisation de mot 
-de passe. Ce lien n'est valide que pour une durée limitée dans le temps.
-Si vous ne recevez pas cet email, veuillez consulter le dossier des courriers 
-indésirables de votre programme de messagerie.
+Une fois le formulaire complété et validé, un email est envoyé. Il permet 
+rejoindre, via un lien, l'interface de réinitialisation de mot de passe. 
+Ce lien n'est valide que pour une durée limitée dans le temps.
+Si l'email n'est pas reçu, consulter le dossier des courriers indésirables 
+du programme de messagerie.
 
-En cliquant sur le lien proposé par l'email reçu, vous rejoignez l'interface de 
+En cliquant sur le lien proposé par l'email reçu, rejoindre l'interface de 
 réinitialisation de mot de passe. 
-Suivez alors les instructions proposées à l'écran et validez le formulaire pour 
-réinitialiser votre mot de passe.
+Suivre alors les instructions proposées à l'écran puis valider le formulaire pour 
+réinitialiser le mot de passe.
 
-.. warning:: **Attention** : les mots de passe sont sensibles à la casse.
+.. warning:: les mots de passe sont sensibles à la casse.
 
-Après réinitialisation du mot de passe, vous pouvez vous connecter au moyen du 
-formulaire disponible en page d’accueil de votre application Phraseanet.
+Après réinitialisation du mot de passe, se connecter au moyen du formulaire disponible
+en page d’accueil de l'application Phraseanet.
 
