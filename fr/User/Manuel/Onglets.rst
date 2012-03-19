@@ -1,34 +1,66 @@
-﻿La Barre des Onglets
-====================
+﻿La Zone de Travail
+==================
 .. toctree::
    :maxdepth: 3
    
 .. topic:: L'essentiel
 
-    Dans l'interface, cet espace est présent sur le côté gauche de la fenêtre de 
-    *Phraseanet Production*. La barre présente 3 onglets et vous offre: 
+    Dans l'interface, cette zone de travail (anciennement "Barre des Onglets") 
+    est présente sur le côté gauche de la fenêtre de *Phraseanet Production* et 
+    propose :
     
-    * un espace de travail pour mettre de côté des sélections d'images et autres 
+    * Un espace de travail pour mettre de côté des sélections d'images et autres 
       documents: ce sont les :doc:`Paniers et Reportages <PaniersReportages>`
     
-    * une aide à la recherche avec les `Propositions`_
+    * Une aide à la recherche avec les `Propositions`_
     
-    * le `thesaurus`_ dans l'interface de *Phraseanet Production*
+    * Le `thesaurus`_ dans l'interface de *Phraseanet Production*
 
-Voici un aperçu de la Barre des Onglets. Ci-dessous, voici la vue par défaut, à 
-savoir les Paniers et des Reportages. Depuis Phraseanet 3.6, on retrouve 
-des icônes pour représenter les onglets:
+Voici un aperçu de la Zone de travail (ou WorkZone). Ci-dessous, voici la vue 
+par défaut, à savoir les Paniers et des Reportages :
 
   .. image:: ../../images/Onglets-General.jpg
 	   :alt: alternate text
 	   :align: center
 
+Préférences d'affichage
+-----------------------
+Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
+
+  .. image:: ../../images/Onglet-Taille.jpg
+	   :alt: alternate text
+	   :align: center
+
+Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones 
+d’affichage.
+
+Relâcher le curseur dès que le nombre de vignettes par ligne dans la zone de 
+travail est atteint.
+
+.. note:: Ensuite, l'application ajuste seule l’espace pour optimiser l’affichage.
+
+Depuis la version 3.6, la zone de travail est rétractable: 
+
+  .. image:: ../../images/Onglets-Retractable0.jpg
+	   :alt: alternate text
+	   :align: center
+
+Un clic sur l'icône présente sur le côté droit permet de la masquer quasi - 
+entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la 
+consultation des Résultats :
+
+  .. image:: ../../images/Onglets-Retractable.jpg
+	   :alt: alternate text
+	   :align: center
+
+Un clic sur n'importe quelle partie de la zone la fait réapparaître instantanément.
+
 Les Paniers et les Reportages
 -----------------------------
-Un espace de travail pour mettre de côté vos sélections de documents. 
-D'ici, l'utilisateur peut effectuer un grand nombre d'actions sur ses Paniers et 
-Reportages, notamment envoyer ses documents à d'autres utilisateurs. :doc:`Se 
-reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`.
+Un espace de travail pour mettre de côté des documents. 
+D'ici, l'utilisateur peut effectuer un grand nombre d'actions sur ses sélections,
+notamment envoyer ses documents à d'autres utilisateurs. Pour plus d'informations, 
+:doc:`se reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`.
 
 Propositions
 ------------
