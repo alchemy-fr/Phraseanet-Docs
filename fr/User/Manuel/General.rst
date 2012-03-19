@@ -174,8 +174,8 @@ Un espace de travail divisé en quatre parties:
 
   * L':doc:`affichage des réponses <Afficher>` (2)
 
-  * La :doc:`barre des onglets <Onglets>`: vos paniers et reportages, la recherche 
-    avancée, la gestion des mots candidats... (3)
+  * La :doc:`zone de travail <Onglets>`: vos paniers et reportages, la gestion 
+    des mots candidats... (3)
 
   * La :doc:`Palette des Actions <Actions>`. Elle permet d'effectuer 
     des actions sur les documents: :doc:`éditer <Editer>`, :doc:`supprimer <Actions>`, 
@@ -208,35 +208,6 @@ Cocher les cases pour afficher les :term:`status <Statusbit>`, la description
 et/ou le titre des documents dans les paniers. 
 Fermer en cliquant sur la croix en haut à droite ou appuyer sur la touche "Echap" 
 du clavier.
-
-**Modifier la taille d’affichage de la zone de paniers**
-
-Cliquer sur l’onglet séparant la zone paniers de celle des résultats.
-
-Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones 
-d’affichage.
-
-Relâcher le curseur dès que le nombre de vignettes par ligne dans la zone des 
-paniers est atteint.
-
-.. note:: Ensuite, l'application ajuste seule l’espace pour optimiser l’affichage.
-
-A noter également: depuis la version 3.6, la Barre des Onglets est rétractable: 
-
-  .. image:: ../../images/Onglets-Retractable0.jpg
-	   :alt: alternate text
-	   :align: center
-
-Un clic sur l'icône présente sur le côté droit permet de la masquer quasi - 
-entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la 
-consultation des Résultats :
-
-  .. image:: ../../images/Onglets-Retractable.jpg
-	   :alt: alternate text
-	   :align: center
-
-Un clic sur n'importe quelle partie de la Barre des Onglets la fait réapparaître 
-instantanément.
 
 Interface Classic
 -----------------

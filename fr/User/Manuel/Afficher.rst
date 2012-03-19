@@ -28,21 +28,21 @@
 
 	 *Interface Phraseanet Classic*
 
-
-
 Présentation de la zone d'affichage
 -----------------------------------
 Dans *Production*:
-**Le bandeau supérieur donne le nombre de réponses et affiche les "pages" 
-de réponses.**
+La **Palette des Actions** figure en haut de page, juste au-dessus de la zone des 
+Résultats. Elle permet d'effectuer certaines actions sur les documents, pour plus 
+de détails, se référer à la page dédiée à la :doc:`Palette des Actions <Actions>`.
 
-  .. image:: ../../images/Affichage-pages.jpg
+Le bandeau inférieur permet d'accéder aux **Préférences d'affichage**, il donne 
+le nombre de réponses et affiche les "pages" de réponses. Il permet de se déplacer 
+de pages en pages en cliquant sur le numéro de la page, d'aller en fin de sélection 
+en cliquant sur *Suivant* et de revenir en début en cliquant sur *Précédent*.
+
+  .. image:: ../../images/Afficher-Nbreponses.jpg
 	   :alt: alternate text
-	   :align: center 
-	   
-Il permet de se déplacer de pages en pages en cliquant sur le 
-numéro de la page, d'aller en fin de sélection en cliquant sur *Suivant* et de 
-revenir en début en cliquant sur *Précédent*.
+	   :align: center
 
 Les vignettes sont surmontées par le contenu d'un champ (ici "Objet"). 
 Le choix de ce champ est paramétrable. Par défaut, c’est le nom d’origine du 
@@ -164,7 +164,8 @@ Pour placer une sélection de documents dans un Panier:
 
 *Pour faire une sélection de documents au sein d'un Panier:*
 
-Ouvrir ou déployer un panier en cliquant sur le titre, dans la barre des Onglets.
+Ouvrir ou déployer un panier en cliquant sur le titre, dans :doc:`la zone de 
+travail <Onglets>`.
 Cliquer sur les documents à sélectionner, comme vu précédemment, puis effectuer 
 une action à partir du menu apparent au sein des paniers.
 
@@ -175,7 +176,7 @@ une action à partir du menu apparent au sein des paniers.
 La vue détaillée
 ----------------
 Lancer la vue détaillée en faisant un double clic sur une vignette depuis la zone 
-des résultats ou depuis la zone des paniers.
+des résultats ou depuis un panier dans la zone de travail.
 
 Une fenêtre s’ouvre. Elle affiche la liste de documents sous forme de "bandeau 
 d’image" en haut.
@@ -185,7 +186,7 @@ d’image" en haut.
   * Elle affiche avec trois onglets la description, l’historique depuis l’ajout 
     et la popularité du document. 
 
-  * Elle affiche la liste de tous les paniers et reportages auxquels le document 
+  * Elle affiche la liste de tous les Paniers et Reportages auxquels le document 
     appartient dans la partie droite de la fenêtre.
 
 Cliquer sur une vignette pour afficher l’image de choix ou utiliser les flèches 
@@ -243,14 +244,15 @@ Cliquer sur "Fermer" ou sur la touche "Echap" pour fermer la fenêtre.
 Préférences d'affichage
 -----------------------
 **L'utilisateur peut, dans Production, régler ses préférences pour l'affichage 
-des résultats.**
+des résultats**. Le bouton "Préférences" se trouve en bas de la fenêtre, en dessous 
+de la zone d'affichage des Résultats.
 
   .. image:: ../../images/Affichage-Preferences.jpg
 	   :alt: alternate text
 	   :align: center 
-	   
-Afficher les préférences d’affichage des résultats en cliquant sur *Préférences*. 
-Une fenêtre en « Overlay » s’ouvre, comme ci-dessus. Puis les différents paramètres:
+ 
+Un clic sur "Préférences" ouvre une fenêtre Overlay, comme ci-dessus. Puis les 
+différents paramètres:
 
   .. image:: ../../images/Affichage-Preferences1.jpg
 	   :alt: alternate text
