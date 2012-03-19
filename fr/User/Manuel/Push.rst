@@ -1,5 +1,6 @@
 ﻿Push et Feedback
-====
+================
+
 .. toctree::
    :maxdepth: 3
    
@@ -18,6 +19,7 @@
 
 Le Push
 -------
+
 Le Push est une soumission de documents dans une Lightbox Phraseanet. 
 Contrairement à l'envoi par mail proposé par les fonctionnalités d'export, le 
 Push ne transmet pas physiquement les documents.
@@ -34,9 +36,9 @@ Comment pousser des documents ?
   Phraseanet : une fenêtre de type Overlay s'ouvre et présente alors la 
   fenêtre de Push.
 
-  .. image:: ../../images/Push-xxx-1.jpg
-       :alt: alternate text
-       :align: center
+  .. image:: ../../images/Push-push_layout-1.jpg
+    :alt: alternate text
+    :align: center
 
 * Sélectionner un ou plusieurs utilisateurs Phraseanet vers qui pousser 
   les documents sélectionnés.
@@ -62,24 +64,32 @@ créant un compte à son nom dans le système Phraseanet.
           réutilisation ultérieure. 
           Pour sauvegarder une liste d'envoi, renseignez le champ de formulaire 
           situé à gauche de la zone des destinataires de l'envoi puis 
-          enregistrer la en cliquant sur l'icône .. image:: ../../images/Push-icone-disquette.jpg [disquette] .
-        
+          enregistrer la en cliquant sur l'icône : 
+          
+          .. image:: ../../images/Push-icone-disquette.jpg
+            :alt: alternate text
+            :align: center
+          
           La liste créée est alors affichée dans la zone des listes d'envoi. 
           Les fonctionnalités relatives aux listes d'envoi sont décrites plus 
-          après, dans la section dédiée au List Manager [mettre lien].
- 
-Vous pouvez conférer des droits spécifiques de téléchargements haute 
-définition (on parle alors de Grant rights) sur les documents poussés aux 
-utilisateurs figurants dans la liste d'envoi. Pour ce faire, deux méthodes 
-s'offrent à vous : 
+          après, dans la section dédiée au `List Manager`_.
+
+Pour conférer des droits spécifiques de téléchargements haute définition 
+(ou Grant rights) sur les documents poussés aux utilisateurs figurants 
+dans la liste d'envoi deux méthodes sont proposées : 
 
 Sélectionner un ou plusieurs utilisateurs dans la zone des destinataires de 
 l'envoi puis cliquer sur le bouton "Téléchargement HD" situé à gauche de la 
 liste des utilisateurs de l'envoi
 *Ou:*
-Cliquer individuellement sur l'icône .. image:: ../../images/Push-download_badge.jpg situé sur
-l'étiquette représentative du destinataire à qui vous souhaitez donner le droit de
-téléchargement haute définition.
+Cliquer individuellement sur l'icône 
+
+.. image:: ../../images/Push-download-badge.jpg
+   :alt: alternate text
+   :align: center
+
+située sur l'étiquette représentative du destinataire à qui vous souhaitez
+donner le droit de téléchargement haute définition.
 
 Pour valider et transmettre votre Push, cliquer sur le bouton *Envoyer*. 
 Un formulaire vous permet de donner un nom et une description conviviale à 
@@ -100,7 +110,7 @@ par l'attribution de privilèges supplémentaires optionnels.
   Phraseanet : une fenêtre de type overlay s'ouvre et présente alors la 
   fenêtre de Feedback.
     
-  .. image:: ../../images/Push-xxx-4.jpg
+  .. image:: ../../images/Push-feedback_layout-1.jpg
        :alt: alternate text
        :align: center
        
@@ -119,10 +129,20 @@ l'option par défaut, sans quoi la réception d'un feedback ne serait que
 purement informative – un cas tout à fait envisageable). 
 
 Pour activer ou désactiver cette option, cliquer sur le bouton Contribuer ou sur 
-l'icône .. image:: ../../images/Push-contributeur_badge.jpg.. 
-Le bouton **Voir les autres** et son icône associée .. image:: ../../images/Push-see_other_badge.jpg permet à un 
-destinataire de visualiser les avis et commentaires émis par les autres 
-destinataires contribuants à la demande de Feedback.
+l'icône
+
+.. image:: ../../images/Push-contributeur_badge.jpg
+  :alt: alternate text
+  :align: center
+
+Le bouton **Voir les autres** et son icône associée 
+
+.. image:: ../../images/Push-see_other_badge.jpg
+  :alt: alternate text
+  :align: center
+
+permet à un destinataire de visualiser les avis et commentaires émis par les 
+autres destinataires contribuants à la demande de Feedback.
 
 Pour valider et transmettre votre demande de Feedback, cliquer sur le bouton 
 *Envoyer*. Un formulaire vous permet de paramétrer la durée de validité de 
@@ -162,23 +182,23 @@ Créer et éditer une liste d'envoi
 *********************************
 Pour créer une nouvelle liste dans le *List Manager*, cliquez sur le lien *Ajouter*.
 
-* Donner un nom à votre nouvelle liste dans le formulaire qui se présente à 
-  vous puis valider le formulaire. Le nom de la liste créée apparaît alors 
+* Donner un nom à la nouvelle liste dans le formulaire qui se présente puis 
+  valider le formulaire. Le nom de la liste créée apparaît alors 
   dans la zone de liste située à gauche de l'interface. Cliquer sur son nom 
   pour visualiser son contenu.
 
-  .. image:: ../../images/Push-xxx-7.jpg
-       :alt: alternate text
-       :align: center    
+.. image:: ../../images/Push-list_manager_creer.jpg
+  :alt: alternate text
+  :align: center    
 
-    * Cliquer sur le bouton *Editer* situé à gauche de la zone centrale de l'
-    interface du List Manager pour éditer le contenu de votre liste. Cela a pour
-    effet de présenter la liste des utilisateurs recensé sur un système 
-    Phraseanet.
+* Cliquer sur le bouton *Editer* situé à gauche de la zone centrale de l'
+  interface du List Manager pour éditer le contenu de votre liste. Cela a pour
+  effet de présenter la liste des utilisateurs recensé sur un système 
+  Phraseanet.
 
-  .. image:: ../../images/Push-xxx-8.jpg
-       :alt: alternate text
-       :align: center
+.. image:: ../../images/Push-list_manager_editer.jpg
+  :alt: alternate text
+  :align: center
 
 * Pour ajouter un ou plusieurs utilisateurs à la liste d'envoi, sélectionner 
   les lignes des utilisateurs que vous souhaitez ajouter.
@@ -191,7 +211,7 @@ Pour créer une nouvelle liste dans le *List Manager*, cliquez sur le lien *Ajou
     
 .. note:: Remarque : 
           Un dispositif de recherche et de filtres permet de limiter l'affichage des 
-          utilisateurs par leurs identifiants, noms ou prénom, activité, société…*etc*.
+          utilisateurs par leurs identifiants, noms ou prénom, activité, société… *etc.*
     
 * Pour retourner au sommaire de la liste, cliquer sur le bouton *Voir*.
     
