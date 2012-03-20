@@ -112,7 +112,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
     {{ metatags }}
     {%- block htmltitle %}
-    
+
     {%- if prev %}
       <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
     {%- else %}
@@ -199,8 +199,8 @@
   {%- block footer %}
       <div class="footer">
         <div class="languages">
-          <a href="/en/"><span>English</span></a>
-          <a href="/fr/"><span>Français</span></a>
+          <a href="/3.5/en/"><span>English</span></a>
+          <a href="/3.5/fr/"><span>Français</span></a>
         </div>
       {%- if show_copyright %}
           {% trans copyright=copyright %}&copy; Copyright {{ copyright }}.{% endtrans %}
@@ -211,7 +211,7 @@
       {%- if show_sphinx %}
         {% trans sphinx_version=sphinx_version|e %}Created using <a rel="nofollow" target="_blank" href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
       {%- endif %}
-      
+
       </div>
   {%- endblock %}
     </div>
@@ -232,6 +232,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    </script> 
+    </script>
   </body>
 </html>
