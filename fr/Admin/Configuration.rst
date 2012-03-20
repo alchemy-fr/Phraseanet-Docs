@@ -9,10 +9,10 @@ Config.yml
 **********
 
 Config.yml est le fichier de configuration principal de l'application, il permet
-de configurer un  "environement" et de l'utiliser.
+de configurer un  "environnement" et de l'utiliser.
 
 Vous pouvez, dans ce fichier, décrire plusieurs environnements et passer de l'un
-à l'autre gràce à la variable "environment"
+à l'autre grace à la variable "environment"
 
 Il utilise le format `Yaml <https://wikipedia.org/wiki/Yaml>`_, très lisible
 et facilement compréhensible.
@@ -152,7 +152,7 @@ Voici le service *doctrine_dev* :
 
   * log : utilisation du service **Log\\query_logger** (voir ci dessous)
 
-  Pour plus d'informations sur les différents caches de Doctrine voir la 
+  Pour plus d'informations sur les différents caches de Doctrine voir la
   `documentation doctrine <http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>`_
 
 
@@ -178,13 +178,13 @@ Voici le service *twig_prod*
 
   * debug : activation du debug
   * charset : encodage du système de mise en page.
-  * strict_variable : arrêter l'execution lors de l'appel à une variable
+  * strict_variable : arrêter l'exécution lors de l'appel à une variable
     inconnue (pour les développeurs)
-  * autoescape: Activer la prise en charge automatiques des caractères 
+  * autoescape: Activer la prise en charge automatiques des caractères
     d'auto échappement.
-  * optimizer : Activer 
+  * optimizer : Activer
     `l'optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
-    
+
   Pour plus de détails sur les options de l'environnement voir la
   `documentation twig <http://twig.sensiolabs.org/doc/api.html#environment-options>`_
 
@@ -207,23 +207,23 @@ pour le log du service Doctrine.
           max_day: 2
           filename: doctrine-query.log
 
-  * output : Spécification du formatage de sortie. 
+  * output : Spécification du formatage de sortie.
     Trois modes sont possibles.
 
     * json : Formatage en `Json <https://wikipedia.org/wiki/Json>`_
     * yaml : Formatage en `Yaml <https://wikipedia.org/wiki/Yaml>`_
-    * vdump : Affiche les informations de la variable de sortie PHP de manière 
-      à ce qu'elle soit lisible. 
+    * vdump : Affiche les informations de la variable de sortie PHP de manière
+      à ce qu'elle soit lisible.
       voir `var_dump <http://www.php.net/manual/fr/function.var-dump.php>`_
 
   * channel : Nom du channel utilisé par le service de log.
-    C'est une façon d'identifier à quelle partie de l'application une entrée de 
+    C'est une façon d'identifier à quelle partie de l'application une entrée de
     log est liée.
   * handler : Permet de spécifier le type de gestionnaire de log utilisé par le
-    service. 
+    service.
 
     * stream : Ecrire les logs dans un fichier.
-    * rotate : Ecrire les logs dans un fichiers qui sont renouvellés tous 
+    * rotate : Ecrire les logs dans un fichiers qui sont renouvelés tous
       les jours et limiter le nombre de fichiers enregistrés.
 
   * filename: Le nom du fichier de log.
@@ -276,15 +276,15 @@ Services de Cache MemcacheCache
           host: localhost
           port: 11211
 
-* host: Adresse du serveur Memcache
-* port: Port du serveur Memcache
+* host: Adresse du serveur Memcached
+* port: Port du serveur Memcached
 
 Réglages de collection
 ----------------------
 
 * Ajout de valeurs suggérées
 
-Les valeurs suggérées sont des aides à la saisie que vous pouvez regler et que
+Les valeurs suggérées sont des aides à la saisie que vous pouvez régler et que
 vous retrouverez lors de l'`editing </User/Manuel/Editer>`_
 
 * Minilogo
@@ -304,7 +304,7 @@ la description de celui-ci.
 Pour utiliser cette option :
 
   * Ajouter un logo de Stamp
-  * Aller dans les règlages de collection
+  * Aller dans les réglages de collection
   * Dans la "Vue XML", editer le XML et ajouter le block "stamp" comme
     ci-dessous
 

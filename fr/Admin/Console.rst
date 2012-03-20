@@ -45,24 +45,25 @@ Les commandes disponibles sont listées.
 
     php bin/console help nomdecommande
 
-Détails.
+  .. note:: Les commandes renvoient un code de retour qui peut être utilisé dans
+    un script d'automatisation
 
-  * **check:config** : Parse et vérifie la structure des 
+  * **check:config** : Parse et vérifie la structure des
     `fichiers de configurations </Admin/Configuration>`_
   * **check:ensureDevSettings** : Valide la cohérence des valeurs de
     configuration pour un environnement de développmement.
 
     * option *--strict* : Echoue si il y a des alertes.
 
-  * **check:ensureProdSettings** : Valide la cohérence des valeurs 
+  * **check:ensureProdSettings** : Valide la cohérence des valeurs
     de configuration pour un environnement de production.
 
     * option *--strict* : Echoue si il y a des alertes.
 
   * **check:system** Valide la `configuration </Admin/Prerequisite>`_
-    
+
     * Des binaires
-    * Du système de fichiers 
+    * Du système de fichiers
     * Du cache `opcode </Admin/Optimization>`_
     * Du `serveur de cache </Admin/Optimization>`_
     * PHP
@@ -71,11 +72,11 @@ Détails.
     * Locales système
 
     nécessaire au bon fonctionnement de l'application phraseanet.
-  * **scheduler:start** : Instruction permettant de démarrer le 
+  * **scheduler:start** : Instruction permettant de démarrer le
     `gestionnaire de tâches </Admin/Admin/MoteurDeTaches>`_.
-  * **scheduler:stop** : Instruction permettant l'arret du 
+  * **scheduler:stop** : Instruction permettant l'arret du
     `gestionnaire de tâches </Admin/Admin/MoteurDeTaches>`_.
-  * **scheduler:state** : Instruction permettant de voir l'état du 
+  * **scheduler:state** : Instruction permettant de voir l'état du
     `gestionnaire de tâches </Admin/Admin/MoteurDeTaches>`_.
   * **system:backupDB** : Sauvegarde l'état des base de données.
 
