@@ -41,7 +41,7 @@ travail est atteint.
 
 Depuis la version 3.6, la zone de travail est rétractable: 
 
-  .. image:: ../../images/Onglets-Retractable0.jpg
+  .. image:: ../../images/Onglets-Retractable1.jpg
 	   :alt: alternate text
 	   :align: center
 
