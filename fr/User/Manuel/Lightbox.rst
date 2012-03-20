@@ -6,9 +6,9 @@
    
 .. topic:: L'essentiel
 
-    *Phraseanet Lightbox* est une interface de consultation collaborative. 
-    Elle propose des fonctions de comparaison, de diaporama, d'export, de 
-    valider et permet de commenter des média.
+    *Phraseanet Lightbox* est une interface de consultation collaborative.
+    Elle propose des fonctions de comparaison, de diaporama, d'export, et 
+    permet de valider et de commenter des média.
     Elle permet aux utilisateurs non authentifiés de visionner des images
     sans avoir à s'authentifier.
 
@@ -56,7 +56,7 @@ L'interface de la Lightbox est simple et intuitive.
     :alt: alternate text
     :align: center
     
-  * 1. La barre d'action renseigne sur le titre du fichier, permet de naviguer dans les enregistrements et donne accès au téléchargement du media affiché.
+  * 1. La barre d'action renseigne sur le nom du fichier, permet de naviguer dans les enregistrements et donne accès au téléchargement du media affiché.
   * 2. La table lumineuse, au centre, montre le média sa description et ses caractéristiques. Cette zone varie selon que l'on visionne un Push ou une demande de Validation. 
   * 3. La zone d'affichage des vignettes liste les médias de la Lightbox
 
@@ -72,29 +72,31 @@ Pour naviguer dans les media d'une Lightbox,
 Lancer le diaporama
 *******************
 Pour lancer un diaporama des médias présents dans une lightbox, cliquer sur 
-le bouton lecture
+le bouton **lecture** situé dans la barre d'action.
 
   .. image:: ../../images/Lightbox-play.jpg
     :alt: alternate text
     :align: center
 
-situé dans la barre d'action.
+
 
 Téléchager des média
 ********************
 Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icone
+d'enregistrement située dans la barre des actions.
 
   .. image:: ../../images/Lightbox-enregister.jpg
     :alt: alternate text
     :align: center
     
 Pour télécharger tous les média contenus dans une lightbox, cliquer sur l'icone
+située à gauche en bas de l'interface.
 
   .. image:: ../../images/Lightbox-enregister-tout.jpg
     :alt: alternate text
     :align: center
     
-situé à gauche en bas de l'interface.
+
 
 Comparer deux media
 *******************
@@ -104,10 +106,10 @@ Il peut être intéressant d'afficher deux média cote à cote pour les comparer
     :alt: alternate text
     :align: center
 
-* afficher un premier media en cliquant sur sa vignette 
+* afficher un premier media sur la table lumineuse en cliquant sur sa vignette 
 * en appuyant sur la touche **Ctrl** (PC Windows) ou **Cmd** (Mac OS) de l'ordinateur, cliquer sur le media à comparer. 
 
-Ce dispositif est très utile dans une démarche de validation de documents.
+Ce dispositif est très utile dans une démarche de :doc:`validation de documents <Push>`.
 
 
 Valider des documents dans la Lightbox
