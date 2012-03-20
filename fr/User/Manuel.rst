@@ -20,6 +20,7 @@ Le Sommaire pour accéder directement aux différentes sections:
    Manuel/Editer
    Manuel/Exporter
    Manuel/Push
+   Manuel/Lightbox
    Manuel/Publier
    Manuel/Bridge
    Manuel/Statistiques
