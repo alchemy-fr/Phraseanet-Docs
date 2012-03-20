@@ -58,36 +58,38 @@ Vous aurez sur votre écran une liste de commande de la sorte :
 check:config
 ------------
 
-Parse et vérifie la structure des 
+Parse et vérifie la structure des
 :doc:`fichiers de configurations </Admin/Configuration>`
 
 
 check:ensureDevSettings
 -----------------------
 
-Valide la cohérence des valeurs de
-    configuration pour un environnement de développement.
- **option** : 
+Valide la cohérence des valeurs de configuration pour un environnement de
+développement.
+
+**option** :
 
     * *--strict* : Echoue si il y a des alertes.
 
 check:ensureProdSettings
 ------------------------
 
-Valide la cohérence des valeurs de configuration pour un environnement de 
+Valide la cohérence des valeurs de configuration pour un environnement de
 production.
- **option** : 
+
+**option** :
 
     * *--strict* : Echoue si il y a des alertes.
 
 check:system
------------- 
+------------
 
-Valide la :doc:`configuration </Admin/Prerequis>` nécessaire au bon 
+Valide la :doc:`configuration </Admin/Prerequis>` nécessaire au bon
 fonctionnement de l'application Phraseanet.
-    
+
     * Des binaires
-    * Du système de fichiers 
+    * Du système de fichiers
     * Du cache :doc:`opcode </Admin/Optimisation>`
     * Du :doc:`serveur de cache </Admin/Optimisation>`
     * PHP
@@ -99,7 +101,8 @@ fields:delete
 -------------
 
 Supprimer un champ documentaire de la databox.
- **option** : 
+
+**option** :
 
     * *--sbas_id (-s)* : sbas_id de la databox
     * *--meta_struct_id (-m)* : id de la metastructure
@@ -113,8 +116,9 @@ fields:merge
 ------------
 
 Fusionner plusieur champs de la structure documentaire.
- **option** :
- 
+
+**option** :
+
     * *--source (-f)* : ids de la metastructure source (plusieurs valeurs sont
       authorisées)
     * *--destination (-d)* : id de la metastructure de destination
@@ -126,9 +130,10 @@ Fusionner plusieur champs de la structure documentaire.
 fields:rename
 -------------
 
-Renommer un champs documentaire. 
- **option** :
- 
+Renommer un champs documentaire.
+
+**option** :
+
     * *--name (-n)* : Le nouveau nom
     * *--meta_struct_id (-m)* : id de la metastructure
     * *--sbas_id (-s)* : sbas_id de la databox
@@ -136,32 +141,32 @@ Renommer un champs documentaire.
 scheduler:start
 ---------------
 
-Instruction permettant de démarrer le 
+Instruction permettant de démarrer le
 :doc:`gestionnaire de tâches </Admin/MoteurDeTaches>`.
 
 scheduler:stop
 --------------
 
-Instruction permettant l'arrêt du 
+Instruction permettant l'arrêt du
 :doc:`gestionnaire de tâches </Admin/MoteurDeTaches>`.
 
 scheduler:state
 ---------------
 
-Instruction permettant de voir l'état du 
+Instruction permettant de voir l'état du
 :doc:`gestionnaire de tâches </Admin/MoteurDeTaches>`.
 
 sphinx:generate-suggestions
----------------------------     
+---------------------------
 
-Génère des suggestions pour le moteur de recherche 
-:doc:`Sphinx </fr/Admin/Optimisation>`
+Génère des suggestions pour le moteur de recherche
+:doc:`Sphinx </Admin/Optimisation>`
 
 system:backupDB
 ---------------
 
 Sauvegarde l'état des bases de données.
- **argument** : 
+ **argument** :
 
     * *directory* : Le répertoire ou stocker la sauvegarde.
 
@@ -175,7 +180,8 @@ system:mailCheck
 ----------------
 
 Vérifie l'unicité des adresses mails des utilisateurs.
- **option** : 
+
+**option** :
 
     * *--list* : Liste tous les doublons.
 
