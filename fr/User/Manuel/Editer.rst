@@ -25,6 +25,9 @@ Editer des documents
     La zone inférieure affiche la liste des champs descripteurs, la liste des 
     status, et réserve un espace pour afficher le contenu du champs actif.
     La zone inférieure droite affiche des onglets d’assistance à l’indexation.
+    
+    **Nouveauté de la version 3.6**, il est désormais possible d'`Editer un 
+    champ lié une sources de données`_.
 
 .. image:: ../../images/Prod-Editer.jpg
 	   :alt: alternate text
@@ -122,6 +125,27 @@ Pour ajouter le terme à toutes les notices sélectionnées:
 
 * -> Cliquer sur le symbole "moins" à gauche du masque de saisie pour 
   supprimer le terme de toutes les notices.
+
+
+Editer un champ lié une sources de données
+******************************************
+
+**Nouveauté de la version 3.6**, il est possible de lier des champs à des sources
+de données.
+Cette possibilité facilite la saisie d'informations dans des champs en 
+proposant un dispositif d'auto complétion intuitif.
+
+.. image:: ../../images/Prod-Editer-source_de_donnees.jpg
+	   :alt: alternate text
+	   :align: center
+	   
+Placé sur un champ lié à une source de données, ...
+
+* -> Saisir au moins trois caractères pour initialiser le dispositif
+* -> Le système propose une liste de valeurs contenant la chaine de caractères
+* -> Sélectionner la valeur souhaitée au clavier ou à la souris
+
+
 
 
 Editer à partir du thésaurus

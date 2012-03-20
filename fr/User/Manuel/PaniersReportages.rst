@@ -19,9 +19,8 @@ Onglet Paniers
     Les icônes affichées dans la barre de titre donnent les informations 
     suivantes :
 
-    * Symbole Ampoule : Panier publié sur la page d'accueil
-    * Infobulle Rouge : Panier faisant l'objet d'une demande de validation
-    * Symbole RSS     : Panier publié
+    * Infobulle Bleue : Réception d'une demande de validation
+    * Infobulle Rouge : Demande de validation effectuée par l'utilisateur
     * Symbole Push	  : Indique qu'un Panier a été reçu
     
     * -> Cliquer sur la barre de titre pour ouvrir ou fermer un panier. 
@@ -29,7 +28,7 @@ Onglet Paniers
     Chaque panier dispose d'un menu contextuel permettant d'accéder à certaines 
     actions.
     
-    Les nouveaux paniers reçus sont d’une couleur différente "dorée" tant qu’ils 
+    Les nouveaux paniers reçus sont d’une couleur différente (dorée) tant qu’ils 
     n’ont pas été ouverts.
     Les paniers disposent d'une palette d'outils intégrée, visible ci-dessous, 
     avec l'ouverture du panier dénommé "Bateaux".
@@ -182,8 +181,8 @@ Nouveauté de la version 3.6, il est désormais possible d’archiver ses panier
 dans Phraseanet ! 
 
 Un panier archivé disparaît de la zone de travail latérale. 
-Il peut être ainsi conservé pour un usage futur, sans encombrer l’onglet des 
-Paniers dans *Phraseanet Production*.
+Il peut être ainsi conservé pour un usage futur, sans encombrer la zone de travail 
+dans *Phraseanet Production*.
 
 Ouvrir le menu contextuel du panier et cliquer sur «Archiver»:
 
@@ -193,10 +192,11 @@ Ouvrir le menu contextuel du panier et cliquer sur «Archiver»:
 	   
 Celui-ci disparaît de la zone de travail latérale.
 
-Pour retrouver un Panier archivé
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Cliquer sur la flèche présente dans la barre de titre de l’onglet Paniers et 
-choisir «Parcourir les Paniers»:
+Retrouver un Panier archivé
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Pour retrouver un panier archivé, il suffit de se rendre dans l'"Historique des 
+Paniers". Pour cela, cliquer sur la flèche présente dans la barre de titre des 
+Paniers et cliquer sur "Parcourir les Paniers":
 
   .. image:: ../../images/Paniers-Parcourir.jpg
 	   :alt: alternate text
@@ -229,8 +229,7 @@ En cliquant sur le titre du panier, les vignettes apparaissent:
 
 Pour archiver ou désarchiver un panier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Pour archiver / désarchiver un panier à partir de la fenêtre "Parcourir les 
-Paniers":
+Pour archiver / désarchiver un panier à partir de l'Historique des Paniers :
 Un clic sur l’étoile (passant du blanc à l’orange) présente près du titre du 
 panier archivé permet de le rendre de nouveau accessible dans la zone latérale 
 de travail et donc le désarchiver. Cette modification est visible en temps réel 

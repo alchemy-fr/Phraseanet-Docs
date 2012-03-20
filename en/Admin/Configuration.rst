@@ -144,8 +144,7 @@ Here's *doctrine_dev* service :
 
   * log : service **Log\\query_logger** (see below)
 
-  For more informations about doctrine caching systems see the
-  `official documentation <http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>`_
+  .. seealso:: For more informations about doctrine caching systems http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>
 
 Twig `Templating service <http://en.wikipedia.org/wiki/Template_engine_%28web%29>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -175,8 +174,7 @@ Here's *twig_prod*
     `optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
     mode
     
-  For more details on Twig environement options see
-  `here <http://twig.sensiolabs.org/doc/api.html#environment-options>`_
+    .. seealso:: For more details on Twig environement options <http://twig.sensiolabs.org/doc/api.html#environment-options>
 
 Doctrine Monolog Log Service
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
