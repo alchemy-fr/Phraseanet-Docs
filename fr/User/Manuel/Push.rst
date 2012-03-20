@@ -159,10 +159,9 @@ notifications dans l'interface de Production de Phraseanet. D'autre part, par
 email. Chacun de ces modes de notification présente un lien permettant 
 l'affichage dans Phraseanet Lightbox.
 Les *Push* et de les *Validations* reçus sont regroupés dans le module 
-Phraseanet Lightbox, une interface de consultation collaborative. 
+:doc:`Phraseanet Lightbox <Lightbox>`, une interface de consultation collaborative. 
 
-**[Rédiger une page dédiée à Lightbox afin de ne pas alourdir la page déjà
-longue]**
+
 
 Gestionnaire de listes
 ----------------------
