@@ -162,16 +162,13 @@ div.sphinxsidebar a {
 #searchbox form {
 	margin: 0;
 }
-#searchbox form.search input {
-	margin-bottom: 0;
+.inputSearch {
+	margin-bottom: 5px;
 }
 #searchbox .searchtip {
 	margin: 5px 0 0 0;
 	padding: 0;
 	font-style: italic;
-}
-#q {
-	margin-bottom: 0;
 }
 #selectVersion {
 	margin-left: 2px;
@@ -286,6 +283,9 @@ blockquote p {
 	font-weight: normal;
 	padding: 0;
 	margin: 0;
+}
+img {
+	max-width: 100%;
 }
 table {
     margin: 1.5em 5%;	

@@ -129,7 +129,6 @@
 		{%- endfor %}
 		{%- endmacro %}
 
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
@@ -141,7 +140,6 @@
 	        <title>Phraseanet Documentation</title>
 	        {%- endif %}
         {%- endblock %}
-
 
         {{ css() }}
         {%- if not embedded %}
@@ -155,7 +153,6 @@
 	        <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
 	        {%- endif %}
         {%- endif %}
-
 
         {%- block linktags %}
 	        {%- if hasdoc('about') %}
@@ -186,26 +183,32 @@
 
     <body>
         <!--<div id="wrapper">-->
-
         {%- block navigation %}
         <div id="navbar" class="navbar">
         	<div class="navbar-inner">
         		<div class="container">
-		            <a class="brand" href="{{ pathto(master_doc) }}">Phraseanet Documentation</a>
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="{{ pathto(master_doc) }}">Phraseanet Documentation</a>
 		            <div id="navigation" class="related">
 	                    {{ toctree(collapse=True, maxdepth=-1, titles_only=False) }}
 	                </div>
-	                <ul class="nav pull-right">
-	                	<li class="divider-vertical"></li>
-	                	<li class="dropdown">
-	                		<a href="#" id="ddLinks" class="dropdown-toggle" data-toggle="dropdown">Liens<b class="caret"></b></a>
-	                		<ul class="dropdown-menu">
-	                			<li><a href="http://www.phraseanet.com" target="_blank">Phraseanet</a></li>
-	                			<li><a href="http://www.alchemy.fr/" target="_blank">Alchemy</a></li>
-	                			<li><a href="https://github.com/alchemy-fr/Phraseanet" target="_blank">Github</a></li>
-	                		</ul>
-						</li>
-	                </ul>
+	                <div class="nav-collapse">
+		                <ul class="nav pull-right">
+		                	<li class="divider-vertical"></li>
+		                	<li class="dropdown">
+		                		<a href="#" id="ddLinks" class="dropdown-toggle" data-toggle="dropdown">Liens<b class="caret"></b></a>
+		                		<ul class="dropdown-menu">
+		                			<li><a href="http://www.phraseanet.com" target="_blank">Phraseanet</a></li>
+		                			<li><a href="http://www.alchemy.fr/" target="_blank">Alchemy</a></li>
+		                			<li><a href="https://github.com/alchemy-fr/Phraseanet" target="_blank">Github</a></li>
+		                		</ul>
+							</li>
+		                </ul>
+					</div><!-- /nav-collapse -->
 				</div>
             </div>
         </div>
