@@ -101,10 +101,11 @@ Il est possible d'éditer les :term:`documents <Document>` à l'unité ou en lot
 
 Push
 *****
-On utilise le :term:`"push" <Push>` dans Phraseanet pour envoyer virtuellement des 
-documents à un ou plusieurs destinataires. Depuis la version 3.6, Push et Feedback 
-sont deux modules distincts. Vous retrouvez donc le *Feedback* également dans le 
-sous menu du bouton Push (également présents: *Bridge* et *Publier*).
+On utilise le :term:`"push" <Push>` dans Phraseanet pour mettre des documents à la 
+disposition de un ou de plusieurs destinataires. Depuis la version 3.6, Push et 
+Validation sont deux modules distincts. Vous retrouvez donc la *Validation* 
+également dans le sous menu du bouton Push (également présents: *Bridge* et 
+*Publier*).
 
 :doc:`Veuillez vous reporter à la section dédiée au Push <Push>`.
 
