@@ -1,22 +1,26 @@
 ﻿Utilisateur
 ===========
 
-.. module:: utilisateur
-   :synopsis: Guide utilisateur de Phraseanet
-.. moduleauthor:: Team Phraseanet <info@phraseanet.com>
+Voici le sommaire du manuel Utilisateur Phraseanet. 
+
+Pour accéder aux différentes sections, cliquer sur les liens ci-dessous :
+
 
 .. toctree::
    :maxdepth: 3
-   :hidden:
 
-   Manuel
+   Manuel/General
+   Manuel/Fondamentaux
+   Manuel/Importer
+   Manuel/ProductionGerer
+   Manuel/Gerer/Editer
+   Manuel/Lightbox
+   Manuel/Statistiques
+   Manuel/Thesaurus
+   Manuel/Administration
+
+
+
+
+
    
-
-Bonjour,
-
-Vous êtes actuellement dans la section consacrée au guide utilisateur.
-
-:doc:`Commencez par le sommaire! <Manuel>`
-
-
-

@@ -1,7 +1,11 @@
 ﻿La Zone de Travail
 ==================
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
+   
+   :hidden:
+   
+   Les Paniers et les Reportages
    
 .. topic:: L'essentiel
 
@@ -23,44 +27,10 @@ par défaut, à savoir les Paniers et des Reportages :
 	   :alt: alternate text
 	   :align: center
 
-Préférences d'affichage
------------------------
-Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
-
-  .. image:: ../../images/Onglet-Taille.jpg
-	   :alt: alternate text
-	   :align: center
-
-Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones 
-d’affichage.
-
-Relâcher le curseur dès que le nombre de vignettes par ligne dans la zone de 
-travail est atteint.
-
-.. note:: Ensuite, l'application ajuste seule l’espace pour optimiser l’affichage.
-
-Depuis la version 3.6, la zone de travail est rétractable: 
-
-  .. image:: ../../images/Onglets-Retractable1.jpg
-	   :alt: alternate text
-	   :align: center
-
-Un clic sur l'icône présente sur le côté droit permet de la masquer quasi - 
-entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la 
-consultation des Résultats :
-
-  .. image:: ../../images/Onglets-Retractable.jpg
-	   :alt: alternate text
-	   :align: center
-
-Un clic sur n'importe quelle partie de la zone la fait réapparaître instantanément.
-
-Les Paniers et les Reportages
------------------------------
-Un espace de travail pour mettre de côté des documents. 
-D'ici, l'utilisateur peut effectuer un grand nombre d'actions sur ses sélections,
-notamment envoyer ses documents à d'autres utilisateurs. Pour plus d'informations, 
-:doc:`se reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`.
+Le premier onglet de la zone de travail regroupe les paniers et les reportages.
+Ils servent à mettre de côté des documents. 
+Paniers et reportages sont abordés dans un chapitre spécifique.
+Pour plus d'informations, :doc:`se reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`.
 
 Propositions
 ------------

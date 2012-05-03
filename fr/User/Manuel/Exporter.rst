@@ -45,8 +45,8 @@ lesquelles l'utilisateur ne dispose peut-être pas de droits d'export.
 Dans ce cas, le nombre de documents sur lequel l'export est possible
 est indiqué.
 
-L'onglet Téléchargement
------------------------
+Téléchargement
+--------------
   * Sélectionner une ou plusieurs vignettes et cliquer sur l'icône *Exporter*.
   * La fenêtre de téléchargement s'ouvre.
   * Utiliser les cases à cocher pour sélectionner quel élément exporter.
@@ -57,8 +57,8 @@ L'onglet Téléchargement
 	   :alt: alternate text
 	   :align: center
 
-L'onglet Mail
---------------
+E-Mail
+------
   * Saisir l'adresse mail du destinataire, utiliser la " ; " en cas d’envoi vers
     plusieurs destinataires.
   * Saisir l'objet du mail.
@@ -76,8 +76,8 @@ L'onglet Mail
 	   :alt: alternate text
 	   :align: center
 
-L'onglet FTP
-------------
+FTP
+---
 Cet onglet permet de saisir manuellement les coordonnées du serveur FTP de
 destination mais peut aussi appeler des "pré-configurations".
 
@@ -97,3 +97,18 @@ Une fenêtre intermédiaire s’ouvre et informe l’utilisateur de l’état de
   .. image:: ../../images/Exporter-FTP.jpg
 	   :alt: alternate text
 	   :align: center
+
+Demande de documents
+--------------------
+Cet onglet permet d'adresser des demandes de téléchargement pour les utilisateurs
+ne bénéficiant pas des droits de téléchargement.
+
+.. image:: ../../images/Exporter-commande.jpg
+   :alt: alternate text
+   :align: center
+
+Remplir et soumettre le formulaire affiché.
+
+Le gestionnaire de commande est averti de la commande par notification dans 
+Phraseanet ou bien par e-mail.
+
