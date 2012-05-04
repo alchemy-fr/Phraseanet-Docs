@@ -16,7 +16,6 @@ de votre installation, suivez les étapes suivantes :
 
   * Backup des bases de données et des anciennes sources.
 
-
   * :doc:`Compilation et mise à jour de l'extension php_phrasea <Prerequis>`
 
   * :doc:`Compilation et remplacement du nouveau binaire indexeur <Prerequis>`
