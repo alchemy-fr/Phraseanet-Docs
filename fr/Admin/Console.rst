@@ -156,6 +156,20 @@ scheduler:state
 Instruction permettant de voir l'état du
 :doc:`gestionnaire de tâches </Admin/MoteurDeTaches>`.
 
+.. note:: Cette commande retourne une valeur différente pour chaque état du gestionnaire de tache.
+
++------------------+-----------------+
+|  Etat            | Valeur de retour|
++==================+=================+
+| démarré          | 0               |
++------------------+-----------------+
+| arrété           | 1               |
++------------------+-----------------+
+| en cours d'arrêt | 2               |
++------------------+-----------------+
+| à arréter        | 3               |
++------------------+-----------------+
+
 sphinx:generate-suggestions
 ---------------------------
 
