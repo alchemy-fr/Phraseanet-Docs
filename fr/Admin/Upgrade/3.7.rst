@@ -4,6 +4,11 @@ Version 3.7
 Les changements :
 -----------------
 
+Changement API V1.2 => lien vers le changelog API
+
+Changement de code de retour de la console
+
+
 Quoi de neuf ?
 --------------
 
