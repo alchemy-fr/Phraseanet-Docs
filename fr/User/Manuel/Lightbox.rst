@@ -14,8 +14,8 @@
 
 
 
-Comment accéder à lightbox ?
-----------------------------
+Accéder à la Lightbox
+---------------------
 
 Pour les utilisateurs non authentifiés
 **************************************
@@ -82,14 +82,14 @@ le bouton **lecture** situé dans la barre d'action.
 
 Téléchager des média
 ********************
-Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icone
+Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icône
 d'enregistrement située dans la barre des actions.
 
   .. image:: ../../images/Lightbox-enregister.jpg
     :alt: alternate text
     :align: center
     
-Pour télécharger tous les média contenus dans une lightbox, cliquer sur l'icone
+Pour télécharger tous les média contenus dans une lightbox, cliquer sur l'icône
 située à gauche en bas de l'interface.
 
   .. image:: ../../images/Lightbox-enregister-tout.jpg
@@ -100,7 +100,7 @@ située à gauche en bas de l'interface.
 
 Comparer deux media
 *******************
-Il peut être intéressant d'afficher deux média cote à cote pour les comparer. 
+Il peut être intéressant d'afficher deux média côte à côte pour les comparer. 
 
   .. image:: ../../images/Lightbox-comparer.jpg
     :alt: alternate text

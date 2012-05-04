@@ -8,17 +8,17 @@ Thesaurus
 .. topic:: L'essentiel
 
     Cette application permet de gérer le ou les thésaurus attachés aux bases 
-    de données Phraseanet IV
+    de données Phraseanet.
 
     Un Thésaurus peut servir à gérer des synonymes, des traductions, 
     à aider les utilisateurs dans leur recherche. 
-    L’objectif d’un thésaurus est d'aider à  l’indexation et de faciliter
+    L’objectif d’un thésaurus est d'aider à l’indexation et de faciliter
     la recherche des documents dans une base de données.
-    Le Thésaurus est proposé dans Phraseanet IV Production comme outil d'aide à 
-    l'indexation
+    Le Thésaurus est proposé dans *Phraseanet Production* comme outil d'aide à 
+    l'indexation.
     Le Thésaurus sert aussi à faire des propositions et ainsi étendre ou 
-    restreindre. le nombre de réponses aux recherches faites par les 
-    utilisateurs
+    restreindre le nombre de réponses aux recherches faites par les 
+    utilisateurs.
 
 
 

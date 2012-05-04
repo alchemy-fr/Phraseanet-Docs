@@ -3,8 +3,10 @@ Paniers et Reportages
 .. toctree::
    :maxdepth: 3
 
-.. note:: Les Paniers et les Reportages sont regroupés dans le même onglet. Ils 
-          sont différenciés par la *couleur bleue* de la barre de titre des reportages. 
+Les Paniers et les Reportages se trouvent dans :doc:`la zone de travail <Onglets>` sur le même onglet. 
+Ils sont différenciés par la couleur : 
+    * *Gris* pour les paniers
+    * *Bleu* pour les reportages 
 
 Onglet Paniers
 --------------
