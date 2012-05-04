@@ -3,7 +3,7 @@ Upgrade Procedure
 
 .. toctree::
 
-    Upgrade/3.6
+    Upgrade/3.7
 
 When releasing a new version, we suggest you to follow the update procedure:
 

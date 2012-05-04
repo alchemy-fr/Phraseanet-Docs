@@ -1,0 +1,9 @@
+Version 3.7
+===========
+
+Les changements :
+-----------------
+
+Quoi de neuf ?
+--------------
+

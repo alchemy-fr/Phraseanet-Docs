@@ -1,7 +1,7 @@
 APIs
 ====
 
-API version for Phraseanet 3.6 is version 1.1. See :doc:`Changelog
+API version for Phraseanet 3.7 is version 1.2. See :doc:`Changelog
 <API/Changelog>` for informations.
 
 .. toctree::
