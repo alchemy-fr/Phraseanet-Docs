@@ -20,7 +20,7 @@
 Le Push
 -------
 
-Le Push est une soumission de documents dans une Lightbox Phraseanet. 
+Le Push est une soumission de documents dans Phraseanet Lightbox. 
 Contrairement à l'envoi par mail proposé par les fonctionnalités d'export, le 
 Push ne transmet pas physiquement les documents.
 Il alerte par email et met à la disposition des utilisateurs un panier qu'ils 
@@ -61,22 +61,22 @@ créant un compte à son nom dans le système Phraseanet.
 
 .. note:: Les utilisateurs listés dans la zone des destinataires de l'envoi peuvent 
           être regroupés et sauvegardés dans des listes d'envoi pour une 
-          réutilisation ultérieure. 
+          réutilisation ultérieure.
           Pour sauvegarder une liste d'envoi, renseigner le champ de formulaire 
-          situé à gauche de la zone des destinataires de l'envoi puis l'
-          enregistrer en cliquant sur l'icône : 
-          
-          .. image:: ../../images/Push-icone-disquette.jpg
-            :alt: alternate text
-            :align: center
-          
-          La liste créée est alors affichée dans la zone des listes d'envoi. 
-          Les fonctionnalités relatives aux listes d'envoi sont décrites plus 
-          après, dans la section dédiée au `Gestionnaire de listes`_.
+          situé à gauche de la zone des destinataires de l'envoi puis l'enregistrer 
+          en cliquant sur l'icône :
+
+.. image:: ../../images/Push-icone-disquette.jpg
+  :alt: alternate text
+  :align: center
+
+La liste créée est alors affichée dans la zone des listes d'envoi. 
+Les fonctionnalités relatives aux listes d'envoi sont décrites plus 
+après, dans la section dédiée au `Gestionnaire de listes`_.
 
 Pour conférer des droits spécifiques de téléchargements haute définition 
 (ou Grant rights) sur les documents poussés aux utilisateurs figurants 
-dans la liste d'envoi deux méthodes sont proposées : 
+dans la liste d'envoi, deux méthodes sont proposées: 
 
 Sélectionner un ou plusieurs utilisateurs dans la zone des destinataires de 
 l'envoi puis cliquer sur le bouton "Téléchargement HD" situé à gauche de la 
@@ -160,7 +160,6 @@ email. Chacun de ces modes de notification présente un lien permettant
 l'affichage dans Phraseanet Lightbox.
 Les *Push* et de les *Validations* reçus sont regroupés dans le module 
 :doc:`Phraseanet Lightbox <Lightbox>`, une interface de consultation collaborative. 
-
 
 
 Gestionnaire de listes

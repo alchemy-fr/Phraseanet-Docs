@@ -38,9 +38,9 @@ Accès aux notifications
 ***********************
 Les notifications sont des messages informatifs affichés en temps réel. 
 Ils renseignent l'utilisateurs des demandes de validation, de réception de 
-paniers...*etc*.
+paniers...
 
-Se reporter à la section :doc: personnaliser l'interface `<PersonnaliserInterface>`.
+Se reporter à la section :doc:`personnaliser l'interface <PersonnaliserInterface>`
 
 Accès aux paramètres du compte
 ******************************
@@ -67,14 +67,14 @@ Phraseanet adressées par mail ou d'activer un compte FTP permettant la
 réception de documents sur un serveur supportant ce type de connexion.
 
 Accès
-^^^^
+^^^^^
 La section *Accès* liste les bases et collections de l'application Phraseanet.
 Elle mentionne les collections auxquelles l'utilisateur connecté a accès.
-L'utilisateur peut a tout moment effectuer une demande d'accès à une collection
+L'utilisateur peut à tout moment effectuer une demande d'accès à une collection
 à laquelle il n'a pas accés.
 
 Pour faire une demande pour accéder à de nouvelles bases ou collections de
-documents et d'en visualiser l'état,
+documents et d'en visualiser l'état:
 
   * Cocher une ou plusieurs cases pour demander l'accès à de nouvelles
     Bases/ Collections
@@ -88,19 +88,19 @@ Un message indique alors que qu'une demande d'accès est en cours.
 	   :align: center
 
 Sessions
-^^^^^^^
-La section Sessions liste les sessions Phraseanet de l'utilisateur. Elle donne
+^^^^^^^^
+La section *Sessions* liste les sessions Phraseanet de l'utilisateur. Elle donne
 des informations relatives aux dates de connexion et d'accès, aux adresses ip,
 navigateurs et résolutions d'écran détectées.
 
 Application
-^^^^^^^^^^
+^^^^^^^^^^^
 La section *Applications* liste les applications tierces autorisées à se connecter
 au compte Phraseanet.
 
 Développeur
-^^^^^^^^^^
-La section Développeur permet la mise en place de clés d'API afin que des
+^^^^^^^^^^^
+La section *Développeur* permet la mise en place de clés d'API afin que des
 applications tierces puissent communiquer avec un compte Phraseanet. Un lien
 vers la documentation destinée aux développeurs est disponible dans cette section
 afin de découvrir comment mettre en oeuvre les API Phraseanet.
@@ -122,16 +122,6 @@ Voici un exemple de quelques raccourcis claviers utiles dans Phraseanet.
    :alt: alternate text
    :align: center
 
-Nous allons maintenant voir ci-dessous à quoi ressemblent véritablement les 
-modules, pour vous aider à vous familiariser avec les différentes interfaces.
-
-Phraseanet est une application s'exécutant dans un navigateur web.
-Elle permet de réaliser des tâches complexes avec la simplicité de l'interface 
-d'une application de bureau.
-Elle intègre l’utilisation de la plupart des raccourcis claviers communément 
-utilisés.
-
 Se déconnecter
 **************
-Cliquer sur le Lien Déconnexion pour quitter Phraseanet.
-
+Cliquer sur le lien *Déconnexion* pour quitter Phraseanet.
