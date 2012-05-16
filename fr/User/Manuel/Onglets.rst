@@ -1,81 +1,66 @@
-﻿La Barre des Onglets
-====================
+﻿La Zone de Travail
+==================
 .. toctree::
    :maxdepth: 3
    
 .. topic:: L'essentiel
 
-    Dans l'interface, cet espace est présent sur le côté gauche de la fenêtre de 
-    *Phraseanet Production*. La barre présente 4 onglets et vous offre: 
+    Dans l'interface, cette zone de travail (anciennement "Barre des Onglets") 
+    est présente sur le côté gauche de la fenêtre de *Phraseanet Production* et 
+    propose :
     
-    * un espace pour mettre de côté des sélections d'images et autres documents: 
-      ce sont les :doc:`Paniers et Reportages <PaniersReportages>`
+    * Un espace de travail pour mettre de côté des sélections d'images et autres 
+      documents: ce sont les :doc:`Paniers et Reportages <PaniersReportages>`
     
-    * l'accès à `la recherche avancée`_
+    * Une aide à la recherche avec les `Propositions`_
     
-    * une aide à la recherche avec les `propositions`_
-    
-    * le `thesaurus`_ dans l'interface de *Phraseanet Production*
+    * Le `thesaurus`_ dans l'interface de *Phraseanet Production*
 
-Voici un aperçu de la barre des Onglets. Ci-dessous, on a cliqué sur l'onglet des 
-Paniers/Reportages.
+Voici un aperçu de la Zone de travail (ou WorkZone). Ci-dessous, voici la vue 
+par défaut, à savoir les Paniers et des Reportages :
 
   .. image:: ../../images/Onglets-General.jpg
 	   :alt: alternate text
 	   :align: center
 
+Préférences d'affichage
+-----------------------
+Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
+
+  .. image:: ../../images/Onglet-Taille.jpg
+	   :alt: alternate text
+	   :align: center
+
+Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones 
+d’affichage.
+
+Relâcher le curseur dès que le nombre de vignettes par ligne dans la zone de 
+travail est atteint.
+
+.. note:: Ensuite, l'application ajuste seule l’espace pour optimiser l’affichage.
+
+Depuis la version 3.6, la zone de travail est rétractable: 
+
+  .. image:: ../../images/Onglets-Retractable1.jpg
+	   :alt: alternate text
+	   :align: center
+
+Un clic sur l'icône présente sur le côté droit permet de la masquer quasi - 
+entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la 
+consultation des Résultats :
+
+  .. image:: ../../images/Onglets-Retractable.jpg
+	   :alt: alternate text
+	   :align: center
+
+Un clic sur n'importe quelle partie de la zone la fait réapparaître instantanément.
+
 Les Paniers et les Reportages
 -----------------------------
-Un espace de travail pour les mettre de côté vos sélections de documents. 
-D'ici, l'utilisateur peut effectuer un grand nombre d'actions sur ses paniers et 
-reportages, notamment envoyer ses documents à d'autres utilisateurs. :doc:`Se 
-reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`.
-
-La recherche avancée
---------------------
-Cliquer sur l'onglet de Recherche Avancée, qui se trouve dans la barre des onglets
-à compter de la version 3.5.
-
-  .. image:: ../../images/Rechercheavancee1.jpg
-	   :alt: alternate text
-	   :align: center
-
-Choisir les :term:`bases <base>` et collections où rechercher.
-
-.. note:: Il est possible de désélectionner toutes les :term:`bases <base>` et 
-          collections en cliquant sur "Aucune" ou de cliquer directement sur les 
-          noms des :term:`bases <base>` pour les sélectionner ou désélectionner 
-          individuellement ou encore dans les cases à cocher proposées pour chaque 
-          collection disponible.
-
-Choisir si la recherche doit se faire sur des reportages (uniquement les fiches 
-d'indexation des reportages) ou sur les documents.
-
-.. note:: Il n'est pas possible de chercher à la fois sur des reportages et des 
-          documents.
-
-Voici le nouvel onglet: 
-
-  .. image:: ../../images/Rechercheavancee2.jpg
-	   :alt: alternate text
-	   :align: center
-
-  * Saisir les termes à chercher dans une des quatre zones de texte prévues à cet 
-    effet, puis choisissez les options de recherche disponibles.
-
-  * Choisir une ou plusieurs collections.
-
-  * Il est désormais possible de faire apparaître des critères de tri d’affichage 
-    des réponses : La version 3.5 intègre désormais des tris d’affichages sur les 
-    critères de dates.
-
-  * Choisir un ou plusieurs champs spécifiques.
-
-  * Sélectionner les status des documents.
-
-  * Recherche possible sur des intervalles de dates.
-
-Les documents s'affichent dans la fenêtre *Résultats*.
+Un espace de travail pour mettre de côté des documents. 
+D'ici, l'utilisateur peut effectuer un grand nombre d'actions sur ses sélections,
+notamment envoyer ses documents à d'autres utilisateurs. Pour plus d'informations, 
+:doc:`se reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`.
 
 Propositions
 ------------

@@ -1,278 +1,255 @@
-﻿Push
-====
+﻿Push et Validation
+==================
+
 .. toctree::
    :maxdepth: 3
    
 .. topic:: L'essentiel
 
-    On utilise le "Push" dans Phraseanet pour envoyer virtuellement des documents à
-    un ou plusieurs destinataires.
+    Le Push et la Validation sont deux actions destinées à transmettre des
+    documents à des utilisateurs, qu'ils disposent de comptes Phraseanet ou 
+    pas.
+    Le **Push** sert à pousser des documents vers ces utilisateurs, la **Validation** 
+    permet en plus d'obtenir des avis consultatifs sur des documents.
 
-    En cliquant dans la :doc:`Palette des Actions <Actions>` sur le "Push", Phraseanet 
-    offre la possibilité de:
+    Dans la version 3.6, Push et Validation sont deux interfaces distinctes. Elles 
+    permettent aussi à présent de constituer et de gérer des listes d'envois via le 
+    `Gestionnaire de listes`_.
 
-    * Envoyer des documents à des destinataires et éventuellement d'en demander 
-      la validation (voir la section ci-dessous `Envoi et validation`_)
 
-    * :doc:`Publier <Publier>`
+Le Push
+-------
 
-    * Utiliser le :doc:`Bridge <Bridge>`
+Le Push est une soumission de documents dans une Lightbox Phraseanet. 
+Contrairement à l'envoi par mail proposé par les fonctionnalités d'export, le 
+Push ne transmet pas physiquement les documents.
+Il alerte par email et met à la disposition des utilisateurs un panier qu'ils 
+peuvent consulter et télécharger.
+
+Comment pousser des documents ?
+*******************************
+
+* Sélectionner un ou plusieurs documents dans la zone d'affichage de 
+  :doc:`Résultats <Afficher>` de l'interface de *Production*.
   
-  .. image:: ../../images/Push-general.jpg
-	   :alt: alternate text
-	   :align: center
+* Cliquer sur le bouton Push de la :doc:`Palette des Actions <Actions>` 
+  Phraseanet : une fenêtre de type Overlay s'ouvre et présente alors la 
+  fenêtre de Push.
 
-Envoi et validation
--------------------
-Premier cas d'utilisation du Push: l'envoi et la demande de validation vers d'autres 
-utilisateurs.
+  .. image:: ../../images/Push-push_layout-1.jpg
+    :alt: alternate text
+    :align: center
 
-.. note:: On parle d'envoi virtuel pour le Push, car contrairement à l'envoi par 
-          mail proposé à partir de l'icône :doc:`Exporter <Exporter>`, la fonction 
-          Push ne transmet pas physiquement les documents, mais alerte par mail 
-          et met à la disposition des utilisateurs un panier qu'ils peuvent consulter 
-          et télécharger. Ces paniers peuvent aussi faire l'objet d'une demande 
-          de validation sur les éléments contenus.
+* Sélectionner un ou plusieurs utilisateurs Phraseanet vers qui pousser 
+  les documents sélectionnés.
 
+Pour ce faire, inscrire leurs noms, prénoms ou adresses email dans le 
+champ de formulaire proposé en haut à gauche de l'interface. 
+Un dispositif d'auto-complétion entre en action dès la saisie du troisième 
+caractère afin de faciliter la recherche d'utilisateurs. Une fois l'utilisateur 
+Phraseanet repéré dans la liste d'utilisateurs proposés, cliquer sur son nom 
+pour l'ajouter à la liste d'envoi. Cela a pour effet d'ajouter l'utilisateur 
+dans la zone des destinataires de l'envoi.
+    
+Pour ajouter un ou plusieurs utilisateurs non enregistrés dans une 
+solution Phraseanet à une liste d'envoi, cliquer sur le lien *Ajouter un 
+utilisateur*. Un formulaire d'ajout d'utilisateur simplifié s'affiche.
+Renseigner au minimum les champs obligatoires signalés par des 
+astérisques puis cliquer sur le bouton "Ajouter". Cela a pour effet d'
+ajouter le contact crée dans la zone des destinataires de l'envoi tout en 
+créant un compte à son nom dans le système Phraseanet.
 
-* Sélectionner un ou plusieurs documents puis cliquer sur le bouton central de "Push".
+.. note:: Les utilisateurs listés dans la zone des destinataires de l'envoi peuvent 
+          être regroupés et sauvegardés dans des listes d'envoi pour une 
+          réutilisation ultérieure. 
+          Pour sauvegarder une liste d'envoi, renseigner le champ de formulaire 
+          situé à gauche de la zone des destinataires de l'envoi puis l'
+          enregistrer en cliquant sur l'icône : 
+          
+          .. image:: ../../images/Push-icone-disquette.jpg
+            :alt: alternate text
+            :align: center
+          
+          La liste créée est alors affichée dans la zone des listes d'envoi. 
+          Les fonctionnalités relatives aux listes d'envoi sont décrites plus 
+          après, dans la section dédiée au `Gestionnaire de listes`_.
 
-* Une fenêtre s'ouvre. Cette fenêtre comporte deux actions, le premier permet de 
-  faire un simple envoi (cliquer sur "`Diffuser`_"), le deuxième permet de faire 
-  un envoi demandant au destinataire de retourner son avis sur la sélection 
-  (cliquer sur "`Valider`_").
+Pour conférer des droits spécifiques de téléchargements haute définition 
+(ou Grant rights) sur les documents poussés aux utilisateurs figurants 
+dans la liste d'envoi deux méthodes sont proposées : 
 
-  .. image:: ../../images/Push1.jpg
-	   :alt: alternate text
-	   :align: center 
+Sélectionner un ou plusieurs utilisateurs dans la zone des destinataires de 
+l'envoi puis cliquer sur le bouton "Téléchargement HD" situé à gauche de la 
+liste des utilisateurs de l'envoi
+*Ou:*
+Cliquer individuellement sur l'icône 
 
-Diffuser
-********
-Cette action permet d'envoyer un lot de documents à un ou plusieurs destinataires. 
-Les destinataires recevront un email, contenant un lien lançant l'interface 
-*Phraseanet Lightbox*. 
+.. image:: ../../images/Push-download-badge.jpg
+   :alt: alternate text
+   :align: center
 
-Cette interface donne un accès immédiat pour visualiser et/ou télécharger les documents.
-Pour les utilisateurs qui sont authentifiés, ils recevront cette sélection sous 
-forme d'un panier reçu.
+située sur l'étiquette représentative du destinataire à qui donner 
+le droit de téléchargement haute définition.
 
-  * Cliquer sur "Diffuser". La fenêtre s'ouvre.
+Pour valider et transmettre le Push, cliquer sur le bouton *Envoyer*. 
+Un formulaire permet de donner un nom et une description conviviale à l'envoi 
+et même réclamer un accusé réception de l'email envoyé si toutefois cette 
+fonctionnalité est supportée par le serveur de mails des destinataires. 
+    
+La Validation
+-------------
+
+Le mode opératoire est quasi identique à l'envoi d'un Push. Il ne diffère que 
+par l'attribution de privilèges supplémentaires optionnels.
+
+* Sélectionner un ou plusieurs documents dans la zone d'affichage de 
+  résultats de l'interface de Production
+    
+* Cliquer sur la rubrique Validation du menu Push de la palette des actions 
+  Phraseanet : une fenêtre de type overlay s'ouvre et présente alors la 
+  fenêtre de Validation.
+    
+  .. image:: ../../images/Push-feedback_layout-1.jpg
+       :alt: alternate text
+       :align: center
+       
+* Sélectionner le ou les utilisateurs Phraseanet vers lesquels adresser la 
+  demande de Validation de la même manière que pour un Push. 
+  Là encore, pour adresser cette demande à des utilisateurs non enregistrés 
+  sur l'application, le mode opératoire demeure identique à celui d'un Push.
+    
+L'élévation des droits supplémentaires (les Grant rights) fonctionne de 
+la même manière que pour le Push. Les droits qu'il est possible de déléguer 
+sont plus étoffés.
   
-  * Choisir les utilisateurs dans la liste existante (cas n°1) ou ajouter de 
-    nouveaux utilisateurs (cas n°2).
+En plus du **Téléchargement en haute définition**, il est possible de permettre
+aux destinataires de contribuer à la demande de Validation (c'est d'ailleurs l'
+option par défaut, sans quoi la réception d'une Validation ne serait que purement
+informative – un cas tout à fait envisageable). 
+
+Pour activer ou désactiver cette option, cliquer sur le bouton Contribuer ou sur 
+l'icône
+
+.. image:: ../../images/Push-contributeur_badge.jpg
+  :alt: alternate text
+  :align: center
+
+Le bouton **Voir les autres** et son icône associée 
+
+.. image:: ../../images/Push-see_other_badge.jpg
+  :alt: alternate text
+  :align: center
+
+permet à un destinataire de visualiser les avis et commentaires émis par les 
+autres destinataires contribuants à la demande de Validation.
+
+Pour valider et transmettre une demande de Validation, cliquer sur le bouton 
+*Envoyer*. Un formulaire permet de paramétrer la durée de validité de la 
+demande de Validation et de lui donner un nom et une description conviviale,
+éléments repris dans l'email reçu par les destinataires. 
+De même, pour réclamer un accusé réception de la demande de Validation, cocher
+la case prévue à cet effet pour peu que le serveur d'email du destinataire en
+tienne compte. 
+
+Réception d'un Push ou d'une Validation dans la Lightbox Phraseanet
+-------------------------------------------------------------------
+
+Push et Validation sont notifiées de deux façons. D'une part, par les 
+notifications dans l'interface de Production de Phraseanet. D'autre part, par 
+email. Chacun de ces modes de notification présente un lien permettant 
+l'affichage dans Phraseanet Lightbox.
+Les *Push* et de les *Validations* reçus sont regroupés dans le module 
+:doc:`Phraseanet Lightbox <Lightbox>`, une interface de consultation collaborative. 
+
+
+
+Gestionnaire de listes
+----------------------
+
+.. topic:: L'essentiel
+
+    Nouveauté de la version 3.6, le *Gestionnaire de listes* permet de mettre en 
+    place et d'administrer des listes de destinataires pour la diffusion de Push
+    et de Validation dans Phraseanet Lightbox.
+    Il devient ainsi encore plus simple de diffuser des média ou de demander de 
+    les apprécier dans Phraseanet.
+
+Le *Gestionnaire de listes* est accessible à partir des fenêtres de Push et de 
+Validation du module production de l'application Phraseanet : Cliquer sur le 
+lien *Gestionnaire de listes* situé à gauche de la zone des destinataires
+d'envoi.
+
+Créer et éditer une liste d'envoi
+*********************************
+Pour créer une nouvelle liste dans le *Gestionnaire de listes*, cliquer sur le
+lien *Ajouter*.
+
+* Donner un nom à la nouvelle liste dans le formulaire qui se présente puis 
+  valider le formulaire. Le nom de la liste créée apparaît alors 
+  dans la zone de liste située à gauche de l'interface. Cliquer sur son nom 
+  pour visualiser son contenu.
+
+.. image:: ../../images/Push-list_manager_creer.jpg
+  :alt: alternate text
+  :align: center    
+
+* Cliquer sur le bouton *Editer* situé à gauche de la zone centrale de l'
+  interface du Gestionnaire de listes pour éditer le contenu d'une liste.
+  Cela a pour effet de présenter la liste des utilisateurs recensé sur un 
+  système Phraseanet.
+
+.. image:: ../../images/Push-list_manager_editer.jpg
+  :alt: alternate text
+  :align: center
+
+* Pour ajouter un ou plusieurs utilisateurs à la liste d'envoi, sélectionner 
+  les lignes des utilisateurs à ajouter.
+  Les utilisateurs ajoutés ou présent dans la liste éditée sont surlignés en 
+  couleur ocre. 
+
+* Pour supprimer un ou plusieurs utilisateurs de la liste d'envoi éditée, 
+  sélectionner les lignes des utilisateurs correspondants : cela a pour effet 
+  de les supprimer de la liste.
+    
+.. note:: Un dispositif de recherche et de filtres permet de limiter l'affichage des 
+          utilisateurs par leurs identifiants, noms ou prénom, activité, société… *etc.*
+    
+* Pour retourner au sommaire de la liste, cliquer sur le bouton *Voir* .
+    
+Partager une liste
+******************
+
+Pour partager les listes d'envoi avec d'autres utilisateurs Phraseanet et
+leurs attribuer des droits d'utilisation, de gestion ou d'administration des
+listes, afficher la liste à partager en la sélectionnant dans la zone de liste.
+
+Pour partager la liste avec un utilisateur Phraseanet, rechercher le par son 
+nom, prénom, son identifiant ou adresse email dans le formulaire de recherche. 
+Un dispositif d'auto-complétion facilite cette recherche.
 
-Sélection des utilisateurs
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Cas n°1: Sélection des utilisateurs dans la liste existante**
+Une fois l'utilisateur repéré, l'ajouter au partage en cliquant sur son 
+étiquette de présentation. Son nom s'ajoute à la liste des utilisateurs Phraseanet 
+partageant cette liste d'envoi.
 
-Choisir les utilisateurs qui recevront cette sélection de documents: Commencer à 
-saisir les informations (email, nom/prénom, identifiant) de l’utilisateur recherché. 
-La liste des utilisateurs se met à jour. Sélectionner l’utilisateur en cliquant sur la ligne. 
-La ligne devient "Rouge": l’utilisateur est sélectionné. Continuer la sélection 
-d’utilisateurs si nécessaire. Désélectionner un utilisateur en cliquant à nouveau 
-sur la ligne (repasse au gris).
+Par défaut, les droits de partage attribués correspondent à un niveau dit d'accès.
+Ces droits de partage sont modifiables via la liste déroulante figurant sur 
+l'étiquette de l'utilisateur.
 
-  .. image:: ../../images/Push-Diffuser1.jpg
-	   :alt: alternate text
-	   :align: center 
+* Le niveau **Accès** donne un accès en lecture seule de la liste d'envoi
+* Le niveau **Editeur** donne des droits de lecture et modification du contenu 
+  de la liste d'envoi
+* Le niveau **Admin** donne des droits de lecture, de modification et de 
+  suppression des listes partagées.
 
-  * Une fois les utilisateurs sélectionnés, cliquer sur "Suivant". 
+Supprimer une liste
+*******************
 
-Pour passer à la prochaine étape, rendez-vous plus bas sur "`Envoi de la sélection`_".  
+Pour supprimer une liste d'envoi, l'afficher en la sélectionnant dans la liste 
+des listes d'envoi puis cliquer sur le bouton *Supprimer* situé en haut à droite 
+de l'interface.
+Une fenêtre de contrôle demande alors de confirmer la suppression. Cliquer sur *Ok* 
+pour supprimer définitivement cette liste.
 
+.. Note :: Si le nom de la liste supprimée figure toujours dans la liste des 
+          listes d'envoi, cliquer sur le lien *Rafraîchir* situé à gauche de l'interface.
 
-*A partir de cette fenêtre, Phraseanet vous permet d'effectuer de nombreuses actions:*
-
-Le bandeau du haut vous indique le nombre d'utilisateurs.
-
-  .. image:: ../../images/Push-Diffuser2.jpg
-	   :alt: alternate text
-	   :align: center 
-
-Vous avez la possibilité de:
-
-  * "Tout sélectionner" pour sélectionner tous les utilisateurs de la liste
-  * Cliquer sur "xx utilisateur(s) sélectionné(s)", pour n’afficher que les utilisateurs sélectionnés
-  * Cliquer sur "tout désélectionner" pour désélectionner tous les utilisateurs sélectionnés
-  
-*Enregistrer une liste statique:*
-
-  * Cliquer sur "Enregistrer cette liste" pour mémoriser cette liste d’utilisateurs.
-
-  * Saisir le nom de la nouvelle liste
-
-  * Enregistrer
-
-**Cas n°2: Ajouter un nouvel utilisateur**
-
-  * Cliquer sur l’onglet "Ajouter un utilisateur" pour diffuser la sélection vers 
-    un utilisateur non référencé. 
-  
-  * Saisir les coordonnées email du destinataire. 
-  
-  * Cliquer sur Valider.
-
-  .. image:: ../../images/Push-Diffuser3.jpg
-	   :alt: alternate text
-	   :align: center
-
-L’onglet propose de saisir les coordonnées du nouvel utilisateur.
-
-  .. image:: ../../images/Push-Diffuser4.jpg
-	   :alt: alternate text
-	   :align: center
-
-  * Saisir l’ensemble des coordonnées.
-  * Donner les droits d’accès à au moins une collection.
-  * Ajouter des droits Images de choix et/ou filigrane (ajout d’un filigrane 
-    sur les images de choix). 
-  * Valider. 
-
-.. note:: En limitant les droits au "simple" accès, l’utilisateur ne pourra pas 
-          faire de recherches dans Phraseanet, il ne pourra que consulter les 
-          documents "reçus".
-
-La fenêtre "Diffuser" revient à sa position initiale.
-
-**Il est également possible de sélectionner une liste d'utilisateurs déjà enregistrés 
-à partir du menu déroulant "Mes recherches enregistrées".**
-
-Les recherches enregistrées permettent de rappeler des listes d’utilisateurs en 
-appliquant les critères de filtres sélectionnés lors de leur création.
-
-De cette manière, chaque nouvel utilisateur inscrit sur Phraseanet et dont les 
-informations saisies correspondent aux critères d’un liste sera automatiquement 
-inclus lors de l’utilisation d’une des recherches enregistrées.
-
-**Pour créer une nouvelle recherche enregistrée:**
-
-* Cliquer sur les différents filtres d’utilisateur proposés.
-
-* Choisir dans les menus les critères de filtres à utiliser. 
-
-  .. image:: ../../images/Push-Diffuser5.jpg
-	   :alt: alternate text
-	   :align: center
-
-* Saisir le nom pour la "recherche" à enregistrer. Cliquer sur Enregistrer. 
-
-La nouvelle recherche enregistrée est désormais disponible. 
-
-* Cliquer sur le menu déroulant pour afficher les recherches enregistrées. 
-  
-* Sélectionner des utilisateurs à partir de la liste des utilisateurs. 
-
-* Choisir à l’aide de la case à cocher qui se trouve en fin de ligne si les 
-  utilisateurs sélectionnés pourront ou non télécharger les documents sur la 
-  sélection proposée. 
-
-.. note:: Cette option permet de donner uniquement sur la sélection l’accès 
-          au téléchargement des documents à des utilisateurs n’ayant "normalement" pas 
-          les droits de télécharger des documents sur les collections auxquels appartiennent 
-          les documents objet de la diffusion. 
-
-* Cliquer sur "Suivant" en bas à droite de la fenêtre "Diffuser".
-
-Envoi de la sélection
-^^^^^^^^^^^^^^^^^^^^^
-Une fois les utilisateurs, sélectionnés, vous pouvez diffuser votre sélection de documents: 
-
-  * Saisir le nom du Panier qui sera envoyé. Ici, on le nomme "Plages".
-
-  * Saisir l’objet et le contenu du mail.
-
-  * Cliquer sur Envoyer.
-
-  * Un message confirme l'envoi des documents.
-
-Réception
-^^^^^^^^^
-
-.. note:: Si le destinataire est authentifié dans Phraseanet, celui-ci est alerté 
-          en temps réel dans *Production* via une notification. Dans la zone des Paniers, 
-          celui-ci passe en jaune pour signaler qu'il est non-lu.
-		  
-Le destinataire peut voir, s'il est authentifié dans Phraseanet, ses paniers et/ou 
-validations en cliquant sur l'onglet Lightbox.
-
-  .. image:: ../../images/Push-Diffuser7.jpg
-	   :alt: alternate text
-	   :align: center
-
-  * Cliquez sur le panier souhaité pour l'ouvrir et visualiser le contenu.
-
-Voici enfin le contenu du panier "Plages" dans l'interface *Lightbox*:
-
-  .. image:: ../../images/Push-Diffuser6.jpg
-	   :alt: alternate text
-	   :align: center
-
-Valider
-*******
-
-**"Valider" envoie une demande d'appréciation sur un lot de documents à des destinataires.**
- 
-Ces destinataires recevront un e-mail, contenant un lien lançant *Phraseanet Lightbox*. 
-
-Cette interface leur donne un accès immédiat aux documents pour appréciation, 
-et/ou téléchargement. Pour les utilisateurs authentifiés, la validation est 
-également disponible sous forme d’un Panier.
-
-Envoi
-^^^^^^
-Le processus est le même que pour `Diffuser`_: L'émetteur doit d'abord sélectionner 
-un ou plusieurs destinataires (voir `Sélection des utilisateurs`_) puis 
-donner un nom au Panier (voir `Envoi de la sélection`_).
-
-Nous nommons dans notre cas concret le Panier à valider: "Architecture".
-
-  .. image:: ../../images/Push-Valider0.jpg
-	   :alt: alternate text
-	   :align: center
-
-L'émetteur a plusieurs options à cette occasion:
-
-  * Entrer une durée pour la validation, durée pendant laquelle celle-ci sera 
-    disponible: de 1 à 20 jour(s), ou choisir "durée illimitée".
-
-  * Il peut choisir de donner, ou non, le droit aux destinataires de voir les choix 
-    effectués par les autres utilisateurs (cocher la case).
-
-  * Il est également possible d'ajouter un accusé de réception (cocher la case).
-  
-  * Pour finir, une zone de description est à la disposition de l'émetteur si celui-ci 
-    veut ajouter un message pour préciser l'objet de sa demande.
-
-Réception
-^^^^^^^^^
-Le destinataire recevra un email lui indiquant qu'une sélection lui a été envoyée 
-et que l'émetteur souhaite qu'il donne son avis sur ces documents.
-Il recevra également une notification de ce type s'il est authentifié dans Phraseanet:
-
-  .. image:: ../../images/Push-Valider2.jpg
-	   :alt: alternate text
-	   :align: center
-
-Dans la zone des Paniers, le panier en question sera de couleur jaune lui indiquant 
-qu'il ne l'a pas encore visualisé.
-
-  .. image:: ../../images/Push-Valider1.jpg
-	   :alt: alternate text
-	   :align: center
-
-En visualisant le panier dans *Lightbox*, le destinataire voit le contenu de la 
-sélection. Il faut ensuite valider, par un clic sur "Oui" ou "Non" chaque document:
-
-  .. image:: ../../images/Push-Valider3.jpg
-	   :alt: alternate text
-	   :align: center
-
-Les destinataires peuvent, éventuellement, ajouter des commentaires sur les documents: 
-
-  .. image:: ../../images/Push-Valider4.jpg
-	   :alt: alternate text
-	   :align: center
-
-A la fin de la validation, le destinataire peut cliquer sur "Envoyer mon rapport" 
-(bouton présent en-dessous des boutons Oui/Non) pour indiquer à l'émetteur qu'il 
-a terminé sa tâche. L'émetteur sera immédiatement averti.

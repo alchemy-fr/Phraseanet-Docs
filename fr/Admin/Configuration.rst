@@ -1,260 +1,326 @@
 Configuration
 =============
 
-Le principal réglage de l’application est dans la structure XML de la 
-:term:`bases <base>` à laquelle on accède via le module :
 
-administration > base de donnée > structure.
+Fichiers
+--------
 
-Structure
----------
+Config.yml
+**********
 
+Config.yml est le fichier de configuration principal de l'application, il permet
+de configurer un  "environnement" et de l'utiliser.
 
-Exemple
-~~~~~~~
+Vous pouvez, dans ce fichier, décrire plusieurs environnements et passer de l'un
+à l'autre grâce à la variable "environment"
 
-  .. code-block:: xml
+Il utilise le format `Yaml <https://wikipedia.org/wiki/Yaml>`_, très lisible
+et facilement compréhensible.
 
-    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    <record modification_date="20100308202954">
+Ce fichier requiert deux blocs minimaux :
 
-      <path>/path/to/repository/datas/noweb/db_databox/documents</path>
+Dans l'exemple ci-dessous, l'environnement choisi est "dev", et l'on trouve
+en dessous la déclaration de cet environnement.
 
-      <subdefs>
+  .. code-block:: yaml
 
-        <!-- Image subdefs -->
-        <preview>
-          <path>/path/to/repository/datas/noweb/db_databox/subdefs</path>
-          <name>preview</name>
-          <size>1000</size>
-          <type>image</type>
-          <method>resample</method>
-          <baseurl/>
-        </preview>
-        <thumbnail>
-          <path>/path/to/repository/datas/web/db_databox/subdefs</path>
-          <name>thumbnail</name>
-          <size>250</size>
-          <type>image</type>
-          <method>resample</method>
-          <baseurl>web/db_databox/subdefs</baseurl>
-        </thumbnail>
-
-        <!-- Video subdefs -->
-        <preview>
-          <path>/path/to/repository/datas/noweb/db_databox/subdefs</path>
-          <name>preview</name>
-          <size>800</size>
-          <type>video</type>
-          <method>FLV</method>
-          <fps>15</fps>
-          <baseurl/>
-        </preview>
-        <thumbnailGIF>
-          <path>/path/to/repository/datas/web/db_databox/subdefs</path>
-          <name>thumbnailGIF</name>
-          <size>300</size>
-          <type>video</type>
-          <method>AnimGIF</method>
-          <delay>1</delay>
-          <baseurl>web/db_databox/subdefs</baseurl>
-        </thumbnailGIF>
-        <thumbnail>
-          <path>/path/to/repository/datas/web/db_databox/subdefs</path>
-          <name>thumbnail</name>
-          <size>250</size>
-          <type>video</type>
-          <method>JPG</method>
-          <baseurl>web/db_databox/subdefs</baseurl>
-        </thumbnail>
-
-        <!-- Audio subdefs -->
-        <preview>
-          <path>/path/to/repository/datas/noweb/db_databox/subdefs</path>
-          <name>preview</name>
-          <size>800</size>
-          <type>audio</type>
-          <method>MP3</method>
-          <baseurl/>
-        </preview>
-        <thumbnail>
-          <path>/path/to/repository/datas/web/db_databox/subdefs</path>
-          <name>thumbnail</name>
-          <size>250</size>
-          <type>audio</type>
-          <method>JPG</method>
-          <baseurl>web/db_databox/subdefs</baseurl>
-        </thumbnail>
-      </subdefs>
+    #config.yml
+    environment: dev
+    dev:
+        phraseanet:
+            servername: 'http://dev.phrasea.net/'
+            maintenance: false
+            debug: true
+            display_errors: true
+            database: main_connexion
+        template_engine: twig_debug
+        orm: doctrine_dev
+        cache: array_cache
+        opcodecache: array_cache
 
 
-      <description>
-        <Objet
-          src="/rdf:RDF/rdf:Description/IPTC:ObjectName"/>
-        <Categorie
-          src="/rdf:RDF/rdf:Description/IPTC:Category"/>
-        <AutresCategories
-          src="/rdf:RDF/rdf:Description/IPTC:SupplementalCategories"/>
-        <MotsCles
-          src="/rdf:RDF/rdf:Description/IPTC:Keywords"
-          multi="1"
-          tbranch="/thesaurus/te[@id='T0']"/>
-        <Observations
-          src="/rdf:RDF/rdf:Description/IPTC:SpecialInstructions"/>
-        <Date
-          src="/rdf:RDF/rdf:Description/IPTC:DateCreatedDateCreated"
-          type="date"
-          regdate="1"/>
-        <Signature
-          src="/rdf:RDF/rdf:Description/IPTC:By-line"/>
-        <TitreCredits
-          src="/rdf:RDF/rdf:Description/IPTC:By-lineTitle"/>
-        <Ville
-          src="/rdf:RDF/rdf:Description/IPTC:City"/>
-        <Pays
-          src="/rdf:RDF/rdf:Description/IPTC:Country-PrimaryLocationName"/>
-        <ReferencesOriginales
-          src="/rdf:RDF/rdf:Description/IPTC:OriginalTransmissionReference"/>
-        <Titre
-          src="/rdf:RDF/rdf:Description/IPTC:Headline"
-          thumbTitle="1"
-          report="1"
-          regname="1"/>
-        <Credit
-          src="/rdf:RDF/rdf:Description/IPTC:Credit"
-          report="1"/>
-        <Source src="/rdf:RDF/rdf:Description/IPTC:Source"/>
-        <Legende
-          src="/rdf:RDF/rdf:Description/IPTC:Caption-Abstract"
-          regdesc="1"/>
-        <Redacteur
-          src="/rdf:RDF/rdf:Description/IPTC:Writer-editor"/>
+Détaillons la composition d'un environnement
 
-        <!-- Champs Techniques -->
-        <NomDeFichier src="tf-filename" readonly="1" type="text"/>
-        <Chemin src="tf-filepath" index="0" readonly="1" type="text"/>
-        <Recordid src="tf-recordid" index="0" readonly="1" type="number"/>
-        <TypeMime src="tf-mimetype" index="0" readonly="1" type="text"/>
-        <Taille src="tf-size" index="0" readonly="1" type="number"/>
-        <Extension src="tf-extension" index="0" readonly="1" type="text"/>
-        <Largeur src="tf-width" index="0" readonly="1" type="number"/>
-        <Hauteur src="tf-height" index="0" readonly="1" type="number"/>
-        <Bits src="tf-bits" index="0" readonly="1" type="number"/>
-        <Couche src="tf-channels" index="0" readonly="1" type="number"/>
-      </description>
+* phraseanet (configuration principale)
 
-      <statbits>
-        <bit n="4">Online</bit>
-        <bit n="5" labelOn="exclu" labelOff="libre">exclu</bit>
-        <bit n="6" labelOn="Privé" labelOff="Public">Confidentialité</bit>
-      </statbits>
+  * servername: L'URI ou est installée l'application (requis)
+  * maintenance: Passer l'application en état de maintenance
+  * debug: Passer l'application en mode debug
+  * display_errors: Afficher les erreurs sur la sortie standard
+  * database: Nom de la connexion à la base de donnée (requis) voir
+    connexion.yml
 
-    </record>
+* template_engine : service de mise en page (requis)
+* orm : Service de mapping à la base de donnée (requis)
+* cache : service de cache principal :doc:`cache </Admin/Optimisation>`
+* opcodecache : service de cache opcode :doc:`opcodecache </Admin/Optimisation>`
 
-  Plusieurs noeuds sont à repérer dans cette structure :
-
-  - description :
-
-    Le noeud description contient n noeuds correspondants aux n champs 
-    descriptifs qui seront indexés. Les attributs sont optionnels, ils sont 
-    nommés ainsi et peuvent prendre les valeurs spécifiées entre crochets:
-
-     - src [xPath] : xPath RDF d’accès à la métadonnée. Consulter la base 
-        documentaire Exiftool pour une liste complète
-     - tbranch [xPath] : xPath Phraseanet Thésaurus de branchement. 
-        L’utilisation du module Thésaurus est recommandée pour modifier 
-        cette valeur
-     - readonly [0,1] : Définit un champ en lecture seule
-     - thumbtitle [0,1 || i18n_code] : Définit le champ qui sera pris comme 
-        titre du document.
-     - regdesc [0,1] : Repère le champ qui contiendra la description dans 
-        le cas d’un reportage
-     - regname [0,1] : Repère le champ qui contiendra le titre dans le cas 
-        d’un reportage
-     - regdate [0,1] : Repère le champ qui contiendra la date dans le cas 
-        d’un reportage
-     - report [0,1] : Rend un champ visible dans report
-
-    Certains attributs ne peuvent être placés que sur un seul champ : 
-    regname, regdesc, regdate, thumbtitle.
-
-    Dans le cas où la valeur de thumbtitle est la valeur du code 
-    d’internationalisation (fr, en, de …), il peut être placé à plusieurs 
-    reprises et ne sera vrai que dans le contexte où l’application sera 
-    visible dans ce code langue.
-
-  - subdefs
-
-    Le noeud subdefs regroupe différents noeuds correspondant aux 
-    sous-définitions qui seront créees en fonction du type des documents 
-    qui seront archivés. 
-
-    Généralement, cette partie de la structure n’a pas à être modifiée 
-    et convient parfaitement. 
-
-    Cependant, quelques customisations peuvent être faites, notamment :
-
-    - size [nombre] : valeur en pixel des sous-définitions générées
-    - path [path absolu] : path d’accès vers la sous-définition
-    - baseurl [url relative] : chemin relatif d’accès au fichier par http
-
-  - path
-
-    Le noeud path contient un noeud texte qui contient le path absolu d’accès 
-    au répertoire de stockage des documents.
-
-  - statbits
-
-    Le noeuds statbits contient une liste de noeuds statbits composant les 
-    différents status bits qui pourront être affectés aux documents. 
-
-    Il est vivement conseillé d’utiliser l’interface status-buts du module 
-    administration pour modifier ces noeuds.
+Les différents services sont déclarés dans le fichier service.yml.
 
 
-Réglage de collection
----------------------
+Connexions.yml
+**************
+
+Connexions.yml permet de déclarer et nommer des connexions vers des bases de
+données.
+La connexion est partagé par différent service (Phraseanet et ORM)
+
+  .. code-block:: yaml
+
+    #connexions.yml
+    main_connexion:
+      host: localhost
+      port: 3306
+      user: phrasea_engine
+      password: s3cr3t
+      dbname: applicationBox
+      driver: pdo_mysql
+      charset: UTF8
+
+  * host: adresse du serveur MySQL
+  * port: port MySQL
+  * user: utilisateur MySQL
+  * password: mot de passe  MySQL
+  * dbname:  nom de la base de donnée (application box)
+  * driver: nom du driver `voir liste complète
+    <http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver>`_
+  * charset: encodage de la connexion
+
+Services.yml
+************
+
+Le fichier service.yml décrit des services. Ces services sont utilisables dans
+le fichier config.yml.
+
+Vous trouverez un exemple de fichier de service dans config/services.sample.yml.
+
+Quatre groupes de services sont disponibles en standard dans l'application:
+ORM, TemplateEngine, Log, et Cache.
+
+
+Voici la structure générale d'un service :
+
+  .. code-block:: yaml
+
+    ServiceGroupe:
+      ServiceName:
+        type: Namespace\Classe
+        options:
+          parametre1: valeur
+          parametre2: valeur
+
+
+Un service requiert un type , qui spécifie la classe PHP à charger.
+Le tableau d'option est optionnel et fonction du service.
+
+Voyons les options que vous pourrez trouver dans les principaux services de
+Phraseanet :
+
+Service d'ORM Doctrine
+^^^^^^^^^^^^^^^^^^^^^^
+
+Voici le service *doctrine_dev* :
+
+  .. code-block:: yaml
+
+    #services.yml
+    Orm:
+      doctrine_dev:
+        type: Orm\Doctrine
+        options:
+          debug: true
+          dbal: test_connexion
+          cache:
+            query:
+              service: Cache\array_cache
+            result:
+              service: Cache\array_cache
+            metadata:
+              service: Cache\array_cache
+          log:
+            service: Log\query_logger
+
+
+
+  * debug : activation du debug
+  * dbal : Nom d'une connexion déclarée dans connexions.yml
+  * cache : paramètre des options de cache
+
+    * query : utilisation du service **Cache\\array_cache** (voir ci dessous)
+    * result : utilisation du service **Cache\\array_cache** (voir ci dessous)
+    * metadata : utilisation du service **Cache\\apc_cache** (voir ci dessous)
+
+  * log : utilisation du service **Log\\query_logger** (voir ci dessous)
+
+  .. seealso:: Pour plus d'informations sur les différents caches doctrine http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm
+
+
+Service de `Mise En Page <http://en.wikipedia.org/wiki/Template_engine_%28web%29>`_ Twig
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Voici le service *twig_prod*
+
+  .. code-block:: yaml
+
+    #services.yml
+    TemplateEngine:
+      twig_prod:
+        type: TemplateEngine\Twig
+        options:
+          debug: false
+          charset: utf-8
+          strict_variables: false
+          autoescape: true
+          optimizer: true
+
+
+
+  * debug : activation du debug
+  * charset : encodage du système de mise en page.
+  * strict_variable : arrêter l'exécution lors de l'appel à une variable
+    inconnue (pour les développeurs)
+  * autoescape: Activer la prise en charge automatiques des caractères
+    d'auto échappement.
+  * optimizer : Activer
+    `l'optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
+    
+  .. seealso:: Pour plus de détails sur les options de l'environnement twig http://twig.sensiolabs.org/doc/api.html#environment-options
+
+Service de Log Doctrine Monolog
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Voici le service de log Doctrine Monolog. Ce service n'est utilisable que
+pour le log du service Doctrine.
+
+  .. code-block:: yaml
+
+    #services.yml
+    Log:
+      query_logger:
+        type: Log\Doctrine\Monolog
+        options:
+          output: json
+          channel: query-logger
+          handler: rotate
+          max_day: 2
+          filename: doctrine-query.log
+
+  * output : Spécification du formatage de sortie.
+    Trois modes sont possibles.
+
+    * json : Formatage en `Json <https://wikipedia.org/wiki/Json>`_
+    * yaml : Formatage en `Yaml <https://wikipedia.org/wiki/Yaml>`_
+    * vdump : Affiche les informations de la variable de sortie PHP de manière
+      à ce qu'elle soit lisible.
+      voir `var_dump <http://www.php.net/manual/fr/function.var-dump.php>`_
+
+  * channel : Nom du channel utilisé par le service de log.
+    C'est une façon d'identifier à quelle partie de l'application une entrée de
+    log est liée.
+  * handler : Permet de spécifier le type de gestionnaire de log utilisé par le
+    service.
+
+    * stream : Ecrire les logs dans un fichier.
+    * rotate : Ecrire les logs dans un fichiers qui sont renouvelés tous 
+      les jours et limiter le nombre de fichiers enregistrés.
+
+  * filename: Le nom du fichier de log.
+  * max_day : Spécifier en nombre de jour la fréquence de rotation opérée sur
+    les fichiers de logs dans le cas ou le gestionnaire de rotation est utilisé.
+
+Services de Cache ArrayCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
+    Cache:
+      array_cache:
+        type: Cache\ArrayCache
+
+
+Services de Cache ApcCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
+    Cache:
+      apc_cache:
+        type: Cache\ApcCache
+
+
+Services de Cache XCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
+    Cache:
+      xcache_cache:
+        type: Cache\XcacheCache
+
+
+Services de Cache MemcacheCache
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  .. code-block:: yaml
+
+    #services.yml
+    Cache:
+      memcache_cache:
+        type: Cache\MemcacheCache
+        options:
+          host: localhost
+          port: 11211
+
+* host: Adresse du serveur Memcached
+* port: Port du serveur Memcached
+
+Réglages de collection
+----------------------
 
 * Ajout de valeurs suggérées
 
-Les valeurs suggérées sont des aides à la saisie.
-Elles permettent de créer des listes de termes que l'on retrouve
-lors de l’édition.
- 
-* Ajout d'un Minilogo
+Les valeurs suggérées sont des aides à la saisie que vous pouvez régler et que
+vous retrouverez lors de l'`editing </User/Manuel/Editer>`_
 
-Logo représentatif de la collection 
+* Minilogo
 
-* Ajout d'un Fichier de Watermark (filigrane)
+Logo de la collection
 
-Le Fichier de filigrane ou watermark s'applique sur les documents
-en prévisualisation selon les droits de l'utilisateur connecté.
+* Watermark (filigrane)
 
-* Ajout d'un StampLogo
+Le Fichier de filigrane ou watermark s'applique sur les documents en
+prévisualisation.
 
-Logo accompagnant le document au téléchargement et pouvant être associé à
+* Stamp
+
+Le Stamp est un logo ajouté au document et pouvant être associé à
 la description de celui-ci.
 
-  comment créer un stamplogo
+Pour utiliser cette option :
 
-      - ajouter un ficher (logo)
-      - cliquer sur la collection puis sur reglage de collection
-      - cliquer sur "vue xml" et éditer le xml en suivant l’exemple ci-dessous
+  * Ajouter un logo de Stamp
+  * Aller dans les réglages de collection
+  * Dans la "Vue XML", editer le XML et ajouter le block "stamp" comme
+    ci-dessous
 
   .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <baseprefs>
-      <status>0</status>
+
+      /**
+       * ....
+       */
 
       <stamp>
-            <logo position="left" width="25%"/>
-            <text size="50%">Titre: <field name="SujetTitre"/></text>
-            <text size="50%">Legende: <field name="Legende"/></text>
-            <text size="50%">Copyright: <field name="Copyright"/></text>
-            <text size="50%">Date : <field name="Date"/></text>
-            </stamp>
-      <sugestedValues>
-      </sugestedValues>
-    </baseprefs>
+        <logo position="left" width="25%"/>
+        <text size="50%">Titre: <field name="SujetTitre"/></text>
+        <text size="50%">Legende: <field name="Legende"/></text>
+        <text size="50%">Copyright: <field name="Copyright"/></text>
+        <text size="50%">Date : <field name="Date"/></text>
+      </stamp>
 
+    </baseprefs>

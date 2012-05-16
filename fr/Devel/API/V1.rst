@@ -5,15 +5,16 @@ Documentation API v1
    :maxdepth: 2
 
    V1/Introduction
+   V1/Upgrade/1.1
    V1/Authentification
    V1/Routes
 
 Hello world !
 
-L'API Phraseanet v1 gives you access to lots of Phraseanet data and lets 
-you interact with them. 
-Integrate the search engine, build your own applications and plugins! 
-Give us your feedback and if you publish your code, let us know and 
+L'API Phraseanet v1 gives you access to lots of Phraseanet data and lets
+you interact with them.
+Integrate the search engine, build your own applications and plugins!
+Give us your feedback and if you publish your code, let us know and
 we'll also do so.
 
 Start easy easy :
@@ -22,8 +23,8 @@ Start easy easy :
   * Familiarisez vous avec :doc:`oAuth2 <V1/Authentification>`
   * Trouvez votre :doc:`route <V1/Routes>` !
 
-Si jamais vous trouviez un bug, merci de le rapporte à notre  
-`mailing-list <https://groups.google.com/group/phraseanet-api>`_ 
+Si jamais vous trouviez un bug, merci de le rapporte à notre
+`mailing-list <https://groups.google.com/group/phraseanet-api>`_
 ou créez un ticket dans notre
 `bug-tracker public <https://github.com/alchemy-fr/Phraseanet/issues>`_.
 

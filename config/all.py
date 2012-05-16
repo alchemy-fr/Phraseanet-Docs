@@ -1,4 +1,4 @@
-# Global configuration information used across all the 
+# Global configuration information used across all the
 # translations of documentation.
 #
 
@@ -32,9 +32,9 @@ copyright = u'2004-2012, <a href="http://www.alchemy.fr" target="_blank">Alchemy
 # built documents.
 #
 # The short X.Y version.
-version = '3.5'
+version = '3.6'
 # The full version, including alpha/beta/rc tags.
-release = '3.5'
+release = '3.6'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:

@@ -5,12 +5,17 @@
 
 .. topic:: L'essentiel
 
+    L'interface du module Production est repensée dans la version 3.6 de 
+    Phraseanet. La majorité des utilisateurs consultés ont trouvé intéressant 
+    de rassembler toutes les options relatives à la recherche documentaire au 
+    sein d’une même zone de l'écran du module Production.
+    
     Dans *Production* et *Classic*, deux modes de recherche sont possibles:
 
     La zone de `Recherche simple`_ permet d'effectuer des recherches simples en 
     texte intégral dans les :term:`bases <base>`/collections de documents.
 
-    La :doc:`Recherche avancée <Onglets>` permet d'effectuer des requêtes plus 
+    La `Recherche avancée`_ permet d'effectuer des requêtes plus 
     évoluées et de mettre en place un certain nombre de filtres sur les 
     :term:`bases <base>` et collections.
 
@@ -25,6 +30,11 @@
 
 Recherche simple
 ----------------
+La Recherche simple était, jusqu’à la version 3.5, positionnée dans le coin 
+gauche en haut de la page de Phraseanet Production. Elle se trouve désormais 
+dans la partie centrale de la page, au-dessus de la Palette des Actions et 
+de l’affichage des Résultats. 
+
   .. image:: ../../images/Rechercher-simple.jpg
 	   :alt: alternate text
 	   :align: center
@@ -43,6 +53,12 @@ collection cochée.
 
 Les réponses qui correspondent à la recherche s'affichent dans la zone des 
 résultats sous forme de vignettes.
+
+Choisir si la recherche doit se faire sur des reportages (uniquement les fiches 
+d'indexation des reportages) ou sur les documents.
+
+.. note:: Il n'est pas possible de chercher à la fois sur des reportages et des 
+          documents.
 
 Recherche par opérateur ordinal
 *******************************
@@ -104,7 +120,8 @@ Il est possible de limiter le cadre de la recherche à une rubrique de la descri
 Ainsi rechercher marra* dans legende affichera les documents qui contiennent 
 le mot *marrakech dans le champs légende*.
 
-Les mots, réponses aux questions sont surlignés dans la description.
+Les mots, réponses aux questions sont surlignés dans la description. Ici, un exemple
+avec le terme "mer", qui est surligné dans le champ Mot clé.
 
   .. image:: ../../images/Rechercher-motdanslegende.jpg
 	   :alt: alternate text
@@ -158,28 +175,48 @@ slash /, un tiret -, un espace.
 
 Recherche avancée
 -----------------
-Pour la recherche avancée, se reporter à la section consacrée à la :doc:`Barre 
-des Onglets <Onglets>` dans l'interface de *Phraseanet Production*. En effet, la 
-recherche avancée est accessible à partir de la barre des onglets sur la partie 
-gauche de la fenêtre de *Production*.
+La Recherche Avancée ne se trouve plus au sein de la :doc:`Barre des Onglets <Onglets>`, 
+contrairement à la version précédente : Cliquez simplement sur la roue située 
+entre le champ pour la recherche et le bouton «Rechercher».
 
-.. todo:: capture d'écran de la recherche avancée dans Beta.
+  .. image:: ../../images/Rechercheavancee1.jpg
+	   :alt: alternate text
+	   :align: center
+
+Une fenêtre Overlay s’ouvre. La nouvelle Recherche Avancée se présente en deux 
+parties, pour une meilleure visibilité :
+
+  .. image:: ../../images/Rechercheavancee0.jpg
+	   :alt: alternate text
+	   :align: center
+
+D’un côté, le choix des collections dans lesquelles effectuer la recherche. 
+Choisir les :term:`bases <base>` et collections où rechercher.
+   
+De l’autre, les différents filtres disponibles pour affiner sa recherche :
+
+  * Trier par mots clés contenus dans un ou plusieurs champs spécifiques, 
+  * Trier par status, 
+  * Trier sur des intervalles de dates,...
+  
+Les documents s'affichent dans la fenêtre *Résultats*.
+
+.. note:: Il est possible de désélectionner toutes les :term:`bases <base>` et 
+          collections en cliquant sur "Aucune" ou de cliquer directement sur les 
+          noms des :term:`bases <base>` pour les sélectionner ou désélectionner
+          individuellement ou encore dans les cases à cocher proposées pour chaque 
+          collection disponible.
+
 
 Recherche à partir du Thesaurus
 -------------------------------
 La recherche à partir du Thesaurus se fait via la barre des Onglets dans *Phraseanet 
-Production*, tout comme la recherche avancée: se reporter à la section 
-:doc:`Barre des Onglets <Onglets>`.
-
-.. todo:: capture de la zone de thesaurus dans la barre des onglets (Beta).
+Production*: se reporter à la section :doc:`Barre des Onglets <Onglets>`.
 
 La recherche dans les interfaces
 --------------------------------
-Voici un aperçu des zones de recherche dans les deux interfaces de recherche et 
-de consultation des images:
-
-Dans les interfaces de *Prod* et *Classic*, la zone de recherche se trouve en 
-haut à gauche. 
+Voici un aperçu de la zone de recherche dans les deux interfaces *Production* et
+*Classic*.
 
 Elle présente un champ de recherche, dans lequel l'utilisateur peut entrer des 
 mots clés incluant des opérateurs booléens et autres critères vus précédemment 
@@ -187,32 +224,28 @@ mots clés incluant des opérateurs booléens et autres critères vus précédem
 
 Production
 **********
-Voici comment se présente la zone de recherche dans l'interface de *Production*.
 
   .. image:: ../../images/Rechercher-Prod1.jpg
 	   :alt: alternate text
 	   :align: left
-	   
-Par défaut, c'est la `Recherche Simple`_ qui s'affiche. 
 
-Pour accéder à la `Recherche Avancée`_, se rendre dans la barre des Onglets et 
-cliquer sur Recherche Avancée.
+Ci-contre, la zone de recherche dans l'interface de *Production*: 
+Voici la `Recherche Simple`_.
 
-Au clic dans le champ de recherche simple, l'onglet des Bases se déplie immédiatement, 
-pour que l'utilisateur puisse choisir dans quelle(s) base(s) et collection(s) 
-effectuer sa recherche.
+Pour accéder à la `Recherche Avancée`_, cliquer sur la roue.
 
-  * Entrer un mot clé dans le champ de recherche
+Pour effectuer une recherche dans l'interface de Production: 
+
+  * Entrer un mot clé dans le champ de recherche.
 
   * Sélectionner s'il faut rechercher dans les Documents ou dans les Reportages 
-    (par défaut rechercher dans les Documents).
-
-  * Choisir, dans l'onglet Bases, dans quelle(s) collection(s) effectuer la 
-    recherche (cocher les cases)
-
+    (par défaut, la recherche s'effectue dans les Documents).   
+	
   * Eventuellement, sélectionner un type de document: ne rechercher que dans les 
     images, que dans les vidéos, ou bien uniquement parmi les documents de type 
     audio, document, flash...
+
+  * Dans la Recherche Avancée, sélectionner les base(s) / collection(s).
 
   * Enfin, cliquer sur le bouton Rechercher.
 

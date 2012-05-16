@@ -5,9 +5,6 @@ Paniers et Reportages
 
 .. note:: Les Paniers et les Reportages sont regroupés dans le même onglet. Ils 
           sont différenciés par la *couleur bleue* de la barre de titre des reportages. 
-          Les reportages sont placés dans cet onglet quand l'utilisateur a besoin 
-          de travailler sur son contenu et peuvent être retirés de l'onglet. 
-
 
 Onglet Paniers
 --------------
@@ -22,33 +19,28 @@ Onglet Paniers
     Les icônes affichées dans la barre de titre donnent les informations 
     suivantes :
 
-    * Symbole Ampoule : Panier publié sur la page d'accueil
-    * Infobulle Rouge : Panier faisant l'objet d'une demande de validation
-    * Symbole RSS     : Panier publié
+    * Infobulle Bleue : Réception d'une demande de validation
+    * Infobulle Rouge : Demande de validation effectuée par l'utilisateur
     * Symbole Push	  : Indique qu'un Panier a été reçu
-
-    .. todo:: liste des symboles affichés dans les titres de panier
     
     * -> Cliquer sur la barre de titre pour ouvrir ou fermer un panier. 
 
     Chaque panier dispose d'un menu contextuel permettant d'accéder à certaines 
     actions.
     
-    Les nouveaux paniers reçus sont d’une couleur différente "dorée" tant qu’ils 
+    Les nouveaux paniers reçus sont d’une couleur différente (dorée) tant qu’ils 
     n’ont pas été ouverts.
     Les paniers disposent d'une palette d'outils intégrée, visible ci-dessous, 
-    avec l'ouverture du panier dénommé "Plages".
-
+    avec l'ouverture du panier dénommé "Bateaux".
 
 .. figure:: ../../images/Prod-Bonglet-DetailPanier.jpg
-	   :height: 564 px
-	   :width: 438 px
 	   :alt: alternate text
 	   :align: center
 
 
 Nouveau Panier
 **************
+
   .. image:: ../../images/Paniers-Creation.jpg
 	   :alt: alternate text
 	   :align: center 
@@ -62,32 +54,27 @@ Nouveau Panier
 	   :alt: alternate text
 	   :align: center 
 
-  * -> Cocher la case "Panier".
-  * -> Cocher le cas échéant la case "Ajouter ma sélection courante" pour
-    ajouter des documents préalablement sélectionnés dans les résultats.
+  * -> Cocher la case "Ajouter ma sélection courante" pour
+    ajouter des documents préalablement sélectionnés dans les Résultats.
   * -> Saisir le nom du nouveau panier et si besoin une description.
   * -> Cliquer sur le bouton Valider.
 
   * => Le nouveau panier est créé et s'affiche dans la liste. 
-
 
 Ajouter des documents à un panier
 *********************************
 
 A partir des résultats
 ^^^^^^^^^^^^^^^^^^^^^^
-
-
   * -> Pour mettre un ou plusieurs documents dans un Panier: 
     faire un glisser-déposer d'une ou plusieurs vignettes, soit en 
-    survolant le nom d’un Panier; son titre change de couleur et devient 
-    rouge, ou en déposant la sélection dans le panier ouvert. 
+    survolant le nom d’un panier, soit en déposant la sélection dans le 
+    panier ouvert. 
 
 .. note:: Les documents ajoutés sont affichés en dernier dans le panier.
 
 A partir de la vue détaillée
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
   * -> Sélectionner un panier en cliquant sur son titre
   * -> Lancer la vue détaillée sur une sélection de documents
   * -> Cliquer sur le picto "Panier" 
@@ -107,25 +94,24 @@ Afficher le contenu d'un panier dans la vue détaillée
   
   * -> Faire un double clic sur une vignette
 
-  * => La fenêtre de la vue détaillée s'ouvre.
-
+  * => La fenêtre de la vue détaillée s'ouvre
 
 Déplacer et dupliquer des documents entre des paniers
 *****************************************************
 
 Pour déplacer un ou plusieurs documents d'un panier vers un autre panier:
 
-* -> Sélectionner les documents à déplacer.
+* -> Sélectionner les documents à déplacer
 * -> Glisser et déposer les documents sur la barre de titre de panier de 
-  destination.
+  destination
 
-Pour dupliquer un ou plusieurs document d'un panier vers un autre panier:
+Pour dupliquer un ou plusieurs documents d'un panier vers un autre panier:
 
 * -> Maintenir enfoncée la touche "ctrl" depuis un PC ou la touche "cmd" depuis
-  un Macintosh.
-* -> Sélectionner les documents à déplacer.
+  un Macintosh
+* -> Sélectionner les documents à déplacer
 * -> Glisser et déposer les documents sur la barre de titre de panier de 
-  destination.
+  destination
 
 Retirer un document d'un panier
 *******************************
@@ -135,11 +121,8 @@ Pour retirer un document d'un panier:
 * -> Cliquer sur la "croix" qui se trouve sous les vignettes
 
 .. image:: ../../images/Prod-Bonglet-panierretirerdoc.jpg
-	   :height: 128 px
-	   :width: 225 px
 	   :alt: alternate text
 	   :align: center 
-
 
 Actions sur les paniers ou leur contenu
 ***************************************
@@ -148,14 +131,10 @@ Les actions sur les paniers fonctionnent de la même manière que les actions su
 les documents depuis la fenêtre des résultats. 
 
 .. image:: ../../images/Prod-Bonglet-actionsPanier.jpg
-	   :height: 22 px
-	   :width: 215 px
 	   :alt: alternate text
 	   :align: center 
 
-
 Se reporter à la section :doc:`Palette des Actions <Actions>`.
-
 
 Le menu contextuel des paniers
 ******************************
@@ -163,26 +142,20 @@ Le menu contextuel des paniers
 * -> Cliquer sur la flèche du menu contextuel d'un panier
 * -> Sélectionner une action
 
-
 Renommer un panier
 ^^^^^^^^^^^^^^^^^^
-
 * -> Cliquer sur Renommer
 * => La fenêtre s'ouvre 
 
 * -> Donner un nouveau nom et si nécessaire une nouvelle description
 * -> Cliquer sur Valider 
 
-
 Réordonner un panier
 ^^^^^^^^^^^^^^^^^^^^
-
 * -> Cliquer sur Ordonner
-* => la fenêtre s'ouvre
+* => La fenêtre s'ouvre
 
 .. image:: ../../images/Prod-Bonglet-ordonnersPanier.jpg
-	   :height: 506 px
-	   :width: 707 px
 	   :alt: alternate text
 	   :align: center 
 
@@ -199,11 +172,74 @@ Supprimer un panier
 * -> Une fenêtre s'ouvre pour confirmer la suppression définitive
   du panier
 
+L'archivage des Paniers
+***********************
 
+Archiver un Panier
+^^^^^^^^^^^^^^^^^^
+Nouveauté de la version 3.6, il est désormais possible d’archiver ses paniers 
+dans Phraseanet ! 
+
+Un panier archivé disparaît de la zone de travail latérale. 
+Il peut être ainsi conservé pour un usage futur, sans encombrer la zone de travail 
+dans *Phraseanet Production*.
+
+Ouvrir le menu contextuel du panier et cliquer sur «Archiver»:
+
+  .. image:: ../../images/ArchivagePanier1.jpg
+	   :alt: alternate text
+	   :align: center
+	   
+Celui-ci disparaît de la zone de travail latérale.
+
+Retrouver un Panier archivé
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Pour retrouver un panier archivé, il suffit de se rendre dans l'"Historique des 
+Paniers". Pour cela, cliquer sur la flèche présente dans la barre de titre des 
+Paniers et cliquer sur "Parcourir les Paniers":
+
+  .. image:: ../../images/Paniers-Parcourir.jpg
+	   :alt: alternate text
+	   :align: center
+
+Une fenêtre s’ouvre:
+
+  .. image:: ../../images/ArchivagePanier2.jpg
+	   :alt: alternate text
+	   :align: center
+
+Sur le côté gauche de la fenêtre : Une zone de recherche. 
+Saisir le titre d’un panier pour le retrouver. Vous pouvez également vous aider 
+des critères de recherche suivants : 
+
+*Voir* : Tout, mes paniers, les paniers reçus, les validations envoyées, les 
+validations reçues.
+
+*Quand* : Toute la période, cette année, l’année dernière, classement par année
+
+L’autre partie de la fenêtre affiche la liste des paniers : pour chacun, on 
+dispose des informations suivantes : nombre d’images, une image de représentation, 
+un titre,... 
+
+En cliquant sur le titre du panier, les vignettes apparaissent:
+
+  .. image:: ../../images/Paniers-Parcourir2.jpg
+	   :alt: alternate text
+	   :align: center
+
+Pour archiver ou désarchiver un panier
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Pour archiver / désarchiver un panier à partir de l'Historique des Paniers :
+Un clic sur l’étoile (passant du blanc à l’orange) présente près du titre du 
+panier archivé permet de le rendre de nouveau accessible dans la zone latérale 
+de travail et donc le désarchiver. Cette modification est visible en temps réel 
+dans *Production*.
+
+Pour à nouveau archiver le panier, recliquer une fois sur l’étoile, elle doit 
+passer au blanc, ce qui indique que le panier est archivé.
 
 Onglet Reportages
 -----------------
-
 
 .. topic:: L'essentiel
 
@@ -218,7 +254,7 @@ Onglet Reportages
     fusionner les contenus documentaires. 
 
 
-.. note:: La plupart des fonctions disponibles sur les paniers sont aussi 
+.. note:: La plupart des fonctions disponibles sur les Paniers sont aussi 
           disponibles sur les Reportages, seules les fonctions propres aux 
           reportages sont documentées.
 
@@ -248,16 +284,9 @@ Ajouter des documents à un Reportage
   directement dans le Reportage si celui-ci est ouvert.
 
 La bulle rouge indique le nombre de documents que l'on place dans le reportage 
-ouvert: 
+ouvert.
 
   .. image:: ../../images/Paniers-Ajoutreportage.jpg
-	   :alt: alternate text
-	   :align: center 
-
-Une fois le document placé dans le reportage, un message peut s'afficher pour nous 
-indiquer qu'il faut le rafraîchir afin de voir les documents qui y ont été ajoutés.
-	   
-  .. image:: ../../images/Paniers-Ajoutreportage2.jpg
 	   :alt: alternate text
 	   :align: center 
 
@@ -270,15 +299,15 @@ l'utilisateur.
 Il n'y a pas d'intérêt à conserver un Reportage "terminé" dans l'onglet.
 
 Pour attacher un Reportage
-
-* -> faire une Recherche en mode Reportage 
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+* -> Faire une Recherche en mode Reportage 
 * -> Glisser et déposer le reportage depuis la grille des résultats dans l'onglet 
   des Paniers
 
-* => le reportage s'affiche
+* => Le reportage s'affiche
 
 Pour détacher un Reportage
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 * -> Cliquer sur le menu contextuel du Reportage 
 * -> Cliquer sur détacher
 

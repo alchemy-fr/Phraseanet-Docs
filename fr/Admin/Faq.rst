@@ -1,87 +1,80 @@
 FAQ
 ===
 
-Liste des questions que vous pouvez être amené à vous poser et des réponses.
+
+Je ne peux pas uploader des fichiers de plus de 2Mo
+---------------------------------------------------
+
+Exemple pour passer à une limite de 200Mo :
+
+* Dans le fichier php.ini :
+
+  .. code-block:: bash
+
+    upload-max-filesize = 200M
+    post_max_size       = 200M
+
+N'oubliez pas de redemarrer votre configuration (Apache ou PHP-Fpm selon le cas).
+
+Si vous utilisez Nginx en serveur web, il faudra aussi autoriser les requêtes
+volumineuses :
+
+* Dans le fichier nginx.conf :
+
+  .. code-block:: bash
+
+    http {
+        ...
+
+        client_max_body_size 200M;
+
+        ...
+    }
 
 
-Comment faire pour augmenter la taille maximale des fichiers à uploader ?
--------------------------------------------------------------------------
+Les vignettes des résultats représentent une mongolfière
+--------------------------------------------------------
 
-Selon que vous utilisez apache ou nginx :
+Vérifiez que la tâche de création des sous-définitions est démarrée module
+Admin. Voir `documentation moteur de tâche </Admin/MoteurDeTaches>`_
 
-* Apache
+Il n'y a aucune imagettes dans les résultats de recherche
+---------------------------------------------------------
 
-    - Editer le fichier php.ini (fichier de configuration de php)
-    - Augmenter la valeur des variables upload_max_filesize et post_max_size 
-    - Redémarrer apache
+Si aucune vignettes n'apparait (juste les titres), c'est que le montage du
+dossier vignettes n'est pas correctement fait dans le server web
 
-* Nginx
+Vérifier dans votre virtual host l'Alias "/web" et vérifier qu'il pointe sur
+le dossier de stockage des vignettes. Voir `documentation installation
+</Admin/Installation>`_
 
-    - Editer le fichier nginx.conf (en général dans /etc/nginx)
-    - Y ajouter ou modifier la variable client_max_body_size
+Lorsque j’édite un grand nombre de documents des messages d'erreur apparaissent
+-------------------------------------------------------------------------------
 
-    exemple : client_max_body_size 2000m;
+Le module Suhosin peut limiter le nombre de paramètres passés par requêtes.
+Vous pouvez tenter d'augmenter cette limite.
 
-    - Ensuite  éditer pour php5-fpm le php.ini (/etc/php5/fpm/php.ini)
-    - Augmenter la valeur des variables upload_max_filesize et post_max_size 
-    - Redémarrer php5-fpm et nginx.
+  .. code-block:: bash
 
-Je ne vois pas les vignettes après mon installation, Que faire ?
-----------------------------------------------------------------
+    suhosin.post.max_vars    = 12000
+    suhosin.request.max_vars = 12000
 
-- Vérifier si les taches sont démarrées
+Lorsque je modifie des droits utilisateurs, certains droits ne sont pas sauvés
+------------------------------------------------------------------------------
 
-- Vérifier dans votre virtual host l'Alias /web et voir si 
-  le répertoire sur lequel il pointe existe 
+Le module Suhosin peut limiter le nombre de paramètres passés par requêtes.
+Vous pouvez tenter d'augmenter cette limite.
 
-"Server Error" Lorsque j’édite un grand nombre de documents, que faire ?
-------------------------------------------------------------------------
+  .. code-block:: bash
 
-- Penser à modifier les variables ci-dessous dans votre configuration de PHP
-  si vous utilisez le module suhosin.
+    suhosin.post.max_vars    = 12000
+    suhosin.request.max_vars = 12000
 
-suhosin.post.max_vars=12000
-suhosin.request.max_vars=12000
+Mon installation a été interrompue, je souhaite la reprendre
+------------------------------------------------------------
 
+Pour reprendre votre installation il vous suffit de supprimer les fichiers
 
-Je souhaite reprendre l'installation de l'application, comment faire ?
-----------------------------------------------------------------------
-
-Pour reprendre votre installation il vous suffit de :
-
-  - supprimer les fichiers config.inc et connexion.inc dans le répertoire
-    $vos_sources/config/
-
-  - Puis vider ou supprimer et recréer vos bases MySQL
-
-Comment télécharger et compiler l'extension phrasea2 de php ?
--------------------------------------------------------------
-
-  - installer git, libmysqlclient*-dev
-  - télécharger et compiler l'extension
-
-  .. code-block:: xml
-
-    git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
-    cd php-phrasea
-    ./configure
-    make
-    make install
-
-Comment télécharger et compiler l’indexer Phraseanet
------------------------------------------------------
-
-  - installer git, libxml2-dev, libexpat1-dev
-
-  .. code-block:: xml
-
-    git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
-    cd phraseanet_indexer
-    aclocal
-    automake -a
-    autoconf
-    ./configure
-    make
-    make install
-
-NB : l’indexer s'installe par défaut dans /usr/local/bin
+  * config/config.yml
+  * config/connexions.yml
+  * config/services.yml

@@ -1,0 +1,47 @@
+Version 3.6
+===========
+
+Les changements :
+-----------------
+
+  * Un changement majeur du schema apparait dans le stockage des valeurs de
+    champs. Les valeurs de champs multivalués étaient auparavant stockées
+    sérialisées.
+    Elles sont désormais stockées indépendamment les unes des autres.
+
+    Deux routes sont modifiées : :doc:`Records/Metadatas
+    </Devel/API/V1/Route/Records/Metadatas>` et :doc:`Records/SetMetadatas
+    </Devel/API/V1/Route/Records/SetMetadatas>`.
+    Une route est ajoutée pour faciliter l'affichage des fiches :
+    :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
+
+  .. seealso:: :doc:`documentation complète du passage en API 1.1
+        </Devel/API/V1/Upgrade/1.1>`
+
+  .. warning::
+
+        Etant donné que ce changement intervient dans le schema de base de
+        donnée, il n'y a pas de retrocompatibilité avec la version1.0 de l'API,
+        qui n'est donc plus supportée dans la version 3.6 de Phraseanet.
+
+        Merci de mettre à jour vos adapteurs avant de mettre à jour Phraseanet.
+
+
+
+Quoi de neuf ?
+--------------
+
+  * Refactorisation de l'interface de Push / Validation.
+
+  * Possibilité de création de listes d'utilisateurs dans le Push et la
+    Validation.
+
+  * Refactorisation de la WorkZone.
+
+  * Ajout de la fonction "Archiver" aux paniers.
+
+  * Ajout d'un navigateur de paniers permettant de revenir sur les paniers
+    archivés.
+
+  * Ajout d'une fonctionalité de stockage de ressources utilisateurs dans les
+    fiches descriptives.

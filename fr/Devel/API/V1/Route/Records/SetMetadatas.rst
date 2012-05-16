@@ -4,7 +4,7 @@ Records SetMetadatas
 About
 -----
 
-  Return 
+  Return
 
   .. code-block:: bash
 
@@ -21,20 +21,20 @@ Parameters
 ----------
 
   ============ ======= =============
-   Parameters   Value   Information 
+   Parameters   Value   Information
   ============ ======= =============
    databox_id   94      The databox id of the record
    record_id    5694    The record_id
    metadatas    Array   An array of metadatas, each metadatas is an array itself with three keys : meta_struct_id (int), meta_id (int or null) and value (Array)
   ============ ======= =============
-  
+
 Response Fields
 ---------------
 
   ========== ================================
    Field      Description
   ========== ================================
-   metadatas 	The list of the metadatas of the record 
+   metadatas 	The list of the metadatas of the record
   ========== ================================
 
 ** Example **
@@ -43,39 +43,41 @@ Response Fields
 
     metadatas[0][meta_struct_id]=1&
     metadatas[0][meta_id]=&
-    metadatas[0][value][0]=prettystring&
+    metadatas[0][value]=prettystring&
     metadatas[1][meta_struct_id]=3&
     metadatas[1][meta_id]=487&
-    metadatas[1][value][0]=onekeyword&
-    metadatas[1][value][1]=twokeyword&
-    metadatas[2][meta_struct_id]=7&
-    metadatas[2][meta_id]=489&
-    metadatas[2][value][]=&
+    metadatas[1][value]=onekeyword&
+    metadatas[2][meta_struct_id]=3&
+    metadatas[2][meta_id]=488&
+    metadatas[2][value]=twokeyword&
+    metadatas[3][meta_struct_id]=7&
+    metadatas[3][meta_id]=489&
+    metadatas[3][value]=&
 
-is equivalent to 
+is equivalent to
 
   .. code-block:: javascript
 
     metadatas = {
         {
-            meta_struct_id: 1,     // current metadata refers to metadata structure id '1' ; see [[routes:databoxes:metadatas]]
-            meta_id: null,         // current meta_id refers to caption's field meta id ; see [[routes:records:metadatas]] ; this case, meta_id is null because there's currently no value set, the field will be created
-            value : [              // value is always an Array ; for mono-valued metadatas, if array length is > 1, values are serialized with a space separator
-                'A pretty string'
-            ]
+            meta_struct_id: 1,        // current metadata refers to metadata structure id '1' ; see [[routes:databoxes:metadatas]]
+            meta_id: null,            // current meta_id refers to caption's field meta id ; see [[routes:records:metadatas]] ; this case, meta_id is null because there's currently no value set, the field will be created
+            value : 'A pretty string' // value is always a String
         },
         {
             meta_struct_id: 3,
             meta_id: 487,          // this case, meta_id is not null because there's currently some datas, the field will be updated
-            value: [
-                'one key word',
-                'two key word'
-            ]
+            value: 'one key word'
+        },
+        {
+            meta_struct_id: 3,
+            meta_id: 488,          // this case, meta_id is not null because there's currently some datas, the field will be updated
+            value: 'two key word'
         },
         {
             meta_struct_id: 7,
             meta_id: 489,
-            value: []              // this case, the value is empty, the field will be deleted
+            value: ''              // this case, the value is empty, the field will be deleted
         }
     }
 
@@ -107,26 +109,13 @@ Response sample
                     "meta_id": 487,
                     "meta_structure_id": 3,
                     "name": "Categorie",
-                    "value": [
-                        "onekeyword",
-                        "twokeyword"
-                    ]
+                    "value": "onekeyword"
                 },
-                "6273": {
-                    "meta_id": 6273,
-                    "meta_structure_id": 4,
-                    "name": "MotsCles",
-                    "value": [
-                        "ciel",
-                        "météo",
-                        "nuage"
-                    ]
-                },
-                "6274": {
-                    "meta_id": 6274,
-                    "meta_structure_id": 13,
-                    "name": "Titre",
-                    "value": "Ciel"
+                "488": {
+                    "meta_id": 488,
+                    "meta_structure_id": 3,
+                    "name": "Categorie",
+                    "value": "twokeyword"
                 }
             }
         }

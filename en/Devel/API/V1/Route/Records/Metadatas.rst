@@ -4,14 +4,14 @@ Records Metadatas
 About
 -----
 
-  Returns the metadatas of a record 
+  Returns the metadatas of a record
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/metadatas/
 
   ======================== =====
-   Informations 
+   Informations
   ======================== =====
    HTTP Method              GET
    Requires Authentication  Yes
@@ -21,10 +21,10 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information 
+   Parameters               Value          Information
   ======================== ============== =============
    databox_id               94             The databox id of the record
-   record_id                5694           The record_id 
+   record_id                5694           The record_id
   ======================== ============== =============
 
 Response Fields
@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   metadatas  The list of the metadatas of the record 
+   metadatas  The list of the metadatas of the record
   ========== ================================
 
 Response sample
@@ -69,14 +69,22 @@ Response sample
                     "meta_id": 6273,
                     "meta_structure_id": 4,
                     "name": "MotsCles",
-                    "value": [
-                        "ciel",
-                        "météo",
-                        "nuage"
-                    ]
+                    "value": "ciel"
                 },
                 "6274": {
                     "meta_id": 6274,
+                    "meta_structure_id": 4,
+                    "name": "MotsCles",
+                    "value": "météo"
+                },
+                "6275": {
+                    "meta_id": 6275,
+                    "meta_structure_id": 4,
+                    "name": "MotsCles",
+                    "value": "nuage"
+                },
+                "6276": {
+                    "meta_id": 6276,
                     "meta_structure_id": 13,
                     "name": "Titre",
                     "value": "Ciel"

@@ -1,0 +1,40 @@
+Version 3.6
+===========
+
+Changes :
+-----------------
+
+  * A major schema enhancement happens for meta values. Multivalued values were
+    stored serialized and are now stored separatly.
+    Two routes are modified : :doc:`Records/Metadatas
+    </Devel/API/V1/Route/Records/Metadatas>` and :doc:`Records/SetMetadatas
+    </Devel/API/V1/Route/Records/SetMetadatas>`.
+    A route has been added to make it easy to display caption :
+    :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
+
+  .. seealso:: :doc:`Complete documentation to upgrade to API 1.1
+        </Devel/API/V1/Upgrade/1.1>`
+
+  .. warning::
+
+        As this is a schema change, there is no backward compatibility
+        with API 1.0 which is no longer supported in Phraseanet 3.6.
+
+        Please upgrade your adapters before upgrade Phraseanet.
+
+
+What's new ?
+--------------
+
+  * Push / Feedback refactor.
+
+  * Users can now create users lists to easily push and validate records. These
+    lists can be shared between users.
+
+  * WorkZone refactor.
+
+  * Baskets can now be "Archived".
+
+  * Add a baskets browser to Unarchived previous baskets.
+
+  * Multivalued fields can now contains ressources like users as values.

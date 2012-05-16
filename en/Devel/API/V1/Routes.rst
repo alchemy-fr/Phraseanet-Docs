@@ -11,6 +11,7 @@ Routes
     Route/Databox/Metadatas
     Route/Databox/TermsOfUse
     Route/Records/Search
+    Route/Records/Caption
     Route/Records/Metadatas
     Route/Records/Status
     Route/Records/Embed
