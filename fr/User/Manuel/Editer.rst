@@ -63,7 +63,6 @@ cliqué sur le bouton "Valider".
 Editer des champs de type date
 ******************************
 
-
 *  -> Sélectionner le ou les documents pour lesquels la date doit être modifiée 
    ou ajoutée.
 
@@ -77,7 +76,7 @@ Editer des champs de type texte intégral
 **************************************** 
 
 * -> Sélectionner le ou les documents sur lesquels apporter une modification
-* -> Cliquer dans un champs de type texte
+* -> Cliquer dans un champ de type texte
 * -> Saisir les informations souhaitées
 
 .. image:: ../../images/Prod-Editer-texte.jpg
@@ -97,10 +96,10 @@ Editer des champs textuels multi-valués
 ***************************************
 
 * -> Sélectionner le ou les documents sur lesquels apporter une modification
-* -> Cliquer dans un champs textuel de type multi-valué
+* -> Cliquer dans un champ textuel de type multi-valué
 
 Les informations déjà présentes dans les notices de chaque document sélectionné 
-sont affichées dans le champs ici "Mots Clés".
+sont affichées dans le champ ici "Mots Clés".
 Les mots clés communs à toutes les notices sont en caractères blancs, ceux 
 présents seulement sur certaines notices en Orange.
 
@@ -146,8 +145,6 @@ Placé sur un champ lié à une source de données, ...
 * -> Sélectionner la valeur souhaitée au clavier ou à la souris
 
 
-
-
 Editer à partir du thésaurus
 ****************************
  
@@ -157,7 +154,7 @@ Les saisies sont assistées pour les champs qui ont été liés à des branches 
 thésaurus.
 
 * -> Cliquer sur l'onglet thésaurus
-* -> Sélectionner un champs du type textuel lié au thésaurus
+* -> Sélectionner un champ du type textuel lié au thésaurus
 * -> Commencer à saisir un terme
  
 
@@ -180,8 +177,8 @@ thésaurus.
 Editer à partir des valeurs suggérées
 *************************************
 
-Si des valeurs suggérées ont été définies pour le champs, la liste apparaît 
-sous forme de menu contextuel dans la fenêtre à gauche du nom du champs.
+Si des valeurs suggérées ont été définies pour le champ, la liste apparaît 
+sous forme de menu contextuel dans la fenêtre à gauche du nom du champ.
 
 :doc:`Se reporter à la section Préférences: Valeurs suggérées dans l'interface 
 Phraseanet Administration <Administration>`
@@ -196,7 +193,7 @@ Phraseanet Administration <Administration>`
 * -> Faire un double clic pour sélectionner une valeur dans la liste
 
 
-* => la valeur est ajoutée au champs. 
+* => la valeur est ajoutée au champ. 
 
 .. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste en 
           appuyant sur la touche "cmd" ou "ctrl"
@@ -223,7 +220,7 @@ sur les documents en cours d’édition.
 	   :alt: alternate text
 	   :align: center
 
-* -> Restreindre si nécessaire la fonction à un champs en particulier, 
+* -> Restreindre si nécessaire la fonction à un champ en particulier, 
   à partir du menu déroulant, par défaut dans tous les champs
 * -> Saisir le terme à Rechercher dans les notices des documents en cours 
   d’édition
@@ -234,9 +231,8 @@ sur les documents en cours d’édition.
 * => Le nouveau terme remplace le précédent dans les notices 
 
  
-Utiliser l'onglet  Modèles
+Utiliser l'onglet Modèles
 **************************
-
 
 Cette fonction permet de créer et d'utiliser ensuite des modèles de notices
 pré remplies.
@@ -286,7 +282,7 @@ Chaque reportage dispose de sa propre notice descriptive. Il est donc possible
 d'éditer en lots ces notices de reportage.
 
 
-Editer Les notices de reportages
+Editer les notices de reportages
 ********************************
 
 En mode recherche reportage 
@@ -326,7 +322,7 @@ Les reportages ont par défaut une image de "dossier" pour les illustrer.
 * -> L’image du dossier est remplacée par la vignette du document choisi
 
 
-Pour compléter la notice du reportage
+Pour compléter la notice du reportage:
 
 * -> Cliquer sur l’image de représentation du reportage «  en haut à gauche de 
   la fenêtre "Editer"
@@ -338,7 +334,6 @@ Pour compléter la notice du reportage
 * -> Compléter les champs à modifier
  	
 * -> Cliquer sur Valider pour enregistrer les modifications.
-
 
 
 Editer les Status
