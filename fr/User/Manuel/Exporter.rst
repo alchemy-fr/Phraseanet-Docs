@@ -81,9 +81,8 @@ FTP
 Cet onglet permet de saisir manuellement les coordonnées du serveur FTP de
 destination mais peut aussi appeler des "pré-configurations".
 
-*Les Pré-configurations correspondent à des adresses FTP saisies
-dans la partie "gestion des utilisateurs"
-de :doc:`Phraseanet Administration <Administration>`.*
+*Les Pré-configurations correspondent à l'adresse FTP saisie
+dans la partie "Mon compte".
 
 Il est possible de demander l’envoi d’un email de confirmation à l’utilisateur
 envoyant les éléments et au destinataire pour l’informer de la mise à
@@ -109,6 +108,6 @@ ne bénéficiant pas des droits de téléchargement.
 
 Remplir et soumettre le formulaire affiché.
 
-Le gestionnaire de commande est averti de la commande par notification dans 
+Le gestionnaire de commande est averti de la commande par notification dans
 Phraseanet ou bien par e-mail.
 
