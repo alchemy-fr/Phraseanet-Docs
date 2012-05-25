@@ -43,8 +43,7 @@ Ouvrir un Thesaurus
    :align: center
 
 
-
-La fenêtre de l’application Thésaurus est découpée en deux parties 
+La fenêtre de l’application Thésaurus est découpée en deux parties. 
 
 La partie droite de la fenêtre présente la liste des « termes candidats », 
 mots et expressions issus de l’indexation de documents ainsi que la liste de 
@@ -55,12 +54,10 @@ La partie gauche présente le thésaurus existant, sous forme « d’un arbre »
 qui se déploie.
 En positionnant le curseur sur une branche ou un terme, 
 on affiche en « Rollover » l’ensemble des synonymes qui lui sont associés et 
-le nombre d’occurrences dans la base de données
+le nombre d’occurrences dans la base de données.
 
 Pour ouvrir une branche, cliquer sur le symbole "Plus" 
 Pour fermer une branche, cliquer sur le symbole "Moins"
-
-
 
 
 Travailler sur un thésaurus
@@ -71,7 +68,7 @@ Créer un nouveau terme spécifique
 
 Ajouter un nouveau terme spécifique à une branche signifie que l’on rajoute 
 un terme au niveau inférieur, il s’agit donc d’une relation « Père / Fils ».
-Un nouveau terme spécifique dans le thesaurus, peut êtreajouter sur 
+Un nouveau terme spécifique dans le thesaurus peut être ajouté sur 
 n'importe quelle branche existante depuis le branche racine intitulée 
 "Thésaurus".
 
@@ -95,7 +92,7 @@ n'importe quelle branche existante depuis le branche racine intitulée
    :alt: alternate text
    :align: center
 
-Par défaut la case " Ajouter le terme sans ré-indexer" est coché.
+Par défaut la case " Ajouter le terme sans ré-indexer" est cochée.
 
 Une vérification dans Phraseanet Prodcution permettra de savoir si le terme 
 existe déjà dans la base et dans ce cas une ré-indexation sera nécessaire
@@ -104,19 +101,17 @@ pour que les notices des documents et les termes du thésaurus soit liés.
 * -> Cocher la case "Ajouter le terme et ré-indexer"
 
 .. note:: La ré-indexation immédiate n'est pas nécessaire si d'autre termes
-   doivent être encore ajoutés. la ré-indexation pourra se faire à postériori
+   doivent être encore ajoutés. la ré-indexation pourra se faire à posteriori
    depuis Phraseanet Admin.
 
 * -> Cliquer sur Valider 
-
-
 
 
 Créer un nouveau synonyme
 *************************
 
 Un synonyme permet de prendre en compte aussi bien les besoins de traduction, 
-que besoins de synonymie. 
+que les besoins de synonymie. 
 
 * -> Faire un clic Droit sur une branche
 * -> Cliquer sur "nouveau synonyme".
@@ -138,16 +133,16 @@ que besoins de synonymie.
    :alt: alternate text
    :align: center
 
-Par défaut la case " Ajouter le terme sans ré-indexer" est coché.
+Par défaut la case " Ajouter le terme sans ré-indexer" est cochée.
 
 Une vérification dans Phraseanet Prodcution permettra de savoir si le terme 
-existe déjà dans la base et dans ce cas une ré-indexation sera nécessaire
-pour que les notices des documents et les termes du thésaurus soit liés.
+existe déjà dans la base et dans ce cas, une ré-indexation sera nécessaire
+pour que les notices des documents et les termes du thésaurus soient liés.
 
 * -> Cocher la case "Ajouter le terme et ré-indexer"
 
 .. note:: La ré-indexation immédiate n'est pas nécessaire si d'autre termes
-   doivent être encore ajoutés. la ré-indexation pourra se faire à postériori
+   doivent être encore ajoutés. la ré-indexation pourra se faire à posteriori
    depuis Phraseanet Admin.
 
 * -> Cliquer sur Valider 
@@ -170,7 +165,7 @@ Supprimer une branche, un terme
 * -> Cliquer sur OK
 
 La branche ou le terme sont supprimés du thésaurus et sont copiés dans la 
-branche Stock des candidats
+branche Stock des candidats.
 
 
 Rechercher dans un Thesaurus
@@ -184,9 +179,8 @@ Rechercher dans un Thesaurus
 * -> Choisir parmi les options de recherche
 * -> CLiquer sur Chercher
 
-* => L'affichage du thésaurus se met a jour et les termes trouvés sont 
-     affichés
-
+* => L'affichage du thésaurus se met à jour et les termes trouvés sont 
+  affichés
 
 
 Lier une ou plusieurs branches du thésaurus à un champs documentaire
@@ -207,7 +201,7 @@ Lier une ou plusieurs branches du thésaurus à un champs documentaire
 .. note:: Tous les nouveaux termes contenus dans les fiches documentaires 
    des documents qui seront ajoutés ou dont l’indexation sera modifiée, 
    apparaîtront désormais sous forme de mots candidats 
-   dans une branche portant le nom du champ
+   dans une branche portant le nom du champ.
 
 
 Travailler sur les candidats
@@ -225,9 +219,8 @@ du thésaurus.
 Accepter un candidat
 ********************
 
-* -> Cliquer sur un terme candidat dans la fenêtre Stock et le 
-     glisser/déposer à la racine ou sur une branche du thésaurus 
-     dans la fenêtre thésaurus
+* -> Cliquer sur un terme candidat dans la fenêtre Stock et le glisser/déposer 
+  à la racine ou sur une branche du thésaurus dans la fenêtre thésaurus
 
 * => une fenêtre s'ouvre
 
