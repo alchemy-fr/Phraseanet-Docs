@@ -35,6 +35,7 @@ PHP
     * mbstring
     * mysql
     * pcre
+    * pcntl (unix)
     * SimpleXML
     * sockets
     * xsl +zlib
