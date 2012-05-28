@@ -32,7 +32,7 @@ intégré à l'application permet de lancer une sauvegarde de l'ensemble des bas
 
   .. code-block:: bash
 
-    php bin/console system:backupDB /repertoire/de/sauvegarde/
+    php bin/console system:backup-db /repertoire/de/sauvegarde/
 
 
 Cette commande peut être incluse dans un script de sauvegarde.

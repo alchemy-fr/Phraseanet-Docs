@@ -20,8 +20,8 @@ You will see something like :
       about:license                    This program license
     check
       check:config                     check configuration file
-      check:ensureDevSettings          Ensure development settings
-      check:ensureProductionSettings   Ensure production settings
+      check:ensure-dev-settings        Ensure development settings
+      check:ensure-production-settings Ensure production settings
       check:extension                  Delete a documentation field from a Databox
       check:system                     Check the configuration
     fields
@@ -36,10 +36,10 @@ You will see something like :
     sphinx
       sphinx:generate-suggestions      Generate suggestions for Sphinx Search Engine
     system
-      system:backupDB                  Backup Phraseanet Databases
-      system:clearCache                Empty cache directories, clear Memcached, Redis if avalaible
-      system:mailCheck                 Check if email addresses are unique (mandatory since 3.5)
-      system:templateGenerator         Generate template files
+      system:backup-db                 Backup Phraseanet Databases
+      system:clear-cache               Empty cache directories, clear Memcached, Redis if avalaible
+      system:mail-check                Check if email addresses are unique (mandatory since 3.5)
+      system:template-generator        Generate template files
       system:upgrade                   Upgrade Phraseanet to the lastest version
     task
       task:list                        List tasks
@@ -62,7 +62,7 @@ check:config
 Parse and check the structure of
 :doc:`configuration files  </Admin/Configuration>`
 
-check:ensureDevSettings
+check:ensure-dev-settings
 -----------------------
 
 Validate the consistency of configuration values ​​for a development environment.
@@ -70,7 +70,7 @@ Validate the consistency of configuration values ​​for a development environ
 
     * *--strict* : Fails on alerts.
 
-check:ensureProdSettings
+check:ensure-prod-settings
 ------------------------
 
 Validate the consistency of configuration values ​​for a production environment.
@@ -172,7 +172,7 @@ Get the current state of the Phraseanet
 | state unknown | 21              |
 +---------------+-----------------+
 
-system:backupDB
+system:backup-db
 ---------------
 
 Save states of current databases state.
@@ -180,12 +180,12 @@ Save states of current databases state.
 
     * *directory* : Directory where backups are stocked.
 
-system:clearCache
+system:clear-cache
 -----------------
 
 Clear all cach sytems used by Phraseanet.
 
-system:mailCheck
+system:mail-check
 ----------------
 
 Check user's mail unicity.
@@ -193,7 +193,7 @@ Check user's mail unicity.
 
     * *--list* : List all duplicates.
 
-system:templateGenerator
+system:template-generator
 ------------------------
 
 Load compiled templates.

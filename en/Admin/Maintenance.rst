@@ -27,7 +27,7 @@ Live backups should work.
 
   .. code-block:: bash
 
-      php bin/console system:backupDB /path/to/DBBackupDirectory/
+      php bin/console system:backup-db /path/to/DBBackupDirectory/
 
 This command can be included in a backup script.
 

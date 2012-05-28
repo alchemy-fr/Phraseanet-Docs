@@ -20,8 +20,8 @@ Vous aurez sur votre écran une liste de commande de la sorte :
       about:license                    This program license
     check
       check:config                     check configuration file
-      check:ensureDevSettings          Ensure development settings
-      check:ensureProductionSettings   Ensure production settings
+      check:ensure-dev-dettings        Ensure development settings
+      check:ensure-production-settings Ensure production settings
       check:extension                  Delete a documentation field from a Databox
       check:system                     Check the configuration
     fields
@@ -36,10 +36,10 @@ Vous aurez sur votre écran une liste de commande de la sorte :
     sphinx
       sphinx:generate-suggestions      Generate suggestions for Sphinx Search Engine
     system
-      system:backupDB                  Backup Phraseanet Databases
-      system:clearCache                Empty cache directories, clear Memcached, Redis if avalaible
-      system:mailCheck                 Check if email addresses are unique (mandatory since 3.5)
-      system:templateGenerator         Generate template files
+      system:backup-db                 Backup Phraseanet Databases
+      system:clear-cache               Empty cache directories, clear Memcached, Redis if avalaible
+      system:mail-check                Check if email addresses are unique (mandatory since 3.5)
+      system:template-generator        Generate template files
       system:upgrade                   Upgrade Phraseanet to the lastest version
     task
       task:list                        List tasks
@@ -62,7 +62,7 @@ Parse et vérifie la structure des
 :doc:`fichiers de configurations </Admin/Configuration>`
 
 
-check:ensureDevSettings
+check:ensure-dev-settings
 -----------------------
 
 Valide la cohérence des valeurs de configuration pour un environnement de
@@ -72,7 +72,7 @@ développement.
 
     * *--strict* : Echoue si il y a des alertes.
 
-check:ensureProdSettings
+check:ensure-prod-settings
 ------------------------
 
 Valide la cohérence des valeurs de configuration pour un environnement de
@@ -191,7 +191,7 @@ sphinx:generate-suggestions
 Génère des suggestions pour le moteur de recherche
 :doc:`Sphinx </Admin/Optimisation>`
 
-system:backupDB
+system:backup-db
 ---------------
 
 Sauvegarde l'état des bases de données.
@@ -199,13 +199,13 @@ Sauvegarde l'état des bases de données.
 
     * *directory* : Le répertoire ou stocker la sauvegarde.
 
-system:clearCache
+system:clear-cache
 -----------------
 
 Vide les systèmes de cache utilisés par Phraseanet.
 
 
-system:mailCheck
+system:mail-check
 ----------------
 
 Vérifie l'unicité des adresses mails des utilisateurs.
@@ -214,7 +214,7 @@ Vérifie l'unicité des adresses mails des utilisateurs.
 
     * *--list* : Liste tous les doublons.
 
-system:templateGenerator
+system:template-generator
 ------------------------
 
 Charge les fichiers de templates compilés.
