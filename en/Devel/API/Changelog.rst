@@ -1,6 +1,19 @@
 API Changelog
 =============
 
+1.2
+---
+
+La version 1.2 de l'API est rétro-compatible avec la version présédente.
+
+- Add route :doc:`/api/ <V1/Route/Api>`
+- Add route :doc:`/monitor/scheduler/ <V1/Route/monitor/scheduler/>`
+- Add route :doc:`/monitor/phraseanet/ <V1/Route/monitor/phraseanet/>`
+- Add route :doc:`/monitor/tasks/ <V1/Route/monitor/tasks/>`
+- Add route :doc:`/monitor/task/ <V1/Route/monitor/task/>`
+- Add route :doc:`/monitor/task/ <V1/Route/monitor/task/start/>`
+- Add route :doc:`/monitor/task/ <V1/Route/monitor/task/stop/>`
+
 1.1
 ---
 
