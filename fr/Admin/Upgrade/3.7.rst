@@ -8,6 +8,8 @@ Changement API V1.2 => lien vers le changelog API
 
 Changement de code de retour de la console
 
+tf-filename tf-basename tf-duration
+
 
 Quoi de neuf ?
 --------------
