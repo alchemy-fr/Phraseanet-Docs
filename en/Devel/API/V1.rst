@@ -6,6 +6,7 @@ Documentation API v1
 
    V1/Overview
    V1/Upgrade/1.1
+   V1/Upgrade/1.2
    V1/Authentication
    V1/Routes
 
