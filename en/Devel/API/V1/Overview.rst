@@ -40,10 +40,11 @@ Response :
 .. code-block:: yaml
 
     meta:
-      api_version: '1.0'
+      api_version: '1.2'
       request: 'GET /api/v1/feeds/288/content/'
       response_time: '2011-07-27T16:36:33+02:00'
       http_code: 200
+      error_type: null
       error_message: null
       error_details: null
       charset: UTF-8
@@ -66,10 +67,11 @@ Response :
 
     {
         "meta": {
-            "api_version": "1.0",
+            "api_version": "1.2",
             "request": "GET /api/v1/feeds/288/content/",
             "response_time": "2011-07-27T15:52:04+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
@@ -102,10 +104,11 @@ Response :
 
     foobar({
         "meta": {
-            "api_version": "1.0",
+            "api_version": "1.2",
             "request": "GET /api/v1/feeds/288/content/",
             "response_time": "2011-07-27T15:52:04+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
