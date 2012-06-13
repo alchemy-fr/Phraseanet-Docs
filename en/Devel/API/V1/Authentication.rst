@@ -57,7 +57,7 @@ Web based applications
 
   .. code-block:: bash
 
-    http://SERVER_NAME/api/oauthv2/authorize
+    https://SERVER_NAME/api/oauthv2/authorize
     ?client_id=YOUR_CLIENT_ID
     &response_type=code
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
@@ -66,13 +66,13 @@ Web based applications
 
   .. code-block:: bash
 
-    http://YOUR_REGISTERED_REDIRECT_URI/?code=CODE
+    https://YOUR_REGISTERED_REDIRECT_URI/?code=CODE
 
   Your server will **make a request** for
 
   .. code-block:: bash
 
-    http://SERVER_NAME/api/oauthv2/token
+    https://SERVER_NAME/api/oauthv2/token
     ?client_id=YOUR_CLIENT_ID
     &grant_type=authorization_code
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
@@ -94,7 +94,7 @@ Pure AJAX application
 
   .. code-block:: bash
 
-    http://SERVER_NAME/api/oauthv2/authorize
+    https://SERVER_NAME/api/oauthv2/authorize
     ?client_id=YOUR_CLIENT_ID
     &response_type=token
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
@@ -103,7 +103,7 @@ Pure AJAX application
 
   .. code-block:: bash
 
-    http://YOUR_REGISTERED_REDIRECT_URI/#access_token=ACCESS_TOKEN
+    https://YOUR_REGISTERED_REDIRECT_URI/#access_token=ACCESS_TOKEN
 
 Client-side application
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -140,6 +140,6 @@ Using your access token
 
   .. code-block:: bash
 
-      curl http://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
+      curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
 
 
