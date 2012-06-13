@@ -63,7 +63,7 @@ Parse and check the structure of
 :doc:`configuration files  </Admin/Configuration>`
 
 check:ensure-dev-settings
------------------------
+-------------------------
 
 Validate the consistency of configuration values ​​for a development environment.
  **option** :
@@ -71,7 +71,7 @@ Validate the consistency of configuration values ​​for a development environ
     * *--strict* : Fails on alerts.
 
 check:ensure-prod-settings
-------------------------
+--------------------------
 
 Validate the consistency of configuration values ​​for a production environment.
  **option** :
@@ -173,7 +173,7 @@ Get the current state of the Phraseanet
 +---------------+-----------------+
 
 system:backup-db
----------------
+----------------
 
 Save states of current databases state.
  **argument** :
@@ -181,12 +181,12 @@ Save states of current databases state.
     * *directory* : Directory where backups are stocked.
 
 system:clear-cache
------------------
+------------------
 
 Clear all cach sytems used by Phraseanet.
 
 system:mail-check
-----------------
+-----------------
 
 Check user's mail unicity.
  **option** :
@@ -194,7 +194,7 @@ Check user's mail unicity.
     * *--list* : List all duplicates.
 
 system:template-generator
-------------------------
+-------------------------
 
 Load compiled templates.
 
