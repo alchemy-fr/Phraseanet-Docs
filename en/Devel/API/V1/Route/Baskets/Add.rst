@@ -42,10 +42,11 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.0",
+            "api_version": "1.2",
             "request": "POST /api/v1/baskets/add/",
             "response_time": "2011-07-27T14:39:20+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"

@@ -87,13 +87,14 @@ Response sample
 ---------------
 
   .. code-block:: javascript
-
+    
     {
         "meta": {
-            "api_version": "1.0",
+            "api_version": "1.2",
             "request": "POST /api/v1/records/search/",
-            "response_time": "2011-07-27T12:14:00+02:00",
+            "response_time": "2012-06-13T14:14:12+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
@@ -101,117 +102,70 @@ Response sample
         "response": {
             "total_pages": 1,
             "current_page": 1,
-            "available_results": 9,
-            "total_results": 9,
+            "available_results": 1,
+            "total_results": 1,
             "error": "",
             "warning": "",
-            "query_time": "0,002",
-            "search_indexes": "documents1285798223, documents1234706250, documents3157751204, docs_realtime1285798223, docs_realtime1234706250, docs_realtime3157751204",
+            "query_time": 0.003656,
+            "search_indexes": "",
             "suggestions": [
                 {
-                    "value": "cr2",
+                    "value": "book",
                     "current": true,
-                    "hits": "9"
+                    "hits": "1"
                 }
             ],
             "results": [
                 {
-                    "databox_id": 52,
-                    "record_id": 5650,
-                    "mime_type": "image/x-canon-cr2",
-                    "title": "test001.CR2",
-                    "original_name": "test001.CR2",
-                    "last_modification": "2011-07-21T17:03:25+02:00",
-                    "created_on": "2011-07-21T17:03:25+02:00",
+                    "databox_id": 2,
+                    "record_id": 132,
+                    "mime_type": "image/jpeg",
+                    "title": "photo03.JPG",
+                    "original_name": "photo03.JPG",
+                    "last_modification": "2012-06-13T13:50:29+02:00",
+                    "created_on": "2012-06-13T13:49:29+02:00",
                     "collection_id": 1,
-                    "sha256": "3191af52748620e0d0da50a7b8020e118bd8b8a0845120b0bb480f646fd8d85b",
+                    "sha256": "60691f538bdac78197004edcfb77dc772d824daeca54bd13e59f6b485f0293bc",
                     "thumbnail": {
                         "permalink": {
-                            "created_on": "2011-11-09T11:33:34+01:00",
-                            "id": 2384,
+                            "created_on": "2012-06-13T13:51:06+02:00",
+                            "id": 343,
                             "is_activated": true,
-                            "label": "Fondation",
-                            "last_modified": "2011-11-09T11:33:34+01:00",
-                            "page_URL": "https://localhost/permalink/v1/Fondation/1/2151/HLm5eyxA/thumbnail/view/",
-                            "URL": "https://localhost/permalink/v1/Fondation/1/2151/HLm5eyxA/thumbnail/"
+                            "label": "photo03JPG",
+                            "last_modified": "2012-06-13T13:51:06+02:00",
+                            "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/view/",
+                            "url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/"
                         },
-                        "height": 144,
-                        "width": 192,
-                        "filesize": 4390,
+                        "height": 113,
+                        "width": 150,
+                        "filesize": 4271,
+                        "devices": [
+                            "screen"
+                        ],
                         "player_type": "IMAGE",
                         "mime_type": "image/jpeg"
                     },
                     "technical_informations": {
-                        "bits": 8
+                        "Aperture": 2.4,
+                        "CameraModel": "iPhone 4S",
+                        "Channels": 3,
+                        "ColorDepth": 8,
+                        "ColorSpace": "RGB",
+                        "FileSize": 2851233,
+                        "FlashFired": 0,
+                        "FocalLength": 4.28,
+                        "Height": 2448,
+                        "HyperfocalDistance": 2.0773522348635,
+                        "ISO": 400,
+                        "LightValue": 4.847996906555,
+                        "MimeType": "image/jpeg",
+                        "ShutterSpeed": 0.05,
+                        "Width": 3264
                     },
                     "phrasea_type": "image",
-                    "uuid": "7b8ef0e3-dc8f-4b66-9e2f-bd049d175124"
-                },
-                {
-                    "databox_id": 52,
-                    "record_id": 5235,
-                    "mime_type": "image/x-canon-cr2",
-                    "title": "test001.CR2",
-                    "original_name": "test001.CR2",
-                    "last_modification": "2011-07-20T14:33:46+02:00",
-                    "created_on": "2011-07-20T14:33:46+02:00",
-                    "collection_id": 1,
-                    "sha256": "3191af52748620e0d0da50a7b8020e118bd8b8a0845120b0bb480f646fd8d85b",
-                    "thumbnail": {
-                        "permalink": {
-                            "created_on": "2011-11-09T11:33:34+01:00",
-                            "id": 2384,
-                            "is_activated": true,
-                            "label": "Fondation",
-                            "last_modified": "2011-11-09T11:33:34+01:00",
-                            "page_URL": "https://localhost/permalink/v1/Fondation/1/2151/HLm5eyxA/thumbnail/view/",
-                            "URL": "https://localhost/permalink/v1/Fondation/1/2151/HLm5eyxA/thumbnail/"
-                        },
-                        "height": 144,
-                        "width": 192,
-                        "filesize": 4390,
-                        "player_type": "IMAGE",
-                        "mime_type": "image/jpeg"
-                    },
-                    "technical_informations": {
-                        "bits": 8
-                    },
-                    "phrasea_type": "image",
-                    "uuid": "7b8ef0e3-dc8f-4b66-9e2f-bd049d175124"
-                },
-                {
-                    "databox_id": 52,
-                    "record_id": 4757,
-                    "mime_type": "image/x-canon-cr2",
-                    "title": "test001.CR2",
-                    "original_name": "test001.CR2",
-                    "last_modification": "2011-07-19T11:29:15+02:00",
-                    "created_on": "2011-07-15T18:50:54+02:00",
-                    "collection_id": 1,
-                    "sha256": "3191af52748620e0d0da50a7b8020e118bd8b8a0845120b0bb480f646fd8d85b",
-                    "thumbnail": {
-                        "permalink": {
-                            "created_on": "2011-11-09T11:33:34+01:00",
-                            "id": 2384,
-                            "is_activated": true,
-                            "label": "Fondation",
-                            "last_modified": "2011-11-09T11:33:34+01:00",
-                            "page_URL": "https://localhost/permalink/v1/Fondation/1/2151/HLm5eyxA/thumbnail/view/",
-                            "URL": "https://localhost/permalink/v1/Fondation/1/2151/HLm5eyxA/thumbnail/"
-                        },
-                        "height": 144,
-                        "width": 192,
-                        "filesize": 4390,
-                        "player_type": "IMAGE",
-                        "mime_type": "image/jpeg"
-                    },
-                    "technical_informations": {
-                        "bits": 8
-                    },
-                    "phrasea_type": "image",
-                    "uuid": "7b8ef0e3-dc8f-4b66-9e2f-bd049d175124"
+                    "uuid": "d91372ec-ea94-4e8a-bf26-065ad8684180"
                 }
             ],
-            "query": "CR2"
+            "query": "book"
         }
     }

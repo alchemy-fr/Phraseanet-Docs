@@ -43,51 +43,76 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.0",
-            "request": "GET /api/v1/records/52/5780/metadatas/",
-            "response_time": "2011-07-27T12:55:47+02:00",
+            "api_version": "1.2",
+            "request": "GET /api/v1/records/2/132/metadatas/",
+            "response_time": "2012-06-13T14:05:53+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
         },
         "response": {
             "metadatas": {
-                "6271": {
-                    "meta_id": 6271,
+                "901": {
+                    "meta_id": 901,
+                    "meta_structure_id": 20,
+                    "name": "AppareilPhoto",
+                    "value": "iPhone 4S"
+                },
+                "902": {
+                    "meta_id": 902,
+                    "meta_structure_id": 21,
+                    "name": "NomDeFichier",
+                    "value": "photo03.JPG"
+                },
+                "903": {
+                    "meta_id": 903,
                     "meta_structure_id": 1,
                     "name": "Objet",
-                    "value": "Cielenété"
+                    "value": "Front cover of a book"
                 },
-                "6272": {
-                    "meta_id": 6272,
+                "904": {
+                    "meta_id": 904,
                     "meta_structure_id": 2,
                     "name": "Categorie",
-                    "value": "paysages"
+                    "value": "books"
                 },
-                "6273": {
-                    "meta_id": 6273,
+                "905": {
+                    "meta_id": 905,
                     "meta_structure_id": 4,
                     "name": "MotsCles",
-                    "value": "ciel"
+                    "value": "book"
                 },
-                "6274": {
-                    "meta_id": 6274,
+                "906": {
+                    "meta_id": 906,
                     "meta_structure_id": 4,
                     "name": "MotsCles",
-                    "value": "météo"
+                    "value": "javascript"
                 },
-                "6275": {
-                    "meta_id": 6275,
+                "907": {
+                    "meta_id": 907,
                     "meta_structure_id": 4,
                     "name": "MotsCles",
-                    "value": "nuage"
+                    "value": "oreilly"
                 },
-                "6276": {
-                    "meta_id": 6276,
-                    "meta_structure_id": 13,
-                    "name": "Titre",
-                    "value": "Ciel"
+                "908": {
+                    "meta_id": 908,
+                    "meta_structure_id": 6,
+                    "name": "Date",
+                    "value": "2012/06/15"
+                },
+                "909": {
+                    "meta_id": 909,
+                    "meta_structure_id": 9,
+                    "name": "Ville",
+                    "value": "Paris"
+                },
+                "910": {
+                    "meta_id": 910,
+                    "meta_structure_id": 11,
+                    "name": "Pays",
+                    "value": "France"
                 }
             }
         }

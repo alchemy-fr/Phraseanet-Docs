@@ -89,10 +89,11 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.0",
+            "api_version": "1.2",
             "request": "GET /api/v1/records/52/5780/metadatas/",
             "response_time": "2011-07-27T12:55:47+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"

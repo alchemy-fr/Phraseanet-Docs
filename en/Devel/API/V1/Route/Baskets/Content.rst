@@ -42,10 +42,11 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.0",
+            "api_version": "1.2",
             "request": "GET /api/v1/baskets/321/content/",
             "response_time": "2011-07-27T14:43:49+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
@@ -81,8 +82,8 @@ Response sample
                                         "is_activated": true,
                                         "label": "cestlafetejpg",
                                         "last_modified": "2011-11-07T12:33:19+01:00",
-                                        "page_URL": "http://local.phrasea/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/view/",
-                                        "URL": "https://localhost/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/"
+                                        "page_url": "https://library.net/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/view/",
+                                        "url": "https://library.net/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/"
                                     },
                                     "height": 200,
                                     "width": 150,
@@ -119,8 +120,8 @@ Response sample
                                         "is_activated": true,
                                         "label": "cestlafetejpg",
                                         "last_modified": "2011-11-07T12:33:19+01:00",
-                                        "page_URL": "http://local.phrasea/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/view/",
-                                        "URL": "https://localhost/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/"
+                                        "page_url": "https://library.net/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/view/",
+                                        "url": "https://library.net/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/"
                                     },
                                     "height": 200,
                                     "width": 150,

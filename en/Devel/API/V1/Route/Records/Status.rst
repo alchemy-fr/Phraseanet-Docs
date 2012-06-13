@@ -20,12 +20,12 @@ About
 Parameters
 ----------
 
-  ================ ========= =============
+  ================ ========= =============================
    Parameters       Value     Information 
-  ================ ========= =============
+  ================ ========= =============================
    databox_id       94 	      The databox id of the record
    record_id        5694      The record_id 
-  ================ ========= =============
+  ================ ========= =============================
 
 Response Fields
 ---------------
@@ -43,7 +43,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.0",
+            "api_version": "1.2",
             "request": "GET /api/v1/records/52/5780/status/",
             "response_time": "2011-07-27T12:58:42+02:00",
             "http_code": 200,

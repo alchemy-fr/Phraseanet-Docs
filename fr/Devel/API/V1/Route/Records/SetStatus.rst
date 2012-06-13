@@ -20,13 +20,13 @@ About
 Parameters
 ----------
 
-  ================ ========= =============
+  ================ ========= ==============================
    Parameters       Value     Information 
-  ================ ========= =============
+  ================ ========= ==============================
    databox_id 	    94        The databox id of the record
    record_id        5694      The record_id
    status           Array     The status to modify  
-  ================ ========= =============
+  ================ ========= ==============================
 
 ** Example **
 
@@ -60,10 +60,11 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.0",
+            "api_version": "1.2",
             "request": "POST /api/v1/records/52/4102/setstatus/",
             "response_time": "2011-07-27T14:08:06+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"

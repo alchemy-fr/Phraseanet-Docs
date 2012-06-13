@@ -41,52 +41,57 @@ Response sample
 
   .. code-block:: javascript
 
-      {
+    {
         "meta": {
-            "api_version": "1.1",
-            "request": "GET /api/v1/records/1/5409/caption/",
-            "response_time": "2012-03-08T16:36:39+01:00",
+            "api_version": "1.2",
+            "request": "GET /api/v1/records/2/132/caption/",
+            "response_time": "2012-06-13T14:04:41+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
         },
         "response": {
+            "1": {
+                "meta_structure_id": 1,
+                "name": "Objet",
+                "value": "Front cover of a book"
+            },
+            "2": {
+                "meta_structure_id": 2,
+                "name": "Categorie",
+                "value": "books"
+            },
             "4": {
                 "meta_structure_id": 4,
-                "name": "Keywords",
-                "value": "surf ; rio de janeiro"
+                "name": "MotsCles",
+                "value": "book ; javascript ; oreilly"
+            },
+            "6": {
+                "meta_structure_id": 6,
+                "name": "Date",
+                "value": "2012/06/15"
+            },
+            "9": {
+                "meta_structure_id": 9,
+                "name": "Ville",
+                "value": "Paris"
+            },
+            "11": {
+                "meta_structure_id": 11,
+                "name": "Pays",
+                "value": "France"
+            },
+            "20": {
+                "meta_structure_id": 20,
+                "name": "AppareilPhoto",
+                "value": "iPhone 4S"
             },
             "21": {
                 "meta_structure_id": 21,
-                "name": "FileName",
-                "value": "surf_rio_de_janeiro.png"
-            },
-            "24": {
-                "meta_structure_id": 24,
-                "name": "MimeType",
-                "value": "image/png"
-            },
-            "25": {
-                "meta_structure_id": 25,
-                "name": "Size",
-                "value": "866136"
-            },
-            "26": {
-                "meta_structure_id": 26,
-                "name": "Extension",
-                "value": "png"
-            },
-            "27": {
-                "meta_structure_id": 27,
-                "name": "Width",
-                "value": "900"
-            },
-            "28": {
-                "meta_structure_id": 28,
-                "name": "Height",
-                "value": "1101"
+                "name": "NomDeFichier",
+                "value": "photo03.JPG"
             }
         }
     }
-

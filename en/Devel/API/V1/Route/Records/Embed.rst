@@ -20,11 +20,23 @@ About
 Parameters
 ----------
 
+As of version 1.2, two new parameters are available : *devices* and *mimes*.
+If provided, the query is restricted to the corresponding medias.
+
+For exemple, if you want to retrieve all HTML5 videos for mobile, you have to provide the
+following parameters :
+
+  .. code-block::
+
+    devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
+
   ======================== ============== ==============================
    Parameters               Value          Information 
   ======================== ============== ==============================
    databox_id               94 	           The databox id of the record 
    record_id 	              5694 	         The record_id 
+   devices                  array          An array of devices to restrict the list (optionnal)
+   mimes                    array          An array of mime type to restrict the list (optionnal)
   ======================== ============== ==============================
 
 Response Fields
@@ -43,95 +55,111 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.0",
-            "request": "GET /api/v1/records/1/2151/embed/",
-            "response_time": "2011-11-10T11:50:19+01:00",
+            "api_version": "1.2",
+            "request": "GET /api/v1/records/2/132/embed/",
+            "response_time": "2012-06-13T14:05:16+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
         },
         "response": {
             "embed": {
-                "preview": {
+                "document": {
                     "permalink": {
-                        "created_on": "2011-11-09T11:33:06+01:00",
-                        "id": 2383,
+                        "created_on": "2012-06-13T13:49:33+02:00",
+                        "id": 336,
                         "is_activated": true,
-                        "label": "Fondation",
-                        "last_modified": "2011-11-09T11:33:06+01:00",
-                        "page_URL": "https://localhost/permalink/v1/Fondation/1/2151/1JNLGfHI/preview/view/",
-                        "URL": "https://localhost/permalink/v1/Fondation/1/2151/1JNLGfHI/preview/"
+                        "label": "photo03JPG",
+                        "last_modified": "2012-06-13T13:49:33+02:00",
+                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/0eHCZLVu/document/view/",
+                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/0eHCZLVu/document/"
                     },
-                    "height": 240,
-                    "width": 320,
-                    "filesize": 61010820,
-                    "player_type": "VIDEO_MP4",
-                    "mime_type": "video/mp4"
-                },
-                "thumbnail": {
-                    "permalink": {
-                        "created_on": "2011-11-09T11:33:34+01:00",
-                        "id": 2384,
-                        "is_activated": true,
-                        "label": "Fondation",
-                        "last_modified": "2011-11-09T11:33:34+01:00",
-                        "page_URL": "https://localhost/permalink/v1/Fondation/1/2151/HLm5eyxA/thumbnail/view/",
-                        "URL": "https://localhost/permalink/v1/Fondation/1/2151/HLm5eyxA/thumbnail/"
-                    },
-                    "height": 144,
-                    "width": 192,
-                    "filesize": 4390,
+                    "height": 2448,
+                    "width": 3264,
+                    "filesize": 2851323,
+                    "devices": [
+                        "all"
+                    ],
                     "player_type": "IMAGE",
                     "mime_type": "image/jpeg"
                 },
-                "document": {
+                "preview": {
                     "permalink": {
-                        "created_on": "2011-11-10T11:50:20+01:00",
-                        "id": 2385,
+                        "created_on": "2012-06-13T14:05:16+02:00",
+                        "id": 344,
                         "is_activated": true,
-                        "label": "Fondation",
-                        "last_modified": "2011-11-10T11:50:20+01:00",
-                        "page_URL": "https://localhost/permalink/v1/Fondation/1/2151/3y8UyeIB/document/view/",
-                        "URL": "https://localhost/permalink/v1/Fondation/1/2151/3y8UyeIB/document/"
+                        "label": "photo03JPG",
+                        "last_modified": "2012-06-13T14:05:16+02:00",
+                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/m9THchla/preview/view/",
+                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/m9THchla/preview/"
                     },
-                    "height": 240,
-                    "width": 320,
-                    "filesize": 83488678,
-                    "player_type": "UNKNOWN",
-                    "mime_type": "video/mpeg"
-                },
-                "preview_api": {
-                    "permalink": {
-                        "created_on": "2011-11-10T11:50:20+01:00",
-                        "id": 2386,
-                        "is_activated": true,
-                        "label": "Fondation",
-                        "last_modified": "2011-11-10T11:50:20+01:00",
-                        "page_URL": "https://localhost/permalink/v1/Fondation/1/2151/9foMA6do/preview_api/view/",
-                        "URL": "https://localhost/permalink/v1/Fondation/1/2151/9foMA6do/preview_api/"
-                    },
-                    "height": 240,
-                    "width": 320,
-                    "filesize": 61010820,
-                    "player_type": "VIDEO_MP4",
-                    "mime_type": "video/mp4"
-                },
-                "thumbnailgif": {
-                    "permalink": {
-                        "created_on": "2011-11-10T11:50:20+01:00",
-                        "id": 2387,
-                        "is_activated": true,
-                        "label": "Fondation",
-                        "last_modified": "2011-11-10T11:50:20+01:00",
-                        "page_URL": "https://localhost/permalink/v1/Fondation/1/2151/BMJowuEj/thumbnailgif/view/",
-                        "URL": "https://localhost/permalink/v1/Fondation/1/2151/BMJowuEj/thumbnailgif/"
-                    },
-                    "height": 144,
-                    "width": 192,
-                    "filesize": 154698,
+                    "height": 360,
+                    "width": 480,
+                    "filesize": 26595,
+                    "devices": [
+                        "screen"
+                    ],
                     "player_type": "IMAGE",
-                    "mime_type": "image/gif"
+                    "mime_type": "image/jpeg"
+                },
+                "thumbnail": {
+                    "permalink": {
+                        "created_on": "2012-06-13T13:51:06+02:00",
+                        "id": 343,
+                        "is_activated": true,
+                        "label": "photo03JPG",
+                        "last_modified": "2012-06-13T13:51:06+02:00",
+                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/view/",
+                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/"
+                    },
+                    "height": 113,
+                    "width": 150,
+                    "filesize": 4271,
+                    "devices": [
+                        "screen"
+                    ],
+                    "player_type": "IMAGE",
+                    "mime_type": "image/jpeg"
+                },
+                "preview_mobile": {
+                    "permalink": {
+                        "created_on": "2012-06-13T13:50:28+02:00",
+                        "id": 337,
+                        "is_activated": true,
+                        "label": "photo03JPG",
+                        "last_modified": "2012-06-13T13:50:28+02:00",
+                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/C9ldCA7C/preview_mobile/view/",
+                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/C9ldCA7C/preview_mobile/"
+                    },
+                    "height": 360,
+                    "width": 480,
+                    "filesize": 26595,
+                    "devices": [
+                        "handheld"
+                    ],
+                    "player_type": "IMAGE",
+                    "mime_type": "image/jpeg"
+                },
+                "thumbnail_mobile": {
+                    "permalink": {
+                        "created_on": "2012-06-13T13:50:28+02:00",
+                        "id": 338,
+                        "is_activated": true,
+                        "label": "photo03JPG",
+                        "last_modified": "2012-06-13T13:50:28+02:00",
+                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/DChy7kwo/thumbnail_mobile/view/",
+                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/DChy7kwo/thumbnail_mobile/"
+                    },
+                    "height": 113,
+                    "width": 150,
+                    "filesize": 4271,
+                    "devices": [
+                        "handheld"
+                    ],
+                    "player_type": "IMAGE",
+                    "mime_type": "image/jpeg"
                 }
             }
         }
