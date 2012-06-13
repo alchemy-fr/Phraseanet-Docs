@@ -12,11 +12,12 @@ Documentation API v1
 
 Hello world !
 
-L'API Phraseanet v1 gives you access to lots of Phraseanet data and lets
-you interact with them.
-Integrate the search engine, build your own applications and plugins!
-Give us your feedback and if you publish your code, let us know and
-we'll also do so.
+L'API Phraseanet vous permet de développer vos applications par dessus 
+Phraseanet.
+Cette API va vous permettre d'exploiter le contenu de votre médiathèque dans 
+vos applications.
+
+Donnez nous vos retours, publiez votre code !
 
 Start easy easy :
 
@@ -28,5 +29,4 @@ Si jamais vous trouviez un bug, merci de le rapporte à notre
 `mailing-list <https://groups.google.com/group/phraseanet-api>`_
 ou créez un ticket dans notre
 `bug-tracker public <https://github.com/alchemy-fr/Phraseanet/issues>`_.
-
 
