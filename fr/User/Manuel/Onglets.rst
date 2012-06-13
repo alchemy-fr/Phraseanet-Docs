@@ -2,10 +2,7 @@
 ==================
 .. toctree::
    :maxdepth: 1
-   
    :hidden:
-   
-   Les Paniers et les Reportages
    
 .. topic:: L'essentiel
 
@@ -19,6 +16,9 @@
     * Une aide à la recherche avec les `Propositions`_
     
     * Le `thesaurus`_ dans l'interface de *Phraseanet Production*
+
+Les Paniers et les Reportages
+-----------------------------
 
 Voici un aperçu de la Zone de travail (ou WorkZone). Ci-dessous, voici la vue 
 par défaut, à savoir les Paniers et des Reportages :

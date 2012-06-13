@@ -13,7 +13,6 @@ Pour accéder aux différentes sections, cliquer sur les liens ci-dessous :
    Manuel/Fondamentaux
    Manuel/Importer
    Manuel/ProductionGerer
-   Manuel/Gerer/Editer
    Manuel/Lightbox
    Manuel/Statistiques
    Manuel/Thesaurus

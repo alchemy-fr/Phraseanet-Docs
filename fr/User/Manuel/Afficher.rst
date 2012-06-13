@@ -101,7 +101,7 @@ deux possibilités:
 Sélectionner une vignette dans la zone des résultats, dans les paniers ou dans 
 les reportages en cliquant dans son cadre. La couleur de fonds de la vignette change. 
 
-La couleur de sélection peut être modifiée dans les `Préférences d'affichage`_.
+La couleur de sélection peut être modifiée dans les Préférences d'affichage.
 
   .. image:: ../../images/Affichage-selection1.jpg
 	   :alt: alternate text

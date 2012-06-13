@@ -44,6 +44,7 @@ Se reporter à la section :doc:`personnaliser l'interface <PersonnaliserInterfac
 
 Accès aux paramètres du compte
 ******************************
+
 Cliquer sur l'identifiant d'utilisateur affiché pour accéder aux réglages du
 compte.
 Une nouvelle page s'ouvre et présente un groupe de formulaires permettant de
@@ -59,7 +60,8 @@ Cliquer sur l'identifiant affiché pour accéder aux informations du compte.
 	   :align: center
 
 Informations
-^^^^^^^^^^^
+^^^^^^^^^^^^
+
 La section Informations est consacrée aux données personnelles. Elle permet de
 saisir ou de modifier les informations relatives à l'identité, aux coordonnées
 postales, téléphoniques, d'email, de paramétrer la réception des notifications
@@ -68,6 +70,7 @@ réception de documents sur un serveur supportant ce type de connexion.
 
 Accès
 ^^^^^
+
 La section *Accès* liste les bases et collections de l'application Phraseanet.
 Elle mentionne les collections auxquelles l'utilisateur connecté a accès.
 L'utilisateur peut à tout moment effectuer une demande d'accès à une collection

@@ -3,8 +3,10 @@ Paniers et Reportages
 .. toctree::
    :maxdepth: 3
 
-Les Paniers et les Reportages se trouvent dans :doc:`la zone de travail <Onglets>` sur le même onglet. 
+Les Paniers et les Reportages se trouvent dans :doc:`la zone de travail <Onglets>` 
+sur le même onglet. 
 Ils sont différenciés par la couleur : 
+
     * *Gris* pour les paniers
     * *Bleu* pour les reportages 
 

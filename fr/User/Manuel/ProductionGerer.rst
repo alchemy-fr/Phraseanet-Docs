@@ -1,7 +1,5 @@
 Production : Gérer les média
 ============================
-.. toctree::
-   :maxdepth: 2
 
 .. topic:: L'essentiel
 
@@ -14,16 +12,15 @@ Production : Gérer les média
 
 .. toctree::
    :maxdepth: 1
-   :glob:
-
-   Onglets
-   :hidden:
    
+   Onglets
    PaniersReportages
    Actions
    Editer
    Push
    Publier
+   Bridge
+   PersonnaliserInterface
    
    
    
