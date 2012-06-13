@@ -5,8 +5,8 @@ A propos
 --------
 
   Cette route est disponible depuis la version 1.2 de Phraseanet et fourni 
-publiquement des informations sur l'API Phraseanet. Cette route n'est pas 
-versionnée.
+  publiquement des informations sur l'API Phraseanet. Cette route n'est pas 
+  versionnée.
 
   .. code-block:: bash
 

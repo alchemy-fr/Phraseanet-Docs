@@ -63,7 +63,7 @@ Parse et vérifie la structure des
 
 
 check:ensure-dev-settings
------------------------
+-------------------------
 
 Valide la cohérence des valeurs de configuration pour un environnement de
 développement.
@@ -73,7 +73,7 @@ développement.
     * *--strict* : Echoue si il y a des alertes.
 
 check:ensure-prod-settings
-------------------------
+--------------------------
 
 Valide la cohérence des valeurs de configuration pour un environnement de
 production.
@@ -192,7 +192,7 @@ Génère des suggestions pour le moteur de recherche
 :doc:`Sphinx </Admin/Optimisation>`
 
 system:backup-db
----------------
+----------------
 
 Sauvegarde l'état des bases de données.
  **argument** :
@@ -200,13 +200,13 @@ Sauvegarde l'état des bases de données.
     * *directory* : Le répertoire ou stocker la sauvegarde.
 
 system:clear-cache
------------------
+------------------
 
 Vide les systèmes de cache utilisés par Phraseanet.
 
 
 system:mail-check
-----------------
+-----------------
 
 Vérifie l'unicité des adresses mails des utilisateurs.
 
@@ -215,7 +215,7 @@ Vérifie l'unicité des adresses mails des utilisateurs.
     * *--list* : Liste tous les doublons.
 
 system:template-generator
-------------------------
+-------------------------
 
 Charge les fichiers de templates compilés.
 

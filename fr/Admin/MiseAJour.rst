@@ -4,6 +4,7 @@ Mise à jour
 
 .. toctree::
 
+    Upgrade/3.6
     Upgrade/3.7
 
 Lors de la publication d'une nouvelle version, pour procéder à la mise à jour
