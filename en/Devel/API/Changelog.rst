@@ -10,7 +10,7 @@ carefull with the bug fix below).
 Bug fix
 *******
 
-:doc:`feed content Routes/Feed/Content` route response was looking like
+:doc:`feed content <V1/Route/Feeds/Content>` route response was looking like
 
   .. code-block:: javascript
 
@@ -120,14 +120,14 @@ Hypermedia links
 ****************
 
 Some hypermedia links have appeared in responses. For example, in the response
-of :doc:`feed/content <Route/Feed/Content>`, a link to the corresponding 
-:doc:`feed/entry <Route/Feed/Entry>` is given for each entry.
+of :doc:`feed/content <V1/Route/Feeds/Content>`, a link to the corresponding 
+:doc:`feed/entry <V1/Route/Feeds/Entry>` is given for each entry.
 
 Request a media depending on device and/or mime type
 ****************************************************
 
 You can now restrict to some devices and/or mime types in the 
-:doc:`records/embed Routes/Records/Embed` route.
+:doc:`records/embed <V1/Route/Records/Embed>` route.
 
 1.1
 ---

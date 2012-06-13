@@ -11,6 +11,7 @@ Routes
     Route/Databox/TermsOfUse
     Route/Quarantine/List
     Route/Quarantine/Item
+    Route/Records/Add
     Route/Records/Search
     Route/Records/Caption
     Route/Records/Metadatas
@@ -60,7 +61,7 @@ For example, you can get the permalinks of a record with the following route:
 | records   |* :doc:`search <Route/Records/Search>`  |* :doc:`metadatas <Route/Records/Metadatas>`    |* :doc:`setstatus <Route/Records/SetStatus>`          |
 |           |                                        |* :doc:`status <Route/Records/Status>`          |* :doc:`setcollection <Route/Records/SetCollection>`  |
 |           |                                        |* :doc:`embed <Route/Records/Embed>`            |* :doc:`setmetadatas <Route/Records/SetMetadatas>`    |
-|           |                                        |* :doc:`related <Route/Records/Related>`        |                                                      |
+|           |                                        |* :doc:`related <Route/Records/Related>`        |* :doc:`add <Route/Records/Add>`                      |
 |           |                                        |* :doc:`record <Route/Records/Record>`          |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | baskets   |* :doc:`list <Route/Baskets/List>`      |* :doc:`content <Route/Baskets/Content>`        |* :doc:`setname <Route/Baskets/SetName>`              |

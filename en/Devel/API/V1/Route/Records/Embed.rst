@@ -26,7 +26,7 @@ If provided, the query is restricted to the corresponding medias.
 For exemple, if you want to retrieve all HTML5 videos for mobile, you have to provide the
 following parameters :
 
-  .. code-block::
+  .. code-block:: bash
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 

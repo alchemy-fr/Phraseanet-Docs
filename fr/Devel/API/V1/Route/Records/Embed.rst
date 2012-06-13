@@ -26,7 +26,7 @@ Depuis la version 1.2, deux nouveaux paramètres sont disponibles : *devices* et
 Par exemple, pour retourner toutes les videos compatible HTML5 au format mobile,
 vous utiliserez les paramètres :
 
-  .. code-block::
+  .. code-block:: bash
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 

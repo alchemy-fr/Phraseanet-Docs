@@ -10,7 +10,7 @@ La version 1.2 de l'API est rétro-compatible avec la version précédente
 Correction de bug
 *****************
 
-La réponse de la route :doc:`feed content Routes/Feed/Content` était sous la 
+La réponse de la route :doc:`feed content <V1/Route/Feeds/Content>` était sous la 
 forme
 
   .. code-block:: javascript
@@ -121,14 +121,14 @@ Liens hypermedia
 ****************
 
 Des liens hypermedia apparaissent dans certaines réponses. Ainsi, dans une 
-réponse :doc:`feed/content <Route/Feed/Content>`, pour chaque entrée, un lien
-vers la route d'API :doc:`feed/entry <Route/Feed/Entry>` correspondant est fourni.
+réponse :doc:`feed/content <V1/Route/Feeds/Content>`, pour chaque entrée, un lien
+vers la route d'API :doc:`feed/entry <V1/Route/Feeds/Entry>` correspondant est fourni.
 
 Requeter un media via un device et/ou un type mime
 **************************************************
 
 Il est maintenant possible de restreindre la demande a une gamme de devices et
-de type mime dans la route :doc:`records/embed Routes/Records/Embed`
+de type mime dans la route :doc:`records/embed <V1/Route/Records/Embed>`
 
 1.1
 ---
