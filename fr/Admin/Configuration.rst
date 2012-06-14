@@ -37,6 +37,7 @@ en dessous la déclaration de cet environnement.
         orm: doctrine_dev
         cache: array_cache
         opcodecache: array_cache
+        border-manager: border_manager
 
 
 Détaillons la composition d'un environnement
@@ -54,6 +55,7 @@ Détaillons la composition d'un environnement
 * orm : Service de mapping à la base de donnée (requis)
 * cache : service de cache principal :doc:`cache </Admin/Optimisation>`
 * opcodecache : service de cache opcode :doc:`opcodecache </Admin/Optimisation>`
+* border-manager : service de douane
 
 Les différents services sont déclarés dans le fichier service.yml.
 
@@ -183,7 +185,7 @@ Voici le service *twig_prod*
     d'auto échappement.
   * optimizer : Activer
     `l'optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
-    
+
   .. seealso:: Pour plus de détails sur les options de l'environnement twig http://twig.sensiolabs.org/doc/api.html#environment-options
 
 Service de Log Doctrine Monolog
@@ -221,7 +223,7 @@ pour le log du service Doctrine.
     service.
 
     * stream : Ecrire les logs dans un fichier.
-    * rotate : Ecrire les logs dans un fichiers qui sont renouvelés tous 
+    * rotate : Ecrire les logs dans un fichiers qui sont renouvelés tous
       les jours et limiter le nombre de fichiers enregistrés.
 
   * filename: Le nom du fichier de log.
@@ -276,6 +278,153 @@ Services de Cache MemcacheCache
 
 * host: Adresse du serveur Memcached
 * port: Port du serveur Memcached
+
+Services des douanes
+^^^^^^^^^^^^^^^^^^^^
+
+Ce service a pour but d'effectuer des vérifications pour chaque fichier
+entrant dans Phraseanet. Si le processus de validation échoue le document
+sera envoyé dans la quarantaine.
+
+Le service permet de configurer les processus de validation des fichiers à
+l'aide de "Checker".
+
+Un "Checker" permet d'ajouter une contrainte de validation au processus de
+validation.
+
+Checkers disponibles :
+
++---------------------+------------------------------------------------------+-----------------------------------+
+|  Checker            |  Description                                         | Options                           |
++=====================+======================================================+===================================+
+| Checker\Sha256      | Vérifie si le fichier n'est pas un doublon           |                                   |
+|                     | En se basant sur la somme de controle "sha256"       |                                   |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\UUID        | Vérifie si le fichier n'est pas un doublon           |                                   |
+|                     | En se basant sur l'identifiant unique du fichier     |                                   |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\Dimension   | Vérification sur les dimensions du fichier           | width  : largeur du fichier       |
+|                     | (* si applicable)                                    | height : hauteur du fichier       |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\Extension   | Vérification sur les extensions du fichiers          | extensions : les extensions       |
+|                     |                                                      | de fichiers autorisées            |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\Filename    | Vérifie si le fichier n'est pas un doublon           | sensitive : active la             |
+|                     | En se basant sur son nom                             | sensibilité à la casse            |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\MediaType   | Vérification sur le type du fichier (Audio, Video...)| mediatypes : les types de         |
+|                     |                                                      | médias authorisés                 |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\Colorspace  | Vérification sur l'espace de couleur du fichier      | colorspaces : les types d'espace  |
+|                     | (* si applicable)                                    | colorimétrique authorisés         |
++---------------------+------------------------------------------------------+-----------------------------------+
+
+.. code-block:: yaml
+
+    #services.yml
+    Border:
+        border_manager:
+            type: Border\BorderManager
+            options:
+                enabled: true
+                checkers:
+                    -
+                        type: Checker\Sha256
+                        enabled: true
+                    -
+                        type: Checker\UUID
+                        enabled: true
+                    -
+                        type: Checker\Colorspace
+                        enabled: true
+                        options:
+                            colorspaces: [cmyk, grayscale, rgb]
+                    -
+                        type: Checker\Dimension
+                        enabled: false
+                        options:
+                            width: 80
+                            height: 80
+                    -
+                        type: Checker\Extension
+                        enabled: false
+                        options:
+                        extensions: [jpg, jpeg, png, pdf, doc, mpg, mpeg, avi, flv, mp3]
+                    -
+                        type: Checker\Filename
+                        enabled: true
+                        options:
+                            sensitive: true
+                    -
+                        type: Checker\MediaType
+                        enabled: false
+                        options:
+                            mediatypes: [Audio, Document, Flash, Image, Video]
+
+
+**Comment implémenter un checker ?**
+
+Tous les checkers étant déclarés dans le namespace Alchemy\\Phrasea\\Border\\Checker,
+il suffit de créer un nouvel objet dans ce namespace.
+Cet objet doit implémenter l'interface Alchemy\\Phrasea\\Border\\Checker\\Checker
+
+Par exemple : Créons un checker qui filtre les documents sur leur données GPS.
+
+.. code-block:: php
+
+    <?php
+        //Dans lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
+        namespace Alchemy/Phrasea/Border/Checker;
+
+        use Alchemy\Phrasea\Border\File;
+
+        use Doctrine\ORM\EntityManager;
+
+        class NorthPole implements Checker
+        {
+            //Option bar
+            protected $bar;
+
+            //Gestion des options
+            public function __construct(Array $options)
+            {
+                if( ! isset($options['bar']) {
+                    throw new \InvalidArgumentException('Missing bar option');
+                }
+
+                $this->bar = $options['bar'];
+            }
+
+            //Contrainte de validation, doit retourner un booleen
+            public function check(EntityManager $em, File $file)
+            {
+                $media = $file->getMedia();
+
+                if ( null !== $latitude = $media->getLatitude()
+                        && null !== $ref = $media->getLatitudeRef()) {
+
+                    if($latitude > 60
+                        && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
+
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        }
+    ?>
+
+Puis dans le fichier de configuration services.yml
+
+.. code-block:: yaml
+
+    #Dans le service Border
+    -
+        type: Checker\NorthPole
+        enabled: true
+        options:
+            bar: foo
 
 Réglages de collection
 ----------------------

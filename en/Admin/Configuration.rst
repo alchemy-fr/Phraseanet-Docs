@@ -34,6 +34,7 @@ declaration of this environment below.
         orm: doctrine_dev
         cache: array_cache
         opcodecache: array_cache
+        border-manager: border_manager
 
 
 Let's detail environment structure :
@@ -51,6 +52,7 @@ Let's detail environment structure :
 * orm : Database Object Relationnal Mapper (required)
 * cache : Main cache service :doc:`cache </Admin/Optimization>`
 * opcodecache : Opcode cache service :doc:`opcodecache </Admin/Optimization>`
+* border-manager : Border service 
 
 Services are setup in the service.yml file.
 
@@ -170,10 +172,10 @@ Here's *twig_prod*
   * charset : Template engine internal character encoding
   * strict_variable : Stop rendering on unknown vars (for developers)
   * autoescape: adds automatic output escaping.
-  * optimizer : Switch to 
+  * optimizer : Switch to
     `optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
     mode
-    
+
     .. seealso:: For more details on Twig environement options <http://twig.sensiolabs.org/doc/api.html#environment-options>
 
 Doctrine Monolog Log Service
@@ -196,25 +198,25 @@ Doctrine activity.
           filename: doctrine-query.log
 
 
-  * output : Choose output format. 
+  * output : Choose output format.
     Available mods.
 
     * json : Formatting in `Json <https://wikipedia.org/wiki/Json>`_
     * yaml : Formatting in `Yaml <https://wikipedia.org/wiki/Yaml>`_
-    * vdump : Display PHP output variable in a way that's readable by humans. 
+    * vdump : Display PHP output variable in a way that's readable by humans.
       see `var_dump <http://www.php.net/manual/fr/function.var-dump.php>`_
 
   * channel : Channel's name used by the logger service.
-    It's a way to identify on which part of the application the log entry is 
+    It's a way to identify on which part of the application the log entry is
     related on.
   * handler : Attribute a specific handler for the log service.
 
     * stream : Store logs into a single file.
-    * rotate : Stores logs to files that are rotated every day and a limited 
+    * rotate : Stores logs to files that are rotated every day and a limited
       number of files are kept.
 
   * filename: File's name.
-  * max_day : Specify in days the frequency operated on files for the rotated 
+  * max_day : Specify in days the frequency operated on files for the rotated
     handler.
 
 
@@ -271,6 +273,151 @@ Cache service MemcacheCache
 * host: Memcache server address
 * port: Memcache server port
 
+Border service
+^^^^^^^^^^^^^^
+
+This service handles validations constraints for each incoming files.
+
+If the validation process fails, the document will be send to the quarantine.
+
+The validation process is entirely customizable by adding some "Checkers".
+
+A "Checker" allows to add validation constraints to the process.
+
+Available checkers :
+
++---------------------+------------------------------------------------------+-----------------------------------+
+|  Checker            |  Description                                         | Options                           |
++=====================+======================================================+===================================+
+| Checker\Sha256      | Check for duplicated files based on their            |                                   |
+|                     | sha256 check sum                                     |                                   |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\UUID        | Check for duplicated files based on their UUID       |                                   |
+|                     |                                                      |                                   |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\Dimension   | Check file dimension (if applicable)                 | width  : file width               |
+|                     |                                                      | height : file height              |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\Extension   | Check file extension                                 | extensions : authorized file      |
+|                     |                                                      | extensions                        |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\Filename    | Check for duplicated files based on their filename   | sensitive : enable case           |
+|                     |                                                      | sensitivity                       |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\MediaType   | Check media type (Audio, Video...)                   | mediatypes : authorized media     |
+|                     |                                                      | types                             |
++---------------------+------------------------------------------------------+-----------------------------------+
+| Checker\Colorspace  | Check colorspace (if applicable)                     | colorspaces : authorized          |
+|                     |                                                      | colorspaces                       |
++---------------------+------------------------------------------------------+-----------------------------------+
+
+.. code-block:: yaml
+
+    #services.yml
+    Border:
+        border_manager:
+            type: Border\BorderManager
+            options:
+                enabled: true
+                checkers:
+                    -
+                        type: Checker\Sha256
+                        enabled: true
+                    -
+                        type: Checker\UUID
+                        enabled: true
+                    -
+                        type: Checker\Colorspace
+                        enabled: true
+                        options:
+                            colorspaces: [cmyk, grayscale, rgb]
+                    -
+                        type: Checker\Dimension
+                        enabled: false
+                        options:
+                            width: 80
+                            height: 80
+                    -
+                        type: Checker\Extension
+                        enabled: false
+                        options:
+                        extensions: [jpg, jpeg, png, pdf, doc, mpg, mpeg, avi, flv, mp3]
+                    -
+                        type: Checker\Filename
+                        enabled: true
+                        options:
+                            sensitive: true
+                    -
+                        type: Checker\MediaType
+                        enabled: false
+                        options:
+                            mediatypes: [Audio, Document, Flash, Image, Video]
+
+
+**How to implement a custom checker ?**
+
+Checker's object are declared in the Alchemy\\Phrasea\\Border\\Checker namespace,
+so you have to create a new object which implements Alchemy\\Phrasea\\Border\\Checker\\Checker
+interface in this namespace.
+
+For example : Let's create a checker which filters a document based on its GPS
+datas.
+
+.. code-block:: php
+
+    <?php
+        //In lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
+        namespace Alchemy/Phrasea/Border/Checker;
+
+        use Alchemy\Phrasea\Border\File;
+
+        use Doctrine\ORM\EntityManager;
+
+        class NorthPole implements Checker
+        {
+            //Option bar
+            protected $bar;
+
+            //Handle options
+            public function __construct(Array $options)
+            {
+                if( ! isset($options['bar']) {
+                    throw new \InvalidArgumentException('Missing bar option');
+                }
+
+                $this->bar = $options['bar'];
+            }
+
+            //Validation constraints, must return a boolean
+            public function check(EntityManager $em, File $file)
+            {
+                $media = $file->getMedia();
+
+                if ( null !== $latitude = $media->getLatitude()
+                        && null !== $ref = $media->getLatitudeRef()) {
+
+                    if($latitude > 60
+                        && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
+
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        }
+    ?>
+
+Then in services.yml configuration enable your checker.
+
+.. code-block:: yaml
+
+    #In Border scope
+    -
+        type: Checker\NorthPole
+        enabled: true
+        options:
+            bar: foo
 
 Collection Settings
 -------------------
