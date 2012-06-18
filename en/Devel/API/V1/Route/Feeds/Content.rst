@@ -64,7 +64,8 @@ Response sample
                 "total_entries": 2,
                 "icon": "/skins/icons/rss32.gif",
                 "public": true,
-                "is_mine": true,
+                "readonly": true,
+                "deletable": false,
                 "created_on": "2012-06-12T19:51:05+02:00",
                 "updated_on": "2012-06-12T19:51:05+02:00"
             },

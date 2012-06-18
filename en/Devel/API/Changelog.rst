@@ -4,37 +4,65 @@ API Changelog
 1.2
 ---
 
-Version 1.2 of Phraseanet API is backward compatible with the previous one. (Be
-carefull with the bug fix below).
+Version 1.2 of Phraseanet API is not backward compatible with the previous one. 
+
+A bug has been fixed in :doc:`feed content <V1/Route/Feeds/Content>` and the 
+route :doc:`feeds/content <Route/Feeds/Content>` has been updated.
+
+Description de flux
+*******************
+
+Attribute *is_mine* has been removed and is replaced by two new attributes :
+*readonly* and *deletable*.
+ 
+.. code-block:: javascript
+
+    "feeds": {
+        "288": {
+            "id": 288,
+            "title": "News",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
+            "total_entries": 0,
+            "icon": "/skins/icons/rss32.gif", 
+            "public": false,
+            "readonly": true,
+            "deletable": false,
+            "created_on": "2011-07-20T18:45:20+02:00",
+            "updated_on": "2011-07-20T18:45:20+02:00"
+        },
+
+.. note:: These attributes have also been added in 
+:doc:`feeds/list <Route/Feeds/List>`.
+
 
 Bug fix
 *******
 
 :doc:`feed content <V1/Route/Feeds/Content>` route response was looking like
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
-        "response": {
-            "offset_start": 0,
-            "entries": {
-                "offset_start": 0,
-                entries: {
-                    ...
-                }
-            }
-        }
-
-This wrong behavior has been fixed and the response is correctly returned as of
-1.2.
-
-  .. code-block:: javascript
-
-        "response": {
+    "response": {
+        "offset_start": 0,
+        "entries": {
             "offset_start": 0,
             "entries": {
                 ...
             }
         }
+    }
+
+This wrong behavior has been fixed and the response is correctly returned as of
+1.2.
+
+.. code-block:: javascript
+
+    "response": {
+        "offset_start": 0,
+        "entries": {
+            ...
+        }
+    }
 
 Route add
 *********
@@ -100,7 +128,7 @@ Embeddables
 Embeddable media now provides a list of supported devices. This devices are 
 compatible with CSS2 specification.
 
-..see ::
+.. seealso::
     http://www.w3.org/TR/CSS2/media.html#media-types
 
 The following thumbnail is compatible with a screen display

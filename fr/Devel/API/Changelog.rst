@@ -4,37 +4,65 @@ API Changelog
 1.2
 ---
 
-La version 1.2 de l'API est rétro-compatible avec la version précédente
-(attention à la correction du bogue ci-dessous).
+La version 1.2 de l'API présente deux problèmes de retro-compatibilité avec la 
+version précédente.
+
+Un bug a été corrigé et le retour de la route 
+:doc:`feeds/content <Route/Feeds/Content>` a été mis à jour.
+
+Description de flux
+*******************
+
+L'attribut "is_mine" a disparu au profit de deux nouvelles clefs : *readonly* et
+*deletable*.
+ 
+.. code-block:: javascript
+
+    "feeds": {
+        "288": {
+            "id": 288,
+            "title": "News",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
+            "total_entries": 0,
+            "icon": "/skins/icons/rss32.gif", 
+            "public": false,
+            "readonly": true,
+            "deletable": false,
+            "created_on": "2011-07-20T18:45:20+02:00",
+            "updated_on": "2011-07-20T18:45:20+02:00"
+        },
+
+.. note:: Ces attributs ont aussi été ajoutés dans la route 
+:doc:`feeds/list <Route/Feeds/List>`.
 
 Correction de bug
 *****************
 
-La réponse de la route :doc:`feed content <V1/Route/Feeds/Content>` était sous la 
-forme
+La réponse de la route :doc:`feed content <V1/Route/Feeds/Content>` était sous 
+la forme
+ 
+.. code-block:: javascript
 
-  .. code-block:: javascript
-
-        "response": {
-            "offset_start": 0,
-            "entries": {
-                "offset_start": 0,
-                entries: {
-                    ...
-                }
-            }
-        }
-
-Ce problème a été corrigé, et la réponse est correctement renvoyé en 1.2 :
-
-  .. code-block:: javascript
-
-        "response": {
+    "response": {
+        "offset_start": 0,
+        "entries": {
             "offset_start": 0,
             "entries": {
                 ...
             }
         }
+    }
+
+Ce problème a été corrigé, et la réponse est correctement renvoyé en 1.2 :
+
+.. code-block:: javascript
+
+    "response": {
+        "offset_start": 0,
+        "entries": {
+            ...
+        }
+    }
 
 Ajout de routes
 ***************
@@ -101,7 +129,7 @@ Embeddables media now give a
 Les embeddables fournissent maintenant une liste de *devices* adaptés. 
 Ces devices sont compatibles avec CSS 2.
 
-..see ::
+.. seealso::
     http://www.w3.org/TR/CSS2/media.html#media-types
 
 Exemple : la thumbnail suivante est fournie pour un affichage à l'écran.
