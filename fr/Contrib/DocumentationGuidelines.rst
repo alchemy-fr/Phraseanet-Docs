@@ -48,6 +48,9 @@ Structure
       H4 -- Sous sous section
       ^^^^^^^^^^^^^^^^^^^^^^^
 
+      H5
+      ~~~~~~~~~~~~~~~~~~~~~~~
+
   * Images ::
 
       .. figure:: ../images/gplv3.png

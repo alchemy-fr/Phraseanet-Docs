@@ -52,7 +52,7 @@ Let's detail environment structure :
 * orm : Database Object Relationnal Mapper (required)
 * cache : Main cache service :doc:`cache </Admin/Optimization>`
 * opcodecache : Opcode cache service :doc:`opcodecache </Admin/Optimization>`
-* border-manager : Border service 
+* border-manager : Border service
 
 Services are setup in the service.yml file.
 
@@ -353,6 +353,48 @@ Available checkers :
                         options:
                             mediatypes: [Audio, Document, Flash, Image, Video]
 
+Restrict on collections
+~~~~~~~~~~~~~~~~~~~~~~~
+
+It is possible to restrict the validation constraint on a set of collections by
+passing a list of base_id :
+
+.. code-block:: yaml
+
+    #services.yml
+    Border:
+        border_manager:
+            type: Border\BorderManager
+            options:
+                enabled: true
+                checkers:
+                    -
+                        type: Checker\Sha256
+                        enabled: true
+                        collections:
+                            - 4
+                            - 5
+
+The same restriction can be done at databoxes level :
+
+.. code-block:: yaml
+
+    #services.yml
+    Border:
+        border_manager:
+            type: Border\BorderManager
+            options:
+                enabled: true
+                checkers:
+                    -
+                        type: Checker\Sha256
+                        enabled: true
+                        databoxes:
+                            - 3
+                            - 7
+
+.. note:: It is not possible to restrict at databoxes and collections levels at
+    the same time.
 
 **How to implement a custom checker ?**
 

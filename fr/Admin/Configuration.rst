@@ -361,6 +361,48 @@ Checkers disponibles :
                         options:
                             mediatypes: [Audio, Document, Flash, Image, Video]
 
+Restriction sur collections
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Il est possible de restreindre la portée d'un checker sur un ensemble de
+collection en fournissant une liste de base_id correspondant:
+
+.. code-block:: yaml
+
+    #services.yml
+    Border:
+        border_manager:
+            type: Border\BorderManager
+            options:
+                enabled: true
+                checkers:
+                    -
+                        type: Checker\Sha256
+                        enabled: true
+                        collections:
+                            - 4
+                            - 5
+
+La même restriction peut être faite au niveau des databoxes :
+
+.. code-block:: yaml
+
+    #services.yml
+    Border:
+        border_manager:
+            type: Border\BorderManager
+            options:
+                enabled: true
+                checkers:
+                    -
+                        type: Checker\Sha256
+                        enabled: true
+                        databoxes:
+                            - 3
+                            - 7
+
+.. note:: Il n'est pas possible de restreindre à la fois sur des databoxes et
+    des collections.
 
 **Comment implémenter un checker ?**
 
