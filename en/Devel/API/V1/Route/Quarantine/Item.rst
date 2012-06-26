@@ -21,7 +21,7 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information 
+   Parameters               Type           Information
   ======================== ============== =============
    quarantine_id            integer        The id of the item
   ======================== ============== =============
@@ -52,7 +52,7 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "item": {
+            "quarantine_item": {
                 "id": 136,
                 "session": {
                     "id": 136,

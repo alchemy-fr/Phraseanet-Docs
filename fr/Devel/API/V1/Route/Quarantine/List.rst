@@ -21,7 +21,7 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information 
+   Parameters               Type           Information
   ======================== ============== =============
    offset_start             integer        the first entry to retrive
    per_page	                           the number of entry to retrieve
@@ -57,7 +57,7 @@ Response sample
         "response": {
             "offset_start": 0,
             "per_page": 10,
-            "items": [
+            "quarantine_items": [
                 {
                     "id": 145,
                     "session": {
