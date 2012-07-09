@@ -4,7 +4,7 @@ Records SetCollection
 About
 -----
 
-  Moves a record to another collection 
+  Moves a record to another collection
 
   .. code-block:: bash
 
@@ -21,11 +21,11 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information 
+   Parameters               Type           Information
   ======================== ============== =============
-   databox_id               94             The databox id of the record
-   record_id                5694           The record_id
-   base_id                  52             The base_id of the destination collection 
+   databox_id               integer        The databox id of the record
+   record_id                integer        The record_id
+   base_id                  integer        The base_id of the destination collection
   ======================== ============== =============
 
 Response Fields
@@ -34,7 +34,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   record 	  The record updated 
+   record 	  The record updated
   ========== ================================
 
 Response sample

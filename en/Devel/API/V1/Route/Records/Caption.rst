@@ -21,20 +21,20 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information
+   Parameters               Type           Information
   ======================== ============== =============
-   databox_id               1              The databox id of the record
-   record_id                5409           The record_id
+   databox_id               integer        The databox id of the record
+   record_id                integer        The record_id
   ======================== ============== =============
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   metadatas  The caption of the record
-  ========== ================================
+  =================== ================================
+   Field               Description
+  =================== ================================
+   caption_metadatas   The caption of the record
+  =================== ================================
 
 Response sample
 ---------------
@@ -44,8 +44,8 @@ Response sample
     {
         "meta": {
             "api_version": "1.2",
-            "request": "GET /api/v1/records/2/132/caption/",
-            "response_time": "2012-06-13T14:04:41+02:00",
+            "request": "GET /api/v1/records/1/644/caption/",
+            "response_time": "2012-06-29T16:57:02+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -53,45 +53,62 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "1": {
+            "caption_metadatas": [
+            {
                 "meta_structure_id": 1,
-                "name": "Objet",
-                "value": "Front cover of a book"
+                "name": "Object",
+                "value": "smoke"
             },
-            "2": {
-                "meta_structure_id": 2,
-                "name": "Categorie",
-                "value": "books"
-            },
-            "4": {
+            {
                 "meta_structure_id": 4,
-                "name": "MotsCles",
-                "value": "book ; javascript ; oreilly"
+                "name": "Keywords",
+                "value": "fumée ; smoke"
             },
-            "6": {
-                "meta_structure_id": 6,
-                "name": "Date",
-                "value": "2012/06/15"
-            },
-            "9": {
-                "meta_structure_id": 9,
-                "name": "Ville",
-                "value": "Paris"
-            },
-            "11": {
-                "meta_structure_id": 11,
-                "name": "Pays",
-                "value": "France"
-            },
-            "20": {
+            {
                 "meta_structure_id": 20,
-                "name": "AppareilPhoto",
-                "value": "iPhone 4S"
+                "name": "CameraModel",
+                "value": "NIKON D700"
             },
-            "21": {
-                "meta_structure_id": 21,
-                "name": "NomDeFichier",
-                "value": "photo03.JPG"
+            {
+                "meta_structure_id": 23,
+                "name": "Recordid",
+                "value": "644"
+            },
+            {
+                "meta_structure_id": 24,
+                "name": "MimeType",
+                "value": "image/jpeg"
+            },
+            {
+                "meta_structure_id": 25,
+                "name": "Size",
+                "value": "3221035"
+            },
+            {
+                "meta_structure_id": 26,
+                "name": "Extension",
+                "value": "JPG"
+            },
+            {
+                "meta_structure_id": 27,
+                "name": "Width",
+                "value": "4256"
+            },
+            {
+                "meta_structure_id": 28,
+                "name": "Height",
+                "value": "2832"
+            },
+            {
+                "meta_structure_id": 29,
+                "name": "Bits",
+                "value": "8"
+            },
+            {
+                "meta_structure_id": 30,
+                "name": "Channels",
+                "value": "3"
             }
+            ]
         }
     }

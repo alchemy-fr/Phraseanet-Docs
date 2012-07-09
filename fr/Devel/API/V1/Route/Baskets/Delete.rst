@@ -21,9 +21,9 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information 
+   Parameters               Type           Information
   ======================== ============== =============
-   basket_id                               the basket_id of the selected basket 
+   basket_id                integer        The basket_id of the selected basket
   ======================== ============== =============
 
 Response Fields
@@ -32,7 +32,7 @@ Response Fields
   ============= ================================
    Field         Description
   ============= ================================
-   baskets       The list of the baskets of the current user 
+   baskets       The list of the baskets of the current user
   ============= ================================
 
 Response sample
@@ -41,288 +41,95 @@ Response sample
   .. code-block:: javascript
 
     {
-        "meta": {
-            "api_version": "1.2",
-            "request": "POST /api/v1/baskets/721/delete/",
-            "response_time": "2011-07-27T14:52:34+02:00",
-            "http_code": 200,
-            "error_type": null,
-            "error_message": null,
-            "error_details": null,
-            "charset": "UTF-8"
-        },
-        "response": {
-            "baskets": {
-                "273": {
-                    "created_on": "2011-05-31T16:53:02+02:00",
-                    "description": "une belle desc",
-                    "name": "aéaa",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 273,
-                    "updated_on": "2011-07-15T19:50:41+02:00",
-                    "unread": false
-                },
-                "321": {
-                    "created_on": "2011-06-22T14:15:00+02:00",
-                    "description": "une belle desc",
-                    "name": "aéaa",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 321,
-                    "updated_on": "2011-07-27T13:34:23+02:00",
-                    "unread": false
-                },
-                "492": {
-                    "created_on": "2011-07-08T17:23:26+02:00",
+            "meta": {
+                "api_version": "1.2",
+                "request": "GET /api/v1/baskets/list/",
+                "response_time": "2012-06-29T16:30:46+02:00",
+                "http_code": 200,
+                "error_type": null,
+                "error_message": null,
+                "error_details": null,
+                "charset": "UTF-8"
+            },
+            "response": {
+                "baskets": [
+                {
+                    "basket_id": 141,
+                    "created_on": "2012-06-04T13:32:32+02:00",
                     "description": "",
-                    "name": "BIG BASKET",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 492,
-                    "updated_on": "2011-07-27T13:34:03+02:00",
-                    "unread": false
+                    "name": "basket one",
+                    "pusher_usr_id": 3,
+                    "ssel_id": 141,
+                    "updated_on": "2012-06-21T15:50:12+02:00",
+                    "unread": false,
+                    "validation_basket": false
                 },
-                "283": {
-                    "created_on": "2011-06-01T12:14:57+02:00",
+                {
+                    "basket_id": 143,
+                    "created_on": "2012-06-15T15:32:35+02:00",
                     "description": "",
-                    "name": "BIG BASKET",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 283,
-                    "updated_on": "2011-06-01T12:14:57+02:00",
-                    "unread": false
+                    "name": "basket two",
+                    "pusher_usr_id": 3,
+                    "ssel_id": 143,
+                    "updated_on": "2012-06-21T16:13:07+02:00",
+                    "unread": false,
+                    "validation_basket": false
                 },
-                "490": {
-                    "created_on": "2011-07-08T17:23:23+02:00",
+                {
+                    "basket_id": 144,
+                    "created_on": "2012-06-18T16:29:37+02:00",
                     "description": "",
-                    "name": "PROUTO",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 490,
-                    "updated_on": "2011-07-08T17:23:23+02:00",
-                    "unread": false
+                    "name": "basket test",
+                    "pusher_usr_id": 3,
+                    "ssel_id": 144,
+                    "updated_on": "2012-06-18T16:29:37+02:00",
+                    "unread": false,
+                    "validation_basket": false
                 },
-                "493": {
-                    "created_on": "2011-07-08T17:23:26+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 493,
-                    "updated_on": "2011-07-08T17:23:26+02:00",
-                    "unread": false
-                },
-                "491": {
-                    "created_on": "2011-07-08T17:23:24+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 491,
-                    "updated_on": "2011-07-08T17:23:24+02:00",
-                    "unread": false
-                },
-                "489": {
-                    "created_on": "2011-07-08T17:19:28+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 489,
-                    "updated_on": "2011-07-08T17:19:28+02:00",
-                    "unread": false
-                },
-                "486": {
-                    "created_on": "2011-07-08T17:19:24+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 486,
-                    "updated_on": "2011-07-08T17:19:24+02:00",
-                    "unread": false
-                },
-                "282": {
-                    "created_on": "2011-06-01T12:10:44+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 282,
-                    "updated_on": "2011-06-01T12:10:44+02:00",
-                    "unread": false
-                },
-                "342": {
-                    "created_on": "2011-07-04T17:41:29+02:00",
+                {
+                    "basket_id": 145,
+                    "created_on": "2012-06-18T18:15:39+02:00",
                     "description": "",
-                    "name": "PROUTO",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 342,
-                    "updated_on": "2011-07-04T17:41:29+02:00",
-                    "unread": false
+                    "name": "my basket",
+                    "pusher_usr_id": 3,
+                    "ssel_id": 145,
+                    "updated_on": "2012-06-21T15:51:48+02:00",
+                    "unread": false,
+                    "validation_basket": false
                 },
-                "487": {
-                    "created_on": "2011-07-08T17:19:25+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 487,
-                    "updated_on": "2011-07-08T17:19:25+02:00",
-                    "unread": false
-                },
-                "320": {
-                    "created_on": "2011-06-22T14:12:28+02:00",
+                {
+                    "validation_users": [
+                    {
+                        "usr_id": 3,
+                        "usr_name": "legoff.n@gmail.com",
+                        "confirmed": false,
+                        "can_agree": true,
+                        "can_see_others": true,
+                        "readonly": false
+                    },
+                    {
+                        "usr_id": 722,
+                        "usr_name": "legoff@alchemy.fr",
+                        "confirmed": false,
+                        "can_agree": true,
+                        "can_see_others": true,
+                        "readonly": true
+                    }
+                    ],
+                    "validation_end_date": "2012-07-18T14:54:02+02:00",
+                    "validation_infos": "Vous avez envoyé cette demande à 1 utilisateurs",
+                    "validation_confirmed": false,
+                    "validation_initiator": true,
+                    "basket_id": 146,
+                    "created_on": "2012-06-28T14:54:01+02:00",
                     "description": "",
-                    "name": "un Joli Nom",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 320,
-                    "updated_on": "2011-06-22T14:12:28+02:00",
-                    "unread": false
-                },
-                "629": {
-                    "created_on": "2011-07-20T13:53:05+02:00",
-                    "description": "une belle desc",
-                    "name": "aéaa",
-                    "pusher_usr_id": null,
-                    "ssel_id": 629,
-                    "updated_on": "2011-07-26T19:47:44+02:00",
-                    "unread": false
-                },
-                "631": {
-                    "created_on": "2011-07-25T12:08:48+02:00",
-                    "description": "",
-                    "name": "BIG BASKET",
-                    "pusher_usr_id": null,
-                    "ssel_id": 631,
-                    "updated_on": "2011-07-25T12:08:48+02:00",
-                    "unread": false
-                },
-                "720": {
-                    "created_on": "2011-07-27T14:39:13+02:00",
-                    "description": "",
-                    "name": "panier",
-                    "pusher_usr_id": null,
-                    "ssel_id": 720,
-                    "updated_on": "2011-07-27T14:39:13+02:00",
-                    "unread": false
-                },
-                "683": {
-                    "created_on": "2011-07-25T15:06:19+02:00",
-                    "description": "",
-                    "name": "PROUTO",
-                    "pusher_usr_id": null,
-                    "ssel_id": 683,
-                    "updated_on": "2011-07-25T15:06:19+02:00",
-                    "unread": false
-                },
-                "678": {
-                    "created_on": "2011-07-25T15:03:37+02:00",
-                    "description": "",
-                    "name": "PROUTO",
-                    "pusher_usr_id": null,
-                    "ssel_id": 678,
-                    "updated_on": "2011-07-25T15:03:37+02:00",
-                    "unread": false
-                },
-                "670": {
-                    "created_on": "2011-07-25T14:54:48+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": null,
-                    "ssel_id": 670,
-                    "updated_on": "2011-07-25T14:54:48+02:00",
-                    "unread": false
-                },
-                "630": {
-                    "created_on": "2011-07-25T12:08:43+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": null,
-                    "ssel_id": 630,
-                    "updated_on": "2011-07-25T12:08:43+02:00",
-                    "unread": false
-                },
-                "636": {
-                    "created_on": "2011-07-25T12:52:08+02:00",
-                    "description": "",
-                    "name": "PROUTO",
-                    "pusher_usr_id": null,
-                    "ssel_id": 636,
-                    "updated_on": "2011-07-25T12:52:08+02:00",
-                    "unread": false
-                },
-                "633": {
-                    "created_on": "2011-07-25T12:09:17+02:00",
-                    "description": "",
-                    "name": "PROUTO",
-                    "pusher_usr_id": null,
-                    "ssel_id": 633,
-                    "updated_on": "2011-07-25T12:09:17+02:00",
-                    "unread": false
-                },
-                "668": {
-                    "created_on": "2011-07-25T14:53:08+02:00",
-                    "description": "une belle description",
-                    "name": "PROUTO",
-                    "pusher_usr_id": null,
-                    "ssel_id": 668,
-                    "updated_on": "2011-07-25T14:53:08+02:00",
-                    "unread": false
-                },
-                "718": {
-                    "created_on": "2011-07-26T19:52:50+02:00",
-                    "description": "",
-                    "name": "test suppression panier",
-                    "pusher_usr_id": null,
-                    "ssel_id": 718,
-                    "updated_on": "2011-07-26T19:52:50+02:00",
-                    "unread": false
-                },
-                "719": {
-                    "created_on": "2011-07-26T19:53:20+02:00",
-                    "description": "",
-                    "name": "test suppression panier",
-                    "pusher_usr_id": null,
-                    "ssel_id": 719,
-                    "updated_on": "2011-07-26T19:53:20+02:00",
-                    "unread": false
-                },
-                "717": {
-                    "created_on": "2011-07-26T19:52:18+02:00",
-                    "description": "",
-                    "name": "test suppression panier",
-                    "pusher_usr_id": null,
-                    "ssel_id": 717,
-                    "updated_on": "2011-07-26T19:52:18+02:00",
-                    "unread": false
-                },
-                "681": {
-                    "created_on": "2011-07-25T15:05:21+02:00",
-                    "description": "une belle description",
-                    "name": "test suppression panier",
-                    "pusher_usr_id": null,
-                    "ssel_id": 681,
-                    "updated_on": "2011-07-25T15:05:21+02:00",
-                    "unread": false
-                },
-                "712": {
-                    "created_on": "2011-07-26T19:46:37+02:00",
-                    "description": "",
-                    "name": "test suppression panier",
-                    "pusher_usr_id": null,
-                    "ssel_id": 712,
-                    "updated_on": "2011-07-26T19:46:37+02:00",
-                    "unread": false
-                },
-                "715": {
-                    "created_on": "2011-07-26T19:50:03+02:00",
-                    "description": "",
-                    "name": "test suppression panier",
-                    "pusher_usr_id": null,
-                    "ssel_id": 715,
-                    "updated_on": "2011-07-26T19:50:03+02:00",
-                    "unread": false
-                },
-                "716": {
-                    "created_on": "2011-07-26T19:52:00+02:00",
-                    "description": "",
-                    "name": "test suppression panier",
-                    "pusher_usr_id": null,
-                    "ssel_id": 716,
-                    "updated_on": "2011-07-26T19:52:00+02:00",
-                    "unread": false
+                    "name": "Panier de validation",
+                    "pusher_usr_id": 3,
+                    "ssel_id": 146,
+                    "updated_on": "2012-06-28T16:07:25+02:00",
+                    "unread": false,
+                    "validation_basket": true
                 }
+                ]
             }
         }
-    }

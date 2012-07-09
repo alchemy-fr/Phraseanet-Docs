@@ -4,17 +4,392 @@ API Changelog
 1.2
 ---
 
-Version 1.2 of Phraseanet API is not backward compatible with the previous one. 
+Version 1.2 of Phraseanet API is not backward compatible with the previous one.
 
-A bug has been fixed in :doc:`feed content <V1/Route/Feeds/Content>` and the 
-route :doc:`feeds/content <Route/Feeds/Content>` has been updated.
+- A bug has been fixed in :doc:`feed content <V1/Route/Feeds/Content>` and the route :doc:`feeds/content <V1/Route/Feeds/Content>` has been updated.
+
+- A couple routes have been updated
+
+    - Record subdefinition :doc:`record/embed <V1/Route/Records/Embed>`
+    - Record metadatas :doc:`record/metadatas <V1/Route/Records/Metadatas>`
+    - Record caption :doc:`record/caption <V1/Route/Records/Caption>`
+    - Record search :doc:`record/search <V1/Route/Records/Search>`
+    - Databox document structure :doc:`databox/metadatas <V1/Route/Databox/Metadatas>`
+    - Task description :doc:`monitor/tasks <V1/Route/Monitor/Tasks>` & :doc:`monitor/task <V1/Route/Monitor/Task>`
+    - Basket description :doc:`basket/list <V1/Route/Baskets/List>`
+    - Basket element description :doc:`basket/content <V1/Route/Baskets/Content>`
+
+
+- Object with numeric attributes have been removed. All collection objects are now presented as an array of objects.
+
+
+**Before**
+
+.. code-block:: javascript
+
+    "response": {
+        "items": {
+            "1" : {
+                "item_id": 1,
+            },
+            "3" : {
+                "item_id" : 3
+            }
+        }
+    }
+
+**Now**
+
+.. code-block:: javascript
+
+    "response": {
+        "items": [
+            {
+                "item_id": 1,
+            },
+            {
+                "item_id" : 3
+            }
+        ]
+    }
+
+Description of a record
+***********************
+
+attribute **last_modification** has been replaced by **updated_on**
+
+
+Description of a permalink
+**************************
+
+attribute **last_modified** has been replaced by **updated_on**
+
+Description of embedable medias
+*******************************
+
+The embedable media is now a list of embedable objects.
+
+The **name** attribute has been added.
+
+**Before**
+
+.. code-block:: javascript
+
+    "response": {
+            "embed": {
+              "document": {
+                    "permalink": {
+                        "created_on": "2012-06-22T21:20:55+02:00",
+                        "id": 1972,
+                        "is_activated": true,
+                        "label": "0113JPG",
+                        "updated_on": "2012-06-22T21:20:55+02:00",
+                        "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/gAZMiywc/document/view/",
+                        "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/gAZMiywc/document/"
+                    },
+                    "height": 4256,
+                    "width": 2832,
+                    "filesize": 1101093,
+                    "devices": [
+                    "all"
+                    ],
+                    "player_type": "IMAGE",
+                    "mime_type": "image/jpeg"
+                }
+        }
+
+**Now**
+
+.. code-block:: javascript
+
+    "response": {
+            "embed": [
+            {
+                "name": "document",
+                "permalink": {
+                    "created_on": "2012-06-22T21:20:55+02:00",
+                    "id": 1972,
+                    "is_activated": true,
+                    "label": "0113JPG",
+                    "updated_on": "2012-06-22T21:20:55+02:00",
+                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/gAZMiywc/document/view/",
+                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/gAZMiywc/document/"
+                },
+                "height": 4256,
+                "width": 2832,
+                "filesize": 1101093,
+                "devices": [
+                "all"
+                ],
+                "player_type": "IMAGE",
+                "mime_type": "image/jpeg"
+            }
+
+Description of the record metadatas
+***********************************
+
+The response of a record metadatas is now contained in a **record_metadatas**
+attribut.
+
+.. code-block:: javascript
+
+    "response": {
+        "record_metadatas": [
+        {
+            "meta_id": 4437,
+            "meta_structure_id": 1,
+            "name": "Object",
+            "value": "smoke"
+        },
+        {
+            "meta_id": 4438,
+            "meta_structure_id": 4,
+            "name": "Keywords",
+            "value": "fumée"
+        }
+        ]
+    }
+
+Description of a databox document structure
+*******************************************
+
+The response of a databox document structure is now contained in a
+**document_metadatas** attribut.
+
+.. code-block:: javascript
+
+   "response": {
+            "document_metadatas": [
+            {
+                "id": 1,
+                "namespace": "IPTC",
+                "source": "IPTC:ObjectName",
+                "tagname": "ObjectName",
+                "name": "Object",
+                "separator": "",
+                "thesaurus_branch": "",
+                "type": "string",
+                "indexable": true,
+                "multivalue": false,
+                "readonly": false,
+                "required": false
+            },
+            {
+                "id": 2,
+                "namespace": "IPTC",
+                "source": "IPTC:Category",
+                "tagname": "Category",
+                "name": "Category",
+                "separator": "",
+                "thesaurus_branch": "",
+                "type": "string",
+                "indexable": true,
+                "multivalue": false,
+                "readonly": false,
+                "required": false
+            }
+        ]
+    }
+
+
+Description of a task
+*********************
+
+Three fields have been added to the response that describe a task.
+
+- **auto_start**
+- **runner**
+- **crash_counter**
+
+
+.. code-block:: javascript
+
+    "response": {
+        "task": {
+            "id": 2,
+            "name": "Création des sous définitions",
+            "state": "started",
+            "pid": 15705,
+            "title": "Subviews creation",
+            "last_exec_time": "2012-06-13T14:38:38+02:00",
+            "auto_start": true,
+            "runner": "scheduler",
+            "crash_counter": 0
+        }
+    }
+
+Description of a caption record
+*******************************
+
+The response of a caption record is now contained in **caption_metadas** attribut
+
+.. code-block:: javascript
+
+    "response": {
+        "caption_metadatas": [
+            {
+                "meta_structure_id": 29,
+                "name": "Bits",
+                "value": "8"
+            },
+            {
+                "meta_structure_id": 30,
+                "name": "Channels",
+                "value": "3"
+            }
+        ]
+    }
+
+
+
+Description of a basket
+***********************
+
+A **validation_basket** attribut has been added to the
+basket response, it indicates whether it is a validation basket.
+
+.. code-block:: javascript
+
+    "response": {
+        "basket": {
+            "basket_id": 144,
+            "created_on": "2012-06-18T16:29:37+02:00",
+            "description": "",
+            "name": "hello",
+            "pusher_usr_id": null,
+            "ssel_id": 144,
+            "updated_on": "2012-06-18T16:29:37+02:00",
+            "unread": false,
+            "validation_basket": false
+        }
+    }
+
+Description of a basket content
+*******************************
+
+**basket_element** at the root of the response returns only a collection of basket
+elements.
+
+A **basket** attribut has been added to the root of the response.
+It describes the requested basket.
+
+.. code-block:: javascript
+
+    "response": {
+        "basket_elements": [
+            {
+                "basket_element_id": 9,
+                "order": 4,
+                "record": {
+
+                }
+            }
+        ],
+        "basket": {
+            "basket_id": 144,
+            "created_on": "2012-06-18T16:29:37+02:00",
+            "description": "",
+            "name": "hello",
+            "pusher_usr_id": null,
+            "ssel_id": 144,
+            "updated_on": "2012-06-18T16:29:37+02:00",
+            "unread": false,
+            "validation_basket": false
+        }
+    }
+
+
+
+Also, there is a change on validation basket elements response.
+
+The **choice** attribut has been replace by **validation_choices** which now contains
+a list of validation choice with a new **validation_user** attribute.
+
+**Now**
+
+.. code-block:: javascript
+
+    {
+        "basket_element_id": 25,
+        "order": 7,
+        "phrasea_type": "image",
+        "uuid": "fc766012-a9c8-49eb-bcbd-c6f5270cb6f5"
+        "validation_item": true,
+        "record": {
+            ...
+        },
+        "technical_informations": [
+            ...
+        ],
+        "validation_choices": [
+        {
+            "validation_user": {
+                "usr_id": 3,
+                "usr_name": "durand.t@gmail.com",
+                "confirmed": false,
+                "can_agree": true,
+                "can_see_others": true,
+                "readonly": false
+            },
+            "agreement": null,
+            "updated_on": "2012-06-29T16:32:50+02:00",
+            "note": ""
+        },
+        {
+            "validation_user": {
+                "usr_id": 722,
+                "usr_name": "martin.s@yahoo.com",
+                "confirmed": false,
+                "can_agree": true,
+                "can_see_others": true,
+                "readonly": true
+            },
+            "agreement": null,
+            "updated_on": "2012-06-29T16:32:50+02:00",
+            "note": ""
+        }
+        ],
+        "agreement": null,
+        "note": ""
+    }
+
+
+Searching for a records
+***********************
+
+Some parameters from :doc:`records/search <V1/Route/Records/Search>` have been
+renamed :
+
+ - datefield => date_field
+ - datemin   => date_min
+ - datemax   => date_max
+
+The **page** parameter from the request and the associated response field have
+been replaced by **offset_start**
+
+.. code-block:: javascript
+
+    "response": {
+        "offset_start": 0,
+        "per_page": 10,
+        "available_results": 1,
+        "total_results": 1,
+        "error": "",
+        "warning": "",
+        "query_time": 0.000342,
+        "search_indexes": "",
+        "suggestions": [],
+        "results": [{
+            ....
+         }]
+    }
 
 Description de flux
 *******************
 
 Attribute *is_mine* has been removed and is replaced by two new attributes :
 *readonly* and *deletable*.
- 
+
 .. code-block:: javascript
 
     "feeds": {
@@ -23,7 +398,7 @@ Attribute *is_mine* has been removed and is replaced by two new attributes :
             "title": "News",
             "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
             "total_entries": 0,
-            "icon": "/skins/icons/rss32.gif", 
+            "icon": "/skins/icons/rss32.gif",
             "public": false,
             "readonly": true,
             "deletable": false,
@@ -31,8 +406,7 @@ Attribute *is_mine* has been removed and is replaced by two new attributes :
             "updated_on": "2011-07-20T18:45:20+02:00"
         },
 
-.. note:: These attributes have also been added in 
-:doc:`feeds/list <Route/Feeds/List>`.
+.. note:: These attributes have also been added in :doc:`feeds/list <V1/Route/Feeds/List>`.
 
 
 Bug fix
@@ -79,7 +453,7 @@ Route add
 - Add route :doc:`/feeds/content/ <V1/Route/Feeds/Aggregated>`
 - Add route :doc:`/feeds/entry/ <V1/Route/Feeds/Entry>`
 
-Thumbnails 
+Thumbnails
 **********
 
 Before 1.2, a substitution file was provided by the API when a record thumbnail
@@ -125,7 +499,7 @@ be *null* :
 Embeddables
 ***********
 
-Embeddable media now provides a list of supported devices. This devices are 
+Embeddable media now provides a list of supported devices. This devices are
 compatible with CSS2 specification.
 
 .. seealso::
@@ -148,13 +522,13 @@ Hypermedia links
 ****************
 
 Some hypermedia links have appeared in responses. For example, in the response
-of :doc:`feed/content <V1/Route/Feeds/Content>`, a link to the corresponding 
+of :doc:`feed/content <V1/Route/Feeds/Content>`, a link to the corresponding
 :doc:`feed/entry <V1/Route/Feeds/Entry>` is given for each entry.
 
 Request a media depending on device and/or mime type
 ****************************************************
 
-You can now restrict to some devices and/or mime types in the 
+You can now restrict to some devices and/or mime types in the
 :doc:`records/embed <V1/Route/Records/Embed>` route.
 
 1.1

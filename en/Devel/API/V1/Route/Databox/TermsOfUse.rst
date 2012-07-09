@@ -21,9 +21,9 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information
+   Parameters               Type           Information
   ======================== ============== =============
-   databox_id               94             The databox id on which the request is done
+   databox_id               integer        The databox id on which the request is done
   ======================== ============== =============
 
 
