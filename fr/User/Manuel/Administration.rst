@@ -29,12 +29,30 @@ actions: gestion des utilisateurs, des bases et des collections,...
 
 Tableau de bord
 ---------------
-  .. to do:: DEV
+Le tableau de bord permet d'ajouter ou de supprimer des administrateurs Phraseanet. 
+Il livre un état l'état de la configuration du système de fichier, des exécutables, 
+des extensions, des serveurs de caches et des serveurs web qui entrent dans la mise 
+en oeuvre de Phraseanet.
+
   
 Setup
 -----
-  .. to do:: ici on parle des bases, de la structure, etc. (DEV)
-	   
+Setup propose une interface graphique pour modifier des paramètres d'installation et de
+configuration de Phraseanet.
+Setup propose un jeu de formulaires permettant : 
+
+  * De modifier les adresses et les chemins de l'application ou de composants permettant
+sa mise en oeuvre.
+  * De placer l'application en mode maintenance
+  * D'activer ou de désactiver des connectivités à des services web 
+  * D'activer ou de désactiver des connectivités à des réseaux sociaux
+  * D'activer ou de désactiver des fonctionnalités de l'application
+  * De gérer les extensions de fichiers autorisés en ajout dans Phraseanet
+
+.. warning:: Setup permet de modifier en profondeur les paramètres d'installation de l'application.
+             L'administrateur sera particulièrement attentif aux modifications apportées dans les
+             formulaires proposés.
+  
 Utilisateurs connectés
 -----------------------
 Cette fonction permet d'afficher la liste de tous les utilisateurs actuellement 
@@ -254,8 +272,8 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
 **Droits sur la gestion des bases et collections**
 
   * Cocher **Gestion Coll.** pour autoriser l'utilisateur à effectuer différentes 
-    opérations de gestion. Pour une collection: la renommer, la vider, la mettre online 
-    ou offline, la supprimer.  
+    opérations de gestion. Pour une collection: la renommer, la vider, la mettre 
+    online ou offline, la supprimer.  
 
   * La case **Structure Coll.** donne accès aux fonctions de réglages de collections 
     dans *Phraseanet Administration*. Structure Coll. permet l’accès aux préférences 
@@ -268,7 +286,8 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
     *Phraseanet Thesaurus*
 
   * La case **Gestion Base** permet d’accéder aux fonctions de paramètres de 
-    bases de données comme création, purge et fonctions avancées de gestion de la solution
+    bases de données comme création, purge et fonctions avancées de gestion de 
+    la solution
 
   * Enfin, **Structure Base**, pour autoriser l'utilisateur à modifier la 
     structure de la base de données.
@@ -295,6 +314,22 @@ Choisir les droits à attribuer par collections en cochant les cases. L'utilisat
 
 Cliquer sur Valider
 
+Publications
+------------
+
+  .. image:: ../../images/Administration-publications.jpg
+	   :alt: alternate text
+	   :align: center
+
+La rubrique publications permet de gérer les flux media RSS diffusés à partir de 
+l'application Phraseanet.
+
+  * Pour créer un flux, remplir puis valider le formulaire d'ajout
+  
+  * Pour modifier les propriétés d'un flux existant, cliquer sur le flux à modifier
+  pour ouvrir le formulaire d'édition du flux sélectionné.
+  
+  * Pour supprimer un flux, cliquer sur bouton supprimer.
 
 Planificateur
 -------------
@@ -302,13 +337,15 @@ Cet écran permet de gérer les tâches d'archivage et autres traitements automa
 des Bases/Collections de documents. Les tâches sont listées dans un tableau qui 
 indique l'identifiant de la tâche, si elle est ou non active, son nom.
 
+  .. image:: ../../images/Administration-gestionnairedetaches.jpg
+       :alt: alternate text
+       :align: center
+
 Le principe d’une Tâche d’archivage est de scruter un répertoire, d’en capturer 
 le contenu, de l’archiver (recopier les fichiers dans les répertoires de stockage 
 de la base de destination).
 
-  .. to do:: guillaume stp capture ici aussi des listes de tâches
-
-  * Pour démarrer une tâche, Cliquer sur le symbole, puis cliquer sur Start.
+  * Pour démarrer une tâche, cliquer sur le symbole, puis cliquer sur Start.
 
   * Pour éditer une tâche, cliquer sur "Editer".
 
@@ -328,7 +365,7 @@ Cette fonction permet de créer une nouvelle tâche.
 	   :alt: alternate text
 	   :align: center
 
-Le paramétrage des Tâches dans Phraseanet permet de mettre en place des
+Le paramétrage des tâches dans Phraseanet permet de mettre en place des
 automatismes de traitement. La solution est livrée en standard
 avec un certain de nombre de tâches exploitables. 
 
@@ -344,18 +381,95 @@ Après avoir cliqué sur *nouvelle tâche*:
   * Ou modifier les paramètres directement dans la vue XML.
 
   * Cliquer sur Valider pour enregistrer les modifications.
+  
+Paramétrage par base
+--------------------
+Cliquer sur une base pour afficher le tableau d'état d'une base Phraseanet.
 
-Status Bits
-------------
-  .. to do:: je ne vois pas actuellement les status bits sur beta
+  .. image:: ../../images/Administration-base.jpg
+	   :alt: alternate text
+	   :align: center
+
+Cet écran montre l'état d'indexation de la base et permet des actions dont :
+
+  * La réindexation d'une base
+  * La création de collections dans la base
+  * La suppression des logs
+  * La purge des enregistrements de la base
+  * La suppression de la base
+
+Système multibase, chacune des bases d'une solution Phraseanet est finement paramétrable.
+Pour cela, cliquer sur l'icone *+*.  
+
+Reglage de la structure
+***********************
+La rubrique Réglage de la structure permet d'afficher la structure documentaire de 
+la base sélectionnée sous la forme d'un fichier xml.
+Depuis la version 3.5, il est rare de devoir manipuler le paramétrage d'une base par 
+cette interface, l'interface `Champs`_ étant bien plus conviviale.
+
+Champs
+******
+La rubrique Champ permet de définir et d'éditer la structure documentaire d'une base
+Phraseanet au moyen de formulaires dans une interface graphique.
+Chacun des champs de la structure documentaire est défini par des propriétés paramétrables.
+
+Sous définition
+***************
+La rubrique Sous définition permet d'ajouter et d'éditer les sous définitions des média 
+de type image, vidéo et audio intégrés dans Phraseanet. 
+La nature des sous définitions dépend de la nature des documents originaux intégrés 
+dans Phraseanet.
+Le tableau ci-dessous liste quelques exemples typiques de sous définitions fabriquées par
+l'application.
+
++------------------------------------------------+---------------------------------------+
+| Nature du media original                       | Nature de la sous définition          |
++================================================+============+==========+===============+
+| Image de type Jpeg, psd, gif, png...           | Sous définition au format Jpeg        |
++------------------------------------------------+---------------------------------------+
+| Vidéo Mpeg, Avi, Mov...                        | Sous définition au format Mpeg4       |
++------------------------------------------------+---------------------------------------+
+| Document sonore de type Wav, Mp3...            | Sous définition au format Mp3         |
++------------------------------------------------+---------------------------------------+
+| Document bureautique Pdf, Word...              | Animation Flash (Swf)                 |
++------------------------------------------------+---------------------------------------+
+
+.. warning:: Les sous définitions thumbnail et preview sont indispensables. 
+             Elles sont utilisées dans les interfaces Phraseanet pour afficher les 
+             vignettes et images de choix des média.
+          
+
+Reglage des Status
+******************
+  Les status sont des marqueurs qui indiquent des états sur des enregistrements. 
+  Ils interagissent ou non avec les droits des utilisateurs (paramétrables dans la
+  rubrique **Limitation par les Status** des `Droits utilisateurs`_). 
+  Dans Phraseanet, soit un status est baissé (l'état par défaut), soit il est levé.
+  En pratique, les status permettent d'illustrer des états sur des documents et d'obtenir
+  au besoin une granularité supplémentaire sur l'accès des utilisateurs à ces documents.
+  Liés à la structure documentaire d'une base, il est possible d'intégrer jusqu'à 
+  60 status.
+  
+  .. image:: ../../images/Administration-status.jpg
+	   :alt: alternate text
+	   :align: center
+
+  * Pour déclarer un status, cliquer sur l'icône page pour éditer un nouveau status bit 
+  puis remplir le formulaire.
+  
+  * Pour modifier un status existant, cliquer sur l'icône stylo.
+  
+  * Pour supprimer un status, cliquer sur l'icône croix puis confirmer la suppression.
+
 
  
-Conditions Générales d’Utilisation
-----------------------------------
+CGU (Conditions générales d'utilisation)
+****************************************
 
-  .. to do:: guillaume capture à faire je ne vois pas les CGU sur beta
-  
-Cliquer sur l'icône des CGU.
+  .. image:: ../../images/Administration-cgu.jpg
+	   :alt: alternate text
+	   :align: center
 
 Les conditions générales d’utilisation sont proposées aux utilisateurs au moment 
 de leur inscription.
@@ -369,9 +483,11 @@ de leur inscription.
 
  
 Ordre des Collections
----------------------
+*********************
 
-  .. to do:: capture à faire
+  .. image:: ../../images/Administration-ordrecollections.jpg
+	   :alt: alternate text
+	   :align: center
   
 Par défaut, les collections sont affichées dans les différentes applications selon 
 leur ordre de création. Selon les besoins, il est donc possible de modifier 
@@ -386,7 +502,7 @@ l’ordre d’affichage dans les différentes interfaces.
   * Cliquer sur Valider pour enregistrer les changements
 
 Collections
------------
+***********
 
   * Cliquer sur l'icône pour afficher les informations sur la collection.
 
@@ -453,13 +569,21 @@ documents de la collection:
 
 Préférences : Valeurs suggérées
 -------------------------------
-  .. to do:: capture à faire je ne la vois pas dans beta, comme les status et autres
-
-Cliquer sur l'icône Réglages des Collections.
-
 Les valeurs suggérées sont éditables par collections et par champs. Cet écran 
 permet de paramétrer des menus de choix déroulants (liste qui apparaît dans la 
 fenêtre "Edition", permettant une indexation rapide).
+L'édition de valeurs suggérées est possible via un formulaire d'édition en mode
+graphique.
+
+  .. image:: ../../images/Administration-valeursgraphicmode.jpg
+	   :alt: alternate text
+	   :align: center
+	   
+D'autres utilisateurs préfèrent utiliser le mode par vue XML.
+
+  .. image:: ../../images/Administration-valeursxml.jpg
+	   :alt: alternate text
+	   :align: center
 
   * Sélectionner le champ dans lequel vous souhaitez travailler
 
