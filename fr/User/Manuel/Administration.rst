@@ -11,7 +11,7 @@
     Elle permet la création et la gestion des bases/collections, de leur 
     structure, de créer des utilisateurs et de gérer leurs droits, mais aussi de 
     prendre en charge les demandes d'inscription, les tâches automatiques d'indexation, 
-    les valeurs suggérées, les :term:`Statusbit`, les logos de collections...
+    les valeurs suggérées, les :term:`Status`, les logos de collections...
 	
 Cette interface comporte un cadre à gauche qui affiche les différents menus 
 cliquables sur les boutons.
@@ -42,7 +42,7 @@ configuration de Phraseanet.
 Setup propose un jeu de formulaires permettant : 
 
   * De modifier les adresses et les chemins de l'application ou de composants permettant
-sa mise en oeuvre.
+    sa mise en oeuvre
   * De placer l'application en mode maintenance
   * D'activer ou de désactiver des connectivités à des services web 
   * D'activer ou de désactiver des connectivités à des réseaux sociaux
@@ -327,7 +327,7 @@ l'application Phraseanet.
   * Pour créer un flux, remplir puis valider le formulaire d'ajout
   
   * Pour modifier les propriétés d'un flux existant, cliquer sur le flux à modifier
-  pour ouvrir le formulaire d'édition du flux sélectionné.
+    pour ouvrir le formulaire d'édition du flux sélectionné.
   
   * Pour supprimer un flux, cliquer sur bouton supprimer.
 
@@ -353,6 +353,8 @@ de la base de destination).
 
   * Pour créer une nouvelle tâche, cliquer sur nouvelle tâche.
 
+ .. todo:: Update de la capture pour 3.7 
+  
   .. image:: ../../images/Administration-taches.jpg
 	   :alt: alternate text
 	   :align: center 
@@ -360,6 +362,8 @@ de la base de destination).
 Nouvelle tâche
 **************
 Cette fonction permet de créer une nouvelle tâche.
+
+.. todo:: Update de la capture pour 3.7
 
   .. image:: ../../images/Administration-nouvelletache.jpg
 	   :alt: alternate text
@@ -403,20 +407,20 @@ Pour cela, cliquer sur l'icone *+*.
 
 Reglage de la structure
 ***********************
-La rubrique Réglage de la structure permet d'afficher la structure documentaire de 
+La rubrique *Réglage de la structure* permet d'afficher la structure documentaire de 
 la base sélectionnée sous la forme d'un fichier xml.
 Depuis la version 3.5, il est rare de devoir manipuler le paramétrage d'une base par 
 cette interface, l'interface `Champs`_ étant bien plus conviviale.
 
 Champs
 ******
-La rubrique Champ permet de définir et d'éditer la structure documentaire d'une base
+La rubrique *Champ* permet de définir et d'éditer la structure documentaire d'une base
 Phraseanet au moyen de formulaires dans une interface graphique.
 Chacun des champs de la structure documentaire est défini par des propriétés paramétrables.
 
 Sous définition
 ***************
-La rubrique Sous définition permet d'ajouter et d'éditer les sous définitions des média 
+La rubrique *Sous définition* permet d'ajouter et d'éditer les sous définitions des média 
 de type image, vidéo et audio intégrés dans Phraseanet. 
 La nature des sous définitions dépend de la nature des documents originaux intégrés 
 dans Phraseanet.
@@ -442,7 +446,7 @@ l'application.
 
 Reglage des Status
 ******************
-  Les status sont des marqueurs qui indiquent des états sur des enregistrements. 
+  Les :term:`Status` sont des marqueurs qui indiquent des états sur des enregistrements. 
   Ils interagissent ou non avec les droits des utilisateurs (paramétrables dans la
   rubrique **Limitation par les Status** des `Droits utilisateurs`_). 
   Dans Phraseanet, soit un status est baissé (l'état par défaut), soit il est levé.
@@ -456,7 +460,7 @@ Reglage des Status
 	   :align: center
 
   * Pour déclarer un status, cliquer sur l'icône page pour éditer un nouveau status bit 
-  puis remplir le formulaire.
+    puis remplir le formulaire.
   
   * Pour modifier un status existant, cliquer sur l'icône stylo.
   

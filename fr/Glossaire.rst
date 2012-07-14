@@ -36,7 +36,7 @@ Glossaire
     Opération qui consiste à associer une description à un document,
     soit par extraction des métadonnées, soit par saisie de la description.
   
-  Statusbit
+  Status
     Etat de type Oui/Non qui peut être appliqué sur un document, paramétrable. 
     Il est possible de définir et d’affecter jusqu'à 60 status sur un document.
 

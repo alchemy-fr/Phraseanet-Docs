@@ -178,7 +178,7 @@ Cliquer sur Valider.
 Propriétés
 **********
 Cette action permet de changer:
-  * les :term:`status <Statusbit>` des documents
+  * les :term:`status <Status>` des documents
   * les "types" des documents sélectionnés 
 
 Les Status sont comme des "Interrupteurs" en position "On" ou "Off" et sont 
@@ -189,7 +189,7 @@ interfaces.
 A travers la gestion des utilisateurs, il est possible de définir pour chaque 
 Status activé si un utilisateur est "On" et/ou "Off" pour les documents.
 
-.. note:: Il existe 64 :term:`status <Statusbit>`. 60 sont paramétrables et 
+.. note:: Il existe 64 :term:`status <Status>`. 60 sont paramétrables et 
           peuvent être utilisés pour des besoins de workflow ou la mise en place 
           des restrictions d’accès aux documents entre autres. 
           Le changement d’état des status est aussi disponible directement depuis 
@@ -204,7 +204,7 @@ Cette action permet de changer les status des documents.
 
 La fenêtre s'ouvre. 
 
-  * Cocher la case correspondant au nouveau :term:`status <Statusbit>` (plusieurs 
+  * Cocher la case correspondant au nouveau :term:`status <Status>` (plusieurs 
     status possibles). 
   
   * Cliquer sur Valider pour enregistrer les changements.
