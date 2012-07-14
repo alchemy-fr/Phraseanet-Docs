@@ -9,7 +9,8 @@ Glossaire
   :sorted:
 
   FTP
-    Le FTP est utilisé pour vos envois massifs de documents.
+    Le FTP est un protocole de transfert de fichiers. Il est utilisé pour vos envois 
+    massifs de documents.
 
   Document
     Un document est le fichier d'origine ajouté à une Base/Collection.
@@ -109,6 +110,12 @@ Glossaire
   Palette des Actions
     Outils disponibles pour les utilisateurs selon leurs droits,
     permettant de déclencher des actions sur des documents des paniers...
+
+  Business field ou Champ métier
+    Les *Business field* Phraseanet sont des champs destinés à recevoir des informations
+    métiers. Ces informations internes sont partagées par les utilisateurs qui disposent 
+    des droits d'édition des documents.
+    Un Business field n'est pas "recherchable". 
 
     
 

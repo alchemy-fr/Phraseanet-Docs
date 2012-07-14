@@ -420,7 +420,7 @@ La rubrique Sous définition permet d'ajouter et d'éditer les sous définitions
 de type image, vidéo et audio intégrés dans Phraseanet. 
 La nature des sous définitions dépend de la nature des documents originaux intégrés 
 dans Phraseanet.
-Le tableau ci-dessous liste quelques exemples typiques de sous définitions fabriquées par
+Le tableau ci-dessous liste quelques exemples types de sous définitions fabriquées par
 l'application.
 
 +------------------------------------------------+---------------------------------------+
