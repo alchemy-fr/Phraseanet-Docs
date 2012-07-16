@@ -7,7 +7,8 @@ Importer
 
 .. topic:: L'essentiel
 
-    Vous pouvez importer des documents en utilisant l'interface Phraseanet Upload. 
+    Reposant sur la technologie Html5 l'interface Phraseanet Upload est accessible
+    dans Production via un lien placé dans la barre de menu Phraseanet. 
     C'est une interface dédiée à l'ajout de documents vers des collections sur
     lesquelles l'utilisateur dispose des droits d'ajout. 
 
@@ -16,10 +17,17 @@ Importer
 	   :alt: alternate text
 	   :align: center 
 
+.. note:: Certains navigateurs internet peuvent ne pas être en mesure d'interpréter 
+      correctement certaines balises et propriétés html5. Il en résulte un affichage 
+      en mode dégradé.
 
 Ajouter des documents
 ---------------------
 Cliquer sur Upload dans le :doc:`menu <General>` Phraseanet.
+
+.. image:: ../../images/Upload-lancer.jpg
+	   :alt: alternate text
+	   :align: center
 
 *Phraseanet Upload* se lance dans une fenêtre overlay.
 
@@ -31,21 +39,28 @@ Cliquer sur "Sélectionner les fichiers".
 	   :alt: alternate text
 	   :align: center 
  
-L'application lance l’explorateur de fichiers, aller jusqu'au dossier où se trouvent
-les fichiers à ajouter. 
-Cliquer sur Ouvrir.
+L'application lance l’explorateur de fichiers. Aller au dossier où se trouvent
+les fichiers, les sélectionner puis cliquer sur Ouvrir.
 
 .. image:: ../../images/Upload-fichiers.jpg
 	   :alt: alternate text
 	   :align: center 
 
-Une fois les documents choisis, l'interface affiche la liste des fichiers, représentés
-par leurs vignettes qui apparaissent en bas d'écran. 
+L'interface affiche alors la liste des fichiers, représentés par leurs vignettes 
+qui apparaissent en bas d'écran.
+
+.. image:: ../../images/Upload-fichiers2.jpg
+	   :alt: alternate text
+	   :align: center 
 
 Choisir la collection de destination
 ************************************
-Choisir la collection de destination: Cliquer sur le menu déroulant des collections
+Choisir la collection de destination : Cliquer sur le menu déroulant des collections
 disponibles.
+
+.. image:: ../../images/Upload-prezone3.jpg
+	   :alt: alternate text
+	   :align: center
 
 Appliquer des status
 ********************
@@ -61,7 +76,7 @@ L'utilisateur peut éventuellement ré-ordonner les documents : Cliquer sur un
 fichier et le glisser/ déposer ailleurs dans la liste. Il peut également choisir
 de retirer de la liste une ou plusieurs images (en cliquant sur le bouton Annuler
 au-dessous de chaque vignette), ou alors de retirer toutes les photos en cliquant
-sur « Clear list ». Sinon, cliquer sur « Envoyer ».
+sur « **Vider la liste** ». Sinon, cliquer sur « **Envoyer** ».
 
 .. image:: ../../images/Upload-reordonner.jpg
 	   :alt: alternate text
@@ -79,40 +94,56 @@ de la fenêtre (« Fichiers transmis »).
  
 Une barre de progression générale ainsi qu'une barre de progression par document
 permet de suivre l'état du transfert.
-Chaque fichier est transféré. Les documents sont ajoutés à la collection de 
-destination.
-Il est désormais possible d'aller consulter vos documents, à partir des interfaces
-Phraseanet Production (consultation et gestion des documents) ou Phraseanet 
-Classic (simple consultation). 
+
+Lors du transfert, les documents sont ajoutés à la collection de destination.
+
+Après transfert, il est désormais possible d'aller consulter les documents transmis 
+dans les interfaces Phraseanet Production (consultation et gestion des documents) 
+ou Phraseanet Classic (simple consultation). 
 
 La Quarantaine
 --------------
-Lors de l'ajout de fichiers, certains fichiers peuvent être placés en "quarantaine".
+Lors de l'ajout de fichiers, certains fichiers peuvent être placés en "Quarantaine".
+
+Cliquer sur l'onglet **Quarantaine** pour l'afficher. 
 
 .. image:: ../../images/Upload-Quarantaine0.jpg
 	   :alt: alternate text
-	   :align: center 
+	   :align: center
 
 La quarantaine est un espace de douane où sont isolés des fichiers en attente 
 d'une action utilisateur. 
-La quarantaine ne s'active que si des fichiers photos sont identifiés
-comme étant des nouvelles versions de documents existants préalablement uploadés,
-modifiés puis ajoutés à nouveau. 
+La quarantaine ne s'active que si des fichiers sont identifiés comme étant de 
+nouvelles versions de documents existants préalablement uploadés,modifiés puis 
+ajoutés à nouveau. 
 
 La quarantaine permet aussi d'isoler des fichiers photo ne répondant pas à des 
 critères paramétrés.
 
-Dans l'interface d'ajout, Un document qui entre dans la base est signalé par la 
+Dans l'interface d'ajout, un document qui entre dans la base est signalé par la 
 couleur verte, un document placé en quarantaine est lui signalé par la couleur 
-rouge. Pour chaque fichier est indiquée la raison pour laquelle il y a été placé : 
-Par exemple, le document peut être un doublon, ou bien celui-ci peut ne pas 
-correspondre aux caractères d’elligibilité (formats, colorimétrie, dimensions...).
+rouge. 
 
-Trois choix sont alors proposés à l'utilisateur:
+.. image:: ../../images/Upload-Quarantaine2.jpg
+	   :alt: alternate text
+	   :align: center
 
-Ajouter le fichier comme nouveau document dans la base
-Rejeter le fichier
-Remplacer le fichier existant
-L'utilisateur doit cliquer l'une des icônes:
+Dans la quarantaine, pour chaque fichier est indiquée la raison pour laquelle il 
+a été placé : le document peut être un doublon, ou bien celui-ci peut ne pas 
+correspondre aux caractères d’elligibilité (format, colorimétrie, dimensions)...*etc*.
+
+Trois choix sont alors proposés à l'utilisateur :
+
+.. image:: ../../images/Upload-Quarantaine1.jpg
+	   :alt: alternate text
+	   :align: center
+
+* **Ajouter** le fichier comme nouveau document dans la base
+* **Supprimer** le fichier
+* **Substituer** le fichier existant
+
+
+L'utilisateur décide de l'action a entreprendre pour vider la file de fichiers 
+présents dans la quarantaine.
 
 Puis passer au document suivant, le cas échéant.

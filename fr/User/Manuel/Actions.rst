@@ -31,18 +31,14 @@
 Présentation de la Palette
 --------------------------
 La Palette des Actions se trouve dans l'interface de *Phraseanet Production* dans 
-la partie haute de la fenêtre, au-dessus de l'affichage des résultats.
-Jusqu'à la version 3.5, celle-ci se présentait ainsi:
+la partie haute de la fenêtre, au-dessous du formulaire de recherche.
 
     .. image:: ../../images/Palette.jpg
 	     :alt: alternate text
 	     :align: center 
 
-A partir de la v3.5, la Palette comporte les mêmes actions, incluant de nouvelles 
-(par exemple le :doc:`Bridge <Bridge>`) mais se présente de manière différente, 
-avec moins de boutons. A la place, à droite de chaque action majeure se trouve 
-une flèche sur laquelle l'utilisateur doit cliquer pour dérouler l'ensemble des 
-actions disponibles.
+A droite de chaque bouton d'action majeur se trouve une flèche sur laquelle l'
+utilisateur peut cliquer pour dérouler l'ensemble des actions disponibles.
 
     .. image:: ../../images/Actions-PaletteBeta.jpg
 	     :alt: alternate text
@@ -144,8 +140,8 @@ Un message demande confirmation afin de valider votre choix.
 Outils images
 *************
 Cette icône permet de travailler sur les vignettes ou images de choix 
-(re-génération, substitution, rotation), sur le remplacement d’un document 
-d’origine, ou d’afficher toutes les informations :term:`EXIF <EXIF>` existantes.
+(re-génération, substitution, rotation, choix de la vignette pour les vidéo), sur le
+remplacement d’un document d'origine, ou d’afficher toutes les informations :term:`EXIF <EXIF>` existantes.
 
   * Sélectionner une image et cliquer sur l'icône "Outils Images".
 
@@ -157,23 +153,32 @@ La fenêtre Outils Images s'ouvre.
 
 Choisir un des onglets proposés:
 
-  * Régénération sous-défs: Permet de créer une nouvelle vignette et une nouvelle 
+  * **Régénération sous-défs** : Permet de créer une nouvelle vignette et une nouvelle 
     Image de choix pour les documents sélectionnés.
+    
+  * **Outils vidéos** : Disponible si et seulement si un media de type vidéo est 
+    sélectionné, l'onglet propose les outils permettant de choisir une vignette de 
+    présentation personnalisée pour les media vidéos.
+    
+  .. image:: ../../images/Actions-OutilsThumbnailVideo.jpg
+	   :alt: alternate text
+	   :align: center
 
-  * Retourner sous défs: une rotation des vignettes et Images de choix des 
+  * **Retourner sous défs** : une rotation des vignettes et Images de choix des 
     documents sélectionnés.
 
-  * Substitution document: Permet de remplacer le document original par un autre 
+  * **Substitution document** : Permet de remplacer le document original par un autre 
     (une case à cocher permet de choisir si la vignette et l’image de choix 
     doivent être reconstruites).
 
-  * Substitution des sous-défs: Pour remplacer la vignette et l’image de choix 
+  * **Substitution des sous-défs** : Pour remplacer la vignette et l’image de choix 
     par un autre fichier.
 
-  * :term:`Métadonnées <Métadonnées>`: Permet d’afficher l’ensemble 
+  * :term:`Métadonnées <Métadonnées>` : Permet d’afficher l’ensemble 
     des informations :term:`EXIF <EXIF>` disponibles pour le document.
+    
 
-Cliquer sur Valider.
+Pour appliquer les modifications apportées, cliquer sur Valider.
 
 Propriétés
 **********
