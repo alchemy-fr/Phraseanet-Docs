@@ -30,10 +30,8 @@
 
 Recherche simple
 ----------------
-La Recherche simple était, jusqu’à la version 3.5, positionnée dans le coin 
-gauche en haut de la page de Phraseanet Production. Elle se trouve désormais 
-dans la partie centrale de la page, au-dessus de la Palette des Actions et 
-de l’affichage des Résultats. 
+La Recherche simple se trouve dans la partie centrale de la page, au-dessus de la 
+palette des Actions et de l’affichage des Résultats. 
 
   .. image:: ../../images/Rechercher-simple.jpg
 	   :alt: alternate text

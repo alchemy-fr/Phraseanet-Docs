@@ -405,12 +405,12 @@ Cet écran montre l'état d'indexation de la base et permet des actions dont :
 Système multibase, chacune des bases d'une solution Phraseanet est finement paramétrable.
 Pour cela, cliquer sur l'icone *+*.  
 
-Reglage de la structure
+Réglage de la structure
 ***********************
 La rubrique *Réglage de la structure* permet d'afficher la structure documentaire de 
-la base sélectionnée sous la forme d'un fichier xml.
-Depuis la version 3.5, il est rare de devoir manipuler le paramétrage d'une base par 
-cette interface, l'interface `Champs`_ étant bien plus conviviale.
+la base sélectionnée sous la forme d'un fichier xml éditable.
+Il est rare de devoir manipuler le paramétrage d'une base par cette interface, 
+l'interface `Champs`_ étant bien plus conviviale.
 
 Champs
 ******
@@ -444,7 +444,7 @@ l'application.
              vignettes et images de choix des média.
           
 
-Reglage des Status
+Réglage des Status
 ******************
   Les :term:`Status` sont des marqueurs qui indiquent des états sur des enregistrements. 
   Ils interagissent ou non avec les droits des utilisateurs (paramétrables dans la

@@ -130,9 +130,12 @@ sélectionner d’abord les images sur une page, cliquer sur la page à atteindr
 maintenir enfoncer la touche "Alt" du clavier puis cliquer sur une vignette 
 de la nouvelle page de résultats.
 
+Le nombre d'éléments sélectionnés apparaît en bas à gauche dans l'interface.
+
   .. image:: ../../images/Affichage-selection5.jpg
 	   :alt: alternate text
 	   :align: center 
+
 
   * La sélection par type de documents
 
@@ -196,9 +199,8 @@ Onglet Notice
 **************
 Sur la partie gauche, l'utilisateur retrouve son image de choix.
  
-Sur la partie droite, l'onglet *Notice* (ou *Description* dans les anciennes 
-versions) qui permet de visualiser les informations issues des champs remplis, 
-tels que les mots clés, la légende,...
+Sur la partie droite, l'onglet *Notice* permet de visualiser les informations issues
+des champs remplis, tels que les mots clés, la légende,...
 
   .. image:: ../../images/Affichage-vuedetaillee1.jpg
 	   :alt: alternate text
