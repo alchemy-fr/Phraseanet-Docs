@@ -21,7 +21,7 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Type          Information
+   Parameters               Type           Information
   ======================== ============== =============
    name                     string         The name of the basket
   ======================== ============== =============

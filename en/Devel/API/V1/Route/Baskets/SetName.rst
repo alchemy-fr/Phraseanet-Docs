@@ -21,7 +21,7 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Type          Information
+   Parameters               Type           Information
   ======================== ============== =============
    basket_id                integer        The basket_id of the selected basket
    name                     string         The name of the basket

@@ -7,7 +7,8 @@ API Changelog
 La version 1.2 de l'API présente deux problèmes de retro-compatibilité avec la
 version précédente.
 
-- Un bug a été corrigé et le retour de la route :doc:`feeds/content <V1/Route/Feeds/Content>` a été mis à jour.
+- Un bug a été corrigé et le retour de la route :doc:`feeds/content <V1/Route/Feeds/Content>`
+  a été mis à jour.
 
 - Un certains nombre de routes ont été modifiées
 
@@ -16,12 +17,14 @@ version précédente.
     - Légende d'un record :doc:`record/caption <V1/Route/Records/Caption>`
     - Rechercher un record :doc:`record/search <V1/Route/Records/Search>`
     - Structure documentaire d'une databox :doc:`databox/metadatas <V1/Route/Databox/Metadatas>`
-    - Description d'une tâche :doc:`monitor/tasks <V1/Route/Monitor/Tasks>` & :doc:`monitor/task <V1/Route/Monitor/Task>`
+    - Description d'une tâche :doc:`monitor/tasks <V1/Route/Monitor/Tasks>`
+      & :doc:`monitor/task <V1/Route/Monitor/Task>`
     - Description d'un panier :doc:`basket/list <V1/Route/Baskets/List>`
     - Description d'un élment du panier :doc:`basket/content <V1/Route/Baskets/Content>`
 
 
-- Les objets avec des attributs numriques ont été supprimés. Tous les objets de collection sont maintenant représentés comme un tableau d'objets.
+- Les objets avec des attributs numriques ont été supprimés. Tous les objets de
+  collection sont maintenant représentés comme un tableau d'objets.
 
 
 **Avant**
@@ -39,7 +42,7 @@ version précédente.
         }
     }
 
-**Maintenant**
+**version 1.2**
 
 .. code-block:: javascript
 
@@ -68,7 +71,7 @@ L'attribut **last_modified** à été remplacé par **updated_on**
 Description des sous-definitions
 ********************************
 
-Les sous-définition sont présentés comme une liste d'objet.
+Les sous-définition sont présentés comme un tableau d'objet.
 
 L'attribut **name** à été ajouté.
 
@@ -99,7 +102,7 @@ L'attribut **name** à été ajouté.
                 }
         }
 
-**Maintenant**
+**version 1.2**
 
 .. code-block:: javascript
 
@@ -268,7 +271,7 @@ Description d'un contenu d'un panier
 ************************************
 
 L'attribut 'basket_elements' à la racine de la reponse ne retourne plus que les
-éléments du panier sous forme d'une liste
+éléments du panier sous forme d'un tableau
 
 .. code-block:: javascript
 
@@ -458,7 +461,7 @@ Embeddables
 ***********
 
 Embeddables media now give a
-Les embeddables fournissent maintenant une liste de *devices* adaptés.
+Les embeddables fournissent maintenant un tableau de *devices* adaptés.
 Ces devices sont compatibles avec CSS 2.
 
 .. seealso::
@@ -482,7 +485,8 @@ Liens hypermedia
 
 Des liens hypermedia apparaissent dans certaines réponses. Ainsi, dans une
 réponse :doc:`feed/content <V1/Route/Feeds/Content>`, pour chaque entrée, un lien
-vers la route d'API :doc:`feed/entry <V1/Route/Feeds/Entry>` correspondant est fourni.
+vers la route d'API :doc:`feed/entry <V1/Route/Feeds/Entry>` correspondant est
+fourni.
 
 Requeter un media via un device et/ou un type mime
 **************************************************

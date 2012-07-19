@@ -6,7 +6,8 @@ API Changelog
 
 Version 1.2 of Phraseanet API is not backward compatible with the previous one.
 
-- A bug has been fixed in :doc:`feed content <V1/Route/Feeds/Content>` and the route :doc:`feeds/content <V1/Route/Feeds/Content>` has been updated.
+- A bug has been fixed in :doc:`feed content <V1/Route/Feeds/Content>` and the
+  route :doc:`feeds/content <V1/Route/Feeds/Content>` has been updated.
 
 - A couple routes have been updated
 
@@ -15,12 +16,14 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
     - Record caption :doc:`record/caption <V1/Route/Records/Caption>`
     - Record search :doc:`record/search <V1/Route/Records/Search>`
     - Databox document structure :doc:`databox/metadatas <V1/Route/Databox/Metadatas>`
-    - Task description :doc:`monitor/tasks <V1/Route/Monitor/Tasks>` & :doc:`monitor/task <V1/Route/Monitor/Task>`
+    - Task description :doc:`monitor/tasks <V1/Route/Monitor/Tasks>`
+      & :doc:`monitor/task <V1/Route/Monitor/Task>`
     - Basket description :doc:`basket/list <V1/Route/Baskets/List>`
     - Basket element description :doc:`basket/content <V1/Route/Baskets/Content>`
 
 
-- Object with numeric attributes have been removed. All collection objects are now presented as an array of objects.
+- Object with numeric attributes have been removed. All collection objects are
+  now presented as an array of objects.
 
 
 **Before**
@@ -38,7 +41,7 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
         }
     }
 
-**Now**
+**version 1.2**
 
 .. code-block:: javascript
 
@@ -67,7 +70,7 @@ attribute **last_modified** has been replaced by **updated_on**
 Description of embedable medias
 *******************************
 
-The embedable media is now a list of embedable objects.
+The embedable media is now an array of embedable objects.
 
 The **name** attribute has been added.
 
@@ -98,7 +101,7 @@ The **name** attribute has been added.
                 }
         }
 
-**Now**
+**version 1.2**
 
 .. code-block:: javascript
 
@@ -129,7 +132,7 @@ Description of the record metadatas
 ***********************************
 
 The response of a record metadatas is now contained in a **record_metadatas**
-attribut.
+attribute.
 
 .. code-block:: javascript
 
@@ -154,7 +157,7 @@ Description of a databox document structure
 *******************************************
 
 The response of a databox document structure is now contained in a
-**document_metadatas** attribut.
+**document_metadatas** attribute.
 
 .. code-block:: javascript
 
@@ -207,7 +210,7 @@ Three fields have been added to the response that describe a task.
     "response": {
         "task": {
             "id": 2,
-            "name": "Création des sous définitions",
+            "name": "Subviews creation",
             "state": "started",
             "pid": 15705,
             "title": "Subviews creation",
@@ -221,7 +224,7 @@ Three fields have been added to the response that describe a task.
 Description of a caption record
 *******************************
 
-The response of a caption record is now contained in **caption_metadas** attribut
+The response of a caption record is now contained in **caption_metadas** attribute
 
 .. code-block:: javascript
 
@@ -245,8 +248,8 @@ The response of a caption record is now contained in **caption_metadas** attribu
 Description of a basket
 ***********************
 
-A **validation_basket** attribut has been added to the
-basket response, it indicates whether it is a validation basket.
+A **validation_basket** attribute has been added to the
+basket response, it indicates whether it is a validation basket or not.
 
 .. code-block:: javascript
 
@@ -267,11 +270,11 @@ basket response, it indicates whether it is a validation basket.
 Description of a basket content
 *******************************
 
-**basket_element** at the root of the response returns only a collection of basket
-elements.
+The **basket_elements** at the root of the response returns only an array of
+basket elements.
 
-A **basket** attribut has been added to the root of the response.
-It describes the requested basket.
+A **basket** attribut has been added to the root of the response and
+describes the requested basket.
 
 .. code-block:: javascript
 
@@ -298,14 +301,10 @@ It describes the requested basket.
         }
     }
 
+The **choice** attribut has been replace by **validation_choices** which now
+contains an array of validation choice with a new **validation_user** attribute.
 
-
-Also, there is a change on validation basket elements response.
-
-The **choice** attribut has been replace by **validation_choices** which now contains
-a list of validation choice with a new **validation_user** attribute.
-
-**Now**
+**version 1.2**
 
 .. code-block:: javascript
 
@@ -384,8 +383,8 @@ been replaced by **offset_start**
          }]
     }
 
-Description de flux
-*******************
+Feeds description
+*****************
 
 Attribute *is_mine* has been removed and is replaced by two new attributes :
 *readonly* and *deletable*.
