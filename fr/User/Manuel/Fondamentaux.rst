@@ -18,12 +18,3 @@ Les fondamentaux
    Afficher
    Rechercher
    Exporter
-
-
-
-
-
-
-
-
-
