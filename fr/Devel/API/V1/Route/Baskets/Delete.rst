@@ -54,39 +54,6 @@ Response sample
             "response": {
                 "baskets": [
                 {
-                    "basket_id": 141,
-                    "created_on": "2012-06-04T13:32:32+02:00",
-                    "description": "",
-                    "name": "basket one",
-                    "pusher_usr_id": 3,
-                    "ssel_id": 141,
-                    "updated_on": "2012-06-21T15:50:12+02:00",
-                    "unread": false,
-                    "validation_basket": false
-                },
-                {
-                    "basket_id": 143,
-                    "created_on": "2012-06-15T15:32:35+02:00",
-                    "description": "",
-                    "name": "basket two",
-                    "pusher_usr_id": 3,
-                    "ssel_id": 143,
-                    "updated_on": "2012-06-21T16:13:07+02:00",
-                    "unread": false,
-                    "validation_basket": false
-                },
-                {
-                    "basket_id": 144,
-                    "created_on": "2012-06-18T16:29:37+02:00",
-                    "description": "",
-                    "name": "basket test",
-                    "pusher_usr_id": 3,
-                    "ssel_id": 144,
-                    "updated_on": "2012-06-18T16:29:37+02:00",
-                    "unread": false,
-                    "validation_basket": false
-                },
-                {
                     "basket_id": 145,
                     "created_on": "2012-06-18T18:15:39+02:00",
                     "description": "",
