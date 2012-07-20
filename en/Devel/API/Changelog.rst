@@ -56,19 +56,19 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
         ]
     }
 
-Description of a record
-***********************
+Record response
+***************
 
 attribute **last_modification** has been replaced by **updated_on**
 
 
-Description of a permalink
-**************************
+Permalink response
+******************
 
 attribute **last_modified** has been replaced by **updated_on**
 
-Description of embedable medias
-*******************************
+Embedable medias response
+*************************
 
 The embedable media is now an array of embedable objects.
 
@@ -128,8 +128,8 @@ The **name** attribute has been added.
                 "mime_type": "image/jpeg"
             }
 
-Description of the record metadatas
-***********************************
+Record metadatas response
+************************
 
 The response of a record metadatas is now contained in a **record_metadatas**
 attribute.
@@ -153,8 +153,8 @@ attribute.
         ]
     }
 
-Description of a databox document structure
-*******************************************
+Databox document structure response
+***********************************
 
 The response of a databox document structure is now contained in a
 **document_metadatas** attribute.
@@ -195,8 +195,8 @@ The response of a databox document structure is now contained in a
     }
 
 
-Description of a task
-*********************
+Task response
+*************
 
 Three fields have been added to the response that describe a task.
 
@@ -221,8 +221,8 @@ Three fields have been added to the response that describe a task.
         }
     }
 
-Description of a caption record
-*******************************
+Caption record response
+***********************
 
 The response of a caption record is now contained in **caption_metadas** attribute
 
@@ -245,8 +245,8 @@ The response of a caption record is now contained in **caption_metadas** attribu
 
 
 
-Description of a basket
-***********************
+Basket response
+***************
 
 A **validation_basket** attribute has been added to the
 basket response, it indicates whether it is a validation basket or not.
@@ -267,13 +267,13 @@ basket response, it indicates whether it is a validation basket or not.
         }
     }
 
-Description of a basket content
-*******************************
+Basket content response
+***********************
 
 The **basket_elements** at the root of the response returns only an array of
 basket elements.
 
-A **basket** attribut has been added to the root of the response and
+A **basket** attribute has been added to the root of the response and
 describes the requested basket.
 
 .. code-block:: javascript
@@ -301,7 +301,7 @@ describes the requested basket.
         }
     }
 
-The **choice** attribut has been replace by **validation_choices** which now
+The **choice** attribute has been replace by **validation_choices** which now
 contains an array of validation choice with a new **validation_user** attribute.
 
 **version 1.2**
@@ -383,8 +383,8 @@ been replaced by **offset_start**
          }]
     }
 
-Feeds description
-*****************
+Feeds response
+**************
 
 Attribute *is_mine* has been removed and is replaced by two new attributes :
 *readonly* and *deletable*.

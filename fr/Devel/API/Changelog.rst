@@ -57,19 +57,19 @@ version précédente.
         ]
     }
 
-Description d'un record
-***********************
+Réponse pour un record
+**********************
 
 L'attribut **last_modification** à été remplacé par **updated_on**
 
 
-Description d'un permalien
+Réponse pour un permalien
 **************************
 
 L'attribut **last_modified** à été remplacé par **updated_on**
 
-Description des sous-definitions
-********************************
+Réponse pour des sous-definitions
+*********************************
 
 Les sous-définition sont présentés comme un tableau d'objet.
 
@@ -129,7 +129,7 @@ L'attribut **name** à été ajouté.
                 "mime_type": "image/jpeg"
             }
 
-Description des métadonnées d'un record
+Réponse pour des métadonnées d'un record
 ****************************************
 
 La réponse des métadonnés d'un record est maintenant contenu dans
@@ -154,8 +154,8 @@ l'attribut **record_metadatas**
         ]
     }
 
-Description de la structure documentaire d'une databox
-******************************************************
+Réponse pour la structure documentaire d'une databox
+****************************************************
 
 La réponse de la structure documentaire d'une databox est maintenant
 contenu dans l'attribut **document_metadatas** attribut.
@@ -195,7 +195,7 @@ contenu dans l'attribut **document_metadatas** attribut.
         ]
     }
 
-Description d'une tache
+Réponse pour une tache
 ***********************
 
 Trois champs ont été ajoutés à la réponse de la description d'une tâche.
@@ -221,8 +221,8 @@ Trois champs ont été ajoutés à la réponse de la description d'une tâche.
     }
 
 
-Description de la légende d'un record
-*************************************
+Réponse pour la légende d'un record
+***********************************
 
 La réponse d'une légende d'un record est maintenaint contenu dans l'attribut
 'caption_metadatas'.
@@ -244,30 +244,7 @@ La réponse d'une légende d'un record est maintenaint contenu dans l'attribut
         ]
     }
 
-Description de la légende d'un record
-*************************************
-
-La réponse d'une légende d'un record est maintenaint contenu dans l'attribut
-'caption_metadatas'.
-
-.. code-block:: javascript
-
-    "response": {
-        "caption_metadatas": [
-            {
-                "meta_structure_id": 29,
-                "name": "Bits",
-                "value": "8"
-            },
-            {
-                "meta_structure_id": 30,
-                "name": "Channels",
-                "value": "3"
-            }
-        ]
-    }
-
-Description d'un contenu d'un panier
+Réponse pour un contenu d'un panier
 ************************************
 
 L'attribut 'basket_elements' à la racine de la reponse ne retourne plus que les
@@ -340,8 +317,8 @@ au profit du paramètre offset_start
          }]
     }
 
-Description de flux
-*******************
+Réponse pour un flux
+********************
 
 L'attribut "is_mine" a disparu au profit de deux nouvelles clefs : *readonly* et
 *deletable*.
