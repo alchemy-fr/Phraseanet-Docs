@@ -129,7 +129,7 @@ The **name** attribute has been added.
             }
 
 Record metadatas response
-************************
+*************************
 
 The response of a record metadatas is now contained in a **record_metadatas**
 attribute.
