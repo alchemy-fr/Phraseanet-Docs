@@ -8,7 +8,7 @@
     L'interface *Phraseanet Admin* vous permet d'administrer et de paramétrer 
     l'application Phraseanet. 
 	
-    Les écran et jeux de formulaires permettent de gérer et de monitorer la solution 
+    Les écrans et jeux de formulaires permettent de gérer et de monitorer la solution 
     applicative, d'effectuer des inscriptions et de paramétrer les droits des 
     utilisateurs, de déployer et de paramétrer des bases et des collections 
     documentaires.
@@ -16,7 +16,7 @@
 L'interface *Phraseanet Admin* comporte un cadre à gauche de l'écran qui affiche 
 un menu listant les différentes rubriques d'administration.
 
-Si l'utilisateur ne voit pas certaines de ces rubriques, c'est que ses droits ne 
+Si l'utilisateur ne voit pas certaines de ces rubriques, c'est que ses :doc:`droits <AdministrationUtilisateurs>` ne 
 le lui permettent pas.
 
   .. image:: ../../images/Administration-gauche.jpg
