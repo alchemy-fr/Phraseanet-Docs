@@ -145,7 +145,7 @@ Une fenêtre en :term:`Overlay <Overlay>` s’ouvre:
    :alt: alternate text
    :align: center
 
-Cocher les cases pour afficher les :term:`status <Statusbit>`, la description 
+Cocher les cases pour afficher les :term:`status <Status>`, la description 
 et/ou le titre des documents dans les paniers. 
 Fermer en cliquant sur la croix en haut à droite ou appuyer sur la touche "Echap" 
 du clavier.

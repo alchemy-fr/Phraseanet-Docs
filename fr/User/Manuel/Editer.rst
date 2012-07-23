@@ -181,7 +181,7 @@ Si des valeurs suggérées ont été définies pour le champ, la liste apparaît
 sous forme de menu contextuel dans la fenêtre à gauche du nom du champ.
 
 :doc:`Se reporter à la section Préférences: Valeurs suggérées dans l'interface 
-Phraseanet Administration <Administration>`
+Phraseanet Administration <AdministrationBasesCollections>`
 
 
 .. image:: ../../images/Prod-Editer-valeurssugg.jpg

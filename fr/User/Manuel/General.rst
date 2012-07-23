@@ -42,8 +42,8 @@ menu principal:
 
 Upload
 ******
-*Phraseanet Upload* vous permet d’importer vos documents multimédia à partir 
-de votre disque dur. 
+Disponible seulement à partir de l'interface Production, *Phraseanet Upload* vous 
+permet d’importer vos documents multimédia à partir de votre disque dur. 
 Vous choisissez la :term:`collection <Collection>` dans laquelle vous souhaitez 
 voir vos documents archivés, vous les réordonnez éventuellement, puis effectuez 
 l’import. Ce gestionnaire de téléchargement vous permet de transférer vos documents 
