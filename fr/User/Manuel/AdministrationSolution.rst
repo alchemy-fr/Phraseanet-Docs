@@ -155,4 +155,9 @@ Après avoir cliqué sur *nouvelle tâche* :
   * Ou modifier les paramètres directement dans la vue XML.
 
   * Cliquer sur Valider pour enregistrer les modifications.
+  
+.. note:: Pour plus d'informations sur le paramétrage de tâches, se reporter 
+     à la page :doc:`../../Admin/MoteurDeTaches`.
+  
+  
     
