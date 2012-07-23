@@ -181,20 +181,23 @@ L'archivage des Paniers
 
 Archiver un Panier
 ^^^^^^^^^^^^^^^^^^
-Nouveauté de la version 3.6, il est désormais possible d’archiver ses paniers 
-dans Phraseanet ! 
+Suite à la création de nombreux paniers, il est possible que la zone de travail
+soit encombrée de paniers qu'il aurait était souhaitable de conserver pour une 
+raison ou pour une autre. **L'archivage de paniers** répond à cette demande.
+
+Pour archiver un panier, ouvrir le menu contextuel du panier et cliquer sur 
+«Archiver» :
+
+  .. image:: ../../images/ArchivagePanier1.jpg
+	   :alt: alternate text
+	   :align: center
+
+Celui-ci disparaît de la zone de travail latérale.
 
 Un panier archivé disparaît de la zone de travail latérale. 
 Il peut être ainsi conservé pour un usage futur, sans encombrer la zone de travail 
 dans *Phraseanet Production*.
 
-Ouvrir le menu contextuel du panier et cliquer sur «Archiver»:
-
-  .. image:: ../../images/ArchivagePanier1.jpg
-	   :alt: alternate text
-	   :align: center
-	   
-Celui-ci disparaît de la zone de travail latérale.
 
 Retrouver un Panier archivé
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

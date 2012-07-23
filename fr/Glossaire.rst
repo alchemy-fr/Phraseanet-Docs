@@ -9,7 +9,8 @@ Glossaire
   :sorted:
 
   FTP
-    Le FTP est utilisé pour vos envois massifs de documents.
+    Le FTP est un protocole de transfert de fichiers. Il est utilisé pour vos envois 
+    massifs de documents.
 
   Document
     Un document est le fichier d'origine ajouté à une Base/Collection.
@@ -35,7 +36,7 @@ Glossaire
     Opération qui consiste à associer une description à un document,
     soit par extraction des métadonnées, soit par saisie de la description.
   
-  Statusbit
+  Status
     Etat de type Oui/Non qui peut être appliqué sur un document, paramétrable. 
     Il est possible de définir et d’affecter jusqu'à 60 status sur un document.
 
@@ -109,6 +110,20 @@ Glossaire
   Palette des Actions
     Outils disponibles pour les utilisateurs selon leurs droits,
     permettant de déclencher des actions sur des documents des paniers...
+
+  Business field ou Champ métier
+    Les *Business field* Phraseanet sont des champs destinés à recevoir des informations
+    métiers. Ces informations internes sont partagées par les utilisateurs qui disposent 
+    des droits d'édition des documents.
+    Un business field n'est "recherchable" que par un utilisateur disposant des 
+    droits d'édition.
+    
+  Dublin Core
+    Schéma normalisé ISO 15836 destiné à la description de ressources documentaires. 
+    
+    .. seealso:: http://www.dublincore.org/
+    
+
 
     
 
