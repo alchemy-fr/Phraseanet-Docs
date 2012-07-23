@@ -40,30 +40,25 @@ Response sample
         "meta": {
             "api_version": "1.2",
             "request": "GET /api/v1/databoxes/list/",
-            "response_time": "2011-07-27T10:17:26+02:00",
-            "http_code": 200,    
+            "response_time": "2012-06-29T16:29:48+02:00",
+            "http_code": 200,
             "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
         },
         "response": {
-            "databoxes": {
-                "58": {
-                    "databox_id": 58,
-                    "name": "Quarantine Box",
-                    "version": "3.2.0.0a8"
-                },
-                "57": {
-                    "databox_id": 57,
-                    "name": "Thesaurus Datas",
-                    "version": "3.2.0.0a8"
-                },
-                "1": {
-                    "databox_id": 1,
-                    "name": "Eléphant",
-                    "version": "3.2.0.0a8"
-                }
+            "databoxes": [
+            {
+                "databox_id": 1,
+                "name": "db_37",
+                "version": "3.7.0.0.a9"
+            },
+            {
+                "databox_id": 2,
+                "name": "db_38",
+                "version": "3.8.0.0.a1"
             }
+            ]
         }
     }

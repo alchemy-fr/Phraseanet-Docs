@@ -21,20 +21,20 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information
+   Parameters               Type           Information
   ======================== ============== =============
-   databox_id               94             The databox id of the record
-   record_id                5694           The record_id
+   databox_id               integer        The databox id of the record
+   record_id                integer        The record_id
   ======================== ============== =============
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   metadatas  The list of the metadatas of the record
-  ========== ================================
+  ================= ================================
+   Field             Description
+  ================= ================================
+   record_metadata   The list of the metadatas of the record
+  ================= ================================
 
 Response sample
 ---------------
@@ -44,8 +44,8 @@ Response sample
     {
         "meta": {
             "api_version": "1.2",
-            "request": "GET /api/v1/records/2/132/metadatas/",
-            "response_time": "2012-06-13T14:05:53+02:00",
+            "request": "GET /api/v1/records/1/644/metadatas/",
+            "response_time": "2012-06-29T17:04:07+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -53,67 +53,79 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "metadatas": {
-                "901": {
-                    "meta_id": 901,
-                    "meta_structure_id": 20,
-                    "name": "AppareilPhoto",
-                    "value": "iPhone 4S"
-                },
-                "902": {
-                    "meta_id": 902,
-                    "meta_structure_id": 21,
-                    "name": "NomDeFichier",
-                    "value": "photo03.JPG"
-                },
-                "903": {
-                    "meta_id": 903,
-                    "meta_structure_id": 1,
-                    "name": "Objet",
-                    "value": "Front cover of a book"
-                },
-                "904": {
-                    "meta_id": 904,
-                    "meta_structure_id": 2,
-                    "name": "Categorie",
-                    "value": "books"
-                },
-                "905": {
-                    "meta_id": 905,
-                    "meta_structure_id": 4,
-                    "name": "MotsCles",
-                    "value": "book"
-                },
-                "906": {
-                    "meta_id": 906,
-                    "meta_structure_id": 4,
-                    "name": "MotsCles",
-                    "value": "javascript"
-                },
-                "907": {
-                    "meta_id": 907,
-                    "meta_structure_id": 4,
-                    "name": "MotsCles",
-                    "value": "oreilly"
-                },
-                "908": {
-                    "meta_id": 908,
-                    "meta_structure_id": 6,
-                    "name": "Date",
-                    "value": "2012/06/15"
-                },
-                "909": {
-                    "meta_id": 909,
-                    "meta_structure_id": 9,
-                    "name": "Ville",
-                    "value": "Paris"
-                },
-                "910": {
-                    "meta_id": 910,
-                    "meta_structure_id": 11,
-                    "name": "Pays",
-                    "value": "France"
-                }
+            "record_metadatas": [
+            {
+                "meta_id": 4437,
+                "meta_structure_id": 1,
+                "name": "Object",
+                "value": "smoke"
+            },
+            {
+                "meta_id": 4438,
+                "meta_structure_id": 4,
+                "name": "Keywords",
+                "value": "fumée"
+            },
+            {
+                "meta_id": 4439,
+                "meta_structure_id": 4,
+                "name": "Keywords",
+                "value": "smoke"
+            },
+            {
+                "meta_id": 4417,
+                "meta_structure_id": 20,
+                "name": "CameraModel",
+                "value": "NIKON D700"
+            },
+            {
+                "meta_id": 4425,
+                "meta_structure_id": 23,
+                "name": "Recordid",
+                "value": "644"
+            },
+            {
+                "meta_id": 4422,
+                "meta_structure_id": 24,
+                "name": "MimeType",
+                "value": "image/jpeg"
+            },
+            {
+                "meta_id": 4423,
+                "meta_structure_id": 25,
+                "name": "Size",
+                "value": "3221035"
+            },
+            {
+                "meta_id": 4424,
+                "meta_structure_id": 26,
+                "name": "Extension",
+                "value": "JPG"
+            },
+            {
+                "meta_id": 4418,
+                "meta_structure_id": 27,
+                "name": "Width",
+                "value": "4256"
+            },
+            {
+                "meta_id": 4419,
+                "meta_structure_id": 28,
+                "name": "Height",
+                "value": "2832"
+            },
+            {
+                "meta_id": 4421,
+                "meta_structure_id": 29,
+                "name": "Bits",
+                "value": "8"
+            },
+            {
+                "meta_id": 4420,
+                "meta_structure_id": 30,
+                "name": "Channels",
+                "value": "3"
             }
+            ]
         }
     }

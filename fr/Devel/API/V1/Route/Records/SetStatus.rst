@@ -4,7 +4,7 @@ Records SetStatus
 About
 -----
 
-  Set status to a record 
+  Set status to a record
 
   .. code-block:: bash
 
@@ -13,7 +13,7 @@ About
   ======================== =====
    Informations
   ======================== =====
-   HTTP Method              
+   HTTP Method
    Requires Authentication  Yes
   ======================== =====
 
@@ -21,11 +21,11 @@ Parameters
 ----------
 
   ================ ========= ==============================
-   Parameters       Value     Information 
+   Parameters       Type      Information
   ================ ========= ==============================
-   databox_id 	    94        The databox id of the record
-   record_id        5694      The record_id
-   status           Array     The status to modify  
+   databox_id 	    integer   The databox id of the record
+   record_id        integer   The record_id
+   status           Array     The status to modify
   ================ ========= ==============================
 
 ** Example **
@@ -35,7 +35,7 @@ Parameters
     status[4]=1&
     status[5]=0&
 
-is equivalent to 
+is equivalent to
 
   .. code-block:: javascript
 
@@ -50,7 +50,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   status 	  The list of the status of the record 
+   status 	  The list of the status of the record
   ========== ================================
 
 Response sample

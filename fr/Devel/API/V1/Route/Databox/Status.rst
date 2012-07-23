@@ -21,9 +21,9 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information
+   Parameters               Type           Information
   ======================== ============== =============
-   databox_id               94             The databox id on which the request is done
+   databox_id               integer        The databox id on which the request is done
   ======================== ============== =============
 
 Response Fields
@@ -43,8 +43,8 @@ Response sample
     {
         "meta": {
             "api_version": "1.2",
-            "request": "GET /api/v1/databoxes/52/status/",
-            "response_time": "2011-07-27T11:12:47+02:00",
+            "request": "GET /api/v1/databoxes/1/status/",
+            "response_time": "2012-06-29T16:22:52+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -52,16 +52,34 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "status" : {
-                "4": {
-                    "bit": 4,
-                    "label_on": "online",
-                    "label_off": "offline",
-                    "img_on": false,
-                    "img_off": false,
-                    "searchable": 1,
-                    "printable": 0
-                }
+            "status": [
+            {
+                "bit": 4,
+                "label_on": "online_on",
+                "label_off": "online_off",
+                "img_on": "/custom/status/localhost-3306-db_37-stat_4_1.gif",
+                "img_off": "/custom/status/localhost-3306-db_37-stat_4_0.gif",
+                "searchable": false,
+                "printable": false
+            },
+            {
+                "bit": 5,
+                "label_on": "validated_ko",
+                "label_off": "validated_ok",
+                "img_on": "/custom/status/localhost-3306-db_37-stat_5_1.gif",
+                "img_off": "/custom/status/localhost-3306-db_37-stat_5_0.gif",
+                "searchable": false,
+                "printable": false
+            },
+            {
+                "bit": 6,
+                "label_on": "not_sell",
+                "label_off": "sell",
+                "img_on": "",
+                "img_off": "",
+                "searchable": false,
+                "printable": false
             }
+            ]
         }
     }

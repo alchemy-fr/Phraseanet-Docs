@@ -59,7 +59,7 @@ Response sample
                     "usr_id": 3
                 },
                 "base_id": 3,
-                "original_name": "SDIM7693_X3Fici.jpg",
+                "original_name": "Tree.jpg",
                 "sha256": "eda6790b95f6fbeeba32e120d9113fd8f71070a16c110c1018d2accd2b3175e0",
                 "uuid": "bec1c9b3-4812-4f31-acc6-621f3f664760",
                 "forced": false,

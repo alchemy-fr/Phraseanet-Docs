@@ -4,7 +4,7 @@ Records Status
 About
 -----
 
-  Return 
+  Return
 
   .. code-block:: bash
 
@@ -21,10 +21,10 @@ Parameters
 ----------
 
   ================ ========= =============================
-   Parameters       Value     Information 
+   Parameters       Type      Information
   ================ ========= =============================
-   databox_id       94 	      The databox id of the record
-   record_id        5694      The record_id 
+   databox_id       integer   The databox id of the record
+   record_id        integer   The record_id
   ================ ========= =============================
 
 Response Fields
@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   status     The list of the status of the record 
+   status     The list of the status of the record
   ========== ================================
 
 Response sample
@@ -41,22 +41,31 @@ Response sample
 
   .. code-block:: javascript
 
-    {
+   {
         "meta": {
             "api_version": "1.2",
-            "request": "GET /api/v1/records/52/5780/status/",
-            "response_time": "2011-07-27T12:58:42+02:00",
+            "request": "GET /api/v1/records/1/638/status/",
+            "response_time": "2012-06-29T16:24:03+02:00",
             "http_code": 200,
+            "error_type": null,
             "error_message": null,
             "error_details": null,
             "charset": "UTF-8"
         },
         "response": {
-            "status": {
-                "4": {
-                    "bit": 4,
-                    "state": false
-                }
+            "status": [
+            {
+                "bit": 4,
+                "state": false
+            },
+            {
+                "bit": 5,
+                "state": true
+            },
+            {
+                "bit": 6,
+                "state": true
             }
+            ]
         }
     }

@@ -25,16 +25,16 @@ Parameters
   ============= =========== ========= =============
    query         string                Search query ; search query is the same syntax as in phraseanet. Default value is an string, which equals “all records”
    bases         array                 An array of base_ids ; If an empty array or no value are provided, the query is done on all collections
-   page          int         1         The number of the requested page (first page is page 1)
+   offset_start  int         1         The number of the requested page (first page is page 1)
    per_page      int         10        The number of records per page
    ord           string                This feature is currently only available with SphinxSearch Engine. Available values are “asc” and “desc”
    sort          string                This feature is currently only available with SphinxSearch Engine. Available values are “relevance” and “created_on” and “random”
    record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”
    search_type   int         0         A toggle to switch records search or stories search. Available values are 0 for records and 1 for stories
    stemme        int         1         This feature is currently only available with SphinxSearch Engine. Enable stemmed search
-   datefield     string                Select a field to search with datemin and datemax filters
-   datemin       date                  The minimum date (you need to set a datefield value to use this feature)
-   datemax       date                  The maximum date (you need to set a datefield value to use this feature)
+   date_field    string                Select a field to search with datemin and datemax filters
+   date_min      string                The minimum date as string formated as follow 'd/m/Y' (you need to set a datefield value to use this feature)
+   date_max      string                The maximum date as string formated as follow 'd/m/Y' (you need to set a datefield value to use this feature)
    status        array
    fields        array
   ============= =========== ========= =============
@@ -45,9 +45,9 @@ Response Fields
   ================== ================================
    Field              Description
   ================== ================================
-  total_pages         The total number of pages available
-  current_page        The number of the page related to the results
-  available_results 	The amount of results available through this query. This number may be lower than available results ; SphinxSearch Engine has a limited number of results which can be retrieved and is, by default 1000. However, this limit can be configured
+  offset_start        The start offset
+  per_page            The number of results per page
+  available_results   The amount of results available through this query. This number may be lower than available results ; SphinxSearch Engine has a limited number of results which can be retrieved and is, by default 1000. However, this limit can be configured
   total_results       The amount of results corresponding to the query
   error               A string with an error from the searchengine
   warning             A string with a warning from the searchengine
@@ -87,12 +87,12 @@ Response sample
 ---------------
 
   .. code-block:: javascript
-    
+
     {
         "meta": {
             "api_version": "1.2",
             "request": "POST /api/v1/records/search/",
-            "response_time": "2012-06-13T14:14:12+02:00",
+            "response_time": "2012-06-29T18:12:19+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -100,72 +100,108 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "total_pages": 1,
-            "current_page": 1,
+            "offset_start": 0,
+            "per_page": 10,
             "available_results": 1,
             "total_results": 1,
             "error": "",
             "warning": "",
-            "query_time": 0.003656,
+            "query_time": 0.0003,
             "search_indexes": "",
-            "suggestions": [
-                {
-                    "value": "book",
-                    "current": true,
-                    "hits": "1"
-                }
-            ],
+            "suggestions": [],
             "results": [
+            {
+                "databox_id": 1,
+                "record_id": 644,
+                "mime_type": "image/jpeg",
+                "title": "0050.JPG",
+                "original_name": "0050.JPG",
+                "updated-on": "2012-06-22T21:22:08+02:00",
+                "created_on": "2012-06-22T21:22:08+02:00",
+                "collection_id": 2,
+                "sha256": "9f44884438cab8ad6a8a557c4101ec866e0af2eb58b890c9c0e9cad385181fb8",
+                "thumbnail": {
+                "name": "thumbnail",
+                "permalink": {
+                    "created_on": "2012-06-25T18:05:20+02:00",
+                    "id": 2016,
+                    "is_activated": true,
+                    "label": "0050JPG",
+                    "updated_on": "2012-06-25T18:05:20+02:00",
+                    "page_url": "http://dev.phrasea.net/permalink/v1/0050JPG/1/644/m466mwxi/thumbnail/view/",
+                    "url": "http://dev.phrasea.net/permalink/v1/0050JPG/1/644/m466mwxi/thumbnail/"
+                },
+                "height": 100,
+                "width": 150,
+                "filesize": 3436,
+                "devices": [
+                    "screen"
+                ],
+                "player_type": "IMAGE",
+                "mime_type": "image/jpeg"
+                },
+                "technical_informations": [
                 {
-                    "databox_id": 2,
-                    "record_id": 132,
-                    "mime_type": "image/jpeg",
-                    "title": "photo03.JPG",
-                    "original_name": "photo03.JPG",
-                    "last_modification": "2012-06-13T13:50:29+02:00",
-                    "created_on": "2012-06-13T13:49:29+02:00",
-                    "collection_id": 1,
-                    "sha256": "60691f538bdac78197004edcfb77dc772d824daeca54bd13e59f6b485f0293bc",
-                    "thumbnail": {
-                        "permalink": {
-                            "created_on": "2012-06-13T13:51:06+02:00",
-                            "id": 343,
-                            "is_activated": true,
-                            "label": "photo03JPG",
-                            "last_modified": "2012-06-13T13:51:06+02:00",
-                            "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/view/",
-                            "url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/"
-                        },
-                        "height": 113,
-                        "width": 150,
-                        "filesize": 4271,
-                        "devices": [
-                            "screen"
-                        ],
-                        "player_type": "IMAGE",
-                        "mime_type": "image/jpeg"
-                    },
-                    "technical_informations": {
-                        "Aperture": 2.4,
-                        "CameraModel": "iPhone 4S",
-                        "Channels": 3,
-                        "ColorDepth": 8,
-                        "ColorSpace": "RGB",
-                        "FileSize": 2851233,
-                        "FlashFired": 0,
-                        "FocalLength": 4.28,
-                        "Height": 2448,
-                        "HyperfocalDistance": 2.0773522348635,
-                        "ISO": 400,
-                        "LightValue": 4.847996906555,
-                        "MimeType": "image/jpeg",
-                        "ShutterSpeed": 0.05,
-                        "Width": 3264
-                    },
-                    "phrasea_type": "image",
-                    "uuid": "d91372ec-ea94-4e8a-bf26-065ad8684180"
+                    "name": "Aperture",
+                    "value": 5
+                },
+                {
+                    "name": "CameraModel",
+                    "value": "NIKON D700"
+                },
+                {
+                    "name": "Channels",
+                    "value": 3
+                },
+                {
+                    "name": "ColorDepth",
+                    "value": 8
+                },
+                {
+                    "name": "ColorSpace",
+                    "value": "RGB"
+                },
+                {
+                    "name": "FileSize",
+                    "value": 3221035
+                },
+                {
+                    "name": "FlashFired",
+                    "value": 1
+                },
+                {
+                    "name": "FocalLength",
+                    "value": 70
+                },
+                {
+                    "name": "Height",
+                    "value": 2832
+                },
+                {
+                    "name": "HyperfocalDistance",
+                    "value": 32.616371538043
+                },
+                {
+                    "name": "LightValue",
+                    "value": 11.940613708927
+                },
+                {
+                    "name": "MimeType",
+                    "value": "image/jpeg"
+                },
+                {
+                    "name": "ShutterSpeed",
+                    "value": 0.004
+                },
+                {
+                    "name": "Width",
+                    "value": 4256
                 }
+                ],
+                "phrasea_type": "image",
+                "uuid": "fc766012-a9c8-49eb-bcbd-c6f5270cb6f5"
+            }
             ],
-            "query": "book"
+            "query": "recordId=644"
         }
     }

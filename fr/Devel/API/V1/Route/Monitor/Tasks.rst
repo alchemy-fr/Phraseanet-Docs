@@ -8,7 +8,7 @@ About
 
   .. code-block:: bash
 
-    /api/v1/
+    /api/v1/monitor/tasks/
 
   ======================== =====
    Informations
@@ -20,10 +20,7 @@ About
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Value          Information
-  ======================== ============== =============
-  ======================== ============== =============
+  No parameter for this route
 
 Response Fields
 ---------------
@@ -58,7 +55,10 @@ Response sample
                     "state": "started",
                     "pid": 15707,
                     "title": "newTitle1985032899",
-                    "last_exec_time": "2012-06-13T14:38:02+02:00"
+                    "last_exec_time": "2012-06-13T14:38:02+02:00",
+                    "auto_start": true,
+                    "runner": "scheduler",
+                    "crash_counter": 0
                 },
                 {
                     "id": 2,
@@ -66,7 +66,10 @@ Response sample
                     "state": "started",
                     "pid": 15705,
                     "title": "Subviews creation",
-                    "last_exec_time": "2012-06-13T14:37:38+02:00"
+                    "last_exec_time": "2012-06-13T14:37:38+02:00",
+                    "auto_start": true,
+                    "runner": "scheduler",
+                    "crash_counter": 0
                 },
                 {
                     "id": 3,
@@ -74,7 +77,10 @@ Response sample
                     "state": "started",
                     "pid": 6576,
                     "title": "Indexation",
-                    "last_exec_time": null
+                    "last_exec_time": null,
+                    "auto_start": true,
+                    "runner": "scheduler",
+                    "crash_counter": 0
                 }
             ]
         }
