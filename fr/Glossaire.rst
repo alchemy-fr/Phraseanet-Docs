@@ -115,7 +115,8 @@ Glossaire
     Les *Business field* Phraseanet sont des champs destinés à recevoir des informations
     métiers. Ces informations internes sont partagées par les utilisateurs qui disposent 
     des droits d'édition des documents.
-    Un Business field n'est pas "recherchable".
+    Un business field n'est "recherchable" que par un utilisateur disposant des 
+    droits d'édition.
     
   Dublin Core
     Schéma normalisé ISO 15836 destiné à la description de ressources documentaires. 

@@ -7,7 +7,7 @@ Importer
 
 .. topic:: L'essentiel
 
-    Reposant sur la technologie Html5 l'interface Phraseanet Upload est accessible
+    Reposant sur la technologie HTML5 l'interface Phraseanet Upload est accessible
     dans Production via un lien placé dans la barre de menu Phraseanet. 
     C'est une interface dédiée à l'ajout de documents vers des collections sur
     lesquelles l'utilisateur dispose des droits d'ajout. 
@@ -18,7 +18,7 @@ Importer
 	   :align: center 
 
 .. note:: Certains navigateurs internet peuvent ne pas être en mesure d'interpréter 
-      correctement certaines balises et propriétés html5. Il en résulte un affichage 
+      correctement certaines balises et propriétés HTML5. Il en résulte un affichage 
       en mode dégradé.
 
 Ajouter des documents
