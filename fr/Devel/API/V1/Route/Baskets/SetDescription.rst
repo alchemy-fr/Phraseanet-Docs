@@ -4,7 +4,7 @@ Baskets SetDescription
 About
 -----
 
-  Set the description of the basket 
+  Set the description of the basket
 
   .. code-block:: bash
 
@@ -21,10 +21,10 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information 
+   Parameters               Type          Information
   ======================== ============== =============
-   basket_id                               the basket_id of the selected basket
-   description                             the description of the basket
+   basket_id                integer        The basket_id of the selected basket
+   description              string         The description of the basket
   ======================== ============== =============
 
 Response Fields
@@ -33,7 +33,7 @@ Response Fields
   ============= ================================
    Field         Description
   ============= ================================
-   basket        The basket 
+   basket        The basket
   ============= ================================
 
 Response sample
@@ -44,8 +44,8 @@ Response sample
     {
         "meta": {
             "api_version": "1.2",
-            "request": "POST /api/v1/baskets/721/setdescription/",
-            "response_time": "2011-07-27T14:39:20+02:00",
+            "request": "POST /api/v1/baskets/148/setdescription/",
+            "response_time": "2012-06-29T18:27:28+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -54,15 +54,14 @@ Response sample
         },
         "response": {
             "basket": {
-                "721": {
-                    "created_on": "2011-07-27T14:39:20+02:00",
-                    "description": "Une belle description",
-                    "name": "Nouveau",
-                    "pusher_usr_id": null,
-                    "ssel_id": 721,
-                    "updated_on": "2011-07-27T14:39:20+02:00",
-                    "unread": false
-                }
+            "basket_id": 148,
+            "created_on": "2012-06-29T18:19:30+02:00",
+            "description": "my description here",
+            "name": "test",
+            "pusher_usr_id": null,
+            "updated_on": "2012-06-29T18:27:29+02:00",
+            "unread": false,
+            "validation_basket": false
             }
         }
     }

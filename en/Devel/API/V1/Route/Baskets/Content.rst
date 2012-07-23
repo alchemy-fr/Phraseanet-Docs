@@ -4,7 +4,7 @@ Baskets Content
 About
 -----
 
-  Returns the content of the basket 
+  Returns the content of the basket
 
   .. code-block:: bash
 
@@ -21,9 +21,9 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information 
+   Parameters               Type           Information
   ======================== ============== =============
-   basket_id                               the basket_id of the selected basket 
+   basket_id                integer        The basket_id of the selected basket
   ======================== ============== =============
 
 Response Fields
@@ -32,7 +32,9 @@ Response Fields
   ================ ================================
    Field            Description
   ================ ================================
-   basket_elements 	The list of the basket_elements 
+   basket_elements 	The list of the basket_elements
+  ================ ================================
+   basket           The selected basket
   ================ ================================
 
 Response sample
@@ -43,8 +45,8 @@ Response sample
     {
         "meta": {
             "api_version": "1.2",
-            "request": "GET /api/v1/baskets/321/content/",
-            "response_time": "2011-07-27T14:43:49+02:00",
+            "request": "GET /api/v1/baskets/146/content/",
+            "response_time": "2012-06-29T15:57:13+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -52,94 +54,154 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "basket_elements": {
-                "321": {
-                    "created_on": "2011-06-22T14:15:00+02:00",
-                    "description": "une belle desc",
-                    "name": "aéaa",
-                    "pusher_usr_id": 0,
-                    "ssel_id": 321,
-                    "updated_on": "2011-07-27T13:34:23+02:00",
-                    "unread": false,
-                    "basket_elements": {
-                        "269": {
-                            "basket_element_id": 269,
-                            "order": 2,
-                            "record": {
-                                "databox_id": 9,
-                                "record_id": 84,
-                                "mime_type": "image/jpeg",
-                                "title": "cestlafete.jpg",
-                                "original_name": "cestlafete.jpg",
-                                "last_modification": "2011-07-11T13:04:53+02:00",
-                                "created_on": "2011-07-05T20:05:58+02:00",
-                                "collection_id": 1,
-                                "sha256": "41c7a2fc8351114db9a3e012e7d477281f0c05efceda45d068cb359fd3ae65d0",
-                                "thumbnail": {
-                                    "permalink": {
-                                        "created_on": "2011-11-07T12:33:19+01:00",
-                                        "id": 819,
-                                        "is_activated": true,
-                                        "label": "cestlafetejpg",
-                                        "last_modified": "2011-11-07T12:33:19+01:00",
-                                        "page_url": "https://library.net/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/view/",
-                                        "url": "https://library.net/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/"
-                                    },
-                                    "height": 200,
-                                    "width": 150,
-                                    "filesize": 7908,
-                                    "player_type": "IMAGE",
-                                    "mime_type": "image/jpeg"
-                                },
-                                "technical_informations": {
-                                    "bits": 8,
-                                    "channels": "3"
-                                },
-                                "phrasea_type": "image",
-                                "uuid": "dcee40ea-ee26-4d8b-b0c2-d61305b03bc0"
-                            },
-                            "validation_item": false
-                        },
-                        "270": {
-                            "basket_element_id": 270,
-                            "order": 3,
-                            "record": {
-                                "databox_id": 52,
-                                "record_id": 1447,
-                                "mime_type": "image/jpeg",
-                                "title": "cestlafete.jpg",
-                                "original_name": "cestlafete.jpg",
-                                "last_modification": "2011-07-11T13:29:44+02:00",
-                                "created_on": "2011-07-05T15:24:22+02:00",
-                                "collection_id": 1,
-                                "sha256": "41c7a2fc8351114db9a3e012e7d477281f0c05efceda45d068cb359fd3ae65d0",
-                                "thumbnail": {
-                                    "permalink": {
-                                        "created_on": "2011-11-07T12:33:19+01:00",
-                                        "id": 819,
-                                        "is_activated": true,
-                                        "label": "cestlafetejpg",
-                                        "last_modified": "2011-11-07T12:33:19+01:00",
-                                        "page_url": "https://library.net/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/view/",
-                                        "url": "https://library.net/permalink/v1/cestlafetejpg/1/1248/zkL3YeYO/thumbnail/"
-                                    },
-                                    "height": 200,
-                                    "width": 150,
-                                    "filesize": 7908,
-                                    "player_type": "IMAGE",
-                                    "mime_type": "image/jpeg"
-                                },
-                                "technical_informations": {
-                                    "bits": 8,
-                                    "channels": "3"
-                                },
-                                "phrasea_type": "image",
-                                "uuid": "dcee40ea-ee26-4d8b-b0c2-d61305b03bc0"
-                            },
-                            "validation_item": false
-                        }
-                    }
+            "basket": {
+                "validation_users": [
+                {
+                    "usr_id": 3,
+                    "usr_name": "legoff.n@gmail.com",
+                    "confirmed": false,
+                    "can_agree": true,
+                    "can_see_others": true,
+                    "readonly": false
+                },
+                {
+                    "usr_id": 722,
+                    "usr_name": "legoff@alchemy.fr",
+                    "confirmed": false,
+                    "can_agree": true,
+                    "can_see_others": true,
+                    "readonly": true
                 }
+                ],
+                "validation_end_date": "2012-07-18T14:54:02+02:00",
+                "validation_infos": "Vous avez envoyé cette demande à 1 utilisateurs",
+                "validation_confirmed": false,
+                "validation_initiator": true,
+                "basket_id": 146,
+                "created_on": "2012-06-28T14:54:01+02:00",
+                "description": "",
+                "name": "Panier de validation",
+                "pusher_usr_id": null,
+                "ssel_id": 146,
+                "updated_on": "2012-06-28T16:07:25+02:00",
+                "unread": false,
+                "validation_basket": true
+            },
+            "basket_elements": [
+            {
+                "basket_element_id": 19,
+                "order": 1,
+                "record": {
+                    "databox_id": 1,
+                    "record_id": 634,
+                    "mime_type": "image/jpeg",
+                    "title": "0059.JPG",
+                    "original_name": "0059.JPG",
+                    "updated-on": "2012-06-28T17:19:28+02:00",
+                    "created_on": "2012-06-22T21:20:58+02:00",
+                    "collection_id": 1,
+                    "sha256": "9e78d41b13bb61db1399bc0abb601a00a049f2c1d17d8dfa4ce36312d29f04ca",
+                    "thumbnail": {
+                        "name": "thumbnail",
+                        "permalink": {
+                            "created_on": "2012-06-25T18:05:20+02:00",
+                            "id": 2026,
+                            "is_activated": true,
+                            "label": "0059JPG",
+                            "updated_on": "2012-06-25T18:05:20+02:00",
+                            "page_url": "http://dev.phrasea.net/permalink/v1/0059JPG/1/634/7skj8YDw/thumbnail/view/",
+                            "url": "http://dev.phrasea.net/permalink/v1/0059JPG/1/634/7skj8YDw/thumbnail/"
+                        },
+                        "height": 100,
+                        "width": 150,
+                        "filesize": 2136,
+                        "devices": [
+                        "screen"
+                        ],
+                        "player_type": "IMAGE",
+                        "mime_type": "image/jpeg"
+                    },
+                    "technical_informations": [
+                    {
+                        "name": "CameraModel",
+                        "value": "NIKON D700"
+                    },
+                    {
+                        "name": "Channels",
+                        "value": 3
+                    },
+                    {
+                        "name": "ColorDepth",
+                        "value": 8
+                    },
+                    {
+                        "name": "ColorSpace",
+                        "value": "RGB"
+                    },
+                    {
+                        "name": "FileSize",
+                        "value": 1060915
+                    },
+                    {
+                        "name": "FlashFired",
+                        "value": 1
+                    },
+                    {
+                        "name": "FocalLength",
+                        "value": 0
+                    },
+                    {
+                        "name": "Height",
+                        "value": 2832
+                    },
+                    {
+                        "name": "MimeType",
+                        "value": "image/jpeg"
+                    },
+                    {
+                        "name": "ShutterSpeed",
+                        "value": 0.004
+                    },
+                    {
+                        "name": "Width",
+                        "value": 4256
+                    }
+                    ],
+                    "phrasea_type": "image",
+                    "uuid": "0d9f2d24-d5a5-483c-a9b3-2289d75eb7a1"
+                },
+                "validation_item": true,
+                "validation_choices": [
+                {
+                    "validation_user": {
+                        "usr_id": 3,
+                        "usr_name": "legoff.n@gmail.com",
+                        "confirmed": false,
+                        "can_agree": true,
+                        "can_see_others": true,
+                        "readonly": false
+                    },
+                    "agreement": null,
+                    "updated_on": "2012-06-28T14:54:02+02:00",
+                    "note": ""
+                },
+                {
+                    "validation_user": {
+                        "usr_id": 722,
+                        "usr_name": "legoff@alchemy.fr",
+                        "confirmed": false,
+                        "can_agree": true,
+                        "can_see_others": true,
+                        "readonly": true
+                    },
+                    "agreement": null,
+                    "updated_on": "2012-06-28T14:54:02+02:00",
+                    "note": ""
+                }
+                ],
+                "agreement": null,
+                "note": ""
             }
+            ]
         }
     }

@@ -21,9 +21,9 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information
+   Parameters               Type           Information
   ======================== ============== =============
-   task_id                  integer        The task id 
+   task_id                  integer        The task id
   ======================== ============== =============
 
 Response Fields
@@ -58,7 +58,10 @@ Response sample
                 "state": "started",
                 "pid": 15705,
                 "title": "Subviews creation",
-                "last_exec_time": "2012-06-13T14:38:38+02:00"
+                "last_exec_time": "2012-06-13T14:38:38+02:00",
+                "auto_start": true,
+                "runner": "scheduler",
+                "crash_counter": 0
             }
         }
     }

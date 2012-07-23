@@ -28,7 +28,7 @@ Parameters
    file            file        Mandatory - The file related to the record to add
    base_id         integer     Mandatory - The base_id related to the destination collection
    status          string      64 bit format binary string (optionnal)
-   forceBehavior   integer     0 : force record ; 1 : force quarantine(optionnal)
+   forceBehavior   integer     0 : force record ; 1 : force quarantine (optionnal)
   =============== =========== =============
 
 Response Fields
@@ -48,7 +48,7 @@ Response sample
 ---------------
 
   .. code-block:: javascript
-    
+
     {
         "meta": {
             "api_version": "1.2",

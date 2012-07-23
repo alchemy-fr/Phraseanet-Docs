@@ -4,7 +4,7 @@ Records Record
 About
 -----
 
-  Return 
+  Return
 
   .. code-block:: bash
 
@@ -13,7 +13,7 @@ About
   ======================== =====
    Informations
   ======================== =====
-   HTTP Method              
+   HTTP Method
    Requires Authentication  Yes
   ======================== =====
 
@@ -21,10 +21,10 @@ Parameters
 ----------
 
   ======================== ============== ==============================
-   Parameters               Value          Information 
+   Parameters               Type           Information
   ======================== ============== ==============================
-   databox_id 	            94 	           The databox id of the record
-   record_id 	            5694 	   The record_id 
+   databox_id 	            integer 	    The databox id of the record
+   record_id 	            integer 	    The record_id
   ======================== ============== ==============================
 
 Response Fields
@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   record 	  The record 
+   record 	  The record
   ========== ================================
 
 Response sample
@@ -44,8 +44,8 @@ Response sample
     {
         "meta": {
             "api_version": "1.2",
-            "request": "GET /api/v1/records/2/132/",
-            "response_time": "2012-06-13T14:06:21+02:00",
+            "request": "GET /api/v1/records/1/633/",
+            "response_time": "2012-06-29T18:06:39+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -54,53 +54,99 @@ Response sample
         },
         "response": {
             "record": {
-                "databox_id": 2,
-                "record_id": 132,
+                "databox_id": 1,
+                "record_id": 633,
                 "mime_type": "image/jpeg",
-                "title": "photo03.JPG",
-                "original_name": "photo03.JPG",
-                "last_modification": "2012-06-13T13:50:29+02:00",
-                "created_on": "2012-06-13T13:49:29+02:00",
+                "title": "0113.JPG",
+                "original_name": "0113.JPG",
+                "updated-on": "2012-06-28T17:19:35+02:00",
+                "created_on": "2012-06-22T21:20:55+02:00",
                 "collection_id": 1,
-                "sha256": "60691f538bdac78197004edcfb77dc772d824daeca54bd13e59f6b485f0293bc",
+                "sha256": "df0cf05a7ca0ac0c7f9df9adcd873473793d132885a15543bc3ab638524baddc",
                 "thumbnail": {
+                    "name": "thumbnail",
                     "permalink": {
-                        "created_on": "2012-06-13T13:51:06+02:00",
-                        "id": 343,
-                        "is_activated": true,
-                        "label": "photo03JPG",
-                        "last_modified": "2012-06-13T13:51:06+02:00",
-                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/view/",
-                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/"
+                    "created_on": "2012-06-25T18:05:20+02:00",
+                    "id": 2027,
+                    "is_activated": true,
+                    "label": "0113JPG",
+                    "updated_on": "2012-06-25T18:05:20+02:00",
+                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/cw1tOY9C/thumbnail/view/",
+                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/cw1tOY9C/thumbnail/"
                     },
-                    "height": 113,
-                    "width": 150,
-                    "filesize": 4271,
+                    "height": 150,
+                    "width": 100,
+                    "filesize": 2453,
                     "devices": [
-                        "screen"
+                    "screen"
                     ],
                     "player_type": "IMAGE",
                     "mime_type": "image/jpeg"
                 },
-                "technical_informations": {
-                    "Aperture": 2.4,
-                    "CameraModel": "iPhone 4S",
-                    "Channels": 3,
-                    "ColorDepth": 8,
-                    "ColorSpace": "RGB",
-                    "FileSize": 2851233,
-                    "FlashFired": 0,
-                    "FocalLength": 4.28,
-                    "Height": 2448,
-                    "HyperfocalDistance": 2.0773522348635,
-                    "ISO": 400,
-                    "LightValue": 4.847996906555,
-                    "MimeType": "image/jpeg",
-                    "ShutterSpeed": 0.05,
-                    "Width": 3264
-                },
+                "technical_informations": [
+                    {
+                    "name": "Aperture",
+                    "value": 9
+                    },
+                    {
+                    "name": "CameraModel",
+                    "value": "NIKON D700"
+                    },
+                    {
+                    "name": "Channels",
+                    "value": 3
+                    },
+                    {
+                    "name": "ColorDepth",
+                    "value": 8
+                    },
+                    {
+                    "name": "ColorSpace",
+                    "value": "RGB"
+                    },
+                    {
+                    "name": "FileSize",
+                    "value": 1101093
+                    },
+                    {
+                    "name": "FlashFired",
+                    "value": 0
+                    },
+                    {
+                    "name": "FocalLength",
+                    "value": 70
+                    },
+                    {
+                    "name": "Height",
+                    "value": 4256
+                    },
+                    {
+                    "name": "HyperfocalDistance",
+                    "value": 18.120206410024
+                    },
+                    {
+                    "name": "ISO",
+                    "value": 160
+                    },
+                    {
+                    "name": "LightValue",
+                    "value": 13.305634287547
+                    },
+                    {
+                    "name": "MimeType",
+                    "value": "image/jpeg"
+                    },
+                    {
+                    "name": "ShutterSpeed",
+                    "value": 0.005
+                    },
+                    {
+                    "name": "Width",
+                    "value": 2832
+                    }
+                ],
                 "phrasea_type": "image",
-                "uuid": "d91372ec-ea94-4e8a-bf26-065ad8684180"
+                "uuid": "9668a434-9b7d-4cad-8063-6a80740315ad"
             }
         }
     }

@@ -21,9 +21,9 @@ Parameters
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information
+   Parameters               Type           Information
   ======================== ============== =============
-   task_id                  integer        The task id 
+   task_id                  integer        The task id
   ======================== ============== =============
 
 Response Fields

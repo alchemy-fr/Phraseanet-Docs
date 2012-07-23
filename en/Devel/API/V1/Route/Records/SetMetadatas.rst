@@ -20,22 +20,22 @@ About
 Parameters
 ----------
 
-  ============ ======= =============
-   Parameters   Value   Information
-  ============ ======= =============
-   databox_id   94      The databox id of the record
-   record_id    5694    The record_id
-   metadatas    Array   An array of metadatas, each metadatas is an array itself with three keys : meta_struct_id (int), meta_id (int or null) and value (Array)
-  ============ ======= =============
+  ================== ========= =============
+   Parameters         Type      Information
+  ================== ========= =============
+   databox_id         integer   The databox id of the record
+   record_id          integer   The record_id
+   metadatas          array     An array of metadatas, each metadatas is an array itself with three keys : meta_struct_id (int), meta_id (int or null) and value (Array)
+  ================== ========= =============
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   metadatas 	The list of the metadatas of the record
-  ========== ================================
+  ================== ================================
+   Field               Description
+  ================== ================================
+   record_metadatas    The list of the metadatas of the record
+  ================== ================================
 
 ** Example **
 
@@ -58,7 +58,7 @@ is equivalent to
 
   .. code-block:: javascript
 
-    metadatas = {
+    record_metadatas = {
         {
             meta_struct_id: 1,        // current metadata refers to metadata structure id '1' ; see [[routes:databoxes:metadatas]]
             meta_id: null,            // current meta_id refers to caption's field meta id ; see [[routes:records:metadatas]] ; this case, meta_id is null because there's currently no value set, the field will be created

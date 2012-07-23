@@ -4,14 +4,14 @@ Records Embed
 About
 -----
 
-  Returns some permalinks to the document subdefinitions to embed it 
+  Returns some permalinks to the document subdefinitions to embed it
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/embed/
 
   ======================== =====
-   Informations             
+   Informations
   ======================== =====
    HTTP Method              GET
    Requires Authentication  Yes
@@ -31,10 +31,10 @@ following parameters :
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
   ======================== ============== ==============================
-   Parameters               Value          Information 
+   Parameters               Type           Information
   ======================== ============== ==============================
-   databox_id               94 	           The databox id of the record 
-   record_id 	              5694 	         The record_id 
+   databox_id               integer        The databox id of the record
+   record_id 	            integer        The record_id
    devices                  array          An array of devices to restrict the list (optionnal)
    mimes                    array          An array of mime type to restrict the list (optionnal)
   ======================== ============== ==============================
@@ -45,7 +45,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-    embed 	  The list of the metadatas of the record 
+    embed 	  The list of the metadatas of the record
   ========== ================================
 
 Response sample
@@ -56,8 +56,8 @@ Response sample
     {
         "meta": {
             "api_version": "1.2",
-            "request": "GET /api/v1/records/2/132/embed/",
-            "response_time": "2012-06-13T14:05:16+02:00",
+            "request": "GET /api/v1/records/1/633/embed/",
+            "response_time": "2012-06-29T16:02:40+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -65,102 +65,107 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "embed": {
-                "document": {
-                    "permalink": {
-                        "created_on": "2012-06-13T13:49:33+02:00",
-                        "id": 336,
-                        "is_activated": true,
-                        "label": "photo03JPG",
-                        "last_modified": "2012-06-13T13:49:33+02:00",
-                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/0eHCZLVu/document/view/",
-                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/0eHCZLVu/document/"
-                    },
-                    "height": 2448,
-                    "width": 3264,
-                    "filesize": 2851323,
-                    "devices": [
-                        "all"
-                    ],
-                    "player_type": "IMAGE",
-                    "mime_type": "image/jpeg"
+            "embed": [
+            {
+                "name": "document",
+                "permalink": {
+                    "created_on": "2012-06-22T21:20:55+02:00",
+                    "id": 1972,
+                    "is_activated": true,
+                    "label": "0113JPG",
+                    "updated_on": "2012-06-22T21:20:55+02:00",
+                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/gAZMiywc/document/view/",
+                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/gAZMiywc/document/"
                 },
-                "preview": {
-                    "permalink": {
-                        "created_on": "2012-06-13T14:05:16+02:00",
-                        "id": 344,
-                        "is_activated": true,
-                        "label": "photo03JPG",
-                        "last_modified": "2012-06-13T14:05:16+02:00",
-                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/m9THchla/preview/view/",
-                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/m9THchla/preview/"
-                    },
-                    "height": 360,
-                    "width": 480,
-                    "filesize": 26595,
-                    "devices": [
-                        "screen"
-                    ],
-                    "player_type": "IMAGE",
-                    "mime_type": "image/jpeg"
+                "height": 4256,
+                "width": 2832,
+                "filesize": 1101093,
+                "devices": [
+                "all"
+                ],
+                "player_type": "IMAGE",
+                "mime_type": "image/jpeg"
+            },
+            {
+                "name": "preview",
+                "permalink": {
+                    "created_on": "2012-06-25T18:07:20+02:00",
+                    "id": 2039,
+                    "is_activated": true,
+                    "label": "0113JPG",
+                    "updated_on": "2012-06-25T18:07:20+02:00",
+                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/ThQIeo0w/preview/view/",
+                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/ThQIeo0w/preview/"
                 },
-                "thumbnail": {
-                    "permalink": {
-                        "created_on": "2012-06-13T13:51:06+02:00",
-                        "id": 343,
-                        "is_activated": true,
-                        "label": "photo03JPG",
-                        "last_modified": "2012-06-13T13:51:06+02:00",
-                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/view/",
-                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/"
-                    },
-                    "height": 113,
-                    "width": 150,
-                    "filesize": 4271,
-                    "devices": [
-                        "screen"
-                    ],
-                    "player_type": "IMAGE",
-                    "mime_type": "image/jpeg"
+                "height": 480,
+                "width": 319,
+                "filesize": 11933,
+                "devices": [
+                "screen"
+                ],
+                "player_type": "IMAGE",
+                "mime_type": "image/jpeg"
+            },
+            {
+                "name": "thumbnail",
+                "permalink": {
+                    "created_on": "2012-06-25T18:05:20+02:00",
+                    "id": 2027,
+                    "is_activated": true,
+                    "label": "0113JPG",
+                    "updated_on": "2012-06-25T18:05:20+02:00",
+                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/cw1tOY9C/thumbnail/view/",
+                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/cw1tOY9C/thumbnail/"
                 },
-                "preview_mobile": {
-                    "permalink": {
-                        "created_on": "2012-06-13T13:50:28+02:00",
-                        "id": 337,
-                        "is_activated": true,
-                        "label": "photo03JPG",
-                        "last_modified": "2012-06-13T13:50:28+02:00",
-                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/C9ldCA7C/preview_mobile/view/",
-                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/C9ldCA7C/preview_mobile/"
-                    },
-                    "height": 360,
-                    "width": 480,
-                    "filesize": 26595,
-                    "devices": [
-                        "handheld"
-                    ],
-                    "player_type": "IMAGE",
-                    "mime_type": "image/jpeg"
+                "height": 150,
+                "width": 100,
+                "filesize": 2453,
+                "devices": [
+                "screen"
+                ],
+                "player_type": "IMAGE",
+                "mime_type": "image/jpeg"
+            },
+            {
+                "name": "preview_mobile",
+                "permalink": {
+                    "created_on": "2012-06-22T21:24:57+02:00",
+                    "id": 1992,
+                    "is_activated": true,
+                    "label": "0113JPG",
+                    "updated_on": "2012-06-22T21:24:57+02:00",
+                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/STLrJt9Y/preview_mobile/view/",
+                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/STLrJt9Y/preview_mobile/"
                 },
-                "thumbnail_mobile": {
-                    "permalink": {
-                        "created_on": "2012-06-13T13:50:28+02:00",
-                        "id": 338,
-                        "is_activated": true,
-                        "label": "photo03JPG",
-                        "last_modified": "2012-06-13T13:50:28+02:00",
-                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/DChy7kwo/thumbnail_mobile/view/",
-                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/DChy7kwo/thumbnail_mobile/"
-                    },
-                    "height": 113,
-                    "width": 150,
-                    "filesize": 4271,
-                    "devices": [
-                        "handheld"
-                    ],
-                    "player_type": "IMAGE",
-                    "mime_type": "image/jpeg"
-                }
+                "height": 480,
+                "width": 319,
+                "filesize": 11933,
+                "devices": [
+                "handheld"
+                ],
+                "player_type": "IMAGE",
+                "mime_type": "image/jpeg"
+            },
+            {
+                "name": "thumbnail_mobile",
+                "permalink": {
+                    "created_on": "2012-06-22T21:25:00+02:00",
+                    "id": 1993,
+                    "is_activated": true,
+                    "label": "0113JPG",
+                    "updated_on": "2012-06-22T21:25:00+02:00",
+                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/3ssBc2YY/thumbnail_mobile/view/",
+                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/3ssBc2YY/thumbnail_mobile/"
+                },
+                "height": 150,
+                "width": 100,
+                "filesize": 2453,
+                "devices": [
+                "handheld"
+                ],
+                "player_type": "IMAGE",
+                "mime_type": "image/jpeg"
             }
+            ]
         }
     }
