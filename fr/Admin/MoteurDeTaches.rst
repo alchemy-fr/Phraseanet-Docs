@@ -7,8 +7,8 @@ asynchrones.
 Ces différentes tâches sont gérées par un Planificateur (Scheduler),
 qui s'occupe de leur démarrage, et de leur arrêt.
 
-Pour la création des tâches, rendez vous dans `manuel d'Administration
-</User/Manuel/Administration>`_
+Pour la création des tâches, à la page :doc:`../User/Manuel/AdministrationSolution` 
+dans la manuel utilisateur.
 
 Le Planificateur de taches
 ---------------------------
