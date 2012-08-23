@@ -119,8 +119,8 @@ Installation de "Phraseanet-Extension"
 --------------------------------------
 
 Télécharger l'extension correspondant à votre version de PHP
-(ex. "https://github.com/alchemy-fr/Phraseanet-Extension/tree/master/_WIN32%20
-(visual%20C++%202008)/Release_TS_php-5.4.0"), prendre la dernière version disponible
+(ex. "https://github.com/alchemy-fr/Phraseanet-Extension/tree/master/_WIN32%20(visual%20C++%202008)/Release_TS_php-5.4.0")
+, prendre la dernière version disponible
 d'après son numéro de version (par ex. "php_phrasea2_UTF-8_1.20.1.0.dll").
 
 Renommer le fichier en "php_phrasea2.dll" et copier dans le répertoire "ext" de
