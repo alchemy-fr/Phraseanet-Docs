@@ -10,7 +10,7 @@ Phraseanet repose sur des bases de données MySQL/InnoDB : les ApplicationBoxes
 et les DataBoxes.
 
 Les premières servent de base à l'applicatif Phraseanet et stockent les
-utilisateurs, leurs paniers, leurs droits sur les différentes collections et
+utilisateurs, leurs paniers, leurs droits sur les dfifférentes collections et
 des liens vers une ou plusieurs DataBoxes.
 
 Les databoxes sont des containers à enregistrements. Elles diffèrent par leurs
@@ -28,6 +28,7 @@ Vous pouvez aussi piloter Phraseanet en console via l'application bin/console
     Telechargement
     Prerequis
     Installation
+    SpecificitesWindows
     MiseAJour
     Configuration
     MoteurDeTaches
