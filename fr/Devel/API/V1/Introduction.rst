@@ -139,13 +139,10 @@ messages d’erreur.
 
 Le tableau ci-dessous liste et décrit les principaux codes d’erreurs.
 
-=========== =======
 HTTP Code   Sens
-=========== =======
 400         Un paramètre de la requête est manquant ou invalide
 401         Le token d'authentification fournit n'est pas valide
 403         L'accés aux ressources demandées n'est pas authorisé.
 404         La ressource demandée n'a pas été trouvé.
 405         Utilisation d'une requête POST au lieu d'une requête GET, et vice versa
 500         Erreur interne du serveur
-=========== =======
