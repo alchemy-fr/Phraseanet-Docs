@@ -10,23 +10,21 @@ Documentation API v1
    V1/Authentification
    V1/Routes
 
-Hello world !
+L’API Phraseanet permet de développer des applications tierces exploitant les
+contenus d’une médiathèque Phraseanet.
 
-L'API Phraseanet vous permet de développer vos applications par dessus 
-Phraseanet.
-Cette API va vous permettre d'exploiter le contenu de votre médiathèque dans 
-vos applications.
+Pour partager vos retours d’expérences et publier vos codes sources,
+utilisez nos :doc:`forums </Devel/Forums>`.
 
-Donnez nous vos retours, publiez votre code !
 
-Start easy easy :
+Pour démarrer :
 
-  * Lisez l':doc:`introduction <V1/Introduction>`
-  * Familiarisez vous avec :doc:`oAuth2 <V1/Authentification>`
-  * Trouvez votre :doc:`route <V1/Routes>` !
+  * Lire l':doc:`introduction <V1/Introduction>`
+  * Se familiariser avec :doc:`oAuth2 <V1/Authentification>`
+  * Trouver la route :doc:`route <V1/Routes>` !
 
-Si jamais vous trouviez un bug, merci de le rapporte à notre
+Vous rencontrez un bug ? Merci d’en rendre compte dans notre
 `mailing-list <https://groups.google.com/group/phraseanet-api>`_
-ou créez un ticket dans notre
+ou de créer un ticket dans notre
 `bug-tracker public <https://github.com/alchemy-fr/Phraseanet/issues>`_.
 

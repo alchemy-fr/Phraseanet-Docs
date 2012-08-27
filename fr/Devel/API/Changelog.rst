@@ -7,8 +7,8 @@ API Changelog
 La version 1.2 de l'API présente deux problèmes de retro-compatibilité avec la
 version précédente.
 
-- Un bug a été corrigé et le retour de la route :doc:`feeds/content <V1/Route/Feeds/Content>`
-  a été mis à jour.
+Un bug a été corrigé et le retour de la route
+:doc:`feeds/content <Route/Feeds/Content>` a été mis à jour.
 
 - Un certains nombre de routes ont été modifiées
 
@@ -438,7 +438,8 @@ Embeddables
 ***********
 
 Embeddables media now give a
-Les embeddables fournissent maintenant un tableau de *devices* adaptés.
+
+Les embeddables fournissent maintenant une liste de *devices* adaptés.
 Ces devices sont compatibles avec CSS 2.
 
 .. seealso::
@@ -465,7 +466,7 @@ réponse :doc:`feed/content <V1/Route/Feeds/Content>`, pour chaque entrée, un l
 vers la route d'API :doc:`feed/entry <V1/Route/Feeds/Entry>` correspondant est
 fourni.
 
-Requeter un media via un device et/ou un type mime
+Requêter un media via un device et/ou un type mime
 **************************************************
 
 Il est maintenant possible de restreindre la demande a une gamme de devices et
