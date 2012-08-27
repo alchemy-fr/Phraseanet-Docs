@@ -20,10 +20,10 @@ Un bug a été corrigé et le retour de la route
     - Description d'une tâche :doc:`monitor/tasks <V1/Route/Monitor/Tasks>`
       & :doc:`monitor/task <V1/Route/Monitor/Task>`
     - Description d'un panier :doc:`basket/list <V1/Route/Baskets/List>`
-    - Description d'un élment du panier :doc:`basket/content <V1/Route/Baskets/Content>`
+    - Description d'un élément du panier :doc:`basket/content <V1/Route/Baskets/Content>`
 
 
-- Les objets avec des attributs numriques ont été supprimés. Tous les objets de
+- Les objets avec des attributs numériques ont été supprimés. Tous les objets de
   collection sont maintenant représentés comme un tableau d'objets.
 
 
@@ -60,20 +60,20 @@ Un bug a été corrigé et le retour de la route
 Réponse pour un record
 **********************
 
-L'attribut **last_modification** à été remplacé par **updated_on**
+L'attribut **last_modification** a été remplacé par **updated_on**
 
 
 Réponse pour un permalien
 **************************
 
-L'attribut **last_modified** à été remplacé par **updated_on**
+L'attribut **last_modified** a été remplacé par **updated_on**
 
 Réponse pour des sous-definitions
 *********************************
 
 Les sous-définition sont présentés comme un tableau d'objet.
 
-L'attribut **name** à été ajouté.
+L'attribut **name** a été ajouté.
 
 **Avant**
 
@@ -158,7 +158,7 @@ Réponse pour la structure documentaire d'une databox
 ****************************************************
 
 La réponse de la structure documentaire d'une databox est maintenant
-contenu dans l'attribut **document_metadatas** attribut.
+contenu dans l'attribut **document_metadatas**.
 
 .. code-block:: javascript
 
@@ -198,7 +198,7 @@ contenu dans l'attribut **document_metadatas** attribut.
 Réponse pour une tache
 ***********************
 
-Trois champs ont été ajoutés à la réponse de la description d'une tâche.
+Trois champs sont ajoutés à la réponse de la description d’une tâche.
 
 - auto_start
 - runner
@@ -264,7 +264,7 @@ L'attribut 'basket_elements' à la racine de la reponse ne retourne plus que les
         ]
     }
 
-Un attribut 'basket' à été ajouté à la racine de la reponse qui décrit le panier
+Un attribut 'basket' a été ajouté à la racine de la reponse qui décrit le panier
 demandé.
 
 .. code-block:: javascript
@@ -283,21 +283,21 @@ demandé.
         }
     }
 
-Dans l'objet qui décrit un panier un attribut 'validation_basket' à été ajouté,
-il indique si il s'agit d'un panier de validation.
+Dans l'objet qui décrit un panier un attribut 'validation_basket' a été ajouté,
+il indique s'il s'agit d'un panier de validation.
 
 
 Recherche d'un enregistrement
 *****************************
 
 Certains parametres de la route :doc:`records/search <V1/Route/Records/Search>`
-ont été renommés :
+sont renommés :
 
  - datefield => date_field
  - datemin   => date_min
  - datemax   => date_max
 
-Le paramètre 'page' de la requete ainsi que le champ de la reponse ont disparus
+Le paramètre 'page' de la requete ainsi que le champ de la reponse ont disparu
 au profit du paramètre offset_start
 
 .. code-block:: javascript
@@ -469,8 +469,8 @@ fourni.
 Requêter un media via un device et/ou un type mime
 **************************************************
 
-Il est maintenant possible de restreindre la demande a une gamme de devices et
-de type mime dans la route :doc:`records/embed <V1/Route/Records/Embed>`
+Il est maintenant possible de restreindre la demande à une gamme de devices et
+de types mime dans la route :doc:`records/embed <V1/Route/Records/Embed>`
 
 1.1
 ---
@@ -486,6 +486,6 @@ retro-compatible avec la précédente 1.0. Voir les :doc:`instructions
 1.0
 ---
 
-Première version stable de l'API Phraseanet.Cette API utilise OAuth2 comme
-protocole d'authentification et fournie des routes POST et GET pour acceder aux
+Première version stable de l'API Phraseanet. Cette API utilise OAuth2 comme
+protocole d'authentification et fournit des routes POST et GET pour accéder aux
 ressources.
