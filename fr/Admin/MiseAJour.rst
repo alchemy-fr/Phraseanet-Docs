@@ -11,35 +11,33 @@ Lors de la publication d'une nouvelle version, pour procéder à la mise à jour
 de votre installation, suivez les étapes suivantes :
 
   * Arrêt des processus lancés par le scheduler via l'interface
-    d'administration, stopper toutes les tâches en cours d'exécution.
+    d'administration et stopper toutes les tâches en cours d'exécution.
 
   * Déconnectez tous les utilisateurs (y compris vous-même) de l'application
 
-  * Backup des bases de données et des anciennes sources.
+  * Sauvegarder les bases de données et les anciennes sources.
 
-  * :doc:`Compilation et mise à jour de l'extension php_phrasea <Prerequis>`
+  * :doc:`Compiler et mettre à jour l'extension php_phrasea <Prerequis>`
 
-  * :doc:`Compilation et remplacement du nouveau binaire indexeur <Prerequis>`
+  * :doc:`Compiler et remplacer le nouveau binaire indexeur <Prerequis>`
 
-  * Mise a jour des sources des anciennes sources
+  * Mettre à jour les sources
 
   * Ecrasez le dossier config par celui de votre ancienne installation
 
-  * Rechargement d'apache pour la prise en charge de la nouvelle extension
+  * Recharger le serveur web APACHE ou NGINX pour la prise en charge de la nouvelle extension
 
-  * Connectez vous au module administration, éditez la configuration,
-    et sauvegardez-là pour la prise en charge de nouvelles variables
+  * Se connecter au module administration, éditer la configuration,
+    et sauvegarder-là pour la prise en charge de nouvelles variables
 
-  * Dans la zone "bases", utilisez le bouton "réparer les tables",
-    les scripts de mise à jour se lanceront.
-    Suivant votre installation, cette opération peut être longue.
+  * Dans la zone "bases", cliquer sur le lien "réparer les tables",
+    les scripts de mise à jour se lancent.
+    Suivant l'installation, cette opération peut être longue.
 
-  * Si vous utilisez un module memcached, flushez ce cache,
-    soit en redémarrant le serveur memcached,
-    soit en utilisant le bouton prévu dans le tableau de bord
-    du module administration
+  * Vider votre serveur de cache, si vous en utilsez un,
+    en utilisant le bouton prévu dans le tableau de bord du module administration
 
-  * Relancer les tâches via le gestionnaire de tâches.
+  * Pour finir, relancer les tâches via le gestionnaire de tâches.
 
 
 

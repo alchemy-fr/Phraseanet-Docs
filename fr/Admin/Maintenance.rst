@@ -22,7 +22,7 @@ Une sauvegarde différentielle est préconisée pour ces fichiers.
 Les Bases MySQL
 ***************
 
-L'ApplicationBox et les DataBoxes sont les bases MySQL associées
+L'ApplicationBox et les DataBoxes sont les bases MySQL ou MariaDB associées
 à une installation Phraseanet.
 
 Une sauvegarde à chaud de ces bases est envisageable.
@@ -44,8 +44,8 @@ Les sources de L'application
 Les sources de l'application ne sont en général modifiées qu'en cas de
 Mise à jour.
 
-Néanmoins cela peu être judicieux de faire une sauvegarde ponctuelle
-des sources après l'installation et le paramétrage.
+Néanmoins il peut être judicieux de faire une sauvegarde ponctuelle des sources
+après l’installation ou le paramétrage.
 
   .. note: Vous ne devriez normallement juste avoir à sauvegarder que le dossier
      config  qui contient vos informations de setup

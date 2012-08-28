@@ -2,7 +2,7 @@ Installation
 ============
 
 
-Après avoir téléchargé les sources, vérifié les :doc:`prérequis <Prerequis>`,
+Après téléchargement des sources , vérifié les :doc:`prérequis <Prerequis>`,
 vous pouvez vérifier votre configuration à la racine de votre installation :
 
   .. code-block:: bash
@@ -25,25 +25,26 @@ Configuration du serveur web
 Setup
 -----
 
-Si tout se passe correctement, vous pourrez vous rendre à l’Url décrite
-(sub.domain.tld dans l'exemple) et continuer la procédure d'installation.
 
-Au total, l’installation se déroule en cinq étapes :
 
- * Création du socle ApplicationBox et création du compte administrateur
-   (étape précédente)
- * Connexion au module administrateur et création d’une base de stockage
-   DataBox
+Si les étapes précédentes ont été réalisées avec succès, se rendre à l’url décrite dans le paramétrage du serveur web (sub.domain.tld) au moyen d’un navigateur web.
+
+Le setup se déroule en cinq étapes :
+
+ * Création du socle d’ApplicationBox
+ * Création d’un compte administrateur
+ * Connexion au module d’administration
+ * Création d’une base de stockage type DataBox
  * Mise en place des tâches d’indexation et de sous-définitions
 
 
 Démarrage des tâches
 --------------------
 
-Dans le module admin, rendez-vous sur la zone Gestionnaire de tâches. Lancez
-le planificateur de tâches.
+Dans le module admin, rcliquer sur la rubrique :doc:`Gestionnaire de tâches <MoteurDeTaches>`
+et lancer le planificateur de tâches.
 
-Félicitations, votre installation est terminée !
+L’installation est terminée et le système opérationnel.
 
-Vous pouvez maintenant importer vos documents via le module Upload ou configurer
-votre structure documentaire pour l’adapter à vos besoins.
+La structure documentaire peut être paramétrée pour s’adapter à vos besoins et
+des documents peuvent être importés via le module Phraseanet :doc:`Upload <../User/Manuel/Importer>`
