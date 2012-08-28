@@ -10,12 +10,12 @@ Ajouter une description d'un panier
 
     /api/v1/baskets/{basket_id}/setdescription/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   Méthode HTTP              POST
-   Authentification requise  Oui
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               POST
+   Authentification requise   Oui
+  ========================== =====
 
 Paramètres
 ----------

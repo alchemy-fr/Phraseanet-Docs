@@ -8,7 +8,7 @@ La version 1.2 de l'API présente deux problèmes de retro-compatibilité avec l
 version précédente.
 
 Un bug a été corrigé et le retour de la route
-:doc:`feeds/content <Route/Feeds/Content>` a été mis à jour.
+:doc:`feeds/content <V1/Route/Feeds/Content>` a été mis à jour.
 
 - Un certains nombre de routes ont été modifiées
 

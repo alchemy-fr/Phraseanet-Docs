@@ -4,7 +4,7 @@ Récupérer la structure documentaire d'une databox
 À propos
 --------
 
-  Return Metadatas settings on specified databox
+  Retourne la configuration des métadonnées pour une databox
 
   .. code-block:: bash
 
@@ -36,7 +36,7 @@ Attribut de la réponse
   ==================== ================================
 
 Exemple de réponse
----------------
+------------------
 
   .. code-block:: javascript
 
@@ -61,7 +61,7 @@ Exemple de réponse
                 "name": "Object",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -75,7 +75,7 @@ Exemple de réponse
                 "name": "Category",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -89,7 +89,7 @@ Exemple de réponse
                 "name": "SupplCategory",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -103,7 +103,7 @@ Exemple de réponse
                 "name": "Keywords",
                 "separator": ";",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": true,
                 "readonly": false,
@@ -117,7 +117,7 @@ Exemple de réponse
                 "name": "SpecialInstruct",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -145,7 +145,7 @@ Exemple de réponse
                 "name": "Byline",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -159,7 +159,7 @@ Exemple de réponse
                 "name": "BylineTitle",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -173,7 +173,7 @@ Exemple de réponse
                 "name": "City",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -187,7 +187,7 @@ Exemple de réponse
                 "name": "Country",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -201,7 +201,7 @@ Exemple de réponse
                 "name": "OriginalRef",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -215,7 +215,7 @@ Exemple de réponse
                 "name": "Headline",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -229,7 +229,7 @@ Exemple de réponse
                 "name": "Credit",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -243,7 +243,7 @@ Exemple de réponse
                 "name": "Source",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -257,7 +257,7 @@ Exemple de réponse
                 "name": "Caption",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -271,7 +271,7 @@ Exemple de réponse
                 "name": "CaptionWriter",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -285,7 +285,7 @@ Exemple de réponse
                 "name": "Longitude",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": true,
@@ -299,7 +299,7 @@ Exemple de réponse
                 "name": "Latitude",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": true,
@@ -313,7 +313,7 @@ Exemple de réponse
                 "name": "CameraModel",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "chaîne",
+                "type": "string",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": true,

@@ -5,8 +5,7 @@ Ajouter un document dans Phraseanet
 --------
 
   Ajoute un document à Phraseanet.
-  Si le fichier ne correspond pas à toutes les contraintes d'installation,
-  il va dans la quarantaine.
+  Si le fichier ne correspond pas à toutes les contraintes d'installation, il va dans la quarantaine.
   Ce comportement peut être contourné avec le paramètre optionnel *forceBehavior*
 
   .. code-block:: bash

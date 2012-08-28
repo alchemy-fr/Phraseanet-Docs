@@ -10,12 +10,12 @@ Lister les paniers d'un document
 
     /api/v1/records/{databox_id}/{record_id}/related/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   Méthode HTTP              GET
-   Authentification requise  Oui
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
 Paramètres
 ----------

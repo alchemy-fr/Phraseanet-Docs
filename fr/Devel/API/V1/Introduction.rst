@@ -7,7 +7,7 @@ format Json, JSonP, YAML.
 
 Les paramètres doivent êtres envoyés en tant que clefs/valeurs HTTP.
 
-Etant donné que Phrasenet utilise :doc:`oAuth2 <V1/Authentification>` comme
+Etant donné que Phrasenet utilise :doc:`oAuth2 <Authentification>` comme
 protocole d'authentification, il est important que votre serveur soit configuré
 pour supporter les requêtes authentifiées (https ou HTTPS)
 
@@ -104,9 +104,9 @@ Requête :
 
 
 .. note:: Dans le cas d’une réponse au format JsonP, l’Api retourne toujours
-un code de réponse HTTP 200 (à l’exception du code 500) dans le champ Response.
-Cela a pour conséquence de permettre l'exécution du code exploitant la requête.
-Le code de réponse HTTP le plus significatif se trouve dans le champ Meta.
+    un code de réponse HTTP 200 (à l’exception du code 500) dans le champ Response.
+    Cela a pour conséquence de permettre l'exécution du code exploitant la requête.
+    Le code de réponse HTTP le plus significatif se trouve dans le champ Meta.
 
 Réponse :
 

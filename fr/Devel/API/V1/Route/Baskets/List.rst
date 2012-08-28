@@ -23,7 +23,7 @@ Paramètres
   Aucun paramètres
 
 Attribut de la réponse
----------------
+----------------------
 
   ============= ================================
    Attribut      Description
@@ -32,7 +32,7 @@ Attribut de la réponse
   ============= ================================
 
 Exemple de réponse
----------------
+------------------
 
   .. code-block:: javascript
 

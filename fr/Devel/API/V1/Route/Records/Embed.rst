@@ -50,7 +50,7 @@ Attribut de la réponse
   ========== ================================
 
 Exemple de réponse
----------------
+------------------
 
   .. code-block:: javascript
 
