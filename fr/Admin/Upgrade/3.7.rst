@@ -4,13 +4,18 @@ Version 3.7
 Les changements :
 -----------------
 
-Changement API V1.2 => lien vers le changelog API
-
-Changement de code de retour de la console
-
-tf-filename tf-basename tf-duration
+* Changement API V1.2 (:doc:`Changelog <../../Devel/API/Changelog>`)
+* Changement de code de retour de la console
+* tf-filename tf-basename tf-duration
 
 
 Quoi de neuf ?
 --------------
 
+* Support de Windows Server 2008
+* Ajout du support des champs métiers (:doc:`Champs métiers <../../Glossaire#term-business-field-ou-champ-metier>`)
+* Ajout de nouveaux formats d’encodage video (Compatibilité HTML5)
+* Ajout de périphériques de destination pour les sous-définitions
+* Possibilité de choisir la vignette extraite d’une video (:doc:`Outils images <../../User/Manuel/Action#outils-images>`)
+* Sortie du SDK Phraseanet dont la documentation est disponible ici: `http://phraseanet-php-sdk.readthedocs.org/ <http://phraseanet-php-sdk.readthedocs.org/>`_.
+  Cette SDK est une boîte à outils PHP prête à l’emploi pour développer vos applications en exploitant Phraseanet.

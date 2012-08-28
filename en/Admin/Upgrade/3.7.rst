@@ -1,8 +1,20 @@
 Version 3.7
 ===========
 
-Changes :
----------
+Changes
+-------
+
+* change API V1.2 (:doc:`Changelog <../../Devel/API/Changelog>`)
+* change the exit code of (:doc:`Konsole Kommander <../Console>`) commands
+* tf-filename tf-basename tf-duration
 
 What's new ?
 ------------
+
+* Support of Windows Server 2008
+* Add support of business fields (:doc:`Champs métiers <../../Glossary>`)
+* Add new video encoding formats (HTML5 compatibility)
+* Add destination devices to for sub-definitions
+* Possibility to choose the thumbnail extracted from a video
+* Release of the Phraseanet SDK, documentation is located here : `http://phraseanet-php-sdk.readthedocs.org/ <http://phraseanet-php-sdk.readthedocs.org/>`_.
+  This SDK is a ready to use toolbox written in PHP allowing you to develop your applications by exploiting the Phraseanet API
