@@ -45,7 +45,7 @@ Response Fields
   ================== ================================
    Field              Description
   ================== ================================
-  offset_start      The start offset
+  offset_start        The start offset
   per_page            The number of results per page
   available_results   The amount of results available through this query. This number may be lower than available results ; SphinxSearch Engine has a limited number of results which can be retrieved and is, by default 1000. However, this limit can be configured
   total_results       The amount of results corresponding to the query
