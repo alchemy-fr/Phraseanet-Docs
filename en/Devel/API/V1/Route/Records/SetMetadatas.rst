@@ -4,7 +4,7 @@ Records SetMetadatas
 About
 -----
 
-  Return
+  Add, modify current record's metadatas
 
   .. code-block:: bash
 

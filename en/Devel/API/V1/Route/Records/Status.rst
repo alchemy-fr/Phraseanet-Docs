@@ -4,7 +4,7 @@ Records Status
 About
 -----
 
-  Return
+  List all status of a record
 
   .. code-block:: bash
 

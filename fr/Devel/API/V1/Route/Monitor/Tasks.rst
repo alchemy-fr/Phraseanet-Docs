@@ -1,38 +1,38 @@
-Tasks monitor
-=============
+Lister les tâches
+=================
 
-About
------
+À propos
+--------
 
-  Returns all information about all tasks
+  Retourne la liste de toutes les tâches
 
   .. code-block:: bash
 
     /api/v1/monitor/tasks/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
-  No parameter for this route
+  Aucun paramètre
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut   Description
   ========== ================================
-   tasks      The tasks you're monitoring
+   tasks      La tâche sélectionnée
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

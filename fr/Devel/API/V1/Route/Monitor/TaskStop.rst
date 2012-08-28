@@ -1,41 +1,41 @@
-Stop a task
-===========
+Arréter une tâche
+=================
 
-About
------
+À propos
+--------
 
-  Stop a task and return its status
+  Arrète une tâche et retourne son statut
 
   .. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/stop/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               POST
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   task_id                  integer        The task id
+   task_id                  entier        The task id
   ======================== ============== =============
 
-Response Fields
+Attribut de la réponse
 ---------------
 
   ========== ================================
-   Field      Description
+   Attribut      Description
   ========== ================================
    task       The task you're monitoring
   ========== ================================
 
-Response sample
+Exemple de réponse
 ---------------
 
   .. code-block:: javascript

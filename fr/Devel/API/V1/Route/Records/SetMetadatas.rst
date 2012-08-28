@@ -1,43 +1,43 @@
-Records SetMetadatas
-====================
+Modifier une métadonnée d'un document
+=====================================
 
-About
------
+À propos
+--------
 
-  Return
+  Modifie, ajoute une métadonnée à un document
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setmetadatas/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP              POST
+   Authentification requise  Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ================== ========= =============
-   Parameters         Type      Information
+   Paramètres         Type      Information
   ================== ========= =============
-   databox_id         integer   The databox id of the record
-   record_id          integer   The record_id
-   metadatas          array     An array of metadatas, each metadatas is an array itself with three keys : meta_struct_id (int), meta_id (int or null) and value (Array)
+   databox_id         entier    L'identifiant de la databox auquel appartient le document
+   record_id          entier    L'identifiant du document sélectionné
+   metadatas          tableau   Un tableau de métadonnées, chaque métadonnées est un tableau avec lui-même avec trois clés : meta_struct_id (entier), meta_id (entier ou null) and value (tableau)
   ================== ========= =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ================== ================================
-   Field               Description
+   Attribut            Description
   ================== ================================
-   record_metadatas    The list of the metadatas of the record
+   record_metadatas    La liste des métadonnées
   ================== ================================
 
-** Example **
+** Exemple **
 
   .. code-block:: javascript
 
@@ -54,36 +54,36 @@ Response Fields
     metadatas[3][meta_id]=489&
     metadatas[3][value]=&
 
-is equivalent to
+est équivalent à
 
   .. code-block:: javascript
 
     record_metadatas = {
         {
-            meta_struct_id: 1,        // current metadata refers to metadata structure id '1' ; see [[routes:databoxes:metadatas]]
-            meta_id: null,            // current meta_id refers to caption's field meta id ; see [[routes:records:metadatas]] ; this case, meta_id is null because there's currently no value set, the field will be created
-            value : 'A pretty string' // value is always a String
+            meta_struct_id: 1,        // La metadonnée se referre à la meta_struct_id '1' ; voir [[routes:databoxes:metadatas]]
+            meta_id: null,            // La metadonnée se referre au champs de légende meta_id ; voir [[routes:records:metadatas]] ; ce cas, meta_id est nul car il n'y a actuellement aucune valeur définie, le champ sera créé
+            value : 'A pretty string' // 'value' est toujours une chaîne
         },
         {
             meta_struct_id: 3,
-            meta_id: 487,          // this case, meta_id is not null because there's currently some datas, the field will be updated
+            meta_id: 487,          // meta_id n'est pas nul car il ya actuellement déjà des données, le champ sera mis à jour
             value: 'one key word'
         },
         {
             meta_struct_id: 3,
-            meta_id: 488,          // this case, meta_id is not null because there's currently some datas, the field will be updated
+            meta_id: 488,
             value: 'two key word'
         },
         {
             meta_struct_id: 7,
             meta_id: 489,
-            value: ''              // this case, the value is empty, the field will be deleted
+            value: ''              // La valeur est vide, le champ sera supprimé
         }
     }
 
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

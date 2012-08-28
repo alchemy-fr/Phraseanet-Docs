@@ -1,37 +1,37 @@
-Baskets List
-============
+Lister les paniers
+==================
 
-About
------
+À propos
+--------
 
-  Return the baskets list of the authenticated user
+  Retourne la liste des paniers de l'utilisateur courant
 
   .. code-block:: bash
 
     /api/v1/baskets/list/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
-  No parameters for this route
+  Aucun paramètres
 
-Response Fields
+Attribut de la réponse
 ---------------
 
   ============= ================================
-   Field         Description
+   Attribut      Description
   ============= ================================
-   baskets       The list of my baskets
+   baskets       La liste des paniers
   ============= ================================
 
-Response sample
+Exemple de réponse
 ---------------
 
   .. code-block:: javascript

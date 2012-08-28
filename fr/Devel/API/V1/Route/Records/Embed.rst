@@ -1,23 +1,24 @@
-Records Embed
-=============
+Lister les sous-définnitions d'un document
+==========================================
 
-About
------
+À propos
+--------
 
-  Returns some permalinks to the document subdefinitions to embed it
+  Retourne les permaliens des sous-définitions disponibles pour le document
+  sélectionné.
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/embed/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
 Depuis la version 1.2, deux nouveaux paramètres sont disponibles : *devices* et
@@ -31,24 +32,24 @@ vous utiliserez les paramètres :
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
   ======================== ============== ==============================
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== ==============================
-   databox_id               integer 	   The databox id of the record
-   record_id 	            integer 	   The record_id
-   devices                  array          Un tableau de devices sur lequel restreindre la query (optionnel)
-   mimes                    array          Un tableau de type mime sur lequel restreindre la recherche (optionnel)
+   databox_id               entier 	       L'identifiant de la databox auquel appartient le document
+   record_id 	            entier 	       L'identifiant du document sélectionné
+   devices                  tableau        Un tableau de devices sur lequel restreindre la query (optionnel)
+   mimes                    tableau        Un tableau de type mime sur lequel restreindre la recherche (optionnel)
   ======================== ============== ==============================
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut   Description
   ========== ================================
-    embed 	  The list of the metadatas of the record
+    embed 	  La liste des sous-definitions disponible pour le document sélectionné
   ========== ================================
 
-Response sample
+Exemple de réponse
 ---------------
 
   .. code-block:: javascript

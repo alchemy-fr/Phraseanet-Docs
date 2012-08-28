@@ -1,10 +1,10 @@
-Baskets SetDescription
-======================
+Ajouter une description d'un panier
+===================================
 
-About
------
+À propos
+--------
 
-  Set the description of the basket
+  Mets à jour la description du panier sélectionné
 
   .. code-block:: bash
 
@@ -13,31 +13,31 @@ About
   ======================== =====
    Informations
   ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
+   Méthode HTTP              POST
+   Authentification requise  Oui
   ======================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type          Information
+   Paramètres               Type          Information
   ======================== ============== =============
-   basket_id                integer        The basket_id of the selected basket
-   description              string         The description of the basket
+   basket_id                entier         L'indentifiant du basket sélectionné
+   description              chaîne         La description du basket
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ============= ================================
-   Field         Description
+   Attribut      Description
   ============= ================================
-   basket        The basket
+   basket        Le panier
   ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

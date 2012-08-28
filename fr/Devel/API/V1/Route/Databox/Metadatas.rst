@@ -1,8 +1,8 @@
-Databox Metadatas
-===================
+Récupérer la structure documentaire d'une databox
+=================================================
 
-About
------
+À propos
+--------
 
   Return Metadatas settings on specified databox
 
@@ -10,32 +10,32 @@ About
 
     /api/v1/databoxes/{databox_id}/metadatas/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   databox_id                              The databox id on which the request is done
+   databox_id               entier         L'identifiant de la databox sélectionnée
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ==================== ================================
-  Field                Description
+  Attribut                Description
   ==================== ================================
    document_structure   The list of metadatas document structure
   ==================== ================================
 
-Response sample
+Exemple de réponse
 ---------------
 
   .. code-block:: javascript
@@ -61,7 +61,7 @@ Response sample
                 "name": "Object",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -75,7 +75,7 @@ Response sample
                 "name": "Category",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -89,7 +89,7 @@ Response sample
                 "name": "SupplCategory",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -103,7 +103,7 @@ Response sample
                 "name": "Keywords",
                 "separator": ";",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": true,
                 "readonly": false,
@@ -117,7 +117,7 @@ Response sample
                 "name": "SpecialInstruct",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -145,7 +145,7 @@ Response sample
                 "name": "Byline",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -159,7 +159,7 @@ Response sample
                 "name": "BylineTitle",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -173,7 +173,7 @@ Response sample
                 "name": "City",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -187,7 +187,7 @@ Response sample
                 "name": "Country",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -201,7 +201,7 @@ Response sample
                 "name": "OriginalRef",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -215,7 +215,7 @@ Response sample
                 "name": "Headline",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -229,7 +229,7 @@ Response sample
                 "name": "Credit",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -243,7 +243,7 @@ Response sample
                 "name": "Source",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -257,7 +257,7 @@ Response sample
                 "name": "Caption",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -271,7 +271,7 @@ Response sample
                 "name": "CaptionWriter",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": false,
@@ -285,7 +285,7 @@ Response sample
                 "name": "Longitude",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": true,
@@ -299,7 +299,7 @@ Response sample
                 "name": "Latitude",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": true,
@@ -313,7 +313,7 @@ Response sample
                 "name": "CameraModel",
                 "separator": "",
                 "thesaurus_branch": "",
-                "type": "string",
+                "type": "chaîne",
                 "indexable": true,
                 "multivalue": false,
                 "readonly": true,

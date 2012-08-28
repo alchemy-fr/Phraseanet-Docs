@@ -1,41 +1,41 @@
-Records SetStatus
-=================
+Appliquer un status
+===================
 
-About
------
+À propos
+--------
 
-  Set status to a record
+  Applique un status à un document
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setstatus/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               POST
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ================ ========= ==============================
-   Parameters       Type      Information
+   Paramètres       Type      Information
   ================ ========= ==============================
-   databox_id 	    integer   The databox id of the record
-   record_id        integer   The record_id
-   status           Array     The status to modify
+   databox_id 	    entier    L'identifiant de la databox auquel appartient le document
+   record_id        entier    L'identifiant du document sélectionné
+   status           tableau   Les status à modifier
   ================ ========= ==============================
 
-** Example **
+** Exemple **
 
   .. code-block:: javascript
 
     status[4]=1&
     status[5]=0&
 
-is equivalent to
+est equivalent à
 
   .. code-block:: javascript
 
@@ -44,17 +44,17 @@ is equivalent to
         5: 0
     }
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut    Description
   ========== ================================
-   status 	  The list of the status of the record
+   status      La liste des status du document
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

@@ -1,43 +1,43 @@
-Baskets SetName
-===============
+Modifier le nom d'un panier
+===========================
 
-About
------
+À propos
+--------
 
-  Return
+  Mets à jour le nom du panier sélectionné
 
   .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/setname/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               POST
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Value          Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   basket_id                 integer       The basket_id of the selected basket
-   name                      string        The name of the basket
+   basket_id                entier         L'identifiant du panier sélectionné
+   name                     chaîne         Le nom du panier
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ============= ================================
-   Field         Description
+   Attribut      Description
   ============= ================================
-   basket        The basket
+   basket        Le panier
   ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

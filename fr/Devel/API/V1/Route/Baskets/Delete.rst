@@ -1,42 +1,42 @@
-Baskets Delete
-==============
+Supprimer un panier
+===================
 
-About
------
+À propos
+--------
 
-  Delete the basket
+  Supprimer un panier
 
   .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/delete/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP              POST
+   Authentification requise  Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   basket_id                integer        The basket_id of the selected basket
+   basket_id                entier         L'identifiant du basket sélectionné
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ============= ================================
-   Field         Description
+   Attribut      Description
   ============= ================================
-   baskets       The list of the baskets of the current user
+   baskets       La liste des paniers de l'utilisateur courant
   ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 
