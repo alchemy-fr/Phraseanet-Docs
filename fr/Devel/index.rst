@@ -15,3 +15,4 @@ L'API stable de Phraseanet est 1.2 sur les versions 3.7+
 
    API
    Forums
+   ApplicationDeveloper
