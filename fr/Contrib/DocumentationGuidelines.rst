@@ -1,25 +1,35 @@
 Standards de rédaction
 ======================
 
-Cette documentation est libre et participative. Vous pouvez l'éditer,
-l'améliorer et la modifier à votre guise.
+La documentation Phraseanet est libre et participative. Elle peut être éditée,
+améliorée ou modifiée selon les besoins.
 
-Pour commencer, le plus simple sera d'imiter la documentation telle qu'elle
+Pour commencer, le plus simple est d'imiter cette documentation telle qu'elle
 existe déjà.
 
-Vous trouverez aussi ci-dessous une liste de règles à respecter et un mémo des
+Voici ci-dessous une liste de règles à respecter et un mémo relatifs aux 
 marqueurs les plus utilisés.
 
+Règles et style de rédaction
+----------------------------
+
 Règles
-------
+******
 
   * Les lignes ne dépassent pas 80 caractères
   * Le texte est encodé en UTF-8
-  * La documentation n'est pas davantage optimisée pour le PDF ou le HTML
+  * La documentation n'est pas davantage optimisée pour l'impression PDF ou l'affichage HTML
   * La documentation est publiée en GPL v3
 
-Mémo
-----
+Style
+*****
+
+  * Rédiger à l'infinitif
+  * Favoriser les phrases courtes
+  * Privilégier un niveau de langue simple et compréhensible par tous
+
+Mémo des règles de codage
+-------------------------
 
 Structure
 *********
