@@ -34,6 +34,7 @@ Routes
     Route/Feeds/Aggregated
     Route/Feeds/Entry
     Route/Monitor/Phraseanet
+    Route/Monitor/Scheduler
     Route/Monitor/Task
     Route/Monitor/TaskStop
     Route/Monitor/TaskStart
@@ -80,6 +81,7 @@ For example, you can get the permalinks of a record with the following route:
 Some more route dedicated to monitoring and application management are available :
 
  - `Route/Monitor/Phraseanet`
+ - `Route/Monitor/Scheduler`
  - `Route/Monitor/Task`
  - `Route/Monitor/TaskStop`
  - `Route/Monitor/TaskStart`

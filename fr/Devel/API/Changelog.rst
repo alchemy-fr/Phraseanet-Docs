@@ -17,15 +17,11 @@ Un bug a été corrigé et le retour de la route
     - Légende d'un record :doc:`record/caption <V1/Route/Records/Caption>`
     - Rechercher un record :doc:`record/search <V1/Route/Records/Search>`
     - Structure documentaire d'une databox :doc:`databox/metadatas <V1/Route/Databox/Metadatas>`
-    - Description d'une tâche :doc:`monitor/tasks <V1/Route/Monitor/Tasks>`
-      & :doc:`monitor/task <V1/Route/Monitor/Task>`
     - Description d'un panier :doc:`basket/list <V1/Route/Baskets/List>`
     - Description d'un élément du panier :doc:`basket/content <V1/Route/Baskets/Content>`
 
-
 - Les objets avec des attributs numériques ont été supprimés. Tous les objets de
   collection sont maintenant représentés comme un tableau d'objets.
-
 
 **Avant**
 
@@ -377,6 +373,7 @@ Ajout de routes
 - Ajout de la route :doc:`/records/add/ <V1/Route/Records/Add>`
 - Ajout de la route :doc:`/quarantine/list/ <V1/Route/Quarantine/List>`
 - Ajout de la route :doc:`/quarantine/item/ <V1/Route/Quarantine/Item>`
+- Ajout de la route :doc:`/monitor/scheduler/ <V1/Route/Monitor/Scheduler>`
 - Ajout de la route :doc:`/monitor/phraseanet/ <V1/Route/Monitor/Phraseanet>`
 - Ajout de la route :doc:`/monitor/tasks/ <V1/Route/Monitor/Tasks>`
 - Ajout de la route :doc:`/monitor/task/ <V1/Route/Monitor/Task>`

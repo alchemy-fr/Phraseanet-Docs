@@ -21,7 +21,6 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
     - Basket description :doc:`basket/list <V1/Route/Baskets/List>`
     - Basket element description :doc:`basket/content <V1/Route/Baskets/Content>`
 
-
 - Object with numeric attributes have been removed. All collection objects are
   now presented as an array of objects.
 
@@ -444,6 +443,7 @@ Route add
 - Add route :doc:`/records/add/ <V1/Route/Records/Add>`
 - Add route :doc:`/quarantine/list/ <V1/Route/Quarantine/List>`
 - Add route :doc:`/quarantine/item/ <V1/Route/Quarantine/Item>`
+- Add route :doc:`/monitor/scheduler/ <V1/Route/Monitor/Scheduler>`
 - Add route :doc:`/monitor/phraseanet/ <V1/Route/Monitor/Phraseanet>`
 - Add route :doc:`/monitor/tasks/ <V1/Route/Monitor/Tasks>`
 - Add route :doc:`/monitor/task/ <V1/Route/Monitor/Task>`

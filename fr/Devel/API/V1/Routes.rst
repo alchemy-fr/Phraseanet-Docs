@@ -33,6 +33,7 @@ Routes
     Route/Feeds/Aggregated
     Route/Feeds/Entry
     Route/Monitor/Phraseanet
+    Route/Monitor/Scheduler
     Route/Monitor/Task
     Route/Monitor/TaskStop
     Route/Monitor/TaskStart
@@ -79,6 +80,7 @@ En plus de ces routes, des routes dédiées au monitoring et à l'administration
 sont disponibles :
 
  - :doc:`Route/Monitor/Phraseanet <Route/Monitor/Phraseanet>`
+ - :doc:`Route/Monitor/Scheduler <Route/Monitor/Scheduler>`
  - :doc:`Route/Monitor/Task <Route/Monitor/Task>`
  - :doc:`Route/Monitor/TaskStop <Route/Monitor/TaskStop>`
  - :doc:`Route/Monitor/TaskStart <Route/Monitor/TaskStart>`
