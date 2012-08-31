@@ -1,25 +1,24 @@
-Signaler Un Problème
+Signaler un problème
 ====================
 
-Vous constatez une anomalie ? Le résultat d'une action n'est pas celui attendu ?
-Une option est impossible à activer ? Vous revez d'une option pour simplifier
-l'utilisation de Phraseanet ?
+Une anomalie détectée ? Le résultat d'une action n'est pas celui attendu ?
+Une option impossible à activer ? Une idée pour simplifier l'utilisation de 
+Phraseanet ?
 
-Vous devez ouvrir un rapport de bug, mais pour cela, veuillez vérifier les
-conditions suivantes :
+Pour ouvrir un rapport de bug, vérifier préalablement les conditions suivantes :
 
- * Vous vous êtes assuré d'être en dernière version de Phraseanet
- * Vous vous êtes assuré d'avoir patché votre version après l'avoir :doc:`mise 
+ * Le problème concerne la dernière version de Phraseanet
+ * Le dernier patch de la version est installé après une :doc:`mise 
    à jour </Admin/MiseAJour>`
- * Votre bug se reproduit systèmatiquement en enchainant une combinaison
-   d'actions précise.
- * Vous avez consulté la :doc:`FAQ </Admin/Faq>` pour un remède a des 
-   problèmes connus
- * Vous avez vérifié que votre `problème n'est pas déjà reporté 
-   <https://github.com/alchemy-fr/Phraseanet/issues/>`_
+ * Le bug constaté est reproductible en enchainant une combinaison
+   d'actions précises
+ * La :doc:`FAQ </Admin/Faq>` ne traite pas du problème rencontré ou ne livre
+ pas de remède approprié
+ * Le problème n'est pas déjà reporté dans `cette liste 
+ <https://github.com/alchemy-fr/Phraseanet/issues/>`_
 
 
-Si tout cela est bon (pfiou !), `ouvrez un ticket
+Après vérification, `ouvrir un ticket
 <https://github.com/alchemy-fr/Phraseanet/issues>`_ avec, si possible,  un
 `gist <https://gist.github.com/>`_ du résultat de la commande :
 
@@ -28,7 +27,6 @@ Si tout cela est bon (pfiou !), `ouvrez un ticket
       bin/console system:doctor
 
 Surtout :
- * ne vous limitez pas au copier-coller du résultat
- * donner l'enchainement d'etapes le plus simple possible pour reproduire le
-   probleme.
- * indiquez le navigateur utilisé et sa version.
+ * Ne pas se limiter au copier-coller du résultat
+ * Indiquer l'enchainement des étapes nécéssaires pour reproduire le problème
+ * Indiquer le navigateur utilisé ainsi que sa version
