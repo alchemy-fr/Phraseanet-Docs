@@ -2,7 +2,7 @@ Monitorer Phraseanet
 ====================
 
 A propos
--------
+--------
 
   Retourne la configuration de Phraseanet
 

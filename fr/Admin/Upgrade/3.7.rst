@@ -13,9 +13,9 @@ Quoi de neuf ?
 --------------
 
 * Support de Windows Server 2008
-* Ajout du support des champs métiers (:doc:`Champs métiers <../../Glossaire#term-business-field-ou-champ-metier>`)
+* Ajout du support des champs métiers (:doc:`Champs métiers <../../Glossaire>`)
 * Ajout de nouveaux formats d’encodage video (Compatibilité HTML5)
 * Ajout de périphériques de destination pour les sous-définitions
-* Possibilité de choisir la vignette extraite d’une video (:doc:`Outils images <../../User/Manuel/Action#outils-images>`)
+* Possibilité de choisir la vignette extraite d’une video (:doc:`Outils images <../../User/Manuel/Actions>`)
 * Sortie du SDK Phraseanet dont la documentation est disponible ici: `http://phraseanet-php-sdk.readthedocs.org/ <http://phraseanet-php-sdk.readthedocs.org/>`_.
   Cette SDK est une boîte à outils PHP prête à l’emploi pour développer vos applications en exploitant Phraseanet.

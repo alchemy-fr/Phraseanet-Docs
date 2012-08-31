@@ -4,7 +4,7 @@ Ajouter un panier
 A propos
 --------
 
-  Créer un nouveau panier
+  Créé un nouveau panier
 
   .. code-block:: bash
 

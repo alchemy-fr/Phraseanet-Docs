@@ -118,13 +118,13 @@ Applications AJAX
 Applications Clientes
 ~~~~~~~~~~~~~~~~~~~~~
 
-  Ce flux est destiné aux applications mobiles et de bureau qui veulent
-  accéder à des données utilisateurs.
+  Ce flux est destiné aux applications mobiles et de bureau qui
+  veulent accéder à des données utilisateurs.
 
   Le flux d'authentification des applications natives est identique aux flux des
   applications internets à une exception prés.
   Il faut spécifier une URL de redirection
-  spéciale ** urn: ietf: wg: oauth: 2.0: oob **. "oob" est l'acronyme de "out of band"
+  spéciale **urn: ietf: wg: oauth: 2.0: oob**. "oob" est l'acronyme de "out of band"
   et le reste de la chaîne identifie l'URL comme faisant parti
   du protocole oAuth2.0.
 

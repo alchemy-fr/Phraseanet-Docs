@@ -4,7 +4,7 @@ Supprimer un panier
 A propos
 --------
 
-  Supprimer un panier
+  Supprime un panier
 
   .. code-block:: bash
 

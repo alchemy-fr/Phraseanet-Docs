@@ -32,7 +32,7 @@ Attribut de la réponse
   ==================== ================================
   Attribut                Description
   ==================== ================================
-   document_structure   The list of metadatas document structure
+   document_structure   La structure document de la databox sélectionnée
   ==================== ================================
 
 Exemple de réponse

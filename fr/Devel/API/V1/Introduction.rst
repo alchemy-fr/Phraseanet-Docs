@@ -7,7 +7,7 @@ format Json, JSonP, YAML.
 
 Les paramètres doivent êtres envoyés en tant que clefs/valeurs HTTP.
 
-Etant donné que Phrasenet utilise :doc:`oAuth2 <Authentification>` comme
+Etant donné que Phraseanet utilise :doc:`oAuth2 <Authentification>` comme
 protocole d'authentification, il est important que votre serveur soit configuré
 pour supporter les requêtes authentifiées (https ou HTTPS)
 
@@ -17,7 +17,7 @@ Quotas
 Il n'y a pas de quotas en v1, vous pouvez faire autant de requêtes
 que vous le souhaitez
 
-Acces anonyme
+Accés anonyme
 -------------
 
 Il n’y a pas d’accès anonyme ou public dans l’API Phraseanet V1.
@@ -34,9 +34,8 @@ Les réponses sont renvoyés par défaut dans un format Json.
 YAML
 ~~~~
 
-Comme le précise les spécifications HTTP, vous devez définir un paramétre 'Accept'
-dans l'en-tête de la requête HTTP si vous voulez récupérer une réponse au format
-YAML.
+Comme le précise les spécifications HTTP, Pour obtenir une réponse au format YAML
+Il faut définir un paramétre 'Accept' dans l'en-tête de la requête HTTP.
 
 Requête :
 

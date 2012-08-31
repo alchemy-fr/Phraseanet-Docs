@@ -29,13 +29,12 @@ Paramètres
 Attribut de la réponse
 ----------------------
 
-  ======================== =================================
-   Field                    Description
-  ======================== =================================
-   basket_elements          The list of the basket_elements
-   basket                   The selected basket
-  ======================== =================================
-
+  ================ ================================
+   Attribut         Description
+  ================ ================================
+   basket_elements 	La liste des éléments du panier
+   basket           Le basket sélectionné
+  ================ ================================
 
 Exemple de réponse
 ------------------
