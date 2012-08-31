@@ -1,7 +1,7 @@
 Récupérer la structure documentaire d'une databox
 =================================================
 
-À propos
+A propos
 --------
 
   Retourne la configuration des métadonnées pour une databox

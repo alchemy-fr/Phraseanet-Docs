@@ -1,10 +1,10 @@
-Récupérer la légende d'un document
-==================================
+Récupérer la notice d'indexation d'un document
+==============================================
 
-À propos
+A propos
 --------
 
-  Retourne la légende d'un document
+  Retourne la notice d'indexation d'un document
 
   .. code-block:: bash
 
@@ -33,7 +33,7 @@ Attribut de la réponse
   =================== ================================
    Attribut            Description
   =================== ================================
-   caption_metadatas   La légende du document
+   caption_metadatas   La notice d'indexation du document
   =================== ================================
 
 Exemple de réponse

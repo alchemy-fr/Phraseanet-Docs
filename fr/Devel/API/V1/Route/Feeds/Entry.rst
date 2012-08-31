@@ -1,7 +1,7 @@
 Lister le contenu d'une entrée
 ==============================
 
-À propos
+A propos
 --------
 
   Retourne le contenu de l'entrée sélectionnée

@@ -1,7 +1,7 @@
 Lister les status d'un document
 ===============================
 
-À propos
+A propos
 --------
 
   Retourne la liste des status d'un document

@@ -1,7 +1,7 @@
 Monitorer Phraseanet
 ====================
 
-À propos
+A propos
 -------
 
   Retourne la configuration de Phraseanet
@@ -28,8 +28,8 @@ Attribut de la réponse
   =============== ======================================
    Attribut           Description
   =============== ======================================
-   phraseanet      Information à propos de l'installation de Phraseanet
-   cache           Information à propos du cache Phraseanet
+   phraseanet      Information A propos de l'installation de Phraseanet
+   cache           Information A propos du cache Phraseanet
    global_values   Liste des variables de configuration
   =============== ======================================
 

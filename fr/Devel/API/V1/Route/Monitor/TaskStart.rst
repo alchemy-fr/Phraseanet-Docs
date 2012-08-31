@@ -1,7 +1,7 @@
 Démarrer une tâche
 ==================
 
-À propos
+A propos
 --------
 
   Démarre une tâche et retourne son statut

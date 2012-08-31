@@ -2,7 +2,7 @@ Installation
 ============
 
 
-Après téléchargement des sources , vérifié les :doc:`prérequis <Prerequis>`,
+Après téléchargement des sources , vérifier les :doc:`prérequis <Prerequis>`,
 vous pouvez vérifier votre configuration à la racine de votre installation :
 
   .. code-block:: bash
@@ -41,7 +41,7 @@ Le setup se déroule en cinq étapes :
 Démarrage des tâches
 --------------------
 
-Dans le module admin, rcliquer sur la rubrique :doc:`Gestionnaire de tâches <MoteurDeTaches>`
+Dans le module admin, cliquer sur la rubrique :doc:`Gestionnaire de tâches <MoteurDeTaches>`
 et lancer le planificateur de tâches.
 
 L’installation est terminée et le système opérationnel.

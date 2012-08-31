@@ -1,7 +1,7 @@
 Ajouter un panier
 =================
 
-À propos
+A propos
 --------
 
   Créer un nouveau panier

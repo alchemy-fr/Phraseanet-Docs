@@ -1,10 +1,10 @@
-Récupérer un item de la quarantaine
-===================================
+Récupérer un document de la quarantaine
+=======================================
 
-À propos
+A propos
 --------
 
-  Retourne l'item de la quarataine sélectionné
+  Retourne un document de la quarantaine.
 
   .. code-block:: bash
 
@@ -23,7 +23,7 @@ Paramètres
   ======================== ============== =============
    Paramètres               Type           Information
   ======================== ============== =============
-   quarantine_id            entier         L'identifiant de l'item sélectionné
+   quarantine_id            entier         L'identifiant du document placé dans la quarantaine
   ======================== ============== =============
 
 Attribut de la réponse

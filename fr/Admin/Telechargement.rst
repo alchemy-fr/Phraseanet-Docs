@@ -13,4 +13,4 @@ Phraseanet requière deux extensions supplémentaires et indispensables
 - Phraseanet-Indexer disponible à l’adresse
   * `http://github.com/alchemy-fr/Phraseanet-Indexer <http://github.com/alchemy-fr/Phraseanet-Indexer>`_
 
-Vérifiez les :doc:`prérequis <Prerequis>` et procédez à l':doc:`installation <Installation>`.
+Vérifier les :doc:`prérequis <Prerequis>` et procéder à l':doc:`installation <Installation>`.

@@ -1,7 +1,7 @@
 Lister les paniers
 ==================
 
-À propos
+A propos
 --------
 
   Retourne la liste des paniers de l'utilisateur courant
@@ -20,7 +20,7 @@ Lister les paniers
 Paramètres
 ----------
 
-  Aucun paramètres
+  Aucun paramètre
 
 Attribut de la réponse
 ----------------------

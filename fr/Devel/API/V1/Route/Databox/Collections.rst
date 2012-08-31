@@ -1,7 +1,7 @@
 Lister les collections d'une databox
 ====================================
 
-À propos
+A propos
 --------
 
   Retourne la liste des collections disponibles de la databox sélectionnée

@@ -1,7 +1,7 @@
 Parcourir un panier
 ===================
 
-À propos
+A propos
 --------
 
   Retourne le contenu d'un panier

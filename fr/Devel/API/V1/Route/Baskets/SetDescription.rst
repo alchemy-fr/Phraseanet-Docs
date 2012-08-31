@@ -1,10 +1,10 @@
 Ajouter une description d'un panier
 ===================================
 
-À propos
+A propos
 --------
 
-  Mets à jour la description du panier sélectionné
+  Met à jour la description du panier sélectionné
 
   .. code-block:: bash
 

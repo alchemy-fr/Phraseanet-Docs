@@ -13,7 +13,7 @@ de votre installation, suivez les étapes suivantes :
   * Arrêt des processus lancés par le scheduler via l'interface
     d'administration et stopper toutes les tâches en cours d'exécution.
 
-  * Déconnectez tous les utilisateurs (y compris vous-même) de l'application
+  * Déconnexion de tous les utilisateurs (y compris vous-même) de l'application
 
   * Sauvegarder les bases de données et les anciennes sources.
 
@@ -28,7 +28,7 @@ de votre installation, suivez les étapes suivantes :
   * Recharger le serveur web APACHE ou NGINX pour la prise en charge de la nouvelle extension
 
   * Se connecter au module administration, éditer la configuration,
-    et sauvegarder-là pour la prise en charge de nouvelles variables
+    et la sauvegarder pour prendre en charge de nouvelles variables
 
   * Dans la zone "bases", cliquer sur le lien "réparer les tables",
     les scripts de mise à jour se lancent.

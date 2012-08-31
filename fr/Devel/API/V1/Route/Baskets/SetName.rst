@@ -1,10 +1,10 @@
 Modifier le nom d'un panier
 ===========================
 
-À propos
+A propos
 --------
 
-  Mets à jour le nom du panier sélectionné
+  Met à jour le nom du panier sélectionné
 
   .. code-block:: bash
 

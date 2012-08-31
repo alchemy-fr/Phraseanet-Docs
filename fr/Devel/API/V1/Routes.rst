@@ -46,7 +46,7 @@ Comme mentionné :doc:`ici <Introduction>`, toutes ces routes d’API requièren
 authentification et reposent sur des méthodes de requêtes HTTP de type GET et POST.
 
 Pour chaque ressource, il est possible d’obtenir des liens et actions.
-Par exemple, les status d'une enregistrement ou les status d'une databox :
+Par exemple, les propriétés d'un enregistrement ou d'une databox :
 
 
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+

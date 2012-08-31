@@ -154,7 +154,7 @@ Réponse pour la structure documentaire d'une databox
 ****************************************************
 
 La réponse de la structure documentaire d'une databox est maintenant
-contenu dans l'attribut **document_metadatas**.
+contenue dans l'attribut **document_metadatas**.
 
 .. code-block:: javascript
 
@@ -286,7 +286,7 @@ il indique s'il s'agit d'un panier de validation.
 Recherche d'un enregistrement
 *****************************
 
-Certains parametres de la route :doc:`records/search <V1/Route/Records/Search>`
+Certains paramètres de la route :doc:`records/search <V1/Route/Records/Search>`
 sont renommés :
 
  - datefield => date_field

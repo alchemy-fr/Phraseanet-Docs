@@ -1,7 +1,7 @@
 Lister les status d'une databox
 ===============================
 
-À propos
+A propos
 --------
 
   Retourne la liste des status disponibles de la databox sélectionnée

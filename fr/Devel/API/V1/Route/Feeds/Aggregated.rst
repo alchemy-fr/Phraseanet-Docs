@@ -1,7 +1,7 @@
 Lister le contenu des flux agrégé
 =================================
 
-À propos
+A propos
 --------
 
   Retourne le contenu agrégé de tous les fux disponibles

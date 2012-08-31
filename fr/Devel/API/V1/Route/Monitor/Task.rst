@@ -1,10 +1,10 @@
 Monitorer les tâches de Phraseanet
 ==================================
 
-À propos
+A propos
 --------
 
-  Returns all informations À propos a task
+  Returns all informations A propos a task
 
   .. code-block:: bash
 

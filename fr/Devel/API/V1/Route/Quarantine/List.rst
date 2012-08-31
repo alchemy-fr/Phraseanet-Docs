@@ -1,10 +1,10 @@
-Lister les items de la quarantaine
-==================================
+Lister les documents de la quarantaine
+======================================
 
-À propos
+A propos
 --------
 
-  Lister le contenu de la quarantaine
+  Liste les documents contenu dans la quarantaine
 
   .. code-block:: bash
 

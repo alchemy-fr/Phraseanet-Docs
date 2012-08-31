@@ -1,7 +1,7 @@
 Modifier une métadonnée d'un document
 =====================================
 
-À propos
+A propos
 --------
 
   Modifie, ajoute une métadonnée à un document
@@ -25,7 +25,7 @@ Paramètres
   ================== ========= =============
    databox_id         entier    L'identifiant de la databox auquel appartient le document
    record_id          entier    L'identifiant du document sélectionné
-   metadatas          tableau   Un tableau de métadonnées, chaque métadonnées est un tableau avec lui-même avec trois clés : meta_struct_id (entier), meta_id (entier ou null) and value (tableau)
+   metadatas          tableau   Un tableau de métadonnées. Chaque métadonnées est un tableau avec trois clés : meta_struct_id (entier), meta_id (entier ou null) and value (tableau)
   ================== ========= =============
 
 Attribut de la réponse

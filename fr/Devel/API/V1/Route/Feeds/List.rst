@@ -1,7 +1,7 @@
 Lister les flux
 ===============
 
-À propos
+A propos
 --------
 
   Liste tous les flux disponibles

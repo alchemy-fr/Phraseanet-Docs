@@ -1,11 +1,12 @@
 Ajouter un document dans Phraseanet
 ===================================
 
-À propos
+A propos
 --------
 
   Ajoute un document à Phraseanet.
-  Si le fichier ne correspond pas à toutes les contraintes d'installation, il va dans la quarantaine.
+  Si le fichier ne correspond pas aux caractéristiques des :doc:services
+  des douanes <../../../../Admin/Configuration>, il est placé en quarantaine..
   Ce comportement peut être contourné avec le paramètre optionnel *forceBehavior*
 
   .. code-block:: bash
@@ -34,7 +35,7 @@ Paramètres
 Attribut de la réponse
 ----------------------
 
-  Dans le cas ou le document à été ajouté avec succés
+  Dans le cas ou le document a été ajouté avec succès
 
   ================== ================================
    Attribut           Description

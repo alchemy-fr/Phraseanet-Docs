@@ -1,7 +1,7 @@
 Appliquer un status
 ===================
 
-À propos
+A propos
 --------
 
   Applique un status à un document

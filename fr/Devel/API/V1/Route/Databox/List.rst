@@ -1,10 +1,10 @@
 Lister les databox
 ==================
 
-À propos
+A propos
 --------
 
-  Retorune la liste ds databox disponibles
+  Retourne la liste des databox disponibles
 
   .. code-block:: bash
 

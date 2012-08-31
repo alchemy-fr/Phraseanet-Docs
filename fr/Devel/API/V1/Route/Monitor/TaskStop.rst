@@ -1,10 +1,10 @@
 Arréter une tâche
 =================
 
-À propos
+A propos
 --------
 
-  Arrète une tâche et retourne son statut
+    Arrête une tache et retourne son statut
 
   .. code-block:: bash
 
@@ -23,7 +23,7 @@ Paramètres
   ======================== ============== =============
    Paramètres               Type           Information
   ======================== ============== =============
-   task_id                  entier        The task id
+   task_id                  entier         L'identifiant de la tâche
   ======================== ============== =============
 
 Attribut de la réponse
@@ -32,7 +32,7 @@ Attribut de la réponse
   ========== ================================
    Attribut      Description
   ========== ================================
-   task       The task you're monitoring
+   task       La tâche monitorée
   ========== ================================
 
 Exemple de réponse

@@ -1,7 +1,7 @@
 Chercher un document
 ====================
 
-À propos
+A propos
 --------
 
   Retourne la liste des documents trouvés
@@ -24,7 +24,7 @@ Paramètres
    Paramètres    Type        Example   Information
   ============= =========== ========= =============
    query         chaîne                La requête de recherche est la même syntaxe que dans Phraseanet, La valeur par défaut est une chaîne égale à "all records"
-   bases         tableau               Un tableau d'identifiant de collections, si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections
+   bases         tableau               Un tableau d'identifiants de collections. Si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections disponibles.
    offset_start  entier         1      Le numéro de la page recherchée (La première page est la page 1)
    per_page      entier         10     Le nombre d'items à retourner
    ord           chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "asc" et "desc"
@@ -47,12 +47,12 @@ Attribut de la réponse
   ================== ================================
   offset_start        Le numéro du premier document recherché
   per_page            Le nombre de résultats par page
-  available_results   La quantité de résultats disponibles dans cette requête. Ce nombre peut être inférieur à celui résultats disponibles; Le moteur de recherche "Sphinx" dispose d'un nombre limité de résultats qui peuvent être récupérés et est, par défaut 1000. Toutefois, cette limite est configurable
-  total_results       Le nombre total de résultat
+  available_results   La quantité de résultats disponibles dans la requête. Ce nombre peut être inférieur à celui des résultats disponibles. Le moteur de recherche "Sphinx" limite par défaut le nombre de résultats à 1000. Toutefois, cette limite est paramétrable.
+  total_results       Le nombre total des résultats disponibles
   error               Erreur du moteur de recherche sous la forme d'une chaîne si il y a
   warning             Avertissement du moteur de recherche sous la forme d'une chaîne si il y a
-  query_time          Le temps d'éxécution de la requête en secondes
-  search_indexes      Les indexs de recherche utilisé par le moteur de recherche
+  query_time          Le temps d'éxécution de la requête exprimé en secondes
+  search_indexes      Les index de recherche utilisés par le moteur de recherche
   results             La liste des enregistrements trouvés
   query               La requête envoyée
   suggestions         La liste des suggestions proposées par le moteur de recherche

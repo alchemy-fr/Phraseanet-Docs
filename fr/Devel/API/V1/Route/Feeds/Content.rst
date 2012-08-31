@@ -1,7 +1,7 @@
 Lister le contenu d'un flux
 ===========================
 
-À propos
+A propos
 --------
 
   Retourne le contenu d'un flux
@@ -25,7 +25,7 @@ Paramètres
   ======================== ============== =============
    feed_id	                entier         L'identifiant du flux sélectionné
    offset_start             entier         La première entrée à retrouver
-   per_page	                entier         Le nombre d'entrée à retouver
+   per_page	                entier         Le nombre d'entrée à retrouver
   ======================== ============== =============
 
 Attribut de la réponse

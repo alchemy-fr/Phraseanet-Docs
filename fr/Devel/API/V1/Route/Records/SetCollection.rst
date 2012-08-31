@@ -1,7 +1,7 @@
 Changer un document de collection
 =================================
 
-À propos
+A propos
 --------
 
   Change un document d'une collection à une autre

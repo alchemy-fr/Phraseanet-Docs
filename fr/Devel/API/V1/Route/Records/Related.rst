@@ -1,10 +1,11 @@
 Lister les paniers d'un document
 ================================
 
-À propos
+A propos
 --------
 
-  Retourne la liste des paniers qui contiennent un document spécifique
+  Retourne la liste des objets (paniers et reportages) qui contiennent un
+  document spécifique
 
   .. code-block:: bash
 
@@ -33,7 +34,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-   baskets 	  La liste des paniers qui contiennent le document
+   baskets 	  La liste des objets (paniers et reportages) qui contiennent le document
   ========== ================================
 
 Exemple de réponse

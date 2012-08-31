@@ -1,7 +1,7 @@
 Racine
 ======
 
-À propos
+A propos
 --------
 
   Cette route est disponible depuis la version 1.2 de l'API Phraseanet et fournit

@@ -1,11 +1,11 @@
-Récupérer les conditions d'utilisation d'une databox
-====================================================
+Récupérer les conditions générales d'utilisation (CGU) d'une databox
+====================================================================
 
-À propos
+A propos
 --------
 
-  Retourne les conditions d'utilisation d'une databox pour chaque langage
-  disponible
+  Retourne les conditions générales d'utilisation d'une databox pour chacune
+  des langues disponibles
 
   .. code-block:: bash
 

@@ -1,7 +1,7 @@
 Lister les sous-définnitions d'un document
 ==========================================
 
-À propos
+A propos
 --------
 
   Retourne les permaliens des sous-définitions disponibles pour le document
@@ -22,7 +22,7 @@ Paramètres
 ----------
 
 Depuis la version 1.2, deux nouveaux paramètres sont disponibles : *devices* et
-*mimes*. Si ils sont fournis, ils restreignent les medias retournés.
+*mimes*. S'ils sont fournis, ils restreignent les medias retournés.
 
 Par exemple, pour retourner toutes les videos compatible HTML5 au format mobile,
 vous utiliserez les paramètres :
@@ -36,7 +36,7 @@ vous utiliserez les paramètres :
   ======================== ============== ==============================
    databox_id               entier 	       L'identifiant de la databox auquel appartient le document
    record_id 	            entier 	       L'identifiant du document sélectionné
-   devices                  tableau        Un tableau de devices sur lequel restreindre la query (optionnel)
+   devices                  tableau        Un tableau des devices sur lequel restreindre la query (optionnel)
    mimes                    tableau        Un tableau de type mime sur lequel restreindre la recherche (optionnel)
   ======================== ============== ==============================
 
@@ -46,7 +46,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-    embed 	  La liste des sous-definitions disponible pour le document sélectionné
+    embed 	  La liste des sous-definitions disponibles pour le document sélectionné
   ========== ================================
 
 Exemple de réponse

@@ -1,7 +1,7 @@
 Lister les tâches
 =================
 
-À propos
+A propos
 --------
 
   Retourne la liste de toutes les tâches

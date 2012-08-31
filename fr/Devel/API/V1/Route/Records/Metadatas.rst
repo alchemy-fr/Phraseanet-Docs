@@ -1,7 +1,7 @@
 Lister les métadonnées d'un document
 ====================================
 
-À propos
+A propos
 --------
 
   Retourne les métadonnées d'un document
@@ -33,7 +33,7 @@ Attribut de la réponse
   ================= ================================
    Attribut             Description
   ================= ================================
-   record_metadata   La liste des metadonnées
+   record_metadata   La liste des metadonnées du document sélectionné
   ================= ================================
 
 Exemple de réponse

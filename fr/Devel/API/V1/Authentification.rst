@@ -67,7 +67,7 @@ Application internet
     &response_type=code
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-  Si un utilisateur accepte, il sera alors rediriger sur l'URL de redirection
+  Si un utilisateur accepte, il est alors redirigé sur l'URL de redirection
   enregistrée lors de la création de votre application. De plus un code
   temporaire d'authorisation vous sera fournit dans les paramètres de l'url.
 
@@ -75,7 +75,7 @@ Application internet
 
     https://YOUR_REGISTERED_REDIRECT_URI/?code=CODE
 
-  Votre serveur ** effectuera une requête** à l'adresse suivante avec le code
+  Votre serveur **effectue une requête** à l'adresse suivante avec le code
   reçu précédemment afin d'obtenir un jeton d'accés valide pour requêter l'API.
 
   .. code-block:: bash
@@ -87,7 +87,7 @@ Application internet
     &code=CODE
 
 
-  La réponse sera au format JSON.
+  La réponse est au format JSON.
 
   .. code-block:: javascript
 
@@ -108,8 +108,8 @@ Applications AJAX
     &response_type=token
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-  Si l'utilisateur accepte, il sera redirigé à l'adresse suivante.
-  Le token d'accés sera alors disponible dans l'URL.
+  Si l'utilisateur accepte, il est redirigé à l'adresse suivante.
+  Le token d'accés est alors disponible dans l'URL.
 
   .. code-block:: bash
 
@@ -119,18 +119,17 @@ Applications Clientes
 ~~~~~~~~~~~~~~~~~~~~~
 
   Ce flux est destiné aux applications mobiles et de bureau qui veulent
-  accéder à des données utilisateur.
+  accéder à des données utilisateurs.
 
   Le flux d'authentification des applications natives est identique aux flux des
   applications internets à une exception prés.
-  Il vous faut spécifier une URL de redirection
+  Il faut spécifier une URL de redirection
   spéciale ** urn: ietf: wg: oauth: 2.0: oob **. "oob" est l'acronyme de "out of band"
   et le reste de la chaîne identifie l'URL comme faisant parti
   du protocole oAuth2.0.
 
-  Lorsque vous utilisez cette url de redirection, au lieu de rediriger
-  le navigateur de l'utilisateur vers une page de votre site avec un code
-  d'autorisation, Phraseanet affiche la réponse d'autorisation dans un
+  Lorsque cette url de redirection est utilisée,
+  Phraseanet affiche la réponse d'autorisation dans un
   champ texte avec des instructions pour l'utilisateur de copier et de coller
   le code dans votre application.
 

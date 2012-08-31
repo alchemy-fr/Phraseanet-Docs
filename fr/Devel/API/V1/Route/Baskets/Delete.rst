@@ -1,7 +1,7 @@
 Supprimer un panier
 ===================
 
-À propos
+A propos
 --------
 
   Supprimer un panier
