@@ -14,8 +14,7 @@ pour supporter les requêtes authentifiées (https ou HTTPS)
 Quotas
 ------
 
-Il n'y a pas de quotas en v1, vous pouvez faire autant de requêtes
-que vous le souhaitez
+Il n'y a pas de quotas en v1, Le nombre de requêtes n'est pas limité.
 
 Accés anonyme
 -------------

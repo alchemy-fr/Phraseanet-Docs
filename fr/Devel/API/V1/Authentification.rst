@@ -30,8 +30,8 @@ Type de réponse d'authorisation supporté
   * code_and_token
 
 .. note:: À cet instant, le jeton d'authentification n'a pas de date d'expiration,
-    cependant, vous devez être préparer à cette éventualité dans le futur.
-    N'oubiez pas qu'un utilisateur peut révoquer l'accés à ses données via la page
+    cependant, il faut être préparer à cette éventualité dans le futur.
+    Ne pas oublier qu'un utilisateur peut révoquer l'accés à ses données via la page
     de configuration de Phraseanet à n'importe quel moment.
 
 Authentification
@@ -67,9 +67,9 @@ Application internet
     &response_type=code
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-  Si un utilisateur accepte, il est alors redirigé sur l'URL de redirection
+  Si un utilisateur accepte, il est redirigé sur l'URL de redirection
   enregistrée lors de la création de votre application. De plus un code
-  temporaire d'authorisation vous sera fournit dans les paramètres de l'url.
+  temporaire d'authorisation est fournit dans les paramètres de l'url.
 
   .. code-block:: bash
 
@@ -144,8 +144,8 @@ Applications Clientes
 Utilisation du jeton d'accès
 ----------------------------
 
-  Vous pouvez utiliser le token d'accés pour appeler une ressource
-  protégée en incluant ce token dans les paramétres de la requête ou bien
+  Le token d'accés peut être utiliser pour appeler une ressource
+  protégée en incluant celui-ci dans les paramétres de la requête ou bien
   dans un en-tête 'Authorization'.
   Par exemple :
 
