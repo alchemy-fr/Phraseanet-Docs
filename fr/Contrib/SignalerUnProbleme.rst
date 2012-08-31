@@ -8,8 +8,8 @@ Phraseanet ?
 Pour ouvrir un rapport de bug, vérifier préalablement les conditions suivantes :
 
  * Le problème concerne la dernière version de Phraseanet
- * Le dernier patch de la version est installé après une :doc:`mise 
-   à jour </Admin/MiseAJour>`
+ * Le dernier patch de la version est installé ( :doc:`Comment effectuer une mise 
+   à jour ? </Admin/MiseAJour>` ) 
  * Le bug constaté est reproductible en enchainant une combinaison
    d'actions précises
  * La :doc:`FAQ </Admin/Faq>` ne traite pas du problème rencontré ou ne livre
