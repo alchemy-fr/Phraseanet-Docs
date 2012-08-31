@@ -35,7 +35,7 @@ Attribut de la réponse
    Attribut         Description
   ============= ================================
    feed          Le flux sélectionné
-   entries 	     La liste des entrées
+   entries       La liste des entrées
    offset_start  Le numéro de la première entrée
    per_page      La quantité d'entrée à retourner
   ============= ================================
