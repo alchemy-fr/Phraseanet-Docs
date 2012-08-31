@@ -1,9 +1,7 @@
 NGINX
 =====
 
-
 Nginx configuration sample.
-
 
 .. code-block:: bash
 
@@ -22,9 +20,6 @@ Nginx configuration sample.
                    fastcgi_index  index.php;
                    include fastcgi_params;
                    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-          }
-          location /web {
-                  alias /var/www/Phraseanet/datas/web;
           }
   }
 

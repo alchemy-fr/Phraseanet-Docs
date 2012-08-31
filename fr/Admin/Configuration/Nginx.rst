@@ -1,9 +1,7 @@
 NGINX
 =====
 
-
 Exemple de fichier de configuration Nginx.
-
 
 .. code-block:: bash
 
@@ -13,8 +11,8 @@ Exemple de fichier de configuration Nginx.
           server_name  yourdomain.tld;
           root         /var/www/Phraseanet/www;
 
-          index  index.php;
-          include rewrite_rules.inc;
+          index        index.php;
+          include      rewrite_rules.inc;
 
           # PHP scripts -> PHP-FPM server listening on 127.0.0.1:9000
           location ~ \.php(/|$) {
@@ -23,20 +21,50 @@ Exemple de fichier de configuration Nginx.
                    include fastcgi_params;
                    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
           }
-          location /web {
-                  alias /var/www/Phraseanet/datas/web;
-          }
   }
 
-.. note:: N'oubliez pas de copier le fichier des règles de re-écriture 
+.. note::
+   N'oubliez pas de copier le fichier des règles de re-écriture
   `rewrite_rules.inc` que vous trouverez dans config/nginx.rewrite.rules
 
+Configuration Sendfile / X-Accel-Redirect
+------------------------------
 
-Configuration Auth Token
-------------------------
+Nginx fournit un outil "sendfile" équivalent au mod_xsendfile d'Apache.
+Ce module est particulièrement intéressant en cas de fort traffic ou de données
+volumineuses (video, etc...)
 
-Configuration Pseudo Stream H264
---------------------------------
+Vous devrez configurer l'hôte virtuel Nginx puis votre installation Phraseanet.
 
-Configuration XSendFile
------------------------
+.. code-block:: bash
+
+    server {
+
+        ...
+
+        # configuration pour les sous definitions
+        location /files { # Point de montage 'X-Accel-Redirect'
+                internal;
+                alias /path/to/your/datas; # Chemin d'acces pour 'X-Accel-Redirect'
+        }
+
+        # configuration pour les fichiers de quarantaine
+        location /lazaret {
+                internal;
+                alias /path/to/your/phraseanet/install/tmp/lazaret;
+        }
+
+        # configuration pour les telechargements
+        location /download {
+                internal;
+                alias /path/to/your/phraseanet/install/tmp/download;
+        }
+    }
+
+Une fois cette configuration effectuée, mettez à jour la configuration de
+Phraseanet dans la zone adéquat du setup :
+
+- activation du module "xsendfile"
+- fournir le nom du point de montage ("files" dans l'exemple précédent)
+- fournir le chemin du point de montage (le chemin vers les sous definitions)
+
