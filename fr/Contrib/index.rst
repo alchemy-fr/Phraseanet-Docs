@@ -13,7 +13,7 @@ Contributeur
 
 Phraseanet est *Open source*, qu'il s'agisse de la documentation, des traductions,
 des librairies ou du coeur applicatif. 
-Vous pouvez contribuer à son amélioration.
+Comment contribuer à son amélioration ?
 
 Pour signaler un problème, demander de l'aide ou une nouvelle option, consulter
 la page : :doc:`Signaler un problème <SignalerUnProbleme>`
@@ -27,7 +27,7 @@ repository correspondants :
 
   https://github.com/alchemy-fr/Phraseanet
 
-  Prenez soin de respecter les :doc:`règles de codage <DocumentationGuidelines>`
+  Consulter préalablement les :doc:`règles de codage <DocumentationGuidelines>`
 
 * **Traduction**
 
