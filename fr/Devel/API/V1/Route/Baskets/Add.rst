@@ -1,42 +1,42 @@
-Baskets Add
-===========
+Ajouter un panier
+=================
 
-About
------
+A propos
+--------
 
-  Adds a new basket
+  Créé un nouveau panier
 
   .. code-block:: bash
 
     /api/v1/baskets/add/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   name                     integer        The name of the basket
+   name                     entier         Le nom du panier
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ============= ================================
-   Field         Description
+   Attribut      Description
   ============= ================================
-   basket        The created basket
+   basket        Le panier créé
   ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

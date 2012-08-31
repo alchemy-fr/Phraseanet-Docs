@@ -1,43 +1,43 @@
-Records Caption
-===============
+Récupérer la notice d'indexation d'un document
+==============================================
 
-About
------
+A propos
+--------
 
-  Returns the caption of a record
+  Retourne la notice d'indexation d'un document
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/captions/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
+   databox_id               entier         L'identifiant de la databox auquel appartient le document
+   record_id                entier         L'identifiant du document sélectionné
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   =================== ================================
-   Field               Description
+   Attribut            Description
   =================== ================================
-   caption_metadatas   The caption of the record
+   caption_metadatas   La notice d'indexation du document
   =================== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

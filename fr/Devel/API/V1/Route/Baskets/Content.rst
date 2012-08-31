@@ -1,44 +1,43 @@
-Baskets Content
-===============
+Parcourir un panier
+===================
 
-About
------
+A propos
+--------
 
-  Returns the content of the basket
+  Retourne le contenu d'un panier
 
   .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/content/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   basket_id                integer        The basket_id of the selected basket
+   basket_id                entier         L'identifiant du panier sélectionner
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
-  ======================== =================================
-   Field                    Description
-  ======================== =================================
-   basket_elements          The list of the basket_elements
-   basket                   The selected basket
-  ======================== =================================
+  ================ ================================
+   Attribut         Description
+  ================ ================================
+   basket_elements 	La liste des éléments du panier
+   basket           Le basket sélectionné
+  ================ ================================
 
-
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

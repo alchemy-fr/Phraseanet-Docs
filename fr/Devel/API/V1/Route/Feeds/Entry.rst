@@ -1,38 +1,42 @@
-Feeds Entry Content
-========================
+Lister le contenu d'une entrée
+==============================
 
-About
------
+A propos
+--------
 
-  Return the content of an entry, given an Id
+  Retourne le contenu de l'entrée sélectionnée
 
   .. code-block:: bash
 
-    /api/v1/feeds/entry/{feed_id}/
+    /api/v1/feeds/entry/{entry_id}/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
-  No parameters for this route
+  ======================== ============== =============
+   Paramètres               Type           Information
+  ======================== ============== =============
+   entry_id                 entier         L'identifiant de l'entrée sélectionnée
+  ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   =============== ================================
-   Field           Description
+   Attribut        Description
   =============== ================================
-   entry 	       The entry
+   entry 	       L'entrée sélectionnée
   =============== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

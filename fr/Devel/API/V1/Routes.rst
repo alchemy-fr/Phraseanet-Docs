@@ -33,23 +33,24 @@ Routes
     Route/Feeds/Aggregated
     Route/Feeds/Entry
     Route/Monitor/Phraseanet
+    Route/Monitor/Scheduler
     Route/Monitor/Task
     Route/Monitor/TaskStop
     Route/Monitor/TaskStart
     Route/Monitor/Tasks
 
-Phraseanet API provides routes to access resources using canonical URL.
-These resources are listed below.
+L’API Phraseanet livre des routes pour accéder à des ressources au moyen d’URL
+canoniques. Ces routes sont listées ci-après.
 
-For the moment, all these routes require authentication.
-Phraseanet API uses POST and GET methods.
+Comme mentionné :doc:`ici <Introduction>`, toutes ces routes d’API requièrent une
+authentification et reposent sur des méthodes de requêtes HTTP de type GET et POST.
 
-For each resource, some aspects and actions are available.
-For example, you can get the permalinks of a record with the following route:
+Pour chaque ressource, il est possible d’obtenir des liens et actions.
+Par exemple, les propriétés d'un enregistrement ou d'une databox :
 
 
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
-|           | General                                | Aspect                                         | Act                                                  |
+|           | Généralités                            | Liens                                          | Actions                                              |
 +===========+========================================+================================================+======================================================+
 | api       |* :doc:`racine <../Root>`               |                                                |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
@@ -75,11 +76,12 @@ For example, you can get the permalinks of a record with the following route:
 | Quarantine|* :doc:`list <Route/Quarantine/List>`   |* :doc:`item <Route/Quarantine/Item>`           |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 
-En plus de ces routes, des routes dédiées au monitoring et à l'administration 
+En plus de ces routes, des routes dédiées au monitoring et à l'administration
 sont disponibles :
 
- - `Route/Monitor/Phraseanet`
- - `Route/Monitor/Task`
- - `Route/Monitor/TaskStop`
- - `Route/Monitor/TaskStart`
- - `Route/Monitor/Tasks`
+ - :doc:`Route/Monitor/Phraseanet <Route/Monitor/Phraseanet>`
+ - :doc:`Route/Monitor/Scheduler <Route/Monitor/Scheduler>`
+ - :doc:`Route/Monitor/Task <Route/Monitor/Task>`
+ - :doc:`Route/Monitor/TaskStop <Route/Monitor/TaskStop>`
+ - :doc:`Route/Monitor/TaskStart <Route/Monitor/TaskStart>`
+ - :doc:`Route/Monitor/Tasks <Route/Monitor/Tasks>`

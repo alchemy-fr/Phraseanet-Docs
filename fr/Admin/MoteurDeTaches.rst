@@ -7,21 +7,21 @@ asynchrones.
 Ces différentes tâches sont gérées par un Planificateur (Scheduler),
 qui s'occupe de leur démarrage, et de leur arrêt.
 
-Pour la création des tâches, à la page :doc:`../User/Manuel/AdministrationSolution` 
+Pour la création des tâches, à la page :doc:`../User/Manuel/AdministrationSolution`
 dans la manuel utilisateur.
 
 Le Planificateur de taches
 ---------------------------
 
-Vous trouverez dans le menu contextuel du planificateur de tâches des menus pour
-démarrer, arreter, consulter les logs des tâches;
+Le menu contextuel du Gestionnaire de tâches (et de chacune des tâches) propose
+des rubriques pour démarrer, arrêter, ou consulter les logs des tâches.
+
 
 Arrêts et démarrages alternatifs
 ********************************
 
-Si vous souhaitez automatiser des arrêts et des démarrages du planificateur de
-tâches, vous pouvez utiliser l'utilitaire `KonsoleKommander <Console>`_ et l'une
-des commandes suivantes via Cron par exemple.
+Pour automatiser des arrêts et des démarrages du planificateur de tâches, utiliser l’utilitaire
+`KonsoleKommander <Console>`_ et l'une des commandes suivantes dans une tâche Cron par exemple.
 
 
   .. code-block:: bash

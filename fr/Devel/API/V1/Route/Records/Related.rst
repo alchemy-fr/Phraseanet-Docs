@@ -1,43 +1,44 @@
-Records Related
-===============
+Lister les paniers d'un document
+================================
 
-About
------
+A propos
+--------
 
-  Return
+  Retourne la liste des objets (paniers et reportages) qui contiennent un
+  document spécifique
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/related/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
+   databox_id               entier         L'identifiant de la databox auquel appartient le document
+   record_id                entier         L'identifiant du document sélectionné
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut   Description
   ========== ================================
-   baskets 	  The list of the baskets containing the record
+   baskets 	  La liste des objets (paniers et reportages) qui contiennent le document
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

@@ -45,7 +45,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-    embed 	  The list of the metadatas of the record
+    embed 	  The list of the sub wiews of the record
   ========== ================================
 
 Response sample

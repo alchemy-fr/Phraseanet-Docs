@@ -33,7 +33,7 @@ Response Fields
   =============== ================================
    Field           Description
   =============== ================================
-   total_entries   The feed
+   total_entries   The number of entries
    entries         The entries
    offset_start    Starting offset
    per_page        The quantity of entries per page

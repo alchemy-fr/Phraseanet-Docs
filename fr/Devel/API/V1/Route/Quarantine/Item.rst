@@ -1,42 +1,42 @@
-Quarantine item
-===============
+Récupérer un document de la quarantaine
+=======================================
 
-About
------
+A propos
+--------
 
-  Return an item of the quarantine given its Id
+  Retourne un document de la quarantaine.
 
   .. code-block:: bash
 
     /api/v1/quarantine/item/{quarantine_id}/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   quarantine_id            integer        The id of the item
+   quarantine_id            entier         L'identifiant du document placé dans la quarantaine
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ============== ================================
-   Field          Description
+   Attribut       Description
   ============== ================================
-   item           The item
+   item           L'item sélectionné
   ============== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

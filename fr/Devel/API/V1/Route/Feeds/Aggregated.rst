@@ -1,46 +1,46 @@
-Feeds Aggregated Content
-========================
+Lister le contenu des flux agrégé
+=================================
 
-About
------
+A propos
+--------
 
-  Return the aggregated content of a all feeds available
+  Retourne le contenu agrégé de tous les fux disponibles
 
   .. code-block:: bash
 
     /api/v1/feeds/content/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =================================
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =================================
-   offset_start             integer        The first entry to retrieve
-   per_page	                integer        The number of entry to retrieve
+   offset_start             entier         La première entrée à trouver
+   per_page	                entier         Le nombre d'entrée à trouver
   ======================== ============== =================================
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   =============== ================================
-   Field           Description
+   Attribut           Description
   =============== ================================
-   total_entries   The feed
-   entries 	       The entries
-   offset_start    Starting offset
-   per_page        The quantity of entries per page
+   total_entries   Le nombre d'entrées
+   entries 	       La liste des entrées
+   offset_start    Le numéro de la première entrée
+   per_page        La quantitée d'entrée à retourner
   =============== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

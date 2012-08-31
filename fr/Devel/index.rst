@@ -5,11 +5,11 @@ Developpeur
 
 Bienvenue dans la Documentation Développeur Phraseanet !
 
-Vous y trouverez toutes les informations, examples et ressources pour utiliser
-l'API Phraseanet. Si vous ne trouviez pas de réponse dans ces pages, n'hésitez
-pas à poser une question dans nos forums.
+Elle rassemble des informations, exemples et ressources complémentaires pour
+utiliser l’API Phraseanet. Dans le cas ou vous ne trouveriez pas les réponses à
+vos questions dans ces pages, n’hésitez pas à explorer nos :doc:`forums </Devel/Forums>`.
 
-L'API stable de Phraseanet est 1.2 sur les versions 3.7+
+La version stable de l’API Phraseanet est la 1.2 sur les versions 3.7 de Phraseanet.
 
 .. toctree::
 

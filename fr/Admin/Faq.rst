@@ -14,10 +14,9 @@ Exemple pour passer à une limite de 200Mo :
     upload-max-filesize = 200M
     post_max_size       = 200M
 
-N'oubliez pas de redemarrer votre configuration (Apache ou PHP-Fpm selon le cas).
+Redémarrer votre configuration (Apache ou PHP-Fpm selon le cas).
 
-Si vous utilisez Nginx en serveur web, il faudra aussi autoriser les requêtes
-volumineuses :
+Avec Nginx comme serveur web, il faut aussi autoriser les requêtes volumineuses :
 
 * Dans le fichier nginx.conf :
 
@@ -32,8 +31,8 @@ volumineuses :
     }
 
 
-Les vignettes des résultats représentent une mongolfière
---------------------------------------------------------
+Les vignettes des résultats représentent une montgolfière
+---------------------------------------------------------
 
 Vérifiez que la tâche de création des sous-définitions est démarrée module
 Admin. Voir `documentation moteur de tâche </Admin/MoteurDeTaches>`_
@@ -48,32 +47,32 @@ Vérifier dans votre virtual host l'Alias "/web" et vérifier qu'il pointe sur
 le dossier de stockage des vignettes. Voir `documentation installation
 </Admin/Installation>`_
 
-Lorsque j’édite un grand nombre de documents des messages d'erreur apparaissent
--------------------------------------------------------------------------------
+Lors de l'édition d'un grand nombre de documents des messages d'erreur apparaissent
+-----------------------------------------------------------------------------------
 
 Le module Suhosin peut limiter le nombre de paramètres passés par requêtes.
-Vous pouvez tenter d'augmenter cette limite.
+Augmenter cette limite dans le fichier de configuration php.ini.
 
   .. code-block:: bash
 
     suhosin.post.max_vars    = 12000
     suhosin.request.max_vars = 12000
 
-Lorsque je modifie des droits utilisateurs, certains droits ne sont pas sauvés
-------------------------------------------------------------------------------
+Lors de la modification des droits utilisateurs, certains droits ne sont pas sauvés
+-----------------------------------------------------------------------------------
 
 Le module Suhosin peut limiter le nombre de paramètres passés par requêtes.
-Vous pouvez tenter d'augmenter cette limite.
+Augmenter cette limite dans le fichier de configuration php.ini.
 
   .. code-block:: bash
 
     suhosin.post.max_vars    = 12000
     suhosin.request.max_vars = 12000
 
-Mon installation a été interrompue, je souhaite la reprendre
-------------------------------------------------------------
+L'installation a été interrompue, comment la reprendre ?
+--------------------------------------------------------
 
-Pour reprendre votre installation il vous suffit de supprimer les fichiers
+Pour reprendre une installation interrompue, supprimer les fichiers suivants :
 
   * config/config.yml
   * config/connexions.yml

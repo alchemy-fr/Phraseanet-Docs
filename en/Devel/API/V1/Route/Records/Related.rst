@@ -4,7 +4,7 @@ Records Related
 About
 -----
 
-  Return
+  Return all baskets that contains one specific record
 
   .. code-block:: bash
 

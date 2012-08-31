@@ -16,8 +16,8 @@ L'un des serveurs au choix :
 Base de données
 ---------------
 
-Phraseanet requiert un moteur InnoDB. Nous recommendons vivement MariaDB
-comme remplacement à MySQL.
+Phraseanet requiert un moteur de stockage de type InnoDB. Sans être une obligation, l’équipe
+des développeurs de Phraseanet recommandent fortement l’usage du SGBD MariaDB en remplacement de MySQL.
 
   * MariaDB >= 5.1
 
@@ -87,9 +87,9 @@ Spécifique Phraseanet
 Locales
 -------
 
-Sur les systèmes Unix/GNU-Linux, il sera nécessaire d’installer les packs
-locales adéquats pour pouvoir bénéficier des traductions de messages via la lib
-gettext.
+Sur les systèmes Unix/GNU-Linux, il est nécessaire d’installer les packs
+locales adéquats pour pouvoir bénéficier des traductions de messages via la
+librairie gettext.
 
 
 Exemple pour debian :
@@ -114,7 +114,7 @@ Programmes Externes
 -------------------
 
 Pour calculer des sous-résolutions dans le navigateur, Phraseanet s'appuie sur
-des programmes externes suivant :
+des programmes externes suivants :
 
   * Imagemagick >= 6.3.7
     Extraction d'imagettes et de preview à partir d'images bitmap.
@@ -122,7 +122,7 @@ des programmes externes suivant :
     License
 
   * Ufraw
-    Utilisation via Imagemagick ; Extraction d'imagettes et de preview à partir
+    Utilisation via Imagemagick ; Extraction d'imagettes et de previews à partir
     de fichiers RAW.
 
   * FFmpeg <= 0.8, Mplayer

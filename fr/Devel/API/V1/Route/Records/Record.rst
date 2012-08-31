@@ -1,43 +1,43 @@
-Records Record
-==============
+Récupérer un enregistrement Phraseanet
+======================================
 
-About
------
+A propos
+--------
 
-  Return
+  Retourne les informations d'un document enregistré dans Phraseanet
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== ==============================
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== ==============================
-   databox_id 	            integer 	    The databox id of the record
-   record_id 	            integer 	    The record_id
+   databox_id 	            entier 	       L'identifiant de la databox auquel appartient le document
+   record_id 	            entier 	       L'identifiant du document sélectionné
   ======================== ============== ==============================
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut   Description
   ========== ================================
-   record 	  The record
+   record 	  L'enregistrement sélectionné
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

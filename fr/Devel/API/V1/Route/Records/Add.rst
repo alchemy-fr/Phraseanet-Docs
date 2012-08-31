@@ -1,51 +1,52 @@
-Add record
-==========
+Ajouter un document dans Phraseanet
+===================================
 
-About
------
+A propos
+--------
 
-  Add a record to Phraseanet. If the file does not fit all install constraints,
-  it goes to the quarantine. This behavior can be bypassed with the optionnal
-  *forceBehavior* parameter
+  Ajoute un document à Phraseanet.
+  Si le fichier ne correspond pas aux caractéristiques des :doc:services
+  des douanes <../../../../Admin/Configuration>, il est placé en quarantaine..
+  Ce comportement peut être contourné avec le paramètre optionnel *forceBehavior*
 
   .. code-block:: bash
 
     /api/v1/records/add/
 
-  ======================== ======
+  ========================== ======
    Informations
-  ======================== ======
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== ======
+  ========================== ======
+   Méthode HTTP               POST
+   Authentification requise   Oui
+  ========================== ======
 
-Parameters
+Paramètres
 ----------
 
   =============== =========== =============
-   Parameters      Type        Information
+   Paramètres      Type        Information
   =============== =========== =============
-   file            file        Mandatory - The file related to the record to add
-   base_id         integer     Mandatory - The base_id related to the destination collection
-   status          string      64 bit format binary string (optionnal)
-   forceBehavior   integer     0 : force record ; 1 : force quarantine (optionnal)
+   file            file        Obligatoire - Le document à ajouter
+   base_id         entier      Obligatoire - L'identifiant de la collection de destination
+   status          chaîne      Optionnel   - La liste des status sous la forme d'une chaîne binaire sur 64 bits
+   forceBehavior   entier      Optionnel   - 0 : Force l'ajout du record ; 1 : Force le passage en quarantine
   =============== =========== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
-In case a record is created, the following
+  Dans le cas ou le document a été ajouté avec succès
 
   ================== ================================
-   Field              Description
+   Attribut           Description
   ================== ================================
-   entity             A code corresponding to the created entity (record => 0 ; quarantine => 1)
-   url                The url of the created item
+   entity             Code de retour de l'opération : 0 => Le document a été ajouté à la collection ; 1 => Le document a été placé dans la quarantaine
+   url                L'URL de l'item nouvellement créé
   ================== ================================
 
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 
