@@ -1,4 +1,4 @@
-Lister les sous-définnitions d'un document
+Lister les sous-définitions d'un document
 ==========================================
 
 A propos

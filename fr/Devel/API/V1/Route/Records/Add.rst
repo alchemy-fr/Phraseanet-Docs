@@ -40,7 +40,7 @@ Attribut de la réponse
   ================== ================================
    Attribut           Description
   ================== ================================
-   entity             Un code correspondant au succés de l'opération (Le document à été ajouté à Phraseanet => 0 ; Le document est passé en quarantaine => 1)
+   entity             Code de retour de l'opération : 0 => Le document a été ajouté à la collection ; 1 => Le document a été placé dans la quarantaine
    url                L'URL de l'item nouvellement créé
   ================== ================================
 
