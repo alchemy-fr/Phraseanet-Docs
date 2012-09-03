@@ -28,7 +28,8 @@ Vous pouvez aussi piloter Phraseanet en console via l'application bin/console
     Telechargement
     Prerequis
     Installation
-    SpecificitesWindows
+    Indexeur
+    Extension
     MiseAJour
     Configuration
     MoteurDeTaches
