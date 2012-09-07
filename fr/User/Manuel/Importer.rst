@@ -7,8 +7,9 @@ Importer
 
 .. topic:: L'essentiel
 
-    Reposant sur la technologie HTML5 l'interface Phraseanet Upload est accessible
-    dans Production via un lien placé dans la barre de menu Phraseanet. 
+    Reposant sur la technologie :term:`HTML5` l'interface Phraseanet Upload est 
+    accessible dans Production via un lien placé dans la barre de menu 
+    Phraseanet. 
     C'est une interface dédiée à l'ajout de documents vers des collections sur
     lesquelles l'utilisateur dispose des droits d'ajout. 
 
@@ -16,10 +17,15 @@ Importer
 .. image:: ../../images/Upload-zones.jpg
 	   :alt: alternate text
 	   :align: center 
-
-.. note:: Certains navigateurs internet peuvent ne pas être en mesure d'interpréter 
-      correctement certaines balises et propriétés HTML5. Il en résulte un affichage 
-      en mode dégradé.
+      
+.. warning:: Pour les navigateurs qui ne bénéficient pas du plein support de 
+      HTML5, un mode d'affichage reposant sur le plug-in 
+      `Adobe Flash Player <http://get.adobe.com/fr/flashplayer/>`_ est 
+      disponible dans Phraseanet Upload.
+      Cliquer sur le lien **Utiliser l'uploader Flash** pour utiliser ce mode.
+      Ce mode Flash n'offre pas une alternative mais un mode d'affichage 
+      dégradé. Il ne permet pas d'accéder à toutes les fonctionnalités 
+      développées sur le socle technologique de HTML5.
 
 Ajouter des documents
 ---------------------
@@ -55,8 +61,8 @@ qui apparaissent en bas d'écran.
 
 Choisir la collection de destination
 ************************************
-Choisir la collection de destination : Cliquer sur le menu déroulant des collections
-disponibles.
+Choisir la collection de destination : Cliquer sur le menu déroulant des 
+collections disponibles.
 
 .. image:: ../../images/Upload-prezone3.jpg
 	   :alt: alternate text
