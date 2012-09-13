@@ -25,6 +25,8 @@ You can also manage Phraseanet through the `Konsole Kommander <Console>`
     Download
     Prerequisite
     Install
+    Indexer
+    Extension
     Upgrade
     Configuration
     APIs
