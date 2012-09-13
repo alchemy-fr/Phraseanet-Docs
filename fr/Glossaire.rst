@@ -8,9 +8,14 @@ Glossaire
 .. glossary::
   :sorted:
 
+  HTML5
+    HTML5 est la cinquième révision majeure du langage HTML. Exécuté dans un
+    navigateur exploitant ses caractéristiques avancées, HTML5 permet de 
+    bâtir des interfaces web riches en fonctionnalités.
+
   FTP
-    Le FTP est un protocole de transfert de fichiers. Il est utilisé pour vos envois
-    massifs de documents.
+    Le FTP est un protocole de transfert de fichiers. Il est utilisé pour vos 
+    envois massifs de documents.
 
   Document
     Un document est le fichier d'origine ajouté à une Base/Collection.
@@ -112,15 +117,16 @@ Glossaire
     permettant de déclencher des actions sur des documents des paniers...
 
   Business field ou Champ métier
-    Les *Business field* Phraseanet sont des champs destinés à recevoir des informations
-    métiers. Ces informations internes sont partagées par les utilisateurs qui disposent
-    des droits d'édition des documents.
-    Un business field n'est "recherchable" que par un utilisateur disposant des
+    Les *Business field* Phraseanet sont des champs destinés à recevoir des 
+    informations métiers. Ces informations internes sont partagées par les 
+    utilisateurs qui disposent des droits d'édition des documents.
+    Un business field n'est "recherchable" que par un utilisateur disposant des 
     droits d'édition.
 
   Dublin Core
-    Schéma normalisé ISO 15836 destiné à la description de ressources documentaires.
-
+    Schéma normalisé ISO 15836 destiné à la description de ressources 
+    documentaires. 
+    
     .. seealso:: http://www.dublincore.org/
 
 

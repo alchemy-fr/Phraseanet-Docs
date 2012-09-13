@@ -18,9 +18,9 @@ Comment contribuer à son amélioration ?
 Pour signaler un problème, demander de l'aide ou une nouvelle option, consulter
 la page : :doc:`Signaler un problème <SignalerUnProbleme>`
 
-Les contributions à Phraseanet sont ouvertes, vous pouvez faire vos
-`pull-request <http://help.github.com/send-pull-requests/>`_ dans les
-repository correspondants :
+Les contributions à Phraseanet sont ouvertes. Les 
+`pull-request <http://help.github.com/send-pull-requests/>`_ peuvent être 
+effectuées dans les *repositories* correspondants :
 
 
 * **Phraseanet**
