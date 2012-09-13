@@ -4,8 +4,8 @@ Racine
 A propos
 --------
 
-  Cette route est disponible depuis la version 1.2 de Phraseanet et fourni 
-  publiquement des informations sur l'API Phraseanet. Cette route n'est pas 
+  Cette route est disponible depuis la version 1.2 de l'API Phraseanet et fournit
+  publiquement des informations sur l'API Phraseanet. Cette route n'est pas
   versionnée.
 
   .. code-block:: bash
@@ -13,7 +13,7 @@ A propos
     /api/
 
   ======================== =====
-   Informations             
+   Informations
   ======================== =====
    HTTP Method              GET
    Requires Authentication  NO
@@ -26,13 +26,13 @@ Exemple d'utilisation
 
     curl -v https://library.net/api/
 
-Parameters
+Paramètres
 ----------
 
   Cette route ne prend en compte aucun paramètre.
 
-Response Fields
----------------
+Les champs de la réponse
+------------------------
 
   =============== ================================
    Field           Description
@@ -44,8 +44,8 @@ Response Fields
    version         Les versions disponibles de l'API et leurs paramètres
   =============== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

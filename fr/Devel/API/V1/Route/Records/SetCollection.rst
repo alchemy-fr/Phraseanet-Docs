@@ -1,44 +1,44 @@
-Records SetCollection
-=====================
+Changer un document de collection
+=================================
 
-About
------
+A propos
+--------
 
-  Moves a record to another collection
+  Change un document d'une collection à une autre
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setcollection/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP              POST
+   Authentification requise  Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
-   base_id                  integer        The base_id of the destination collection
+   databox_id               entier         L'identifiant de la databox auquel appartient le document
+   record_id                entier         L'identifiant du document sélectionné
+   base_id                  entier         L'identifiant de la collection de destination
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut   Description
   ========== ================================
-   record 	  The record updated
+   record 	  L'enregistrement mis à jour
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

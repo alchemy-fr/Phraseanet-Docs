@@ -1,47 +1,46 @@
 Aperçu de l'API v1
 ==================
 
-L'API Phraseanet tend à utiliser un maximum de standard que vous 
-trouverez ailleurs.
-Les requêtes sont en HTPP POST ou GET et retournent des réponses au 
-format YAML, Json ou JSonP.
+L’API Phraseanet tend à utiliser un maximum de standards courants.
+Les requêtes sont en HTTP POST ou GET et retournent des réponses au
+format Json, JSonP, YAML.
 
 Les paramètres doivent êtres envoyés en tant que clefs/valeurs HTTP.
 
-Etant donné que Phrasenet utilise oAuth2 comme protocole d'authentification, 
-il estimportant que votre serveur soit configuré pour supporter les requêtes 
-authentifiées (https)
+Etant donné que Phraseanet utilise :doc:`oAuth2 <Authentification>` comme
+protocole d'authentification, il est important que votre serveur soit configuré
+pour supporter les requêtes authentifiées (https ou HTTPS)
 
 Quotas
 ------
 
-Il n'y a pas de quotas en v1, vous pouvez faire autant de requêtes 
-que vous le souhaitez
+Il n'y a pas de quotas en v1, Le nombre de requêtes n'est pas limité.
 
-Acces anonyme
+Accés anonyme
 -------------
 
-Il n'y a pas d'accès anonyme / public à l'API Phraseanet pour le moment.
+Il n’y a pas d’accès anonyme ou public dans l’API Phraseanet V1.
 
 Réponses
 --------
 
-Toutes les réponses sont encapsulées dans un objet contenant 
-deux champs : response et meta
-All responses are wrapped in an object containing two fields : response and meta.
-Les réponses sont renvoyés en Json par défaut.
+Toutes les réponses sont encapsulées dans un objet contenant
+deux champs : response et meta.
+
+Les réponses sont renvoyés par défaut dans un format Json.
 
 
 YAML
 ~~~~
 
-As of HTTP specification, you have to set an 'Accept' header if you want to fetch YAML.
+Comme le précise les spécifications HTTP, Pour obtenir une réponse au format YAML
+Il faut définir un paramétre 'Accept' dans l'en-tête de la requête HTTP.
 
 Requête :
 
 .. code-block:: bash
 
-    curl -H 'Accept: application/yaml' ... 
+    curl -H 'Accept: application/yaml' ...
 
 Réponse :
 
@@ -67,7 +66,7 @@ Requête :
 
 .. code-block:: bash
 
-    curl -H 'Accept: application/json' ... 
+    curl -H 'Accept: application/json' ...
 
 Réponse :
 
@@ -92,19 +91,20 @@ Réponse :
 JsonP
 ~~~~~~
 
-In order to fetch JSONP, you just have to add a callback HTTP parameter to your request.
-
+Pour obtenir une réponse au format JSONP, ajouter un paramètre HTTP 'callback'
+à la requête.
 
 Requête :
 
 .. code-block:: bash
 
-    curl -H 'Accept: application/json' /api/v1/my/request/?callback=foobar 
+    curl -H 'Accept: application/json' /api/v1/my/request/?callback=foobar
 
 
-Please note that in the case of JSONP, the API **always** returns 200 
-(except for HTTP 500's) so your code can proceed the results ; you can have 
-the true HTTP Code in the meta section.
+.. note:: Dans le cas d’une réponse au format JsonP, l’Api retourne toujours
+    un code de réponse HTTP 200 (à l’exception du code 500) dans le champ Response.
+    Cela a pour conséquence de permettre l'exécution du code exploitant la requête.
+    Le code de réponse HTTP le plus significatif se trouve dans le champ Meta.
 
 Réponse :
 
@@ -128,21 +128,19 @@ Réponse :
 Erreurs
 -------
 
-The meta section contains few values, among "http_code", "error_message" and "error details".
+Le champ Meta contient des données comme les “http_code”, “error_message” et
+“error_details”.
 
-Phraseanet API uses the appropriate HTTP status codes. 
+L’API Phraseanet utilise les codes de réponse HTTP.
+Ces codes sont présents dans le champ Meta des réponses auxquels s’ajoutent les
+messages d’erreur.
 
-This code is repeated in the meta of the response, and the error_message is added.
+Le tableau ci-dessous liste et décrit les principaux codes d’erreurs.
 
-You will find explanation below:
-
-=========== =======
-HTTP Code   Meaning
-=========== =======
-400         Parameter is invalid or missing 
-401         The OAuth token was provided but was invalid 
-403         Access to the requested resource is forbidden
-404         Requested resource is not found
-405         Attempting to use POST with a GET-only endpoint, or vice versa
-500         Internal Server Error
-=========== =======
+HTTP Code   Sens
+400         Un paramètre de la requête est manquant ou invalide
+401         Le token d'authentification fournit n'est pas valide
+403         L'accés aux ressources demandées n'est pas authorisé.
+404         La ressource demandée n'a pas été trouvé.
+405         Utilisation d'une requête POST au lieu d'une requête GET, et vice versa
+500         Erreur interne du serveur

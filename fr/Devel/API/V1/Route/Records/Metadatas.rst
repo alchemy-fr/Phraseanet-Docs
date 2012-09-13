@@ -1,43 +1,43 @@
-Records Metadatas
-=================
+Lister les métadonnées d'un document
+====================================
 
-About
------
+A propos
+--------
 
-  Returns the metadatas of a record
+  Retourne les métadonnées d'un document
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/metadatas/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
+   databox_id               entier         L'identifiant de la databox auquel appartient le document
+   record_id                entier         L'identifiant du document sélectionné
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ================= ================================
-   Field             Description
+   Attribut             Description
   ================= ================================
-   record_metadata   The list of the metadatas of the record
+   record_metadata   La liste des metadonnées du document sélectionné
   ================= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

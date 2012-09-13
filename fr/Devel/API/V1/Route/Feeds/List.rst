@@ -1,38 +1,38 @@
-Feeds List
-===========
+Lister les flux
+===============
 
-About
------
+A propos
+--------
 
-  List all available feeds
+  Liste tous les flux disponibles
 
   .. code-block:: bash
 
     /api/v1/feeds/list/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
-  No parameter for this route
+  Aucun paramètre
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ============= ================================
-   Field         Description
+   Attribut      Description
   ============= ================================
-   feeds         The list of feeds
+   feeds         Les liste des flux
   ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

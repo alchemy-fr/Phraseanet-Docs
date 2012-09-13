@@ -13,7 +13,7 @@ About
   ======================== =====
    Informations
   ======================== =====
-   HTTP Method
+   HTTP Method              POST
    Requires Authentication  Yes
   ======================== =====
 

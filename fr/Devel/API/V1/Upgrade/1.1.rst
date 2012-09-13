@@ -77,10 +77,10 @@ Route records/caption
 *********************
 
   Pour les utilisateurs qui utilisaient cette route pour l'affichage de la
-  fiche descriptive, nous avons ajouté la route
-  :doc:`records/caption </Devel/API/V1/Route/Records/Caption>` qui sera plus
-  aisée à manipuler. On reservera l'usage de la route records/metadatas au
-  prélude de l'édition des metadonnées.
+  fiche descriptive, la route
+  :doc:`records/caption </Devel/API/V1/Route/Records/Caption>` est plus aisée à
+  manipuler. L’usage de la route records/metadatas est à réservé au prélude de
+  l’édition des metadonnées.
 
 
   .. code-block:: javascript

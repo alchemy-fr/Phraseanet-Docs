@@ -1,42 +1,42 @@
-Start a task
-============
+Démarrer une tâche
+==================
 
-About
------
+A propos
+--------
 
-  Start a task and return its status
+  Démarre une tâche et retourne son statut
 
   .. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/start/
 
-  ======================== ======
+  ========================== ======
    Informations
-  ======================== ======
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== ======
+  ========================== ======
+   Méthode HTTP               POST
+   Authentification requise   Oui
+  ========================== ======
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   task_id                  integer        The task id
+   task_id                  entier         L'indentifiant de la tâche séléctionnée
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut   Description
   ========== ================================
-   task       The task you're monitoring
+   task       La tâche sélectionnée
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

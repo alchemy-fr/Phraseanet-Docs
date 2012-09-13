@@ -52,8 +52,8 @@ Vous aurez sur votre écran une liste de commande de la sorte :
 
     php bin/console help nomdecommande
 
-.. note:: Chaque commandes retourne une valeur qui peut-être utilisée pour
-    executer des scripts automatisés.
+.. note:: Chaque commande retourne une valeur qui peut-être utilisée pour
+    exécuter des scripts automatisés.
 
 check:config
 ------------

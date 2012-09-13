@@ -4,7 +4,7 @@ Records Record
 About
 -----
 
-  Return
+  Return all information about one record
 
   .. code-block:: bash
 
@@ -13,7 +13,7 @@ About
   ======================== =====
    Informations
   ======================== =====
-   HTTP Method
+   HTTP Method              GET
    Requires Authentication  Yes
   ======================== =====
 

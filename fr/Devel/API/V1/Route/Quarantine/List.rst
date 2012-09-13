@@ -1,46 +1,46 @@
-Quarantine list
-===============
+Lister les documents de la quarantaine
+======================================
 
-About
------
+A propos
+--------
 
-  List the content of the quarantine
+  Liste les documents contenu dans la quarantaine
 
   .. code-block:: bash
 
     /api/v1/quarantine/list/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   offset_start             integer        The first entry to retrive
-   per_page	                integer        The number of entry to retrieve
+   offset_start             entier         Le numéro de la première entrée à retrouver
+   per_page	                entier         Le nombre d'entrées à retrouver
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ================== ================================
-   Field              Description
+   Attribut              Description
   ================== ================================
-   offset_start       The first entry
-   per_page           The number of entry
-   quarantine_items   The list of items
+   offset_start       Le numéro de la première entrée
+   per_page           Le nombre d'entrée à retrouver
+   quarantine_items   La liste des items
   ================== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

@@ -1,40 +1,40 @@
-Phraseanet Monitor
-==================
+Monitorer Phraseanet
+====================
 
-About
------
+A propos
+--------
 
-  Returns Phraseanet configuration for monitoring
+  Retourne la configuration de Phraseanet
 
   .. code-block:: bash
 
     /api/v1/monitor/phraseanet/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
-  No parameter for this route
+  Aucun paramètre
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   =============== ======================================
-   Field           Description
+   Attribut           Description
   =============== ======================================
-   phraseanet      Phraseanet installation informations
-   cache           The cache informations
-   global_values   The configuration variables
+   phraseanet      Information A propos de l'installation de Phraseanet
+   cache           Information A propos du cache Phraseanet
+   global_values   Liste des variables de configuration
   =============== ======================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

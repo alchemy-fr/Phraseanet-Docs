@@ -1,43 +1,44 @@
-Databox TermsOfUse
-===================
+Récupérer les conditions générales d'utilisation (CGU) d'une databox
+====================================================================
 
-About
------
+A propos
+--------
 
-  Return Terms Of Use in all languages available on specified databox
+  Retourne les conditions générales d'utilisation d'une databox pour chacune
+  des langues disponibles
 
   .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/termsOfUse/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   databox_id               integer        The databox id on which the request is done
+   databox_id               entier         L'identifiant de la databox sélectionnée
   ======================== ============== =============
 
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ============ ================================
-  Field         Description
+  Attribut      Description
   ============ ================================
-   termsOfUse   The list of Terms of Use by locale
+   termsOfUse   La liste des conditions d'utilisation pour chaque langage
   ============ ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

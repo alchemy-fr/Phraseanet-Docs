@@ -1,47 +1,47 @@
-Feed Content
-============
+Lister le contenu d'un flux
+===========================
 
-About
------
+A propos
+--------
 
-  Return the content of a feed
+  Retourne le contenu d'un flux
 
   .. code-block:: bash
 
     /api/v1/feeds/{feed_id}/content/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   feed_id	                integer        The id of the feed
-   offset_start             integer        The first entry to retrive
-   per_page	                integer        The number of entry to retrieve
+   feed_id	                entier         L'identifiant du flux sélectionné
+   offset_start             entier         La première entrée à retrouver
+   per_page	                entier         Le nombre d'entrée à retrouver
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ============= ================================
-   Field         Description
+   Attribut         Description
   ============= ================================
-   feed          The feed
-   entries 	     The entries
-   offset_start  Starting offset
-   per_page      The quantity of entries per page
+   feed          Le flux sélectionné
+   entries       La liste des entrées
+   offset_start  Le numéro de la première entrée
+   per_page      La quantité d'entrée à retourner
   ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

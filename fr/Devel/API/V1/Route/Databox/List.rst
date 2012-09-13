@@ -1,38 +1,38 @@
-Databox List
-============
+Lister les databox
+==================
 
-About
------
+A propos
+--------
 
-  Return available Databoxes
+  Retourne la liste des databox disponibles
 
   .. code-block:: bash
 
     /api/v1/databoxes/list/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
-  No parameters for this route
+  Aucun paramètre
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-  Field       Description
+  Attribut    Description
   ========== ================================
-  databoxes   The list of available databoxes
+  databoxes   La liste des databox disponibles
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

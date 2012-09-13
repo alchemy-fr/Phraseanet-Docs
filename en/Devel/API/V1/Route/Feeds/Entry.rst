@@ -8,7 +8,7 @@ About
 
   .. code-block:: bash
 
-    /api/v1/feeds/entry/{feed_id}/
+    /api/v1/feeds/entry/{entry_id}/
 
   ======================== =====
    Informations
@@ -20,7 +20,11 @@ About
 Parameters
 ----------
 
-  No parameters for this route
+  ======================== ============== =============
+   Paramètres               Type           Information
+  ======================== ============== =============
+   entry_id                 integer        The id of the entry
+  ======================== ============== =============
 
 Response Fields
 ---------------

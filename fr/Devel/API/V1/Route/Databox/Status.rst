@@ -1,42 +1,42 @@
-Databox Status
-===================
+Lister les status d'une databox
+===============================
 
-About
------
+A propos
+--------
 
-  Return available Status on specified databox
+  Retourne la liste des status disponibles de la databox sélectionnée
 
   .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/status/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   databox_id               integer        The databox id on which the request is done
+   databox_id               entier         L'identifiant de la databox sélectionnée
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-  Field       Description
+   Attribut   Description
   ========== ================================
-   status     The list of available status
+   status     La liste des status disponibles
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

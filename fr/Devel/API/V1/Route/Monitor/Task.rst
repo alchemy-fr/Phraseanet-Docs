@@ -1,42 +1,42 @@
-Task Monitor
-============
+Monitorer les tâches de Phraseanet
+==================================
 
-About
------
+A propos
+--------
 
-  Returns all informations about a task
+  Returns all informations A propos a task
 
   .. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ======================== ============== =============
-   Parameters               Type           Information
+   Paramètres               Type           Information
   ======================== ============== =============
-   task_id                  integer        The task id
+   task_id                  entier         L'indentifiant de la tâche sélectionnée
   ======================== ============== =============
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut   Description
   ========== ================================
-   task       The task you're monitoring
+   task       La tâche sélectionnée
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 

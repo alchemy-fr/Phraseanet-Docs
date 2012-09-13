@@ -1,43 +1,43 @@
-Records Status
-==============
+Lister les status d'un document
+===============================
 
-About
------
+A propos
+--------
 
-  Return
+  Retourne la liste des status d'un document
 
   .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/status/
 
-  ======================== =====
+  ========================== =====
    Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+  ========================== =====
+   Méthode HTTP               GET
+   Authentification requise   Oui
+  ========================== =====
 
-Parameters
+Paramètres
 ----------
 
   ================ ========= =============================
-   Parameters       Type      Information
+   Paramètres       Type      Information
   ================ ========= =============================
-   databox_id       integer   The databox id of the record
-   record_id        integer   The record_id
+   databox_id       entier    L'identifiant de la databox auquel appartient le document
+   record_id        entier    L'identifiant du document sélectionné
   ================ ========= =============================
 
-Response Fields
----------------
+Attribut de la réponse
+----------------------
 
   ========== ================================
-   Field      Description
+   Attribut   Description
   ========== ================================
-   status     The list of the status of the record
+   status     La liste des status du document sélectionné
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 
