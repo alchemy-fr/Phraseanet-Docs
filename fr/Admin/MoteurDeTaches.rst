@@ -165,3 +165,206 @@ Paramètrage
   * Status : status-bit à l'origine   ====> status-bit final
 
 .. todo:: Batch upload process (XML Service)
+
+
+
+
+
+
+RecordMover
+***********
+
+RecordMover execute successivement une liste de tâches.
+
+Une tâche recherche les records correspondants à des critères (settings "from")
+et applique des traitements sur ces records (settings "to").
+
+Une tâche "RecordMover" peut remplacer un ensemble de tâches "Workflow01" et
+autorise des critères plus nombreux.
+
+
+Interface
+^^^^^^^^^
+Les settings sont editable en XML, l'interface affiche le SQL correspondant, le
+nombre de records impactés par chaque tâche (si cette tâche était exécutée
+maintenant), ainsi que les 10 premiers records-id's.
+
+Une tâche peut être maintenue 'désactivée' durant sa mise au point
+(une croix rouge est visible ).
+
+
+Settings XML
+^^^^^^^^^^^^
+
+<tasks> énumère l'ensemble des <task>
+
+Une <task> agit sur une base (attribut "sbas_id") et peut soit modifier des
+records, soit les supprimer (attribut "action")
+
+Une <task> peut être nommée (attribut "name"), le nom apparaît dans les logs.
+
+Pour s'éxécuter, une <task> doit avoir l'attribut " active="1" "
+
+Une <task> agit sur les records répondants à TOUS les critères énumérés dans la
+partie <from>
+
+Les critères possibles sont
+
+- le type de record :
+
+.. code-block:: xml
+
+    <type type="RECORD" />
+    seulement les documents
+
+    <type type="STORY" />
+    seulement les reportages
+
+- les collections :
+
+.. code-block:: xml
+
+    <coll compare="=" id="3,5,7" />
+    le record est dans une des collections 3, 5 ou 7
+
+    <coll compare="!=" id="8,9" />
+    le record est dans n'importe quelle collection, sauf la 8 ou la 9
+
+- les status :
+
+.. code-block:: xml
+
+    <status mask="1x0xxxx" />
+    le sb 4 = 0 ET le sb 6 = 1 (nb les sb 0-3 réservés, donc à xxxx)
+
+- la valeur d'un champ texte :
+
+.. code-block:: xml
+
+    <text field="Ville" compare="=" value="Paris"/>
+    la ville est Paris
+
+    <text field="Auteur" compare="!=" value="Dupond"/>
+    n'importe quel auteur sauf Dupond
+
+- la valeur d'un champ date, comparé avec la date courante :
+
+.. code-block:: xml
+
+    <date direction="before" field="MISEENLIGNE"/>
+    la date de mise en ligne n'est pas atteinte (= on est AVANT la date de mise en ligne)
+
+    <date direction="after" field="MISEENLIGNE" delta="+30" />
+    la date de mise en ligne est passée de 30 jours (= on est APRES la date+30j)
+
+    <date direction="after" field="PURGE" delta="-2" />
+    on est 2j avant la date de purge
+
+
+Pour l'action "update", les opérations décrites dans <to> peuvent porter sur :
+
+- la collection
+
+.. code-block:: xml
+
+    <coll id="2" />
+    le record passe dans la collection 2
+
+- les status
+
+.. code-block:: xml
+
+    <status mask="0x1xxxx" />
+    baisser le sb 6, lever le sb 4
+
+
+Pour l'action "delete", l'attribut "deletechildren="1"" demande la suppression du contenu des regroupements supprimés.
+
+exemples
+^^^^^^^^
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <tasksettings>
+    <period>10</period>
+    <logsql>0</logsql>
+    <tasks>
+
+        <!-- maintenir hors ligne (sb4=1) tous les docs sous copyright -->
+        <task active="1" name="confidentiel" action="update" sbas_id="1">
+        <from>
+            <date direction="before" field="FIN_COPYRIGHT"/>
+        </from>
+        <to>
+            <status mask="x1xxxx"/>
+        </to>
+        </task>
+
+        <!-- mettre en ligne (sb4=0) les docs de la collection 'public' entre la date de copyright et la date d'archivage -->
+        <task active="1" name="visible" action="update" sbas_id="1">
+        <from>
+            <coll compare="=" id="5"/>
+            <date direction="after" field="FIN_COPYRIGHT"/>
+            <date direction="before" field="ARCHIVAGE"/>
+        </from>
+        <to>
+            <status mask="x0xxxx"/>
+        </to>
+        </task>
+
+        <!-- avertir 10j avant l'archivage (lever sb5) -->
+        <task active="1" name="bientôt la fin" action="update" sbas_id="1">
+        <from>
+            <coll compare="=" id="5"/>
+            <date direction="after" field="ARCHIVAGE" delta="-10"/>
+        </from>
+        <to>
+            <status mask="1xxxxx"/>
+        </to>
+        </task>
+
+        <!-- déplacer dans la collection 'archive' -->
+        <task active="1" name="archivage" action="update" sbas_id="1">
+        <from>
+            <coll compare="=" id="5"/>
+            <date direction="after" field="ARCHIVAGE" />
+        </from>
+        <to>
+            <status mask="00xxxx"/>  <!-- on nettoie les status pour la forme -->
+            <coll id="666" />
+        </to>
+        </task>
+
+        <!-- purger la collection 'archive' des docs archivés depuis 1 an -->
+        <task active="1" name="archivage" action="delete" sbas_id="1">
+        <from>
+            <coll compare="=" id="666"/>
+            <date direction="after" field="ARCHIVAGE" delta="+365" />
+        </from>
+        </task>
+
+    </tasks>
+    </tasksettings>
+
+.. warning::
+    Dans le cas de conflits ou de recouvrements entre les critères de
+    <task> successives, des docs peuvent 'sauter' d'un état à l'autre à chaque
+    éxécution de la tâche.
+
+
+    ex :
+    dans le cas précédent, si la date d'archivage d'un doc est antérieure à sa date
+    de fin de copyright (incohérent), le sb 4 va passer de 0 à 1 à chaque éxécution.
+
+    Ce type de problème peut être évité en s'assurant qu'aucune des clauses 'from'
+    ne se recouvrent, par ex. en levant un sb spécifique à chaque <task>
+
+
+.. todo:: on ne peut pas tester l'absence d'un champ avec 'value=""'
+
+
+
+
+
+
