@@ -18,15 +18,17 @@ Importer
 	   :alt: alternate text
 	   :align: center 
       
-.. warning:: Pour les navigateurs qui ne bénéficient pas du plein support de 
+.. note:: Pour les navigateurs qui ne bénéficient pas du plein support de 
       HTML5, un mode d'affichage reposant sur le plug-in 
       `Adobe Flash Player <http://get.adobe.com/fr/flashplayer/>`_ est 
       disponible dans Phraseanet Upload.
+      
       
       .. image:: ../../images/Upload-Version-Flash.jpg
 	   :alt: alternate text
 	   :align: center 
 	   
+      
       Cliquer sur le lien **Utiliser l'uploader Flash** pour utiliser ce mode.
       Ce mode Flash n'offre pas une alternative mais un mode d'affichage 
       dégradé. Il ne permet pas d'accéder à toutes les fonctionnalités 
