@@ -24,8 +24,8 @@ Exemple de fichier de configuration Nginx.
   }
 
 .. note::
-   N'oubliez pas de copier le fichier des règles de re-écriture
-  `rewrite_rules.inc` que vous trouverez dans config/nginx.rewrite.rules
+    N'oubliez pas de copier le fichier des règles de re-écriture
+    `rewrite_rules.inc` que vous trouverez dans config/nginx.rewrite.rules
 
 Configuration Sendfile / X-Accel-Redirect
 ------------------------------
