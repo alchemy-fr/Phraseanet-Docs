@@ -1,0 +1,8 @@
+language: python
+
+before_script:
+  - sudo easy_install sphinx
+  - php composer.phar install --dev
+
+script:
+  - sh -c "make"
