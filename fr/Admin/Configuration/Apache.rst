@@ -1,7 +1,6 @@
 Apache
 ======
 
-
 Exemple de fichier de configuration Apache.
 
 .. code-block:: bash
@@ -9,7 +8,6 @@ Exemple de fichier de configuration Apache.
    #/etc/apache2/sites-available/phraseanet.conf
   <VirtualHost *:80>
       ServerName sub.domain.tld
-      ServerAdmin email@example.com 
 
       DocumentRoot "/var/www/Phraseanet/www"
 
@@ -19,18 +17,12 @@ Exemple de fichier de configuration Apache.
           AllowOverride All
       </Directory>
 
-      #publish thumbnail content
-      Alias /web /var/www/Phraseanet/datas/web
-
-      ErrorLog logs/phraseanet_error_log
-      CustomLog logs/phrseanet_access_log combined
-      LogLevel warn
   </VirtualHost>
 
 Gestion des videos
 ------------------
 
-Depuis la version 3.0.6, Phraseanet IV peut prendre en compte deux modules
+Depuis la version 3.0.6, Phraseanet peut prendre en compte deux modules
 apaches, permettant un pseudo-streaming sur les prévisualisation h264
 des videos.
 
@@ -64,7 +56,7 @@ Editer le ficher de configuration d'apache
 (en general dans /etc/apache/httpd.conf)
 
 .. code-block:: bash
-  
+
   LoadModule auth_token_module  /usr/lib/httpd/modules/mod_auth_token.so
 
 Mod H264 Streaming
@@ -152,22 +144,10 @@ Exemple de configuration en version >= 0.10 dans le virtualhost :
 .. code-block:: bash
 
     <IfModule mod_xsendfile.c>
-      <Files download_prepare.php>
+      <Files *>
         XSendFile on
-        XSendFilePath /var/www/phraseanet/datas/noweb
+        XSendFilePath /var/www/phraseanet/datas
         XSendFilePath /var/www/phraseanet/tmp/download
-      </Files>
-      <Files download_anonymous.php>
-        XSendFile on
-        XSendFilePath /var/www/phraseanet/datas/noweb
-        XSendFilePath /var/www/phraseanet/tmp/download
-      </Files>
-      <Files directprev.php>
-        XSendFile on
-        XSendFilePath /var/www/phraseanet/datas/noweb
-      </Files>
-      <Files lazaret_image.php>
-        XSendFile on
         XSendFilePath /var/www/phraseanet/tmp/lazaret
       </Files>
     </IfModule>
@@ -177,19 +157,7 @@ Exemple de configuration en version < 0.10 dans le virtualhost :
 .. code-block:: bash
 
     <IfModule mod_xsendfile.c>
-      <Files download_prepare.php>
-        XSendFile on
-        XSendFileAllowAbove on
-      </Files>
-      <Files download_anonymous.php>
-        XSendFile on
-        XSendFileAllowAbove on
-      </Files>
-      <Files directprev.php>
-        XSendFile on
-        XSendFileAllowAbove on
-      </Files>
-      <Files lazaret_image.php>
+      <Files *>
         XSendFile on
         XSendFileAllowAbove on
       </Files>

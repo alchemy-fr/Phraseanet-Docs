@@ -1,9 +1,7 @@
 NGINX
 =====
 
-
-Nginx configuration sample.
-
+Nginx configuration example.
 
 .. code-block:: bash
 
@@ -13,8 +11,8 @@ Nginx configuration sample.
           server_name  yourdomain.tld;
           root         /var/www/Phraseanet/www;
 
-          index  index.php;
-          include rewrite_rules.inc;
+          index        index.php;
+          include      rewrite_rules.inc;
 
           # PHP scripts -> PHP-FPM server listening on 127.0.0.1:9000
           location ~ \.php(/|$) {
@@ -23,20 +21,49 @@ Nginx configuration sample.
                    include fastcgi_params;
                    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
           }
-          location /web {
-                  alias /var/www/Phraseanet/datas/web;
-          }
   }
 
-.. note:: Do not forget to copy the rewrite rules file `rewrite_rules.inc` that
-  you will find in `config/nginx.rewrite.rules`.
+.. note::
+    Do not forget to copy the rewrite rules file `rewrite_rules.inc` that
+    you will find in `config/nginx.rewrite.rules`.
 
 
-Auth Token Configuration
-------------------------
+Configuration Sendfile / X-Accel-Redirect
+------------------------------
 
-Pseudo Stream H264 Configuration
---------------------------------
+As Apache provides mod_xsendfile, Nginx provides a "sendfile" tool.
+You will have to first configure Nginx, then Phraseanet.
 
-XSendFile Configuration
------------------------
+
+.. code-block:: bash
+
+    server {
+
+        ...
+
+        # sub-views configuration
+        location /files { # Mount-Point 'X-Accel-Redirect'
+                internal;
+                alias /path/to/your/datas; # 'X-Accel-Redirect' access path
+        }
+
+        # Quarantine configuration
+        location /lazaret {
+                internal;
+                alias /path/to/your/phraseanet/install/tmp/lazaret;
+        }
+
+        # Download configuration
+        location /download {
+                internal;
+                alias /path/to/your/phraseanet/install/tmp/download;
+        }
+    }
+
+Once the configuration has been updated and the server restarted, update
+Phraseanet configuration :
+
+- activate "xsendfile"
+- Provide the mount-point name ("files" in the previous example)
+- Provide the mount-point path (The path to the sub-views directory)
+
