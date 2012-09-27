@@ -29,7 +29,7 @@ Nginx configuration example.
 
 
 Configuration Sendfile / X-Accel-Redirect
-------------------------------
+-----------------------------------------
 
 As Apache provides mod_xsendfile, Nginx provides a "sendfile" tool.
 You will have to first configure Nginx, then Phraseanet.

@@ -38,28 +38,34 @@ Command-line options
 * --password : password of connection account
 * --default-character-set : charset of the connection
 * --old : mandatory option !
-Those options selects the "application-box" (SQL database of the Phraseanet
-program) where databases ("data-boxes") to index are published.
-
-
+    Those options selects the "application-box" (SQL database of the Phraseanet
+    program) where databases ("data-boxes") to index are published.
 * --socket : telnet port
-When running, the indexer can be stopped with Ctrl-C (or sending sigint signal
-under linux or OSX).
-The "socket" option allows to stop the indexer via telnet.
-
+    When running, the indexer can be stopped with Ctrl-C (or sending sigint signal
+    under linux or OSX).
+    The "socket" option allows to stop the indexer via telnet.
 * --flush : flush indexes every 'n' records.
-To optimize speed, the indexer works on batches of records (default 50).
-If the amount of ram consumed is too high, this number can be decreased with the
-"flush" option.
-
+    To optimize speed, the indexer works on batches of records (default 50).
+    If the amount of ram consumed is too high, this number can be decreased with the
+    "flush" option.
 * --clng : default language for candidates terms
-When indexing fields linked the a thesaurus, new terms are set as "candidates".
-The option "clng" allows to define the primary language to set for those terms.
-
+    When indexing fields linked the a thesaurus, new terms are set as "candidates".
+    The option "clng" allows to define the primary language to set for those terms.
 * --debug : Type of generated logs.
+* --optfile : read options from a file
+    It can be useful to not display some options from the command-line (for example
+    the password).
+    The indexer can read options from a file (which must be located into the same
+    directory as the program file).
+* --quit : index and quit
+    The indexer is supposed to run continuously.
+    This option allows to index changed records and then quit.
+* --help : print help
+* --version : print version
+    The "help" option will print information and default values for every option.
 * --nolog : Write logs on console.
-To be checked, the indexer can log various kind of operations (xml ops, sql...).
-7 "classes" of messages can be filtered with 7 bits (mask) of the "debug" value.
+    To be checked, the indexer can log various kind of operations (xml ops, sql...).
+    7 "classes" of messages can be filtered with 7 bits (mask) of the "debug" value.
 
 Those logs are usualy sent to the system (syslog for linux or OSX, event-log for
 Windows). The "nolog" option allows to send messages on screen.
@@ -68,21 +74,6 @@ Windows). The "nolog" option allows to send messages on screen.
 
     a debug mask set to --debug=64 (flush ops.) allows control of indexer
     without overloading the logs.
-
-* --optfile : read options from a file
-It can be useful to not display some options from the command-line (for example
-the password).
-The indexer can read options from a file (which must be located into the same
-directory as the program file).
-
-* --quit : index and quit
-The indexer is supposed to run continuously.
-This option allows to index changed records and then quit.
-
-* --help : print help
-* --version : print version
-The "help" option will print information and default values for every option.
-
 
 examples
 ********

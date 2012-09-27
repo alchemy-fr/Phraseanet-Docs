@@ -14,3 +14,4 @@ Currently stable version is API 1.2 available on Phraseanet v3.7+
 
    API
    Forums
+   ApplicationDeveloper

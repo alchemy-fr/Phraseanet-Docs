@@ -28,7 +28,7 @@ Exemple de fichier de configuration Nginx.
     `rewrite_rules.inc` que vous trouverez dans config/nginx.rewrite.rules
 
 Configuration Sendfile / X-Accel-Redirect
-------------------------------
+-----------------------------------------
 
 Nginx fournit un outil "sendfile" équivalent au mod_xsendfile d'Apache.
 Ce module est particulièrement intéressant en cas de fort traffic ou de données

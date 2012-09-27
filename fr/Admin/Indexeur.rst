@@ -32,6 +32,10 @@ répertoire avec les droits d'éxécution.
 Arguments
 ---------
 
+
+Ces arguments spécifient l' "application-box" (base SQL de l'application
+Phraseanet) dans laquelle sont publiées les bases à indexer.
+
 * --host : adresse de la base
 * --port : port (normalement 3306 pour MySQL)
 * --base : nom de la base "application-box"
@@ -39,32 +43,39 @@ Arguments
 * --password : mot de passe du compte de connexion
 * --default-character-set : jeu de caractères de la connexion
 * --old : argument obligatoire !
-Ces arguments spécifient l' "application-box" (base SQL de l'application
-Phraseanet) dans laquelle sont publiées les bases à indexer.
-
 * --socket : port de contrôle via telnet
-En cours d'éxécution, l'indexeur peut être interrompu par Ctrl-C (ou sous linux
-et OSX par l'envoi du signal sigint).
-L'argument "socket" permet d'interrompre également l'indexeur via telnet.
-
+    En cours d'éxécution, l'indexeur peut être interrompu par Ctrl-C (ou sous linux
+    et OSX par l'envoi du signal sigint).
+    L'argument "socket" permet d'interrompre également l'indexeur via telnet.
 * --flush : Ecrire les index tous les 'n' documents.
-Pour optimiser les performances, l'indexeur indexe les documents par lots
-(par défaut 50).
-Si la mémoire consommée est trop importante il est possible de diminuer ce
-nombre avec l'option "flush" (au détriment de la vitesse).
-
+    Pour optimiser les performances, l'indexeur indexe les documents par lots
+    (par défaut 50).
+    Si la mémoire consommée est trop importante il est possible de diminuer ce
+    nombre avec l'option "flush" (au détriment de la vitesse).
 * --clng : Langue par défaut des termes candidats
-Lors de l'indexation de champs liés à un thésaurus, les nouveaux termes sont
-placés comme "termes candidats".
-L'option "clng" permet de spécifier la langue à attribuer par défaut aux termes
-candidats.
-
+    Lors de l'indexation de champs liés à un thésaurus, les nouveaux termes sont
+    placés comme "termes candidats".
+    L'option "clng" permet de spécifier la langue à attribuer par défaut aux termes
+    candidats.
 * --debug : Type des messages générés.
+* --optfile : lire les arguments dans un fichier
+    Il peut être souhaitable de ne pas afficher certaines options de la ligne de
+    commmande (notamment le mot de passe).
+    L'indexeur peut lire des options dans un fichier, ce fichier devant être placé
+    dans le même répertoire que l'éxécutable.
+* --quit : indexer et quitter
+    L'indexeur est censé fonctionner en continu.
+    Cette option permet d'indexer les documents concernés puis de quitter l'indexeur
+    immédiatement.
+* --help : Affiche l'aide
+* --version : Affiche la version
+    L'argument "help" détaille les différentes options précédemment citées ainsi que
+    les valeurs par défaut.
 * --nolog : Ecrire les message sur la console.
-A des fins de contrôle, l'indexeur peut écrire différents types d'opérations
-effectuées (traitement xml, opérations sql...).
-Ces 7 types de messages peuvent être filtrés par les 7 bits (masque) de la
-valeur de debug.
+    A des fins de contrôle, l'indexeur peut écrire différents types d'opérations
+    effectuées (traitement xml, opérations sql...).
+    Ces 7 types de messages peuvent être filtrés par les 7 bits (masque) de la
+    valeur de debug.
 
 Ces "logs" sont normalement envoyés au système (syslog pour linux ou OSX,
 journal des événements pour Windows).
@@ -74,24 +85,6 @@ L'option "nolog" permet d'envoyer les messages sur l'écran.
 
     un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
     fonctionnement sans trop charger les logs.
-
-
-* --optfile : lire les arguments dans un fichier
-Il peut être souhaitable de ne pas afficher certaines options de la ligne de
-commmande (notamment le mot de passe).
-L'indexeur peut lire des options dans un fichier, ce fichier devant être placé
-dans le même répertoire que l'éxécutable.
-
-* --quit : indexer et quitter
-L'indexeur est censé fonctionner en continu.
-Cette option permet d'indexer les documents concernés puis de quitter l'indexeur
-immédiatement.
-
-* --help : Affiche l'aide
-* --version : Affiche la version
-L'argument "help" détaille les différentes options précédemment citées ainsi que
-les valeurs par défaut.
-
 
 examples
 ********
