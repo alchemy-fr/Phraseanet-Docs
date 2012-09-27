@@ -4,4 +4,4 @@ before_script:
   - sudo easy_install sphinx
 
 script:
-  - sh -c "make"
+  - sh -c "make clean && make htmlstrict"

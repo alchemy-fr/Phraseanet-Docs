@@ -48,6 +48,11 @@ html:
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/$(LANG)."
 
+htmlstrict:
+	$(SPHINXBUILD) -W -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html/$(LANG)
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/$(LANG)."
+
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
 	@echo

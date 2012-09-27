@@ -30,6 +30,10 @@ html: $(foreach lang, $(LANGS), html-$(lang))
 	cp -f _templates/index.php	_build/html/index.php
 	cp -f _templates/.htaccess	_build/html/.htaccess
 	cp -Rf _templates/lib	_build/lib
+htmlstrict: $(foreach lang, $(LANGS), htmlstrict-$(lang))
+	cp -f _templates/index.php	_build/html/index.php
+	cp -f _templates/.htaccess	_build/html/.htaccess
+	cp -Rf _templates/lib	_build/lib
 htmlhelp: $(foreach lang, $(LANGS), htmlhelp-$(lang))
 epub: $(foreach lang, $(LANGS), epub-$(lang))
 htmlhelp: $(foreach lang, $(LANGS), htmlhelp-$(lang))
@@ -37,6 +41,9 @@ htmlhelp: $(foreach lang, $(LANGS), htmlhelp-$(lang))
 # Make the HTML version of the documentation with correctly nested language folders.
 html-%: $(SPHINX_DEPENDENCIES)
 	cd $* && make html LANG=$*
+
+htmlstrict-%: $(SPHINX_DEPENDENCIES)
+	cd $* && make htmlstrict LANG=$*
 
 htmlhelp-%: $(SPHINX_DEPENDENCIES)
 	cd $* && make htmlhelp LANG=$*
