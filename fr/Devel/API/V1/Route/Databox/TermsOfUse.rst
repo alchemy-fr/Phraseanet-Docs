@@ -46,7 +46,7 @@ Exemple de réponse
         "meta": {
             "api_version": "1.2",
             "request": "GET /api/v1/databoxes/1/termsOfUse/",
-            "response_time": "2011-07-27T11:27:28+02:00",
+            "response_time": "2012-09-27T16:49:20+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -54,23 +54,27 @@ Exemple de réponse
             "charset": "UTF-8"
         },
         "response": {
-            "termsOfuse" : {
-                "ar_SA": {
+            "termsOfUse": [
+                {
                     "locale": "ar_SA",
-                    "terms": ""
+                    "terms": "ar_SA"
                 },
-                "de_DE": {
+                {
                     "locale": "de_DE",
-                    "terms": ""
+                    "terms": "de_D"
                 },
-                "en_GB": {
+                {
                     "locale": "en_GB",
                     "terms": "<p>You can do what you want</p>"
                 },
-                "fr_FR": {
+                {
+                    "locale": "es_ES",
+                    "terms": "es_ES"
+                },
+                {
                     "locale": "fr_FR",
                     "terms": "<p>Vous pouvez faire ce quez vous voulez</p><p>Voil&agrave;</p>"
                 }
-            }
+            ]
         }
     }
