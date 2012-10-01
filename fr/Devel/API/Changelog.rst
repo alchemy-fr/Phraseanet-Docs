@@ -53,6 +53,13 @@ Un bug a été corrigé et le retour de la route
         ]
     }
 
+Réponse pour une entrée des flux aggrégés
+*****************************************
+
+L'attribut **feed_id** a été ajouté, il représente l'identifiant du flux auquel
+l'entrée appartient.
+
+
 Réponse pour un record
 **********************
 
