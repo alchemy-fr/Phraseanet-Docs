@@ -58,19 +58,19 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
 Entries response from aggregated feeds
 **************************************
 
-attribute **feed_id** has been added, it describes the feed identifier of the
-entry
+Attribute **feed_id** has been added, it describes the feed identifier of the
+entry.
 
 Record response
 ***************
 
-attribute **last_modification** has been replaced by **updated_on**
+Attribute **last_modification** has been replaced by **updated_on**.
 
 
 Permalink response
 ******************
 
-attribute **last_modified** has been replaced by **updated_on**
+Attribute **last_modified** has been replaced by **updated_on**.
 
 Embedable medias response
 *************************

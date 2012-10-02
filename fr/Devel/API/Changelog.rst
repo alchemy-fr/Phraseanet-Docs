@@ -63,13 +63,13 @@ l'entrée appartient.
 Réponse pour un record
 **********************
 
-L'attribut **last_modification** a été remplacé par **updated_on**
+L'attribut **last_modification** a été remplacé par **updated_on**.
 
 
 Réponse pour un permalien
 **************************
 
-L'attribut **last_modified** a été remplacé par **updated_on**
+L'attribut **last_modified** a été remplacé par **updated_on**.
 
 Réponse pour des sous-definitions
 *********************************
