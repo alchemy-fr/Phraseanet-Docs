@@ -57,11 +57,11 @@ Exemple de réponse
             "termsOfUse": [
                 {
                     "locale": "ar_SA",
-                    "terms": "ar_SA"
+                    "terms": "<p>يمكنك أن تفعل ما تريد</p>"
                 },
                 {
                     "locale": "de_DE",
-                    "terms": "de_D"
+                    "terms": "<p>Sie können tun, was Sie wollen</p>"
                 },
                 {
                     "locale": "en_GB",
@@ -73,7 +73,7 @@ Exemple de réponse
                 },
                 {
                     "locale": "fr_FR",
-                    "terms": "<p>Vous pouvez faire ce quez vous voulez</p><p>Voil&agrave;</p>"
+                    "terms": "<p>Vous pouvez faire ce quez vous voulez</p>"
                 }
             ]
         }
