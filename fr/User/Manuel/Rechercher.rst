@@ -39,7 +39,7 @@ palette des Actions et de l’affichage des Résultats.
 
 Saisir un critère de recherche.
 
-Par défaut, le critère *dernier* ou *last* peut être affiché. Celui-ci va afficher 
+Par défaut, le critère *derniers* ou *last* peut être affiché. Celui-ci va afficher 
 les derniers documents entrés dans la base. 
 
 Pour commencer, l'un des mots clés que nous conseillons d'utiliser dans Phraseanet 
@@ -60,7 +60,7 @@ d'indexation des reportages) ou sur les documents.
 
 Recherche par opérateur ordinal
 *******************************
-  * *Dernier 100* (ou *last 100*): pour sélectionner les 100 derniers documents 
+  * *Derniers 100* (ou *last 100*): pour sélectionner les 100 derniers documents 
     ajoutés ou archivés dans la base/collection. 
 
 Le nombre de documents sélectionnés est valable par :term:`bases <base>` / collections 
@@ -68,7 +68,7 @@ ouvertes.
 Si trois bases/collections sont ouvertes, la sélection comporte 300 documents 
 (3 x 100).
 
-  * *Dernier* ou *last* (sans précision de nombre) affiche par défaut les 12 
+  * *Derniers* ou *last* (sans précision de nombre) affiche par défaut les 12 
     derniers documents ajoutés. 
   * *Tout* (ou *all*): pour rechercher tous les documents parmi les :term:`bases 
     <base>` et collections sélectionnées.
