@@ -18,8 +18,8 @@ About
    Requires Authentication  NO
   ======================== =====
 
-Exemple d'utilisation
----------------------
+Example of use
+--------------
 
   .. code-block:: javascript
 

@@ -24,15 +24,15 @@ Nginx configuration example.
   }
 
 .. note::
-    Do not forget to copy the rewrite rules file `rewrite_rules.inc` that
-    you will find in `config/nginx.rewrite.rules`.
+    Copy the rewrite rules file `rewrite_rules.inc` included in
+    `config/nginx.rewrite.rules`.
 
 
 Configuration Sendfile / X-Accel-Redirect
 -----------------------------------------
 
 As Apache provides mod_xsendfile, Nginx provides a "sendfile" tool.
-You will have to first configure Nginx, then Phraseanet.
+First, configure Nginx, then Phraseanet.
 
 
 .. code-block:: bash
