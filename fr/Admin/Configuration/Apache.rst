@@ -102,7 +102,7 @@ Parametres videos
 *****************
 
 Une fois ces deux modules ajoutés, il est possible de consulter
-leur prise en compte dans le tableau de bord.
+leurs prises en charge dans le tableau de bord
 
 Modifier l'Hôte Virtuel Apache :
 
@@ -119,10 +119,10 @@ Modifier l'Hôte Virtuel Apache :
           </Location>
   ....
 
-Une fois Apache redémarré, il faut activer
-le mode pseudo-streaming h264 dans le setup de votre installation,
-et renseigner la pass-phrase, le point de montage des données
-ainsi que le path complet vers les données.
+Une fois Apache redémarré, activer
+le mode pseudo-streaming h264 dans le setup de l'installation,
+renseigner la pass-phrase, le point de montage des données et
+le path complet vers les données.
 
   .. warning:: si les vidéos précédemment archivées étaient en flv
     , alors il faudra reconstruire les sous-définitions (via le menu "outil")

@@ -2,10 +2,10 @@ FAQ
 ===
 
 
-I can not upload mor than 2Mo
------------------------------
+I can not upload more than 2Mo
+------------------------------
 
-Exemple pour passer à une limite de 200Mo :
+Update the limit to 200 Mo :
 
 * In php.ini :
 
@@ -34,8 +34,8 @@ If you're using Nginx, you have to allow big requests :
 Results are presented with a hot air balloon
 --------------------------------------------
 
-Vérifiez que la tâche de création des sous-définitions est démarrée module
-Admin. Refer to the `task manager documentation </Admin/TaskManager>`_.
+Verify that subdefinitions creation task is started in Admin module.
+Refer to the `task manager documentation </Admin/TaskManager>`_.
 
 Results do not contains any thumbnails
 --------------------------------------

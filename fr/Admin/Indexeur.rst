@@ -86,7 +86,7 @@ L'option "nolog" permet d'envoyer les messages sur l'écran.
     un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
     fonctionnement sans trop charger les logs.
 
-examples
+Exemples
 ********
 
 L'indexeur peut être testé avec l'option '-?' qui doit afficher l'aide :
@@ -126,7 +126,7 @@ L'indexeur peut être testé avec l'option '-?' qui doit afficher l'aide :
                                           (default none)
 
 
-Example d'arguments dans un fichier...
+Exemple d'arguments dans un fichier...
 
     .. code-block:: none
 

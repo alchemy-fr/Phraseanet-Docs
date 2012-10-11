@@ -21,7 +21,7 @@ Paramètres
 ----------
 
   ============= =========== ========= =============
-   Paramètres    Type        Example   Information
+   Paramètres    Type        Exemple   Information
   ============= =========== ========= =============
    query         chaîne                La requête de recherche est la même syntaxe que dans Phraseanet, La valeur par défaut est une chaîne égale à "all records"
    bases         tableau               Un tableau d'identifiants de collections. Si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections disponibles.

@@ -1,7 +1,7 @@
 NGINX
 =====
 
-Example de fichier de configuration Nginx.
+Exemple de fichier de configuration Nginx.
 
 .. code-block:: bash
 
