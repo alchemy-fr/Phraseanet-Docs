@@ -45,7 +45,7 @@ Response sample
         "meta": {
             "api_version": "1.2",
             "request": "GET /api/v1/databoxes/1/termsOfUse/",
-            "response_time": "2011-07-27T11:27:28+02:00",
+            "response_time": "2012-09-27T16:49:20+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -53,23 +53,27 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "termsOfuse" : {
-                "ar_SA": {
+            "termsOfUse": [
+                {
                     "locale": "ar_SA",
-                    "terms": ""
+                    "terms": "<p>يمكنك أن تفعل ما تريد</p>"
                 },
-                "de_DE": {
+                {
                     "locale": "de_DE",
-                    "terms": ""
+                    "terms": "<p>Sie können tun, was Sie wollen</p>"
                 },
-                "en_GB": {
+                {
                     "locale": "en_GB",
                     "terms": "<p>You can do what you want</p>"
                 },
-                "fr_FR": {
+                {
+                    "locale": "es_ES",
+                    "terms": "<p>Puedes hacer lo que quieras</p>"
+                },
+                {
                     "locale": "fr_FR",
-                    "terms": "<p>Vous pouvez faire ce quez vous voulez</p><p>Voil&agrave;</p>"
+                    "terms": "<p>Vous pouvez faire ce quez vous voulez</p>"
                 }
-            }
+            ]
         }
     }

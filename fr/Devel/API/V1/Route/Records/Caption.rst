@@ -8,7 +8,7 @@ A propos
 
   .. code-block:: bash
 
-    /api/v1/records/{databox_id}/{record_id}/captions/
+    /api/v1/records/{databox_id}/{record_id}/caption/
 
   ========================== =====
    Informations
