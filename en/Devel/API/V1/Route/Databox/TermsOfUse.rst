@@ -68,7 +68,7 @@ Response sample
                 },
                 {
                     "locale": "es_ES",
-                    "terms": "es_ES"
+                    "terms": "<p>Puedes hacer lo que quieras</p>"
                 },
                 {
                     "locale": "fr_FR",
