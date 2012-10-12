@@ -45,19 +45,19 @@ Ouvrir un Thesaurus
 
 La fenêtre de l’application Thésaurus est découpée en deux parties. 
 
-La partie droite de la fenêtre présente la liste des « termes candidats », 
+La partie gauche de la fenêtre présente la liste des « termes candidats », 
 mots et expressions issus de l’indexation de documents ainsi que la liste de 
 termes refusés et supprimés qui sont présentés par champs d'indexation de la 
-base de données
+base de données.
 
-La partie gauche présente le thésaurus existant, sous forme « d’un arbre » 
+La partie droite présente le thésaurus existant, sous forme « d’un arbre » 
 qui se déploie.
 En positionnant le curseur sur une branche ou un terme, 
 on affiche en « Rollover » l’ensemble des synonymes qui lui sont associés et 
 le nombre d’occurrences dans la base de données.
 
-Pour ouvrir une branche, cliquer sur le symbole "Plus" 
-Pour fermer une branche, cliquer sur le symbole "Moins"
+Pour ouvrir une branche, cliquer sur le symbole "Plus". 
+Pour fermer une branche, cliquer sur le symbole "Moins".
 
 
 Travailler sur un thésaurus
@@ -67,7 +67,8 @@ Créer un nouveau terme spécifique
 *********************************
 
 Ajouter un nouveau terme spécifique à une branche signifie que l’on rajoute 
-un terme au niveau inférieur, il s’agit donc d’une relation « Père / Fils ».
+un terme au niveau inférieur, il s’agit donc d’une relation « Père / Fils »
+(ou Terme générique / Terme spécifique).
 Un nouveau terme spécifique dans le thesaurus peut être ajouté sur 
 n'importe quelle branche existante depuis le branche racine intitulée 
 "Thésaurus".
@@ -86,7 +87,7 @@ n'importe quelle branche existante depuis le branche racine intitulée
 * -> Sélectionner une langue pour le terme
 * -> Cliquer sur Valider
 
-* => Une fenêtre s'ouvre si le terme ne faisait pas partie de candidats
+* => Une fenêtre s'ouvre si le terme ne faisait pas partie de candidats.
 
 .. image:: ../../images/Thesaurus-nouveautermereindexer.jpg
    :alt: alternate text
@@ -101,7 +102,7 @@ pour que les notices des documents et les termes du thésaurus soit liés.
 * -> Cocher la case "Ajouter le terme et ré-indexer"
 
 .. note:: La ré-indexation immédiate n'est pas nécessaire si d'autre termes
-   doivent être encore ajoutés. la ré-indexation pourra se faire à posteriori
+   doivent être encore ajoutés. la ré-indexation peut se faire à posteriori
    depuis Phraseanet Admin.
 
 * -> Cliquer sur Valider 
