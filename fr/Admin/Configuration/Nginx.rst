@@ -24,7 +24,7 @@ Exemple de fichier de configuration Nginx.
   }
 
 .. note::
-    N'oubliez pas de copier le fichier des règles de re-écriture
+    Copier le fichier des règles de ré-écriture
     `rewrite_rules.inc` que vous trouverez dans config/nginx.rewrite.rules
 
 Configuration Sendfile / X-Accel-Redirect
@@ -34,7 +34,7 @@ Nginx fournit un outil "sendfile" équivalent au mod_xsendfile d'Apache.
 Ce module est particulièrement intéressant en cas de fort traffic ou de données
 volumineuses (video, etc...)
 
-Vous devrez configurer l'hôte virtuel Nginx puis votre installation Phraseanet.
+Configurer l'hôte virtuel Nginx puis l'installation Phraseanet.
 
 .. code-block:: bash
 
@@ -61,7 +61,7 @@ Vous devrez configurer l'hôte virtuel Nginx puis votre installation Phraseanet.
         }
     }
 
-Une fois cette configuration effectuée, mettez à jour la configuration de
+Une fois cette configuration effectuée, mettre à jour la configuration de
 Phraseanet dans la zone adéquat du setup :
 
 - activation du module "xsendfile"

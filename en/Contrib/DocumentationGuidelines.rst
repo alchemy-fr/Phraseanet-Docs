@@ -137,13 +137,13 @@ Meta Markups
 
   * Topic  ::
 
-	.. topic:: Topic Title (for exemple: The essential)
+	.. topic:: Topic Title (for example: The essential)
 
 		Subsequent indented lines comprise
 		the body of the topic, and are
 		interpreted as body elements.
 
-.. topic:: Topic Title (for exemple: The essential)
+.. topic:: Topic Title (for example: The essential)
 
     Subsequent indented lines comprise
     the body of the topic, and are
