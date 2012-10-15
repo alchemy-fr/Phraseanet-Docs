@@ -43,7 +43,8 @@ Glossaire
 
   Status
     Etat de type Oui/Non qui peut être appliqué sur un document, paramétrable.
-    Il est possible de définir et d’affecter jusqu'à 60 status sur un document.
+    Il est possible de définir et d’affecter jusqu'à 28 status supplémentaires
+    sur un document, 4 status étant réservés (32 status au total).
 
   Enregistrement
     Un enregistrement est constitué d'un document, de sa fiche descriptive
