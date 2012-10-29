@@ -62,6 +62,7 @@ Spécifique Phraseanet
 
     git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
     cd php-phrasea
+    phpize
     ./configure
     make
     make install
