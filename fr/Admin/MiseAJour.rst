@@ -1,43 +1,57 @@
 Mise à jour
 ===========
 
-
 .. toctree::
 
     Upgrade/3.6
     Upgrade/3.7
 
 Lors de la publication d'une nouvelle version, pour procéder à la mise à jour
-de votre installation, suivez les étapes suivantes :
+de votre installation, suivre les étapes suivantes :
 
-  * Arrêt des processus lancés par le scheduler via l'interface
-    d'administration et stopper toutes les tâches en cours d'exécution.
+  * Arrêter les processus lancés par le scheduler via l'interface
+    d'administration, stopper toutes les tâches en cours d'exécution.
 
-  * Déconnexion de tous les utilisateurs (y compris vous-même) de l'application
+  * Déconnecter tous les utilisateurs de l'application (y compris vous).
 
-  * Sauvegarder les bases de données et les anciennes sources.
+  * Sauvegarder les bases de données via l'outil prévu :
 
-  * :doc:`Compiler et mettre à jour l'extension php_phrasea <Prerequis>`
+  .. code-block:: bash
 
-  * :doc:`Compiler et remplacer le nouveau binaire indexeur <Prerequis>`
+    bin/console system:backup-db
 
-  * Mettre à jour les sources
+  * :doc:`Compiler et mettre à jour l'extension php_phrasea <Prerequis>`.
 
-  * Ecrasez le dossier config par celui de votre ancienne installation
+  * :doc:`Compiler et remplacer le nouveau binaire indexeur <Prerequis>`.
 
-  * Recharger le serveur web APACHE ou NGINX pour la prise en charge de la nouvelle extension
+  * Remplacer les anciennes sources en suivant la procédure :
+
+        * Renommer le dossiers contentant les anciennes sources
+          (ex : phraseanet-backup-date).
+        * Placer les nouvelles sources à l'emplacement des précedentes.
+
+  * En cas d'utilisation de Nginx, prendre soin de mettre à jour les règles de
+    re-écriture (fournies dans ``config/nginx.rewrite.rules``).
+
+  * Ecraser le dossier 'config' par celui de l'ancienne installation.
+
+  * Recharger le serveur web Apache ou Nginx, et éventuellement de PHP-FPM pour
+    la prise en charge de la nouvelle extension.
+
+  * Dans un terminal, à la racine des sources, éxecuter la commande suivante,
+    la mise à jour va être effectuée, elle peut prendre du temps :
+
+  .. code-block:: bash
+
+    bin/console system:upgrade
+
+  * Verifier que Phraseanet est mis à jour via la commande :
+
+  .. code-block:: bash
+
+    bin/console --version
 
   * Se connecter au module administration, éditer la configuration,
-    et la sauvegarder pour prendre en charge de nouvelles variables
-
-  * Dans la zone "bases", cliquer sur le lien "réparer les tables",
-    les scripts de mise à jour se lancent.
-    Suivant l'installation, cette opération peut être longue.
-
-  * Vider votre serveur de cache, si vous en utilsez un,
-    en utilisant le bouton prévu dans le tableau de bord du module administration
+    et la sauvegarder pour prendre en charge les nouvelles options.
 
   * Pour finir, relancer les tâches via le gestionnaire de tâches.
-
-
-
