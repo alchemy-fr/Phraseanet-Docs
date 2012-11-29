@@ -6,37 +6,50 @@ Upgrade Procedure
     Upgrade/3.6
     Upgrade/3.7
 
-When releasing a new version, we suggest you to follow the update procedure:
+To upgrade Phraseanet to the latest version, it is strongly recommended to
+follow this upgrade procedure :
 
-  * Stop the processes launched by the scheduler from the “Administration”
-    application.
+  * In the "Administration" panel of Phraseanet, stop the scheduler.
 
-  * Log out all the users (including yourself)
+  * Log out all users (including you, the upgrade operator).
 
-  * Backup of databases and old sources
+  * Backup databases with the provided tool :
 
-  * :doc:`Compile and update the php_phrasea extension <Prerequisite>`
+  .. code-block:: bash
 
-  * :doc:`Compile and replace the new indexer binary <Prerequisite>`
+    bin/console system:backup-db
 
-  * Update sources of old sources
+  * :doc:`Compile and update the php_phrasea extension <Prerequisite>`.
 
-  * Overwrite the config folder with the one of your old installation
+  * :doc:`Compile and replace the new indexer binary <Prerequisite>`.
 
-  * Reloading Apache for the support of the new extension
+  * Replace old source by following these steps :
 
-  * Log in to the Administration application, edit the configuration,
-    and save it in order that the new variables are supported
+        * Rename the folder containing the previous sources
+          (ex : phraseanet-backup-date).
+        * Place the latest sources where the previous one were.
 
-  * In the zone “Databases”, use the button “Repare tables”,
-    the scripts for the update will launch.
-    According to your setup, this operation may take a while.
+  * When using Nginx, update rewrite rules (provided in
+    ``config/nginx.rewrite.rules``).
 
-  * If you are using a memcached module, flush this cache
+  * Overwrite the config folder with the one of the previous installation.
 
-    (either restart the memcached server, or use the button in the dashboard
-    of the Administration application).
+  * Reloading Apache or Nginx server, eventually PHP-FPM to support the new
+    version of the extension.
 
-  * Relaunch the tasks through the task manager
+  * In a terminal, at sources root, execute the following command. Please note
+    that execution time in this step could be long.
+
+  .. code-block:: bash
+
+    bin/console system:upgrade
+
+  * Verify that Phraseanet has been upgraded with the command :
+
+  .. code-block:: bash
+
+    bin/console --version
+
+  * Restart the tasks in Phraseanet "Administration" panel.
 
 
