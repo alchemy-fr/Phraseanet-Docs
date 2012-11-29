@@ -1,7 +1,7 @@
 Phraseanet-Extension
 ====================
 
-The Phraseanet search engine is available thru the PHP extension "php_phrasea2".
+The Phraseanet search engine is available with the PHP extension "php_phrasea2".
 
 Install
 -------
@@ -37,7 +37,7 @@ Download the extension matching your version of PHP
 "php_phrasea2_UTF-8_1.20.1.0.dll").
 
 Rename the file as "php_phrasea2.dll" and copy it into the "ext" directory of
-PHP (usualy "C:\\Program Files\\PHP\\ext" if PHP was installed with default
+PHP (usually "C:\\Program Files\\PHP\\ext" if PHP was installed with default
 settings).
 
 Activate the extension into php.ini :
