@@ -22,6 +22,7 @@ Endpoints
 Supported Access Grant Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
   * authorization_code
+  * password
 
 Supported Authorization Response Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,4 +143,7 @@ Using your access token
 
       curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
 
+
+Using password grant type
+-------------------------
 
