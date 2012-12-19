@@ -6,6 +6,9 @@ A propos
 
   Retourne la liste des documents trouvés
 
+  Cette route est dépréciée depuis la version 1.3 en faveur de
+  :doc:`search <../Search>`.
+
   .. code-block:: bash
 
     /api/v1/records/search/

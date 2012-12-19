@@ -4,7 +4,7 @@ Records Embed
 About
 -----
 
-  Returns some permalinks to the document subdefinitions to embed it
+  Returns permalinks to medias attached to the record
 
   .. code-block:: bash
 
@@ -45,7 +45,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-    embed 	  The list of the sub wiews of the record
+    embed 	  The list of the sub views of the record
   ========== ================================
 
 Response sample

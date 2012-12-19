@@ -1,6 +1,32 @@
 API Changelog
 =============
 
+1.3
+---
+
+Version 1.3 of Phraseanet API is brought with Phraseanet 3.7.5.
+This upgrade is fully backward compatible and introduces the concept of Story to
+the API.
+
+New routes :
+++++++++++++
+
+ - :doc:`stories/story <V1/Route/Stories/Story` Story route.
+ - :doc:`stories/story <V1/Route/Stories/Embed` Story embed.
+ - :doc:`search <V1/Route/Search` The new search engine compatible with stories.
+
+Deprecated routes :
++++++++++++++++++++
+
+ - :doc:`records/search <V1/Route/Records/Search`. We
+strongly encourage developers to upgrade their code to support the new API.
+
+Updated routes :
+++++++++++++++++
+
+ - :doc:`records/search <V1/Route/Records/Related` now list related stories as
+   long as baskets.
+
 1.2
 ---
 
