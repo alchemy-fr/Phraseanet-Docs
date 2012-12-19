@@ -4,7 +4,7 @@ Récupérer un enregistrement Phraseanet
 A propos
 --------
 
-  Retourne les informations d'un document enregistré dans Phraseanet
+  Retourne les informations d'un document enregistré dans Phraseanet.
 
   .. code-block:: bash
 

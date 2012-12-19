@@ -46,8 +46,8 @@ Attribut de la réponse
     embed 	  La liste des sous-definitions disponibles pour le reportage sélectionné
   ========== ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
   .. code-block:: javascript
 
