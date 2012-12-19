@@ -9,24 +9,24 @@ Cette mise à jour est complètement retrocompatible avec la précédente versio
 et introduit le concept de Reportage dans celle-ci.
 
 Nouvelles routes
-++++++++++++++++
+****************
 
- - :doc:`stories/story <V1/Route/Stories/Story` Route reportage.
- - :doc:`stories/story <V1/Route/Stories/Embed` Route reportage embed.
- - :doc:`search <V1/Route/Search` Le nouveau moteur de recherche compatible avec
+ - :doc:`stories/story <V1/Route/Stories/Story>` Route reportage.
+ - :doc:`stories/story <V1/Route/Stories/Embed>` Route reportage embed.
+ - :doc:`search <V1/Route/Search>` Le nouveau moteur de recherche compatible avec
    les reportages.
 
 Routes dépréciées
 *****************
 
- - :doc:`records/search <V1/Route/Records/Search`. Nous encourageons vivement
+ - :doc:`records/search <V1/Route/Records/Search>`. Nous encourageons vivement
    les développeurs à mettre à jour leurs applications pour supporter la
    nouvelle route de recherche.
 
 Updated routes
 **************
 
- - :doc:`records/search <V1/Route/Records/Related` liste maintenant les
+ - :doc:`records/search <V1/Route/Records/Related>` liste maintenant les
    reportages contenant le record aux côtés des paniers.
 
 1.2
