@@ -14,7 +14,6 @@ nouveaux utilisateurs peut exister sur la page de connexion.
 L'écran *Nouvel utilisateur* s'ouvre :
 
 	.. image:: ../../images/Inscription1.jpg
-	   :alt: alternate text
 	   :align: center
 
 
@@ -35,7 +34,6 @@ Authentification
 La page d'accueil permettant la connexion s'affiche :
 
 	.. image:: ../../images/Authentification.jpg
-	   :alt: alternate text
 	   :align: center
 
   * Sélectionner la langue dans la liste déroulante.
