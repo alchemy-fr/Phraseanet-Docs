@@ -28,13 +28,11 @@ In *Phraseanet my account*
 Click on developer *déveloper* tab.
 
 .. image:: ../images/MonCompteDeveloppeur.png
-	   :alt: alternate text
 	   :align: center
 
 Click on *Create a new application*
 
 .. image:: ../images/MonCompteDeveloppeurCreate.png
-	   :alt: alternate text
 	   :align: center
 
 
@@ -55,7 +53,6 @@ Click on *Create a new application*
 Once the application is registered it appears in a dashboard
 
 .. image:: ../images/MonCompteDeveloppeurDashboard.png
-	   :alt: alternate text
 	   :align: center
 
 The dashboard lists all the applications created by the authenticated user
@@ -67,7 +64,6 @@ In the dashboard application developers click on the name of an application.
 The settings page of the application is displayed.
 
 .. image:: ../images/MonCompteDeveloppeurApplication.png
-	   :alt: alternate text
 	   :align: center
 
 
