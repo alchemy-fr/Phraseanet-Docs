@@ -9,7 +9,6 @@ Le menu Phraseanet
     de la solution ainsi qu'aux paramètres du compte utilisateur.
 
 .. image:: ../../images/MenuPhraseanet.jpg
-   :alt: alternate text
    :align: center
 
 Accès aux interfaces
@@ -17,27 +16,26 @@ Accès aux interfaces
 La dernière application utilisée pour quitter se lance par défaut.
 Toutes les applications proposent en haut de la fenêtre la même barre de navigation.
 
-**La partie gauche de la barre de menu affiche la liste les interfaces auxquelles 
+**La partie gauche de la barre de menu affiche la liste les interfaces auxquelles
 vous avez accès.**
 
 .. image:: ../../images/General-menu.jpg
-   :alt: alternate text
    :align: center
 
-En cliquant sur le nom d'une application, le navigateur internet lance celle-ci 
+En cliquant sur le nom d'une application, le navigateur internet lance celle-ci
 dans un nouvel onglet.
 
-.. note:: Une interface est manquante dans le menu ? Vérifier les droits. Si 
+.. note:: Une interface est manquante dans le menu ? Vérifier les droits. Si
           l'utilisateur n'a pas accès au module, le lien vers l'interface n'
           apparaît pas.
 
-**La partie droite de la barre de menu affiche les notifications, l'identifiant 
+**La partie droite de la barre de menu affiche les notifications, l'identifiant
 du compte, l'aide en ligne avec les raccourcis clavier et le lien de déconnexion.**
 
 Accès aux notifications
 ***********************
-Les notifications sont des messages informatifs affichés en temps réel. 
-Ils renseignent l'utilisateurs des demandes de validation, de réception de 
+Les notifications sont des messages informatifs affichés en temps réel.
+Ils renseignent l'utilisateurs des demandes de validation, de réception de
 paniers...
 
 Se reporter à la section :doc:`personnaliser l'interface <PersonnaliserInterface>`
@@ -56,7 +54,6 @@ le lien de déconnexion.
 Cliquer sur l'identifiant affiché pour accéder aux informations du compte.
 
 .. image:: ../../images/Moncompte.jpg
-	   :alt: alternate text
 	   :align: center
 
 Informations
@@ -87,7 +84,6 @@ documents et d'en visualiser l'état:
 Un message indique alors que qu'une demande d'accès est en cours.
 
 .. image:: ../../images/Accesbasescoll.jpg
-	   :alt: alternate text
 	   :align: center
 
 Sessions
@@ -110,19 +106,17 @@ afin de découvrir comment mettre en oeuvre les API Phraseanet.
 
 Accès à l'aide en ligne
 ***********************
-En cliquant sur l'onglet "Aide", l'utilisateur est redirigé vers cette documentation 
+En cliquant sur l'onglet "Aide", l'utilisateur est redirigé vers cette documentation
 en ligne.
-En cliquant sur la flèche près de l'aide, deux sous-onglets apparaîssent: les 
-*Raccourcis claviers*, et *A propos*.  
+En cliquant sur la flèche près de l'aide, deux sous-onglets apparaîssent: les
+*Raccourcis claviers*, et *A propos*.
 
 .. image:: ../../images/General-menu3.jpg
-   :alt: alternate text
    :align: center
 
 Voici un exemple de quelques raccourcis claviers utiles dans Phraseanet.
 
 .. image:: ../../images/General-raccourcis.jpg
-   :alt: alternate text
    :align: center
 
 Se déconnecter
