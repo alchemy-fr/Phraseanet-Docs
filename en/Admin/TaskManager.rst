@@ -3,7 +3,29 @@ Task Manager
 
 Phraseanet has a task manager to realize asynchronous operations.
 
-This different task are managed by a Scheduler.
+Tasks can log events, each message includes a standard "severity level".
+
+Severity level can be used in :doc:`configuration <Configuration>` to define the
+threshold of messages to be sent to syslog (or event-log for Windows) or
+via e-mail (sent to the administrator of the application).
+
+6 different levels of "severity" are :
+
+    * DEBUG
+        not used, reserved for debugging specific task during development
+    * INFO
+        normal operation, ex. "building subdef"
+    * WARNING
+        ex. "failed to build subdef"
+    * ERROR
+        ex. "memory overflow after work is done, task will restart"
+    * CRITICAL
+        ex. "memory overflow before work can be done, task will stop"
+    * ALERT
+        not used
+
+Tasks are managed by a Scheduler.
+
 
 Scheduler
 ---------
