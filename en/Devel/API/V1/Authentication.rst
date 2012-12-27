@@ -153,12 +153,15 @@ To obtain an access token, you can use the resource owner password credentials.
 This method eliminates the need for the client to store the
 resource-owner's credentials for future use.
 
-This method should only be used when there is a high degree of trust between the
-resource owner and the client.
+.. warning::
+    This method should only be used when there is a high degree of trust between the    
+    resource owner and the client.
 
-See `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
+.. seealso:: See `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
 
-https://SERVER_NAME/api/oauthv2/token
+.. code-block:: bash
+
+    https://SERVER_NAME/api/oauthv2/token
     ?client_id=YOUR_CLIENT_ID
     &grant_type=password
     &username=johndoe
