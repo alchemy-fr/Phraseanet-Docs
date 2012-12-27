@@ -22,6 +22,7 @@ Points d'accès
 Type d'authenfication supporté
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   * authorization_code
+  * password
 
 Type de réponse d'authorisation supporté
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -154,3 +155,22 @@ Utilisation du jeton d'accès
       curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
 
 
+Utiliser le type d'authenfication 'password'
+--------------------------------------------
+
+Pour obtenir directement un jeton d'accés, vous pouvez utiliser les informations
+d'indentifications de l'utilisateur qui détient les ressources Phraseanet.
+(cf. un identifiant et un mot de passe)
+
+Cette méthode vous évite le besoin de stocker le jeton d'authorisation d'accés.
+
+Attention, cette méthode ne doit être utilisée que lorsqu'il ya un degré élevé 
+de confiance entre le propriétaire de la ressource et le client.
+
+Voir `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
+
+https://SERVER_NAME/api/oauthv2/token
+    ?client_id=YOUR_CLIENT_ID
+    &grant_type=password
+    &username=johndoe
+    &password=A3ddj3w
