@@ -20,7 +20,7 @@ Points d'accès
   * Point du token d'accés : /api/oauthv2/token
 
 Type d'authentification supporté
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   * authorization_code
   * password
 
@@ -165,10 +165,11 @@ d'indentification de l'utilisateur qui détient les ressources Phraseanet.
 Cette méthode évite le besoin d'avoir à stocker le jeton d'autorisation d'accès.
 
 .. warning::
-    Attention, cette méthode ne doit être utilisée que lorsqu'il ya un degré 
+    Attention, cette méthode ne doit être utilisée que lorsqu'il y a un degré 
     élevé de confiance entre le propriétaire de la ressource et le client.
 
-.. seealso:: Voir aussi `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
+.. seealso:: 
+    Voir aussi `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
 
 .. code-block:: bash
 

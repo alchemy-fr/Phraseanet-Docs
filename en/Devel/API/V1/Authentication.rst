@@ -157,7 +157,8 @@ resource-owner's credentials for future use.
     This method should only be used when there is a high degree of trust between the    
     resource owner and the client.
 
-.. seealso:: See `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
+.. seealso:: 
+    See `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
 
 .. code-block:: bash
 
