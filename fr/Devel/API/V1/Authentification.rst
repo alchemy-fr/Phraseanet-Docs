@@ -19,9 +19,10 @@ Points d'accès
   * Point d'authorisation : /api/oauthv2/authorize
   * Point du token d'accés : /api/oauthv2/token
 
-Type d'authenfication supporté
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Type d'authentification supporté
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   * authorization_code
+  * password
 
 Type de réponse d'authorisation supporté
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,7 +30,7 @@ Type de réponse d'authorisation supporté
   * token
   * code_and_token
 
-.. note:: À cet instant, le jeton d'authentification n'a pas de date d'expiration,
+.. note:: A cet instant, le jeton d'authentification n'a pas de date d'expiration,
     cependant, il faut être préparer à cette éventualité dans le futur.
     Ne pas oublier qu'un utilisateur peut révoquer l'accés à ses données via la page
     de configuration de Phraseanet à n'importe quel moment.
@@ -154,3 +155,26 @@ Utilisation du jeton d'accès
       curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
 
 
+Utiliser le type d'authentification 'password'
+----------------------------------------------
+
+Pour obtenir directement un jeton d'accés, utiliser les informations
+d'indentification de l'utilisateur qui détient les ressources Phraseanet.
+(cf. un identifiant et un mot de passe)
+
+Cette méthode évite le besoin d'avoir à stocker le jeton d'autorisation d'accès.
+
+.. warning::
+    Attention, cette méthode ne doit être utilisée que lorsqu'il y a un degré 
+    élevé de confiance entre le propriétaire de la ressource et le client.
+
+.. seealso:: 
+    Voir aussi `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
+
+.. code-block:: bash
+
+    https://SERVER_NAME/api/oauthv2/token
+    ?client_id=YOUR_CLIENT_ID
+    &grant_type=password
+    &username=johndoe
+    &password=A3ddj3w
