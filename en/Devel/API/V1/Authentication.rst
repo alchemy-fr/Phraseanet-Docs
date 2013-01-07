@@ -22,6 +22,7 @@ Endpoints
 Supported Access Grant Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
   * authorization_code
+  * password
 
 Supported Authorization Response Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,9 +30,9 @@ Supported Authorization Response Type
   * token
   * code_and_token
 
-  At this time we do not expire OAuth access tokens, you should be prepared for
-  this possibility in the future. Also remember that a user may revoke access
-  via the Phraseanet settings page at any time.
+.. note:: At this time we do not expire OAuth access tokens, you should be prepared for
+    this possibility in the future. Also remember that a user may revoke access
+    via the Phraseanet settings page at any time.
 
 Sign Up
 -------
@@ -143,3 +144,26 @@ Using your access token
       curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
 
 
+Using password grant type
+-------------------------
+
+To obtain an access token, you can use the resource owner password credentials. 
+(i.e. a username and password)
+
+This method eliminates the need for the client to store the
+resource-owner's credentials for future use.
+
+.. warning::
+    This method should only be used when there is a high degree of trust between the    
+    resource owner and the client.
+
+.. seealso:: 
+    See `http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2 <http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2/>`_.
+
+.. code-block:: bash
+
+    https://SERVER_NAME/api/oauthv2/token
+    ?client_id=YOUR_CLIENT_ID
+    &grant_type=password
+    &username=johndoe
+    &password=A3ddj3w
