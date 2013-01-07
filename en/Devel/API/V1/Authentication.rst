@@ -30,9 +30,9 @@ Supported Authorization Response Type
   * token
   * code_and_token
 
-  At this time we do not expire OAuth access tokens, you should be prepared for
-  this possibility in the future. Also remember that a user may revoke access
-  via the Phraseanet settings page at any time.
+.. note:: At this time we do not expire OAuth access tokens, you should be prepared for
+    this possibility in the future. Also remember that a user may revoke access
+    via the Phraseanet settings page at any time.
 
 Sign Up
 -------

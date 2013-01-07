@@ -30,7 +30,7 @@ Type de réponse d'authorisation supporté
   * token
   * code_and_token
 
-.. note:: À cet instant, le jeton d'authentification n'a pas de date d'expiration,
+.. note:: A cet instant, le jeton d'authentification n'a pas de date d'expiration,
     cependant, il faut être préparer à cette éventualité dans le futur.
     Ne pas oublier qu'un utilisateur peut révoquer l'accés à ses données via la page
     de configuration de Phraseanet à n'importe quel moment.
