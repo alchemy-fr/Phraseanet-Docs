@@ -34,7 +34,7 @@ following parameters :
    Parameters               Type           Information
   ======================== ============== ==============================
    databox_id               integer        The databox id of the record
-   record_id 	            integer        The record_id
+   record_id                integer        The record_id
    devices                  array          An array of devices to restrict the list (optionnal)
    mimes                    array          An array of mime type to restrict the list (optionnal)
   ======================== ============== ==============================
@@ -45,7 +45,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-    embed 	  The list of the sub views of the record
+    embed     The list of the sub views of the record
   ========== ================================
 
 Response sample

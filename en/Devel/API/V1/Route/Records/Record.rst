@@ -23,8 +23,8 @@ Parameters
   ======================== ============== ==============================
    Parameters               Type           Information
   ======================== ============== ==============================
-   databox_id 	            integer 	   The databox id of the record
-   record_id 	            integer 	   The record_id
+   databox_id               integer        The databox id of the record
+   record_id                integer        The record_id
   ======================== ============== ==============================
 
 Response Fields
@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   record 	  The record
+   record     The record
   ========== ================================
 
 Response sample

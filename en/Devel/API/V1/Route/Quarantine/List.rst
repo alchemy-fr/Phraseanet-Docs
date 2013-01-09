@@ -24,7 +24,7 @@ Parameters
    Parameters               Type           Information
   ======================== ============== =============
    offset_start             integer        The first entry to retrive
-   per_page	                integer        The number of entry to retrieve
+   per_page                 integer        The number of entry to retrieve
   ======================== ============== =============
 
 Response Fields

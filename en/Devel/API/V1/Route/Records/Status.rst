@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   status 	  The list of the status of the record
+   status     The list of the status of the record
   ========== ================================
 
 Response sample

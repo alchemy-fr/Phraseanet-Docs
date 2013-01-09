@@ -32,7 +32,7 @@ Response Fields
   =============== ================================
    Field           Description
   =============== ================================
-   entry 	       The entry
+   entry           The entry
   =============== ================================
 
 Response sample

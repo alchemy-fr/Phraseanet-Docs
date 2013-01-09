@@ -23,7 +23,7 @@ Parameters
   ================ ========= ==============================
    Parameters       Type      Information
   ================ ========= ==============================
-   databox_id 	    integer   The databox id of the record
+   databox_id       integer   The databox id of the record
    record_id        integer   The record_id
    status           integer   The status to modify
   ================ ========= ==============================
@@ -50,7 +50,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   status 	  The list of the status of the record
+   status     The list of the status of the record
   ========== ================================
 
 Response sample

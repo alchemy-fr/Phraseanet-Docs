@@ -23,9 +23,9 @@ Parameters
   ======================== ============== =============
    Parameters               Type           Information
   ======================== ============== =============
-   feed_id	                integer        The id of the feed
+   feed_id                  integer        The id of the feed
    offset_start             integer        The first entry to retrive
-   per_page	                integer        The number of entry to retrieve
+   per_page                 integer        The number of entry to retrieve
   ======================== ============== =============
 
 Response Fields
@@ -35,7 +35,7 @@ Response Fields
    Field         Description
   ============= ================================
    feed          The feed
-   entries 	     The entries
+   entries       The entries
    offset_start  Starting offset
    per_page      The quantity of entries per page
   ============= ================================

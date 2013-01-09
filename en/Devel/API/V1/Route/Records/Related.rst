@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   baskets 	  The list of the baskets containing the record
+   baskets    The list of the baskets containing the record
   ========== ================================
 
 Response sample

@@ -34,7 +34,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   record 	  The record updated
+   record     The record updated
   ========== ================================
 
 Response sample

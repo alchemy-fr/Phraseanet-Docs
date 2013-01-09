@@ -23,8 +23,8 @@ Parameters
   ======================== ============== ==============================
    Parameters               Type           Information
   ======================== ============== ==============================
-   databox_id 	            integer 	   The databox id of the story
-   story_id 	            integer 	   The story_id
+   databox_id               integer        The databox id of the story
+   story_id                 integer        The story_id
   ======================== ============== ==============================
 
 Response Fields
@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   story 	  The story
+   story      The story
   ========== ================================
 
 Response sample
