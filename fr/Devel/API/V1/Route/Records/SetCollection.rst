@@ -34,7 +34,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-   record 	  L'enregistrement mis à jour
+   record     L'enregistrement mis à jour
   ========== ================================
 
 Exemple de réponse

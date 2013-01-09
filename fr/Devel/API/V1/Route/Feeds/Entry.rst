@@ -32,7 +32,7 @@ Attribut de la réponse
   =============== ================================
    Attribut        Description
   =============== ================================
-   entry 	       L'entrée sélectionnée
+   entry           L'entrée sélectionnée
   =============== ================================
 
 Exemple de réponse

@@ -23,8 +23,8 @@ Paramètres
   ======================== ============== ==============================
    Paramètres               Type           Information
   ======================== ============== ==============================
-   databox_id 	            entier 	       L'identifiant de la databox auquel appartient le document
-   story_id 	            entier 	       L'identifiant du reportage sélectionné
+   databox_id               entier         L'identifiant de la databox auquel appartient le document
+   story_id                 entier         L'identifiant du reportage sélectionné
   ======================== ============== ==============================
 
 Attribut de la réponse
@@ -33,7 +33,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-   story 	  Le reportage sélectionné
+   story      Le reportage sélectionné
   ========== ================================
 
 Exemple de réponse

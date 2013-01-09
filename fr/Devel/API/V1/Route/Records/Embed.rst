@@ -34,8 +34,8 @@ Il faut utiliser les paramètres :
   ======================== ============== ==============================
    Paramètres               Type           Information
   ======================== ============== ==============================
-   databox_id               entier 	       L'identifiant de la databox auquel appartient le document
-   record_id 	            entier 	       L'identifiant du document sélectionné
+   databox_id               entier         L'identifiant de la databox auquel appartient le document
+   record_id                entier         L'identifiant du document sélectionné
    devices                  tableau        Un tableau des devices sur lequel restreindre la query (optionnel)
    mimes                    tableau        Un tableau de type mime sur lequel restreindre la recherche (optionnel)
   ======================== ============== ==============================
@@ -46,7 +46,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-    embed 	  La liste des sous-definitions disponibles pour le document sélectionné
+    embed     La liste des sous-definitions disponibles pour le document sélectionné
   ========== ================================
 
 Exemple de réponse

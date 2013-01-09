@@ -25,7 +25,7 @@ Paramètres
    Paramètres               Type           Information
   ======================== ============== =============
    offset_start             entier         Le numéro de la première entrée à retrouver
-   per_page	                entier         Le nombre d'entrées à retrouver
+   per_page                 entier         Le nombre d'entrées à retrouver
   ======================== ============== =============
 
 Attribut de la réponse

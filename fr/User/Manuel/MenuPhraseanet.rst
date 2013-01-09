@@ -54,7 +54,7 @@ le lien de déconnexion.
 Cliquer sur l'identifiant affiché pour accéder aux informations du compte.
 
 .. image:: ../../images/Moncompte.jpg
-	   :align: center
+       :align: center
 
 Informations
 ^^^^^^^^^^^^
@@ -84,7 +84,7 @@ documents et d'en visualiser l'état:
 Un message indique alors que qu'une demande d'accès est en cours.
 
 .. image:: ../../images/Accesbasescoll.jpg
-	   :align: center
+       :align: center
 
 Sessions
 ^^^^^^^^

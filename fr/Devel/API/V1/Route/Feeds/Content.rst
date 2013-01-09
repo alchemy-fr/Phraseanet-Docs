@@ -23,9 +23,9 @@ Paramètres
   ======================== ============== =============
    Paramètres               Type           Information
   ======================== ============== =============
-   feed_id	                entier         L'identifiant du flux sélectionné
+   feed_id                  entier         L'identifiant du flux sélectionné
    offset_start             entier         La première entrée à retrouver
-   per_page	                entier         Le nombre d'entrée à retrouver
+   per_page                 entier         Le nombre d'entrée à retrouver
   ======================== ============== =============
 
 Attribut de la réponse

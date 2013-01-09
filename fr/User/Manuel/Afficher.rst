@@ -14,17 +14,17 @@
 
 
 .. figure:: ../../images/Production-general.jpg
-	 :align: center
+     :align: center
 
-	 *Interface Phraseanet Production*
+     *Interface Phraseanet Production*
 
 .. note:: La zone d'affichage des résultats, dans *Prod* (ci-dessus) ou dans
           *Classic* (ci-dessous), est la zone centrale où apparaissent les images.
 
 .. figure:: ../../images/Classic-interface2.jpg
-	 :align: center
+     :align: center
 
-	 *Interface Phraseanet Classic*
+     *Interface Phraseanet Classic*
 
 Présentation de la zone d'affichage
 -----------------------------------
@@ -39,7 +39,7 @@ de pages en pages en cliquant sur le numéro de la page, d'aller en fin de séle
 en cliquant sur *Suivant* et de revenir en début en cliquant sur *Précédent*.
 
   .. image:: ../../images/Afficher-Nbreponses.jpg
-	   :align: center
+       :align: center
 
 Les vignettes sont surmontées par le contenu d'un champ (ici "Objet").
 Le choix de ce champ est paramétrable. Par défaut, c’est le nom d’origine du
@@ -49,7 +49,7 @@ document qui est affiché.
 gauche:**
 
   .. image:: ../../images/Affichage-nomcoll.jpg
-	   :align: center
+       :align: center
 
 .. note:: Le nom de la collection peut être substitué par un minilogo de collection.
           Pour cela, rendez-vous dans :doc:`Phraseanet Administration <Administration>`.
@@ -63,7 +63,7 @@ le nom des champs affichés (ceci est paramétrable dans l':doc:`Administration
 <Administration>`).
 
   .. image:: ../../images/Affichage-surlignagemc.jpg
-	   :align: center
+       :align: center
 
 Dans l'exemple, le mot "plage" est surligné car il a servi de critère de
 recherche.
@@ -72,7 +72,7 @@ recherche.
 la lecture d’un fichier audio, afficher un "résumé" pour les séquences vidéos…
 
   .. image:: ../../images/Affichage-Loupe.jpg
-	   :align: center
+       :align: center
 
 .. note:: Si la loupe n’est pas visible, c’est que l’utilisateur n’a pas le droit
           de voir les images de choix ou qu’il n’existe pas d’image de choix.
@@ -81,7 +81,7 @@ la lecture d’un fichier audio, afficher un "résumé" pour les séquences vid�
 original** telles que : largeur, hauteur, type, poids, taille d’impression…
 
   .. image:: ../../images/Affichage-i.jpg
-	   :align: center
+       :align: center
 
 Sélectionner des documents
 ---------------------------
@@ -97,7 +97,7 @@ les reportages en cliquant dans son cadre. La couleur de fonds de la vignette ch
 La couleur de sélection peut être modifiée dans les Préférences d'affichage.
 
   .. image:: ../../images/Affichage-selection1.jpg
-	   :align: center
+       :align: center
 
   * La sélection multiple
 
@@ -107,13 +107,13 @@ vignette de la série à sélectionner. *Toutes les vignettes comprises entre ce
 deux vignettes sont sélectionnées.*
 
   .. image:: ../../images/Affichage-selection2.jpg
-	   :align: center
+       :align: center
 
 **Pour sélectionner plusieurs vignettes "en discontinu"**, appuyer sur le bouton
 Alt et cliquer successivement sur les vignettes à sélectionner.
 
   .. image:: ../../images/Affichage-selection3.jpg
-	   :align: center
+       :align: center
 
 **Pour sélectionner plusieurs vignettes sur plusieurs pages de résultats**,
 sélectionner d’abord les images sur une page, cliquer sur la page à atteindre,
@@ -123,7 +123,7 @@ de la nouvelle page de résultats.
 Le nombre d'éléments sélectionnés apparaît en bas à gauche dans l'interface.
 
   .. image:: ../../images/Affichage-selection5.jpg
-	   :align: center
+       :align: center
 
 
   * La sélection par type de documents
@@ -133,7 +133,7 @@ sur la flèche à droite du carré blanc. Ici, on ne choisit par exemple que des
 documents de type "images" à afficher:
 
   .. image:: ../../images/Affichage-selectiontype.jpg
-	   :align: center
+       :align: center
 
 Pour placer une sélection de documents dans un Panier:
 
@@ -143,7 +143,7 @@ Pour placer une sélection de documents dans un Panier:
     puis cliquer sur Valider.
 
   .. image:: ../../images/Affichage-Panier.jpg
-	   :align: center
+       :align: center
 
   * Pour plus d'informations, se reporter à la section dédiée aux :doc:`Paniers
     et aux Reportages <PaniersReportages>`.
@@ -160,7 +160,7 @@ Cliquer sur les documents à sélectionner, comme vu précédemment, puis effect
 une action à partir du menu apparent au sein des paniers.
 
   .. image:: ../../images/Affichage-Panier2.jpg
-	   :align: center
+       :align: center
 
 La vue détaillée
 ----------------
@@ -189,7 +189,7 @@ Sur la partie droite, l'onglet *Notice* permet de visualiser les informations is
 des champs remplis, tels que les mots clés, la légende,...
 
   .. image:: ../../images/Affichage-vuedetaillee1.jpg
-	   :align: center
+       :align: center
 
 .. note:: Selon la configuration de la solution et l’existence d’un thesaurus
           attaché à la base, certains mots clés de la légende sont "cliquables".
@@ -203,7 +203,7 @@ Cet onglet liste l’historique de toutes les opérations réalisées par les
 utilisateurs sur le document depuis son ajout.
 
   .. image:: ../../images/Affichage-vuedetaillee2.jpg
-	   :align: center
+       :align: center
 
 Onglet Popularité
 *****************
@@ -216,7 +216,7 @@ document en temps réel.
   * Le diagramme "Camembert" montre les sources d’accès au document.
 
   .. image:: ../../images/Affichage-vuedetaillee3.jpg
-	   :align: center
+       :align: center
 
 Les statistiques de téléchargement affichent jour par jour le nombre de
 téléchargements du document.

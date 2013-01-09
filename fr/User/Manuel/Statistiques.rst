@@ -18,7 +18,7 @@
 Les rapports sont classés dans 4 onglets:
 
   .. image:: ../../images/Statistiques-General.jpg
-	   :align: center
+       :align: center
 
 Au lancement du module, un *tableau de bord* propose sur une période d’un mois
 un ensemble de statistiques généralistes.

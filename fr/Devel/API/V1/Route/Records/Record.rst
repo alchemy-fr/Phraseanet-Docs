@@ -23,8 +23,8 @@ Paramètres
   ======================== ============== ==============================
    Paramètres               Type           Information
   ======================== ============== ==============================
-   databox_id 	            entier 	       L'identifiant de la databox auquel appartient le document
-   record_id 	            entier 	       L'identifiant du document sélectionné
+   databox_id               entier         L'identifiant de la databox auquel appartient le document
+   record_id                entier         L'identifiant du document sélectionné
   ======================== ============== ==============================
 
 Attribut de la réponse
@@ -33,7 +33,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-   record 	  L'enregistrement sélectionné
+   record     L'enregistrement sélectionné
   ========== ================================
 
 Exemple de réponse

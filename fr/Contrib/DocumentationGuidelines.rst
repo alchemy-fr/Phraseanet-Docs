@@ -7,7 +7,7 @@ améliorée ou modifiée selon les besoins.
 Pour commencer, le plus simple est d'imiter cette documentation telle qu'elle
 existe déjà.
 
-Voici ci-dessous une liste de règles à respecter et un mémo relatifs aux 
+Voici ci-dessous une liste de règles à respecter et un mémo relatifs aux
 marqueurs les plus utilisés.
 
 Règles et style de rédaction
@@ -148,11 +148,11 @@ Meta Markups
 
   * Topic  ::
 
-	.. topic:: Topic Title (par exemple: L'essentiel)
+    .. topic:: Topic Title (par exemple: L'essentiel)
 
-		Subsequent indented lines comprise
-		the body of the topic, and are
-		interpreted as body elements.
+        Subsequent indented lines comprise
+        the body of the topic, and are
+        interpreted as body elements.
 
 .. topic:: Topic Title (par exemple: L'essentiel)
 

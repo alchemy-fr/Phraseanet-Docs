@@ -23,7 +23,7 @@ Paramètres
   ================ ========= ==============================
    Paramètres       Type      Information
   ================ ========= ==============================
-   databox_id 	    entier    L'identifiant de la databox auquel appartient le document
+   databox_id       entier    L'identifiant de la databox auquel appartient le document
    record_id        entier    L'identifiant du document sélectionné
    status           tableau   Les status à modifier
   ================ ========= ==============================

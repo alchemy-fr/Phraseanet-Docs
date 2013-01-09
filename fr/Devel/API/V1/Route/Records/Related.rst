@@ -34,7 +34,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-   baskets 	  La liste des objets (paniers et reportages) qui contiennent le document
+   baskets    La liste des objets (paniers et reportages) qui contiennent le document
   ========== ================================
 
 Exemple de réponse

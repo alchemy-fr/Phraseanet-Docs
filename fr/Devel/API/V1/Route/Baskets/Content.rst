@@ -32,7 +32,7 @@ Attribut de la réponse
   ================ ================================
    Attribut         Description
   ================ ================================
-   basket_elements 	La liste des éléments du panier
+   basket_elements  La liste des éléments du panier
    basket           Le basket sélectionné
   ================ ================================
 

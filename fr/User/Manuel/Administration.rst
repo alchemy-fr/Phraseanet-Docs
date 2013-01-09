@@ -20,7 +20,7 @@ Si l'utilisateur ne voit pas certaines de ces rubriques, c'est que ses :doc:`dro
 le lui permettent pas.
 
   .. image:: ../../images/Administration-gauche.jpg
-	   :align: center
+       :align: center
 
 Certaines de ces rubriques comportent des sous-rubriques. Cliquer sur les boutons " + "
 pour les afficher et les boutons " - " pour les masquer.

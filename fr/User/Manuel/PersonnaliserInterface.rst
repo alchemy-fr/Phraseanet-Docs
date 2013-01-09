@@ -14,7 +14,7 @@ Redimensionner la zone de travail
 Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
 
   .. image:: ../../images/Onglet-Taille.jpg
-	   :align: center
+       :align: center
 
 Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones
 d’affichage.
@@ -29,14 +29,14 @@ Masquer ou afficher la zone de travail
 Depuis la version 3.6, la zone de travail est rétractable:
 
   .. image:: ../../images/Onglets-Retractable1.jpg
-	   :align: center
+       :align: center
 
 Un clic sur l'icône présente sur le côté droit permet de la masquer quasi -
 entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la
 consultation des Résultats :
 
   .. image:: ../../images/Onglets-Retractable.jpg
-	   :align: center
+       :align: center
 
 Un clic sur n'importe quelle partie de la zone la fait réapparaître instantanément.
 
@@ -79,13 +79,13 @@ des résultats**. Le bouton "Préférences" se trouve en bas de la fenêtre, en 
 de la zone d'affichage des Résultats.
 
   .. image:: ../../images/Affichage-Preferences.jpg
-	   :align: center
+       :align: center
 
 Un clic sur "Préférences" ouvre une fenêtre Overlay, comme ci-dessus. Puis les
 différents paramètres:
 
   .. image:: ../../images/Affichage-Preferences1.jpg
-	   :align: center
+       :align: center
 
 Parmi ces paramètres, l'utilisateur peut:
 
@@ -113,7 +113,7 @@ quelle recherche afficher automatiquement au démarrage: la dernière question p
 les publications ou bien encore l'aide :
 
   .. image:: ../../images/Affichage-Preferences2.jpg
-	   :align: center
+       :align: center
 
 Une fois les réglages faits, cliquer n’importe où dans l’interface pour fermer
 la fenêtre Overlay.
