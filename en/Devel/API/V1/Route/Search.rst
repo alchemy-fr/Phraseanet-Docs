@@ -86,7 +86,7 @@ Search the query “house” in the “Object” or “Credit” fields :
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credut&query=house" https://mydomain.tld/api/v1/search/
+    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/search/
 
 
 

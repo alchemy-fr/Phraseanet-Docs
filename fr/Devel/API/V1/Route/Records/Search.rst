@@ -81,7 +81,7 @@ Rechercher les enregistrement qui correspondent à la requête "house" dans les 
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credut&query=house" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/records/search/
 
 
 Exemple de réponse
