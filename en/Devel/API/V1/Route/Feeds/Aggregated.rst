@@ -46,7 +46,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/feeds/content/",
             "response_time": "2012-10-01T14:39:35+02:00",
             "http_code": 200,

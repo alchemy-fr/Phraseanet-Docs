@@ -1,6 +1,34 @@
 API Changelog
 =============
 
+1.3
+---
+
+La version 1.3 de l'API Phraseanet est disponible depuis la version 3.7.5.
+Cette mise à jour est complètement retrocompatible avec la précédente version
+et introduit le concept de Reportage dans celle-ci.
+
+Nouvelles routes
+****************
+
+ - :doc:`stories/story <V1/Route/Stories/Story>` Route reportage.
+ - :doc:`stories/story <V1/Route/Stories/Embed>` Route reportage embed.
+ - :doc:`search <V1/Route/Search>` Le nouveau moteur de recherche compatible avec
+   les reportages.
+
+Routes dépréciées
+*****************
+
+ - :doc:`records/search <V1/Route/Records/Search>`. Nous encourageons vivement
+   les développeurs à mettre à jour leurs applications pour supporter la
+   nouvelle route de recherche.
+
+Updated routes
+**************
+
+ - :doc:`records/search <V1/Route/Records/Related>` liste maintenant les
+   reportages contenant le record aux côtés des paniers.
+
 1.2
 ---
 
@@ -401,7 +429,7 @@ d'un record peut désormais être nulle :
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/records/2/132/",
             "response_time": "2012-06-13T14:06:21+02:00",
             "http_code": 200,

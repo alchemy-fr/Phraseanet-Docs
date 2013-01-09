@@ -24,7 +24,7 @@ Voici un aperçu de la Zone de travail (ou WorkZone). Ci-dessous, voici la vue
 par défaut, à savoir les Paniers et des Reportages :
 
   .. image:: ../../images/Onglets-General.jpg
-	   :align: center
+       :align: center
 
 Le premier onglet de la zone de travail regroupe les paniers et les reportages.
 Ils servent à mettre de côté des documents.
@@ -47,7 +47,7 @@ Apres avoir effectué une recherche, cliquer sur "Propositions".
 L’onglet s’affiche, le thesaurus interprète la requête et affiche les propositions.
 
   .. image:: ../../images/Onglet-Propositions.jpg
-	   :align: center
+       :align: center
 
 Chaque proposition est cliquable et permet de lancer une nouvelle recherche.
 
@@ -62,15 +62,15 @@ Les Thesauri ouverts sont présentés sous forme d’"arbres".
 
 Cliquer sur l’onglet Thesaurus
 
-	  .. image:: ../../images/Rechercher-thesaurus1.jpg
-	   :align: center
+      .. image:: ../../images/Rechercher-thesaurus1.jpg
+       :align: center
 
 Cliquer sur les branches du thesaurus pour le déployer.
 
 Double cliquer sur un terme pour lancer la recherche.
 
-	  .. image:: ../../images/Rechercher-thesaurus2.jpg
-	   :align: center
+      .. image:: ../../images/Rechercher-thesaurus2.jpg
+       :align: center
 
 Onglet Candidats
 ****************
@@ -88,8 +88,8 @@ par champs.
 
 Les termes candidats s’affichent:
 
-	  .. image:: ../../images/Onglets-candidats1.jpg
-	   :align: center
+      .. image:: ../../images/Onglets-candidats1.jpg
+       :align: center
 
 Cliquer sur les symboles "plus" pour afficher les branches et les termes candidats.
 
@@ -98,8 +98,8 @@ terme pour afficher le menu contextuel du terme.
 
 Le menu contextuel du terme s’affiche:
 
-	  .. image:: ../../images/Onglets-candidats2.jpg
-	   :align: center
+      .. image:: ../../images/Onglets-candidats2.jpg
+       :align: center
 
   * Cliquer sur Accepter en xx "langue du terme"
 
@@ -118,5 +118,5 @@ ne proposant plus que les branches et sous branches, jusqu’au terme trouvé.
 En cliquant un terme dans l’arbre, l’application lance une requête thesaurus sur
 les bases ouvertes.
 
-	  .. image:: ../../images/Rechercher-thesaurus3.jpg
-	   :align: center
+      .. image:: ../../images/Rechercher-thesaurus3.jpg
+       :align: center

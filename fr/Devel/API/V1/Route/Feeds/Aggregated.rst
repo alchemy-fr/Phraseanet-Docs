@@ -24,7 +24,7 @@ Paramètres
    Paramètres               Type           Information
   ======================== ============== =================================
    offset_start             entier         La première entrée à trouver
-   per_page	                entier         Le nombre d'entrée à trouver
+   per_page                 entier         Le nombre d'entrée à trouver
   ======================== ============== =================================
 
 Attribut de la réponse
@@ -34,7 +34,7 @@ Attribut de la réponse
    Attribut           Description
   =============== ================================
    total_entries   Le nombre d'entrées
-   entries 	       La liste des entrées
+   entries         La liste des entrées
    offset_start    Le numéro de la première entrée
    per_page        La quantitée d'entrée à retourner
   =============== ================================
@@ -46,7 +46,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/feeds/content/",
             "response_time": "2012-10-01T14:39:35+02:00",
             "http_code": 200,

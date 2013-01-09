@@ -4,6 +4,7 @@ Routes
 .. toctree::
     :hidden:
 
+    Route/Search
     Route/Databox/List
     Route/Databox/Collections
     Route/Databox/Status
@@ -22,6 +23,8 @@ Routes
     Route/Records/SetStatus
     Route/Records/SetMetadatas
     Route/Records/SetCollection
+    Route/Stories/Embed
+    Route/Stories/Story
     Route/Baskets/Add
     Route/Baskets/Content
     Route/Baskets/Delete
@@ -54,16 +57,20 @@ Par exemple, les propriétés d'un enregistrement ou d'une databox :
 +===========+========================================+================================================+======================================================+
 | api       |* :doc:`racine <../Root>`               |                                                |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
+| search    |* :doc:`search <Route/Search>`          |                                                |                                                      |
++-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | databox   |* :doc:`list <Route/Databox/List>`      |* :doc:`collections <Route/Databox/Collections>`|                                                      |
 |           |                                        |* :doc:`status <Route/Databox/Status>`          |                                                      |
 |           |                                        |* :doc:`metadatas <Route/Databox/Metadatas>`    |                                                      |
 |           |                                        |* :doc:`termsOfUse <Route/Databox/TermsOfUse>`  |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | records   |* :doc:`search <Route/Records/Search>`  |* :doc:`metadatas <Route/Records/Metadatas>`    |* :doc:`setstatus <Route/Records/SetStatus>`          |
-|           |                                        |* :doc:`status <Route/Records/Status>`          |* :doc:`setcollection <Route/Records/SetCollection>`  |
+|           |* :doc:`record <Route/Records/Record>`  |* :doc:`status <Route/Records/Status>`          |* :doc:`setcollection <Route/Records/SetCollection>`  |
 |           |                                        |* :doc:`embed <Route/Records/Embed>`            |* :doc:`setmetadatas <Route/Records/SetMetadatas>`    |
 |           |                                        |* :doc:`related <Route/Records/Related>`        |* :doc:`add <Route/Records/Add>`                      |
-|           |                                        |* :doc:`record <Route/Records/Record>`          |                                                      |
+|           |                                        |                                                |                                                      |
++-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
+| stories   |* :doc:`record <Route/Stories/Story>`   |* :doc:`embed <Route/Stories/Embed>`            |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | baskets   |* :doc:`list <Route/Baskets/List>`      |* :doc:`content <Route/Baskets/Content>`        |* :doc:`setname <Route/Baskets/SetName>`              |
 |           |* :doc:`add <Route/Baskets/Add>`        |                                                |* :doc:`setdescription <Route/Baskets/SetDescription>`|

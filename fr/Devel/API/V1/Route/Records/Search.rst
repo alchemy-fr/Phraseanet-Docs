@@ -6,6 +6,9 @@ A propos
 
   Retourne la liste des documents trouvés
 
+  Cette route est dépréciée depuis la version 1.3 en faveur de
+  :doc:`search <../Search>`.
+
   .. code-block:: bash
 
     /api/v1/records/search/
@@ -78,7 +81,7 @@ Rechercher les enregistrement qui correspondent à la requête "house" dans les 
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credut&query=house" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/records/search/
 
 
 Exemple de réponse
@@ -88,7 +91,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "POST /api/v1/records/search/",
             "response_time": "2012-06-29T18:12:19+02:00",
             "http_code": 200,

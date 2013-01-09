@@ -7,7 +7,7 @@ you can verify your configuration. At root of Phraseanet :
   .. code-block:: bash
 
     php bin/console check:system
-	php bin/console check:config
+    php bin/console check:config
 
   .. seealso:: Use of :doc:`Konsole Kommander <Console>`
 

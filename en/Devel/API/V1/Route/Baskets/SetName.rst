@@ -43,7 +43,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "POST /api/v1/baskets/148/setname/",
             "response_time": "2012-06-29T18:29:15+02:00",
             "http_code": 200,

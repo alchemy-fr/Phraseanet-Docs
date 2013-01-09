@@ -4,7 +4,7 @@ Récupérer un enregistrement Phraseanet
 A propos
 --------
 
-  Retourne les informations d'un document enregistré dans Phraseanet
+  Retourne les informations d'un document enregistré dans Phraseanet.
 
   .. code-block:: bash
 
@@ -23,8 +23,8 @@ Paramètres
   ======================== ============== ==============================
    Paramètres               Type           Information
   ======================== ============== ==============================
-   databox_id 	            entier 	       L'identifiant de la databox auquel appartient le document
-   record_id 	            entier 	       L'identifiant du document sélectionné
+   databox_id               entier         L'identifiant de la databox auquel appartient le document
+   record_id                entier         L'identifiant du document sélectionné
   ======================== ============== ==============================
 
 Attribut de la réponse
@@ -33,7 +33,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-   record 	  L'enregistrement sélectionné
+   record     L'enregistrement sélectionné
   ========== ================================
 
 Exemple de réponse
@@ -43,7 +43,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/records/1/633/",
             "response_time": "2012-06-29T18:06:39+02:00",
             "http_code": 200,

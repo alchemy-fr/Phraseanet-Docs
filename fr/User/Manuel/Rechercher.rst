@@ -34,7 +34,7 @@ La Recherche simple se trouve dans la partie centrale de la page, au-dessus de l
 palette des Actions et de l’affichage des Résultats.
 
   .. image:: ../../images/Rechercher-simple.jpg
-	   :align: center
+       :align: center
 
 Saisir un critère de recherche.
 
@@ -121,7 +121,7 @@ Les mots, réponses aux questions sont surlignés dans la description. Ici, un e
 avec le terme "mer", qui est surligné dans le champ Mot clé.
 
   .. image:: ../../images/Rechercher-motdanslegende.jpg
-	   :align: center
+       :align: center
 
 Recherche avec les opérateurs de proximité
 ******************************************
@@ -176,13 +176,13 @@ contrairement à la version précédente : Cliquez simplement sur la roue situé
 entre le champ pour la recherche et le bouton «Rechercher».
 
   .. image:: ../../images/Rechercheavancee1.jpg
-	   :align: center
+       :align: center
 
 Une fenêtre Overlay s’ouvre. La nouvelle Recherche Avancée se présente en deux
 parties, pour une meilleure visibilité :
 
   .. image:: ../../images/Rechercheavancee0.jpg
-	   :align: center
+       :align: center
 
 D’un côté, le choix des collections dans lesquelles effectuer la recherche.
 Choisir les :term:`bases <base>` et collections où rechercher.
@@ -220,7 +220,7 @@ Production
 **********
 
   .. image:: ../../images/Rechercher-Prod1.jpg
-	   :align: left
+       :align: left
 
 Ci-contre, la zone de recherche dans l'interface de *Production*:
 Voici la `Recherche Simple`_.
@@ -245,7 +245,7 @@ Pour effectuer une recherche dans l'interface de Production:
 Classic
 *******
   .. image:: ../../images/Rechercher-Classic1.jpg
-	   :align: right
+       :align: right
 
 Trois onglets dans l'interface *Classic*, au-dessus de la zone de recherche :
 

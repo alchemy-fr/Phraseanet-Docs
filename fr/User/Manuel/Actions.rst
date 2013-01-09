@@ -17,8 +17,8 @@
     Administration <Administration>`.
 
 **Les fonctions de base:**
-	* :doc:`Exporter <Exporter>`
-	* `Imprimer`_
+    * :doc:`Exporter <Exporter>`
+    * `Imprimer`_
 
 **Les fonctions étendues:**
     * :doc:`Editer <Editer>`
@@ -34,13 +34,13 @@ La Palette des Actions se trouve dans l'interface de *Phraseanet Production* dan
 la partie haute de la fenêtre, au-dessous du formulaire de recherche.
 
     .. image:: ../../images/Palette.jpg
-	     :align: center
+         :align: center
 
 A droite de chaque bouton d'action majeur se trouve une flèche sur laquelle l'
 utilisateur peut cliquer pour dérouler l'ensemble des actions disponibles.
 
     .. image:: ../../images/Actions-PaletteBeta.jpg
-	     :align: center
+         :align: center
 
 Les fonctions de base
 ---------------------
@@ -61,7 +61,7 @@ descriptions des documents.
 La fenêtre Imprimer s'ouvre.
 
   .. image:: ../../images/Actions-Imprimer1.jpg
-	   :align: center
+       :align: center
 
 Cocher les cases correspondant aux choix souhaités:
 
@@ -76,7 +76,7 @@ PDF (*Format Acrobat de Adobe* - un *Reader Acrobat* doit être installé sur le
 de travail).
 
   .. image:: ../../images/Actions-Imprimer2.jpg
-	   :align: center
+       :align: center
 
 Imprimer le document PDF sur l'imprimante de son choix ou l'enregistrer sur le
 disque dur de son poste de travail.
@@ -117,7 +117,7 @@ Le document ne se trouve plus dans la collection d'origine, mais dans la collect
 choisie.
 
   .. image:: ../../images/Actions-Deplacer.jpg
-	   :align: center
+       :align: center
 
 Supprimer
 *********
@@ -127,7 +127,7 @@ Cette icône permet de supprimer un :term:`enregistrement <Enregistrement>`
   * Sélectionner l'élément puis cliquer sur l'icône Corbeille.
 
   .. image:: ../../images/Actions-Supprimer.jpg
-	   :align: center
+       :align: center
 
 Un message demande confirmation afin de valider votre choix.
 
@@ -142,7 +142,7 @@ remplacement d’un document d'origine, ou d’afficher toutes les informations 
 La fenêtre Outils Images s'ouvre.
 
   .. image:: ../../images/Actions-Outilsimages.jpg
-	   :align: center
+       :align: center
 
 Choisir un des onglets proposés:
 
@@ -154,7 +154,7 @@ Choisir un des onglets proposés:
     présentation personnalisée pour les media vidéos.
 
   .. image:: ../../images/Actions-OutilsThumbnailVideo.jpg
-	   :align: center
+       :align: center
 
   * **Retourner sous défs** : une rotation des vignettes et Images de choix des
     documents sélectionnés.
@@ -207,7 +207,7 @@ La fenêtre s'ouvre.
   * Cliquer sur Valider pour enregistrer les changements.
 
   .. image:: ../../images/Actions-Proprietes-status.jpg
-	   :align: center
+       :align: center
 
 **Changer le type des documents**
 
@@ -226,4 +226,4 @@ La fenêtre s'ouvre.
   * Cliquer sur Valider pour enregistrer les modifications.
 
   .. image:: ../../images/Actions-Proprietes-types.jpg
-	   :align: center
+       :align: center
