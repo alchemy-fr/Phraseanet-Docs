@@ -73,19 +73,19 @@ ainsi que tous les enregistrements de la databox 52 qui ont le status 5 à "off"
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/search/
 
 Rechercher tous les enregistrement sur la collection 85:
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/search/
 
 Rechercher les enregistrement qui correspondent à la requête "house" dans les champs "Object" ou "Credit"
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credut&query=house" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credut&query=house" https://mydomain.tld/api/v1/search/
 
 
 Exemple de réponse

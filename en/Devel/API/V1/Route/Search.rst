@@ -74,19 +74,19 @@ only records with status number 4 “on” are returned.
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/search/
 
 Request all records on collection base_id 85 :
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/search/
 
 Search the query “house” in the “Object” or “Credit” fields :
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credut&query=house" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credut&query=house" https://mydomain.tld/api/v1/search/
 
 
 
