@@ -14,7 +14,7 @@ Tableau de bord
 ---------------
 
   .. image:: ../../images/Administration-tableaudebord.jpg
-	   :align: center
+       :align: center
 
 
 **Accessible aux seuls administrateurs Phraseanet**, le *tableau de bord* permet d'ajouter
@@ -36,7 +36,7 @@ graphique permettant de modifier des paramètres d'installation et de configurat
 de Phraseanet.
 
   .. image:: ../../images/Administration-setup.jpg
-	   :align: center
+       :align: center
 
 Setup propose un jeu de formulaires permettant notamment :
 
@@ -66,7 +66,7 @@ Elle informe de l'application Phraseanet utilisée, de l'adresse "IP", ainsi que
 de la date et de l'heure de connexion au système.
 
   .. image:: ../../images/Administration-utilisateurlive.jpg
-	   :align: center
+       :align: center
 
   .. note:: Phraseanet repose sur un mécanisme de *sessions persistantes*.
             Les dates et heures de connexion correspondent à celles de l'initialisation de
@@ -80,7 +80,7 @@ la rubrique publications permet de gérer les flux media RSS diffusés à partir
 l'application Phraseanet.
 
   .. image:: ../../images/Administration-publications.jpg
-	   :align: center
+       :align: center
 
 L'écran Publications dresse la liste des flux média disponibles en publication et
 permet d'en créer, d'en modifier et d'en supprimer.
@@ -119,7 +119,7 @@ de la base de destination).
  .. todo:: Update de la capture pour 3.7
 
   .. image:: ../../images/Administration-taches.jpg
-	   :align: center
+       :align: center
 
 Nouvelle tâche
 **************
@@ -130,13 +130,13 @@ La solution est livrée en standard avec un jeu de tâches exploitables et l'uti
 peut en créer d'autres.
 
   .. image:: ../../images/Administration-nouvelletache.jpg
-	   :align: center
+       :align: center
 
 Les paramètres des tâches sont stockés sous forme de fichiers XML. Dans certains
 cas, les fichiers XML de paramétrage proposent une interface de saisie.
 
   .. image:: ../../images/Administration-editertache.jpg
-	   :align: center
+       :align: center
 
 Après avoir cliqué sur *nouvelle tâche* :
 

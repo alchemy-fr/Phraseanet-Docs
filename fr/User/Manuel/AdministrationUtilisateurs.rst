@@ -22,7 +22,7 @@ Par défaut, l'interface affiche la liste des utilisateurs référencés sur la 
 Phraseanet.
 
   .. image:: ../../images/General-Administration.jpg
-	   :align: center
+       :align: center
 
 
 Notions relatives aux utilisateurs et à leurs droits
@@ -47,7 +47,7 @@ utilisateurs de donner plus de droits qu'il n'en a lui-même**.
         Il est signalé par une icône de fantôme dans la liste des utilisateurs.
 
   .. image:: ../../images/Administration-utilisateurfantome.jpg
-	   :align: center
+       :align: center
 
 
 
@@ -59,7 +59,7 @@ email, pays, société, dernier modèle; ou bien entrer dans le champ "Commence 
 le début de l'identifiant de l'utilisateur afin de le retrouver dans la liste.
 
   .. image:: ../../images/General-Administration-trier.jpg
-	   :align: center
+       :align: center
 
 Créer, modifier, supprimer un utilisateur
 -----------------------------------------
@@ -68,19 +68,19 @@ Créer un nouvel utilisateur
 Cliquer sur le bouton Nouvel utilisateur.
 
   .. image:: ../../images/Administration-nouvelutilisateur1.jpg
-	   :align: center
+       :align: center
 
 Une fenêtre overlay s'affiche.
 
 Saisir le login du nouvel utilisateur et cliquer sur **Créer un utilisateur**.
 
   .. image:: ../../images/Administration-nouvelutilisateur2.jpg
-	   :align: center
+       :align: center
 
 La fenêtre de gestion des droits de l'utilisateur créé s'ouvre.
 
   .. image:: ../../images/Administration-nouvelutilisateur3.jpg
-	   :align: center
+       :align: center
 
 Pour savoir comment gérer les droits, se reporter à la section `Edition des droits`_ .
 
@@ -88,7 +88,7 @@ Pour éditer les renseignements relatifs aux coordonnées de l'utilisateur, cliq
 sur l'onglet **Informations** puis éditer le formulaire.
 
   .. image:: ../../images/Administration-nouvelutilisateur4.jpg
-	   :align: center
+       :align: center
 
 Appliquer les modifications apportées en cliquant sur le bouton **Valider**.
 
@@ -115,17 +115,17 @@ modèle.
 Dans la liste des utilisateurs, un modèle est repéré par une icône **M**.
 
   .. image:: ../../images/Administration-modeleutilisateur.jpg
-	   :align: center
+       :align: center
 
 Pour créer un modèle utilisateur, cliquer sur "Nouveau modèle".
 
   .. image:: ../../images/Administration-Barre-modele.jpg
-	   :align: center
+       :align: center
 
 Une fenêtre overlay présente un formulaire de saisie.
 
   .. image:: ../../images/Administration-modele1.jpg
-	   :align: center
+       :align: center
 
 Donner un nom au nouveau modèle puis valider le formulaire.
 
@@ -133,7 +133,7 @@ Une fenêtre s'ouvre et présente le formulaire d'édition des "Droits" pour éd
 les droits de ce nouveau modèle.
 
   .. image:: ../../images/Administration-editionmodele.jpg
-	   :align: center
+       :align: center
 
 Une fois le modèle paramétré, valider le formulaire.
 
@@ -141,7 +141,7 @@ Il est possible de rattacher plusieurs utilisateurs au modèle et de gérer
 collectivement les droits de plusieurs utilisateurs à travers les modèles.
 
   .. image:: ../../images/Administration-appliquermodele.jpg
-	   :align: center
+       :align: center
 
 L'accès invité
 --------------
@@ -152,12 +152,12 @@ un accès (temporaire) à l'application.
 Pour configurer l'accès invité, cliquer sur le lien **Réglage de l'accès invité**.
 
   .. image:: ../../images/Administration-Barre-invite.jpg
-	   :align: center
+       :align: center
 
 Les droits de l'accès invité sont paramétrables dans cet onglet.
 
   .. image:: ../../images/Administration-parametreinvite.jpg
-	   :align: center
+       :align: center
 
 
 Edition des droits
@@ -180,7 +180,7 @@ Ce cadre donne la liste des bases et des collections disponibles et auxquelles
 l'utilisateur peut avoir accès.
 
   .. image:: ../../images/Administration-droits.jpg
-	   :align: center
+       :align: center
 
 Les noms des collections apparaîssent sous les noms des bases auxquelles elles
 appartiennent. La collection est la notion utilisée dans les interfaces *Production*,
@@ -310,7 +310,7 @@ lignes de validation que de demandes. Un "rollover" sur le nom permet d’affich
 les informations relatives au demandeur.
 
   .. image:: ../../images/Administration-demande.jpg
-	   :align: center
+       :align: center
 
 Choisir les droits à attribuer par collections en cochant les cases. L'utilisateur peut:
 

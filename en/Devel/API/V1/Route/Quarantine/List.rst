@@ -24,7 +24,7 @@ Parameters
    Parameters               Type           Information
   ======================== ============== =============
    offset_start             integer        The first entry to retrive
-   per_page	                integer        The number of entry to retrieve
+   per_page                 integer        The number of entry to retrieve
   ======================== ============== =============
 
 Response Fields
@@ -45,7 +45,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/quarantine/list/",
             "response_time": "2012-06-29T17:53:35+02:00",
             "http_code": 200,

@@ -42,7 +42,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "POST /api/v1/monitor/task/2/start/",
             "response_time": "2012-06-13T14:43:00+02:00",
             "http_code": 200,

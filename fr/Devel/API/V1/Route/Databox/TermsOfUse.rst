@@ -44,7 +44,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/databoxes/1/termsOfUse/",
             "response_time": "2012-09-27T16:49:20+02:00",
             "http_code": 200,

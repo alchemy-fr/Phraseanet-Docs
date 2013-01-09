@@ -23,8 +23,8 @@ Parameters
   ======================== ============== ==============================
    Parameters               Type           Information
   ======================== ============== ==============================
-   databox_id 	            integer 	   The databox id of the record
-   record_id 	            integer 	   The record_id
+   databox_id               integer        The databox id of the record
+   record_id                integer        The record_id
   ======================== ============== ==============================
 
 Response Fields
@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   record 	  The record
+   record     The record
   ========== ================================
 
 Response sample
@@ -43,7 +43,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/records/1/633/",
             "response_time": "2012-06-29T18:06:39+02:00",
             "http_code": 200,

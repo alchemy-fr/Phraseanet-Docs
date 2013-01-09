@@ -33,7 +33,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-   status 	  The list of the status of the record
+   status     The list of the status of the record
   ========== ================================
 
 Response sample
@@ -43,7 +43,7 @@ Response sample
 
    {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/records/1/638/status/",
             "response_time": "2012-06-29T16:24:03+02:00",
             "http_code": 200,

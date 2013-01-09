@@ -4,7 +4,10 @@ Records Search
 About
 -----
 
-  Return the result of record search
+  Return the result of record search.
+
+  This route is deprecated since version 1.3 in favor of
+  :doc:`search <../Search>`.
 
   .. code-block:: bash
 
@@ -80,7 +83,7 @@ Search the query “house” in the “Object” or “Credit” fields :
 
   .. code-block:: bash
 
-    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credut&query=house" https://mydomain.tld/api/v1/records/search/
+    curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/records/search/
 
 
 Response sample
@@ -90,7 +93,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "POST /api/v1/records/search/",
             "response_time": "2012-06-29T18:12:19+02:00",
             "http_code": 200,

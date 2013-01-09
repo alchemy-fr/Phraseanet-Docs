@@ -161,7 +161,7 @@ Paramètrage
 
   * Database : choix de la Base de données (databox)
   * intervalle d’exécution :  intervalle d’exécution de la tache
-  * Collection : collection d'origine ====>	collection de destination
+  * Collection : collection d'origine ====> collection de destination
   * Status : status-bit à l'origine   ====> status-bit final
 
 .. todo:: Batch upload process (XML Service)

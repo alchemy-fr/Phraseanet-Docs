@@ -23,9 +23,9 @@ Paramètres
   ======================== ============== =============
    Paramètres               Type           Information
   ======================== ============== =============
-   feed_id	                entier         L'identifiant du flux sélectionné
+   feed_id                  entier         L'identifiant du flux sélectionné
    offset_start             entier         La première entrée à retrouver
-   per_page	                entier         Le nombre d'entrée à retrouver
+   per_page                 entier         Le nombre d'entrée à retrouver
   ======================== ============== =============
 
 Attribut de la réponse
@@ -47,7 +47,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/feeds/3978/content/",
             "response_time": "2012-06-29T17:47:21+02:00",
             "http_code": 200,

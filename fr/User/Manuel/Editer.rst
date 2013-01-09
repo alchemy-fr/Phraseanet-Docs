@@ -30,7 +30,7 @@ Editer des documents
     champ lié une sources de données`_.
 
 .. image:: ../../images/Prod-Editer.jpg
-	   :align: center
+       :align: center
 
 * -> Sélectionner des documents, un panier ou un reportage
 
@@ -79,14 +79,14 @@ Editer des champs de type texte intégral
 * -> Saisir les informations souhaitées
 
 .. image:: ../../images/Prod-Editer-texte.jpg
-	   :align: center
+       :align: center
 
 Si le champ contient déjà des valeurs et que celles sont hétérogènes "xxxxx"
 entre les différents documents, il est possible d’ajouter les nouveaux termes
 saisis sur chaque fiche en cliquant sur le bouton "ajouter".
 
 .. image:: ../../images/Prod-Editer-texte-ajouter.jpg
-	   :align: center
+       :align: center
 
 
 Editer des champs textuels multi-valués
@@ -101,7 +101,7 @@ Les mots clés communs à toutes les notices sont en caractères blancs, ceux
 présents seulement sur certaines notices en Orange.
 
 .. image:: ../../images/Prod-Editer-textemulti.jpg
-	   :align: center
+       :align: center
 
 * -> Cliquer sur un des mots clés "Orange".
 
@@ -131,7 +131,7 @@ Cette possibilité facilite la saisie d'informations dans des champs en
 proposant un dispositif d'auto complétion intuitif.
 
 .. image:: ../../images/Prod-Editer-source_de_donnees.jpg
-	   :align: center
+       :align: center
 
 Placé sur un champ lié à une source de données, ...
 
@@ -156,7 +156,7 @@ thésaurus.
 * => L'onglet thésaurus s'actualise et affiche les termes commençant par...
 
 .. image:: ../../images/Prod-Editer-thesaurus.jpg
-	   :align: center
+       :align: center
 
 * -> Faire un double clic sur le terme à indexer
 
@@ -179,7 +179,7 @@ Phraseanet Administration <AdministrationBasesCollections>`
 
 
 .. image:: ../../images/Prod-Editer-valeurssugg.jpg
-	   :align: center
+       :align: center
 
 
 * -> Cliquer sur le menu contextuel
@@ -210,7 +210,7 @@ sur les documents en cours d’édition.
 * -> Cliquer sur l’onglet Rechercher / Remplacer
 
 .. image:: ../../images/Prod-Editer-chercherremplacer.jpg
-	   :align: center
+       :align: center
 
 * -> Restreindre si nécessaire la fonction à un champ en particulier,
   à partir du menu déroulant, par défaut dans tous les champs
@@ -241,7 +241,7 @@ Un modèle est créé à partir d'une notice en cours d'édition.
 * -> Cliquer sur Ajouter
 
 .. image:: ../../images/Prod-Editer-modeles.jpg
-	   :align: center
+       :align: center
 
 * -> Donner un titre au modèle
 * -> Choisir les champs à reprendre, les champs contenant des termes sont
@@ -303,7 +303,7 @@ ou
 
 
 .. image:: ../../images/Prod-Editer-reportage.jpg
-	   :align: center
+       :align: center
 
 Les reportages ont par défaut une image de "dossier" pour les illustrer.
 

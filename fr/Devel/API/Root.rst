@@ -51,7 +51,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/",
             "response_time": "2012-06-13T15:19:13+02:00",
             "http_code": 200,

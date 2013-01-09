@@ -34,7 +34,7 @@ Attribut de la réponse
   ========== ================================
    Attribut   Description
   ========== ================================
-   record 	  L'enregistrement mis à jour
+   record     L'enregistrement mis à jour
   ========== ================================
 
 Exemple de réponse
@@ -44,7 +44,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "POST /api/v1/records/52/4102/setcollection/",
             "response_time": "2011-07-27T13:59:57+02:00",
             "http_code": 200,

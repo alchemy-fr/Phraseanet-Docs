@@ -4,7 +4,7 @@ Records Embed
 About
 -----
 
-  Returns some permalinks to the document subdefinitions to embed it
+  Returns permalinks to medias attached to the record
 
   .. code-block:: bash
 
@@ -34,7 +34,7 @@ following parameters :
    Parameters               Type           Information
   ======================== ============== ==============================
    databox_id               integer        The databox id of the record
-   record_id 	            integer        The record_id
+   record_id                integer        The record_id
    devices                  array          An array of devices to restrict the list (optionnal)
    mimes                    array          An array of mime type to restrict the list (optionnal)
   ======================== ============== ==============================
@@ -45,7 +45,7 @@ Response Fields
   ========== ================================
    Field      Description
   ========== ================================
-    embed 	  The list of the sub wiews of the record
+    embed     The list of the sub views of the record
   ========== ================================
 
 Response sample
@@ -55,7 +55,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/records/1/633/embed/",
             "response_time": "2012-06-29T16:02:40+02:00",
             "http_code": 200,

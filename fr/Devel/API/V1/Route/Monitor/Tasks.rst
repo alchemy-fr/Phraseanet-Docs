@@ -38,7 +38,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/monitor/tasks/",
             "response_time": "2012-06-13T14:38:11+02:00",
             "http_code": 200,
