@@ -99,7 +99,7 @@ Example that returns records :
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "POST /api/v1/records/search/",
             "response_time": "2012-06-29T18:12:19+02:00",
             "http_code": 200,

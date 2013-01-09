@@ -429,7 +429,7 @@ d'un record peut désormais être nulle :
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/records/2/132/",
             "response_time": "2012-06-13T14:06:21+02:00",
             "http_code": 200,

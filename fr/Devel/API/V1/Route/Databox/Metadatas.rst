@@ -42,7 +42,7 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/databoxes/1/metadatas/",
             "response_time": "2012-06-29T16:22:10+02:00",
             "http_code": 200,

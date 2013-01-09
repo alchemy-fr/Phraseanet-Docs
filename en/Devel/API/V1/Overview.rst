@@ -67,7 +67,7 @@ Response :
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/feeds/288/content/",
             "response_time": "2011-07-27T15:52:04+02:00",
             "http_code": 200,
@@ -104,7 +104,7 @@ Response :
 
     foobar({
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/feeds/288/content/",
             "response_time": "2011-07-27T15:52:04+02:00",
             "http_code": 200,

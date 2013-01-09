@@ -60,7 +60,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "POST /api/v1/records/52/4102/setstatus/",
             "response_time": "2011-07-27T14:08:06+02:00",
             "http_code": 200,

@@ -38,7 +38,7 @@ Response sample
 
     {
         "meta": {
-            "api_version": "1.2",
+            "api_version": "1.3",
             "request": "GET /api/v1/monitor/scheduler/",
             "response_time": "2012-08-31T15:55:06+02:00",
             "http_code": 200,
