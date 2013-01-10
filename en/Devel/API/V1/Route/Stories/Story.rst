@@ -8,7 +8,7 @@ About
 
   .. code-block:: bash
 
-    /api/v1/storiess/{databox_id}/{story_id}/
+    /api/v1/stories/{databox_id}/{story_id}/
 
   ======================== =====
    Informations
