@@ -96,5 +96,6 @@ application, La page des paramètres de l'application s'affiche.
 .. seealso::  Phraseanet s'appuie sur le protocole d'authentification oAuth2.0.
             Afin de mieux appréhender le processus de création et
             d'authentification des applications clientes à l'API Phraseanet nous
-            invitons les développeurs à lire la RFC du protocole
-           `http://tools.ietf.org/html/draft-ietf-oauth-v2 <http://tools.ietf.org/html/draft-ietf-oauth-v2>`_.
+            invitons les développeurs à lire la RFC du protocole `Oauth2`_.
+
+.. _Oauth2: http://tools.ietf.org/html/draft-ietf-oauth-v2

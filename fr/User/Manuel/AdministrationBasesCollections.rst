@@ -173,8 +173,8 @@ Cliquer sur le titre de la collection pour afficher ses informations.
        :align: center
 
 Cet écran donne les informations essentielles sur la collection.
-Il permet de la renommer, de la `désactiver <Désactiver une collection>`_
-(arrêter sa publication), de la vider ou de la supprimer.
+Il permet de la renommer, de la désactiver (voir section
+:ref:`activate-collection`), de la vider ou de la supprimer.
 
 Afficher les détails d'une collection
 *************************************
@@ -235,8 +235,11 @@ Ou
     ligne de pixels des fichiers (ceci nécessite un paramétrage des informations
     à afficher sur le bandeau "champs, logo").
 
-Désactiver une collection (ou l'activer)
-****************************************
+.. _activate-collection:
+
+Activer / Désactiver une collection
+***********************************
+
 Par défaut, les collections crées sont activées. Cela signifie qu'elles sont
 publiées et que les utilisateurs qui y ont accès peuvent parcourir son contenu.
 

@@ -18,9 +18,7 @@ To report an issue, ask for help or give ideas for new options, follow this link
 Phraseanet is free and open source. You can contribute to documentation,
 translations, libraries or core code, you can contribute to it.
 
-You can contribute by `pushing your code <http://help.github.com/send-pull-requests/>`_
-into the following repositories :
-
+You can contribute by pushing `pull-requests`_ into the following repositories :
 
 * **Phraseanet**
 
@@ -43,5 +41,4 @@ into the following repositories :
 
   https://github.com/alchemy-fr/Phraseanet-Clients/
 
-
-
+.. _pull-requests: http://help.github.com/send-pull-requests/

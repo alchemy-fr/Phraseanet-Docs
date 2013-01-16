@@ -12,10 +12,9 @@
     * Youtube
     * Dailymotion
 
-    Pour publier des documents multimédia vers ces sites, il est d'abord nécessaire de
-    sélectionner des documents, puis de lier ou de connecter son compte `Flickr
-    <http://www.flickr.com/>`_, `YouTube <http://www.youtube.com/>`_
-    ou `Dailymotion <http://www.dailymotion.com/>`_, à Phraseanet, et enfin d'en
+    Pour publier des documents multimédia vers ces sites, il est d'abord
+    nécessaire de sélectionner des documents, puis de lier ou de connecter son
+    compte `Flickr`_, `YouTube`_ ou `Dailymotion`_, à Phraseanet, et enfin d'en
     effectuer la publication.
 
 Sélection
@@ -89,3 +88,6 @@ Enfin, lancer Flickr. Les photos y sont bien présentes:
   .. image:: ../../images/Bridge-5.jpg
        :align: center
 
+.. _Flickr: http://www.flickr.com/
+.. _YouTube: http://www.youtube.com/
+.. _Dailymotion: http://www.dailymotion.com/

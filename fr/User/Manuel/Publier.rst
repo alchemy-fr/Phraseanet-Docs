@@ -58,15 +58,14 @@ Publier avec Bridge
 Le Bridge Phraseanet permet de publier ses photos et autres documents multimédia
 vers des sites extérieurs, tels que:
 
-    * Flickr
-    * Youtube
-    * Dailymotion
+    * `FlickR`_
+    * `YouTube`_
+    * `Dailymotion`_
 
-Pour publier des documents multimédia vers ces sites, il est d'abord nécessaire de
-sélectionner des documents, puis de lier ou de connecter son compte `Flickr
-<http://www.flickr.com/>`_, `YouTube <http://www.youtube.com/>`_
-ou `Dailymotion <http://www.dailymotion.com/>`_, à Phraseanet, et enfin d'en
-effectuer la publication.
+Pour publier des documents multimédia vers ces sites, il est d'abord nécessaire
+de sélectionner des documents, puis de lier ou de connecter son compte
+`FlickR`_, `YouTube`_ ou `Dailymotion`_, à Phraseanet, et enfin d'en effectuer
+la publication.
 
 Sélection
 *********
@@ -139,5 +138,6 @@ Enfin, lancer Flickr. Les photos y sont bien présentes:
   .. image:: ../../images/Bridge-5.jpg
        :align: center
 
-
-
+.. _Flickr: http://www.flickr.com/
+.. _YouTube: http://www.youtube.com/
+.. _Dailymotion: http://www.dailymotion.com/

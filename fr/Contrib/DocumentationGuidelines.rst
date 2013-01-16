@@ -86,9 +86,17 @@ Formatage
 
   * Lien externe ::
 
-    `Example.com <http://www.example.com/>`_
+        `example point com`_
 
-    `Example.com <http://www.example.com/>`_
+        .. _example point com: http://www.example.com/
+
+    `example point com`_
+
+    .. _example point com: http://www.example.com/
+
+    .. note::
+
+        Il est d'usage de placer les références de liens en pied de page.
 
   * Lien dans la documentation ::
 

@@ -14,7 +14,7 @@ Pour utiliser Phraseanet
 ------------------------
 L'utilisateur doit disposer d'un ordinateur équipé d'une connexion internet et
 d'un navigateur internet récent.
-Le support de Javascript doit être activé et le plug-in `Adobe Flash Player <http://get.adobe.com/fr/flashplayer/>`_
+Le support de Javascript doit être activé et le plug-in Adobe `FlashPlayer`_
 installé.
 
 Il doit disposer d'une adresse email valide à laquelle il a accès.
@@ -192,3 +192,5 @@ au :doc:`Push <Push>`.
 
 .. figure:: ../../images/General-Lightbox.jpg
    :align: center
+
+.. _FlashPlayer: http://get.adobe.com/fr/flashplayer/

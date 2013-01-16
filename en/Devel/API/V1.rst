@@ -24,10 +24,8 @@ Start easy easy :
   * Get familiar with :doc:`oAuth2 <V1/Authentication>`
   * Find your :doc:`route <V1/Routes>` !
 
-If you ever find bugs, please report them on the
-`mailing-list <https://groups.google.com/group/phraseanet-api>`_
-or create a ticket on our
-`public issue tracker <https://github.com/alchemy-fr/Phraseanet/issues>`_.
+If you ever find bugs, please report them on the `mailing-list`_ or create a
+ticket on our `bug tracker`_.
 
-
-
+.. _bug tracker: https://github.com/alchemy-fr/Phraseanet/issues
+.. _mailing-list: https://groups.google.com/group/phraseanet-api

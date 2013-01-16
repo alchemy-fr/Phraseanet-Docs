@@ -75,9 +75,17 @@ Format
 
   * External link ::
 
-    `Example.com <http://www.example.com/>`_
+        `example dot com`_
 
-    `Example.com <http://www.example.com/>`_
+        .. _example dot com: http://www.example.com/
+
+    `example dot com`_
+
+    .. _example dot com: http://www.example.com/
+
+    .. note::
+
+        You should reference links at the bottom of the page.
 
   * Internal link ::
 

@@ -11,8 +11,8 @@ Config.yml is the mail configuration file for Phraseanet. You can setup
 environments in it and select the one you want to use with the "environment"
 var.
 
-It uses the  `Yaml <https://wikipedia.org/wiki/Yaml>`_ format, which is easily
-understandable and human compatible.
+It uses the  `YAML`_ format, which is easily understandable and human
+compatible.
 
 This file requires two blocks.
 
@@ -79,8 +79,7 @@ These connections are shared among services (Phraseanet, ORM, ...)
   * user:  MySQL user
   * password: MySQL password
   * dbname: Database name (application box)
-  * driver: Driver name `see complete liste
-    <http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver>`_
+  * driver: Driver name see `complete Doctrine drivers list`_
   * charset: connection encoding
 
 Services.yml
@@ -148,8 +147,8 @@ Here's *doctrine_dev* service :
 
   .. seealso:: For more informations about doctrine caching systems http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>
 
-Twig `Templating service <http://en.wikipedia.org/wiki/Template_engine_%28web%29>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Twig `Templating service`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Here's *twig_prod*
 
@@ -172,9 +171,7 @@ Here's *twig_prod*
   * charset : Template engine internal character encoding
   * strict_variable : Stop rendering on unknown vars (for developers)
   * autoescape: adds automatic output escaping.
-  * optimizer : Switch to
-    `optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
-    mode
+  * optimizer : Switch for `optimizer Twig`_ mode
 
     .. seealso:: For more details on Twig environement options <http://twig.sensiolabs.org/doc/api.html#environment-options>
 
@@ -201,10 +198,10 @@ Doctrine activity.
   * output : Choose output format.
     Available mods.
 
-    * json : Formatting in `Json <https://wikipedia.org/wiki/Json>`_
-    * yaml : Formatting in `Yaml <https://wikipedia.org/wiki/Yaml>`_
+    * json : Formatting in `Json`_
+    * yaml : Formatting in `YAML`_
     * vdump : Display PHP output variable in a way that's readable by humans.
-      see `var_dump <http://www.php.net/manual/fr/function.var-dump.php>`_
+      see `var_dump`_
 
   * channel : Channel's name used by the logger service.
     It's a way to identify on which part of the application the log entry is
@@ -505,3 +502,9 @@ To fully use this feature :
 
     </baseprefs>
 
+.. _Json: https://wikipedia.org/wiki/Json
+.. _YAML: https://wikipedia.org/wiki/Yaml
+.. _complete Doctrine drivers list: http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver
+.. _Templating Service: http://en.wikipedia.org/wiki/Template_engine_%28web%29
+.. _optimizer Twig: http://twig.sensiolabs.org/doc/api.html#optimizer-extension
+.. _var_dump: http://www.php.net/manual/fr/function.var-dump.php

@@ -18,9 +18,8 @@ Importer
        :align: center
 
 .. note:: Pour les navigateurs qui ne bénéficient pas du plein support de
-      HTML5, un mode d'affichage reposant sur le plug-in
-      `Adobe Flash Player <http://get.adobe.com/fr/flashplayer/>`_ est
-      disponible dans Phraseanet Upload.
+      HTML5, un mode d'affichage reposant sur le plug-in Adobe `FlashPlayer`_
+      est disponible dans Phraseanet Upload.
 
 
       .. image:: ../../images/Upload-Version-Flash.jpg
@@ -147,3 +146,5 @@ L'utilisateur décide de l'action a entreprendre pour vider la file de fichiers
 présents dans la quarantaine.
 
 Puis passer au document suivant, le cas échéant.
+
+.. _FlashPlayer: http://get.adobe.com/fr/flashplayer/

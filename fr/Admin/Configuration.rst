@@ -14,8 +14,7 @@ de configurer un  "environnement" et de l'utiliser.
 Vous pouvez, dans ce fichier, décrire plusieurs environnements et passer de l'un
 à l'autre grâce à la variable "environment"
 
-Il utilise le format `Yaml <https://wikipedia.org/wiki/Yaml>`_, très lisible
-et facilement compréhensible.
+Il utilise le format `YAML`_, très lisible et facilement compréhensible.
 
 Ce fichier requiert deux blocs minimaux :
 
@@ -84,8 +83,7 @@ La connexion est partagé par différent service (Phraseanet et ORM)
   * user: utilisateur MySQL
   * password: mot de passe  MySQL
   * dbname:  nom de la base de donnée (application box)
-  * driver: nom du driver `voir liste complète
-    <http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver>`_
+  * driver: nom du driver voir la `liste complète des drivers doctrine`_
   * charset: encodage de la connexion
 
 Services.yml
@@ -157,8 +155,8 @@ Voici le service *doctrine_dev* :
   .. seealso:: Pour plus d'informations sur les différents caches doctrine http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm
 
 
-Service de `Mise En Page <http://en.wikipedia.org/wiki/Template_engine_%28web%29>`_ Twig
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Service de `Mise En Page Twig`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Voici le service *twig_prod*
 
@@ -183,8 +181,7 @@ Voici le service *twig_prod*
     inconnue (pour les développeurs)
   * autoescape: Activer la prise en charge automatiques des caractères
     d'auto échappement.
-  * optimizer : Activer
-    `l'optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
+  * optimizer : Activer l'`optimizer Twig`_
 
   .. seealso:: Pour plus de détails sur les options de l'environnement twig http://twig.sensiolabs.org/doc/api.html#environment-options
 
@@ -210,11 +207,10 @@ pour le log du service Doctrine.
   * output : Spécification du formatage de sortie.
     Trois modes sont possibles.
 
-    * json : Formatage en `Json <https://wikipedia.org/wiki/Json>`_
-    * yaml : Formatage en `Yaml <https://wikipedia.org/wiki/Yaml>`_
+    * json : Formatage en `Json`_
+    * yaml : Formatage en `YAML`_
     * vdump : Affiche les informations de la variable de sortie PHP de manière
-      à ce qu'elle soit lisible.
-      voir `var_dump <http://www.php.net/manual/fr/function.var-dump.php>`_
+      à ce qu'elle soit lisible, voir `var_dump`_
 
   * channel : Nom du channel utilisé par le service de log.
     C'est une façon d'identifier à quelle partie de l'application une entrée de
@@ -515,3 +511,10 @@ Pour utiliser cette option :
       </stamp>
 
     </baseprefs>
+
+.. _Json: https://wikipedia.org/wiki/Json
+.. _YAML: https://wikipedia.org/wiki/Yaml
+.. _liste complète des drivers doctrine: http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver
+.. _Mise En Page Twig: http://en.wikipedia.org/wiki/Template_engine_%28web%29
+.. _optimizer Twig: http://twig.sensiolabs.org/doc/api.html#optimizer-extension
+.. _var_dump: http://www.php.net/manual/fr/function.var-dump.php

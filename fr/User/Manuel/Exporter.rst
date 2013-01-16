@@ -15,8 +15,7 @@ Cette action permet d'exporter, au choix:
   * le document original
   * la prévisualisation
   * l'imagette
-  * les notices au format `Xml <https://wikipedia.org/wiki/Xml>`_ ou
-    `Yaml <https://wikipedia.org/wiki/Yaml>`_
+  * les notices au format `Xml`_ ou `Yaml`_
 
 *Près de chaque format figurent les tailles respectives des éléments
 à exporter.*
@@ -106,3 +105,5 @@ Remplir et soumettre le formulaire affiché.
 Le gestionnaire de commande est averti de la commande par notification dans
 Phraseanet ou bien par e-mail.
 
+.. _XML: https://wikipedia.org/wiki/Xml
+.. _YAML: https://wikipedia.org/wiki/Yaml

@@ -23,8 +23,8 @@ Pour démarrer :
   * Se familiariser avec :doc:`oAuth2 <V1/Authentification>`
   * Trouver la route :doc:`route <V1/Routes>` !
 
-Vous rencontrez un bug ? Merci d’en rendre compte dans notre
-`mailing-list <https://groups.google.com/group/phraseanet-api>`_
-ou de créer un ticket dans notre
-`bug-tracker public <https://github.com/alchemy-fr/Phraseanet/issues>`_.
+Vous rencontrez un bug ? Merci d’en rendre compte dans notre `mailing-list`_ ou
+de créer un ticket dans notre `bug tracker`_.
 
+.. _bug tracker: https://github.com/alchemy-fr/Phraseanet/issues
+.. _mailing-list: https://groups.google.com/group/phraseanet-api
