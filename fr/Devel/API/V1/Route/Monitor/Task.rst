@@ -6,7 +6,7 @@ A propos
 
   Returns all informations A propos a task
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/
 
@@ -38,7 +38,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

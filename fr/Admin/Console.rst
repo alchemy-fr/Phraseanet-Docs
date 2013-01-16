@@ -4,13 +4,13 @@ Konsole Kommander
 Konsole Kommander est une application en ligne de commande pour piloter
 Phraseanet. Elle s'exécute simplement :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console
 
 Vous aurez sur votre écran une liste de commande de la sorte :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     Available commands:
       help                             Displays help for a command
@@ -47,7 +47,7 @@ Vous aurez sur votre écran une liste de commande de la sorte :
 
 **Pour obtenir de l'aide sur une commande**
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console help nomdecommande
 

@@ -6,7 +6,7 @@ About
 
   Returns all information about all tasks
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/tasks/
 
@@ -34,7 +34,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

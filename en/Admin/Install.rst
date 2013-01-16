@@ -4,7 +4,7 @@ Install
 After having download sources, verify :doc:`prerequisite <Prerequisite>`,
 you can verify your configuration. At root of Phraseanet :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console check:system
     php bin/console check:config

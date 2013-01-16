@@ -6,7 +6,7 @@ A propos
 
   Retourne le contenu de l'entrée sélectionnée
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/entry/{entry_id}/
 
@@ -38,7 +38,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

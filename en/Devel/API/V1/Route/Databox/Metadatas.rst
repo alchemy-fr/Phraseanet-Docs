@@ -6,7 +6,7 @@ About
 
   Return Metadatas settings on specified databox
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/metadatas/
 
@@ -38,7 +38,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

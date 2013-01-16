@@ -17,7 +17,7 @@ Alternative starts and stops
 If you want to start and stop the Scheduler automatically, for example with
 cron, you can use `KonsoleKommander <Console>`_ and find the right command :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     bin/console scheduler:start
     bin/console scheduler:stop

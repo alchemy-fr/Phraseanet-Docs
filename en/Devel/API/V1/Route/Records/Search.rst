@@ -9,7 +9,7 @@ About
   This route is deprecated since version 1.3 in favor of
   :doc:`search <../Search>`.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/search/
 
@@ -69,26 +69,26 @@ on databox_id 52 on status 5 : On databox_id 52, only records
 with status number 5 “off” are returned, and on databox_id 58,
 only records with status number 4 “on” are returned.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/records/search/
 
 Request all records on collection base_id 85 :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/records/search/
 
 Search the query “house” in the “Object” or “Credit” fields :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/records/search/
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

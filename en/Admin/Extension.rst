@@ -9,7 +9,7 @@ Install
 After build and install of "Phraseanet-Extension" (see linux, OSX and Windws
 specifics), check the requested extensions with php -m
 
-  .. code-block:: none
+.. code-block:: none
 
     [PHP Modules]
     ...

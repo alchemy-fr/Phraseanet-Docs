@@ -6,7 +6,7 @@ A propos
 
   Retourne la liste des paniers de l'utilisateur courant
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/list/
 
@@ -34,7 +34,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

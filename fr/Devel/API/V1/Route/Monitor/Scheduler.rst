@@ -6,7 +6,7 @@ About
 
   Retourne des informations sur le statut du scheduler
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/scheduler/
 
@@ -34,7 +34,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

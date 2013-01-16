@@ -6,7 +6,7 @@ A propos
 
   Liste les documents contenu dans la quarantaine
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/quarantine/list/
 
@@ -41,7 +41,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

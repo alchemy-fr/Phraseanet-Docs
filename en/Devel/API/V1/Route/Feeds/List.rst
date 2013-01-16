@@ -6,7 +6,7 @@ About
 
   List all available feeds
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/list/
 
@@ -34,7 +34,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

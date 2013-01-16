@@ -11,7 +11,7 @@ Après compilation et installation de "Phraseanet-Extension" (voir spécificité
 Linux, OSX et Windows), vérifier la présence des extensions pré-requises avec
 php -m
 
-  .. code-block:: none
+.. code-block:: none
 
     [PHP Modules]
     ...

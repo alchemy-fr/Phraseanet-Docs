@@ -6,7 +6,7 @@ A propos
 
   Retourne la configuration de Phraseanet
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/phraseanet/
 
@@ -36,7 +36,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

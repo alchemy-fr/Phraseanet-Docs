@@ -6,7 +6,7 @@ About
 
   Returns Phraseanet configuration for monitoring
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/phraseanet/
 
@@ -36,7 +36,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

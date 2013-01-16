@@ -13,7 +13,7 @@ A propos
   reportages), la recherche simultanée de ces différents types n'est pas
   encore supportée.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/search/
 
@@ -71,19 +71,19 @@ Exemple de requête
 Rechercher tous les enregistrements qui se trouvent dans la databox 58 et qui ont le status 4 à "on"
 ainsi que tous les enregistrements de la databox 52 qui ont le status 5 à "off"
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/search/
 
 Rechercher tous les enregistrement sur la collection 85:
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/search/
 
 Rechercher les enregistrement qui correspondent à la requête "house" dans les champs "Object" ou "Credit"
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/search/
 
@@ -92,7 +92,7 @@ Exemple de réponse
 
 Exemple retournant des enregistrements :
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
@@ -217,7 +217,7 @@ Exemple retournant des enregistrements :
 
 Exemple retournant des reportages :
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

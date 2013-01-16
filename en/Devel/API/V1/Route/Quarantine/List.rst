@@ -6,7 +6,7 @@ About
 
   List the content of the quarantine
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/quarantine/list/
 
@@ -41,7 +41,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

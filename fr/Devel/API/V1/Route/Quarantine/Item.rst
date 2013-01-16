@@ -6,7 +6,7 @@ A propos
 
   Retourne un document de la quarantaine.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/quarantine/item/{quarantine_id}/
 
@@ -38,7 +38,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

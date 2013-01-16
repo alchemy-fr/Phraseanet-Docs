@@ -7,7 +7,7 @@ A propos
   Retourne les conditions générales d'utilisation d'une databox pour chacune
   des langues disponibles
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/termsOfUse/
 
@@ -39,7 +39,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

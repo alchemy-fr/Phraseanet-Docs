@@ -6,7 +6,7 @@ About
 
   Adds a new basket
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/add/
 
@@ -38,7 +38,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

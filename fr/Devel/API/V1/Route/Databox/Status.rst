@@ -6,7 +6,7 @@ A propos
 
   Retourne la liste des status disponibles de la databox sélectionnée
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/status/
 
@@ -38,7 +38,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

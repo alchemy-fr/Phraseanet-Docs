@@ -6,7 +6,7 @@ About
 
   Add, modify current record's metadatas
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setmetadatas/
 
@@ -39,7 +39,7 @@ Response Fields
 
 ** Example **
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     metadatas[0][meta_struct_id]=1&
     metadatas[0][meta_id]=&
@@ -56,7 +56,7 @@ Response Fields
 
 is equivalent to
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     record_metadatas = {
         {
@@ -84,7 +84,7 @@ is equivalent to
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

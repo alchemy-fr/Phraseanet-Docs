@@ -6,7 +6,7 @@ About
 
   Start a task and return its status
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/start/
 
@@ -38,7 +38,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

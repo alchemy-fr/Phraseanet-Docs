@@ -61,7 +61,7 @@ Application internet
   **Rediriger** les utilisateurs qui désirent authoriser l'accés à leurs données
   pour votre application en cliquant sur le lien suivant.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://SERVER_NAME/api/oauthv2/authorize
     ?client_id=YOUR_CLIENT_ID
@@ -72,14 +72,14 @@ Application internet
   enregistrée lors de la création de votre application. De plus un code
   temporaire d'authorisation est fournit dans les paramètres de l'url.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://YOUR_REGISTERED_REDIRECT_URI/?code=CODE
 
   Votre serveur **effectue une requête** à l'adresse suivante avec le code
   reçu précédemment afin d'obtenir un jeton d'accés valide pour requêter l'API.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://SERVER_NAME/api/oauthv2/token
     ?client_id=YOUR_CLIENT_ID
@@ -89,11 +89,11 @@ Application internet
 
   La réponse est au format JSON.
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
-      {
-        access_token: YOUR_ACCESS_TOKEN
-      }
+    {
+      access_token: YOUR_ACCESS_TOKEN
+    }
 
 Applications AJAX
 ~~~~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ Applications AJAX
   **Rediriger** les utilisateurs qui désirent authoriser l'accés à leurs données
   à votre application en cliquant sur le lien suivant.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://SERVER_NAME/api/oauthv2/authorize
     ?client_id=YOUR_CLIENT_ID
@@ -111,7 +111,7 @@ Applications AJAX
   Si l'utilisateur accepte, il est redirigé à l'adresse suivante.
   Le token d'accés est alors disponible dans l'URL.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://YOUR_REGISTERED_REDIRECT_URI/#access_token=ACCESS_TOKEN
 
@@ -133,7 +133,7 @@ Applications Clientes
   champ texte avec des instructions pour l'utilisateur de copier et de coller
   le code dans votre application.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://SERVER_NAME/api/oauthv2/authorize
     ?client_id=YOUR_CLIENT_ID
@@ -148,9 +148,9 @@ Utilisation du jeton d'accès
   dans un en-tête 'Authorization'.
   Par exemple :
 
-  .. code-block:: bash
+.. code-block:: bash
 
-      curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
+    curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
 
 Utiliser le type d'authentification 'password'
 ----------------------------------------------

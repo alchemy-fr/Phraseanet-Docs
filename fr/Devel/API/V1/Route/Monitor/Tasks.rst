@@ -6,7 +6,7 @@ A propos
 
   Retourne la liste de toutes les tâches
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/tasks/
 
@@ -34,7 +34,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

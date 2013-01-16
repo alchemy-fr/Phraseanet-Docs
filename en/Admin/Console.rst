@@ -4,13 +4,13 @@ Konsole Kommander
 Konsole Kommander is a commandline tool to manage Phraseanet. It is simple
 to use :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console
 
 You will see something like :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     Available commands:
       help                             Displays help for a command
@@ -47,7 +47,7 @@ You will see something like :
 
 **To get some help about a command** :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console help CommandName
 

@@ -6,7 +6,7 @@ About
 
   Return the content of a feed
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/{feed_id}/content/
 
@@ -43,7 +43,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

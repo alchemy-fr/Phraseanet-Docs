@@ -9,7 +9,7 @@ A propos
   des douanes <../../../../Admin/Configuration>, il est placé en quarantaine..
   Ce comportement peut être contourné avec le paramètre optionnel *forceBehavior*
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/add/
 
@@ -47,7 +47,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

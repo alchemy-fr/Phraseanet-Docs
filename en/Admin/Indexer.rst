@@ -113,35 +113,33 @@ The indexer can be checked with "-?" option which must print the help :
     [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
                                           (default none)
 
-Example of reading options from a file...
+Example of reading options from a file "indexerargs.txt"
 
-    .. code-block:: none
+.. code-block:: none
 
-        phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
+    phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
 
-    ...where option-file is "indexerargs.txt"
+.. code-block:: none
 
-    .. code-block:: none
+    #  connection to application-box...
+    # ...host, port, base, user, password
+    --host=127.0.0.1
+    --port=3306
+    --base=phrasea
+    --user=phraseanet
+    --password=xxxxxxxxx
 
-        #  connection to application-box...
-        # ...host, port, base, user, password
-        --host=127.0.0.1
-        --port=3306
-        --base=phrasea
-        --user=phraseanet
-        --password=xxxxxxxxx
+    # socket to talk (telnet) to indexer
+    --socket=2055
 
-        # socket to talk (telnet) to indexer
-        --socket=2055
+    # use 'sbas' table (mandatory)
+    -o
 
-        # use 'sbas' table (mandatory)
-        -o
+    # candidates default language
+    --clng=fr
 
-        # candidates default language
-        --clng=fr
-
-        # sql connections encoding
-        --default-character-set=utf8
+    # sql connections encoding
+    --default-character-set=utf8
 
 Running with the Task-Manager
 -----------------------------

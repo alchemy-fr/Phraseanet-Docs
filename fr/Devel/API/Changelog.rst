@@ -191,38 +191,38 @@ contenue dans l'attribut **document_metadatas**.
 
 .. code-block:: javascript
 
-   "response": {
-            "document_metadatas": [
-            {
-                "id": 1,
-                "namespace": "IPTC",
-                "source": "IPTC:ObjectName",
-                "tagname": "ObjectName",
-                "name": "Object",
-                "separator": "",
-                "thesaurus_branch": "",
-                "type": "string",
-                "indexable": true,
-                "multivalue": false,
-                "readonly": false,
-                "required": false
-            },
-            {
-                "id": 2,
-                "namespace": "IPTC",
-                "source": "IPTC:Category",
-                "tagname": "Category",
-                "name": "Category",
-                "separator": "",
-                "thesaurus_branch": "",
-                "type": "string",
-                "indexable": true,
-                "multivalue": false,
-                "readonly": false,
-                "required": false
-            }
-        ]
-    }
+    "response": {
+             "document_metadatas": [
+             {
+                 "id": 1,
+                 "namespace": "IPTC",
+                 "source": "IPTC:ObjectName",
+                 "tagname": "ObjectName",
+                 "name": "Object",
+                 "separator": "",
+                 "thesaurus_branch": "",
+                 "type": "string",
+                 "indexable": true,
+                 "multivalue": false,
+                 "readonly": false,
+                 "required": false
+             },
+             {
+                 "id": 2,
+                 "namespace": "IPTC",
+                 "source": "IPTC:Category",
+                 "tagname": "Category",
+                 "name": "Category",
+                 "separator": "",
+                 "thesaurus_branch": "",
+                 "type": "string",
+                 "indexable": true,
+                 "multivalue": false,
+                 "readonly": false,
+                 "required": false
+             }
+         ]
+     }
 
 Réponse pour une tache
 ***********************
@@ -423,7 +423,7 @@ thumbnail d'un record n'était pas disponible.
 Cette substitution n'est plus fournie. Il en résulte que la clef thumbnail
 d'un record peut désormais être nulle :
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
@@ -478,7 +478,7 @@ Ces devices sont compatibles avec CSS 2.
 
 Exemple : la thumbnail suivante est fournie pour un affichage à l'écran.
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     "thumbnail": {
         "width": 150,

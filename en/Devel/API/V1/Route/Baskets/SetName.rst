@@ -6,7 +6,7 @@ About
 
   Return
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/{basket_id}/setname/
 
@@ -39,7 +39,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

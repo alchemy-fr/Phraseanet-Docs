@@ -16,7 +16,7 @@ de votre installation, suivre les étapes suivantes :
 
   * Sauvegarder les bases de données via l'outil prévu :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     bin/console system:backup-db
 
@@ -41,13 +41,13 @@ de votre installation, suivre les étapes suivantes :
   * Dans un terminal, à la racine des sources, éxecuter la commande suivante,
     la mise à jour va être effectuée, elle peut prendre du temps :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     bin/console system:upgrade
 
   * Verifier que Phraseanet est mis à jour via la commande :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     bin/console --version
 

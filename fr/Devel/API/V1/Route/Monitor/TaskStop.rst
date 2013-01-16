@@ -6,7 +6,7 @@ A propos
 
     Arrête une tache et retourne son statut
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/stop/
 
@@ -38,7 +38,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

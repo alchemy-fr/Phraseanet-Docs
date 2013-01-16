@@ -6,7 +6,7 @@ About
 
   Return an item of the quarantine given its Id
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/quarantine/item/{quarantine_id}/
 
@@ -38,7 +38,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

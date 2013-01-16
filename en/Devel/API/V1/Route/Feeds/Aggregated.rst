@@ -6,7 +6,7 @@ About
 
   Return the aggregated content of a all feeds available
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/content/
 
@@ -42,7 +42,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

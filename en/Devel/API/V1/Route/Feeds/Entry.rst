@@ -6,7 +6,7 @@ About
 
   Return the content of an entry, given an Id
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/entry/{entry_id}/
 
@@ -38,7 +38,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

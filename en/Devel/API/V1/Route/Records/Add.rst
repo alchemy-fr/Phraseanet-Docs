@@ -8,7 +8,7 @@ About
   it goes to the quarantine. This behavior can be bypassed with the optionnal
   *forceBehavior* parameter
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/add/
 
@@ -46,7 +46,7 @@ In case a record is created, the following
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

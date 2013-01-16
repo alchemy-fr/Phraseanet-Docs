@@ -8,7 +8,7 @@ Exemple pour passer à une limite de 200Mo :
 
 * Dans le fichier php.ini :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     upload-max-filesize = 200M
     post_max_size       = 200M
@@ -19,7 +19,7 @@ Avec Nginx comme serveur web, il faut aussi autoriser les requêtes volumineuses
 
 * Dans le fichier nginx.conf :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     http {
         ...
@@ -51,7 +51,7 @@ Lors de l'édition d'un grand nombre de documents des messages d'erreur apparais
 Le module Suhosin peut limiter le nombre de paramètres passés par requêtes.
 Augmenter cette limite dans le fichier de configuration php.ini.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     suhosin.post.max_vars    = 12000
     suhosin.request.max_vars = 12000
@@ -62,7 +62,7 @@ Lors de la modification des droits utilisateurs, certains droits ne sont pas sau
 Le module Suhosin peut limiter le nombre de paramètres passés par requêtes.
 Augmenter cette limite dans le fichier de configuration php.ini.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     suhosin.post.max_vars    = 12000
     suhosin.request.max_vars = 12000

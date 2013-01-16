@@ -6,7 +6,7 @@ About
 
   Set status to a record
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setstatus/
 
@@ -30,14 +30,14 @@ Parameters
 
 ** Example **
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     status[4]=1&
     status[5]=0&
 
 is equivalent to
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     status = {
         4: 1,
@@ -56,7 +56,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

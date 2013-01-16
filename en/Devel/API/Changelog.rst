@@ -486,7 +486,7 @@ was not available.
 This substitution file is not provided anymore. Thus, the thumbnail key can
 be *null* :
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
@@ -533,7 +533,7 @@ compatible with CSS2 specification.
 
 The following thumbnail is compatible with a screen display
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     "thumbnail": {
         "width": 150,

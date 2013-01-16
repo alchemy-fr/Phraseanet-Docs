@@ -6,7 +6,7 @@ About
 
   Returns permalinks to medias attached to the story.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/embed/
 
@@ -23,7 +23,7 @@ Parameters
 If you want to retrieve all HTML5 videos for mobile, you have to provide the
 following parameters :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
@@ -48,7 +48,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

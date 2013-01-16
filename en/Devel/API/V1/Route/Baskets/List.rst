@@ -6,7 +6,7 @@ About
 
   Return the baskets list of the authenticated user
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/list/
 
@@ -34,7 +34,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

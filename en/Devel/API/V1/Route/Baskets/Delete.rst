@@ -6,7 +6,7 @@ About
 
   Delete the basket
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/{basket_id}/delete/
 
@@ -38,7 +38,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

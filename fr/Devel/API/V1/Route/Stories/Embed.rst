@@ -7,7 +7,7 @@ About
   Retourne les permaliens des sous-définitions disponibles pour le reportage
   sélectionné.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/embed/
 
@@ -24,7 +24,7 @@ Parameters
 Pour retourner toutes les videos compatibles HTML5 au format mobile,
 Il faut utiliser les paramètres :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
@@ -49,7 +49,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

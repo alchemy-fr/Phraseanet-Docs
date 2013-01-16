@@ -56,7 +56,7 @@ Spécifique Phraseanet
 
   Téléchargez et installez la :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
     cd php-phrasea
@@ -71,7 +71,7 @@ Spécifique Phraseanet
   C’est notre moteur d’indexation, il est nécessaire autant pour l’indexation
   texte-plein que pour l’indexation thésaurus.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
     cd phraseanet_indexer
@@ -91,7 +91,7 @@ librairie gettext.
 
 Exemple pour debian :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     dpkg-reconfigure locales
 

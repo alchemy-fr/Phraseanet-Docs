@@ -6,7 +6,7 @@ A propos
 
   Liste tous les flux disponibles
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/list/
 
@@ -34,7 +34,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

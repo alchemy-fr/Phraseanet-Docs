@@ -4,7 +4,7 @@ Installation
 Après téléchargement des sources , vérifier les :doc:`prérequis <Prerequis>`,
 vous pouvez vérifier votre configuration à la racine de votre installation :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console check:system
     php bin/console check:config

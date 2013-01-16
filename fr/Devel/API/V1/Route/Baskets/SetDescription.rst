@@ -6,7 +6,7 @@ A propos
 
   Met à jour la description du panier sélectionné
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/{basket_id}/setdescription/
 
@@ -39,7 +39,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

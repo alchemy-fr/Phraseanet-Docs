@@ -6,7 +6,7 @@ A propos
 
   Retourne la notice d'indexation d'un document
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/caption/
 
@@ -39,7 +39,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

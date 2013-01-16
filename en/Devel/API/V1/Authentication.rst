@@ -56,7 +56,7 @@ Web based applications
 
   **Redirect** users who wish authenticate to
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://SERVER_NAME/api/oauthv2/authorize
     ?client_id=YOUR_CLIENT_ID
@@ -65,13 +65,13 @@ Web based applications
 
   If a user accepts, he will then be redirected back to
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://YOUR_REGISTERED_REDIRECT_URI/?code=CODE
 
   Your server will **make a request** for
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://SERVER_NAME/api/oauthv2/token
     ?client_id=YOUR_CLIENT_ID
@@ -81,7 +81,7 @@ Web based applications
 
   The response will be JSON
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
       {
         access_token: YOUR_ACCESS_TOKEN
@@ -92,7 +92,7 @@ Pure AJAX application
 
   **Redirect** users who wish authenticate to
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://SERVER_NAME/api/oauthv2/authorize
     ?client_id=YOUR_CLIENT_ID
@@ -101,7 +101,7 @@ Pure AJAX application
 
   If a user accepts, he will be redirected back to
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://YOUR_REGISTERED_REDIRECT_URI/#access_token=ACCESS_TOKEN
 
@@ -122,7 +122,7 @@ Client-side application
   the authorization code or error response in a text field with instructions
   for the user to copy and paste it in to your application.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     https://SERVER_NAME/api/oauthv2/authorize
     ?client_id=YOUR_CLIENT_ID
@@ -137,9 +137,9 @@ Using your access token
   in all available endpoint.
   For example :
 
-  .. code-block:: bash
+.. code-block:: bash
 
-      curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
+    curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
 
 Using password grant type
 -------------------------

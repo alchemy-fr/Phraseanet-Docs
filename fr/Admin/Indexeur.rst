@@ -123,35 +123,33 @@ L'indexeur peut être testé avec l'option '-?' qui doit afficher l'aide :
     [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
                                           (default none)
 
-Exemple d'arguments dans un fichier...
+Exemple d'arguments dans un fichier "indexerargs.txt"
 
-    .. code-block:: none
+.. code-block:: none
 
-        phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
+    phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
 
-    ...avec le fichier "indexerargs.txt"
+.. code-block:: none
 
-    .. code-block:: none
+    #  connection to application-box...
+    # ...host, port, base, user, password
+    --host=127.0.0.1
+    --port=3306
+    --base=phrasea
+    --user=phraseanet
+    --password=xxxxxxxxx
 
-        #  connection to application-box...
-        # ...host, port, base, user, password
-        --host=127.0.0.1
-        --port=3306
-        --base=phrasea
-        --user=phraseanet
-        --password=xxxxxxxxx
+    # socket to talk (telnet) to indexer
+    --socket=2055
 
-        # socket to talk (telnet) to indexer
-        --socket=2055
+    # use 'sbas' table (mandatory)
+    -o
 
-        # use 'sbas' table (mandatory)
-        -o
+    # candidates default language
+    --clng=fr
 
-        # candidates default language
-        --clng=fr
-
-        # sql connections encoding
-        --default-character-set=utf8
+    # sql connections encoding
+    --default-character-set=utf8
 
 Exécution par le Task-Manager
 -----------------------------

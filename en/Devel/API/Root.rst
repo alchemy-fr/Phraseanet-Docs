@@ -4,15 +4,15 @@ Root
 About
 -----
 
-  This route id available since Phraseanet 1.2 and provides  public informations 
-  about the API. This route is not versionned.  
+  This route id available since Phraseanet 1.2 and provides  public informations
+  about the API. This route is not versionned.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/
 
   ======================== =====
-   Informations             
+   Informations
   ======================== =====
    HTTP Method              GET
    Requires Authentication  NO
@@ -21,7 +21,7 @@ About
 Example of use
 --------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     curl -v https://library.net/api/
 
@@ -46,7 +46,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

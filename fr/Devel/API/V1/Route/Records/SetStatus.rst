@@ -6,7 +6,7 @@ A propos
 
   Applique un status à un document
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setstatus/
 
@@ -30,14 +30,14 @@ Paramètres
 
 ** Exemple **
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     status[4]=1&
     status[5]=0&
 
 est equivalent à
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     status = {
         4: 1,
@@ -56,7 +56,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

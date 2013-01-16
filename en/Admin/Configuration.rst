@@ -19,7 +19,7 @@ This file requires two blocks.
 In the following example, the "dev" environment is selected and we find the
 declaration of this environment below.
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #config.yml
     environment: dev
@@ -60,7 +60,7 @@ Connexions.yml
 Connexions.yml stores named connections.
 These connections are shared among services (Phraseanet, ORM, ...)
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #connexions.yml
     main_connexion:
@@ -92,7 +92,7 @@ Log, and Cache.
 
 Here's the default structure of a service
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     ServiceGroupe:
       ServiceName:
@@ -111,7 +111,7 @@ Doctrine ORM Service
 
 Here's *doctrine_dev* service :
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Orm:
@@ -149,7 +149,7 @@ Twig `Templating service`_
 
 Here's *twig_prod*
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     TemplateEngine:
@@ -178,7 +178,7 @@ Doctrine Monolog Log Service
 Here's Doctrine Monolog log service. This service can only be use to log
 Doctrine activity.
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Log:
@@ -215,7 +215,7 @@ Doctrine activity.
 Cache service ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -225,7 +225,7 @@ Cache service ArrayCache
 Cache service ApcCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -235,7 +235,7 @@ Cache service ApcCache
 Cache service XCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -245,7 +245,7 @@ Cache service XCache
 Cache service MemcacheCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -395,47 +395,46 @@ datas.
 .. code-block:: php
 
     <?php
-        //In lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
-        namespace Alchemy/Phrasea/Border/Checker;
+    //In lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
+    namespace Alchemy/Phrasea/Border/Checker;
 
-        use Alchemy\Phrasea\Border\File;
+    use Alchemy\Phrasea\Border\File;
 
-        use Doctrine\ORM\EntityManager;
+    use Doctrine\ORM\EntityManager;
 
-        class NorthPole implements Checker
+    class NorthPole implements Checker
+    {
+        //Option bar
+        protected $bar;
+
+        //Handle options
+        public function __construct(Array $options)
         {
-            //Option bar
-            protected $bar;
-
-            //Handle options
-            public function __construct(Array $options)
-            {
-                if( ! isset($options['bar']) {
-                    throw new \InvalidArgumentException('Missing bar option');
-                }
-
-                $this->bar = $options['bar'];
+            if( ! isset($options['bar']) {
+                throw new \InvalidArgumentException('Missing bar option');
             }
 
-            //Validation constraints, must return a boolean
-            public function check(EntityManager $em, File $file)
-            {
-                $media = $file->getMedia();
-
-                if ( null !== $latitude = $media->getLatitude()
-                        && null !== $ref = $media->getLatitudeRef()) {
-
-                    if($latitude > 60
-                        && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
-
-                        return true;
-                    }
-                }
-
-                return false;
-            }
+            $this->bar = $options['bar'];
         }
-    ?>
+
+        //Validation constraints, must return a boolean
+        public function check(EntityManager $em, File $file)
+        {
+            $media = $file->getMedia();
+
+            if ( null !== $latitude = $media->getLatitude()
+                    && null !== $ref = $media->getLatitudeRef()) {
+
+                if($latitude > 60
+                    && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
+
+                    return true;
+                }
+            }
+
+            return false;
+        }
+    }
 
 Then in services.yml configuration enable your checker.
 
@@ -473,7 +472,7 @@ To fully use this feature :
   * Go into collection settings
   * Click "XML view", edit the XML, and add a "stamp" node as follows
 
-  .. code-block:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <baseprefs>

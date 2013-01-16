@@ -20,7 +20,7 @@ Ce fichier requiert deux blocs minimaux :
 Dans l'exemple ci-dessous, l'environnement choisi est "dev", et l'on trouve
 en dessous la déclaration de cet environnement.
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #config.yml
     environment: dev
@@ -63,7 +63,7 @@ Connexions.yml permet de déclarer et nommer des connexions vers des bases de
 données.
 La connexion est partagé par différent service (Phraseanet et ORM)
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #connexions.yml
     main_connexion:
@@ -96,7 +96,7 @@ ORM, TemplateEngine, Log, et Cache.
 
 Voici la structure générale d'un service :
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     ServiceGroupe:
       ServiceName:
@@ -116,7 +116,7 @@ Service d'ORM Doctrine
 
 Voici le service *doctrine_dev* :
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Orm:
@@ -155,7 +155,7 @@ Service de `Mise En Page Twig`_
 
 Voici le service *twig_prod*
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     TemplateEngine:
@@ -187,7 +187,7 @@ Service de Log Doctrine Monolog
 Voici le service de log Doctrine Monolog. Ce service n'est utilisable que
 pour le log du service Doctrine.
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Log:
@@ -225,7 +225,7 @@ pour le log du service Doctrine.
 Services de Cache ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -235,7 +235,7 @@ Services de Cache ArrayCache
 Services de Cache ApcCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -245,7 +245,7 @@ Services de Cache ApcCache
 Services de Cache XCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -255,7 +255,7 @@ Services de Cache XCache
 Services de Cache MemcacheCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -406,47 +406,46 @@ Par exemple : Créons un checker qui filtre les documents sur leur données GPS.
 .. code-block:: php
 
     <?php
-        //Dans lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
-        namespace Alchemy/Phrasea/Border/Checker;
+    //Dans lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
+    namespace Alchemy/Phrasea/Border/Checker;
 
-        use Alchemy\Phrasea\Border\File;
+    use Alchemy\Phrasea\Border\File;
 
-        use Doctrine\ORM\EntityManager;
+    use Doctrine\ORM\EntityManager;
 
-        class NorthPole implements Checker
+    class NorthPole implements Checker
+    {
+        //Option bar
+        protected $bar;
+
+        //Gestion des options
+        public function __construct(Array $options)
         {
-            //Option bar
-            protected $bar;
-
-            //Gestion des options
-            public function __construct(Array $options)
-            {
-                if( ! isset($options['bar']) {
-                    throw new \InvalidArgumentException('Missing bar option');
-                }
-
-                $this->bar = $options['bar'];
+            if( ! isset($options['bar']) {
+                throw new \InvalidArgumentException('Missing bar option');
             }
 
-            //Contrainte de validation, doit retourner un booleen
-            public function check(EntityManager $em, File $file)
-            {
-                $media = $file->getMedia();
-
-                if ( null !== $latitude = $media->getLatitude()
-                        && null !== $ref = $media->getLatitudeRef()) {
-
-                    if($latitude > 60
-                        && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
-
-                        return true;
-                    }
-                }
-
-                return false;
-            }
+            $this->bar = $options['bar'];
         }
-    ?>
+
+        //Contrainte de validation, doit retourner un booleen
+        public function check(EntityManager $em, File $file)
+        {
+            $media = $file->getMedia();
+
+            if ( null !== $latitude = $media->getLatitude()
+                    && null !== $ref = $media->getLatitudeRef()) {
+
+                if($latitude > 60
+                    && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
+
+                    return true;
+                }
+            }
+
+            return false;
+        }
+    }
 
 Puis dans le fichier de configuration services.yml
 
@@ -488,7 +487,7 @@ Pour utiliser cette option :
   * Dans la "Vue XML", editer le XML et ajouter le block "stamp" comme
     ci-dessous
 
-  .. code-block:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <baseprefs>

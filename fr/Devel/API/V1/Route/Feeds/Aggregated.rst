@@ -6,7 +6,7 @@ A propos
 
   Retourne le contenu agrégé de tous les fux disponibles
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/content/
 
@@ -42,7 +42,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

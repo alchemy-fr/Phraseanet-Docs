@@ -6,7 +6,7 @@ About
 
   Retourne les informations d'un reportage enregistré dans Phraseanet.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/
 
@@ -39,7 +39,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

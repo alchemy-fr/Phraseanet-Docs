@@ -6,7 +6,7 @@ About
 
   Returns the metadatas of a record
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/metadatas/
 
@@ -39,7 +39,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

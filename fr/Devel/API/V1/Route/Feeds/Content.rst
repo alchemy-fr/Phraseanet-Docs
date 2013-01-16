@@ -6,7 +6,7 @@ A propos
 
   Retourne le contenu d'un flux
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/{feed_id}/content/
 
@@ -43,7 +43,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

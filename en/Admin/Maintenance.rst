@@ -24,9 +24,9 @@ Live backups should work.
 
 :doc:`Konsole Kommander <Console>` has a command to backup your DBs :
 
-  .. code-block:: bash
+.. code-block:: bash
 
-      php bin/console system:backup-db /path/to/DBBackupDirectory/
+    php bin/console system:backup-db /path/to/DBBackupDirectory/
 
 This command can be included in a backup script.
 

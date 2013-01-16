@@ -7,7 +7,7 @@ A propos
   Retourne les permaliens des sous-définitions disponibles pour le document
   sélectionné.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/embed/
 
@@ -27,7 +27,7 @@ et *mimes*. S'ils sont fournis, ils restreignent les médias retournés.
 Par exemple, pour retourner toutes les videos compatibles HTML5 au format mobile,
 Il faut utiliser les paramètres :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
@@ -52,7 +52,7 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

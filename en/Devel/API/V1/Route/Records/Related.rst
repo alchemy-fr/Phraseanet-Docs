@@ -6,7 +6,7 @@ About
 
   Return all baskets that contains one specific record
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/related/
 
@@ -39,9 +39,8 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
-        {
     {
         "meta": {
             "api_version": "1.3",

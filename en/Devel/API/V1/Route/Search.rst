@@ -12,7 +12,7 @@ About
   Whereas this route returns different types of results (records, stories),
   there is currently no support to query both of these types at the same type.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/search/
 
@@ -72,19 +72,19 @@ on databox_id 52 on status 5 : On databox_id 52, only records
 with status number 5 “off” are returned, and on databox_id 58,
 only records with status number 4 “on” are returned.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/search/
 
 Request all records on collection base_id 85 :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/search/
 
 Search the query “house” in the “Object” or “Credit” fields :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/search/
 
@@ -93,7 +93,7 @@ Response sample
 
 Example that returns records :
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
@@ -218,7 +218,7 @@ Example that returns records :
 
 Example that returns stories :
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

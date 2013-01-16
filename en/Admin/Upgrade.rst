@@ -15,7 +15,7 @@ follow this upgrade procedure :
 
   * Backup databases with the provided tool :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     bin/console system:backup-db
 
@@ -40,13 +40,13 @@ follow this upgrade procedure :
   * In a terminal, at sources root, execute the following command. Please note
     that execution time in this step could be long.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     bin/console system:upgrade
 
   * Verify that Phraseanet has been upgraded with the command :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     bin/console --version
 

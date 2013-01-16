@@ -6,7 +6,7 @@ About
 
   Returns permalinks to medias attached to the record
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/embed/
 
@@ -26,7 +26,7 @@ If provided, the query is restricted to the corresponding medias.
 For example, if you want to retrieve all HTML5 videos for mobile, you have to provide the
 following parameters :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
@@ -51,7 +51,7 @@ Response Fields
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

@@ -7,7 +7,7 @@ A propos
   Retourne la liste des objets (paniers et reportages) qui contiennent un
   document spécifique
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/related/
 
@@ -40,9 +40,8 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
-    {
     {
          "meta": {
             "api_version": "1.3",

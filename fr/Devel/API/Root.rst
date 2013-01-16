@@ -8,7 +8,7 @@ A propos
   publiquement des informations sur l'API Phraseanet. Cette route n'est pas
   versionnée.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/
 
@@ -22,7 +22,7 @@ A propos
 Exemple d'utilisation
 ---------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     curl -v https://library.net/api/
 
@@ -47,7 +47,7 @@ Les champs de la réponse
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

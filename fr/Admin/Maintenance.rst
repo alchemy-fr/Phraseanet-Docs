@@ -30,7 +30,7 @@ Une sauvegarde à chaud de ces bases est envisageable.
 L'utilitaire en ligne de commande :doc:`Konsole Kommander <Console>`
 intégré à l'application permet de lancer une sauvegarde de l'ensemble des bases.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console system:backup-db /repertoire/de/sauvegarde/
 

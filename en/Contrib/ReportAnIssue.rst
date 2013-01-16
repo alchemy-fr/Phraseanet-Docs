@@ -18,9 +18,9 @@ rules :
 If this is OK (pfiou !), open an issue in the `bug tracker`_ with a `gist`_ of
 the output of :
 
-  .. code-block:: bash
+.. code-block:: bash
 
-      bin/console system:doctor
+    bin/console system:doctor
 
 Be sure to :
  * Never just copy/paste the result
