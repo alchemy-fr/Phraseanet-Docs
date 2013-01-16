@@ -24,6 +24,7 @@ Nginx configuration example.
   }
 
 .. note::
+
     Copy the rewrite rules file `rewrite_rules.inc` included in
     `config/nginx.rewrite.rules`.
 

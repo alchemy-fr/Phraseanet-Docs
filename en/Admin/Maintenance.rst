@@ -38,7 +38,9 @@ Applciation sources are genrally only modified when updating Phraseanet.
 It can nevertheless be good to save at one time the sources after install and
 setup.
 
-  .. note: You may just save the config/ directory as everything you setup is
+.. note:
+
+    You may just save the config/ directory as everything you setup is
     stored in it.
 
 Maintenance

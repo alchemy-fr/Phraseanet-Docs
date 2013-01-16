@@ -99,7 +99,7 @@ Ubuntu example :
  * Activate via /etc/locale.gen
  * Execute /usr/sbin/locale-gen
 
-  .. note::
+.. note::
 
     Locales must be in UTF-8.
 

@@ -63,9 +63,11 @@ de la date et de l'heure de connexion au système.
 .. image:: ../../images/Administration-utilisateurlive.jpg
     :align: center
 
-  .. note:: Phraseanet repose sur un mécanisme de *sessions persistantes*.
-            Les dates et heures de connexion correspondent à celles de l'initialisation de
-            la session de l'utilisateur.
+.. note::
+
+    Phraseanet repose sur un mécanisme de *sessions persistantes*.
+    Les dates et heures de connexion correspondent à celles de l'initialisation de
+    la session de l'utilisateur.
 
 Publications
 ------------
@@ -142,5 +144,7 @@ Après avoir cliqué sur *nouvelle tâche* :
 
   * Cliquer sur Valider pour enregistrer les modifications.
 
-.. note:: Pour plus d'informations sur le paramétrage de tâches, se reporter
-     à la page :doc:`../../Admin/MoteurDeTaches`.
+.. note::
+
+    Pour plus d'informations sur le paramétrage de tâches, se reporter
+    à la page :doc:`../../Admin/MoteurDeTaches`.

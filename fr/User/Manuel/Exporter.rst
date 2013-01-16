@@ -77,7 +77,9 @@ FTP
 Cet onglet permet de saisir manuellement les coordonnées du serveur FTP de
 destination mais peut aussi appeler des "pré-configurations".
 
-.. note:: Les Pré-configurations correspondent à l'adresse FTP saisie
+.. note::
+
+    Les Pré-configurations correspondent à l'adresse FTP saisie
     dans la partie "Mon compte".
 
 Il est possible de demander l’envoi d’un email de confirmation à l’utilisateur

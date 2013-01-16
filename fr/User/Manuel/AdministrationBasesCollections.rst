@@ -155,8 +155,10 @@ collection puis cliquer sur **Créer une collection**.
 Indiquer le nom de la collection à créer dans le champ prévu à cet effet puis
 valider le formulaire.
 
-  .. note:: Lors de la création d'une collection, il est possible d'appliquer les
-        droits utilisateurs d'une collection existante.
+.. note::
+
+    Lors de la création d'une collection, il est possible d'appliquer les
+    droits utilisateurs d'une collection existante.
 
 Afficher une collection
 ***********************
@@ -189,8 +191,10 @@ Un gestionnaire de commande est un utilisateur disposant d'un droit de réponse 
 demandes de téléchargement de documents originaux (images, vidéo en haute définition)
 émises par des utilisateurs ne bénéficiant pas des droits de téléchargements.
 
-  .. note:: Les gestionnaires de commande reçoivent les demandes de téléchargement par
-       notifications dans l'interface Phraseanet et par email.
+.. note::
+
+    Les gestionnaires de commande reçoivent les demandes de téléchargement par
+    notifications dans l'interface Phraseanet et par email.
 
 **Pour ajouter un gestionnaire de commande**, sur la collection affichée, saisir
 le nom d'utilisateur ou son login dans le formulaire d'ajout d'un gestionnaire.

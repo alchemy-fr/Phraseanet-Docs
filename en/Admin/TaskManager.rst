@@ -53,14 +53,18 @@ Indexer requires parameters :
                                       --default-character-set=utf8 \
                                       -o
 
-  .. note:: This task is required for common Phraseanet use
+.. note::
+
+    This task is required for common Phraseanet use
 
 Sub-definitions creation
 ************************
 
 This task creates sub-definitions (thumbnails and preview).
 
-  .. note:: This task is required for common Phraseanet use
+.. note::
+
+    This task is required for common Phraseanet use
 
 Metadatas writing
 *****************

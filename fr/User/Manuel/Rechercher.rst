@@ -54,8 +54,10 @@ résultats sous forme de vignettes.
 Choisir si la recherche doit se faire sur des reportages (uniquement les fiches
 d'indexation des reportages) ou sur les documents.
 
-.. note:: Il n'est pas possible de chercher à la fois sur des reportages et des
-          documents.
+.. note::
+
+    Il n'est pas possible de chercher à la fois sur des reportages et des
+    documents.
 
 Recherche par opérateur ordinal
 *******************************
@@ -98,8 +100,10 @@ les opérateurs logiques *ET, OU, SAUF*. Par exemple: *Tour sauf Eiffel* sélect
 tous les documents dont la description contient le mot *Tour* mais pas celles sur
 la *Tour Eiffel*.
 
-.. note:: L’opérateur par défaut mis en œuvre sur le système peut être soit ET
-          soit PRES.
+.. note::
+
+    L’opérateur par défaut mis en œuvre sur le système peut être soit ET
+    soit PRES.
 
 **ET** impose que la première condition soit satisfaite et que la deuxième
 condition soit satisfaite.
@@ -108,8 +112,10 @@ condition soit satisfaite.
 
 **SAUF** impose que la condition ne soit pas satisfaite.
 
-.. note:: Ordre de priorité des opérateurs: les parenthèses ou les doubles cotes
-          sont prioritaires sur le reste.
+.. note::
+
+    Ordre de priorité des opérateurs: les parenthèses ou les doubles cotes
+    sont prioritaires sur le reste.
 
 Recherche dans un champ précis
 ******************************
@@ -130,24 +136,30 @@ résultat du terme 1 apparaît à une distance spécifiée (n) du terme 2.
 Par exemple, (Tour PRES 2 Eiffel) sélectionnera les enregistrements dans lesquels
 une distance de 2 mots maximum sépare le mot *Tour* du mot *Eiffel*.
 
-.. note:: Si aucune distance n’est précisée, l’opérateur PRES est traité comme un
-          opérateur ET.
+.. note::
+
+    Si aucune distance n’est précisée, l’opérateur PRES est traité comme un
+    opérateur ET.
 
 **L’opérateur AVANT** permet de repérer tous les enregistrements dans lesquels le
 résultat du terme 1 apparaît avant le terme 2 et a une distance spécifiée (n).
 Par exemple, (Tour AVANT 2 Eiffel) sélectionnera les enregistrements dans lesquels
 le mot Tour est situé, au maximum, deux mots avant le mot Eiffel.
 
-.. note:: Il n'est pas nécessaire de spécifier la distance. Si la distance n'est
-          pas précisée, la valeur par défaut est 12.
+.. note::
+
+    Il n'est pas nécessaire de spécifier la distance. Si la distance n'est
+    pas précisée, la valeur par défaut est 12.
 
 **L’opérateur APRES** permet de repérer tous les enregistrements dans lesquels le
 résultat du terme 1 apparaît après le terme 2 à une distance spécifie (n).
 Par exemple, (Eiffel APRES 2 Tour) sélectionnera les enregistrements dans lesquels
 le mot Eiffel est situé, au maximum, deux mots après le mot Tour.
 
-.. note:: Il n'est pas nécessaire de spécifier la distance.
-          Si la distance n'est pas précisée, la valeur par défaut est 12.
+.. note::
+
+    Il n'est pas nécessaire de spécifier la distance.
+    Si la distance n'est pas précisée, la valeur par défaut est 12.
 
 Recherche avec comparaison numérique
 ************************************
@@ -167,7 +179,9 @@ slash /, un tiret -, un espace.
   * Recherche sur un mois: MM/AA, AAAA/MM, AAAAMM, MM/AAAA
   * Recherche sur une année: AAAA
 
-.. note:: La saisie des champs de type date est stricte.
+.. note::
+
+    La saisie des champs de type date est stricte.
 
 Recherche avancée
 -----------------
@@ -195,11 +209,13 @@ De l’autre, les différents filtres disponibles pour affiner sa recherche :
 
 Les documents s'affichent dans la fenêtre *Résultats*.
 
-.. note:: Il est possible de désélectionner toutes les :term:`bases <base>` et
-          collections en cliquant sur "Aucune" ou de cliquer directement sur les
-          noms des :term:`bases <base>` pour les sélectionner ou désélectionner
-          individuellement ou encore dans les cases à cocher proposées pour chaque
-          collection disponible.
+.. note::
+
+    Il est possible de désélectionner toutes les :term:`bases <base>` et
+    collections en cliquant sur "Aucune" ou de cliquer directement sur les
+    noms des :term:`bases <base>` pour les sélectionner ou désélectionner
+    individuellement ou encore dans les cases à cocher proposées pour chaque
+    collection disponible.
 
 Recherche à partir du Thesaurus
 -------------------------------

@@ -374,7 +374,9 @@ The same restriction can be done at databoxes level :
                             - 3
                             - 7
 
-.. note:: It is not possible to restrict at databoxes and collections levels at
+.. note::
+
+    It is not possible to restrict at databoxes and collections levels at
     the same time.
 
 **How to implement a custom checker ?**

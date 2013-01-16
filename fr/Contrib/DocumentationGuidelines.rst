@@ -115,11 +115,13 @@ Meta Markups
 
   * Notes::
 
-      .. note::
-        Une note
+        .. note::
+
+            Une note
 
     .. note::
-      Une note
+
+        Une note
 
   * Avertissement::
 

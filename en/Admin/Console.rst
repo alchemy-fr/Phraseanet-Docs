@@ -51,7 +51,9 @@ You will see something like :
 
     php bin/console help CommandName
 
-.. note:: Each commands returns a value, which can be used for automated scripts
+.. note::
+
+    Each commands returns an exit code, which can be used for automated scripts.
 
 check:config
 ------------
@@ -142,7 +144,9 @@ scheduler:state
 Get the current state of the Phraseanet
 :doc:`task scheduler </Admin/TaskManager>`.
 
-.. note:: This command can return different value according to the scheduler state.
+.. note::
+
+    This command can return different value according to the scheduler state.
 
 +---------------+-----------------+
 |  State        | Return value    |

@@ -60,7 +60,9 @@ L’indexer doit être paramétré avec les informations ci-dessous :
                                       --default-character-set=utf8 \
                                       -o
 
-  .. note:: Cette tâche est nécessaire au bon fonctionnement de l'application
+.. note::
+
+    Cette tâche est nécessaire au bon fonctionnement de l'application
 
 Création des Sous Définitions
 *****************************
@@ -68,7 +70,9 @@ Création des Sous Définitions
 Cette tâche créé les sous définitions (images de choix et vignettes) à partir
 du document original.
 
-  .. note:: Cette tâche est nécessaire au bon fonctionnement de l'application
+.. note::
+
+    Cette tâche est nécessaire au bon fonctionnement de l'application
 
 Ecriture des Métadonnées
 ************************

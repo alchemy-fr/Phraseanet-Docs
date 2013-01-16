@@ -255,5 +255,7 @@ Cette information est affichée en bas de page et il est possible:
   * De changer de page
   * D’afficher d’avantage de ligne en changeant la valeur saisie
 
-.. note:: le total du nombre de lignes disponibles correspond au nombre total
-          de résultats.
+.. note::
+
+    le total du nombre de lignes disponibles correspond au nombre total
+    de résultats.

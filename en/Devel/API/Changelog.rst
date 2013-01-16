@@ -429,7 +429,9 @@ Attribute *is_mine* has been removed and is replaced by two new attributes :
             "updated_on": "2011-07-20T18:45:20+02:00"
         },
 
-.. note:: These attributes have also been added in :doc:`feeds/list <V1/Route/Feeds/List>`.
+.. note::
+
+    These attributes have also been added in :doc:`feeds/list <V1/Route/Feeds/List>`.
 
 Bug fix
 *******

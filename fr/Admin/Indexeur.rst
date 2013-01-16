@@ -81,7 +81,7 @@ L'option "nolog" permet d'envoyer les messages sur l'écran.
 
 .. note::
 
-    un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
+    Un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
     fonctionnement sans trop charger les logs.
 
 Exemples

@@ -84,10 +84,12 @@ application, La page des paramètres de l'application s'affiche.
 * Le jeton d'accés développeur est un jeton qui identifie le propriétaire de
   l'application sur l'API phraseanet.
 
-.. note::  Le jeton développeur peut être utilisé lors du développement de
-        l'applicatio ou bien pour effectuer des requêtes sur l'API par
-        l'intermediaire d'un processus automatisé qui ne nécessite pas
-        d'authentification.
+.. note::
+
+    Le jeton développeur peut être utilisé lors du développement de
+    l'applicatio ou bien pour effectuer des requêtes sur l'API par
+    l'intermediaire d'un processus automatisé qui ne nécessite pas
+    d'authentification.
 
 .. seealso::  Phraseanet s'appuie sur le protocole d'authentification oAuth2.0.
             Afin de mieux appréhender le processus de création et

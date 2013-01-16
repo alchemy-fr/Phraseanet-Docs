@@ -25,9 +25,11 @@ vous avez accès.**
 En cliquant sur le nom d'une application, le navigateur internet lance celle-ci
 dans un nouvel onglet.
 
-.. note:: Une interface est manquante dans le menu ? Vérifier les droits. Si
-          l'utilisateur n'a pas accès au module, le lien vers l'interface n'
-          apparaît pas.
+.. note::
+
+    Une interface est manquante dans le menu ? Vérifier les droits. Si
+    l'utilisateur n'a pas accès au module, le lien vers l'interface n'
+    apparaît pas.
 
 **La partie droite de la barre de menu affiche les notifications, l'identifiant
 du compte, l'aide en ligne avec les raccourcis clavier et le lien de déconnexion.**

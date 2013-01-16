@@ -24,6 +24,7 @@ Exemple de fichier de configuration Nginx.
   }
 
 .. note::
+
     Copier le fichier des règles de ré-écriture
     `rewrite_rules.inc` que vous trouverez dans config/nginx.rewrite.rules
 

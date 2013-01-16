@@ -17,8 +17,10 @@
 
      *Interface Phraseanet Production*
 
-.. note:: La zone d'affichage des résultats, dans *Prod* (ci-dessus) ou dans
-          *Classic* (ci-dessous), est la zone centrale où apparaissent les images.
+.. note::
+
+    La zone d'affichage des résultats, dans *Prod* (ci-dessus) ou dans
+    *Classic* (ci-dessous), est la zone centrale où apparaissent les images.
 
 .. figure:: ../../images/Classic-interface2.jpg
      :align: center
@@ -50,8 +52,10 @@ gauche:**
 .. image:: ../../images/Affichage-nomcoll.jpg
     :align: center
 
-.. note:: Le nom de la collection peut être substitué par un minilogo de collection.
-          Pour cela, rendez-vous dans :doc:`Phraseanet Administration <Administration>`.
+.. note::
+
+    Le nom de la collection peut être substitué par un minilogo de collection.
+    Pour cela, rendez-vous dans :doc:`Phraseanet Administration <Administration>`.
 
 **Passer le curseur sur une vignette pour afficher la description du document.**
 Cette description est composée de champs.
@@ -73,8 +77,10 @@ la lecture d’un fichier audio, afficher un "résumé" pour les séquences vid�
 .. image:: ../../images/Affichage-Loupe.jpg
     :align: center
 
-.. note:: Si la loupe n’est pas visible, c’est que l’utilisateur n’a pas le droit
-          de voir les images de choix ou qu’il n’existe pas d’image de choix.
+.. note::
+
+    Si la loupe n’est pas visible, c’est que l’utilisateur n’a pas le droit
+    de voir les images de choix ou qu’il n’existe pas d’image de choix.
 
 **Se positionner sur le "i" pour obtenir les informations de production du document
 original** telles que : largeur, hauteur, type, poids, taille d’impression…
@@ -146,9 +152,11 @@ Pour placer une sélection de documents dans un Panier:
   * Pour plus d'informations, se reporter à la section dédiée aux :doc:`Paniers
     et aux Reportages <PaniersReportages>`.
 
-.. note:: Une sélection de documents est faite, si vous créez un nouveau panier
-          ou un nouveau reportage, une case à cocher vous permet d’ajouter
-          *toute la sélection active* au panier ou au reportage.
+.. note::
+
+    Une sélection de documents est faite, si vous créez un nouveau panier
+    ou un nouveau reportage, une case à cocher vous permet d’ajouter
+    *toute la sélection active* au panier ou au reportage.
 
 *Pour faire une sélection de documents au sein d'un Panier:*
 
@@ -189,9 +197,11 @@ des champs remplis, tels que les mots clés, la légende,...
 .. image:: ../../images/Affichage-vuedetaillee1.jpg
     :align: center
 
-.. note:: Selon la configuration de la solution et l’existence d’un thesaurus
-          attaché à la base, certains mots clés de la légende sont "cliquables".
-          Soulignés de pointillés, ils permettent de rebondir sur d'autres recherches.
+.. note::
+
+    Selon la configuration de la solution et l’existence d’un thesaurus
+    attaché à la base, certains mots clés de la légende sont "cliquables".
+    Soulignés de pointillés, ils permettent de rebondir sur d'autres recherches.
 
 Onglet Historique
 *****************
@@ -221,5 +231,7 @@ téléchargements du document.
 
 Cliquer sur "Fermer" ou sur la touche "Echap" pour fermer la fenêtre.
 
-.. note:: Pour des rapports de statistiques détaillés concernant votre base Phraseanet,
-          rendez-vous sur la page consacrée aux :doc:`Statistiques <Statistiques>`.
+.. note::
+
+    Pour des rapports de statistiques détaillés concernant votre base Phraseanet,
+    rendez-vous sur la page consacrée aux :doc:`Statistiques <Statistiques>`.

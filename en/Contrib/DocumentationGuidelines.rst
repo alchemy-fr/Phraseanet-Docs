@@ -104,11 +104,13 @@ Meta Markups
 
   * Notes::
 
-      .. note::
-        A note
+        .. note::
+
+            A note
 
     .. note::
-      A note
+
+        A note
 
   * Warning::
 

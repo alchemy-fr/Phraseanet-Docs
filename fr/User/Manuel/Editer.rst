@@ -155,9 +155,11 @@ thésaurus.
 
 * => il est immédiatement ajouté aux documents sélectionnés.
 
-.. note:: Il est aussi possible de déployer "l'arbre" du thésaurus pour
-          chercher et sélectionner des termes à indexer. Cliquer sur les
-          symboles "plus" qui se trouvent devant les termes.
+.. note::
+
+    Il est aussi possible de déployer "l'arbre" du thésaurus pour
+    chercher et sélectionner des termes à indexer. Cliquer sur les
+    symboles "plus" qui se trouvent devant les termes.
 
 Editer à partir des valeurs suggérées
 *************************************
@@ -176,8 +178,10 @@ Phraseanet Administration <AdministrationBasesCollections>`
 
 * => la valeur est ajoutée au champ.
 
-.. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste en
-          appuyant sur la touche "cmd" ou "ctrl"
+.. note::
+
+    Pour cumuler des valeurs, sélectionner une valeur dans la liste en
+    appuyant sur la touche "cmd" ou "ctrl"
 
 Utiliser l'onglet Presse Papier
 *******************************
@@ -219,8 +223,10 @@ Un modèle est créé à partir d'une notice en cours d'édition.
 * -> Cliquer sur l’onglet Modèles
 * -> Sélectionner une notice en cliquant sur une vignette
 
-.. note:: Si plusieurs documents sont sélectionnés, le modèle ne pourra
-          reprendre que le contenu hétérogène des champs
+.. note::
+
+    Si plusieurs documents sont sélectionnés, le modèle ne pourra
+    reprendre que le contenu hétérogène des champs
 
 * -> Cliquer sur Ajouter
 
@@ -242,8 +248,10 @@ Appliquer un modèle à une sélection de documents
 * => l'ensemble des informations contenus dans le modèle est appliqué aux
   documents
 
-.. note:: Il est possible de revoir les valeurs des champs d'un modèle en
-          cliquant sur la flèche se trouvant devant le titre du modèle.
+.. note::
+
+    Il est possible de revoir les valeurs des champs d'un modèle en
+    cliquant sur la flèche se trouvant devant le titre du modèle.
 
 .. warning:: Un modèle est la propriété de l'utilisateur qui l'a créé, il ne
              peut être utilisé que par lui.

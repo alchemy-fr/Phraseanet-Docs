@@ -51,7 +51,9 @@ Vous aurez sur votre écran une liste de commande de la sorte :
 
     php bin/console help nomdecommande
 
-.. note:: Chaque commande retourne une valeur qui peut-être utilisée pour
+.. note::
+
+    Chaque commande retourne une valeur qui peut-être utilisée pour
     exécuter des scripts automatisés.
 
 check:config
@@ -153,7 +155,9 @@ scheduler:state
 Instruction permettant de voir l'état du
 :doc:`gestionnaire de tâches </Admin/MoteurDeTaches>`.
 
-.. note:: Cette commande retourne une valeur différente pour chaque état du gestionnaire de tache.
+.. note::
+
+    Cette commande retourne une valeur différente pour chaque état du gestionnaire de tache.
 
 +------------------+-----------------+
 |  Etat            | Valeur de retour|

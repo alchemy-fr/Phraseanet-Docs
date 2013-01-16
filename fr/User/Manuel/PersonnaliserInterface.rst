@@ -22,7 +22,9 @@ d’affichage.
 Relâcher le curseur dès que le nombre de vignettes par ligne dans la zone de
 travail est atteint.
 
-.. note:: Ensuite, l'application ajuste seule l’espace pour optimiser l’affichage.
+.. note::
+
+    Ensuite, l'application ajuste seule l’espace pour optimiser l’affichage.
 
 Masquer ou afficher la zone de travail
 **************************************

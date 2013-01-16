@@ -100,7 +100,7 @@ Exemple pour ubuntu :
  * Activation des locales désirées via le fichier /etc/locale.gen
  * execution de la commande /usr/sbin/locale-gen
 
-  .. note::
+.. note::
 
     Les locales à installer doivent être les locales UTF-8.
 

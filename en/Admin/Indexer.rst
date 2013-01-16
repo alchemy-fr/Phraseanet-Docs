@@ -71,7 +71,7 @@ Windows). The "nolog" option allows to send messages on screen.
 
 .. note::
 
-    a debug mask set to --debug=64 (flush ops.) allows control of indexer
+    A debug mask set to --debug=64 (flush ops.) allows control of indexer
     without overloading the logs.
 
 examples

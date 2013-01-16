@@ -185,11 +185,13 @@ interfaces.
 A travers la gestion des utilisateurs, il est possible de définir pour chaque
 Status activé si un utilisateur est "On" et/ou "Off" pour les documents.
 
-.. note:: Il existe 64 :term:`status <Status>`. 60 sont paramétrables et
-          peuvent être utilisés pour des besoins de workflow ou la mise en place
-          des restrictions d’accès aux documents entre autres.
-          Le changement d’état des status est aussi disponible directement depuis
-          la fenêtre :doc:`Editer <Editer>`.
+.. note::
+
+    Il existe 64 :term:`status <Status>`. 60 sont paramétrables et
+    peuvent être utilisés pour des besoins de workflow ou la mise en place
+    des restrictions d’accès aux documents entre autres.
+    Le changement d’état des status est aussi disponible directement depuis
+    la fenêtre :doc:`Editer <Editer>`.
 
 **Changer les status des documents**
 

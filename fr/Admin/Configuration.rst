@@ -384,7 +384,9 @@ La même restriction peut être faite au niveau des databoxes :
                             - 3
                             - 7
 
-.. note:: Il n'est pas possible de restreindre à la fois sur des databoxes et
+.. note::
+
+    Il n'est pas possible de restreindre à la fois sur des databoxes et
     des collections.
 
 **Comment implémenter un checker ?**

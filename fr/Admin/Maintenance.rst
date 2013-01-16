@@ -45,8 +45,10 @@ Mise à jour.
 Néanmoins il peut être judicieux de faire une sauvegarde ponctuelle des sources
 après l’installation ou le paramétrage.
 
-  .. note: Vous ne devriez normallement juste avoir à sauvegarder que le dossier
-     config  qui contient vos informations de setup
+.. note:
+
+    Vous ne devriez normallement juste avoir à sauvegarder que le dossier
+    config  qui contient vos informations de setup
 
 Etat de maintenance
 -------------------

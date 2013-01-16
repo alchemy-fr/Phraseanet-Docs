@@ -19,9 +19,11 @@ installé.
 
 Il doit disposer d'une adresse email valide à laquelle il a accès.
 
-.. note:: Sur les PC Windows, Internet Explorer 7 est la version minimum conseillée du
-          navigateur Microsoft. Toutefois, *Phraseanet Classic* permet de consulter le
-          fonds au moyen de navigateurs réputés obsolètes comme Internet Explorer 6.
+.. note::
+
+    Sur les PC Windows, Internet Explorer 7 est la version minimum conseillée du
+    navigateur Microsoft. Toutefois, *Phraseanet Classic* permet de consulter le
+    fonds au moyen de navigateurs réputés obsolètes comme Internet Explorer 6.
 
 Les modules
 -----------

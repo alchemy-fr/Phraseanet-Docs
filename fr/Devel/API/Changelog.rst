@@ -366,7 +366,9 @@ L'attribut "is_mine" a disparu au profit de deux nouvelles clefs : *readonly* et
             "updated_on": "2011-07-20T18:45:20+02:00"
         },
 
-.. note:: Ces attributs ont aussi été ajoutés dans la route :doc:`feeds/list <V1/Route/Feeds/List>`.
+.. note::
+
+    Ces attributs ont aussi été ajoutés dans la route :doc:`feeds/list <V1/Route/Feeds/List>`.
 
 Correction de bug
 *****************

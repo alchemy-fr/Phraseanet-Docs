@@ -82,9 +82,11 @@ The settings page of the application is displayed.
 * The developer token is an access token that identifies the owner of the
     application to the Phraseanet API
 
-.. note::  The developer token can be used during application development or
-        to query the API by the intermediary of an automated process that
-        does not require authentication..
+.. note::
+
+    The developer token can be used during application development or
+    to query the API by the intermediary of an automated process that
+    does not require authentication..
 
 .. seealso::    Phraseanet relies on the oAuth2.0 authentication protocol .
              To better understand the process of creation and authentication of

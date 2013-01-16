@@ -41,8 +41,10 @@ Les administrateurs, eux, peuvent avoir accès à davantage d'interfaces (telles
 Enfin, **il n'est pas possible à un utilisateur disposant des droits de gestion des
 utilisateurs de donner plus de droits qu'il n'en a lui-même**.
 
-  .. note:: Un utilisateur n'ayant pas de droits attribués est un utilisateur fantôme.
-        Il est signalé par une icône de fantôme dans la liste des utilisateurs.
+.. note::
+
+    Un utilisateur n'ayant pas de droits attribués est un utilisateur fantôme.
+    Il est signalé par une icône de fantôme dans la liste des utilisateurs.
 
 .. image:: ../../images/Administration-utilisateurfantome.jpg
     :align: center
@@ -169,7 +171,9 @@ exploitation** à gauche et les droits de "gestion" au sens étendu à droite.
 En haut à gauche de la fenêtre, on accède aux informations de l'utilisateur en
 cliquant sur sa "Fiche" (en bleu ci-dessous).
 
-.. note:: La modification des droits des utilisateurs peut se faire en lot.
+.. note::
+
+    La modification des droits des utilisateurs peut se faire en lot.
 
 Ce cadre donne la liste des bases et des collections disponibles et auxquelles
 l'utilisateur peut avoir accès.
@@ -192,9 +196,11 @@ Un utilisateur ne peut donner plus de droits qu'il n'en a lui même (point rouge
 Le signe "i" signifie qu'une fenêtre est accessible d'un clic pour définir de
 façon plus précise des droits spécifiques.
 
-.. note:: En cliquant sur la flèche grise, Phraseanet vous donne la possibilité de
-          cocher ou décocher toute la colonne, au lieu de cliquer sur les cases
-          une par une.
+.. note::
+
+    En cliquant sur la flèche grise, Phraseanet vous donne la possibilité de
+    cocher ou décocher toute la colonne, au lieu de cliquer sur les cases
+    une par une.
 
 Les droits de consultation
 **************************

@@ -57,12 +57,14 @@ astérisques puis cliquer sur le bouton "Ajouter". Cela a pour effet d'
 ajouter le contact crée dans la zone des destinataires de l'envoi tout en
 créant un compte à son nom dans le système Phraseanet.
 
-.. note:: Les utilisateurs listés dans la zone des destinataires de l'envoi peuvent
-          être regroupés et sauvegardés dans des listes d'envoi pour une
-          réutilisation ultérieure.
-          Pour sauvegarder une liste d'envoi, renseigner le champ de formulaire
-          situé à gauche de la zone des destinataires de l'envoi puis l'enregistrer
-          en cliquant sur l'icône :
+.. note::
+
+    Les utilisateurs listés dans la zone des destinataires de l'envoi peuvent
+    être regroupés et sauvegardés dans des listes d'envoi pour une
+    réutilisation ultérieure.
+    Pour sauvegarder une liste d'envoi, renseigner le champ de formulaire
+    situé à gauche de la zone des destinataires de l'envoi puis l'enregistrer
+    en cliquant sur l'icône :
 
 .. image:: ../../images/Push-icone-disquette.jpg
     :align: center
@@ -200,8 +202,10 @@ lien *Ajouter*.
   sélectionner les lignes des utilisateurs correspondants : cela a pour effet
   de les supprimer de la liste.
 
-.. note:: Un dispositif de recherche et de filtres permet de limiter l'affichage des
-          utilisateurs par leurs identifiants, noms ou prénom, activité, société… *etc.*
+.. note::
+
+    Un dispositif de recherche et de filtres permet de limiter l'affichage des
+    utilisateurs par leurs identifiants, noms ou prénom, activité, société… *etc.*
 
 * Pour retourner au sommaire de la liste, cliquer sur le bouton *Voir* .
 
@@ -239,5 +243,7 @@ de l'interface.
 Une fenêtre de contrôle demande alors de confirmer la suppression. Cliquer sur *Ok*
 pour supprimer définitivement cette liste.
 
-.. Note :: Si le nom de la liste supprimée figure toujours dans la liste des
-          listes d'envoi, cliquer sur le lien *Rafraîchir* situé à gauche de l'interface.
+.. note ::
+
+    Si le nom de la liste supprimée figure toujours dans la liste des
+    listes d'envoi, cliquer sur le lien *Rafraîchir* situé à gauche de l'interface.

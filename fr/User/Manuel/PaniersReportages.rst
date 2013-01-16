@@ -71,7 +71,9 @@ A partir des résultats
     survolant le nom d’un panier, soit en déposant la sélection dans le
     panier ouvert.
 
-.. note:: Les documents ajoutés sont affichés en dernier dans le panier.
+.. note::
+
+    Les documents ajoutés sont affichés en dernier dans le panier.
 
 A partir de la vue détaillée
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -80,8 +82,10 @@ A partir de la vue détaillée
   * -> Cliquer sur le picto "Panier"
   * -> Le document est ajouté au panier actif
 
-.. note:: Le panier actif est soit le panier ouvert soit le dernier panier sur
-          lequel une action a eu lieu (filet autour de la barre du titre).
+.. note::
+
+    Le panier actif est soit le panier ouvert soit le dernier panier sur
+    lequel une action a eu lieu (filet autour de la barre du titre).
 
 Sélectionner des documents dans les paniers
 *******************************************
@@ -248,9 +252,11 @@ Onglet Reportages
     s’appuyant sur le contenu documentaire des enregistrements ajoutés et aussi
     fusionner les contenus documentaires.
 
-.. note:: La plupart des fonctions disponibles sur les Paniers sont aussi
-          disponibles sur les Reportages, seules les fonctions propres aux
-          reportages sont documentées.
+.. note::
+
+    La plupart des fonctions disponibles sur les Paniers sont aussi
+    disponibles sur les Reportages, seules les fonctions propres aux
+    reportages sont documentées.
 
 Nouveau Reportage
 *****************
