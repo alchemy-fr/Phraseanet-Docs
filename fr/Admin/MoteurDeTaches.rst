@@ -16,13 +16,11 @@ Le Planificateur de taches
 Le menu contextuel du Gestionnaire de tâches (et de chacune des tâches) propose
 des rubriques pour démarrer, arrêter, ou consulter les logs des tâches.
 
-
 Arrêts et démarrages alternatifs
 ********************************
 
 Pour automatiser des arrêts et des démarrages du planificateur de tâches, utiliser l’utilitaire
 `KonsoleKommander <Console>`_ et l'une des commandes suivantes dans une tâche Cron par exemple.
-
 
   .. code-block:: bash
 
@@ -100,7 +98,6 @@ Paramètrage
    .. warning:: Pour des raisons de sécurité, il faut créér un fichier
       .phrasea.xml à la racine du HotFolder.
 
-
 FTP Push
 ********
 
@@ -135,7 +132,6 @@ Paramètrage
   * SSL: connexion en ssl (sécurisée)
   * périodicité de la tache : intervalle d’exécution de la tache
 
-
 Déplacement des documents périmés
 *********************************
 
@@ -166,11 +162,6 @@ Paramètrage
 
 .. todo:: Batch upload process (XML Service)
 
-
-
-
-
-
 RecordMover
 ***********
 
@@ -182,7 +173,6 @@ et applique des traitements sur ces records (settings "to").
 Une tâche "RecordMover" peut remplacer un ensemble de tâches "Workflow01" et
 autorise des critères plus nombreux.
 
-
 Interface
 ^^^^^^^^^
 Les settings sont editable en XML, l'interface affiche le SQL correspondant, le
@@ -191,7 +181,6 @@ maintenant), ainsi que les 10 premiers records-id's.
 
 Une tâche peut être maintenue 'désactivée' durant sa mise au point
 (une croix rouge est visible ).
-
 
 Settings XML
 ^^^^^^^^^^^^
@@ -260,7 +249,6 @@ Les critères possibles sont
     <date direction="after" field="PURGE" delta="-2" />
     on est 2j avant la date de purge
 
-
 Pour l'action "update", les opérations décrites dans <to> peuvent porter sur :
 
 - la collection
@@ -276,7 +264,6 @@ Pour l'action "update", les opérations décrites dans <to> peuvent porter sur :
 
     <status mask="0x1xxxx" />
     baisser le sb 6, lever le sb 4
-
 
 Pour l'action "delete", l'attribut "deletechildren="1"" demande la suppression du contenu des regroupements supprimés.
 
@@ -352,7 +339,6 @@ exemples
     <task> successives, des docs peuvent 'sauter' d'un état à l'autre à chaque
     éxécution de la tâche.
 
-
     ex :
     dans le cas précédent, si la date d'archivage d'un doc est antérieure à sa date
     de fin de copyright (incohérent), le sb 4 va passer de 0 à 1 à chaque éxécution.
@@ -360,11 +346,4 @@ exemples
     Ce type de problème peut être évité en s'assurant qu'aucune des clauses 'from'
     ne se recouvrent, par ex. en levant un sb spécifique à chaque <task>
 
-
 .. todo:: on ne peut pas tester l'absence d'un champ avec 'value=""'
-
-
-
-
-
-

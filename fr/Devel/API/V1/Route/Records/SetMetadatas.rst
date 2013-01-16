@@ -81,7 +81,6 @@ est équivalent à
         }
     }
 
-
 Exemple de réponse
 ------------------
 

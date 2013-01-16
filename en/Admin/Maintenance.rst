@@ -22,7 +22,6 @@ install.
 
 Live backups should work.
 
-
 :doc:`Konsole Kommander <Console>` has a command to backup your DBs :
 
   .. code-block:: bash
@@ -30,7 +29,6 @@ Live backups should work.
       php bin/console system:backup-db /path/to/DBBackupDirectory/
 
 This command can be included in a backup script.
-
 
 Application sources
 *******************
@@ -50,4 +48,3 @@ You can setup your application in maintenance mode to prevent user from login
 and display an alert message on the frontpage.
 This configuration has to be done in the *config.yml* file.
 Please refer to the :doc:`admin manual </Admin/Configuration>`.
-

@@ -51,7 +51,6 @@ authentification et reposent sur des méthodes de requêtes HTTP de type GET et 
 Pour chaque ressource, il est possible d’obtenir des liens et actions.
 Par exemple, les propriétés d'un enregistrement ou d'une databox :
 
-
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 |           | Généralités                            | Liens                                          | Actions                                              |
 +===========+========================================+================================================+======================================================+

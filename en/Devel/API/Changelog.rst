@@ -50,7 +50,6 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
 - Object with numeric attributes have been removed. All collection objects are
   now presented as an array of objects.
 
-
 **Before**
 
 .. code-block:: javascript
@@ -91,7 +90,6 @@ Record response
 ***************
 
 Attribute **last_modification** has been replaced by **updated_on**.
-
 
 Permalink response
 ******************
@@ -225,7 +223,6 @@ The response of a databox document structure is now contained in a
         ]
     }
 
-
 Task response
 *************
 
@@ -234,7 +231,6 @@ Three fields have been added to the response that describe a task.
 - **auto_start**
 - **runner**
 - **crash_counter**
-
 
 .. code-block:: javascript
 
@@ -273,8 +269,6 @@ The response of a caption record is now contained in **caption_metadas** attribu
             }
         ]
     }
-
-
 
 Basket response
 ***************
@@ -383,7 +377,6 @@ contains an array of validation choice with a new **validation_user** attribute.
         "note": ""
     }
 
-
 Searching for a records
 ***********************
 
@@ -437,7 +430,6 @@ Attribute *is_mine* has been removed and is replaced by two new attributes :
         },
 
 .. note:: These attributes have also been added in :doc:`feeds/list <V1/Route/Feeds/List>`.
-
 
 Bug fix
 *******

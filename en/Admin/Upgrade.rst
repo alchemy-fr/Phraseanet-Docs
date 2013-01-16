@@ -51,5 +51,3 @@ follow this upgrade procedure :
     bin/console --version
 
   * Restart the tasks in Phraseanet "Administration" panel.
-
-

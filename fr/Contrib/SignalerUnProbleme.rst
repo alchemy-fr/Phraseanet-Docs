@@ -16,7 +16,6 @@ Pour ouvrir un rapport de bug, vérifier préalablement les conditions suivantes
    pas de remède approprié
  * Le problème n'est pas déjà reporté dans le `bug tracker`_.
 
-
 Après vérification, ouvrir un ticket dans le `bug tracker`_ avec un `gist`_ du
 résultat de la commande :
 

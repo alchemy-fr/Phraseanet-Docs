@@ -110,7 +110,6 @@ Formatage
 
     :term:`enregistrement`
 
-
 Meta Markups
 ************
 

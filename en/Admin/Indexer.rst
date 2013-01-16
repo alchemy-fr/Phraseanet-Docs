@@ -27,7 +27,6 @@ The indexer needs those libraries :
 After building from sources (see Windows specifics), copy the program in a
 directory allowing excution.
 
-
 Command-line options
 --------------------
 
@@ -114,7 +113,6 @@ The indexer can be checked with "-?" option which must print the help :
     [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
                                           (default none)
 
-
 Example of reading options from a file...
 
     .. code-block:: none
@@ -145,14 +143,12 @@ Example of reading options from a file...
         # sql connections encoding
         --default-character-set=utf8
 
-
 Running with the Task-Manager
 -----------------------------
 
 The indexder can be executed by the "Indexer" task of the Phraseanet
 Task-Manager.
 Options can then be set via the gui of the task.
-
 
 Linux and OSX specifics
 -----------------------
@@ -168,7 +164,6 @@ The indexer is pre-builded for Windows.
 Download the last version "https://github.com/alchemy-fr/Phraseanet-Indexer/tree/master/WIN32/out/Release/bin/phraseanet_indexer.exe",
 and copy the program file into a separate directory (for ex. into "Program
 Files\\Phraseanet-Indexer\\phraseanet_indexer.exe").
-
 
 .. note::
 
@@ -212,4 +207,3 @@ ex :
 
 If the indexer is executed as a Windows service, the "indexer task" can be
 deleted (or not activated).
-

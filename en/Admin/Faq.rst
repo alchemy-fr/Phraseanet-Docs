@@ -1,7 +1,6 @@
 FAQ
 ===
 
-
 I can not upload more than 2Mo
 ------------------------------
 
@@ -29,7 +28,6 @@ If you're using Nginx, you have to allow big requests :
 
         ...
     }
-
 
 Results are presented with a hot air balloon
 --------------------------------------------

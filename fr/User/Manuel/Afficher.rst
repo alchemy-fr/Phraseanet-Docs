@@ -12,7 +12,6 @@
     gestion et à l'édition des documents, tandis que *Classic* n'est qu'une simple
     interface de visualisation et de recherche des documents.
 
-
 .. figure:: ../../images/Production-general.jpg
      :align: center
 
@@ -124,7 +123,6 @@ Le nombre d'éléments sélectionnés apparaît en bas à gauche dans l'interfac
 
   .. image:: ../../images/Affichage-selection5.jpg
        :align: center
-
 
   * La sélection par type de documents
 

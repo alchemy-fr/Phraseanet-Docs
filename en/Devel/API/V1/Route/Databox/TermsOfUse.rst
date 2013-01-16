@@ -26,7 +26,6 @@ Parameters
    databox_id               integer        The databox id on which the request is done
   ======================== ============== =============
 
-
 Response Fields
 ---------------
 

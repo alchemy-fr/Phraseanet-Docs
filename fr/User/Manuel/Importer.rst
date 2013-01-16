@@ -13,7 +13,6 @@ Importer
     C'est une interface dédiée à l'ajout de documents vers des collections sur
     lesquelles l'utilisateur dispose des droits d'ajout.
 
-
 .. image:: ../../images/Upload-zones.jpg
        :align: center
 
@@ -21,10 +20,8 @@ Importer
       HTML5, un mode d'affichage reposant sur le plug-in Adobe `FlashPlayer`_
       est disponible dans Phraseanet Upload.
 
-
       .. image:: ../../images/Upload-Version-Flash.jpg
        :align: center
-
 
       Cliquer sur le lien **Utiliser l'uploader Flash** pour utiliser ce mode.
       Ce mode Flash n'offre pas une alternative mais un mode d'affichage
@@ -140,7 +137,6 @@ Trois choix sont alors proposés à l'utilisateur :
 * **Ajouter** le fichier comme nouveau document dans la base
 * **Supprimer** le fichier
 * **Substituer** le fichier existant
-
 
 L'utilisateur décide de l'action a entreprendre pour vider la file de fichiers
 présents dans la quarantaine.

@@ -169,7 +169,6 @@ Choisir un des onglets proposés:
   * :term:`Métadonnées <Métadonnées>` : Permet d’afficher l’ensemble
     des informations :term:`EXIF <EXIF>` disponibles pour le document.
 
-
 Pour appliquer les modifications apportées, cliquer sur Valider.
 
 Propriétés

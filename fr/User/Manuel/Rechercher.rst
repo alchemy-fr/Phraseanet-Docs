@@ -201,7 +201,6 @@ Les documents s'affichent dans la fenêtre *Résultats*.
           individuellement ou encore dans les cases à cocher proposées pour chaque
           collection disponible.
 
-
 Recherche à partir du Thesaurus
 -------------------------------
 La recherche à partir du Thesaurus se fait via la barre des Onglets dans *Phraseanet

@@ -40,7 +40,6 @@ Onglet Paniers
 .. figure:: ../../images/Prod-Bonglet-DetailPanier.jpg
        :align: center
 
-
 Nouveau Panier
 **************
 
@@ -191,7 +190,6 @@ Un panier archivé disparaît de la zone de travail latérale.
 Il peut être ainsi conservé pour un usage futur, sans encombrer la zone de travail
 dans *Phraseanet Production*.
 
-
 Retrouver un Panier archivé
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Pour retrouver un panier archivé, il suffit de se rendre dans l'"Historique des
@@ -250,11 +248,9 @@ Onglet Reportages
     s’appuyant sur le contenu documentaire des enregistrements ajoutés et aussi
     fusionner les contenus documentaires.
 
-
 .. note:: La plupart des fonctions disponibles sur les Paniers sont aussi
           disponibles sur les Reportages, seules les fonctions propres aux
           reportages sont documentées.
-
 
 Nouveau Reportage
 *****************
@@ -271,7 +267,6 @@ Nouveau Reportage
 
 * => Le Reportage est créé
 * => Le Reportage est affiché "ouvert" dans l'onglet
-
 
 Ajouter des documents à un Reportage
 *************************************

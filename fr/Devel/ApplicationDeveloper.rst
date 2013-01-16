@@ -17,7 +17,6 @@ Voici la marche à suivre :
     * Pour pouvoir utiliser les fonctionnalités de l'API Phraseanet, Il faut
       enregistrer une nouvelle application et obtenir une clé d'API.
 
-
 Enregistrer une application auprés de l'API phraseanet
 ------------------------------------------------------
 
@@ -34,7 +33,6 @@ Cliquer sur *créer une nouvelle application*
 
 .. image:: ../images/MonCompteDeveloppeurCreate.png
        :align: center
-
 
 * Donner un nom à l'application
 * Remplir la description concernant l'application, cette information est à
@@ -67,7 +65,6 @@ application, La page des paramètres de l'application s'affiche.
 .. image:: ../images/MonCompteDeveloppeurApplication.png
        :align: center
 
-
 **Cette page présente**
 
 * Le *Client ID* est un identifiant unique public de l'application
@@ -91,7 +88,6 @@ application, La page des paramètres de l'application s'affiche.
         l'applicatio ou bien pour effectuer des requêtes sur l'API par
         l'intermediaire d'un processus automatisé qui ne nécessite pas
         d'authentification.
-
 
 .. seealso::  Phraseanet s'appuie sur le protocole d'authentification oAuth2.0.
             Afin de mieux appréhender le processus de création et

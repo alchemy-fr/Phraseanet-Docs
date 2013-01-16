@@ -81,7 +81,6 @@ is equivalent to
         }
     }
 
-
 Response sample
 ---------------
 

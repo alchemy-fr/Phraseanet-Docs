@@ -16,7 +16,6 @@ contenus d’une médiathèque Phraseanet.
 Pour partager vos retours d’expérences et publier vos codes sources,
 utilisez nos :doc:`forums </Devel/Forums>`.
 
-
 Pour démarrer :
 
   * Lire l':doc:`introduction <V1/Introduction>`

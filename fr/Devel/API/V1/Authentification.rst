@@ -5,7 +5,6 @@ Authentification
 
   OAauth2.0 permet l'accés à une API sécurisée d'une manière simple et standard.
 
-
 Bibliothèques clientes
 ----------------------
 
@@ -86,7 +85,6 @@ Application internet
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
     &code=CODE
 
-
   La réponse est au format JSON.
 
   .. code-block:: javascript
@@ -140,7 +138,6 @@ Applications Clientes
     &redirect_uri=urn:ietf:wg:oauth:2.0:oob
     &response_type=code
 
-
 Utilisation du jeton d'accès
 ----------------------------
 
@@ -152,7 +149,6 @@ Utilisation du jeton d'accès
   .. code-block:: bash
 
       curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
-
 
 Utiliser le type d'authentification 'password'
 ----------------------------------------------

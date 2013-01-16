@@ -21,7 +21,6 @@ la page : :doc:`Signaler un problème <SignalerUnProbleme>`
 Les contributions à Phraseanet sont ouvertes. Les `pull-requests`_ peuvent être
 effectuées dans les *repositories* correspondants :
 
-
 * **Phraseanet**
 
   https://github.com/alchemy-fr/Phraseanet

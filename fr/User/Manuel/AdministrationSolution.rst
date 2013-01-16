@@ -8,14 +8,11 @@ Administration de l'application
     L'administration de l'application consiste à surveiller le bon fonctionnement
     de la solution et à apporter si besoin des modifications de paramétrage.
 
-
-
 Tableau de bord
 ---------------
 
   .. image:: ../../images/Administration-tableaudebord.jpg
        :align: center
-
 
 **Accessible aux seuls administrateurs Phraseanet**, le *tableau de bord* permet d'ajouter
 ou de supprimer des administrateurs Phraseanet.
@@ -23,11 +20,9 @@ ou de supprimer des administrateurs Phraseanet.
 Les **administrateurs Phraseanet** sont des utilisateurs dotés de pouvoirs de paramétrage et
 de maintenance applicative.
 
-
 En outre, le tableau de bord offre une vue sur l'état de la configuration du système de
 fichier, des exécutables, des extensions, des serveurs de caches et des serveurs web
 qui entrent dans la mise en oeuvre de la solution Phraseanet.
-
 
 Setup
 -----
@@ -71,7 +66,6 @@ de la date et de l'heure de connexion au système.
   .. note:: Phraseanet repose sur un mécanisme de *sessions persistantes*.
             Les dates et heures de connexion correspondent à celles de l'initialisation de
             la session de l'utilisateur.
-
 
 Publications
 ------------
@@ -150,6 +144,3 @@ Après avoir cliqué sur *nouvelle tâche* :
 
 .. note:: Pour plus d'informations sur le paramétrage de tâches, se reporter
      à la page :doc:`../../Admin/MoteurDeTaches`.
-
-
-

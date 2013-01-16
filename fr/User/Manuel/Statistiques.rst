@@ -73,7 +73,6 @@ Voici une liste des tableaux disponibles et significations
 
   * Sites d'où les documents sont les plus consultés (Tableau)
 
-
 Les trois onglets suivants: `Connexion`_, `Téléchargements`_ et
 `Activité du Site`_, se présentent de la même façon : L'utilisateur doit
 sélectionner 3 critères afin d'accéder aux statistiques :
@@ -216,7 +215,6 @@ les types de rapports sélectionnables sont les suivants:
 
   Exemple de rapport incluant les données relatives aux questions les plus
   posées.
-
 
 Les rapports
 ------------

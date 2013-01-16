@@ -40,7 +40,6 @@ consultation des Résultats :
 
 Un clic sur n'importe quelle partie de la zone la fait réapparaître instantanément.
 
-
 Réglage des notifications
 *************************
 Dans la partie droite se trouvent vos notifications, :doc:`vos informations de

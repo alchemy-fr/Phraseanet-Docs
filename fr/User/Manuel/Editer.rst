@@ -4,7 +4,6 @@
 .. toctree::
    :maxdepth: 3
 
-
 Editer des documents
 --------------------
 
@@ -65,11 +64,9 @@ Editer des champs de type date
 *  -> Sélectionner le ou les documents pour lesquels la date doit être modifiée
    ou ajoutée.
 
-
 * -> Saisir manuellement la date selon le format aaaammjj
 * -> Ou utiliser le calendrier proposé
 * -> Cliquer sur *Valider* pour enregistrer les modifications
-
 
 Editer des champs de type texte intégral
 ****************************************
@@ -87,7 +84,6 @@ saisis sur chaque fiche en cliquant sur le bouton "ajouter".
 
 .. image:: ../../images/Prod-Editer-texte-ajouter.jpg
        :align: center
-
 
 Editer des champs textuels multi-valués
 ***************************************
@@ -121,7 +117,6 @@ Pour ajouter le terme à toutes les notices sélectionnées:
 * -> Cliquer sur le symbole "moins" à gauche du masque de saisie pour
   supprimer le terme de toutes les notices.
 
-
 Editer un champ lié une sources de données
 ******************************************
 
@@ -139,7 +134,6 @@ Placé sur un champ lié à une source de données, ...
 * -> Le système propose une liste de valeurs contenant la chaine de caractères
 * -> Sélectionner la valeur souhaitée au clavier ou à la souris
 
-
 Editer à partir du thésaurus
 ****************************
 
@@ -152,7 +146,6 @@ thésaurus.
 * -> Sélectionner un champ du type textuel lié au thésaurus
 * -> Commencer à saisir un terme
 
-
 * => L'onglet thésaurus s'actualise et affiche les termes commençant par...
 
 .. image:: ../../images/Prod-Editer-thesaurus.jpg
@@ -160,13 +153,11 @@ thésaurus.
 
 * -> Faire un double clic sur le terme à indexer
 
-
 * => il est immédiatement ajouté aux documents sélectionnés.
 
 .. note:: Il est aussi possible de déployer "l'arbre" du thésaurus pour
           chercher et sélectionner des termes à indexer. Cliquer sur les
           symboles "plus" qui se trouvent devant les termes.
-
 
 Editer à partir des valeurs suggérées
 *************************************
@@ -177,20 +168,16 @@ sous forme de menu contextuel dans la fenêtre à gauche du nom du champ.
 :doc:`Se reporter à la section Préférences: Valeurs suggérées dans l'interface
 Phraseanet Administration <AdministrationBasesCollections>`
 
-
 .. image:: ../../images/Prod-Editer-valeurssugg.jpg
        :align: center
 
-
 * -> Cliquer sur le menu contextuel
 * -> Faire un double clic pour sélectionner une valeur dans la liste
-
 
 * => la valeur est ajoutée au champ.
 
 .. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste en
           appuyant sur la touche "cmd" ou "ctrl"
-
 
 Utiliser l'onglet Presse Papier
 *******************************
@@ -199,7 +186,6 @@ Utiliser l'onglet Presse Papier
 
 Copier et coller des termes ou des expressions dans ou depuis le presse papier
 vers des masques de saisie de champs.
-
 
 Utiliser l'onglet  Rechercher/Remplacer
 ***************************************
@@ -222,7 +208,6 @@ sur les documents en cours d’édition.
 
 * => Le nouveau terme remplace le précédent dans les notices
 
-
 Utiliser l'onglet Modèles
 **************************
 
@@ -230,7 +215,6 @@ Cette fonction permet de créer et d'utiliser ensuite des modèles de notices
 pré remplies.
 
 Un modèle est créé à partir d'une notice en cours d'édition.
-
 
 * -> Cliquer sur l’onglet Modèles
 * -> Sélectionner une notice en cliquant sur une vignette
@@ -250,7 +234,6 @@ Un modèle est créé à partir d'une notice en cours d'édition.
 
 * => Le nouveau modèle est affiché dans la liste des modèles
 
-
 Appliquer un modèle à une sélection de documents
 
 * -> Sélectionner les documents
@@ -265,13 +248,11 @@ Appliquer un modèle à une sélection de documents
 .. warning:: Un modèle est la propriété de l'utilisateur qui l'a créé, il ne
              peut être utilisé que par lui.
 
-
 Editer des reportages
 ---------------------
 
 Chaque reportage dispose de sa propre notice descriptive. Il est donc possible
 d'éditer en lots ces notices de reportage.
-
 
 Editer les notices de reportages
 ********************************
@@ -287,7 +268,6 @@ Le principe de fonctionnement est identique à celle de l'édition des documents
 mais seules les notices des reportages seront modifiées
 (pas les notices des documents contenus dans les reportages).
 
-
 Editer un reportage et son contenu
 **********************************
 
@@ -301,7 +281,6 @@ ou
 
 * => La fenêtre Editer s'ouvre
 
-
 .. image:: ../../images/Prod-Editer-reportage.jpg
        :align: center
 
@@ -310,7 +289,6 @@ Les reportages ont par défaut une image de "dossier" pour les illustrer.
 * -> Cliquer sur le menu contextuel d’une des vignettes
 * -> Cliquer sur *Définir comme image principale*
 * -> L’image du dossier est remplacée par la vignette du document choisi
-
 
 Pour compléter la notice du reportage:
 
@@ -325,7 +303,6 @@ Pour compléter la notice du reportage:
 
 * -> Cliquer sur Valider pour enregistrer les modifications.
 
-
 Editer les Status
 -----------------
 
@@ -337,4 +314,3 @@ documents sélectionnés.
   documents.
 * -> Cliquer sur Valider pour enregistrer les modifications ou poursuivre
   l’indexation.
-

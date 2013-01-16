@@ -87,12 +87,10 @@ Réponse pour une entrée des flux aggrégés
 L'attribut **feed_id** a été ajouté, il représente l'identifiant du flux auquel
 l'entrée appartient.
 
-
 Réponse pour un record
 **********************
 
 L'attribut **last_modification** a été remplacé par **updated_on**.
-
 
 Réponse pour un permalien
 **************************
@@ -251,7 +249,6 @@ Trois champs sont ajoutés à la réponse de la description d’une tâche.
         }
     }
 
-
 Réponse pour la légende d'un record
 ***********************************
 
@@ -316,7 +313,6 @@ demandé.
 
 Dans l'objet qui décrit un panier un attribut 'validation_basket' a été ajouté,
 il indique s'il s'agit d'un panier de validation.
-
 
 Recherche d'un enregistrement
 *****************************

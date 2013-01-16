@@ -45,16 +45,13 @@ You will see something like :
       task:list                        List tasks
       task:run                         Run task
 
-
 **To get some help about a command** :
 
   .. code-block:: bash
 
     php bin/console help CommandName
 
-
 .. note:: Each commands returns a value, which can be used for automated scripts
-
 
 check:config
 ------------
@@ -118,7 +115,6 @@ Merge several databox structure fields.
     * *--sbas_id (-s)* : Databox sbas_id
     * *--separator* : Separator for concatenation (if destination is monovalued)
       (default: ;)
-
 
 fields:rename
 -------------
@@ -202,5 +198,3 @@ system:upgrade
 --------------
 
 Upgrade Phraseanet to the latest version.
-
-

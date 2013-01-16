@@ -1,10 +1,9 @@
 ﻿Utilisateur
 ===========
 
-Voici le sommaire du manuel Utilisateur Phraseanet. 
+Voici le sommaire du manuel Utilisateur Phraseanet.
 
 Pour accéder aux différentes sections, cliquer sur les liens ci-dessous :
-
 
 .. toctree::
    :maxdepth: 3
@@ -17,9 +16,3 @@ Pour accéder aux différentes sections, cliquer sur les liens ci-dessous :
    Manuel/Statistiques
    Manuel/Thesaurus
    Manuel/Administration
-
-
-
-
-
-   

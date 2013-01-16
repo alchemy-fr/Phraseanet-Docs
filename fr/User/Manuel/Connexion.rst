@@ -3,7 +3,6 @@
 .. toctree::
    :maxdepth: 3
 
-
 Inscription
 -----------
   * Cliquer sur **Inscription** dans la page d'accueil.
@@ -15,7 +14,6 @@ L'écran *Nouvel utilisateur* s'ouvre :
 
     .. image:: ../../images/Inscription1.jpg
        :align: center
-
 
   * Saisir son Identifiant (minimum 5 lettres).
   * Saisir son mot de passe.
@@ -44,7 +42,6 @@ La page d'accueil permettant la connexion s'affiche :
     cliquant sur "Mot de Passe oublié". Cette procédure est décrite
     au paragraphe `Mot de passe perdu ?`_
 
-
 Mot de passe perdu ?
 --------------------
 
@@ -69,4 +66,3 @@ réinitialiser le mot de passe.
 
 Après réinitialisation du mot de passe, se connecter au moyen du formulaire disponible
 en page d’accueil de l'application Phraseanet.
-

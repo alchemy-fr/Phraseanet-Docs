@@ -8,7 +8,6 @@ Les changements :
 * Changement de code de retour de la console
 * tf-filename tf-basename tf-duration
 
-
 Quoi de neuf ?
 --------------
 

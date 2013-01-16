@@ -44,7 +44,6 @@ Attribut de la réponse
    url                L'URL de l'item nouvellement créé
   ================== ================================
 
-
 Exemple de réponse
 ------------------
 

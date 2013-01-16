@@ -8,7 +8,6 @@ Glossary
 .. glossary::
   :sorted:
 
-
   Record
     A record is the orginal file added to a collection.
 

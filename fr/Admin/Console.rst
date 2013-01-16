@@ -45,7 +45,6 @@ Vous aurez sur votre écran une liste de commande de la sorte :
       task:list                        List tasks
       task:run                         Run task
 
-
 **Pour obtenir de l'aide sur une commande**
 
   .. code-block:: bash
@@ -60,7 +59,6 @@ check:config
 
 Parse et vérifie la structure des
 :doc:`fichiers de configurations </Admin/Configuration>`
-
 
 check:ensure-dev-settings
 -------------------------
@@ -126,7 +124,6 @@ Fusionner plusieur champs de la structure documentaire.
     * *--separator* : Séparateur pour la concaténation (si la destination est
         monovaluée) (default: ;)
 
-
 fields:rename
 -------------
 
@@ -184,7 +181,6 @@ Instruction permettant de voir l'état du
 | état inconnu     | 21              |
 +------------------+-----------------+
 
-
 sphinx:generate-suggestions
 ---------------------------
 
@@ -203,7 +199,6 @@ system:clear-cache
 ------------------
 
 Vide les systèmes de cache utilisés par Phraseanet.
-
 
 system:mail-check
 -----------------

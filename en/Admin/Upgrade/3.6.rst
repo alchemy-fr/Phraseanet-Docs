@@ -22,7 +22,6 @@ Changes :
 
         Please upgrade your adapters before upgrade Phraseanet.
 
-
 What's new ?
 --------------
 

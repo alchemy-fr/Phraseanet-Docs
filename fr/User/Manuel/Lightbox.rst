@@ -12,8 +12,6 @@
     Elle permet aux utilisateurs non authentifiés de visionner des images
     sans avoir à s'authentifier.
 
-
-
 Accéder à la Lightbox
 ---------------------
 
@@ -43,7 +41,6 @@ Lightbox.
 La fenêtre affichée dresse la liste des Push et de demandes de validation que
 l'utilisateur a produit ou reçu.
 
-
 L'interface
 -----------
 
@@ -55,7 +52,6 @@ L'interface de la Lightbox est simple et intuitive.
   * 1. La barre d'action renseigne sur le nom du fichier, permet de naviguer dans les enregistrements et donne accès au téléchargement du media affiché.
   * 2. La table lumineuse, au centre, montre le média sa description et ses caractéristiques. Cette zone varie selon que l'on visionne un Push ou une demande de Validation.
   * 3. La zone d'affichage des vignettes liste les médias de la Lightbox
-
 
 Naviguer
 ********
@@ -73,8 +69,6 @@ le bouton **lecture** situé dans la barre d'action.
   .. image:: ../../images/Lightbox-play.jpg
     :align: center
 
-
-
 Téléchager des média
 ********************
 Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icône
@@ -89,8 +83,6 @@ située à gauche en bas de l'interface.
   .. image:: ../../images/Lightbox-enregister-tout.jpg
     :align: center
 
-
-
 Comparer deux media
 *******************
 Il peut être intéressant d'afficher deux média côte à côte pour les comparer.
@@ -103,7 +95,6 @@ Il peut être intéressant d'afficher deux média côte à côte pour les compar
 
 Ce dispositif est très utile dans une démarche de :doc:`validation de documents <Push>`.
 
-
 Valider des documents dans la Lightbox
 --------------------------------------
 
@@ -112,24 +103,15 @@ formulée sur des media.
 L'utilisateur a qui est adressée une demande de validation donne son avis par
 **oui** ou par **non** et peut si il le souhaite exprimer un avis.
 
-
   .. image:: ../../images/Lightbox-validation.jpg
     :align: center
 
-
 Pour ajouter un commentaire, cliquer sur la bulle présente dans la barre d'actions
-
-
 
   .. image:: ../../images/Lightbox-validation_appreciation.jpg
     :align: center
-
 
 Après validation, cliquer sur le bouton "Envoyer mon rapport".
 
 L'émetteur de la demande de validation sera immédiatement averti des appréciations
 et commentaires.
-
-
-
-

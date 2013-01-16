@@ -17,13 +17,11 @@ Gestion des utilisateurs
     * Créer des modèles applicables à des utilisateurs
     * De paramétrer un accès invité disposant de droits spécifiques
 
-
 Par défaut, l'interface affiche la liste des utilisateurs référencés sur la solution
 Phraseanet.
 
   .. image:: ../../images/General-Administration.jpg
        :align: center
-
 
 Notions relatives aux utilisateurs et à leurs droits
 ----------------------------------------------------
@@ -48,8 +46,6 @@ utilisateurs de donner plus de droits qu'il n'en a lui-même**.
 
   .. image:: ../../images/Administration-utilisateurfantome.jpg
        :align: center
-
-
 
 Trier les utilisateurs existants
 --------------------------------
@@ -159,7 +155,6 @@ Les droits de l'accès invité sont paramétrables dans cet onglet.
   .. image:: ../../images/Administration-parametreinvite.jpg
        :align: center
 
-
 Edition des droits
 ------------------
 
@@ -196,7 +191,6 @@ utilisateurs sélectionnés.
 Un utilisateur ne peut donner plus de droits qu'il n'en a lui même (point rouge).
 Le signe "i" signifie qu'une fenêtre est accessible d'un clic pour définir de
 façon plus précise des droits spécifiques.
-
 
 .. note:: En cliquant sur la flèche grise, Phraseanet vous donne la possibilité de
           cocher ou décocher toute la colonne, au lieu de cliquer sur les cases
@@ -300,7 +294,6 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
   * Enfin, **Structure Base**, pour autoriser l'utilisateur à modifier la
     structure de la base de données.
 
-
 Demandes
 ---------
 Disponible via le menu du module d'Administration, cette fenêtre liste les demandes
@@ -323,4 +316,3 @@ Choisir les droits à attribuer par collections en cochant les cases. L'utilisat
   * donner accès à la collection demandée, sans les documents en haute définition
 
 Cliquer sur **Valider** pour appliquer les choix effectués.
-

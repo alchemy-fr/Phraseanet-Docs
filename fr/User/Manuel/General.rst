@@ -23,7 +23,6 @@ Il doit disposer d'une adresse email valide à laquelle il a accès.
           navigateur Microsoft. Toutefois, *Phraseanet Classic* permet de consulter le
           fonds au moyen de navigateurs réputés obsolètes comme Internet Explorer 6.
 
-
 Les modules
 -----------
 Phraseanet est un système complet pour l’archivage, l’organisation et la
@@ -117,8 +116,6 @@ Les 4 autres icônes permettent de:
 
 .. figure:: ../../images/General-Classic4.jpg
    :align: center
-
-
 
 Administration
 **************

@@ -35,5 +35,3 @@ You can also manage Phraseanet through the `Konsole Kommander <Console>`
     Maintenance
     Optimization
     Faq
-
-

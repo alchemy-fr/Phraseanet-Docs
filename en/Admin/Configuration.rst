@@ -36,9 +36,7 @@ declaration of this environment below.
         opcodecache: array_cache
         border-manager: border_manager
 
-
 Let's detail environment structure :
-
 
 * phraseanet (main conf)
 
@@ -103,7 +101,6 @@ Here's the default structure of a service
           parameter1: value
           parameter2: value
 
-
 A service requires a type which is the PHP class to load.
 Array parameters is optionnel and depends of the service.
 
@@ -132,8 +129,6 @@ Here's *doctrine_dev* service :
               service: Cache\array_cache
           log:
             service: Log\query_logger
-
-
 
   * debug : Switch to debug mode
   * dbal : The name of a connection in connexions.yml
@@ -165,8 +160,6 @@ Here's *twig_prod*
           autoescape: true
           optimizer: true
 
-
-
   * debug : Switch to debug mode
   * charset : Template engine internal character encoding
   * strict_variable : Stop rendering on unknown vars (for developers)
@@ -194,7 +187,6 @@ Doctrine activity.
           max_day: 2
           filename: doctrine-query.log
 
-
   * output : Choose output format.
     Available mods.
 
@@ -216,8 +208,6 @@ Doctrine activity.
   * max_day : Specify in days the frequency operated on files for the rotated
     handler.
 
-
-
 Cache service ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -227,8 +217,6 @@ Cache service ArrayCache
     Cache:
       array_cache:
         type: Cache\ArrayCache
-
-
 
 Cache service ApcCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -240,7 +228,6 @@ Cache service ApcCache
       apc_cache:
         type: Cache\ApcCache
 
-
 Cache service XCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -250,9 +237,6 @@ Cache service XCache
     Cache:
       xcache_cache:
         type: Cache\XcacheCache
-
-
-
 
 Cache service MemcacheCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

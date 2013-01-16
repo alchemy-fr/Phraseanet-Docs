@@ -12,7 +12,6 @@ geoname entities, Thesaurus entries...
 The main consequence is a change in two API routes : records/metadatas and
 records/setmetadatas, therefore the upgrade of API to version 1.1.
 
-
 Route records/metadatas
 -----------------------
 
@@ -36,7 +35,6 @@ Route records/metadatas
               "nuage"
           ]
       }
-
 
   Responses in API 1.1 are now like :
 
@@ -67,7 +65,6 @@ Route records/metadatas
           "value": "nuage"
       }
 
-
 Route records/caption
 *********************
 
@@ -75,7 +72,6 @@ Route records/caption
   :doc:`records/caption </Devel/API/V1/Route/Records/Caption>` which is easier
   in that case. You should use records/metadatas when you're planning to edit
   metadatas.
-
 
   .. code-block:: javascript
 
@@ -93,12 +89,10 @@ Route records/caption
   .. seealso:: complete documentation for route
     :doc:`records/caption </Devel/API/V1/Route/Records/Caption>`
 
-
 Route records/setmetadatas
 --------------------------
 
   La route records/setmetadatas was working like this :
-
 
   .. code-block:: javascript
 
@@ -130,7 +124,6 @@ Route records/setmetadatas
     }
 
   Now, you must use it like this :
-
 
   .. code-block:: javascript
 

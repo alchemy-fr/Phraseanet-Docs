@@ -49,7 +49,6 @@ PHP
     * twig (https://github.com/derickr/twig-ext/)
     * Intl
 
-
 Phraseanet Specific
 -------------------
 
@@ -83,13 +82,11 @@ Phraseanet Specific
     make
     make install
 
-
 Locales
 -------
 
 On Unix / GNU-Linux systems, it is necessary to enable locales to use
 Phraseanet in your languages.
-
 
 Debian example :
 
@@ -102,11 +99,9 @@ Ubuntu example :
  * Activate via /etc/locale.gen
  * Execute /usr/sbin/locale-gen
 
-
   .. note::
 
     Locales must be in UTF-8.
-
 
 Third Party Programs
 --------------------
@@ -141,8 +136,6 @@ on their type
   * MP4Box
     Preview extraction from videos.
 
-
-
 API keys (optionnal)
 --------------------
 
@@ -150,5 +143,3 @@ API keys (optionnal)
   * Dailymotion
   * FlickR
   * Recpatcha
-
-

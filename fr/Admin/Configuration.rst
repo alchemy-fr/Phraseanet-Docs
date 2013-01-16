@@ -1,7 +1,6 @@
 Configuration
 =============
 
-
 Fichiers
 --------
 
@@ -38,7 +37,6 @@ en dessous la déclaration de cet environnement.
         opcodecache: array_cache
         border-manager: border_manager
 
-
 Détaillons la composition d'un environnement
 
 * phraseanet (configuration principale)
@@ -57,7 +55,6 @@ Détaillons la composition d'un environnement
 * border-manager : service de douane
 
 Les différents services sont déclarés dans le fichier service.yml.
-
 
 Connexions.yml
 **************
@@ -97,7 +94,6 @@ Vous trouverez un exemple de fichier de service dans config/services.sample.yml.
 Quatre groupes de services sont disponibles en standard dans l'application:
 ORM, TemplateEngine, Log, et Cache.
 
-
 Voici la structure générale d'un service :
 
   .. code-block:: yaml
@@ -108,7 +104,6 @@ Voici la structure générale d'un service :
         options:
           parametre1: valeur
           parametre2: valeur
-
 
 Un service requiert un type , qui spécifie la classe PHP à charger.
 Le tableau d'option est optionnel et fonction du service.
@@ -140,8 +135,6 @@ Voici le service *doctrine_dev* :
           log:
             service: Log\query_logger
 
-
-
   * debug : activation du debug
   * dbal : Nom d'une connexion déclarée dans connexions.yml
   * cache : paramètre des options de cache
@@ -153,7 +146,6 @@ Voici le service *doctrine_dev* :
   * log : utilisation du service **Log\\query_logger** (voir ci dessous)
 
   .. seealso:: Pour plus d'informations sur les différents caches doctrine http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm
-
 
 Service de `Mise En Page Twig`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -172,8 +164,6 @@ Voici le service *twig_prod*
           strict_variables: false
           autoescape: true
           optimizer: true
-
-
 
   * debug : activation du debug
   * charset : encodage du système de mise en page.
@@ -236,7 +226,6 @@ Services de Cache ArrayCache
       array_cache:
         type: Cache\ArrayCache
 
-
 Services de Cache ApcCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -247,7 +236,6 @@ Services de Cache ApcCache
       apc_cache:
         type: Cache\ApcCache
 
-
 Services de Cache XCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -257,7 +245,6 @@ Services de Cache XCache
     Cache:
       xcache_cache:
         type: Cache\XcacheCache
-
 
 Services de Cache MemcacheCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -86,7 +86,6 @@ Settings
   .. warning:: For security reasons, you have to write an empty .phrasea.xml
     file at the root of the HotFolder.
 
-
 FTP Push
 ********
 
@@ -125,7 +124,6 @@ Déplacement des documents périmés
 
 This tasks do some actions (move to collection or chaneg status) on records
 depending of their status or some date fields.
-
 
 API Bridge Uploader
 *******************

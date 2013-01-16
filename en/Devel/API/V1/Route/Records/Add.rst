@@ -43,7 +43,6 @@ In case a record is created, the following
    url                The url of the created item
   ================== ================================
 
-
 Response sample
 ---------------
 

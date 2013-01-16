@@ -20,7 +20,6 @@ Web server configuration
    Configuration/Nginx
    Configuration/Apache
 
-
 Setup
 -----
 
@@ -31,7 +30,6 @@ Installation is in five steps :
 
  * ApplicationBox / Databox and admin creation.
  * Tasks creation
-
 
 Task start
 ----------

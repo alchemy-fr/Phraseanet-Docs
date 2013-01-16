@@ -16,7 +16,6 @@
     permettent aussi à présent de constituer et de gérer des listes d'envois via le
     `Gestionnaire de listes`_.
 
-
 Le Push
 -------
 
@@ -154,7 +153,6 @@ email. Chacun de ces modes de notification présente un lien permettant
 l'affichage dans Phraseanet Lightbox.
 Les *Push* et de les *Validations* reçus sont regroupés dans le module
 :doc:`Phraseanet Lightbox <Lightbox>`, une interface de consultation collaborative.
-
 
 Gestionnaire de listes
 ----------------------

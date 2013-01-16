@@ -19,7 +19,6 @@ Apache Configuration sample.
 
   </VirtualHost>
 
-
 Mod XSendFile
 -------------
 

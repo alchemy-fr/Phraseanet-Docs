@@ -4,7 +4,6 @@ Thesaurus
 .. toctree::
    :maxdepth: 3
 
-
 .. topic:: L'essentiel
 
     Cette application permet de gérer le ou les thésaurus attachés aux bases
@@ -20,13 +19,10 @@ Thesaurus
     restreindre le nombre de réponses aux recherches faites par les
     utilisateurs.
 
-
-
 .. warning:: Un thésaurus est un outil très performant mais sa mise en place
   d’apparence simple peut nécessiter, selon l’utilisation que l’on
   veut en faire et le résultat qu’on en attend, de devoir faire appel
   à des compétences de documentaliste.
-
 
 Ouvrir un Thesaurus
 -------------------
@@ -37,10 +33,8 @@ Ouvrir un Thesaurus
 
 * => La fenêtre du thésaurus s'ouvre
 
-
 .. image:: ../../images/Thesaurus-general.jpg
    :align: center
-
 
 La fenêtre de l’application Thésaurus est découpée en deux parties.
 
@@ -57,7 +51,6 @@ le nombre d’occurrences dans la base de données.
 
 Pour ouvrir une branche, cliquer sur le symbole "Plus".
 Pour fermer une branche, cliquer sur le symbole "Moins".
-
 
 Travailler sur un thésaurus
 ---------------------------
@@ -104,7 +97,6 @@ pour que les notices des documents et les termes du thésaurus soit liés.
 
 * -> Cliquer sur Valider
 
-
 Créer un nouveau synonyme
 *************************
 
@@ -143,8 +135,6 @@ pour que les notices des documents et les termes du thésaurus soient liés.
 
 * -> Cliquer sur Valider
 
-
-
 Supprimer une branche, un terme
 *******************************
 
@@ -156,12 +146,10 @@ Supprimer une branche, un terme
 .. image:: ../../images/Thesaurus-supprimer.jpg
    :align: center
 
-
 * -> Cliquer sur OK
 
 La branche ou le terme sont supprimés du thésaurus et sont copiés dans la
 branche Stock des candidats.
-
 
 Rechercher dans un Thesaurus
 ****************************
@@ -176,7 +164,6 @@ Rechercher dans un Thesaurus
 
 * => L'affichage du thésaurus se met à jour et les termes trouvés sont
   affichés
-
 
 Lier une ou plusieurs branches du thésaurus à un champs documentaire
 ********************************************************************
@@ -196,7 +183,6 @@ Lier une ou plusieurs branches du thésaurus à un champs documentaire
    des documents qui seront ajoutés ou dont l’indexation sera modifiée,
    apparaîtront désormais sous forme de mots candidats
    dans une branche portant le nom du champ.
-
 
 Travailler sur les candidats
 ----------------------------
@@ -221,8 +207,6 @@ Accepter un candidat
 * -> choisir d'ajouter comme terme spécifique ou synonyme
 * -> Cliquer sur Valider
 
-
-
 Refuser un candidat
 *******************
 
@@ -233,10 +217,7 @@ Refuser un candidat
 
 .. todo:: Un bug dans l'appli ne permet pas de décrire cette fonction
 
-
 Supprimer un candidat
 *********************
 
 .. todo:: Un bug dans l'appli ne permet pas de décrire cette focntion
-
-

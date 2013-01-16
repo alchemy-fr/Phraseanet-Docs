@@ -1,7 +1,6 @@
 FAQ
 ===
 
-
 Je ne peux pas uploader des fichiers de plus de 2Mo
 ---------------------------------------------------
 
@@ -29,7 +28,6 @@ Avec Nginx comme serveur web, il faut aussi autoriser les requêtes volumineuses
 
         ...
     }
-
 
 Les vignettes des résultats représentent une montgolfière
 ---------------------------------------------------------

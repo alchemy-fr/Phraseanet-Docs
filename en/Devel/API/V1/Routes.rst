@@ -1,7 +1,6 @@
 Routes
 ======
 
-
 .. toctree::
     :hidden:
 
@@ -43,7 +42,6 @@ Routes
     Route/Monitor/TaskStart
     Route/Monitor/Tasks
 
-
 Phraseanet API provides routes to access resources using canonical URL.
 These resources are listed below.
 
@@ -52,7 +50,6 @@ Phraseanet API uses POST and GET methods.
 
 For each resource, some aspects and actions are available.
 For example, you can get the permalinks of a record with the following route:
-
 
 +-----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
 |           | General                              | Aspect                                         | Act                                                  |

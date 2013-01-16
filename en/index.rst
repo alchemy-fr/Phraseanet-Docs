@@ -9,5 +9,3 @@ Welcome to Phraseanet's documentation!
    Contrib/index
    Admin/index
    User/index
-
-

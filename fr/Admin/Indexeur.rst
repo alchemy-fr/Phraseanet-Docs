@@ -28,10 +28,8 @@ L'indexeur nécessite la présence des bibliothèques suivantes :
 Après compilation (voir spécificités Windows), copier l'éxécutable dans un
 répertoire avec les droits d'éxécution.
 
-
 Arguments
 ---------
-
 
 Ces arguments spécifient l' "application-box" (base SQL de l'application
 Phraseanet) dans laquelle sont publiées les bases à indexer.
@@ -125,7 +123,6 @@ L'indexeur peut être testé avec l'option '-?' qui doit afficher l'aide :
     [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
                                           (default none)
 
-
 Exemple d'arguments dans un fichier...
 
     .. code-block:: none
@@ -156,13 +153,11 @@ Exemple d'arguments dans un fichier...
         # sql connections encoding
         --default-character-set=utf8
 
-
 Exécution par le Task-Manager
 -----------------------------
 
 L'indexeur peut être éxécuté par la tâche "Indexation", les réglages des
 attributs sont alors disponibles via l'interface graphique de la tâche.
-
 
 Spécificités Linux et OSX
 -------------------------
@@ -178,7 +173,6 @@ L'indexeur est livré pré-compilé pour Windows.
 Télécharger la dernière version "https://github.com/alchemy-fr/Phraseanet-Indexer/tree/master/WIN32/out/Release/bin/phraseanet_indexer.exe",
 et placer l'éxécutable dans un répertoire distinct (par ex. dans "Program
 Files\\Phraseanet-Indexer\\phraseanet_indexer.exe").
-
 
 .. note::
 
@@ -223,4 +217,3 @@ ex :
 
 Si l'indexeur est installé comme service Windows, supprimer -ou ne pas activer-
 la tâche "Indexeur" correspondante
-

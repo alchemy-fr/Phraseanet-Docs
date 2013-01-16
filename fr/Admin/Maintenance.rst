@@ -34,9 +34,7 @@ intégré à l'application permet de lancer une sauvegarde de l'ensemble des bas
 
     php bin/console system:backup-db /repertoire/de/sauvegarde/
 
-
 Cette commande peut être incluse dans un script de sauvegarde.
-
 
 Les sources de L'application
 ****************************

@@ -36,7 +36,6 @@ Response Fields
    basket                   The selected basket
   ======================== =================================
 
-
 Response sample
 ---------------
 

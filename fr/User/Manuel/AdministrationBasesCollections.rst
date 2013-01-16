@@ -9,8 +9,6 @@ Administration des bases et des collections
     A chacune des bases correspond une structure documentaire paramétrable, les
     collections pouvant être assimilées à des sous ensembles d'une base.
 
-
-
 Paramétrage par base
 --------------------
 Cliquer sur une base pour afficher le tableau d'état d'une base Phraseanet.
@@ -81,7 +79,6 @@ par l'application.
              Elles sont utilisées dans les interfaces Phraseanet pour afficher les
              vignettes et images de choix des média.
 
-
 Réglage des Status
 ******************
   Les :term:`Status` sont des marqueurs qui indiquent des états sur des enregistrements.
@@ -106,8 +103,6 @@ Réglage des Status
 
   * Pour supprimer un status, cliquer sur l'icône croix puis confirmer la suppression.
 
-
-
 CGU (Conditions générales d'utilisation)
 ****************************************
 
@@ -123,7 +118,6 @@ de leur inscription.
     inscrits des conditions générales mises à jour.
 
   * Cliquer sur Mettre à jour pour enregistrer les modifications.
-
 
 Ordre des Collections
 *********************
@@ -163,7 +157,6 @@ valider le formulaire.
 
   .. note:: Lors de la création d'une collection, il est possible d'appliquer les
         droits utilisateurs d'une collection existante.
-
 
 Afficher une collection
 ***********************
@@ -220,7 +213,6 @@ boutons radio.
 
   .. image:: ../../images/Administration-marquagecollection.jpg
        :align: center
-
 
   * Cocher la case  **Par défaut** pour n’appliquer aucun marquage,
 
@@ -289,13 +281,11 @@ résolution des documents de la collection :
 
   * Cliquer sur **Envoyer le logo** pour charger le fichier dans l’application.
 
-
 Préférences : Valeurs suggérées
 *******************************
 Les valeurs suggérées sont des menus de choix déroulants qui apparaissent dans la
 fenêtre :doc:`Edition <Editer>` pour permettre une indexation rapide. Elles sont
 éditables par collections et par champs.
-
 
 L'édition de valeurs suggérées est possible via un formulaire d'édition en mode
 graphique.
@@ -317,4 +307,3 @@ Il est possible de trier les valeurs en cliquant sur une valeur puis sur "monter
 ou "descendre" ou de les classer par ordre Alphabétique en cliquant sur Tri Alpha.:
 
 Pour supprimer, cliquer sur une valeur puis cliquer sur Supprimer.
-

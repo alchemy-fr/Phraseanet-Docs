@@ -1,7 +1,6 @@
 Pré-requis
 ==========
 
-
 Phraseanet est conçu pour fonctionner sur un système AMP dont la configuration
 nécessite quelques besoins spécifiques ou dépendances.
 
@@ -48,7 +47,6 @@ PHP
     * JSON
     * gettext
 
-
 Spécifique Phraseanet
 ---------------------
 
@@ -84,7 +82,6 @@ Spécifique Phraseanet
     make
     make install
 
-
 Locales
 -------
 
@@ -92,24 +89,20 @@ Sur les systèmes Unix/GNU-Linux, il est nécessaire d’installer les packs
 locales adéquats pour pouvoir bénéficier des traductions de messages via la
 librairie gettext.
 
-
 Exemple pour debian :
 
   .. code-block:: bash
 
     dpkg-reconfigure locales
 
-
 Exemple pour ubuntu :
 
  * Activation des locales désirées via le fichier /etc/locale.gen
  * execution de la commande /usr/sbin/locale-gen
 
-
   .. note::
 
     Les locales à installer doivent être les locales UTF-8.
-
 
 Programmes Externes
 -------------------
@@ -147,8 +140,6 @@ des programmes externes suivants :
     Déplacement des métadonnées des fichiers h264 en début de fichier en vue de
     leur utilisation en pseudo-stream (voir documentation spécifique)
 
-
-
 Clefs d'APIs (optionnelles)
 ---------------------------
 
@@ -156,5 +147,3 @@ Clefs d'APIs (optionnelles)
   * Dailymotion
   * FlickR
   * Recpatcha
-
-

@@ -16,7 +16,6 @@ La conséquence majeure réside dans les deux routes d'API
 :doc:`records/setmetadatas </Devel/API/V1/Route/Records/SetMetadatas>`,
 donc le passage de l'API en version 1.1.
 
-
 Route records/metadatas
 -----------------------
 
@@ -42,9 +41,7 @@ Route records/metadatas
           ]
       }
 
-
   La réponse records/metadatas est maintenant sous la forme :
-
 
   .. code-block:: javascript
 
@@ -82,7 +79,6 @@ Route records/caption
   manipuler. L’usage de la route records/metadatas est à réservé au prélude de
   l’édition des metadonnées.
 
-
   .. code-block:: javascript
 
       "2": {                         //valeur du champ monovalue
@@ -98,7 +94,6 @@ Route records/caption
 
   .. seealso:: documentation complète de la route
     :doc:`records/caption </Devel/API/V1/Route/Records/Caption>`
-
 
 Route records/setmetadatas
 --------------------------
@@ -134,7 +129,6 @@ Route records/setmetadatas
     }
 
   Désormais, il faut l'utiliser de la manière suivante :
-
 
   .. code-block:: javascript
 

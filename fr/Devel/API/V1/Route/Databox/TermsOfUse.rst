@@ -27,7 +27,6 @@ Paramètres
    databox_id               entier         L'identifiant de la databox sélectionnée
   ======================== ============== =============
 
-
 Attribut de la réponse
 ----------------------
 

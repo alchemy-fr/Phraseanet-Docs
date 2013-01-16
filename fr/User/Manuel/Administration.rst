@@ -31,7 +31,6 @@ ou son intitulé pour l'afficher dans la partie droite de l'écran.
 Afin de présenter les principale fonctionnalités du module Phraseanet Admin, nous
 proposons de suivre le plan suivant.
 
-
 .. toctree::
    :maxdepth: 2
    :glob:

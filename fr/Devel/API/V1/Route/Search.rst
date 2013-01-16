@@ -87,7 +87,6 @@ Rechercher les enregistrement qui correspondent à la requête "house" dans les 
 
     curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/search/
 
-
 Exemple de réponse
 ------------------
 

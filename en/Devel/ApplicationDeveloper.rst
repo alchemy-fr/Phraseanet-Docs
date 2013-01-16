@@ -17,7 +17,6 @@ Here are the steps to follow :
     * To use the API features Phraseanet, you must register a new application
       and get your API credentials.
 
-
 Register a new application with the Phraseanet API
 --------------------------------------------------
 
@@ -34,7 +33,6 @@ Click on *Create a new application*
 
 .. image:: ../images/MonCompteDeveloppeurCreate.png
        :align: center
-
 
 * Give a name to your application
 * Complete the application's description, this information is
@@ -66,7 +64,6 @@ The settings page of the application is displayed.
 .. image:: ../images/MonCompteDeveloppeurApplication.png
        :align: center
 
-
 **This page shows**
 
 * The *Client ID* is a public unique identifier of the application
@@ -88,7 +85,6 @@ The settings page of the application is displayed.
 .. note::  The developer token can be used during application development or
         to query the API by the intermediary of an automated process that
         does not require authentication..
-
 
 .. seealso::    Phraseanet relies on the oAuth2.0 authentication protocol .
              To better understand the process of creation and authentication of

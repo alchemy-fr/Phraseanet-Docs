@@ -85,7 +85,6 @@ Search the query “house” in the “Object” or “Credit” fields :
 
     curl -v -d "oauth_token=xxxxxxx&fields[]=Objet&fields[]=Credit&query=house" https://mydomain.tld/api/v1/records/search/
 
-
 Response sample
 ---------------
 

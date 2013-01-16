@@ -5,7 +5,6 @@ Authentication
 
   OAauth2.0 allows a secure API authentication in a simple and standard way.
 
-
 Libraries
 ---------
 
@@ -78,7 +77,6 @@ Web based applications
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
     &code=CODE
 
-
   The response will be JSON
 
   .. code-block:: javascript
@@ -129,7 +127,6 @@ Client-side application
     &redirect_uri=urn:ietf:wg:oauth:2.0:oob
     &response_type=code
 
-
 Using your access token
 -----------------------
 
@@ -141,7 +138,6 @@ Using your access token
   .. code-block:: bash
 
       curl https://SERVER_NAME/api/v1/baskets/list/?oauth_token=YOUR_ACCESS_TOKEN
-
 
 Using password grant type
 -------------------------

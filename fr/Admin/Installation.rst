@@ -1,7 +1,6 @@
 Installation
 ============
 
-
 Après téléchargement des sources , vérifier les :doc:`prérequis <Prerequis>`,
 vous pouvez vérifier votre configuration à la racine de votre installation :
 
@@ -21,11 +20,8 @@ Configuration du serveur web
    Configuration/Nginx
    Configuration/Apache
 
-
 Setup
 -----
-
-
 
 Si les étapes précédentes ont été réalisées avec succès, se rendre à l’url décrite dans le paramétrage du serveur web (sub.domain.tld) au moyen d’un navigateur web.
 
@@ -36,7 +32,6 @@ Le setup se déroule en cinq étapes :
  * Connexion au module d’administration
  * Création d’une base de stockage type DataBox
  * Mise en place des tâches d’indexation et de sous-définitions
-
 
 Démarrage des tâches
 --------------------

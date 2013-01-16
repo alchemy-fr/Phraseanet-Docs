@@ -20,7 +20,6 @@ php -m
 
 Redémarrer le serveur web.
 
-
 Spécificités Linux et OSX
 -------------------------
 
@@ -53,5 +52,3 @@ Activer l'extension dans le fichier php.ini :
     en cas d'erreur "... icu*.dll introuvable ...", télécharger les ICU
     libraries requises par l'extension "php_intl" et copier les différents
     fichiers "icu*.dll" dans le répertoire principal de PHP.
-
-
