@@ -19,8 +19,8 @@ un menu listant les différentes rubriques d'administration.
 Si l'utilisateur ne voit pas certaines de ces rubriques, c'est que ses :doc:`droits <AdministrationUtilisateurs>` ne
 le lui permettent pas.
 
-  .. image:: ../../images/Administration-gauche.jpg
-       :align: center
+.. image:: ../../images/Administration-gauche.jpg
+    :align: center
 
 Certaines de ces rubriques comportent des sous-rubriques. Cliquer sur les boutons " + "
 pour les afficher et les boutons " - " pour les masquer.

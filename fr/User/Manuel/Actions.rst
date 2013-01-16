@@ -33,14 +33,14 @@ Présentation de la Palette
 La Palette des Actions se trouve dans l'interface de *Phraseanet Production* dans
 la partie haute de la fenêtre, au-dessous du formulaire de recherche.
 
-    .. image:: ../../images/Palette.jpg
-         :align: center
+.. image:: ../../images/Palette.jpg
+    :align: center
 
 A droite de chaque bouton d'action majeur se trouve une flèche sur laquelle l'
 utilisateur peut cliquer pour dérouler l'ensemble des actions disponibles.
 
-    .. image:: ../../images/Actions-PaletteBeta.jpg
-         :align: center
+.. image:: ../../images/Actions-PaletteBeta.jpg
+    :align: center
 
 Les fonctions de base
 ---------------------
@@ -60,8 +60,8 @@ descriptions des documents.
 
 La fenêtre Imprimer s'ouvre.
 
-  .. image:: ../../images/Actions-Imprimer1.jpg
-       :align: center
+.. image:: ../../images/Actions-Imprimer1.jpg
+    :align: center
 
 Cocher les cases correspondant aux choix souhaités:
 
@@ -75,8 +75,8 @@ Cliquer sur Imprimer. Les documents demandés s'affichent sous forme d'un docume
 PDF (*Format Acrobat de Adobe* - un *Reader Acrobat* doit être installé sur le poste
 de travail).
 
-  .. image:: ../../images/Actions-Imprimer2.jpg
-       :align: center
+.. image:: ../../images/Actions-Imprimer2.jpg
+    :align: center
 
 Imprimer le document PDF sur l'imprimante de son choix ou l'enregistrer sur le
 disque dur de son poste de travail.
@@ -116,8 +116,8 @@ La fenêtre "Changer de collection" s'ouvre.
 Le document ne se trouve plus dans la collection d'origine, mais dans la collection
 choisie.
 
-  .. image:: ../../images/Actions-Deplacer.jpg
-       :align: center
+.. image:: ../../images/Actions-Deplacer.jpg
+    :align: center
 
 Supprimer
 *********
@@ -126,8 +126,8 @@ Cette icône permet de supprimer un :term:`enregistrement <Enregistrement>`
 
   * Sélectionner l'élément puis cliquer sur l'icône Corbeille.
 
-  .. image:: ../../images/Actions-Supprimer.jpg
-       :align: center
+.. image:: ../../images/Actions-Supprimer.jpg
+    :align: center
 
 Un message demande confirmation afin de valider votre choix.
 
@@ -141,33 +141,33 @@ remplacement d’un document d'origine, ou d’afficher toutes les informations 
 
 La fenêtre Outils Images s'ouvre.
 
-  .. image:: ../../images/Actions-Outilsimages.jpg
-       :align: center
+.. image:: ../../images/Actions-Outilsimages.jpg
+    :align: center
 
 Choisir un des onglets proposés:
 
-  * **Régénération sous-défs** : Permet de créer une nouvelle vignette et une nouvelle
-    Image de choix pour les documents sélectionnés.
+* **Régénération sous-défs** : Permet de créer une nouvelle vignette et une nouvelle
+  Image de choix pour les documents sélectionnés.
 
-  * **Outils vidéos** : Disponible si et seulement si un media de type vidéo est
-    sélectionné, l'onglet propose les outils permettant de choisir une vignette de
-    présentation personnalisée pour les media vidéos.
+* **Outils vidéos** : Disponible si et seulement si un media de type vidéo est
+  sélectionné, l'onglet propose les outils permettant de choisir une vignette de
+  présentation personnalisée pour les media vidéos.
 
-  .. image:: ../../images/Actions-OutilsThumbnailVideo.jpg
-       :align: center
+.. image:: ../../images/Actions-OutilsThumbnailVideo.jpg
+    :align: center
 
-  * **Retourner sous défs** : une rotation des vignettes et Images de choix des
-    documents sélectionnés.
+* **Retourner sous défs** : une rotation des vignettes et Images de choix des
+  documents sélectionnés.
 
-  * **Substitution document** : Permet de remplacer le document original par un autre
-    (une case à cocher permet de choisir si la vignette et l’image de choix
-    doivent être reconstruites).
+* **Substitution document** : Permet de remplacer le document original par un autre
+  (une case à cocher permet de choisir si la vignette et l’image de choix
+  doivent être reconstruites).
 
-  * **Substitution des sous-défs** : Pour remplacer la vignette et l’image de choix
-    par un autre fichier.
+* **Substitution des sous-défs** : Pour remplacer la vignette et l’image de choix
+  par un autre fichier.
 
-  * :term:`Métadonnées <Métadonnées>` : Permet d’afficher l’ensemble
-    des informations :term:`EXIF <EXIF>` disponibles pour le document.
+* :term:`Métadonnées <Métadonnées>` : Permet d’afficher l’ensemble
+  des informations :term:`EXIF <EXIF>` disponibles pour le document.
 
 Pour appliquer les modifications apportées, cliquer sur Valider.
 
@@ -205,8 +205,8 @@ La fenêtre s'ouvre.
 
   * Cliquer sur Valider pour enregistrer les changements.
 
-  .. image:: ../../images/Actions-Proprietes-status.jpg
-       :align: center
+.. image:: ../../images/Actions-Proprietes-status.jpg
+    :align: center
 
 **Changer le type des documents**
 
@@ -224,5 +224,5 @@ La fenêtre s'ouvre.
 
   * Cliquer sur Valider pour enregistrer les modifications.
 
-  .. image:: ../../images/Actions-Proprietes-types.jpg
-       :align: center
+.. image:: ../../images/Actions-Proprietes-types.jpg
+    :align: center

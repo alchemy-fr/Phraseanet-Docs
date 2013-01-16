@@ -33,8 +33,8 @@ Recherche simple
 La Recherche simple se trouve dans la partie centrale de la page, au-dessus de la
 palette des Actions et de l’affichage des Résultats.
 
-  .. image:: ../../images/Rechercher-simple.jpg
-       :align: center
+.. image:: ../../images/Rechercher-simple.jpg
+    :align: center
 
 Saisir un critère de recherche.
 
@@ -120,8 +120,8 @@ le mot *marrakech dans le champs légende*.
 Les mots, réponses aux questions sont surlignés dans la description. Ici, un exemple
 avec le terme "mer", qui est surligné dans le champ Mot clé.
 
-  .. image:: ../../images/Rechercher-motdanslegende.jpg
-       :align: center
+.. image:: ../../images/Rechercher-motdanslegende.jpg
+    :align: center
 
 Recherche avec les opérateurs de proximité
 ******************************************
@@ -175,14 +175,14 @@ La Recherche Avancée ne se trouve plus au sein de la :doc:`Barre des Onglets <O
 contrairement à la version précédente : Cliquez simplement sur la roue située
 entre le champ pour la recherche et le bouton «Rechercher».
 
-  .. image:: ../../images/Rechercheavancee1.jpg
-       :align: center
+.. image:: ../../images/Rechercheavancee1.jpg
+    :align: center
 
 Une fenêtre Overlay s’ouvre. La nouvelle Recherche Avancée se présente en deux
 parties, pour une meilleure visibilité :
 
-  .. image:: ../../images/Rechercheavancee0.jpg
-       :align: center
+.. image:: ../../images/Rechercheavancee0.jpg
+    :align: center
 
 D’un côté, le choix des collections dans lesquelles effectuer la recherche.
 Choisir les :term:`bases <base>` et collections où rechercher.
@@ -218,8 +218,8 @@ mots clés incluant des opérateurs booléens et autres critères vus précédem
 Production
 **********
 
-  .. image:: ../../images/Rechercher-Prod1.jpg
-       :align: left
+.. image:: ../../images/Rechercher-Prod1.jpg
+    :align: left
 
 Ci-contre, la zone de recherche dans l'interface de *Production*:
 Voici la `Recherche Simple`_.
@@ -243,8 +243,8 @@ Pour effectuer une recherche dans l'interface de Production:
 
 Classic
 *******
-  .. image:: ../../images/Rechercher-Classic1.jpg
-       :align: right
+.. image:: ../../images/Rechercher-Classic1.jpg
+    :align: right
 
 Trois onglets dans l'interface *Classic*, au-dessus de la zone de recherche :
 

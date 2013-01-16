@@ -27,12 +27,12 @@ Dans la rubrique *Phraseanet mon compte*
 Cliquer sur l'onglet *développeur*
 
 .. image:: ../images/MonCompteDeveloppeur.png
-       :align: center
+    :align: center
 
 Cliquer sur *créer une nouvelle application*
 
 .. image:: ../images/MonCompteDeveloppeurCreate.png
-       :align: center
+    :align: center
 
 * Donner un nom à l'application
 * Remplir la description concernant l'application, cette information est à
@@ -51,7 +51,7 @@ Cliquer sur *créer une nouvelle application*
 Une fois l'application enregistrée elle apparaît dans un tableau de bord
 
 .. image:: ../images/MonCompteDeveloppeurDashboard.png
-       :align: center
+    :align: center
 
 Le tableau de bord liste toutes les applications créées par l'utilisateur
 authentifié
@@ -63,7 +63,7 @@ Dans le tableau de bord des applications développeurs cliquer sur le nom d'une
 application, La page des paramètres de l'application s'affiche.
 
 .. image:: ../images/MonCompteDeveloppeurApplication.png
-       :align: center
+    :align: center
 
 **Cette page présente**
 

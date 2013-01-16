@@ -43,23 +43,23 @@ Onglet Paniers
 Nouveau Panier
 **************
 
-  .. image:: ../../images/Paniers-Creation.jpg
-       :align: center
+.. image:: ../../images/Paniers-Creation.jpg
+    :align: center
 
-  * -> Cliquer sur le Menu contextuel de l'onglet
-  * -> Cliquer sur Nouveau
+* -> Cliquer sur le Menu contextuel de l'onglet
+* -> Cliquer sur Nouveau
 
-  * => une fenêtre s'ouvre
+* => une fenêtre s'ouvre
 
-  .. image:: ../../images/Affichage-Panier.jpg
-       :align: center
+.. image:: ../../images/Affichage-Panier.jpg
+    :align: center
 
-  * -> Cocher la case "Ajouter ma sélection courante" pour
-    ajouter des documents préalablement sélectionnés dans les Résultats.
-  * -> Saisir le nom du nouveau panier et si besoin une description.
-  * -> Cliquer sur le bouton Valider.
+* -> Cocher la case "Ajouter ma sélection courante" pour
+  ajouter des documents préalablement sélectionnés dans les Résultats.
+* -> Saisir le nom du nouveau panier et si besoin une description.
+* -> Cliquer sur le bouton Valider.
 
-  * => Le nouveau panier est créé et s'affiche dans la liste.
+* => Le nouveau panier est créé et s'affiche dans la liste.
 
 Ajouter des documents à un panier
 *********************************
@@ -121,7 +121,7 @@ Pour retirer un document d'un panier:
 * -> Cliquer sur la "croix" qui se trouve sous les vignettes
 
 .. image:: ../../images/Prod-Bonglet-panierretirerdoc.jpg
-       :align: center
+    :align: center
 
 Actions sur les paniers ou leur contenu
 ***************************************
@@ -130,7 +130,7 @@ Les actions sur les paniers fonctionnent de la même manière que les actions su
 les documents depuis la fenêtre des résultats.
 
 .. image:: ../../images/Prod-Bonglet-actionsPanier.jpg
-       :align: center
+    :align: center
 
 Se reporter à la section :doc:`Palette des Actions <Actions>`.
 
@@ -154,7 +154,7 @@ Réordonner un panier
 * => La fenêtre s'ouvre
 
 .. image:: ../../images/Prod-Bonglet-ordonnersPanier.jpg
-       :align: center
+    :align: center
 
 * -> Utiliser le menu de tri
 * -> **ou** Inverser l'ordre
@@ -181,8 +181,8 @@ raison ou pour une autre. **L'archivage de paniers** répond à cette demande.
 Pour archiver un panier, ouvrir le menu contextuel du panier et cliquer sur
 «Archiver» :
 
-  .. image:: ../../images/ArchivagePanier1.jpg
-       :align: center
+.. image:: ../../images/ArchivagePanier1.jpg
+    :align: center
 
 Celui-ci disparaît de la zone de travail latérale.
 
@@ -196,13 +196,13 @@ Pour retrouver un panier archivé, il suffit de se rendre dans l'"Historique des
 Paniers". Pour cela, cliquer sur la flèche présente dans la barre de titre des
 Paniers et cliquer sur "Parcourir les Paniers":
 
-  .. image:: ../../images/Paniers-Parcourir.jpg
-       :align: center
+.. image:: ../../images/Paniers-Parcourir.jpg
+    :align: center
 
 Une fenêtre s’ouvre:
 
-  .. image:: ../../images/ArchivagePanier2.jpg
-       :align: center
+.. image:: ../../images/ArchivagePanier2.jpg
+    :align: center
 
 Sur le côté gauche de la fenêtre : Une zone de recherche.
 Saisir le titre d’un panier pour le retrouver. Vous pouvez également vous aider
@@ -219,8 +219,8 @@ un titre,...
 
 En cliquant sur le titre du panier, les vignettes apparaissent:
 
-  .. image:: ../../images/Paniers-Parcourir2.jpg
-       :align: center
+.. image:: ../../images/Paniers-Parcourir2.jpg
+    :align: center
 
 Pour archiver ou désarchiver un panier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -278,8 +278,8 @@ Ajouter des documents à un Reportage
 La bulle rouge indique le nombre de documents que l'on place dans le reportage
 ouvert.
 
-  .. image:: ../../images/Paniers-Ajoutreportage.jpg
-       :align: center
+.. image:: ../../images/Paniers-Ajoutreportage.jpg
+    :align: center
 
 Attacher et détacher un reportage de l'onglet
 *********************************************

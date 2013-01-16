@@ -13,8 +13,8 @@ Redimensionner la zone de travail
 
 Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
 
-  .. image:: ../../images/Onglet-Taille.jpg
-       :align: center
+.. image:: ../../images/Onglet-Taille.jpg
+    :align: center
 
 Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones
 d’affichage.
@@ -28,15 +28,15 @@ Masquer ou afficher la zone de travail
 **************************************
 Depuis la version 3.6, la zone de travail est rétractable:
 
-  .. image:: ../../images/Onglets-Retractable1.jpg
-       :align: center
+.. image:: ../../images/Onglets-Retractable1.jpg
+    :align: center
 
 Un clic sur l'icône présente sur le côté droit permet de la masquer quasi -
 entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la
 consultation des Résultats :
 
-  .. image:: ../../images/Onglets-Retractable.jpg
-       :align: center
+.. image:: ../../images/Onglets-Retractable.jpg
+    :align: center
 
 Un clic sur n'importe quelle partie de la zone la fait réapparaître instantanément.
 
@@ -58,13 +58,13 @@ Dans ce cas, l'onglet "Notifications" comporte une bulle avec le chiffre représ
 le nombre de demandes qu'il n'a pas encore lues:
 
 .. image:: ../../images/General-menu2.jpg
-   :align: center
+    :align: center
 
 Cliquer sur l'onglet Notifications. La liste des notifications les plus récentes
 apparaît.
 
 .. image:: ../../images/General-notifications.jpg
-   :align: center
+    :align: center
 
 Pour visualiser *toutes les notifications*, cliquer dessus. Une fenêtre
 en Overlay s'affiche et les notifications plus anciennes sont chargées.
@@ -77,14 +77,14 @@ Préférences d'affichage des résultats
 des résultats**. Le bouton "Préférences" se trouve en bas de la fenêtre, en dessous
 de la zone d'affichage des Résultats.
 
-  .. image:: ../../images/Affichage-Preferences.jpg
-       :align: center
+.. image:: ../../images/Affichage-Preferences.jpg
+    :align: center
 
 Un clic sur "Préférences" ouvre une fenêtre Overlay, comme ci-dessus. Puis les
 différents paramètres:
 
-  .. image:: ../../images/Affichage-Preferences1.jpg
-       :align: center
+.. image:: ../../images/Affichage-Preferences1.jpg
+    :align: center
 
 Parmi ces paramètres, l'utilisateur peut:
 
@@ -111,8 +111,8 @@ Il est également possible de choisir, pour la prochaine connexion à Phraseanet
 quelle recherche afficher automatiquement au démarrage: la dernière question posée,
 les publications ou bien encore l'aide :
 
-  .. image:: ../../images/Affichage-Preferences2.jpg
-       :align: center
+.. image:: ../../images/Affichage-Preferences2.jpg
+    :align: center
 
 Une fois les réglages faits, cliquer n’importe où dans l’interface pour fermer
 la fenêtre Overlay.

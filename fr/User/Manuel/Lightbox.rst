@@ -21,7 +21,7 @@ Pour les utilisateurs non authentifiés
 Cette interface s'obtient en cliquant sur un lien HTML reçu par e-mail lorsqu'un
 utilisateur Phraseanet transmet un Push ou une demande de validation.
 
-  .. image:: ../../images/Lightbox-reception_email.jpg
+.. image:: ../../images/Lightbox-reception_email.jpg
     :align: center
 
 Pour les utilisateurs authentifiés
@@ -29,13 +29,13 @@ Pour les utilisateurs authentifiés
 
 Lightbox est disponible dans la barre de lancement des applications Phraseanet.
 
-   .. image:: ../../images/General-menu.jpg
+.. image:: ../../images/General-menu.jpg
     :align: center
 
 Cliquer sur la rubrique Lightbox du menu pour rejoindre l'interface Phraseanet
 Lightbox.
 
-   .. image:: ../../images/Lightbox-menu.jpg
+.. image:: ../../images/Lightbox-menu.jpg
     :align: center
 
 La fenêtre affichée dresse la liste des Push et de demandes de validation que
@@ -46,7 +46,7 @@ L'interface
 
 L'interface de la Lightbox est simple et intuitive.
 
-  .. image:: ../../images/Lightbox-interface.jpg
+.. image:: ../../images/Lightbox-interface.jpg
     :align: center
 
   * 1. La barre d'action renseigne sur le nom du fichier, permet de naviguer dans les enregistrements et donne accès au téléchargement du media affiché.
@@ -66,7 +66,7 @@ Lancer le diaporama
 Pour lancer un diaporama des médias présents dans une lightbox, cliquer sur
 le bouton **lecture** situé dans la barre d'action.
 
-  .. image:: ../../images/Lightbox-play.jpg
+.. image:: ../../images/Lightbox-play.jpg
     :align: center
 
 Téléchager des média
@@ -74,20 +74,20 @@ Téléchager des média
 Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icône
 d'enregistrement située dans la barre des actions.
 
-  .. image:: ../../images/Lightbox-enregister.jpg
+.. image:: ../../images/Lightbox-enregister.jpg
     :align: center
 
 Pour télécharger tous les média contenus dans une lightbox, cliquer sur l'icône
 située à gauche en bas de l'interface.
 
-  .. image:: ../../images/Lightbox-enregister-tout.jpg
+.. image:: ../../images/Lightbox-enregister-tout.jpg
     :align: center
 
 Comparer deux media
 *******************
 Il peut être intéressant d'afficher deux média côte à côte pour les comparer.
 
-  .. image:: ../../images/Lightbox-comparer.jpg
+.. image:: ../../images/Lightbox-comparer.jpg
     :align: center
 
 * afficher un premier media sur la table lumineuse en cliquant sur sa vignette
@@ -103,12 +103,12 @@ formulée sur des media.
 L'utilisateur a qui est adressée une demande de validation donne son avis par
 **oui** ou par **non** et peut si il le souhaite exprimer un avis.
 
-  .. image:: ../../images/Lightbox-validation.jpg
+.. image:: ../../images/Lightbox-validation.jpg
     :align: center
 
 Pour ajouter un commentaire, cliquer sur la bulle présente dans la barre d'actions
 
-  .. image:: ../../images/Lightbox-validation_appreciation.jpg
+.. image:: ../../images/Lightbox-validation_appreciation.jpg
     :align: center
 
 Après validation, cliquer sur le bouton "Envoyer mon rapport".

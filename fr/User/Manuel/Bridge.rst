@@ -27,8 +27,8 @@ Sélection
 
 Deux choix sont proposés: "Bridge" et "Publier":
 
-  .. image:: ../../images/Bridge-1.jpg
-       :align: center
+.. image:: ../../images/Bridge-1.jpg
+    :align: center
 
   * Cliquer sur "Bridge"
 
@@ -40,8 +40,8 @@ La fenêtre du Bridge s'ouvre:
   * Cliquer sur "Nouveau" pour se connecter au compte choisi: Phraseanet propose de
     se connecter soit à son compte Flickr, Youtube ou Dailymotion...
 
-  .. image:: ../../images/Bridge-1b.jpg
-       :align: center
+.. image:: ../../images/Bridge-1b.jpg
+    :align: center
 
 Le site demande de s'authentifier, puis d'accorder la permission à Phraseanet de se
 connecter.
@@ -56,8 +56,8 @@ L'utilisateur voit dans ce cas trois onglets:
   * Photosets
   * Fichiers Envoyés
 
-  .. image:: ../../images/Bridge-3a.jpg
-       :align: center
+.. image:: ../../images/Bridge-3a.jpg
+    :align: center
 
 Publication
 ------------
@@ -71,22 +71,22 @@ description.
   * Une fois les informations entrées dans ces zones de texte, cliquer sur le bouton
     "Upload" en bas à gauche.
 
-  .. image:: ../../images/Bridge-2.jpg
-       :align: center
+.. image:: ../../images/Bridge-2.jpg
+    :align: center
 
 Ensuite, au fur et à mesure que les images sont envoyées, il est possible de voir
 l'avancement du transfert par un simple clic sur l'onglet "Fichiers envoyés".
 
-  .. image:: ../../images/Bridge-4.jpg
-       :align: center
+.. image:: ../../images/Bridge-4.jpg
+    :align: center
 
   * Le statut "OK" vous signale que l'image (ou la vidéo) a bien été transférée
   * La date vient vous confirmer depuis combien de temps l'envoi a été effectué.
 
 Enfin, lancer Flickr. Les photos y sont bien présentes:
 
-  .. image:: ../../images/Bridge-5.jpg
-       :align: center
+.. image:: ../../images/Bridge-5.jpg
+    :align: center
 
 .. _Flickr: http://www.flickr.com/
 .. _YouTube: http://www.youtube.com/

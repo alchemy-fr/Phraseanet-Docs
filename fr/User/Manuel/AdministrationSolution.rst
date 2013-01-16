@@ -11,8 +11,8 @@ Administration de l'application
 Tableau de bord
 ---------------
 
-  .. image:: ../../images/Administration-tableaudebord.jpg
-       :align: center
+.. image:: ../../images/Administration-tableaudebord.jpg
+    :align: center
 
 **Accessible aux seuls administrateurs Phraseanet**, le *tableau de bord* permet d'ajouter
 ou de supprimer des administrateurs Phraseanet.
@@ -30,8 +30,8 @@ Setup
 graphique permettant de modifier des paramètres d'installation et de configuration
 de Phraseanet.
 
-  .. image:: ../../images/Administration-setup.jpg
-       :align: center
+.. image:: ../../images/Administration-setup.jpg
+    :align: center
 
 Setup propose un jeu de formulaires permettant notamment :
 
@@ -60,8 +60,8 @@ Cet écran liste les sessions utilisateurs actives sur le système Phraseanet.
 Elle informe de l'application Phraseanet utilisée, de l'adresse "IP", ainsi que
 de la date et de l'heure de connexion au système.
 
-  .. image:: ../../images/Administration-utilisateurlive.jpg
-       :align: center
+.. image:: ../../images/Administration-utilisateurlive.jpg
+    :align: center
 
   .. note:: Phraseanet repose sur un mécanisme de *sessions persistantes*.
             Les dates et heures de connexion correspondent à celles de l'initialisation de
@@ -73,8 +73,8 @@ Accessible aux utilisateurs qui disposent des droits de gestion des publications
 la rubrique publications permet de gérer les flux media RSS diffusés à partir de
 l'application Phraseanet.
 
-  .. image:: ../../images/Administration-publications.jpg
-       :align: center
+.. image:: ../../images/Administration-publications.jpg
+    :align: center
 
 L'écran Publications dresse la liste des flux média disponibles en publication et
 permet d'en créer, d'en modifier et d'en supprimer.
@@ -95,8 +95,8 @@ de l'application.
 Les tâches sont listées dans un tableau qui indique l'identifiant de la tâche, si
 elle est ou non active, son nom.
 
-  .. image:: ../../images/Administration-gestionnairedetaches.jpg
-       :align: center
+.. image:: ../../images/Administration-gestionnairedetaches.jpg
+    :align: center
 
 Le principe d’une *Tâche d’archivage* est de scruter un répertoire, d'en capturer
 le contenu, de l'archiver (recopier les fichiers dans les répertoires de stockage
@@ -112,8 +112,8 @@ de la base de destination).
 
  .. todo:: Update de la capture pour 3.7
 
-  .. image:: ../../images/Administration-taches.jpg
-       :align: center
+.. image:: ../../images/Administration-taches.jpg
+    :align: center
 
 Nouvelle tâche
 **************
@@ -123,14 +123,14 @@ automatismes de traitement.
 La solution est livrée en standard avec un jeu de tâches exploitables et l'utilisateur
 peut en créer d'autres.
 
-  .. image:: ../../images/Administration-nouvelletache.jpg
-       :align: center
+.. image:: ../../images/Administration-nouvelletache.jpg
+    :align: center
 
 Les paramètres des tâches sont stockés sous forme de fichiers XML. Dans certains
 cas, les fichiers XML de paramétrage proposent une interface de saisie.
 
-  .. image:: ../../images/Administration-editertache.jpg
-       :align: center
+.. image:: ../../images/Administration-editertache.jpg
+    :align: center
 
 Après avoir cliqué sur *nouvelle tâche* :
 

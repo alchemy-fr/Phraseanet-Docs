@@ -138,7 +138,7 @@ collections).
 *Administration* permet aussi d'accéder au setup, au réglage de la structure, etc.
 
 .. image:: ../../images/General-Administration.jpg
-   :align: center
+    :align: center
 
 :doc:`Pour plus d'informations, se reporter à la section dédiée à l'Administration
 <Administration>`.

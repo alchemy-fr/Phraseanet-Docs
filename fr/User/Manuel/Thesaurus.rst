@@ -2,7 +2,7 @@ Thesaurus
 =========
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -19,10 +19,12 @@ Thesaurus
     restreindre le nombre de réponses aux recherches faites par les
     utilisateurs.
 
-.. warning:: Un thésaurus est un outil très performant mais sa mise en place
-  d’apparence simple peut nécessiter, selon l’utilisation que l’on
-  veut en faire et le résultat qu’on en attend, de devoir faire appel
-  à des compétences de documentaliste.
+.. warning::
+
+    Un thésaurus est un outil très performant mais sa mise en place
+    d’apparence simple peut nécessiter, selon l’utilisation que l’on
+    veut en faire et le résultat qu’on en attend, de devoir faire appel
+    à des compétences de documentaliste.
 
 Ouvrir un Thesaurus
 -------------------
@@ -34,7 +36,7 @@ Ouvrir un Thesaurus
 * => La fenêtre du thésaurus s'ouvre
 
 .. image:: ../../images/Thesaurus-general.jpg
-   :align: center
+    :align: center
 
 La fenêtre de l’application Thésaurus est découpée en deux parties.
 
@@ -45,9 +47,9 @@ base de données.
 
 La partie droite présente le thésaurus existant, sous forme « d’un arbre »
 qui se déploie.
-En positionnant le curseur sur une branche ou un terme,
-on affiche en « Rollover » l’ensemble des synonymes qui lui sont associés et
-le nombre d’occurrences dans la base de données.
+En positionnant le curseur sur une branche ou un terme, on affiche en "Rollover"
+l’ensemble des synonymes qui lui sont associés et le nombre d’occurrences dans
+la base de données.
 
 Pour ouvrir une branche, cliquer sur le symbole "Plus".
 Pour fermer une branche, cliquer sur le symbole "Moins".
@@ -71,7 +73,7 @@ n'importe quelle branche existante depuis le branche racine intitulée
 * => Une fenêtre s'ouvre
 
 .. image:: ../../images/Thesaurus-nouveauterme.jpg
-   :align: center
+    :align: center
 
 * -> Saisir le terme
 * -> Saisir si besoin un contexte
@@ -81,7 +83,7 @@ n'importe quelle branche existante depuis le branche racine intitulée
 * => Une fenêtre s'ouvre si le terme ne faisait pas partie de candidats.
 
 .. image:: ../../images/Thesaurus-nouveautermereindexer.jpg
-   :align: center
+    :align: center
 
 Par défaut la case " Ajouter le terme sans ré-indexer" est cochée.
 
@@ -91,9 +93,11 @@ pour que les notices des documents et les termes du thésaurus soit liés.
 
 * -> Cocher la case "Ajouter le terme et ré-indexer"
 
-.. note:: La ré-indexation immédiate n'est pas nécessaire si d'autre termes
-   doivent être encore ajoutés. la ré-indexation peut se faire à posteriori
-   depuis Phraseanet Admin.
+.. note::
+
+    La ré-indexation immédiate n'est pas nécessaire si d'autre termes
+    doivent être encore ajoutés. la ré-indexation peut se faire à posteriori
+    depuis Phraseanet Admin.
 
 * -> Cliquer sur Valider
 
@@ -109,7 +113,7 @@ que les besoins de synonymie.
 * => Une fenêtre s'ouvre
 
 .. image:: ../../images/Thesaurus-nouveausynonyme.jpg
-   :align: center
+    :align: center
 
 * -> Saisir le terme
 * -> Saisir si besoin un contexte
@@ -119,7 +123,7 @@ que les besoins de synonymie.
 * => Une fenêtre s'ouvre si le terme ne faisait pas partie de candidats
 
 .. image:: ../../images/Thesaurus-nouveautermereindexer.jpg
-   :align: center
+    :align: center
 
 Par défaut la case " Ajouter le terme sans ré-indexer" est cochée.
 
@@ -129,9 +133,11 @@ pour que les notices des documents et les termes du thésaurus soient liés.
 
 * -> Cocher la case "Ajouter le terme et ré-indexer"
 
-.. note:: La ré-indexation immédiate n'est pas nécessaire si d'autre termes
-   doivent être encore ajoutés. la ré-indexation pourra se faire à posteriori
-   depuis Phraseanet Admin.
+.. note::
+
+    La ré-indexation immédiate n'est pas nécessaire si d'autre termes
+    doivent être encore ajoutés. la ré-indexation pourra se faire à posteriori
+    depuis Phraseanet Admin.
 
 * -> Cliquer sur Valider
 
@@ -144,7 +150,7 @@ Supprimer une branche, un terme
 * => Une fenêtre s'ouvre
 
 .. image:: ../../images/Thesaurus-supprimer.jpg
-   :align: center
+    :align: center
 
 * -> Cliquer sur OK
 
@@ -174,15 +180,17 @@ Lier une ou plusieurs branches du thésaurus à un champs documentaire
 * => Une fenêtre s'ouvre
 
 .. image:: ../../images/Thesaurus-lierachamps.jpg
-   :align: center
+    :align: center
 
 * -> Cocher la ou les cases des champs à associer
 * -> Cliquer sur Valider
 
-.. note:: Tous les nouveaux termes contenus dans les fiches documentaires
-   des documents qui seront ajoutés ou dont l’indexation sera modifiée,
-   apparaîtront désormais sous forme de mots candidats
-   dans une branche portant le nom du champ.
+.. note::
+
+    Tous les nouveaux termes contenus dans les fiches documentaires
+    des documents qui seront ajoutés ou dont l’indexation sera modifiée,
+    apparaîtront désormais sous forme de mots candidats
+    dans une branche portant le nom du champ.
 
 Travailler sur les candidats
 ----------------------------

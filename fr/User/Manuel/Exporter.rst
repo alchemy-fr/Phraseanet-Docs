@@ -34,8 +34,8 @@ depuis les :doc:`Paniers <PaniersReportages>`.
 
   * L'envoi par FTP: Permet d'envoyer les données vers un serveur FTP
 
-  .. image:: ../../images/Exporter-general.jpg
-       :align: center
+.. image:: ../../images/Exporter-general.jpg
+    :align: center
 
 L'export peut être effectué sur des lots de documents, en provenance
 de plusieurs collections ou plusieurs :term:`bases <base>` différentes, sur
@@ -51,8 +51,8 @@ Téléchargement
   * Cliquer sur *Télécharger*.
   * Suivre la procédure proposée par le navigateur.
 
-  .. image:: ../../images/Exporter-telecharger.jpg
-       :align: center
+.. image:: ../../images/Exporter-telecharger.jpg
+    :align: center
 
 E-Mail
 ------
@@ -69,8 +69,8 @@ E-Mail
   * Cliquer sur Envoyer.
   * Un message confirmant l’envoi de l’email apparaît.
 
-  .. image:: ../../images/Exporter-mail.jpg
-       :align: center
+.. image:: ../../images/Exporter-mail.jpg
+    :align: center
 
 FTP
 ---
@@ -89,8 +89,8 @@ d’envoyer les éléments.
 
 Une fenêtre intermédiaire s’ouvre et informe l’utilisateur de l’état de son envoi.
 
-  .. image:: ../../images/Exporter-FTP.jpg
-       :align: center
+.. image:: ../../images/Exporter-FTP.jpg
+    :align: center
 
 Demande de documents
 --------------------
@@ -98,7 +98,7 @@ Cet onglet permet d'adresser des demandes de téléchargement pour les utilisate
 ne bénéficiant pas des droits de téléchargement.
 
 .. image:: ../../images/Exporter-commande.jpg
-   :align: center
+    :align: center
 
 Remplir et soumettre le formulaire affiché.
 

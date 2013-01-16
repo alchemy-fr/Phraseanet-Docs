@@ -1,7 +1,8 @@
 ﻿Statistiques
 =============
+
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -17,8 +18,8 @@
 
 Les rapports sont classés dans 4 onglets:
 
-  .. image:: ../../images/Statistiques-General.jpg
-       :align: center
+.. image:: ../../images/Statistiques-General.jpg
+    :align: center
 
 Au lancement du module, un *tableau de bord* propose sur une période d’un mois
 un ensemble de statistiques généralistes.
@@ -34,52 +35,43 @@ Les statistiques proposées par le tableau de bord sont globales pour toutes les
 :term:`bases <base>` et collections publiées à partir du site et sont données
 sur un mois glissant.
 
-  .. image:: ../../images/Statistiques-Tableaudebord.jpg
-     :align: center
+.. image:: ../../images/Statistiques-Tableaudebord.jpg
+    :align: center
 
 La page du tableau de bord comprend de nombreuses données statistiques.
 
-  .. image:: ../../images/Statistiques-Tableaudebord2.jpg
-     :align: center
+.. image:: ../../images/Statistiques-Tableaudebord2.jpg
+    :align: center
 
 Voici une liste des tableaux disponibles et significations
 
-  * Activité par heure:
-    Contenu et informations  proposés non définitifs (Courbe).
-
-  * Activité par jour:
-    Contenu et informations proposés non définitifs (Courbe)
-
-  * Documents ajoutés:
-    Nombre de documents ajoutés par jour (Histogramme).
-
-  * Documents édités:
-    Nombre de documents édités par jour (Histogramme).
-
-  * Cumul téléchargements et connexions: (Tableau)
-    Nombre total de téléchargements, documents toutes sous résolutions sur
-    un mois.
-    Nombre total de connexions utilisateurs
-
-  * Utilisateurs les plus actifs (Tableau)
-
-  * Prévisualisations les plus téléchargées (Tableau)
-
-  * Questions les plus posées: (Tableau)
-    Liste des 10 questions les plus posées par les utilisateurs
-
-  * Volumétrie des questions les plus posées sur Phraseanet: (Tableau)
-    Liste des utilisateurs posant le plus de questions
-
-  * Sites d'où les documents sont les plus consultés (Tableau)
+* Activité par heure:
+  Contenu et informations  proposés non définitifs (Courbe).
+* Activité par jour:
+  Contenu et informations proposés non définitifs (Courbe)
+* Documents ajoutés:
+  Nombre de documents ajoutés par jour (Histogramme).
+* Documents édités:
+  Nombre de documents édités par jour (Histogramme).
+* Cumul téléchargements et connexions: (Tableau)
+  Nombre total de téléchargements, documents toutes sous résolutions sur
+  un mois.
+  Nombre total de connexions utilisateurs
+* Utilisateurs les plus actifs (Tableau)
+* Prévisualisations les plus téléchargées (Tableau)
+* Questions les plus posées: (Tableau)
+  Liste des 10 questions les plus posées par les utilisateurs
+* Volumétrie des questions les plus posées sur Phraseanet: (Tableau)
+  Liste des utilisateurs posant le plus de questions
+* Sites d'où les documents sont les plus consultés (Tableau)
 
 Les trois onglets suivants: `Connexion`_, `Téléchargements`_ et
 `Activité du Site`_, se présentent de la même façon : L'utilisateur doit
 sélectionner 3 critères afin d'accéder aux statistiques :
 
-  * `Période`_
-  * `Bases`_
-  * `Types de rapports`_
+* `Période`_
+* `Bases`_
+* `Types de rapports`_
 
 Connexion
 ----------
@@ -99,8 +91,8 @@ Utiliser un intervalle proposé par les trois calendriers.
 Il faut utiliser le premier calendrier de la liste pour remonter
 vers un passé plus lointain.
 
-  .. image:: ../../images/Statistiques-Connexions1.jpg
-     :align: center
+.. image:: ../../images/Statistiques-Connexions1.jpg
+    :align: center
 
 Bases
 *****
@@ -113,15 +105,17 @@ disponibles.
 Deux boutons permettent de sélectionner/désélectionner toutes
 les :term:`bases <base>`.
 
-  .. image:: ../../images/Statistiques-Connexions2.jpg
-     :align: center
+.. image:: ../../images/Statistiques-Connexions2.jpg
+    :align: center
 
 Le menu contextuel (flèche dans le coin gauche en bas) permet d’afficher
 la liste des collections de la :term:`bases <base>`, afin d’affiner
 les rapports, en décochant les collections à exclure.
 
-.. note:: Les options sélectionnées pour les intervalles et bases / collections
-  sont mémorisées d’un onglet à l’autre.
+.. note::
+
+    Les options sélectionnées pour les intervalles et bases / collections
+    sont mémorisées d’un onglet à l’autre.
 
 Types de rapports
 *****************

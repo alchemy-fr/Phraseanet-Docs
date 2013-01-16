@@ -9,7 +9,7 @@ Le menu Phraseanet
     de la solution ainsi qu'aux paramètres du compte utilisateur.
 
 .. image:: ../../images/MenuPhraseanet.jpg
-   :align: center
+    :align: center
 
 Accès aux interfaces
 ********************
@@ -20,7 +20,7 @@ Toutes les applications proposent en haut de la fenêtre la même barre de navig
 vous avez accès.**
 
 .. image:: ../../images/General-menu.jpg
-   :align: center
+    :align: center
 
 En cliquant sur le nom d'une application, le navigateur internet lance celle-ci
 dans un nouvel onglet.
@@ -54,7 +54,7 @@ le lien de déconnexion.
 Cliquer sur l'identifiant affiché pour accéder aux informations du compte.
 
 .. image:: ../../images/Moncompte.jpg
-       :align: center
+    :align: center
 
 Informations
 ^^^^^^^^^^^^
@@ -84,7 +84,7 @@ documents et d'en visualiser l'état:
 Un message indique alors que qu'une demande d'accès est en cours.
 
 .. image:: ../../images/Accesbasescoll.jpg
-       :align: center
+    :align: center
 
 Sessions
 ^^^^^^^^
@@ -112,12 +112,12 @@ En cliquant sur la flèche près de l'aide, deux sous-onglets apparaîssent: les
 *Raccourcis claviers*, et *A propos*.
 
 .. image:: ../../images/General-menu3.jpg
-   :align: center
+    :align: center
 
 Voici un exemple de quelques raccourcis claviers utiles dans Phraseanet.
 
 .. image:: ../../images/General-raccourcis.jpg
-   :align: center
+    :align: center
 
 Se déconnecter
 **************

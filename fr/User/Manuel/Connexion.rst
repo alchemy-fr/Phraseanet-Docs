@@ -12,8 +12,8 @@ nouveaux utilisateurs peut exister sur la page de connexion.
 
 L'écran *Nouvel utilisateur* s'ouvre :
 
-    .. image:: ../../images/Inscription1.jpg
-       :align: center
+.. image:: ../../images/Inscription1.jpg
+    :align: center
 
   * Saisir son Identifiant (minimum 5 lettres).
   * Saisir son mot de passe.
@@ -31,8 +31,8 @@ Authentification
 
 La page d'accueil permettant la connexion s'affiche :
 
-    .. image:: ../../images/Authentification.jpg
-       :align: center
+.. image:: ../../images/Authentification.jpg
+    :align: center
 
   * Sélectionner la langue dans la liste déroulante.
   * Saisir son identifiant.

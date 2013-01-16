@@ -13,8 +13,8 @@ Paramétrage par base
 --------------------
 Cliquer sur une base pour afficher le tableau d'état d'une base Phraseanet.
 
-  .. image:: ../../images/Administration-base.jpg
-       :align: center
+.. image:: ../../images/Administration-base.jpg
+    :align: center
 
 Cet écran montre l'état d'indexation de la base et permet des actions dont :
 
@@ -32,8 +32,8 @@ Réglage de la structure
 La rubrique **Réglage de la structure** permet d'afficher la structure documentaire
 de la base sélectionnée sous la forme d'un fichier xml éditable.
 
-  .. image:: ../../images/Administration-structurexml.jpg
-       :align: center
+.. image:: ../../images/Administration-structurexml.jpg
+    :align: center
 
 Il est rare de devoir manipuler le paramétrage d'une base par cette interface,
 les interfaces `Champs`_ , `Sous définition`_ ou `Réglage des status`_ étant
@@ -93,8 +93,8 @@ Réglage des Status
   Liés à la structure documentaire d'une base, il est possible d'intégrer jusqu'à
   60 status.
 
-  .. image:: ../../images/Administration-status.jpg
-       :align: center
+.. image:: ../../images/Administration-status.jpg
+    :align: center
 
   * Pour déclarer un status, cliquer sur l'icône page pour éditer un nouveau status bit
     puis remplir le formulaire.
@@ -106,8 +106,8 @@ Réglage des Status
 CGU (Conditions générales d'utilisation)
 ****************************************
 
-  .. image:: ../../images/Administration-cgu.jpg
-       :align: center
+.. image:: ../../images/Administration-cgu.jpg
+    :align: center
 
 Les conditions générales d’utilisation sont proposées aux utilisateurs au moment
 de leur inscription.
@@ -122,8 +122,8 @@ de leur inscription.
 Ordre des Collections
 *********************
 
-  .. image:: ../../images/Administration-ordrecollections.jpg
-       :align: center
+.. image:: ../../images/Administration-ordrecollections.jpg
+    :align: center
 
 Par défaut, les collections sont affichées dans les différentes applications selon
 leur ordre de création. Selon les besoins, il est donc possible de modifier
@@ -149,8 +149,8 @@ Créer une collection
 Pour créer une collection, cliquer sur le titre de la base dans laquelle créer la
 collection puis cliquer sur **Créer une collection**.
 
-  .. image:: ../../images/Administration-creercollections.jpg
-       :align: center
+.. image:: ../../images/Administration-creercollections.jpg
+    :align: center
 
 Indiquer le nom de la collection à créer dans le champ prévu à cet effet puis
 valider le formulaire.
@@ -162,8 +162,8 @@ Afficher une collection
 ***********************
 Cliquer sur le titre de la collection pour afficher ses informations.
 
-  .. image:: ../../images/Administration-affichercollection.jpg
-       :align: center
+.. image:: ../../images/Administration-affichercollection.jpg
+    :align: center
 
 Cet écran donne les informations essentielles sur la collection.
 Il permet de la renommer, de la désactiver (voir section
@@ -174,8 +174,8 @@ Afficher les détails d'une collection
 Cliquer sur **Montrer le détail** pour afficher le détail du contenu de la
 collection.
 
-  .. image:: ../../images/Administration-afficherdetail.jpg
-       :align: center
+.. image:: ../../images/Administration-afficherdetail.jpg
+    :align: center
 
 Le tableau liste les objets composant la collection (enregistrement, document,
 sous résolutions, vignette), les nombres par objet, la taille en méga-octets,
@@ -195,8 +195,8 @@ demandes de téléchargement de documents originaux (images, vidéo en haute dé
 **Pour ajouter un gestionnaire de commande**, sur la collection affichée, saisir
 le nom d'utilisateur ou son login dans le formulaire d'ajout d'un gestionnaire.
 
-  .. image:: ../../images/Administration-gestionnairecommande.jpg
-       :align: center
+.. image:: ../../images/Administration-gestionnairecommande.jpg
+    :align: center
 
 Un dispositif d'auto-complétion guide l'utilisateur en lui proposant des choix
 d'utilisateurs. Cliquer sur l'utilisateur choisi puis appliquer le choix au moyen
@@ -211,8 +211,8 @@ Pour appliquer un marquage sur les documents publiés à partir de Phraseanet su
 d'autres sites, sélectionner l'une des trois options proposées dans le groupe de
 boutons radio.
 
-  .. image:: ../../images/Administration-marquagecollection.jpg
-       :align: center
+.. image:: ../../images/Administration-marquagecollection.jpg
+    :align: center
 
   * Cocher la case  **Par défaut** pour n’appliquer aucun marquage,
 
@@ -290,13 +290,13 @@ fenêtre :doc:`Edition <Editer>` pour permettre une indexation rapide. Elles son
 L'édition de valeurs suggérées est possible via un formulaire d'édition en mode
 graphique.
 
-  .. image:: ../../images/Administration-valeursgraphicmode.jpg
-       :align: center
+.. image:: ../../images/Administration-valeursgraphicmode.jpg
+    :align: center
 
 D'autres utilisateurs préfèrent utiliser le mode par vue XML.
 
-  .. image:: ../../images/Administration-valeursxml.jpg
-       :align: center
+.. image:: ../../images/Administration-valeursxml.jpg
+    :align: center
 
   * Sélectionner le champ dans lequel vous souhaitez travailler
 

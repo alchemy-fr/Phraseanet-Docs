@@ -35,7 +35,7 @@ Comment pousser des documents ?
   Phraseanet : une fenêtre de type Overlay s'ouvre et présente alors la
   fenêtre de Push.
 
-  .. image:: ../../images/Push-push_layout-1.jpg
+.. image:: ../../images/Push-push_layout-1.jpg
     :align: center
 
 * Sélectionner un ou plusieurs utilisateurs Phraseanet vers qui pousser
@@ -65,7 +65,7 @@ créant un compte à son nom dans le système Phraseanet.
           en cliquant sur l'icône :
 
 .. image:: ../../images/Push-icone-disquette.jpg
-  :align: center
+    :align: center
 
 La liste créée est alors affichée dans la zone des listes d'envoi.
 Les fonctionnalités relatives aux listes d'envoi sont décrites plus
@@ -82,7 +82,7 @@ liste des utilisateurs de l'envoi
 Cliquer individuellement sur l'icône
 
 .. image:: ../../images/Push-download-badge.jpg
-   :align: center
+    :align: center
 
 située sur l'étiquette représentative du destinataire à qui donner
 le droit de téléchargement haute définition.
@@ -105,8 +105,8 @@ par l'attribution de privilèges supplémentaires optionnels.
   Phraseanet : une fenêtre de type overlay s'ouvre et présente alors la
   fenêtre de Validation.
 
-  .. image:: ../../images/Push-feedback_layout-1.jpg
-       :align: center
+.. image:: ../../images/Push-feedback_layout-1.jpg
+    :align: center
 
 * Sélectionner le ou les utilisateurs Phraseanet vers lesquels adresser la
   demande de Validation de la même manière que pour un Push.
@@ -126,12 +126,12 @@ Pour activer ou désactiver cette option, cliquer sur le bouton Contribuer ou su
 l'icône
 
 .. image:: ../../images/Push-contributeur_badge.jpg
-  :align: center
+    :align: center
 
 Le bouton **Voir les autres** et son icône associée
 
 .. image:: ../../images/Push-see_other_badge.jpg
-  :align: center
+    :align: center
 
 permet à un destinataire de visualiser les avis et commentaires émis par les
 autres destinataires contribuants à la demande de Validation.
@@ -181,7 +181,7 @@ lien *Ajouter*.
   pour visualiser son contenu.
 
 .. image:: ../../images/Push-list_manager_creer.jpg
-  :align: center
+    :align: center
 
 * Cliquer sur le bouton *Editer* situé à gauche de la zone centrale de l'
   interface du Gestionnaire de listes pour éditer le contenu d'une liste.
@@ -189,7 +189,7 @@ lien *Ajouter*.
   système Phraseanet.
 
 .. image:: ../../images/Push-list_manager_editer.jpg
-  :align: center
+    :align: center
 
 * Pour ajouter un ou plusieurs utilisateurs à la liste d'envoi, sélectionner
   les lignes des utilisateurs à ajouter.
