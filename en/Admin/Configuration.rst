@@ -140,7 +140,9 @@ Here's *doctrine_dev* service :
 
   * log : service **Log\\query_logger** (see below)
 
-  .. seealso:: For more informations about doctrine caching systems http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>
+.. seealso::
+
+    For more informations about doctrine caching systems http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>
 
 Twig `Templating service`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -166,7 +168,9 @@ Here's *twig_prod*
   * autoescape: adds automatic output escaping.
   * optimizer : Switch for `optimizer Twig`_ mode
 
-    .. seealso:: For more details on Twig environement options <http://twig.sensiolabs.org/doc/api.html#environment-options>
+.. seealso::
+
+    For more details on Twig environement options <http://twig.sensiolabs.org/doc/api.html#environment-options>
 
 Doctrine Monolog Log Service
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

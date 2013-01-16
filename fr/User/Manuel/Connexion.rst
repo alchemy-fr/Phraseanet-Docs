@@ -5,7 +5,8 @@
 
 Inscription
 -----------
-  * Cliquer sur **Inscription** dans la page d'accueil.
+
+* Cliquer sur **Inscription** dans la page d'accueil.
 
 Selon les choix de paramétrage du système, un lien permettant l'inscription de
 nouveaux utilisateurs peut exister sur la page de connexion.
@@ -15,32 +16,33 @@ L'écran *Nouvel utilisateur* s'ouvre :
 .. image:: ../../images/Inscription1.jpg
     :align: center
 
-  * Saisir son Identifiant (minimum 5 lettres).
-  * Saisir son mot de passe.
-  * Compléter les zones d'identité.
-  * Cocher les cases en regard des :term:`base`/Collection de documents
-    souhaitées.
-  * Cliquer sur le bouton Valider.
+* Saisir son Identifiant (minimum 5 lettres).
+* Saisir son mot de passe.
+* Compléter les zones d'identité.
+* Cocher les cases en regard des :term:`base`/Collection de documents
+  souhaitées.
+* Cliquer sur le bouton Valider.
 
 La page d'accueil s'affiche et informe l'utilisateur que sa demande a été prise
 en compte.
 
 Authentification
 ----------------
-  * Se connecter à l'adresse internet du site Phraseanet dans un navigateur Web.
+
+* Se connecter à l'adresse internet du site Phraseanet dans un navigateur Web.
 
 La page d'accueil permettant la connexion s'affiche :
 
 .. image:: ../../images/Authentification.jpg
     :align: center
 
-  * Sélectionner la langue dans la liste déroulante.
-  * Saisir son identifiant.
-  * Saisir son mot de passe.
-  * Cliquer sur Ok.
-  * En cas d'oubli du mot de passe, suivre la procédure de récupération en
-    cliquant sur "Mot de Passe oublié". Cette procédure est décrite
-    au paragraphe `Mot de passe perdu ?`_
+* Sélectionner la langue dans la liste déroulante.
+* Saisir son identifiant.
+* Saisir son mot de passe.
+* Cliquer sur Ok.
+* En cas d'oubli du mot de passe, suivre la procédure de récupération en
+  cliquant sur "Mot de Passe oublié". Cette procédure est décrite
+  au paragraphe `Mot de passe perdu ?`_
 
 Mot de passe perdu ?
 --------------------

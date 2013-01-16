@@ -90,11 +90,12 @@ original** telles que : largeur, hauteur, type, poids, taille d’impression…
 
 Sélectionner des documents
 ---------------------------
+
 Pour sélectionner des documents pour les afficher ensuite dans la vue détaillée
 ou bien pour effectuer ensuite des actions diverses (édition, suppression, etc.),
 deux possibilités:
 
-  * La sélection simple
+* La sélection simple
 
 Sélectionner une vignette dans la zone des résultats, dans les paniers ou dans
 les reportages en cliquant dans son cadre. La couleur de fonds de la vignette change.
@@ -104,7 +105,7 @@ La couleur de sélection peut être modifiée dans les Préférences d'affichage
 .. image:: ../../images/Affichage-selection1.jpg
     :align: center
 
-  * La sélection multiple
+* La sélection multiple
 
 **Pour sélectionner une série de vignettes "continues"**, appuyer sur le bouton
 Maj (shift) et cliquer sur la première vignette de la série, puis sur la dernière
@@ -130,7 +131,7 @@ Le nombre d'éléments sélectionnés apparaît en bas à gauche dans l'interfac
 .. image:: ../../images/Affichage-selection5.jpg
     :align: center
 
-  * La sélection par type de documents
+* La sélection par type de documents
 
 Pour sélectionner tous les documents d’une recherche selon leur type, cliquer
 sur la flèche à droite du carré blanc. Ici, on ne choisit par exemple que des
@@ -141,16 +142,16 @@ documents de type "images" à afficher:
 
 Pour placer une sélection de documents dans un Panier:
 
-  * Créer un panier: Se placer dans la barre des Onglets, au niveau des
-    Paniers. Cliquer sur la flèche, puis cliquer sur le "plus" vert pour créer
-    un nouveau panier (ou un reportage, choisir). Une fenêtre s'affiche, le nommer
-    puis cliquer sur Valider.
+* Créer un panier: Se placer dans la barre des Onglets, au niveau des
+  Paniers. Cliquer sur la flèche, puis cliquer sur le "plus" vert pour créer
+  un nouveau panier (ou un reportage, choisir). Une fenêtre s'affiche, le nommer
+  puis cliquer sur Valider.
 
 .. image:: ../../images/Affichage-Panier.jpg
     :align: center
 
-  * Pour plus d'informations, se reporter à la section dédiée aux :doc:`Paniers
-    et aux Reportages <PaniersReportages>`.
+* Pour plus d'informations, se reporter à la section dédiée aux :doc:`Paniers
+  et aux Reportages <PaniersReportages>`.
 
 .. note::
 
@@ -176,13 +177,13 @@ des résultats ou depuis un panier dans la zone de travail.
 Une fenêtre s’ouvre. Elle affiche la liste de documents sous forme de "bandeau
 d’image" en haut.
 
-  * Elle affiche l’image de choix du document cliqué.
+* Elle affiche l’image de choix du document cliqué.
 
-  * Elle affiche avec trois onglets la description, l’historique depuis l’ajout
-    et la popularité du document.
+* Elle affiche avec trois onglets la description, l’historique depuis l’ajout
+  et la popularité du document.
 
-  * Elle affiche la liste de tous les Paniers et Reportages auxquels le document
-    appartient dans la partie droite de la fenêtre.
+* Elle affiche la liste de tous les Paniers et Reportages auxquels le document
+  appartient dans la partie droite de la fenêtre.
 
 Cliquer sur une vignette pour afficher l’image de choix ou utiliser les flèches
 "gauche" et "droite" du clavier.
@@ -218,10 +219,10 @@ Onglet Popularité
 Cet onglet affiche les statistiques de consultation et de téléchargement du
 document en temps réel.
 
-  * Les statistiques de visualisation montrent d’abord sous forme de courbe le
-    nombre total de visualisations.
+* Les statistiques de visualisation montrent d’abord sous forme de courbe le
+  nombre total de visualisations.
 
-  * Le diagramme "Camembert" montre les sources d’accès au document.
+* Le diagramme "Camembert" montre les sources d’accès au document.
 
 .. image:: ../../images/Affichage-vuedetaillee3.jpg
     :align: center

@@ -9,7 +9,9 @@ you can verify your configuration. At root of Phraseanet :
     php bin/console check:system
     php bin/console check:config
 
-  .. seealso:: Use of :doc:`Konsole Kommander <Console>`
+.. seealso::
+
+    Use of :doc:`Konsole Kommander <Console>`
 
 Web server configuration
 ------------------------

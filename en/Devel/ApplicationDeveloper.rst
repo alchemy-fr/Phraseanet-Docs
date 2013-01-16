@@ -90,9 +90,11 @@ The settings page of the application is displayed.
     to query the API by the intermediary of an automated process that
     does not require authentication..
 
-.. seealso::    Phraseanet relies on the oAuth2.0 authentication protocol .
-             To better understand the process of creation and authentication of
-             third-party applications with the Phraseanet API,
-             we invite developers to read the protocol RFC `Oauth2`_.
+.. seealso::
+
+    Phraseanet relies on the oAuth2.0 authentication protocol .
+    To better understand the process of creation and authentication of
+    third-party applications with the Phraseanet API,
+    we invite developers to read the protocol RFC `Oauth2`_.
 
 .. _Oauth2: http://tools.ietf.org/html/draft-ietf-oauth-v2

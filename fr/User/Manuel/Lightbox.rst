@@ -49,12 +49,13 @@ L'interface de la Lightbox est simple et intuitive.
 .. image:: ../../images/Lightbox-interface.jpg
     :align: center
 
-  * 1. La barre d'action renseigne sur le nom du fichier, permet de naviguer dans les enregistrements et donne accès au téléchargement du media affiché.
-  * 2. La table lumineuse, au centre, montre le média sa description et ses caractéristiques. Cette zone varie selon que l'on visionne un Push ou une demande de Validation.
-  * 3. La zone d'affichage des vignettes liste les médias de la Lightbox
+* 1. La barre d'action renseigne sur le nom du fichier, permet de naviguer dans les enregistrements et donne accès au téléchargement du media affiché.
+* 2. La table lumineuse, au centre, montre le média sa description et ses caractéristiques. Cette zone varie selon que l'on visionne un Push ou une demande de Validation.
+* 3. La zone d'affichage des vignettes liste les médias de la Lightbox
 
 Naviguer
 ********
+
 Pour naviguer dans les media d'une Lightbox,
 
 * Sélectionner l'image à afficher dans la zone d'affichage des vignettes avec la souris.
@@ -63,6 +64,7 @@ Pour naviguer dans les media d'une Lightbox,
 
 Lancer le diaporama
 *******************
+
 Pour lancer un diaporama des médias présents dans une lightbox, cliquer sur
 le bouton **lecture** situé dans la barre d'action.
 
@@ -71,6 +73,7 @@ le bouton **lecture** situé dans la barre d'action.
 
 Téléchager des média
 ********************
+
 Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icône
 d'enregistrement située dans la barre des actions.
 
@@ -85,6 +88,7 @@ située à gauche en bas de l'interface.
 
 Comparer deux media
 *******************
+
 Il peut être intéressant d'afficher deux média côte à côte pour les comparer.
 
 .. image:: ../../images/Lightbox-comparer.jpg

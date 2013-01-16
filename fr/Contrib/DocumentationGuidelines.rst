@@ -147,9 +147,13 @@ Meta Markups
 
   * Références ::
 
-    .. seealso:: documentation en ligne sur http://http://sphinx.pocoo.org/
+        .. seealso::
 
-    .. seealso:: documentation en ligne sur http://http://sphinx.pocoo.org/
+            documentation en ligne sur http://http://sphinx.pocoo.org/
+
+    .. seealso::
+
+        documentation en ligne sur http://http://sphinx.pocoo.org/
 
   * Todos (reste invisible) ::
 

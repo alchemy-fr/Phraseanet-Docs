@@ -145,7 +145,10 @@ Voici le service *doctrine_dev* :
 
   * log : utilisation du service **Log\\query_logger** (voir ci dessous)
 
-  .. seealso:: Pour plus d'informations sur les différents caches doctrine http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm
+.. seealso::
+
+    Pour plus d'informations sur les différents caches doctrine
+    http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm
 
 Service de `Mise En Page Twig`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -173,7 +176,10 @@ Voici le service *twig_prod*
     d'auto échappement.
   * optimizer : Activer l'`optimizer Twig`_
 
-  .. seealso:: Pour plus de détails sur les options de l'environnement twig http://twig.sensiolabs.org/doc/api.html#environment-options
+.. seealso::
+
+    Pour plus de détails sur les options de l'environnement twig
+    http://twig.sensiolabs.org/doc/api.html#environment-options
 
 Service de Log Doctrine Monolog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

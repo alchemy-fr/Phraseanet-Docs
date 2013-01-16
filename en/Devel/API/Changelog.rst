@@ -528,6 +528,7 @@ Embeddable media now provides a list of supported devices. This devices are
 compatible with CSS2 specification.
 
 .. seealso::
+
     http://www.w3.org/TR/CSS2/media.html#media-types
 
 The following thumbnail is compatible with a screen display

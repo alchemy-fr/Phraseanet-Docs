@@ -167,6 +167,7 @@ Cette méthode évite le besoin d'avoir à stocker le jeton d'autorisation d'acc
     élevé de confiance entre le propriétaire de la ressource et le client.
 
 .. seealso::
+
     Voir aussi la `RFC oAuth v2 draft #10`_.
 
 .. code-block:: bash

@@ -136,9 +136,13 @@ Meta Markups
 
   * References ::
 
-    .. seealso:: online documentation at http://http://sphinx.pocoo.org/
+        .. seealso::
 
-    .. seealso:: online documentation at http://http://sphinx.pocoo.org/
+            online documentation at http://http://sphinx.pocoo.org/
+
+    .. seealso::
+
+        online documentation at http://http://sphinx.pocoo.org/
 
   * Todos (invisible) ::
 

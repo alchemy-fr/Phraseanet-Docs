@@ -473,6 +473,7 @@ Les embeddables fournissent maintenant une liste de *devices* adaptés.
 Ces devices sont compatibles avec CSS 2.
 
 .. seealso::
+
     http://www.w3.org/TR/CSS2/media.html#media-types
 
 Exemple : la thumbnail suivante est fournie pour un affichage à l'écran.

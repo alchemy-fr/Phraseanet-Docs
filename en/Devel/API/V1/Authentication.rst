@@ -156,6 +156,7 @@ resource-owner's credentials for future use.
     resource owner and the client.
 
 .. seealso::
+
     See `RFC oAuth v2 draft #10`_.
 
 .. code-block:: bash

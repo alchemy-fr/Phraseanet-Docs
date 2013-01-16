@@ -92,7 +92,9 @@ Route records/caption
           "value": "ciel ; météo ; nuage"
       }
 
-  .. seealso:: documentation complète de la route
+.. seealso::
+
+    documentation complète de la route
     :doc:`records/caption </Devel/API/V1/Route/Records/Caption>`
 
 Route records/setmetadatas

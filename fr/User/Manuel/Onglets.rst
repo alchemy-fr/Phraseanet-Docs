@@ -74,6 +74,7 @@ Double cliquer sur un terme pour lancer la recherche.
 
 Onglet Candidats
 ****************
+
 Cette fonction permet de retrouver la liste des mots candidats issus de l’indexation
 de nouveaux documents.
 Cette liste est générée à la fois par la récupération des métadonnées lors de
@@ -82,9 +83,9 @@ des documents.
 Selon le paramétrage du Thesaurus, les listes de mots candidats peuvent être triées
 par champs.
 
-  * Cliquer sur l’onglet Thesaurus dans la barre des Onglets
+* Cliquer sur l’onglet Thesaurus dans la barre des Onglets
 
-  * Cliquer sur le sous onglet "Candidats"
+* Cliquer sur le sous onglet "Candidats"
 
 Les termes candidats s’affichent:
 
@@ -101,14 +102,15 @@ Le menu contextuel du terme s’affiche:
 .. image:: ../../images/Onglets-candidats2.jpg
     :align: center
 
-  * Cliquer sur Accepter en xx "langue du terme"
+* Cliquer sur Accepter en xx "langue du terme"
 
-  * Cliquer sur Remplacer par
+* Cliquer sur Remplacer par
 
-  * Cliquer sur Supprimer
+* Cliquer sur Supprimer
 
 Chercher dans Thesaurus
 ***********************
+
 La fenêtre Thesaurus est utilisée pour rechercher des termes présents dans les
 thesauri ouverts.
 

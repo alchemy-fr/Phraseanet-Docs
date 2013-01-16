@@ -83,27 +83,28 @@ par l'application.
 
 Réglage des Status
 ******************
-  Les :term:`Status` sont des marqueurs qui indiquent des états sur des enregistrements.
-  Ils interagissent ou non avec les droits des utilisateurs (voir **Limitation par les
-  Status** sur la page consacré à la :doc:`Gestion des utilisateurs <AdministrationUtilisateurs>`).
 
-  Dans Phraseanet, soit un status est baissé (l'état par défaut), soit il est levé.
-  En pratique, les status permettent d'illustrer des états sur des documents et
-  d'obtenir au besoin une granularité supplémentaire sur l'accès des utilisateurs à
-  ces documents.
+Les :term:`Status` sont des marqueurs qui indiquent des états sur des enregistrements.
+Ils interagissent ou non avec les droits des utilisateurs (voir **Limitation par les
+Status** sur la page consacré à la :doc:`Gestion des utilisateurs <AdministrationUtilisateurs>`).
 
-  Liés à la structure documentaire d'une base, il est possible d'intégrer jusqu'à
-  60 status.
+Dans Phraseanet, soit un status est baissé (l'état par défaut), soit il est levé.
+En pratique, les status permettent d'illustrer des états sur des documents et
+d'obtenir au besoin une granularité supplémentaire sur l'accès des utilisateurs à
+ces documents.
+
+Liés à la structure documentaire d'une base, il est possible d'intégrer jusqu'à
+28 status.
 
 .. image:: ../../images/Administration-status.jpg
     :align: center
 
-  * Pour déclarer un status, cliquer sur l'icône page pour éditer un nouveau status bit
-    puis remplir le formulaire.
+* Pour déclarer un status, cliquer sur l'icône page pour éditer un nouveau status bit
+  puis remplir le formulaire.
 
-  * Pour modifier un status existant, cliquer sur l'icône stylo.
+* Pour modifier un status existant, cliquer sur l'icône stylo.
 
-  * Pour supprimer un status, cliquer sur l'icône croix puis confirmer la suppression.
+* Pour supprimer un status, cliquer sur l'icône croix puis confirmer la suppression.
 
 CGU (Conditions générales d'utilisation)
 ****************************************
@@ -114,12 +115,12 @@ CGU (Conditions générales d'utilisation)
 Les conditions générales d’utilisation sont proposées aux utilisateurs au moment
 de leur inscription.
 
-  * Saisir ou copier et coller un texte dans les différentes langues proposées.
+* Saisir ou copier et coller un texte dans les différentes langues proposées.
 
-  * Cocher la case "Les utilisateurs…." pour faire valider aux utilisateurs déjà
-    inscrits des conditions générales mises à jour.
+* Cocher la case "Les utilisateurs…." pour faire valider aux utilisateurs déjà
+  inscrits des conditions générales mises à jour.
 
-  * Cliquer sur Mettre à jour pour enregistrer les modifications.
+* Cliquer sur Mettre à jour pour enregistrer les modifications.
 
 Ordre des Collections
 *********************
@@ -213,6 +214,7 @@ son nom d'utilisateur puis appliquer le choix au moyen du bouton **Valider**.
 
 Marquage d'une collection
 *************************
+
 Pour appliquer un marquage sur les documents publiés à partir de Phraseanet sur
 d'autres sites, sélectionner l'une des trois options proposées dans le groupe de
 boutons radio.
@@ -220,18 +222,18 @@ boutons radio.
 .. image:: ../../images/Administration-marquagecollection.jpg
     :align: center
 
-  * Cocher la case  **Par défaut** pour n’appliquer aucun marquage,
+* Cocher la case  **Par défaut** pour n’appliquer aucun marquage,
 
 Ou
 
-  * Cocher la case **Fichier de filigrane** pour appliquer le filigrane par défaut
-    ou s’appuyer d'un fichier de filigrane préalablement chargé.
+* Cocher la case **Fichier de filigrane** pour appliquer le filigrane par défaut
+  ou s’appuyer d'un fichier de filigrane préalablement chargé.
 
 Ou
 
-  * Cocher la case **Bandeau de Notice** pour ajouter un bandeau sous la dernière
-    ligne de pixels des fichiers (ceci nécessite un paramétrage des informations
-    à afficher sur le bandeau "champs, logo").
+* Cocher la case **Bandeau de Notice** pour ajouter un bandeau sous la dernière
+  ligne de pixels des fichiers (ceci nécessite un paramétrage des informations
+  à afficher sur le bandeau "champs, logo").
 
 .. _activate-collection:
 
@@ -304,10 +306,10 @@ D'autres utilisateurs préfèrent utiliser le mode par vue XML.
 .. image:: ../../images/Administration-valeursxml.jpg
     :align: center
 
-  * Sélectionner le champ dans lequel vous souhaitez travailler
+* Sélectionner le champ dans lequel vous souhaitez travailler
 
-  * Pour ajouter une valeur, la saisir dans la zone prévue à cet effet, cliquer
-    sur Ajouter
+* Pour ajouter une valeur, la saisir dans la zone prévue à cet effet, cliquer
+  sur Ajouter
 
 Il est possible de trier les valeurs en cliquant sur une valeur puis sur "monter"
 ou "descendre" ou de les classer par ordre Alphabétique en cliquant sur Tri Alpha.:

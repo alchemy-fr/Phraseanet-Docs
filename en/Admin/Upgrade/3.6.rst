@@ -12,8 +12,10 @@ Changes :
     A route has been added to make it easy to display caption :
     :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
 
-.. seealso:: :doc:`Complete documentation to upgrade to API 1.1
-        </Devel/API/V1/Upgrade/1.1>`
+.. seealso::
+
+    :doc:`Complete documentation to upgrade to API 1.1
+    </Devel/API/V1/Upgrade/1.1>`
 
 .. warning::
 
