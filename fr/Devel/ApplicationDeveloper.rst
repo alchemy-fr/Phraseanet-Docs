@@ -76,10 +76,12 @@ application, La page des paramètres de l'application s'affiche.
 * L'activation du grant_type password qui permet à votre application d'identifier
   les utilisateurs grâce à leurs identifiants Phraseanet.
 
-.. warning:: Éviter ce type d'authentification il est conseillé de l'utiliser
-        lorsque le propriétaire de la ressource à une grande relation de
-        confiance avec le client, comme le système d'exploitation ou un dispositif
-        hautement privilégiée avec Phraseanet.
+.. warning::
+
+    Eviter ce type d'authentification il est conseillé de l'utiliser
+    lorsque le propriétaire de la ressource à une grande relation de
+    confiance avec le client, comme le système d'exploitation ou un dispositif
+    hautement privilégiée avec Phraseanet.
 
 * Le jeton d'accés développeur est un jeton qui identifie le propriétaire de
   l'application sur l'API phraseanet.

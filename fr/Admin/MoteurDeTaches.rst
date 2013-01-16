@@ -99,8 +99,10 @@ Paramètrage
   * Déplacer les documents non-archivés dans "_error" : garder
     ou pas un exemplaire du fichier en erreur
 
-   .. warning:: Pour des raisons de sécurité, il faut créér un fichier
-      .phrasea.xml à la racine du HotFolder.
+.. warning::
+
+    Pour des raisons de sécurité, il faut créér un fichier .phrasea.xml à la
+    racine du HotFolder.
 
 FTP Push
 ********
@@ -339,6 +341,7 @@ exemples
     </tasksettings>
 
 .. warning::
+
     Dans le cas de conflits ou de recouvrements entre les critères de
     <task> successives, des docs peuvent 'sauter' d'un état à l'autre à chaque
     éxécution de la tâche.

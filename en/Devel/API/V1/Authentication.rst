@@ -151,6 +151,7 @@ This method eliminates the need for the client to store the
 resource-owner's credentials for future use.
 
 .. warning::
+
     This method should only be used when there is a high degree of trust between the
     resource owner and the client.
 

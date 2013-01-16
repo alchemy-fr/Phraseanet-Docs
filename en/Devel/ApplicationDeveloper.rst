@@ -74,7 +74,9 @@ The settings page of the application is displayed.
 * Activation of the password grant_type enables your application to identify users
     through their Phraseanet identifiers .
 
-.. warning:: Avoid this type of authentication, it is recommended to use it when
+.. warning::
+
+    Avoid this type of authentication, it is recommended to use it when
     the owner of the resource has a high degree of trust with the client,
     such as the operating system or device which is highly privileged with
     Phraseanet.

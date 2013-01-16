@@ -114,11 +114,13 @@ Meta Markups
 
   * Warning::
 
-      .. warning::
-        Un warning
+        .. warning::
+
+            Un warning
 
     .. warning::
-      Un warning
+
+        Un warning
 
   * Version added ::
 

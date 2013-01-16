@@ -62,7 +62,9 @@ réinitialisation de mot de passe.
 Suivre alors les instructions proposées à l'écran puis valider le formulaire pour
 réinitialiser le mot de passe.
 
-.. warning:: les mots de passe sont sensibles à la casse.
+.. warning::
+
+    Les mots de passe sont sensibles à la casse.
 
 Après réinitialisation du mot de passe, se connecter au moyen du formulaire disponible
 en page d’accueil de l'application Phraseanet.

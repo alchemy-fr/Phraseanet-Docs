@@ -75,9 +75,11 @@ par l'application.
 | Document bureautique Pdf, Word...              | Animation Flash (Swf)                 |
 +------------------------------------------------+---------------------------------------+
 
-.. warning:: Les sous définitions thumbnail et preview sont indispensables.
-             Elles sont utilisées dans les interfaces Phraseanet pour afficher les
-             vignettes et images de choix des média.
+.. warning::
+
+    Les sous définitions thumbnail et preview sont indispensables.
+    Elles sont utilisées dans les interfaces Phraseanet pour afficher les
+    vignettes et images de choix des média.
 
 Réglage des Status
 ******************

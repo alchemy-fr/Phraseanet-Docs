@@ -125,11 +125,13 @@ Meta Markups
 
   * Avertissement::
 
-      .. warning::
-        Un avertissement
+        .. warning::
+
+            Un avertissement
 
     .. warning::
-      Un avertissement
+
+        Un avertissement
 
   * Version added ::
 

@@ -87,7 +87,9 @@ Settings
 * Move docs in "_archived" : keep a copy of archived documents
 * Move docs in "_error" : keep a copy of failed documents
 
-  .. warning:: For security reasons, you have to write an empty .phrasea.xml
+.. warning::
+
+    For security reasons, you have to write an empty .phrasea.xml
     file at the root of the HotFolder.
 
 FTP Push

@@ -15,16 +15,16 @@ Les changements :
     Une route est ajoutée pour faciliter l'affichage des fiches :
     :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
 
-  .. seealso:: :doc:`documentation complète du passage en API 1.1
+.. seealso:: :doc:`documentation complète du passage en API 1.1
         </Devel/API/V1/Upgrade/1.1>`
 
-  .. warning::
+.. warning::
 
-        Etant donné que ce changement intervient dans le schema de base de
-        donnée, il n'y a pas de retrocompatibilité avec la version1.0 de l'API,
-        qui n'est donc plus supportée dans la version 3.6 de Phraseanet.
+    Etant donné que ce changement intervient dans le schema de base de
+    donnée, il n'y a pas de retrocompatibilité avec la version1.0 de l'API,
+    qui n'est donc plus supportée dans la version 3.6 de Phraseanet.
 
-        Merci de mettre à jour vos adapteurs avant de mettre à jour Phraseanet.
+    Merci de mettre à jour vos adapteurs avant de mettre à jour Phraseanet.
 
 Quoi de neuf ?
 --------------

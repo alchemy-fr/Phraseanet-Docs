@@ -49,9 +49,11 @@ Setup propose un jeu de formulaires permettant notamment :
 
   * **De gérer les extensions de fichiers autorisés** en ajout dans Phraseanet Upload
 
-.. warning:: Setup permet de modifier en profondeur les paramètres d'installation de l'application.
-             L'administrateur sera particulièrement attentif aux modifications apportées dans les
-             formulaires proposés.
+.. warning::
+
+    Setup permet de modifier en profondeur les paramètres d'installation de l'application.
+    L'administrateur sera particulièrement attentif aux modifications apportées dans les
+    formulaires proposés.
 
 Utilisateurs connectés
 ----------------------

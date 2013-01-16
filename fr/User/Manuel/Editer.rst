@@ -253,8 +253,10 @@ Appliquer un modèle à une sélection de documents
     Il est possible de revoir les valeurs des champs d'un modèle en
     cliquant sur la flèche se trouvant devant le titre du modèle.
 
-.. warning:: Un modèle est la propriété de l'utilisateur qui l'a créé, il ne
-             peut être utilisé que par lui.
+.. warning::
+
+    Un modèle est la propriété de l'utilisateur qui l'a créé, il ne
+    peut être utilisé que par lui.
 
 Editer des reportages
 ---------------------

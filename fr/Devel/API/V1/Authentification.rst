@@ -162,6 +162,7 @@ d'indentification de l'utilisateur qui détient les ressources Phraseanet.
 Cette méthode évite le besoin d'avoir à stocker le jeton d'autorisation d'accès.
 
 .. warning::
+
     Attention, cette méthode ne doit être utilisée que lorsqu'il y a un degré
     élevé de confiance entre le propriétaire de la ressource et le client.
 
