@@ -223,9 +223,5 @@ Refuser un candidat
 
 * => Une fenêtre s'ouvre
 
-.. todo:: Un bug dans l'appli ne permet pas de décrire cette fonction
-
 Supprimer un candidat
 *********************
-
-.. todo:: Un bug dans l'appli ne permet pas de décrire cette focntion

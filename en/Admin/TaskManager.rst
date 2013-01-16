@@ -148,5 +148,3 @@ Settings
 * Period : time to wait between two checks
 * Collection : from =>to
 * Status-bit : from => to
-
-.. todo:: Batch upload process (XML Service)

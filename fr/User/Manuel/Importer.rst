@@ -1,7 +1,6 @@
-﻿.. todo:: Mettre à jour les captures
-
 Importer
 =========
+
 .. toctree::
    :maxdepth: 3
 

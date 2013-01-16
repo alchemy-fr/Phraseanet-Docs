@@ -166,8 +166,6 @@ Paramètrage
   * Collection : collection d'origine ====> collection de destination
   * Status : status-bit à l'origine   ====> status-bit final
 
-.. todo:: Batch upload process (XML Service)
-
 RecordMover
 ***********
 
@@ -352,5 +350,3 @@ exemples
 
     Ce type de problème peut être évité en s'assurant qu'aucune des clauses 'from'
     ne se recouvrent, par ex. en levant un sb spécifique à chaque <task>
-
-.. todo:: on ne peut pas tester l'absence d'un champ avec 'value=""'

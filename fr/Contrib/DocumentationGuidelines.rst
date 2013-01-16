@@ -155,12 +155,6 @@ Meta Markups
 
         documentation en ligne sur http://http://sphinx.pocoo.org/
 
-  * Todos (reste invisible) ::
-
-    .. todo:: mettre à jour
-
-    .. todo:: mettre à jour
-
   * Topic  ::
 
     .. topic:: Topic Title (par exemple: L'essentiel)

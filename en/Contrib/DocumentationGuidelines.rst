@@ -144,12 +144,6 @@ Meta Markups
 
         online documentation at http://http://sphinx.pocoo.org/
 
-  * Todos (invisible) ::
-
-    .. todo:: upgrade when available
-
-    .. todo:: upgrade when available
-
   * Topic  ::
 
     .. topic:: Topic Title (for example: The essential)

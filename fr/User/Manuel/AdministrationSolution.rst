@@ -106,15 +106,10 @@ Le principe d’une *Tâche d’archivage* est de scruter un répertoire, d'en c
 le contenu, de l'archiver (recopier les fichiers dans les répertoires de stockage
 de la base de destination).
 
-  * **Pour démarrer une tâche**, cliquer sur le symbole, puis cliquer sur Start.
-
-  * **Pour éditer une tâche**, cliquer sur "Editer".
-
-  * **Pour arrêter une tâche**, cliquer sur "Stop".
-
-  * **Pour créer une nouvelle tâche**, cliquer sur nouvelle tâche.
-
- .. todo:: Update de la capture pour 3.7
+* **Pour démarrer une tâche**, cliquer sur le symbole, puis cliquer sur Start.
+* **Pour éditer une tâche**, cliquer sur "Editer".
+* **Pour arrêter une tâche**, cliquer sur "Stop".
+* **Pour créer une nouvelle tâche**, cliquer sur nouvelle tâche.
 
 .. image:: ../../images/Administration-taches.jpg
     :align: center
