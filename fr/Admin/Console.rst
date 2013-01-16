@@ -218,4 +218,3 @@ system:upgrade
 --------------
 
 Met à jour Phraseanet avec la dernière version.
-

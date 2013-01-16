@@ -8,11 +8,11 @@ Production : Gérer les média
     Elle regroupe l'affichage des enregistrements, la zone de travail, la palette
     des actions.
     Cette interface est personnalisable.
-    
+
 
 .. toctree::
    :maxdepth: 1
-   
+
    Onglets
    PaniersReportages
    Actions
@@ -21,15 +21,3 @@ Production : Gérer les média
    Publier
    Bridge
    PersonnaliserInterface
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   

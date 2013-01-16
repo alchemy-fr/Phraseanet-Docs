@@ -37,4 +37,3 @@ Task start
 Start the task manager as in the user section
 
 Congrats ! Your install is finished !
-

@@ -67,4 +67,3 @@ Phraseanet dans la zone adéquat du setup :
 - activation du module "xsendfile"
 - fournir le nom du point de montage ("files" dans l'exemple précédent)
 - fournir le chemin du point de montage (le chemin vers les sous definitions)
-

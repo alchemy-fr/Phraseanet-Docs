@@ -64,4 +64,3 @@ Phraseanet configuration :
 - activate "xsendfile"
 - Provide the mount-point name ("files" in the previous example)
 - Provide the mount-point path (The path to the sub-views directory)
-

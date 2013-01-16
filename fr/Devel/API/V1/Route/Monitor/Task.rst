@@ -62,4 +62,3 @@ Exemple de réponse
             }
         }
     }
-

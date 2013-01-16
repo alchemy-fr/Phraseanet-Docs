@@ -241,4 +241,3 @@ pour supprimer définitivement cette liste.
 
 .. Note :: Si le nom de la liste supprimée figure toujours dans la liste des
           listes d'envoi, cliquer sur le lien *Rafraîchir* situé à gauche de l'interface.
-

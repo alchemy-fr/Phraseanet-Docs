@@ -303,4 +303,3 @@ Pour détacher un Reportage
 * -> Cliquer sur détacher
 
 * => Le reportage est détaché (il n'apparaît plus dans l'onglet)
-

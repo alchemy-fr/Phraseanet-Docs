@@ -38,4 +38,3 @@ proposons de suivre le plan suivant.
    AdministrationSolution
    AdministrationUtilisateurs
    AdministrationBasesCollections
-

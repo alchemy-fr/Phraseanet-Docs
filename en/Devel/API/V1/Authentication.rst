@@ -166,4 +166,3 @@ resource-owner's credentials for future use.
 .. _oAuth2.0: http://oauth.net/2/
 .. _oAuth2.0 libraries: http://oauth.net/code/
 .. _RFC oAuth v2 draft #10: http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2
-
