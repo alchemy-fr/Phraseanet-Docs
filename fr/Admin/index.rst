@@ -2,9 +2,9 @@ Administrateur
 ==============
 
 .. module:: administrateur
-   :synopsis: Guide administrateur de Phraseanet
-.. moduleauthor:: Team Phraseanet <info@phraseanet.com>
+    :synopsis: Guide administrateur de Phraseanet
 
+.. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
 Phraseanet repose sur des bases de données MySQL/InnoDB : les ApplicationBoxes
 et les DataBoxes.

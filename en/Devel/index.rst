@@ -1,5 +1,6 @@
 Developer
-===========
+=========
+
 .. module:: Developpeur
 
 Welcome to the Phraseanet Developer Documentation i
@@ -12,6 +13,6 @@ Currently stable version is API 1.2 available on Phraseanet v3.7+
 
 .. toctree::
 
-   API
-   Forums
-   ApplicationDeveloper
+    API
+    Forums
+    ApplicationDeveloper

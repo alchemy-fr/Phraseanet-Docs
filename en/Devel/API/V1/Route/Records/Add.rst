@@ -4,50 +4,49 @@ Add record
 About
 -----
 
-  Add a record to Phraseanet. If the file does not fit all install constraints,
-  it goes to the quarantine. This behavior can be bypassed with the optionnal
-  *forceBehavior* parameter
+Add a record to Phraseanet. If the file does not fit all install constraints,
+it goes to the quarantine. This behavior can be bypassed with the optionnal
+*forceBehavior* parameter
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/add/
 
-  ======================== ======
-   Informations
-  ======================== ======
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== ======
+======================== ======
+ Informations
+======================== ======
+ HTTP Method              POST
+ Requires Authentication  Yes
+======================== ======
 
 Parameters
 ----------
 
-  =============== =========== =============
-   Parameters      Type        Information
-  =============== =========== =============
-   file            file        Mandatory - The file related to the record to add
-   base_id         integer     Mandatory - The base_id related to the destination collection
-   status          string      64 bit format binary string (optionnal)
-   forceBehavior   integer     0 : force record ; 1 : force quarantine (optionnal)
-  =============== =========== =============
+=============== =========== =============
+ Parameters      Type        Information
+=============== =========== =============
+ file            file        Mandatory - The file related to the record to add
+ base_id         integer     Mandatory - The base_id related to the destination collection
+ status          string      64 bit format binary string (optionnal)
+ forceBehavior   integer     0 : force record ; 1 : force quarantine (optionnal)
+=============== =========== =============
 
 Response Fields
 ---------------
 
 In case a record is created, the following
 
-  ================== ================================
-   Field              Description
-  ================== ================================
-   entity             A code corresponding to the created entity (record => 0 ; quarantine => 1)
-   url                The url of the created item
-  ================== ================================
-
+================== ================================
+ Field              Description
+================== ================================
+ entity             A code corresponding to the created entity (record => 0 ; quarantine => 1)
+ url                The url of the created item
+================== ================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

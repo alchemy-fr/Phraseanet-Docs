@@ -4,37 +4,37 @@ Lister les databox
 A propos
 --------
 
-  Retourne la liste des databox disponibles
+Retourne la liste des databox disponibles
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/databoxes/list/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  Aucun paramètre
+Aucun paramètre
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-  Attribut    Description
-  ========== ================================
-  databoxes   La liste des databox disponibles
-  ========== ================================
+========== ================================
+Attribut    Description
+========== ================================
+databoxes   La liste des databox disponibles
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

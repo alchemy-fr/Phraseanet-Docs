@@ -4,42 +4,42 @@ Récupérer la notice d'indexation d'un document
 A propos
 --------
 
-  Retourne la notice d'indexation d'un document
+Retourne la notice d'indexation d'un document
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/caption/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   databox_id               entier         L'identifiant de la databox auquel appartient le document
-   record_id                entier         L'identifiant du document sélectionné
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ databox_id               entier         L'identifiant de la databox auquel appartient le document
+ record_id                entier         L'identifiant du document sélectionné
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  =================== ================================
-   Attribut            Description
-  =================== ================================
-   caption_metadatas   La notice d'indexation du document
-  =================== ================================
+=================== ================================
+ Attribut            Description
+=================== ================================
+ caption_metadatas   La notice d'indexation du document
+=================== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

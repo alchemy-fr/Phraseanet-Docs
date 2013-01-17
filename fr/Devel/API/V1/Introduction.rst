@@ -29,7 +29,6 @@ deux champs : response et meta.
 
 Les réponses sont renvoyés par défaut dans un format Json.
 
-
 YAML
 ~~~~
 
@@ -57,7 +56,6 @@ Réponse :
       charset: UTF-8
     response:
       ....
-
 
 Json
 ~~~~
@@ -100,8 +98,9 @@ Requête :
 
     curl -H 'Accept: application/json' /api/v1/my/request/?callback=foobar
 
+.. note::
 
-.. note:: Dans le cas d’une réponse au format JsonP, l’Api retourne toujours
+    Dans le cas d’une réponse au format JsonP, l’Api retourne toujours
     un code de réponse HTTP 200 (à l’exception du code 500) dans le champ Response.
     Cela a pour conséquence de permettre l'exécution du code exploitant la requête.
     Le code de réponse HTTP le plus significatif se trouve dans le champ Meta.

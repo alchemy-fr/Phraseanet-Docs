@@ -4,41 +4,41 @@ Ajouter un panier
 A propos
 --------
 
-  Créé un nouveau panier
+Créé un nouveau panier
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/add/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   name                     entier         Le nom du panier
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ name                     entier         Le nom du panier
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ============= ================================
-   Attribut      Description
-  ============= ================================
-   basket        Le panier créé
-  ============= ================================
+============= ================================
+ Attribut      Description
+============= ================================
+ basket        Le panier créé
+============= ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

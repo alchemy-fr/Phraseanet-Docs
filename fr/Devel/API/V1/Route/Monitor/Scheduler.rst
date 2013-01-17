@@ -4,37 +4,37 @@ Monitorer le Scheduler
 About
 -----
 
-  Retourne des informations sur le statut du scheduler
+Retourne des informations sur le statut du scheduler
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/scheduler/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  Aucun paramètre
+Aucun paramètre
 
 Response Fields
 ---------------
 
-  =============== ======================================
-   Field           Description
-  =============== ======================================
-   scheduler       Informations sur l'état du scheduler
-  =============== ======================================
+=============== ======================================
+ Field           Description
+=============== ======================================
+ scheduler       Informations sur l'état du scheduler
+=============== ======================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

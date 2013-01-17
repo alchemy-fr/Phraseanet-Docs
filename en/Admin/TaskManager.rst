@@ -17,7 +17,7 @@ Alternative starts and stops
 If you want to start and stop the Scheduler automatically, for example with
 cron, you can use `KonsoleKommander <Console>`_ and find the right command :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     bin/console scheduler:start
     bin/console scheduler:stop
@@ -34,13 +34,13 @@ It indexes the datas with phraseanet_indexer.
 
 Indexer requires parameters :
 
-  * Path to indexer binary
-  * Host : MySQL server hostname / address
-  * Port : MySQL port
-  * Database : MySQL dbname
-  * User : MySQL user
-  * Password : MySQL password
-  * Socket port : socket port to stop the indexer
+* Path to indexer binary
+* Host : MySQL server hostname / address
+* Port : MySQL port
+* Database : MySQL dbname
+* User : MySQL user
+* Password : MySQL password
+* Socket port : socket port to stop the indexer
 
 .. code-block:: bash
 
@@ -53,14 +53,18 @@ Indexer requires parameters :
                                       --default-character-set=utf8 \
                                       -o
 
-  .. note:: This task is required for common Phraseanet use
+.. note::
+
+    This task is required for common Phraseanet use
 
 Sub-definitions creation
 ************************
 
 This task creates sub-definitions (thumbnails and preview).
 
-  .. note:: This task is required for common Phraseanet use
+.. note::
+
+    This task is required for common Phraseanet use
 
 Metadatas writing
 *****************
@@ -83,9 +87,10 @@ Settings
 * Move docs in "_archived" : keep a copy of archived documents
 * Move docs in "_error" : keep a copy of failed documents
 
-  .. warning:: For security reasons, you have to write an empty .phrasea.xml
-    file at the root of the HotFolder.
+.. warning::
 
+    For security reasons, you have to write an empty .phrasea.xml
+    file at the root of the HotFolder.
 
 FTP Push
 ********
@@ -126,7 +131,6 @@ Déplacement des documents périmés
 This tasks do some actions (move to collection or chaneg status) on records
 depending of their status or some date fields.
 
-
 API Bridge Uploader
 *******************
 
@@ -144,5 +148,3 @@ Settings
 * Period : time to wait between two checks
 * Collection : from =>to
 * Status-bit : from => to
-
-.. todo:: Batch upload process (XML Service)

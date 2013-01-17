@@ -4,13 +4,13 @@ Konsole Kommander
 Konsole Kommander est une application en ligne de commande pour piloter
 Phraseanet. Elle s'exécute simplement :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console
 
 Vous aurez sur votre écran une liste de commande de la sorte :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     Available commands:
       help                             Displays help for a command
@@ -45,14 +45,15 @@ Vous aurez sur votre écran une liste de commande de la sorte :
       task:list                        List tasks
       task:run                         Run task
 
-
 **Pour obtenir de l'aide sur une commande**
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console help nomdecommande
 
-.. note:: Chaque commande retourne une valeur qui peut-être utilisée pour
+.. note::
+
+    Chaque commande retourne une valeur qui peut-être utilisée pour
     exécuter des scripts automatisés.
 
 check:config
@@ -60,7 +61,6 @@ check:config
 
 Parse et vérifie la structure des
 :doc:`fichiers de configurations </Admin/Configuration>`
-
 
 check:ensure-dev-settings
 -------------------------
@@ -70,7 +70,7 @@ développement.
 
 **option** :
 
-    * *--strict* : Echoue si il y a des alertes.
+* *--strict* : Echoue si il y a des alertes.
 
 check:ensure-prod-settings
 --------------------------
@@ -80,7 +80,7 @@ production.
 
 **option** :
 
-    * *--strict* : Echoue si il y a des alertes.
+* *--strict* : Echoue si il y a des alertes.
 
 check:system
 ------------
@@ -88,14 +88,14 @@ check:system
 Valide la :doc:`configuration </Admin/Prerequis>` nécessaire au bon
 fonctionnement de l'application Phraseanet.
 
-    * Des binaires
-    * Du système de fichiers
-    * Du cache :doc:`opcode </Admin/Optimisation>`
-    * Du :doc:`serveur de cache </Admin/Optimisation>`
-    * PHP
-    * Extensions PHP
-    * Extensions Phrasea
-    * Locales système
+* Des binaires
+* Du système de fichiers
+* Du cache :doc:`opcode </Admin/Optimisation>`
+* Du :doc:`serveur de cache </Admin/Optimisation>`
+* PHP
+* Extensions PHP
+* Extensions Phrasea
+* Locales système
 
 fields:delete
 -------------
@@ -104,8 +104,8 @@ Supprimer un champ documentaire de la databox.
 
 **option** :
 
-    * *--sbas_id (-s)* : sbas_id de la databox
-    * *--meta_struct_id (-m)* : id de la metastructure
+* *--sbas_id (-s)* : sbas_id de la databox
+* *--meta_struct_id (-m)* : id de la metastructure
 
 fields:list
 -----------
@@ -119,13 +119,12 @@ Fusionner plusieur champs de la structure documentaire.
 
 **option** :
 
-    * *--source (-f)* : ids de la metastructure source (plusieurs valeurs sont
-      authorisées)
-    * *--destination (-d)* : id de la metastructure de destination
-    * *--sbas_id (-s)* : sbas_id de la databox
-    * *--separator* : Séparateur pour la concaténation (si la destination est
-        monovaluée) (default: ;)
-
+* *--source (-f)* : ids de la metastructure source (plusieurs valeurs sont
+  authorisées)
+* *--destination (-d)* : id de la metastructure de destination
+* *--sbas_id (-s)* : sbas_id de la databox
+* *--separator* : Séparateur pour la concaténation (si la destination est
+    monovaluée) (default: ;)
 
 fields:rename
 -------------
@@ -134,9 +133,9 @@ Renommer un champs documentaire.
 
 **option** :
 
-    * *--name (-n)* : Le nouveau nom
-    * *--meta_struct_id (-m)* : id de la metastructure
-    * *--sbas_id (-s)* : sbas_id de la databox
+* *--name (-n)* : Le nouveau nom
+* *--meta_struct_id (-m)* : id de la metastructure
+* *--sbas_id (-s)* : sbas_id de la databox
 
 scheduler:start
 ---------------
@@ -156,7 +155,9 @@ scheduler:state
 Instruction permettant de voir l'état du
 :doc:`gestionnaire de tâches </Admin/MoteurDeTaches>`.
 
-.. note:: Cette commande retourne une valeur différente pour chaque état du gestionnaire de tache.
+.. note::
+
+    Cette commande retourne une valeur différente pour chaque état du gestionnaire de tache.
 
 +------------------+-----------------+
 |  Etat            | Valeur de retour|
@@ -184,7 +185,6 @@ Instruction permettant de voir l'état du
 | état inconnu     | 21              |
 +------------------+-----------------+
 
-
 sphinx:generate-suggestions
 ---------------------------
 
@@ -195,15 +195,15 @@ system:backup-db
 ----------------
 
 Sauvegarde l'état des bases de données.
- **argument** :
 
-    * *directory* : Le répertoire ou stocker la sauvegarde.
+**argument** :
+
+* *directory* : Le répertoire ou stocker la sauvegarde.
 
 system:clear-cache
 ------------------
 
 Vide les systèmes de cache utilisés par Phraseanet.
-
 
 system:mail-check
 -----------------
@@ -212,7 +212,7 @@ Vérifie l'unicité des adresses mails des utilisateurs.
 
 **option** :
 
-    * *--list* : Liste tous les doublons.
+* *--list* : Liste tous les doublons.
 
 system:template-generator
 -------------------------
@@ -223,4 +223,3 @@ system:upgrade
 --------------
 
 Met à jour Phraseanet avec la dernière version.
-

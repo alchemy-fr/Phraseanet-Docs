@@ -4,42 +4,42 @@ Récupérer un enregistrement Phraseanet
 A propos
 --------
 
-  Retourne les informations d'un document enregistré dans Phraseanet.
+Retourne les informations d'un document enregistré dans Phraseanet.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== ==============================
-   Paramètres               Type           Information
-  ======================== ============== ==============================
-   databox_id               entier         L'identifiant de la databox auquel appartient le document
-   record_id                entier         L'identifiant du document sélectionné
-  ======================== ============== ==============================
+======================== ============== ==============================
+ Paramètres               Type           Information
+======================== ============== ==============================
+ databox_id               entier         L'identifiant de la databox auquel appartient le document
+ record_id                entier         L'identifiant du document sélectionné
+======================== ============== ==============================
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-   record     L'enregistrement sélectionné
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+ record     L'enregistrement sélectionné
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

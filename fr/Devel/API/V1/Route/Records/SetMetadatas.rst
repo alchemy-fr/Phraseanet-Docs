@@ -4,42 +4,42 @@ Modifier une métadonnée d'un document
 A propos
 --------
 
-  Modifie, ajoute une métadonnée à un document
+Modifie, ajoute une métadonnée à un document
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setmetadatas/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP              POST
-   Authentification requise  Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP              POST
+ Authentification requise  Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ================== ========= =============
-   Paramètres         Type      Information
-  ================== ========= =============
-   databox_id         entier    L'identifiant de la databox auquel appartient le document
-   record_id          entier    L'identifiant du document sélectionné
-   metadatas          tableau   Un tableau de métadonnées. Chaque métadonnées est un tableau avec trois clés : meta_struct_id (entier), meta_id (entier ou null) and value (tableau)
-  ================== ========= =============
+================== ========= =============
+ Paramètres         Type      Information
+================== ========= =============
+ databox_id         entier    L'identifiant de la databox auquel appartient le document
+ record_id          entier    L'identifiant du document sélectionné
+ metadatas          tableau   Un tableau de métadonnées. Chaque métadonnées est un tableau avec trois clés : meta_struct_id (entier), meta_id (entier ou null) and value (tableau)
+================== ========= =============
 
 Attribut de la réponse
 ----------------------
 
-  ================== ================================
-   Attribut            Description
-  ================== ================================
-   record_metadatas    La liste des métadonnées
-  ================== ================================
+================== ================================
+ Attribut            Description
+================== ================================
+ record_metadatas    La liste des métadonnées
+================== ================================
 
 ** Exemple **
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     metadatas[0][meta_struct_id]=1&
     metadatas[0][meta_id]=&
@@ -56,7 +56,7 @@ Attribut de la réponse
 
 est équivalent à
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     record_metadatas = {
         {
@@ -81,11 +81,10 @@ est équivalent à
         }
     }
 
-
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

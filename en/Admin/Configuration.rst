@@ -11,15 +11,15 @@ Config.yml is the mail configuration file for Phraseanet. You can setup
 environments in it and select the one you want to use with the "environment"
 var.
 
-It uses the  `Yaml <https://wikipedia.org/wiki/Yaml>`_ format, which is easily
-understandable and human compatible.
+It uses the  `YAML`_ format, which is easily understandable and human
+compatible.
 
 This file requires two blocks.
 
 In the following example, the "dev" environment is selected and we find the
 declaration of this environment below.
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #config.yml
     environment: dev
@@ -36,17 +36,15 @@ declaration of this environment below.
         opcodecache: array_cache
         border-manager: border_manager
 
-
 Let's detail environment structure :
-
 
 * phraseanet (main conf)
 
-  * servername: Application URI (required)
-  * maintenance: Switch to maintenance mode
-  * debug: Switch to debug mode
-  * display_errors: Display error in the standard output
-  * database: Name of the database connection (required) see connexion.yml below
+    * servername: Application URI (required)
+    * maintenance: Switch to maintenance mode
+    * debug: Switch to debug mode
+    * display_errors: Display error in the standard output
+    * database: Name of the database connection (required) see connexion.yml below
 
 * template_engine : Templating service (required)
 * orm : Database Object Relationnal Mapper (required)
@@ -62,7 +60,7 @@ Connexions.yml
 Connexions.yml stores named connections.
 These connections are shared among services (Phraseanet, ORM, ...)
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #connexions.yml
     main_connexion:
@@ -74,14 +72,13 @@ These connections are shared among services (Phraseanet, ORM, ...)
       driver: pdo_mysql
       charset: UTF8
 
-  * host: MySQL server address
-  * port: MySQL server port
-  * user:  MySQL user
-  * password: MySQL password
-  * dbname: Database name (application box)
-  * driver: Driver name `see complete liste
-    <http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver>`_
-  * charset: connection encoding
+* host: MySQL server address
+* port: MySQL server port
+* user:  MySQL user
+* password: MySQL password
+* dbname: Database name (application box)
+* driver: Driver name see `complete Doctrine drivers list`_
+* charset: connection encoding
 
 Services.yml
 ************
@@ -95,7 +92,7 @@ Log, and Cache.
 
 Here's the default structure of a service
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     ServiceGroupe:
       ServiceName:
@@ -103,7 +100,6 @@ Here's the default structure of a service
         options:
           parameter1: value
           parameter2: value
-
 
 A service requires a type which is the PHP class to load.
 Array parameters is optionnel and depends of the service.
@@ -115,7 +111,7 @@ Doctrine ORM Service
 
 Here's *doctrine_dev* service :
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Orm:
@@ -134,26 +130,26 @@ Here's *doctrine_dev* service :
           log:
             service: Log\query_logger
 
-
-
-  * debug : Switch to debug mode
-  * dbal : The name of a connection in connexions.yml
-  * cache : Cache option parameters
+* debug : Switch to debug mode
+* dbal : The name of a connection in connexions.yml
+* cache : Cache option parameters
 
     * query : service **Cache\\array_cache** (see below)
     * result : service **Cache\\array_cache** (see below)
     * metadata : service **Cache\\apc_cache** (see below)
 
-  * log : service **Log\\query_logger** (see below)
+    * log : service **Log\\query_logger** (see below)
 
-  .. seealso:: For more informations about doctrine caching systems http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>
+.. seealso::
 
-Twig `Templating service <http://en.wikipedia.org/wiki/Template_engine_%28web%29>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    For more informations about doctrine caching systems http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm>
+
+Twig `Templating service`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Here's *twig_prod*
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     TemplateEngine:
@@ -166,17 +162,15 @@ Here's *twig_prod*
           autoescape: true
           optimizer: true
 
+* debug : Switch to debug mode
+* charset : Template engine internal character encoding
+* strict_variable : Stop rendering on unknown vars (for developers)
+* autoescape: adds automatic output escaping.
+* optimizer : Switch for `optimizer Twig`_ mode
 
+.. seealso::
 
-  * debug : Switch to debug mode
-  * charset : Template engine internal character encoding
-  * strict_variable : Stop rendering on unknown vars (for developers)
-  * autoescape: adds automatic output escaping.
-  * optimizer : Switch to
-    `optimizer <http://twig.sensiolabs.org/doc/api.html#optimizer-extension>`_
-    mode
-
-    .. seealso:: For more details on Twig environement options <http://twig.sensiolabs.org/doc/api.html#environment-options>
+    For more details on Twig environement options <http://twig.sensiolabs.org/doc/api.html#environment-options>
 
 Doctrine Monolog Log Service
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -184,7 +178,7 @@ Doctrine Monolog Log Service
 Here's Doctrine Monolog log service. This service can only be use to log
 Doctrine activity.
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Log:
@@ -197,70 +191,61 @@ Doctrine activity.
           max_day: 2
           filename: doctrine-query.log
 
+* output : Choose output format.
+  Available mods.
 
-  * output : Choose output format.
-    Available mods.
-
-    * json : Formatting in `Json <https://wikipedia.org/wiki/Json>`_
-    * yaml : Formatting in `Yaml <https://wikipedia.org/wiki/Yaml>`_
+    * json : Formatting in `Json`_
+    * yaml : Formatting in `YAML`_
     * vdump : Display PHP output variable in a way that's readable by humans.
-      see `var_dump <http://www.php.net/manual/fr/function.var-dump.php>`_
+      see `var_dump`_
 
-  * channel : Channel's name used by the logger service.
-    It's a way to identify on which part of the application the log entry is
-    related on.
-  * handler : Attribute a specific handler for the log service.
+* channel : Channel's name used by the logger service.
+  It's a way to identify on which part of the application the log entry is
+  related on.
+* handler : Attribute a specific handler for the log service.
 
     * stream : Store logs into a single file.
     * rotate : Stores logs to files that are rotated every day and a limited
       number of files are kept.
 
-  * filename: File's name.
-  * max_day : Specify in days the frequency operated on files for the rotated
-    handler.
-
-
+* filename: File's name.
+* max_day : Specify in days the frequency operated on files for the rotated
+  handler.
 
 Cache service ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
       array_cache:
         type: Cache\ArrayCache
 
-
-
 Cache service ApcCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
       apc_cache:
         type: Cache\ApcCache
 
-
 Cache service XCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
       xcache_cache:
         type: Cache\XcacheCache
 
-
-
-
 Cache service MemcacheCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. code-block:: yaml
+.. code-block:: yaml
 
     #services.yml
     Cache:
@@ -393,7 +378,9 @@ The same restriction can be done at databoxes level :
                             - 3
                             - 7
 
-.. note:: It is not possible to restrict at databoxes and collections levels at
+.. note::
+
+    It is not possible to restrict at databoxes and collections levels at
     the same time.
 
 **How to implement a custom checker ?**
@@ -408,47 +395,46 @@ datas.
 .. code-block:: php
 
     <?php
-        //In lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
-        namespace Alchemy/Phrasea/Border/Checker;
+    //In lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
+    namespace Alchemy/Phrasea/Border/Checker;
 
-        use Alchemy\Phrasea\Border\File;
+    use Alchemy\Phrasea\Border\File;
 
-        use Doctrine\ORM\EntityManager;
+    use Doctrine\ORM\EntityManager;
 
-        class NorthPole implements Checker
+    class NorthPole implements Checker
+    {
+        //Option bar
+        protected $bar;
+
+        //Handle options
+        public function __construct(Array $options)
         {
-            //Option bar
-            protected $bar;
-
-            //Handle options
-            public function __construct(Array $options)
-            {
-                if( ! isset($options['bar']) {
-                    throw new \InvalidArgumentException('Missing bar option');
-                }
-
-                $this->bar = $options['bar'];
+            if( ! isset($options['bar']) {
+                throw new \InvalidArgumentException('Missing bar option');
             }
 
-            //Validation constraints, must return a boolean
-            public function check(EntityManager $em, File $file)
-            {
-                $media = $file->getMedia();
-
-                if ( null !== $latitude = $media->getLatitude()
-                        && null !== $ref = $media->getLatitudeRef()) {
-
-                    if($latitude > 60
-                        && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
-
-                        return true;
-                    }
-                }
-
-                return false;
-            }
+            $this->bar = $options['bar'];
         }
-    ?>
+
+        //Validation constraints, must return a boolean
+        public function check(EntityManager $em, File $file)
+        {
+            $media = $file->getMedia();
+
+            if ( null !== $latitude = $media->getLatitude()
+                    && null !== $ref = $media->getLatitudeRef()) {
+
+                if($latitude > 60
+                    && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
+
+                    return true;
+                }
+            }
+
+            return false;
+        }
+    }
 
 Then in services.yml configuration enable your checker.
 
@@ -486,7 +472,7 @@ To fully use this feature :
   * Go into collection settings
   * Click "XML view", edit the XML, and add a "stamp" node as follows
 
-  .. code-block:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <baseprefs>
@@ -505,3 +491,9 @@ To fully use this feature :
 
     </baseprefs>
 
+.. _Json: https://wikipedia.org/wiki/Json
+.. _YAML: https://wikipedia.org/wiki/Yaml
+.. _complete Doctrine drivers list: http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver
+.. _Templating Service: http://en.wikipedia.org/wiki/Template_engine_%28web%29
+.. _optimizer Twig: http://twig.sensiolabs.org/doc/api.html#optimizer-extension
+.. _var_dump: http://www.php.net/manual/fr/function.var-dump.php

@@ -4,37 +4,37 @@ Lister les tâches
 A propos
 --------
 
-  Retourne la liste de toutes les tâches
+Retourne la liste de toutes les tâches
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/tasks/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  Aucun paramètre
+Aucun paramètre
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-   tasks      La tâche sélectionnée
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+ tasks      La tâche sélectionnée
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

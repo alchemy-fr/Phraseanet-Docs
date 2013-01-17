@@ -4,42 +4,42 @@ Parcourir un panier
 A propos
 --------
 
-  Retourne le contenu d'un panier
+Retourne le contenu d'un panier
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/{basket_id}/content/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   basket_id                entier         L'identifiant du panier sélectionner
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ basket_id                entier         L'identifiant du panier sélectionner
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ================ ================================
-   Attribut         Description
-  ================ ================================
-   basket_elements  La liste des éléments du panier
-   basket           Le basket sélectionné
-  ================ ================================
+================ ================================
+ Attribut         Description
+================ ================================
+ basket_elements  La liste des éléments du panier
+ basket           Le basket sélectionné
+================ ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

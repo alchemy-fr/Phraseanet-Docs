@@ -1,13 +1,18 @@
 Download
 ========
 
-Sources are available on our GitHub repository :
-`https://github.com/alchemy-fr/Phraseanet/downloads <https://github.com/alchemy-fr/Phraseanet/downloads>`_
+You should download Phraseanet via SourceForge :
 
-  .. note:: Phraseanet requires two dependencies that we provide :
+`https://sourceforge.net/projects/phraseanet/files/ <https://sourceforge.net/projects/phraseanet/files/>`_
 
-  * http://github.com/alchemy-fr/Phraseanet-Extension
+.. note::
 
-  * http://github.com/alchemy-fr/Phraseanet-Indexer
+    Phraseanet requires two dependencies that :
+
+    - `Phraseanet-Extension`_
+    - `Phraseanet-Indexer`_
 
 Verify :doc:`prerequisite <Prerequisite>` and proceed to install.
+
+.. _Phraseanet-Extension: http://github.com/alchemy-fr/Phraseanet-Extension
+.. _Phraseanet-Indexer: http://github.com/alchemy-fr/Phraseanet-Indexer

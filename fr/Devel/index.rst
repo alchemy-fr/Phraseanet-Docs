@@ -13,6 +13,6 @@ La version stable de l’API Phraseanet est la 1.2 sur les versions 3.7 de Phras
 
 .. toctree::
 
-   API
-   Forums
-   ApplicationDeveloper
+    API
+    Forums
+    ApplicationDeveloper

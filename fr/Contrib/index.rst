@@ -2,7 +2,8 @@ Contributeur
 ============
 
 .. module:: contributeur
-   :synopsis: Guide contributeur de Phraseanet
+    :synopsis: Guide contributeur de Phraseanet
+
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
 .. toctree::
@@ -12,16 +13,14 @@ Contributeur
     DocumentationGuidelines
 
 Phraseanet est *Open source*, qu'il s'agisse de la documentation, des traductions,
-des librairies ou du coeur applicatif. 
+des librairies ou du coeur applicatif.
 Comment contribuer à son amélioration ?
 
 Pour signaler un problème, demander de l'aide ou une nouvelle option, consulter
 la page : :doc:`Signaler un problème <SignalerUnProbleme>`
 
-Les contributions à Phraseanet sont ouvertes. Les 
-`pull-request <http://help.github.com/send-pull-requests/>`_ peuvent être 
+Les contributions à Phraseanet sont ouvertes. Les `pull-requests`_ peuvent être
 effectuées dans les *repositories* correspondants :
-
 
 * **Phraseanet**
 
@@ -44,4 +43,4 @@ effectuées dans les *repositories* correspondants :
 
   https://github.com/alchemy-fr/Phraseanet-Clients/
 
-
+.. _pull-requests: http://help.github.com/send-pull-requests/

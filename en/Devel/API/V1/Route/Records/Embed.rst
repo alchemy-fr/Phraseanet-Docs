@@ -4,18 +4,18 @@ Records Embed
 About
 -----
 
-  Returns permalinks to medias attached to the record
+Returns permalinks to medias attached to the record
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/embed/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
@@ -26,32 +26,32 @@ If provided, the query is restricted to the corresponding medias.
 For example, if you want to retrieve all HTML5 videos for mobile, you have to provide the
 following parameters :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
-  ======================== ============== ==============================
-   Parameters               Type           Information
-  ======================== ============== ==============================
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
-   devices                  array          An array of devices to restrict the list (optionnal)
-   mimes                    array          An array of mime type to restrict the list (optionnal)
-  ======================== ============== ==============================
+======================== ============== ==============================
+ Parameters               Type           Information
+======================== ============== ==============================
+ databox_id               integer        The databox id of the record
+ record_id                integer        The record_id
+ devices                  array          An array of devices to restrict the list (optionnal)
+ mimes                    array          An array of mime type to restrict the list (optionnal)
+======================== ============== ==============================
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-    embed     The list of the sub views of the record
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ embed      The list of the sub views of the record
+========== ================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

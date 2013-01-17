@@ -4,43 +4,43 @@ Records SetCollection
 About
 -----
 
-  Moves a record to another collection
+Moves a record to another collection
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setcollection/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              POST
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
-   base_id                  integer        The base_id of the destination collection
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ databox_id               integer        The databox id of the record
+ record_id                integer        The record_id
+ base_id                  integer        The base_id of the destination collection
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   record     The record updated
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ record     The record updated
+========== ================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

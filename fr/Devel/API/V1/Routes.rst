@@ -51,7 +51,6 @@ authentification et reposent sur des méthodes de requêtes HTTP de type GET et 
 Pour chaque ressource, il est possible d’obtenir des liens et actions.
 Par exemple, les propriétés d'un enregistrement ou d'une databox :
 
-
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 |           | Généralités                            | Liens                                          | Actions                                              |
 +===========+========================================+================================================+======================================================+
@@ -86,9 +85,9 @@ Par exemple, les propriétés d'un enregistrement ou d'une databox :
 En plus de ces routes, des routes dédiées au monitoring et à l'administration
 sont disponibles :
 
- - :doc:`Route/Monitor/Phraseanet <Route/Monitor/Phraseanet>`
- - :doc:`Route/Monitor/Scheduler <Route/Monitor/Scheduler>`
- - :doc:`Route/Monitor/Task <Route/Monitor/Task>`
- - :doc:`Route/Monitor/TaskStop <Route/Monitor/TaskStop>`
- - :doc:`Route/Monitor/TaskStart <Route/Monitor/TaskStart>`
- - :doc:`Route/Monitor/Tasks <Route/Monitor/Tasks>`
+- :doc:`Route/Monitor/Phraseanet <Route/Monitor/Phraseanet>`
+- :doc:`Route/Monitor/Scheduler <Route/Monitor/Scheduler>`
+- :doc:`Route/Monitor/Task <Route/Monitor/Task>`
+- :doc:`Route/Monitor/TaskStop <Route/Monitor/TaskStop>`
+- :doc:`Route/Monitor/TaskStart <Route/Monitor/TaskStart>`
+- :doc:`Route/Monitor/Tasks <Route/Monitor/Tasks>`

@@ -1,7 +1,6 @@
 FAQ
 ===
 
-
 I can not upload more than 2Mo
 ------------------------------
 
@@ -9,7 +8,7 @@ Update the limit to 200 Mo :
 
 * In php.ini :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     upload-max-filesize = 200M
     post_max_size       = 200M
@@ -20,7 +19,7 @@ If you're using Nginx, you have to allow big requests :
 
 * In nginx.conf :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     http {
         ...
@@ -29,7 +28,6 @@ If you're using Nginx, you have to allow big requests :
 
         ...
     }
-
 
 Results are presented with a hot air balloon
 --------------------------------------------
@@ -52,7 +50,7 @@ When editing a lot of documents, an error message can happen
 Suhosin module can limit the number of paramaters of HTTP queries. You can try
 to raise the limit :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     suhosin.post.max_vars    = 12000
     suhosin.request.max_vars = 12000
@@ -63,7 +61,7 @@ When I edit users rights, some are not saved
 Suhosin module can limit the number of parameters of HTTP queries. You can try
 to raise the limit :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     suhosin.post.max_vars    = 12000
     suhosin.request.max_vars = 12000

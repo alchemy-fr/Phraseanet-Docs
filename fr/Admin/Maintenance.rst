@@ -30,13 +30,11 @@ Une sauvegarde à chaud de ces bases est envisageable.
 L'utilitaire en ligne de commande :doc:`Konsole Kommander <Console>`
 intégré à l'application permet de lancer une sauvegarde de l'ensemble des bases.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console system:backup-db /repertoire/de/sauvegarde/
 
-
 Cette commande peut être incluse dans un script de sauvegarde.
-
 
 Les sources de L'application
 ****************************
@@ -47,8 +45,10 @@ Mise à jour.
 Néanmoins il peut être judicieux de faire une sauvegarde ponctuelle des sources
 après l’installation ou le paramétrage.
 
-  .. note: Vous ne devriez normallement juste avoir à sauvegarder que le dossier
-     config  qui contient vos informations de setup
+.. note:
+
+    Vous ne devriez normallement juste avoir à sauvegarder que le dossier
+    config  qui contient vos informations de setup
 
 Etat de maintenance
 -------------------

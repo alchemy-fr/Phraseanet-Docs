@@ -16,17 +16,17 @@ Règles et style de rédaction
 Règles
 ******
 
-  * Les lignes ne dépassent pas 80 caractères
-  * Le texte est encodé en UTF-8
-  * La documentation n'est pas davantage optimisée pour l'impression PDF ou l'affichage HTML
-  * La documentation est publiée en GPL v3
+* Les lignes ne dépassent pas 80 caractères
+* Le texte est encodé en UTF-8
+* La documentation n'est pas davantage optimisée pour l'impression PDF ou l'affichage HTML
+* La documentation est publiée en GPL v3
 
 Style
 *****
 
-  * Rédiger à l'infinitif
-  * Favoriser les phrases courtes
-  * Privilégier un niveau de langue simple et compréhensible par tous
+* Rédiger à l'infinitif
+* Favoriser les phrases courtes
+* Privilégier un niveau de langue simple et compréhensible par tous
 
 Mémo des règles de codage
 -------------------------
@@ -46,34 +46,34 @@ Structure
 
   * Titres et Sous-Titres ::
 
-      H1 -- Premier titre
-      ===================
+        H1 -- Premier titre
+        ===================
 
-      H2 -- Sous titre
-      ----------------
+        H2 -- Sous titre
+        ----------------
 
-      H3 -- Sous section
-      ******************
+        H3 -- Sous section
+        ******************
 
-      H4 -- Sous sous section
-      ^^^^^^^^^^^^^^^^^^^^^^^
+        H4 -- Sous sous section
+        ^^^^^^^^^^^^^^^^^^^^^^^
 
-      H5
-      ~~~~~~~~~~~~~~~~~~~~~~~
+        H5
+        ~~~~~~~~~~~~~~~~~~~~~~~
 
   * Images ::
 
-      .. figure:: ../images/gplv3.png
+        .. figure:: ../images/gplv3.png
+            :align:  center
+            :alt:    GPLv3 logo
+
+            License GNU GPL v3
+
+    .. figure:: ../images/gplv3.png
         :align:  center
         :alt:    GPLv3 logo
 
-        License GNU GPL v3
-
-    .. figure:: ../images/gplv3.png
-      :align:  center
-      :alt:    GPLv3 logo
-
-      Image Caption
+        Image Caption
 
 Formatage
 *********
@@ -86,9 +86,17 @@ Formatage
 
   * Lien externe ::
 
-    `Example.com <http://www.example.com/>`_
+        `example point com`_
 
-    `Example.com <http://www.example.com/>`_
+        .. _example point com: http://www.example.com/
+
+    `example point com`_
+
+    .. _example point com: http://www.example.com/
+
+    .. note::
+
+        Il est d'usage de placer les références de liens en pied de page.
 
   * Lien dans la documentation ::
 
@@ -102,25 +110,28 @@ Formatage
 
     :term:`enregistrement`
 
-
 Meta Markups
 ************
 
   * Notes::
 
-      .. note::
-        Une note
+        .. note::
+
+            Une note
 
     .. note::
-      Une note
+
+        Une note
 
   * Avertissement::
 
-      .. warning::
-        Un avertissement
+        .. warning::
+
+            Un avertissement
 
     .. warning::
-      Un avertissement
+
+        Un avertissement
 
   * Version added ::
 
@@ -136,15 +147,13 @@ Meta Markups
 
   * Références ::
 
-    .. seealso:: documentation en ligne sur http://http://sphinx.pocoo.org/
+        .. seealso::
 
-    .. seealso:: documentation en ligne sur http://http://sphinx.pocoo.org/
+            documentation en ligne sur http://http://sphinx.pocoo.org/
 
-  * Todos (reste invisible) ::
+    .. seealso::
 
-    .. todo:: mettre à jour
-
-    .. todo:: mettre à jour
+        documentation en ligne sur http://http://sphinx.pocoo.org/
 
   * Topic  ::
 
@@ -159,4 +168,3 @@ Meta Markups
     Subsequent indented lines comprise
     the body of the topic, and are
     interpreted as body elements.
-

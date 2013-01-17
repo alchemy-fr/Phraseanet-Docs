@@ -27,7 +27,6 @@ The indexer needs those libraries :
 After building from sources (see Windows specifics), copy the program in a
 directory allowing excution.
 
-
 Command-line options
 --------------------
 
@@ -72,7 +71,7 @@ Windows). The "nolog" option allows to send messages on screen.
 
 .. note::
 
-    a debug mask set to --debug=64 (flush ops.) allows control of indexer
+    A debug mask set to --debug=64 (flush ops.) allows control of indexer
     without overloading the logs.
 
 examples
@@ -114,37 +113,33 @@ The indexer can be checked with "-?" option which must print the help :
     [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
                                           (default none)
 
+Example of reading options from a file "indexerargs.txt"
 
-Example of reading options from a file...
+.. code-block:: none
 
-    .. code-block:: none
+    phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
 
-        phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
+.. code-block:: none
 
-    ...where option-file is "indexerargs.txt"
+    #  connection to application-box...
+    # ...host, port, base, user, password
+    --host=127.0.0.1
+    --port=3306
+    --base=phrasea
+    --user=phraseanet
+    --password=xxxxxxxxx
 
-    .. code-block:: none
+    # socket to talk (telnet) to indexer
+    --socket=2055
 
-        #  connection to application-box...
-        # ...host, port, base, user, password
-        --host=127.0.0.1
-        --port=3306
-        --base=phrasea
-        --user=phraseanet
-        --password=xxxxxxxxx
+    # use 'sbas' table (mandatory)
+    -o
 
-        # socket to talk (telnet) to indexer
-        --socket=2055
+    # candidates default language
+    --clng=fr
 
-        # use 'sbas' table (mandatory)
-        -o
-
-        # candidates default language
-        --clng=fr
-
-        # sql connections encoding
-        --default-character-set=utf8
-
+    # sql connections encoding
+    --default-character-set=utf8
 
 Running with the Task-Manager
 -----------------------------
@@ -152,7 +147,6 @@ Running with the Task-Manager
 The indexder can be executed by the "Indexer" task of the Phraseanet
 Task-Manager.
 Options can then be set via the gui of the task.
-
 
 Linux and OSX specifics
 -----------------------
@@ -168,7 +162,6 @@ The indexer is pre-builded for Windows.
 Download the last version "https://github.com/alchemy-fr/Phraseanet-Indexer/tree/master/WIN32/out/Release/bin/phraseanet_indexer.exe",
 and copy the program file into a separate directory (for ex. into "Program
 Files\\Phraseanet-Indexer\\phraseanet_indexer.exe").
-
 
 .. note::
 
@@ -212,4 +205,3 @@ ex :
 
 If the indexer is executed as a Windows service, the "indexer task" can be
 deleted (or not activated).
-

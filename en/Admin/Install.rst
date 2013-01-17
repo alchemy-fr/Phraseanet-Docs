@@ -4,22 +4,23 @@ Install
 After having download sources, verify :doc:`prerequisite <Prerequisite>`,
 you can verify your configuration. At root of Phraseanet :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     php bin/console check:system
     php bin/console check:config
 
-  .. seealso:: Use of :doc:`Konsole Kommander <Console>`
+.. seealso::
+
+    Use of :doc:`Konsole Kommander <Console>`
 
 Web server configuration
 ------------------------
 
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 1
 
-   Configuration/Nginx
-   Configuration/Apache
-
+    Configuration/Nginx
+    Configuration/Apache
 
 Setup
 -----
@@ -29,9 +30,8 @@ proceed installation
 
 Installation is in five steps :
 
- * ApplicationBox / Databox and admin creation.
- * Tasks creation
-
+* ApplicationBox / Databox and admin creation.
+* Tasks creation
 
 Task start
 ----------
@@ -39,4 +39,3 @@ Task start
 Start the task manager as in the user section
 
 Congrats ! Your install is finished !
-

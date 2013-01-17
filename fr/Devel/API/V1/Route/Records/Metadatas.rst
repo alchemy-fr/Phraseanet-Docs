@@ -4,42 +4,42 @@ Lister les métadonnées d'un document
 A propos
 --------
 
-  Retourne les métadonnées d'un document
+Retourne les métadonnées d'un document
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/metadatas/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   databox_id               entier         L'identifiant de la databox auquel appartient le document
-   record_id                entier         L'identifiant du document sélectionné
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ databox_id               entier         L'identifiant de la databox auquel appartient le document
+ record_id                entier         L'identifiant du document sélectionné
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ================= ================================
-   Attribut             Description
-  ================= ================================
-   record_metadata   La liste des metadonnées du document sélectionné
-  ================= ================================
+================= ================================
+ Attribut             Description
+================= ================================
+ record_metadata   La liste des metadonnées du document sélectionné
+================= ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

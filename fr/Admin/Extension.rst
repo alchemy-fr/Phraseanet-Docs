@@ -11,7 +11,7 @@ Après compilation et installation de "Phraseanet-Extension" (voir spécificité
 Linux, OSX et Windows), vérifier la présence des extensions pré-requises avec
 php -m
 
-  .. code-block:: none
+.. code-block:: none
 
     [PHP Modules]
     ...
@@ -19,7 +19,6 @@ php -m
     ...
 
 Redémarrer le serveur web.
-
 
 Spécificités Linux et OSX
 -------------------------
@@ -50,8 +49,6 @@ Activer l'extension dans le fichier php.ini :
 
 .. warning::
 
-    en cas d'erreur "... icu*.dll introuvable ...", télécharger les ICU
+    En cas d'erreur "... icu*.dll introuvable ...", télécharger les ICU
     libraries requises par l'extension "php_intl" et copier les différents
     fichiers "icu*.dll" dans le répertoire principal de PHP.
-
-

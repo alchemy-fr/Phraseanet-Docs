@@ -4,45 +4,44 @@ Lister les documents de la quarantaine
 A propos
 --------
 
-  Liste les documents contenu dans la quarantaine
+Liste les documents contenu dans la quarantaine
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/quarantine/list/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   offset_start             entier         Le numéro de la première entrée à retrouver
-   per_page                 entier         Le nombre d'entrées à retrouver
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ offset_start             entier         Le numéro de la première entrée à retrouver
+ per_page                 entier         Le nombre d'entrées à retrouver
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ================== ================================
-   Attribut              Description
-  ================== ================================
-   offset_start       Le numéro de la première entrée
-   per_page           Le nombre d'entrée à retrouver
-   quarantine_items   La liste des items
-  ================== ================================
+================== ================================
+ Attribut              Description
+================== ================================
+ offset_start       Le numéro de la première entrée
+ per_page           Le nombre d'entrée à retrouver
+ quarantine_items   La liste des items
+================== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

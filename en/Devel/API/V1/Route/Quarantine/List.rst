@@ -4,44 +4,44 @@ Quarantine list
 About
 -----
 
-  List the content of the quarantine
+List the content of the quarantine
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/quarantine/list/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   offset_start             integer        The first entry to retrive
-   per_page                 integer        The number of entry to retrieve
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ offset_start             integer        The first entry to retrive
+ per_page                 integer        The number of entry to retrieve
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ================== ================================
-   Field              Description
-  ================== ================================
-   offset_start       The first entry
-   per_page           The number of entry
-   quarantine_items   The list of items
-  ================== ================================
+================== ================================
+ Field              Description
+================== ================================
+ offset_start       The first entry
+ per_page           The number of entry
+ quarantine_items   The list of items
+================== ================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
