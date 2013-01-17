@@ -177,7 +177,7 @@ attribute.
             "meta_id": 4438,
             "meta_structure_id": 4,
             "name": "Keywords",
-            "value": "fum√©e"
+            "value": "fumée"
         }
         ]
     }
@@ -590,7 +590,7 @@ Route records/metadatas was returning results like :
         "name": "MotsCles",
         "value": [
             "ciel",
-            "m√©t√©o",
+            "météo",
             "nuage"
         ]
     }
@@ -615,7 +615,7 @@ Responses in API 1.1 are now like :
         "meta_id": 6274,
         "meta_structure_id": 4,
         "name": "MotsCles",
-        "value": "m√©t√©o"
+        "value": "météo"
     },
     "6275": {                    //Multivalued field value
         "meta_id": 6275,
@@ -642,7 +642,7 @@ metadatas.
     "4": {                         //Multivalued field serialized
         "meta_structure_id": 4,
         "name": "MotsCles",
-        "value": "ciel ; m√©t√©o ; nuage"
+        "value": "ciel ; météo ; nuage"
     }
 
 .. seealso::
@@ -697,19 +697,19 @@ Now, you must use it like this :
         },
         //Update a value in a multivalued field
         {
-            meta_struct_id: 3, //champ multivalu√©
+            meta_struct_id: 3, //champ multivalué
             meta_id: 487,
             value: 'one key word'
         },
         //Add a value in a multivalued field
         {
-            meta_struct_id: 3, //champ multivalu√©
+            meta_struct_id: 3, //champ multivalué
             meta_id: "",
             value: 'second key word'
         },
         //Delete a value in a multivalued field
         {
-            meta_struct_id: 3, //champ multivalu√©
+            meta_struct_id: 3, //champ multivalué
             meta_id: 487,
             value: ""
         },
