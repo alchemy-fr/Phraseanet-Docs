@@ -177,7 +177,7 @@ attribute.
             "meta_id": 4438,
             "meta_structure_id": 4,
             "name": "Keywords",
-            "value": "fumée"
+            "value": "fum√©e"
         }
         ]
     }
@@ -560,12 +560,166 @@ You can now restrict to some devices and/or mime types in the
 1.1
 ---
 
-Major API upgrade. This version is not fully backward compatible with 1.0. See
-the complete :doc:`documentation <V1/Upgrade/1.1>` before upgrading.
+A major schema enhancement happens for meta values. Multivalued values were
+stored serialized and are now stored separatly.
+Two routes are modified : records/metadatas and records/setmetadatas.
+A route has been added to make it easy to display caption : records/caption.
 
-- Change in route :doc:`records/metadatas <V1/Route/Records/Metadatas>`
-- Change in route :doc:`records/setmetadatas <V1/Route/Records/SetMetadatas>`
-- Add route :doc:`records/caption <V1/Route/Records/Caption>`
+This enhancement allows to store ressource in multivalued fields like users,
+geoname entities, Thesaurus entries...
+
+The main consequence is a change in two API routes : records/metadatas and
+records/setmetadatas, therefore the upgrade of API to version 1.1.
+
+Route records/metadatas
+***********************
+
+Route records/metadatas was returning results like :
+
+.. code-block:: javascript
+
+    "6272": {                    //Monovalued field
+        "meta_id": 6272,
+        "meta_structure_id": 2,
+        "name": "Categorie",
+        "value": "paysages"
+    },
+    "6273": {                    //Monovalued field
+        "meta_id": 6273,
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": [
+            "ciel",
+            "m√©t√©o",
+            "nuage"
+        ]
+    }
+
+Responses in API 1.1 are now like :
+
+.. code-block:: javascript
+
+    "6272": {                    //Monovalued field value
+        "meta_id": 6272,
+        "meta_structure_id": 2,
+        "name": "Categorie",
+        "value": "paysages"
+    },
+    "6273": {                    //Multivalued field value
+        "meta_id": 6273,
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": "ciel"
+    },
+    "6274": {                    //Multivalued field value
+        "meta_id": 6274,
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": "m√©t√©o"
+    },
+    "6275": {                    //Multivalued field value
+        "meta_id": 6275,
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": "nuage"
+    }
+
+Route records/caption
+*********************
+
+For developers who were using this route to display caption, we add the route
+:doc:`records/caption </Devel/API/V1/Route/Records/Caption>` which is easier
+in that case. You should use records/metadatas when you're planning to edit
+metadatas.
+
+.. code-block:: javascript
+
+    "2": {                         //Monovalued field value
+        "meta_structure_id": 2,
+        "name": "Categorie",
+        "value": "paysages"
+    },
+    "4": {                         //Multivalued field serialized
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": "ciel ; m√©t√©o ; nuage"
+    }
+
+.. seealso::
+
+    complete documentation for route
+    :doc:`records/caption </Devel/API/V1/Route/Records/Caption>`
+
+Route records/setmetadatas
+**************************
+
+La route records/setmetadatas was working like this :
+
+.. code-block:: javascript
+
+    // HTTP parameters :
+    metadatas = {
+        //Add a value in a monovalued field
+        {
+            meta_struct_id: 1,
+            meta_id: null,
+            value : [
+                'A pretty string'
+            ]
+        },
+        //Update a value in a multivalued field
+        {
+            meta_struct_id: 3,
+            meta_id: 487,
+            value: [
+                'one key word',
+                'two key word'
+            ]
+        },
+        //Delete a value
+        {
+            meta_struct_id: 7,
+            meta_id: 489,
+            value: []
+        }
+    }
+
+Now, you must use it like this :
+
+.. code-block:: javascript
+
+    metadatas = {
+        //Add a value in a monovalued field
+        {
+            meta_struct_id: 1,
+            meta_id: "",
+            value : 'A pretty string'
+        },
+        //Update a value in a multivalued field
+        {
+            meta_struct_id: 3, //champ multivalu√©
+            meta_id: 487,
+            value: 'one key word'
+        },
+        //Add a value in a multivalued field
+        {
+            meta_struct_id: 3, //champ multivalu√©
+            meta_id: "",
+            value: 'second key word'
+        },
+        //Delete a value in a multivalued field
+        {
+            meta_struct_id: 3, //champ multivalu√©
+            meta_id: 487,
+            value: ""
+        },
+        //Add a value in a monovalued field
+        {
+            meta_struct_id: 7,
+            meta_id: 489,
+            value: ""
+        }
+    }
 
 1.0
 ---

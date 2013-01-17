@@ -506,13 +506,169 @@ de types mime dans la route :doc:`records/embed <V1/Route/Records/Embed>`
 1.1
 ---
 
-Mise à jour majeure de l'API. Cette version n'est pas entièrement
-retro-compatible avec la précédente 1.0. Voir les :doc:`instructions
-<V1/Upgrade/1.1>` avant de procéder à la mise à jour.
+Un changement majeur du schema apparait lors de la version 3.6 dans le stockage
+des valeurs de champs. Les valeurs de champs multivalués étaient auparavant
+stockées sérialisées.
+Elles sont désormais stockées indépendamment les unes des autres.
 
-  - Changement dans la route :doc:`records/metadatas <V1/Route/Records/Metadatas>`
-  - Changement dans la route :doc:`records/setmetadatas <V1/Route/Records/SetMetadatas>`
-  - Ajout de la route :doc:`records/caption <V1/Route/Records/Caption>`
+Ce changement permet une amélioration majeure : le stockage de ressources
+(Utilisateurs, Geonames, Entrée de thésaurus...) dans un champ multivalué.
+
+La conséquence majeure réside dans les deux routes d'API
+:doc:`records/metadatas </Devel/API/V1/Route/Records/Metadatas>` et
+:doc:`records/setmetadatas </Devel/API/V1/Route/Records/SetMetadatas>`,
+donc le passage de l'API en version 1.1.
+
+Route records/metadatas
+***********************
+
+La route records/metadatas renvoyait auparavant les métadonnées sous la
+forme :
+
+.. code-block:: javascript
+
+    "6272": {                    //champ monovalue
+        "meta_id": 6272,
+        "meta_structure_id": 2,
+        "name": "Categorie",
+        "value": "paysages"
+    },
+    "6273": {                    //champ multivalue
+        "meta_id": 6273,
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": [
+            "ciel",
+            "météo",
+            "nuage"
+        ]
+    }
+
+La réponse records/metadatas est maintenant sous la forme :
+
+.. code-block:: javascript
+
+    "6272": {                    //valeur du champ monovalue
+        "meta_id": 6272,
+        "meta_structure_id": 2,
+        "name": "Categorie",
+        "value": "paysages"
+    },
+    "6273": {                    //valeur de champ multivalue
+        "meta_id": 6273,
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": "ciel"
+    },
+    "6274": {                    //valeur de champ multivalue
+        "meta_id": 6274,
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": "météo"
+    },
+    "6275": {                    //valeur de champ multivalue
+        "meta_id": 6275,
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": "nuage"
+    }
+
+Route records/caption
+*********************
+
+Pour les utilisateurs qui utilisaient cette route pour l'affichage de la
+fiche descriptive, la route
+:doc:`records/caption </Devel/API/V1/Route/Records/Caption>` est plus aisée à
+manipuler. L’usage de la route records/metadatas est à réservé au prélude de
+l’édition des metadonnées.
+
+.. code-block:: javascript
+
+    "2": {                         //valeur du champ monovalue
+        "meta_structure_id": 2,
+        "name": "Categorie",
+        "value": "paysages"
+    },
+    "4": {                         //valeur de champ multivalue sérialisé
+        "meta_structure_id": 4,
+        "name": "MotsCles",
+        "value": "ciel ; météo ; nuage"
+    }
+
+.. seealso::
+
+    documentation complète de la route
+    :doc:`records/caption </Devel/API/V1/Route/Records/Caption>`
+
+Route records/setmetadatas
+**************************
+
+La route records/setmetadatas fonctionnait auparavant sous la forme :
+
+.. code-block:: javascript
+
+    metadatas = {
+        //Ajout d'un champ mono valué
+        {
+            meta_struct_id: 1,
+            meta_id: null,
+            value : [
+                'A pretty string'
+            ]
+        },
+        //update d'un champ multivalué
+        {
+            meta_struct_id: 3,
+            meta_id: 487,
+            value: [
+                'one key word',
+                'two key word'
+            ]
+        },
+        //suppression d'un champ
+        {
+            meta_struct_id: 7,
+            meta_id: 489,
+            value: []
+        }
+    }
+
+Désormais, il faut l'utiliser de la manière suivante :
+
+.. code-block:: javascript
+
+    metadatas = {
+        //Ajout d'un champ mono valué
+        {
+            meta_struct_id: 1,
+            meta_id: "",
+            value : 'A pretty string'
+        },
+        //update d'une valeur de champ multivalué
+        {
+            meta_struct_id: 3, //champ multivalué
+            meta_id: 487,
+            value: 'one key word'
+        },
+        //ajout d'une valeur dans un champ multivalué
+        {
+            meta_struct_id: 3, //champ multivalué
+            meta_id: "",
+            value: 'second key word'
+        },
+        //suppression d'une valeur d'un champ multivalué
+        {
+            meta_struct_id: 3, //champ multivalué
+            meta_id: 487,
+            value: ""
+        },
+        //suppression d'une valeur dans un champ monovalué
+        {
+            meta_struct_id: 7,
+            meta_id: 489,
+            value: ""
+        }
+    }
 
 1.0
 ---
