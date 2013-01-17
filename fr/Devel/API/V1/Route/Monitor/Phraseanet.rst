@@ -4,39 +4,39 @@ Monitorer Phraseanet
 A propos
 --------
 
-  Retourne la configuration de Phraseanet
+Retourne la configuration de Phraseanet
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/phraseanet/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  Aucun paramètre
+Aucun paramètre
 
 Attribut de la réponse
 ----------------------
 
-  =============== ======================================
-   Attribut           Description
-  =============== ======================================
-   phraseanet      Information A propos de l'installation de Phraseanet
-   cache           Information A propos du cache Phraseanet
-   global_values   Liste des variables de configuration
-  =============== ======================================
+=============== ======================================
+ Attribut           Description
+=============== ======================================
+ phraseanet      Information A propos de l'installation de Phraseanet
+ cache           Information A propos du cache Phraseanet
+ global_values   Liste des variables de configuration
+=============== ======================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

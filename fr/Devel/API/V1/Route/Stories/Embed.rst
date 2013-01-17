@@ -4,19 +4,19 @@ Stories Embed
 About
 -----
 
-  Retourne les permaliens des sous-définitions disponibles pour le reportage
-  sélectionné.
+Retourne les permaliens des sous-définitions disponibles pour le reportage
+sélectionné.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/embed/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP              GET
-   Authentification requise  Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP              GET
+ Authentification requise  Oui
+========================== =====
 
 Parameters
 ----------
@@ -24,32 +24,32 @@ Parameters
 Pour retourner toutes les videos compatibles HTML5 au format mobile,
 Il faut utiliser les paramètres :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
-  ======================== ============== ==============================
-   Paramètres               Type           Information
-  ======================== ============== ==============================
-   databox_id               entier         L'identifiant de la databox auquel appartient le reportage
-   record_id                entier         L'identifiant du reportage sélectionné
-   devices                  tableau        Un tableau des devices sur lequel restreindre la query (optionnel)
-   mimes                    tableau        Un tableau de type mime sur lequel restreindre la recherche (optionnel)
-  ======================== ============== ==============================
+======================== ============== ==============================
+ Paramètres               Type           Information
+======================== ============== ==============================
+ databox_id               entier         L'identifiant de la databox auquel appartient le reportage
+ record_id                entier         L'identifiant du reportage sélectionné
+ devices                  tableau        Un tableau des devices sur lequel restreindre la query (optionnel)
+ mimes                    tableau        Un tableau de type mime sur lequel restreindre la recherche (optionnel)
+======================== ============== ==============================
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-    embed     La liste des sous-definitions disponibles pour le reportage sélectionné
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+  embed     La liste des sous-definitions disponibles pour le reportage sélectionné
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

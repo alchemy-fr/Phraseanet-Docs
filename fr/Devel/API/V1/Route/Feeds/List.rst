@@ -4,37 +4,37 @@ Lister les flux
 A propos
 --------
 
-  Liste tous les flux disponibles
+Liste tous les flux disponibles
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/list/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  Aucun paramètre
+Aucun paramètre
 
 Attribut de la réponse
 ----------------------
 
-  ============= ================================
-   Attribut      Description
-  ============= ================================
-   feeds         Les liste des flux
-  ============= ================================
+============= ================================
+ Attribut      Description
+============= ================================
+ feeds         Les liste des flux
+============= ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

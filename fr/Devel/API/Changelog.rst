@@ -11,23 +11,23 @@ et introduit le concept de Reportage dans celle-ci.
 Nouvelles routes
 ****************
 
- - :doc:`stories/story <V1/Route/Stories/Story>` Route reportage.
- - :doc:`stories/story <V1/Route/Stories/Embed>` Route reportage embed.
- - :doc:`search <V1/Route/Search>` Le nouveau moteur de recherche compatible avec
-   les reportages.
+- :doc:`stories/story <V1/Route/Stories/Story>` Route reportage.
+- :doc:`stories/story <V1/Route/Stories/Embed>` Route reportage embed.
+- :doc:`search <V1/Route/Search>` Le nouveau moteur de recherche compatible avec
+  les reportages.
 
 Routes dépréciées
 *****************
 
- - :doc:`records/search <V1/Route/Records/Search>`. Nous encourageons vivement
-   les développeurs à mettre à jour leurs applications pour supporter la
-   nouvelle route de recherche.
+- :doc:`records/search <V1/Route/Records/Search>`. Nous encourageons vivement
+  les développeurs à mettre à jour leurs applications pour supporter la
+  nouvelle route de recherche.
 
 Updated routes
 **************
 
- - :doc:`records/search <V1/Route/Records/Related>` liste maintenant les
-   reportages contenant le record aux côtés des paniers.
+- :doc:`records/search <V1/Route/Records/Related>` liste maintenant les
+  reportages contenant le record aux côtés des paniers.
 
 1.2
 ---
@@ -87,12 +87,10 @@ Réponse pour une entrée des flux aggrégés
 L'attribut **feed_id** a été ajouté, il représente l'identifiant du flux auquel
 l'entrée appartient.
 
-
 Réponse pour un record
 **********************
 
 L'attribut **last_modification** a été remplacé par **updated_on**.
-
 
 Réponse pour un permalien
 **************************
@@ -193,38 +191,38 @@ contenue dans l'attribut **document_metadatas**.
 
 .. code-block:: javascript
 
-   "response": {
-            "document_metadatas": [
-            {
-                "id": 1,
-                "namespace": "IPTC",
-                "source": "IPTC:ObjectName",
-                "tagname": "ObjectName",
-                "name": "Object",
-                "separator": "",
-                "thesaurus_branch": "",
-                "type": "string",
-                "indexable": true,
-                "multivalue": false,
-                "readonly": false,
-                "required": false
-            },
-            {
-                "id": 2,
-                "namespace": "IPTC",
-                "source": "IPTC:Category",
-                "tagname": "Category",
-                "name": "Category",
-                "separator": "",
-                "thesaurus_branch": "",
-                "type": "string",
-                "indexable": true,
-                "multivalue": false,
-                "readonly": false,
-                "required": false
-            }
-        ]
-    }
+    "response": {
+             "document_metadatas": [
+             {
+                 "id": 1,
+                 "namespace": "IPTC",
+                 "source": "IPTC:ObjectName",
+                 "tagname": "ObjectName",
+                 "name": "Object",
+                 "separator": "",
+                 "thesaurus_branch": "",
+                 "type": "string",
+                 "indexable": true,
+                 "multivalue": false,
+                 "readonly": false,
+                 "required": false
+             },
+             {
+                 "id": 2,
+                 "namespace": "IPTC",
+                 "source": "IPTC:Category",
+                 "tagname": "Category",
+                 "name": "Category",
+                 "separator": "",
+                 "thesaurus_branch": "",
+                 "type": "string",
+                 "indexable": true,
+                 "multivalue": false,
+                 "readonly": false,
+                 "required": false
+             }
+         ]
+     }
 
 Réponse pour une tache
 ***********************
@@ -250,7 +248,6 @@ Trois champs sont ajoutés à la réponse de la description d’une tâche.
             "crash_counter": 0
         }
     }
-
 
 Réponse pour la légende d'un record
 ***********************************
@@ -317,7 +314,6 @@ demandé.
 Dans l'objet qui décrit un panier un attribut 'validation_basket' a été ajouté,
 il indique s'il s'agit d'un panier de validation.
 
-
 Recherche d'un enregistrement
 *****************************
 
@@ -370,7 +366,9 @@ L'attribut "is_mine" a disparu au profit de deux nouvelles clefs : *readonly* et
             "updated_on": "2011-07-20T18:45:20+02:00"
         },
 
-.. note:: Ces attributs ont aussi été ajoutés dans la route :doc:`feeds/list <V1/Route/Feeds/List>`.
+.. note::
+
+    Ces attributs ont aussi été ajoutés dans la route :doc:`feeds/list <V1/Route/Feeds/List>`.
 
 Correction de bug
 *****************
@@ -425,7 +423,7 @@ thumbnail d'un record n'était pas disponible.
 Cette substitution n'est plus fournie. Il en résulte que la clef thumbnail
 d'un record peut désormais être nulle :
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
@@ -475,11 +473,12 @@ Les embeddables fournissent maintenant une liste de *devices* adaptés.
 Ces devices sont compatibles avec CSS 2.
 
 .. seealso::
+
     http://www.w3.org/TR/CSS2/media.html#media-types
 
 Exemple : la thumbnail suivante est fournie pour un affichage à l'écran.
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     "thumbnail": {
         "width": 150,

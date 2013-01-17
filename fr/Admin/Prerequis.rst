@@ -1,7 +1,6 @@
 Pré-requis
 ==========
 
-
 Phraseanet est conçu pour fonctionner sur un système AMP dont la configuration
 nécessite quelques besoins spécifiques ou dépendances.
 
@@ -10,8 +9,8 @@ Serveur HTTP
 
 L'un des serveurs au choix :
 
-  * Nginx >= 1.0 (Recommandé) -- :doc:`configuration <Configuration/Nginx>`
-  * ou Apache >= 2.2 -- :doc:`configuration <Configuration/Apache>`
+* Nginx >= 1.0 (Recommandé) -- :doc:`configuration <Configuration/Nginx>`
+* ou Apache >= 2.2 -- :doc:`configuration <Configuration/Apache>`
 
 Base de données
 ---------------
@@ -19,12 +18,13 @@ Base de données
 Phraseanet requiert un moteur de stockage de type InnoDB. Sans être une obligation, l’équipe
 des développeurs de Phraseanet recommandent fortement l’usage du SGBD MariaDB en remplacement de MySQL.
 
-  * MariaDB >= 5.1
+* MariaDB >= 5.1
 
 PHP
 ---
 
-  * PHP >= 5.3.4 avec les extensions :
+* PHP >= 5.3.4 avec les extensions :
+
     * Dom
     * exif
     * ftp
@@ -48,7 +48,6 @@ PHP
     * JSON
     * gettext
 
-
 Spécifique Phraseanet
 ---------------------
 
@@ -58,7 +57,7 @@ Spécifique Phraseanet
 
   Téléchargez et installez la :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
     cd php-phrasea
@@ -73,7 +72,7 @@ Spécifique Phraseanet
   C’est notre moteur d’indexation, il est nécessaire autant pour l’indexation
   texte-plein que pour l’indexation thésaurus.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
     cd phraseanet_indexer
@@ -84,7 +83,6 @@ Spécifique Phraseanet
     make
     make install
 
-
 Locales
 -------
 
@@ -92,24 +90,20 @@ Sur les systèmes Unix/GNU-Linux, il est nécessaire d’installer les packs
 locales adéquats pour pouvoir bénéficier des traductions de messages via la
 librairie gettext.
 
-
 Exemple pour debian :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     dpkg-reconfigure locales
 
-
 Exemple pour ubuntu :
 
- * Activation des locales désirées via le fichier /etc/locale.gen
- * execution de la commande /usr/sbin/locale-gen
+* Activation des locales désirées via le fichier /etc/locale.gen
+* execution de la commande /usr/sbin/locale-gen
 
-
-  .. note::
+.. note::
 
     Les locales à installer doivent être les locales UTF-8.
-
 
 Programmes Externes
 -------------------
@@ -117,44 +111,40 @@ Programmes Externes
 Pour calculer des sous-résolutions dans le navigateur, Phraseanet s'appuie sur
 des programmes externes suivants :
 
-  * Imagemagick >= 6.3.7
-    Extraction d'imagettes et de preview à partir d'images bitmap.
-    Téléchargement
-    License
+* Imagemagick >= 6.3.7
+  Extraction d'imagettes et de preview à partir d'images bitmap.
+  Téléchargement
+  License
 
-  * Ufraw
-    Utilisation via Imagemagick ; Extraction d'imagettes et de previews à partir
-    de fichiers RAW.
+* Ufraw
+  Utilisation via Imagemagick ; Extraction d'imagettes et de previews à partir
+  de fichiers RAW.
 
-  * FFmpeg <= 0.8, Mplayer
-    Extraction d'imagettes, de preview et calcul de videos au format web à
-    partir de vidéos.
+* FFmpeg <= 0.8, Mplayer
+  Extraction d'imagettes, de preview et calcul de videos au format web à
+  partir de vidéos.
 
-  * Ghostscript >= 9
-    Extraction d'imagettes, de preview à partir de fichiers vectoriels et
-    postscript.
+* Ghostscript >= 9
+  Extraction d'imagettes, de preview à partir de fichiers vectoriels et
+  postscript.
 
-  * XPDF
-    Extraction du text PDF pour son indexation
+* XPDF
+  Extraction du text PDF pour son indexation
 
-  * SWFTools
-    Extraction de sous resolutions pour le format flash
+* SWFTools
+  Extraction de sous resolutions pour le format flash
 
-  * Unoconv
-    Extraction d'imagettes et de preview sur les documents office.
+* Unoconv
+  Extraction d'imagettes et de preview sur les documents office.
 
-  * MP4Box
-    Déplacement des métadonnées des fichiers h264 en début de fichier en vue de
-    leur utilisation en pseudo-stream (voir documentation spécifique)
-
-
+* MP4Box
+  Déplacement des métadonnées des fichiers h264 en début de fichier en vue de
+  leur utilisation en pseudo-stream (voir documentation spécifique)
 
 Clefs d'APIs (optionnelles)
 ---------------------------
 
-  * Youtube
-  * Dailymotion
-  * FlickR
-  * Recpatcha
-
-
+* Youtube
+* Dailymotion
+* FlickR
+* Recpatcha

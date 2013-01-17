@@ -4,40 +4,40 @@ Appliquer un status
 A propos
 --------
 
-  Applique un status à un document
+Applique un status à un document
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setstatus/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               POST
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               POST
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ================ ========= ==============================
-   Paramètres       Type      Information
-  ================ ========= ==============================
-   databox_id       entier    L'identifiant de la databox auquel appartient le document
-   record_id        entier    L'identifiant du document sélectionné
-   status           tableau   Les status à modifier
-  ================ ========= ==============================
+================ ========= ==============================
+ Paramètres       Type      Information
+================ ========= ==============================
+ databox_id       entier    L'identifiant de la databox auquel appartient le document
+ record_id        entier    L'identifiant du document sélectionné
+ status           tableau   Les status à modifier
+================ ========= ==============================
 
 ** Exemple **
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     status[4]=1&
     status[5]=0&
 
 est equivalent à
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     status = {
         4: 1,
@@ -47,16 +47,16 @@ est equivalent à
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut    Description
-  ========== ================================
-   status      La liste des status du document
-  ========== ================================
+========== ================================
+ Attribut    Description
+========== ================================
+ status      La liste des status du document
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

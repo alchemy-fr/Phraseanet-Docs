@@ -2,7 +2,7 @@
 ==================
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -15,7 +15,6 @@
     Dans la version 3.6, Push et Validation sont deux interfaces distinctes. Elles
     permettent aussi à présent de constituer et de gérer des listes d'envois via le
     `Gestionnaire de listes`_.
-
 
 Le Push
 -------
@@ -31,12 +30,11 @@ Comment pousser des documents ?
 
 * Sélectionner un ou plusieurs documents dans la zone d'affichage de
   :doc:`Résultats <Afficher>` de l'interface de *Production*.
-
 * Cliquer sur le bouton Push de la :doc:`Palette des Actions <Actions>`
   Phraseanet : une fenêtre de type Overlay s'ouvre et présente alors la
   fenêtre de Push.
 
-  .. image:: ../../images/Push-push_layout-1.jpg
+.. image:: ../../images/Push-push_layout-1.jpg
     :align: center
 
 * Sélectionner un ou plusieurs utilisateurs Phraseanet vers qui pousser
@@ -58,15 +56,17 @@ astérisques puis cliquer sur le bouton "Ajouter". Cela a pour effet d'
 ajouter le contact crée dans la zone des destinataires de l'envoi tout en
 créant un compte à son nom dans le système Phraseanet.
 
-.. note:: Les utilisateurs listés dans la zone des destinataires de l'envoi peuvent
-          être regroupés et sauvegardés dans des listes d'envoi pour une
-          réutilisation ultérieure.
-          Pour sauvegarder une liste d'envoi, renseigner le champ de formulaire
-          situé à gauche de la zone des destinataires de l'envoi puis l'enregistrer
-          en cliquant sur l'icône :
+.. note::
+
+    Les utilisateurs listés dans la zone des destinataires de l'envoi peuvent
+    être regroupés et sauvegardés dans des listes d'envoi pour une
+    réutilisation ultérieure.
+    Pour sauvegarder une liste d'envoi, renseigner le champ de formulaire
+    situé à gauche de la zone des destinataires de l'envoi puis l'enregistrer
+    en cliquant sur l'icône :
 
 .. image:: ../../images/Push-icone-disquette.jpg
-  :align: center
+    :align: center
 
 La liste créée est alors affichée dans la zone des listes d'envoi.
 Les fonctionnalités relatives aux listes d'envoi sont décrites plus
@@ -83,7 +83,7 @@ liste des utilisateurs de l'envoi
 Cliquer individuellement sur l'icône
 
 .. image:: ../../images/Push-download-badge.jpg
-   :align: center
+    :align: center
 
 située sur l'étiquette représentative du destinataire à qui donner
 le droit de téléchargement haute définition.
@@ -101,13 +101,12 @@ par l'attribution de privilèges supplémentaires optionnels.
 
 * Sélectionner un ou plusieurs documents dans la zone d'affichage de
   résultats de l'interface de Production
-
 * Cliquer sur la rubrique Validation du menu Push de la palette des actions
   Phraseanet : une fenêtre de type overlay s'ouvre et présente alors la
   fenêtre de Validation.
 
-  .. image:: ../../images/Push-feedback_layout-1.jpg
-       :align: center
+.. image:: ../../images/Push-feedback_layout-1.jpg
+    :align: center
 
 * Sélectionner le ou les utilisateurs Phraseanet vers lesquels adresser la
   demande de Validation de la même manière que pour un Push.
@@ -127,12 +126,12 @@ Pour activer ou désactiver cette option, cliquer sur le bouton Contribuer ou su
 l'icône
 
 .. image:: ../../images/Push-contributeur_badge.jpg
-  :align: center
+    :align: center
 
 Le bouton **Voir les autres** et son icône associée
 
 .. image:: ../../images/Push-see_other_badge.jpg
-  :align: center
+    :align: center
 
 permet à un destinataire de visualiser les avis et commentaires émis par les
 autres destinataires contribuants à la demande de Validation.
@@ -155,7 +154,6 @@ l'affichage dans Phraseanet Lightbox.
 Les *Push* et de les *Validations* reçus sont regroupés dans le module
 :doc:`Phraseanet Lightbox <Lightbox>`, une interface de consultation collaborative.
 
-
 Gestionnaire de listes
 ----------------------
 
@@ -174,6 +172,7 @@ d'envoi.
 
 Créer et éditer une liste d'envoi
 *********************************
+
 Pour créer une nouvelle liste dans le *Gestionnaire de listes*, cliquer sur le
 lien *Ajouter*.
 
@@ -183,7 +182,7 @@ lien *Ajouter*.
   pour visualiser son contenu.
 
 .. image:: ../../images/Push-list_manager_creer.jpg
-  :align: center
+    :align: center
 
 * Cliquer sur le bouton *Editer* situé à gauche de la zone centrale de l'
   interface du Gestionnaire de listes pour éditer le contenu d'une liste.
@@ -191,19 +190,20 @@ lien *Ajouter*.
   système Phraseanet.
 
 .. image:: ../../images/Push-list_manager_editer.jpg
-  :align: center
+    :align: center
 
 * Pour ajouter un ou plusieurs utilisateurs à la liste d'envoi, sélectionner
   les lignes des utilisateurs à ajouter.
   Les utilisateurs ajoutés ou présent dans la liste éditée sont surlignés en
   couleur ocre.
-
 * Pour supprimer un ou plusieurs utilisateurs de la liste d'envoi éditée,
   sélectionner les lignes des utilisateurs correspondants : cela a pour effet
   de les supprimer de la liste.
 
-.. note:: Un dispositif de recherche et de filtres permet de limiter l'affichage des
-          utilisateurs par leurs identifiants, noms ou prénom, activité, société… *etc.*
+.. note::
+
+    Un dispositif de recherche et de filtres permet de limiter l'affichage des
+    utilisateurs par leurs identifiants, noms ou prénom, activité, société… *etc.*
 
 * Pour retourner au sommaire de la liste, cliquer sur le bouton *Voir* .
 
@@ -241,6 +241,7 @@ de l'interface.
 Une fenêtre de contrôle demande alors de confirmer la suppression. Cliquer sur *Ok*
 pour supprimer définitivement cette liste.
 
-.. Note :: Si le nom de la liste supprimée figure toujours dans la liste des
-          listes d'envoi, cliquer sur le lien *Rafraîchir* situé à gauche de l'interface.
+.. note ::
 
+    Si le nom de la liste supprimée figure toujours dans la liste des
+    listes d'envoi, cliquer sur le lien *Rafraîchir* situé à gauche de l'interface.

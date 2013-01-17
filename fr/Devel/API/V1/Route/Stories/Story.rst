@@ -4,42 +4,42 @@ Stories Story
 About
 -----
 
-  Retourne les informations d'un reportage enregistré dans Phraseanet.
+Retourne les informations d'un reportage enregistré dans Phraseanet.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP              GET
-   Authentification requise  Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP              GET
+ Authentification requise  Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== ==============================
-   Paramètres               Type           Information
-  ======================== ============== ==============================
-   databox_id               entier         L'identifiant de la databox auquel appartient le document
-   story_id                 entier         L'identifiant du reportage sélectionné
-  ======================== ============== ==============================
+======================== ============== ==============================
+ Paramètres               Type           Information
+======================== ============== ==============================
+ databox_id               entier         L'identifiant de la databox auquel appartient le document
+ story_id                 entier         L'identifiant du reportage sélectionné
+======================== ============== ==============================
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-   story      Le reportage sélectionné
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+ story      Le reportage sélectionné
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

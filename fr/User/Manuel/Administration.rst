@@ -1,7 +1,7 @@
 ﻿Administration
 ==============
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -19,8 +19,8 @@ un menu listant les différentes rubriques d'administration.
 Si l'utilisateur ne voit pas certaines de ces rubriques, c'est que ses :doc:`droits <AdministrationUtilisateurs>` ne
 le lui permettent pas.
 
-  .. image:: ../../images/Administration-gauche.jpg
-       :align: center
+.. image:: ../../images/Administration-gauche.jpg
+    :align: center
 
 Certaines de ces rubriques comportent des sous-rubriques. Cliquer sur les boutons " + "
 pour les afficher et les boutons " - " pour les masquer.
@@ -31,12 +31,10 @@ ou son intitulé pour l'afficher dans la partie droite de l'écran.
 Afin de présenter les principale fonctionnalités du module Phraseanet Admin, nous
 proposons de suivre le plan suivant.
 
-
 .. toctree::
-   :maxdepth: 2
-   :glob:
+    :maxdepth: 2
+    :glob:
 
-   AdministrationSolution
-   AdministrationUtilisateurs
-   AdministrationBasesCollections
-
+    AdministrationSolution
+    AdministrationUtilisateurs
+    AdministrationBasesCollections

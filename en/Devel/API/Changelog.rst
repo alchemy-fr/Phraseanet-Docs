@@ -11,21 +11,21 @@ the API.
 New routes
 **********
 
- - :doc:`stories/story <V1/Route/Stories/Story>` Story route.
- - :doc:`stories/story <V1/Route/Stories/Embed>` Story embed.
- - :doc:`search <V1/Route/Search>` The new search engine compatible with stories.
+- :doc:`stories/story <V1/Route/Stories/Story>` Story route.
+- :doc:`stories/story <V1/Route/Stories/Embed>` Story embed.
+- :doc:`search <V1/Route/Search>` The new search engine compatible with stories.
 
 Deprecated routes
 *****************
 
- - :doc:`records/search <V1/Route/Records/Search>`. We
-   strongly encourage developers to upgrade their code to support the new API.
+- :doc:`records/search <V1/Route/Records/Search>`. We
+  strongly encourage developers to upgrade their code to support the new API.
 
 Updated routes
 **************
 
- - :doc:`records/search <V1/Route/Records/Related>` now list related stories as
-   long as baskets.
+- :doc:`records/search <V1/Route/Records/Related>` now list related stories as
+  long as baskets.
 
 1.2
 ---
@@ -49,7 +49,6 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
 
 - Object with numeric attributes have been removed. All collection objects are
   now presented as an array of objects.
-
 
 **Before**
 
@@ -91,7 +90,6 @@ Record response
 ***************
 
 Attribute **last_modification** has been replaced by **updated_on**.
-
 
 Permalink response
 ******************
@@ -225,7 +223,6 @@ The response of a databox document structure is now contained in a
         ]
     }
 
-
 Task response
 *************
 
@@ -234,7 +231,6 @@ Three fields have been added to the response that describe a task.
 - **auto_start**
 - **runner**
 - **crash_counter**
-
 
 .. code-block:: javascript
 
@@ -273,8 +269,6 @@ The response of a caption record is now contained in **caption_metadas** attribu
             }
         ]
     }
-
-
 
 Basket response
 ***************
@@ -383,16 +377,15 @@ contains an array of validation choice with a new **validation_user** attribute.
         "note": ""
     }
 
-
 Searching for a records
 ***********************
 
 Some parameters from :doc:`records/search <V1/Route/Records/Search>` have been
 renamed :
 
- - datefield => date_field
- - datemin   => date_min
- - datemax   => date_max
+- datefield => date_field
+- datemin   => date_min
+- datemax   => date_max
 
 The **page** parameter from the request and the associated response field have
 been replaced by **offset_start**
@@ -436,8 +429,9 @@ Attribute *is_mine* has been removed and is replaced by two new attributes :
             "updated_on": "2011-07-20T18:45:20+02:00"
         },
 
-.. note:: These attributes have also been added in :doc:`feeds/list <V1/Route/Feeds/List>`.
+.. note::
 
+    These attributes have also been added in :doc:`feeds/list <V1/Route/Feeds/List>`.
 
 Bug fix
 *******
@@ -492,7 +486,7 @@ was not available.
 This substitution file is not provided anymore. Thus, the thumbnail key can
 be *null* :
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
@@ -534,11 +528,12 @@ Embeddable media now provides a list of supported devices. This devices are
 compatible with CSS2 specification.
 
 .. seealso::
+
     http://www.w3.org/TR/CSS2/media.html#media-types
 
 The following thumbnail is compatible with a screen display
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     "thumbnail": {
         "width": 150,
@@ -568,9 +563,9 @@ You can now restrict to some devices and/or mime types in the
 Major API upgrade. This version is not fully backward compatible with 1.0. See
 the complete :doc:`documentation <V1/Upgrade/1.1>` before upgrading.
 
-  - Change in route :doc:`records/metadatas <V1/Route/Records/Metadatas>`
-  - Change in route :doc:`records/setmetadatas <V1/Route/Records/SetMetadatas>`
-  - Add route :doc:`records/caption <V1/Route/Records/Caption>`
+- Change in route :doc:`records/metadatas <V1/Route/Records/Metadatas>`
+- Change in route :doc:`records/setmetadatas <V1/Route/Records/SetMetadatas>`
+- Add route :doc:`records/caption <V1/Route/Records/Caption>`
 
 1.0
 ---

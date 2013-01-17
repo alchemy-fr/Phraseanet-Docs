@@ -4,42 +4,42 @@ Records Metadatas
 About
 -----
 
-  Returns the metadatas of a record
+Returns the metadatas of a record
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/metadatas/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ databox_id               integer        The databox id of the record
+ record_id                integer        The record_id
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ================= ================================
-   Field             Description
-  ================= ================================
-   record_metadata   The list of the metadatas of the record
-  ================= ================================
+================= ================================
+ Field             Description
+================= ================================
+ record_metadata   The list of the metadatas of the record
+================= ================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

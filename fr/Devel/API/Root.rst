@@ -4,50 +4,50 @@ Racine
 A propos
 --------
 
-  Cette route est disponible depuis la version 1.2 de l'API Phraseanet et fournit
-  publiquement des informations sur l'API Phraseanet. Cette route n'est pas
-  versionnée.
+Cette route est disponible depuis la version 1.2 de l'API Phraseanet et fournit
+publiquement des informations sur l'API Phraseanet. Cette route n'est pas
+versionnée.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  NO
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  NO
+======================== =====
 
 Exemple d'utilisation
 ---------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     curl -v https://library.net/api/
 
 Paramètres
 ----------
 
-  Cette route ne prend en compte aucun paramètre.
+Cette route ne prend en compte aucun paramètre.
 
 Les champs de la réponse
 ------------------------
 
-  =============== ================================
-   Field           Description
-  =============== ================================
-   name            Le titre de l'installation
-   type            Le type d'application (phraseanet)
-   description     La description de l'installation
-   documentation   Le lien vers la documentation de l'API
-   version         Les versions disponibles de l'API et leurs paramètres
-  =============== ================================
+=============== ================================
+ Field           Description
+=============== ================================
+ name            Le titre de l'installation
+ type            Le type d'application (phraseanet)
+ description     La description de l'installation
+ documentation   Le lien vers la documentation de l'API
+ version         Les versions disponibles de l'API et leurs paramètres
+=============== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

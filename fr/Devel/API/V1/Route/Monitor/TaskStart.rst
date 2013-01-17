@@ -4,41 +4,41 @@ Démarrer une tâche
 A propos
 --------
 
-  Démarre une tâche et retourne son statut
+Démarre une tâche et retourne son statut
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/start/
 
-  ========================== ======
-   Informations
-  ========================== ======
-   Méthode HTTP               POST
-   Authentification requise   Oui
-  ========================== ======
+========================== ======
+ Informations
+========================== ======
+ Méthode HTTP               POST
+ Authentification requise   Oui
+========================== ======
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   task_id                  entier         L'indentifiant de la tâche séléctionnée
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ task_id                  entier         L'indentifiant de la tâche séléctionnée
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-   task       La tâche sélectionnée
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+ task       La tâche sélectionnée
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

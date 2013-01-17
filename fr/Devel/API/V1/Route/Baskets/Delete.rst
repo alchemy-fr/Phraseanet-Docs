@@ -4,41 +4,41 @@ Supprimer un panier
 A propos
 --------
 
-  Supprime un panier
+Supprime un panier
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/{basket_id}/delete/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP              POST
-   Authentification requise  Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP              POST
+ Authentification requise  Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   basket_id                entier         L'identifiant du basket sélectionné
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ basket_id                entier         L'identifiant du basket sélectionné
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ============= ================================
-   Attribut      Description
-  ============= ================================
-   baskets       La liste des paniers de l'utilisateur courant
-  ============= ================================
+============= ================================
+ Attribut      Description
+============= ================================
+ baskets       La liste des paniers de l'utilisateur courant
+============= ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
             "meta": {

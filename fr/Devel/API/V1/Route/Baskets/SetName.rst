@@ -4,42 +4,42 @@ Modifier le nom d'un panier
 A propos
 --------
 
-  Met à jour le nom du panier sélectionné
+Met à jour le nom du panier sélectionné
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/baskets/{basket_id}/setname/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               POST
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               POST
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   basket_id                entier         L'identifiant du panier sélectionné
-   name                     chaîne         Le nom du panier
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ basket_id                entier         L'identifiant du panier sélectionné
+ name                     chaîne         Le nom du panier
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ============= ================================
-   Attribut      Description
-  ============= ================================
-   basket        Le panier
-  ============= ================================
+============= ================================
+ Attribut      Description
+============= ================================
+ basket        Le panier
+============= ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

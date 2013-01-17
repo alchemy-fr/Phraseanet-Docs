@@ -4,41 +4,41 @@ Récupérer un document de la quarantaine
 A propos
 --------
 
-  Retourne un document de la quarantaine.
+Retourne un document de la quarantaine.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/quarantine/item/{quarantine_id}/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   quarantine_id            entier         L'identifiant du document placé dans la quarantaine
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ quarantine_id            entier         L'identifiant du document placé dans la quarantaine
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ============== ================================
-   Attribut       Description
-  ============== ================================
-   item           L'item sélectionné
-  ============== ================================
+============== ================================
+ Attribut       Description
+============== ================================
+ item           L'item sélectionné
+============== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

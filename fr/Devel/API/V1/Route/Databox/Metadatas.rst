@@ -4,41 +4,41 @@ Récupérer la structure documentaire d'une databox
 A propos
 --------
 
-  Retourne la configuration des métadonnées pour une databox
+Retourne la configuration des métadonnées pour une databox
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/metadatas/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   databox_id               entier         L'identifiant de la databox sélectionnée
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ databox_id               entier         L'identifiant de la databox sélectionnée
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ==================== ================================
-  Attribut                Description
-  ==================== ================================
-   document_structure   La structure document de la databox sélectionnée
-  ==================== ================================
+==================== ================================
+Attribut                Description
+==================== ================================
+ document_structure   La structure document de la databox sélectionnée
+==================== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

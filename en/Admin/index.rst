@@ -2,7 +2,8 @@ Admin
 =====
 
 .. module:: admin
-   :synopsis: Phraseanet Administrator guide
+    :synopsis: Phraseanet Administrator guide
+
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
 Phraseanet is built on top of MySQL/InnoDB databases : ApplicationBoxes and
@@ -35,5 +36,3 @@ You can also manage Phraseanet through the `Konsole Kommander <Console>`
     Maintenance
     Optimization
     Faq
-
-

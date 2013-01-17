@@ -4,41 +4,41 @@ Databox Status
 About
 -----
 
-  Return available Status on specified databox
+Return available Status on specified databox
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/status/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   databox_id               integer        The databox id on which the request is done
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ databox_id               integer        The databox id on which the request is done
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ========== ================================
-  Field       Description
-  ========== ================================
-   status     The list of available status
-  ========== ================================
+========== ================================
+Field       Description
+========== ================================
+ status     The list of available status
+========== ================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

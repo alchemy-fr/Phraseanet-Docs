@@ -4,41 +4,41 @@ Arréter une tâche
 A propos
 --------
 
-    Arrête une tache et retourne son statut
+Arrête une tache et retourne son statut
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/stop/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               POST
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               POST
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   task_id                  entier         L'identifiant de la tâche
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ task_id                  entier         L'identifiant de la tâche
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut      Description
-  ========== ================================
-   task       La tâche monitorée
-  ========== ================================
+========== ================================
+ Attribut      Description
+========== ================================
+ task       La tâche monitorée
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

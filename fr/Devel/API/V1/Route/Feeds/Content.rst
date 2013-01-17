@@ -4,46 +4,46 @@ Lister le contenu d'un flux
 A propos
 --------
 
-  Retourne le contenu d'un flux
+Retourne le contenu d'un flux
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/feeds/{feed_id}/content/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   feed_id                  entier         L'identifiant du flux sélectionné
-   offset_start             entier         La première entrée à retrouver
-   per_page                 entier         Le nombre d'entrée à retrouver
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ feed_id                  entier         L'identifiant du flux sélectionné
+ offset_start             entier         La première entrée à retrouver
+ per_page                 entier         Le nombre d'entrée à retrouver
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ============= ================================
-   Attribut         Description
-  ============= ================================
-   feed          Le flux sélectionné
-   entries       La liste des entrées
-   offset_start  Le numéro de la première entrée
-   per_page      La quantité d'entrée à retourner
-  ============= ================================
+============= ================================
+ Attribut         Description
+============= ================================
+ feed          Le flux sélectionné
+ entries       La liste des entrées
+ offset_start  Le numéro de la première entrée
+ per_page      La quantité d'entrée à retourner
+============= ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
@@ -181,4 +181,4 @@ Exemple de réponse
             }
             ]
         }
-        }
+    }

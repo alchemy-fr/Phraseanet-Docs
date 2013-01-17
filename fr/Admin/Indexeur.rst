@@ -28,10 +28,8 @@ L'indexeur nécessite la présence des bibliothèques suivantes :
 Après compilation (voir spécificités Windows), copier l'éxécutable dans un
 répertoire avec les droits d'éxécution.
 
-
 Arguments
 ---------
-
 
 Ces arguments spécifient l' "application-box" (base SQL de l'application
 Phraseanet) dans laquelle sont publiées les bases à indexer.
@@ -83,7 +81,7 @@ L'option "nolog" permet d'envoyer les messages sur l'écran.
 
 .. note::
 
-    un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
+    Un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
     fonctionnement sans trop charger les logs.
 
 Exemples
@@ -125,44 +123,39 @@ L'indexeur peut être testé avec l'option '-?' qui doit afficher l'aide :
     [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
                                           (default none)
 
+Exemple d'arguments dans un fichier "indexerargs.txt"
 
-Exemple d'arguments dans un fichier...
+.. code-block:: none
 
-    .. code-block:: none
+    phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
 
-        phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
+.. code-block:: none
 
-    ...avec le fichier "indexerargs.txt"
+    #  connection to application-box...
+    # ...host, port, base, user, password
+    --host=127.0.0.1
+    --port=3306
+    --base=phrasea
+    --user=phraseanet
+    --password=xxxxxxxxx
 
-    .. code-block:: none
+    # socket to talk (telnet) to indexer
+    --socket=2055
 
-        #  connection to application-box...
-        # ...host, port, base, user, password
-        --host=127.0.0.1
-        --port=3306
-        --base=phrasea
-        --user=phraseanet
-        --password=xxxxxxxxx
+    # use 'sbas' table (mandatory)
+    -o
 
-        # socket to talk (telnet) to indexer
-        --socket=2055
+    # candidates default language
+    --clng=fr
 
-        # use 'sbas' table (mandatory)
-        -o
-
-        # candidates default language
-        --clng=fr
-
-        # sql connections encoding
-        --default-character-set=utf8
-
+    # sql connections encoding
+    --default-character-set=utf8
 
 Exécution par le Task-Manager
 -----------------------------
 
 L'indexeur peut être éxécuté par la tâche "Indexation", les réglages des
 attributs sont alors disponibles via l'interface graphique de la tâche.
-
 
 Spécificités Linux et OSX
 -------------------------
@@ -178,7 +171,6 @@ L'indexeur est livré pré-compilé pour Windows.
 Télécharger la dernière version "https://github.com/alchemy-fr/Phraseanet-Indexer/tree/master/WIN32/out/Release/bin/phraseanet_indexer.exe",
 et placer l'éxécutable dans un répertoire distinct (par ex. dans "Program
 Files\\Phraseanet-Indexer\\phraseanet_indexer.exe").
-
 
 .. note::
 
@@ -223,4 +215,3 @@ ex :
 
 Si l'indexeur est installé comme service Windows, supprimer -ou ne pas activer-
 la tâche "Indexeur" correspondante
-

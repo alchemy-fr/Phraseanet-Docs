@@ -2,13 +2,13 @@ Documentation API v1
 ====================
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   V1/Introduction
-   V1/Upgrade/1.1
-   V1/Upgrade/1.2
-   V1/Authentification
-   V1/Routes
+    V1/Introduction
+    V1/Upgrade/1.1
+    V1/Upgrade/1.2
+    V1/Authentification
+    V1/Routes
 
 L’API Phraseanet permet de développer des applications tierces exploitant les
 contenus d’une médiathèque Phraseanet.
@@ -16,15 +16,14 @@ contenus d’une médiathèque Phraseanet.
 Pour partager vos retours d’expérences et publier vos codes sources,
 utilisez nos :doc:`forums </Devel/Forums>`.
 
-
 Pour démarrer :
 
-  * Lire l':doc:`introduction <V1/Introduction>`
-  * Se familiariser avec :doc:`oAuth2 <V1/Authentification>`
-  * Trouver la route :doc:`route <V1/Routes>` !
+* Lire l':doc:`introduction <V1/Introduction>`
+* Se familiariser avec :doc:`oAuth2 <V1/Authentification>`
+* Trouver la route :doc:`route <V1/Routes>` !
 
-Vous rencontrez un bug ? Merci d’en rendre compte dans notre
-`mailing-list <https://groups.google.com/group/phraseanet-api>`_
-ou de créer un ticket dans notre
-`bug-tracker public <https://github.com/alchemy-fr/Phraseanet/issues>`_.
+Vous rencontrez un bug ? Merci d’en rendre compte dans notre `mailing-list`_ ou
+de créer un ticket dans notre `bug tracker`_.
 
+.. _bug tracker: https://github.com/alchemy-fr/Phraseanet/issues
+.. _mailing-list: https://groups.google.com/group/phraseanet-api

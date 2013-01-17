@@ -4,37 +4,37 @@ Databox List
 About
 -----
 
-  Return available Databoxes
+Return available Databoxes
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/databoxes/list/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  No parameters for this route
+No parameters for this route
 
 Response Fields
 ---------------
 
-  ========== ================================
-  Field       Description
-  ========== ================================
-  databoxes   The list of available databoxes
-  ========== ================================
+========== ================================
+Field       Description
+========== ================================
+databoxes   The list of available databoxes
+========== ================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

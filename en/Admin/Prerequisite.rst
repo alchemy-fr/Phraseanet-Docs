@@ -9,8 +9,8 @@ HTTP Server
 
 One of these
 
-  * Nginx >= 1.0 (Recommanded) -- :doc:`configuration <Configuration/Nginx>`
-  * or Apache >= 2.2 -- :doc:`configuration <Configuration/Apache>`
+* Nginx >= 1.0 (Recommanded) -- :doc:`configuration <Configuration/Nginx>`
+* or Apache >= 2.2 -- :doc:`configuration <Configuration/Apache>`
 
 Database
 --------
@@ -18,12 +18,12 @@ Database
 Phraseanet requires an InnoDB storage engine. We strongly recommend MariaDB as
 a replacement for MySQL.
 
-  * MariaDB >= 5.1
+* MariaDB >= 5.1
 
 PHP
 ---
 
-  * PHP >= 5.3.4 with :
+* PHP >= 5.3.4 with :
 
     * Dom
     * exif
@@ -49,7 +49,6 @@ PHP
     * twig (https://github.com/derickr/twig-ext/)
     * Intl
 
-
 Phraseanet Specific
 -------------------
 
@@ -59,7 +58,7 @@ Phraseanet Specific
 
   Download and Install :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
     cd php-phrasea
@@ -72,7 +71,7 @@ Phraseanet Specific
 
   It is our Index engine. It is required for thesaurus and full-text indexation.
 
-  .. code-block:: bash
+.. code-block:: bash
 
     git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
     cd phraseanet_indexer
@@ -83,30 +82,26 @@ Phraseanet Specific
     make
     make install
 
-
 Locales
 -------
 
 On Unix / GNU-Linux systems, it is necessary to enable locales to use
 Phraseanet in your languages.
 
-
 Debian example :
 
-  .. code-block:: bash
+.. code-block:: bash
 
     dpkg-reconfigure locales
 
 Ubuntu example :
 
- * Activate via /etc/locale.gen
- * Execute /usr/sbin/locale-gen
+* Activate via /etc/locale.gen
+* Execute /usr/sbin/locale-gen
 
-
-  .. note::
+.. note::
 
     Locales must be in UTF-8.
-
 
 Third Party Programs
 --------------------
@@ -114,41 +109,37 @@ Third Party Programs
 To generate subviews, Phraseanet uses third party programs, depending
 on their type
 
-  * Imagemagick >= 6.3.7
-    Thumbnails and previews extraction from bitmap.
+* Imagemagick >= 6.3.7
+  Thumbnails and previews extraction from bitmap.
 
-  * Ufraw
-    ImageMagick deleagtion for RAW images
+* Ufraw
+  ImageMagick deleagtion for RAW images
 
-  * FFmpeg <= 0.8, Mplayer
-    Previews and Thumbnails extraction from videos and audios.
+* FFmpeg <= 0.8, Mplayer
+  Previews and Thumbnails extraction from videos and audios.
 
-  * Ghostscript >= 9
-    Previews and thumbnails extraction from graphix vectors and postscript.
+* Ghostscript >= 9
+  Previews and thumbnails extraction from graphix vectors and postscript.
 
-  * XPDF
-    Text extraction from PDFs.
+* XPDF
+  Text extraction from PDFs.
 
-  * SWFTools
-    Previews and thumbnails extraction from Adobe Flash files.
+* SWFTools
+  Previews and thumbnails extraction from Adobe Flash files.
 
-  * Exiftool
-    RDF metadatas extraction.
+* Exiftool
+  RDF metadatas extraction.
 
-  * Unoconv
-    Preview and thumbnails extraction from office documents.
+* Unoconv
+  Preview and thumbnails extraction from office documents.
 
-  * MP4Box
-    Preview extraction from videos.
-
-
+* MP4Box
+  Preview extraction from videos.
 
 API keys (optionnal)
 --------------------
 
-  * Youtube
-  * Dailymotion
-  * FlickR
-  * Recpatcha
-
-
+* Youtube
+* Dailymotion
+* FlickR
+* Recpatcha

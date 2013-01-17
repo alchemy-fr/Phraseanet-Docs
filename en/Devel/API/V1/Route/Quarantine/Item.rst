@@ -4,41 +4,41 @@ Quarantine item
 About
 -----
 
-  Return an item of the quarantine given its Id
+Return an item of the quarantine given its Id
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/quarantine/item/{quarantine_id}/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   quarantine_id            integer        The id of the item
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ quarantine_id            integer        The id of the item
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ============== ================================
-   Field          Description
-  ============== ================================
-   item           The item
-  ============== ================================
+============== ================================
+ Field          Description
+============== ================================
+ item           The item
+============== ================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {

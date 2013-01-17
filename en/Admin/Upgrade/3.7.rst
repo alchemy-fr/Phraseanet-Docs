@@ -16,5 +16,8 @@ What's new ?
 * Add new video encoding formats (HTML5 compatibility)
 * Add destination devices to for sub-definitions
 * Possibility to choose the thumbnail extracted from a video
-* Release of the Phraseanet SDK, documentation is located here : `http://phraseanet-php-sdk.readthedocs.org/ <http://phraseanet-php-sdk.readthedocs.org/>`_.
-  This SDK is a ready to use toolbox written in PHP allowing you to develop your applications by exploiting the Phraseanet API
+* Release of the `Phraseanet SDK`_. This SDK is a ready to use toolbox written
+  in PHP allowing you to develop your applications by exploiting the Phraseanet
+  API.
+
+.. _Phraseanet SDK: http://phraseanet-php-sdk.readthedocs.org/

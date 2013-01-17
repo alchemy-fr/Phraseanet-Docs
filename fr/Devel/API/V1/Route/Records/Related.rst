@@ -4,45 +4,44 @@ Lister les paniers d'un document
 A propos
 --------
 
-  Retourne la liste des objets (paniers et reportages) qui contiennent un
-  document spécifique
+Retourne la liste des objets (paniers et reportages) qui contiennent un
+document spécifique
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/related/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   databox_id               entier         L'identifiant de la databox auquel appartient le document
-   record_id                entier         L'identifiant du document sélectionné
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ databox_id               entier         L'identifiant de la databox auquel appartient le document
+ record_id                entier         L'identifiant du document sélectionné
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-   baskets    La liste des objets (paniers et reportages) qui contiennent le document
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+ baskets    La liste des objets (paniers et reportages) qui contiennent le document
+========== ================================
 
 Exemple de réponse
 ------------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
-    {
     {
          "meta": {
             "api_version": "1.3",

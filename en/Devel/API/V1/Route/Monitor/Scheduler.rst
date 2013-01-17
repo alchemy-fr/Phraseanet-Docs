@@ -4,37 +4,37 @@ Scheduler Monitor
 About
 -----
 
-  Returns Scheduler informations for monitoring
+Returns Scheduler informations for monitoring
 
-  .. code-block:: bash
+.. code-block:: bash
 
     /api/v1/monitor/scheduler/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  No parameters for this route
+No parameters for this route
 
 Response Fields
 ---------------
 
-  =============== ======================================
-   Field           Description
-  =============== ======================================
-   scheduler       Scheduler informations
-  =============== ======================================
+=============== ======================================
+ Field           Description
+=============== ======================================
+ scheduler       Scheduler informations
+=============== ======================================
 
 Response sample
 ---------------
 
-  .. code-block:: javascript
+.. code-block:: javascript
 
     {
         "meta": {
