@@ -37,6 +37,7 @@ en dessous la déclaration de cet environnement.
         cache: array_cache
         opcodecache: array_cache
         border-manager: border_manager
+        search-engine: phrasea
 
 Détaillons la composition d'un environnement
 
@@ -56,6 +57,7 @@ Détaillons la composition d'un environnement
 * cache : service de cache principal :doc:`cache </Admin/Optimisation>`
 * opcodecache : service de cache opcode :doc:`opcodecache </Admin/Optimisation>`
 * border-manager : service de douane
+* search-engine : nom du service de moteur de recherche
 
 Les différents services sont déclarés dans le fichier service.yml.
 
@@ -460,6 +462,45 @@ Puis dans le fichier de configuration services.yml
         enabled: true
         options:
             bar: foo
+
+Services SearchEngine
+^^^^^^^^^^^^^^^^^^^^^
+
+Ce servce décrit une ou plusieurs configurations de moteur de recherche.
+Suivant le moteur choisi, vous aurez accès à certaines possibilités. Ainsi,
+SphinxSearch supporte l'autocomplétion tandis que Phrasea supporte le thesaurus.
+
+Exemple :
+
+.. code-block:: yaml
+
+    #services.yml
+    SearchEngine:
+      phrasea:
+        type: SearchEngine\PhraseaEngine
+      sphinxsearch:
+        type: SearchEngine\SphinxSearch
+        options:
+          host: localhost
+          port: 9306
+          rt_host: localhost
+          rt_port: 9308
+
+Phrasea Engine
+^^^^^^^^^^^^^^
+
+Phrasea engine ne supporte aucune options particulière.
+
+
+SphinxSearch
+^^^^^^^^^^^^
+
+Vous devrez spécifier quatre options pour l'utilisation de SphinxSearch :
+
+- host : le nom d'hote ou l'adresse IP du serveur SphinxSearch
+- port : le port du serveur SphinxSearch
+- rt_host : le nom d'hote ou l'adresse IP du serveur real-time SphinxSearch
+- rt_port : le port du serveur real-time SphinxSearch
 
 Réglages de collection
 ----------------------
