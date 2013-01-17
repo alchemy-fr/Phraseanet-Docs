@@ -4,29 +4,29 @@ Moteur de recherche
 .. topic:: L'essentiel
 
     Phraseanet est fourni par défaut avec le moteur de recherche Phrasea. Celui
-    ci est très performant si vous utilisez le module thesaurus. Toutefois, si
-    son utilisation n'est pas requiert, vous pouvez utiliser le moteur
-    SphinxSearch.
+    ci est très performant si en cas d'utilisation du module thesaurus.
+    Toutefois, si le thesaurus n'est pas requiert, SphinxSearch peut être
+    utilisé.
     Cette section explique les avantages de chacun et leur installation.
-
 
 .. warning::
 
     Le setup du moteur de recherche se fait à l'installation de Phraseanet. Vous
-    ne devriez pas modifier sa configuration après cette étape.
+    ne devriez pas modifier la configuration du moteur de recherche après cette
+    étape.
 
 Phrasea Engine
 --------------
 
 Le moteur Phrasea se compose d'un indexeur (Phraseanet-Indexer) et de
-l'extension PHP Phraseanet-Extension qui permet de requeter l'index Phraseanet.
+l'extension PHP Phraseanet-Extension qui permet de requèter l'index Phraseanet.
 
 Un des principaux avantages de ce moteur est la prise en charge du thesaurus.
 
 Sphinx-Search Engine
 --------------------
 
-SphinxSearch repose sur une technologie tierce que vous devrez installer.
+SphinxSearch repose sur une technologie tierce qu'il est nécessaire d'installer.
 Phraseanet requiert `SphinxSearch Engine`_ 2.0.6 ou supérieur.
 
 Avantages
@@ -41,11 +41,11 @@ Les principaux avantages de SphinxSearch Engine sont :
 Configuration dans Phraseanet
 *****************************
 
-Après avoir installer SphinxSearch, vous devez configurer Phraseanet.
+Après avoir installer SphinxSearch, Phraseanet doit être configuré.
 Cette configuration de Phraseanet pour SphinxSearch va permmetre de générer un
 fichier de configuration dédié pour le moteur de recherche.
 
-Pour cela, se référrer à la documentation de configuration
+Pour cela, se référer à la documentation de configuration
 :ref:`search-engine-service-configuration`.
 
 Une fois cette configuration effectuée, dans un navigateur, se connecter à
@@ -55,19 +55,15 @@ de configuration Sphinx.
 .. note::
 
     Notez que la configuration générée par Phraseanet pour SphinxSearch est
-    complète. Si vous partagez le serveur Sphinx avec d'autres applications
-    vous devriez prendre soin d'exclure la partie *server* au pied du fichier
+    complète. Si le serveur Sphinx est partagé avec d'autres applications
+    il faudra prendre soin d'exclure la partie *server* au pied du fichier
     de configuration.
 
 Ce fichier peut être maintenant utilisé avec votre serveur SphinxSearch
 (générallement **/usr/local/etc/sphinx.conf**)
-
-Vous devez redémarrer SphinxSearch pour que la configuration soit prise en
-compte.
-
-En cas d'erreur avec SphinxSearch, n'hésitez pas à vous référrer à la
-`documentation SphinxSearch`_.
-
+Le serveur SphinxSearch doit être redémarré pour que la configuration soit
+prise en compte.
+En cas d'erreur avec SphinxSearch, consulter la `documentation SphinxSearch`_.
 Les sections suivantes apportent des réponses à des questions fréquemment
 posées.
 
