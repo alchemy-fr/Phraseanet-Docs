@@ -11,21 +11,21 @@ the API.
 New routes
 **********
 
- - :doc:`stories/story <V1/Route/Stories/Story>` Story route.
- - :doc:`stories/story <V1/Route/Stories/Embed>` Story embed.
- - :doc:`search <V1/Route/Search>` The new search engine compatible with stories.
+- :doc:`stories/story <V1/Route/Stories/Story>` Story route.
+- :doc:`stories/story <V1/Route/Stories/Embed>` Story embed.
+- :doc:`search <V1/Route/Search>` The new search engine compatible with stories.
 
 Deprecated routes
 *****************
 
- - :doc:`records/search <V1/Route/Records/Search>`. We
-   strongly encourage developers to upgrade their code to support the new API.
+- :doc:`records/search <V1/Route/Records/Search>`. We
+  strongly encourage developers to upgrade their code to support the new API.
 
 Updated routes
 **************
 
- - :doc:`records/search <V1/Route/Records/Related>` now list related stories as
-   long as baskets.
+- :doc:`records/search <V1/Route/Records/Related>` now list related stories as
+  long as baskets.
 
 1.2
 ---
@@ -383,9 +383,9 @@ Searching for a records
 Some parameters from :doc:`records/search <V1/Route/Records/Search>` have been
 renamed :
 
- - datefield => date_field
- - datemin   => date_min
- - datemax   => date_max
+- datefield => date_field
+- datemin   => date_min
+- datemax   => date_max
 
 The **page** parameter from the request and the associated response field have
 been replaced by **offset_start**
@@ -563,9 +563,9 @@ You can now restrict to some devices and/or mime types in the
 Major API upgrade. This version is not fully backward compatible with 1.0. See
 the complete :doc:`documentation <V1/Upgrade/1.1>` before upgrading.
 
-  - Change in route :doc:`records/metadatas <V1/Route/Records/Metadatas>`
-  - Change in route :doc:`records/setmetadatas <V1/Route/Records/SetMetadatas>`
-  - Add route :doc:`records/caption <V1/Route/Records/Caption>`
+- Change in route :doc:`records/metadatas <V1/Route/Records/Metadatas>`
+- Change in route :doc:`records/setmetadatas <V1/Route/Records/SetMetadatas>`
+- Add route :doc:`records/caption <V1/Route/Records/Caption>`
 
 1.0
 ---

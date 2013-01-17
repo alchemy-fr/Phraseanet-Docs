@@ -1,8 +1,8 @@
 ﻿La Zone de Travail
 ==================
 .. toctree::
-   :maxdepth: 1
-   :hidden:
+    :maxdepth: 1
+    :hidden:
 
 .. topic:: L'essentiel
 
@@ -53,8 +53,10 @@ Chaque proposition est cliquable et permet de lancer une nouvelle recherche.
 
 Thesaurus
 ---------
+
 Onglet Thesaurus
 ****************
+
 Cette recherche n’est active que si un ou plusieurs thesaurus sont disponibles.
 L’onglet Thesaurus dans *Phraseanet Production* est lié à l'interface
 :doc:`Phraseanet Thesaurus <Thesaurus>`.
@@ -84,7 +86,6 @@ Selon le paramétrage du Thesaurus, les listes de mots candidats peuvent être t
 par champs.
 
 * Cliquer sur l’onglet Thesaurus dans la barre des Onglets
-
 * Cliquer sur le sous onglet "Candidats"
 
 Les termes candidats s’affichent:
@@ -103,9 +104,7 @@ Le menu contextuel du terme s’affiche:
     :align: center
 
 * Cliquer sur Accepter en xx "langue du terme"
-
 * Cliquer sur Remplacer par
-
 * Cliquer sur Supprimer
 
 Chercher dans Thesaurus

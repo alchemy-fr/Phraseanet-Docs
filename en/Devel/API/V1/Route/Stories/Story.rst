@@ -4,37 +4,37 @@ Stories Story
 About
 -----
 
-  Return all information about one story
+Return all information about one story
 
 .. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== ==============================
-   Parameters               Type           Information
-  ======================== ============== ==============================
-   databox_id               integer        The databox id of the story
-   story_id                 integer        The story_id
-  ======================== ============== ==============================
+======================== ============== ==============================
+ Parameters               Type           Information
+======================== ============== ==============================
+ databox_id               integer        The databox id of the story
+ story_id                 integer        The story_id
+======================== ============== ==============================
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   story      The story
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ story      The story
+========== ================================
 
 Response sample
 ---------------

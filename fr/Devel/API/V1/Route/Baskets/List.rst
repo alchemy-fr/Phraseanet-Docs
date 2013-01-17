@@ -4,32 +4,32 @@ Lister les paniers
 A propos
 --------
 
-  Retourne la liste des paniers de l'utilisateur courant
+Retourne la liste des paniers de l'utilisateur courant
 
 .. code-block:: bash
 
     /api/v1/baskets/list/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  Aucun paramètre
+Aucun paramètre
 
 Attribut de la réponse
 ----------------------
 
-  ============= ================================
-   Attribut      Description
-  ============= ================================
-   baskets       La liste des paniers
-  ============= ================================
+============= ================================
+ Attribut      Description
+============= ================================
+ baskets       La liste des paniers
+============= ================================
 
 Exemple de réponse
 ------------------

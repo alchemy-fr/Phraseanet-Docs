@@ -11,13 +11,13 @@ Production : Gérer les média
 
 
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 1
 
-   Onglets
-   PaniersReportages
-   Actions
-   Editer
-   Push
-   Publier
-   Bridge
-   PersonnaliserInterface
+    Onglets
+    PaniersReportages
+    Actions
+    Editer
+    Push
+    Publier
+    Bridge
+    PersonnaliserInterface

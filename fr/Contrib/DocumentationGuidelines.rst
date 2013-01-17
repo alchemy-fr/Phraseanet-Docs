@@ -16,17 +16,17 @@ Règles et style de rédaction
 Règles
 ******
 
-  * Les lignes ne dépassent pas 80 caractères
-  * Le texte est encodé en UTF-8
-  * La documentation n'est pas davantage optimisée pour l'impression PDF ou l'affichage HTML
-  * La documentation est publiée en GPL v3
+* Les lignes ne dépassent pas 80 caractères
+* Le texte est encodé en UTF-8
+* La documentation n'est pas davantage optimisée pour l'impression PDF ou l'affichage HTML
+* La documentation est publiée en GPL v3
 
 Style
 *****
 
-  * Rédiger à l'infinitif
-  * Favoriser les phrases courtes
-  * Privilégier un niveau de langue simple et compréhensible par tous
+* Rédiger à l'infinitif
+* Favoriser les phrases courtes
+* Privilégier un niveau de langue simple et compréhensible par tous
 
 Mémo des règles de codage
 -------------------------
@@ -46,34 +46,34 @@ Structure
 
   * Titres et Sous-Titres ::
 
-      H1 -- Premier titre
-      ===================
+        H1 -- Premier titre
+        ===================
 
-      H2 -- Sous titre
-      ----------------
+        H2 -- Sous titre
+        ----------------
 
-      H3 -- Sous section
-      ******************
+        H3 -- Sous section
+        ******************
 
-      H4 -- Sous sous section
-      ^^^^^^^^^^^^^^^^^^^^^^^
+        H4 -- Sous sous section
+        ^^^^^^^^^^^^^^^^^^^^^^^
 
-      H5
-      ~~~~~~~~~~~~~~~~~~~~~~~
+        H5
+        ~~~~~~~~~~~~~~~~~~~~~~~
 
   * Images ::
 
-      .. figure:: ../images/gplv3.png
+        .. figure:: ../images/gplv3.png
+            :align:  center
+            :alt:    GPLv3 logo
+
+            License GNU GPL v3
+
+    .. figure:: ../images/gplv3.png
         :align:  center
         :alt:    GPLv3 logo
 
-        License GNU GPL v3
-
-    .. figure:: ../images/gplv3.png
-      :align:  center
-      :alt:    GPLv3 logo
-
-      Image Caption
+        Image Caption
 
 Formatage
 *********

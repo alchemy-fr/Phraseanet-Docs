@@ -41,12 +41,12 @@ Détaillons la composition d'un environnement
 
 * phraseanet (configuration principale)
 
-  * servername: L'URI ou est installée l'application (requis)
-  * maintenance: Passer l'application en état de maintenance
-  * debug: Passer l'application en mode debug
-  * display_errors: Afficher les erreurs sur la sortie standard
-  * database: Nom de la connexion à la base de donnée (requis) voir
-    connexion.yml
+    * servername: L'URI ou est installée l'application (requis)
+    * maintenance: Passer l'application en état de maintenance
+    * debug: Passer l'application en mode debug
+    * display_errors: Afficher les erreurs sur la sortie standard
+    * database: Nom de la connexion à la base de donnée (requis) voir
+      connexion.yml
 
 * template_engine : service de mise en page (requis)
 * orm : Service de mapping à la base de donnée (requis)
@@ -75,13 +75,13 @@ La connexion est partagé par différent service (Phraseanet et ORM)
       driver: pdo_mysql
       charset: UTF8
 
-  * host: adresse du serveur MySQL
-  * port: port MySQL
-  * user: utilisateur MySQL
-  * password: mot de passe  MySQL
-  * dbname:  nom de la base de donnée (application box)
-  * driver: nom du driver voir la `liste complète des drivers doctrine`_
-  * charset: encodage de la connexion
+* host: adresse du serveur MySQL
+* port: port MySQL
+* user: utilisateur MySQL
+* password: mot de passe  MySQL
+* dbname:  nom de la base de donnée (application box)
+* driver: nom du driver voir la `liste complète des drivers doctrine`_
+* charset: encodage de la connexion
 
 Services.yml
 ************
@@ -135,15 +135,15 @@ Voici le service *doctrine_dev* :
           log:
             service: Log\query_logger
 
-  * debug : activation du debug
-  * dbal : Nom d'une connexion déclarée dans connexions.yml
-  * cache : paramètre des options de cache
+* debug : activation du debug
+* dbal : Nom d'une connexion déclarée dans connexions.yml
+* cache : paramètre des options de cache
 
     * query : utilisation du service **Cache\\array_cache** (voir ci dessous)
     * result : utilisation du service **Cache\\array_cache** (voir ci dessous)
     * metadata : utilisation du service **Cache\\apc_cache** (voir ci dessous)
 
-  * log : utilisation du service **Log\\query_logger** (voir ci dessous)
+    * log : utilisation du service **Log\\query_logger** (voir ci dessous)
 
 .. seealso::
 
@@ -168,13 +168,13 @@ Voici le service *twig_prod*
           autoescape: true
           optimizer: true
 
-  * debug : activation du debug
-  * charset : encodage du système de mise en page.
-  * strict_variable : arrêter l'exécution lors de l'appel à une variable
-    inconnue (pour les développeurs)
-  * autoescape: Activer la prise en charge automatiques des caractères
-    d'auto échappement.
-  * optimizer : Activer l'`optimizer Twig`_
+* debug : activation du debug
+* charset : encodage du système de mise en page.
+* strict_variable : arrêter l'exécution lors de l'appel à une variable
+  inconnue (pour les développeurs)
+* autoescape: Activer la prise en charge automatiques des caractères
+  d'auto échappement.
+* optimizer : Activer l'`optimizer Twig`_
 
 .. seealso::
 
@@ -200,27 +200,27 @@ pour le log du service Doctrine.
           max_day: 2
           filename: doctrine-query.log
 
-  * output : Spécification du formatage de sortie.
-    Trois modes sont possibles.
+* output : Spécification du formatage de sortie.
+  Trois modes sont possibles.
 
     * json : Formatage en `Json`_
     * yaml : Formatage en `YAML`_
     * vdump : Affiche les informations de la variable de sortie PHP de manière
       à ce qu'elle soit lisible, voir `var_dump`_
 
-  * channel : Nom du channel utilisé par le service de log.
-    C'est une façon d'identifier à quelle partie de l'application une entrée de
-    log est liée.
-  * handler : Permet de spécifier le type de gestionnaire de log utilisé par le
-    service.
+* channel : Nom du channel utilisé par le service de log.
+  C'est une façon d'identifier à quelle partie de l'application une entrée de
+  log est liée.
+* handler : Permet de spécifier le type de gestionnaire de log utilisé par le
+  service.
 
     * stream : Ecrire les logs dans un fichier.
     * rotate : Ecrire les logs dans un fichiers qui sont renouvelés tous
       les jours et limiter le nombre de fichiers enregistrés.
 
-  * filename: Le nom du fichier de log.
-  * max_day : Spécifier en nombre de jour la fréquence de rotation opérée sur
-    les fichiers de logs dans le cas ou le gestionnaire de rotation est utilisé.
+* filename: Le nom du fichier de log.
+* max_day : Spécifier en nombre de jour la fréquence de rotation opérée sur
+  les fichiers de logs dans le cas ou le gestionnaire de rotation est utilisé.
 
 Services de Cache ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -482,10 +482,10 @@ la description de celui-ci.
 
 Pour utiliser cette option :
 
-  * Ajouter un logo de Stamp
-  * Aller dans les réglages de collection
-  * Dans la "Vue XML", editer le XML et ajouter le block "stamp" comme
-    ci-dessous
+* Ajouter un logo de Stamp
+* Aller dans les réglages de collection
+* Dans la "Vue XML", editer le XML et ajouter le block "stamp" comme
+  ci-dessous
 
 .. code-block:: xml
 

@@ -1,7 +1,8 @@
 ﻿Connexion à Phraseanet
 ======================
+
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 Inscription
 -----------

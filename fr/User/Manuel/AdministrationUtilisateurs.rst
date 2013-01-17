@@ -1,7 +1,8 @@
 Gestion des utilisateurs
 ========================
+
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -61,8 +62,10 @@ le début de l'identifiant de l'utilisateur afin de le retrouver dans la liste.
 
 Créer, modifier, supprimer un utilisateur
 -----------------------------------------
+
 Créer un nouvel utilisateur
 ***************************
+
 Cliquer sur le bouton Nouvel utilisateur.
 
 .. image:: ../../images/Administration-nouvelutilisateur1.jpg
@@ -92,6 +95,7 @@ Appliquer les modifications apportées en cliquant sur le bouton **Valider**.
 
 Modifier les droits d'un utilisateur
 ************************************
+
 Pour modifier les droits et informations d'un utilisateur, double cliquer
 sur le nom de l'utilisateur.
 
@@ -100,6 +104,7 @@ Pour plus de détails relatifs aux droits utilisateurs, se reporter à la sectio
 
 Supprimer un utilisateur
 ************************
+
 Pour supprimer un utilisateur du système Phraseanet, sélectionnez l'utilisateur
 dans la liste puis cliquer sur le bouton **Supprimer**.
 
@@ -143,6 +148,7 @@ collectivement les droits de plusieurs utilisateurs à travers les modèles.
 
 L'accès invité
 --------------
+
 **L'accès invité** peut être mis en place sur Phraseanet, si souhaité.
 Il donne la possibilité à des personnes non enregistrées sur le système d'avoir
 un accès (temporaire) à l'application.
@@ -207,16 +213,16 @@ Les droits de consultation
 
 La première partie de la fenêtre des droits, la plus à gauche:
 
-  * Cocher **Accéder** pour permettre d'accéder à la base ou à la collection
-  * Cocher **Actif** pour activer l'utilisateur. A contrario, décocher la case désactive
-    l'utilisateur sans perdre tout le paramétrage.
-  * Cocher **Paniers** pour autoriser la création des Paniers.
-  * Cocher **Voir Preview** pour autoriser la visualisation des images de choix.
-  * Cocher **Watermark** pour définir si l'utilisateur voit les images de choix avec un
-    marquage.
-  * Cocher **Télécharger Haute Def** pour autoriser le téléchargement du document original
-  * Cocher **Commander** pour autoriser la commande de documents
-  * Cliquer sur **Quota** pour ouvrir la fenêtre Quota de téléchargements.
+* Cocher **Accéder** pour permettre d'accéder à la base ou à la collection
+* Cocher **Actif** pour activer l'utilisateur. A contrario, décocher la case désactive
+  l'utilisateur sans perdre tout le paramétrage.
+* Cocher **Paniers** pour autoriser la création des Paniers.
+* Cocher **Voir Preview** pour autoriser la visualisation des images de choix.
+* Cocher **Watermark** pour définir si l'utilisateur voit les images de choix avec un
+  marquage.
+* Cocher **Télécharger Haute Def** pour autoriser le téléchargement du document original
+* Cocher **Commander** pour autoriser la commande de documents
+* Cliquer sur **Quota** pour ouvrir la fenêtre Quota de téléchargements.
 
 Plusieurs options très fines sont à la disposition de l'utilisateur pour la
 limitation:
@@ -226,11 +232,11 @@ limitation:
 La fenêtre "Quota des téléchargements" permet de définir pour l'utilisateur des
 quotas de téléchargement par base ou par collection.
 
-  * Cocher sur Oui pour activer la gestion des quotas.
-  * Saisir le nombre de droits de téléchargements par mois pour cette collection.
-    Le "reste" se calcule automatiquement en fonction du droit initial et du nombre
-    de téléchargements effectués.
-  * Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la fenêtre.
+* Cocher sur Oui pour activer la gestion des quotas.
+* Saisir le nombre de droits de téléchargements par mois pour cette collection.
+  Le "reste" se calcule automatiquement en fonction du droit initial et du nombre
+  de téléchargements effectués.
+* Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la fenêtre.
 
 **Limitation dans le temps**
 
@@ -238,10 +244,10 @@ Cliquer sur **Limité Temps** pour ouvrir la fenêtre *Durée de vie*
 
 Cette fenêtre permet de limiter dans le temps l'accès à une base ou à une collection.
 
-  * Cocher sur Oui pour activer la gestion des limites dans les temps
-  * Sélectionner les bornes de la période d'accès autorisée
-  * Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la fenêtre.
-  * Cliquer sur **Status** pour ouvrir la fenêtre *Status*.
+* Cocher sur Oui pour activer la gestion des limites dans les temps
+* Sélectionner les bornes de la période d'accès autorisée
+* Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la fenêtre.
+* Cliquer sur **Status** pour ouvrir la fenêtre *Status*.
 
 **Limitation par les Status**
 
@@ -267,41 +273,37 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
 
 **Documents**
 
-  * Cocher **Ajouter** pour autoriser l'ajout d'un document dans la base ou collection
-  * Cocher **Editer** pour autoriser l'édition de la description des documents
-  * Cocher **Changer status** pour autoriser l'utilisateur à changer le statut d'un document
-  * Cocher **Supprimer** pour autoriser l'utilisateur à supprimer un document
-  * Cocher **Outils Images** pour autoriser l'utilisateur à bénéficier des outils
-  * Cocher **Gestion Utilisateurs** pour autoriser la gestion des utilisateurs
-  * Cocher **Consulter Rapports** pour autoriser l'utilisateur à consulter les statistiques
-  * Cocher **Push** pour autoriser l'utilisation de la fonction "Push" et d'envoyer des
-    documents à des destinataires.
+* Cocher **Ajouter** pour autoriser l'ajout d'un document dans la base ou collection
+* Cocher **Editer** pour autoriser l'édition de la description des documents
+* Cocher **Changer status** pour autoriser l'utilisateur à changer le statut d'un document
+* Cocher **Supprimer** pour autoriser l'utilisateur à supprimer un document
+* Cocher **Outils Images** pour autoriser l'utilisateur à bénéficier des outils
+* Cocher **Gestion Utilisateurs** pour autoriser la gestion des utilisateurs
+* Cocher **Consulter Rapports** pour autoriser l'utilisateur à consulter les statistiques
+* Cocher **Push** pour autoriser l'utilisation de la fonction "Push" et d'envoyer des
+  documents à des destinataires.
 
 **Droits sur la gestion des bases et collections**
 
-  * Cocher **Gestion Coll.** pour autoriser l'utilisateur à effectuer différentes
-    opérations de gestion. Pour une collection: la renommer, la vider, la mettre
-    online ou offline, la supprimer.
-
-  * La case **Structure Coll.** donne accès aux fonctions de réglages de collections
-    dans *Phraseanet Administration*. Structure Coll. permet l’accès aux préférences
-    de la collection et autorise la modification des listes de valeurs suggérées.
-
-  * La case **Publicat° Panier** permet à un utilisateur de publier sous forme
-    de paniers des documents sur des pages de l’application *Classic*.
-
-  * La case **Modif. Thesaurus** permet à l’utilisateur d’accéder à l’application
-    *Phraseanet Thesaurus*
-
-  * La case **Gestion Base** permet d’accéder aux fonctions de paramètres de
-    bases de données comme création, purge et fonctions avancées de gestion de
-    la solution
-
-  * Enfin, **Structure Base**, pour autoriser l'utilisateur à modifier la
-    structure de la base de données.
+* Cocher **Gestion Coll.** pour autoriser l'utilisateur à effectuer différentes
+  opérations de gestion. Pour une collection: la renommer, la vider, la mettre
+  online ou offline, la supprimer.
+* La case **Structure Coll.** donne accès aux fonctions de réglages de collections
+  dans *Phraseanet Administration*. Structure Coll. permet l’accès aux préférences
+  de la collection et autorise la modification des listes de valeurs suggérées.
+* La case **Publicat° Panier** permet à un utilisateur de publier sous forme
+  de paniers des documents sur des pages de l’application *Classic*.
+* La case **Modif. Thesaurus** permet à l’utilisateur d’accéder à l’application
+  *Phraseanet Thesaurus*
+* La case **Gestion Base** permet d’accéder aux fonctions de paramètres de
+  bases de données comme création, purge et fonctions avancées de gestion de
+  la solution
+* Enfin, **Structure Base**, pour autoriser l'utilisateur à modifier la
+  structure de la base de données.
 
 Demandes
 ---------
+
 Disponible via le menu du module d'Administration, cette fenêtre liste les demandes
 d'inscription des nouveaux utilisateurs dans l'écran Inscription.
 Si un utilisateur a fait une demande sur plusieurs collections, il y a autant de
@@ -313,12 +315,9 @@ les informations relatives au demandeur.
 
 Choisir les droits à attribuer par collections en cochant les cases. L'utilisateur peut:
 
-  * refuser l'accès à la collection demandée
-
-  * donner accès à la collection demandée aux documents de type sous résolution
-
-  * donner accès à la collection demandée, avec les documents en haute définition
-
-  * donner accès à la collection demandée, sans les documents en haute définition
+* refuser l'accès à la collection demandée
+* donner accès à la collection demandée aux documents de type sous résolution
+* donner accès à la collection demandée, avec les documents en haute définition
+* donner accès à la collection demandée, sans les documents en haute définition
 
 Cliquer sur **Valider** pour appliquer les choix effectués.

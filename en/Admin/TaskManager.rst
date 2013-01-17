@@ -34,13 +34,13 @@ It indexes the datas with phraseanet_indexer.
 
 Indexer requires parameters :
 
-  * Path to indexer binary
-  * Host : MySQL server hostname / address
-  * Port : MySQL port
-  * Database : MySQL dbname
-  * User : MySQL user
-  * Password : MySQL password
-  * Socket port : socket port to stop the indexer
+* Path to indexer binary
+* Host : MySQL server hostname / address
+* Port : MySQL port
+* Database : MySQL dbname
+* User : MySQL user
+* Password : MySQL password
+* Socket port : socket port to stop the indexer
 
 .. code-block:: bash
 

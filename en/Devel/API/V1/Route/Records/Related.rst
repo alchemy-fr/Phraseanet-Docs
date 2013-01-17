@@ -4,37 +4,37 @@ Records Related
 About
 -----
 
-  Return all baskets that contains one specific record
+Return all baskets that contains one specific record
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/related/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ databox_id               integer        The databox id of the record
+ record_id                integer        The record_id
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   baskets    The list of the baskets containing the record
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ baskets    The list of the baskets containing the record
+========== ================================
 
 Response sample
 ---------------

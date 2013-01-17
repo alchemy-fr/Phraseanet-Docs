@@ -4,32 +4,32 @@ Feeds List
 About
 -----
 
-  List all available feeds
+List all available feeds
 
 .. code-block:: bash
 
     /api/v1/feeds/list/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  No parameter for this route
+No parameter for this route
 
 Response Fields
 ---------------
 
-  ============= ================================
-   Field         Description
-  ============= ================================
-   feeds         The list of feeds
-  ============= ================================
+============= ================================
+ Field         Description
+============= ================================
+ feeds         The list of feeds
+============= ================================
 
 Response sample
 ---------------

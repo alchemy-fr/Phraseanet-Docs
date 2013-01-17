@@ -4,36 +4,36 @@ Baskets Add
 About
 -----
 
-  Adds a new basket
+Adds a new basket
 
 .. code-block:: bash
 
     /api/v1/baskets/add/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   name                     string         The name of the basket
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ name                     string         The name of the basket
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ============= ================================
-   Field         Description
-  ============= ================================
-   basket        The created basket
-  ============= ================================
+============= ================================
+ Field         Description
+============= ================================
+ basket        The created basket
+============= ================================
 
 Response sample
 ---------------

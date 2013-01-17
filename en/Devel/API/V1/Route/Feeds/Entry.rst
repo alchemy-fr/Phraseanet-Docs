@@ -4,36 +4,36 @@ Feeds Entry Content
 About
 -----
 
-  Return the content of an entry, given an Id
+Return the content of an entry, given an Id
 
 .. code-block:: bash
 
     /api/v1/feeds/entry/{entry_id}/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   entry_id                 integer        The id of the entry
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ entry_id                 integer        The id of the entry
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  =============== ================================
-   Field           Description
-  =============== ================================
-   entry           The entry
-  =============== ================================
+=============== ================================
+ Field           Description
+=============== ================================
+ entry           The entry
+=============== ================================
 
 Response sample
 ---------------

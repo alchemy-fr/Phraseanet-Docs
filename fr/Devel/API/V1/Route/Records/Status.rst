@@ -4,37 +4,37 @@ Lister les status d'un document
 A propos
 --------
 
-  Retourne la liste des status d'un document
+Retourne la liste des status d'un document
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/status/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ================ ========= =============================
-   Paramètres       Type      Information
-  ================ ========= =============================
-   databox_id       entier    L'identifiant de la databox auquel appartient le document
-   record_id        entier    L'identifiant du document sélectionné
-  ================ ========= =============================
+================ ========= =============================
+ Paramètres       Type      Information
+================ ========= =============================
+ databox_id       entier    L'identifiant de la databox auquel appartient le document
+ record_id        entier    L'identifiant du document sélectionné
+================ ========= =============================
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-   status     La liste des status du document sélectionné
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+ status     La liste des status du document sélectionné
+========== ================================
 
 Exemple de réponse
 ------------------

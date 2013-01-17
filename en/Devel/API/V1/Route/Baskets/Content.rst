@@ -4,37 +4,37 @@ Baskets Content
 About
 -----
 
-  Returns the content of the basket
+Returns the content of the basket
 
 .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/content/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   basket_id                integer        The basket_id of the selected basket
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ basket_id                integer        The basket_id of the selected basket
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ======================== =================================
-   Field                    Description
-  ======================== =================================
-   basket_elements
-   basket                   The selected basket
-  ======================== =================================
+======================== =================================
+ Field                    Description
+======================== =================================
+ basket_elements
+ basket                   The selected basket
+======================== =================================
 
 Response sample
 ---------------

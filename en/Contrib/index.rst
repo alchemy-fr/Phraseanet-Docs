@@ -2,7 +2,8 @@ Contributor
 ===========
 
 .. module:: contributor
-   :synopsis: Guide contributeur de Phraseanet
+    :synopsis: Guide contributeur de Phraseanet
+
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
 .. toctree::

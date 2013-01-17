@@ -4,41 +4,41 @@ Feed Content
 About
 -----
 
-  Return the content of a feed
+Return the content of a feed
 
 .. code-block:: bash
 
     /api/v1/feeds/{feed_id}/content/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   feed_id                  integer        The id of the feed
-   offset_start             integer        The first entry to retrive
-   per_page                 integer        The number of entry to retrieve
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ feed_id                  integer        The id of the feed
+ offset_start             integer        The first entry to retrive
+ per_page                 integer        The number of entry to retrieve
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ============= ================================
-   Field         Description
-  ============= ================================
-   feed          The feed
-   entries       The entries
-   offset_start  Starting offset
-   per_page      The quantity of entries per page
-  ============= ================================
+============= ================================
+ Field         Description
+============= ================================
+ feed          The feed
+ entries       The entries
+ offset_start  Starting offset
+ per_page      The quantity of entries per page
+============= ================================
 
 Response sample
 ---------------

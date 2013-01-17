@@ -4,16 +4,16 @@ Version 3.6
 Les changements :
 -----------------
 
-  * Un changement majeur du schema apparait dans le stockage des valeurs de
-    champs. Les valeurs de champs multivalués étaient auparavant stockées
-    sérialisées.
-    Elles sont désormais stockées indépendamment les unes des autres.
+* Un changement majeur du schema apparait dans le stockage des valeurs de
+  champs. Les valeurs de champs multivalués étaient auparavant stockées
+  sérialisées.
+  Elles sont désormais stockées indépendamment les unes des autres.
 
-    Deux routes sont modifiées : :doc:`Records/Metadatas
-    </Devel/API/V1/Route/Records/Metadatas>` et :doc:`Records/SetMetadatas
-    </Devel/API/V1/Route/Records/SetMetadatas>`.
-    Une route est ajoutée pour faciliter l'affichage des fiches :
-    :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
+  Deux routes sont modifiées : :doc:`Records/Metadatas
+  </Devel/API/V1/Route/Records/Metadatas>` et :doc:`Records/SetMetadatas
+  </Devel/API/V1/Route/Records/SetMetadatas>`.
+  Une route est ajoutée pour faciliter l'affichage des fiches :
+  :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
 
 .. seealso::
 
@@ -31,17 +31,12 @@ Les changements :
 Quoi de neuf ?
 --------------
 
-  * Refactorisation de l'interface de Push / Validation.
-
-  * Possibilité de création de listes d'utilisateurs dans le Push et la
-    Validation.
-
-  * Refactorisation de la WorkZone.
-
-  * Ajout de la fonction "Archiver" aux paniers.
-
-  * Ajout d'un navigateur de paniers permettant de revenir sur les paniers
-    archivés.
-
-  * Ajout d'une fonctionalité de stockage de ressources utilisateurs dans les
-    fiches descriptives.
+* Refactorisation de l'interface de Push / Validation.
+* Possibilité de création de listes d'utilisateurs dans le Push et la
+  Validation.
+* Refactorisation de la WorkZone.
+* Ajout de la fonction "Archiver" aux paniers.
+* Ajout d'un navigateur de paniers permettant de revenir sur les paniers
+  archivés.
+* Ajout d'une fonctionalité de stockage de ressources utilisateurs dans les
+  fiches descriptives.

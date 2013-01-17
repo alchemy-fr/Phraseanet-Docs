@@ -1,11 +1,13 @@
 API v1 Overview
 ==================
 
-The Phraseanet APIs use many standards you can find in other APIs. Requests are GET or POST requests, returning YAML, JSON or JSONP.
+The Phraseanet APIs use many standards you can find in other APIs. Requests are
+GET or POST requests, returning YAML, JSON or JSONP.
 
 Parameters must be sent as HTTP key / values.
 
-As Phraseanet API uses oAuth2 for authentication, you have to setup your server/do you requests with https.
+As Phraseanet API uses oAuth2 for authentication, you have to setup your
+server/do you requests with https.
 
 Quotas
 ------
@@ -20,12 +22,14 @@ There is no public access to Phraseanet API for the moment
 Responses
 ---------
 
-All responses are wrapped in an object containing two fields : response and meta. Response is by default sent as JSON data.
+All responses are wrapped in an object containing two fields : response and
+meta. Response is by default sent as JSON data.
 
 YAML
 ~~~~
 
-As of HTTP specification, you have to set an 'Accept' header if you want to fetch YAML.
+As of HTTP specification, you have to set an 'Accept' header if you want to
+fetch YAML.
 
 Request :
 
@@ -81,7 +85,8 @@ Response :
 JsonP
 ~~~~~~
 
-In order to fetch JSONP, you just have to add a callback HTTP parameter to your request.
+In order to fetch JSONP, you just have to add a callback HTTP parameter to
+your request.
 
 Request :
 
@@ -116,11 +121,13 @@ Response :
 Errors
 ------
 
-The meta section contains few values, among "http_code", "error_message" and "error details".
+The meta section contains few values, among "http_code", "error_message" and
+"error details".
 
 Phraseanet API uses the appropriate HTTP status codes.
 
-This code is repeated in the meta of the response, and the error_message is added.
+This code is repeated in the meta of the response, and the error_message is
+added.
 
 You will find explanation below:
 

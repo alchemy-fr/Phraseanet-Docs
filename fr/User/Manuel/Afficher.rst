@@ -1,7 +1,7 @@
 ﻿Affichage des résultats
 =======================
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -13,9 +13,9 @@
     interface de visualisation et de recherche des documents.
 
 .. figure:: ../../images/Production-general.jpg
-     :align: center
+    :align: center
 
-     *Interface Phraseanet Production*
+    *Interface Phraseanet Production*
 
 .. note::
 
@@ -23,13 +23,15 @@
     *Classic* (ci-dessous), est la zone centrale où apparaissent les images.
 
 .. figure:: ../../images/Classic-interface2.jpg
-     :align: center
+    :align: center
 
-     *Interface Phraseanet Classic*
+    *Interface Phraseanet Classic*
 
 Présentation de la zone d'affichage
 -----------------------------------
+
 Dans *Production*:
+
 La **Palette des Actions** figure en haut de page, juste au-dessus de la zone des
 Résultats. Elle permet d'effectuer certaines actions sur les documents, pour plus
 de détails, se référer à la page dédiée à la :doc:`Palette des Actions <Actions>`.
@@ -171,6 +173,7 @@ une action à partir du menu apparent au sein des paniers.
 
 La vue détaillée
 ----------------
+
 Lancer la vue détaillée en faisant un double clic sur une vignette depuis la zone
 des résultats ou depuis un panier dans la zone de travail.
 
@@ -178,10 +181,8 @@ Une fenêtre s’ouvre. Elle affiche la liste de documents sous forme de "bandea
 d’image" en haut.
 
 * Elle affiche l’image de choix du document cliqué.
-
 * Elle affiche avec trois onglets la description, l’historique depuis l’ajout
   et la popularité du document.
-
 * Elle affiche la liste de tous les Paniers et Reportages auxquels le document
   appartient dans la partie droite de la fenêtre.
 
@@ -190,6 +191,7 @@ Cliquer sur une vignette pour afficher l’image de choix ou utiliser les flèch
 
 Onglet Notice
 **************
+
 Sur la partie gauche, l'utilisateur retrouve son image de choix.
 
 Sur la partie droite, l'onglet *Notice* permet de visualiser les informations issues
@@ -206,6 +208,7 @@ des champs remplis, tels que les mots clés, la légende,...
 
 Onglet Historique
 *****************
+
 Cliquer sur l’onglet *Historique* pour afficher le contenu.
 
 Cet onglet liste l’historique de toutes les opérations réalisées par les
@@ -216,12 +219,12 @@ utilisateurs sur le document depuis son ajout.
 
 Onglet Popularité
 *****************
+
 Cet onglet affiche les statistiques de consultation et de téléchargement du
 document en temps réel.
 
 * Les statistiques de visualisation montrent d’abord sous forme de courbe le
   nombre total de visualisations.
-
 * Le diagramme "Camembert" montre les sources d’accès au document.
 
 .. image:: ../../images/Affichage-vuedetaillee3.jpg

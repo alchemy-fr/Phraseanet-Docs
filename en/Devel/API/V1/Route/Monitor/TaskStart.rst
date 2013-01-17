@@ -4,36 +4,36 @@ Start a task
 About
 -----
 
-  Start a task and return its status
+Start a task and return its status
 
 .. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/start/
 
-  ======================== ======
-   Informations
-  ======================== ======
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== ======
+======================== ======
+ Informations
+======================== ======
+ HTTP Method              POST
+ Requires Authentication  Yes
+======================== ======
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   task_id                  integer        The task id
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ task_id                  integer        The task id
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   task       The task you're monitoring
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ task       The task you're monitoring
+========== ================================
 
 Response sample
 ---------------

@@ -17,10 +17,10 @@ Web server configuration
 ------------------------
 
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 1
 
-   Configuration/Nginx
-   Configuration/Apache
+    Configuration/Nginx
+    Configuration/Apache
 
 Setup
 -----
@@ -30,8 +30,8 @@ proceed installation
 
 Installation is in five steps :
 
- * ApplicationBox / Databox and admin creation.
- * Tasks creation
+* ApplicationBox / Databox and admin creation.
+* Tasks creation
 
 Task start
 ----------

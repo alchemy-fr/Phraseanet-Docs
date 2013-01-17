@@ -2,13 +2,13 @@ Documentation API v1
 ====================
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   V1/Overview
-   V1/Upgrade/1.1
-   V1/Upgrade/1.2
-   V1/Authentication
-   V1/Routes
+    V1/Overview
+    V1/Upgrade/1.1
+    V1/Upgrade/1.2
+    V1/Authentication
+    V1/Routes
 
 Hello world !
 
@@ -20,9 +20,9 @@ we'll also do so.
 
 Start easy easy :
 
-  * Read the ':doc:`overview <V1/Overview>`
-  * Get familiar with :doc:`oAuth2 <V1/Authentication>`
-  * Find your :doc:`route <V1/Routes>` !
+* Read the ':doc:`overview <V1/Overview>`
+* Get familiar with :doc:`oAuth2 <V1/Authentication>`
+* Find your :doc:`route <V1/Routes>` !
 
 If you ever find bugs, please report them on the `mailing-list`_ or create a
 ticket on our `bug tracker`_.

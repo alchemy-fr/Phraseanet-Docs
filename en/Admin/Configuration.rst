@@ -40,11 +40,11 @@ Let's detail environment structure :
 
 * phraseanet (main conf)
 
-  * servername: Application URI (required)
-  * maintenance: Switch to maintenance mode
-  * debug: Switch to debug mode
-  * display_errors: Display error in the standard output
-  * database: Name of the database connection (required) see connexion.yml below
+    * servername: Application URI (required)
+    * maintenance: Switch to maintenance mode
+    * debug: Switch to debug mode
+    * display_errors: Display error in the standard output
+    * database: Name of the database connection (required) see connexion.yml below
 
 * template_engine : Templating service (required)
 * orm : Database Object Relationnal Mapper (required)
@@ -72,13 +72,13 @@ These connections are shared among services (Phraseanet, ORM, ...)
       driver: pdo_mysql
       charset: UTF8
 
-  * host: MySQL server address
-  * port: MySQL server port
-  * user:  MySQL user
-  * password: MySQL password
-  * dbname: Database name (application box)
-  * driver: Driver name see `complete Doctrine drivers list`_
-  * charset: connection encoding
+* host: MySQL server address
+* port: MySQL server port
+* user:  MySQL user
+* password: MySQL password
+* dbname: Database name (application box)
+* driver: Driver name see `complete Doctrine drivers list`_
+* charset: connection encoding
 
 Services.yml
 ************
@@ -130,15 +130,15 @@ Here's *doctrine_dev* service :
           log:
             service: Log\query_logger
 
-  * debug : Switch to debug mode
-  * dbal : The name of a connection in connexions.yml
-  * cache : Cache option parameters
+* debug : Switch to debug mode
+* dbal : The name of a connection in connexions.yml
+* cache : Cache option parameters
 
     * query : service **Cache\\array_cache** (see below)
     * result : service **Cache\\array_cache** (see below)
     * metadata : service **Cache\\apc_cache** (see below)
 
-  * log : service **Log\\query_logger** (see below)
+    * log : service **Log\\query_logger** (see below)
 
 .. seealso::
 
@@ -162,11 +162,11 @@ Here's *twig_prod*
           autoescape: true
           optimizer: true
 
-  * debug : Switch to debug mode
-  * charset : Template engine internal character encoding
-  * strict_variable : Stop rendering on unknown vars (for developers)
-  * autoescape: adds automatic output escaping.
-  * optimizer : Switch for `optimizer Twig`_ mode
+* debug : Switch to debug mode
+* charset : Template engine internal character encoding
+* strict_variable : Stop rendering on unknown vars (for developers)
+* autoescape: adds automatic output escaping.
+* optimizer : Switch for `optimizer Twig`_ mode
 
 .. seealso::
 
@@ -191,26 +191,26 @@ Doctrine activity.
           max_day: 2
           filename: doctrine-query.log
 
-  * output : Choose output format.
-    Available mods.
+* output : Choose output format.
+  Available mods.
 
     * json : Formatting in `Json`_
     * yaml : Formatting in `YAML`_
     * vdump : Display PHP output variable in a way that's readable by humans.
       see `var_dump`_
 
-  * channel : Channel's name used by the logger service.
-    It's a way to identify on which part of the application the log entry is
-    related on.
-  * handler : Attribute a specific handler for the log service.
+* channel : Channel's name used by the logger service.
+  It's a way to identify on which part of the application the log entry is
+  related on.
+* handler : Attribute a specific handler for the log service.
 
     * stream : Store logs into a single file.
     * rotate : Stores logs to files that are rotated every day and a limited
       number of files are kept.
 
-  * filename: File's name.
-  * max_day : Specify in days the frequency operated on files for the rotated
-    handler.
+* filename: File's name.
+* max_day : Specify in days the frequency operated on files for the rotated
+  handler.
 
 Cache service ArrayCache
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

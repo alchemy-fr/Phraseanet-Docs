@@ -4,36 +4,36 @@ Databox Metadatas
 About
 -----
 
-  Return Metadatas settings on specified databox
+Return Metadatas settings on specified databox
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/metadatas/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   databox_id               integer        The databox id on which the request is done
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ databox_id               integer        The databox id on which the request is done
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ==================== ================================
-  Field                Description
-  ==================== ================================
-   document_structure   The list of metadatas document structure
-  ==================== ================================
+==================== ================================
+Field                Description
+==================== ================================
+ document_structure   The list of metadatas document structure
+==================== ================================
 
 Response sample
 ---------------

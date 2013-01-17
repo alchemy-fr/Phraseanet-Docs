@@ -17,10 +17,10 @@ Configuration du serveur web
 ----------------------------
 
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 1
 
-   Configuration/Nginx
-   Configuration/Apache
+    Configuration/Nginx
+    Configuration/Apache
 
 Setup
 -----
@@ -29,11 +29,11 @@ Si les étapes précédentes ont été réalisées avec succès, se rendre à l�
 
 Le setup se déroule en cinq étapes :
 
- * Création du socle d’ApplicationBox
- * Création d’un compte administrateur
- * Connexion au module d’administration
- * Création d’une base de stockage type DataBox
- * Mise en place des tâches d’indexation et de sous-définitions
+* Création du socle d’ApplicationBox
+* Création d’un compte administrateur
+* Connexion au module d’administration
+* Création d’une base de stockage type DataBox
+* Mise en place des tâches d’indexation et de sous-définitions
 
 Démarrage des tâches
 --------------------

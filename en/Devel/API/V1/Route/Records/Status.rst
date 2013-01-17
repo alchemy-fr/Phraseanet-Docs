@@ -4,37 +4,37 @@ Records Status
 About
 -----
 
-  List all status of a record
+List all status of a record
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/status/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ================ ========= =============================
-   Parameters       Type     Information
-  ================ ========= =============================
-   databox_id       integer   The databox id of the record
-   record_id        integer   The record_id
-  ================ ========= =============================
+================ ========= =============================
+ Parameters       Type     Information
+================ ========= =============================
+ databox_id       integer   The databox id of the record
+ record_id        integer   The record_id
+================ ========= =============================
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   status     The list of the status of the record
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ status     The list of the status of the record
+========== ================================
 
 Response sample
 ---------------

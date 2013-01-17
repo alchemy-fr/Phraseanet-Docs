@@ -5,17 +5,17 @@ Phraseanet has a public API, allowing developers to embed
 documents (videos, photos, etc. ...) and features from Phraseanet
 into a third-party application.
 
- * web site
- * mobile application
- * desktop application
+* web site
+* mobile application
+* desktop application
 
 Here are the steps to follow :
 
-    * Read the :doc:`documentation de l'API <API>` receive assistance from the
-      :doc:`Phraseanet developers team and the community <Forums>`.
+* Read the :doc:`documentation de l'API <API>` receive assistance from the
+  :doc:`Phraseanet developers team and the community <Forums>`.
 
-    * To use the API features Phraseanet, you must register a new application
-      and get your API credentials.
+* To use the API features Phraseanet, you must register a new application
+  and get your API credentials.
 
 Register a new application with the Phraseanet API
 --------------------------------------------------
@@ -36,17 +36,17 @@ Click on *Create a new application*
 
 * Give a name to your application
 * Complete the application's description, this information is
-    for the user who will use your application, it will be
-    displayed on the login page, be precise and briefly explain the purpose of
-    your application
+  for the user who will use your application, it will be
+  displayed on the login page, be precise and briefly explain the purpose of
+  your application
 * Fill the website field, this field is mandatory.
-    This link is presented to the user on the login page to your
-    application
+  This link is presented to the user on the login page to your
+  application
 * Choose the type of the application *internet application* or
-    *desktop application*
+  *desktop application*
 * If it is a web application, complete the field callback URL.
-    Authenticated users will be automatically redirected to this URL
-    after their authentication
+  Authenticated users will be automatically redirected to this URL
+  after their authentication
 
 Once the application is registered it appears in a dashboard
 
@@ -68,11 +68,11 @@ The settings page of the application is displayed.
 
 * The *Client ID* is a public unique identifier of the application
 * The *Client Secret* is a private password of the application to identify
-    the application owner, never disclose this information.
+  the application owner, never disclose this information.
 * The callback URL, it can be edited at any time by moving the mouse over.
 * The API authentication endpoints
 * Activation of the password grant_type enables your application to identify users
-    through their Phraseanet identifiers .
+  through their Phraseanet identifiers .
 
 .. warning::
 
@@ -82,7 +82,7 @@ The settings page of the application is displayed.
     Phraseanet.
 
 * The developer token is an access token that identifies the owner of the
-    application to the Phraseanet API
+  application to the Phraseanet API
 
 .. note::
 

@@ -2,7 +2,7 @@
 ﻿Editer
 =======
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 Editer des documents
 --------------------
@@ -32,9 +32,7 @@ Editer des documents
     :align: center
 
 * -> Sélectionner des documents, un panier ou un reportage
-
 * -> Cliquer sur le bouton *Editer*
-
 * => La fenêtre **Editer** s'ouvre
 
 Toutes les vignettes sont sélectionnées.
@@ -54,7 +52,6 @@ Aucune modification ou ajout n’est validé tant que l’utilisateur n’a pas
 cliqué sur le bouton "Valider".
 
 *  -> Pour passer d'une rubrique à une autre, appuyer sur la touche **TAB**.
-
 *  -> Pour annuler les modifications en cours, cliquer sur *Annuler* ou appuyer
    sur la touche **Echap**.
 
@@ -63,7 +60,6 @@ Editer des champs de type date
 
 *  -> Sélectionner le ou les documents pour lesquels la date doit être modifiée
    ou ajoutée.
-
 * -> Saisir manuellement la date selon le format aaaammjj
 * -> Ou utiliser le calendrier proposé
 * -> Cliquer sur *Valider* pour enregistrer les modifications
@@ -100,7 +96,6 @@ présents seulement sur certaines notices en Orange.
     :align: center
 
 * -> Cliquer sur un des mots clés "Orange".
-
 * => Le terme s’affiche dans le masque de saisie.
 
 Le terme est absent des notices des documents ou le symbole "plus" s'affiche
@@ -113,7 +108,6 @@ Pour ajouter le terme à toutes les notices sélectionnées:
 
 * -> Appuyer sur la touche "entrée" du clavier ou cliquer sur le symbole "plus"
   qui se trouve à gauche du masque de saisie.
-
 * -> Cliquer sur le symbole "moins" à gauche du masque de saisie pour
   supprimer le terme de toutes les notices.
 
@@ -145,14 +139,12 @@ thésaurus.
 * -> Cliquer sur l'onglet thésaurus
 * -> Sélectionner un champ du type textuel lié au thésaurus
 * -> Commencer à saisir un terme
-
 * => L'onglet thésaurus s'actualise et affiche les termes commençant par...
 
 .. image:: ../../images/Prod-Editer-thesaurus.jpg
     :align: center
 
 * -> Faire un double clic sur le terme à indexer
-
 * => il est immédiatement ajouté aux documents sélectionnés.
 
 .. note::
@@ -175,7 +167,6 @@ Phraseanet Administration <AdministrationBasesCollections>`
 
 * -> Cliquer sur le menu contextuel
 * -> Faire un double clic pour sélectionner une valeur dans la liste
-
 * => la valeur est ajoutée au champ.
 
 .. note::
@@ -209,7 +200,6 @@ sur les documents en cours d’édition.
 * -> Saisir le terme de remplacement
 * -> Appliquer les options si nécessaire
 * -> Cliquer sur Valider
-
 * => Le nouveau terme remplace le précédent dans les notices
 
 Utiliser l'onglet Modèles
@@ -237,7 +227,6 @@ Un modèle est créé à partir d'une notice en cours d'édition.
 * -> Choisir les champs à reprendre, les champs contenant des termes sont
   sélectionnés par défaut
 * -> Cliquer sur Valider pour enregistrer le modèle
-
 * => Le nouveau modèle est affiché dans la liste des modèles
 
 Appliquer un modèle à une sélection de documents
@@ -271,7 +260,6 @@ En mode recherche reportage
 
 * -> Sélectionner plusieurs reportages depuis les résultats
 * -> Cliquer sur Editer
-
 * => la fenêtre Editer s'ouvre
 
 Le principe de fonctionnement est identique à celle de l'édition des documents
@@ -288,7 +276,6 @@ ou
 
 * -> Cliquer sur Editer depuis la barre d'action locale du reportage quand
   celui-ci est dans la zone de travail.
-
 * => La fenêtre Editer s'ouvre
 
 .. image:: ../../images/Prod-Editer-reportage.jpg

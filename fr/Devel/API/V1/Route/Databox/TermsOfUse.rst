@@ -4,37 +4,37 @@ Récupérer les conditions générales d'utilisation (CGU) d'une databox
 A propos
 --------
 
-  Retourne les conditions générales d'utilisation d'une databox pour chacune
-  des langues disponibles
+Retourne les conditions générales d'utilisation d'une databox pour chacune
+des langues disponibles
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/termsOfUse/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   databox_id               entier         L'identifiant de la databox sélectionnée
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ databox_id               entier         L'identifiant de la databox sélectionnée
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ============ ================================
-  Attribut      Description
-  ============ ================================
-   termsOfUse   La liste des conditions d'utilisation pour chaque langage
-  ============ ================================
+============ ================================
+Attribut      Description
+============ ================================
+ termsOfUse   La liste des conditions d'utilisation pour chaque langage
+============ ================================
 
 Exemple de réponse
 ------------------

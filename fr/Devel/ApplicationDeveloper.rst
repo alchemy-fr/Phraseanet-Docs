@@ -5,17 +5,17 @@ Phraseanet dispose d'une API publique, permettant aux développeurs d'intégrer
 les documents (vidéos, photos etc ...) et fonctionnalités Phraseanet sur une
 application tierce.
 
- * site internet
- * application mobile
- * application de bureau
+* site internet
+* application mobile
+* application de bureau
 
 Voici la marche à suivre :
 
-    * Lire la :doc:`documentation de l'API <API>` et bénéficier de l'aide
-      de :doc:`l'équipe Phraseanet et de la communauté <Forums>`.
+* Lire la :doc:`documentation de l'API <API>` et bénéficier de l'aide
+  de :doc:`l'équipe Phraseanet et de la communauté <Forums>`.
 
-    * Pour pouvoir utiliser les fonctionnalités de l'API Phraseanet, Il faut
-      enregistrer une nouvelle application et obtenir une clé d'API.
+* Pour pouvoir utiliser les fonctionnalités de l'API Phraseanet, Il faut
+  enregistrer une nouvelle application et obtenir une clé d'API.
 
 Enregistrer une application auprés de l'API phraseanet
 ------------------------------------------------------

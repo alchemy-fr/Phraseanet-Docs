@@ -4,40 +4,40 @@ Lister le contenu des flux agrégé
 A propos
 --------
 
-  Retourne le contenu agrégé de tous les fux disponibles
+Retourne le contenu agrégé de tous les fux disponibles
 
 .. code-block:: bash
 
     /api/v1/feeds/content/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =================================
-   Paramètres               Type           Information
-  ======================== ============== =================================
-   offset_start             entier         La première entrée à trouver
-   per_page                 entier         Le nombre d'entrée à trouver
-  ======================== ============== =================================
+======================== ============== =================================
+ Paramètres               Type           Information
+======================== ============== =================================
+ offset_start             entier         La première entrée à trouver
+ per_page                 entier         Le nombre d'entrée à trouver
+======================== ============== =================================
 
 Attribut de la réponse
 ----------------------
 
-  =============== ================================
-   Attribut           Description
-  =============== ================================
-   total_entries   Le nombre d'entrées
-   entries         La liste des entrées
-   offset_start    Le numéro de la première entrée
-   per_page        La quantitée d'entrée à retourner
-  =============== ================================
+=============== ================================
+ Attribut           Description
+=============== ================================
+ total_entries   Le nombre d'entrées
+ entries         La liste des entrées
+ offset_start    Le numéro de la première entrée
+ per_page        La quantitée d'entrée à retourner
+=============== ================================
 
 Exemple de réponse
 ------------------

@@ -4,19 +4,19 @@ Root
 About
 -----
 
-  This route id available since Phraseanet 1.2 and provides  public informations
-  about the API. This route is not versionned.
+This route id available since Phraseanet 1.2 and provides  public informations
+about the API. This route is not versionned.
 
 .. code-block:: bash
 
     /api/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  NO
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  NO
+======================== =====
 
 Example of use
 --------------
@@ -28,20 +28,20 @@ Example of use
 Parameters
 ----------
 
-  No parameters for this route
+No parameters for this route
 
 Response Fields
 ---------------
 
-  =============== ================================
-   Field           Description
-  =============== ================================
-   name            Install title
-   type            Application type (phraseanet)
-   description     Install description
-   documentation   API documentation link
-   version         Available API versions and their parameters
-  =============== ================================
+=============== ================================
+ Field           Description
+=============== ================================
+ name            Install title
+ type            Application type (phraseanet)
+ description     Install description
+ documentation   API documentation link
+ version         Available API versions and their parameters
+=============== ================================
 
 Response sample
 ---------------

@@ -4,19 +4,19 @@ Lister les sous-définitions d'un document
 A propos
 --------
 
-  Retourne les permaliens des sous-définitions disponibles pour le document
-  sélectionné.
+Retourne les permaliens des sous-définitions disponibles pour le document
+sélectionné.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/embed/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
@@ -31,23 +31,23 @@ Il faut utiliser les paramètres :
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
-  ======================== ============== ==============================
-   Paramètres               Type           Information
-  ======================== ============== ==============================
-   databox_id               entier         L'identifiant de la databox auquel appartient le document
-   record_id                entier         L'identifiant du document sélectionné
-   devices                  tableau        Un tableau des devices sur lequel restreindre la query (optionnel)
-   mimes                    tableau        Un tableau de type mime sur lequel restreindre la recherche (optionnel)
-  ======================== ============== ==============================
+======================== ============== ==============================
+ Paramètres               Type           Information
+======================== ============== ==============================
+ databox_id               entier         L'identifiant de la databox auquel appartient le document
+ record_id                entier         L'identifiant du document sélectionné
+ devices                  tableau        Un tableau des devices sur lequel restreindre la query (optionnel)
+ mimes                    tableau        Un tableau de type mime sur lequel restreindre la recherche (optionnel)
+======================== ============== ==============================
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-    embed     La liste des sous-definitions disponibles pour le document sélectionné
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+  embed     La liste des sous-definitions disponibles pour le document sélectionné
+========== ================================
 
 Exemple de réponse
 ------------------

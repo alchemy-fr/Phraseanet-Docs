@@ -4,62 +4,64 @@ Records Search
 About
 -----
 
-  Return the result of record search.
+Return the result of record search.
 
-  This route is deprecated since version 1.3 in favor of
-  :doc:`search <../Search>`.
+.. warning::
+
+    This route is deprecated since version 1.3 in favor of
+    :doc:`search <../Search>`.
 
 .. code-block:: bash
 
     /api/v1/records/search/
 
-  ======================== ======
-   Informations
-  ======================== ======
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== ======
+======================== ======
+ Informations
+======================== ======
+ HTTP Method              POST
+ Requires Authentication  Yes
+======================== ======
 
 Parameters
 ----------
 
-  ============= =========== ========= =============
-   Parameters    Type        Example   Information
-  ============= =========== ========= =============
-   query         string                Search query ; search query is the same syntax as in phraseanet. Default value is an string, which equals “all records”
-   bases         array                 An array of base_ids ; If an empty array or no value are provided, the query is done on all collections
-   offset_start  int         0         The number of the requested page (first page is page 1)
-   per_page      int         10        The number of records per page
-   ord           string                This feature is currently only available with SphinxSearch Engine. Available values are “asc” and “desc”
-   sort          string                This feature is currently only available with SphinxSearch Engine. Available values are “relevance” and “created_on” and “random”
-   record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”
-   search_type   int         0         A toggle to switch records search or stories search. Available values are 0 for records and 1 for stories
-   stemme        int         1         This feature is currently only available with SphinxSearch Engine. Enable stemmed search
-   date_field    string                Select a field to search with datemin and datemax filters
-   date_min      string                The minimum date as string formated as follow 'd/m/Y' (you need to set a datefield value to use this feature)
-   date_max      string                The maximum date formated as follow 'd/m/Y' (you need to set a datefield value to use this feature)
-   status        array
-   fields        array
-  ============= =========== ========= =============
+============= =========== ========= =============
+ Parameters    Type        Example   Information
+============= =========== ========= =============
+ query         string                Search query ; search query is the same syntax as in phraseanet. Default value is an string, which equals “all records”
+ bases         array                 An array of base_ids ; If an empty array or no value are provided, the query is done on all collections
+ offset_start  int         0         The number of the requested page (first page is page 1)
+ per_page      int         10        The number of records per page
+ ord           string                This feature is currently only available with SphinxSearch Engine. Available values are “asc” and “desc”
+ sort          string                This feature is currently only available with SphinxSearch Engine. Available values are “relevance” and “created_on” and “random”
+ record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”
+ search_type   int         0         A toggle to switch records search or stories search. Available values are 0 for records and 1 for stories
+ stemme        int         1         This feature is currently only available with SphinxSearch Engine. Enable stemmed search
+ date_field    string                Select a field to search with datemin and datemax filters
+ date_min      string                The minimum date as string formated as follow 'd/m/Y' (you need to set a datefield value to use this feature)
+ date_max      string                The maximum date formated as follow 'd/m/Y' (you need to set a datefield value to use this feature)
+ status        array
+ fields        array
+============= =========== ========= =============
 
 Response Fields
 ---------------
 
-  ================== ================================
-   Field              Description
-  ================== ================================
-  offset_start        The start offset
-  per_page            The number of results per page
-  available_results   The amount of results available through this query. This number may be lower than available results ; SphinxSearch Engine has a limited number of results which can be retrieved and is, by default 1000. However, this limit can be configured
-  total_results       The amount of results corresponding to the query
-  error               A string with an error from the searchengine
-  warning             A string with a warning from the searchengine
-  query_time          The time of the query execution by search engine in seconds
-  search_indexes      The searchIndexes used by search engine
-  results             The list of available collections
-  query               The query sent to the search engine
-  suggestions
-  ================== ================================
+================== ================================
+ Field              Description
+================== ================================
+offset_start        The start offset
+per_page            The number of results per page
+available_results   The amount of results available through this query. This number may be lower than available results ; SphinxSearch Engine has a limited number of results which can be retrieved and is, by default 1000. However, this limit can be configured
+total_results       The amount of results corresponding to the query
+error               A string with an error from the searchengine
+warning             A string with a warning from the searchengine
+query_time          The time of the query execution by search engine in seconds
+search_indexes      The searchIndexes used by search engine
+results             The list of available collections
+query               The query sent to the search engine
+suggestions
+================== ================================
 
 Query Sample
 ------------

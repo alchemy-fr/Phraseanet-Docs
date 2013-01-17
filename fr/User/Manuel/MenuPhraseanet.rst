@@ -1,7 +1,7 @@
 Le menu Phraseanet
 ------------------
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
 .. topic:: L'essentiel
 
@@ -13,6 +13,7 @@ Le menu Phraseanet
 
 Accès aux interfaces
 ********************
+
 La dernière application utilisée pour quitter se lance par défaut.
 Toutes les applications proposent en haut de la fenêtre la même barre de navigation.
 
@@ -36,6 +37,7 @@ du compte, l'aide en ligne avec les raccourcis clavier et le lien de déconnexio
 
 Accès aux notifications
 ***********************
+
 Les notifications sont des messages informatifs affichés en temps réel.
 Ils renseignent l'utilisateurs des demandes de validation, de réception de
 paniers...
@@ -78,10 +80,9 @@ L'utilisateur peut à tout moment effectuer une demande d'accès à une collecti
 Pour faire une demande pour accéder à de nouvelles bases ou collections de
 documents et d'en visualiser l'état:
 
-  * Cocher une ou plusieurs cases pour demander l'accès à de nouvelles
-    Bases/ Collections
-
-  * Valider la demande en cliquant sur le bouton *Valider*
+* Cocher une ou plusieurs cases pour demander l'accès à de nouvelles
+  Bases/ Collections
+* Valider la demande en cliquant sur le bouton *Valider*
 
 Un message indique alors que qu'une demande d'accès est en cours.
 
@@ -90,17 +91,20 @@ Un message indique alors que qu'une demande d'accès est en cours.
 
 Sessions
 ^^^^^^^^
+
 La section *Sessions* liste les sessions Phraseanet de l'utilisateur. Elle donne
 des informations relatives aux dates de connexion et d'accès, aux adresses ip,
 navigateurs et résolutions d'écran détectées.
 
 Application
 ^^^^^^^^^^^
+
 La section *Applications* liste les applications tierces autorisées à se connecter
 au compte Phraseanet.
 
 Développeur
 ^^^^^^^^^^^
+
 La section *Développeur* permet la mise en place de clés d'API afin que des
 applications tierces puissent communiquer avec un compte Phraseanet. Un lien
 vers la documentation destinée aux développeurs est disponible dans cette section
@@ -108,6 +112,7 @@ afin de découvrir comment mettre en oeuvre les API Phraseanet.
 
 Accès à l'aide en ligne
 ***********************
+
 En cliquant sur l'onglet "Aide", l'utilisateur est redirigé vers cette documentation
 en ligne.
 En cliquant sur la flèche près de l'aide, deux sous-onglets apparaîssent: les

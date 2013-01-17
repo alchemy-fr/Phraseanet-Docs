@@ -4,37 +4,37 @@ Baskets SetName
 About
 -----
 
-  Return
+Return
 
 .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/setname/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              POST
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   basket_id                integer        The basket_id of the selected basket
-   name                     string         The name of the basket
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ basket_id                integer        The basket_id of the selected basket
+ name                     string         The name of the basket
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ============= ================================
-   Field         Description
-  ============= ================================
-   basket        The basket
-  ============= ================================
+============= ================================
+ Field         Description
+============= ================================
+ basket        The basket
+============= ================================
 
 Response sample
 ---------------

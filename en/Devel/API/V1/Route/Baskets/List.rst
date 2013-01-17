@@ -4,32 +4,32 @@ Baskets List
 About
 -----
 
-  Return the baskets list of the authenticated user
+Return the baskets list of the authenticated user
 
 .. code-block:: bash
 
     /api/v1/baskets/list/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  No parameters for this route
+No parameters for this route
 
 Response Fields
 ---------------
 
-  ============= ================================
-   Field         Description
-  ============= ================================
-   baskets       The list of my baskets
-  ============= ================================
+============= ================================
+ Field         Description
+============= ================================
+ baskets       The list of my baskets
+============= ================================
 
 Response sample
 ---------------

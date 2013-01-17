@@ -4,36 +4,36 @@ Databox Collections
 About
 -----
 
-  Return available Collections on specified databox
+Return available Collections on specified databox
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/collections/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   databox_id               integer        The databox id on which the request is done
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ databox_id               integer        The databox id on which the request is done
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ============= ================================
-  Field          Description
-  ============= ================================
-   Collections   The list of available collections
-  ============= ================================
+============= ================================
+Field          Description
+============= ================================
+ Collections   The list of available collections
+============= ================================
 
 Response sample
 ---------------

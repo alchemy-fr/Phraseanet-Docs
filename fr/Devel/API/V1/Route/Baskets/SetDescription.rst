@@ -4,37 +4,37 @@ Ajouter une description d'un panier
 A propos
 --------
 
-  Met à jour la description du panier sélectionné
+Met à jour la description du panier sélectionné
 
 .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/setdescription/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               POST
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               POST
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type          Information
-  ======================== ============== =============
-   basket_id                entier         L'indentifiant du basket sélectionné
-   description              chaîne         La description du basket
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type          Information
+======================== ============== =============
+ basket_id                entier         L'indentifiant du basket sélectionné
+ description              chaîne         La description du basket
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ============= ================================
-   Attribut      Description
-  ============= ================================
-   basket        Le panier
-  ============= ================================
+============= ================================
+ Attribut      Description
+============= ================================
+ basket        Le panier
+============= ================================
 
 Exemple de réponse
 ------------------

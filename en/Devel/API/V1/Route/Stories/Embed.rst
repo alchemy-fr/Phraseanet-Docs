@@ -4,18 +4,18 @@ Stories Embed
 About
 -----
 
-  Returns permalinks to medias attached to the story.
+Returns permalinks to medias attached to the story.
 
 .. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/embed/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
@@ -27,23 +27,23 @@ following parameters :
 
     devices[]=mobile&mimes[]=video/mp4&mimes[]=video/ogg&mimes[]=video/webm
 
-  ======================== ============== ==============================
-   Parameters               Type           Information
-  ======================== ============== ==============================
-   databox_id               integer        The databox id of the story
-   story_id                 integer        The story_id
-   devices                  array          An array of devices to restrict the list (optionnal)
-   mimes                    array          An array of mime type to restrict the list (optionnal)
-  ======================== ============== ==============================
+======================== ============== ==============================
+ Parameters               Type           Information
+======================== ============== ==============================
+ databox_id               integer        The databox id of the story
+ story_id                 integer        The story_id
+ devices                  array          An array of devices to restrict the list (optionnal)
+ mimes                    array          An array of mime type to restrict the list (optionnal)
+======================== ============== ==============================
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-    embed     The list of the sub views of the story
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+  embed     The list of the sub views of the story
+========== ================================
 
 Response sample
 ---------------

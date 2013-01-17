@@ -2,7 +2,7 @@ Importer
 =========
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -31,6 +31,7 @@ Importer
 
 Ajouter des documents
 ---------------------
+
 Cliquer sur Upload dans le :doc:`menu <General>` Phraseanet.
 
 .. image:: ../../images/Upload-lancer.jpg
@@ -40,6 +41,7 @@ Cliquer sur Upload dans le :doc:`menu <General>` Phraseanet.
 
 Sélectionner des fichiers
 *************************
+
 Cliquer sur "Sélectionner les fichiers".
 
 .. image:: ../../images/Upload-zone1.jpg
@@ -59,6 +61,7 @@ qui apparaissent en bas d'écran.
 
 Choisir la collection de destination
 ************************************
+
 Choisir la collection de destination : Cliquer sur le menu déroulant des
 collections disponibles.
 
@@ -67,6 +70,7 @@ collections disponibles.
 
 Appliquer des status
 ********************
+
 Si besoin, appliquer les statuts si nécessaire (optionnel).
 
 .. image:: ../../images/Upload-zone3.jpg
@@ -74,6 +78,7 @@ Si besoin, appliquer les statuts si nécessaire (optionnel).
 
 Réordonner les documents
 ************************
+
 L'utilisateur peut éventuellement ré-ordonner les documents : Cliquer sur un
 fichier et le glisser/ déposer ailleurs dans la liste. Il peut également choisir
 de retirer de la liste une ou plusieurs images (en cliquant sur le bouton Annuler
@@ -85,6 +90,7 @@ sur « **Vider la liste** ». Sinon, cliquer sur « **Envoyer** ».
 
 Transmettre les documents
 *************************
+
 Lorsque l'utilisateur clique sur "Envoyer", toutes les images sont transférées
 vers la collection Phraseanet, cela est visible en temps réel sur le côté droit
 de la fenêtre (« Fichiers transmis »).
@@ -103,6 +109,7 @@ ou Phraseanet Classic (simple consultation).
 
 La Quarantaine
 --------------
+
 Lors de l'ajout de fichiers, certains fichiers peuvent être placés en "Quarantaine".
 
 Cliquer sur l'onglet **Quarantaine** pour l'afficher.

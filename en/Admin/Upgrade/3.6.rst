@@ -4,13 +4,13 @@ Version 3.6
 Changes :
 -----------------
 
-  * A major schema enhancement happens for meta values. Multivalued values were
-    stored serialized and are now stored separatly.
-    Two routes are modified : :doc:`Records/Metadatas
-    </Devel/API/V1/Route/Records/Metadatas>` and :doc:`Records/SetMetadatas
-    </Devel/API/V1/Route/Records/SetMetadatas>`.
-    A route has been added to make it easy to display caption :
-    :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
+* A major schema enhancement happens for meta values. Multivalued values were
+  stored serialized and are now stored separatly.
+  Two routes are modified : :doc:`Records/Metadatas
+  </Devel/API/V1/Route/Records/Metadatas>` and :doc:`Records/SetMetadatas
+  </Devel/API/V1/Route/Records/SetMetadatas>`.
+  A route has been added to make it easy to display caption :
+  :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
 
 .. seealso::
 
@@ -27,15 +27,15 @@ Changes :
 What's new ?
 --------------
 
-  * Push / Feedback refactor.
+* Push / Feedback refactor.
 
-  * Users can now create users lists to easily push and validate records. These
-    lists can be shared between users.
+* Users can now create users lists to easily push and validate records. These
+  lists can be shared between users.
 
-  * WorkZone refactor.
+* WorkZone refactor.
 
-  * Baskets can now be "Archived".
+* Baskets can now be "Archived".
 
-  * Add a baskets browser to Unarchived previous baskets.
+* Add a baskets browser to Unarchived previous baskets.
 
-  * Multivalued fields can now contains ressources like users as values.
+* Multivalued fields can now contains ressources like users as values.

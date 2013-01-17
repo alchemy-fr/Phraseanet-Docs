@@ -4,40 +4,40 @@ Feeds Aggregated Content
 About
 -----
 
-  Return the aggregated content of a all feeds available
+Return the aggregated content of a all feeds available
 
 .. code-block:: bash
 
     /api/v1/feeds/content/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =================================
-   Parameters               Type           Information
-  ======================== ============== =================================
-   offset_start             integer        The first entry to retrieve
-   per_page                 integer        The number of entry to retrieve
-  ======================== ============== =================================
+======================== ============== =================================
+ Parameters               Type           Information
+======================== ============== =================================
+ offset_start             integer        The first entry to retrieve
+ per_page                 integer        The number of entry to retrieve
+======================== ============== =================================
 
 Response Fields
 ---------------
 
-  =============== ================================
-   Field           Description
-  =============== ================================
-   total_entries   The number of entries
-   entries         The entries
-   offset_start    Starting offset
-   per_page        The quantity of entries per page
-  =============== ================================
+=============== ================================
+ Field           Description
+=============== ================================
+ total_entries   The number of entries
+ entries         The entries
+ offset_start    Starting offset
+ per_page        The quantity of entries per page
+=============== ================================
 
 Response sample
 ---------------

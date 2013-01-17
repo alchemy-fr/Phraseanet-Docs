@@ -4,36 +4,36 @@ Lister le contenu d'une entrée
 A propos
 --------
 
-  Retourne le contenu de l'entrée sélectionnée
+Retourne le contenu de l'entrée sélectionnée
 
 .. code-block:: bash
 
     /api/v1/feeds/entry/{entry_id}/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   entry_id                 entier         L'identifiant de l'entrée sélectionnée
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ entry_id                 entier         L'identifiant de l'entrée sélectionnée
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  =============== ================================
-   Attribut        Description
-  =============== ================================
-   entry           L'entrée sélectionnée
-  =============== ================================
+=============== ================================
+ Attribut        Description
+=============== ================================
+ entry           L'entrée sélectionnée
+=============== ================================
 
 Exemple de réponse
 ------------------

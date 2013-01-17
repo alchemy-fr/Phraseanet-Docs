@@ -4,38 +4,38 @@ Changer un document de collection
 A propos
 --------
 
-  Change un document d'une collection à une autre
+Change un document d'une collection à une autre
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setcollection/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP              POST
-   Authentification requise  Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP              POST
+ Authentification requise  Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   databox_id               entier         L'identifiant de la databox auquel appartient le document
-   record_id                entier         L'identifiant du document sélectionné
-   base_id                  entier         L'identifiant de la collection de destination
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ databox_id               entier         L'identifiant de la databox auquel appartient le document
+ record_id                entier         L'identifiant du document sélectionné
+ base_id                  entier         L'identifiant de la collection de destination
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-   record     L'enregistrement mis à jour
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+ record     L'enregistrement mis à jour
+========== ================================
 
 Exemple de réponse
 ------------------

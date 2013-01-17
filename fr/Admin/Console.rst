@@ -70,7 +70,7 @@ développement.
 
 **option** :
 
-    * *--strict* : Echoue si il y a des alertes.
+* *--strict* : Echoue si il y a des alertes.
 
 check:ensure-prod-settings
 --------------------------
@@ -80,7 +80,7 @@ production.
 
 **option** :
 
-    * *--strict* : Echoue si il y a des alertes.
+* *--strict* : Echoue si il y a des alertes.
 
 check:system
 ------------
@@ -88,14 +88,14 @@ check:system
 Valide la :doc:`configuration </Admin/Prerequis>` nécessaire au bon
 fonctionnement de l'application Phraseanet.
 
-    * Des binaires
-    * Du système de fichiers
-    * Du cache :doc:`opcode </Admin/Optimisation>`
-    * Du :doc:`serveur de cache </Admin/Optimisation>`
-    * PHP
-    * Extensions PHP
-    * Extensions Phrasea
-    * Locales système
+* Des binaires
+* Du système de fichiers
+* Du cache :doc:`opcode </Admin/Optimisation>`
+* Du :doc:`serveur de cache </Admin/Optimisation>`
+* PHP
+* Extensions PHP
+* Extensions Phrasea
+* Locales système
 
 fields:delete
 -------------
@@ -104,8 +104,8 @@ Supprimer un champ documentaire de la databox.
 
 **option** :
 
-    * *--sbas_id (-s)* : sbas_id de la databox
-    * *--meta_struct_id (-m)* : id de la metastructure
+* *--sbas_id (-s)* : sbas_id de la databox
+* *--meta_struct_id (-m)* : id de la metastructure
 
 fields:list
 -----------
@@ -119,12 +119,12 @@ Fusionner plusieur champs de la structure documentaire.
 
 **option** :
 
-    * *--source (-f)* : ids de la metastructure source (plusieurs valeurs sont
-      authorisées)
-    * *--destination (-d)* : id de la metastructure de destination
-    * *--sbas_id (-s)* : sbas_id de la databox
-    * *--separator* : Séparateur pour la concaténation (si la destination est
-        monovaluée) (default: ;)
+* *--source (-f)* : ids de la metastructure source (plusieurs valeurs sont
+  authorisées)
+* *--destination (-d)* : id de la metastructure de destination
+* *--sbas_id (-s)* : sbas_id de la databox
+* *--separator* : Séparateur pour la concaténation (si la destination est
+    monovaluée) (default: ;)
 
 fields:rename
 -------------
@@ -133,9 +133,9 @@ Renommer un champs documentaire.
 
 **option** :
 
-    * *--name (-n)* : Le nouveau nom
-    * *--meta_struct_id (-m)* : id de la metastructure
-    * *--sbas_id (-s)* : sbas_id de la databox
+* *--name (-n)* : Le nouveau nom
+* *--meta_struct_id (-m)* : id de la metastructure
+* *--sbas_id (-s)* : sbas_id de la databox
 
 scheduler:start
 ---------------
@@ -195,9 +195,10 @@ system:backup-db
 ----------------
 
 Sauvegarde l'état des bases de données.
- **argument** :
 
-    * *directory* : Le répertoire ou stocker la sauvegarde.
+**argument** :
+
+* *directory* : Le répertoire ou stocker la sauvegarde.
 
 system:clear-cache
 ------------------
@@ -211,7 +212,7 @@ Vérifie l'unicité des adresses mails des utilisateurs.
 
 **option** :
 
-    * *--list* : Liste tous les doublons.
+* *--list* : Liste tous les doublons.
 
 system:template-generator
 -------------------------

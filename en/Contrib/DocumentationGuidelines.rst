@@ -12,10 +12,10 @@ documentation.
 Rules
 -----
 
-  * Lines do not exceed 80 characters
-  * Text must be UTF-8 encoded
-  * Documentation should not be optimized for PDF nor HTML
-  * Documentation must be publishable as GPLv3
+* Lines do not exceed 80 characters
+* Text must be UTF-8 encoded
+* Documentation should not be optimized for PDF nor HTML
+* Documentation must be publishable as GPLv3
 
 Memo
 ----
@@ -35,28 +35,28 @@ Structure
 
   * Titles and Sub-Titles ::
 
-      H1 -- Titre
-      ===========
+        H1 -- Titre
+        ===========
 
-      H2 -- Sub titre
-      ---------------
+        H2 -- Sub titre
+        ---------------
 
-      H3 -- Sub section
-      ******************
+        H3 -- Sub section
+        ******************
 
-      H4 -- Sub sub section
-      ^^^^^^^^^^^^^^^^^^^^^
+        H4 -- Sub sub section
+        ^^^^^^^^^^^^^^^^^^^^^
 
-      H5
-      ~~~~~~~~~~~~~~~~~~~~~~~
+        H5
+        ~~~~~~~~~~~~~~~~~~~~~~~
 
   * Images ::
 
-      .. figure:: ../images/gplv3.png
-        :align:  center
-        :alt:    GPLv3 logo
+        .. figure:: ../images/gplv3.png
+          :align:  center
+          :alt:    GPLv3 logo
 
-        License GNU GPL v3
+          License GNU GPL v3
 
     .. figure:: ../images/gplv3.png
       :align:  center

@@ -2,7 +2,7 @@
 ==================
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -30,7 +30,6 @@ Comment pousser des documents ?
 
 * Sélectionner un ou plusieurs documents dans la zone d'affichage de
   :doc:`Résultats <Afficher>` de l'interface de *Production*.
-
 * Cliquer sur le bouton Push de la :doc:`Palette des Actions <Actions>`
   Phraseanet : une fenêtre de type Overlay s'ouvre et présente alors la
   fenêtre de Push.
@@ -102,7 +101,6 @@ par l'attribution de privilèges supplémentaires optionnels.
 
 * Sélectionner un ou plusieurs documents dans la zone d'affichage de
   résultats de l'interface de Production
-
 * Cliquer sur la rubrique Validation du menu Push de la palette des actions
   Phraseanet : une fenêtre de type overlay s'ouvre et présente alors la
   fenêtre de Validation.
@@ -174,6 +172,7 @@ d'envoi.
 
 Créer et éditer une liste d'envoi
 *********************************
+
 Pour créer une nouvelle liste dans le *Gestionnaire de listes*, cliquer sur le
 lien *Ajouter*.
 
@@ -197,7 +196,6 @@ lien *Ajouter*.
   les lignes des utilisateurs à ajouter.
   Les utilisateurs ajoutés ou présent dans la liste éditée sont surlignés en
   couleur ocre.
-
 * Pour supprimer un ou plusieurs utilisateurs de la liste d'envoi éditée,
   sélectionner les lignes des utilisateurs correspondants : cela a pour effet
   de les supprimer de la liste.

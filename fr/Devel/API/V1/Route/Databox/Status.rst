@@ -4,36 +4,36 @@ Lister les status d'une databox
 A propos
 --------
 
-  Retourne la liste des status disponibles de la databox sélectionnée
+Retourne la liste des status disponibles de la databox sélectionnée
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/status/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   databox_id               entier         L'identifiant de la databox sélectionnée
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ databox_id               entier         L'identifiant de la databox sélectionnée
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ========== ================================
-   Attribut   Description
-  ========== ================================
-   status     La liste des status disponibles
-  ========== ================================
+========== ================================
+ Attribut   Description
+========== ================================
+ status     La liste des status disponibles
+========== ================================
 
 Exemple de réponse
 ------------------

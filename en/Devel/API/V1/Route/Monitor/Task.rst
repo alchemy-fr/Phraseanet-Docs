@@ -4,36 +4,36 @@ Task Monitor
 About
 -----
 
-  Returns all informations about a task
+Returns all informations about a task
 
 .. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   task_id                  integer        The task id
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ task_id                  integer        The task id
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   task       The task you're monitoring
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ task       The task you're monitoring
+========== ================================
 
 Response sample
 ---------------

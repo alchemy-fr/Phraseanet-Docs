@@ -4,36 +4,36 @@ Lister les collections d'une databox
 A propos
 --------
 
-  Retourne la liste des collections disponibles de la databox sélectionnée
+Retourne la liste des collections disponibles de la databox sélectionnée
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/collections/
 
-  ========================== =====
-   Informations
-  ========================== =====
-   Méthode HTTP               GET
-   Authentification requise   Oui
-  ========================== =====
+========================== =====
+ Informations
+========================== =====
+ Méthode HTTP               GET
+ Authentification requise   Oui
+========================== =====
 
 Paramètres
 ----------
 
-  ======================== ============== =============
-   Paramètres               Type           Information
-  ======================== ============== =============
-   databox_id               entier         L'identifiant de la databox sélectionnée
-  ======================== ============== =============
+======================== ============== =============
+ Paramètres               Type           Information
+======================== ============== =============
+ databox_id               entier         L'identifiant de la databox sélectionnée
+======================== ============== =============
 
 Attribut de la réponse
 ----------------------
 
-  ============= ================================
-  Attribut       Description
-  ============= ================================
-   Collections   La lsite des collections disponibles
-  ============= ================================
+============= ================================
+Attribut       Description
+============= ================================
+ Collections   La lsite des collections disponibles
+============= ================================
 
 Exemple de réponse
 ------------------

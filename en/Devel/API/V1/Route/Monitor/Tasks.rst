@@ -4,32 +4,32 @@ Tasks monitor
 About
 -----
 
-  Returns all information about all tasks
+Returns all information about all tasks
 
 .. code-block:: bash
 
     /api/v1/monitor/tasks/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  No parameters for this route
+No parameters for this route
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   tasks      The tasks you're monitoring
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ tasks      The tasks you're monitoring
+========== ================================
 
 Response sample
 ---------------

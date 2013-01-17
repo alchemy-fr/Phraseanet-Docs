@@ -2,7 +2,7 @@
 ========
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 

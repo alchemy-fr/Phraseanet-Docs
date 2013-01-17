@@ -15,7 +15,7 @@ records/setmetadatas, therefore the upgrade of API to version 1.1.
 Route records/metadatas
 -----------------------
 
-  Route records/metadatas was returning results like :
+Route records/metadatas was returning results like :
 
 .. code-block:: javascript
 
@@ -36,7 +36,7 @@ Route records/metadatas
         ]
     }
 
-  Responses in API 1.1 are now like :
+Responses in API 1.1 are now like :
 
 .. code-block:: javascript
 
@@ -68,10 +68,10 @@ Route records/metadatas
 Route records/caption
 *********************
 
-  For developers who were using this route to display caption, we add the route
-  :doc:`records/caption </Devel/API/V1/Route/Records/Caption>` which is easier
-  in that case. You should use records/metadatas when you're planning to edit
-  metadatas.
+For developers who were using this route to display caption, we add the route
+:doc:`records/caption </Devel/API/V1/Route/Records/Caption>` which is easier
+in that case. You should use records/metadatas when you're planning to edit
+metadatas.
 
 .. code-block:: javascript
 
@@ -94,7 +94,7 @@ Route records/caption
 Route records/setmetadatas
 --------------------------
 
-  La route records/setmetadatas was working like this :
+La route records/setmetadatas was working like this :
 
 .. code-block:: javascript
 
@@ -125,7 +125,7 @@ Route records/setmetadatas
         }
     }
 
-  Now, you must use it like this :
+Now, you must use it like this :
 
 .. code-block:: javascript
 

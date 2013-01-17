@@ -4,36 +4,36 @@ Databox TermsOfUse
 About
 -----
 
-  Return Terms Of Use in all languages available on specified databox
+Return Terms Of Use in all languages available on specified databox
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/termsOfUse/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   databox_id               integer        The databox id on which the request is done
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ databox_id               integer        The databox id on which the request is done
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ============ ================================
-  Field         Description
-  ============ ================================
-   termsOfUse   The list of Terms of Use by locale
-  ============ ================================
+============ ================================
+Field         Description
+============ ================================
+ termsOfUse   The list of Terms of Use by locale
+============ ================================
 
 Response sample
 ---------------

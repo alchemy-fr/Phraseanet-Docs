@@ -2,7 +2,7 @@
 =======================
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 Publier des paniers et des reportages
 -------------------------------------
@@ -55,6 +55,7 @@ Après avoir cliqué sur "Publications" dans le menu, votre publication apparaî
 
 Publier avec Bridge
 -------------------
+
 Le Bridge Phraseanet permet de publier ses photos et autres documents multimédia
 vers des sites extérieurs, tels que:
 

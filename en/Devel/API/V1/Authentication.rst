@@ -1,32 +1,34 @@
 Authentication
 ==============
 
-  The Phraseanet API v1 can only be accessed via `oAuth2.0`_.
+The Phraseanet API v1 can only be accessed via `oAuth2.0`_.
 
-  OAauth2.0 allows a secure API authentication in a simple and standard way.
+OAauth2.0 allows a secure API authentication in a simple and standard way.
 
 Libraries
 ---------
 
-  You can find libraries in most languages here :
-  `oAuth2.0 libraries`_.
+You can find libraries in most languages here :
+`oAuth2.0 libraries`_.
 
 Endpoints
 ---------
 
-  * Authorization endpoint : /api/oauthv2/authorize
-  * Access token endpoint : /api/oauthv2/token
+* Authorization endpoint : /api/oauthv2/authorize
+* Access token endpoint : /api/oauthv2/token
 
 Supported Access Grant Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  * authorization_code
-  * password
+
+* authorization_code
+* password
 
 Supported Authorization Response Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  * code
-  * token
-  * code_and_token
+
+* code
+* token
+* code_and_token
 
 .. note::
 
@@ -37,24 +39,24 @@ Supported Authorization Response Type
 Sign Up
 -------
 
-  For OAuth 2.0, all applications need to register their name and callback URL
-  in Phraseanet to get their API credentials.
+For OAuth 2.0, all applications need to register their name and callback URL
+in Phraseanet to get their API credentials.
 
-  From this registration process Phraseanet will provide you with your
-  "Client ID" and your "Client Secret".
+From this registration process Phraseanet will provide you with your
+"Client ID" and your "Client Secret".
 
-  The registration is done in the account settings. You can access this page
-  by clicking your login in the menubar of Phraseanet.
+The registration is done in the account settings. You can access this page
+by clicking your login in the menubar of Phraseanet.
 
 Obtaining an access token
 -------------------------
 
-  There are three ways to use the API.
+There are three ways to use the API.
 
 Web based applications
 ~~~~~~~~~~~~~~~~~~~~~~
 
-  **Redirect** users who wish authenticate to
+**Redirect** users who wish authenticate to
 
 .. code-block:: bash
 
@@ -63,13 +65,13 @@ Web based applications
     &response_type=code
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-  If a user accepts, he will then be redirected back to
+If a user accepts, he will then be redirected back to
 
 .. code-block:: bash
 
     https://YOUR_REGISTERED_REDIRECT_URI/?code=CODE
 
-  Your server will **make a request** for
+Your server will **make a request** for
 
 .. code-block:: bash
 
@@ -79,7 +81,7 @@ Web based applications
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
     &code=CODE
 
-  The response will be JSON
+The response will be JSON
 
 .. code-block:: javascript
 
@@ -90,7 +92,7 @@ Web based applications
 Pure AJAX application
 ~~~~~~~~~~~~~~~~~~~~~
 
-  **Redirect** users who wish authenticate to
+**Redirect** users who wish authenticate to
 
 .. code-block:: bash
 
@@ -99,7 +101,7 @@ Pure AJAX application
     &response_type=token
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-  If a user accepts, he will be redirected back to
+If a user accepts, he will be redirected back to
 
 .. code-block:: bash
 
@@ -108,19 +110,19 @@ Pure AJAX application
 Client-side application
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-  This flow is meant for mobile and desktop installed applications that want
-  access to user data.
+This flow is meant for mobile and desktop installed applications that want
+access to user data.
 
-  The native app flow is identical to the server-side flow with one exception:
-  a special redirect_uri. Instead of specifying an URL on your site, use the
-  special string: **urn:ietf:wg:oauth:2.0:oob**. The "oob" part stands for
-  "out of band" and the rest of the string identifies it as a part of
-  the OAuth 2.0 standard.
+The native app flow is identical to the server-side flow with one exception:
+a special redirect_uri. Instead of specifying an URL on your site, use the
+special string: **urn:ietf:wg:oauth:2.0:oob**. The "oob" part stands for
+"out of band" and the rest of the string identifies it as a part of
+the OAuth 2.0 standard.
 
-  When you use this redirect_uri, instead of redirecting the user's browser
-  to a page on your site with an authorization code, Phraseanet will display
-  the authorization code or error response in a text field with instructions
-  for the user to copy and paste it in to your application.
+When you use this redirect_uri, instead of redirecting the user's browser
+to a page on your site with an authorization code, Phraseanet will display
+the authorization code or error response in a text field with instructions
+for the user to copy and paste it in to your application.
 
 .. code-block:: bash
 
@@ -132,10 +134,10 @@ Client-side application
 Using your access token
 -----------------------
 
-  You can use your access token to call a protected API by including it
-  in an oauth_token query parameter or an Authorization header
-  in all available endpoint.
-  For example :
+You can use your access token to call a protected API by including it
+in an oauth_token query parameter or an Authorization header
+in all available endpoint.
+For example :
 
 .. code-block:: bash
 

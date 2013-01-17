@@ -4,62 +4,62 @@ Chercher un document
 A propos
 --------
 
-  Retourne la liste des documents trouvés
+Retourne la liste des documents trouvés
 
-  Cette route est dépréciée depuis la version 1.3 en faveur de
-  :doc:`search <../Search>`.
+Cette route est dépréciée depuis la version 1.3 en faveur de
+:doc:`search <../Search>`.
 
 .. code-block:: bash
 
     /api/v1/records/search/
 
-  ========================== ======
-   Informations
-  ========================== ======
-   Méthode HTTP               POST
-   Authentification requise   Oui
-  ========================== ======
+========================== ======
+ Informations
+========================== ======
+ Méthode HTTP               POST
+ Authentification requise   Oui
+========================== ======
 
 Paramètres
 ----------
 
-  ============= =========== ========= =============
-   Paramètres    Type        Exemple   Information
-  ============= =========== ========= =============
-   query         chaîne                La requête de recherche est la même syntaxe que dans Phraseanet, La valeur par défaut est une chaîne égale à "all records"
-   bases         tableau               Un tableau d'identifiants de collections. Si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections disponibles.
-   offset_start  entier         1      Le numéro de la page recherchée (La première page est la page 1)
-   per_page      entier         10     Le nombre d'items à retourner
-   ord           chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "asc" et "desc"
-   sort          chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "relevance","created_on" et "random".
-   record_type   chaîne                Le type de document recherché. Les valeurs disponibles sont "audio", "video", "image", "document" et "flash"
-   search_type   entier         0      "0" pour rechercher des documents et "1" pour rechercher des reportages
-   stemme        entier         1      Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". "1" pour activer la recherche morphologique
-   date_field    chaîne                Sélectionner un champ pour rechercher avec les filtres "date_min" et "date_max"
-   date_min      chaîne                La date minimum sous la forme 'd/m/Y' (Le paramètre "date_field" doit être renseigné)
-   date_max      chaîne                La date maximum sous la forme 'd/m/Y' (Le paramètre "date_field" doit être renseigné)
-   status        tableau               Un tableau qui restreint les documents recherchés aux status donnés
-   fields        tableau               un tableau qui restreint le champ de recherche aux champs sélectionnés
-  ============= =========== ========= =============
+============= =========== ========= =============
+ Paramètres    Type        Exemple   Information
+============= =========== ========= =============
+ query         chaîne                La requête de recherche est la même syntaxe que dans Phraseanet, La valeur par défaut est une chaîne égale à "all records"
+ bases         tableau               Un tableau d'identifiants de collections. Si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections disponibles.
+ offset_start  entier         1      Le numéro de la page recherchée (La première page est la page 1)
+ per_page      entier         10     Le nombre d'items à retourner
+ ord           chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "asc" et "desc"
+ sort          chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "relevance","created_on" et "random".
+ record_type   chaîne                Le type de document recherché. Les valeurs disponibles sont "audio", "video", "image", "document" et "flash"
+ search_type   entier         0      "0" pour rechercher des documents et "1" pour rechercher des reportages
+ stemme        entier         1      Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". "1" pour activer la recherche morphologique
+ date_field    chaîne                Sélectionner un champ pour rechercher avec les filtres "date_min" et "date_max"
+ date_min      chaîne                La date minimum sous la forme 'd/m/Y' (Le paramètre "date_field" doit être renseigné)
+ date_max      chaîne                La date maximum sous la forme 'd/m/Y' (Le paramètre "date_field" doit être renseigné)
+ status        tableau               Un tableau qui restreint les documents recherchés aux status donnés
+ fields        tableau               un tableau qui restreint le champ de recherche aux champs sélectionnés
+============= =========== ========= =============
 
 Attribut de la réponse
 ----------------------
 
-  ================== ================================
-   Attribut              Description
-  ================== ================================
-  offset_start        Le numéro du premier document recherché
-  per_page            Le nombre de résultats par page
-  available_results   La quantité de résultats disponibles dans la requête. Ce nombre peut être inférieur à celui des résultats disponibles. Le moteur de recherche "Sphinx" limite par défaut le nombre de résultats à 1000. Toutefois, cette limite est paramétrable.
-  total_results       Le nombre total des résultats disponibles
-  error               Erreur du moteur de recherche sous la forme d'une chaîne si il y a
-  warning             Avertissement du moteur de recherche sous la forme d'une chaîne si il y a
-  query_time          Le temps d'éxécution de la requête exprimé en secondes
-  search_indexes      Les index de recherche utilisés par le moteur de recherche
-  results             La liste des enregistrements trouvés
-  query               La requête envoyée
-  suggestions         La liste des suggestions proposées par le moteur de recherche
-  ================== ================================
+================== ================================
+ Attribut              Description
+================== ================================
+offset_start        Le numéro du premier document recherché
+per_page            Le nombre de résultats par page
+available_results   La quantité de résultats disponibles dans la requête. Ce nombre peut être inférieur à celui des résultats disponibles. Le moteur de recherche "Sphinx" limite par défaut le nombre de résultats à 1000. Toutefois, cette limite est paramétrable.
+total_results       Le nombre total des résultats disponibles
+error               Erreur du moteur de recherche sous la forme d'une chaîne si il y a
+warning             Avertissement du moteur de recherche sous la forme d'une chaîne si il y a
+query_time          Le temps d'éxécution de la requête exprimé en secondes
+search_indexes      Les index de recherche utilisés par le moteur de recherche
+results             La liste des enregistrements trouvés
+query               La requête envoyée
+suggestions         La liste des suggestions proposées par le moteur de recherche
+================== ================================
 
 Exemple de requête
 ------------------

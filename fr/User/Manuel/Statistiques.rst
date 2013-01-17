@@ -122,16 +122,10 @@ Types de rapports
 
 Enfin, il est nécessaire de choisir le type de rapport. Trois choix:
 
-  * Groupé par utilisateurs:
-
-Liste et fréquence de connexion des utilisateurs
-
-  * Toutes les connexions:
-
-Liste de toutes les connexions faites par chaque utilisateur présentée
-par défaut sur un critère chronologique
-
-  * Plateformes et navigateurs:
+* Groupé par utilisateurs: Liste et fréquence de connexion des utilisateurs
+* Toutes les connexions: Liste de toutes les connexions faites par chaque
+  utilisateur présentée par défaut sur un critère chronologique
+* Plateformes et navigateurs:
 
 Ensemble de listes et graphiques des connexions par type de navigateur, système
 d’exploitation ou résolutions d’affichage employés par les utilisateurs. Ce
@@ -142,7 +136,7 @@ les plus fréquemment utilisés pour les connexions.
 En cliquant sur l'un de ces types de rapport, les statistiques
 s'affichent immédiatement.
 
-  .. figure:: ../../images/Statistiques-Connexions3.jpg
+.. figure:: ../../images/Statistiques-Connexions3.jpg
     :align: center
 
     Exemple avec un rapport Plateformes et navigateurs
@@ -158,34 +152,24 @@ L'utilisateur doit d'abord sélectionner la Période, puis les
 Ensuite, le choix pour le type de rapport change. En effet, il est possible
 d'afficher les statistiques en se basant sur les rapports:
 
-  * Par utilisateurs:
-
-Pour chaque utilisateur ayant réalisé des téléchargements, ce rapport
-affiche le nombre et poids des documents et sous résolutions.
-
-  * Tous les téléchargements:
-
-Liste de l’ensemble des téléchargements réalisés sur l’intervalle.
-Ce tableau propose de fonctions de regroupement, de tri,...
-
-  * Par jour:
-
-Nombre total et ventilation par document et sous résolutions de téléchargements
-faits jour par jour.
-
-  * Par document, sur la base:
-
-Active une option permettant de rechercher si un document en particulier
-à partir de son Recordid ou si un document pour lequel un terme à chercher
-est présent dans un champs a été téléchargé sur la période.
+* Par utilisateurs: Pour chaque utilisateur ayant réalisé des téléchargements, ce rapport
+  affiche le nombre et poids des documents et sous résolutions.
+* Tous les téléchargements: Liste de l’ensemble des téléchargements réalisés sur l’intervalle.
+  Ce tableau propose de fonctions de regroupement, de tri,...
+* Par jour: Nombre total et ventilation par document et sous résolutions de téléchargements
+  faits jour par jour.
+* Par document, sur la base: Active une option permettant de rechercher si un document en particulier
+    à partir de son Recordid ou si un document pour lequel un terme à chercher
+    est présent dans un champs a été téléchargé sur la période.
 
 .. figure:: ../../images/Statistiques-Telechargements.jpg
-  :align:     center
+    :align:     center
 
-  Exemple de rapport de statistiques par document sur la bases
+    Exemple de rapport de statistiques par document sur la bases
 
 Activité du Site
 ----------------
+
 Ce dernier onglet se présente également de la même manière que
 les deux précédents.
 L'utilisateur doit aussi choisir la période et la :term:`base`, ensuite
@@ -193,22 +177,19 @@ les types de rapports sélectionnables sont les suivants:
 
 * Toutes les questions:
   Liste chronologique des questions posées par les utilisateurs.
-
 * Questions les plus posées:
   Liste des questions les plus posées et nombre de réponses retournées
   par Phraseanet.
-
 * Questions sans réponses:
   Liste des questions n’ayant fourni aucune réponse.
-
 * Activité du site:
   Fournit des informations relatives à l'activité par heure (moyenne).
 
 .. figure:: ../../images/Statistiques-Activite.jpg
-  :align:     center
+    :align:     center
 
-  Exemple de rapport incluant les données relatives aux questions les plus
-  posées.
+    Exemple de rapport incluant les données relatives aux questions les plus
+    posées.
 
 Les rapports
 ------------
@@ -232,17 +213,17 @@ d’exclusion de collections.
 Pour naviguer dans la liste "onglets" des :term:`bases <base>`, positionner
 le curseur en début ou fin de liste.
 
-  .. figure:: ../../images/Statistiques-Bases.jpg
+.. figure:: ../../images/Statistiques-Bases.jpg
     :align:     center
 
 Certaines colonnes des tableaux de rapports proposés sont implémentées de:
 
-  * fonctions de tri
-  * fonctions de filtres
+* fonctions de tri
+* fonctions de filtres
 
 Les filtres sont en relation avec les valeurs disponibles dans la colonne.
 
-  * regroupements logiques par valeurs identiques
+* regroupements logiques par valeurs identiques
 
 Certaines valeurs dans les colonnes sont des liens cliquables "soulignées"
 et réagissant au survol, sont cliquables et affichent dans une fenêtre :term:`Overlay`
@@ -252,8 +233,9 @@ Les rapports, lorsqu’ils sont constitués d’un grand nombre de lignes,
 sont répartis sur plusieurs pages.
 
 Cette information est affichée en bas de page et il est possible:
-  * De changer de page
-  * D’afficher d’avantage de ligne en changeant la valeur saisie
+
+* De changer de page
+* D’afficher d’avantage de ligne en changeant la valeur saisie
 
 .. note::
 

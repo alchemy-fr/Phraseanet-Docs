@@ -2,7 +2,8 @@ Admin
 =====
 
 .. module:: admin
-   :synopsis: Phraseanet Administrator guide
+    :synopsis: Phraseanet Administrator guide
+
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
 Phraseanet is built on top of MySQL/InnoDB databases : ApplicationBoxes and

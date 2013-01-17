@@ -1,7 +1,7 @@
 Administration de l'application
 ===============================
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -26,6 +26,7 @@ qui entrent dans la mise en oeuvre de la solution Phraseanet.
 
 Setup
 -----
+
 **Accessible aux seuls administrateurs Phraseanet**, *Setup* propose une interface
 graphique permettant de modifier des paramètres d'installation et de configuration
 de Phraseanet.
@@ -35,19 +36,14 @@ de Phraseanet.
 
 Setup propose un jeu de formulaires permettant notamment :
 
-  * **De modifier les adresses et les chemins de l'application** ou de composants permettant
-    sa mise en oeuvre
-
-  * **De placer l'application en mode maintenance**
-
-  * **D'activer ou de désactiver des connectivités à des services web**
-
-  * **D'activer ou de désactiver des connectivités à des réseaux sociaux** mis en oeuvre
-    dans :doc:`Bridge`
-
-  * **D'activer ou de désactiver des fonctionnalités et options de l'application**
-
-  * **De gérer les extensions de fichiers autorisés** en ajout dans Phraseanet Upload
+* **De modifier les adresses et les chemins de l'application** ou de composants permettant
+  sa mise en oeuvre
+* **De placer l'application en mode maintenance**
+* **D'activer ou de désactiver des connectivités à des services web**
+* **D'activer ou de désactiver des connectivités à des réseaux sociaux** mis en oeuvre
+  dans :doc:`Bridge`
+* **D'activer ou de désactiver des fonctionnalités et options de l'application**
+* **De gérer les extensions de fichiers autorisés** en ajout dans Phraseanet Upload
 
 .. warning::
 
@@ -57,6 +53,7 @@ Setup propose un jeu de formulaires permettant notamment :
 
 Utilisateurs connectés
 ----------------------
+
 Cet écran liste les sessions utilisateurs actives sur le système Phraseanet.
 
 Elle informe de l'application Phraseanet utilisée, de l'adresse "IP", ainsi que
@@ -73,6 +70,7 @@ de la date et de l'heure de connexion au système.
 
 Publications
 ------------
+
 Accessible aux utilisateurs qui disposent des droits de gestion des publications,
 la rubrique publications permet de gérer les flux media RSS diffusés à partir de
 l'application Phraseanet.
@@ -83,15 +81,14 @@ l'application Phraseanet.
 L'écran Publications dresse la liste des flux média disponibles en publication et
 permet d'en créer, d'en modifier et d'en supprimer.
 
-  * **Pour créer un flux**, remplir puis valider le formulaire d'ajout
-
-  * **Pour modifier les propriétés d'un flux existant**, cliquer sur le flux à modifier
-    pour ouvrir le formulaire d'édition du flux sélectionné.
-
-  * **Pour supprimer un flux**, cliquer sur bouton supprimer.
+* **Pour créer un flux**, remplir puis valider le formulaire d'ajout
+* **Pour modifier les propriétés d'un flux existant**, cliquer sur le flux à modifier
+  pour ouvrir le formulaire d'édition du flux sélectionné.
+* **Pour supprimer un flux**, cliquer sur bouton supprimer.
 
 Gestionnaire de tâches
 ----------------------
+
 **Accessible aux seuls administrateurs Phraseanet**, cet écran permet de gérer les tâches
 d'archivage et autres traitements automatiques appliqués sur les :term:`Bases <Base>` et :term:`Collections <Collection>`
 de l'application.
@@ -116,6 +113,7 @@ de la base de destination).
 
 Nouvelle tâche
 **************
+
 Le paramétrage des tâches dans Phraseanet permet de mettre en place des
 automatismes de traitement.
 
@@ -133,13 +131,10 @@ cas, les fichiers XML de paramétrage proposent une interface de saisie.
 
 Après avoir cliqué sur *nouvelle tâche* :
 
-  * Sélectionner un des modèles de tâches disponibles.
-
-  * Renseigner les différents paramètres demandés.
-
-  * Ou modifier les paramètres directement dans la vue XML.
-
-  * Cliquer sur Valider pour enregistrer les modifications.
+* Sélectionner un des modèles de tâches disponibles.
+* Renseigner les différents paramètres demandés.
+* Ou modifier les paramètres directement dans la vue XML.
+* Cliquer sur Valider pour enregistrer les modifications.
 
 .. note::
 

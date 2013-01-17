@@ -1,14 +1,14 @@
 Paniers et Reportages
 =====================
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 Les Paniers et les Reportages se trouvent dans :doc:`la zone de travail <Onglets>`
 sur le même onglet.
 Ils sont différenciés par la couleur :
 
-    * *Gris* pour les paniers
-    * *Bleu* pour les reportages
+* *Gris* pour les paniers
+* *Bleu* pour les reportages
 
 Onglet Paniers
 --------------
@@ -38,7 +38,7 @@ Onglet Paniers
     avec l'ouverture du panier dénommé "Bateaux".
 
 .. figure:: ../../images/Prod-Bonglet-DetailPanier.jpg
-       :align: center
+    :align: center
 
 Nouveau Panier
 **************
@@ -48,7 +48,6 @@ Nouveau Panier
 
 * -> Cliquer sur le Menu contextuel de l'onglet
 * -> Cliquer sur Nouveau
-
 * => une fenêtre s'ouvre
 
 .. image:: ../../images/Affichage-Panier.jpg
@@ -58,7 +57,6 @@ Nouveau Panier
   ajouter des documents préalablement sélectionnés dans les Résultats.
 * -> Saisir le nom du nouveau panier et si besoin une description.
 * -> Cliquer sur le bouton Valider.
-
 * => Le nouveau panier est créé et s'affiche dans la liste.
 
 Ajouter des documents à un panier
@@ -66,10 +64,11 @@ Ajouter des documents à un panier
 
 A partir des résultats
 ^^^^^^^^^^^^^^^^^^^^^^
-  * -> Pour mettre un ou plusieurs documents dans un Panier:
-    faire un glisser-déposer d'une ou plusieurs vignettes, soit en
-    survolant le nom d’un panier, soit en déposant la sélection dans le
-    panier ouvert.
+
+Pour mettre un ou plusieurs documents dans un Panier:
+faire un glisser-déposer d'une ou plusieurs vignettes, soit en
+survolant le nom d’un panier, soit en déposant la sélection dans le
+panier ouvert.
 
 .. note::
 
@@ -77,10 +76,11 @@ A partir des résultats
 
 A partir de la vue détaillée
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  * -> Sélectionner un panier en cliquant sur son titre
-  * -> Lancer la vue détaillée sur une sélection de documents
-  * -> Cliquer sur le picto "Panier"
-  * -> Le document est ajouté au panier actif
+
+* -> Sélectionner un panier en cliquant sur son titre
+* -> Lancer la vue détaillée sur une sélection de documents
+* -> Cliquer sur le picto "Panier"
+* -> Le document est ajouté au panier actif
 
 .. note::
 
@@ -96,9 +96,8 @@ dans :doc:`Affichage <Afficher>`.
 Afficher le contenu d'un panier dans la vue détaillée
 *****************************************************
 
-  * -> Faire un double clic sur une vignette
-
-  * => La fenêtre de la vue détaillée s'ouvre
+* -> Faire un double clic sur une vignette
+* => La fenêtre de la vue détaillée s'ouvre
 
 Déplacer et dupliquer des documents entre des paniers
 *****************************************************
@@ -146,6 +145,7 @@ Le menu contextuel des paniers
 
 Renommer un panier
 ^^^^^^^^^^^^^^^^^^
+
 * -> Cliquer sur Renommer
 * => La fenêtre s'ouvre
 
@@ -154,6 +154,7 @@ Renommer un panier
 
 Réordonner un panier
 ^^^^^^^^^^^^^^^^^^^^
+
 * -> Cliquer sur Ordonner
 * => La fenêtre s'ouvre
 
@@ -168,8 +169,8 @@ Réordonner un panier
 
 Supprimer un panier
 ^^^^^^^^^^^^^^^^^^^
-* -> Cliquer sur Supprimer
 
+* -> Cliquer sur Supprimer
 * -> Une fenêtre s'ouvre pour confirmer la suppression définitive
   du panier
 
@@ -178,12 +179,13 @@ L'archivage des Paniers
 
 Archiver un Panier
 ^^^^^^^^^^^^^^^^^^
+
 Suite à la création de nombreux paniers, il est possible que la zone de travail
 soit encombrée de paniers qu'il aurait était souhaitable de conserver pour une
 raison ou pour une autre. **L'archivage de paniers** répond à cette demande.
 
 Pour archiver un panier, ouvrir le menu contextuel du panier et cliquer sur
-«Archiver» :
+"Archiver" :
 
 .. image:: ../../images/ArchivagePanier1.jpg
     :align: center
@@ -228,6 +230,7 @@ En cliquant sur le titre du panier, les vignettes apparaissent:
 
 Pour archiver ou désarchiver un panier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Pour archiver / désarchiver un panier à partir de l'Historique des Paniers :
 Un clic sur l’étoile (passant du blanc à l’orange) présente près du titre du
 panier archivé permet de le rendre de nouveau accessible dans la zone latérale
@@ -297,6 +300,7 @@ Il n'y a pas d'intérêt à conserver un Reportage "terminé" dans l'onglet.
 
 Pour attacher un Reportage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 * -> Faire une Recherche en mode Reportage
 * -> Glisser et déposer le reportage depuis la grille des résultats dans l'onglet
   des Paniers
@@ -305,6 +309,7 @@ Pour attacher un Reportage
 
 Pour détacher un Reportage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 * -> Cliquer sur le menu contextuel du Reportage
 * -> Cliquer sur détacher
 

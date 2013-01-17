@@ -4,38 +4,38 @@ Records SetMetadatas
 About
 -----
 
-  Add, modify current record's metadatas
+Add, modify current record's metadatas
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setmetadatas/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              POST
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ================== ========= =============
-   Parameters         Type      Information
-  ================== ========= =============
-   databox_id         integer   The databox id of the record
-   record_id          integer   The record_id
-   metadatas          array     An array of metadatas, each metadatas is an array itself with three keys : meta_struct_id (int), meta_id (int or null) and value (Array)
-  ================== ========= =============
+================== ========= =============
+ Parameters         Type      Information
+================== ========= =============
+ databox_id         integer   The databox id of the record
+ record_id          integer   The record_id
+ metadatas          array     An array of metadatas, each metadatas is an array itself with three keys : meta_struct_id (int), meta_id (int or null) and value (Array)
+================== ========= =============
 
 Response Fields
 ---------------
 
-  ================== ================================
-   Field               Description
-  ================== ================================
-   record_metadatas    The list of the metadatas of the record
-  ================== ================================
+================== ================================
+ Field               Description
+================== ================================
+ record_metadatas    The list of the metadatas of the record
+================== ================================
 
 ** Example **
 

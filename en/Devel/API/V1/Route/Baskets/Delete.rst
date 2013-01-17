@@ -4,36 +4,36 @@ Baskets Delete
 About
 -----
 
-  Delete the basket
+Delete the basket
 
 .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/delete/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              POST
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              POST
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== =============
-   Parameters               Type           Information
-  ======================== ============== =============
-   basket_id                integer        The basket_id of the selected basket
-  ======================== ============== =============
+======================== ============== =============
+ Parameters               Type           Information
+======================== ============== =============
+ basket_id                integer        The basket_id of the selected basket
+======================== ============== =============
 
 Response Fields
 ---------------
 
-  ============= ================================
-   Field         Description
-  ============= ================================
-   baskets       The list of the baskets of the current user
-  ============= ================================
+============= ================================
+ Field         Description
+============= ================================
+ baskets       The list of the baskets of the current user
+============= ================================
 
 Response sample
 ---------------

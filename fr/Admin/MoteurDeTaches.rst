@@ -41,13 +41,13 @@ documents dans les bases de données.
 
 L’indexer doit être paramétré avec les informations ci-dessous :
 
-  * chemin d'accès : Chemin vers l’exécutable phraseanet_indexer
-  * Hôte : Adresse du serveur MySQL
-  * Port : Port du serveur MySQL
-  * Database : Nom de la base de donnée MySQL
-  * Utilisateur : identifiant de l'utilisateur MySQL
-  * Mot de passe : Mot de passe de l'utilisateur MySQL
-  * Port de contrôle : Port de contrôle de l'indexer
+* chemin d'accès : Chemin vers l’exécutable phraseanet_indexer
+* Hôte : Adresse du serveur MySQL
+* Port : Port du serveur MySQL
+* Database : Nom de la base de donnée MySQL
+* Utilisateur : identifiant de l'utilisateur MySQL
+* Mot de passe : Mot de passe de l'utilisateur MySQL
+* Port de contrôle : Port de contrôle de l'indexer
 
 .. code-block:: bash
 
@@ -89,15 +89,15 @@ contenu dans une :term:`Collection`.
 Paramètrage
 ^^^^^^^^^^^
 
-  * Archive dans la base et la :term:`Collection` : Choix de la
-    collection de destination des fichiers
-  * HotFolder : répertoire à scruter
-  * intervalle d’exécution : intervalle entre deux exécution de la tâche
-  * délais avant traitement. : Temps d'attente avant action
-  * Déplacer les documents archivés dans "_archived" : garder
-    ou pas un exemplaire du fichier traité
-  * Déplacer les documents non-archivés dans "_error" : garder
-    ou pas un exemplaire du fichier en erreur
+* Archive dans la base et la :term:`Collection` : Choix de la
+  collection de destination des fichiers
+* HotFolder : répertoire à scruter
+* intervalle d’exécution : intervalle entre deux exécution de la tâche
+* délais avant traitement. : Temps d'attente avant action
+* Déplacer les documents archivés dans "_archived" : garder
+  ou pas un exemplaire du fichier traité
+* Déplacer les documents non-archivés dans "_error" : garder
+  ou pas un exemplaire du fichier en erreur
 
 .. warning::
 
@@ -113,9 +113,9 @@ Cette fonction nécessite l'activation de la fonction d'export ftp.
 Paramètrage
 ^^^^^^^^^^^
 
-  * proxy : adresse du proxy (optionnelle)
-  * proxy port: Port du proxy (optionnel)
-  * périodicité de la tache : intervalle d’exécution de la tache
+* proxy : adresse du proxy (optionnelle)
+* proxy port: Port du proxy (optionnel)
+* périodicité de la tache : intervalle d’exécution de la tache
 
 FTP Pull
 ********
@@ -126,17 +126,17 @@ combinées avec la tache d'archivage afin de rapatrier et archiver des documents
 Paramètrage
 ^^^^^^^^^^^
 
-  * proxy : adresse du proxy (optionnelle)
-  * proxy port: port du proxy (optionnel)
-  * host : adresse du serveur ftp
-  * port : port du serveur ftp
-  * user : identifiant sur le serveur ftp
-  * password : mot de passe sur le serveur ftp
-  * chemin distant : répertoire d’accès distant
-  * localpath : chemin de stockage local des fichiers récupérés
-  * mode passif : utiliser le mode passif
-  * SSL: connexion en ssl (sécurisée)
-  * périodicité de la tache : intervalle d’exécution de la tache
+* proxy : adresse du proxy (optionnelle)
+* proxy port: port du proxy (optionnel)
+* host : adresse du serveur ftp
+* port : port du serveur ftp
+* user : identifiant sur le serveur ftp
+* password : mot de passe sur le serveur ftp
+* chemin distant : répertoire d’accès distant
+* localpath : chemin de stockage local des fichiers récupérés
+* mode passif : utiliser le mode passif
+* SSL: connexion en ssl (sécurisée)
+* périodicité de la tache : intervalle d’exécution de la tache
 
 Déplacement des documents périmés
 *********************************
@@ -161,10 +161,10 @@ un document, un status-bit.
 Paramètrage
 ^^^^^^^^^^^
 
-  * Database : choix de la Base de données (databox)
-  * intervalle d’exécution :  intervalle d’exécution de la tache
-  * Collection : collection d'origine ====> collection de destination
-  * Status : status-bit à l'origine   ====> status-bit final
+* Database : choix de la Base de données (databox)
+* intervalle d’exécution :  intervalle d’exécution de la tache
+* Collection : collection d'origine ====> collection de destination
+* Status : status-bit à l'origine   ====> status-bit final
 
 RecordMover
 ***********
@@ -205,73 +205,74 @@ Les critères possibles sont
 
 - le type de record :
 
-.. code-block:: xml
+    .. code-block:: xml
 
-    <type type="RECORD" />
-    seulement les documents
+        <type type="RECORD" />
+        seulement les documents
 
-    <type type="STORY" />
-    seulement les reportages
+        <type type="STORY" />
+        seulement les reportages
 
 - les collections :
 
-.. code-block:: xml
+    .. code-block:: xml
 
-    <coll compare="=" id="3,5,7" />
-    le record est dans une des collections 3, 5 ou 7
+        <coll compare="=" id="3,5,7" />
+        le record est dans une des collections 3, 5 ou 7
 
-    <coll compare="!=" id="8,9" />
-    le record est dans n'importe quelle collection, sauf la 8 ou la 9
+        <coll compare="!=" id="8,9" />
+        le record est dans n'importe quelle collection, sauf la 8 ou la 9
 
 - les status :
 
-.. code-block:: xml
+    .. code-block:: xml
 
-    <status mask="1x0xxxx" />
-    le sb 4 = 0 ET le sb 6 = 1 (nb les sb 0-3 réservés, donc à xxxx)
+        <status mask="1x0xxxx" />
+        le sb 4 = 0 ET le sb 6 = 1 (nb les sb 0-3 réservés, donc à xxxx)
 
 - la valeur d'un champ texte :
 
-.. code-block:: xml
+    .. code-block:: xml
 
-    <text field="Ville" compare="=" value="Paris"/>
-    la ville est Paris
+        <text field="Ville" compare="=" value="Paris"/>
+        la ville est Paris
 
-    <text field="Auteur" compare="!=" value="Dupond"/>
-    n'importe quel auteur sauf Dupond
+        <text field="Auteur" compare="!=" value="Dupond"/>
+        n'importe quel auteur sauf Dupond
 
 - la valeur d'un champ date, comparé avec la date courante :
 
-.. code-block:: xml
+    .. code-block:: xml
 
-    <date direction="before" field="MISEENLIGNE"/>
-    la date de mise en ligne n'est pas atteinte (= on est AVANT la date de mise en ligne)
+        <date direction="before" field="MISEENLIGNE"/>
+        la date de mise en ligne n'est pas atteinte (= on est AVANT la date de mise en ligne)
 
-    <date direction="after" field="MISEENLIGNE" delta="+30" />
-    la date de mise en ligne est passée de 30 jours (= on est APRES la date+30j)
+        <date direction="after" field="MISEENLIGNE" delta="+30" />
+        la date de mise en ligne est passée de 30 jours (= on est APRES la date+30j)
 
-    <date direction="after" field="PURGE" delta="-2" />
-    on est 2j avant la date de purge
+        <date direction="after" field="PURGE" delta="-2" />
+        on est 2j avant la date de purge
 
 Pour l'action "update", les opérations décrites dans <to> peuvent porter sur :
 
 - la collection
 
-.. code-block:: xml
+    .. code-block:: xml
 
-    <coll id="2" />
-    le record passe dans la collection 2
+        <coll id="2" />
+        le record passe dans la collection 2
 
 - les status
 
-.. code-block:: xml
+    .. code-block:: xml
 
-    <status mask="0x1xxxx" />
-    baisser le sb 6, lever le sb 4
+        <status mask="0x1xxxx" />
+        baisser le sb 6, lever le sb 4
 
-Pour l'action "delete", l'attribut "deletechildren="1"" demande la suppression du contenu des regroupements supprimés.
+Pour l'action "delete", l'attribut *deletechildren="1"* demande la suppression
+du contenu des regroupements supprimés.
 
-exemples
+Exemples
 ^^^^^^^^
 
 .. code-block:: xml

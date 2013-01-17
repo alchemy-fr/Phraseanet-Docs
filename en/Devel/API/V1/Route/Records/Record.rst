@@ -4,37 +4,37 @@ Records Record
 About
 -----
 
-  Return all information about one record
+Return all information about one record
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/
 
-  ======================== =====
-   Informations
-  ======================== =====
-   HTTP Method              GET
-   Requires Authentication  Yes
-  ======================== =====
+======================== =====
+ Informations
+======================== =====
+ HTTP Method              GET
+ Requires Authentication  Yes
+======================== =====
 
 Parameters
 ----------
 
-  ======================== ============== ==============================
-   Parameters               Type           Information
-  ======================== ============== ==============================
-   databox_id               integer        The databox id of the record
-   record_id                integer        The record_id
-  ======================== ============== ==============================
+======================== ============== ==============================
+ Parameters               Type           Information
+======================== ============== ==============================
+ databox_id               integer        The databox id of the record
+ record_id                integer        The record_id
+======================== ============== ==============================
 
 Response Fields
 ---------------
 
-  ========== ================================
-   Field      Description
-  ========== ================================
-   record     The record
-  ========== ================================
+========== ================================
+ Field      Description
+========== ================================
+ record     The record
+========== ================================
 
 Response sample
 ---------------

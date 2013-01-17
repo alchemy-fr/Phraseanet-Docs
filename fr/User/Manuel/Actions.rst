@@ -1,7 +1,7 @@
 ﻿La Palette des Actions
 ======================
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
 .. topic:: L'essentiel
 
@@ -17,16 +17,18 @@
     Administration <Administration>`.
 
 **Les fonctions de base:**
-    * :doc:`Exporter <Exporter>`
-    * `Imprimer`_
+
+* :doc:`Exporter <Exporter>`
+* `Imprimer`_
 
 **Les fonctions étendues:**
-    * :doc:`Editer <Editer>`
-    * :doc:`Push <Push>`
-    * `Déplacer`_
-    * `Supprimer`_
-    * `Outils images`_
-    * `Propriétés`_
+
+* :doc:`Editer <Editer>`
+* :doc:`Push <Push>`
+* `Déplacer`_
+* `Supprimer`_
+* `Outils images`_
+* `Propriétés`_
 
 Présentation de la Palette
 --------------------------
@@ -44,8 +46,10 @@ utilisateur peut cliquer pour dérouler l'ensemble des actions disponibles.
 
 Les fonctions de base
 ---------------------
+
 Exporter
 ********
+
 Plusieurs modes d'export sont proposés: le téléchargement, envoyer par email ou
 encore envoyer via le :term:`FTP <FTP>`...
 
@@ -53,10 +57,11 @@ encore envoyer via le :term:`FTP <FTP>`...
 
 Imprimer
 ********
+
 Cette Action permet d'imprimer les vignettes, les images de choix, les
 descriptions des documents.
 
-  * Sélectionner un ou plusieurs documents puis cliquer sur "Imprimer".
+* Sélectionner un ou plusieurs documents puis cliquer sur "Imprimer".
 
 La fenêtre Imprimer s'ouvre.
 
@@ -65,11 +70,11 @@ La fenêtre Imprimer s'ouvre.
 
 Cocher les cases correspondant aux choix souhaités:
 
-  * Image de choix, pour n'imprimer que les images de choix.
-  * Image de choix et légende, pour imprimer les images de choix et la description du document.
-  * Image de choix et description avec planche contact, pour imprimer les images de choix, les descriptions et les vignettes regroupées dans une planche contact.
-  * Liste de vignettes, pour imprimer la liste des vignettes.
-  * Planche contact, pour imprimer les vignettes regroupées dans une planche contact.
+* Image de choix, pour n'imprimer que les images de choix.
+* Image de choix et légende, pour imprimer les images de choix et la description du document.
+* Image de choix et description avec planche contact, pour imprimer les images de choix, les descriptions et les vignettes regroupées dans une planche contact.
+* Liste de vignettes, pour imprimer la liste des vignettes.
+* Planche contact, pour imprimer les vignettes regroupées dans une planche contact.
 
 Cliquer sur Imprimer. Les documents demandés s'affichent sous forme d'un document
 PDF (*Format Acrobat de Adobe* - un *Reader Acrobat* doit être installé sur le poste
@@ -83,8 +88,10 @@ disque dur de son poste de travail.
 
 Les fonctions étendues
 ----------------------
+
 Editer
 ******
+
 Cette fonction permet d'éditer vos documents dans Phraseanet: édition des enregistrements,
 des paniers; Vous pouvez saisir, compléter ou modifier le contenu des champs.
 Il est possible d'éditer les :term:`documents <Document>` à l'unité ou en lots.
@@ -92,7 +99,8 @@ Il est possible d'éditer les :term:`documents <Document>` à l'unité ou en lot
 :doc:`Veuillez vous reporter à la section dédiée à l'Edition <Editer>`.
 
 Push
-*****
+****
+
 On utilise le :term:`"push" <Push>` dans Phraseanet pour mettre des documents à la
 disposition de un ou de plusieurs destinataires. Depuis la version 3.6, Push et
 Validation sont deux modules distincts. Vous retrouvez donc la *Validation*
@@ -103,15 +111,16 @@ Validation sont deux modules distincts. Vous retrouvez donc la *Validation*
 
 Déplacer
 ********
+
 Cette icône permet de déplacer des documents d'une :term:`collection <Collection>` à une autre.
 
-  * Sélectionner une ou plusieurs vignettes puis cliquer sur l'icône Déplacer.
+* Sélectionner une ou plusieurs vignettes puis cliquer sur l'icône Déplacer.
 
 La fenêtre "Changer de collection" s'ouvre.
 
-  * Sélectionner la collection dans laquelle doit être dorénavant placé(s)
-    le(s) document(s).
-  * Cliquer sur Ok.
+* Sélectionner la collection dans laquelle doit être dorénavant placé(s)
+  le(s) document(s).
+* Cliquer sur Ok.
 
 Le document ne se trouve plus dans la collection d'origine, mais dans la collection
 choisie.
@@ -121,10 +130,11 @@ choisie.
 
 Supprimer
 *********
+
 Cette icône permet de supprimer un :term:`enregistrement <Enregistrement>`
 (Panier, document de la :term:`base`/Collection, Reportage).
 
-  * Sélectionner l'élément puis cliquer sur l'icône Corbeille.
+* Sélectionner l'élément puis cliquer sur l'icône Corbeille.
 
 .. image:: ../../images/Actions-Supprimer.jpg
     :align: center
@@ -133,11 +143,12 @@ Un message demande confirmation afin de valider votre choix.
 
 Outils images
 *************
+
 Cette icône permet de travailler sur les vignettes ou images de choix
 (re-génération, substitution, rotation, choix de la vignette pour les vidéo), sur le
 remplacement d’un document d'origine, ou d’afficher toutes les informations :term:`EXIF <EXIF>` existantes.
 
-  * Sélectionner une image et cliquer sur l'icône "Outils Images".
+* Sélectionner une image et cliquer sur l'icône "Outils Images".
 
 La fenêtre Outils Images s'ouvre.
 
@@ -148,7 +159,6 @@ Choisir un des onglets proposés:
 
 * **Régénération sous-défs** : Permet de créer une nouvelle vignette et une nouvelle
   Image de choix pour les documents sélectionnés.
-
 * **Outils vidéos** : Disponible si et seulement si un media de type vidéo est
   sélectionné, l'onglet propose les outils permettant de choisir une vignette de
   présentation personnalisée pour les media vidéos.
@@ -158,14 +168,11 @@ Choisir un des onglets proposés:
 
 * **Retourner sous défs** : une rotation des vignettes et Images de choix des
   documents sélectionnés.
-
 * **Substitution document** : Permet de remplacer le document original par un autre
   (une case à cocher permet de choisir si la vignette et l’image de choix
   doivent être reconstruites).
-
 * **Substitution des sous-défs** : Pour remplacer la vignette et l’image de choix
   par un autre fichier.
-
 * :term:`Métadonnées <Métadonnées>` : Permet d’afficher l’ensemble
   des informations :term:`EXIF <EXIF>` disponibles pour le document.
 
@@ -173,9 +180,10 @@ Pour appliquer les modifications apportées, cliquer sur Valider.
 
 Propriétés
 **********
+
 Cette action permet de changer:
-  * les :term:`status <Status>` des documents
-  * les "types" des documents sélectionnés
+* les :term:`status <Status>` des documents
+* les "types" des documents sélectionnés
 
 Les Status sont comme des "Interrupteurs" en position "On" ou "Off" et sont
 applicables sur les documents.
@@ -197,15 +205,14 @@ Status activé si un utilisateur est "On" et/ou "Off" pour les documents.
 
 Cette action permet de changer les status des documents.
 
-  * Sélectionner une ou plusieurs vignettes, un :term:`panier <Panier>` ou un
-    :term:`reportage <Reportage>` puis cliquer sur Propriétés.
+* Sélectionner une ou plusieurs vignettes, un :term:`panier <Panier>` ou un
+  :term:`reportage <Reportage>` puis cliquer sur Propriétés.
 
 La fenêtre s'ouvre.
 
-  * Cocher la case correspondant au nouveau :term:`status <Status>` (plusieurs
-    status possibles).
-
-  * Cliquer sur Valider pour enregistrer les changements.
+* Cocher la case correspondant au nouveau :term:`status <Status>` (plusieurs
+  status possibles).
+* Cliquer sur Valider pour enregistrer les changements.
 
 .. image:: ../../images/Actions-Proprietes-status.jpg
     :align: center
@@ -217,14 +224,13 @@ Cette action permet de changer le type des documents.
 Elle est utile si des documents ajoutés n’ont pas été correctement interprétés
 et qu’il faut les associer au bon type de fichier.
 
-  * Sélectionner une ou plusieurs vignettes, un :term:`panier <Panier>` ou un
-    :term:`reportage <Reportage>` et cliquer sur Propriétés.
+* Sélectionner une ou plusieurs vignettes, un :term:`panier <Panier>` ou un
+  :term:`reportage <Reportage>` et cliquer sur Propriétés.
 
 La fenêtre s'ouvre.
 
-  * Cliquer sur l’onglet Type. Changer le type des documents.
-
-  * Cliquer sur Valider pour enregistrer les modifications.
+* Cliquer sur l’onglet Type. Changer le type des documents.
+* Cliquer sur Valider pour enregistrer les modifications.
 
 .. image:: ../../images/Actions-Proprietes-types.jpg
     :align: center
