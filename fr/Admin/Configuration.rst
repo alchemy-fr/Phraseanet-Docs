@@ -463,6 +463,8 @@ Puis dans le fichier de configuration services.yml
         options:
             bar: foo
 
+.. _search-engine-service-configuration:
+
 Service SearchEngine
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -486,13 +488,18 @@ Exemple :
           rt_host: localhost
           rt_port: 9308
 
+.. note::
+
+    Une page dédiée à la :doc:`configuration des moteurs de recherche <MoteurDeRecherche>`
+    est disponible.
+
 Phrasea Engine
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 Phrasea engine ne supporte aucune options particulière.
 
 SphinxSearch
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 Vous devrez spécifier quatre options pour l'utilisation de SphinxSearch :
 

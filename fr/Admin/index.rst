@@ -33,6 +33,7 @@ Vous pouvez aussi piloter Phraseanet en console via l'application bin/console
     MiseAJour
     Configuration
     MoteurDeTaches
+    MoteurDeRecherche
     Console
     Maintenance
     Optimisation
