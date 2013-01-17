@@ -36,6 +36,7 @@ declaration of this environment below.
         cache: array_cache
         opcodecache: array_cache
         border-manager: border_manager
+        search-engine: phrasea
 
 Let's detail environment structure :
 
@@ -53,6 +54,7 @@ Let's detail environment structure :
 * cache : Main cache service :doc:`cache </Admin/Optimization>`
 * opcodecache : Opcode cache service :doc:`opcodecache </Admin/Optimization>`
 * border-manager : Border service
+* search-engine : Search-engine service name
 
 Services are setup in the service.yml file.
 
@@ -448,6 +450,45 @@ Then in services.yml configuration enable your checker.
         enabled: true
         options:
             bar: foo
+
+Service SearchEngine
+^^^^^^^^^^^^^^^^^^^^
+
+This service describe one or more seaarch-engine configuration. Depending on
+the search engine you use, you will have the benefit of distinct features. For
+example, Phrasea supports thesaurus while SphinxSearch supports live
+autocomplete.
+
+Example :
+
+.. code-block:: yaml
+
+    #services.yml
+    SearchEngine:
+      phrasea:
+        type: SearchEngine\PhraseaEngine
+      sphinxsearch:
+        type: SearchEngine\SphinxSearch
+        options:
+          host: localhost
+          port: 9306
+          rt_host: localhost
+          rt_port: 9308
+
+Phrasea Engine
+^^^^^^^^^^^^^^
+
+Phrasea engine does not support any option.
+
+SphinxSearch
+^^^^^^^^^^^^
+
+You must specify four options to use SphinxSearch :
+
+- host : Hostname or IP address of the SphinxSearch server
+- port : Port of SphinxSearch server
+- rt_host : Real-time SphinxSearch hostname or IP address
+- rt_port : Real-time SphinxSearch port
 
 Collection Settings
 -------------------

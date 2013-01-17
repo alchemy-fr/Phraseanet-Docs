@@ -463,8 +463,8 @@ Puis dans le fichier de configuration services.yml
         options:
             bar: foo
 
-Services SearchEngine
-^^^^^^^^^^^^^^^^^^^^^
+Service SearchEngine
+^^^^^^^^^^^^^^^^^^^^
 
 Ce servce décrit une ou plusieurs configurations de moteur de recherche.
 Suivant le moteur choisi, vous aurez accès à certaines possibilités. Ainsi,
@@ -490,7 +490,6 @@ Phrasea Engine
 ^^^^^^^^^^^^^^
 
 Phrasea engine ne supporte aucune options particulière.
-
 
 SphinxSearch
 ^^^^^^^^^^^^
