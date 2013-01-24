@@ -15,7 +15,7 @@ Changes :
 .. seealso::
 
     :doc:`Complete documentation to upgrade to API 1.1
-    </Devel/API/V1/Upgrade/1.1>`
+    </Devel/API/Changelog>`
 
 .. warning::
 

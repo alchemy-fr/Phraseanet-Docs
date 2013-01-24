@@ -560,8 +560,8 @@ You can now restrict to some devices and/or mime types in the
 1.1
 ---
 
-A major schema enhancement happens for meta values. Multivalued values were
-stored serialized and are now stored separatly.
+A major schema enhancement happens for meta values. Multivalued stored
+serialized are now stored separatly.
 Two routes are modified : records/metadatas and records/setmetadatas.
 A route has been added to make it easy to display caption : records/caption.
 

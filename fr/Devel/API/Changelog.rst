@@ -576,7 +576,7 @@ La réponse records/metadatas est maintenant sous la forme :
 Route records/caption
 *********************
 
-Pour les utilisateurs qui utilisaient cette route pour l'affichage de la
+Pour les développeurs qui utilisaient cette route pour l'affichage de la
 fiche descriptive, la route
 :doc:`records/caption </Devel/API/V1/Route/Records/Caption>` est plus aisée à
 manipuler. L’usage de la route records/metadatas est à réservé au prélude de
