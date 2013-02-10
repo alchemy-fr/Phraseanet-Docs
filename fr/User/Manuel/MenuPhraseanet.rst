@@ -5,8 +5,8 @@ Le menu Phraseanet
 
 .. topic:: L'essentiel
 
-    La barre de menu Phraseanet permet d'accéder aux différents modules et interfaces
-    de la solution ainsi qu'aux paramètres du compte utilisateur.
+    La barre de menu Phraseanet permet d'accéder aux différents modules et
+    interfaces de la solution ainsi qu'aux paramètres du compte utilisateur.
 
 .. image:: ../../images/MenuPhraseanet.jpg
     :align: center
@@ -15,10 +15,11 @@ Accès aux interfaces
 ********************
 
 La dernière application utilisée pour quitter se lance par défaut.
-Toutes les applications proposent en haut de la fenêtre la même barre de navigation.
+Toutes les applications proposent en haut de la fenêtre la même barre de
+navigation.
 
-**La partie gauche de la barre de menu affiche la liste les interfaces auxquelles
-vous avez accès.**
+**La partie gauche de la barre de menu affiche la liste les interfaces
+auxquelles l'utilisateur à accès.**
 
 .. image:: ../../images/General-menu.jpg
     :align: center
@@ -26,23 +27,23 @@ vous avez accès.**
 En cliquant sur le nom d'une application, le navigateur internet lance celle-ci
 dans un nouvel onglet.
 
-.. note::
+.. note:: Une interface est manquante dans le menu ? C'est une question de
+          droits : si l'utilisateur n'a pas accès au module, le lien vers l'
+          interface n'apparaît pas.
 
-    Une interface est manquante dans le menu ? Vérifier les droits. Si
-    l'utilisateur n'a pas accès au module, le lien vers l'interface n'
-    apparaît pas.
-
-**La partie droite de la barre de menu affiche les notifications, l'identifiant
-du compte, l'aide en ligne avec les raccourcis clavier et le lien de déconnexion.**
+**La partie droite de la barre de menu affiche les notifications, l'identifiant 
+du compte, l'aide en ligne avec les raccourcis clavier et le lien de 
+déconnexion.**
 
 Accès aux notifications
 ***********************
+Les notifications sont des messages informatifs affichés en temps réel dans l'
+interface *Phraseanet Production*. 
+Elles renseignent l'utilisateurs des demandes de validation, de réception de 
+paniers...*etc*.
 
-Les notifications sont des messages informatifs affichés en temps réel.
-Ils renseignent l'utilisateurs des demandes de validation, de réception de
-paniers...
-
-Se reporter à la section :doc:`personnaliser l'interface <PersonnaliserInterface>`
+Se reporter à la section
+:doc:`personnaliser l'interface <PersonnaliserInterface>`.
 
 Accès aux paramètres du compte
 ******************************
@@ -66,8 +67,10 @@ Informations
 La section Informations est consacrée aux données personnelles. Elle permet de
 saisir ou de modifier les informations relatives à l'identité, aux coordonnées
 postales, téléphoniques, d'email, de paramétrer la réception des notifications
-Phraseanet adressées par mail ou d'activer un compte FTP permettant la
+Phraseanet adressées par mail ou d'activer un compte :term:`FTP` permettant la
 réception de documents sur un serveur supportant ce type de connexion.
+
+.. note:: Comment activer la réception de documents sur un serveur FTP ?
 
 Accès
 ^^^^^
@@ -84,7 +87,7 @@ documents et d'en visualiser l'état:
   Bases/ Collections
 * Valider la demande en cliquant sur le bouton *Valider*
 
-Un message indique alors que qu'une demande d'accès est en cours.
+Un message indique alors qu'une demande d'accès est en cours.
 
 .. image:: ../../images/Accesbasescoll.jpg
     :align: center
@@ -98,34 +101,36 @@ navigateurs et résolutions d'écran détectées.
 
 Application
 ^^^^^^^^^^^
+La section *Applications* liste les applications tierces autorisées à se
+connecter au compte Phraseanet de l'utilisateur.
 
-La section *Applications* liste les applications tierces autorisées à se connecter
-au compte Phraseanet.
+.. note::
+
+  Comment autoriser une application tierce à se connecter à mon compte
+  Phraseanet ?
 
 Développeur
 ^^^^^^^^^^^
-
-La section *Développeur* permet la mise en place de clés d'API afin que des
-applications tierces puissent communiquer avec un compte Phraseanet. Un lien
-vers la documentation destinée aux développeurs est disponible dans cette section
-afin de découvrir comment mettre en oeuvre les API Phraseanet.
+La section *Développeur* permet la mise en place de clés d':term:`API` afin que
+des applications tierces puissent communiquer avec un compte Phraseanet. Un lien
+vers la documentation destinée aux développeurs est disponible dans cette
+section afin de découvrir comment mettre en oeuvre l'API *Phraseanet*.
 
 Accès à l'aide en ligne
 ***********************
-
-En cliquant sur l'onglet "Aide", l'utilisateur est redirigé vers cette documentation
-en ligne.
-En cliquant sur la flèche près de l'aide, deux sous-onglets apparaîssent: les
-*Raccourcis claviers*, et *A propos*.
+En cliquant sur l'onglet "Aide", l'utilisateur est redirigé vers cette
+documentation en ligne.
+En cliquant sur la flèche près de l'aide, deux sous-onglets apparaîssent: les 
+*Raccourcis claviers*, et *A propos*.  
 
 .. image:: ../../images/General-menu3.jpg
     :align: center
 
-Voici un exemple de quelques raccourcis claviers utiles dans Phraseanet.
+Voici un exemple de quelques raccourcis claviers utiles dans *Phraseanet*.
 
 .. image:: ../../images/General-raccourcis.jpg
     :align: center
 
 Se déconnecter
 **************
-Cliquer sur le lien *Déconnexion* pour quitter Phraseanet.
+Cliquer sur le lien *Déconnexion* pour quitter *Phraseanet*.

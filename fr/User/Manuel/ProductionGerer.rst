@@ -1,23 +1,37 @@
-Production : Gérer les média
-============================
+Gérer les média dans *Phraseanet Production*
+============================================
 
 .. topic:: L'essentiel
 
-    La gestion des media s'effectue dans *Phraseanet Production* qui est l'
-    interface chargée par defaut (sauf paramétrage particulier).
-    Elle regroupe l'affichage des enregistrements, la zone de travail, la palette
-    des actions.
-    Cette interface est personnalisable.
-
+    La gestion des media s'effectue dans *Phraseanet Production*.
+    Majeure, cette interface regroupe toutes les fonctionnalités permettant de
+    gérer, diffuser, publier des fonds.
+    Une présentation générale de l'interface Production est faite dans une
+    précédente section de ce manuel.
+    Dans les pages suivantes, seules les fonctions avancées sont présentées.
+    Elles concernent les utilisateurs qui ont des missions de gestion et d'
+    animation des fonds média.
+    
+    
 
 .. toctree::
-    :maxdepth: 1
-
-    Onglets
-    PaniersReportages
-    Actions
-    Editer
-    Push
-    Publier
-    Bridge
-    PersonnaliserInterface
+   :maxdepth: 1
+   
+   Onglets
+   PaniersReportages
+   Actions
+   Editer
+   Push
+   Publier
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

@@ -1,8 +1,10 @@
 ﻿Connexion à Phraseanet
 ======================
 
-.. toctree::
-    :maxdepth: 3
+Bien qu'il soit possible de consulter un fonds Phraseanet comme invité, ce qui
+reste un choix de paramétrage possible, l'utilisateur peut être amené à créer un
+compte et à s'identifier.
+
 
 Inscription
 -----------

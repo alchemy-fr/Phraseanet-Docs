@@ -6,15 +6,15 @@
 
 .. topic:: L'essentiel
 
-    De nombreuses statistiques sont accessibles dans Phraseanet. Dans l'interface
-    *Phraseanet Production*, elles sont directement visualisables dans l'onglet
-    "Popularité" du document. (:doc:`voir section Afficher <Afficher>`). Elles
-    font également l'objet d'une interface dédiée, *Phraseanet Report*, dans
-    laquelle l'utilisateur peut trouver un tableau de bord général permettant
-    de voir en un coup d'oeil l'activité du site, mais aussi des rapports plus
-    détaillés. En effet, cette application permet d'exécuter des statistiques
-    sur une période, sur un type d'information et sur pour une ou plusieurs bases
-    de données et collections.
+    De nombreuses statistiques sont accessibles dans Phraseanet. Dans l'
+    interface *Phraseanet Production*, elles sont directement visualisables dans
+    l'onglet "Popularité" du document (:doc:`voir section Afficher <Afficher>`).
+    Elles font également l'objet d'une interface dédiée, *Phraseanet Report*,
+    dans laquelle l'utilisateur peut trouver un tableau de bord général
+    permettant de visualiser l'activité du site et de consulter des rapports
+    détaillés. *Phraseanet Report* permet de révéler des statistiques sur une
+    période, sur un type d'information et sur pour une ou plusieurs bases et
+    collections.
 
 Les rapports sont classés dans 4 onglets:
 
@@ -73,6 +73,23 @@ sélectionner 3 critères afin d'accéder aux statistiques :
 * `Bases`_
 * `Types de rapports`_
 
+  * Questions les plus posées: (Tableau)
+    Liste des 10 questions les plus posées par les utilisateurs
+
+  * Volumétrie des questions les plus posées sur Phraseanet: (Tableau)
+    Liste des utilisateurs posant le plus de questions
+
+  * Sites d'où les documents sont les plus consultés (Tableau)
+
+
+Les trois onglets suivants : `Connexion`_, `Téléchargements`_ et 
+`Activité du Site`_, se présentent de la même façon : L'utilisateur doit 
+sélectionner 3 critères afin d'accéder aux statistiques : 
+
+  * `Période`_
+  * `Bases`_
+  * `Types de rapports`_
+  
 Connexion
 ----------
 
@@ -122,15 +139,21 @@ Types de rapports
 
 Enfin, il est nécessaire de choisir le type de rapport. Trois choix:
 
-* Groupé par utilisateurs: Liste et fréquence de connexion des utilisateurs
-* Toutes les connexions: Liste de toutes les connexions faites par chaque
-  utilisateur présentée par défaut sur un critère chronologique
-* Plateformes et navigateurs:
+  * Groupé par utilisateurs : 
 
-Ensemble de listes et graphiques des connexions par type de navigateur, système
-d’exploitation ou résolutions d’affichage employés par les utilisateurs. Ce
-rapport liste aussi les modules Phraseanet utilisés lors des connexions. Enfin,
-une liste et un graphique avec les couples systèmes d’exploitation / navigateurs
+Liste et fréquence de connexion des utilisateurs
+
+  * Toutes les connexions : 
+
+Liste de toutes les connexions faites par chaque utilisateur présentée 
+par défaut sur un critère chronologique
+
+  * Plateformes et navigateurs : 
+
+Ensemble de listes et graphiques des connexions par type de navigateur, système 
+d’exploitation ou résolutions d’affichage employés par les utilisateurs. Ce 
+rapport liste aussi les modules Phraseanet utilisés lors des connexions. Enfin, 
+une liste et un graphique avec les couples systèmes d’exploitation / navigateurs 
 les plus fréquemment utilisés pour les connexions.
 
 En cliquant sur l'un de ces types de rapport, les statistiques
@@ -149,8 +172,25 @@ L'onglet Téléchargement se présente de la même manière que l'onglet
 L'utilisateur doit d'abord sélectionner la Période, puis les
 :term:`bases <base>` et collections.
 
-Ensuite, le choix pour le type de rapport change. En effet, il est possible
-d'afficher les statistiques en se basant sur les rapports:
+Ensuite, le choix pour le type de rapport change. En effet, il est possible 
+d'afficher les statistiques en se basant sur les rapports : 
+
+  * Par utilisateurs:
+
+Pour chaque utilisateur ayant réalisé des téléchargements, ce rapport 
+affiche le nombre et poids des documents et sous résolutions.
+
+  * Tous les téléchargements:
+
+Liste de l’ensemble des téléchargements réalisés sur l’intervalle.
+Ce tableau propose de fonctions de regroupement, de tri,...
+
+  * Par jour :
+
+Nombre total et ventilation par document et sous résolutions de téléchargements 
+faits jour par jour.
+
+  * Par document, sur la base :
 
 * Par utilisateurs: Pour chaque utilisateur ayant réalisé des téléchargements, ce rapport
   affiche le nombre et poids des documents et sous résolutions.
@@ -169,11 +209,10 @@ d'afficher les statistiques en se basant sur les rapports:
 
 Activité du Site
 ----------------
-
-Ce dernier onglet se présente également de la même manière que
-les deux précédents.
-L'utilisateur doit aussi choisir la période et la :term:`base`, ensuite
-les types de rapports sélectionnables sont les suivants:
+Ce dernier onglet se présente également de la même manière que 
+les deux précédents. 
+L'utilisateur doit aussi choisir la période et la :term:`base`, ensuite 
+les types de rapports sélectionnables sont les suivants :
 
 * Toutes les questions:
   Liste chronologique des questions posées par les utilisateurs.
@@ -225,9 +264,9 @@ Les filtres sont en relation avec les valeurs disponibles dans la colonne.
 
 * regroupements logiques par valeurs identiques
 
-Certaines valeurs dans les colonnes sont des liens cliquables "soulignées"
-et réagissant au survol, sont cliquables et affichent dans une fenêtre :term:`Overlay`
-des informations en relation avec la valeur du lien.
+Certaines valeurs dans les colonnes sont des liens cliquables "soulignées" 
+et réagissant au survol, sont cliquables et affichent dans une fenêtre
+:term:`Overlay` des informations en relation avec la valeur du lien.
 
 Les rapports, lorsqu’ils sont constitués d’un grand nombre de lignes,
 sont répartis sur plusieurs pages.

@@ -6,66 +6,57 @@
 
 .. topic:: L'essentiel
 
-    Dans l'interface, cette zone de travail (anciennement "Barre des Onglets")
-    est présente sur le côté gauche de la fenêtre de *Phraseanet Production* et
-    propose :
-
-    * Un espace de travail pour mettre de côté des sélections d'images et autres
+    Dans l'interface, cette zone de travail r√©tractable est pr√©sente sur le c√¥t√©
+    gauche de la fen√™tre de *Phraseanet Production*. Elle propose :
+    
+    * Un espace de travail pour mettre de c√¥t√© des s√©lections d'images et autres 
       documents: ce sont les :doc:`Paniers et Reportages <PaniersReportages>`
+      
+    Si (et seulement si) un th√©saurus est d√©ploy√©, 
+    
+    * une aide √† la recherche avec des `Propositions`_
+    
+    * Le `thesaurus`_ mis en oeuvre
 
-    * Une aide à la recherche avec les `Propositions`_
 
-    * Le `thesaurus`_ dans l'interface de *Phraseanet Production*
 
 Les Paniers et les Reportages
 -----------------------------
 
-Voici un aperçu de la Zone de travail (ou WorkZone). Ci-dessous, voici la vue
-par défaut, à savoir les Paniers et des Reportages :
+La Zone de travail pr√©sente par d√©faut les Paniers et les Reportages :
 
 .. image:: ../../images/Onglets-General.jpg
     :align: center
 
-Le premier onglet de la zone de travail regroupe les paniers et les reportages.
-Ils servent à mettre de côté des documents.
-Paniers et reportages sont abordés dans un chapitre spécifique.
-Pour plus d'informations, :doc:`se reporter à la section consacrée aux Paniers et Reportages <PaniersReportages>`.
+Les paniers et les reportages sont abord√©s dans un chapitre sp√©cifique.
+:doc:`Se reporter √† la section consacr√©e aux Paniers et Reportages <PaniersReportages>`.
 
 Propositions
 ------------
-Cet Onglet sert à interpréter les requêtes qui sont faites par l’utilisateur et
-lui renvoyer des propositions en relation avec le thesaurus, de façon à étendre
-une recherche en remontant d’un ou plusieurs niveaux ou au contraire à l’affiner
-en précisant la requête avec un terme plus précis.
+Si un th√©saurus est d√©ploy√©, cet onglet peut afficher des propositions en
+rapport avec la recherche de l'utilisateur et des termes de r√©f√©rence contenus
+dans le thesaurus.
+En remontant des termes issus du Th√©saurus, les propositions sugg√®rent √† l'
+utilisateur des termes permettant de pr√©ciser davantage sa recherche ou au
+contraire d'√©tendre sa recherche √† un champ cognitif plus large.
 
-Par exemple: Le mot "Justice" est saisi dans la zone de recherche.
+Chacune des propositions affich√©es est cliquable et permet de lancer une
+nouvelle recherche.
+ 
+  .. image:: ../../images/Onglet-Propositions.jpg
+	   :alt: alternate text
+	   :align: center
 
-La fenêtre "Résultat" affiche les résultats.
-
-Apres avoir effectué une recherche, cliquer sur "Propositions".
-
-L’onglet s’affiche, le thesaurus interprète la requête et affiche les propositions.
-
-.. image:: ../../images/Onglet-Propositions.jpg
-    :align: center
-
-Chaque proposition est cliquable et permet de lancer une nouvelle recherche.
+  .. note:: La pertinence des propositions faites dans cet onglet sont
+    dépendantes de la construction du thésaurus déployé.
 
 Thesaurus
 ---------
 
 Onglet Thesaurus
 ****************
-
-Cette recherche n’est active que si un ou plusieurs thesaurus sont disponibles.
-L’onglet Thesaurus dans *Phraseanet Production* est lié à l'interface
-:doc:`Phraseanet Thesaurus <Thesaurus>`.
-Les Thesauri ouverts sont présentés sous forme d’"arbres".
-
-Cliquer sur l’onglet Thesaurus
-
-.. image:: ../../images/Rechercher-thesaurus1.jpg
-    :align: center
+L'onglet Thesaurus pr√©sente le ou les thesauris d√©ploy√©s sous forme d'"arbres"
+dont les noeuds et termes sont cliquables.
 
 Cliquer sur les branches du thesaurus pour le déployer.
 
@@ -74,50 +65,60 @@ Double cliquer sur un terme pour lancer la recherche.
 .. image:: ../../images/Rechercher-thesaurus2.jpg
     :align: center
 
+**Une recherche dans les termes du thésaurus est possible**.
+
+Inscrire au minimum les trois premiers caractères d’un terme pour déclencher le
+dispositif d'auto-complétion. L’affichage se met à jour et en double-cliquant
+sur un terme l’application lance une requête thesaurus sur les bases et
+collections ouvertes.
+
+	  .. image:: ../../images/Rechercher-thesaurus3.jpg
+	   :alt: alternate text
+	   :align: center
+
 Onglet Candidats
-****************
+****************	   
+Visible par les utilisateurs disposant des droits d'administration du th√©saurus,
+cette rubrique affiche une liste de termes candidats issus de l‚Äôindexation
+documentaire des media.
+Cette liste est aliment√©e en continu : 
 
-Cette fonction permet de retrouver la liste des mots candidats issus de l’indexation
-de nouveaux documents.
-Cette liste est générée à la fois par la récupération des métadonnées lors de
-l’ajout de nouveaux documents ou après modification des notices après édition
-des documents.
-Selon le paramétrage du Thesaurus, les listes de mots candidats peuvent être triées
-par champs.
+  * D'une part par la r√©cup√©ration de m√©tadonn√©es issues de l'indexation  de 
+    nouveaux documents par le moteur Phrasea.
+    
+  * D'autre part, par l'√©dition des notices de documents dans le cas ou des
+    termes utilis√©s par d√©crire les media ne seraient pas pr√©sents dans les champs
+    documentaires li√©es √† des branches de th√©saurus.
+  
+Cliquer sur l'onglet Thesaurus de la zone de travail puis sur la rubrique **
+Candidats**.
+Les champs documentaires li√©s √† des branches de th√©saurus sont pr√©sent√©s et le
+symbole **+** permet de d√©ployer la liste des termes candidats.
 
-* Cliquer sur l’onglet Thesaurus dans la barre des Onglets
-* Cliquer sur le sous onglet "Candidats"
-
-Les termes candidats s’affichent:
+Les termes candidats s’affichent :
 
 .. image:: ../../images/Onglets-candidats1.jpg
     :align: center
 
-Cliquer sur les symboles "plus" pour afficher les branches et les termes candidats.
 
-Faire un clic droit ou cliquer en maintenant les touches "ctrl" enfoncée sur un
-terme pour afficher le menu contextuel du terme.
+Des recherches sur les termes candidats peuvent √™tre lanc√©es au moyen d'un
+double-clic. La recherche porte alors sur une interrogation par champ.
 
-Le menu contextuel du terme s’affiche:
+L'onglet Candidat permet une administration ponctuelle du Th√©saurus. C'est une
+option int√©ressante s'il y a peu de termes candidats √† examiner.
+
+Pour ajouter un terme candidat au Th√©saurus, effectuer un clic droit (ou cliquer
+en maintenant les touches "ctrl" enfonc√©e) sur un terme pour afficher le menu
+contextuel du terme.
+
+	  .. image:: ../../images/Onglets-candidats2.jpg
+	   :alt: alternate text
+	   :align: center
+	   
+  * Cliquer sur Accepter en xx (xx √©tant la langue du terme)
 
 .. image:: ../../images/Onglets-candidats2.jpg
     :align: center
 
-* Cliquer sur Accepter en xx "langue du terme"
-* Cliquer sur Remplacer par
-* Cliquer sur Supprimer
+  * Cliquer sur Supprimer pour supprimer le terme des candidats
 
-Chercher dans Thesaurus
-***********************
-
-La fenêtre Thesaurus est utilisée pour rechercher des termes présents dans les
-thesauri ouverts.
-
-Dans le cadre d’une recherche de termes dans la fenêtre Thesaurus, il suffit de
-taper au minimum les trois premiers caractères d’un terme, l’affichage se met à jour,
-ne proposant plus que les branches et sous branches, jusqu’au terme trouvé.
-En cliquant un terme dans l’arbre, l’application lance une requête thesaurus sur
-les bases ouvertes.
-
-.. image:: ../../images/Rechercher-thesaurus3.jpg
-    :align: center

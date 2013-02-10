@@ -6,10 +6,11 @@ Gestion des utilisateurs
 
 .. topic:: L'essentiel
 
-    **Disponible pour les utilisateurs disposant des droits de gestion des utilisateurs**,
-    l'interface Utilisateurs permet de gérer la liste des utilisateurs enregistrés
-    dans l'application Phraseanet et de leurs attribuer des droits.
-
+    **Disponible pour les utilisateurs disposant des droits de gestion des
+    utilisateurs**, l'interface Utilisateurs permet de g√©rer la liste des
+    utilisateurs enregistr√©s dans l'application Phraseanet et de leurs attribuer
+    des droits.
+    
     L'interface *Utilisateurs* permet :
 
     * De créer de nouveaux utilisateurs
@@ -18,8 +19,8 @@ Gestion des utilisateurs
     * Créer des modèles applicables à des utilisateurs
     * De paramétrer un accès invité disposant de droits spécifiques
 
-Par défaut, l'interface affiche la liste des utilisateurs référencés sur la solution
-Phraseanet.
+Par défaut, l'interface affiche la liste des utilisateurs référencés sur la
+solution Phraseanet.
 
 .. image:: ../../images/General-Administration.jpg
     :align: center
@@ -33,11 +34,11 @@ certainement parce qu'il n'a pas les droits pour y accéder.
 **Par exemple**, si un utilisateur n'a pas le droit d'accéder à une collection,
 celui-ci ne la verra pas et peut donc parfaitement ignorer qu'elle existe.
 
-**Cela est également vrai pour les interfaces elles mêmes** : certains utilisateurs
-peuvent n'avoir accès qu'à certains modules ou qu'a certaines fonctionnalités dévolues
-à la consultation.
-Les administrateurs, eux, peuvent avoir accès à davantage d'interfaces (telles que
-*Administration*, *Report*, *Thesaurus* ou *Upload*).
+**Cela est √©galement vrai pour les interfaces elles m√™mes** : certains
+utilisateurs peuvent n'avoir acc√®s qu'√† certains modules ou qu'a certaines
+fonctionnalit√©s d√©volues √† la consultation.
+Les administrateurs, eux, peuvent avoir acc√®s √† davantage d'interfaces (telles
+que *Administration*, *Report*, *Thesaurus* ou *Upload*).
 
 Enfin, **il n'est pas possible à un utilisateur disposant des droits de gestion des
 utilisateurs de donner plus de droits qu'il n'en a lui-même**.
@@ -80,13 +81,15 @@ Saisir le login du nouvel utilisateur et cliquer sur **Créer un utilisateur**.
 
 La fenêtre de gestion des droits de l'utilisateur créé s'ouvre.
 
-.. image:: ../../images/Administration-nouvelutilisateur3.jpg
-    :align: center
+  .. image:: ../../images/Administration-nouvelutilisateur3.jpg
+	   :alt: alternate text
+	   :align: center
+ 
+Pour savoir comment g√©rer les droits, se reporter √† la section
+`Edition des droits`_ .
 
-Pour savoir comment gérer les droits, se reporter à la section `Edition des droits`_ .
-
-Pour éditer les renseignements relatifs aux coordonnées de l'utilisateur, cliquer
-sur l'onglet **Informations** puis éditer le formulaire.
+Pour √©diter les renseignements relatifs aux coordonn√©es de l'utilisateur,
+cliquer sur l'onglet **Informations** puis √©diter le formulaire.
 
 .. image:: ../../images/Administration-nouvelutilisateur4.jpg
     :align: center
@@ -111,11 +114,15 @@ dans la liste puis cliquer sur le bouton **Supprimer**.
 Créer des modèles utilisateurs
 ------------------------------
 
-Il est possible de créer des modèles et de les appliquer à un ou plusieurs utilisateurs.
-Un utilisateur auquel est appliqué un modèle, benéficie des droits définis pour le
-modèle.
+Il est possible de cr√©er des mod√®les et de les appliquer √† un ou plusieurs
+utilisateurs.
+Un utilisateur auquel est appliqu√© un mod√®le, cumule des droits d√©finis par le 
+mod√®le.
 
-Dans la liste des utilisateurs, un modèle est repéré par une icône **M**.
+.. note:: Les mod√®les appartiennent aux utilisateurs qui les cr√©ent. Ils ne sont
+          pas visibles par les autres administrateur. 
+
+Dans la liste des utilisateurs, un mod√®le est rep√©r√© par une ic√¥ne **M**. 
 
 .. image:: ../../images/Administration-modeleutilisateur.jpg
     :align: center
@@ -153,7 +160,8 @@ L'accès invité
 Il donne la possibilité à des personnes non enregistrées sur le système d'avoir
 un accès (temporaire) à l'application.
 
-Pour configurer l'accès invité, cliquer sur le lien **Réglage de l'accès invité**.
+Pour configurer l'accès invité, cliquer sur le lien **Réglage de l'accès
+invité**.
 
 .. image:: ../../images/Administration-Barre-invite.jpg
     :align: center
@@ -167,9 +175,9 @@ Edition des droits
 ------------------
 
 L'edition des droits concerne aussi bien les utilisateurs que les modèles.
-Pour afficher le formulaire d'édition des droits d'un modèle ou d'un utilisateur,
-double cliquer sur le nom de l'utilisateur ou du modèle dans la liste des
-utilisateurs.
+Pour afficher le formulaire d'édition des droits d'un modèle ou d'un
+utilisateur, double cliquer sur le nom de l'utilisateur ou du modèle dans la
+liste des utilisateurs.
 
 La fiche des droits s'ouvre et permet de gérer les **droits de consultation et
 exploitation** à gauche et les droits de "gestion" au sens étendu à droite.
@@ -187,42 +195,43 @@ l'utilisateur peut avoir accès.
 .. image:: ../../images/Administration-droits.jpg
     :align: center
 
-Les noms des collections apparaîssent sous les noms des bases auxquelles elles
-appartiennent. La collection est la notion utilisée dans les interfaces *Production*,
-*Classic*, *Report*, *Administration*.
+Les noms des collections appara√Æssent sous les noms des bases auxquelles elles 
+appartiennent. La collection est la notion utilis√©e dans les interfaces
+*Production*, *Classic*, *Report*, *Administration*. 
 
-La base de données contient une ou plusieurs collections.
-Pour chacune de ces collections, des droits sont définis. Un droit est accordé lorsque
-la case à l'intersection de la ligne et de la colonne est cochée. Le droit n'est pas
-accordé lorsque la case est décochée.
-La case grisée signifie que le droit n'est accordé que partiellement à certains des
-utilisateurs sélectionnés.
+La base de donn√©es contient une ou plusieurs collections.
+Pour chacune de ces collections, des droits sont d√©finis. Un droit est accord√©
+lorsque la case √† l'intersection de la ligne et de la colonne est coch√©e. Le
+droit n'est pas accord√© lorsque la case est d√©coch√©e.
+La case gris√©e signifie que le droit n'est accord√© que partiellement √† certains
+des utilisateurs s√©lectionn√©s.
 
-Un utilisateur ne peut donner plus de droits qu'il n'en a lui même (point rouge).
-Le signe "i" signifie qu'une fenêtre est accessible d'un clic pour définir de
-façon plus précise des droits spécifiques.
+Un utilisateur ne peut donner plus de droits qu'il n'en a lui m√™me (point
+rouge). Le signe "**i**" signifie qu'une fen√™tre est accessible d'un clic pour
+d√©finir de fa√ßon plus pr√©cise des droits sp√©cifiques. 
 
 .. note::
 
-    En cliquant sur la flèche grise, Phraseanet vous donne la possibilité de
-    cocher ou décocher toute la colonne, au lieu de cliquer sur les cases
-    une par une.
+.. note:: En cliquant sur la fl√®che grise, Phraseanet vous donne la possibilit√©
+          de cocher ou d√©cocher toute la colonne, au lieu de cliquer sur les
+          cases une par une.
 
 Les droits de consultation
 **************************
 
 La première partie de la fenêtre des droits, la plus à gauche:
 
-* Cocher **Accéder** pour permettre d'accéder à la base ou à la collection
-* Cocher **Actif** pour activer l'utilisateur. A contrario, décocher la case désactive
-  l'utilisateur sans perdre tout le paramétrage.
-* Cocher **Paniers** pour autoriser la création des Paniers.
-* Cocher **Voir Preview** pour autoriser la visualisation des images de choix.
-* Cocher **Watermark** pour définir si l'utilisateur voit les images de choix avec un
-  marquage.
-* Cocher **Télécharger Haute Def** pour autoriser le téléchargement du document original
-* Cocher **Commander** pour autoriser la commande de documents
-* Cliquer sur **Quota** pour ouvrir la fenêtre Quota de téléchargements.
+  * Cocher **Acc√©der** pour permettre d'acc√©der √† la base ou √† la collection
+  * Cocher **Actif** pour activer l'utilisateur. A contrario, d√©cocher la case
+    d√©sactive l'utilisateur sans perdre tout le param√©trage.
+  * Cocher **Paniers** pour autoriser la cr√©ation des Paniers.
+  * Cocher **Voir Preview** pour autoriser la visualisation des images de choix.
+  * Cocher **Watermark** pour d√©finir si l'utilisateur voit les images de choix
+    avec un marquage.
+  * Cocher **T√©l√©charger Haute Def** pour autoriser le t√©l√©chargement du
+    document original
+  * Cocher **Commander** pour autoriser la commande de documents
+  * Cliquer sur **Quota** pour ouvrir la fen√™tre Quota de t√©l√©chargements.
 
 Plusieurs options très fines sont à la disposition de l'utilisateur pour la
 limitation:
@@ -231,18 +240,20 @@ limitation:
 
 La fenêtre "Quota des téléchargements" permet de définir pour l'utilisateur des
 quotas de téléchargement par base ou par collection.
-
-* Cocher sur Oui pour activer la gestion des quotas.
-* Saisir le nombre de droits de téléchargements par mois pour cette collection.
-  Le "reste" se calcule automatiquement en fonction du droit initial et du nombre
-  de téléchargements effectués.
-* Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la fenêtre.
+  
+  * Cocher sur Oui pour activer la gestion des quotas.
+  * Saisir le nombre de droits de t√©l√©chargements par mois pour cette collection.
+    Le "reste" se calcule automatiquement en fonction du droit initial et du
+    nombre de t√©l√©chargements effectu√©s.
+  * Cliquer sur le bouton Valider pour enregistrer le param√©trage et fermer la
+    fen√™tre.
 
 **Limitation dans le temps**
 
 Cliquer sur **Limité Temps** pour ouvrir la fenêtre *Durée de vie*
 
-Cette fenêtre permet de limiter dans le temps l'accès à une base ou à une collection.
+Cette fenêtre permet de limiter dans le temps l'accès à une base ou à une
+collection.
 
 * Cocher sur Oui pour activer la gestion des limites dans les temps
 * Sélectionner les bornes de la période d'accès autorisée
@@ -256,12 +267,15 @@ Cette fenêtre permet de paramétrer les status des documents pour l'utilisateur
 Un status peut être sur une des deux valeurs "une ou l'autre des cases cochées",
 l'utilisateur ne voit que les documents dont le status est sur la même valeur.
 
-Un status peut être sur les deux valeurs "les deux cases cochées", l'utilisateur
-voit aussi bien les documents dont le statut est sur l'une ou l'autre des valeurs.
+Un status peut √™tre sur les deux valeurs "les deux cases coch√©es", l'utilisateur 
+voit aussi bien les documents dont le statut est sur l'une ou l'autre des
+valeurs.
 
-*Se reporter aux réglages de la base pour la création et la gestion des status bits.*
+*Se reporter aux réglages de la base pour la création et la gestion des status
+bits.*
 
-Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la fenêtre.
+Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la
+fenêtre.
 
 Les droits d'exploitation et de gestion
 ***************************************
@@ -273,47 +287,54 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
 
 **Documents**
 
-* Cocher **Ajouter** pour autoriser l'ajout d'un document dans la base ou collection
-* Cocher **Editer** pour autoriser l'édition de la description des documents
-* Cocher **Changer status** pour autoriser l'utilisateur à changer le statut d'un document
-* Cocher **Supprimer** pour autoriser l'utilisateur à supprimer un document
-* Cocher **Outils Images** pour autoriser l'utilisateur à bénéficier des outils
-* Cocher **Gestion Utilisateurs** pour autoriser la gestion des utilisateurs
-* Cocher **Consulter Rapports** pour autoriser l'utilisateur à consulter les statistiques
-* Cocher **Push** pour autoriser l'utilisation de la fonction "Push" et d'envoyer des
-  documents à des destinataires.
+  * Cocher **Ajouter** pour autoriser l'ajout d'un document dans la base ou
+    collection 
+  * Cocher **Editer** pour autoriser l'√©dition de la description des documents
+  * Cocher **Changer status** pour autoriser l'utilisateur √† changer le statut
+    d'un document
+  * Cocher **Supprimer** pour autoriser l'utilisateur √† supprimer un document
+  * Cocher **Outils Images** pour autoriser l'utilisateur √† b√©n√©ficier des 
+    outils
+  * Cocher **Gestion Utilisateurs** pour autoriser la gestion des utilisateurs
+  * Cocher **Consulter Rapports** pour autoriser l'utilisateur √† consulter les
+    statistiques
+  * Cocher **Push** pour autoriser l'utilisation de la fonction "Push" et d'
+    envoyer des documents √† des destinataires.
 
 **Droits sur la gestion des bases et collections**
 
-* Cocher **Gestion Coll.** pour autoriser l'utilisateur à effectuer différentes
-  opérations de gestion. Pour une collection: la renommer, la vider, la mettre
-  online ou offline, la supprimer.
-* La case **Structure Coll.** donne accès aux fonctions de réglages de collections
-  dans *Phraseanet Administration*. Structure Coll. permet l’accès aux préférences
-  de la collection et autorise la modification des listes de valeurs suggérées.
-* La case **Publicat° Panier** permet à un utilisateur de publier sous forme
-  de paniers des documents sur des pages de l’application *Classic*.
-* La case **Modif. Thesaurus** permet à l’utilisateur d’accéder à l’application
-  *Phraseanet Thesaurus*
-* La case **Gestion Base** permet d’accéder aux fonctions de paramètres de
-  bases de données comme création, purge et fonctions avancées de gestion de
-  la solution
-* Enfin, **Structure Base**, pour autoriser l'utilisateur à modifier la
-  structure de la base de données.
+  * Cocher **Gestion Coll.** pour autoriser l'utilisateur √† effectuer
+    diff√©rentes op√©rations de gestion. Pour une collection: la renommer, la
+    vider, la mettre online ou offline, la supprimer.  
+
+  * La case **Structure Coll.** donne acc√®s aux fonctions de r√©glages de
+    collections dans *Phraseanet Administration*. Structure Coll. permet l‚Äôacc√®s
+    aux pr√©f√©rences de la collection et autorise la modification des listes de
+    valeurs sugg√©r√©es.
+
+  * La case **Publicat¬∞ Panier** permet √† un utilisateur de publier sous forme 
+    de paniers des documents sur des pages de l‚Äôapplication *Classic*.
+
+  * La case **Modif. Thesaurus** permet √† l‚Äôutilisateur d‚Äôacc√©der √† l‚Äô
+    application *Phraseanet Thesaurus*
+
+  * La case **Gestion Base** permet d‚Äôacc√©der aux fonctions de param√®tres de 
+    bases de donn√©es comme cr√©ation, purge et fonctions avanc√©es de gestion de 
+    la solution
 
 Demandes
 ---------
-
-Disponible via le menu du module d'Administration, cette fenêtre liste les demandes
-d'inscription des nouveaux utilisateurs dans l'écran Inscription.
-Si un utilisateur a fait une demande sur plusieurs collections, il y a autant de
-lignes de validation que de demandes. Un "rollover" sur le nom permet d’afficher
+Disponible via le menu du module d'Administration, cette fenêtre liste les
+demandes d'inscription des nouveaux utilisateurs dans l'écran Inscription. 
+Si un utilisateur a fait une demande sur plusieurs collections, il y a autant de 
+lignes de validation que de demandes. Un "rollover" sur le nom permet d’afficher 
 les informations relatives au demandeur.
 
 .. image:: ../../images/Administration-demande.jpg
     :align: center
 
-Choisir les droits à attribuer par collections en cochant les cases. L'utilisateur peut:
+Choisir les droits à attribuer par collections en cochant les cases. L'
+utilisateur peut :
 
 * refuser l'accès à la collection demandée
 * donner accès à la collection demandée aux documents de type sous résolution
