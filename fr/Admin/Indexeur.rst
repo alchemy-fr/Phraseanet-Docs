@@ -168,7 +168,7 @@ Spécificités Windows
 
 L'indexeur est livré pré-compilé pour Windows.
 
-Télécharger la dernière version "https://github.com/alchemy-fr/Phraseanet-Indexer/tree/master/WIN32/out/Release/bin/phraseanet_indexer.exe",
+Télécharger la dernière version "https://github.com/alchemy-fr/Phraseanet-Indexer/blob/master/WIN32/Release_win32/",
 et placer l'éxécutable dans un répertoire distinct (par ex. dans "Program
 Files\\Phraseanet-Indexer\\phraseanet_indexer.exe").
 
