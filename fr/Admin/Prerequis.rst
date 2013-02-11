@@ -76,12 +76,10 @@ Spécifique Phraseanet
 
     git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
     cd phraseanet_indexer
-    aclocal
-    automake -a
-    autoconf
+    autoreconf --force --install
     ./configure
     make
-    make install
+    sudo make install
 
 Locales
 -------
