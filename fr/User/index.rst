@@ -8,7 +8,7 @@ Il s'adresse à différents types d'utilisateurs :
 * **Les utilisateurs finaux** dont le but est la recherche et le 
 téléchargement de média.
 * **Les contributeurs**, **documentalistes** ou **iconographes** qui alimentent,
-renseignent et organisent des fonds media.
+renseignent, organisent et promeuvent des fonds media.
 * **Les administrateurs fonctionnels** ou **les chefs de projets** qui mettent
 en place ou animent des projets de médiathèques en entreprises et autres
 organisations.
