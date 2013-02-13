@@ -100,7 +100,7 @@ requerir à un logiciel de transfert :term:`FTP <FTP>`.
    :alt: alternate text
    :align: center
 
-:doc:`Comment importer des documents dans votre base Phraseanet ?<Importer>`
+:doc:`Comment importer des documents dans Phraseanet ?<Importer>`
 
 Administration
 **************
