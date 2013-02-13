@@ -60,7 +60,7 @@ aux gestionnaires d'importer, de décrire, d'organiser et de diffuser leurs
 documents.
 
 .. figure:: ../../images/Production-zones.jpg
-    :alt: alternative text
+    :alt: alternate text
     :align: center
 
 Classic
@@ -71,7 +71,7 @@ Classic est le module à privilégier pour la consultation sous Internet
 Explorer 6 ou autres navigateurs anciens.
 
 .. figure:: ../../images/General-Classic.jpg
-   :alt: alternative text
+   :alt: alternate text
    :align: center
 
 Lightbox
