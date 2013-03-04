@@ -5,7 +5,7 @@
 
 Généralités
 -----------
-*Phraseanet* est une solution de gestion de ressources numériques.
+*Phraseanet* est une solution de gestion de médias numériques.
 
 Elle s'adresse à tous les professionnels qui ont besoin d’un outil performant
 pour assurer la gestion et la diffusion de leurs images, vidéos, sons et autres
@@ -34,10 +34,10 @@ Il dispose également d'une adresse email valide à laquelle il a accès.
 
 Les modules Phraseanet
 ----------------------
-Phraseanet est un système complet pour l’archivage, l’organisation et la
+Phraseanet est un système complet pour l'archivage, l'organisation et la
 diffusion de documents multimédia.
 
-La solution repose sur sept modules ou interfaces, accessibles à partir d'une barre menu principal :
+La solution repose sur sept modules ou interfaces, accessibles à partir d'une barre de menu principal :
 
 * Phraseanet `Production`_
 * Phraseanet `Classic`_
@@ -66,18 +66,17 @@ documents.
 Classic
 *******
 *Phraseanet Classic* est une interface de consultation dédiée aux utilisateurs
-finaux. Elle permet de :doc:`consulter simplement les documents <Afficher>`.
-Classic est le module à privilégier pour la consultation sous Internet
-Explorer 6 ou autres navigateurs anciens.
+finaux disposants de navigateurs anciens. Elle permet de :doc:`consulter simplement les documents <Afficher>`.
 
 .. figure:: ../../images/General-Classic.jpg
    :alt: alternate text
    :align: center
 
+
 Lightbox
 ********
 Interface collaborative, *Phraseanet Lightbox* permet de visualiser et/ou
-télécharger des documents spécifiques envoyés par des utilisateurs Phraseanet.
+télécharger des documents spécifiques envoyés par des utilisateurs *Phraseanet*.
 Les fonctionnalités de validation permet de :doc:`connaître les avis
 d’utilisateurs sur des documents <Push>`.
 
@@ -91,8 +90,7 @@ se reporter à la section consacrée au :doc:`Push <Push>`.
 Upload
 ******
 Disponible seulement à partir de l'interface Production, *Phraseanet Upload*
-permet d'importer des documents multimédia à partir du disque dur de
-l'ordinateur.
+permet aux utilisateurs qui en ont le droit, d'importer des documents multimédia à partir du disque dur de l'ordinateur dans Phraseanet.
 Ce gestionnaire de téléchargement montant permet de transférer des media sans
 requerir à un logiciel de transfert :term:`FTP <FTP>`.
 
@@ -106,7 +104,7 @@ Administration
 **************
 :doc:`Phraseanet Administration <Administration>` est une interface métier
 permettant de gérer et de surveiller l'application, de créer des bases et des
-:term:`collection <Collection>`, de déclarer des structures documentaires, de
+:term:`collections <Collection>`, de déclarer des structures documentaires, de
 créer des utilisateurs et de gérer leurs droits.
 
 .. image:: ../../images/General-Administration.jpg
@@ -119,7 +117,7 @@ Thesaurus
 *********
 La création et la gestion de :doc:`Thesaurus <Thesaurus>` est possible dans
 *Phraseanet*. Le *thésaurus Phraseanet* s'utilise conjointement au moteur de
-recherche Phrasea engine.
+recherche *Phrasea engine*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques.
 Il représente un vrai plus dans l’utilisation d’une solution de gestion de media
@@ -136,7 +134,8 @@ Report
 ******
 Application de :doc:`Statistiques <Statistiques>`, *Phraseanet Report*
 présente en détail l’activité d'un système *Phraseanet* et rend compte des
-comportements des utilisateurs.
+comportements des utilisateurs. C'est une mine d'informations pour optimiser l'
+accès aux fonds documentaires et mieux connaître les habitudes des utilisateurs.
 
 .. figure:: ../../images/General-Report.jpg
    :alt: alternate text

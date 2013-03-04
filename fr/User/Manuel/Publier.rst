@@ -2,7 +2,7 @@
 ===================================
 .. toctree::
    :maxdepth: 3
-   
+
 .. topic:: L'essentiel
 
     Deux fonctionnalites de Phraseanet permettent de publier et de diffuser des
@@ -10,9 +10,9 @@
 
 Publier des paniers et des reportages
 -------------------------------------
-Les publications Phraseanet permettent de mettre à la disposition d'utilisateurs 
-des :doc:`Paniers <PaniersReportages>` et des Reportages dans la page des 
-publications. 
+Les publications Phraseanet permettent de mettre à la disposition d'utilisateurs
+des :doc:`Paniers <PaniersReportages>` et des Reportages dans la page des
+publications.
 Ces publications sont également disponibles sous forme de flux media RSS hors de
 l'application.
 
@@ -22,8 +22,8 @@ l'application.
 * Cliquer sur l'icône "Publier" (icône orange représentant les flux RSS).
 
   * Cliquer sur la barre de titre du panier souhaité pour faire apparaître sa
-    barre d'actions. 
-	
+    barre d'actions.
+
   * Cliquer sur l'icône "Publier" (icône orange représentant les flux RSS).
 
 Une fenêtre s'ouvre:
@@ -43,15 +43,15 @@ Pour finir de remplir les informations:
   * Choisir le fil disponible dans la liste (les fils sont créés préalablement
     dans la rubrique :doc:`Publications <AdministrationSolution>` de *Phraseanet
     Admin*).
-  
+
   * Cliquer enfin sur **Publier** pour valider
 
 La publication est faite.
 
-Elle est désormais visible dans les *Publications Phraseanet* 
+Elle est désormais visible dans les *Publications Phraseanet*
 
 **L'utilisateur peut y accéder en cliquant sur le lien *Publications* dans la
-barre de menu Phraseanet** : 
+barre de menu Phraseanet** :
 
 .. image:: ../../images/Publier-menu.jpg
     :align: center
@@ -60,8 +60,8 @@ Après avoir cliqué sur "Publications" dans le menu, la publication apparaît :
 
   .. image:: ../../images/Publier-Affichage.jpg
 	   :alt: alternate text
-	   :align: center 
-	   
+	   :align: center
+
 Des applications tierces, comme Phraseanet Showcase, peuvent également exploiter
 les publications. Elles sont en effet disponibles sous forme de flux media RSS
 hors de l'application.
@@ -86,8 +86,8 @@ Sélection des media
 
   * Sélectionner une ou plusieurs media dans *Phraseanet Production*. Cela peut
     être des documents sélectionnés dans la zone d'affichage, ou regroupés dans
-    des paniers ou des reportages. 
-  
+    des paniers ou des reportages.
+
   * Cliquer, dans la :doc:`Palette des Actions <Actions>`, sur le menu
     contextuel du bouton "Push".
 
@@ -109,7 +109,7 @@ La fenêtre du Bridge s'ouvre:
   .. image:: ../../images/Bridge-1b.jpg
 	   :alt: alternate text
 	   :align: center
-	   
+
 Le site demande de s'authentifier, puis d'accorder la permission à Phraseanet de
 se connecter.
 
@@ -120,9 +120,10 @@ Dans le cas de Filckr, les photos existantes sont affichées dans l'onglet
 "Photos" ou "Photosets" si les elles sont organisées en albums dans Flickr.
 
 .. image:: ../../images/Bridge-3a.jpg
+    :alt: alternate text
     :align: center
 
-Publier sur Flickr 
+Publier sur Flickr
 ******************
 Sélectionner des media dans le zone d'affichage, puis cliquer sur le bouton
 "Ajouter".
@@ -134,20 +135,22 @@ description.
   * Cliquer sur le bouton **Ajouter** en bas à gauche.
 
 .. image:: ../../images/Bridge-2.jpg
+    :alt: alternate text
     :align: center
 
 A mesure que les images sont envoyées, il est possible de voir l'avancement du
 transfert par un simple clic sur l'onglet "Fichiers envoyés".
 
 .. image:: ../../images/Bridge-4.jpg
+    :alt: alternate text
     :align: center
 
-  * Le statut *OK* signale les media images ou vidéos transférés 
+  * Le statut *OK* signale les media images ou vidéos transférés
   * Une information de date indique depuis combien de temps l'envoi a été
     effectué.
 
 Lancer Flickr. Les media y sont bien présents.
 
-  .. image:: ../../images/Bridge-5.jpg
-	   :alt: alternate text
-	   :align: center
+.. image:: ../../images/Bridge-5.jpg
+    :alt: alternate text
+    :align: center

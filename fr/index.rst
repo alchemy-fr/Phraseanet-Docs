@@ -11,8 +11,8 @@ Digital Asset Management ou DAM en version abrégée) créée et maintenue par
 Solution *full web*, elle s'exécute dans un navigateur internet.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
-serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles 
-courantes telles Mysql,Php et Apache. 
+serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
+courantes telles Mysql,Php et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
 *Phraseanet*.
 Certaines de ces librairies sont
@@ -23,11 +23,12 @@ A propos de cette documentation
 
 Le présent manuel aborde les questions liées à l'
 :doc:`administration<Admin/index>`, à l':doc:`utilisation<User/index>`
-et au :doc:`développement d'applications<Devel/index>` reposant sur le logiciel
+et au :doc:` reposant sur le logiciel
 Open source Phraseanet.
-Un glossaire regroupe les termes propres au vocabulaire employé dans l'
-application.
-Envie de contribuer ? Consulter :doc:`cette section<Contrib/index>`.
+Un `glossaire<Glossaire>` regroupe les termes propres au vocabulaire employé
+dans l'application.
+Envie de contribuer ? Consulter :doc:`cette section<Contrib/index>` avant de
+commencer.
 
 .. toctree::
     :maxdepth: 1
@@ -37,17 +38,21 @@ Envie de contribuer ? Consulter :doc:`cette section<Contrib/index>`.
     Devel/index
     Glossaire
     Contrib/index
-   
-Quoi de neuf dans la version 3.8 ?
+
+Quoi de neuf dans la version 3.7 ?
 ----------------------------------
 
 .. todo :: Mettre le changelog ici. Communiqué à titre d'exemple
-   
-* Authentification déportée
-* Personnalisation des emails
-* Implémentation de Snowball pour le moteur Phrasea SearchEngine
-* Autre truc
-* Autre truc
+
+La version 3.7 publiée le 24 juillet 2012 succède à la version 3.6. A l'occasion
+de cette version majeure, voici les principaux changements apportés :
+
+* Un uploader HTML5 repousse les limites du dispositif précédent
+* La quarantaine est plus pratique à utiliser
+* Améliorations graphiques dans *Phraseanet Production*
+* Fonctionnalité du choix des vignettes de présentation des vidéos
+* Apparition du typage de champs comme champ métier
+* Amélioration significative des performances du Gestionnaire de tâches
 
 Besoin d'aide ?
 ---------------

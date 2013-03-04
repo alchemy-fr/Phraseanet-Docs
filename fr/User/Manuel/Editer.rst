@@ -13,10 +13,10 @@ Editer des enregistrements
 .. topic:: L'essentiel
 
     L'action **Editer** permet d'éditer la ou les fiches descriptives des
-    media, des reportage, pour saisir, compléter ou modifier le contenu des 
+    media, des reportage, pour saisir, compléter ou modifier le contenu des
     champs de description documentaire.
 
-    Il est possible d'éditer à l’unité ou en lots et sous lots des 
+    Il est possible d'éditer à l’unité ou en lots et sous lots des
     Enregistrements, des Paniers, des Reportages depuis la zone des résultats ou
     depuis la zone des paniers.
 
@@ -27,15 +27,13 @@ Editer des enregistrements
     La zone inférieure affiche la liste des champs descripteurs, la liste des
     status, et réserve un espace pour afficher le contenu du champs actif.
     La zone inférieure droite affiche des onglets d’assistance à l’indexation.
-    
+
 
 .. image:: ../../images/Prod-Editer.jpg
     :align: center
 
 * Sélectionner des média, un panier ou un reportage
-
-* Cliquer sur le bouton *Editer* 
-
+* Cliquer sur le bouton **Editer**
 * La fenêtre **Editer** s'ouvre
 
 Par défaut, toutes les vignettes sont sélectionnées.
@@ -45,31 +43,29 @@ apparaissent en clair.
 
 Les champs dont le contenu est hétérogène apparaissent avec des xxxxx en orange.
 
-Il est possible de désélectionner / sélectionner les documents en cliquant 
-sur les vignettes et en utilisant les combinaisons de touche "Maj" ou "Alt". 
+Il est possible de désélectionner / sélectionner les documents en cliquant
+sur les vignettes et en utilisant les combinaisons de touche "Maj" ou "Alt".
 Cette possibilité de sélection en lots et sous-lots permet de renseigner des
 informations communes à des media et gagner ainsi en productivité.
 
-Aucune modification ou ajout n’est effectué tant que l’utilisateur n’a pas 
+Aucune modification ou ajout n’est effectué tant que l’utilisateur n’a pas
 cliqué sur le bouton "Valider".
 
-*  Pour passer d'un champ à un autre, utiliser sur la touche de tabulation (**
-   TAB**) du clavier.
-  
-*  Pour annuler les modifications en cours, cliquer sur *Annuler* ou appuyer 
-   sur la touche **Echap** ce qui a pour effet de quitter le formulaire
-   d'édition.
+* Pour passer d'un champ à un autre, utiliser sur la touche de tabulation (**
+  TAB**) du clavier.
+* Pour annuler les modifications en cours, cliquer sur *Annuler* ou appuyer
+  sur la touche **Echap** ce qui a pour effet de quitter le formulaire
+  d'édition.
 
 Editer des champs de type date
 ******************************
 L'edition d'un champ de type date, qui obéit à un formatage normalisé, est
-assisté par un calendrier d'aide à la saisie. 
+assisté par un calendrier d'aide à la saisie.
 
 Sélectionner le ou les documents pour lesquels la date doit être modifiée ou
 ajoutée.
 
 *  Saisir manuellement la date selon le format **aaaa/mm/jj**,
-
 * **Ou bien**, utiliser le calendrier proposé.
 
 Editer des champs de type texte intégral
@@ -83,11 +79,11 @@ Sélectionner le ou les documents sur lesquels apporter une modification
     :align: center
 
 Pour rappel, si le champ contient déjà des valeurs et que celles sont
-hétérogènes, des "xxxxx" en orange sont affichés. 
+hétérogènes, des "xxxxx" en orange sont affichés.
 
 Dans ce cas, après saisie, cliquer sur le bouton adéquat selon que les
 informations saisies doivent remplacer ou s'ajouter au champ courant, si
-celui-ci contient des informations. 
+celui-ci contient des informations.
 
 .. image:: ../../images/Prod-Editer-texte-ajouter.jpg
     :align: center
@@ -99,7 +95,7 @@ Sélectionner le ou les documents sur lesquels apporter une modification.
 
 * Cliquer dans un champ textuel de type multi-valué
 
-Les informations déjà présentes dans les notices de chaque document sélectionné 
+Les informations déjà présentes dans les notices de chaque document sélectionné
 sont affichées dans le champ.
 Les termes descripteurs communs à toutes les notices sont inscrits en blanc,
 ceux présents seulement dans au moins une notice sont en Orange.
@@ -112,20 +108,20 @@ ceux présents seulement dans au moins une notice sont en Orange.
 * Le terme s’affiche dans le masque de saisie.
 
 Sous chacune des vignettes des media sélectionnés, si le terme est absent des
-notices, un symbole "plus" s'affiche. 
+notices, un symbole "plus" s'affiche.
 Inversement, un symbole "moins" signifie que le termes n'est pas utilisé dans
-le champ documentaire de la notice du media.  
+le champ documentaire de la notice du media.
 
 * Cliquer sur le symbole "plus" pour ajouter le terme pour cet enregistrement.
 
 * Le symbole "plus" se transforme alors en symbole "moins".
 
-Pour ajouter le terme à toutes les notices sélectionnées, 
+Pour ajouter le terme à toutes les notices sélectionnées,
 
 * Appuyer sur la touche "entrée" du clavier ou cliquer sur le symbole "plus"
   qui se trouve à gauche du champ de formulaire de saisie.
 
-* Cliquer sur le symbole "moins" à gauche du masque de saisie pour 
+* Cliquer sur le symbole "moins" à gauche du masque de saisie pour
   supprimer le terme du champs documentaire des notices de media sélectionnés.
 
 Editer un champ lié une sources de données
@@ -148,17 +144,17 @@ Placé sur un champ lié à une source de données, ...
 
 Editer à partir du thésaurus
 ****************************
- 
+
 Sous réserve qu'un thésaurus soit déployé sur la base à laquelle appartiennent
 les média en cours d'édition, l'onglet Thésaurus permet d’indexer rapidement à
 partir des termes contenus dans le thésaurus associé à la :term:`base`.
-Les saisies sont assistées pour les champs qui sont liés à des branches de 
+Les saisies sont assistées pour les champs qui sont liés à des branches de
 thésaurus.
 
 * Cliquer sur l'onglet thésaurus
 * Sélectionner un champ du type textuel lié au thésaurus
 * Débuter la saisie d'un terme
- 
+
 
 * L'onglet thésaurus s'actualise et affiche les termes commençant par les
   caractères saisis
@@ -169,14 +165,13 @@ thésaurus.
 * Effectuer un double clic sur le terme à ajouter au champ dans l'onglet
   Thésaurus
 
-
 * Le terme est immédiatement ajouté aux documents sélectionnés.
 
 .. note::
 
-    Il est aussi possible de déployer "l'arbre" du thésaurus pour
+    Il est aussi possible de déployer l'*arbre* du thésaurus pour
     chercher et sélectionner des termes à indexer. Cliquer sur les
-    symboles "plus" qui se trouvent devant les termes.
+    symboles *plus* qui se trouvent devant les termes.
 
 Editer à partir des valeurs suggérées
 *************************************
@@ -192,12 +187,9 @@ Phraseanet Administration <AdministrationBasesCollections>`
 
 * Cliquer sur le menu contextuel
 * Faire un double clic pour sélectionner une valeur suggérée dans la liste
+* La valeur est ajoutée au champ.
 
-.. note::
-
-* La valeur est ajoutée au champ. 
-
-.. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste en 
+.. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste en
           appuyant sur la touche "cmd" ou "ctrl"
 
 
@@ -212,7 +204,7 @@ vers des masques de saisie de champs.
 Utiliser l'onglet  Rechercher/Remplacer
 ***************************************
 
-Cet onglet permet à l’utilisateur de chercher et remplacer des termes contenus 
+Cet onglet permet à l’utilisateur de chercher et remplacer des termes contenus
 sur les documents en cours d’édition.
 
 * Cliquer sur l’onglet Rechercher / Remplacer
@@ -220,17 +212,17 @@ sur les documents en cours d’édition.
 .. image:: ../../images/Prod-Editer-chercherremplacer.jpg
     :align: center
 
-* Restreindre si nécessaire la fonction à un champ en particulier, 
+* Restreindre si nécessaire la fonction à un champ en particulier,
   à partir du menu déroulant, par défaut dans tous les champs
-* Saisir le terme à Rechercher dans les notices des documents en cours 
+* Saisir le terme à Rechercher dans les notices des documents en cours
   d’édition
 * Saisir le terme de remplacement
 * Appliquer les options si nécessaire
 * Cliquer sur Valider
 
-* Le nouveau terme remplace le précédent dans les notices 
+* Le nouveau terme remplace le précédent dans les notices
 
- 
+
 Utiliser l'onglet Modèles
 **************************
 Créer un modèle de description documentaire
@@ -244,7 +236,7 @@ Un modèle se créé à partir d'une notice en cours d'édition.
 * Cliquer sur l’onglet Modèles
 * Sélectionner une notice en cliquant sur une vignette
 
-.. note:: Si plusieurs documents sont sélectionnés, le modèle ne pourra 
+.. note:: Si plusieurs documents sont sélectionnés, le modèle ne pourra
           reprendre que le contenu homogène des champs
 
 * Cliquer sur Ajouter
@@ -266,7 +258,7 @@ Appliquer un modèle à une sélection de media
 * Sélectionner l'onglet **Modèles** puis effectuer un double clic sur le titre
   du modèle à appliquer
 
-* L'ensemble des informations contenus dans le modèle est appliqué aux 
+* L'ensemble des informations contenus dans le modèle est appliqué aux
   documents
 
 .. note::

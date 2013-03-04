@@ -1,201 +1,119 @@
-﻿Rechercher
-==========
+﻿Rechercher des Médias
+=====================
 .. toctree::
     :maxdepth: 3
 
 .. topic:: L'essentiel
-    
-    Dans *Production* et *Classic*, deux modes de recherche sont possibles :
 
-    * La zone de `Recherche simple`_ permet d'effectuer des recherches simples en 
-      texte intégral dans les :term:`bases <base>`/collections de documents.
+    Les recherches de médias dans *Phraseanet* se font au traver d'un moteur de
+    recherche en texte intégral (ou plein texte) dont le mode de fonctionnement
+    est similaire à celle de moteur de recherche classique dans d'autres
+    applications ou sur le Net.
 
-    * La `Recherche avancée`_ permet d'effectuer des requêtes plus 
-      évoluées et de mettre en place un certain nombre de filtres sur les 
-      :term:`bases <base>` et collections.
+    Combinés avec des opérateurs de recherche courants, ces recherches
+    permettent de gagner en pertinence même si la qualité de l'indexation reste
+    primoridale.
 
-    Phraseanet embarque deux moteurs de recherche: un moteur texte intégral et 
-    un moteur thesaurus optionnel.
-	
-    Le premier moteur est le moteur texte intégral. Il permet d’effectuer des 
-    recherches sur tous les champs de toutes les :term:`bases <base>` et toutes 
-    les collections auxquels l’utilisateur est connecté.
-    Le deuxième moteur est le moteur de recherche du Thesaurus. Il n’est activé
-    que lorsqu’un thesaurus existe.
+    Des recherches approfondies peuvent se pratiquer au moyens d'opérateurs
+    moins fréquemment utilisés. Il demeure possible de recherche dans des champs
+    précis si besoin.
 
-Recherche simple
-----------------
-Le formulaire de Recherche simple se trouve dans la partie centrale de la page,
-au-dessus de la palette des Actions et de la zone d’affichage des Résultats. 
+    Si un thésaurus est activé, la recherche et le parcours des résultats peut
+    être grandement amélioré.
 
-La Recherche simple se trouve dans la partie centrale de la page, au-dessus de la
-palette des Actions et de l’affichage des Résultats.
+La recherche en texte intégral
+------------------------------
+*Phraseanet* propose par défaut un mode de recherche en texte intégral qui
+permet d'afficher des médias selon des informations contenus dans les champs
+documentaires constituant leurs notices descriptives.
+
+Cette technique de recherche est largement répandue sur les moteurs de recherche
+du web et le mode de fonctionnement proposé dans *Phraseanet* est similaire.
+
+Par défaut, la recherche porte sur les documents des bases et collections
+auxquelles à accés l'utilisateur et les médias affichés sont ceux résultants d'
+:doc:`une question initiale paramétrable <PersonnaliserInterface>`.
+
+Un groupe de boutons radio permet de choisir si la recherche doit porter sur
+les documents ou sur les reportages. Dans une recherche portant sur les
+reportages la recherche porte sur la fiche d'indexation des reportages.
+La recherche simulatanée sur les documents et les reportages n'est pas
+possibles.
 
 .. image:: ../../images/Rechercher-simple.jpg
     :align: center
 
-Par défaut, le critère *ALL* (ou *TOUT*) est affiché. Il permet d'afficher l'
-intégralité des documents des bases et collections sélectionnés.
+Pour effectuer une recherche :
+* Inscriver le ou les termes recherchés dans le formulaire de recherche
+* Lancer la recherche en cliquant sur **Rechercher**
 
-Pour lancer une recherche :
+.. note :: le moteur de recherche est insensible à la casse et ne fait pas la
+           différence entre les caractères accentués et ceux qui ne le sont pas.
 
-* Taper le mot clé.
-* Cliquer sur Chercher.
+Les résultats obtenus sont affichés dans la zone d'affichage. La pertinence des
+dépend grandement de la qualité d'indexation des médias et de la requête
+formulée.
+Le nombre de résultats par page est personnalisable. Se reporter à la page
+:doc:`Personnaliser l'interface <PersonnaliserInterface>` pour plus d'
+explications.
 
-Les réponses qui correspondent à la recherche effectuée s'affichent dans la zone
-des résultats.
+Par défaut, l'opérateur mis en oeuvre entre les termes saisis dans le formulaire
+de recherche est le **ET** booléen et il n'est donc pas nécessaire de le saisir.
+Tous les termes saisis dans le formulaire sont présents dans les notices
+descriptives des médias affichés à l'issue de la recherche.
 
-Un groupe de boutons radio permet de choisir si la recherche doit se faire sur
-les documents ou sur les reportages. Dans une recherche portant sur les
-reportages la requête porte sur la fiche d'indexation des reportages.
+D'autres opérateurs courants sont disponibles :
+* L'opérateur **OU** permet de rechercher alternativement plusieurs termes dans
+les notices des médias. Par exemple, si la recherche est **mer OU montagne**
+les fiches descriptives des médias affichées contiennent soit le mot mer, soit
+le mot montagne, soit les deux à la fois.
+* L'opérateur **SAUF** permet d'exclure un terme de la recherche. Si la
+recherche porte sur des plages qui ne sont pas en France, taper **plage SAUF
+France**.
+* L'opérateur ***** est l'opérateur de troncature. il permet une troncature à
+droite du terme recherché : une recherche telle **natur*** affiche des médias
+dont les notices descriptives contiennent des mots commençants par "natur" comme
+nature, naturel, nature-morte, naturisme...*etc*.
 
-.. note::
+La recherche entre guillemets est possible : elle permet de rechercher des
+termes contigues dans les notices descriptives des médias.
 
-    Il n'est pas possible de chercher à la fois sur des reportages et des
-    documents.
+D'autres possibilités existent également au moyens d'opérateurs avancés.
+Se reporter à la liste exhaustive des opérateurs de recherche sur cette page.
 
-Recherche par opérateur ordinal
-*******************************
+*Phraseanet* dispose d'autres opérateurs spécifiques :
+* **Tout** ou **All** : pour rechercher tous les documents parmi les bases et
+collections sélectionnées.
+* **Derniers** ou **Last** ( avec ou sans précision de nombre) affiche par
+défaut les douze derniers documents ajoutés dans par base dans les collections
+sélectionnée. Combiné avec un nombre entier, ce sont les *n* derniers documents
+qui sont affichés.
 
-Le nombre de documents sélectionnés est valable par
-:term:`bases <base>` et collections ouvertes. Dans l'exemple donné, si trois
-bases/collections sont ouvertes, la sélection comporte 300 documents 
-(3 x 100) pour peu que le nombre de documents soit supérieur ou égal à 100 dans
-chacune des bases.
-
-* *Derniers* ou *last* (sans précision de nombre) affiche par défaut les 12
-  derniers documents ajoutés.
-* *Tout* (ou *all*): pour rechercher tous les documents parmi les :term:`bases
-  <base>` et collections sélectionnées.
-
-Recherche sur un mot contenu dans la description documentaire
-*************************************************************
-N'importe quel mot peut être saisi. Par exemple: en saisissant le mot *tour*, 
-on obtient tous les documents dont la description contient le mot tour, comme 
-*Tour Eiffel*. 
-
-Attention, la recherche porte sur le mot entier, ainsi en saisissant *tou*, on 
-n'obtient pas de documents sur des tours. Par défaut, on recherche sur tous les 
-champs descripteurs indexés de la :term:`base`/collection.
-
-Un caractère peut être remplacé par *?*. Ainsi, la recherche *mo?s*
-sélectionnera notamment les documents dont la description contient *mois* ou
-*mots*.
-
-Un nombre indéfini de caractères peut être remplacé par un astérisque :
- 
-Ainsi, la saisie des lettres "co*res" sélectionnera notamment les documents dont 
-la fiche descriptive contient *Palais des Congrès*. Le paramétrage standard
-impose de saisir au moins 2 caractères avant l'astérisque (co*).
-
-Recherche avec plusieurs mots (utilisation des opérateurs booléens)
-*******************************************************************
-Plusieurs mots peuvent être combinés pour affiner la sélection. Utiliser 
-les opérateurs logiques *ET, OU, SAUF*. Par exemple: *Tour sauf Eiffel* 
-affiche tous les documents dont les champs documentaires indexés contiennent le
-mot *Tour* mais pas ceux relatifs au terme *Tour Eiffel*. 
-
-Plusieurs mots peuvent être combinés pour affiner la sélection. Utiliser
-les opérateurs logiques *ET, OU, SAUF*. Par exemple: *Tour sauf Eiffel* sélectionnera
-tous les documents dont la description contient le mot *Tour* mais pas celles sur
-la *Tour Eiffel*.
-
-.. note::
-
-Comment modifier l'opérateur mis en oeuvre par défaut ?
-
-**ET** impose que la première condition soit satisfaite et que la deuxième 
-condition soit satisfaite.
-
-* **ET** impose que la première condition soit satisfaite et que la deuxième
-  condition soit satisfaite.
-* **OU** impose qu’au moins une des conditions soit satisfaite.
-* **SAUF** impose que la condition ne soit pas satisfaite.
-
-.. note::
-
-    Ordre de priorité des opérateurs: les parenthèses ou les doubles cotes
-    sont prioritaires sur le reste.
+Dans une recherche **Derniers 100** avec trois bases/collections ouvertes,
+le nombre de médias affiché peut s'élevé jusqu'à 300 (3 fois les 100 derniers
+médias ajoutés) pour peu que le nombre de documents soit supérieur ou égal à
+100 dans chacune des bases et collections affichées.
 
 Recherche dans un champ précis
-******************************
-Il est possible de limiter le cadre de la recherche à une rubrique de la
-description. Ainsi rechercher marra* dans legende affichera les documents qui
-contiennent le mot *marrakech dans le champs légende*.
+------------------------------
+Il est possible de limiter la recherche à un champ de la description.
+Le motif de recherche est le terme recherché *dans* un champ en particulier.
 
-Les mots, réponses aux questions sont surlignés dans la description. Ici, un
-exemple avec le terme "mer", qui est surligné dans le champ Mot clé.
+Une recherche **Marrakech *dans* Ville** affiche les documents qui
+contiennent le terme *marrakech dans un champs *Ville*.
 
 .. image:: ../../images/Rechercher-motdanslegende.jpg
     :align: center
 
-Recherche avec les opérateurs de proximité
-******************************************
-
-**L’opérateur PRES** permet de repérer tous les enregistrements dans lesquels le
-résultat du terme 1 apparaît à une distance spécifiée (n) du terme 2.
-Par exemple, (Tour PRES 2 Eiffel) sélectionnera les enregistrements dans lesquels
-une distance de 2 mots maximum sépare le mot *Tour* du mot *Eiffel*.
-
-.. note::
-
-    Si aucune distance n’est précisée, l’opérateur PRES est traité comme un
-    opérateur ET.
-
-**L’opérateur AVANT** permet de repérer tous les enregistrements dans lesquels le
-résultat du terme 1 apparaît avant le terme 2 et a une distance spécifiée (n).
-Par exemple, (Tour AVANT 2 Eiffel) sélectionnera les enregistrements dans lesquels
-le mot Tour est situé, au maximum, deux mots avant le mot Eiffel.
-
-.. note::
-
-    Il n'est pas nécessaire de spécifier la distance. Si la distance n'est
-    pas précisée, la valeur par défaut est 12.
-
-**L’opérateur APRES** permet de repérer tous les enregistrements dans lesquels le
-résultat du terme 1 apparaît après le terme 2 à une distance spécifie (n).
-Par exemple, (Eiffel APRES 2 Tour) sélectionnera les enregistrements dans lesquels
-le mot Eiffel est situé, au maximum, deux mots après le mot Tour.
-
-.. note::
-
-    Il n'est pas nécessaire de spécifier la distance.
-    Si la distance n'est pas précisée, la valeur par défaut est 12.
-
-Recherche avec comparaison numérique
-************************************
-Il est possible de sélectionner des documents en comparant des quantités, pour 
-les rubriques de type Date, Heure et Numérique. 
-Ainsi la recherche *date > 14/07/2012* présente les documents datés après le 14
-juillet 2012. 
-
-Il est possible de sélectionner des documents en comparant des quantités, pour
-les rubriques de type Date, Heure et Numérique.
-Ainsi: *date > 14/07/2005* sélectionnera les documents datés après le 14 juillet
-2005.
-
-Les opérateurs de comparaison sont : >, <, =, <=, >=, entre (les bornes sont
-incluses).
-
-Les Jours (JJ), mois (MM), Années (AAAA) peuvent être collés ou séparés par un
-slash /, un tiret -, un espace.
-
-  * Recherche sur un jour: JJ/MM/AAAA, AAAAMMJJ, JJ/MM/AA, AAAA/MM/JJ, 
-    JJ-MM-AAAA, AA-MM-JJ
-  * Recherche sur un mois: MM/AA, AAAA/MM, AAAAMM, MM/AAAA
-  * Recherche sur une année: AAAA
-
-    La saisie des champs de type date est stricte.
-
 Recherche avancée
 -----------------
 Pour afficher le formulaire de recherche avancée, cliquer sur la roue crantée
-située entre le champ de recherche et le bouton «Rechercher».
+située entre le champ de recherche et le bouton **Rechercher**.
 
 .. image:: ../../images/Rechercheavancee1.jpg
     :align: center
 
-Une fenêtre Overlay s’ouvre. La fenêtre de recherche avancée se présente en
+Une fenêtre Overlay s'ouvre. La fenêtre de recherche avancée se présente en
 trois parties :
 
 .. image:: ../../images/Rechercheavancee0.jpg
@@ -203,17 +121,17 @@ trois parties :
 
 La partie haute présente un formulaire similaire à celui de la recherche simple.
 
-La partie gauche présente la liste des bases et collections consultable par l'
+La partie gauche présente la liste des bases et collections consultables par l'
 utilisateur.
-Cocher ou décocher les :term:`bases <base>` et collections sur lesquels doivent
+Cocher ou décocher les bases et collections sur lesquels doivent
 s'effectuer les recherche.
 
-.. note:: Il est possible de désélectionner toutes les :term:`bases <base>` et 
-          collections en cliquant sur "Aucune" ou de cliquer directement sur les 
-          noms des :term:`bases <base>` pour les sélectionner ou désélectionner
-          individuellement ou encore dans les cases à cocher proposées pour 
+.. note:: Il est possible de désélectionner toutes les :term:`bases <Base>` et
+          collections en cliquant sur "Aucune" ou de cliquer directement sur les
+          noms des :term:`bases <Base>` pour les sélectionner ou désélectionner
+          individuellement ou encore dans les cases à cocher proposées pour
           chaque collection disponible.
-   
+
 La partie droite présente les différents filtres disponibles pour affiner les
 recherches :
 
@@ -223,93 +141,139 @@ recherches :
 
 Les documents s'affichent dans la fenêtre *Résultats*.
 
-.. note:: Les options de la recherche avancée sont persistantes. Les choix
+.. note:: **Les options de la recherche avancée sont persistantes**. Les choix
           adoptés dans la fenêtre de recherche avancée restent valables tant qu'
           ils ne sont pas modifiés.
           Dans le formulaire de recherche simple, la présence d'options de
           recherche est matérialisé par la teinte jaune du formulaire de
           recherche.
 
-
 Recherche avec le Thésaurus
 ---------------------------
-Si un Thésaurus est lié à la base consultée, la recherche à partir du Thesaurus
-s'effectue à partir de l'onglet Thésaurus de la Zone de travail. 
+Si un thésaurus est activé, la recherche et le parcours des résultats peuvent
+être grandement amélioré.
+La recherche à partir du Thesaurus s'effectue à partir de l'onglet Thésaurus de
+la Zone de travail.
+
+.. image:: ../../images/Recherche-Thesaurus.jpg
+    :align: center
 
 Se reporter à la section Thésaurus :doc:`cette page <Onglets>`.
 
-La recherche dans les interfaces *Production* et *Classic*
-----------------------------------------------------------
-Les interfaces *Production* et *Classic* permettent d'effectuer des recherches
-dans les fonds documentaires de bases *Phraseanet*.
+Synthèse des opérateurs de recherche disponible dans Phraseanet
+---------------------------------------------------------------
+Voici la liste des différents opérateurs de recherche disponibles dans
+*Phraseanet*.
 
-Elles présentent un champ de recherche, dans lequel l'utilisateur entre des 
-termes incluant ou pas des opérateurs booléens ou autres critères vus
-précédemment (exemples: all, last, plage, mer OU océan ET plage SAUF mouettes).
+Les opérateurs booléens
+***********************
 
-Aujourd'hui, la raison d'être de *Classic* est d'apporter une compatibilité avec
-des navigateurs réputés obsolètes (Internet Explorer 6 par exemple) encore
-utilisés dans certaines entreprises.
+L'opérateur de conjonction *ET*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Utilisé par défaut, si bien qu'il n'est pas utile de l'indiquer, l'opérateur
+*ET* affiche les médias dont tous les termes saisis sont présents dans les
+notices descriptives des médias.
 
-Avec un navigateur récent, privilégier l' utilisation de *Production*.
+L'opérateur de disjonction *OU*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Il permet de rechercher alternativement plusieurs termes dans les notices des
+médias.
+Ainsi, si la recherche est **sucré OU salé** les fiches descriptives des
+médias affichées contiennent soit le mot mer, soit le mot montagne, soit les
+deux à la fois.
 
-La recherche dans *Production*
+L'opérateur de négation *SAUF*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Il permet d'exclure des termes de la recherche.
+
+Les opérateurs ordinaux **TOUT** et **DERNIERS**
+************************************************
+
+* *Tout* (ou *all*): pour rechercher tous les documents parmi les :term:`bases
+  <Base>` et collections sélectionnées.
+
+* *Derniers* ou *last* (sans précision de nombre) affiche par défaut les 12
+  derniers documents ajoutés dans une base.
+
+L'opérateur *Derniers* est valable par :term:`bases <Base>` et collections
+ouvertes.
+
+Les opérateurs de substitution
 ******************************
 
-.. image:: ../../images/Rechercher-Prod1.jpg
-    :align: left
+Le caractère de troncature *****
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Le caractère de troncature *****, utilisé à gauche d'une chaine de caractères
+permet de rechercher des médias dont les notices descriptives contiennent des
+termes commençants par les caractères précédents l'astérisque.
 
-Ci-contre, la zone de recherche dans l'interface de *Production*:
-Voici la `Recherche Simple`_.
+Le caractère de remplacement **?**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Un caractère peut être remplacé par **?**.
+Ainsi, la recherche *mo?s* affiche les médias sont les notices descriptives
+contiennent des termes tels *mois* ou *mots*.
 
-Pour accéder à la `Recherche Avancée`_, cliquer sur la roue.
-
-Pour effectuer une recherche dans l'interface de Production:
-
-  * Sélectionner s'il faut rechercher dans les Documents ou dans les Reportages 
-    (par défaut, la recherche s'effectue dans les Documents).   
-	
-  * Eventuellement, sélectionner un type de document: ne rechercher que dans les 
-    images, que dans les vidéos, ou bien uniquement parmi les documents de type 
-    audio, document, flash...
-
-  * Dans la Recherche Avancée, si besoin, sélectionner les base(s) et
-    collection(s) sur lesquels portent la recherche.
-
-  * Enfin, cliquer sur le bouton Rechercher.
-  
-  .. note:: Il est possible de personnaliser le nombre de résultats par page. Se
-    reporter à la page :doc:`Personnaliser l'interface <PersonnaliserInterface>`.
-
-La recherche dans *Classic*
+Les opérateurs de proximité
 ***************************
-  .. image:: ../../images/Rechercher-Classic1.jpg
-	   :alt: alternate text
-	   :align: right
 
-.. image:: ../../images/Rechercher-Classic1.jpg
-    :align: right
+L'opérateur **PRES**
+^^^^^^^^^^^^^^^^^^^^
+Il permet de repérer tous les médias dans lesquels le résultat du terme
+1 apparaît à une distance spécifiée (n) du terme 2.
 
-Trois onglets dans l'interface *Classic*, au-dessus de la zone de recherche :
+Par exemple, (Tour PRES 2 Eiffel) sélectionnera les enregistrements dans
+lesquels une distance de 2 mots maximum sépare le mot *Tour* du mot *Eiffel*.
 
-  * La Recherche simple
-  * La Recherche avancée
-  * Les Thèmes, si déployés dans le paramétrage de *Phraseanet*.
+.. note::
 
-De la même manière que dans *Production*, l'utilisateur doit entrer un ou
-plusieurs termes et choisir éventuellement les bases et collection dans lesquels
-il souhaite faire sa recherche dans l'onglet *Collections*.
+    Si aucune distance n’est précisée, l’opérateur PRES est traité comme un
+    opérateur booléen ET.
 
-Dans *Classic*, il est possible de choisir le mode d'affichage des résultats.
-Par défaut, 7 modes d'affichage sont proposés.
+L'opérateur **AVANT**
+^^^^^^^^^^^^^^^^^^^^^
+Il permet de repérer tous les enregistrements dans lesquels le
+résultat du terme 1 apparaît avant le terme 2 et a une distance spécifiée (n).
+Par exemple, (Tour AVANT 2 Eiffel) sélectionnera les enregistrements dans
+lesquels le terme *Tour* est situé, au maximum, deux mots avant le mot Eiffel.
 
-Quelques exemples:
+.. note::
 
-* 4*10 signifie 4 colonnes et 10 lignes, soit 40 vignettes par page.
-* Liste*10 affiche 10 vignettes en mode liste avec la description.
+    Il n'est pas nécessaire de spécifier la distance. Si la distance n'est
+    pas précisée, la valeur par défaut est 12.
 
-Si un thésaurus est déployé, l'onglet "propositions" affiche les éventuelles
-propositions du Thésaurus Phraseanet.
+L'opérateur **APRES**
+^^^^^^^^^^^^^^^^^^^^^
+Il permet de repérer tous les enregistrements dans lesquels le
+résultat du terme 1 apparaît après le terme 2 à une distance spécifie (n).
+Par exemple, (Eiffel APRES 2 Tour) sélectionnera les enregistrements dans
+lesquels le mot Eiffel est situé, au maximum, deux mots après le mot Tour.
 
-L'onglet "Historique" dresse l'inventaire des questions posées par l'
-utilisateur.
+.. note::
+
+    Il n'est pas nécessaire de spécifier la distance.
+    Si la distance n'est pas précisée, la valeur par défaut est 12.
+
+.. warning:: Pour tous les opérateurs mentionnés préalablement, leur recherche
+             dans une expression entre guillemets annule la fonction de l'
+             opérateur utilisé.
+
+Les comparaisons numériques
+***************************
+Il est possible de sélectionner des documents en comparant des dates et
+nombres, pour des champs documentaires typé comme Date ou Nombre.
+Ainsi la recherche **date > 14/07/2012** affiche les médias dont un champ nommé
+date est renseigné d'une date postérieure au 14 juillet 2012.
+
+Les opérateurs de comparaison sont : >, <, =, <=, >=, entre (les bornes sont
+incluses).
+
+Les Jours (JJ), mois (MM), Années (AAAA) peuvent être collés ou séparés par un
+slash /, un tiret -, un espace.
+
+  * Recherche sur un jour: JJ/MM/AAAA, AAAAMMJJ, JJ/MM/AA, AAAA/MM/JJ,
+    JJ-MM-AAAA, AA-MM-JJ
+  * Recherche sur un mois: MM/AA, AAAA/MM, AAAAMM, MM/AAAA
+  * Recherche sur une année: AAAA
+
+La saisie des champs de type date est stricte. L'utilisateur peut préférer de
+mettre ce type de recherche au moyen de la fenêtre de recherche avancée.
