@@ -38,8 +38,8 @@ Parameters
  search_type   int         0         A toggle to switch records search or stories search. Available values are 0 for records and 1 for stories
  stemme        int         1         This feature is currently only available with SphinxSearch Engine. Enable stemmed search
  date_field    string                Select a field to search with datemin and datemax filters
- date_min      string                The minimum date as string formated as follow 'd/m/Y' (you need to set a datefield value to use this feature)
- date_max      string                The maximum date formated as follow 'd/m/Y' (you need to set a datefield value to use this feature)
+ date_min      string                The minimum date as string formated as follow 'Y/m/d' (you need to set a datefield value to use this feature)
+ date_max      string                The maximum date formated as follow 'Y/m/d' (you need to set a datefield value to use this feature)
  status        array
  fields        array
 ============= =========== ========= =============
