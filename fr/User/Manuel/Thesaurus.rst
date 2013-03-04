@@ -225,3 +225,10 @@ Refuser un candidat
 
 Supprimer un candidat
 *********************
+
+* -> Faire un clic Droit sur un terme
+* -> Cliquer sur Supprimer
+
+* => Un fenêtre s'ouvre et indique si le terme doit être déplacé dans la branche
+  Stock des termes candidats. Valider pour supprimer le terme du thésaurus
+  publié.
