@@ -36,8 +36,8 @@ Paramètres
  search_type   entier         0      "0" pour rechercher des documents et "1" pour rechercher des reportages
  stemme        entier         1      Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". "1" pour activer la recherche morphologique
  date_field    chaîne                Sélectionner un champ pour rechercher avec les filtres "date_min" et "date_max"
- date_min      chaîne                La date minimum sous la forme 'd/m/Y' (Le paramètre "date_field" doit être renseigné)
- date_max      chaîne                La date maximum sous la forme 'd/m/Y' (Le paramètre "date_field" doit être renseigné)
+ date_min      chaîne                La date minimum sous la forme 'Y/m/d' (Le paramètre "date_field" doit être renseigné)
+ date_max      chaîne                La date maximum sous la forme 'Y/m/d' (Le paramètre "date_field" doit être renseigné)
  status        tableau               Un tableau qui restreint les documents recherchés aux status donnés
  fields        tableau               un tableau qui restreint le champ de recherche aux champs sélectionnés
 ============= =========== ========= =============
