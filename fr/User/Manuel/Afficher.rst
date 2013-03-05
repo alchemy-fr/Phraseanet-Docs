@@ -10,7 +10,8 @@
 
     *Production* est une interface dédiée à la consultation, à la recherche,
     gestion et à l'édition des documents, tandis que *Classic* n'est dévolue qu'
-    à la recherche et à la visualisation de documents.
+    à la recherche et à la visualisation de documents dans des navigateurs
+    anciens.
 
 .. figure:: ../../images/Production-general.jpg
     :align: center
@@ -32,7 +33,7 @@ Présentation de la zone d'affichage
 
 Dans *Production*:
 La **Palette des Actions** figure en haut de page, au-dessus de la zone des
-Résultats. Elle permet d'effectuer certaines actions sur les documents.
+Résultats. Elle permet d'effectuer des actions sur les documents.
 Pour plus de détails, se référer à la page dédiée à la
 :doc:`Palette des Actions <Actions>`.
 
@@ -42,7 +43,7 @@ La pagination permet de se déplacer de pages en pages en cliquant sur le numér
 de la page, d'aller en fin de sélection en cliquant sur *Suivant* et de revenir
 en arrière en cliquant sur *Précédent*.
 
-.. note:: N'utilisez pas les boutons reculer  et avancer du navigateur utilisé.
+.. note:: N'utilisez pas les boutons reculer et avancer du navigateur utilisé.
 
 Pour accéder à une page en particulier, modifier le numéro de la page en cours
 puis valider en appuyant sur la touche **Entrée** du clavier.
@@ -55,7 +56,8 @@ présentation est paramétrable par les Admininistrateurs fonctionnels de l'
 application.
 
 .. note:: Comment paramétrer le titre des documents affichés sous les vignettes
-          dans Phraseanet ?
+          dans Phraseanet ? :doc:`Se reporter à la section Administration du
+          manuel <AdministrationBasesCollections>`.
 
 **La :terms: `Collection` d’appartenance du document est affichée dans le coin
 inférieur gauche:**
@@ -89,7 +91,7 @@ d'une animation flash pour certains types de documents bureautiques.
 	   :alt: alternate text
 	   :align: center
 
-La prévisualisation du document dans *Phraseanet* est lié aux sous-définitions
+La prévisualisation du document dans *Phraseanet* est lié à la sous-définitions
 *preview* telles que définis dans le paramétrage des bases auxquelles
 appartiennent les documents.
 
@@ -104,9 +106,9 @@ original** : largeur et hauteur en pixels, type, poids, taille d’impression…
 	   :alt: alternate text
 	   :align: center
 
-Pour afficher une vue détaillée, effectuer un double-clic sur la vignette d'un
-média affiché dans la zone des résultats ou dans un panier. Une fenêtre
-overlay affiche la prévisualisation du média.
+**Pour afficher une vue détaillée**, effectuer un double-clic sur la vignette
+d'un média affiché dans la zone des résultats ou dans un panier. Une fenêtre
+*overlay* affiche la prévisualisation du média.
 
 La vue détaillée
 ----------------
@@ -225,8 +227,7 @@ cliquer sur le type de documents à sélectionner.
 	   :alt: alternate text
 	   :align: center
 
-Dans cette capture d'exemple, seuls les documents de type *images* sont
-sélectionnés.
+Dans cet exemple, seuls les documents de type *images* sont sélectionnés.
 
 Pour placer une sélection de documents dans un Panier :
 

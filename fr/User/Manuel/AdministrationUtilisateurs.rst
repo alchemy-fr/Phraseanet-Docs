@@ -256,7 +256,8 @@ collection.
 
 * Cocher sur Oui pour activer la gestion des limites dans les temps
 * Sélectionner les bornes de la période d'accès autorisée
-* Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la fenêtre.
+* Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la
+  fenêtre.
 * Cliquer sur **Status** pour ouvrir la fenêtre *Status*.
 
 **Limitation par les Status**

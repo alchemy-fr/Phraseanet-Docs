@@ -23,21 +23,22 @@ Le support de Javascript doit être activé et le plug-in
 
 Il dispose également d'une adresse email valide à laquelle il a accès.
 
-    .. note:: Sur les PC Windows, Internet Explorer 7 est la version minimum
-        conseillée du navigateur Microsoft. Toutefois, *Phraseanet Classic*
-        permet de consulter le fonds au moyen de navigateurs obsolètes
-        comme Internet Explorer 6.
+.. note:: Sur les PC Windows, Internet Explorer 7 est la version minimum
+  conseillée du navigateur Microsoft. Toutefois, *Phraseanet Classic*
+  permet de consulter le fonds au moyen de navigateurs obsolètes
+  comme Internet Explorer 6.
 
-        Il n'est pas conseillé d'utiliser Internet Explorer 6 dans les autres
-        modules de Phraseanet tout comme il n'est pas conseillé d'utiliser
-        *Phraseanet Classic* avec des navigateurs récents.
+  Il n'est pas conseillé d'utiliser Internet Explorer 6 dans les autres
+  modules de Phraseanet tout comme il n'est pas conseillé d'utiliser
+  *Phraseanet Classic* avec des navigateurs récents.
 
 Les modules Phraseanet
 ----------------------
 Phraseanet est un système complet pour l'archivage, l'organisation et la
 diffusion de documents multimédia.
 
-La solution repose sur sept modules ou interfaces, accessibles à partir d'une barre de menu principal :
+La solution repose sur sept modules ou interfaces, accessibles selon les droits
+de l'utilisateur à partir d'une barre de menu principal :
 
 * Phraseanet `Production`_
 * Phraseanet `Classic`_
@@ -66,7 +67,7 @@ documents.
 Classic
 *******
 *Phraseanet Classic* est une interface de consultation dédiée aux utilisateurs
-finaux disposants de navigateurs anciens. Elle permet de :doc:`consulter simplement les documents <Afficher>`.
+finaux disposants de navigateurs anciens. Elle permet de :doc:`consulter des documents <Afficher>`.
 
 .. figure:: ../../images/General-Classic.jpg
    :alt: alternate text
@@ -77,7 +78,7 @@ Lightbox
 ********
 Interface collaborative, *Phraseanet Lightbox* permet de visualiser et/ou
 télécharger des documents spécifiques envoyés par des utilisateurs *Phraseanet*.
-Les fonctionnalités de validation permet de :doc:`connaître les avis
+Des fonctionnalités de validation permettent de :doc:`connaître les avis
 d’utilisateurs sur des documents <Push>`.
 
 .. figure:: ../../images/General-Lightbox.jpg
@@ -85,12 +86,12 @@ d’utilisateurs sur des documents <Push>`.
    :align: center
 
 Pour envoyer, partager, comparer des documents dans *Phraseanet Lightbox*,
-se reporter à la section consacrée au :doc:`Push <Push>`.
+se reporter à la section consacrée au :doc:`Push et à la Validation<Push>`.
 
 Upload
 ******
 Disponible seulement à partir de l'interface Production, *Phraseanet Upload*
-permet aux utilisateurs qui en ont le droit, d'importer des documents multimédia à partir du disque dur de l'ordinateur dans Phraseanet.
+permet aux utilisateurs qui en ont le droit, d'importer des documents multimédia dans Phraseanet à partir du disque dur de l'ordinateur.
 Ce gestionnaire de téléchargement montant permet de transférer des media sans
 requerir à un logiciel de transfert :term:`FTP <FTP>`.
 
@@ -105,7 +106,7 @@ Administration
 :doc:`Phraseanet Administration <Administration>` est une interface métier
 permettant de gérer et de surveiller l'application, de créer des bases et des
 :term:`collections <Collection>`, de déclarer des structures documentaires, de
-créer des utilisateurs et de gérer leurs droits.
+créer des utilisateurs ou de gérer leurs droits.
 
 .. image:: ../../images/General-Administration.jpg
     :alt: alternate text
@@ -120,8 +121,7 @@ La création et la gestion de :doc:`Thesaurus <Thesaurus>` est possible dans
 recherche *Phrasea engine*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques.
-Il représente un vrai plus dans l’utilisation d’une solution de gestion de media
-numériques professionnelles.
+Il représente un vrai *plus* dans l’utilisation d’une solution de gestion de media numériques professionnelles.
 
 .. image:: ../../images/General-Thesaurus.jpg
    :alt: alternate text

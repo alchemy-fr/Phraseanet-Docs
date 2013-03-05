@@ -5,7 +5,7 @@ Administration de l'application
 
 .. topic:: L'essentiel
 
-    L'administration de l'application consiste à surveiller le fonctionnement 
+    L'administration de l'application consiste à surveiller le fonctionnement
     de la solution et à apporter si besoin des modifications de paramétrage.
 
 Tableau de bord
@@ -35,28 +35,21 @@ configuration de Phraseanet.
 	   :alt: alternate text
 	   :align: center
 
-Setup propose un jeu de formulaires permettant notamment : 
+Setup propose un jeu de formulaires permettant notamment :
 
-  * **De modifier les adresses et les chemins de l'application** ou de
-    composants permettant sa mise en oeuvre
-    
-  * **De placer l'application en mode maintenance**
-  
-  * **D'activer ou de désactiver des connectivités à des services web**
-   
-  * **D'activer ou de désactiver des connectivités à des réseaux sociaux** mis
-    en oeuvre dans :doc:`Bridge`
-    
-  * **D'activer ou de désactiver des fonctionnalités et options de l'
-    application**
-  
-  * **De gérer les extensions de fichiers autorisés** en ajout dans Upload
+* **De modifier les adresses et les chemins de l'application** ou de composants
+  permettant sa mise en oeuvre
+* **De placer l'application en mode maintenance**
+* **D'activer ou de désactiver des connectivités à des services web**
+* **D'activer ou de désactiver des connectivités à des réseaux sociaux** mis en
+  oeuvre dans :doc:`Bridge`
+* **D'activer ou de désactiver des fonctionnalités et options de l'application**
+* **De gérer les extensions de fichiers autorisés** en ajout dans Upload
 
 .. warning:: Setup permet de modifier en profondeur les paramètres d'
-             installation de l'application.
-             L'administrateur sera particulièrement attentif aux modifications
-             apportées dans les formulaires proposés.
-  
+    installation de l'application. L'administrateur sera particulièrement
+    attentif aux modifications apportées dans les formulaires proposés.
+
 Utilisateurs connectés
 ----------------------
 
@@ -65,14 +58,13 @@ Cet écran liste les sessions utilisateurs actives sur le système Phraseanet.
 Elle informe de l'application Phraseanet utilisée, de l'adresse "IP", ainsi que
 de la date et de l'heure de connexion au système.
 
-  .. image:: ../../images/Administration-utilisateurlive.jpg
-	   :alt: alternate text
-	   :align: center
-	   
-  .. note:: Phraseanet repose sur un mécanisme de *sessions persistantes*. 
-            Les dates et heures de connexion correspondent à celles de l'
-            initialisation de la session de l'utilisateur.
-   
+.. image:: ../../images/Administration-utilisateurlive.jpg
+    :alt: alternate text
+    :align: center
+
+.. note:: Phraseanet repose sur un mécanisme de *sessions persistantes*. Les
+    dates et heures de connexion correspondent à celles de l'initialisation de
+    la session de l'utilisateur.
 
 Publications
 ------------
@@ -87,10 +79,10 @@ L'écran Publications dresse la liste des flux média disponibles en publication
 et permet d'en créer, d'en modifier et d'en supprimer.
 
   * **Pour créer un flux**, remplir puis valider le formulaire d'ajout
-  
+
   * **Pour modifier les propriétés d'un flux existant**, cliquer sur le flux à
     modifier pour ouvrir le formulaire d'édition du flux sélectionné.
-  
+
   * **Pour supprimer un flux**, cliquer sur bouton supprimer.
 
 Gestionnaire de tâches

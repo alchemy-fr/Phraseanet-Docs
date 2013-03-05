@@ -10,20 +10,17 @@ La Zone de Travail
     gauche de la fenêtre de *Phraseanet Production*. Elle propose :
 
     * Un espace de travail pour mettre de côté des sélections d'images et autres
-      documents: ce sont les :doc:`Paniers et Reportages <PaniersReportages>`
+      documents : ce sont les :doc:`Paniers et Reportages <PaniersReportages>`
 
     Si (et seulement si) un thésaurus est déployé,
 
     * une aide à la recherche avec des `Propositions`_
-
     * Le `thesaurus`_ mis en oeuvre
-
-
 
 Les Paniers et les Reportages
 -----------------------------
-
-La Zone de travail présente par défaut les Paniers et les Reportages :
+La Zone de travail présente par défaut les :doc:`Paniers et les Reportages
+<PaniersReportages>` :
 
 .. image:: ../../images/Onglets-General.jpg
     :align: center
@@ -42,7 +39,7 @@ utilisateur des termes permettant de préciser davantage sa recherche ou au
 contraire d'étendre sa recherche à un champ cognitif plus large.
 
 Chacune des propositions affichées est cliquable et permet de lancer une
-nouvelle recherche.
+nouvelle recherche *thésaurus*.
 
   .. image:: ../../images/Onglet-Propositions.jpg
 	   :alt: alternate text
@@ -53,7 +50,6 @@ nouvelle recherche.
 
 Thesaurus
 ---------
-
 Onglet Thesaurus
 ****************
 L'onglet Thesaurus présente le ou les thesauris déployés sous forme d'un *arbre*
@@ -65,8 +61,8 @@ dont les noeuds et termes sont cliquables.
 .. image:: ../../images/Rechercher-thesaurus2.jpg
     :align: center
 
-**Une recherche dans les termes du thésaurus est possible**.
-
+**Une recherche dans les termes du thésaurus est possible** au moyen d'un
+formulaire.
 Inscrire au minimum les trois premiers caractères d’un terme pour déclencher le
 dispositif d'auto-complétion. L’affichage se met à jour et en double-cliquant
 sur un terme l’application lance une requête thesaurus sur les bases et
@@ -80,16 +76,16 @@ Onglet Candidats
 ****************
 **Visible par les utilisateurs disposant des droits d'administration du
 thésaurus**, cette rubrique affiche une liste de termes candidats issus de
-l'indexation documentaire des media.
+l'indexation documentaire des médias.
 Cette liste est alimentée en continu :
 
 * D'une part par la récupération de métadonnées issues de l'indexation  de
-  nouveaux documents par le moteur Phrasea.
+  nouveaux documents par le moteur *Phrasea engine*.
 * D'autre part, par l'édition des notices de documents dans le cas ou des termes
-  utilisés pour décrire les media ne seraient pas présents dans les champs
+  utilisés pour décrire les médias ne seraient pas présents dans les champs
   documentaires liées à des branches de thésaurus.
 
-Cliquer sur l'onglet Thesaurus de la zone de travail puis sur la rubrique
+Cliquer sur l'onglet *Thesaurus* de la zone de travail puis sur la rubrique
 **Candidats**.
 Les champs documentaires liés à des branches de thésaurus sont présentés et le
 symbole **+** permet de déployer la liste des termes candidats.

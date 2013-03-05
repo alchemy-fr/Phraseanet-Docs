@@ -4,7 +4,7 @@
    :maxdepth: 3
 
 Cette section du manuel rassemble les notions relatives à l'édition documentaire
-des notices de média et de reportages dans *Phraseanet*.
+des notices de médias et de reportages dans *Phraseanet*.
 
 
 Editer des enregistrements
@@ -13,48 +13,57 @@ Editer des enregistrements
 .. topic:: L'essentiel
 
     L'action **Editer** permet d'éditer la ou les fiches descriptives des
-    media, des reportage, pour saisir, compléter ou modifier le contenu des
+    médias, des reportages, pour saisir, compléter ou modifier le contenu des
     champs de description documentaire.
 
-    Il est possible d'éditer à l’unité ou en lots et sous lots des
-    Enregistrements, des Paniers, des Reportages depuis la zone des résultats ou
-    depuis la zone des paniers.
+    Il est possible d'éditer ces descriptions à l’unité ou en lots et sous lots
+    à partir d'enregistrements, de paniers, de reportages depuis la zone des
+    résultats ou depuis la zone travail.
 
-    La fenêtre est découpée en 3 espaces:
-    La barre de défilement affiche les documents sélectionnés. La taille de la
-    zone est modifiable.
-    La taille des vignettes est modifiable en déplaçant le curseur.
-    La zone inférieure affiche la liste des champs descripteurs, la liste des
-    status, et réserve un espace pour afficher le contenu du champs actif.
-    La zone inférieure droite affiche des onglets d’assistance à l’indexation.
+Principes généraux sur l'édition
+********************************
+La fenêtre est découpée en trois zones :
+    * **La barre de défilement** affiche les documents sélectionnés. La taille
+      de la zone est modifiable. La taille des vignettes est modifiable en
+      déplaçant le curseur.
+    * **La zone de saisie**  affiche la liste des champs descripteurs, la liste
+      des status, et réserve un espace pour afficher le contenu du champs actif.
+    * **La zone des onglets d’assistance à la saisie** proposent des aides à la
+      saisie.
 
 
 .. image:: ../../images/Prod-Editer.jpg
     :align: center
 
-* Sélectionner des média, un panier ou un reportage
+* Sélectionner des médias, un panier ou un reportage
+
+.. warning::
+    Seuls peuvent être édités simultanément des enregistrements provenants d'une
+    même base.
+
 * Cliquer sur le bouton **Editer**
 * La fenêtre **Editer** s'ouvre
 
 Par défaut, toutes les vignettes sont sélectionnées.
 
-Les champs dont le contenu est identique pour les documents sélectionnés
-apparaissent en clair.
+**Les champs dont les contenus sont identiques** pour les documents sélectionnés
+apparaissent *en clair*.
 
-Les champs dont le contenu est hétérogène apparaissent avec des xxxxx en orange.
+**Les champs dont les contenus sont hétérogènes** apparaissent avec des xxxxx en
+ orange.
 
 Il est possible de désélectionner / sélectionner les documents en cliquant
 sur les vignettes et en utilisant les combinaisons de touche "Maj" ou "Alt".
 Cette possibilité de sélection en lots et sous-lots permet de renseigner des
-informations communes à des media et gagner ainsi en productivité.
+informations communes à des médias et gagner ainsi en productivité.
 
 Aucune modification ou ajout n’est effectué tant que l’utilisateur n’a pas
-cliqué sur le bouton "Valider".
+cliqué sur le bouton **Valider**.
 
 * Pour passer d'un champ à un autre, utiliser sur la touche de tabulation (**
   TAB**) du clavier.
-* Pour annuler les modifications en cours, cliquer sur *Annuler* ou appuyer
-  sur la touche **Echap** ce qui a pour effet de quitter le formulaire
+* **Pour annuler les modifications en cours**, cliquer sur **Annuler** ou
+  appuyer sur la touche **Echap** ce qui a pour effet de quitter le formulaire
   d'édition.
 
 Editer des champs de type date
@@ -71,7 +80,7 @@ ajoutée.
 Editer des champs de type texte intégral
 ****************************************
 
-Sélectionner le ou les documents sur lesquels apporter une modification
+Sélectionner le ou les documents sur lesquels apporter des modifications
 * Cliquer dans le champ à modifier
 * Saisir les informations souhaitées
 
@@ -107,10 +116,10 @@ ceux présents seulement dans au moins une notice sont en Orange.
 
 * Le terme s’affiche dans le masque de saisie.
 
-Sous chacune des vignettes des media sélectionnés, si le terme est absent des
+Sous chacune des vignettes des médias sélectionnés, si le terme est absent des
 notices, un symbole "plus" s'affiche.
 Inversement, un symbole "moins" signifie que le termes n'est pas utilisé dans
-le champ documentaire de la notice du media.
+le champ documentaire de la notice du média.
 
 * Cliquer sur le symbole "plus" pour ajouter le terme pour cet enregistrement.
 
@@ -119,10 +128,10 @@ le champ documentaire de la notice du media.
 Pour ajouter le terme à toutes les notices sélectionnées,
 
 * Appuyer sur la touche "entrée" du clavier ou cliquer sur le symbole "plus"
-  qui se trouve à gauche du champ de formulaire de saisie.
+  qui se trouve à droite du champ de formulaire de saisie.
 
 * Cliquer sur le symbole "moins" à gauche du masque de saisie pour
-  supprimer le terme du champs documentaire des notices de media sélectionnés.
+  supprimer le terme du champs documentaire des notices des médias sélectionnés.
 
 Editer un champ lié une sources de données
 ******************************************
@@ -156,7 +165,7 @@ thésaurus.
 * Débuter la saisie d'un terme
 
 
-* L'onglet thésaurus s'actualise et affiche les termes commençant par les
+* L'onglet thésaurus s'actualise et affiche les termes commençants par les
   caractères saisis
 
 .. image:: ../../images/Prod-Editer-thesaurus.jpg
@@ -168,7 +177,6 @@ thésaurus.
 * Le terme est immédiatement ajouté aux documents sélectionnés.
 
 .. note::
-
     Il est aussi possible de déployer l'*arbre* du thésaurus pour
     chercher et sélectionner des termes à indexer. Cliquer sur les
     symboles *plus* qui se trouvent devant les termes.
@@ -190,7 +198,7 @@ Phraseanet Administration <AdministrationBasesCollections>`
 * La valeur est ajoutée au champ.
 
 .. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste en
-          appuyant sur la touche "cmd" ou "ctrl"
+          appuyant sur la touche "ctrl" ou "cmd" du clavier
 
 
 Utiliser l'onglet Presse Papier
@@ -252,8 +260,8 @@ Un modèle se créé à partir d'une notice en cours d'édition.
 * Le nouveau modèle est affiché dans la liste des modèles disponible
 
 
-Appliquer un modèle à une sélection de media
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Appliquer un modèle à une sélection de médias
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Sélectionner les documents
 * Sélectionner l'onglet **Modèles** puis effectuer un double clic sur le titre
   du modèle à appliquer
@@ -262,20 +270,18 @@ Appliquer un modèle à une sélection de media
   documents
 
 .. note::
-
-    Il est possible de revoir les valeurs des champs d'un modèle en
-    cliquant sur la flèche se trouvant devant le titre du modèle.
+    Il est possible de revoir les valeurs des champs d'un modèle en cliquant sur
+    la flèche se trouvant devant le titre du modèle.
 
 .. warning::
-
     Un modèle est la propriété de l'utilisateur qui l'a créé, il ne
     peut être utilisé que par lui.
 
 Editer des reportages
 ---------------------
 
-Chaque reportage dispose de sa propre notice descriptive. Elle est indique à
-celle des media d'une base. Comme pour l'édition de documents, la descriptions
+Chaque reportage dispose de sa propre notice descriptive. Elle est identique à
+celle des médias d'une base. Comme pour l'édition de documents, la descriptions
 en lots des notices de reportage est possible.
 
 Editer les notices de reportages
@@ -285,7 +291,7 @@ En mode recherche reportage
 
 * Sélectionner un ou plusieurs reportages depuis la zone d'affichage des
   résultats
-* Cliquer sur Editer
+* Cliquer sur **Editer**
 
 * => la fenêtre Editer s'ouvre
 
@@ -321,8 +327,8 @@ Les reportages ont par défaut une image de "dossier" pour les illustrer.
 
 Pour compléter la notice du reportage:
 
-* -> Cliquer sur l’image de représentation du reportage «  en haut à gauche de
-  la fenêtre "Editer"
+* -> Cliquer sur l’image de représentation du reportage en haut à gauche de
+  la fenêtre *Editer*
 * -> Seule la notice du reportage sera modifiée
 
 * -> Sélectionner l’image de représentation du reportage et les autres

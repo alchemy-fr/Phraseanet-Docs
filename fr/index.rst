@@ -23,10 +23,10 @@ A propos de cette documentation
 
 Le présent manuel aborde les questions liées à l'
 :doc:`administration<Admin/index>`, à l':doc:`utilisation<User/index>`
-et au :doc:` reposant sur le logiciel
-Open source Phraseanet.
-Un `glossaire<Glossaire>` regroupe les termes propres au vocabulaire employé
-dans l'application.
+et au :doc:`développement<Devel/index>` reposants sur le logiciel Open source
+*Phraseanet*.
+Un :doc:`glossaire<Glossaire>` regroupe les termes propres au vocabulaire
+employé dans l'application.
 Envie de contribuer ? Consulter :doc:`cette section<Contrib/index>` avant de
 commencer.
 
@@ -57,8 +57,9 @@ de cette version majeure, voici les principaux changements apportés :
 Besoin d'aide ?
 ---------------
 
-`Alchemy <http://www.alchemy.fr>`_, maison mère de Phraseanet commercialise un
+`Alchemy <http://www.alchemy.fr>`_, l'éditeur de Phraseanet commercialise un
 ensemble de prestations et de services autour de la solution *Phraseanet*.
 
 L'équipe de Phraseanet consacre une partie de son temps libre à l'animation des
-forums et groupes.
+forums et groupes. Consulter `cette page <http://www.phraseanet.com/support/>`_
+pour une présentation de ces groupes.
