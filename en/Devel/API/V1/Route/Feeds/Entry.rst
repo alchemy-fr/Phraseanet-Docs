@@ -54,8 +54,8 @@ Response sample
         "response": {
             "entry": {
             "id": 3727,
-            "author_email": "legoff.n@gmail.com",
-            "author_name": "legoff.n@gmail.com",
+            "author_email": "user@example.com",
+            "author_name": "user@example.com",
             "created_on": "2012-06-25T17:58:58+02:00",
             "updated_on": "2012-06-25T17:58:58+02:00",
             "title": "premier post lolilol",

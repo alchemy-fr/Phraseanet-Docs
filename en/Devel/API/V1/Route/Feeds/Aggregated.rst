@@ -62,8 +62,8 @@ Response sample
             "entries": [
                 {
                     "id": 688,
-                    "author_email": "legoff@alchemy.fr",
-                    "author_name": "legoff@alchemy.fr",
+                    "author_email": "admin@example.com",
+                    "author_name": "admin@example.com",
                     "created_on": "2012-10-01T14:36:31+02:00",
                     "updated_on": "2012-10-01T14:36:31+02:00",
                     "title": "today's news",

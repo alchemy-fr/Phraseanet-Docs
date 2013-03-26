@@ -57,7 +57,7 @@ Response sample
                 "validation_users": [
                     {
                         "usr_id": 3,
-                        "usr_name": "legoff.n@gmail.com",
+                        "usr_name": "user@example.com",
                         "confirmed": false,
                         "can_agree": true,
                         "can_see_others": true,
@@ -65,7 +65,7 @@ Response sample
                     },
                     {
                         "usr_id": 722,
-                        "usr_name": "legoff@alchemy.fr",
+                        "usr_name": "admin@example.com",
                         "confirmed": false,
                         "can_agree": true,
                         "can_see_others": true,
@@ -175,7 +175,7 @@ Response sample
                         {
                             "validation_user": {
                                 "usr_id": 3,
-                                "usr_name": "legoff.n@gmail.com",
+                                "usr_name": "user@example.com",
                                 "confirmed": false,
                                 "can_agree": true,
                                 "can_see_others": true,
@@ -188,7 +188,7 @@ Response sample
                         {
                             "validation_user": {
                                 "usr_id": 722,
-                                "usr_name": "legoff@alchemy.fr",
+                                "usr_name": "admin@example.com",
                                 "confirmed": false,
                                 "can_agree": true,
                                 "can_see_others": true,
