@@ -29,6 +29,37 @@ deux champs : response et meta.
 
 Les réponses sont renvoyés par défaut dans un format Json.
 
+.. note::
+
+    Un champ optionnel **timers**, fournissant un tableau de timers, peut être
+    obtenu en activant cette fonctionalité. Consulter le chapitre
+    :doc:`configuration <../../../Admin/Configuration>` pour activer ce service.
+
+    exemple de timer :
+
+    .. code-block:: javascript
+
+        {
+            "meta": {
+                ....
+            },
+            "response": {
+                ....
+            },
+            "timers": [
+                {
+                  "name": "api.load.end",
+                  "memory": 1908328,
+                  "time": 0.0025968551635742
+                },
+                {
+                  "name": "api.result",
+                  "memory": 3885680,
+                  "time": 0.033026933670044
+                }
+            ]
+        }
+
 YAML
 ~~~~
 

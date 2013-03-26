@@ -1,11 +1,70 @@
 API Changelog
 =============
 
+1.3.1
+-----
+
+La version 1.3.1 est disponible depuis la version 3.7.9. Cette mise à jour est
+complètement retro-compatible avec la précédente version et améliore les URL de
+permaliens et ajoute une URL de téléchargement pour ceux-ci.
+
+.. note::
+
+    La retro-compatibilité des URLs générées avec des versions précédentes de
+    l'API est préservée.
+
+**Avant**
+
+.. code-block:: javascript
+
+    {
+        "name": "preview",
+        "permalink": {
+            "created_on": "2012-12-19T18:46:17+01:00",
+            "id": 249,
+            "is_activated": true,
+            "label": "SUPER",
+            "updated_on": "2012-12-19T18:46:17+01:00",
+            "page_url": "http://local.phrasea/permalink/v1/SUPER/1/99/9p6yOZMJ/preview/view/",
+            "url": "http://local.phrasea/permalink/v1/SUPER/1/99/9p6yOZMJ/preview/"
+        },
+        "height": 533,
+        "width": 800,
+        "filesize": 26853,
+        "devices": [],
+        "player_type": "IMAGE",
+        "mime_type": "image/jpeg"
+    }
+
+**version 1.3.1**
+
+.. code-block:: javascript
+
+    {
+        "name": "preview",
+        "permalink": {
+            "created_on": "2012-12-19T18:46:17+01:00",
+            "id": 249,
+            "is_activated": true,
+            "label": "SUPER",
+            "updated_on": "2012-12-19T18:46:17+01:00",
+            "page_url": "http://local.phrasea/permalink/v1/1/99/preview/?token=9p6yOZMJ",
+            "download_url": "http://local.phrasea/permalink/v1/1/99/preview/SUPER.jpg?token=9p6yOZMJ&download"
+            "url": "http://local.phrasea/permalink/v1/1/99/preview/SUPER.jpg?token=9p6yOZMJ",
+        },
+        "height": 533,
+        "width": 800,
+        "filesize": 26853,
+        "devices": [],
+        "player_type": "IMAGE",
+        "mime_type": "image/jpeg"
+    }
+
 1.3
 ---
 
 La version 1.3 de l'API Phraseanet est disponible depuis la version 3.7.5.
-Cette mise à jour est complètement retrocompatible avec la précédente version
+Cette mise à jour est complètement retro-compatible avec la précédente version
 et introduit le concept de Reportage dans celle-ci.
 
 Nouvelles routes

@@ -25,6 +25,37 @@ Responses
 All responses are wrapped in an object containing two fields : response and
 meta. Response is by default sent as JSON data.
 
+.. note::
+
+    An optionnal **timers** fiels, providing an array of timers, can be
+    retrieved by activating this feature. Read the
+    :doc:`configuration <../../../Admin/Configuration>` doc to enable it.
+
+    Example de timer :
+
+    .. code-block:: javascript
+
+        {
+            "meta": {
+                ....
+            },
+            "response": {
+                ....
+            },
+            "timers": [
+                {
+                  "name": "api.load.end",
+                  "memory": 1908328,
+                  "time": 0.0025968551635742
+                },
+                {
+                  "name": "api.result",
+                  "memory": 3885680,
+                  "time": 0.033026933670044
+                }
+            ]
+        }
+
 YAML
 ~~~~
 

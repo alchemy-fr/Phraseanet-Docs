@@ -135,8 +135,9 @@ Exemple retournant des enregistrements :
                                 "is_activated": true,
                                 "label": "0050JPG",
                                 "updated_on": "2012-06-25T18:05:20+02:00",
-                                "page_url": "http://dev.phrasea.net/permalink/v1/0050JPG/1/644/m466mwxi/thumbnail/view/",
-                                "url": "http://dev.phrasea.net/permalink/v1/0050JPG/1/644/m466mwxi/thumbnail/"
+                                "page_url": "http://domain.tld/permalink/v1/1/644/thumbnail/?token=m466mwxi",
+                                "url": "http://domain.tld/permalink/v1/1/644/thumbnail/0050.JPG?token=m466mwxi",
+                                "download_url": "http://domain.tld/permalink/v1/1/644/thumbnail/0050.JPG?token=m466mwxi&download"
                             },
                             "height": 100,
                             "width": 150,
@@ -257,8 +258,9 @@ Exemple retournant des reportages :
                                 "is_activated": true,
                                 "label": "SUPER",
                                 "updated_on": "2012-12-19T18:22:31+01:00",
-                                "page_url": "http://local.phrasea/permalink/v1/SUPER/1/99/YQlcZVsV/thumbnail/view/",
-                                "url": "http://local.phrasea/permalink/v1/SUPER/1/99/YQlcZVsV/thumbnail/"
+                                "page_url": "http://domain.tld/permalink/v1/1/99/thumbnail/?token=YQlcZVsV",
+                                "url": "http://domain.tld/permalink/v1/1/99/thumbnail/SUPER.jpg?token=YQlcZVsV",
+                                "download_url": "http://domain.tld/permalink/v1/1/99/thumbnail/SUPER.jpg?token=YQlcZVsV&download"
                             },
                             "height": 133,
                             "width": 200,
@@ -384,8 +386,9 @@ Exemple retournant des reportages :
                                         "is_activated": true,
                                         "label": "test001CR2",
                                         "updated_on": "2012-12-19T16:43:27+01:00",
-                                        "page_url": "http://local.phrasea/permalink/v1/test001CR2/1/57/PZDiY5iQ/thumbnail/view/",
-                                        "url": "http://local.phrasea/permalink/v1/test001CR2/1/57/PZDiY5iQ/thumbnail/"
+                                        "page_url": "http://domain.tld/permalink/v1/1/57/thumbnail/?token=PZDiY5iQ",
+                                        "url": "http://domain.tld/permalink/v1/1/57/thumbnail/test001.CR2?token=PZDiY5iQ",
+                                        "download_url": "http://domain.tld/permalink/v1/1/57/thumbnail/test001.CR2?token=PZDiY5iQ&download"
                                     },
                                     "height": 133,
                                     "width": 200,
@@ -471,8 +474,9 @@ Exemple retournant des reportages :
                                         "is_activated": true,
                                         "label": "iphone_picjpg",
                                         "updated_on": "2012-12-18T12:38:51+01:00",
-                                        "page_url": "http://local.phrasea/permalink/v1/iphone_picjpg/1/40/KDWnu5xc/thumbnail/view/",
-                                        "url": "http://local.phrasea/permalink/v1/iphone_picjpg/1/40/KDWnu5xc/thumbnail/"
+                                        "page_url": "http://domain.tld/permalink/v1/1/40/thumbnail/?token=KDWnu5xc",
+                                        "url": "http://domain.tld/permalink/v1/1/40/thumbnail/iphone_pic.jpg?token=KDWnu5xc",
+                                        "download_url": "http://domain.tld/permalink/v1/1/40/thumbnail/iphone_pic.jpg?token=KDWnu5xc&download"
                                     },
                                     "height": 200,
                                     "width": 150,
