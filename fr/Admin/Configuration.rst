@@ -31,6 +31,7 @@ en dessous la déclaration de cet environnement.
             debug: true
             display_errors: true
             database: main_connexion
+            api-timers: true
         template_engine: twig_debug
         orm: doctrine_dev
         cache: array_cache
@@ -47,6 +48,8 @@ Détaillons la composition d'un environnement
     * display_errors: Afficher les erreurs sur la sortie standard
     * database: Nom de la connexion à la base de donnée (requis) voir
       connexion.yml
+    * api-timers: Ajout de timers de debug dans les résultats retournés par
+      l'API
 
 * template_engine : service de mise en page (requis)
 * orm : Service de mapping à la base de donnée (requis)
