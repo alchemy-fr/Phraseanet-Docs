@@ -55,22 +55,22 @@ Response sample
         "response": {
             "basket": {
                 "validation_users": [
-                {
-                    "usr_id": 3,
-                    "usr_name": "legoff.n@gmail.com",
-                    "confirmed": false,
-                    "can_agree": true,
-                    "can_see_others": true,
-                    "readonly": false
-                },
-                {
-                    "usr_id": 722,
-                    "usr_name": "legoff@alchemy.fr",
-                    "confirmed": false,
-                    "can_agree": true,
-                    "can_see_others": true,
-                    "readonly": true
-                }
+                    {
+                        "usr_id": 3,
+                        "usr_name": "user@example.com",
+                        "confirmed": false,
+                        "can_agree": true,
+                        "can_see_others": true,
+                        "readonly": false
+                    },
+                    {
+                        "usr_id": 722,
+                        "usr_name": "admin@example.com",
+                        "confirmed": false,
+                        "can_agree": true,
+                        "can_see_others": true,
+                        "readonly": true
+                    }
                 ],
                 "validation_end_date": "2012-07-18T14:54:02+02:00",
                 "validation_infos": "Vous avez envoyé cette demande à 1 utilisateurs",
@@ -87,120 +87,121 @@ Response sample
                 "validation_basket": true
             },
             "basket_elements": [
-            {
-                "basket_element_id": 19,
-                "order": 1,
-                "record": {
-                    "databox_id": 1,
-                    "record_id": 634,
-                    "mime_type": "image/jpeg",
-                    "title": "0059.JPG",
-                    "original_name": "0059.JPG",
-                    "updated-on": "2012-06-28T17:19:28+02:00",
-                    "created_on": "2012-06-22T21:20:58+02:00",
-                    "collection_id": 1,
-                    "sha256": "9e78d41b13bb61db1399bc0abb601a00a049f2c1d17d8dfa4ce36312d29f04ca",
-                    "thumbnail": {
-                        "name": "thumbnail",
-                        "permalink": {
-                            "created_on": "2012-06-25T18:05:20+02:00",
-                            "id": 2026,
-                            "is_activated": true,
-                            "label": "0059JPG",
-                            "updated_on": "2012-06-25T18:05:20+02:00",
-                            "page_url": "http://dev.phrasea.net/permalink/v1/0059JPG/1/634/7skj8YDw/thumbnail/view/",
-                            "url": "http://dev.phrasea.net/permalink/v1/0059JPG/1/634/7skj8YDw/thumbnail/"
+                {
+                    "basket_element_id": 19,
+                    "order": 1,
+                    "record": {
+                        "databox_id": 1,
+                        "record_id": 634,
+                        "mime_type": "image/jpeg",
+                        "title": "0059.JPG",
+                        "original_name": "0059.JPG",
+                        "updated-on": "2012-06-28T17:19:28+02:00",
+                        "created_on": "2012-06-22T21:20:58+02:00",
+                        "collection_id": 1,
+                        "sha256": "9e78d41b13bb61db1399bc0abb601a00a049f2c1d17d8dfa4ce36312d29f04ca",
+                        "thumbnail": {
+                            "name": "thumbnail",
+                            "permalink": {
+                                "created_on": "2012-06-25T18:05:20+02:00",
+                                "id": 2026,
+                                "is_activated": true,
+                                "label": "0059JPG",
+                                "updated_on": "2012-06-25T18:05:20+02:00",
+                                "page_url": "http://domain.tld/permalink/v1/1/634/thumbnail/?token=7skj8YDw",
+                                "url": "http://domain.tld/permalink/v1/1/634/thumbnail/0059.JPG?token=7skj8YDw",
+                                "download_url": "http://domain.tld/permalink/v1/1/634/thumbnail/0059.JPG?token=7skj8YDw&download"
+                            },
+                            "height": 100,
+                            "width": 150,
+                            "filesize": 2136,
+                            "devices": [
+                                "screen"
+                            ],
+                            "player_type": "IMAGE",
+                            "mime_type": "image/jpeg"
                         },
-                        "height": 100,
-                        "width": 150,
-                        "filesize": 2136,
-                        "devices": [
-                        "screen"
+                        "technical_informations": [
+                            {
+                                "name": "CameraModel",
+                                "value": "NIKON D700"
+                            },
+                            {
+                                "name": "Channels",
+                                "value": 3
+                            },
+                            {
+                                "name": "ColorDepth",
+                                "value": 8
+                            },
+                            {
+                                "name": "ColorSpace",
+                                "value": "RGB"
+                            },
+                            {
+                                "name": "FileSize",
+                                "value": 1060915
+                            },
+                            {
+                                "name": "FlashFired",
+                                "value": 1
+                            },
+                            {
+                                "name": "FocalLength",
+                                "value": 0
+                            },
+                            {
+                                "name": "Height",
+                                "value": 2832
+                            },
+                            {
+                                "name": "MimeType",
+                                "value": "image/jpeg"
+                            },
+                            {
+                                "name": "ShutterSpeed",
+                                "value": 0.004
+                            },
+                            {
+                                "name": "Width",
+                                "value": 4256
+                            }
                         ],
-                        "player_type": "IMAGE",
-                        "mime_type": "image/jpeg"
+                        "phrasea_type": "image",
+                        "uuid": "0d9f2d24-d5a5-483c-a9b3-2289d75eb7a1"
                     },
-                    "technical_informations": [
-                    {
-                        "name": "CameraModel",
-                        "value": "NIKON D700"
-                    },
-                    {
-                        "name": "Channels",
-                        "value": 3
-                    },
-                    {
-                        "name": "ColorDepth",
-                        "value": 8
-                    },
-                    {
-                        "name": "ColorSpace",
-                        "value": "RGB"
-                    },
-                    {
-                        "name": "FileSize",
-                        "value": 1060915
-                    },
-                    {
-                        "name": "FlashFired",
-                        "value": 1
-                    },
-                    {
-                        "name": "FocalLength",
-                        "value": 0
-                    },
-                    {
-                        "name": "Height",
-                        "value": 2832
-                    },
-                    {
-                        "name": "MimeType",
-                        "value": "image/jpeg"
-                    },
-                    {
-                        "name": "ShutterSpeed",
-                        "value": 0.004
-                    },
-                    {
-                        "name": "Width",
-                        "value": 4256
-                    }
+                    "validation_item": true,
+                    "validation_choices": [
+                        {
+                            "validation_user": {
+                                "usr_id": 3,
+                                "usr_name": "user@example.com",
+                                "confirmed": false,
+                                "can_agree": true,
+                                "can_see_others": true,
+                                "readonly": false
+                            },
+                            "agreement": null,
+                            "updated_on": "2012-06-28T14:54:02+02:00",
+                            "note": ""
+                        },
+                        {
+                            "validation_user": {
+                                "usr_id": 722,
+                                "usr_name": "admin@example.com",
+                                "confirmed": false,
+                                "can_agree": true,
+                                "can_see_others": true,
+                                "readonly": true
+                            },
+                            "agreement": null,
+                            "updated_on": "2012-06-28T14:54:02+02:00",
+                            "note": ""
+                        }
                     ],
-                    "phrasea_type": "image",
-                    "uuid": "0d9f2d24-d5a5-483c-a9b3-2289d75eb7a1"
-                },
-                "validation_item": true,
-                "validation_choices": [
-                {
-                    "validation_user": {
-                        "usr_id": 3,
-                        "usr_name": "legoff.n@gmail.com",
-                        "confirmed": false,
-                        "can_agree": true,
-                        "can_see_others": true,
-                        "readonly": false
-                    },
                     "agreement": null,
-                    "updated_on": "2012-06-28T14:54:02+02:00",
-                    "note": ""
-                },
-                {
-                    "validation_user": {
-                        "usr_id": 722,
-                        "usr_name": "legoff@alchemy.fr",
-                        "confirmed": false,
-                        "can_agree": true,
-                        "can_see_others": true,
-                        "readonly": true
-                    },
-                    "agreement": null,
-                    "updated_on": "2012-06-28T14:54:02+02:00",
                     "note": ""
                 }
-                ],
-                "agreement": null,
-                "note": ""
-            }
             ]
         }
     }

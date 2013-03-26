@@ -71,8 +71,9 @@ Exemple de réponse
                         "is_activated": true,
                         "label": "photo03JPG",
                         "last_modified": "2012-06-13T13:51:06+02:00",
-                        "page_url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/view/",
-                        "url": "https://library.net/permalink/v1/photo03JPG/2/132/5MuXBQ55/thumbnail/"
+                        "page_url": "http://domain.tld/permalink/v1/2/132/thumbnail/?token=5MuXBQ55",
+                        "url": "http://domain.tld/permalink/v1/2/132/thumbnail/photo03.JPG?token=5MuXBQ55",
+                        "download_url": "http://domain.tld/permalink/v1/2/132/thumbnail/photo03.JPG?token=5MuXBQ55&download"
                     },
                     "height": 113,
                     "width": 150,

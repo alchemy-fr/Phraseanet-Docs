@@ -54,8 +54,8 @@ Response sample
         "response": {
             "entry": {
             "id": 3727,
-            "author_email": "legoff.n@gmail.com",
-            "author_name": "legoff.n@gmail.com",
+            "author_email": "user@example.com",
+            "author_name": "user@example.com",
             "created_on": "2012-06-25T17:58:58+02:00",
             "updated_on": "2012-06-25T17:58:58+02:00",
             "title": "premier post lolilol",
@@ -81,8 +81,9 @@ Response sample
                             "is_activated": true,
                             "label": "0050JPG",
                             "updated_on": "2012-06-25T18:05:20+02:00",
-                            "page_url": "http://dev.phrasea.net/permalink/v1/0050JPG/1/644/m466mwxi/thumbnail/view/",
-                            "url": "http://dev.phrasea.net/permalink/v1/0050JPG/1/644/m466mwxi/thumbnail/"
+                            "page_url": "http://domain.tld/permalink/v1/1/644/thumbnail/?token=m466mwxi",
+                            "url": "http://domain.tld/permalink/v1/1/644/thumbnail/0050.JPG?token=m466mwxi",
+                            "download_url": "http://domain.tld/permalink/v1/1/644/thumbnail/0050.JPG?token=m466mwxi&download"
                         },
                         "height": 100,
                         "width": 150,

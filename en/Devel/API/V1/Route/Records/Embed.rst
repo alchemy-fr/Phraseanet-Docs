@@ -74,8 +74,9 @@ Response sample
                     "is_activated": true,
                     "label": "0113JPG",
                     "updated_on": "2012-06-22T21:20:55+02:00",
-                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/gAZMiywc/document/view/",
-                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/gAZMiywc/document/"
+                    "page_url": "http://domain.tld/permalink/v1/1/633/document/?token=gAZMiywc",
+                    "url": "http://domain.tld/permalink/v1/1/633/document/0113.JPG?token=gAZMiywc",
+                    "download_url": "http://domain.tld/permalink/v1/1/633/document/0113.JPG?token=gAZMiywc&download"
                 },
                 "height": 4256,
                 "width": 2832,
@@ -94,8 +95,9 @@ Response sample
                     "is_activated": true,
                     "label": "0113JPG",
                     "updated_on": "2012-06-25T18:07:20+02:00",
-                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/ThQIeo0w/preview/view/",
-                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/ThQIeo0w/preview/"
+                    "page_url": "http://domain.tld/permalink/v1/1/633/preview/?token=ThQIeo0w",
+                    "url": "http://domain.tld/permalink/v1/1/633/preview/0113.JPG?token=ThQIeo0w",
+                    "download_url": "http://domain.tld/permalink/v1/1/633/preview/0113.JPG?token=ThQIeo0w&download"
                 },
                 "height": 480,
                 "width": 319,
@@ -114,8 +116,9 @@ Response sample
                     "is_activated": true,
                     "label": "0113JPG",
                     "updated_on": "2012-06-25T18:05:20+02:00",
-                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/cw1tOY9C/thumbnail/view/",
-                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/cw1tOY9C/thumbnail/"
+                    "page_url": "http://domain.tld/permalink/v1/1/633/thumbnail/?token=cw1tOY9C",
+                    "url": "http://domain.tld/permalink/v1/1/633/thumbnail/0113.JPG?token=cw1tOY9C",
+                    "download_url": "http://domain.tld/permalink/v1/1/633/thumbnail/0113.JPG?token=cw1tOY9C&download"
                 },
                 "height": 150,
                 "width": 100,
@@ -134,8 +137,9 @@ Response sample
                     "is_activated": true,
                     "label": "0113JPG",
                     "updated_on": "2012-06-22T21:24:57+02:00",
-                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/STLrJt9Y/preview_mobile/view/",
-                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/STLrJt9Y/preview_mobile/"
+                    "page_url": "http://domain.tld/permalink/v1/1/633/preview_mobile/?token=STLrJt9Y",
+                    "url": "http://domain.tld/permalink/v1/1/633/preview_mobile/0113.JPG?token=STLrJt9Y",
+                    "download_url": "http://domain.tld/permalink/v1/1/633/preview_mobile/0113.JPG?token=STLrJt9Y&download"
                 },
                 "height": 480,
                 "width": 319,
@@ -154,8 +158,9 @@ Response sample
                     "is_activated": true,
                     "label": "0113JPG",
                     "updated_on": "2012-06-22T21:25:00+02:00",
-                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/3ssBc2YY/thumbnail_mobile/view/",
-                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/3ssBc2YY/thumbnail_mobile/"
+                    "page_url": "http://domain.tld/permalink/v1/1/633/thumbnail_mobile/?token=3ssBc2YY",
+                    "url": "http://domain.tld/permalink/v1/1/633/thumbnail_mobile/0113.JPG?token=3ssBc2YY",
+                    "download_url": "http://domain.tld/permalink/v1/1/633/thumbnail_mobile/0113.JPG?token=3ssBc2YY&download"
                 },
                 "height": 150,
                 "width": 100,

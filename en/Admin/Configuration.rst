@@ -30,6 +30,7 @@ declaration of this environment below.
             debug: true
             display_errors: true
             database: main_connexion
+            api-timers: true
         template_engine: twig_debug
         orm: doctrine_dev
         cache: array_cache
@@ -45,6 +46,7 @@ Let's detail environment structure :
     * debug: Switch to debug mode
     * display_errors: Display error in the standard output
     * database: Name of the database connection (required) see connexion.yml below
+    * api-timers: Enable debug timers in the API results
 
 * template_engine : Templating service (required)
 * orm : Database Object Relationnal Mapper (required)
