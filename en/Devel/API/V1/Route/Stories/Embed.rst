@@ -71,8 +71,9 @@ Response sample
                         "is_activated": true,
                         "label": "SUPER",
                         "updated_on": "2012-12-19T18:46:17+01:00",
-                        "page_url": "http://local.phrasea/permalink/v1/SUPER/1/99/9p6yOZMJ/preview/view/",
-                        "url": "http://local.phrasea/permalink/v1/SUPER/1/99/9p6yOZMJ/preview/"
+                        "page_url": "http://domain.tld/permalink/v1/1/99/preview/?token=9p6yOZMJ",
+                        "url": "http://domain.tld/permalink/v1/1/99/preview/SUPER.jpg?token=9p6yOZMJ",
+                        "download_url": "http://domain.tld/permalink/v1/1/99/preview/SUPER.jpg?token=9p6yOZMJ&download"
                     },
                     "height": 533,
                     "width": 800,
@@ -89,8 +90,9 @@ Response sample
                         "is_activated": true,
                         "label": "SUPER",
                         "updated_on": "2012-12-19T18:22:31+01:00",
-                        "page_url": "http://local.phrasea/permalink/v1/SUPER/1/99/YQlcZVsV/thumbnail/view/",
-                        "url": "http://local.phrasea/permalink/v1/SUPER/1/99/YQlcZVsV/thumbnail/"
+                        "page_url": "http://domain.tld/permalink/v1/1/99/thumbnail/?token=YQlcZVsV",
+                        "url": "http://domain.tld/permalink/v1/1/99/thumbnail/SUPER.jpg?token=YQlcZVsV",
+                        "download_url": "http://domain.tld/permalink/v1/1/99/thumbnail/SUPER.jpg?token=YQlcZVsV&download"
                     },
                     "height": 133,
                     "width": 200,

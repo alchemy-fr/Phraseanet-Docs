@@ -81,8 +81,9 @@ Exemple de réponse
                             "is_activated": true,
                             "label": "0050JPG",
                             "updated_on": "2012-06-25T18:05:20+02:00",
-                            "page_url": "http://dev.phrasea.net/permalink/v1/0050JPG/1/644/m466mwxi/thumbnail/view/",
-                            "url": "http://dev.phrasea.net/permalink/v1/0050JPG/1/644/m466mwxi/thumbnail/"
+                            "page_url": "http://domain.tld/permalink/v1/1/644/thumbnail/?token=m466mwxi",
+                            "url": "http://domain.tld/permalink/v1/1/644/thumbnail/0050.JPG?token=m466mwxi",
+                            "download_url": "http://domain.tld/permalink/v1/1/644/thumbnail/0050.JPG?token=m466mwxi&download"
                         },
                         "height": 100,
                         "width": 150,

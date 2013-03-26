@@ -66,83 +66,84 @@ Response sample
                 "thumbnail": {
                     "name": "thumbnail",
                     "permalink": {
-                    "created_on": "2012-06-25T18:05:20+02:00",
-                    "id": 2027,
-                    "is_activated": true,
-                    "label": "0113JPG",
-                    "updated_on": "2012-06-25T18:05:20+02:00",
-                    "page_url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/cw1tOY9C/thumbnail/view/",
-                    "url": "http://dev.phrasea.net/permalink/v1/0113JPG/1/633/cw1tOY9C/thumbnail/"
+                        "created_on": "2012-06-25T18:05:20+02:00",
+                        "id": 2027,
+                        "is_activated": true,
+                        "label": "0113JPG",
+                        "updated_on": "2012-06-25T18:05:20+02:00",
+                        "page_url": "http://domain.tld/permalink/v1/1/633/thumbnail/?token=cw1tOY9C",
+                        "url": "http://domain.tld/permalink/v1/1/633/thumbnail/0113.JPG?token=cw1tOY9C",
+                        "download_url": "http://domain.tld/permalink/v1/1/633/thumbnail/0113.JPG?token=cw1tOY9C&download"
                     },
                     "height": 150,
                     "width": 100,
                     "filesize": 2453,
                     "devices": [
-                    "screen"
+                        "screen"
                     ],
                     "player_type": "IMAGE",
                     "mime_type": "image/jpeg"
                 },
                 "technical_informations": [
                     {
-                    "name": "Aperture",
-                    "value": 9
+                        "name": "Aperture",
+                        "value": 9
                     },
                     {
-                    "name": "CameraModel",
-                    "value": "NIKON D700"
+                        "name": "CameraModel",
+                        "value": "NIKON D700"
                     },
                     {
-                    "name": "Channels",
-                    "value": 3
+                        "name": "Channels",
+                        "value": 3
                     },
                     {
-                    "name": "ColorDepth",
-                    "value": 8
+                        "name": "ColorDepth",
+                        "value": 8
                     },
                     {
-                    "name": "ColorSpace",
-                    "value": "RGB"
+                        "name": "ColorSpace",
+                        "value": "RGB"
                     },
                     {
-                    "name": "FileSize",
-                    "value": 1101093
+                        "name": "FileSize",
+                        "value": 1101093
                     },
                     {
-                    "name": "FlashFired",
-                    "value": 0
+                        "name": "FlashFired",
+                        "value": 0
                     },
                     {
-                    "name": "FocalLength",
-                    "value": 70
+                        "name": "FocalLength",
+                        "value": 70
                     },
                     {
-                    "name": "Height",
-                    "value": 4256
+                        "name": "Height",
+                        "value": 4256
                     },
                     {
-                    "name": "HyperfocalDistance",
-                    "value": 18.120206410024
+                        "name": "HyperfocalDistance",
+                        "value": 18.120206410024
                     },
                     {
-                    "name": "ISO",
-                    "value": 160
+                        "name": "ISO",
+                        "value": 160
                     },
                     {
-                    "name": "LightValue",
-                    "value": 13.305634287547
+                        "name": "LightValue",
+                        "value": 13.305634287547
                     },
                     {
-                    "name": "MimeType",
-                    "value": "image/jpeg"
+                        "name": "MimeType",
+                        "value": "image/jpeg"
                     },
                     {
-                    "name": "ShutterSpeed",
-                    "value": 0.005
+                        "name": "ShutterSpeed",
+                        "value": 0.005
                     },
                     {
-                    "name": "Width",
-                    "value": 2832
+                        "name": "Width",
+                        "value": 2832
                     }
                 ],
                 "phrasea_type": "image",

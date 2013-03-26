@@ -89,8 +89,9 @@ Exemple de réponse
                                         "is_activated": true,
                                         "label": "0129JPG",
                                         "updated_on": "2012-10-01T14:36:57+02:00",
-                                        "page_url": "permalink/v1/0129JPG/88/9300/2cH7rE2D/thumbnail/view/",
-                                        "url": "permalink/v1/0129JPG/88/9300/2cH7rE2D/thumbnail/"
+                                        "page_url": "http://domain.tld/permalink/v1/88/9300/document/?token=2cH7rE2D",
+                                        "url": "http://domain.tld/permalink/v1/88/9300/document/0129.JPG?token=2cH7rE2D",
+                                        "download_url": "http://domain.tld/permalink/v1/88/9300/document/0129.JPG?token=2cH7rE2D&download"
                                     },
                                     "height": 200,
                                     "width": 133,
@@ -187,8 +188,9 @@ Exemple de réponse
                                         "is_activated": true,
                                         "label": "0064JPG",
                                         "updated_on": "2012-10-01T14:36:57+02:00",
-                                        "page_url": "permalink/v1/0064JPG/88/9299/9yoFz1gH/thumbnail/view/",
-                                        "url": "permalink/v1/0064JPG/88/9299/9yoFz1gH/thumbnail/"
+                                        "page_url": "http://domain.tld/permalink/v1/88/9299/document/?token=9yoFz1gH",
+                                        "url": "http://domain.tld/permalink/v1/88/9299/document/0064.JPG?token=9yoFz1gH",
+                                        "download_url": "http://domain.tld/permalink/v1/88/9299/document/0064.JPG?token=9yoFz1gH&download"
                                     },
                                     "height": 133,
                                     "width": 200,
@@ -269,8 +271,9 @@ Exemple de réponse
                                         "is_activated": true,
                                         "label": "0134JPG",
                                         "updated_on": "2012-10-01T14:36:57+02:00",
-                                        "page_url": "permalink/v1/0134JPG/88/9298/SHKZ4MVa/thumbnail/view/",
-                                        "url": "permalink/v1/0134JPG/88/9298/SHKZ4MVa/thumbnail/"
+                                        "page_url": "http://domain.tld/permalink/v1/88/9298/document/?token=SHKZ4MVa",
+                                        "url": "http://domain.tld/permalink/v1/88/9298/document/0134.JPG?token=SHKZ4MVa",
+                                        "download_url": "http://domain.tld/permalink/v1/88/9298/document/0134.JPG?token=SHKZ4MVa&download"
                                     },
                                     "height": 200,
                                     "width": 133,
