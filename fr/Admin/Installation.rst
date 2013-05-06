@@ -6,8 +6,7 @@ vous pouvez vérifier votre configuration à la racine de votre installation :
 
 .. code-block:: bash
 
-    php bin/console check:system
-    php bin/console check:config
+    php bin/setup check:system
 
 .. seealso::
 
@@ -25,15 +24,12 @@ Configuration du serveur web
 Setup
 -----
 
-Si les étapes précédentes ont été réalisées avec succès, se rendre à l’url décrite dans le paramétrage du serveur web (sub.domain.tld) au moyen d’un navigateur web.
+Depuis la version 3.8, il est recommandé d'installer Phraseanet à l'aide de
+l'utilitaire en ligne de commande :
 
-Le setup se déroule en cinq étapes :
+.. code-block:: bash
 
-* Création du socle d’ApplicationBox
-* Création d’un compte administrateur
-* Connexion au module d’administration
-* Création d’une base de stockage type DataBox
-* Mise en place des tâches d’indexation et de sous-définitions
+    bin/setup system:install
 
 Démarrage des tâches
 --------------------

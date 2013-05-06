@@ -1,5 +1,54 @@
+Console
+=======
+
+Setup
+-----
+
+.. versionadded:: 3.8
+
+   The setup command has been added in version 3.8
+
+Phraseanet provides a setup command line utility :
+
+.. code-block:: bash
+
+    php bin/setup
+
+This command results in such screen output :
+
+.. code-block:: bash
+
+    Usage:
+      [options] command [arguments]
+
+    Options:
+      --help           -h Display this help message.
+      --quiet          -q Do not output any message.
+      --verbose        -v Increase verbosity of messages.
+      --version        -V Display this application version.
+      --ansi              Force ANSI output.
+      --no-ansi           Disable ANSI output.
+      --no-interaction -n Do not ask any interactive question.
+
+    Available commands:
+      help                   Displays help for a command
+      list                   Lists commands
+    about
+      about:authors          List authors and contributors
+      about:license          This program license
+    check
+      check:system           Check environment
+    system
+      system:install         Install Phraseanet
+      system:upgrade         Upgrade Phraseanet to the latest version
+      system:upgrade-datas   Upgrade Phraseanet datas
+
+The whole commands available through this utility are executables whenever
+Phraseanet is not installed, whereas Konsole Kommander requires Phraseanet
+installed and up-to-date.
+
 Konsole Kommander
-=================
+-----------------
 
 Konsole Kommander is a commandline tool to manage Phraseanet. It is simple
 to use :
@@ -13,37 +62,45 @@ You will see something like :
 .. code-block:: bash
 
     Available commands:
-      help                             Displays help for a command
-      list                             Lists commands
+      help                               Displays help for a command
+      list                               Lists commands
     about
-      about:authors                    List authors and contributors
-      about:license                    This program license
+      about:authors                      List authors and contributors
+      about:license                      This program license
     check
-      check:config                     check configuration file
-      check:ensure-dev-settings        Ensure development settings
-      check:ensure-production-settings Ensure production settings
-      check:extension                  Delete a documentation field from a Databox
-      check:system                     Check the configuration
+      check:ensure-dev-settings          Ensure development settings
+      check:ensure-production-settings   Ensure production settings
+      check:extension                    Checks if the Phrasea PHP Extension is well installed & working properly.
+    collection
+      collection:create                  Create a collection in Phraseanet
     fields
-      fields:delete                    Delete a documentation field from a Databox
-      fields:list                      List all databox fields
-      fields:merge                     Merge databox structure fields
-      fields:rename                    Rename a documentation field from a Databox
+      fields:delete                      Delete a documentation field from a Databox
+      fields:list                        List all databox fields
+      fields:merge                       Merge databox structure fields
+      fields:rename                      Rename a documentation field from a Databox
+    mail
+      mail:test
+    records
+      records:add                        Add a record to Phraseanet
+      records:build-missing-subdefs      Build missing subviews
+      records:rescan-technical-datas     Rescan databases for technical datas
     scheduler
-      scheduler:start                  Start the scheduler
-      scheduler:state                  Get scheduler state
-      scheduler:stop                   Stop the scheduler
+      scheduler:start                    Start the scheduler
+      scheduler:state                    Get scheduler status
+      scheduler:stop                     Stop the scheduler
     sphinx
-      sphinx:generate-suggestions      Generate suggestions for Sphinx Search Engine
+      sphinx:generate-suggestions        Generate suggestions for Sphinx Search Engine
     system
-      system:backup-db                 Backup Phraseanet Databases
-      system:clear-cache               Empty cache directories, clear Memcached, Redis if avalaible
-      system:mail-check                Check if email addresses are unique (mandatory since 3.5)
-      system:template-generator        Generate template files
-      system:upgrade                   Upgrade Phraseanet to the lastest version
+      system:backup-db                   Backup Phraseanet Databases
+      system:clear-cache                 Empty cache directories, clear Memcached, Redis if avalaible
+      system:export                      Export all phraseanet records to a directory
+      system:mail-check                  Check if email addresses are unique (mandatory since 3.5)
+      system:template-generator          Generate template files
+      system:upgrade-datas               Upgrade Phraseanet datas
     task
-      task:list                        List tasks
-      task:run                         Run task
+      task:list                          List tasks
+      task:run                           Run task
+      task:state                         Get task state
 
 **To get some help about a command** :
 
@@ -55,14 +112,8 @@ You will see something like :
 
     Each commands returns an exit code, which can be used for automated scripts.
 
-check:config
-------------
-
-Parse and check the structure of
-:doc:`configuration files  </Admin/Configuration>`
-
 check:ensure-dev-settings
--------------------------
+*************************
 
 Validate the consistency of configuration values ​​for a development environment.
 
@@ -71,7 +122,7 @@ Validate the consistency of configuration values ​​for a development environ
 * *--strict* : Fails on alerts.
 
 check:ensure-prod-settings
---------------------------
+**************************
 
 Validate the consistency of configuration values ​​for a production environment.
 
@@ -79,23 +130,8 @@ Validate the consistency of configuration values ​​for a production environm
 
 * *--strict* : Fails on alerts.
 
-check:system
-------------
-
-Validate system :doc:`configuration </Admin/Prerequisite>` necessary for Phraseanet
-to work properly.
-
-* Binaries
-* File system
-* :doc:`Opcode </Admin/Optimization>` cache
-* :doc:`Cache servers </Admin/Optimization>`
-* PHP
-* PHP extensions
-* Phrasea extensions
-* Locales system
-
 fields:delete
--------------
+*************
 
 Delete a documentation field from the databox.
 
@@ -105,12 +141,12 @@ Delete a documentation field from the databox.
 * *--meta_struct_id (-m)* : Meta structure id
 
 fields:list
------------
+***********
 
 List all databox documentation fields
 
 fields:merge
-------------
+************
 
 Merge several databox structure fields.
 
@@ -123,7 +159,7 @@ Merge several databox structure fields.
   (default: ;)
 
 fields:rename
--------------
+*************
 
 Rename a databox documentation fields
 
@@ -134,17 +170,17 @@ Rename a databox documentation fields
 * *--sbas_id (-s)* : Databox sbas_id
 
 scheduler:start
----------------
+***************
 
 Start Phraseanet task scheduler.
 
 scheduler:stop
---------------
+**************
 
 Stop Phraseanet task scheduler
 
 scheduler:state
----------------
+***************
 
 Get the current state of the Phraseanet
 :doc:`task scheduler </Admin/TaskManager>`.
@@ -178,7 +214,7 @@ Get the current state of the Phraseanet
 +---------------+-----------------+
 
 system:backup-db
-----------------
+****************
 
 Save states of current databases state.
 
@@ -187,12 +223,12 @@ Save states of current databases state.
 * *directory* : Directory where backups are stocked.
 
 system:clear-cache
-------------------
+******************
 
 Clear all cach sytems used by Phraseanet.
 
 system:mail-check
------------------
+*****************
 
 Check user's mail unicity.
 
@@ -201,11 +237,11 @@ Check user's mail unicity.
 * *--list* : List all duplicates.
 
 system:template-generator
--------------------------
+*************************
 
 Load compiled templates.
 
 system:upgrade
---------------
+**************
 
 Upgrade Phraseanet to the latest version.
