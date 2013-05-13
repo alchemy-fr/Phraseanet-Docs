@@ -68,8 +68,8 @@ dans le système Phraseanet.
     situé à gauche de la zone des destinataires de l'envoi puis l'enregistrer en
     cliquant sur l'icône :
 
-.. image:: ../../images/Push-icone-disquette.jpg
-    :align: center
+    .. image:: ../../images/Push-icone-disquette.jpg
+        :align: center
 
     La liste créée est alors affichée dans la zone des listes d'envoi.
     Les fonctionnalités relatives aux listes d'envoi sont décrites plus
@@ -89,15 +89,13 @@ liste d'envoi, deux méthodes sont proposées:
 
 **Ou**:
 
-*  Cliquer individuellement sur l'icône
+*  Cliquer individuellement sur l'icône située sur l'étiquette représentative
+   du destinataire à qui donner le droit de téléchargement haute définition.
 
 .. image:: ../../images/Push-download-badge.jpg
     :align: center
 
-   située sur l'étiquette représentative du destinataire à qui donner
-   le droit de téléchargement haute définition.
-
-Cliquer sur le bouton *Envoyer* pour valider et transmettre le Push.
+* Cliquer sur le bouton *Envoyer* pour valider et transmettre le Push.
 
 Un formulaire permet de donner un nom et une description conviviale à l'envoi
 et même réclamer un accusé réception de l'email envoyé si cette fonctionnalité

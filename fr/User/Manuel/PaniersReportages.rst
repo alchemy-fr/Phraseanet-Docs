@@ -61,7 +61,7 @@ Il n'existe pas de panier de session par défaut. L'utilisateur doit le créer.
 * Cliquer sur **Nouveau**
 
 .. image:: ../../images/Paniers-Creation.jpg
-:align: center
+    :align: center
 
 * Une fenêtre s'ouvre
 
