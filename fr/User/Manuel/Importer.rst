@@ -81,7 +81,7 @@ Si besoin, appliquer les :term:`status` si nécessaire (optionnel).
 Réordonner les média
 ********************
 
-Si besoin, l'utilisateur peut ré-ordonner les médias avant de les importer.
+Si besoin, l'utilisateur peut réordonner les médias avant de les importer.
 Sélectionner un fichier et le glisser / déposer ailleurs dans la liste. Il peut
 également choisir de retirer de la liste une ou plusieurs images en cliquant
 sur le bouton Annuler au-dessous de chaque vignette, ou alors de réinitialiser
@@ -145,7 +145,7 @@ de couleur rouge.
 
 Dans la quarantaine, pour chaque fichier est indiquée la raison pour laquelle il
 a été placé : le document peut être un doublon, ou peut ne pas correspondre à
-des critères d’elligibilité (format, colorimétrie, dimensions)...*etc*.
+des critères d’éligibilité (format, colorimétrie, dimensions)...*etc*.
 
 Trois choix sont alors proposés à l'utilisateur :
 

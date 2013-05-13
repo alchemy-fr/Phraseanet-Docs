@@ -1,4 +1,4 @@
-﻿Lightbox
+Lightbox
 ========
 
 .. toctree::

@@ -64,7 +64,7 @@ application.
     dans Phraseanet ? :doc:`Se reporter à la section Administration du
     manuel <AdministrationBasesCollections>`.
 
-**La :terms: `Collection` d’appartenance du document est affichée dans le coin
+**La :term: `Collection` d’appartenance du document est affichée dans le coin
 inférieur gauche:**
 
 .. image:: ../../images/Affichage-nomcoll.jpg
@@ -79,7 +79,7 @@ inférieur gauche:**
 Cette description est composée des champs documentaires non vides renseignés par
 les gestionnaires du fonds.
 
-Si vous en avez le droit, utiliser la fonction :doc:`Editer <Editer>` pour
+Si vous en avez le droit, utiliser la fonction :doc:`Éditer <Editer>` pour
 modifier les informations affichées
 
 Les termes ayant servis comme critères de recherche sont surlignés.
@@ -142,7 +142,7 @@ documentaires remplis ainsi que des informations techniques sur le document.
 
 .. note::
 
-    Selon la configuration de la solution et l’existence d’un thesaurus
+    Selon la configuration de la solution et l’existence d’un thésaurus
     attaché à la base, certains mots clés de la légende sont cliquables.
     Soulignés de pointillés, ils permettent de rebondir sur d'autres
     recherches.

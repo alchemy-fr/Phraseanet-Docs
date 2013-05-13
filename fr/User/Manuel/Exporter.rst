@@ -36,7 +36,7 @@ onglets :**
 * le Téléchargement : Il permet de transférer les données sur son disque
   dur dans un fichier compressé nommé par exemple Export.zip.
 * L'envoi par Mail : Il permet d'envoyer à un destinataire un lien lui
-  permettant de récupérer des media contenus dans un fichier compressé de type
+  permettant de récupérer des médias contenus dans un fichier compressé de type
   Zip.
 * L'envoi par FTP : Si le paramétrage de l'application le permet, l'envoi par
   FTP permet de déposer les média exportés sur un serveur de fichiers

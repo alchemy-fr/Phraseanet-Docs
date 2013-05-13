@@ -322,14 +322,14 @@ Préférences : Valeurs suggérées
 *******************************
 
 Les valeurs suggérées sont des menus de choix déroulants qui apparaissent dans
-la fenêtre :doc:`Edition <Editer>` pour permettre une indexation rapide. Elles
+la fenêtre :doc:`Édition <Editer>` pour permettre une indexation rapide. Elles
 sont éditables par collections et par champs.
 
 Les valeurs suggérées sont des menus de choix déroulants qui apparaissent dans la
-fenêtre :doc:`Edition <Editer>` pour permettre une indexation rapide. Elles sont
+fenêtre :doc:`Édition <Editer>` pour permettre une indexation rapide. Elles sont
 éditables par collections et par champs.
 
-L'édition de valeurs suggérées est possible via un formulaire d'édition en mode
+L'édition de valeurs suggérées est possible via un formulaire d'édition en  mode
 graphique.
 
 .. image:: ../../images/Administration-valeursgraphicmode.jpg

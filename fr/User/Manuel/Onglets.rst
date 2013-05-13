@@ -15,7 +15,7 @@ La Zone de Travail
     Si (et seulement si) un thésaurus est déployé,
 
     * une aide à la recherche avec des `Propositions`_
-    * Le `thesaurus`_ mis en oeuvre
+    * Le `thésaurus`_ mis en oeuvre
 
 Les Paniers et les Reportages
 -----------------------------
@@ -35,7 +35,7 @@ Propositions
 
 Si un thésaurus est déployé, cet onglet peut afficher des propositions en
 rapport avec la recherche de l'utilisateur et des termes de référence contenus
-dans le thesaurus.
+dans le thésaurus.
 En remontant des termes issus du Thésaurus, les propositions suggèrent à l'
 utilisateur des termes permettant de préciser davantage sa recherche ou au
 contraire d'étendre sa recherche à un champ cognitif plus large.
@@ -51,16 +51,16 @@ nouvelle recherche *thésaurus*.
     La pertinence des propositions faites dans cet onglet sont
     dépendantes de la construction du thésaurus déployé.
 
-Thesaurus
+Thésaurus
 ---------
 
-Onglet Thesaurus
+Onglet Thésaurus
 ****************
 
-L'onglet Thesaurus présente le ou les thesauris déployés sous forme d'un *arbre*
+L'onglet Thésaurus présente le ou les thesauri déployés sous forme d'un *arbre*
 dont les noeuds et termes sont cliquables.
 
-* Cliquer sur les branches du thesaurus pour le déployer.
+* Cliquer sur les branches du thésaurus pour le déployer.
 * Double cliquer sur un terme pour lancer la recherche.
 
 .. image:: ../../images/Rechercher-thesaurus2.jpg
@@ -70,7 +70,7 @@ dont les noeuds et termes sont cliquables.
 formulaire.
 Inscrire au minimum les trois premiers caractères d’un terme pour déclencher le
 dispositif d'auto-complétion. L’affichage se met à jour et en double-cliquant
-sur un terme l’application lance une requête thesaurus sur les bases et
+sur un terme l’application lance une requête thésaurus sur les bases et
 collections ouvertes.
 
 .. image:: ../../images/Rechercher-thesaurus3.jpg
@@ -90,7 +90,7 @@ Cette liste est alimentée en continu :
   utilisés pour décrire les médias ne seraient pas présents dans les champs
   documentaires liées à des branches de thésaurus.
 
-Cliquer sur l'onglet *Thesaurus* de la zone de travail puis sur la rubrique
+Cliquer sur l'onglet *Thésaurus* de la zone de travail puis sur la rubrique
 **Candidats**.
 Les champs documentaires liés à des branches de thésaurus sont présentés et le
 symbole **+** permet de déployer la liste des termes candidats.

@@ -115,7 +115,7 @@ se connecter.
 Une fois connecté, Bridge récupère les informations existantes dans l'
 application distante.
 
-Dans le cas de Filckr, les photos existantes sont affichées dans l'onglet
+Dans le cas de Flickr, les photos existantes sont affichées dans l'onglet
 "Photos" ou "Photosets" si les elles sont organisées en albums dans Flickr.
 
 .. image:: ../../images/Bridge-3a.jpg
@@ -128,7 +128,7 @@ Sélectionner des media dans le zone d'affichage, puis cliquer sur le bouton
 **Ajouter**.
 
 La fenêtre "Upload" de Bridge s'ouvre. Modifier les titres des images
-sélectionnées, ajouter des tags et décriver vos media dans les formulaires de
+sélectionnées, ajouter des tags et décrire vos media dans les formulaires de
 description.
 
 * Cliquer sur le bouton **Ajouter** en bas à gauche.

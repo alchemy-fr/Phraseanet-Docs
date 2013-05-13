@@ -111,7 +111,7 @@ obtenir des statistiques.
 
 Cliquer sur **Toutes les bases** pour afficher la liste des bases de données
 disponibles.
-Deux boutons permettent de sélectionner/désélectionner toutes les :term:`bases
+Deux boutons permettent de sélectionner/dé-sélectionner toutes les :term:`bases
 <base>`.
 
 .. image:: ../../images/Statistiques-Connexions2.jpg

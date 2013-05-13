@@ -104,7 +104,7 @@ capturer  le contenu, de l'archiver (recopier les fichiers dans les répertoires
 de stockage de la base de destination).
 
 * **Pour démarrer une tâche**, cliquer sur le symbole, puis cliquer sur Start.
-* **Pour éditer une tâche**, cliquer sur "Editer".
+* **Pour éditer une tâche**, cliquer sur "Éditer".
 * **Pour arrêter une tâche**, cliquer sur "Stop".
 * **Pour créer une nouvelle tâche**, cliquer sur nouvelle tâche.
 

@@ -38,7 +38,7 @@ celui-ci ne la verra pas et peut donc parfaitement ignorer qu'elle existe.
 utilisateurs peuvent n'avoir accès qu'à certains modules ou qu'a certaines
 fonctionnalités dévolues à la consultation.
 Les administrateurs, eux, peuvent avoir accès à davantage d'interfaces (telles
-que *Administration*, *Report*, *Thesaurus* ou *Upload*).
+que *Administration*, *Report*, *Thésaurus* ou *Upload*).
 
 Enfin, **il n'est pas possible à un utilisateur disposant des droits de gestion
 des utilisateurs de donner plus de droits qu'il n'en a lui-même**.
@@ -86,7 +86,7 @@ La fenêtre de gestion des droits de l'utilisateur créé s'ouvre.
     :align: center
 
 Pour savoir comment gérer les droits, se reporter à la section
-`Edition des droits`_ .
+`Édition des droits`_ .
 
 Pour éditer les renseignements relatifs aux coordonnées de l'utilisateur,
 cliquer sur l'onglet **Informations** puis éditer le formulaire.
@@ -103,7 +103,7 @@ Pour modifier les droits et informations d'un utilisateur, double cliquer
 sur le nom de l'utilisateur.
 
 Pour plus de détails relatifs aux droits utilisateurs, se reporter à la section
-`Edition des droits`_.
+`Édition des droits`_.
 
 Supprimer un utilisateur
 ************************
@@ -173,10 +173,10 @@ Les droits de l'accès invité sont paramétrables dans cet onglet.
 .. image:: ../../images/Administration-parametreinvite.jpg
     :align: center
 
-Edition des droits
+Édition des droits
 ------------------
 
-L'edition des droits concerne aussi bien les utilisateurs que les modèles.
+L'édition des droits concerne aussi bien les utilisateurs que les modèles.
 Pour afficher le formulaire d'édition des droits d'un modèle ou d'un
 utilisateur, double cliquer sur le nom de l'utilisateur ou du modèle dans la
 liste des utilisateurs.
@@ -197,7 +197,7 @@ l'utilisateur peut avoir accès.
 .. image:: ../../images/Administration-droits.jpg
     :align: center
 
-Les noms des collections appara√Æssent sous les noms des bases auxquelles elles
+Les noms des collections apparaîssent sous les noms des bases auxquelles elles
 appartiennent. La collection est la notion utilisée dans les interfaces
 *Production*, *Classic*, *Report*, *Administration*.
 
@@ -230,7 +230,7 @@ La première partie de la fenêtre des droits, la plus à gauche:
 * Cocher **Voir Preview** pour autoriser la visualisation des images de choix.
 * Cocher **Watermark** pour définir si l'utilisateur voit les images de choix
   avec un marquage.
-* Cocher **Télécharger Haute Def** pour autoriser le téléchargement du
+* Coche*Télécharger Haute Def** pour autoriser le téléchargement du
   document original
 * Cocher **Commander** pour autoriser la commande de documents
 * Cliquer sur **Quota** pour ouvrir la fenêtre Quota de téléchargements.
@@ -283,7 +283,7 @@ fenêtre.
 Les droits d'exploitation et de gestion
 ***************************************
 
-La deuxième partie dans la fenêtre des droitspermet de définir les droits
+La deuxième partie dans la fenêtre des droits permet de définir les droits
 administratifs, c'est à dire les actions auxquelles l'utilisateur a accès,
 par l'intermédiaire des icônes de la Palette des Actions notamment.
 Cocher la case pour donner le droit correspondant sur la collection ou la base.
@@ -292,7 +292,7 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
 
 * Cocher **Ajouter** pour autoriser l'ajout d'un document dans la base ou
   collection
-* Cocher **Editer** pour autoriser l'édition de la description des documents
+* Cocher **Éditer** pour autoriser l'édition de la description des documents
 * Cocher **Changer status** pour autoriser l'utilisateur à changer le statut
   d'un document
 * Cocher **Supprimer** pour autoriser l'utilisateur à supprimer un document
@@ -314,8 +314,8 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
   valeurs suggérées.
 * La case **Publication Panier** permet à un utilisateur de publier sous forme
   de paniers des documents sur des pages de l'application *Classic*.
-* La case **Modif. Thesaurus** permet à l'utilisateur d'accéder à l'
-  application *Phraseanet Thesaurus*
+* La case **Modif. Thésaurus** permet à l'utilisateur d'accéder à l'
+  application *Phraseanet Thésaurus*
 * La case **Gestion Base** permet d'accéder aux fonctions de paramètres de
   bases de données comme création, purge et fonctions avancées de gestion de la
   solution

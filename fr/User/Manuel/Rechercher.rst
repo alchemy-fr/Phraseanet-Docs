@@ -5,14 +5,14 @@
 
 .. topic:: L'essentiel
 
-    Les recherches de médias dans *Phraseanet* se font au traver d'un moteur de
+    Les recherches de médias dans *Phraseanet* se font au travers d'un moteur de
     recherche en texte intégral (ou plein texte) dont le mode de fonctionnement
     est similaire à celle de moteur de recherche classique dans d'autres
     applications ou sur le Net.
 
     Combinés avec des opérateurs de recherche courants, ces recherches
     permettent de gagner en pertinence même si la qualité de l'indexation reste
-    primoridale.
+    primordiale.
 
     Des recherches approfondies peuvent se pratiquer au moyens d'opérateurs
     moins fréquemment utilisés. Il demeure possible de recherche dans des champs
@@ -32,20 +32,20 @@ Cette technique de recherche est largement répandue sur les moteurs de recherch
 du web et le mode de fonctionnement proposé dans *Phraseanet* est similaire.
 
 Par défaut, la recherche porte sur les documents des bases et collections
-auxquelles à accés l'utilisateur et les médias affichés sont ceux résultants d'
+auxquelles à accès l'utilisateur et les médias affichés sont ceux résultants d'
 :doc:`une question initiale paramétrable <PersonnaliserInterface>`.
 
 Un groupe de boutons radio permet de choisir si la recherche doit porter sur
 les documents ou sur les reportages. Dans une recherche portant sur les
 reportages la recherche porte sur la fiche d'indexation des reportages.
-La recherche simulatanée sur les documents et les reportages n'est pas
+La recherche simultanée sur les documents et les reportages n'est pas
 possibles.
 
 .. image:: ../../images/Rechercher-simple.jpg
     :align: center
 
 Pour effectuer une recherche :
-* Inscriver le ou les termes recherchés dans le formulaire de recherche
+* Inscrire le ou les termes recherchés dans le formulaire de recherche
 * Lancer la recherche en cliquant sur **Rechercher**
 
 .. note::
@@ -79,7 +79,7 @@ dont les notices descriptives contiennent des mots commençants par "natur" comm
 nature, naturel, nature-morte, naturisme...*etc*.
 
 La recherche entre guillemets est possible : elle permet de rechercher des
-termes contigues dans les notices descriptives des médias.
+termes contiguës dans les notices descriptives des médias.
 
 D'autres possibilités existent également au moyens d'opérateurs avancés.
 Se reporter à la liste exhaustive des opérateurs de recherche sur cette page.
@@ -93,7 +93,7 @@ sélectionnée. Combiné avec un nombre entier, ce sont les *n* derniers documen
 qui sont affichés.
 
 Dans une recherche **Derniers 100** avec trois bases/collections ouvertes,
-le nombre de médias affiché peut s'élevé jusqu'à 300 (3 fois les 100 derniers
+le nombre de médias affiché peut s'élever jusqu'à 300 (3 fois les 100 derniers
 médias ajoutés) pour peu que le nombre de documents soit supérieur ou égal à
 100 dans chacune des bases et collections affichées.
 
@@ -133,9 +133,9 @@ s'effectuer les recherche.
 
 .. note::
 
-    Il est possible de désélectionner toutes les :term:`bases <Base>` et
+    Il est possible de dé-sélectionner toutes les :term:`bases <Base>` et
     collections en cliquant sur "Aucune" ou de cliquer directement sur les
-    noms des :term:`bases <Base>` pour les sélectionner ou désélectionner
+    noms des :term:`bases <Base>` pour les sélectionner ou dé-sélectionner
     individuellement ou encore dans les cases à cocher proposées pour
     chaque collection disponible.
 
@@ -162,7 +162,7 @@ Recherche avec le Thésaurus
 
 Si un thésaurus est activé, la recherche et le parcours des résultats peuvent
 être grandement amélioré.
-La recherche à partir du Thesaurus s'effectue à partir de l'onglet Thésaurus de
+La recherche à partir du Thésaurus s'effectue à partir de l'onglet Thésaurus de
 la Zone de travail.
 
 .. image:: ../../images/Recherche-Thesaurus.jpg
@@ -218,7 +218,7 @@ Les opérateurs de substitution
 Le caractère de troncature *****
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Le caractère de troncature *****, utilisé à gauche d'une chaine de caractères
+Le caractère de troncature *****, utilisé à gauche d'une chaîne de caractères
 permet de rechercher des médias dont les notices descriptives contiennent des
 termes commençants par les caractères précédents l'astérisque.
 

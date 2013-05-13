@@ -74,7 +74,7 @@ Cette fonction permet d'éditer des enregistrements dans *Phraseanet* : édition
 des médias, des paniers. Compléter ou modifier les descriptions documentaires
 accompagnant les assets à l'unité ou en lots.
 
-:doc:`Se reporter à la section dédiée à l'édition <Éditer>`.
+:doc:`Se reporter à la section dédiée à l'édition <Editer>`.
 
 Le menu contextuel du bouton éditer regroupe également les fonctions *Propriétés*
 et *Déplacer*.
@@ -100,7 +100,7 @@ utilisateurs en fonction de l'état de status.
     peuvent être utilisés pour des besoins de workflow ou la mise en place
     des restrictions d’accès aux documents entre autres.
     Le changement d'état des status est aussi disponible directement
-    depuis la fenêtre :doc:`Éditer <Éditer>`.
+    depuis la fenêtre :doc:`Éditer <Editer>`.
 
 **Changer les status des documents**
 

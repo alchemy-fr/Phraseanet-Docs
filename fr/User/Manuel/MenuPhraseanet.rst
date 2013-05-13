@@ -42,7 +42,7 @@ Accès aux notifications
 
 Les notifications sont des messages informatifs affichés en temps réel dans l'
 interface *Phraseanet Production*.
-Elles renseignent l'utilisateurs des demandes de validation, de réception de
+Elles renseignent l'utilisateur des demandes de validation, de réception de
 paniers...*etc*.
 
 Se reporter à la section
@@ -57,7 +57,7 @@ Une nouvelle page s'ouvre et présente un groupe de formulaires permettant de
 paramétrer le compte.
 
 Dans la partie supérieure droite de l'écran de Production se trouvent les liens
-permettants l'accès aux informations de compte utilisateur, à l'aide en ligne
+permettant l'accès aux informations de compte utilisateur, à l'aide en ligne
 ainsi que le lien de déconnexion.
 Cliquer sur l'identifiant affiché pour accéder aux informations du compte.
 
@@ -83,7 +83,7 @@ Accès
 La section *Accès* liste les bases et collections de l'application Phraseanet.
 Elle mentionne les collections auxquelles l'utilisateur connecté a accès.
 L'utilisateur peut à tout moment effectuer une demande d'accès à une collection
-à laquelle il n'a pas accés.
+à laquelle il n'a pas accès.
 
 Pour faire une demande et accéder à de nouvelles bases ou collections de
 documents et en visualiser le contenu :
@@ -101,7 +101,7 @@ Sessions
 ^^^^^^^^
 
 La section *Sessions* liste les sessions Phraseanet de l'utilisateur. Elle donne
-des informations relatives aux dates de connexion et d'accès, aux adresses ip,
+des informations relatives aux dates de connexion et d'accès, aux adresses IP,
 navigateurs et résolutions d'écran détectées.
 
 Applications

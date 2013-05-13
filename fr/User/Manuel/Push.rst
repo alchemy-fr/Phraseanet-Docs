@@ -197,7 +197,7 @@ lien *Ajouter*.
 .. image:: ../../images/Push-list_manager_creer.jpg
     :align: center
 
-* Cliquer sur le bouton *Editer* situé à gauche de la zone centrale de l'
+* Cliquer sur le bouton *Éditer* situé à gauche de la zone centrale de l'
   interface du *Gestionnaire de listes* pour éditer le contenu d'une liste.
   Cela a pour effet de présenter la liste des utilisateurs recensé sur un
   système Phraseanet.
@@ -243,7 +243,7 @@ Ces droits de partage sont modifiables via la liste déroulante figurant sur
 l'étiquette de l'utilisateur.
 
 * Le niveau **Accès** donne un accès en lecture seule de la liste d'envoi
-* Le niveau **Editeur** donne des droits de lecture et modification du contenu
+* Le niveau **Éditeur** donne des droits de lecture et modification du contenu
   de la liste d'envoi
 * Le niveau **Admin** donne des droits de lecture, de modification et de
   suppression des listes partagées.

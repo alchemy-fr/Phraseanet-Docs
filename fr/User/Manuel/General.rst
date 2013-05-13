@@ -50,7 +50,7 @@ de l'utilisateur à partir d'une barre de menu principal :
 * Phraseanet `Lightbox`_
 * Phraseanet `Upload`_
 * Phraseanet `Administration`_
-* Phraseanet `Thesaurus`_
+* Phraseanet `Thésaurus`_
 * Phraseanet `Report`_
 
 Production
@@ -98,7 +98,7 @@ Upload
 Disponible seulement à partir de l'interface Production, *Phraseanet Upload*
 permet aux utilisateurs qui en ont le droit, d'importer des documents multimédia dans Phraseanet à partir du disque dur de l'ordinateur.
 Ce gestionnaire de téléchargement montant permet de transférer des media sans
-requerir à un logiciel de transfert :term:`FTP <FTP>`.
+requérir à un logiciel de transfert :term:`FTP <FTP>`.
 
 .. figure:: ../../images/General-Upload.jpg
    :align: center
@@ -118,10 +118,10 @@ créer des utilisateurs ou de gérer leurs droits.
 
 :doc:`Se reporter à la section dédiée à l'Administration <Administration>`.
 
-Thesaurus
+Thésaurus
 *********
 
-La création et la gestion de :doc:`Thesaurus <Thesaurus>` est possible dans
+La création et la gestion de :doc:`Thésaurus <Thesaurus>` est possible dans
 *Phraseanet*. Le *thésaurus Phraseanet* s'utilise conjointement au moteur de
 recherche *Phrasea engine*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
@@ -131,7 +131,7 @@ Il représente un vrai *plus* dans l’utilisation d’une solution de gestion d
 .. image:: ../../images/General-Thesaurus.jpg
    :align: center
 
-Pour les questions relatives au Thesaurus Phraseanet, se reporter à :doc:`cette
+Pour les questions relatives au Thésaurus Phraseanet, se reporter à :doc:`cette
 section<Thesaurus>`.
 
 Report

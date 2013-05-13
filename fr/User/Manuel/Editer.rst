@@ -1,4 +1,4 @@
-﻿Editer les notices documentaires
+Éditer les notices documentaires
 ================================
 .. toctree::
    :maxdepth: 3
@@ -6,12 +6,12 @@
 Cette section du manuel rassemble les notions relatives à l'édition documentaire
 des notices de médias et de reportages dans *Phraseanet*.
 
-Editer des enregistrements
+Éditer des enregistrements
 --------------------------
 
 .. topic:: L'essentiel
 
-    L'action **Editer** permet d'éditer la ou les fiches descriptives des
+    L'action **Éditer** permet d'éditer la ou les fiches descriptives des
     médias, des reportages, pour saisir, compléter ou modifier le contenu des
     champs de description documentaire.
 
@@ -41,8 +41,8 @@ La fenêtre est découpée en trois zones :
     Seuls peuvent être édités simultanément des enregistrements provenants d'une
     même base.
 
-* Cliquer sur le bouton **Editer**
-* La fenêtre **Editer** s'ouvre
+* Cliquer sur le bouton **Éditer**
+* La fenêtre **Éditer** s'ouvre
 
 Par défaut, toutes les vignettes sont sélectionnées.
 
@@ -52,7 +52,7 @@ apparaissent *en clair*.
 **Les champs dont les contenus sont hétérogènes** apparaissent avec des xxxxx en
  orange.
 
-Il est possible de désélectionner / sélectionner les documents en cliquant
+Il est possible de dé-sélectionner / sélectionner les documents en cliquant
 sur les vignettes et en utilisant les combinaisons de touche "Maj" ou "Alt".
 Cette possibilité de sélection en lots et sous-lots permet de renseigner des
 informations communes à des médias et gagner ainsi en productivité.
@@ -66,10 +66,10 @@ cliqué sur le bouton **Valider**.
   appuyer sur la touche **Echap** ce qui a pour effet de quitter le formulaire
   d'édition.
 
-Editer des champs de type date
+Éditer des champs de type date
 ******************************
 
-L'edition d'un champ de type date, qui obéit à un formatage normalisé, est
+L'édition d'un champ de type date, qui obéit à un formatage normalisé, est
 assisté par un calendrier d'aide à la saisie.
 
 Sélectionner le ou les documents pour lesquels la date doit être modifiée ou
@@ -78,7 +78,7 @@ ajoutée.
 *  Saisir manuellement la date selon le format **aaaa/mm/jj**,
 * **Ou bien**, utiliser le calendrier proposé.
 
-Editer des champs de type texte intégral
+Éditer des champs de type texte intégral
 ****************************************
 
 Sélectionner le ou les documents sur lesquels apporter des modifications
@@ -98,7 +98,7 @@ celui-ci contient des informations.
 .. image:: ../../images/Prod-Editer-texte-ajouter.jpg
     :align: center
 
-Editer des champs textuels multi-valués
+Éditer des champs textuels multi-valués
 ***************************************
 
 Sélectionner le ou les documents sur lesquels apporter une modification.
@@ -134,7 +134,7 @@ Pour ajouter le terme à toutes les notices sélectionnées,
 * Cliquer sur le symbole "moins" à gauche du masque de saisie pour
   supprimer le terme du champs documentaire des notices des médias sélectionnés.
 
-Editer un champ lié une sources de données
+Éditer un champ lié une sources de données
 ******************************************
 
 Les champs documentaires liés à des sources de données ont un champ de saisie
@@ -149,10 +149,10 @@ présents dans la source de vocabulaire.
 Placé sur un champ lié à une source de données, ...
 
 * Saisir au moins trois caractères pour initialiser le dispositif
-* Le système propose une liste de valeurs contenant la chaine de caractères
+* Le système propose une liste de valeurs contenant la chaîne de caractères
 * Sélectionner la valeur souhaitée au clavier ou à la souris
 
-Editer à partir du thésaurus
+Éditer à partir du thésaurus
 ****************************
 
 Sous réserve qu'un thésaurus soit déployé sur la base à laquelle appartiennent
@@ -181,7 +181,7 @@ thésaurus.
     chercher et sélectionner des termes à indexer. Cliquer sur les
     symboles *plus* qui se trouvent devant les termes.
 
-Editer à partir des valeurs suggérées
+Éditer à partir des valeurs suggérées
 *************************************
 
 Si des valeurs suggérées ont été définies pour le champ, la liste apparaît
@@ -280,23 +280,23 @@ Appliquer un modèle à une sélection de médias
     Un modèle est la propriété de l'utilisateur qui l'a créé, il ne
     peut être utilisé que par lui.
 
-Editer des reportages
+Éditer des reportages
 ---------------------
 
 Chaque reportage dispose de sa propre notice descriptive. Elle est identique à
 celle des médias d'une base. Comme pour l'édition de documents, la descriptions
 en lots des notices de reportage est possible.
 
-Editer les notices de reportages
+Éditer les notices de reportages
 ********************************
 
 En mode recherche reportage
 
 * Sélectionner un ou plusieurs reportages depuis la zone d'affichage des
   résultats
-* Cliquer sur **Editer**
+* Cliquer sur **Éditer**
 
-* => la fenêtre Editer s'ouvre
+* => la fenêtre Éditer s'ouvre
 
 **Dans le cas d'un seul reportage sélectionné** : Le reportage et son contenu
 sont sélectionnés par défaut. La saisie peut s'appliquer à la notice du
@@ -306,18 +306,18 @@ reportage **ET** au notices des documents contenus dans le reportage.
 identique à celle de l'édition des documents et seules les notices des
 reportages sont modifiées.
 
-Editer un reportage et son contenu
+Éditer un reportage et son contenu
 **********************************
 
 * Sélectionner un seul reportage depuis la zone d'affichage des résultats ou
   le menu contextuel du reportage affiché dans la zone de travail.
-* Cliquer sur Editer
+* Cliquer sur Éditer
 
 ou
 
-* -> Cliquer sur Editer depuis la barre d'action locale du reportage quand
+* -> Cliquer sur Éditer depuis la barre d'action locale du reportage quand
   celui-ci est dans la zone de travail.
-* => La fenêtre Editer s'ouvre
+* => La fenêtre Éditer s'ouvre
 
 .. image:: ../../images/Prod-Editer-reportage.jpg
     :align: center
@@ -331,7 +331,7 @@ Les reportages ont par défaut une image de "dossier" pour les illustrer.
 Pour compléter la notice du reportage:
 
 * -> Cliquer sur l’image de représentation du reportage en haut à gauche de
-  la fenêtre *Editer*
+  la fenêtre *Éditer*
 * -> Seule la notice du reportage sera modifiée
 
 * -> Sélectionner l’image de représentation du reportage et les autres
@@ -341,7 +341,7 @@ Pour compléter la notice du reportage:
 
 * -> Cliquer sur Valider pour enregistrer les modifications.
 
-Editer les Status
+Éditer les Status
 -----------------
 
 La première ligne de la liste de champs permet de changer les status des

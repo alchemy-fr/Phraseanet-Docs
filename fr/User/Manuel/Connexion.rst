@@ -54,13 +54,13 @@ Sur la page *Mot de passe oublié*, remplir le formulaire proposé avec l'adress
 email lié au compte Phraseanet.
 
 Une fois le formulaire complété et validé, un email est envoyé. Il permet
-rejoindre, via un lien, l'interface de réinitialisation de mot de passe.
+rejoindre, via un lien, l'interface de ré-initialisation de mot de passe.
 Ce lien n'est valide que pour une durée limitée dans le temps.
 Si l'email n'est pas reçu, consulter le dossier des courriers indésirables
 du programme de messagerie.
 
 En cliquant sur le lien proposé par l'email reçu, rejoindre l'interface de
-réinitialisation de mot de passe.
+ré-initialisation de mot de passe.
 Suivre alors les instructions proposées à l'écran puis valider le formulaire
 pour réinitialiser le mot de passe.
 
@@ -68,5 +68,5 @@ pour réinitialiser le mot de passe.
 
     Les mots de passe sont sensibles à la casse.
 
-Après réinitialisation du mot de passe, se connecter au moyen du formulaire
+Après ré-initialisation du mot de passe, se connecter au moyen du formulaire
 disponible en page d’accueil de l'application Phraseanet.
