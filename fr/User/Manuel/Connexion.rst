@@ -5,7 +5,6 @@ Bien qu'il soit possible de consulter un fonds *Phraseanet* comme invité, ce qu
 reste un choix de paramétrage possible, l'utilisateur peut être amené à créer un
 compte et à s'identifier.
 
-
 Inscription
 -----------
 
@@ -31,6 +30,7 @@ en compte. Un administrateur *Phraseanet* finalise ensuite l'inscription.
 
 Authentification
 ----------------
+
 * Se connecter à l'adresse internet de la solution Phraseanet au moyen d'un
   navigateur Web.
   La page d'accueil permettant la connexion s'affiche :
@@ -48,6 +48,7 @@ Authentification
 
 Mot de passe perdu ?
 --------------------
+
 Cliquer sur le lien **Mot de Passe oublié ?**.
 Sur la page *Mot de passe oublié*, remplir le formulaire proposé avec l'adresse
 email lié au compte Phraseanet.

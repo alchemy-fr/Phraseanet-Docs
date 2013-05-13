@@ -19,6 +19,7 @@ La Zone de Travail
 
 Les Paniers et les Reportages
 -----------------------------
+
 La Zone de travail présente par défaut les :doc:`Paniers et les Reportages
 <PaniersReportages>` :
 
@@ -31,6 +32,7 @@ Les paniers et les reportages sont abordés dans un chapitre spécifique.
 
 Propositions
 ------------
+
 Si un thésaurus est déployé, cet onglet peut afficher des propositions en
 rapport avec la recherche de l'utilisateur et des termes de référence contenus
 dans le thesaurus.
@@ -41,16 +43,20 @@ contraire d'étendre sa recherche à un champ cognitif plus large.
 Chacune des propositions affichées est cliquable et permet de lancer une
 nouvelle recherche *thésaurus*.
 
-  .. image:: ../../images/Onglet-Propositions.jpg
-	   :align: center
+.. image:: ../../images/Onglet-Propositions.jpg
+    :align: center
 
-  .. note:: La pertinence des propositions faites dans cet onglet sont
+.. note::
+
+    La pertinence des propositions faites dans cet onglet sont
     dépendantes de la construction du thésaurus déployé.
 
 Thesaurus
 ---------
+
 Onglet Thesaurus
 ****************
+
 L'onglet Thesaurus présente le ou les thesauris déployés sous forme d'un *arbre*
 dont les noeuds et termes sont cliquables.
 
@@ -67,11 +73,12 @@ dispositif d'auto-complétion. L’affichage se met à jour et en double-cliquan
 sur un terme l’application lance une requête thesaurus sur les bases et
 collections ouvertes.
 
-	  .. image:: ../../images/Rechercher-thesaurus3.jpg
-	   :align: center
+.. image:: ../../images/Rechercher-thesaurus3.jpg
+    :align: center
 
 Onglet Candidats
 ****************
+
 **Visible par les utilisateurs disposant des droits d'administration du
 thésaurus**, cette rubrique affiche une liste de termes candidats issus de
 l'indexation documentaire des médias.
@@ -93,7 +100,6 @@ Les termes candidats s’affichent :
 .. image:: ../../images/Onglets-candidats1.jpg
     :align: center
 
-
 Des recherches sur les termes candidats peuvent être lancées au moyen d'un
 double-clic. La recherche effectuée est alors sur une interrogation par champ.
 
@@ -105,8 +111,8 @@ option intéressante s'il y a peu de termes candidats à examiner.
 * Effectuer un clic droit (ou cliquer en maintenant les touches "ctrl" enfoncée)
   sur un terme pour afficher le menu contextuel du terme.
 
-	  .. image:: ../../images/Onglets-candidats2.jpg
-	   :align: center
+.. image:: ../../images/Onglets-candidats2.jpg
+    :align: center
 
 * Cliquer sur Accepter en xx (xx étant la langue du terme)
 

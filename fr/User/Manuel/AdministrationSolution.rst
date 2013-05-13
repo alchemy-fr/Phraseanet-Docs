@@ -20,19 +20,19 @@ d'ajouter ou de supprimer des administrateurs Phraseanet.
 Les **administrateurs Phraseanet** sont des utilisateurs dotés de pouvoirs de
 paramétrage et de maintenance applicative.
 
-
 En outre, le tableau de bord offre une vue sur l'état de la configuration du
 système de fichier, des exécutables, des extensions, des serveurs de caches et
 des serveurs web qui entrent dans la mise en oeuvre de la solution *Phraseanet*.
 
 Setup
 -----
+
 **Accessible aux seuls administrateurs Phraseanet**, *Setup* propose une
 interface graphique permettant de modifier des paramètres d'installation et de
 configuration de Phraseanet.
 
-  .. image:: ../../images/Administration-setup.jpg
-	   :align: center
+.. image:: ../../images/Administration-setup.jpg
+    :align: center
 
 Setup propose un jeu de formulaires permettant notamment :
 
@@ -60,12 +60,15 @@ de la date et de l'heure de connexion au système.
 .. image:: ../../images/Administration-utilisateurlive.jpg
     :align: center
 
-.. note:: Phraseanet repose sur un mécanisme de *sessions persistantes*. Les
+.. note::
+
+    Phraseanet repose sur un mécanisme de *sessions persistantes*. Les
     dates et heures de connexion correspondent à celles de l'initialisation de
     la session de l'utilisateur.
 
 Publications
 ------------
+
 Accessible aux utilisateurs qui disposent des droits de gestion des
 publications, la rubrique publications permet de gérer les flux media RSS
 diffusés à partir de l'application Phraseanet.
@@ -76,15 +79,14 @@ diffusés à partir de l'application Phraseanet.
 L'écran Publications dresse la liste des flux média disponibles en publication
 et permet d'en créer, d'en modifier et d'en supprimer.
 
-  * **Pour créer un flux**, remplir puis valider le formulaire d'ajout
-
-  * **Pour modifier les propriétés d'un flux existant**, cliquer sur le flux à
-    modifier pour ouvrir le formulaire d'édition du flux sélectionné.
-
-  * **Pour supprimer un flux**, cliquer sur bouton supprimer.
+* **Pour créer un flux**, remplir puis valider le formulaire d'ajout
+* **Pour modifier les propriétés d'un flux existant**, cliquer sur le flux à
+  modifier pour ouvrir le formulaire d'édition du flux sélectionné.
+* **Pour supprimer un flux**, cliquer sur bouton supprimer.
 
 Gestionnaire de tâches
 ----------------------
+
 **Accessible aux seuls administrateurs Phraseanet**, cet écran permet de gérer
 les tâches d'archivage et autres traitements automatiques appliqués sur les
 :term:`Bases <Base>` et :term:`Collections <Collection>` de l'application.

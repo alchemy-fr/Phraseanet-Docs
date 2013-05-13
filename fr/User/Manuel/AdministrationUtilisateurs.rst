@@ -11,13 +11,13 @@ Gestion des utilisateurs
     utilisateurs enregistrés dans l'application Phraseanet et de leurs attribuer
     des droits.
 
-    L'interface *Utilisateurs* permet :
+L'interface *Utilisateurs* permet :
 
-    * De créer de nouveaux utilisateurs
-    * De valider des demandes d'inscription d'utilisateurs
-    * De gérer les droits des utilisateurs
-    * Créer des modèles applicables à des utilisateurs
-    * De paramétrer un accès invité disposant de droits spécifiques
+* De créer de nouveaux utilisateurs
+* De valider des demandes d'inscription d'utilisateurs
+* De gérer les droits des utilisateurs
+* Créer des modèles applicables à des utilisateurs
+* De paramétrer un accès invité disposant de droits spécifiques
 
 Par défaut, l'interface affiche la liste des utilisateurs référencés sur la
 solution Phraseanet.
@@ -82,8 +82,8 @@ Saisir le login du nouvel utilisateur et cliquer sur **Créer un utilisateur**.
 
 La fenêtre de gestion des droits de l'utilisateur créé s'ouvre.
 
-  .. image:: ../../images/Administration-nouvelutilisateur3.jpg
-	   :align: center
+.. image:: ../../images/Administration-nouvelutilisateur3.jpg
+    :align: center
 
 Pour savoir comment gérer les droits, se reporter à la section
 `Edition des droits`_ .
@@ -119,8 +119,10 @@ utilisateurs.
 Un utilisateur auquel est appliqué un modèle, cumule des droits définis par le
 modèle.
 
-.. note:: Les modèles appartiennent aux utilisateurs qui les créent. Ils ne sont
-          pas visibles par les autres administrateur.
+.. note::
+
+    Les modèles appartiennent aux utilisateurs qui les créent. Ils ne sont
+    pas visibles par les autres administrateur.
 
 Dans la liste des utilisateurs, un modèle est repéré par une icône **M**.
 
@@ -210,26 +212,28 @@ Un utilisateur ne peut donner plus de droits qu'il n'en a lui même (point
 rouge). Le signe "**i**" signifie qu'une fenêtre est accessible d'un clic pour
 définir de façon plus précise des droits spécifiques.
 
-.. note:: En cliquant sur la flèche grise, Phraseanet vous donne la possibilité
-          de cocher ou décocher toute la colonne, au lieu de cliquer sur les
-          cases une par une.
+.. note::
+
+    En cliquant sur la flèche grise, Phraseanet vous donne la possibilité
+    de cocher ou décocher toute la colonne, au lieu de cliquer sur les
+    cases une par une.
 
 Les droits de consultation
 **************************
 
 La première partie de la fenêtre des droits, la plus à gauche:
 
-  * Cocher **Accéder** pour permettre d'accéder à la base ou à la collection
-  * Cocher **Actif** pour activer l'utilisateur. A contrario, décocher la case
-    désactive l'utilisateur sans perdre tout le paramétrage.
-  * Cocher **Paniers** pour autoriser la création des Paniers.
-  * Cocher **Voir Preview** pour autoriser la visualisation des images de choix.
-  * Cocher **Watermark** pour définir si l'utilisateur voit les images de choix
-    avec un marquage.
-  * Cocher **Télécharger Haute Def** pour autoriser le téléchargement du
-    document original
-  * Cocher **Commander** pour autoriser la commande de documents
-  * Cliquer sur **Quota** pour ouvrir la fenêtre Quota de téléchargements.
+* Cocher **Accéder** pour permettre d'accéder à la base ou à la collection
+* Cocher **Actif** pour activer l'utilisateur. A contrario, décocher la case
+  désactive l'utilisateur sans perdre tout le paramétrage.
+* Cocher **Paniers** pour autoriser la création des Paniers.
+* Cocher **Voir Preview** pour autoriser la visualisation des images de choix.
+* Cocher **Watermark** pour définir si l'utilisateur voit les images de choix
+  avec un marquage.
+* Cocher **Télécharger Haute Def** pour autoriser le téléchargement du
+  document original
+* Cocher **Commander** pour autoriser la commande de documents
+* Cliquer sur **Quota** pour ouvrir la fenêtre Quota de téléchargements.
 
 Plusieurs options très fines sont à la disposition de l'utilisateur pour la
 limitation :
@@ -318,6 +322,7 @@ Cocher la case pour donner le droit correspondant sur la collection ou la base.
 
 Demandes
 --------
+
 Disponible via le menu du module d'Administration, cette fenêtre liste les
 demandes d'inscription des nouveaux utilisateurs dans l'écran *Inscription*.
 Si un utilisateur a fait une demande sur plusieurs collections, il y a autant de

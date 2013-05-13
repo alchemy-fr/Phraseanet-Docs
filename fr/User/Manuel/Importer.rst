@@ -12,7 +12,6 @@ Importer
     *Upload* est une interface dédiée à l'ajout de médias vers des collections
     sur lesquelles l'utilisateur dispose des droits d'ajout.
 
-
 .. image:: ../../images/Upload-zones.jpg
     :align: center
 
@@ -23,16 +22,17 @@ Importer
     <http://get.adobe.com/fr/flashplayer/>`_ est disponible dans *Phraseanet
     Upload*.
 
-    .. image:: ../../images/Upload-Version-Flash.jpg
-        :align: center
+.. image:: ../../images/Upload-Version-Flash.jpg
+    :align: center
 
-    Cliquer sur le lien **Utiliser l'uploader Flash** pour utiliser ce mode.
-    Ce mode Flash n'offre pas une alternative mais un mode d'affichage
-    dégradé. Il ne permet pas d'accéder à toutes les fonctionnalités
-    développées sur le socle technologique de HTML5.
+Cliquer sur le lien **Utiliser l'uploader Flash** pour utiliser ce mode.
+Ce mode Flash n'offre pas une alternative mais un mode d'affichage
+dégradé. Il ne permet pas d'accéder à toutes les fonctionnalités
+développées sur le socle technologique de HTML5.
 
 Comment ajouter des media ?
 ---------------------------
+
 Cliquer sur Upload dans le :doc:`menu <General>` Phraseanet.
 
 .. image:: ../../images/Upload-lancer.jpg
@@ -46,7 +46,7 @@ Sélectionner des fichiers
 Cliquer sur **Sélectionner les fichiers**.
 
 .. image:: ../../images/Upload-zone1.jpg
-	   :align: center
+    :align: center
 
 L'application lance l’explorateur de fichiers de l'ordinateur.
 Aller au dossier où se trouvent les fichiers, les sélectionner puis cliquer sur
@@ -63,6 +63,7 @@ leurs vignettes qui apparaissent en bas d'écran.
 
 Choisir la collection de destination
 ************************************
+
 Sélectionner la collection de destination dans la liste déroulante ou figurent
 les collections disponibles.
 
@@ -71,6 +72,7 @@ les collections disponibles.
 
 Appliquer des status
 ********************
+
 Si besoin, appliquer les :term:`status` si nécessaire (optionnel).
 
 .. image:: ../../images/Upload-zone3.jpg
@@ -78,6 +80,7 @@ Si besoin, appliquer les :term:`status` si nécessaire (optionnel).
 
 Réordonner les média
 ********************
+
 Si besoin, l'utilisateur peut ré-ordonner les médias avant de les importer.
 Sélectionner un fichier et le glisser / déposer ailleurs dans la liste. Il peut
 également choisir de retirer de la liste une ou plusieurs images en cliquant
@@ -90,6 +93,7 @@ Sinon, cliquer sur **Envoyer** pour transmettre les fichiers vers *Phraseanet*.
 
 Transmettre les médias
 **********************
+
 Lorsque l'utilisateur clique sur **Envoyer**, tous les médias sont transférées
 vers la collection *Phraseanet* sélectionnée.
 Le téléchargement montant est représentée par des barres de progression sur
@@ -109,6 +113,7 @@ Après transfert, les média transmis sont consultables dans les interfaces
 
 La Quarantaine
 --------------
+
 Lors de l'ajout de fichiers, certains fichiers peuvent être placés en
 **Quarantaine**.
 

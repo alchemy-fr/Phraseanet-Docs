@@ -10,6 +10,7 @@
 
 Publier des paniers et des reportages
 -------------------------------------
+
 Les publications Phraseanet permettent de mettre à la disposition d'utilisateurs
 des :doc:`Paniers <PaniersReportages>` et des Reportages dans la page des
 publications.
@@ -21,10 +22,10 @@ l'application et exploitable dans des applications tierces.
   apparaître son menu.
 * Cliquer sur l'icône **Publier** (icône orange représentant les flux RSS).
 
-  * Cliquer sur la barre de titre du panier souhaité pour faire apparaître sa
-    barre d'actions.
+* Cliquer sur la barre de titre du panier souhaité pour faire apparaître sa
+  barre d'actions.
 
-  * Cliquer sur l'icône **Publier** (icône orange représentant les flux RSS).
+* Cliquer sur l'icône **Publier** (icône orange représentant les flux RSS).
 
 Une fenêtre s'ouvre:
 
@@ -40,11 +41,10 @@ Plusieurs champs peuvent être remplis:
 
 Pour finir de remplir les informations:
 
-  * Choisir le fil disponible dans la liste (les fils sont créés préalablement
-    dans la rubrique :doc:`Publications <AdministrationSolution>` de *Phraseanet
-    Admin*).
-
-  * Cliquer enfin sur **Publier** pour valider
+* Choisir le fil disponible dans la liste (les fils sont créés préalablement
+  dans la rubrique :doc:`Publications <AdministrationSolution>` de *Phraseanet
+  Admin*).
+* Cliquer enfin sur **Publier** pour valider
 
 La publication est faite.
 
@@ -59,8 +59,8 @@ barre de menu Phraseanet** :
 Après avoir cliqué sur *Publications* dans la barre de menu, la publication
 apparaît :
 
-  .. image:: ../../images/Publier-Affichage.jpg
-	   :align: center
+.. image:: ../../images/Publier-Affichage.jpg
+    :align: center
 
 Des applications tierces, comme Phraseanet Showcase, peuvent également exploiter
 les publications. Elles sont en effet disponibles sous forme de flux media RSS
@@ -68,6 +68,7 @@ hors de l'application.
 
 Diffuser avec Bridge
 --------------------
+
 Le **Bridge Phraseanet** permet de publier ses photos et autres documents
 multimédia vers des sites extérieurs, tels que :
 
@@ -84,12 +85,11 @@ publications.
 Sélection des médias
 ********************
 
-  * Sélectionner une ou plusieurs médias dans *Phraseanet Production*. Cela peut
-    être des documents sélectionnés dans la zone d'affichage, ou regroupés dans
-    des paniers ou des reportages.
-
-  * Cliquer, dans la :doc:`palette des Actions <Actions>`, sur le menu
-    contextuel du bouton "Push".
+* Sélectionner une ou plusieurs médias dans *Phraseanet Production*. Cela peut
+  être des documents sélectionnés dans la zone d'affichage, ou regroupés dans
+  des paniers ou des reportages.
+* Cliquer, dans la :doc:`palette des Actions <Actions>`, sur le menu
+  contextuel du bouton "Push".
 
 Deux choix sont proposés: "Bridge" et "Publier" :
 
@@ -103,11 +103,11 @@ S'authentifier
 
 La fenêtre du **Bridge** s'ouvre:
 
-  * Cliquer sur **Nouveau** pour se connecter au compte choisi : Phraseanet
-    propose de se connecter soit à son compte Flickr, Youtube ou Dailymotion...
+* Cliquer sur **Nouveau** pour se connecter au compte choisi : Phraseanet
+  propose de se connecter soit à son compte Flickr, Youtube ou Dailymotion...
 
-  .. image:: ../../images/Bridge-1b.jpg
-	   :align: center
+.. image:: ../../images/Bridge-1b.jpg
+    :align: center
 
 Le site demande de s'authentifier, puis d'accorder la permission à Phraseanet de
 se connecter.
@@ -123,6 +123,7 @@ Dans le cas de Filckr, les photos existantes sont affichées dans l'onglet
 
 Publier sur Flickr
 ******************
+
 Sélectionner des media dans le zone d'affichage, puis cliquer sur le bouton
 **Ajouter**.
 
@@ -130,7 +131,7 @@ La fenêtre "Upload" de Bridge s'ouvre. Modifier les titres des images
 sélectionnées, ajouter des tags et décriver vos media dans les formulaires de
 description.
 
-  * Cliquer sur le bouton **Ajouter** en bas à gauche.
+* Cliquer sur le bouton **Ajouter** en bas à gauche.
 
 .. image:: ../../images/Bridge-2.jpg
     :align: center
@@ -141,9 +142,9 @@ transfert par un simple clic sur l'onglet **Fichiers envoyés**.
 .. image:: ../../images/Bridge-4.jpg
     :align: center
 
-  * Le statut **OK** signale les media images ou vidéos transférés
-  * Une information de date indique depuis combien de temps l'envoi a été
-    effectué.
+* Le statut **OK** signale les media images ou vidéos transférés
+* Une information de date indique depuis combien de temps l'envoi a été
+  effectué.
 
 Lancer *Flickr*. Les médias y sont bien présents.
 

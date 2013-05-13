@@ -31,30 +31,30 @@ meta. Response is by default sent as JSON data.
     retrieved by activating this feature. Read the
     :doc:`configuration <../../../Admin/Configuration>` doc to enable it.
 
-    Example de timer :
+Timer example :
 
-    .. code-block:: javascript
+.. code-block:: javascript
 
-        {
-            "meta": {
-                ....
+    {
+        "meta": {
+            ....
+        },
+        "response": {
+            ....
+        },
+        "timers": [
+            {
+              "name": "api.load.end",
+              "memory": 1908328,
+              "time": 0.0025968551635742
             },
-            "response": {
-                ....
-            },
-            "timers": [
-                {
-                  "name": "api.load.end",
-                  "memory": 1908328,
-                  "time": 0.0025968551635742
-                },
-                {
-                  "name": "api.result",
-                  "memory": 3885680,
-                  "time": 0.033026933670044
-                }
-            ]
-        }
+            {
+              "name": "api.result",
+              "memory": 3885680,
+              "time": 0.033026933670044
+            }
+        ]
+    }
 
 YAML
 ~~~~

@@ -23,6 +23,7 @@
 
 La recherche en texte intégral
 ------------------------------
+
 *Phraseanet* propose par défaut un mode de recherche en texte intégral qui
 permet d'afficher des médias selon des informations contenus dans les champs
 documentaires constituant leurs notices descriptives.
@@ -96,6 +97,7 @@ médias ajoutés) pour peu que le nombre de documents soit supérieur ou égal �
 
 Recherche dans un champ précis
 ------------------------------
+
 Il est possible de limiter la recherche à un champ de la description.
 Le motif de recherche est le terme recherché *dans* un champ en particulier.
 
@@ -107,6 +109,7 @@ contiennent le terme *marrakech dans un champs *Ville*.
 
 Recherche avancée
 -----------------
+
 Pour afficher le formulaire de recherche avancée, cliquer sur la roue crantée
 située entre le champ de recherche et le bouton **Rechercher**.
 
@@ -126,11 +129,13 @@ utilisateur.
 Cocher ou décocher les bases et collections sur lesquels doivent
 s'effectuer les recherche.
 
-.. note:: Il est possible de désélectionner toutes les :term:`bases <Base>` et
-          collections en cliquant sur "Aucune" ou de cliquer directement sur les
-          noms des :term:`bases <Base>` pour les sélectionner ou désélectionner
-          individuellement ou encore dans les cases à cocher proposées pour
-          chaque collection disponible.
+.. note::
+
+    Il est possible de désélectionner toutes les :term:`bases <Base>` et
+    collections en cliquant sur "Aucune" ou de cliquer directement sur les
+    noms des :term:`bases <Base>` pour les sélectionner ou désélectionner
+    individuellement ou encore dans les cases à cocher proposées pour
+    chaque collection disponible.
 
 La partie droite présente les différents filtres disponibles pour affiner les
 recherches :
@@ -141,15 +146,18 @@ recherches :
 
 Les documents s'affichent dans la fenêtre *Résultats*.
 
-.. note:: **Les options de la recherche avancée sont persistantes**. Les choix
-          adoptés dans la fenêtre de recherche avancée restent valables tant qu'
-          ils ne sont pas modifiés.
-          Dans le formulaire de recherche simple, la présence d'options de
-          recherche est matérialisé par la teinte jaune du formulaire de
-          recherche.
+.. note::
+
+    **Les options de la recherche avancée sont persistantes**. Les choix
+    adoptés dans la fenêtre de recherche avancée restent valables tant qu'
+    ils ne sont pas modifiés.
+    Dans le formulaire de recherche simple, la présence d'options de
+    recherche est matérialisé par la teinte jaune du formulaire de
+    recherche.
 
 Recherche avec le Thésaurus
 ---------------------------
+
 Si un thésaurus est activé, la recherche et le parcours des résultats peuvent
 être grandement amélioré.
 La recherche à partir du Thesaurus s'effectue à partir de l'onglet Thésaurus de
@@ -162,6 +170,7 @@ Se reporter à la section Thésaurus :doc:`cette page <Onglets>`.
 
 Synthèse des opérateurs de recherche disponible dans Phraseanet
 ---------------------------------------------------------------
+
 Voici la liste des différents opérateurs de recherche disponibles dans
 *Phraseanet*.
 
@@ -170,12 +179,14 @@ Les opérateurs booléens
 
 L'opérateur de conjonction *ET*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Utilisé par défaut, si bien qu'il n'est pas utile de l'indiquer, l'opérateur
 *ET* affiche les médias dont tous les termes saisis sont présents dans les
 notices descriptives des médias.
 
 L'opérateur de disjonction *OU*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Il permet de rechercher alternativement plusieurs termes dans les notices des
 médias.
 Ainsi, si la recherche est **sucré OU salé** les fiches descriptives des
@@ -184,6 +195,7 @@ deux à la fois.
 
 L'opérateur de négation *SAUF*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Il permet d'exclure des termes de la recherche.
 
 Les opérateurs ordinaux **TOUT** et **DERNIERS**
@@ -203,12 +215,14 @@ Les opérateurs de substitution
 
 Le caractère de troncature *****
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Le caractère de troncature *****, utilisé à gauche d'une chaine de caractères
 permet de rechercher des médias dont les notices descriptives contiennent des
 termes commençants par les caractères précédents l'astérisque.
 
 Le caractère de remplacement **?**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Un caractère peut être remplacé par **?**.
 Ainsi, la recherche *mo?s* affiche les médias sont les notices descriptives
 contiennent des termes tels *mois* ou *mots*.
@@ -218,6 +232,7 @@ Les opérateurs de proximité
 
 L'opérateur **PRES**
 ^^^^^^^^^^^^^^^^^^^^
+
 Il permet de repérer tous les médias dans lesquels le résultat du terme
 1 apparaît à une distance spécifiée (n) du terme 2.
 
@@ -231,6 +246,7 @@ lesquels une distance de 2 mots maximum sépare le mot *Tour* du mot *Eiffel*.
 
 L'opérateur **AVANT**
 ^^^^^^^^^^^^^^^^^^^^^
+
 Il permet de repérer tous les enregistrements dans lesquels le
 résultat du terme 1 apparaît avant le terme 2 et a une distance spécifiée (n).
 Par exemple, (Tour AVANT 2 Eiffel) sélectionnera les enregistrements dans
@@ -243,6 +259,7 @@ lesquels le terme *Tour* est situé, au maximum, deux mots avant le mot Eiffel.
 
 L'opérateur **APRES**
 ^^^^^^^^^^^^^^^^^^^^^
+
 Il permet de repérer tous les enregistrements dans lesquels le
 résultat du terme 1 apparaît après le terme 2 à une distance spécifie (n).
 Par exemple, (Eiffel APRES 2 Tour) sélectionnera les enregistrements dans
@@ -259,6 +276,7 @@ lesquels le mot Eiffel est situé, au maximum, deux mots après le mot Tour.
 
 Les comparaisons numériques
 ***************************
+
 Il est possible de sélectionner des documents en comparant des dates et
 nombres, pour des champs documentaires typé comme Date ou Nombre.
 Ainsi la recherche **date > 14/07/2012** affiche les médias dont un champ nommé
@@ -270,10 +288,10 @@ incluses).
 Les Jours (JJ), mois (MM), Années (AAAA) peuvent être collés ou séparés par un
 slash /, un tiret -, un espace.
 
-  * Recherche sur un jour: JJ/MM/AAAA, AAAAMMJJ, JJ/MM/AA, AAAA/MM/JJ,
-    JJ-MM-AAAA, AA-MM-JJ
-  * Recherche sur un mois: MM/AA, AAAA/MM, AAAAMM, MM/AAAA
-  * Recherche sur une année: AAAA
+* Recherche sur un jour: JJ/MM/AAAA, AAAAMMJJ, JJ/MM/AA, AAAA/MM/JJ,
+  JJ-MM-AAAA, AA-MM-JJ
+* Recherche sur un mois: MM/AA, AAAA/MM, AAAAMM, MM/AAAA
+* Recherche sur une année: AAAA
 
 La saisie des champs de type date est stricte. L'utilisateur peut préférer de
 mettre ce type de recherche au moyen de la fenêtre de recherche avancée.

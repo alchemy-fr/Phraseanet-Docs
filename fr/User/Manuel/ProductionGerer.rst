@@ -12,8 +12,6 @@ Gérer les média dans *Phraseanet Production*
     Elles concernent les utilisateurs qui ont des missions de gestion et d'
     animation des fonds médias.
 
-
-
 .. toctree::
    :maxdepth: 1
 
@@ -23,15 +21,3 @@ Gérer les média dans *Phraseanet Production*
    Editer
    Push
    Publier
-
-
-
-
-
-
-
-
-
-
-
-

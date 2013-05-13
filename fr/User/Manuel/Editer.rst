@@ -6,7 +6,6 @@
 Cette section du manuel rassemble les notions relatives à l'édition documentaire
 des notices de médias et de reportages dans *Phraseanet*.
 
-
 Editer des enregistrements
 --------------------------
 
@@ -22,15 +21,16 @@ Editer des enregistrements
 
 Principes généraux sur l'édition
 ********************************
-La fenêtre est découpée en trois zones :
-    * **La barre de défilement** affiche les documents sélectionnés. La taille
-      de la zone est modifiable. La taille des vignettes est modifiable en
-      déplaçant le curseur.
-    * **La zone de saisie**  affiche la liste des champs descripteurs, la liste
-      des status, et réserve un espace pour afficher le contenu du champs actif.
-    * **La zone des onglets d’assistance à la saisie** proposent des aides à la
-      saisie.
 
+La fenêtre est découpée en trois zones :
+
+* **La barre de défilement** affiche les documents sélectionnés. La taille
+  de la zone est modifiable. La taille des vignettes est modifiable en
+  déplaçant le curseur.
+* **La zone de saisie**  affiche la liste des champs descripteurs, la liste
+  des status, et réserve un espace pour afficher le contenu du champs actif.
+* **La zone des onglets d’assistance à la saisie** proposent des aides à la
+  saisie.
 
 .. image:: ../../images/Prod-Editer.jpg
     :align: center
@@ -68,6 +68,7 @@ cliqué sur le bouton **Valider**.
 
 Editer des champs de type date
 ******************************
+
 L'edition d'un champ de type date, qui obéit à un formatage normalisé, est
 assisté par un calendrier d'aide à la saisie.
 
@@ -164,7 +165,6 @@ thésaurus.
 * Sélectionner un champ du type textuel lié au thésaurus
 * Débuter la saisie d'un terme
 
-
 * L'onglet thésaurus s'actualise et affiche les termes commençants par les
   caractères saisis
 
@@ -197,9 +197,10 @@ Phraseanet Administration <AdministrationBasesCollections>`
 * Faire un double clic pour sélectionner une valeur suggérée dans la liste
 * La valeur est ajoutée au champ.
 
-.. note:: Pour cumuler des valeurs, sélectionner une valeur dans la liste en
-          appuyant sur la touche "ctrl" ou "cmd" du clavier
+.. note::
 
+    Pour cumuler des valeurs, sélectionner une valeur dans la liste en
+    appuyant sur la touche "ctrl" ou "cmd" du clavier
 
 Utiliser l'onglet Presse Papier
 *******************************
@@ -230,22 +231,24 @@ sur les documents en cours d’édition.
 
 * Le nouveau terme remplace le précédent dans les notices
 
-
 Utiliser l'onglet Modèles
 **************************
+
 Créer un modèle de description documentaire
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Cette fonction permet de créer et d'utiliser ensuite des modèles de description
 de notices pré remplies.
 
 Un modèle se créé à partir d'une notice en cours d'édition.
 
-
 * Cliquer sur l’onglet Modèles
 * Sélectionner une notice en cliquant sur une vignette
 
-.. note:: Si plusieurs documents sont sélectionnés, le modèle ne pourra
-          reprendre que le contenu homogène des champs
+.. note::
+
+    Si plusieurs documents sont sélectionnés, le modèle ne pourra
+    reprendre que le contenu homogène des champs
 
 * Cliquer sur Ajouter
 
@@ -259,9 +262,9 @@ Un modèle se créé à partir d'une notice en cours d'édition.
 
 * Le nouveau modèle est affiché dans la liste des modèles disponible
 
-
 Appliquer un modèle à une sélection de médias
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 * Sélectionner les documents
 * Sélectionner l'onglet **Modèles** puis effectuer un double clic sur le titre
   du modèle à appliquer

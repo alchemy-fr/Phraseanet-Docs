@@ -20,6 +20,7 @@ Thesaurus
     recherches faites par les utilisateurs.
 
 .. warning::
+
     Un thésaurus est un outil très performant et sa mise en place d’apparence
     simple peut nécessiter, selon l’utilisation que l’on veut en faire et le
     résultat qu’on en attend, de devoir faire appel à des compétences en
@@ -27,6 +28,7 @@ Thesaurus
 
 Ouvrir un Thesaurus
 -------------------
+
 Dans l'application **Thésaurus** :
 * -> Choisir un Thesaurus dans la liste
 * -> Sélectionner la langue de travail
@@ -187,6 +189,7 @@ Lier une ou plusieurs branches du thésaurus à un champs documentaire
 
 Travailler sur les candidats
 ----------------------------
+
 Les Termes candidats sont les nouveaux termes et expressions qui ont été
 ajoutés lors de l’indexation de nouveaux mots par le moteur Phrasea engine dans
 la base de données.
@@ -199,6 +202,7 @@ du thésaurus.
 
 Accepter un candidat
 ********************
+
 * -> Cliquer sur un terme candidat dans la fenêtre Stock et le glisser/déposer
   à la racine ou sur une branche du thésaurus dans la fenêtre thésaurus
 

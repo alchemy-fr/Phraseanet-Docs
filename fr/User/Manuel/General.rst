@@ -5,6 +5,7 @@
 
 Généralités
 -----------
+
 *Phraseanet* est une solution de gestion de médias numériques.
 
 Elle s'adresse à tous les professionnels qui ont besoin d’un outil performant
@@ -16,6 +17,7 @@ navigateur internet client.
 
 Pour utiliser Phraseanet
 ------------------------
+
 L'utilisateur doit disposer d'un ordinateur équipé d'une connexion internet et
 d'un navigateur internet récent.
 Le support de Javascript doit être activé et le plug-in
@@ -23,17 +25,20 @@ Le support de Javascript doit être activé et le plug-in
 
 Il dispose également d'une adresse email valide à laquelle il a accès.
 
-.. note:: Sur les PC Windows, Internet Explorer 7 est la version minimum
-  conseillée du navigateur Microsoft. Toutefois, *Phraseanet Classic*
-  permet de consulter le fonds au moyen de navigateurs obsolètes
-  comme Internet Explorer 6.
+.. note::
 
-  Il n'est pas conseillé d'utiliser Internet Explorer 6 dans les autres
-  modules de Phraseanet tout comme il n'est pas conseillé d'utiliser
-  *Phraseanet Classic* avec des navigateurs récents.
+    Sur les PC Windows, Internet Explorer 7 est la version minimum
+    conseillée du navigateur Microsoft. Toutefois, *Phraseanet Classic*
+    permet de consulter le fonds au moyen de navigateurs obsolètes
+    comme Internet Explorer 6.
+
+    Il n'est pas conseillé d'utiliser Internet Explorer 6 dans les autres
+    modules de Phraseanet tout comme il n'est pas conseillé d'utiliser
+    *Phraseanet Classic* avec des navigateurs récents.
 
 Les modules Phraseanet
 ----------------------
+
 Phraseanet est un système complet pour l'archivage, l'organisation et la
 diffusion de documents multimédia.
 
@@ -50,6 +55,7 @@ de l'utilisateur à partir d'une barre de menu principal :
 
 Production
 **********
+
 *Phraseanet Production* est l'interface la plus importante pour de nombreux
 utilisateurs.
 Complète, cette interface permet de :doc:`rechercher <Rechercher>`,
@@ -65,15 +71,16 @@ documents.
 
 Classic
 *******
+
 *Phraseanet Classic* est une interface de consultation dédiée aux utilisateurs
 finaux disposants de navigateurs anciens. Elle permet de :doc:`consulter des documents <Afficher>`.
 
 .. figure:: ../../images/General-Classic.jpg
    :align: center
 
-
 Lightbox
 ********
+
 Interface collaborative, *Phraseanet Lightbox* permet de visualiser et/ou
 télécharger des documents spécifiques envoyés par des utilisateurs *Phraseanet*.
 Des fonctionnalités de validation permettent de :doc:`connaître les avis
@@ -87,6 +94,7 @@ se reporter à la section consacrée au :doc:`Push et à la Validation<Push>`.
 
 Upload
 ******
+
 Disponible seulement à partir de l'interface Production, *Phraseanet Upload*
 permet aux utilisateurs qui en ont le droit, d'importer des documents multimédia dans Phraseanet à partir du disque dur de l'ordinateur.
 Ce gestionnaire de téléchargement montant permet de transférer des media sans
@@ -99,6 +107,7 @@ requerir à un logiciel de transfert :term:`FTP <FTP>`.
 
 Administration
 **************
+
 :doc:`Phraseanet Administration <Administration>` est une interface métier
 permettant de gérer et de surveiller l'application, de créer des bases et des
 :term:`collections <Collection>`, de déclarer des structures documentaires, de
@@ -111,6 +120,7 @@ créer des utilisateurs ou de gérer leurs droits.
 
 Thesaurus
 *********
+
 La création et la gestion de :doc:`Thesaurus <Thesaurus>` est possible dans
 *Phraseanet*. Le *thésaurus Phraseanet* s'utilise conjointement au moteur de
 recherche *Phrasea engine*.
@@ -126,6 +136,7 @@ section<Thesaurus>`.
 
 Report
 ******
+
 Application de :doc:`Statistiques <Statistiques>`, *Phraseanet Report*
 présente en détail l’activité d'un système *Phraseanet* et rend compte des
 comportements des utilisateurs. C'est une mine d'informations pour optimiser l'
