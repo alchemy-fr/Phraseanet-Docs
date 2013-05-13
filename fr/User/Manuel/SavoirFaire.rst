@@ -12,7 +12,7 @@ Les savoir-faire *Phraseanet*
     Cliquer sur les liens proposés pour accéder à la présentation de ces actions
     essentielles.
 
-.. todo ::
+.. todo::
 
     Classer les savoir-faire par rubriques. Consulter les questions les
     plus fréquentes en accord avec les demandes reçues au support.

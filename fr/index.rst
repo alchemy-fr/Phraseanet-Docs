@@ -42,7 +42,7 @@ commencer.
 Quoi de neuf dans la version 3.7 ?
 ----------------------------------
 
-.. todo :: Mettre le changelog ici. Communiqué à titre d'exemple
+.. todo:: Mettre le changelog ici. Communiqué à titre d'exemple
 
 La version 3.7 publiée le 24 juillet 2012 succède à la version 3.6. A l'occasion
 de cette version majeure, voici les principaux changements apportés :

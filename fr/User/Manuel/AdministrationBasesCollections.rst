@@ -19,7 +19,7 @@ Cliquer sur une base pour afficher le tableau d'état d'une base Phraseanet.
 
 Cet écran montre l'état d'indexation de la base et permet des actions dont :
 
-* La réindexation d'une base
+* La ré-indexation d'une base
 * La création de collections dans la base
 * La suppression des logs
 * La purge des enregistrements de la base
@@ -80,9 +80,11 @@ fabriquées par l'application.
 | Document bureautique Pdf, Word...              | Animation Flash (Swf)                 |
 +------------------------------------------------+---------------------------------------+
 
-.. warning:: Les sous définitions thumbnail et preview sont indispensables.
-             Elles sont utilisées dans les interfaces Phraseanet pour afficher
-             les vignettes et images de choix des média.
+.. warning::
+
+    Les sous définitions thumbnail et preview sont indispensables.
+    Elles sont utilisées dans les interfaces Phraseanet pour afficher
+    les vignettes et images de choix des média.
 
 Réglage des Status
 ******************

@@ -45,7 +45,9 @@ Setup propose un jeu de formulaires permettant notamment :
 * **D'activer ou de désactiver des fonctionnalités et options de l'application**
 * **De gérer les extensions de fichiers autorisés** en ajout dans Upload
 
-.. warning:: Setup permet de modifier en profondeur les paramètres d'
+.. warning::
+
+    Setup permet de modifier en profondeur les paramètres d'
     installation de l'application. L'administrateur sera particulièrement
     attentif aux modifications apportées dans les formulaires proposés.
 

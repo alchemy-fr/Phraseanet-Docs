@@ -48,8 +48,10 @@ Pour effectuer une recherche :
 * Inscriver le ou les termes recherchés dans le formulaire de recherche
 * Lancer la recherche en cliquant sur **Rechercher**
 
-.. note :: le moteur de recherche est insensible à la casse et ne fait pas la
-           différence entre les caractères accentués et ceux qui ne le sont pas.
+.. note::
+
+    le moteur de recherche est insensible à la casse et ne fait pas la
+    différence entre les caractères accentués et ceux qui ne le sont pas.
 
 Les résultats obtenus sont affichés dans la zone d'affichage. La pertinence des
 dépend grandement de la qualité d'indexation des médias et de la requête
@@ -270,9 +272,11 @@ lesquels le mot Eiffel est situé, au maximum, deux mots après le mot Tour.
     Il n'est pas nécessaire de spécifier la distance.
     Si la distance n'est pas précisée, la valeur par défaut est 12.
 
-.. warning:: Pour tous les opérateurs mentionnés préalablement, leur recherche
-             dans une expression entre guillemets annule la fonction de l'
-             opérateur utilisé.
+.. warning::
+
+    Pour tous les opérateurs mentionnés préalablement, leur recherche
+    dans une expression entre guillemets annule la fonction de l'
+    opérateur utilisé.
 
 Les comparaisons numériques
 ***************************

@@ -75,7 +75,9 @@ dans le système Phraseanet.
     Les fonctionnalités relatives aux listes d'envoi sont décrites plus
     après, dans la section dédiée au `Gestionnaire de listes`_.
 
-.. warning:: Pour pouvoir créer des utilisateurs à partir des Push et
+.. warning::
+
+    Pour pouvoir créer des utilisateurs à partir des Push et
     Validations, l'utilisateur doit disposer des droits de gestion d'
     utilisateurs nécessaires.
 
@@ -255,7 +257,9 @@ droite de l'interface.
 Une fenêtre de contrôle demande alors de confirmer la suppression. Cliquer sur
 *Ok* pour supprimer définitivement cette liste.
 
-.. Note :: Si le nom de la liste supprimée figure toujours dans la liste des
+.. note::
+
+    Si le nom de la liste supprimée figure toujours dans la liste des
     listes d'envoi, cliquer sur le lien *Rafraîchir* situé à gauche de l'
     interface.
 

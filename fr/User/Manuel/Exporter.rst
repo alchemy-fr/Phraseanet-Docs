@@ -45,7 +45,7 @@ onglets :**
 .. image:: ../../images/Exporter-general.jpg
     :align: center
 
-.. note ::
+.. note::
 
     L'export peut être effectué sur des lots de documents, en
     provenance de plusieurs bases ou collections différentes, sur
@@ -76,7 +76,7 @@ L'export par E-Mail
 * Compléter si besoin le message du mail.
 * Cliquer sur Envoyer.
 
-.. note ::
+.. note::
 
     Le lien de téléchargement transmis.
 

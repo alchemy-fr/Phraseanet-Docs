@@ -25,7 +25,7 @@ Les paniers
 Des icônes affichées dans la barre de titre donnent des informations
 complémentaires sur les paniers
 
-.. todo ::
+.. todo::
 
     Mettre les icônes explicatives
 

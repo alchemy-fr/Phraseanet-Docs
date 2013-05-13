@@ -23,7 +23,7 @@
 
 **Les fonctions étendues :**
 
-* `Editer`_
+* `Éditer`_
 * `Déplacer`_
 * `Propriétés`_
 * `Push`_
@@ -67,16 +67,16 @@ Les fonctions étendues
 Les fonctions étendues sont accessibles via les boutons de la palette des
 actions ou via des menus contextuels d'actions.
 
-Editer
+Éditer
 ******
 
 Cette fonction permet d'éditer des enregistrements dans *Phraseanet* : édition
 des médias, des paniers. Compléter ou modifier les descriptions documentaires
 accompagnant les assets à l'unité ou en lots.
 
-:doc:`Se reporter à la section dédiée à l'édition <Editer>`.
+:doc:`Se reporter à la section dédiée à l'édition <Éditer>`.
 
-Le menu contextuel du bouton edité regroupe également les fonctions *Propriétés*
+Le menu contextuel du bouton éditer regroupe également les fonctions *Propriétés*
 et *Déplacer*.
 
 Propriétés
@@ -100,7 +100,7 @@ utilisateurs en fonction de l'état de status.
     peuvent être utilisés pour des besoins de workflow ou la mise en place
     des restrictions d’accès aux documents entre autres.
     Le changement d'état des status est aussi disponible directement
-    depuis la fenêtre :doc:`Editer <Editer>`.
+    depuis la fenêtre :doc:`Éditer <Éditer>`.
 
 **Changer les status des documents**
 
@@ -188,7 +188,7 @@ Outils images
 *************
 
 Cette icône permet d'effectuer des actions sur les vignettes ou images de choix
-(re-génération, substitution, rotation, choix de la vignette pour les vidéo),
+(régénération, substitution, rotation, choix de la vignette pour les vidéo),
 sur le remplacement d’un document orignal, ou d’afficher toutes les informations
 sur les métadonnées existantes dans le document sélectionné.
 
