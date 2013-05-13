@@ -47,6 +47,15 @@ The whole commands available through this utility are executables whenever
 Phraseanet is not installed, whereas Konsole Kommander requires Phraseanet
 installed and up-to-date.
 
+check:system
+************
+
+This command returns one of the following exit code :
+
+* 0 : System is correctly configured.
+* 1 : System is correctly configured, minor adjustments can be done.
+* 2 : System is not correctly configured, errors must be fixed before continue.
+
 Konsole Kommander
 -----------------
 

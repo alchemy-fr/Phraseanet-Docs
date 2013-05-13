@@ -47,6 +47,16 @@ L'ensemble des commandes disponibles dans cet utilitaire sont executables même
 lorsque Phraseanet n'est pas installé, contrairement à Konsole Kommander qui
 requiert une installation complète.
 
+check:system
+************
+
+Cette commande retourne un code de retour parmis les suivants :
+
+* 0 : Le système est correctement configuré.
+* 1 : Le système est correctement configuré, des ajustements peuvent être faits.
+* 2 : Le système n'est pas correctement configuré, il faut corriger les erreurs
+  avant de poursuivre.
+
 Konsole Kommander
 -----------------
 
