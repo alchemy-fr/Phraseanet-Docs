@@ -52,7 +52,8 @@ Compiler
 
 Activer
 ^^^^^^^
-Editer le ficher de configuration d'apache (en general dans
+
+Éditer le ficher de configuration d'apache (en general dans
 /etc/apache/httpd.conf).
 
 .. code-block:: bash
@@ -86,7 +87,7 @@ Compiler
 Activer
 ^^^^^^^
 
-Editer le ficher de configuration d'apache (en général dans
+Éditer le ficher de configuration d'apache (en général dans
 /etc/apache/httpd.conf) afin que les requêtes se terminant par .mp4 soit prises
 en charge par le module h264_streaming.
 
