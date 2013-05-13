@@ -62,7 +62,6 @@ Il n'existe pas de panier de session par défaut. L'utilisateur doit le créer.
 * Une fenêtre s'ouvre
 
   .. image:: ../../images/Affichage-Panier.jpg
-	   :alt: alternate text
 	   :align: center
 
 * Saisir le nom du nouveau panier et si besoin une description.
@@ -279,7 +278,6 @@ Comment créer un nouveau reportage ?
   * => une fenêtre s'ouvre
 
   .. image:: ../../images/Reportage-creer.jpg
-	   :alt: alternate text
 	   :align: center
 
   * Choisir une collection de publication dans la liste des collections

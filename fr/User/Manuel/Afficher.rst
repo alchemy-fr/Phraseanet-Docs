@@ -63,7 +63,6 @@ application.
 inférieur gauche:**
 
   .. image:: ../../images/Affichage-nomcoll.jpg
-	   :alt: alternate text
 	   :align: center
 
   .. note:: Le nom de la collection peut être substitué par un minilogo de
@@ -79,7 +78,6 @@ modifier les informations affichées
 Les termes ayant servis comme critères de recherche sont surlignés.
 
   .. image:: ../../images/Affichage-surlignagemc.jpg
-	   :alt: alternate text
 	   :align: center
 
 **La "Loupe" permet d'afficher un prévisualisation du document** : il s'agit d'
@@ -88,7 +86,6 @@ documents de type vidéo, d'une séquence sonore pour les documents de type audi
 d'une animation flash pour certains types de documents bureautiques.
 
   .. image:: ../../images/Affichage-Loupe.jpg
-	   :alt: alternate text
 	   :align: center
 
 La prévisualisation du document dans *Phraseanet* est lié à la sous-définitions
@@ -103,7 +100,6 @@ appartiennent les documents.
 original** : largeur et hauteur en pixels, type, poids, taille d’impression…
 
   .. image:: ../../images/Affichage-i.jpg
-	   :alt: alternate text
 	   :align: center
 
 **Pour afficher une vue détaillée**, effectuer un double-clic sur la vignette
@@ -131,7 +127,6 @@ L'onglet *Notice* permet de visualiser les informations issues des champs
 documentaires remplis ainsi que des informations techniques sur le document.
 
   .. image:: ../../images/Affichage-vuedetaillee1.jpg
-	   :alt: alternate text
 	   :align: center
 
   .. note:: Selon la configuration de la solution et l’existence d’un thesaurus
@@ -147,7 +142,6 @@ Cet onglet liste l’historique de toutes les opérations réalisées par les
 utilisateurs sur le document depuis son ajout.
 
   .. image:: ../../images/Affichage-vuedetaillee2.jpg
-	   :alt: alternate text
 	   :align: center
 
 Onglet Popularité
@@ -160,7 +154,6 @@ document en temps réel.
 * Un diagramme à camembert montre les sources d’accès au document.
 
   .. image:: ../../images/Affichage-vuedetaillee3.jpg
-	   :alt: alternate text
 	   :align: center
 
 Les statistiques de téléchargement affichent jour par jour le nombre de
@@ -184,7 +177,6 @@ les reportages en cliquant dans son cadre. La couleur de fonds de la vignette
 change.
 
   .. image:: ../../images/Affichage-selection1.jpg
-	   :alt: alternate text
 	   :align: center
 
 Cette couleur de sélection peut être modifiée par chaque utilisateur dans les
@@ -224,7 +216,6 @@ sur le menu de l'action de sélection (flèche à droite du carré blanc) puis
 cliquer sur le type de documents à sélectionner.
 
   .. image:: ../../images/Affichage-selectiontype.jpg
-	   :alt: alternate text
 	   :align: center
 
 Dans cet exemple, seuls les documents de type *images* sont sélectionnés.
@@ -237,7 +228,6 @@ Pour placer une sélection de documents dans un Panier :
     nommer puis cliquer sur Valider.
 
   .. image:: ../../images/Affichage-Panier.jpg
-	   :alt: alternate text
 	   :align: center
 
 * Pour plus d'informations, se reporter à la section dédiée aux :doc:`Paniers
@@ -254,6 +244,5 @@ Pour placer une sélection de documents dans un Panier :
     des actions du panier.
 
   .. image:: ../../images/Affichage-Panier2.jpg
-	   :alt: alternate text
 	   :align: center
 

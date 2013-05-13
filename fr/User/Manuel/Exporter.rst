@@ -5,16 +5,16 @@
 
 .. topic:: L'essentiel
 
-    L'action `Exporter`_ est l'une des actions possibles dans la 
+    L'action `Exporter`_ est l'une des actions possibles dans la
     :doc:`Palette des Actions <Actions>` dans *Phraseanet Production*.
     Plusieurs modes d'export sont proposés: utiliser le téléchargement,
     envoyer par email ou encore envoyer via le :term:`FTP <FTP>`.
-    
+
     L'action `Imprimer`_ est considéré comme un type d'export particulier c'est
     pourquoi les fonctionnalités d'impression sont détaillées dans cette page.
-    
-    
-    
+
+
+
 Exporter
 --------
 
@@ -47,7 +47,6 @@ onglets :**
     supportant des connexions de type FTP.
 
   .. image:: ../../images/Exporter-general.jpg
-	   :alt: alternate text
 	   :align: center
 
   .. note :: L'export peut être effectué sur des lots de documents, en
@@ -83,7 +82,7 @@ L'export par E-Mail
   * Compléter si besoin le message du mail.
   * Cliquer sur Envoyer.
 
-  .. note :: Le lien de téléchargement transmis 
+  .. note :: Le lien de téléchargement transmis
 
 * Cliquer sur Envoyer.
 * Un message confirmant l’envoi de l’email apparaît.
@@ -129,16 +128,15 @@ Phraseanet ou bien par e-mail.
 
 Imprimer
 --------
-Cette Action permet d'imprimer les vignettes, les images de choix, les 
+Cette Action permet d'imprimer les vignettes, les images de choix, les
 descriptions des media dans un document pdf auto-généré.
 
   * Sélectionner un ou plusieurs media puis cliquer sur "Imprimer".
 
-La fenêtre Imprimer s'ouvre. 
+La fenêtre Imprimer s'ouvre.
 
   .. image:: ../../images/Actions-Imprimer1.jpg
-	   :alt: alternate text
-	   :align: center 
+	   :align: center
 
 Cocher les cases correspondant aux choix souhaités:
 
@@ -157,8 +155,7 @@ document PDF (*Format Acrobat de Adobe* - un *Reader Acrobat* doit être install
 sur le poste de travail)
 
   .. image:: ../../images/Actions-Imprimer2.jpg
-	   :alt: alternate text
 	   :align: center
 
-Imprimer le document PDF sur l'imprimante de son choix ou l'enregistrer sur le 
+Imprimer le document PDF sur l'imprimante de son choix ou l'enregistrer sur le
 disque dur de son poste de travail.

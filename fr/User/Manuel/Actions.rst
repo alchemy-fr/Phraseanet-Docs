@@ -106,7 +106,6 @@ La fenêtre s'ouvre.
   * Cliquer sur **Valider** pour enregistrer les changements.
 
   .. image:: ../../images/Actions-Proprietes-status.jpg
-	   :alt: alternate text
 	   :align: center
 
 **Changer le type des documents**
@@ -126,7 +125,6 @@ La fenêtre s'ouvre.
   * Cliquer sur **Valider** pour enregistrer les modifications.
 
   .. image:: ../../images/Actions-Proprietes-types.jpg
-	   :alt: alternate text
 	   :align: center
 
 Déplacer
@@ -138,7 +136,6 @@ Déplacer
     **Déplacer**.
 
   .. image:: ../../images/Actions-Deplacer.jpg
-	   :alt: alternate text
 	   :align: center
 
 
@@ -201,7 +198,6 @@ Choisir un des onglets proposés :
     de présentation personnalisée pour les médias vidéos.
 
   .. image:: ../../images/Actions-OutilsThumbnailVideo.jpg
-	   :alt: alternate text
 	   :align: center
 
   * **Retourner sous défs** : permet des rotation de vignettes et d'images de

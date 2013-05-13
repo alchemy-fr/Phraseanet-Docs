@@ -83,7 +83,6 @@ Saisir le login du nouvel utilisateur et cliquer sur **Créer un utilisateur**.
 La fenêtre de gestion des droits de l'utilisateur créé s'ouvre.
 
   .. image:: ../../images/Administration-nouvelutilisateur3.jpg
-	   :alt: alternate text
 	   :align: center
 
 Pour savoir comment gérer les droits, se reporter à la section

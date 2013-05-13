@@ -60,7 +60,7 @@ paramétrables :
 Sous définition
 ***************
 La rubrique *Sous définition* permet d'ajouter et d'éditer les sous définitions
-des média de type image, vidéo et audio intégrés dans Phraseanet. 
+des média de type image, vidéo et audio intégrés dans Phraseanet.
 La nature des sous définitions dépend de la nature des documents originaux
 intégrés dans Phraseanet.
 Le tableau ci-dessous liste quelques exemples types de sous définitions
@@ -78,42 +78,41 @@ fabriquées par l'application.
 | Document bureautique Pdf, Word...              | Animation Flash (Swf)                 |
 +------------------------------------------------+---------------------------------------+
 
-.. warning:: Les sous définitions thumbnail et preview sont indispensables. 
+.. warning:: Les sous définitions thumbnail et preview sont indispensables.
              Elles sont utilisées dans les interfaces Phraseanet pour afficher
              les vignettes et images de choix des média.
-          
+
 
 Réglage des Status
 ******************
-  Les :term:`Status` sont des marqueurs qui indiquent des états sur des 
-  enregistrements. 
+  Les :term:`Status` sont des marqueurs qui indiquent des états sur des
+  enregistrements.
   Ils interagissent ou non avec les droits des utilisateurs (voir **Limitation
   par les Status** sur la page consacré à la :doc:`Gestion des utilisateurs
   <AdministrationUtilisateurs>`).
-   
+
   Dans Phraseanet, soit un status est baissé (l'état par défaut), soit il est
   levé.
-  En pratique, les status permettent d'illustrer des états sur des documents et 
+  En pratique, les status permettent d'illustrer des états sur des documents et
   d'obtenir au besoin une granularité supplémentaire sur l'accès des
   utilisateurs à ces documents.
-  
+
   Liés à la structure documentaire d'une base, il est possible d'intégrer
   jusqu'à 60 status.
-  
+
   .. image:: ../../images/Administration-status.jpg
-	   :alt: alternate text
 	   :align: center
 
   * Pour déclarer un status, cliquer sur l'icône page pour éditer un nouveau
     status bit puis remplir le formulaire.
-  
+
   * Pour modifier un status existant, cliquer sur l'icône stylo.
-  
+
   * Pour supprimer un status, cliquer sur l'icône croix puis confirmer la
     suppression.
 
 
- 
+
 CGU (Conditions générales d'utilisation)
 ****************************************
 
@@ -132,9 +131,8 @@ Ordre des Collections
 *********************
 
   .. image:: ../../images/Administration-ordrecollections.jpg
-	   :alt: alternate text
 	   :align: center
-  
+
 Par défaut, les collections sont affichées dans les différentes applications
 selon leur ordre de création. Selon les besoins, il est donc possible de
 modifier l’ordre d’affichage dans les différentes interfaces.
@@ -172,7 +170,7 @@ valider le formulaire.
 
   .. note:: Lors de la création d'une collection, il est possible d'appliquer
             les droits utilisateurs d'une collection existante.
-        
+
 
 Afficher une collection
 ***********************
@@ -216,16 +214,15 @@ téléchargements.
 le nom d'utilisateur ou son login dans le formulaire d'ajout d'un gestionnaire.
 
   .. image:: ../../images/Administration-gestionnairecommande.jpg
-	   :alt: alternate text
 	   :align: center
-	   
-Un dispositif d'auto-complétion guide l'utilisateur en lui proposant des choix 
+
+Un dispositif d'auto-complétion guide l'utilisateur en lui proposant des choix
 d'utilisateurs. Cliquer sur l'utilisateur choisi puis appliquer le choix au
-moyen du bouton **Valider**. 
+moyen du bouton **Valider**.
 
 **Pour supprimer un gestionnaire de commande**, décocher la case à cocher
 précédent son nom d'utilisateur puis appliquer le choix au moyen du bouton
-**Valider**. 
+**Valider**.
 
 Marquage d'une collection
 *************************
@@ -258,7 +255,7 @@ Activer / Désactiver une collection
 Par défaut, les collections crées sont activées. Cela signifie qu'elles sont
 publiées et que les utilisateurs qui y ont accès peuvent parcourir son contenu.
 
-**Pour désactiver une collection** et arrêter sa publication, cliquer sur 
+**Pour désactiver une collection** et arrêter sa publication, cliquer sur
 **Désactiver la collection**.
 
 Inversement, **Pour activer une collection**, cliquer sur **Activer la
@@ -302,7 +299,7 @@ droit) :
 
 Filigrane
 ^^^^^^^^^
-Pour ajouter un filigrane (ou watermark) personnalisé à appliquer sur les sous 
+Pour ajouter un filigrane (ou watermark) personnalisé à appliquer sur les sous
 résolution des documents de la collection :
 
   * Cliquer sur le bouton **Parcourir** pour sélectionner le fichier de

@@ -42,7 +42,6 @@ Chacune des propositions affichées est cliquable et permet de lancer une
 nouvelle recherche *thésaurus*.
 
   .. image:: ../../images/Onglet-Propositions.jpg
-	   :alt: alternate text
 	   :align: center
 
   .. note:: La pertinence des propositions faites dans cet onglet sont
@@ -69,7 +68,6 @@ sur un terme l’application lance une requête thesaurus sur les bases et
 collections ouvertes.
 
 	  .. image:: ../../images/Rechercher-thesaurus3.jpg
-	   :alt: alternate text
 	   :align: center
 
 Onglet Candidats
@@ -108,7 +106,6 @@ option intéressante s'il y a peu de termes candidats à examiner.
   sur un terme pour afficher le menu contextuel du terme.
 
 	  .. image:: ../../images/Onglets-candidats2.jpg
-	   :alt: alternate text
 	   :align: center
 
 * Cliquer sur Accepter en xx (xx étant la langue du terme)

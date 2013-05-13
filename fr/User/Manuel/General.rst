@@ -61,7 +61,6 @@ aux gestionnaires d'importer, de décrire, d'organiser et de diffuser leurs
 documents.
 
 .. figure:: ../../images/Production-zones.jpg
-    :alt: alternate text
     :align: center
 
 Classic
@@ -70,7 +69,6 @@ Classic
 finaux disposants de navigateurs anciens. Elle permet de :doc:`consulter des documents <Afficher>`.
 
 .. figure:: ../../images/General-Classic.jpg
-   :alt: alternate text
    :align: center
 
 
@@ -82,7 +80,6 @@ Des fonctionnalités de validation permettent de :doc:`connaître les avis
 d’utilisateurs sur des documents <Push>`.
 
 .. figure:: ../../images/General-Lightbox.jpg
-   :alt: alternate text
    :align: center
 
 Pour envoyer, partager, comparer des documents dans *Phraseanet Lightbox*,
@@ -96,7 +93,6 @@ Ce gestionnaire de téléchargement montant permet de transférer des media sans
 requerir à un logiciel de transfert :term:`FTP <FTP>`.
 
 .. figure:: ../../images/General-Upload.jpg
-   :alt: alternate text
    :align: center
 
 :doc:`Comment importer des documents dans Phraseanet ?<Importer>`
@@ -109,7 +105,6 @@ permettant de gérer et de surveiller l'application, de créer des bases et des
 créer des utilisateurs ou de gérer leurs droits.
 
 .. image:: ../../images/General-Administration.jpg
-    :alt: alternate text
     :align: center
 
 :doc:`Se reporter à la section dédiée à l'Administration <Administration>`.
@@ -124,7 +119,6 @@ Phraseanet gère la synonymie et les relations inter linguistiques.
 Il représente un vrai *plus* dans l’utilisation d’une solution de gestion de media numériques professionnelles.
 
 .. image:: ../../images/General-Thesaurus.jpg
-   :alt: alternate text
    :align: center
 
 Pour les questions relatives au Thesaurus Phraseanet, se reporter à :doc:`cette
@@ -138,7 +132,6 @@ comportements des utilisateurs. C'est une mine d'informations pour optimiser l'
 accès aux fonds documentaires et mieux connaître les habitudes des utilisateurs.
 
 .. figure:: ../../images/General-Report.jpg
-   :alt: alternate text
    :align: center
 
 Se reporter à la section :doc:`Statistiques <Statistiques>` pour une

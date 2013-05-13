@@ -46,7 +46,6 @@ Sélectionner des fichiers
 Cliquer sur **Sélectionner les fichiers**.
 
 .. image:: ../../images/Upload-zone1.jpg
-	   :alt: alternate text
 	   :align: center
 
 L'application lance l’explorateur de fichiers de l'ordinateur.

@@ -32,7 +32,6 @@ interface graphique permettant de modifier des paramètres d'installation et de
 configuration de Phraseanet.
 
   .. image:: ../../images/Administration-setup.jpg
-	   :alt: alternate text
 	   :align: center
 
 Setup propose un jeu de formulaires permettant notamment :
@@ -59,7 +58,6 @@ Elle informe de l'application Phraseanet utilisée, de l'adresse "IP", ainsi que
 de la date et de l'heure de connexion au système.
 
 .. image:: ../../images/Administration-utilisateurlive.jpg
-    :alt: alternate text
     :align: center
 
 .. note:: Phraseanet repose sur un mécanisme de *sessions persistantes*. Les

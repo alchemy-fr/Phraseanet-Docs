@@ -90,7 +90,6 @@ liste d'envoi, deux méthodes sont proposées:
 *  Cliquer individuellement sur l'icône
 
    .. image:: ../../images/Push-download-badge.jpg
-     :alt: alternate text
      :align: center
 
    située sur l'étiquette représentative du destinataire à qui donner

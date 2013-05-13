@@ -60,7 +60,6 @@ Après avoir cliqué sur *Publications* dans la barre de menu, la publication
 apparaît :
 
   .. image:: ../../images/Publier-Affichage.jpg
-	   :alt: alternate text
 	   :align: center
 
 Des applications tierces, comme Phraseanet Showcase, peuvent également exploiter
@@ -108,7 +107,6 @@ La fenêtre du **Bridge** s'ouvre:
     propose de se connecter soit à son compte Flickr, Youtube ou Dailymotion...
 
   .. image:: ../../images/Bridge-1b.jpg
-	   :alt: alternate text
 	   :align: center
 
 Le site demande de s'authentifier, puis d'accorder la permission à Phraseanet de
@@ -121,7 +119,6 @@ Dans le cas de Filckr, les photos existantes sont affichées dans l'onglet
 "Photos" ou "Photosets" si les elles sont organisées en albums dans Flickr.
 
 .. image:: ../../images/Bridge-3a.jpg
-    :alt: alternate text
     :align: center
 
 Publier sur Flickr
@@ -136,14 +133,12 @@ description.
   * Cliquer sur le bouton **Ajouter** en bas à gauche.
 
 .. image:: ../../images/Bridge-2.jpg
-    :alt: alternate text
     :align: center
 
 A mesure que les images sont envoyées, il est possible de voir l'avancement du
 transfert par un simple clic sur l'onglet **Fichiers envoyés**.
 
 .. image:: ../../images/Bridge-4.jpg
-    :alt: alternate text
     :align: center
 
   * Le statut **OK** signale les media images ou vidéos transférés
@@ -153,5 +148,4 @@ transfert par un simple clic sur l'onglet **Fichiers envoyés**.
 Lancer *Flickr*. Les médias y sont bien présents.
 
 .. image:: ../../images/Bridge-5.jpg
-    :alt: alternate text
     :align: center
