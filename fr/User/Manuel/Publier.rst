@@ -14,7 +14,7 @@ Publier des paniers et des reportages
 Les publications Phraseanet permettent de mettre à la disposition d'utilisateurs
 des :doc:`Paniers <PaniersReportages>` et des Reportages dans la page des
 publications.
-Ces publications sont également disponibles sous forme de flux media RSS hors de
+Ces publications sont également disponibles sous forme de flux mediaRSS hors de
 l'application et exploitable dans des applications tierces.
 
 * Ouvrir l'onglet des Paniers dans *Phraseanet Production*.
@@ -63,7 +63,7 @@ apparaît :
     :align: center
 
 Des applications tierces, comme Phraseanet Showcase, peuvent également exploiter
-les publications. Elles sont en effet disponibles sous forme de flux media RSS
+les publications. Elles sont en effet disponibles sous forme de flux mediaRSS
 hors de l'application.
 
 Diffuser avec Bridge
@@ -124,11 +124,11 @@ Dans le cas de Flickr, les photos existantes sont affichées dans l'onglet
 Publier sur Flickr
 ******************
 
-Sélectionner des media dans le zone d'affichage, puis cliquer sur le bouton
+Sélectionner des médias dans le zone d'affichage, puis cliquer sur le bouton
 **Ajouter**.
 
 La fenêtre "Upload" de Bridge s'ouvre. Modifier les titres des images
-sélectionnées, ajouter des tags et décrire vos media dans les formulaires de
+sélectionnées, ajouter des tags et décrire vos médias dans les formulaires de
 description.
 
 * Cliquer sur le bouton **Ajouter** en bas à gauche.
@@ -142,7 +142,7 @@ transfert par un simple clic sur l'onglet **Fichiers envoyés**.
 .. image:: ../../images/Bridge-4.jpg
     :align: center
 
-* Le statut **OK** signale les media images ou vidéos transférés
+* Le statut **OK** signale les médias images ou vidéos transférés
 * Une information de date indique depuis combien de temps l'envoi a été
   effectué.
 

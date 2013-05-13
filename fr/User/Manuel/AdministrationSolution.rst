@@ -72,7 +72,7 @@ Publications
 ------------
 
 Accessible aux utilisateurs qui disposent des droits de gestion des
-publications, la rubrique publications permet de gérer les flux media RSS
+publications, la rubrique publications permet de gérer les flux mediaRSS
 diffusés à partir de l'application Phraseanet.
 
 .. image:: ../../images/Administration-publications.jpg

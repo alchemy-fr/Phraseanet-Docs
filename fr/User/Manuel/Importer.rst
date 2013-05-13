@@ -30,8 +30,8 @@ Ce mode Flash n'offre pas une alternative mais un mode d'affichage
 dégradé. Il ne permet pas d'accéder à toutes les fonctionnalités
 développées sur le socle technologique de HTML5.
 
-Comment ajouter des media ?
----------------------------
+Comment ajouter des médias ?
+----------------------------
 
 Cliquer sur Upload dans le :doc:`menu <General>` Phraseanet.
 

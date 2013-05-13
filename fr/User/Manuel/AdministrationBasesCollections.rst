@@ -69,7 +69,7 @@ Le tableau ci-dessous liste quelques exemples types de sous définitions
 fabriquées par l'application.
 
 +------------------------------------------------+---------------------------------------+
-| Nature du media original                       | Nature de la sous définition          |
+| Nature du média original                       | Nature de la sous définition          |
 +================================================+============+==========+===============+
 | Image de type Jpeg, psd, gif, png...           | Sous définition au format Jpeg        |
 +------------------------------------------------+---------------------------------------+

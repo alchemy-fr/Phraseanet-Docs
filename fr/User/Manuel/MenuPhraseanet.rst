@@ -70,7 +70,7 @@ Informations
 La section Informations est consacrée aux données personnelles. Elle permet de
 saisir ou de modifier les informations relatives à l'identité, aux coordonnées
 postales, téléphoniques, d'email, de paramétrer la réception des notifications
-Phraseanet adressées par mail ou d'activer un compte :term:`FTP` permettant la
+Phraseanet adressées par email ou d'activer un compte :term:`FTP` permettant la
 réception de documents sur un serveur supportant ce type de connexion.
 
 .. note::

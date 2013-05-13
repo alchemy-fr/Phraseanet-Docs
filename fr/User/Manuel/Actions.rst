@@ -139,7 +139,7 @@ La fenêtre s'ouvre.
 Déplacer
 ^^^^^^^^
 
-**Déplacer** permet de déplacer des media d'une :term:`collection <Collection>`
+**Déplacer** permet de déplacer des médias d'une :term:`collection <Collection>`
 à une autre.
 
 * Sélectionner une ou plusieurs médias puis cliquer sur la rubrique
@@ -151,7 +151,7 @@ Déplacer
 * Sélectionner la collection dans laquelle les médias doivent être déplacés
 * Cliquer sur **Ok** pour effectuer cette action.
 
-Les media sont alors déplacés dans la collection sélectionnée.
+Les médias sont alors déplacés dans la collection sélectionnée.
 
 .. note::
 
@@ -202,7 +202,7 @@ La fenêtre Outils s'ouvre.
 Choisir un des onglets proposés :
 
 * **Régénération sous-défs** : pour créer de nouvelles vignettes et
-  sous-définitions des media sélectionnés.
+  sous-définitions des médias sélectionnés.
 * **Outils vidéos** : Disponible si et seulement si un média de type vidéo est
   sélectionné, l'onglet propose les outils permettant de choisir une vignette
   de présentation personnalisée pour les médias vidéos.

@@ -21,7 +21,7 @@ Le Push
 
 Le Push est une soumission de documents dans :doc:`Phraseanet Lightbox
 <Lightbox>`.
-Contrairement à l'envoi par mail proposé par les fonctionnalités d'export, le
+Contrairement à l'envoi par email proposé par les fonctionnalités d'export, le
 *Push* ne transmet pas physiquement les documents.
 Il notifie dans l'interface *Production*, alerte par email et met à la
 disposition des utilisateurs des sélections de médias provenant de paniers qu'
@@ -101,7 +101,7 @@ liste d'envoi, deux méthodes sont proposées:
 
 Un formulaire permet de donner un nom et une description conviviale à l'envoi
 et même réclamer un accusé réception de l'email envoyé si cette fonctionnalité
-est supportée par le serveur de mails des destinataires.
+est supportée par le serveur d'emails des destinataires.
 
 La Validation
 -------------

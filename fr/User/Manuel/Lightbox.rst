@@ -18,7 +18,7 @@ Accéder à la Lightbox
 Pour les utilisateurs non authentifiés
 **************************************
 
-Cette interface s'obtient en cliquant sur un lien HTML reçu par e-mail lorsqu'un
+Cette interface s'obtient en cliquant sur un lien HTML reçu par email lorsqu'un
 utilisateur Phraseanet transmet un :doc:`Push ou une demande de validation
 <Push>`.
 

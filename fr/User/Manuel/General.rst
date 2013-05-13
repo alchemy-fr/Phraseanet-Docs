@@ -97,7 +97,7 @@ Upload
 
 Disponible seulement à partir de l'interface Production, *Phraseanet Upload*
 permet aux utilisateurs qui en ont le droit, d'importer des documents multimédia dans Phraseanet à partir du disque dur de l'ordinateur.
-Ce gestionnaire de téléchargement montant permet de transférer des media sans
+Ce gestionnaire de téléchargement montant permet de transférer des médias sans
 requérir à un logiciel de transfert :term:`FTP <FTP>`.
 
 .. figure:: ../../images/General-Upload.jpg
@@ -126,7 +126,7 @@ La création et la gestion de :doc:`Thésaurus <Thesaurus>` est possible dans
 recherche *Phrasea engine*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques.
-Il représente un vrai *plus* dans l’utilisation d’une solution de gestion de media numériques professionnelles.
+Il représente un vrai *plus* dans l’utilisation d’une solution de gestion de médias numériques professionnelles.
 
 .. image:: ../../images/General-Thesaurus.jpg
    :align: center

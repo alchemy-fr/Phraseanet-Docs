@@ -25,7 +25,7 @@ Cette action permet d'exporter, au choix:
 
 *Près de chaque format figurent les poids respectives des éléments à exporter.*
 
-Il est possible d'exporter à l'unité ou en lots des media ou les contenus de
+Il est possible d'exporter à l'unité ou en lots des médias ou les contenus de
 Paniers et Reportages depuis la zone d':doc:`affichage des Résultats <Afficher>`
 ou depuis la
 :doc:`zone d'affichage des paniers et reportages <PaniersReportages>`.
@@ -68,12 +68,12 @@ L'export par Téléchargement
 L'export par E-Mail
 *******************
 
-* Saisir l'adresse mail du destinataire, utiliser le point virgule " ; " en
+* Saisir l'adresse email du destinataire, utiliser le point virgule " ; " en
   cas d’envoi vers des destinataires multiples.
-* Saisir l'objet du mail.
+* Saisir l'objet de l'email.
 * Sélectionner quels fichiers doivent joints à l'archive Zip téléchargeable
   via le lien proposé dans le corps de l'email.
-* Compléter si besoin le message du mail.
+* Compléter si besoin le message de l'email.
 * Cliquer sur Envoyer.
 
 .. note::
@@ -122,14 +122,14 @@ utilisateurs ne bénéficiant pas des droits de téléchargement.
 Remplir et soumettre le formulaire affiché.
 
 Le gestionnaire de commande est averti de la commande par notification dans
-Phraseanet ou bien par e-mail.
+Phraseanet ou bien par email.
 
 Imprimer
 --------
 Cette Action permet d'imprimer les vignettes, les images de choix, les
-descriptions des media dans un document pdf auto-généré.
+descriptions des médias dans un document pdf auto-généré.
 
-* Sélectionner un ou plusieurs media puis cliquer sur "Imprimer".
+* Sélectionner un ou plusieurs médias puis cliquer sur "Imprimer".
 
 La fenêtre Imprimer s'ouvre.
 

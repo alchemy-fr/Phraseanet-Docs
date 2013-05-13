@@ -17,7 +17,7 @@ Ce manuel donne d'une part une première approche de l'utilisation de
 *Phraseanet* tout en laissant les experts découvrir des fonctionnalités qui les
 convaincront d'utiliser *Phraseanet* pour leurs projets.
 D'autre part ce manuel donne des réponses à des cas d'usages pour répondre aux
-problématiques de l'archivage, de la gestion, de la diffusion de media au
+problématiques de l'archivage, de la gestion, de la diffusion de média au
 travers du logiciel *Phraseanet*.
 
 Ce manuel n'est pas parfait.
