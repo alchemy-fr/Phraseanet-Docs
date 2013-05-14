@@ -76,8 +76,8 @@ bouton **lecture** situé dans la barre d'action.
 .. image:: ../../images/Lightbox-play.jpg
     :align: center
 
-Téléchager des média
-********************
+Téléchager des médias
+*********************
 
 Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icône
 d'enregistrement située dans la barre des actions.

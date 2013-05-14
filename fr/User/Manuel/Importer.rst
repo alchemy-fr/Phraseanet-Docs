@@ -78,8 +78,8 @@ Si besoin, appliquer les :term:`status` si nécessaire (optionnel).
 .. image:: ../../images/Upload-zone3.jpg
     :align: center
 
-Réordonner les média
-********************
+Réordonner les médias
+*********************
 
 Si besoin, l'utilisateur peut réordonner les médias avant de les importer.
 Sélectionner un fichier et le glisser / déposer ailleurs dans la liste. Il peut

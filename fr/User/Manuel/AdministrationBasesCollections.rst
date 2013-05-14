@@ -84,7 +84,7 @@ fabriquées par l'application.
 
     Les sous définitions thumbnail et preview sont indispensables.
     Elles sont utilisées dans les interfaces Phraseanet pour afficher
-    les vignettes et images de choix des média.
+    les vignettes et images de choix des médias.
 
 Réglage des Status
 ******************
