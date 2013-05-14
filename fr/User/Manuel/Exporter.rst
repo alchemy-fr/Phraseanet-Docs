@@ -39,7 +39,7 @@ onglets :**
   permettant de récupérer des médias contenus dans un fichier compressé de type
   Zip.
 * L'envoi par FTP : Si le paramétrage de l'application le permet, l'envoi par
-  FTP permet de déposer les média exportés sur un serveur de fichiers
+  FTP permet de déposer les médias exportés sur un serveur de fichiers
   supportant des connexions de type FTP.
 
 .. image:: ../../images/Exporter-general.jpg

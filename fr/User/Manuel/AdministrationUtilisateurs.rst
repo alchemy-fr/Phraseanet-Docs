@@ -197,7 +197,7 @@ l'utilisateur peut avoir accès.
 .. image:: ../../images/Administration-droits.jpg
     :align: center
 
-Les noms des collections apparaîssent sous les noms des bases auxquelles elles
+Les noms des collections apparaissent sous les noms des bases auxquelles elles
 appartiennent. La collection est la notion utilisée dans les interfaces
 *Production*, *Classic*, *Report*, *Administration*.
 

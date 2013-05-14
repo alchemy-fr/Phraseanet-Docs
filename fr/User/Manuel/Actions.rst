@@ -111,7 +111,7 @@ Cette action permet de changer les status des documents.
 
 La fenêtre s'ouvre.
 
-* Cocher la case correspondant au nouveau :term:`status <Status>` (plusieurs
+* Cocher la case correspondante au nouveau :term:`status <Status>` (plusieurs
   status possibles).
 * Cliquer sur **Valider** pour enregistrer les changements.
 
@@ -210,7 +210,7 @@ Choisir un des onglets proposés :
 .. image:: ../../images/Actions-OutilsThumbnailVideo.jpg
     :align: center
 
-* **Retourner sous défs** : permet des rotation de vignettes et d'images de
+* **Retourner sous défs** : permet des rotations de vignettes et d'images de
   choix pour les médias sélectionnés.
 * **Substitution document** : Permet de remplacer le document original par un
   autre (une case à cocher permet de choisir si la vignette et l’image de

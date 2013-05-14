@@ -156,7 +156,7 @@ Placé sur un champ lié à une source de données, ...
 ****************************
 
 Sous réserve qu'un thésaurus soit déployé sur la base à laquelle appartiennent
-les média en cours d'édition, l'onglet Thésaurus permet d’indexer rapidement à
+les médias en cours d'édition, l'onglet Thésaurus permet d’indexer rapidement à
 partir des termes contenus dans le thésaurus associé à la :term:`base`.
 Les saisies sont assistées pour les champs qui sont liés à des branches de
 thésaurus.

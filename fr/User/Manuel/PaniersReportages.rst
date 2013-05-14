@@ -89,7 +89,7 @@ A partir des résultats
 .. note::
 
     Les documents ajoutés sont affichés en dernier dans le panier. Ils
-    peuvent être ré ordonnés si besoin.
+    peuvent être réordonnés si besoin.
 
 A partir de la vue détaillée
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -296,7 +296,7 @@ Comment créer un nouveau reportage ?
 * Une option permet d'inclure éventuellement la sélection active comme contenu
   de reportage
 * Cliquer sur **Valider**
-* Le Reportage est créé. Il est affiché "ouvert" dans l'onglet des Paniers et
+* Le Reportage est créé. Il est affiché "ouvert" dans l'onglet des paniers et
   reportages.
 
 Comment ajouter des documents à un reportage ?

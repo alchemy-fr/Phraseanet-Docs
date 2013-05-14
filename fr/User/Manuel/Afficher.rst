@@ -46,7 +46,7 @@ en arrière en cliquant sur *Précédent*.
 
 .. note::
 
-    N'utilisez pas les boutons reculer et avancer du navigateur utilisé.
+    Ne pas utiliser les boutons reculer et avancer du navigateur.
 
 Pour accéder à une page en particulier, modifier le numéro de la page en cours
 puis valider en appuyant sur la touche **Entrée** du clavier.

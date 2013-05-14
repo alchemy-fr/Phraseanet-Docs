@@ -107,7 +107,7 @@ permet de suivre l'état du transfert.
 
 Lors du transfert, les médias sont ajoutés à la collection de destination.
 
-Après transfert, les média transmis sont consultables dans les interfaces
+Après transfert, les médias transmis sont consultables dans les interfaces
 *Phraseanet Production* (consultation et gestion des documents) et *Classic*
 (simple consultation).
 

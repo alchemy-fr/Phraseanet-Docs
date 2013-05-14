@@ -175,7 +175,7 @@ Gestionnaire de listes
     Le *Gestionnaire de listes* permet de mettre en place et d'administrer des
     listes de destinataires pour la diffusion de *Push* et de *Validation* dans
     *Phraseanet Lightbox*.
-    Il devient ainsi encore plus simple de diffuser des média ou de demander de
+    Il devient ainsi encore plus simple de diffuser des médias ou de demander de
     les apprécier dans *Phraseanet*.
 
 Le *Gestionnaire de listes* est accessible à partir des fenêtres de Push et de

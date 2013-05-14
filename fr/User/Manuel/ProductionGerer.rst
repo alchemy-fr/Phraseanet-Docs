@@ -1,5 +1,5 @@
-Gérer les média dans *Phraseanet Production*
-============================================
+Gérer les médias dans *Phraseanet Production*
+=============================================
 
 .. topic:: L'essentiel
 

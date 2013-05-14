@@ -17,7 +17,7 @@ publications.
 Ces publications sont également disponibles sous forme de flux mediaRSS hors de
 l'application et exploitable dans des applications tierces.
 
-* Ouvrir l'onglet des Paniers dans *Phraseanet Production*.
+* Ouvrir l'onglet des paniers dans *Phraseanet Production*.
 * Cliquer sur la barre de titre du panier souhaité pour le dérouler et faire
   apparaître son menu.
 * Cliquer sur l'icône **Publier** (icône orange représentant les flux RSS).

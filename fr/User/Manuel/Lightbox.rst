@@ -85,7 +85,7 @@ d'enregistrement située dans la barre des actions.
 .. image:: ../../images/Lightbox-enregister.jpg
     :align: center
 
-Pour télécharger tous les média contenus dans une lightbox, cliquer sur l'icône
+Pour télécharger tous les médias contenus dans une lightbox, cliquer sur l'icône
 située à gauche en bas de l'interface.
 
 .. image:: ../../images/Lightbox-enregister-tout.jpg

@@ -62,7 +62,7 @@ Sous définition
 ***************
 
 La rubrique *Sous définition* permet d'ajouter et d'éditer les sous définitions
-des média de type image, vidéo et audio intégrés dans Phraseanet.
+des médias de type image, vidéo et audio intégrés dans Phraseanet.
 La nature des sous définitions dépend de la nature des documents originaux
 intégrés dans Phraseanet.
 Le tableau ci-dessous liste quelques exemples types de sous définitions
@@ -329,7 +329,7 @@ Les valeurs suggérées sont des menus de choix déroulants qui apparaissent dan
 fenêtre :doc:`Édition <Editer>` pour permettre une indexation rapide. Elles sont
 éditables par collections et par champs.
 
-L'édition de valeurs suggérées est possible via un formulaire d'édition en  mode
+L'édition de valeurs suggérées est possible via un formulaire d'édition en mode
 graphique.
 
 .. image:: ../../images/Administration-valeursgraphicmode.jpg
