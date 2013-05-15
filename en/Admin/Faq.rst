@@ -71,6 +71,6 @@ Installation has been cancelled, how to restart it
 
 Just remove the following files
 
-  * config/config.yml
-  * config/connexions.yml
-  * config/services.yml
+* config/config.yml
+* config/connexions.yml
+* config/services.yml

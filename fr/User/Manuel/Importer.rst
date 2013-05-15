@@ -6,11 +6,11 @@ Importer
 
 .. topic:: L'essentiel
 
-    Reposant sur la technologie :term:`HTML5` l'interface Phraseanet Upload est
-    accessible dans Production via un lien placé dans la barre de menu
+    Reposant sur la technologie :term:`HTML5` l'interface *Phraseanet Upload*
+    est accessible dans Production via un lien placé dans la barre de menu
     Phraseanet.
-    C'est une interface dédiée à l'ajout de documents vers des collections sur
-    lesquelles l'utilisateur dispose des droits d'ajout.
+    *Upload* est une interface dédiée à l'ajout de médias vers des collections
+    sur lesquelles l'utilisateur dispose des droits d'ajout.
 
 .. image:: ../../images/Upload-zones.jpg
     :align: center
@@ -18,19 +18,20 @@ Importer
 .. note::
 
     Pour les navigateurs qui ne bénéficient pas du plein support de
-    HTML5, un mode d'affichage reposant sur le plug-in Adobe `FlashPlayer`_
-    est disponible dans Phraseanet Upload.
+    HTML5, un mode d'affichage reposant sur le plug-in Adobe `FlashPlayer
+    <http://get.adobe.com/fr/flashplayer/>`_ est disponible dans *Phraseanet
+    Upload*.
 
-    .. image:: ../../images/Upload-Version-Flash.jpg
-        :align: center
+.. image:: ../../images/Upload-Version-Flash.jpg
+    :align: center
 
-    Cliquer sur le lien **Utiliser l'uploader Flash** pour utiliser ce mode.
-    Ce mode Flash n'offre pas une alternative mais un mode d'affichage
-    dégradé. Il ne permet pas d'accéder à toutes les fonctionnalités
-    développées sur le socle technologique de HTML5.
+Cliquer sur le lien **Utiliser l'uploader Flash** pour utiliser ce mode.
+Ce mode Flash n'offre pas une alternative mais un mode d'affichage
+dégradé. Il ne permet pas d'accéder à toutes les fonctionnalités
+développées sur le socle technologique de HTML5.
 
-Ajouter des documents
----------------------
+Comment ajouter des médias ?
+----------------------------
 
 Cliquer sur Upload dans le :doc:`menu <General>` Phraseanet.
 
@@ -42,19 +43,20 @@ Cliquer sur Upload dans le :doc:`menu <General>` Phraseanet.
 Sélectionner des fichiers
 *************************
 
-Cliquer sur "Sélectionner les fichiers".
+Cliquer sur **Sélectionner les fichiers**.
 
 .. image:: ../../images/Upload-zone1.jpg
     :align: center
 
-L'application lance l’explorateur de fichiers. Aller au dossier où se trouvent
-les fichiers, les sélectionner puis cliquer sur Ouvrir.
+L'application lance l’explorateur de fichiers de l'ordinateur.
+Aller au dossier où se trouvent les fichiers, les sélectionner puis cliquer sur
+**Ouvrir**.
 
 .. image:: ../../images/Upload-fichiers.jpg
     :align: center
 
-L'interface affiche alors la liste des fichiers, représentés par leurs vignettes
-qui apparaissent en bas d'écran.
+L'interface affiche alors la liste des fichiers, représentés éventuellement par
+leurs vignettes qui apparaissent en bas d'écran.
 
 .. image:: ../../images/Upload-fichiers2.jpg
     :align: center
@@ -62,8 +64,8 @@ qui apparaissent en bas d'écran.
 Choisir la collection de destination
 ************************************
 
-Choisir la collection de destination : Cliquer sur le menu déroulant des
-collections disponibles.
+Sélectionner la collection de destination dans la liste déroulante ou figurent
+les collections disponibles.
 
 .. image:: ../../images/Upload-prezone3.jpg
     :align: center
@@ -71,29 +73,31 @@ collections disponibles.
 Appliquer des status
 ********************
 
-Si besoin, appliquer les statuts si nécessaire (optionnel).
+Si besoin, appliquer les :term:`status` si nécessaire (optionnel).
 
 .. image:: ../../images/Upload-zone3.jpg
     :align: center
 
-Réordonner les documents
-************************
+Réordonner les médias
+*********************
 
-L'utilisateur peut éventuellement ré-ordonner les documents : Cliquer sur un
-fichier et le glisser/ déposer ailleurs dans la liste. Il peut également choisir
-de retirer de la liste une ou plusieurs images (en cliquant sur le bouton Annuler
-au-dessous de chaque vignette), ou alors de retirer toutes les photos en cliquant
-sur « **Vider la liste** ». Sinon, cliquer sur « **Envoyer** ».
+Si besoin, l'utilisateur peut réordonner les médias avant de les importer.
+Sélectionner un fichier et le glisser / déposer ailleurs dans la liste. Il peut
+également choisir de retirer de la liste une ou plusieurs images en cliquant
+sur le bouton Annuler au-dessous de chaque vignette, ou alors de réinitialiser
+la liste d'envoi en cliquant sur le bouton **Vider la liste**.
+Sinon, cliquer sur **Envoyer** pour transmettre les fichiers vers *Phraseanet*.
 
 .. image:: ../../images/Upload-reordonner.jpg
     :align: center
 
-Transmettre les documents
-*************************
+Transmettre les médias
+**********************
 
-Lorsque l'utilisateur clique sur "Envoyer", toutes les images sont transférées
-vers la collection Phraseanet, cela est visible en temps réel sur le côté droit
-de la fenêtre (« Fichiers transmis »).
+Lorsque l'utilisateur clique sur **Envoyer**, tous les médias sont transférées
+vers la collection *Phraseanet* sélectionnée.
+Le téléchargement montant est représentée par des barres de progression sur
+le côté droit de la fenêtre (« Fichiers transmis »).
 
 .. image:: ../../images/Upload-zone4.jpg
     :align: center
@@ -101,54 +105,62 @@ de la fenêtre (« Fichiers transmis »).
 Une barre de progression générale ainsi qu'une barre de progression par document
 permet de suivre l'état du transfert.
 
-Lors du transfert, les documents sont ajoutés à la collection de destination.
+Lors du transfert, les médias sont ajoutés à la collection de destination.
 
-Après transfert, il est désormais possible d'aller consulter les documents transmis
-dans les interfaces Phraseanet Production (consultation et gestion des documents)
-ou Phraseanet Classic (simple consultation).
+Après transfert, les médias transmis sont consultables dans les interfaces
+*Phraseanet Production* (consultation et gestion des documents) et *Classic*
+(simple consultation).
 
 La Quarantaine
 --------------
 
-Lors de l'ajout de fichiers, certains fichiers peuvent être placés en "Quarantaine".
+Lors de l'ajout de fichiers, certains fichiers peuvent être placés en
+**Quarantaine**.
 
-Cliquer sur l'onglet **Quarantaine** pour l'afficher.
+Cliquer sur l'onglet **Quarantaine** pour l'afficher de la fenêtre *Upload* pour
+l'afficher.
 
 .. image:: ../../images/Upload-Quarantaine0.jpg
     :align: center
 
-La quarantaine est un espace de douane où sont isolés des fichiers en attente
-d'une action utilisateur.
-La quarantaine ne s'active que si des fichiers sont identifiés comme étant de
-nouvelles versions de documents existants préalablement uploadés,modifiés puis
-ajoutés à nouveau.
+La quarantaine est un espace où sont isolés des fichiers en attente d'une action
+utilisateur.
+Par défaut, la quarantaine ne s'active que si des fichiers sont identifiés comme
+étant des doublons de documents existants préalablement uploadés, l'analyse
+reposant sur l'examen d'un identifiant universel unique (UUID pour *Universally
+Unique IDentifier*).
 
-La quarantaine permet aussi d'isoler des fichiers photo ne répondant pas à des
-critères paramétrés.
+La quarantaine permet aussi d'isoler des fichiers ne répondant pas à des
+critères complémentaires déterminés par l'administrateur système.
 
-Dans l'interface d'ajout, un document qui entre dans la base est signalé par la
-couleur verte, un document placé en quarantaine est lui signalé par la couleur
-rouge.
+Pour le paramétrage des critères supplémentaires de rétention en quarantaine,
+consulter le paragraphe consacré au **Service des douanes** sur
+:doc:`cette page<../../../Admin/Configuration>`.
+
+Lors de l'*upload*, un média placé en quarantaine est lui signalé par un label
+de couleur rouge.
 
 .. image:: ../../images/Upload-Quarantaine2.jpg
     :align: center
 
 Dans la quarantaine, pour chaque fichier est indiquée la raison pour laquelle il
-a été placé : le document peut être un doublon, ou bien celui-ci peut ne pas
-correspondre aux caractères d’elligibilité (format, colorimétrie, dimensions)...*etc*.
+a été placé : le document peut être un doublon, ou peut ne pas correspondre à
+des critères d’éligibilité (format, colorimétrie, dimensions)...*etc*.
 
 Trois choix sont alors proposés à l'utilisateur :
 
 .. image:: ../../images/Upload-Quarantaine1.jpg
     :align: center
 
-* **Ajouter** le fichier comme nouveau document dans la base
+* **Ajouter** le fichier comme nouvel enregistrement dans la collection
+  initialement choisie
 * **Supprimer** le fichier
 * **Substituer** le fichier existant
 
-L'utilisateur décide de l'action a entreprendre pour vider la file de fichiers
+L'utilisateur décide de l'action à entreprendre pour vider la file de fichiers
 présents dans la quarantaine.
 
 Puis passer au document suivant, le cas échéant.
 
-.. _FlashPlayer: http://get.adobe.com/fr/flashplayer/
+La **Quarantaine** peut être également intégralement vidée si besoin au moyen du
+bouton **Vider la quarantaine** placé en haut à gauche de l'écran.

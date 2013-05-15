@@ -35,30 +35,30 @@ Les réponses sont renvoyés par défaut dans un format Json.
     obtenu en activant cette fonctionalité. Consulter le chapitre
     :doc:`configuration <../../../Admin/Configuration>` pour activer ce service.
 
-    exemple de timer :
+Exemple de timer :
 
-    .. code-block:: javascript
+.. code-block:: javascript
 
-        {
-            "meta": {
-                ....
+    {
+        "meta": {
+            ....
+        },
+        "response": {
+            ....
+        },
+        "timers": [
+            {
+              "name": "api.load.end",
+              "memory": 1908328,
+              "time": 0.0025968551635742
             },
-            "response": {
-                ....
-            },
-            "timers": [
-                {
-                  "name": "api.load.end",
-                  "memory": 1908328,
-                  "time": 0.0025968551635742
-                },
-                {
-                  "name": "api.result",
-                  "memory": 3885680,
-                  "time": 0.033026933670044
-                }
-            ]
-        }
+            {
+              "name": "api.result",
+              "memory": 3885680,
+              "time": 0.033026933670044
+            }
+        ]
+    }
 
 YAML
 ~~~~
