@@ -72,6 +72,6 @@ L'installation a été interrompue, comment la reprendre ?
 
 Pour reprendre une installation interrompue, supprimer les fichiers suivants :
 
-  * config/config.yml
-  * config/connexions.yml
-  * config/services.yml
+* config/config.yml
+* config/connexions.yml
+* config/services.yml

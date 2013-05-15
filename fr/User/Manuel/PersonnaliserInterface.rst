@@ -9,8 +9,8 @@ dans les fenêtres de *Phraseanet Production*.
 Le principe et de sélectionner puis déplacer les poignets pour ajuster la taille
 des zones.
 
-Redimensionner la zone de travail
----------------------------------
+Re-dimensionner la zone de travail
+----------------------------------
 
 Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
 
