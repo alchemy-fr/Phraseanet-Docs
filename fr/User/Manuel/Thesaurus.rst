@@ -1,4 +1,4 @@
-Thesaurus
+Thésaurus
 =========
 
 .. toctree::
@@ -6,7 +6,7 @@ Thesaurus
 
 .. topic:: L'essentiel
 
-    L'application **Phraseanet Thesaurus** permet de gérer le ou les thésaurus
+    L'application **Phraseanet Thésaurus** permet de gérer le ou les thésaurus
     attachés aux bases de données *Phraseanet*.
 
     Un Thésaurus peut servir à gérer des synonymes, des traductions, et à aider
@@ -16,19 +16,21 @@ Thesaurus
     Le Thésaurus est proposé dans *Phraseanet Production* comme outil d'aide à
     l'indexation.
     Le Thésaurus sert aussi à permettre de parcourir un fonds et à faire des
-    propositions visants à restreindre ou élargir le nombre de réponses aux
+    propositions visant à restreindre ou élargir le nombre de réponses aux
     recherches faites par les utilisateurs.
 
 .. warning::
+
     Un thésaurus est un outil très performant et sa mise en place d’apparence
     simple peut nécessiter, selon l’utilisation que l’on veut en faire et le
     résultat qu’on en attend, de devoir faire appel à des compétences en
     Documentation.
 
-Ouvrir un Thesaurus
+Ouvrir un Thésaurus
 -------------------
+
 Dans l'application **Thésaurus** :
-* -> Choisir un Thesaurus dans la liste
+* -> Choisir un Thésaurus dans la liste
 * -> Sélectionner la langue de travail
 * -> Cliquer sur Valider
 
@@ -62,7 +64,7 @@ Créer un nouveau terme spécifique
 Ajouter un nouveau terme spécifique à une branche signifie que l’on rajoute
 un terme au niveau inférieur, il s’agit donc d’une relation « Père / Fils »
 (ou Terme générique / Terme spécifique).
-Un nouveau terme spécifique dans le thesaurus peut être ajouté sur n'importe
+Un nouveau terme spécifique dans le thésaurus peut être ajouté sur n'importe
 quelle branche existante depuis le branche racine intitulée **Thésaurus**.
 
 * -> Faire un clic Droit sur une branche
@@ -124,7 +126,7 @@ que les besoins de synonymie.
 
 Par défaut la case **Ajouter le terme sans ré-indexer** est cochée.
 
-Evaluer la nécessité de réindexer la base.
+Évaluer la nécessité de réindexer la base.
 
 * -> Cocher la case **Ajouter le terme et ré-indexer**
 
@@ -151,7 +153,7 @@ Supprimer une branche ou un terme
 La branche ou le terme sont supprimés du thésaurus et sont copiés dans la
 branche *Stock* des candidats.
 
-Rechercher dans un Thesaurus
+Rechercher dans un Thésaurus
 ****************************
 
 * -> Faire un clic Droit sur une branche
@@ -187,18 +189,20 @@ Lier une ou plusieurs branches du thésaurus à un champs documentaire
 
 Travailler sur les candidats
 ----------------------------
+
 Les Termes candidats sont les nouveaux termes et expressions qui ont été
 ajoutés lors de l’indexation de nouveaux mots par le moteur Phrasea engine dans
 la base de données.
 Ces termes peuvent provenir soit des informations extraites depuis
 métadonnées d’un fichier ajouté, soit des informations saisies depuis la fenêtre
-Editer dans Phraseanet Production.
+Éditer dans Phraseanet Production.
 Pour que des termes en provenance d’un champ deviennent mots candidats,
 il faut au préalable lier un champ de la structure de la base à une branche
 du thésaurus.
 
 Accepter un candidat
 ********************
+
 * -> Cliquer sur un terme candidat dans la fenêtre Stock et le glisser/déposer
   à la racine ou sur une branche du thésaurus dans la fenêtre thésaurus
 

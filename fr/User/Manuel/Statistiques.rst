@@ -70,22 +70,19 @@ sélectionner 3 critères afin d'accéder aux statistiques :
 * `Bases`_
 * `Types de rapports`_
 
-  * Questions les plus posées: (Tableau)
-    Liste des 10 questions les plus posées par les utilisateurs
-
-  * Volumétrie des questions les plus posées sur Phraseanet: (Tableau)
-    Liste des utilisateurs posant le plus de questions
-
-  * Sites d'où les documents sont les plus consultés (Tableau)
-
+* Questions les plus posées: (Tableau)
+  Liste des 10 questions les plus posées par les utilisateurs
+* Volumétrie des questions les plus posées sur Phraseanet: (Tableau)
+  Liste des utilisateurs posant le plus de questions
+* Sites d'où les documents sont les plus consultés (Tableau)
 
 Les trois onglets suivants : `Connexion`_, `Téléchargements`_ et
 `Activité du Site`_, se présentent de la même façon : L'utilisateur doit
 sélectionner 3 critères afin d'accéder aux statistiques :
 
-  * `Période`_
-  * `Bases`_
-  * `Types de rapports`_
+* `Période`_
+* `Bases`_
+* `Types de rapports`_
 
 Connexion
 ----------
@@ -95,6 +92,7 @@ de connexions ont eu lieu sur son système Phraseanet.
 
 Période
 *******
+
 Par défaut, la période est définie sur le mois passé.
 Pour changer l’intervalle, cliquer sur l'une des deux zones de saisie de date.
 
@@ -107,12 +105,13 @@ vers un passé plus lointain.
 
 Bases
 *****
+
 Sélectionner les :term:`bases <base>` et collections sur lesquelles on souhaite
 obtenir des statistiques.
 
 Cliquer sur **Toutes les bases** pour afficher la liste des bases de données
 disponibles.
-Deux boutons permettent de sélectionner/désélectionner toutes les :term:`bases
+Deux boutons permettent de sélectionner/dé-sélectionner toutes les :term:`bases
 <base>`.
 
 .. image:: ../../images/Statistiques-Connexions2.jpg
@@ -128,18 +127,19 @@ en décochant les collections à exclure.
 
 Types de rapports
 *****************
+
 Enfin, il est nécessaire de choisir le type de rapport. Trois choix :
 
-  * Groupé par utilisateurs :
+* Groupé par utilisateurs :
 
 Liste et fréquence de connexion des utilisateurs
 
-  * Toutes les connexions :
+* Toutes les connexions :
 
 Liste de toutes les connexions faites par chaque utilisateur présentée
 par défaut sur un critère chronologique
 
-  * Plateformes et navigateurs :
+* Plateformes et navigateurs :
 
 Ensemble de listes et graphiques des connexions par type de navigateurs,
 systèmes d’exploitation ou résolutions d’affichage employés par les
@@ -166,22 +166,22 @@ Sélectionner la période, puis les :term:`bases <base>` et collections.
 Le choix pour le type de rapport change. En effet, il est possible d'afficher
 les statistiques en se basant sur les rapports :
 
-  * Par utilisateurs :
+* Par utilisateurs :
 
 Pour chaque utilisateur ayant réalisé des téléchargements, ce rapport
 affiche le nombre et poids des documents et des sous définitions.
 
-  * Tous les téléchargements :
+* Tous les téléchargements :
 
 Liste de l’ensemble des téléchargements réalisés sur l’intervalle.
 Ce tableau propose de fonctions de regroupement, de tri,...
 
-  * Par jour :
+* Par jour :
 
 Nombre total et ventilation par document et sous résolutions de téléchargements
 faits jour par jour.
 
-  * Par document, sur la base :
+* Par document, sur la base :
 
 * **Par utilisateurs** : Pour chaque utilisateur ayant réalisé des
   téléchargements, ce rapport affiche le nombre et poids des documents et sous
@@ -203,6 +203,7 @@ faits jour par jour.
 
 Activité du Site
 ----------------
+
 Cet onglet se présente de la même manière que les deux précédents.
 Sélectionner la période et la :term:`base` puis le type de rapports
 disponibles :

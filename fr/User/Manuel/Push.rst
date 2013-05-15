@@ -21,7 +21,7 @@ Le Push
 
 Le Push est une soumission de documents dans :doc:`Phraseanet Lightbox
 <Lightbox>`.
-Contrairement à l'envoi par mail proposé par les fonctionnalités d'export, le
+Contrairement à l'envoi par email proposé par les fonctionnalités d'export, le
 *Push* ne transmet pas physiquement les documents.
 Il notifie dans l'interface *Production*, alerte par email et met à la
 disposition des utilisateurs des sélections de médias provenant de paniers qu'
@@ -59,7 +59,9 @@ cliquer sur le bouton "Ajouter". Cela a pour effet d'ajouter le contact crée
 dans la zone des destinataires de l'envoi tout en créant un compte à son nom
 dans le système Phraseanet.
 
-.. note:: Les utilisateurs listés dans la zone des destinataires de l'envoi
+.. note::
+
+    Les utilisateurs listés dans la zone des destinataires de l'envoi
     peuvent être regroupés et sauvegardés dans des listes d'envoi pour une
     réutilisation ultérieure.
     Pour sauvegarder une liste d'envoi, renseigner le champ de formulaire
@@ -73,7 +75,9 @@ dans le système Phraseanet.
     Les fonctionnalités relatives aux listes d'envoi sont décrites plus
     après, dans la section dédiée au `Gestionnaire de listes`_.
 
-.. warning:: Pour pouvoir créer des utilisateurs à partir des Push et
+.. warning::
+
+    Pour pouvoir créer des utilisateurs à partir des Push et
     Validations, l'utilisateur doit disposer des droits de gestion d'
     utilisateurs nécessaires.
 
@@ -87,20 +91,17 @@ liste d'envoi, deux méthodes sont proposées:
 
 **Ou**:
 
-*  Cliquer individuellement sur l'icône
+*  Cliquer individuellement sur l'icône située sur l'étiquette représentative
+   du destinataire à qui donner le droit de téléchargement haute définition.
 
-   .. image:: ../../images/Push-download-badge.jpg
-     :alt: alternate text
-     :align: center
+.. image:: ../../images/Push-download-badge.jpg
+    :align: center
 
-   située sur l'étiquette représentative du destinataire à qui donner
-   le droit de téléchargement haute définition.
-
-Cliquer sur le bouton *Envoyer* pour valider et transmettre le Push.
+* Cliquer sur le bouton *Envoyer* pour valider et transmettre le Push.
 
 Un formulaire permet de donner un nom et une description conviviale à l'envoi
 et même réclamer un accusé réception de l'email envoyé si cette fonctionnalité
-est supportée par le serveur de mails des destinataires.
+est supportée par le serveur d'emails des destinataires.
 
 La Validation
 -------------
@@ -166,7 +167,6 @@ Les *Push* et de les *Validations* reçus sont regroupés dans le module
 :doc:`Phraseanet Lightbox <Lightbox>`, une interface de consultation
 collaborative.
 
-
 Gestionnaire de listes
 ----------------------
 
@@ -175,7 +175,7 @@ Gestionnaire de listes
     Le *Gestionnaire de listes* permet de mettre en place et d'administrer des
     listes de destinataires pour la diffusion de *Push* et de *Validation* dans
     *Phraseanet Lightbox*.
-    Il devient ainsi encore plus simple de diffuser des média ou de demander de
+    Il devient ainsi encore plus simple de diffuser des médias ou de demander de
     les apprécier dans *Phraseanet*.
 
 Le *Gestionnaire de listes* est accessible à partir des fenêtres de Push et de
@@ -197,7 +197,7 @@ lien *Ajouter*.
 .. image:: ../../images/Push-list_manager_creer.jpg
     :align: center
 
-* Cliquer sur le bouton *Editer* situé à gauche de la zone centrale de l'
+* Cliquer sur le bouton *Éditer* situé à gauche de la zone centrale de l'
   interface du *Gestionnaire de listes* pour éditer le contenu d'une liste.
   Cela a pour effet de présenter la liste des utilisateurs recensé sur un
   système Phraseanet.
@@ -213,7 +213,9 @@ lien *Ajouter*.
   sélectionner les lignes des utilisateurs correspondants : cela a pour effet
   de les supprimer de la liste.
 
-.. note:: Un dispositif de recherche et de filtres permet de limiter l'affichage
+.. note::
+
+    Un dispositif de recherche et de filtres permet de limiter l'affichage
     des utilisateurs par leurs identifiants, noms ou prénom, activité, société…
     *etc.*
 
@@ -241,7 +243,7 @@ Ces droits de partage sont modifiables via la liste déroulante figurant sur
 l'étiquette de l'utilisateur.
 
 * Le niveau **Accès** donne un accès en lecture seule de la liste d'envoi
-* Le niveau **Editeur** donne des droits de lecture et modification du contenu
+* Le niveau **Éditeur** donne des droits de lecture et modification du contenu
   de la liste d'envoi
 * Le niveau **Admin** donne des droits de lecture, de modification et de
   suppression des listes partagées.
@@ -255,7 +257,9 @@ droite de l'interface.
 Une fenêtre de contrôle demande alors de confirmer la suppression. Cliquer sur
 *Ok* pour supprimer définitivement cette liste.
 
-.. Note :: Si le nom de la liste supprimée figure toujours dans la liste des
+.. note::
+
+    Si le nom de la liste supprimée figure toujours dans la liste des
     listes d'envoi, cliquer sur le lien *Rafraîchir* situé à gauche de l'
     interface.
 

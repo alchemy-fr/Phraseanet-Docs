@@ -57,7 +57,7 @@ Glossaire
         d’indexation » et de façon plus générale de certains réglages. Une base de
         données peut contenir une ou plusieurs Collections Phraseanet qui
         reprendront les réglages de la base. La notion de base est surtout mise en
-        avant dans *Phraseanet Administration* et *Thesaurus*.
+        avant dans *Phraseanet Administration* et *Thésaurus*.
 
     Collection
         Une collection est un sous ensemble d'une base. Elles permettent de mettre

@@ -31,7 +31,6 @@ son icône ou son intitulé.
 Afin de présenter les principales fonctionnalités du module Phraseanet Admin,
 nous proposons de suivre le plan suivant.
 
-
 .. toctree::
     :maxdepth: 2
     :glob:

@@ -1,4 +1,4 @@
-﻿Lightbox
+Lightbox
 ========
 
 .. toctree::
@@ -18,7 +18,7 @@ Accéder à la Lightbox
 Pour les utilisateurs non authentifiés
 **************************************
 
-Cette interface s'obtient en cliquant sur un lien HTML reçu par e-mail lorsqu'un
+Cette interface s'obtient en cliquant sur un lien HTML reçu par email lorsqu'un
 utilisateur Phraseanet transmet un :doc:`Push ou une demande de validation
 <Push>`.
 
@@ -76,8 +76,8 @@ bouton **lecture** situé dans la barre d'action.
 .. image:: ../../images/Lightbox-play.jpg
     :align: center
 
-Téléchager des média
-********************
+Téléchager des médias
+*********************
 
 Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icône
 d'enregistrement située dans la barre des actions.
@@ -85,7 +85,7 @@ d'enregistrement située dans la barre des actions.
 .. image:: ../../images/Lightbox-enregister.jpg
     :align: center
 
-Pour télécharger tous les média contenus dans une lightbox, cliquer sur l'icône
+Pour télécharger tous les médias contenus dans une lightbox, cliquer sur l'icône
 située à gauche en bas de l'interface.
 
 .. image:: ../../images/Lightbox-enregister-tout.jpg
