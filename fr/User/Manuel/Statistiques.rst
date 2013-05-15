@@ -187,7 +187,7 @@ faits jour par jour.
   téléchargements, ce rapport affiche le nombre et poids des documents et sous
   résolutions.
 * **Tous les téléchargements** : Liste de l’ensemble des téléchargements
-  réalisés sur l’intervalle. Ce tableau propose de fonctions de regroupement,
+  réalisés sur l’intervalle. Ce tableau propose des fonctions de regroupement,
   de tri, ...*etc*.
 * Par jour : Nombre total et ventilation par document et sous résolutions de
   téléchargements faits jour par jour.
