@@ -61,7 +61,8 @@ Le nombre de résultats par page est personnalisable. Se reporter à la page
 explications.
 
 Par défaut, l'opérateur mis en oeuvre entre les termes saisis dans le formulaire
-de recherche est le **ET** booléen et il n'est donc pas nécessaire de le saisir.
+de recherche est l'opérateur de conjonction **ET** booléen. Il n'est donc pas
+nécessaire de le saisir.
 Tous les termes saisis dans le formulaire sont présents dans les notices
 descriptives des médias affichés à l'issue de la recherche.
 

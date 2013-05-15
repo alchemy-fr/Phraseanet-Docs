@@ -134,14 +134,14 @@ Pour ajouter le terme à toutes les notices sélectionnées,
 * Cliquer sur le symbole "moins" à gauche du masque de saisie pour
   supprimer le terme du champs documentaire des notices des médias sélectionnés.
 
-Éditer un champ lié une sources de données
-******************************************
+Éditer un champ lié à une source de données
+*******************************************
 
-Les champs documentaires liés à des sources de données ont un champ de saisie
-bénéficiant d'un dispositif d'auto-complétion. Elle permettent de sélectionner
-des valeurs issues d'une liste d'autorité.
-Le dispositif reste toutefois ouvert : il permet la saisie de termes non
-présents dans la source de vocabulaire.
+Les champs documentaires liés à des sources de données bénéficient d'un
+dispositif d'auto-complétion. L'auto-complétion permet de sélectionner des
+valeurs issues d'une liste d'autorité.
+Le dispositif est cependant ouvert : la saisie de termes non présents dans la
+source de vocabulaire reste possible.
 
 .. image:: ../../images/Prod-Editer-source_de_donnees.jpg
     :align: center
@@ -284,7 +284,7 @@ Appliquer un modèle à une sélection de médias
 ---------------------
 
 Chaque reportage dispose de sa propre notice descriptive. Elle est identique à
-celle des médias d'une base. Comme pour l'édition de documents, la descriptions
+celle des médias d'une base. Comme pour l'édition de documents, la description
 en lots des notices de reportage est possible.
 
 Éditer les notices de reportages

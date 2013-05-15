@@ -16,7 +16,7 @@
     période, sur un type d'information et sur pour une ou plusieurs bases et
     collections.
 
-Les rapports sont classés dans 4 onglets:
+Les rapports sont classés dans 4 onglets :
 
 .. image:: ../../images/Statistiques-General.jpg
     :align: center
@@ -174,7 +174,7 @@ affiche le nombre et poids des documents et des sous définitions.
 * Tous les téléchargements :
 
 Liste de l’ensemble des téléchargements réalisés sur l’intervalle.
-Ce tableau propose de fonctions de regroupement, de tri,...
+Ce tableau propose des fonctions de regroupement, de tri, ...*etc*.
 
 * Par jour :
 
@@ -188,7 +188,7 @@ faits jour par jour.
   résolutions.
 * **Tous les téléchargements** : Liste de l’ensemble des téléchargements
   réalisés sur l’intervalle. Ce tableau propose de fonctions de regroupement,
-  de tri,...
+  de tri, ...*etc*.
 * Par jour : Nombre total et ventilation par document et sous résolutions de
   téléchargements faits jour par jour.
 * Par document, sur la base: Active une option permettant de rechercher si un
@@ -199,7 +199,7 @@ faits jour par jour.
 .. figure:: ../../images/Statistiques-Telechargements.jpg
     :align:     center
 
-    Exemple de rapport de statistiques par document sur la bases
+    Exemple de rapport de statistiques par document sur la bases.
 
 Activité du Site
 ----------------
@@ -263,7 +263,7 @@ et réagissant au survol. Cliquables, ils affichent dans une fenêtre
 Lorsqu’ils sont constitués d’un grand nombre de lignes, les rapports sont
 répartis sur plusieurs pages.
 
-Cette information est affichée en bas de page et il est possible:
+Cette information est affichée en bas de page et il est possible :
 
 * De changer de page
 * D’afficher d’avantage de lignes en changeant la valeur saisie

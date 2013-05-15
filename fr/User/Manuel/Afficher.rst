@@ -6,7 +6,7 @@
 .. topic:: L'essentiel
 
     Les interfaces *Phraseanet Production* ou *Classic* permettent de consulter
-    et de parcourir une fonds médias dans *Phraseanet*.
+    et de parcourir un fonds de médias dans *Phraseanet*.
 
     *Production* est une interface dédiée à la consultation, à la recherche,
     gestion et à l'édition des documents, tandis que *Classic* n'est dévolue qu'
@@ -34,7 +34,7 @@ Présentation de la zone d'affichage
 
 Dans *Production*:
 La **Palette des Actions** figure en haut de page, au-dessus de la zone des
-Résultats. Elle permet d'effectuer des actions sur les documents.
+résultats. Elle permet d'effectuer des actions sur les documents.
 Pour plus de détails, se référer à la page dédiée à la
 :doc:`Palette des Actions <Actions>`.
 

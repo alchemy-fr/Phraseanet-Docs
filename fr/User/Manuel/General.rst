@@ -10,7 +10,7 @@ Généralités
 
 Elle s'adresse à tous les professionnels qui ont besoin d’un outil performant
 pour assurer la gestion et la diffusion de leurs images, vidéos, sons et autres
-documents multimédia ou bureautiques.
+documents multimédias ou bureautiques.
 
 Installée sur un serveur local ou distant, elle s'exécute à travers un
 navigateur internet client.

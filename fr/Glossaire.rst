@@ -127,14 +127,14 @@ Glossaire
     API
         Une API (Application Programming Interface ou en français Interface de
         programmation) est une interface fournie par un programme informatique
-        pour interagir avec des programmes tiers.
+        pour que des programmes tiers interagissent avec celui-ci.
 
     Business field ou Champ métier
         Les *Business field* Phraseanet sont des champs destinés à recevoir des
         informations métiers. Ces informations internes sont partagées par les
         utilisateurs qui disposent des droits d'édition des documents.
-        Un business field n'est "recherchable" que par un utilisateur disposant des
-        droits d'édition.
+        Un business field n'est "recherchable" que par un utilisateur disposant
+        des droits d'édition.
 
     Dublin Core
         Schéma normalisé ISO 15836 destiné à la description de ressources
