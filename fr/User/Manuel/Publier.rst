@@ -66,6 +66,8 @@ Des applications tierces, comme Phraseanet Showcase, peuvent également exploite
 les publications. Elles sont en effet disponibles sous forme de flux mediaRSS
 hors de l'application.
 
+.. _bridge-share:
+
 Diffuser avec Bridge
 --------------------
 
