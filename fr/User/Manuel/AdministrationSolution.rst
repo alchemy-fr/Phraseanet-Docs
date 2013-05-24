@@ -41,7 +41,7 @@ Setup propose un jeu de formulaires permettant notamment :
 * **De placer l'application en mode maintenance**
 * **D'activer ou de désactiver des connectivités à des services web**
 * **D'activer ou de désactiver des connectivités à des réseaux sociaux** mis en
-  oeuvre dans :doc:`Bridge`
+  oeuvre dans :ref:`bridge-share`
 * **D'activer ou de désactiver des fonctionnalités et options de l'application**
 * **De gérer les extensions de fichiers autorisés** en ajout dans Upload
 
