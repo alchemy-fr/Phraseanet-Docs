@@ -20,18 +20,18 @@ Here are the steps to follow :
 Register a new application with the Phraseanet API
 --------------------------------------------------
 
-Click on the login in the Phrseanet top :doc:`menu <../User/index>`.
+Click on the login in the Phraseanet top :doc:`menu <../User/index>`.
 
 In *Phraseanet my account*
 
-Click on developer *déveloper* tab.
+Click on developer *developer* tab.
 
-.. image:: ../images/MonCompteDeveloppeur.png
+.. image:: ../images/MonCompteDeveloppeur_en.png
     :align: center
 
 Click on *Create a new application*
 
-.. image:: ../images/MonCompteDeveloppeurCreate.png
+.. image:: ../images/MonCompteDeveloppeurCreate_en.png
     :align: center
 
 * Give a name to your application
@@ -50,7 +50,7 @@ Click on *Create a new application*
 
 Once the application is registered it appears in a dashboard
 
-.. image:: ../images/MonCompteDeveloppeurDashboard.png
+.. image:: ../images/MonCompteDeveloppeurDashboard_en.png
     :align: center
 
 The dashboard lists all the applications created by the authenticated user
@@ -61,7 +61,7 @@ Application settings
 In the dashboard application developers click on the name of an application.
 The settings page of the application is displayed.
 
-.. image:: ../images/MonCompteDeveloppeurApplication.png
+.. image:: ../images/MonCompteDeveloppeurApplication_en.png
     :align: center
 
 **This page shows**
