@@ -2,7 +2,6 @@ Routes
 ======
 
 .. toctree::
-    :hidden:
 
     Route/Search
     Route/Databox/List
