@@ -45,8 +45,8 @@ Sign Up
 For OAuth 2.0, all applications need to register their name and callback URL
 in Phraseanet to get their API credentials.
 
-From this registration process Phraseanet will provide you with your
-"Client ID" and your "Client Secret".
+From this registration process Phraseanet provides the "Client ID" and
+"Client Secret".
 
 The registration is done in the account settings. You can access this page
 by clicking your login in the menubar of Phraseanet.
@@ -76,8 +76,8 @@ query parameters :
     *optional* **string** - An unguessable random string. It is used to protect
     against cross-site request forgery attacks.
 
-End-user will authenticate on Phraseanet, then the browser is redirected to
-the *redirect_uri* callback.
+End-user authenticates on Phraseanet and the browser is redirected to the
+*redirect_uri* callback.
 
 .. code-block:: bash
 
@@ -86,9 +86,9 @@ the *redirect_uri* callback.
     &response_type=code
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-If authentication succeed, a **code** parameter will be available in the URI, as
-long as the **state** parameter (if provided). Otherwise, an error parameter is
-available.
+**If authentication succeed**, a **code** parameter is available in the URI, alongside
+the **state** parameter (if provided).
+**If authentication failed**, an error parameter is available.
 
 Example of successful URI :
 
@@ -130,7 +130,7 @@ Parameters for the token endpoint are as follow :
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
     &code=CODE
 
-The response will be JSON
+The response is JSON
 
 .. code-block:: javascript
 
@@ -150,7 +150,7 @@ Pure AJAX application
     &response_type=token
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-If a user accepts, he will be redirected back to
+If the user accepts, he is redirected back to
 
 .. code-block:: bash
 
@@ -169,7 +169,7 @@ special string: **urn:ietf:wg:oauth:2.0:oob**. The "oob" part stands for
 the OAuth 2.0 standard.
 
 When you use this redirect_uri, instead of redirecting the user's browser
-to a page on your site with an authorization code, Phraseanet will display
+to a page on your site with an authorization code, Phraseanet displays
 the authorization code or error response in a text field with instructions
 for the user to copy and paste it in to your application.
 

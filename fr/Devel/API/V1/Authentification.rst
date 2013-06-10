@@ -81,8 +81,8 @@ avec les paramètres suivants :
     *optional* **string** - Une chaîne de caractère non prédictible (Sert à
     proteger contre les attaques CSRF).
 
-L'utilisateur final va ensuite d'identifier sur Phraseanet, puis le navigateur
-sera redirigé vers la *redirect_uri*.
+L'utilisateur final s'identifie sur Phraseanet et le navigateur est redirigé
+vers *redirect_uri*.
 
 .. code-block:: bash
 
@@ -91,9 +91,9 @@ sera redirigé vers la *redirect_uri*.
     &response_type=code
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-Si l'authentification est correcte, un paramètre **code** sera disponible dans
-l'URI de retour, aux côtés du paramètre **state** (si fourni). Sinon, un
-paramètre **error** sera présent.
+**Si l'authentification est correcte**, un paramètre **code** est disponible dans
+l'URI de retour, à côté du paramètre **state** (si fourni).
+**Si l'authentification est incorrecte**, un paramètre **error** est présent.
 
 Exemple d'URI après succès d'authentification :
 
