@@ -11,7 +11,7 @@ into a third-party application.
 
 Here are the steps to follow :
 
-* Read the :doc:`documentation de l'API <API>` receive assistance from the
+* Read the :doc:`documentation de l'API <index>` receive assistance from the
   :doc:`Phraseanet developers team and the community <Forums>`.
 
 * To use the API features Phraseanet, you must register a new application

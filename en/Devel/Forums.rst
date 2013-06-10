@@ -1,7 +1,8 @@
 Forums
 ======
 
-You can ask question about the API and your developments in Phraseanet google 
-group `https://groups.google.com/forum/?fromgroups#!forum/phraseanet-api`.
+Question about the API and related developments should be asked in `Phraseanet Google Group`_.
 
-A dedicated channel #phrasea is also available on freenode.
+A dedicated IRC channel #phrasea is also available on freenode.
+
+.. _Phraseanet Google Group: https://groups.google.com/forum/?fromgroups#!forum/phraseanet-api

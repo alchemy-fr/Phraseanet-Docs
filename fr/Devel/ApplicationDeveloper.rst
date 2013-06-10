@@ -11,7 +11,7 @@ application tierce.
 
 Voici la marche à suivre :
 
-* Lire la :doc:`documentation de l'API <API>` et bénéficier de l'aide
+* Lire la :doc:`documentation de l'API <index>` et bénéficier de l'aide
   de :doc:`l'équipe Phraseanet et de la communauté <Forums>`.
 
 * Pour pouvoir utiliser les fonctionnalités de l'API Phraseanet, Il faut
