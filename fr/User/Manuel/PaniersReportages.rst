@@ -35,8 +35,8 @@ complémentaires sur les paniers
 
 Pour ouvrir ou fermer un panier, cliquer sur la barre de titre.
 
-Chaque panier dispose d'un :ref: `menu contextuel
-<Le menu contextuel des paniers>` permettant d'effectuer des actions :
+Chaque panier dispose d'un :ref:`menu contextuel<basket-menu>` 
+permettant d'effectuer des actions :
 
 * *Exporter* pour télécharger le contenu du panier
 * *Lightbox* pour afficher le contenu du panier dans
@@ -153,6 +153,8 @@ les documents depuis la fenêtre des résultats.
     :align: center
 
 Se reporter à la section consacrée à la :doc:`palette des Actions <Actions>`.
+
+.. _basket-menu:
 
 Le menu contextuel des paniers
 ******************************
