@@ -2,26 +2,29 @@ Authentication
 ==============
 
 The Phraseanet API v1 can only be accessed via `oAuth2.0`_.
-
 OAauth2.0 allows a secure API authentication in a simple and standard way.
 
 Libraries
 ---------
 
-You can find libraries in most languages here :
-`oAuth2.0 libraries`_.
+For PHP development, it is strongly recomended to use the `Phraseanet PHP SDK`_.
+For other languages, you can find some `oAuth2.0 libraries`_.
 
-Endpoints
----------
+Phraseanet Oauth2 Endpoints
+---------------------------
 
 * Authorization endpoint : /api/oauthv2/authorize
 * Access token endpoint : /api/oauthv2/token
+
+.. _grant-types:
 
 Supported Access Grant Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * authorization_code
 * password
+
+.. _response-types:
 
 Supported Authorization Response Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,7 +35,7 @@ Supported Authorization Response Type
 
 .. note::
 
-    At this time we do not expire OAuth access tokens, you should be prepared for
+    At this time OAuth access tokens do not expire, you should be prepared for
     this possibility in the future. Also remember that a user may revoke access
     via the Phraseanet settings page at any time.
 
@@ -56,7 +59,25 @@ There are three ways to use the API.
 Web based applications
 ~~~~~~~~~~~~~~~~~~~~~~
 
-**Redirect** users who wish authenticate to
+Developer must Redirect end-user to the authorize endpoint with the following
+query parameters :
+
+- client_id :
+    *mandatory* **string** - The client ID received from Phraseanet on
+    registration.
+- client_secret :
+    *optional* **string** - The client secret received from Phraseanet on
+    registration.
+- response_type :
+    *mandatory* **string** - One of the available :ref:`response types<response-types>`.
+- redirect_uri :
+    *mandatory* **string** - The same redirect URI you provided on registration.
+- state :
+    *optional* **string** - An unguessable random string. It is used to protect
+    against cross-site request forgery attacks.
+
+End-user will authenticate on Phraseanet, then the browser is redirected to
+the *redirect_uri* callback.
 
 .. code-block:: bash
 
@@ -65,13 +86,41 @@ Web based applications
     &response_type=code
     &redirect_uri=YOUR_REGISTERED_REDIRECT_URI
 
-If a user accepts, he will then be redirected back to
+If authentication succeed, a **code** parameter will be available in the URI, as
+long as the **state** parameter (if provided). Otherwise, an error parameter is
+available.
+
+Example of successful URI :
 
 .. code-block:: bash
 
-    https://YOUR_REGISTERED_REDIRECT_URI/?code=CODE
+    https://example.com/callback/?code=49ce2762ff5413607ae936b2ca6e409e
 
-Your server will **make a request** for
+Example of errored URI :
+
+.. code-block:: bash
+
+    https://example.com/callback/?error=Invalid+user
+
+Once the developer has a code, he must exchange it to an oauth_token using the
+token endpoint. Whereas the previous step is an interaction between the end-user
+and Phraseanet, this exchange is done server side.
+
+Parameters for the token endpoint are as follow :
+
+- client_id :
+    *mandatory* **string** - The client ID received from Phraseanet on
+    registration.
+- client_secret :
+    *optional* **string** - The client secret received from Phraseanet on
+    registration.
+- grant_type :
+    *mandatory* **string** - One of the available :ref:`grant types<grant-types>`.
+- redirect_uri :
+    *mandatory* **string** - The same redirect URI you provided on registration.
+- code : (**mandatory**)
+    *mandatory* **string** - The code returned on a successful call to the
+    authorize end point.
 
 .. code-block:: bash
 
@@ -169,6 +218,7 @@ resource-owner's credentials for future use.
     &username=johndoe
     &password=A3ddj3w
 
+.. _Phraseanet PHP SDK: https://github.com/alchemy-fr/Phraseanet-PHP-SDK
 .. _oAuth2.0: http://oauth.net/2/
 .. _oAuth2.0 libraries: http://oauth.net/code/
 .. _RFC oAuth v2 draft #10: http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2
