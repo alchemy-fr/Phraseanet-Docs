@@ -100,8 +100,8 @@ This tasks will upload your FTP export. It requires the activation of FTP export
 Settings
 ^^^^^^^^
 
-* Proxy address (optionnal)
-* Proxy port (optionnal)
+* Proxy address (optional)
+* Proxy port (optional)
 * Period : time to wait between two checks
 
 FTP Pull
@@ -113,8 +113,8 @@ combined with an archive task to fetch datas.
 Settings
 ^^^^^^^^
 
-* Proxy address (optionnal)
-* Proxy port (optionnal)
+* Proxy address (optional)
+* Proxy port (optional)
 * Period : time to wait between two checks
 * FTP Host
 * FTP Port
