@@ -32,8 +32,8 @@ following parameters :
 ======================== ============== ==============================
  databox_id               integer        The databox id of the story
  story_id                 integer        The story_id
- devices                  array          An array of devices to restrict the list (optionnal)
- mimes                    array          An array of mime type to restrict the list (optionnal)
+ devices                  array          An array of devices to restrict the list (optional)
+ mimes                    array          An array of mime type to restrict the list (optional)
 ======================== ============== ==============================
 
 Response Fields

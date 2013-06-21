@@ -5,7 +5,7 @@ About
 -----
 
 Add a record to Phraseanet. If the file does not fit all install constraints,
-it goes to the quarantine. This behavior can be bypassed with the optionnal
+it goes to the quarantine. This behavior can be bypassed with the optional
 *forceBehavior* parameter
 
 .. code-block:: bash
@@ -27,8 +27,8 @@ Parameters
 =============== =========== =============
  file            file        Mandatory - The file related to the record to add
  base_id         integer     Mandatory - The base_id related to the destination collection
- status          string      64 bit format binary string (optionnal)
- forceBehavior   integer     0 : force record ; 1 : force quarantine (optionnal)
+ status          string      64 bit format binary string (optional)
+ forceBehavior   integer     0 : force record ; 1 : force quarantine (optional)
 =============== =========== =============
 
 Response Fields
