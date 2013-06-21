@@ -134,7 +134,7 @@ on their type
 * MP4Box
   Preview extraction from videos.
 
-API keys (optionnal)
+API keys (optional)
 --------------------
 
 * Youtube

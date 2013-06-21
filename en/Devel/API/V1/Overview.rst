@@ -27,7 +27,7 @@ meta. Response is by default sent as JSON data.
 
 .. note::
 
-    An optionnal **timers** fiels, providing an array of timers, can be
+    An optional **timers** fiels, providing an array of timers, can be
     retrieved by activating this feature. Read the
     :doc:`configuration <../../../Admin/Configuration>` doc to enable it.
 
