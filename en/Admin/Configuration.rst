@@ -36,6 +36,7 @@ declaration of this environment below.
         cache: array_cache
         opcodecache: array_cache
         border-manager: border_manager
+        task-manager: config_taskmanager
 
 Let's detail environment structure :
 
@@ -53,6 +54,7 @@ Let's detail environment structure :
 * cache : Main cache service :doc:`cache </Admin/Optimization>`
 * opcodecache : Opcode cache service :doc:`opcodecache </Admin/Optimization>`
 * border-manager : Border service
+* task-manager : Task-manager settings
 
 Services are setup in the service.yml file.
 
@@ -448,6 +450,31 @@ Then in services.yml configuration enable your checker.
         enabled: true
         options:
             bar: foo
+
+
+Task-manager service
+^^^^^^^^^^^^^^^^^^^^
+
+Set the severity threshold for task events to be sent to syslog or mail in
+config/services.yml
+
+  .. code-block:: yaml
+
+    Cache:
+        ...
+    Border:
+        ...
+    TaskManager:
+        config_taskmanager:
+            type: TaskManager\TaskManager
+            options:
+            # set the threshold for sending task logs to syslog or by mail
+            # values : task_abstract::[LOG_DEBUG | LOG_INFO | LOG_WARNING
+            | LOG_ERROR | LOG_CRITICAL | LOG_ALERT]
+            syslog_level: task_abstract::LOG_ERROR
+            maillog_level: task_abstract::LOG_ERROR
+
+
 
 Collection Settings
 -------------------
