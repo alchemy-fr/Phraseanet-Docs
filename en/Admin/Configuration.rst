@@ -454,9 +454,9 @@ Then in services.yml configuration enable your checker.
 Service SearchEngine
 ^^^^^^^^^^^^^^^^^^^^
 
-This service describe one or more seaarch-engine configuration. Depending on
-the search engine you use, you will have the benefit of distinct features. For
-example, Phrasea supports thesaurus while SphinxSearch supports live
+This service describe one or more search-engine configuration. Depending on
+the chosen search engine, features may be different. For example, Phrasea engine
+supports Phraseanet thesaurus while SphinxSearch engine supports live
 autocomplete.
 
 Example :

@@ -468,9 +468,10 @@ Puis dans le fichier de configuration services.yml
 Service SearchEngine
 ^^^^^^^^^^^^^^^^^^^^
 
-Ce servce décrit une ou plusieurs configurations de moteur de recherche.
-Suivant le moteur choisi, vous aurez accès à certaines possibilités. Ainsi,
-SphinxSearch supporte l'autocomplétion tandis que Phrasea supporte le thesaurus.
+Ce service décrit une ou plusieurs configurations de moteur de recherche.
+Selon le moteur choisi, les fonctionnalités diffèrent.
+Ainsi, le moteur SphinxSearch supporte l'autocomplétion tandis que le moteur Phrasea
+supporte le thesaurus Phraseanet.
 
 Exemple :
 
@@ -496,12 +497,13 @@ Exemple :
 Phrasea Engine
 ~~~~~~~~~~~~~~
 
-Phrasea engine ne supporte aucune options particulière.
+Phrasea engine ne supporte aucune option particulière.
 
 SphinxSearch
 ~~~~~~~~~~~~
 
-Vous devrez spécifier quatre options pour l'utilisation de SphinxSearch :
+Il est nécessaire de spécifier quatre options pour l'utilisation de
+SphinxSearch :
 
 - host : le nom d'hote ou l'adresse IP du serveur SphinxSearch
 - port : le port du serveur SphinxSearch
