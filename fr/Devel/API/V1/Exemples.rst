@@ -1,20 +1,18 @@
 Cas d'utilisation
 =================
 
-Chercher des enregistrements un utilisant des champs documentaires définis
+Chercher des enregistrements en utilisant des champs documentaires définis
 --------------------------------------------------------------------------
 
-Pour retrouver toutes les images de "Paris" la ville, premièrement requéter
-l'API avec le terme "paris" cependant il se peut que des images de "Paris" la
-ville, des images d'une personne nommée "Paris" ou bien des images contenant le
-mot "paris" dans les champs indéxés puissent être trouvées.
+Pour retrouver toutes les images correspondantes à Paris, la ville, requêter l'API avec le terme "Paris".
+Cependant, comme il est possible que des images de Paris Hilton (ou d'autres Paris) se soient glissées
+dans les résultats, une requête plus précise pourrait donner des résultats plus pertinents.
 
-En considérant que le champ "Ville" soit préalablement indéxé, pour restreindre
-la recherche la requête doit être effectuer en spécifiant le champ désiré.
+En considérant qu'un champ Ville soit correctement renseigné, la recherche peut être effectuée dans 
+le contenu d'un champ spécifié.
 
-Pour cela, fournisser un paramêtre additonnel et demander explicitement le champ
-sur lequel effectuer la recherche.
-
+Pour cela, fournir une paramètre additionnel et demander explicitement le champ sur lequel effectuer
+la recherche.
 
 .. code-block:: bash
 
