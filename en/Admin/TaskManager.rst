@@ -92,6 +92,28 @@ Settings
     For security reasons, you have to write an empty .phrasea.xml
     file at the root of the HotFolder.
 
+Archive files and their XML description is possible by editing the XML view.
+
+Here is an example of XML configuration to archive `.jpg` and `.tif` files
+associated with their `.xml` description :
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <tasksettings>
+
+      ...
+
+      <files>
+        <file mask="^(.*)\.jpg$" caption="$1.jpg.xml"/>
+        <file mask="^(.*)\.JPG$" caption="$1.JPG.xml"/>
+        <file mask="^(.*)\.tif$" caption="$1.tif.xml"/>
+        <file mask="^(.*)\.TIF$" caption="$1.TIF.xml"/>
+        <file mask="^(.*\.xml)$" caption="$1"/>
+      </files>
+    </tasksettings>
+
+
 FTP Push
 ********
 
