@@ -6,8 +6,7 @@ you can verify your configuration. At root of Phraseanet :
 
 .. code-block:: bash
 
-    php bin/console check:system
-    php bin/console check:config
+    php bin/setup check:system
 
 .. seealso::
 
@@ -25,13 +24,12 @@ Web server configuration
 Setup
 -----
 
-If everything is OK, you will go the Url (sub.domain.tld in the examples) and
-proceed installation
+Since version 3.8, it is recommended to install Phraseanet with the
+commandline utility:
 
-Installation is in five steps :
+.. code-block:: bash
 
-* ApplicationBox / Databox and admin creation.
-* Tasks creation
+    bin/setup system:install
 
 Task start
 ----------
