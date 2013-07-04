@@ -7,6 +7,27 @@ A propos
 Retourne les permaliens des sous-définitions disponibles pour le document
 sélectionné.
 
+Les headers HTTP des permaliens incluent un header `Link` (comme décrit dans la
+`RFC 5988`_) qui pointe vers une représentation JSON de la notice descriptive.
+
+.. code-block:: none
+
+    < HTTP/1.1 200 OK
+    < Server: nginx
+    < Content-Type: image/jpeg
+    < Content-Length: 55725
+    < Connection: keep-alive
+    < Cache-Control: max-age=0, must-revalidate, private
+    < Date: Thu, 04 Jul 2013 15:49:45 GMT
+    < Last-Modified: Wed, 15 May 2013 16:05:43 GMT
+    < Content-Disposition: inline; filename="8562183_preview.jpg"
+    < ETag: "38483a7bd5e3d83fec4336af2003814a"
+    < Link: https://domain.tld/permalink/v1/1/8562183/caption/?token=nlwvsIAo
+    < Accept-Ranges: bytes
+    < Content-Transfer-Encoding: binary
+
+Les requêtes HTTP HEAD sont aussi supportées par les permaliens.
+
 .. note::
 
     Use "download_url" to download the file as an attachment in a browser.
@@ -179,3 +200,5 @@ Exemple de réponse
             ]
         }
     }
+
+.. _RFC 5988: https://tools.ietf.org/html/rfc5988
