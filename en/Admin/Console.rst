@@ -43,7 +43,7 @@ This command results in such screen output :
       system:upgrade         Upgrade Phraseanet to the latest version
       system:upgrade-datas   Upgrade Phraseanet datas
 
-The whole commands available through this utility are executables whenever
+The whole commands available through this utility are executable whenever
 Phraseanet is not installed, whereas Konsole Kommander requires Phraseanet
 installed and up-to-date.
 
@@ -119,7 +119,7 @@ You will see something like :
 
 .. note::
 
-    Each commands returns an exit code, which can be used for automated scripts.
+    Each command returns an exit code, which can be used for automated scripts.
 
 check:ensure-dev-settings
 *************************
@@ -142,7 +142,7 @@ Validate the consistency of configuration values ​​for a production environm
 fields:delete
 *************
 
-Delete a documentation field from the databox.
+Delete a documentation field from a databox.
 
 **option** :
 
@@ -152,12 +152,12 @@ Delete a documentation field from the databox.
 fields:list
 ***********
 
-List all databox documentation fields
+List all databoxes documentation fields
 
 fields:merge
 ************
 
-Merge several databox structure fields.
+Merge several databoxes structure fields.
 
 **option** :
 
@@ -234,7 +234,7 @@ Save states of current databases state.
 system:clear-cache
 ******************
 
-Clear all cach sytems used by Phraseanet.
+Clear all caches systems used by Phraseanet.
 
 system:mail-check
 *****************

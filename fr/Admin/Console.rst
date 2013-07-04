@@ -8,13 +8,13 @@ Setup
 
    La commande setup a été ajoutée en version 3.8
 
-Phraseanet fourni une application de setup en ligne de commande :
+Phraseanet fournit une application d'installation en ligne de commande :
 
 .. code-block:: bash
 
     php bin/setup
 
-Cette commande a pour résultat à l'écran de :
+Cette commande a pour résultat à l'écran :
 
 .. code-block:: bash
 
@@ -50,7 +50,7 @@ requiert une installation complète.
 check:system
 ************
 
-Cette commande retourne un code de retour parmis les suivants :
+Cette commande retourne un code de retour parmi les suivants :
 
 * 0 : Le système est correctement configuré.
 * 1 : Le système est correctement configuré, des ajustements peuvent être faits.
@@ -61,8 +61,8 @@ Konsole Kommander
 -----------------
 
 Konsole Kommander est une application en ligne de commande pour piloter
-Phraseanet. Elle n'est disponible que lorsque Phraseanet est installé et
-s'exécute simplement :
+Phraseanet. Elle n'est disponible que lorsque Phraseanet est installé.
+Elle s'exécute simplement :
 
 .. code-block:: bash
 
@@ -162,7 +162,7 @@ Lister tous les champs documentaires.
 fields:merge
 ************
 
-Fusionner plusieur champs de la structure documentaire.
+Fusionner plusieurs champs de la structure documentaire.
 
 **option** :
 
