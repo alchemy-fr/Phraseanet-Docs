@@ -1,9 +1,7 @@
 Download
 ========
 
-You should download Phraseanet via SourceForge :
-
-`https://sourceforge.net/projects/phraseanet/files/ <https://sourceforge.net/projects/phraseanet/files/>`_
+Phraseanet should be downloaded on `Phraseanet.com`_.
 
 .. note::
 
@@ -16,3 +14,4 @@ Verify :doc:`prerequisite <Prerequisite>` and proceed to install.
 
 .. _Phraseanet-Extension: http://github.com/alchemy-fr/Phraseanet-Extension
 .. _Phraseanet-Indexer: http://github.com/alchemy-fr/Phraseanet-Indexer
+.. _Phraseanet.com: https://www.phraseanet.com/download/
