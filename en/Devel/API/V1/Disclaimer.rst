@@ -1,7 +1,7 @@
 Disclaimer
 ==========
 
-Your use of Phraseanet APIs is at your own discretion and risk, and you will be
+The use of Phraseanet APIs is at your own discretion and risk. You will be
 solely responsible for any damage that results from the use of any Phraseanet APIs.
 
 Use and restrictions
