@@ -104,6 +104,28 @@ Paramètrage
     Pour des raisons de sécurité, il faut créér un fichier .phrasea.xml à la
     racine du HotFolder.
 
+Il est possible d'archiver des fichiers associés à une description xml. Pour
+cela, il faut utiliser la vue XML.
+
+Exemple de configuration XML pour l'archivage de fichier `.jpg` et `.tif`
+associés à des fichiers de même nom `.xml` :
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <tasksettings>
+
+      ...
+
+      <files>
+        <file mask="^(.*)\.jpg$" caption="$1.jpg.xml"/>
+        <file mask="^(.*)\.JPG$" caption="$1.JPG.xml"/>
+        <file mask="^(.*)\.tif$" caption="$1.tif.xml"/>
+        <file mask="^(.*)\.TIF$" caption="$1.TIF.xml"/>
+        <file mask="^(.*\.xml)$" caption="$1"/>
+      </files>
+    </tasksettings>
+
 FTP Push
 ********
 
