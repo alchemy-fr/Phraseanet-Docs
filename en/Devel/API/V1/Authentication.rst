@@ -13,8 +13,8 @@ For other languages, you can find some `oAuth2.0 libraries`_.
 Phraseanet Oauth2 Endpoints
 ---------------------------
 
-* Authorization endpoint : /api/oauthv2/authorize
-* Access token endpoint : /api/oauthv2/token
+* Authorization endpoint: /api/oauthv2/authorize
+* Access token endpoint: /api/oauthv2/token
 
 .. _grant-types:
 
@@ -60,19 +60,19 @@ Web based applications
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Developer must Redirect end-user to the authorize endpoint with the following
-query parameters :
+query parameters:
 
-- client_id :
+- client_id:
     *mandatory* **string** - The client ID received from Phraseanet on
     registration.
-- client_secret :
+- client_secret:
     *optional* **string** - The client secret received from Phraseanet on
     registration.
-- response_type :
+- response_type:
     *mandatory* **string** - One of the available :ref:`response types<response-types>`.
-- redirect_uri :
+- redirect_uri:
     *mandatory* **string** - The same redirect URI you provided on registration.
-- state :
+- state:
     *optional* **string** - An unguessable random string. It is used to protect
     against cross-site request forgery attacks.
 
@@ -90,13 +90,13 @@ End-user authenticates on Phraseanet and the browser is redirected to the
 the **state** parameter (if provided).
 **If authentication failed**, an error parameter is available.
 
-Example of successful URI :
+Example of successful URI:
 
 .. code-block:: bash
 
     https://example.com/callback/?code=49ce2762ff5413607ae936b2ca6e409e
 
-Example of errored URI :
+Example of errored URI:
 
 .. code-block:: bash
 
@@ -106,19 +106,19 @@ Once the developer has a code, he must exchange it to an oauth_token using the
 token endpoint. Whereas the previous step is an interaction between the end-user
 and Phraseanet, this exchange is done server side.
 
-Parameters for the token endpoint are as follow :
+Parameters for the token endpoint are as follow:
 
-- client_id :
+- client_id:
     *mandatory* **string** - The client ID received from Phraseanet on
     registration.
-- client_secret :
+- client_secret:
     *optional* **string** - The client secret received from Phraseanet on
     registration.
-- grant_type :
+- grant_type:
     *mandatory* **string** - One of the available :ref:`grant types<grant-types>`.
-- redirect_uri :
+- redirect_uri:
     *mandatory* **string** - The same redirect URI you provided on registration.
-- code : (**mandatory**)
+- code: (**mandatory**)
     *mandatory* **string** - The code returned on a successful call to the
     authorize end point.
 
@@ -186,7 +186,7 @@ Using your access token
 You can use your access token to call a protected API by including it
 in an oauth_token query parameter or an Authorization header
 in all available endpoint.
-For example :
+For example:
 
 .. code-block:: bash
 

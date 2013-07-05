@@ -387,7 +387,7 @@ The same restriction can be done at databoxes level :
     It is not possible to restrict at databoxes and collections levels at
     the same time.
 
-**How to implement a custom checker ?**
+**How to implement a custom checker?**
 
 Checker's object are declared in the Alchemy\\Phrasea\\Border\\Checker namespace,
 so you have to create a new object which implements Alchemy\\Phrasea\\Border\\Checker\\Checker

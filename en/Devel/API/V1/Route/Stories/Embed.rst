@@ -21,7 +21,7 @@ Parameters
 ----------
 
 If you want to retrieve all HTML5 videos for mobile, you have to provide the
-following parameters :
+following parameters:
 
 .. code-block:: bash
 

@@ -76,13 +76,13 @@ only records with status number 4 “on” are returned.
 
     curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/search/
 
-Request all records on collection base_id 85 :
+Request all records on collection base_id 85:
 
 .. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/search/
 
-Search the query “house” in the “Object” or “Credit” fields :
+Search the query “house” in the “Object” or “Credit” fields:
 
 .. code-block:: bash
 
@@ -91,7 +91,7 @@ Search the query “house” in the “Object” or “Credit” fields :
 Response sample
 ---------------
 
-Example that returns records :
+Example that returns records:
 
 .. code-block:: javascript
 
@@ -217,7 +217,7 @@ Example that returns records :
         }
     }
 
-Example that returns stories :
+Example that returns stories:
 
 .. code-block:: javascript
 

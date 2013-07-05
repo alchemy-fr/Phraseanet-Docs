@@ -25,7 +25,7 @@ Parameters
 ================== ========= =============
  databox_id         integer   The databox id of the record
  record_id          integer   The record_id
- metadatas          array     An array of metadatas, each metadatas is an array itself with three keys : meta_struct_id (int), meta_id (int or null) and value (Array)
+ metadatas          array     An array of metadatas, each metadatas is an array itself with three keys: meta_struct_id (int), meta_id (int or null) and value (Array)
 ================== ========= =============
 
 Response Fields
@@ -62,7 +62,7 @@ is equivalent to
         {
             meta_struct_id: 1,        // current metadata refers to metadata structure id '1' ; see [[routes:databoxes:metadatas]]
             meta_id: null,            // current meta_id refers to caption's field meta id ; see [[routes:records:metadatas]] ; this case, meta_id is null because there's currently no value set, the field will be created
-            value : 'A pretty string' // value is always a String
+            value: 'A pretty string' // value is always a String
         },
         {
             meta_struct_id: 3,

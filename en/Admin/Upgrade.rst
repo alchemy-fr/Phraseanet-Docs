@@ -7,11 +7,11 @@ Upgrade Procedure
     Upgrade/3.7
 
 To upgrade Phraseanet to the latest version, it is strongly recommended to
-follow this upgrade procedure :
+follow this upgrade procedure:
 
 * In the "Administration" panel of Phraseanet, stop the scheduler.
 * Log out all users (including you, the upgrade operator).
-* Backup databases with the provided tool :
+* Backup databases with the provided tool:
 
 .. code-block:: bash
 
@@ -19,9 +19,9 @@ follow this upgrade procedure :
 
 * :doc:`Compile and update the php_phrasea extension <Prerequisite>`.
 * :doc:`Compile and replace the new indexer binary <Prerequisite>`.
-* Replace old source by following these steps :
+* Replace old source by following these steps:
     * Rename the folder containing the previous sources
-      (ex : phraseanet-backup-date).
+      (ex: phraseanet-backup-date).
     * Place the latest sources where the previous one were.
 * Overwrite the config folder with the one of the previous installation.
 * Reloading Apache or Nginx server, eventually PHP-FPM to support the new
@@ -34,7 +34,7 @@ follow this upgrade procedure :
     bin/console system:upgrade
 
 After upgrading from old versions (before 3.6), the output asks to run more
-commands :
+commands:
 
 .. code-block:: bash
 
@@ -52,7 +52,7 @@ commands :
 
 These commands should be executed in the same order to ensure a correct upgrade.
 
-* Verify that Phraseanet has been upgraded with the command :
+* Verify that Phraseanet has been upgraded with the command:
 
 .. code-block:: bash
 

@@ -9,8 +9,8 @@ term "paris" but some pictures of Paris the city or any other
 pictures with someone named Paris or containing "paris" in the indexed fields
 for example could be fetched.
 
-Considering that the field "City" is conscientiously filled, it's a good idea 
-to restrict the search to this field only : the query can be done by searching
+Considering that the field "City" is conscientiously filled, it's a good idea
+to restrict the search to this field only: the query can be done by searching
 terms in a specified list of documentary fields.
 
 To do so, provide an additional "fields" parameter and explicitly ask

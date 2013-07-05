@@ -22,7 +22,7 @@ There is no public access to Phraseanet API for the moment
 Responses
 ---------
 
-All responses are wrapped in an object containing two fields : response and
+All responses are wrapped in an object containing two fields: response and
 meta. Response is by default sent as JSON data.
 
 .. note::
@@ -31,7 +31,7 @@ meta. Response is by default sent as JSON data.
     retrieved by activating this feature. Read the
     :doc:`configuration <../../../Admin/Configuration>` doc to enable it.
 
-Timer example :
+Timer example:
 
 .. code-block:: javascript
 
@@ -62,13 +62,13 @@ YAML
 As of HTTP specification, you have to set an 'Accept' header if you want to
 fetch YAML.
 
-Request :
+Request:
 
 .. code-block:: bash
 
     curl -H 'Accept: application/yaml' ...
 
-Response :
+Response:
 
 .. code-block:: yaml
 
@@ -87,13 +87,13 @@ Response :
 Json
 ~~~~
 
-Request :
+Request:
 
 .. code-block:: bash
 
     curl -H 'Accept: application/json' ...
 
-Response :
+Response:
 
 .. code-block:: javascript
 
@@ -119,7 +119,7 @@ JsonP
 In order to fetch JSONP, you just have to add a callback HTTP parameter to
 your request.
 
-Request :
+Request:
 
 .. code-block:: bash
 
@@ -129,7 +129,7 @@ Please note that in the case of JSONP, the API **always** returns 200
 (except for HTTP 500's) so your code can proceed the results ; you can have
 the true HTTP Code in the meta section.
 
-Response :
+Response:
 
 .. code-block:: javascript
 

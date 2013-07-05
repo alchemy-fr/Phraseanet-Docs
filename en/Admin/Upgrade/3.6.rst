@@ -1,15 +1,15 @@
 Version 3.6
 ===========
 
-Changes :
------------------
+Changes
+-------
 
 * A major schema enhancement happens for meta values. Multivalued values were
   stored serialized and are now stored separatly.
-  Two routes are modified : :doc:`Records/Metadatas
+  Two routes are modified: :doc:`Records/Metadatas
   </Devel/API/V1/Route/Records/Metadatas>` and :doc:`Records/SetMetadatas
   </Devel/API/V1/Route/Records/SetMetadatas>`.
-  A route has been added to make it easy to display caption :
+  A route has been added to make it easy to display caption:
   :doc:`Records/Caption </Devel/API/V1/Route/Records/Caption>`.
 
 .. seealso::
@@ -24,8 +24,8 @@ Changes :
 
         Please upgrade your adapters before upgrade Phraseanet.
 
-What's new ?
---------------
+What's new?
+-----------
 
 * Push / Feedback refactor.
 

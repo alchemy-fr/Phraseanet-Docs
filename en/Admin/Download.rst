@@ -7,7 +7,7 @@ You should download Phraseanet via SourceForge :
 
 .. note::
 
-    Phraseanet requires two dependencies that :
+    Phraseanet requires two dependencies that:
 
     - `Phraseanet-Extension`_
     - `Phraseanet-Indexer`_

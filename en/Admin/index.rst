@@ -6,7 +6,7 @@ Admin
 
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
-Phraseanet is built on top of MySQL/InnoDB databases : ApplicationBoxes and
+Phraseanet is built on top of MySQL/InnoDB databases: ApplicationBoxes and
 Databoxes.
 
 ApplicationBoxes store users, baskets, rights ont collections and links to one
