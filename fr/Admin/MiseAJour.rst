@@ -24,8 +24,6 @@ de votre installation, suivre les étapes suivantes :
     * Renommer le dossiers contentant les anciennes sources
       (ex : phraseanet-backup-date).
     * Placer les nouvelles sources à l'emplacement des précedentes.
-* En cas d'utilisation de Nginx, prendre soin de mettre à jour les règles de
-  re-écriture (fournies dans ``config/nginx.rewrite.rules``).
 * Ecraser le dossier 'config' par celui de l'ancienne installation.
 * Recharger le serveur web Apache ou Nginx, et éventuellement de PHP-FPM pour
   la prise en charge de la nouvelle extension.
@@ -36,12 +34,30 @@ de votre installation, suivre les étapes suivantes :
 
     bin/console system:upgrade
 
+Lors de l'execution de cette commande depuis des version anciennes (antérieures
+à 3.6), il est demandé d'executer des commandes supplémentaires :
+
+.. code-block:: bash
+
+    Your install requires data migration, please execute the following command
+
+            bin/setup system:upgrade-datas --from=3.1
+
+    Your install might need to re-read technical datas
+
+            bin/console records:rescan-technical-datas
+
+    Your install might need to re-read technical datas
+
+            bin/console records:build-missing-subdefs
+
+L'execution de ces commandes dans l'ordre indiqué est alors impératif pour que
+la mise à jour soit correctement terminée.
+
 * Verifier que Phraseanet est mis à jour via la commande :
 
 .. code-block:: bash
 
     bin/console --version
 
-* Se connecter au module administration, éditer la configuration,
-  et la sauvegarder pour prendre en charge les nouvelles options.
 * Pour finir, relancer les tâches via le gestionnaire de tâches.

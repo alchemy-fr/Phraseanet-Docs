@@ -23,8 +23,6 @@ follow this upgrade procedure :
     * Rename the folder containing the previous sources
       (ex : phraseanet-backup-date).
     * Place the latest sources where the previous one were.
-* When using Nginx, update rewrite rules (provided in
-  ``config/nginx.rewrite.rules``).
 * Overwrite the config folder with the one of the previous installation.
 * Reloading Apache or Nginx server, eventually PHP-FPM to support the new
   version of the extension.
@@ -34,6 +32,25 @@ follow this upgrade procedure :
 .. code-block:: bash
 
     bin/console system:upgrade
+
+After upgrading from old versions (before 3.6), the output asks to run more
+commands :
+
+.. code-block:: bash
+
+    Your install requires data migration, please execute the following command
+
+            bin/setup system:upgrade-datas --from=3.1
+
+    Your install might need to re-read technical datas
+
+            bin/console records:rescan-technical-datas
+
+    Your install might need to re-read technical datas
+
+            bin/console records:build-missing-subdefs
+
+These commands should be executed in the same order to ensure a correct upgrade.
 
 * Verify that Phraseanet has been upgraded with the command :
 
