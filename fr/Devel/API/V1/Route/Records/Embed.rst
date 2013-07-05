@@ -7,6 +7,10 @@ A propos
 Retourne les permaliens des sous-définitions disponibles pour le document
 sélectionné.
 
+.. note::
+
+    Use "download_url" to download the file as an attachment in a browser.
+
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/embed/
