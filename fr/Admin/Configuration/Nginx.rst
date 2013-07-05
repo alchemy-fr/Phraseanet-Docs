@@ -7,20 +7,31 @@ Exemple de fichier de configuration Nginx.
 
     #/etc/nginx/sites-available/phraseanet.conf
     server {
-            listen       80;
-            server_name  yourdomain.tld;
-            root         /var/www/Phraseanet/www;
+        listen       80;
+        server_name  yourdomain.tld;
+        root         /var/www/Phraseanet/www;
 
-            index        index.php;
-            include      rewrite_rules.inc;
+        index        index.php;
 
-            # PHP scripts -> PHP-FPM server listening on 127.0.0.1:9000
-            location ~ \.php(/|$) {
-                     fastcgi_pass   127.0.0.1:9000;
-                     fastcgi_index  index.php;
-                     include fastcgi_params;
-                     fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            }
+        location /api {
+            rewrite ^(.*)$ /api.php/$1 last;
+        }
+
+        location / {
+            # try to serve file directly, fallback to rewrite
+            try_files $uri $uri/ @rewriteapp;
+        }
+
+        location @rewriteapp {
+            rewrite ^(.*)$ /index.php/$1 last;
+        }
+
+        # PHP scripts -> PHP-FPM server listening on 127.0.0.1:9000
+        location ~ ^/(index|index_dev|api)\.php(/|$) {
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
     }
 
 .. note::
