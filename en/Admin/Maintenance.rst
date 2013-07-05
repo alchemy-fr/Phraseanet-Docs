@@ -22,7 +22,7 @@ install.
 
 Live backups should work.
 
-:doc:`Konsole Kommander <Console>` has a command to backup your DBs :
+:doc:`Konsole Kommander <Console>` has a command to backup your DBs:
 
 .. code-block:: bash
 

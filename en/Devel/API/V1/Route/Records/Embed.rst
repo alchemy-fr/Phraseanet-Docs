@@ -24,11 +24,11 @@ Returns permalinks to medias attached to the record
 Parameters
 ----------
 
-As of version 1.2, two new parameters are available : *devices* and *mimes*.
+As of version 1.2, two new parameters are available: *devices* and *mimes*.
 If provided, the query is restricted to the corresponding medias.
 
 For example, if you want to retrieve all HTML5 videos for mobile, you have to provide the
-following parameters :
+following parameters:
 
 .. code-block:: bash
 

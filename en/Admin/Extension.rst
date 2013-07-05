@@ -38,7 +38,7 @@ Rename the file as "php_phrasea2.dll" and copy it into the "ext" directory of
 PHP (usually "C:\\Program Files\\PHP\\ext" if PHP was installed with default
 settings).
 
-Activate the extension into php.ini :
+Activate the extension into php.ini:
 
 .. code-block:: none
 

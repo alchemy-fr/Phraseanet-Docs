@@ -9,19 +9,15 @@ Documentation API v1
     V1/Routes
     V1/Examples
 
-Hello world !
-
 Phraseanet API v1 gives you access to lots of Phraseanet data and lets
 you interact with them.
 Integrate the search engine, build your own applications and plugins!
 Give us your feedback and if you publish your code, let us know and
 we'll also do so.
 
-Start easy easy :
-
 * Read the ':doc:`overview <V1/Overview>`
 * Get familiar with :doc:`oAuth2 <V1/Authentication>`
-* Find your :doc:`route <V1/Routes>` !
+* Find your :doc:`route <V1/Routes>`!
 
 If you ever find bugs, please report them on the `mailing-list`_ or create a
 ticket on our `bug tracker`_.

@@ -15,7 +15,7 @@ Alternative starts and stops
 ****************************
 
 If you want to start and stop the Scheduler automatically, for example with
-cron, you can use `KonsoleKommander <Console>`_ and find the right command :
+cron, you can use `KonsoleKommander <Console>`_ and find the right command:
 
 .. code-block:: bash
 
@@ -32,15 +32,15 @@ Indexation
 
 It indexes the datas with phraseanet_indexer.
 
-Indexer requires parameters :
+Indexer requires parameters:
 
 * Path to indexer binary
-* Host : MySQL server hostname / address
-* Port : MySQL port
-* Database : MySQL dbname
-* User : MySQL user
-* Password : MySQL password
-* Socket port : socket port to stop the indexer
+* Host: MySQL server hostname / address
+* Port: MySQL port
+* Database: MySQL dbname
+* User: MySQL user
+* Password: MySQL password
+* Socket port: socket port to stop the indexer
 
 .. code-block:: bash
 
@@ -80,12 +80,12 @@ This task watch a HotFolder and archive its content in a  :term:`Collection`.
 Settings
 ^^^^^^^^
 
-* Collection : the collection where the files are going
-* HotFolder : the directory to watch
-* Period : time to wait between to check in the folder
-* Period before archive : time to wait before starting archive
-* Move docs in "_archived" : keep a copy of archived documents
-* Move docs in "_error" : keep a copy of failed documents
+* Collection: the collection where the files are going
+* HotFolder: the directory to watch
+* Period: time to wait between to check in the folder
+* Period before archive: time to wait before starting archive
+* Move docs in "_archived": keep a copy of archived documents
+* Move docs in "_error": keep a copy of failed documents
 
 .. warning::
 
@@ -95,7 +95,7 @@ Settings
 Archive files and their XML description is possible by editing the XML view.
 
 Here is an example of XML configuration to archive `.jpg` and `.tif` files
-associated with their `.xml` description :
+associated with their `.xml` description:
 
 .. code-block:: xml
 
@@ -124,7 +124,7 @@ Settings
 
 * Proxy address (optional)
 * Proxy port (optional)
-* Period : time to wait between two checks
+* Period: time to wait between two checks
 
 FTP Pull
 ********
@@ -137,13 +137,13 @@ Settings
 
 * Proxy address (optional)
 * Proxy port (optional)
-* Period : time to wait between two checks
+* Period: time to wait between two checks
 * FTP Host
 * FTP Port
 * FTP User
 * FTP Password
 * FTP Directory
-* Local Directory : the directory where to retrieve the datas
+* Local Directory: the directory where to retrieve the datas
 * Passive mode
 * SSL connexion
 
@@ -167,6 +167,6 @@ depending of their status or some date fields.
 Settings
 ^^^^^^^^
 * Databox
-* Period : time to wait between two checks
-* Collection : from =>to
-* Status-bit : from => to
+* Period: time to wait between two checks
+* Collection: from =>to
+* Status-bit: from => to

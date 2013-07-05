@@ -4,9 +4,9 @@ FAQ
 I can not upload more than 2Mo
 ------------------------------
 
-Update the limit to 200 Mo :
+Update the limit to 200 Mo:
 
-* In php.ini :
+* In php.ini:
 
 .. code-block:: bash
 
@@ -15,9 +15,9 @@ Update the limit to 200 Mo :
 
 Do no forget to restart your configuration (Apache or PHP-Fpm)
 
-If you're using Nginx, you have to allow big requests :
+If you're using Nginx, you have to allow big requests:
 
-* In nginx.conf :
+* In nginx.conf:
 
 .. code-block:: bash
 
@@ -48,7 +48,7 @@ When editing a lot of documents, an error message can happen
 ------------------------------------------------------------
 
 Suhosin module can limit the number of paramaters of HTTP queries. You can try
-to raise the limit :
+to raise the limit:
 
 .. code-block:: bash
 
@@ -59,7 +59,7 @@ When I edit users rights, some are not saved
 --------------------------------------------
 
 Suhosin module can limit the number of parameters of HTTP queries. You can try
-to raise the limit :
+to raise the limit:
 
 .. code-block:: bash
 

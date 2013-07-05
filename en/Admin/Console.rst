@@ -8,13 +8,13 @@ Setup
 
    The setup command has been added in version 3.8
 
-Phraseanet provides a setup command line utility :
+Phraseanet provides a setup command line utility:
 
 .. code-block:: bash
 
     php bin/setup
 
-This command results in such screen output :
+This command results in such screen output:
 
 .. code-block:: bash
 

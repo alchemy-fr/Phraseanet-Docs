@@ -8,8 +8,8 @@ Changes
 * change the exit code of (:doc:`Konsole Kommander <../Console>`) commands
 * tf-filename tf-basename tf-duration
 
-What's new ?
-------------
+What's new?
+-----------
 
 * Support of Windows Server 2008
 * Add support of business fields (:doc:`Champs métiers <../../Glossary>`)

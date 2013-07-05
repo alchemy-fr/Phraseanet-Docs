@@ -80,7 +80,7 @@ For example, you can get the permalinks of a record with the following route:
 | Quarantine|* :doc:`list <Route/Quarantine/List>` |* :doc:`item <Route/Quarantine/Item>`           |                                                      |
 +-----------+--------------------------------------+------------------------------------------------+------------------------------------------------------+
 
-Some more route dedicated to monitoring and application management are available :
+Some more route dedicated to monitoring and application management are available:
 
 - `Route/Monitor/Phraseanet`
 - `Route/Monitor/Scheduler`
