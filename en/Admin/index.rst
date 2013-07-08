@@ -4,36 +4,30 @@ Admin
 .. module:: admin
     :synopsis: Phraseanet Administrator guide
 
-.. moduleauthor:: Team Phraseanet <info@phraseanet.com>
+Phraseanet is built on top of MySQL databases: ApplicationBoxes and Databoxes.
 
-Phraseanet is built on top of MySQL/InnoDB databases: ApplicationBoxes and
-Databoxes.
-
-ApplicationBoxes store users, baskets, rights ont collections and links to one
+ApplicationBoxes store users, baskets, rights, collections and links to one
 or more databoxes.
 
-Databoxes are containers for records. They are different because of
-their documentary structure
+Databoxes are containers for records. They are all different because of
+their documentary structure.
 
-Phraseanet also use a TaskManager. This component manages PHP scripts like
+Phraseanet also provides a Task Manager. This component manages PHP daemons for
 Metadatas Writing, Subviews creation, indexation.
 
-You can also manage Phraseanet through the `Konsole Kommander <Console>`
+Phraseanet can also be managed through 2 interfaces : `API <../../Devel>`_ and
+`Konsole Kommander <Console>`_.
 
 .. toctree::
     :hidden:
 
-    Download
     Prerequisite
+    Download
     Install
-    Indexer
-    SearchEngine
-    Extension
     Upgrade
     Configuration
-    APIs
+    SearchEngine
     TaskManager
     Console
     Maintenance
-    Optimization
     Faq
