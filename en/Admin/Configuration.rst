@@ -227,7 +227,7 @@ following adapters :
 Search Engine service
 *********************
 
-Two search engine services are available : Phrasea engine and Sphinx Search
+Two search engine services are available : Phrasea engine and SphinxSearch
 engine.
 
 +--------------------------------------------------------------+------------------------------+

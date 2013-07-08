@@ -88,7 +88,7 @@ Les permaliens diffusés par l'application incluent maintenant un header HTTP
 Moteur de recherche
 -------------------
 
-- Le moteur de recherche Sphinx Search passe de l'integration en phase beta à
+- Le moteur de recherche SphinxSearch passe de l'integration en phase beta à
   stable. Se référer à la
   :ref:`documentation des moteurs de recherche <search-engine-service-configuration>`.
 - Le moteur Phrasea Engine s'enrichie du support de radicalisation. Ainsi, lors

@@ -83,7 +83,7 @@ of the caption.
 Search Engine
 -------------
 
-- Sphinx Search engine is now stable. See
+- SphinxSearch engine is now stable. See
   :ref:`search-engine documentation <search-engine-service-configuration>`
 - Phrasea Engine now supports stemming. When searching for "conspiracy", documents
   indexed with "conspirators" will be returned. This feature requires activation

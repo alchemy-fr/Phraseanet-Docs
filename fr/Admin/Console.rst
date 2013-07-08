@@ -54,7 +54,7 @@ Vous aurez sur votre écran une liste de commande de la sorte :
       scheduler:state                  Get scheduler status
       scheduler:stop                   Stop the scheduler
     sphinx
-      sphinx:generate-suggestions        Generate suggestions for Sphinx Search Engine
+      sphinx:generate-suggestions        Generate suggestions for SphinxSearch Engine
     system
       system:backup-db                 Backup Phraseanet Databases
       system:clear-cache               Empty cache directories, clear Memcached, Redis if avalaible
