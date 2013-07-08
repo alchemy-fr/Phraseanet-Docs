@@ -39,7 +39,7 @@ Nginx virtual host configuration for Phraseanet :
 SendFile Configuration
 ----------------------
 
-.. topic::
+.. topic:: The essential
 
     Sendfile allows PHP to move file download handling to Nginx. It is
     strongly recommended to use this feature. If Sendfile is disabled,
@@ -52,21 +52,21 @@ second one dumps Nginx configuration.
 First step generates Phraseanet configuration mappings with the
 `bin/console xsendfile:generate-mapping` command.
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:generate-mapping nginx --enable
 
 This command prompts a piece of Phraseanet configuration as it will be
 written. To do write, re execute the command with **--write** option.
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:generate-mapping nginx --enable --write
 
 Once Phraseanet configuration has been written, Nginx directives should be
 updated with the `xsendfile:dump-configuration` command.
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:dump-configuration
 

@@ -83,13 +83,14 @@ API
 ---
 
 Les permaliens diffusés par l'application incluent maintenant un header HTTP
-`Link` (voir `RFC 5888`_) pointant vers une vue JSON de la notice.
+`Link` (voir `RFC 5988`_) pointant vers une vue JSON de la notice.
 
 Moteur de recherche
 -------------------
 
 - Le moteur de recherche Sphinx Search passe de l'integration en phase beta à
-  stable. Se référer à la :ref:`documentation des moteurs de recherche <search-engine-configuration>`.
+  stable. Se référer à la
+  :ref:`documentation des moteurs de recherche <search-engine-service-configuration>`.
 - Le moteur Phrasea Engine s'enrichie du support de radicalisation. Ainsi, lors
   de la recherche en full-text du terme "cheval", les documents indexés avec le
   terme "chevaux" apparaissent dans les résultats. Ces nouvelle fonctionalité

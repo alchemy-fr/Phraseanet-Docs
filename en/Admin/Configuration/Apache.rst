@@ -24,7 +24,7 @@ Apache 2 virtual host configuration for Phraseanet :
 XSendFile Configuration
 -----------------------
 
-.. topic::
+.. topic:: The essential
 
     XSendfile allows PHP to move file download handling to Apache. It is
     strongly recommended to use this feature. If XSendfile is disabled,
@@ -37,21 +37,21 @@ second one dumps Apache2 configuration.
 First step generates Phraseanet configuration mappings with the
 `bin/console xsendfile:generate-mapping` command.
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:generate-mapping apache --enable
 
 This command prompts a piece of Phraseanet configuration as it will be
 written. To do write, re execute the command with **--write** option.
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:generate-mapping apache --enable --write
 
 Once Phraseanet configuration has been written, Apache2 directives should be
 updated with the `xsendfile:dump-configuration` command.
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:dump-configuration
 

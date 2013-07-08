@@ -11,7 +11,7 @@ One of the major changes in Phraseanet 3.8 is in the configuration.
 disappear for a unique *configuration.yml* file.
 
 There is no more environment to declare and configuration is compiled in plain
-PHP to get the benefit of the `cache opcode`_.
+PHP to get the benefit of the `opcode cache`_.
 
 Configuration is automatically upgraded during the upgrade procedure. Detailed
 informations about the configuration are available in its
@@ -71,7 +71,7 @@ Authentication
 **************
 
 Authentication now accepts providers (Facebook, Twitter, Viadeo, Github,
-Linkedin, Google-Plus). Read more in :ref:`configuration<../Configuration>` for
+Linkedin, Google-Plus). Read more in :doc:`configuration <../Configuration>` for
 activation.
 
 API
@@ -83,7 +83,8 @@ of the caption.
 Search Engine
 -------------
 
-- Sphinx Search engine is now stable. See :ref:`search-engine documentation <search-engine-configuration>`
+- Sphinx Search engine is now stable. See
+  :ref:`search-engine documentation <search-engine-service-configuration>`
 - Phrasea Engine now supports stemming. When searching for "conspiracy", documents
   indexed with "conspirators" will be returned. This feature requires activation
   of the option in "Indexation" task and full databoxes re-indexing.

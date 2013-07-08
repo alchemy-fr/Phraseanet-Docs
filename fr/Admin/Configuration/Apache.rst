@@ -39,7 +39,7 @@ configuration Apache 2.
 La première étape consiste à générer le mapping Phraseanet Sendfile à l'aide
 de la commande `bin/console xsendfile:generate-mapping`
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:generate-mapping apache --enable
 
@@ -47,14 +47,14 @@ Cette commande va afficher à l'ecran la partie de la configuration telle qu'ell
 va être écrite. Pour l'écrire, re-executer la commande avec l'option
 **--write**.
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:generate-mapping apache --enable --write
 
 Une fois la configuration Phraseanet écrite, il faut mettre à jour les
 directives apache 2 avec la commande `xsendfile:dump-configuration`
 
-.. code-block::
+.. code-block:: none
 
     bin/console xsendfile:dump-configuration
 

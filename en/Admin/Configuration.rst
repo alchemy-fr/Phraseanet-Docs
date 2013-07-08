@@ -1,7 +1,7 @@
 Configuration
 =============
 
-.. topic::
+.. topic:: The essential
 
     Phraseanet configuration is stored in `config/configuration.yml`.
     After any update, it must be recompiled with
@@ -222,7 +222,7 @@ following adapters :
 | ArrayCache     | cache | opcode-cache | No cache                                            |            |
 +----------------+----------------------+-----------------------------------------------------+------------+
 
-.. _search-engine-configuration:
+.. _search-engine-service-configuration:
 
 Search Engine service
 *********************

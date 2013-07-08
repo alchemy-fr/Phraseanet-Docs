@@ -223,7 +223,7 @@ les adapteurs suivants :
 | ArrayCache     | cache | opcode-cache | Cache désactivé                                      |            |
 +----------------+----------------------+------------------------------------------------------+------------+
 
-.. _search-engine-configuration:
+.. _search-engine-service-configuration:
 
 Service de moteur de recherche
 ******************************

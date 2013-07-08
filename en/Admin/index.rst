@@ -27,6 +27,7 @@ You can also manage Phraseanet through the `Konsole Kommander <Console>`
     Prerequisite
     Install
     Indexer
+    SearchEngine
     Extension
     Upgrade
     Configuration
