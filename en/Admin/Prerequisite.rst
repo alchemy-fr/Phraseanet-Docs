@@ -23,7 +23,7 @@ a replacement for MySQL.
 PHP
 ---
 
-* PHP >= 5.3.4 with :
+* PHP >= 5.3.4 with:
 
     * Dom
     * exif
@@ -56,7 +56,7 @@ Phraseanet Specific
 
   You have to install PHP-Phrasea to use Phraseanet.
 
-  Download and Install :
+  Download and Install:
 
 .. code-block:: bash
 
@@ -86,13 +86,13 @@ Locales
 On Unix / GNU-Linux systems, it is necessary to enable locales to use
 Phraseanet in your languages.
 
-Debian example :
+Debian example:
 
 .. code-block:: bash
 
     dpkg-reconfigure locales
 
-Ubuntu example :
+Ubuntu example:
 
 * Activate via /etc/locale.gen
 * Execute /usr/sbin/locale-gen

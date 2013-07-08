@@ -9,7 +9,7 @@ into a third-party application.
 * mobile application
 * desktop application
 
-Here are the steps to follow :
+Here are the steps to follow:
 
 * Read the :doc:`documentation de l'API <index>` receive assistance from the
   :doc:`Phraseanet developers team and the community <Forums>`.

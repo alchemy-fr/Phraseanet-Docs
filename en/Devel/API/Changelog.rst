@@ -115,11 +115,11 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
 
     "response": {
         "items": {
-            "1" : {
+            "1": {
                 "item_id": 1,
             },
-            "3" : {
-                "item_id" : 3
+            "3": {
+                "item_id": 3
             }
         }
     }
@@ -440,7 +440,7 @@ Searching for a records
 ***********************
 
 Some parameters from :doc:`records/search <V1/Route/Records/Search>` have been
-renamed :
+renamed:
 
 - datefield => date_field
 - datemin   => date_min
@@ -469,7 +469,7 @@ been replaced by **offset_start**
 Feeds response
 **************
 
-Attribute *is_mine* has been removed and is replaced by two new attributes :
+Attribute *is_mine* has been removed and is replaced by two new attributes:
 *readonly* and *deletable*.
 
 .. code-block:: javascript
@@ -543,7 +543,7 @@ Thumbnails
 Before 1.2, a substitution file was provided by the API when a record thumbnail
 was not available.
 This substitution file is not provided anymore. Thus, the thumbnail key can
-be *null* :
+be *null*:
 
 .. code-block:: javascript
 
@@ -621,19 +621,19 @@ You can now restrict to some devices and/or mime types in the
 
 A major schema enhancement happens for meta values. Multivalued stored
 serialized are now stored separatly.
-Two routes are modified : records/metadatas and records/setmetadatas.
+Two routes are modified: records/metadatas and records/setmetadatas.
 A route has been added to make it easy to display caption : records/caption.
 
 This enhancement allows to store ressource in multivalued fields like users,
 geoname entities, Thesaurus entries...
 
-The main consequence is a change in two API routes : records/metadatas and
+The main consequence is a change in two API routes: records/metadatas and
 records/setmetadatas, therefore the upgrade of API to version 1.1.
 
 Route records/metadatas
 ***********************
 
-Route records/metadatas was returning results like :
+Route records/metadatas was returning results like:
 
 .. code-block:: javascript
 
@@ -654,7 +654,7 @@ Route records/metadatas was returning results like :
         ]
     }
 
-Responses in API 1.1 are now like :
+Responses in API 1.1 are now like:
 
 .. code-block:: javascript
 
@@ -712,7 +712,7 @@ metadatas.
 Route records/setmetadatas
 **************************
 
-La route records/setmetadatas was working like this :
+La route records/setmetadatas was working like this:
 
 .. code-block:: javascript
 
@@ -722,7 +722,7 @@ La route records/setmetadatas was working like this :
         {
             meta_struct_id: 1,
             meta_id: null,
-            value : [
+            value: [
                 'A pretty string'
             ]
         },
@@ -743,7 +743,7 @@ La route records/setmetadatas was working like this :
         }
     }
 
-Now, you must use it like this :
+Now, you must use it like this:
 
 .. code-block:: javascript
 
@@ -752,7 +752,7 @@ Now, you must use it like this :
         {
             meta_struct_id: 1,
             meta_id: "",
-            value : 'A pretty string'
+            value: 'A pretty string'
         },
         //Update a value in a multivalued field
         {

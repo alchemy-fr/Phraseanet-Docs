@@ -16,7 +16,7 @@ The indexer is a command-line program, "phraseanet-indexer".
 It can be ran in command-line, scheduled (cron, scheduled task...) or via the
 Phraseanet "Task-Manager".
 
-The indexer needs those libraries :
+The indexer needs those libraries:
 
 * libexpat
 * iconv
@@ -30,39 +30,39 @@ directory allowing excution.
 Command-line options
 --------------------
 
-* --host : adress of the database
-* --port : database port (usualy 3306 for MySQL)
-* --base : name of the "application-box" database
-* --user : SQL account for connection
-* --password : password of connection account
-* --default-character-set : charset of the connection
-* --old : mandatory option !
+* --host: adress of the database
+* --port: database port (usualy 3306 for MySQL)
+* --base: name of the "application-box" database
+* --user: SQL account for connection
+* --password: password of connection account
+* --default-character-set: charset of the connection
+* --old: mandatory option!
     Those options selects the "application-box" (SQL database of the Phraseanet
     program) where databases ("data-boxes") to index are published.
-* --socket : telnet port
+* --socket: telnet port
     When running, the indexer can be stopped with Ctrl-C (or sending sigint signal
     under linux or OSX).
     The "socket" option allows to stop the indexer via telnet.
-* --flush : flush indexes every 'n' records.
+* --flush: flush indexes every 'n' records.
     To optimize speed, the indexer works on batches of records (default 50).
     If the amount of ram consumed is too high, this number can be decreased with the
     "flush" option.
-* --clng : default language for candidates terms
+* --clng: default language for candidates terms
     When indexing fields linked the a thesaurus, new terms are set as "candidates".
     The option "clng" allows to define the primary language to set for those terms.
-* --debug : Type of generated logs.
-* --optfile : read options from a file
+* --debug: Type of generated logs.
+* --optfile: read options from a file
     It can be useful to not display some options from the command-line (for example
     the password).
     The indexer can read options from a file (which must be located into the same
     directory as the program file).
-* --quit : index and quit
+* --quit: index and quit
     The indexer is supposed to run continuously.
     This option allows to index changed records and then quit.
-* --help : print help
-* --version : print version
+* --help: print help
+* --version: print version
     The "help" option will print information and default values for every option.
-* --nolog : Write logs on console.
+* --nolog: Write logs on console.
     To be checked, the indexer can log various kind of operations (xml ops, sql...).
     7 "classes" of messages can be filtered with 7 bits (mask) of the "debug" value.
 
@@ -77,7 +77,7 @@ Windows). The "nolog" option allows to send messages on screen.
 examples
 ********
 
-The indexer can be checked with "-?" option which must print the help :
+The indexer can be checked with "-?" option which must print the help:
 
 .. code-block:: none
 
@@ -172,7 +172,7 @@ For compatibility reasons and matching versions, it's recommended to copy the
 dll files of requested libraries into the directory of the program file (beside
 phraseanet_indexer.exe)
 
-Those libraries can be downloaded from :
+Those libraries can be downloaded from:
 
 * libexpat.dll (http://sourceforge.net/projects/expat/files/expat_win32/2.0.1/expat-win32bin-2.0.1.exe/download),
   installer
@@ -191,11 +191,11 @@ options.
 
 .. code-block:: none
 
-    --install : install the service "Phraseanet-Indexer"
-    --remove : uninstall the service
-    --run : run the indexer as a program (mandatory to run via the task)
+    --install: install the service "Phraseanet-Indexer"
+    --remove: uninstall the service
+    --run: run the indexer as a program (mandatory to run via the task)
 
-ex :
+ex:
 
 .. code-block:: none
 

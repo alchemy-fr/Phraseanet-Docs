@@ -2,7 +2,7 @@ Install
 =======
 
 After having download sources, verify :doc:`prerequisite <Prerequisite>`,
-you can verify your configuration. At root of Phraseanet :
+you can verify your configuration. At root of Phraseanet:
 
 .. code-block:: bash
 
@@ -36,4 +36,4 @@ Task start
 
 Start the task manager as in the user section
 
-Congrats ! Your install is finished !
+Congrats! Your install is finished!

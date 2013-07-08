@@ -1,12 +1,12 @@
 Report An Issue
 ===============
 
-You're facing an issue ? The result of an action is not what was expected ?
-You can not activate an optoon ? You want to ask a new option to make Phraseanet
-se more easy ?
+You're facing an issue? The result of an action is not what was expected?
+You can not activate an optoon? You want to ask a new option to make Phraseanet
+se more easy?
 
 Then you have to open an issue, but please before that, consider the following
-rules :
+rules:
 
 * You are sure you got the latest Phraseanet version
 * You are sure your system has been patched after the
@@ -15,14 +15,14 @@ rules :
 * You have read the :doc:`FAQ </Admin/Faq>` for help for known issues
 * You are sure your problem has not already been reported in the `bug tracker`_
 
-If this is OK (pfiou !), open an issue in the `bug tracker`_ with a `gist`_ of
-the output of :
+If this is OK (pfiou!), open an issue in the `bug tracker`_ with a `gist`_ of
+the output of:
 
 .. code-block:: bash
 
-    bin/console system:doctor
+    bin/console check:system
 
-Be sure to :
+Be sure to:
 
 * Never just copy/paste the result
 * Give the simplest way to reproduce your issue step by step
