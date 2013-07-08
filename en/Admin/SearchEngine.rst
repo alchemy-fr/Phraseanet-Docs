@@ -291,8 +291,8 @@ Advantages
 
 Main SphinxSearch advantages are :
 
-* fast
-* scalable
+* speed
+* scalability
 * supports autocompletion
 
 Configuration inside Phraseanet
@@ -301,7 +301,7 @@ Configuration inside Phraseanet
 After having installed SphinxSearch, Phraseanet must be configured to use it.
 Phraseanet admin provides a tool to generate SphinxSearch configuration.
 
-Pour cela, consulter la documentation de configuration
+To do this, please consult the documentation for
 :ref:`search-engine-service-configuration`.
 
 .. note::
@@ -311,7 +311,7 @@ Pour cela, consulter la documentation de configuration
     section at the end of the configuration should be removed.
 
 This file can be used with SphinxSearch server (**/usr/local/etc/sphinx.conf**).
-Restart SphinxSearch pour appliquer la configuration.
+Restart SphinxSearch to apply configuration.
 In case of failure, please find `SphinxSearch documentation`_.
 
 Please also consider the following FAQ:

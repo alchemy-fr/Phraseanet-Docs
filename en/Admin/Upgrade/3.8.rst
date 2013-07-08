@@ -1,7 +1,7 @@
 Version 3.8
 ===========
 
-Here are main changes and news in version 3.8.
+Here are the main changes and new features in version 3.8.
 
 Configuration
 -------------
@@ -19,12 +19,10 @@ informations about the configuration are available in its
 
 .. warning::
 
-    As configuration is now compiled, on any change
-    La configuration étant maintenant compilée, à chaque modification du fichier
-    config/configuration.yml, il faudra la recompiler manuellement sans quoi
-    celle-ci ne sera pas prise en compte.
-    Utiliser la commande :ref:`bin/console compile:configuration<configuration-compilation>`
-    pour cela.
+    The configuration is now compiled. Each time file config/configuration.yml
+    is changed it is necessary to recompile to apply changes.
+    Use the :ref:`bin/console compile:configuration<configuration-compilation>`
+    command to do so.
 
 Virual host configuration
 -------------------------
@@ -53,7 +51,7 @@ in the databox).
 
 ..warning::
 
-    Be careful, time litmits are a now applied on template application.
+    Be careful, time litmits are now applied at template application.
 
 Localization
 ************

@@ -169,7 +169,7 @@ This command returns an exit code.
 +==============================================+==================+
 | System is correctly configured               | 0                |
 +----------------------------------------------+------------------+
-| System is correctly configureed,             | 1                |
+| System is correctly configured,              | 1                |
 | Adjustments can be done                      |                  |
 +----------------------------------------------+------------------+
 | System is not correctly configured.          | 2                |
