@@ -1,7 +1,7 @@
 Apache
 ======
 
-Exemple de fichier de configuration Apache.
+Configuration d'un virtual host Apache 2 pour Phraseanet :
 
 .. code-block:: bash
 
@@ -19,147 +19,77 @@ Exemple de fichier de configuration Apache.
 
     </VirtualHost>
 
-Gestion des videos
-------------------
+.. _apache-xsendfile:
 
-Depuis la version 3.0.6, Phraseanet peut prendre en compte deux modules
-apaches, permettant un pseudo-streaming sur les prévisualisation h264
-des videos.
+Configuration XSendFile
+-----------------------
 
-Mod Auth Token
-**************
+.. topic:: L'essentiel
 
-Télécharger
-^^^^^^^^^^^
+    XSendfile permet de delester PHP de l'envoi des fichiers aux navigateurs.
+    Il est fortement recommandé d'utiliser cette configuration pour alleger les
+    process sur le serveur. Si XSendfile et désactivé, l'application Phraseanet
+    fonctionnera normallement.
 
-Télécharger les sources du module Auth Token pour apache
+Depuis la version 3.8, la configuration XSendFile de Phraseanet est simplifiée.
+Une commande de l'utilitaire `bin/console` permet de générer les mappings pour
+la configuration Phraseanet, une seconde permet d'en générer le supplément de
+configuration Apache 2.
 
-.. code-block:: bash
+La première étape consiste à générer le mapping Phraseanet Sendfile à l'aide
+de la commande `bin/console xsendfile:generate-mapping`
 
-    cd ~
-    wget https://code.google.com/p/mod-auth-token/downloads/detail?name=mod_auth_token-1.0.5.tar.gz
-    tar -zxvf mod_auth_token-1.0.5.tar.gz
+.. code-block::
 
-Compiler
-^^^^^^^^
-.. code-block:: bash
+    bin/console xsendfile:generate-mapping apache --enable
 
-    rm -f configure
-    autoreconf -fi
-    automake -f
-    ./configure --with-apxs=/usr/bin/apxs
-    make
+Cette commande va afficher à l'ecran la partie de la configuration telle qu'elle
+va être écrite. Pour l'écrire, re-executer la commande avec l'option
+**--write**.
 
-Activer
-^^^^^^^
+.. code-block::
 
-Éditer le ficher de configuration d'apache (en general dans
-/etc/apache/httpd.conf).
+    bin/console xsendfile:generate-mapping apache --enable --write
 
-.. code-block:: bash
+Une fois la configuration Phraseanet écrite, il faut mettre à jour les
+directives apache 2 avec la commande `xsendfile:dump-configuration`
 
-    LoadModule auth_token_module  /usr/lib/httpd/modules/mod_auth_token.so
+.. code-block::
 
-Mod H264 Streaming
-******************
+    bin/console xsendfile:dump-configuration
 
-Télécharger
-^^^^^^^^^^^
-
-Télécharger les sources du module H264 Streaming pour Apache.
-
-.. code-block:: bash
-
-    cd ~
-    wget http://h264.code-shop.com/download/apache_mod_h264_streaming-2.2.7.tar.gz
-    tar -zxvf apache_mod_h264_streaming-2.2.7.tar.gz
-
-Compiler
-^^^^^^^^
-
-.. code-block:: bash
-
-    cd ~/mod_h264_streaming-2.2.7
-    ./configure --with-apxs=`which apxs2`
-    make
-    sudo make install
-
-Activer
-^^^^^^^
-
-Éditer le ficher de configuration d'apache (en général dans
-/etc/apache/httpd.conf) afin que les requêtes se terminant par .mp4 soit prises
-en charge par le module h264_streaming.
-
-.. code-block:: bash
-
-    LoadModule h264_streaming_module /usr/lib/apache2/modules/mod_h264_streaming.so
-    AddHandler h264-streaming.extensions .mp4
-
-Puis redémarrer Apache pour que les modifications soient prises en compte.
-
-Paramètres videos
-*****************
-
-Une fois ces deux modules ajoutés, il est possible de consulter leurs prises en
-charge dans le tableau de bord.
-
-Modifier l'Hôte Virtuel Apache :
-
-.. code-block:: bash
-
-    ...
-    Alias /mp4_videos/ "/votre_path_vers_phraseanet_datas/datas/noweb"
-
-    <Location /downloadmp4/>
-            AuthTokenSecret       "votre passphrase secrete"
-            AuthTokenPrefix       /mp4_videos/
-            AuthTokenTimeout      120
-            AuthTokenLimitByIp    off
-    </Location>
-    ....
-
-Une fois Apache redémarré, activer le mode pseudo-streaming h264 dans le setup
-de l'installation, renseigner la pass-phrase, le point de montage des données et
-le path complet vers les données.
+Il suffit de copier coller ce code dans le virtual host Apache et recharger
+Apache.
 
 .. warning::
 
-    si les vidéos précédemment archivées étaient en flv, alors il faudra
-    reconstruire les sous-définitions (via le menu "outil") pour bénéficier du
-    stream sur ces enregistrements.
+    L'operation de generation des mappings et mise à jour du virtual host est à
+    refaire à chaque création de databox ou lors de la modification de la
+    structure des sous définitions de l'une d'elles.
 
-Mod XSendFile
--------------
-
-Configuration du module xsendfile sous apache
-
-Depuis la version 3.0.14 de Phraseanet, la configuration du module xsendfile
-n'est plus fournie dans un fichier .htaccess comme auparavant.
-
-La raison pour laquelle nous avons cessé cette pré-configuration provient d'un
-changement majeur dans la configuration du module entre ses versions 0.9 et 0.10
-
-Exemple de configuration en version >= 0.10 dans le virtualhost :
+Example de virtual host Apache intégrant une configuraton sendfile :
 
 .. code-block:: bash
 
-    <IfModule mod_xsendfile.c>
-      <Files *>
-        XSendFile on
-        XSendFilePath /var/www/phraseanet/datas
-        XSendFilePath /var/www/phraseanet/tmp/download
-        XSendFilePath /var/www/phraseanet/tmp/lazaret
-      </Files>
-    </IfModule>
+    #/etc/apache2/sites-available/phraseanet.conf
+    <VirtualHost *:80>
+       ServerName sub.domain.tld
 
-Exemple de configuration en version < 0.10 dans le virtualhost :
+       DocumentRoot "/var/www/Phraseanet/www"
 
-.. code-block:: bash
+       <Directory "/var/www/Phraseanet/www">
+           DirectoryIndex index.php
+           Options Indexes FollowSymLinks
+           AllowOverride All
+       </Directory>
 
-    <IfModule mod_xsendfile.c>
-      <Files *>
-        XSendFile on
-        XSendFileAllowAbove on
-      </Files>
-    </IfModule>
+        <IfModule mod_xsendfile.c>
+          <Files *>
+              XSendFile on
+              XSendFilePath  /storage/phraseanet/lazaret
+              XSendFilePath  /storage/phraseanet/download
+              XSendFilePath  /storage/phraseanet/databox/documents
+              XSendFilePath  /storage/phraseanet/databox/subdefs
+          </Files>
+        </IfModule>
+    </VirtualHost>

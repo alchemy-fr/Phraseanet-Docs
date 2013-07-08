@@ -1,0 +1,131 @@
+Version 3.8
+===========
+
+Voici les principaux changements et nouveautés dans la version 3.8.
+
+Configuration
+-------------
+
+Un des changements majeurs de Phraseanet 3.8 réside dans la configuration. Les
+fichiers *config/config.yml*, *config/services.yml* et *config/connexions.yml*
+disparaissent pour laisser place à un unique fichier *configuration.yml*.
+
+Il n'y a plus d'environnement à déclarer et la configuration est compilée en
+PHP afin de bénéficier d'un `cache opcode`_.
+
+La configuration est mise à jour automatiquement pendant le l'execution de la
+mise à jour. Les informations détaillées sont disponibles dans la
+:doc:`documentation<../Configuration>`.
+
+.. warning::
+
+    La configuration étant maintenant compilée, à chaque modification du fichier
+    config/configuration.yml, il faudra la recompiler manuellement sans quoi
+    celle-ci ne sera pas prise en compte.
+    Utiliser la commande :ref:`bin/console compile:configuration<configuration-compilation>`
+    pour cela.
+
+Configuration du virual host
+----------------------------
+
+La configuration du virtual host se trouve simplifiée en version 3.8. Les
+paramétrages SendFile (Nginx) et XSendFile (Apache) bénéficient pour leur part
+d'une assistance à la configuration via les commandes
+`bin/console xsendfile:dump-configuration` et `bin/console xsendfile:generate-mapping`.
+
+Les pages de configuration Sendfile et XSendFile expliquent comment mettre à
+jour les configurations.
+lien vers doc dédiée, parler de bin/developer et du vhost et XSendFile
+
+Application
+-----------
+
+- Amélioration du temps de chargement du module Report. Un rapport sur les
+  documents envoyés par mail est maintenant disponible.
+- Ajout de la possibilité de supprimer un panier depuis le navigateur de
+  paniers.
+- Ajout du support de plugins.
+  (Ajouter un lien vers la doc dediée)
+
+Limites temporelles d'accès des comptes utilisateurs
+****************************************************
+
+Les limites temporelles sont maintenant éditable pour une base complète (action
+sur l'ensemble des collections de la base).
+
+..warning::
+
+    Attention, les limites temporelles des modèles sont maintenant appliquées
+    aux utilisateurs.
+
+Localisation
+************
+
+Les noms de collections, de bases, de status-bit et de champs documentaires
+sont maintenant localisables via leur propriété "label".
+
+Champs documentaires
+********************
+
+L'interface de réglages des champs documentaires a été entièrement ré-ecrite.
+Outre la possibilité de localiser les noms des champs, il est désormais
+possible de les ré-ordonner.
+
+Authentification
+****************
+
+L'authentification a été ré-écrite. Il est désormais possible d'utiliser
+des fournisseurs d'authentification tiers (Facebook, Twitter, Viadeo, Github,
+Linkedin, Google-Plus). Se référer à la :ref:`configuration<configuration>` pour
+activer les fournisseurs.
+
+API
+---
+
+Les permaliens diffusés par l'application incluent maintenant un header HTTP
+`Link` (voir `RFC 5888`_) pointant vers une vue JSON de la notice.
+
+Moteur de recherche
+-------------------
+
+- Le moteur de recherche Sphinx Search passe de l'integration en phase beta à
+  stable. Se référer à la :ref:`documentation des moteurs de recherche <search-engine-configuration>`.
+- Le moteur Phrasea Engine s'enrichie du support de radicalisation. Ainsi, lors
+  de la recherche en full-text du terme "cheval", les documents indexés avec le
+  terme "chevaux" apparaissent dans les résultats. Ces nouvelle fonctionalité
+  requiert l'activation de l'option dans la tâche "Indexation" et la
+  réindexation complète des bases.
+
+Notifications par Mail
+----------------------
+
+- Les notifications par email sont maintenant envoyées en HTML.
+  (Ajouter un lien vers la doc "customization des emails").
+- L'authentification TLS, en plus de SSL, est maintenant supporté pour la
+  connection à un serveur de mail.
+- Un prefix peut être configuré à l'attention du sujet des emails (pratique
+  pour les filtres d'emails).
+- La connexion au serveur de mail peut être testée via la commande
+  `bin/console mail:test`.
+
+Commandes de console
+--------------------
+
+Plusieurs commandes disparaissent :
+
+- `bin/console check:system` est remplacé par `bin/setup check:system`.
+- `bin/console system:upgrade` est remplacé par `bin/setup system:upgrade`.
+- `bin/console check:ensure-production-settings` et `bin/console check:ensure-dev-settings`
+  sont remplacées par `bin/console check:config`.
+
+- Il faut retenir que les commandes fournies par l'utilitaire console requièrent
+  une installation de Phraseanet fonctionnelle, tandis que l'utilitaire `setup`
+  s'éxecute sans même avoir installé Phraseanet.
+- L'application s'installe désormais aussi en ligne de commande via la commande
+  `bin/setup system:install`.
+- Ajout de la compression gzip/bzip2 à la commande de
+  `bin/console system:backup-db`.
+
+.. _cache opcode: https://en.wikipedia.org/wiki/List_of_PHP_accelerators
+.. _bin/console compile:configuration: ../Console
+.. _RFC 5988: https://tools.ietf.org/html/rfc5988
