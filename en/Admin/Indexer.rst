@@ -45,9 +45,8 @@ Command-line options
 * --old:
     mandatory option!
 
-    .. note::
-        Those 7 options selects the "application-box" (SQL database of the
-        Phraseanet program) where databases ("data-boxes") to index are published.
+    Those 7 previous options selects the "application-box" (SQL database of the
+    Phraseanet program) where databases ("data-boxes") to index are published.
 
 * --socket:
     When running, the indexer can be stopped with Ctrl-C (or sending sigint signal
@@ -68,9 +67,8 @@ Command-line options
 
     Available languages can be listed with option --help
 
-    .. note::
-        searching using stems is available in Phraseanet Production / advanced search.
-        ex. : searching "running wolf" will match records containing "wolfes run".
+    searching using stems is available in Phraseanet Production / advanced search.
+    ex. : searching "running wolf" will match records containing "wolfes run".
 
 * --optfile:
     read options from a file
@@ -89,9 +87,8 @@ Command-line options
     To be checked, the indexer can log various kind of operations (xml ops, sql...).
     7 "classes" of messages can be filtered with 7 bits (mask) of the "debug" value.
 
-    .. note::
-        A debug mask set to --debug=64 (flush ops.) allows control of indexer
-        without overloading the logs.
+    A debug mask set to --debug=64 (flush ops.) allows control of indexer
+    without overloading the logs.
 
 * --nolog:
     Write logs on console.

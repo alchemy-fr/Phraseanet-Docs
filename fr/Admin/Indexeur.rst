@@ -49,9 +49,8 @@ Phraseanet) dans laquelle sont publiées les bases à indexer.
 * --old:
     argument obligatoire !
 
-    .. note::
-        Ces 7 options sélectionnent l'"application-box" (base SQL de Phraseanet)
-        où les bases ("data-boxes") à indexer sont publiées.
+    Ces 7 précédentes options sélectionnent l'"application-box" (base SQL de Phraseanet)
+    où les bases ("data-boxes") à indexer sont publiées.
 
 * --socket:
     port de contrôle via telnet
@@ -77,9 +76,8 @@ Phraseanet) dans laquelle sont publiées les bases à indexer.
 
     La liste des langues disponibles est affichée avec l'option --help
 
-    .. note::
-        La recherche par racine est disponible dans Phraseanet Production / recherche avancée..
-        ex. : chercher "oiseau vole" trouvera les documents renseignés avec "oiseaux volants".
+    La recherche par racine est disponible dans Phraseanet Production / recherche avancée..
+    ex. : chercher "oiseau vole" trouvera les documents renseignés avec "oiseaux volants".
 
 * --optfile:
     lire les arguments dans un fichier
@@ -99,9 +97,8 @@ Phraseanet) dans laquelle sont publiées les bases à indexer.
     Ces 7 types de messages peuvent être filtrés par les 7 bits (masque) de la
     valeur de debug.
 
-    .. note::
-        Un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
-        fonctionnement sans trop charger les logs.
+    Un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
+    fonctionnement sans trop charger les logs.
 
 * --nolog:
     Les "logs" sont normalement envoyés au système (syslog pour linux ou OSX,
