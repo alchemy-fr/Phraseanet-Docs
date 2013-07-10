@@ -45,8 +45,9 @@ Command-line options
 * --old:
     mandatory option!
 
-Those options selects the "application-box" (SQL database of the Phraseanet
-program) where databases ("data-boxes") to index are published.
+    .. note::
+        Those 7 options selects the "application-box" (SQL database of the
+        Phraseanet program) where databases ("data-boxes") to index are published.
 
 * --socket:
     When running, the indexer can be stopped with Ctrl-C (or sending sigint signal
@@ -65,10 +66,11 @@ program) where databases ("data-boxes") to index are published.
     index 'stems' (see http://en.wikipedia.org/wiki/Stemming) of words which
     allows searching different forms of words, as plural or conjugation.
 
-    searching using stems is available in Phraseanet Production / advanced search.
-    ex. : searching "running wolf" will match records containing "wolfes run".
-
     Available languages can be listed with option --help
+
+    .. note::
+        searching using stems is available in Phraseanet Production / advanced search.
+        ex. : searching "running wolf" will match records containing "wolfes run".
 
 * --optfile:
     read options from a file
@@ -80,24 +82,24 @@ program) where databases ("data-boxes") to index are published.
     index and quit
     The indexer is supposed to run continuously.
     This option allows to index changed records and then quit.
-* --help:
-    print help
 * --version:
     print version
     The "help" option will print information and default values for every option.
 * --debug:
     To be checked, the indexer can log various kind of operations (xml ops, sql...).
     7 "classes" of messages can be filtered with 7 bits (mask) of the "debug" value.
+
+    .. note::
+        A debug mask set to --debug=64 (flush ops.) allows control of indexer
+        without overloading the logs.
+
 * --nolog:
     Write logs on console.
     Those logs are usualy sent to the system (syslog for linux or OSX, event-log for
     Windows). The "nolog" option allows to send messages on screen.
 
-
-.. note::
-
-    A debug mask set to --debug=64 (flush ops.) allows control of indexer
-    without overloading the logs.
+* --help:
+    print help
 
 examples
 ********

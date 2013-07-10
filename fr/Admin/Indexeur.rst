@@ -49,8 +49,9 @@ Phraseanet) dans laquelle sont publiées les bases à indexer.
 * --old:
     argument obligatoire !
 
-Ces options sélectionnent l'"application-box" (base SQL de Phraseanet) où les
-bases ("data-boxes") à indexer sont publiées.
+    .. note::
+        Ces 7 options sélectionnent l'"application-box" (base SQL de Phraseanet)
+        où les bases ("data-boxes") à indexer sont publiées.
 
 * --socket:
     port de contrôle via telnet
@@ -74,10 +75,11 @@ bases ("data-boxes") à indexer sont publiées.
     des mots, permettant de rechercher en full-text différentes formes d'un mot
     comme le pluriel ou les conjugaisons.
 
-    La recherche par racine est disponible dans Phraseanet Production / recherche avancée..
-    ex. : chercher "oiseau vole" trouvera les documents renseignés avec "oiseaux volants".
-
     La liste des langues disponibles est affichée avec l'option --help
+
+    .. note::
+        La recherche par racine est disponible dans Phraseanet Production / recherche avancée..
+        ex. : chercher "oiseau vole" trouvera les documents renseignés avec "oiseaux volants".
 
 * --optfile:
     lire les arguments dans un fichier
@@ -89,9 +91,6 @@ bases ("data-boxes") à indexer sont publiées.
     L'indexeur est censé fonctionner en continu.
     Cette option permet d'indexer les documents concernés puis de quitter l'indexeur
     immédiatement.
-* --help:
-    L'option "help" détaille les différentes options précédemment citées ainsi que
-    les valeurs par défaut.
 * --version:
     Affiche la version
 * --debug:
@@ -99,15 +98,19 @@ bases ("data-boxes") à indexer sont publiées.
     effectuées (traitement xml, opérations sql...).
     Ces 7 types de messages peuvent être filtrés par les 7 bits (masque) de la
     valeur de debug.
+
+    .. note::
+        Un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
+        fonctionnement sans trop charger les logs.
+
 * --nolog:
     Les "logs" sont normalement envoyés au système (syslog pour linux ou OSX,
     journal des événements pour Windows).
     L'option "nolog" permet d'envoyer les messages sur l'écran.
 
-.. note::
-
-    Un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
-    fonctionnement sans trop charger les logs.
+* --help:
+    L'option "help" détaille les différentes options précédemment citées ainsi que
+    les valeurs par défaut.
 
 Exemples
 ********
