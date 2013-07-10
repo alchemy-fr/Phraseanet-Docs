@@ -34,50 +34,75 @@ Arguments
 Ces arguments spécifient l' "application-box" (base SQL de l'application
 Phraseanet) dans laquelle sont publiées les bases à indexer.
 
-* --host : adresse de la base
-* --port : port (normalement 3306 pour MySQL)
-* --base : nom de la base "application-box"
-* --user : compte SQL pour la connexion
-* --password : mot de passe du compte de connexion
-* --default-character-set : jeu de caractères de la connexion
-* --old : argument obligatoire !
-* --socket : port de contrôle via telnet
+* --host:
+    adresse de la base
+* --port:
+    port (normalement 3306 pour MySQL)
+* --base:
+    nom de la base "application-box"
+* --user:
+    compte SQL pour la connexion
+* --password:
+    mot de passe du compte de connexion
+* --default-character-set:
+    jeu de caractères de la connexion
+* --old:
+    argument obligatoire !
+
+Ces options sélectionnent l'"application-box" (base SQL de Phraseanet) où les
+bases ("data-boxes") à indexer sont publiées.
+
+* --socket:
+    port de contrôle via telnet
     En cours d'éxécution, l'indexeur peut être interrompu par Ctrl-C (ou sous linux
     et OSX par l'envoi du signal sigint).
     L'argument "socket" permet d'interrompre également l'indexeur via telnet.
-* --flush : Ecrire les index tous les 'n' documents.
+* --flush:
+    Ecrire les index tous les 'n' documents.
     Pour optimiser les performances, l'indexeur indexe les documents par lots
     (par défaut 50).
     Si la mémoire consommée est trop importante il est possible de diminuer ce
     nombre avec l'option "flush" (au détriment de la vitesse).
-* --clng : Langue par défaut des termes candidats
+* --clng:
+    Langue par défaut des termes candidats
     Lors de l'indexation de champs liés à un thésaurus, les nouveaux termes sont
     placés comme "termes candidats".
     L'option "clng" permet de spécifier la langue à attribuer par défaut aux termes
     candidats.
-* --debug : Type des messages générés.
-* --optfile : lire les arguments dans un fichier
+* --stem:
+    indexe les racines (voir http://fr.wikipedia.org/wiki/Racinisation)
+    des mots, permettant de rechercher en full-text différentes formes d'un mot
+    comme le pluriel ou les conjugaisons.
+
+    La recherche par racine est disponible dans Phraseanet Production / recherche avancée..
+    ex. : chercher "oiseau vole" trouvera les documents renseignés avec "oiseaux volants".
+
+    La liste des langues disponibles est affichée avec l'option --help
+
+* --optfile:
+    lire les arguments dans un fichier
     Il peut être souhaitable de ne pas afficher certaines options de la ligne de
     commmande (notamment le mot de passe).
     L'indexeur peut lire des options dans un fichier, ce fichier devant être placé
     dans le même répertoire que l'éxécutable.
-* --quit : indexer et quitter
+* --quit:
     L'indexeur est censé fonctionner en continu.
     Cette option permet d'indexer les documents concernés puis de quitter l'indexeur
     immédiatement.
-* --help : Affiche l'aide
-* --version : Affiche la version
-    L'argument "help" détaille les différentes options précédemment citées ainsi que
+* --help:
+    L'option "help" détaille les différentes options précédemment citées ainsi que
     les valeurs par défaut.
-* --nolog : Ecrire les message sur la console.
+* --version:
+    Affiche la version
+* --debug:
     A des fins de contrôle, l'indexeur peut écrire différents types d'opérations
     effectuées (traitement xml, opérations sql...).
     Ces 7 types de messages peuvent être filtrés par les 7 bits (masque) de la
     valeur de debug.
-
-Ces "logs" sont normalement envoyés au système (syslog pour linux ou OSX,
-journal des événements pour Windows).
-L'option "nolog" permet d'envoyer les messages sur l'écran.
+* --nolog:
+    Les "logs" sont normalement envoyés au système (syslog pour linux ou OSX,
+    journal des événements pour Windows).
+    L'option "nolog" permet d'envoyer les messages sur l'écran.
 
 .. note::
 
@@ -92,7 +117,7 @@ L'indexeur peut être testé avec l'option '-?' qui doit afficher l'aide :
 .. code-block:: none
 
     phraseanet_indexer -?
-    phraseanet_indexer version 3.9.0.4
+    phraseanet_indexer version 3.10.2.3
     Usage : phraseanet_indexer <options>
     [-?     | --help]                   : this help
     [-v     | --version                 : display version and quit
@@ -100,28 +125,53 @@ L'indexeur peut être testé avec l'option '-?' qui doit afficher l'aide :
     [-P     | --port]=<port>            : port of applicationBox (default '3306')
     [-b     | --base]=<base>            : database of applicationBox (default 'phrasea')
     [-u     | --user]=<user>            : user account for connection to applicationBox
-                                          (default 'root')
+                                        : (default 'root')
     [-p     | --password]=<pwd>         : password for connection to applicationBox
-                                          (default '')
+                                        : (default '')
     [-s     | --socket]=<port>          : port for telnet control (default none)
     [-f     | --flush]=<n>              : flush every n records (default 50)
     [-o     | --old]                    : use old 'sbas' table instead of 'xbas'
     [         --quit]                   : index once and quit
     [-c     | --clng]=<lng>             : default language for new candidates terms
-                                          (default 'fr')
+                                        : (default 'fr')
+    [         --stem]=<lng>,<lng>,..    : stemm for those languages
     [-n     | --nolog]                  : do not log, but out to console
+    [         --sort-empty]=<a|n|z>     : default value for unset fields with type
+                                        : (default 'a')  //=sort position
+                               a        : beginning (default)
+                               n        : none (=record not shown when sorting)
+                               z        : end
     [-d     | --debug]=<mask>           : debug mask (to console)
-                            1           : xml parsing
-                            2           : sql errors
-                            4           : sql ok
-                            8           : memory alloc.
-                            16          : record ops.
-                            32          : structure ops.
-                            64          : flush ops.
+                               1        : xml parsing
+                               2        : sql errors
+                               4        : sql ok
+                               8        : memory alloc.
+                              16        : record ops.
+                              32        : structure ops.
+                              64        : flush ops.
     [-@     | --optfile]=<file>         : read (more) arguments from text file
-                                          (see 'sample_args.txt')
+                                        : (see 'sample_args.txt')
     [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
-                                          (default none)
+                                        : (default none)
+
+    /----- stemmers --------------
+    | danish     : da   dan
+    | german     : de   deu  ger
+    | dutch      : dut  nl   nld
+    | english    : en   eng
+    | spanish    : es   esl  spa
+    | finnish    : fi   fin
+    | french     : fr   fra  fre
+    | hungarian  : hu   hun
+    | italian    : it   ita
+    | norwegian  : no   nor
+    | portuguese : por  pt
+    | porter     :
+    | romanian   : ro   ron  rum
+    | russian    : ru   rus
+    | swedish    : sv   swe
+    | turkish    : tr   tur
+    \-----------------------------
 
 Exemple d'arguments dans un fichier "indexerargs.txt"
 
@@ -145,11 +195,14 @@ Exemple d'arguments dans un fichier "indexerargs.txt"
     # use 'sbas' table (mandatory)
     -o
 
+    # sql connections encoding
+    --default-character-set=utf8
+
     # candidates default language
     --clng=fr
 
-    # sql connections encoding
-    --default-character-set=utf8
+    # stemming languages
+    --stemm=fr,en
 
 Exécution par le Task-Manager
 -----------------------------

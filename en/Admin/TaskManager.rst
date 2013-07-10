@@ -42,6 +42,21 @@ Indexer requires parameters:
 * Password: MySQL password
 * Socket port: socket port to stop the indexer
 
+* Default language for thesaurus candidates : Default language for unknown terms
+  inserted in candidates, ex: en
+
+* Enable stemming languages : languages for indexing by "stems", ex: en, fr
+
+  The "stemming" (see http://en.wikipedia.org/wiki/Stemming) allows searching
+  different forms of words as plural or conjugation
+
+  ex. : searching "running wolf" will match records containing "wolfes run"
+
+* Sort records with an empty fields : When searching, records where the field
+  used for sorting is not set can be :
+
+  not on result ; in the begining of results ; in the end of results
+
 .. code-block:: bash
 
     /usr/local/bin/phraseanet_indexer -h=host \

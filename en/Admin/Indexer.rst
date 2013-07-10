@@ -30,44 +30,69 @@ directory allowing excution.
 Command-line options
 --------------------
 
-* --host: adress of the database
-* --port: database port (usualy 3306 for MySQL)
-* --base: name of the "application-box" database
-* --user: SQL account for connection
-* --password: password of connection account
-* --default-character-set: charset of the connection
-* --old: mandatory option!
-    Those options selects the "application-box" (SQL database of the Phraseanet
-    program) where databases ("data-boxes") to index are published.
-* --socket: telnet port
+* --host:
+    adress of the database
+* --port:
+    database port (usualy 3306 for MySQL)
+* --base:
+    name of the "application-box" database
+* --user:
+    SQL account for connection
+* --password:
+    password of connection account
+* --default-character-set:
+    charset of the connection
+* --old:
+    mandatory option!
+
+Those options selects the "application-box" (SQL database of the Phraseanet
+program) where databases ("data-boxes") to index are published.
+
+* --socket:
     When running, the indexer can be stopped with Ctrl-C (or sending sigint signal
     under linux or OSX).
     The "socket" option allows to stop the indexer via telnet.
-* --flush: flush indexes every 'n' records.
+* --flush:
+    flush indexes every 'n' records.
     To optimize speed, the indexer works on batches of records (default 50).
     If the amount of ram consumed is too high, this number can be decreased with the
     "flush" option.
-* --clng: default language for candidates terms
+* --clng:
+    default language for candidates terms
     When indexing fields linked the a thesaurus, new terms are set as "candidates".
     The option "clng" allows to define the primary language to set for those terms.
-* --debug: Type of generated logs.
-* --optfile: read options from a file
+* --stem:
+    index 'stems' (see http://en.wikipedia.org/wiki/Stemming) of words which
+    allows searching different forms of words, as plural or conjugation.
+
+    searching using stems is available in Phraseanet Production / advanced search.
+    ex. : searching "running wolf" will match records containing "wolfes run".
+
+    Available languages can be listed with option --help
+
+* --optfile:
+    read options from a file
     It can be useful to not display some options from the command-line (for example
     the password).
     The indexer can read options from a file (which must be located into the same
     directory as the program file).
-* --quit: index and quit
+* --quit:
+    index and quit
     The indexer is supposed to run continuously.
     This option allows to index changed records and then quit.
-* --help: print help
-* --version: print version
+* --help:
+    print help
+* --version:
+    print version
     The "help" option will print information and default values for every option.
-* --nolog: Write logs on console.
+* --debug:
     To be checked, the indexer can log various kind of operations (xml ops, sql...).
     7 "classes" of messages can be filtered with 7 bits (mask) of the "debug" value.
+* --nolog:
+    Write logs on console.
+    Those logs are usualy sent to the system (syslog for linux or OSX, event-log for
+    Windows). The "nolog" option allows to send messages on screen.
 
-Those logs are usualy sent to the system (syslog for linux or OSX, event-log for
-Windows). The "nolog" option allows to send messages on screen.
 
 .. note::
 
@@ -82,7 +107,7 @@ The indexer can be checked with "-?" option which must print the help:
 .. code-block:: none
 
     phraseanet_indexer -?
-    phraseanet_indexer version 3.9.0.4
+    phraseanet_indexer version 3.10.2.3
     Usage : phraseanet_indexer <options>
     [-?     | --help]                   : this help
     [-v     | --version                 : display version and quit
@@ -90,28 +115,54 @@ The indexer can be checked with "-?" option which must print the help:
     [-P     | --port]=<port>            : port of applicationBox (default '3306')
     [-b     | --base]=<base>            : database of applicationBox (default 'phrasea')
     [-u     | --user]=<user>            : user account for connection to applicationBox
-                                          (default 'root')
+                                        : (default 'root')
     [-p     | --password]=<pwd>         : password for connection to applicationBox
-                                          (default '')
+                                        : (default '')
     [-s     | --socket]=<port>          : port for telnet control (default none)
     [-f     | --flush]=<n>              : flush every n records (default 50)
     [-o     | --old]                    : use old 'sbas' table instead of 'xbas'
     [         --quit]                   : index once and quit
     [-c     | --clng]=<lng>             : default language for new candidates terms
-                                          (default 'fr')
+                                        : (default 'fr')
+    [         --stem]=<lng>,<lng>,..    : stemm for those languages
     [-n     | --nolog]                  : do not log, but out to console
+    [         --sort-empty]=<a|n|z>     : default value for unset fields with type
+                                        : (default 'a')  //=sort position
+                               a        : beginning (default)
+                               n        : none (=record not shown when sorting)
+                               z        : end
     [-d     | --debug]=<mask>           : debug mask (to console)
-                            1           : xml parsing
-                            2           : sql errors
-                            4           : sql ok
-                            8           : memory alloc.
-                            16          : record ops.
-                            32          : structure ops.
-                            64          : flush ops.
+                               1        : xml parsing
+                               2        : sql errors
+                               4        : sql ok
+                               8        : memory alloc.
+                              16        : record ops.
+                              32        : structure ops.
+                              64        : flush ops.
     [-@     | --optfile]=<file>         : read (more) arguments from text file
-                                          (see 'sample_args.txt')
+                                        : (see 'sample_args.txt')
     [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
-                                          (default none)
+                                        : (default none)
+
+    /----- stemmers --------------
+    | danish     : da   dan
+    | german     : de   deu  ger
+    | dutch      : dut  nl   nld
+    | english    : en   eng
+    | spanish    : es   esl  spa
+    | finnish    : fi   fin
+    | french     : fr   fra  fre
+    | hungarian  : hu   hun
+    | italian    : it   ita
+    | norwegian  : no   nor
+    | portuguese : por  pt
+    | porter     :
+    | romanian   : ro   ron  rum
+    | russian    : ru   rus
+    | swedish    : sv   swe
+    | turkish    : tr   tur
+    \-----------------------------
+
 
 Example of reading options from a file "indexerargs.txt"
 
@@ -135,11 +186,14 @@ Example of reading options from a file "indexerargs.txt"
     # use 'sbas' table (mandatory)
     -o
 
+    # sql connections encoding
+    --default-character-set=utf8
+
     # candidates default language
     --clng=fr
 
-    # sql connections encoding
-    --default-character-set=utf8
+    # stemming languages
+    --stemm=fr,en
 
 Running with the Task-Manager
 -----------------------------
