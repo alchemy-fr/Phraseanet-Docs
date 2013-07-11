@@ -18,11 +18,11 @@ Cette technologie permet de définir des variables au sein des feuilles de style
 
 Il est très simple de personnaliser les couleurs des différentes pages via
 la configuration `LESS`_ des plugins.
+
 (@todo Ajouter un lien vers la doc plugin).
 
 Dans le plugin, le fichier **less/login.less** permet de personaliser les
-couleurs des pages d'accueil, **less/account.less** les page de compte.
-(@todo changer le code source pour ajouter le fichier less)
+couleurs des pages d'accueil, **less/account.less** les pages de compte.
 
 Les variables LESS ?
 ~~~~~~~~~~~~~~~~~~~~
@@ -256,67 +256,47 @@ défault les blocs suivants :
     - scripts
     - analytics
 
-@todo ajouter le block analytics
-
 Les variable TWIG ?
 ~~~~~~~~~~~~~~~~~~~
 
-@todo supprimer - **module_name**,  le nom du module qui n'est pas utilisé
-@todo supprimer - **redirect**,  ou redirigé l'utilisateur qui n'est pas utilisé
-
 Les variables commmunes a tous les templates sont :
 
-- **feeds**, les flux RSS public
-- **instance_title**, le titre de l'application
-- **has_terms_of_use**, si l'application a des condition d'utilisation
-- **display_google_chrome_frame**, afficher google chrome frame
-- **browser_version**, la version du browser
-- **browser_name**, le nom du browser
-- **locale**, la locale courante
-- **available_language** les langage disponibles
-- **current_url**, l'url courante
-- **flash_types**, liste des flash types
-- **flash_messages**, liste des flash messages
-
-@todo supprimer les appels dans les templates
- -  app['phraseanet.registry'].get('GV_homeTitle')
- -  app['phraseanet.registry'].get('GV_metaDescription')
- -  app['phraseanet.registry'].get('GV_metakeywords')
- -  app['phraseanet.registry'].get('GV_display_gcf')
- -  app['browser'].getBrowser()
- -  app['browser'].getVersion()
- -  app.hasTermsOfUse()
- -  app.getAvailableLanguages()
- -  app['locale']
- -  app['request'].getBaseUrl()
- -  app['request'].getPathInfo()
- -  app['request'].getQueryString()
- -  app.getAvailableFlashTypes
- -  app.getFlash('type')
-
-Les variables mises à disposition pour la page de connexion sont :
-
-- **recaptcha_display**, booléen indiquant si il faut afficher le système de
+- **instance_title**, string, retourne le titre de l'instance.
+- **has_terms_of_use**, booléen, retourne true si l'application à des conditions
+  d'utilisation.
+- **display_google_chrome_frame**, booléen, retourne true si l'application doit
+  proposer google chrome frame.
+- **browser_version**, string, retourne la version du navigateur utilisé par
+  l'utilisateur final.
+- **browser_name**, string, retourne le nom du navigateur utilisé par le
+  navigateur final.
+- **locale**, string, retourne la locale courante.
+- **available_language**, string, retourne la liste des langues disponibles.
+- **current_url**, string, retourne l'url de la page courante.
+- **flash_types**, array, retourne la liste des types de flash messages
+  disponibles.
+- **recaptcha_display**, booléen, retourne true si il faut afficher le système de
   recaptcha aprés un nombre de tentative de connection infructueuse.
-
-- **unlock_usr_id**, entier représentant l'identifiant du compte à dévérouillé.
+- **unlock_usr_id**, entier, retourne l'identifiant du compte à dévérouiller.
   Si cette variable n'est pas vide c'est qu'elle indique que le compte avec
   lequel l'utilisateur final s'est connecté est vérouillé.
+- **guest_allowed**, booléen, retourne true si les invités sont autorisés à se
+  connecter sur l'instance.
+- **register_enable**, booléan, retourne true si l'enregistrement des
+  utilisateurs est activé sur l'instance.
+- **authentication_providers**, array, retourne la liste des fournisseurs
+  d'authentification tierces disponibles.
+- **home_publi**, string, retourne le type de diaporama à afficher sur la page
+  d'accueil.
+- **registration_fields**, array, retourne la liste des champs du formulaire
+  d'enregistrement.
+- **registration_optional_fields**, array, retourne la liste des champs
+  optionnels à afficher sur la page d'accueil.
 
-- **guest_allowed**, booléen indiquant si les invités sont autorisés a se connecter
-  sur l'instance.
+Les variables disponibles pour la page d'accueil :
 
-@todo ajouter une variable register_enable et supprimer l'appel d'app['registration.enable'] dans les templates
-@todo ajouter une variable auth_providers et supprimer l'appel d'app['authentication.providers'] dans les templates
-@todo ajouter une variable home_diaporama et supprimer l'appel app['phraseanet.registry'].get('GV_home_publi')
-
-Les variables mises à disposition pour la page d'enregistrement sont :
-
-- app['registration.fields']
-- app['registration.optional-fields']
-- app['auth-providers']
-
-@todo remplacer ces appels a app en incluant de nouvelles variables dans les templates concernés
+- **feeds**, object, représente la liste des flux RSS publiques à implementer
+  sur la page d'accueil.
 
 .. note::
 
@@ -330,7 +310,7 @@ Que doit-on afficher sur les pages d'accueil ?
 Sur toutes les pages, il est nécessaire d'afficher les éléments
 suivants :
 
-- Les messages flash
+- Les messages `flash`_
 
 Sur la page d'authentification, il est nécessaire d'afficher les éléments
 suivants :
@@ -339,7 +319,7 @@ suivants :
 - Le lien d'enregistrement d'un nouveau compte (si activé).
 - Le recaptcha (protection anti-bot si activé).
 - Le lien de dévouraillage des comptes vérouillés
-  (si le compte actuel est verouillé).
+  (si le compte actuel est vérouillé).
 
 Sur les pages d'enregistrement, il est nécessaire d'afficher les éléments
 suivants :
@@ -348,23 +328,12 @@ suivants :
 - Le liens vers les fournisseurs d'authentifications tierces
   google, facebook etc ... (si activé).
 
-
-@todo compléter le fichier des macros pour faciliter l'affichage des features
-de la page d'accueil
-
-- bug possible à corrigé sur les pages d'enregistrement, il n' y pas de check préalable pour savoir si des CGUS
-  existent, le lien est toujours affiché.
-- affichage du lien de devérouillage du compte sous forme de macro
-- affichage du lien d'accés inviter (remplacer le fichier include/guest-link par une macro car erreur de design un include n'a pas de flag et simplifie la customisation)
-- affichage de la recaptcha sous forme de macro
-- affichage du lien d'enregistrement (remplacer le fichier include/register-link par une macro car erreur de design un include n'a pas de flag et simplifie la customisation)
-- affichage du lien vers les conditions d'utilisation sous forme de macro
-
 .. _Twig: http://twig.sensiolabs.org/
 .. _Twitter Bootstrap: http://twitter.github.io/bootstrap/
 .. _LESS: http://lesscss.org
 .. _oAuth: http://oauth.net/
 .. _Form: http://symfony.com/fr/doc/current/cookbook/form/form_customization.html
+.. _flash: http://symfony.com/fr/doc/current/components/http_foundation/sessions.html#messages-flash
 .. _héritage: http://twig.sensiolabs.org/doc/templates.html#template-inheritance
 
 
