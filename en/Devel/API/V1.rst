@@ -2,12 +2,16 @@ Documentation API v1
 ====================
 
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 2
 
-    V1/Overview
-    V1/Authentication
-    V1/Routes
-    V1/Examples
+   V1/Overview
+   V1/Authentication
+   V1/Routes
+   V1/Examples
+   V1/Recommendation
+   V1/Disclaimer
+
+Hello world !
 
 Phraseanet API v1 gives you access to lots of Phraseanet data and lets
 you interact with them.
