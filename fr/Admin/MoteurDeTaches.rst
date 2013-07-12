@@ -41,13 +41,34 @@ documents dans les bases de données.
 
 L’indexer doit être paramétré avec les informations ci-dessous :
 
-* chemin d'accès : Chemin vers l’exécutable phraseanet_indexer
 * Hôte : Adresse du serveur MySQL
 * Port : Port du serveur MySQL
-* Database : Nom de la base de donnée MySQL
+* Database : Nom de la base de donnée MySQL de l'application (application-box)
 * Utilisateur : identifiant de l'utilisateur MySQL
 * Mot de passe : Mot de passe de l'utilisateur MySQL
+* MySQL charset : encodage
 * Port de contrôle : Port de contrôle de l'indexer
+
+* Default language for thesaurus candidates : langue par défaut des nouveaux
+  termes (placés en candidats), ex: "fr"
+
+* Enable stemming languages : langues pour lesquelles indexer par "stemmes", ex:
+  fr,en
+
+  Le "stemming" (racinisation, voir http://fr.wikipedia.org/wiki/Racinisation)
+  permet de rechercher en full-text différentes formes d'un mot comme le pluriel
+  ou les conjugaisons.
+
+  ex. : chercher "oiseau vole" trouvera les documents renseignés avec "oiseaux volants".
+
+* Sort records with an empty fields : Comment trier les records dont le champ de
+  tri n'est pas renseigné.
+
+  Lors d'une recherche avec tri des résultats, les records dont le champ de tri
+  n'est pas renseigné seront soit :
+
+  absents des réponses ; en tête des réponses ; à la fin des réponses.
+
 
 .. code-block:: bash
 
@@ -57,8 +78,10 @@ L’indexer doit être paramétré avec les informations ci-dessous :
                                       -u=user \
                                       -p=password \
                                       --socket=13800 \
+                                      --clng=fr \
+                                      --stem=fr,en \
+                                      -o \
                                       --default-character-set=utf8 \
-                                      -o
 
 .. note::
 
