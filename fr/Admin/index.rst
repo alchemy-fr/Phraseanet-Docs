@@ -32,6 +32,7 @@ et via `Konsole Kommander <Console>`_.
     Configuration
     MoteurDeRecherche
     MoteurDeTaches
+    Plugins
     Console
     Maintenance
     Faq

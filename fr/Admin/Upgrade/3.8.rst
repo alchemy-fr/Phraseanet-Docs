@@ -20,8 +20,8 @@ mise à jour. Les informations détaillées sont disponibles dans la
 .. warning::
 
     La configuration étant maintenant compilée, à chaque modification du fichier
-    config/configuration.yml, il faudra la recompiler manuellement sans quoi
-    celle-ci ne sera pas prise en compte.
+    config/configuration.yml. En contre partie il est nécessaire de recompiler
+    après une mise à jour.
     Utiliser la commande :ref:`bin/console compile:configuration<configuration-compilation>`
     pour cela.
 

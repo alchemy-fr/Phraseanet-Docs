@@ -141,7 +141,7 @@ Voici un exemple de fichier de configuration commenté
 
         captcha:                                   # (array)   Configuration du service de captchas
             enabled: true                          # (boolean) Activation du service de captcha
-            trials-before-failure: 9               # (integer) Nombre d'essais avant capctcha
+            trials-before-display: 9               # (integer) Nombre d'essais avant capctcha
 
         providers:                                 # (array)   Configuration des fournisseurs d'authentification tiers
 
@@ -198,6 +198,34 @@ Voici un exemple de fichier de configuration commenté
 
     plugins: []                                    # (array)   Configuration des plugins (Ajouter lien vers do dédiée)
 
+Fournisseurs d'authentification
+*******************************
+
+Les différents fournisseurs d'authentification se configurent simplement.
+Il suffit de créer une application "Phraseanet" chez le fournisseur en lui
+spécifiant l'URL de callback adéquate.
+
+.. note::
+
+    Les URLs de callback fournies sont des *exemples* présupposant que
+    Phraseanet est installé à l'adresse http://phraseanet.mondomaine.com. Il
+    faut adapter ces URLs en fonction de l'adresse réelle.
+
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Fournisseur | Gestion des applications                                               | URL de callback à fournir                                             |
++=============+========================================================================+=======================================================================+
+| Facebook    | https://developers.facebook.com/apps                                   | http://phraseanet.mondomaine.com/login/provider/facebook/callback/    |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Twitter     | https://dev.twitter.com/apps                                           | http://phraseanet.mondomaine.com/login/provider/twitter/callback/     |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Google Plus | https://code.google.com/apis/console/                                  | http://phraseanet.mondomaine.com/login/provider/google-plus/callback/ |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| GitHub      | https://github.com/settings/applications                               | http://phraseanet.mondomaine.com/login/provider/github/callback/      |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Viadeo      | http://dev.viadeo.com/documentation/authentication/request-an-api-key/ | http://phraseanet.mondomaine.com/login/provider/viadeo/callback/      |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| LinkedIn    | https://www.linkedin.com/secure/developer                              | http://phraseanet.mondomaine.com/login/provider/linkedin/callback/    |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 Services de Cache
 *****************

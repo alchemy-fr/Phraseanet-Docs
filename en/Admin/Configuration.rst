@@ -140,7 +140,7 @@ Here is a commented configuration file
 
         captcha:                                   # (array)   Captchas service configuration
             enabled: true                          # (boolean) Captchas service activation
-            trials-before-failure: 9               # (integer) Number of trials before captcha activation
+            trials-before-display: 9               # (integer) Number of trials before captcha activation
 
         providers:                                 # (array)   Authentication providers configuration
 

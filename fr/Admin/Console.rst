@@ -23,49 +23,48 @@ Vous aurez sur votre écran une liste de commande de la sorte :
 .. code-block:: bash
 
     Available commands:
-      help                               Displays help for a command
-      list                               Lists commands
+      help                             Displays help for a command
+      list                             Lists commands
     about
-      about:authors                      List authors and contributors
-      about:license                      This program license
+      about:authors                    Lists authors and contributors
+      about:license                    Displays this program license
     check
-      check:config                     Checks environment
-      check:extension                  Checks if the Phrasea PHP Extension is well installed & working properly.
+      check:config                     Performs a check against the environment and configuration. Give some advices for production settings.
+      check:extension                  Performs a serie of tests against Phrasea Engine PHP Extension
     collection
-      collection:create                Create a collection in Phraseanet
+      collection:create                Creates a collection in Phraseanet
     compile
-      compile:configuration            Compile configuration
+      compile:configuration            Compiles YAML configuration to plain PHP
     fields
-      fields:delete                    Delete a documentation field from a Databox
-      fields:list                      List all databox fields
-      fields:merge                     Merge databox structure fields
-      fields:rename                    Rename a documentation field from a Databox
+      fields:delete                    Deletes a documentation field from a Databox
+      fields:list                      Lists all databoxes documentation fields
+      fields:merge                     Merges databox documentation fields
+      fields:rename                    Renames a documentation field from a Databox
     mail
-      mail:test
+      mail:test                        Sends an email to a given address to test mail-server configuration
     plugins
       plugins:add                      Installs a plugin to Phraseanet
       plugins:remove                   Removes a plugin given its name
     records
-      records:add                      Add a record to Phraseanet
-      records:build-missing-subdefs    Build missing subviews
-      records:rescan-technical-datas   Rescan databases for technical datas
+      records:add                      Adds a record to Phraseanet
+      records:build-missing-subdefs    Builds subviews that previously failed to be generated / did not exist when records were added
+      records:rescan-technical-datas   Rescans records for technical datas
     scheduler
-      scheduler:start                  Start the scheduler
-      scheduler:state                  Get scheduler status
-      scheduler:stop                   Stop the scheduler
+      scheduler:start                  Starts Phraseanet scheduler
+      scheduler:state                  Returns Phraseanet scheduler status
+      scheduler:stop                   Stops Phraseanet scheduler
     sphinx
-      sphinx:generate-suggestions        Generate suggestions for SphinxSearch Engine
+      sphinx:generate-suggestions      Generates suggestions for Sphinx Search Engine, useful for query auto-completion
     system
-      system:backup-db                 Backup Phraseanet Databases
-      system:clear-cache               Empty cache directories, clear Memcached, Redis if avalaible
-      system:export                    Export all phraseanet records to a directory
-      system:mail-check                Check if email addresses are unique (mandatory since 3.5)
-      system:template-generator        Generate template files
-      system:upgrade-datas             Upgrade Phraseanet datas
+      system:backup-db                 Backups Phraseanet Databases
+      system:clear-cache               Empties cache directories and cache-server data
+      system:export                    Exports all phraseanet records to a given directory
+      system:mail-check                Checks if email addresses are uniques (mandatory since 3.5)
+      system:upgrade-datas             Upgrades Phraseanet datas, useful after migrations
     task
-      task:list                        List tasks
-      task:run                         Run task
-      task:state                       Get task state
+      task:list                        Lists Phraseanet tasks
+      task:run                         Runs a Phraseanet task given its id
+      task:state                       Returns a Phraseanet task state given its id
     xsendfile
       xsendfile:dump-configuration     Dump the virtual host configuration depending on Phraseanet configuration
       xsendfile:generate-mapping       Generates Phraseanet xsendfile mapping configuration depending on databoxes configuration
@@ -131,20 +130,17 @@ Une liste de commandes disponible s'affiche.
 .. code-block:: bash
 
     Available commands:
-      help                      Displays help for a command
-      list                      Lists commands
+      help                   Displays help for a command
+      list                   Lists commands
     about
-      about:authors             List authors and contributors
-      about:license             This program license
-    assets
-      assets:build-javascript   Compile less files
-      assets:compile-less       Compile less files
+      about:authors          Lists authors and contributors
+      about:license          Displays this program license
     check
-      check:system              Check environment
+      check:system           Performs a check against the environment
     system
-      system:install            Install Phraseanet
-      system:upgrade            Upgrade Phraseanet to the latest version
-      system:upgrade-datas      Upgrade Phraseanet datas
+      system:install         Installs Phraseanet
+      system:upgrade         Upgrades Phraseanet to the latest version
+      system:upgrade-datas   Upgrades Phraseanet datas, useful after migrations
 
 De la même manière que `console`, l'aide d'une commande est disponible via la
 commande help.
