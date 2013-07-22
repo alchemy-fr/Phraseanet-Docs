@@ -4,7 +4,7 @@ Console
 Phraseanet fourni deux utilitaires en ligne de commande ; bin/console` et
 `bin/setup`.
 `console` ne peut être executé que si Phraseanet est installé et à jour tandis
-que `setup` est à utilisé en amont, pour l'installation et la detection des
+que `setup` est à utiliser en amont, pour l'installation et la detection des
 pannes.
 
 Konsole Kommander

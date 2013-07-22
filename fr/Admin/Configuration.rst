@@ -14,7 +14,7 @@ Ce fichier est au format `YAML`_, qui a pour intérêt d'être très lisible.
 Pour des raisons de performance, et notamment de cache opcode, la configuration
 est compilée.
 
-Il faudra la recompiler après une mise à jour.
+En contre partie il est nécessaire de recompiler après une mise à jour.
 
 .. _configuration-compilation:
 
@@ -42,14 +42,14 @@ Voici un exemple de fichier de configuration commenté
 
         maintenance: false                         # (boolean) Activation du mode maintenance
 
-        database:                                  # (array)   Configuration du serveur de base de donnée
-            host: 'sql-host'                       # (string)  Adresse du serveur de base de donnée
-            port: 3306                             # (integer) Port du serveur de base de donnée
-            user: 'sql-user'                       # (string)  Nom d'utilisateur du serveur de base de donnée
-            password: 'sql-password'               # (string)  Mot de passe du serveur de base de donnée
-            dbname: ab_phraseanet                  # (string)  Nom de la base de donnée
-            driver: pdo_mysql                      # (string)  Driver de base de donnée
-            charset: UTF8                          # (string)  Encodage de la connection au serveur de base de donnée
+        database:                                  # (array)   Configuration du serveur de base de données
+            host: 'sql-host'                       # (string)  Adresse du serveur de base de données
+            port: 3306                             # (integer) Port du serveur de base de données
+            user: 'sql-user'                       # (string)  Nom d'utilisateur du serveur de base de données
+            password: 'sql-password'               # (string)  Mot de passe du serveur de base de données
+            dbname: ab_phraseanet                  # (string)  Nom de la base de données
+            driver: pdo_mysql                      # (string)  Driver de base de données
+            charset: UTF8                          # (string)  Encodage de la connection au serveur de base de données
 
         database-test:                             # (array)   Configuration pour les tests (développeurs uniquement)
             driver: pdo_sqlite
@@ -98,7 +98,7 @@ Voici un exemple de fichier de configuration commenté
 
     border-manager:                                # (array)   Configuration du service douanes
         enabled: true                              # (boolean) Activation du service de douane
-        checkers:                                  # (array)   Liste de point de contrôle
+        checkers:                                  # (array)   Liste de points de contrôle
 
             -                                      # (array)   Verification de doublonnage par somme de côntrole
                 type: Checker\Sha256
@@ -148,8 +148,8 @@ Voici un exemple de fichier de configuration commenté
             facebook:                              # (array)   Configuration de l'authentification via Facebook
                 enabled: false                     # (boolean) Activation du fournisseur
                 options:
-                    app-id: ''                     # (string)  Facebook application id
-                    secret: ''                     # (string)  Facebook application secret
+                    app-id: ''                     # (string)  Identifiant (id) Facebook
+                    secret: ''                     # (string)  Secret (secret) Facebook
 
             twitter:                               # (array)   Configuration de l'authentification via Twitter
                 enabled: false                     # (boolean) Activation du fournisseur
@@ -230,7 +230,7 @@ spécifiant l'URL de callback adéquate.
 Services de Cache
 *****************
 
-Les services de cache **cache** et **opcode-cache** peuvent être configuré avec
+Les services de cache **cache** et **opcode-cache** peuvent être configurés avec
 les adapteurs suivants :
 
 +----------------+----------------------+------------------------------------------------------+------------+
@@ -426,7 +426,8 @@ Tous les points de vérifications sont déclarés dans le namespace
 namespace. Cet objet doit implémenter l'interface
 `Alchemy\\Phrasea\\Border\\Checker\\Checker`
 
-Exemple de point de vérification qui filtre les documents sur leur données GPS :
+Exemple d'un point de vérification qui filtre les documents sur leur données
+GPS :
 
 .. code-block:: php
 

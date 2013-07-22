@@ -73,13 +73,13 @@ directives nginx avec la commande `xsendfile:dump-configuration`
 
     bin/console xsendfile:dump-configuration
 
-Il suffit de copier coller ce code dans le virtual host Nginx et recharger
+Il suffit de copier coller ce code dans le virtual host Nginx et de recharger
 Nginx.
 
 .. warning::
 
-    L'operation de generation des mappings et mise à jour du virtual host est à
-    refaire à chaque création de databox ou lors de la modification de la
+    L'opération de génération des mappings et de mise à jour du virtual host est
+    à refaire à chaque création de databox ou lors de la modification de la
     structure des sous définitions de l'une d'elles.
 
 Example de configuration Nginx intégrant une configuraton sendfile :

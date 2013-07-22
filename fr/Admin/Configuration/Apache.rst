@@ -58,13 +58,13 @@ directives apache 2 avec la commande `xsendfile:dump-configuration`
 
     bin/console xsendfile:dump-configuration
 
-Il suffit de copier coller ce code dans le virtual host Apache et recharger
+Il suffit de copier coller ce code dans le virtual host Apache et de recharger
 Apache.
 
 .. warning::
 
-    L'operation de generation des mappings et mise à jour du virtual host est à
-    refaire à chaque création de databox ou lors de la modification de la
+    L'opération de génération des mappings et de mise à jour du virtual host est
+    à refaire à chaque création de databox ou lors de la modification de la
     structure des sous définitions de l'une d'elles.
 
 Example de virtual host Apache intégrant une configuraton sendfile :

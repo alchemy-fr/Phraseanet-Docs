@@ -28,8 +28,8 @@ mise à jour. Les informations détaillées sont disponibles dans la
 Configuration du virual host
 ----------------------------
 
-La configuration du virtual host se trouve simplifiée en version 3.8. Les
-paramétrages SendFile (Nginx) et XSendFile (Apache) bénéficient pour leur part
+La configuration du virtual host est simplifiée en version 3.8. Les
+paramétrages SendFile (Nginx) et XSendFile (Apache) bénéficient
 d'une assistance à la configuration via les commandes
 `bin/console xsendfile:dump-configuration` et `bin/console xsendfile:generate-mapping`.
 
@@ -50,31 +50,31 @@ Application
 Limites temporelles d'accès des comptes utilisateurs
 ****************************************************
 
-Les limites temporelles sont maintenant éditable pour une base complète (action
+Les limites temporelles sont maintenant éditables pour une base complète (action
 sur l'ensemble des collections de la base).
 
 ..warning::
 
-    Attention, les limites temporelles des modèles sont maintenant appliquées
-    aux utilisateurs.
+    **Attention, les limites temporelles des modèles sont maintenant appliquées
+    aux utilisateurs.**
 
 Localisation
 ************
 
 Les noms de collections, de bases, de status-bit et de champs documentaires
-sont maintenant localisables via leur propriété "label".
+sont maintenant localisables via leurs propriétés "label".
 
 Champs documentaires
 ********************
 
 L'interface de réglages des champs documentaires a été entièrement ré-ecrite.
-Outre la possibilité de localiser les noms des champs, il est désormais
-possible de les ré-ordonner.
+Outre la possibilité de localiser les noms des champs documentaires via les
+labels, il est désormais possible de les ré-ordonner.
 
 Authentification
 ****************
 
-L'authentification a été ré-écrite. Il est désormais possible d'utiliser
+L'authentification a été ré-écrite. Il est possible d'utiliser
 des fournisseurs d'authentification tiers (Facebook, Twitter, Viadeo, Github,
 Linkedin, Google-Plus). Se référer à la :ref:`configuration<configuration>` pour
 activer les fournisseurs.
@@ -91,11 +91,11 @@ Moteur de recherche
 - Le moteur de recherche SphinxSearch passe de l'integration en phase beta à
   stable. Se référer à la
   :ref:`documentation des moteurs de recherche <search-engine-service-configuration>`.
-- Le moteur Phrasea Engine s'enrichie du support de radicalisation. Ainsi, lors
+- Le moteur Phrasea Engine s'enrichit du support de radicalisation. Ainsi, lors
   de la recherche en full-text du terme "cheval", les documents indexés avec le
-  terme "chevaux" apparaissent dans les résultats. Ces nouvelle fonctionalité
-  requiert l'activation de l'option dans la tâche "Indexation" et la
-  réindexation complète des bases.
+  terme "chevaux" apparaissent dans les résultats. Ces nouvelles fonctionalités
+  requièrent l'activation de l'option dans la tâche "Indexation" ainsi que la
+  ré-indexation complète des bases.
 
 Notifications par Mail
 ----------------------

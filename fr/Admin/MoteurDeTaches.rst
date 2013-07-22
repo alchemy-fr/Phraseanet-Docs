@@ -43,7 +43,7 @@ L’indexer doit être paramétré avec les informations ci-dessous :
 
 * Hôte : Adresse du serveur MySQL
 * Port : Port du serveur MySQL
-* Database : Nom de la base de donnée MySQL de l'application (application-box)
+* Database : Nom de la base de données MySQL
 * Utilisateur : identifiant de l'utilisateur MySQL
 * Mot de passe : Mot de passe de l'utilisateur MySQL
 * MySQL charset : encodage
