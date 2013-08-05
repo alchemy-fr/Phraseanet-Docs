@@ -28,8 +28,9 @@ auxquels ne répond pas ce manuel.
 Il peut adresser ses questions sur les forums et groupes auxquels participent l'
 équipe *Phraseanet*.
 
-Consulter `la section Support du site *Phraseanet.com*<https://www.phraseanet.
-com/support/>` pour la liste complète des Google Groups *Phraseanet*.
+Consulter `la section Support du site Phraseanet.com
+<https://www.phraseanet.com/support/>` pour la liste complète des Google Groups
+*Phraseanet*.
 
 Après une présentation générale des interfaces du logiciel, ce manuel est divisé
 en sections permettant une approche par cas d'utilisateurs.

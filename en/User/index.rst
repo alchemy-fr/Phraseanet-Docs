@@ -1,2 +1,2 @@
-User
-====
+User manual
+===========

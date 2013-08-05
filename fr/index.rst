@@ -5,7 +5,7 @@ Le DAM Open source
 ------------------
 
 *Phraseanet* est une solution de gestion de médias numériques (en anglais :
-Digital Asset Management ou DAM en version abrégée) créée et maintenue par
+Digital Asset Management ou en abrégé DAM) créée et maintenue par
 `Alchemy <http://www.alchemy.fr>`_.
 
 Solution *full web*, elle s'exécute dans un navigateur internet.
@@ -33,26 +33,27 @@ commencer.
 .. toctree::
     :maxdepth: 1
 
-    Admin/index
-    User/index
-    Devel/index
     Glossaire
     Contrib/index
+    FAQ/index
+    Devel/index
+    User/index
+    Admin/index
 
-Quoi de neuf dans la version 3.7 ?
+Quoi de neuf dans la version 3.8 ?
 ----------------------------------
 
 .. todo:: Mettre le changelog ici. Communiqué à titre d'exemple
 
-La version 3.7 publiée le 24 juillet 2012 succède à la version 3.6. A l'occasion
-de cette version majeure, voici les principaux changements apportés :
+La version 3.8 publiée en septembre 2013 succède à la version 3.7.
+Voici les principaux changements qu'elle apporte :
 
-* Un uploader HTML5 repousse les limites du dispositif précédent
-* La quarantaine est plus pratique à utiliser
-* Améliorations graphiques dans *Phraseanet Production*
-* Fonctionnalité du choix des vignettes de présentation des vidéos
-* Apparition du typage de champs comme champ métier
-* Amélioration significative des performances du Gestionnaire de tâches
+* Une nouvelle page de connexion
+* Le support de l'authentification déportée OAuth
+* Le support de la racinisation *en standard* dans le moteur *Phrasea*
+* Nouvelle interface de gestion des champs de la structure documentaire
+* De nombreuses améliorations graphiques dans Administration, Production
+
 
 Besoin d'aide ?
 ---------------
