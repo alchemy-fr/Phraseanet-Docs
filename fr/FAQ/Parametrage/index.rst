@@ -13,4 +13,5 @@ Parametrage de Phraseanet
    :glob:
 
    type-des-champs-phrasea
+   activer-ftp
 

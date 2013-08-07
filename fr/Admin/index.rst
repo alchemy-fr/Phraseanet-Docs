@@ -28,15 +28,22 @@ ou l'indexation...
 *Phraseanet* peut être également administré en console via l'application
 bin/console
 
-.. toctree::
+Sélectionner une rubrique dans le menu de gauche pour parcourir cette
+documentation.
 
-    Prerequis
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
     Telechargement
+    Prerequis
     Installation
+    Indexeur
+    Extension
     MiseAJour
     Configuration
-    MoteurDeRecherche
     MoteurDeTaches
-    Plugins
+    MoteurDeRecherche
     Console
     Maintenance
+    Optimisation

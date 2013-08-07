@@ -28,26 +28,25 @@ auxquels ne répond pas ce manuel.
 Il peut adresser ses questions sur les forums et groupes auxquels participent l'
 équipe *Phraseanet*.
 
-Consulter `la section Support du site Phraseanet.com
-<https://www.phraseanet.com/support/>` pour la liste complète des Google Groups
-*Phraseanet*.
+Consulter la rubrique `Support <https://www.phraseanet.com/support/>`_ du site
+Phraseanet.com pour la liste complète des Google Groups *Phraseanet*.
 
-Après une présentation générale des interfaces du logiciel, ce manuel est divisé
-en sections permettant une approche par cas d'utilisateurs.
-La section des :doc:`Fondamentaux<Manuel/Fondamentaux>` se destine aux
-utilisateurs accédant à Phraseanet dans le but de chercher et d'exporter de
-médias.
-La section :doc:`Gérer et animer un fonds<Manuel/Animer>` se destine aux
-personnes chargés de l'exploitation d'un fonds médias dans Phraseanet.
-:doc:`Lightbox<Manuel/Lightbox>` est une interface particulière dans la mesure
-ou elle permet des accès à des médias poussés, webdiffusés dans une interface
-singulière. Elle répond à la problématique de `l'information poussée <http://www
-.oqlf.gouv.qc.ca/ressources/bibliotheque/dictionnaires/Internet/fiches/8393841.
-html>`_.
-La section :doc:`Administration<Manuel/Administration>` est consacrée au
-paramétrage et à la gestion d'utilisateurs. Elle intéresse les administrateurs
-et les personnes chargés des mises en oeuvre de projets de gestion de médias
-numériques.
+Après une présentation générale des interfaces du logiciel, ce manuel propose
+une approche par cas d'utilisateurs :
+
+* La section des :doc:`Fondamentaux<Manuel/Fondamentaux>` se destine aux
+  utilisateurs accédant à Phraseanet dans le but de chercher et d'exporter de
+  médias.
+* La section :doc:`Gérer et animer un fonds<Manuel/Animer>` se destine aux
+  personnes chargés de l'exploitation d'un fonds médias dans Phraseanet.
+* :doc:`Lightbox<Manuel/Lightbox>` est une interface particulière dans la mesure
+  ou elle permet des accès à des médias poussés, webdiffusés dans une interface
+  singulière. Elle répond à la problématique de `l'information poussée
+  <http://www.oqlf.gouv.qc.ca/ressources/bibliotheque/dictionnaires/Internet/fiches/8393841.html>`_.
+* La section :doc:`Administration<Manuel/Administration>` est consacrée au
+  paramétrage et à la gestion d'utilisateurs. Elle intéresse les administrateurs
+  et les personnes chargés des mises en oeuvre de projets de gestion de médias
+  numériques.
 
 Pour accéder aux différentes sections du manuel utilisateur, cliquer sur les
 liens ci-dessous :
@@ -60,5 +59,4 @@ liens ci-dessous :
    Manuel/Animer
    Manuel/Lightbox
    Manuel/Administration
-   Manuel/SavoirFaire
 
