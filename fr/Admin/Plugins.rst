@@ -88,20 +88,28 @@ l'exemple ci-dessous :
 
 Détails des propriétés possibles pour le fichier manifest.json :
 
-- name (requis, string) : Le nom du plugin. Doit être unique, ne peut contenir ni espace
-  ni caractère spécial.
+- name (requis, string) : Le nom du plugin. Doit être unique, en casse basse,
+  ne peut contenir ni espace ni caractère spécial.
 - description (requis, string) : Une description texte du plugin.
 - keywords (array) : Un tableau de mot-clés propres au plugin.
-- authors (array) : Un tableau d'objets authors. L'objet authors accepte les propriétés "name", "email" et "homepage".
+- authors (array) : Un tableau d'objets authors. L'objet authors accepte les
+  propriétés "name", "email" et "homepage".
 - homepage (string) : Un lien vers la home page du plugin.
 - license (string) : Un identifiant de license tel que fourni par `SPDX`_.
 - version (string) : Un numéro de version au format `semver`_.
-- minimum-phraseanet-version (string) : le numéro de version minimum de Phraseanet compatible (inclu).
-- maximum-phraseanet-version (string) : le numéro de version maximum de Phraseanet compatible (exclu).
-- twig-paths (string) : Un tableau de chemin relatifs au plugin qui seront utilisés comme path de Twig (permet de customiser les templates Phraseanet par défaut).
-- services : Un tableau d'objets de services de plugin à déclarer auprès de Phraseanet. Un service de plugin est configuré avec une propriété "class".
-- commands : Un tableau d'objets de commandes à déclarer auprès de Phraseanet. Une commande est configurée avec une propriété "class".
-- extra : Un object de propriétés personnalisable comme bon souhaite le developpeur.
+- minimum-phraseanet-version (string) : Le numéro de version minimum de
+  Phraseanet compatible (inclue).
+- maximum-phraseanet-version (string) : Le numéro de version maximum de
+  Phraseanet compatible (exclue).
+- twig-paths (string) : Un tableau de chemin relatifs au plugin qui seront
+  utilisés comme path de Twig (permet de customiser les templates Phraseanet
+  par défaut).
+- services : Un tableau d'objets de services de plugin à déclarer auprès de
+  Phraseanet. Un service de plugin est configuré avec une propriété "class".
+- commands : Un tableau d'objets de commandes à déclarer auprès de Phraseanet
+  Konsole. Une commande est configurée avec une propriété "class".
+- extra : Un object de propriétés personnalisable comme bon souhaite le
+  developpeur.
 
 .. note::
 
