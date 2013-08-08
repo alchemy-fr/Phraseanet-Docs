@@ -195,7 +195,7 @@ Here is a commented configuration file
         type: nginx                                # (string)  XSendFile type (`nginx` ou `apache`)
         mapping: []                                # (array)   Directories mapping (see configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
 
-    plugins: []                                    # (array)   Plugins configuration (Add link to docs)
+    plugins: []                                    # (array)   :doc:`Plugins <Plugins>` configuration
 
 
 Cache services
@@ -306,9 +306,7 @@ Plugins configuration
 *********************
 
 Plugins are configured in the same file. Plugins documentation explains how to
-configure yours plugins.
-
-(Add link to plugins doc).
+configure yours :doc:`plugins <Plugins>`.
 
 Border Manager service configuration
 ************************************

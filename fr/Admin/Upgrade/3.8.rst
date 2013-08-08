@@ -44,8 +44,7 @@ Application
   documents envoyés par mail est maintenant disponible.
 - Ajout de la possibilité de supprimer un panier depuis le navigateur de
   paniers.
-- Ajout du support de plugins.
-  (Ajouter un lien vers la doc dediée)
+- Ajout du support de plugins, voir :doc:`documentation <../Plugins>`.
 
 Limites temporelles d'accès des comptes utilisateurs
 ****************************************************
@@ -101,7 +100,7 @@ Notifications par Mail
 ----------------------
 
 - Les notifications par email sont maintenant envoyées en HTML.
-  (Ajouter un lien vers la doc "customization des emails").
+  (Utiliser les :doc:`plugins <../Plugins>` pour les personnaliser).
 - L'authentification TLS, en plus de SSL, est maintenant supporté pour la
   connection à un serveur de mail.
 - Un prefix peut être configuré à l'attention du sujet des emails (pratique

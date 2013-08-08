@@ -28,6 +28,7 @@ Phraseanet can also be managed through 2 interfaces : `API <../../Devel>`_ and
     Configuration
     SearchEngine
     TaskManager
+    Plugins
     Console
     Maintenance
     Faq

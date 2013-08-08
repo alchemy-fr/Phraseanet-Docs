@@ -41,7 +41,7 @@ Application
 - Report loading duration has been improved. A new view about export by mail
   has been added.
 - Baskets can now be deleted from the baskets browser.
-- Add plugins support. (Add link to documentation)
+- Add plugins support, see :doc:`documentation <../Plugins>`.
 
 User account time limits
 ************************
@@ -91,7 +91,7 @@ Email notifications
 -------------------
 
 - Email notifications are now sent in HTML format.
-  (Add a link to email customization).
+  (Use :doc:`plugins <../Plugins>` to customize it).
 - TLS Authentication is now supported to email server (Only SSL was previously
   supported)
 - A subject prefix can be configured (nice for email filters).

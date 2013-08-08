@@ -196,7 +196,7 @@ Voici un exemple de fichier de configuration commenté
         type: nginx                                # (string)  Type XSendFile (`nginx` ou `apache`)
         mapping: []                                # (array)   Mapping des dossiers (voir configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
 
-    plugins: []                                    # (array)   Configuration des plugins (Ajouter lien vers do dédiée)
+    plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`
 
 Fournisseurs d'authentification
 *******************************
@@ -334,10 +334,8 @@ commandes. Les documentations pour :ref:`Nginx<nginx-sendfile>` et
 Configuration des plugins
 *************************
 
-Les plugins se configurent aussi dans ce fichier. Se référer à la documentation
-des plugins pour cette partie.
-
-(Ajouter un lien vers la doc des plugins).
+Les plugins se configurent aussi dans ce fichier. Se référer à la
+:doc:`documentation des plugins <Plugins>` pour cette partie.
 
 Configuration du service de douane
 **********************************

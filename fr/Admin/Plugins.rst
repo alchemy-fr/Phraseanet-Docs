@@ -115,7 +115,7 @@ Détails des propriétés possibles pour le fichier manifest.json :
 
     Twig est automatiquement configuré pour les plugins : Si un dossiers "views"
     est présent à la racine, alors un namespace "plugins-%nom-du-plugin%" est
-    créé dans Twig (Ajouter un lien vers plus bas).
+    créé dans Twig.
 
 composer.json
 *************
