@@ -34,8 +34,9 @@ d'une assistance à la configuration via les commandes
 `bin/console xsendfile:dump-configuration` et `bin/console xsendfile:generate-mapping`.
 
 Les pages de configuration Sendfile et XSendFile expliquent comment mettre à
-jour les configurations.
-lien vers doc dédiée, parler de bin/developer et du vhost et XSendFile
+jour les configurations. Voir la documentation correspondante pour
+:doc:`Senfile (Nginx)<../Configuration/Nginx>` et
+:doc:`XSenfile (Apache)<../Configuration/Apache>`.
 
 Application
 -----------
