@@ -41,7 +41,7 @@ PHP
     * xsl +zlib
     * mail
     * mcrypt
-    * twig (https://github.com/derickr/twig-ext/)
+    * twig (https://github.com/fabpot/Twig/tree/master/ext/)
     * intl
     * pdo
     * CURL
