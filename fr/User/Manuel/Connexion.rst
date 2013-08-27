@@ -21,7 +21,7 @@ Authentification
 * Saisir le mot de passe.
 * Cliquer sur **Connexion**.
 * En cas d'oubli du mot de passe, suivre la procédure de récupération en
-  cliquant sur le lien "Mot de Passe oublié ?".
+  cliquant sur le lien *Mot de Passe oublié ?*.
 
 Authentification déportée *via* OAuth
 -------------------------------------
@@ -42,7 +42,7 @@ applications web suivantes :
 * Viadeo
 * Linkedin
 
-OAuth étant un standard ouvert, d'autres fournisseurs d'identité numérique
+*OAuth* étant un standard ouvert, d'autres fournisseurs d'identité numérique
 peuvent s'ajouter.
 
 Inscription

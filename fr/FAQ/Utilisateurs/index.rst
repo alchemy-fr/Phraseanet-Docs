@@ -13,4 +13,5 @@ Gestion des utilisateurs
    :glob:
 
    ajouter-des-utilisateurs-en-masse
+   ajouter-application
 

@@ -15,8 +15,11 @@ Le menu Phraseanet
 Accès aux interfaces
 ********************
 
-Lors de la connexion à *Phraseanet*, c'est la dernière application utilisée qui
-se lance par défaut.
+.. note::
+
+    Lors de la connexion à *Phraseanet*, c'est la dernière application utilisée
+    qui se lance par défaut.
+
 Toutes les interfaces *Phraseanet* proposent en haut de leurs fenêtres un menu
 identique au sein d'une barre de menu.
 
@@ -32,7 +35,8 @@ dans un nouvel onglet ou une nouvelle fenêtre.
 .. note::
 
     Une interface est manquante dans la barre de menu ? C'est une question de
-    droits : si l'utilisateur n'a pas accès à certaines fonctionnalités, le lien
+    droits.
+    Si l'utilisateur n'a pas accès à certaines fonctionnalités, le lien
     vers l'interface l'exploitant n'apparaît pas.
 
 **La partie droite de la barre de menu affiche les notifications, l'identifiant
@@ -44,8 +48,8 @@ Accès aux notifications
 
 Les notifications sont des messages informatifs affichés en temps réel dans l'
 interface *Phraseanet Production*.
-Elles renseignent l'utilisateur des demandes de validation, de réception de
-paniers...*etc*.
+Elles renseignent l'utilisateur sur les nouvelles publications disponibles, les
+demandes de validation, la réception de paniers... *etc*.
 
 Se reporter à la section
 :doc:`personnaliser l'interface <PersonnaliserInterface>`.
@@ -99,7 +103,10 @@ Sessions
 
 La section *Sessions* liste les sessions Phraseanet de l'utilisateur. Elle donne
 des informations relatives aux dates de connexion et d'accès, aux adresses IP,
-navigateurs et résolutions d'écran détectées.
+et navigateurs utilisés.
+
+.. image:: ../../images/ListeSessions.jpg
+    :align: center
 
 Applications
 ^^^^^^^^^^^^
@@ -107,10 +114,12 @@ Applications
 La section *Applications* liste les applications tierces autorisées à se
 connecter au compte Phraseanet de l'utilisateur.
 
+.. image:: ../../images/ListeApplications.jpg
+    :align: center
+
 .. note::
 
-  Comment autoriser une application tierce à se connecter à mon compte
-  Phraseanet ?
+  :doc:`Comment autoriser une application tierce à se connecter à mon compte Phraseanet ? <../../FAQ/Utilisateurs/ajouter-application>`
 
 Développeur
 ^^^^^^^^^^^

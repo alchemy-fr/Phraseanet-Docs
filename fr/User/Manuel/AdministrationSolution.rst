@@ -24,12 +24,12 @@ En outre, le tableau de bord offre une vue sur l'état de la configuration du
 système de fichier, des exécutables, des extensions, des serveurs de caches et
 des serveurs web qui entrent dans la mise en oeuvre de la solution *Phraseanet*.
 
-Setup
------
+Paramétrage
+-----------
 
-**Accessible aux seuls administrateurs Phraseanet**, *Setup* propose une
-interface graphique permettant de modifier des paramètres d'installation et de
-configuration de Phraseanet.
+**Accessible aux seuls administrateurs Phraseanet**, l'écran de *Paramétrage*
+propose une interface graphique permettant de modifier des paramètres d'
+installation et de configuration de l'instance Phraseanet.
 
 .. image:: ../../images/Administration-setup.jpg
     :align: center
@@ -50,6 +50,12 @@ Setup propose un jeu de formulaires permettant notamment :
     Setup permet de modifier en profondeur les paramètres d'
     installation de l'application. L'administrateur sera particulièrement
     attentif aux modifications apportées dans les formulaires proposés.
+
+Paramétrage du moteur de recherche
+----------------------------------
+
+Cette rubrique permet de configurer le moteur de recherche utilisé par l'
+instance.
 
 Utilisateurs connectés
 ----------------------

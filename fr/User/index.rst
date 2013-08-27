@@ -20,7 +20,7 @@ D'autre part ce manuel donne des réponses à des cas d'usages pour répondre au
 problématiques de l'archivage, de la gestion, de la diffusion de médias au
 travers du logiciel *Phraseanet*.
 
-Ce manuel n'est pas parfait.
+**Ce manuel n'est pas parfait**.
 
 Il peut contenir des manques et le lecteur peut sans doute avoir des questions
 auxquels ne répond pas ce manuel.
@@ -30,6 +30,9 @@ Il peut adresser ses questions sur les forums et groupes auxquels participent l'
 
 Consulter la rubrique `Support <https://www.phraseanet.com/support/>`_ du site
 Phraseanet.com pour la liste complète des Google Groups *Phraseanet*.
+
+Approche proposée
+-----------------
 
 Après une présentation générale des interfaces du logiciel, ce manuel propose
 une approche par cas d'utilisateurs :

@@ -126,7 +126,7 @@ La création et la gestion de :doc:`Thésaurus <Thesaurus>` est possible dans
 recherche *Phrasea engine*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques.
-Il représente un vrai *plus* dans l’utilisation d’une solution de gestion de médias numériques professionnelles.
+Il représente un vrai *plus* dans l’utilisation d’une solution de gestion de médias numériques.
 
 .. image:: ../../images/General-Thesaurus.jpg
    :align: center
