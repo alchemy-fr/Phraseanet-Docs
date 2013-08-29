@@ -43,7 +43,6 @@ Setup propose un jeu de formulaires permettant notamment :
 * **D'activer ou de désactiver des connectivités à des réseaux sociaux** mis en
   oeuvre dans :ref:`bridge-share`
 * **D'activer ou de désactiver des fonctionnalités et options de l'application**
-* **De gérer les extensions de fichiers autorisés** en ajout dans Upload
 
 .. warning::
 
@@ -62,7 +61,7 @@ Utilisateurs connectés
 
 Cet écran liste les sessions utilisateurs actives sur le système Phraseanet.
 
-Elle informe de l'application Phraseanet utilisée, de l'adresse "IP", ainsi que
+Elle informe de l'application Phraseanet utilisée, de l'adresse IP, ainsi que
 de la date et de l'heure de connexion au système.
 
 .. image:: ../../images/Administration-utilisateurlive.jpg
@@ -84,7 +83,7 @@ diffusés à partir de l'application Phraseanet.
 .. image:: ../../images/Administration-publications.jpg
     :align: center
 
-L'écran Publications dresse la liste des flux média disponibles en publication
+L'écran Publications dresse la liste des flux médias disponibles en publication
 et permet d'en créer, d'en modifier et d'en supprimer.
 
 * **Pour créer un flux**, remplir puis valider le formulaire d'ajout

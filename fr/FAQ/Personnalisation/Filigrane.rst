@@ -15,6 +15,15 @@ Le fichier de filigrane doit être un fichier jpeg en niveau de gris carré
 contenant autant de pixels de côté que le plus grand côté de la sous définition
 Preview.
 
+Charger le fichier de filigrane
+-------------------------------
+
+Le filigrane est personnalisable pour chaque des collections Phraseanet.
+Dans Phraseanet Admin, afficher la collection pour laquelle personnaliser le
+filigrane.
+A la section **Filigrane**, cliquer sur le bouton *Sélectionner* pour charger un
+filigrane personnalisé.
+
 Comment est appliqué le filigrane ?
 -----------------------------------
 
@@ -35,8 +44,19 @@ crée des artefacts de couleur : mieux vaut donc se limiter la plage de gris.
 La gamme des gris clairs donnent les meilleurs résultats (par exemple ceux
 compris entre #0c0c0c et #f3f3f3 en valeurs ).
 
-Quelques remarques complémentaires
-----------------------------------
+Voici un exemple de fichier de filigrane.
+
+.. image:: ../../images/Faq-filigrane0.jpg
+    :align: center
+
+Appliqué à une image, le filigrane donne le résultat suivant.
+
+.. image:: ../../images/Faq-filigrane1.jpg
+    :align: center
+
+
+A savoir
+--------
 
 Pour appliquer un filigrane à des images déjà présente dans la base, il est
 nécessaire de régénérer les sous-définitions.
