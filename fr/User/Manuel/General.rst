@@ -62,9 +62,7 @@ Complète, cette interface permet de :doc:`rechercher <Rechercher>`,
 :doc:`d'éditer <Editer>`, :doc:`de visualiser et d'organiser <Afficher>`,
 :doc:`de partager <Push>` vos documents.
 
-*Production* permet aux utilisateurs de parcourir des fonds et de télécharger,
-aux gestionnaires d'importer, de décrire, d'organiser et de diffuser leurs
-documents.
+Selon les droits attribués, *Production* permet aux utilisateurs de parcourir des fonds et de télécharger, aux gestionnaires d'importer, de décrire, d'organiser et de diffuser leurs médias.
 
 .. figure:: ../../images/Production-zones.jpg
     :align: center
@@ -84,7 +82,7 @@ Lightbox
 Interface collaborative, *Phraseanet Lightbox* permet de visualiser et/ou
 télécharger des documents spécifiques envoyés par des utilisateurs *Phraseanet*.
 Des fonctionnalités de validation permettent de :doc:`connaître les avis
-d’utilisateurs sur des documents <Push>`.
+d’utilisateurs sur des médias <Push>`.
 
 .. figure:: ../../images/General-Lightbox.jpg
    :align: center
@@ -96,7 +94,7 @@ Upload
 ******
 
 Disponible seulement à partir de l'interface Production, *Phraseanet Upload*
-permet aux utilisateurs qui en ont le droit, d'importer des documents multimédia dans Phraseanet à partir du disque dur de l'ordinateur.
+permet aux utilisateurs qui en ont le droit, d'importer des fichiers multimédia dans Phraseanet à partir du disque dur de l'ordinateur.
 Ce gestionnaire de téléchargement montant permet de transférer des médias sans
 requérir à un logiciel de transfert :term:`FTP <FTP>`.
 
@@ -126,7 +124,7 @@ La création et la gestion de :doc:`Thésaurus <Thesaurus>` est possible dans
 recherche *Phrasea engine*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques.
-Il représente un vrai *plus* dans l’utilisation d’une solution de gestion de médias numériques.
+Il représente un vrai *plus* dans l'utilisation d'une solution de gestion de médias numériques.
 
 .. image:: ../../images/General-Thesaurus.jpg
    :align: center

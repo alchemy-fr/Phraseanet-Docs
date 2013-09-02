@@ -140,12 +140,20 @@ En cliquant sur la flèche près de l'aide, deux sous-onglets apparaissent : les
 .. image:: ../../images/General-menu3.jpg
     :align: center
 
-Voici un exemple de quelques raccourcis claviers utiles dans *Phraseanet*.
+La rubrique Raccourcis permet d'afficher un récapitulatif des raccourcis
+claviers disponibles dans *Phraseanet*.
 
 .. image:: ../../images/General-raccourcis.jpg
+    :align: center
+
+La rubrique A propos permet d'afficher les informations de version de
+Phraseanet.
+
+.. image:: ../../images/General-version.jpg
     :align: center
 
 Se déconnecter
 **************
 
-Cliquer sur le lien *Déconnexion* pour quitter *Phraseanet*.
+Cliquer sur le lien *Déconnexion* pour mettre fin à la session et quitter
+*Phraseanet*.

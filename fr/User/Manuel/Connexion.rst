@@ -27,7 +27,7 @@ Authentification déportée *via* OAuth
 -------------------------------------
 
 :term:`OAuth` est un protocole d'authentification libre et sécurisé permettant
-de s'authentifier au moyen d'un compte d'une application indépendante.
+de s'authentifier au moyen du compte d'une application indépendante.
 
 .. image:: ../../images/Authentification-oauth.jpg
     :align: center
@@ -48,8 +48,8 @@ peuvent s'ajouter.
 Inscription
 -----------
 
-Selon les choix de paramétrage du système, un lien permettant l'inscription de
-nouveaux utilisateurs peut exister sur la page de connexion de *Phraseanet*.
+Selon les choix de paramétrage du système, un lien permettant de s'inscrire
+comme nouvel utilisateur peut exister sur la page de connexion de *Phraseanet*.
 
 * Cliquer sur **Inscription** dans la page d'accueil.
 
@@ -75,7 +75,7 @@ administrateur *Phraseanet* finalise ensuite l'inscription.
 
 .. note::
 
-    Même avec OAuth il est nécessaire de fournir un mot de passe à l'
+    Même avec OAuth il est nécessaire de fournir un mot de passe lors de l'
     inscription.
 
 
@@ -87,8 +87,8 @@ Sur la page *Mot de passe oublié*, remplir le formulaire proposé avec l'adress
 email lié au compte Phraseanet.
 
 Une fois le formulaire complété et soumis, un email est envoyé. Il permet
-rejoindre, via un lien, l'interface de ré-initialisation de mot de passe.
-Ce lien n'est valide que pour une durée limitée dans le temps.
+rejoindre, via un lien sécurisé, l'interface de ré-initialisation de mot de passe.
+**Attention** : ce lien n'est valide que pour une durée limitée dans le temps.
 Si l'email n'est pas reçu, consulter le dossier des courriers indésirables
 du programme de messagerie.
 
