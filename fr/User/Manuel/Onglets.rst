@@ -12,7 +12,7 @@ La Zone de Travail
     * Un espace de travail pour mettre de côté des sélections d'images et autres
       documents : ce sont les :doc:`Paniers et Reportages <PaniersReportages>`
 
-    Si (et seulement si) un thésaurus est déployé,
+    Si (et seulement si) un thésaurus Phraseanet est déployé,
 
     * une aide à la recherche avec des `Propositions`_
     * Le `thésaurus`_ mis en oeuvre
@@ -110,15 +110,12 @@ option intéressante s'il y a peu de termes candidats à examiner.
 
 * Effectuer un clic droit (ou cliquer en maintenant les touches "ctrl" enfoncée)
   sur un terme pour afficher le menu contextuel du terme.
-
-.. image:: ../../images/Onglets-candidats2.jpg
-    :align: center
-
 * Cliquer sur Accepter en xx (xx étant la langue du terme)
 
 .. image:: ../../images/Onglets-candidats2.jpg
     :align: center
 
 **Pour supprimer des termes** de la liste des termes candidats du Thésaurus :
-* Cliquer sur Supprimer pour supprimer le terme des candidats
+
+* Cliquer sur Supprimer pour supprimer le terme des candidats.
 

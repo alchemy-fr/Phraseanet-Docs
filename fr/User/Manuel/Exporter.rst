@@ -7,11 +7,14 @@
 
     L'action `Exporter`_ est l'une des actions possibles dans la
     :doc:`Palette des Actions <Actions>` dans *Phraseanet Production*.
-    Plusieurs modes d'export sont proposés: utiliser le téléchargement,
-    envoyer par email ou encore envoyer via le :term:`FTP <FTP>`.
+    Plusieurs modes d'export sont proposés : le téléchargement,
+    l'envoi par email ou encore la transmission via :term:`FTP <FTP>`.
 
-    L'action `Imprimer`_ est considéré comme un type d'export particulier c'est
-    pourquoi les fonctionnalités d'impression sont détaillées dans cette page.
+    L'action `Imprimer`_ est un type d'export particulier. Il s'agit
+    d'impression au format PDF.
+
+.. image:: ../../images/PaletteExporter.jpg
+    :align: center
 
 Exporter
 --------
@@ -23,21 +26,23 @@ Cette action permet d'exporter, au choix:
 * les notices au format `XML <https://wikipedia.org/wiki/Xml>`_ ou
   `YAML <https://wikipedia.org/wiki/Yaml>`_
 
-*Près de chaque format figurent les poids respectives des éléments à exporter.*
+*Près de chaque format figurent les poids respectifs de l'ensemble des éléments
+à exporter.*
 
 Il est possible d'exporter à l'unité ou en lots des médias ou les contenus de
 Paniers et Reportages depuis la zone d':doc:`affichage des Résultats <Afficher>`
 ou depuis la
 :doc:`zone d'affichage des paniers et reportages <PaniersReportages>`.
 
-**En cliquant sur "Exporter", trois options d'export sont proposées dans des
-onglets :**
+En cliquant sur **Exporter**, jusqu'à quatre options d'export sont proposées :
 
-* le Téléchargement : Il permet de transférer les données sur son disque
-  dur dans un fichier compressé nommé par exemple Export.zip.
-* L'envoi par Mail : Il permet d'envoyer à un destinataire un lien lui
-  permettant de récupérer des médias contenus dans un fichier compressé de type
+* **le téléchargement** : Il permet de transférer les données sur le disque
+  dur de l'ordinateur dans un fichier compressé nommé par exemple Export.zip.
+* L'envoi par E-mail : Il permet d'envoyer à des destinataires un lien
+  permettant de récupérer les médias dans un fichier compressé de type
   Zip.
+* L'onglet Commander permet de commander des documents qui nécessiteraient de
+  contrôler l'utilisation.
 * L'envoi par FTP : Si le paramétrage de l'application le permet, l'envoi par
   FTP permet de déposer les médias exportés sur un serveur de fichiers
   supportant des connexions de type FTP.
@@ -94,18 +99,8 @@ destination mais peut aussi appeler des "pré-configurations".
 
 .. note::
 
-    Les Pré-configurations correspondent à l'adresse FTP saisie
-    dans la partie "Mon compte".
-
-Il est possible de demander l’envoi d’un email de confirmation à l’utilisateur
-envoyant les éléments et au destinataire pour l’informer de la mise à
-disposition des éléments sur son serveur FTP.
-
-Il est également possible de tester le serveur FTP de destination et/ou
-d’envoyer les éléments.
-
-Une fenêtre intermédiaire s’ouvre et informe l’utilisateur de l’état de son
-envoi.
+    Les Pré-configurations correspondent aux adresses FTP saisies dans la partie
+    "Mon compte".
 
 .. image:: ../../images/Exporter-FTP.jpg
     :align: center
@@ -148,12 +143,11 @@ Cocher les cases correspondant aux choix souhaités:
 * Planche contact, pour imprimer les vignettes regroupées dans une planche
   contact.
 
-Cliquer sur Imprimer. Les documents demandés s'affichent sous forme d'un
-document PDF (*Format Acrobat de Adobe* - un *Reader Acrobat* doit être installé
-sur le poste de travail)
+Cliquer sur **Imprimer**. Les documents demandés s'affichent sous forme d'un
+document PDF (*Format Acrobat de Adobe* - *Acrobat reader* ou un autre logiciel
+capable de lire les fichiers PDF doit être installé sur le poste de travail).
+Imprimer le document PDF ou l'enregistrer sur le disque dur du poste de travail.
 
 .. image:: ../../images/Actions-Imprimer2.jpg
     :align: center
 
-Imprimer le document PDF sur l'imprimante de son choix ou l'enregistrer sur le
-disque dur de son poste de travail.

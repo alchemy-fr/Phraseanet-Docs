@@ -30,7 +30,7 @@ Pour les utilisateurs authentifiés
 
 Lightbox est disponible dans la barre de lancement des applications Phraseanet.
 
-.. image:: ../../images/General-menu.jpg
+.. image:: ../../images/General-menu0.jpg
     :align: center
 
 Cliquer sur la rubrique **Lightbox** du menu pour rejoindre l'interface

@@ -12,7 +12,7 @@ Solution *full web*, elle s'exécute dans un navigateur internet.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
 serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
-courantes telles Mysql,Php et Apache.
+courantes telles MySQL,PHP et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
 *Phraseanet*.
 Certaines de ces librairies sont

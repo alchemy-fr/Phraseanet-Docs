@@ -24,13 +24,23 @@ Toutes les interfaces *Phraseanet* proposent en haut de leurs fenêtres un menu
 identique au sein d'une barre de menu.
 
 **La partie gauche de la barre de menu affiche la liste des interfaces
-auxquelles l'utilisateur à accès.**
+auxquelles l'utilisateur à accès.** En cliquant sur le nom d'une application,
+le navigateur internet lance celle-ci dans un nouvel onglet ou une nouvelle
+fenêtre.
 
-.. image:: ../../images/General-menu.jpg
+**Les rubriques de la barre de menu sont fonctions des droits de
+l'utilisateur.**
+
+Certains utilisateurs dont les droits se limitent à la consultation du fonds ont
+accès à un nombre limité de rubriques.
+
+.. image:: ../../images/General-menu0.jpg
     :align: center
 
-En cliquant sur le nom d'une application, le navigateur internet lance celle-ci
-dans un nouvel onglet ou une nouvelle fenêtre.
+D'autres, tels les administrateurs disposent d'une barre de menu plus étoffée.
+
+.. image:: ../../images/General-menu1.jpg
+    :align: center
 
 .. note::
 
@@ -39,9 +49,12 @@ dans un nouvel onglet ou une nouvelle fenêtre.
     Si l'utilisateur n'a pas accès à certaines fonctionnalités, le lien
     vers l'interface l'exploitant n'apparaît pas.
 
-**La partie droite de la barre de menu affiche les notifications, l'identifiant
+**La partie droite de la barre de menu** affiche les notifications, l'identifiant
 du compte, l'aide en ligne avec les raccourcis clavier et le lien de
-déconnexion.**
+déconnexion.
+
+.. image:: ../../images/General-menu2.jpg
+    :align: center
 
 Accès aux notifications
 ***********************
@@ -50,6 +63,9 @@ Les notifications sont des messages informatifs affichés en temps réel dans l'
 interface *Phraseanet Production*.
 Elles renseignent l'utilisateur sur les nouvelles publications disponibles, les
 demandes de validation, la réception de paniers... *etc*.
+
+.. image:: ../../images/General-notifications.jpg
+    :align: center
 
 Se reporter à la section
 :doc:`personnaliser l'interface <PersonnaliserInterface>`.
@@ -149,7 +165,7 @@ claviers disponibles dans *Phraseanet*.
 La rubrique A propos permet d'afficher les informations de version de
 Phraseanet.
 
-.. image:: ../../images/General-version.jpg
+.. image:: ../../images/General-Version.jpg
     :align: center
 
 Se déconnecter

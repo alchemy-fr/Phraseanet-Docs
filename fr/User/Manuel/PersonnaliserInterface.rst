@@ -4,10 +4,10 @@ Personnaliser l'interface
 Ajuster les dimensions des zones d'affichage
 ********************************************
 
-Des poignets permettent d'ajuster au mieux les dimensions des zones d'affichage
-dans les fenêtres de *Phraseanet Production*.
-Le principe et de sélectionner puis déplacer les poignets pour ajuster la taille
-des zones.
+Des poignées permettent d'ajuster les dimensions des zones d'affichage dans les
+interfaces de *Phraseanet Production*.
+Le principe est de sélectionner puis de déplacer les poignées pour ajuster la
+taille des zones.
 
 Re-dimensionner la zone de travail
 ----------------------------------
@@ -20,59 +20,68 @@ Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
 Déplacer le curseur vers la gauche ou la droite pour changer la taille des zones
 d’affichage.
 
-Relâcher le curseur dès que le nombre de vignettes par ligne dans la zone de
-travail est atteint.
-
-.. note::
-
-    Ensuite, l'application ajuste seule l’espace pour optimiser l’affichage.
+Relâcher le curseur dès que le nombre souhaité de vignettes par ligne dans la
+zone de travail est atteint. Ensuite, l'application ajuste seule l'espace pour
+optimiser l'affichage.
 
 Masquer ou afficher la zone de travail
 **************************************
 
-Depuis la version 3.6, la zone de travail est rétractable:
+La zone de travail est rétractable :
 
 .. image:: ../../images/Onglets-Retractable1.jpg
     :align: center
 
-Un clic sur l'icône présente sur le côté droit permet de la masquer quasi -
-entièrement, ce qui laisse un espace totalement dédié à l'affichage et à la
-consultation des Résultats :
+Cliquer sur l'icône présente sur le côté droit pour réduire la zone de
+travail et maximiser la surface dédiée à l'affichage et à la consultation des
+résultats.
 
 .. image:: ../../images/Onglets-Retractable.jpg
     :align: center
 
-Un clic sur n'importe quelle partie de la zone la fait réapparaître instantanément.
+Lorsque réduite, cliquer sur n'importe quelle partie de la zone de travail pour
+la faire réapparaître instantanément.
 
 Réglage des notifications
 *************************
 
-Dans la partie droite se trouvent vos notifications, :doc:`vos informations de
-compte <Connexion>`, l'aide en ligne et le lien pour se déconnecter.
+La partie droite de la barre de menu signale les notifications. Un chiffre peut
+y figurer. Il indique le nombre de notifications n'ayant pas été encore lues.
 
-.. figure:: ../../images/General-menu 0.jpg
+.. figure:: ../../images/General-menu2.jpg
     :align: center
 
-Lorsque vous envoyez une :doc:`sélection d'images <PaniersReportages>` à un ou
-plusieurs autres utilisateurs, pour par exemple leur demander leur avis (et donc
-une validation) sur les documents (voir section :doc:`Push <Push>`), le destinataire
-reçoit l'information en temps réel dans l'interface de *Production* s'il est
-connecté. Celui-ci est également notifié par email de l'arrivée de la demande.
+Les notifications rendent compte d'événements en temps réel dans l'application.
+Selon les droits de l'utilisateur, ces notifications peuvent porter sur :
 
-Dans ce cas, l'onglet "Notifications" comporte une bulle avec le chiffre représentant
-le nombre de demandes qu'il n'a pas encore lues:
+*  les demandes d'inscription,
+*  l'échec de transferts dans Bridge,
+*  l'échec d'export par email,
+*  la reception de Push ou de demande de validation,
+*  la réception d'une commande ou son rejet par des gestionnaires de
+   collections,
+*  la mise en quarantaine de documents uploadés,
+*  la mise à disposition de nouvelles publications.
 
-.. image:: ../../images/General-menu2.jpg
-    :align: center
+.. note::
 
-Cliquer sur l'onglet Notifications. La liste des notifications les plus récentes
-apparaît.
+    Les notifications sont complétées d'emails reçus à l'adresse de l'
+    utilisateur.
+    La réception des emails liés aux notifications est paramétrable dans la
+    section **Notification par e-mail** de l'onglet *Informations* du compte
+    utilisateur.
+
+Cliquer sur la rubrique **Notifications** de la barre de menu pour afficher les
+notifications les plus récentes.
 
 .. image:: ../../images/General-notifications.jpg
     :align: center
 
-Pour visualiser *toutes les notifications*, cliquer dessus. Une fenêtre
-en Overlay s'affiche et les notifications plus anciennes sont chargées.
+Pour toutes les visualiser, cliquer sur le lien **Toutes les notifications**.
+Une fenêtre en surimpression récapitule tout l'historique des notifications.
+
+.. image:: ../../images/General-notificationsoverlay.jpg
+    :align: center
 
 Préférences d'affichage
 ***********************
@@ -80,62 +89,67 @@ Préférences d'affichage
 Préférences d'affichage des résultats
 -------------------------------------
 
-**L'utilisateur peut, dans Production, régler ses préférences pour l'affichage
-des résultats**. Le bouton "Préférences" se trouve en bas de la fenêtre, en dessous
-de la zone d'affichage des Résultats.
+L'utilisateur peut régler ses préférences pour l'affichage des résultats.
+Cliquer sur le bouton **Préférences** situé en bas de la fenêtre, en dessous de
+la zone d'affichage des résultats.
 
 .. image:: ../../images/Affichage-Preferences.jpg
     :align: center
 
-Un clic sur "Préférences" ouvre une fenêtre Overlay, comme ci-dessus. Puis les
-différents paramètres:
+Une fenêtre en surimpression rassemble des paramètres d'affichage et de
+configuration.
 
 .. image:: ../../images/Affichage-Preferences1.jpg
     :align: center
 
-Parmi ces paramètres, l'utilisateur peut:
+Dans l'onglet **Affichage** l'utilisateur peut :
 
-* Changer le mode d’affichage de Mosaïque à Liste (notice affichée à gauche
+* Changer le mode d'affichage de *Vignettes* à *Liste* (notice affichée à gauche
   des vignettes).
-* Modifier le jeu de couleur de l’interface (Thème par défaut: interface noire).
+* Modifier le jeu de couleur de l'interface (Thème par défaut: interface noire).
 * Changer les informations qui s’affichent au survol des vignettes en cochant
   la case Iconographe ou Graphiste.
-* Choisir d’afficher les informations techniques des documents (affichage du
+* Choisir d'afficher les informations techniques des documents (affichage du
   "i"), ou cocher la case "afficher dans la notice" pour que les
   informations soient ajoutées sous la notice documentaire au survol.
 * Afficher ou non les icônes de typage des documents
 * Modifier le nombre de résultats par page
-* Changer la taille d’affichage des vignettes
+* Changer la taille d'affichage des vignettes
 * Choisir la couleur de sélection des documents dans les interfaces.
 
-Il est également possible de choisir, pour la prochaine connexion à Phraseanet,
-quelle recherche afficher automatiquement au démarrage: la dernière question posée,
-les publications ou bien encore l'aide :
+Dans l'onglet **Configuration** l'utilisateur peut paramétrer la question posée
+par défaut lors d'une connexion aux interfaces *Phraseanet Production* et
+*Classic*.
 
 .. image:: ../../images/Affichage-Preferences2.jpg
     :align: center
 
-Une fois les réglages faits, cliquer n’importe où dans l’interface pour fermer
-la fenêtre Overlay.
+Cliquer sur la croix pour quitter la fenêtre *Préférences*. Les préférences
+modifiées sont prises en compte lors du prochain rafraîchissement de l'
+affichage.
 
-Relancer une recherche pour modifier les préférences d’affichage des documents.
+Préférences de tri et d'affichage des paniers et reportages
+-----------------------------------------------------------
 
-Préférences d'affichage des paniers et reportages
--------------------------------------------------
-
-Cliquer sur le menu contextuel des paniers.
+Il est possible d'agir sur des préférences de tri et d'affichage des paniers et
+reportages. Pour accéder à ces options, cliquer sur le menu contextuel des
+paniers.
 
 .. figure:: ../../images/General-prefpaniers.jpg
    :align: center
 
-Cliquer sur *Préférences*.
+Il est possible de trier paniers et reportage par ordre de alphabétique de nom
+ou par date de création.
 
-Une fenêtre en :term:`Overlay <Overlay>` s’ouvre:
+La rubrique **Préférences** permet de modifier des paramètres d'affichage.
+Cliquer sur *Préférences* ; une fenêtre s'ouvre en
+:term:`surimpression <Overlay>`.
 
 .. figure:: ../../images/General-Prefpaniers2.jpg
    :align: center
 
-Cocher les cases pour afficher les :term:`status <Status>`, la description
-et/ou le titre des documents dans les paniers.
-Fermer en cliquant sur la croix en haut à droite ou appuyer sur la touche "Echap"
-du clavier.
+Cocher ou décocher les cases pour afficher ou masquer les
+:term:`status <Status>`, la description et/ou le titre des documents dans les
+paniers et reportages.
+Fermer en cliquant sur la croix en haut à droite ou appuyer sur la touche
+"Echap" du clavier.

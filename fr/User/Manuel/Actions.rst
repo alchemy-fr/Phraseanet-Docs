@@ -5,15 +5,15 @@
 
 .. topic:: L'essentiel
 
-    La Palette des Actions dans *Phraseanet Production* vous permet d'effectuer
-    un grand nombre d'actions sur les documents.
+    La Palette des Actions dans *Phraseanet Production* permet d'effectuer des
+    actions sur les documents.
 
     Plusieurs actions sont accessibles à partir de cette :term:`Palette
-    <Palette des Actions>`, on peut différencier les fonctions de base des
+    <Palette des Actions>`. Certaines sont des fonctions de base, d'autres des
     fonctions étendues.
 
-    **Ces différentes actions sont accessibles en fonction des droits des
-    utilisateurs**. Ces droits sont tous paramétrables dans l'interface
+    **Les actions sont accessibles en fonction des droits des utilisateurs**.
+    Ces droits sont tous paramétrables dans l'interface
     :doc:`Phraseanet Administration <Administration>`.
 
 **Les fonctions de base :**
@@ -28,21 +28,21 @@
 * `Propriétés`_
 * `Push`_
 * `Supprimer`_
-* `Outils images`_
+* `Outils`_
 
 Présentation de la Palette
 --------------------------
 
-La Palette des Actions se trouve dans l'interface de *Phraseanet Production*
-dans la partie haute de la fenêtre, au-dessous du formulaire de recherche.
+La Palette des Actions est située dans la partie haute la zone d'affichage,
+au-dessous du formulaire de recherche.
 Selon les droits de l'utilisateur, la palette peut proposer un nombre variable
 d'actions.
 
 .. image:: ../../images/Palette.jpg
     :align: center
 
-A droite de chaque bouton d'action se trouve une flèche sur laquelle l'
-utilisateur peut cliquer pour dérouler l'ensemble des actions disponibles.
+A droite de certains boutons d'action se trouve une flèche permettant l'accès à
+un menu contextuel donnant davantage d'options.
 
 .. image:: ../../images/Actions-PaletteBeta.jpg
     :align: center
@@ -84,46 +84,47 @@ Propriétés
 
 Cette action permet de modifier :
 
-* les :term:`status <Status>` des documents
+* les :term:`status <Status>` des enregistrements
 * les *types mimes* des documents sélectionnés
 
-Les Status sont comme des "interrupteurs" en position "On" ou "Off" et sont
-applicables sur les médias et les reportages.
-Leurs mises en oeuvre s'effectuent dans *Phraseanet Administration* et permet le
-nommage des Status et le choix de minilogos associés.
+Changer les status des documents
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Les :term:`status <Status>` permettent de caractériser des enregistrements en
+leurs affectants des indicateurs correspondants à des états.
+Leurs mises en oeuvre s'effectuent dans *Phraseanet Administration* (définition
+et choix de minilogos associés).
 A travers la gestion des utilisateurs, il est possible de lier des droits
 utilisateurs en fonction de l'état de status.
 
 .. note::
 
     Il existe 32 :term:`status <Status>`. 28 sont paramétrables et
-    peuvent être utilisés pour des besoins de workflow ou la mise en place
-    des restrictions d’accès aux documents entre autres.
+    peuvent être utilisés pour des besoins de *workflow* ou de mise en place
+    de restrictions d’accès aux enregristrements.
     Le changement d'état des status est aussi disponible directement
     depuis la fenêtre :doc:`Éditer <Editer>`.
-
-**Changer les status des documents**
-
-Cette action permet de changer les status des documents.
 
 * Sélectionner une ou plusieurs vignettes, un :term:`panier <Panier>` ou un
   :term:`reportage <Reportage>` puis cliquer sur Propriétés.
 
 La fenêtre s'ouvre.
 
+.. image:: ../../images/Actions-Proprietes-status.jpg
+    :align: center
+
 * Cocher la case correspondante au nouveau :term:`status <Status>` (plusieurs
   status possibles).
 * Cliquer sur **Valider** pour enregistrer les changements.
 
-.. image:: ../../images/Actions-Proprietes-status.jpg
-    :align: center
+Changer le type des documents
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Changer le type des documents**
-
-Cette action permet de changer le type mime des documents.
+Cette action permet de changer le type des documents attribués automatiquement
+lors de l'import dans *Phraseanet*.
 
 Elle est utile si des documents ajoutés n’ont pas été correctement interprétés
-et qu’il faut les associer "au bon" type de fichier.
+et qu’il faut les associer "au bon" type de fichier ou type *mime*.
 
 * Sélectionner une ou plusieurs vignettes, un :term:`panier <Panier>` ou un
   :term:`reportage <Reportage>` et cliquer sur **Propriétés**.
@@ -149,7 +150,7 @@ Déplacer
     :align: center
 
 * Sélectionner la collection dans laquelle les médias doivent être déplacés
-* Cliquer sur **Ok** pour effectuer cette action.
+* Cliquer sur **Valider** pour effectuer l'action.
 
 Les médias sont alors déplacés dans la collection sélectionnée.
 
@@ -162,14 +163,14 @@ Les médias sont alors déplacés dans la collection sélectionnée.
 Push
 ****
 
-On utilise le :term:`"push" <Push>` dans *Phraseanet* pour pousser des documents
-vers un ou plusieurs destinataires.
-Le menu contextuel du bouton Push regroupe également les fonctions de
+Le bouton :term:`"push" <Push>` et son menu contextuel regroupe les fonctions de
 *Validation*, le *Bridge* et l'action *Publier*.
+Ces fonctionnalités permettant de pousser et de promouvoir des enregistrements
+vers des destinataires ou des applications.
 
-:doc:`Consulter la section dédiée au Push et à la validation<Push>`.
-:doc:`Consulter la section dédiée au Bridge<Push>`.
-:doc:`Consulter la section dédiée aux publications<Push>`.
+* :doc:`Consulter la section dédiée au Push et à la validation<Push>`.
+* :doc:`Consulter la section dédiée au Bridge<Push>`.
+* :doc:`Consulter la section dédiée aux publications<Push>`.
 
 Supprimer
 *********
@@ -177,22 +178,24 @@ Supprimer
 Cette action permet de supprimer des :term:`enregistrements <Enregistrement>`
 (Paniers, documents de la :term:`base`/Collection, Reportages).
 
-* Sélectionner l'élément puis cliquer sur l'icône le bouton **Supprimer**.
+* Sélectionner les enregistrements à supprimer puis cliquer sur l'icône le
+  bouton **Supprimer**.
 
 .. image:: ../../images/Actions-Supprimer.jpg
     :align: center
 
 Une boîte de dialogue demande la confirmation de la suppression.
 
-Outils images
-*************
+Outils
+******
 
-Cette icône permet d'effectuer des actions sur les vignettes ou images de choix
-(régénération, substitution, rotation, choix de la vignette pour les vidéo),
-sur le remplacement d’un document orignal, ou d’afficher toutes les informations
-sur les métadonnées existantes dans le document sélectionné.
+Outils regroupe des actions permettant d'agir sur les vignettes ou images de
+choix (régénération, substitution, rotation, choix de la vignette pour les
+vidéo), sur la substitution de documents orignaux ou de sous définitions, ou
+d’afficher toutes les informations de métadonnées existantes dans un document
+sélectionné.
 
-* Sélectionner une image et cliquer sur l'icône **Outils**.
+* Sélectionner une document, cliquer sur **Outils**.
 
 La fenêtre Outils s'ouvre.
 
@@ -201,20 +204,20 @@ La fenêtre Outils s'ouvre.
 
 Choisir un des onglets proposés :
 
-* **Régénération sous-défs** : pour créer de nouvelles vignettes et
+* **Régénération de sous-définitions** : pour recréer de nouvelles vignettes et
   sous-définitions des médias sélectionnés.
-* **Outils vidéos** : Disponible si et seulement si un média de type vidéo est
-  sélectionné, l'onglet propose les outils permettant de choisir une vignette
-  de présentation personnalisée pour les médias vidéos.
+* **Outils vidéos** : Disponible si et seulement si le média sélectionné est
+  sélectionné, l'onglet propose les outils permettant le choix d'une vignette
+  de présentation personnalisée.
 
 .. image:: ../../images/Actions-OutilsThumbnailVideo.jpg
     :align: center
 
-* **Retourner sous défs** : permet des rotations de vignettes et d'images de
+* **Rotation** : permet des rotations de vignettes et d'images de
   choix pour les médias sélectionnés.
-* **Substitution document** : Permet de remplacer le document original par un
-  autre (une case à cocher permet de choisir si la vignette et l’image de
-  choix doivent être reconstruites).
+* **Substitution** : Permet de remplacer le document original par un
+  autre. Une case à cocher permet de choisir si la vignette et l’image de
+  choix doivent être reconstruites.
 * **Substitution des sous-défs** : Pour remplacer la vignette et l’image de
   choix par un autre fichier.
 * :term:`Métadonnées <Métadonnées>` : Permet d’afficher l’ensemble
