@@ -153,10 +153,10 @@ création. Il est donc possible d'altérer cette ordre.
 
 Les collections
 ---------------
-Les collections sont des sous ensembles d'une base dont elle partagent le
+Les collections sont des sous ensembles d'une base dont elles partagent le
 paramétrage. La mise en place de collections répond à des besoins de
-segmentation d'un fonds documentaire et à l'attribution de droits utilisateurs
-particuliers sur les documents d'une collection.
+segmentation d'un fonds documentaire et/ou à l'attribution de droits
+utilisateurs particuliers.
 
 Créer une collection
 ********************
@@ -173,7 +173,7 @@ valider le formulaire.
 .. note::
 
     Lors de la création d'une collection, il est possible d'appliquer
-    les droits utilisateurs d'une collection existante.
+    (dupliquer) les droits utilisateurs d'une collection existante.
 
 Afficher une collection
 ***********************
@@ -190,17 +190,16 @@ Il permet de la renommer, de la désactiver (voir section
 Afficher les détails d'une collection
 *************************************
 
-Cliquer sur **Montrer le détail** pour afficher le détail du contenu de la
-collection.
+Cliquer sur **Détail** pour afficher le détail du contenu de la collection.
 
 .. image:: ../../images/Administration-afficherdetail.jpg
     :align: center
 
-Le tableau liste les objets composant la collection (enregistrement, document,
-sous résolutions, vignette), les nombres par objet, la taille en méga-octets,
+Le tableau liste les objets composant la collection (enregistrements, documents,
+sous résolutions, vignettes), les nombres par objet, la taille en méga-octets,
 la taille en giga-octets.
 
-Pour masquer les détails de la collection, cliquer sur **Masquer les détails**.
+Pour masquer les détails de la collection, cliquer sur **Retour**.
 
 Gérer les gestionnaires de commande
 ***********************************
