@@ -44,18 +44,24 @@ bien plus conviviales pour effectuer des paramétrages.
 Champs
 ******
 
-La rubrique *Champ* permet de définir et d'éditer la structure documentaire d'
+La rubrique **Champ** permet de définir et d'éditer la structure documentaire d'
 une base Phraseanet au moyen de formulaires dans une interface graphique.
+
+.. image:: ../../images/Administration-structurechamps.jpg
+    :align: center
+
 Chacun des champs de la structure documentaire est défini par des propriétés
 paramétrables :
 
 * Un titre
 * Un type texte, texte multivalué ou date
+* Des labels ou intitulés localisés en fonction des langues d'interface
 * Une présence obligatoire ou non
 * Une source de données optionnelle
 * Une source :term:`Dublin Core <Dublin Core>` optionnelle
 * Une propriété de :term:`champ métier <Business field ou Champ métier>`
   optionnelle
+* L'ordre
 * ...etc.
 
 Sous définition
@@ -63,6 +69,10 @@ Sous définition
 
 La rubrique *Sous définition* permet d'ajouter et d'éditer les sous définitions
 des médias de type image, vidéo et audio intégrés dans Phraseanet.
+
+.. image:: ../../images/Administration-sousdefinitions.jpg
+    :align: center
+
 La nature des sous définitions dépend de la nature des documents originaux
 intégrés dans Phraseanet.
 Le tableau ci-dessous liste quelques exemples types de sous définitions
@@ -102,7 +112,7 @@ d'obtenir au besoin une granularité supplémentaire sur l'accès des
 utilisateurs à ces documents.
 
 Liés à la structure documentaire d'une base, il est possible d'intégrer
-jusqu'à 60 status.
+jusqu'à 28 status.
 
 .. image:: ../../images/Administration-status.jpg
     :align: center
@@ -133,20 +143,12 @@ Ordre des Collections
 .. image:: ../../images/Administration-ordrecollections.jpg
     :align: center
 
-Par défaut, les collections sont affichées dans les différentes applications
-selon leur ordre de création. Selon les besoins, il est donc possible de
-modifier l’ordre d’affichage dans les différentes interfaces.
+Par défaut, les collections sont affichées dans Phraseanet selon leur ordre de
+création. Il est donc possible d'altérer cette ordre.
 
-* Cliquer sur l'icône
+* Cliquer sur la rubrique **Ordre des collections**
 * Cliquer sur une collection
-
-Par défaut, les collections sont affichées dans les différentes applications selon
-leur ordre de création. Selon les besoins, il est donc possible de modifier
-l’ordre d’affichage dans les différentes interfaces.
-
-* Cliquer sur l'icône
-* Cliquer sur une collection
-* Cliquer sur Monter ou Descendre ou cliquer sur Ordre Alphabétique
+* Cliquer sur Monter ou Descendre ou cliquer sur **Ordre Alphabétique**
 * Cliquer sur Valider pour enregistrer les changements
 
 Les collections
@@ -251,10 +253,19 @@ Ou
   ligne de pixels des fichiers (ceci nécessite un paramétrage des informations
   à afficher sur le bandeau "champs, logo").
 
+
+Autres actions sur les collections
+**********************************
+
+Un formulaire regroupe d'autres actions sur la collection sélectionnée.
+
+.. image:: ../../images/Administration-collectionautresactions.jpg
+    :align: center
+
 .. _activate-collection:
 
-Activer / Désactiver une collection
-***********************************
+Activer ou désactiver une collection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Par défaut, les collections crées sont activées. Cela signifie qu'elles sont
 publiées et que les utilisateurs qui y ont accès peuvent parcourir son contenu.
@@ -266,13 +277,13 @@ Inversement, **Pour activer une collection**, cliquer sur **Activer la
 collection**.
 
 Renommer une collection
-***********************
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Cliquer sur *Renommer* pour changer le nom de la collection.
 Saisir le nouveau nom dans le champ qui s'affiche et cliquer sur **Envoyer**.
 
 Vider une collection
-********************
+^^^^^^^^^^^^^^^^^^^^
 
 Vider une collection a pour effet de supprimer définitivement les
 enregistrements (documents, sous définitions et notices) d'une collection.
@@ -283,12 +294,16 @@ Cliquer sur **Vider la collection** pour supprimer tous les enregistrements de
 la collection.
 
 Supprimer une collection
-************************
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Cliquer sur *Supprimer* la collection pour supprimer totalement la collection.
+Cliquer sur *Supprimer* la collection pour supprimer totalement la collection de
+le base.
 
 Personnalisation d'une collection
 *********************************
+
+Une collection est personnalisable par un ensemble d'éléments graphiques
+distinctifs.
 
 Minilogo
 ^^^^^^^^
@@ -305,18 +320,15 @@ droit) :
 Filigrane
 ^^^^^^^^^
 
-Pour ajouter un filigrane (ou watermark) personnalisé à appliquer sur les sous
-résolution des documents de la collection :
+Utiliser le formulaire proposé pour ajouter un filigrane (ou watermark)
+personnalisé à appliquer aux sous résolution des documents de la collection.
 
-* Cliquer sur le bouton **Parcourir** pour sélectionner le fichier de
-  filigrane. Ce dernier doit être une image Jpeg en niveau de gris.
+.. note::
 
-Pour ajouter un filigrane (ou watermark) personnalisé à appliquer sur les sous
-résolution des documents de la collection :
+    Le filigrane est appliqué aux documents images visualisés par les
+    utilisateurs disposants du droits No watermark décoché.
 
-* Cliquer sur le bouton **Parcourir** pour sélectionner le fichier de filigrane
-  (ce dernier doit être une image Jpeg en niveau de gris).
-* Cliquer sur **Envoyer le logo** pour charger le fichier dans l’application.
+:doc:`Se reporter à la section consacrée au filigrane dans la FAQ.<../../FAQ/Personnalisation/Filigrane>`
 
 Préférences : Valeurs suggérées
 *******************************

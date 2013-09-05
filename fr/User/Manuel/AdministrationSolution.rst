@@ -108,7 +108,7 @@ Le principe d’une *Tâche d’archivage* est de scruter un répertoire, d'en
 capturer  le contenu, de l'archiver (recopier les fichiers dans les répertoires
 de stockage de la base de destination).
 
-* **Pour démarrer une tâche**, cliquer sur le symbole, puis cliquer sur Start.
+* **Pour démarrer une tâche**, cliquer sur le symbole, puis cliquer sur *Start*.
 * **Pour éditer une tâche**, cliquer sur "Éditer".
 * **Pour arrêter une tâche**, cliquer sur "Stop".
 * **Pour créer une nouvelle tâche**, cliquer sur nouvelle tâche.
@@ -119,27 +119,34 @@ de stockage de la base de destination).
 Nouvelle tâche
 **************
 
-Le paramétrage des tâches dans Phraseanet permet de mettre en place des
+Le paramétrage de tâche dans Phraseanet permet de mettre en place des
 automatismes de traitement.
-
 La solution est livrée en standard avec un jeu de tâches exploitables et l'
 utilisateur peut en créer d'autres.
+Ces tâches sont stockés sous forme de fichiers XML dans l'application.
+
+* Sélectionner un des modèles de tâches disponibles dans le menu
+  **Nouvelle tâche**.
 
 .. image:: ../../images/Administration-nouvelletache.jpg
     :align: center
 
-Les paramètres des tâches sont stockés sous forme de fichiers XML. Dans certains
-cas, les fichiers XML de paramétrage proposent une interface de saisie.
+* Editer les paramètres de la tâche dans la vue XML.
 
-.. image:: ../../images/Administration-editertache.jpg
+.. image:: ../../images/Administration-editertache1.jpg
     :align: center
 
-Après avoir cliqué sur *nouvelle tâche* :
+* Cliquer sur **Valider** pour enregistrer les modifications.
 
-* Sélectionner un des modèles de tâches disponibles.
-* Renseigner les différents paramètres demandés.
-* Ou modifier les paramètres directement dans la vue XML.
-* Cliquer sur Valider pour enregistrer les modifications.
+La vue graphique simule l'exécution de la tâche.
+
+.. image:: ../../images/Administration-editertache2.jpg
+    :align: center
+
+* Lancer l'exécution de la tâche.
+
+.. image:: ../../images/Administration-demarrertache.jpg
+    :align: center
 
 .. note::
 

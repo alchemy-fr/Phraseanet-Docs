@@ -17,7 +17,7 @@ L'interface *Utilisateurs* permet :
 * De valider des demandes d'inscription d'utilisateurs
 * De gérer les droits des utilisateurs
 * Créer des modèles applicables à des utilisateurs
-* De paramétrer un accès invité disposant de droits spécifiques
+* De paramétrer un accès invité avec des droits spécifiques
 
 Par défaut, l'interface affiche la liste des utilisateurs référencés sur la
 solution Phraseanet.
@@ -54,10 +54,8 @@ des utilisateurs de donner plus de droits qu'il n'en a lui-même**.
 Trier les utilisateurs existants
 --------------------------------
 
-Lorsque vous recherchez un utilisateur, vous pouvez filtrer par : identifiant,
-nom/prénom, email, pays, société, dernier modèle; ou bien entrer dans le champ
-**Commence par** le début de l'identifiant de l'utilisateur afin de le retrouver
-dans la liste.
+Il est possible de filtrer la liste des utilisateurs au moyen des critères comme
+l'identifiant, le nom/prénom, l'email, le pays, ou la société.
 
 .. image:: ../../images/General-Administration-trier.jpg
     :align: center
@@ -68,14 +66,14 @@ Créer, modifier, supprimer un utilisateur
 Créer un nouvel utilisateur
 ***************************
 
-Cliquer sur le bouton Nouvel utilisateur.
+Cliquer sur le bouton **Nouvel utilisateur**.
 
 .. image:: ../../images/Administration-nouvelutilisateur1.jpg
     :align: center
 
 Une fenêtre overlay s'affiche.
 
-Saisir le login du nouvel utilisateur et cliquer sur **Créer un utilisateur**.
+Saisir l'e-mail du nouvel utilisateur et cliquer sur **Créer un utilisateur**.
 
 .. image:: ../../images/Administration-nouvelutilisateur2.jpg
     :align: center
@@ -89,12 +87,17 @@ Pour savoir comment gérer les droits, se reporter à la section
 `Édition des droits`_ .
 
 Pour éditer les renseignements relatifs aux coordonnées de l'utilisateur,
-cliquer sur l'onglet **Informations** puis éditer le formulaire.
+cliquer sur l'onglet **Informations** puis éditer le formulaire proposé.
 
 .. image:: ../../images/Administration-nouvelutilisateur4.jpg
     :align: center
 
 Appliquer les modifications apportées en cliquant sur le bouton **Valider**.
+
+.. note::
+
+    Dans le cas d'utilisateurs créés par l'interface de gestion d'utilisateurs,
+    l'adresse e-mail est utilisée comme identifiant.
 
 Modifier les droits d'un utilisateur
 ************************************
@@ -122,7 +125,7 @@ modèle.
 .. note::
 
     Les modèles appartiennent aux utilisateurs qui les créent. Ils ne sont
-    pas visibles par les autres administrateur.
+    pas visibles par les autres administrateurs.
 
 Dans la liste des utilisateurs, un modèle est repéré par une icône **M**.
 
@@ -160,7 +163,7 @@ L'accès invité
 
 **L'accès invité** peut être mis en place sur Phraseanet, si souhaité.
 Il donne la possibilité à des personnes non enregistrées sur le système d'avoir
-un accès (temporaire) à l'application.
+un accès (même temporaire) à l'application.
 
 Pour configurer l'accès invité, cliquer sur le lien **Réglage de l'accès
 invité**.
@@ -182,14 +185,15 @@ utilisateur, double cliquer sur le nom de l'utilisateur ou du modèle dans la
 liste des utilisateurs.
 
 La fiche des droits s'ouvre et permet de gérer les **droits de consultation et
-exploitation** à gauche et les droits de "gestion" au sens étendu à droite.
+exploitation** à gauche et les **droits de gestion** au sens étendu à droite.
 
 En haut à gauche de la fenêtre, on accède aux informations de l'utilisateur en
-cliquant sur sa "Fiche" (en bleu ci-dessous).
+cliquant sur sa fiche (en bleu ci-dessous).
 
 .. note::
 
-    La modification des droits des utilisateurs peut se faire en lot.
+    La modification des droits des utilisateurs peut se faire en lot en
+    sélectionnant plusieurs utilisateurs.
 
 Ce cadre donne la liste des bases et des collections disponibles et auxquelles
 l'utilisateur peut avoir accès.
@@ -201,12 +205,11 @@ Les noms des collections apparaissent sous les noms des bases auxquelles elles
 appartiennent. La collection est la notion utilisée dans les interfaces
 *Production*, *Classic*, *Report*, *Administration*.
 
-La base de données contient une ou plusieurs collections.
-Pour chacune de ces collections, des droits sont définis. Un droit est accordé
-lorsque la case à l'intersection de la ligne et de la colonne est cochée. Le
-droit n'est pas accordé lorsque la case est décochée.
-La case grisée signifie que le droit n'est accordé que partiellement à certains
-des utilisateurs sélectionnés.
+L'accès d'un utilisateur aux bases et collections Phraseanet se définit selon
+des droits. Un droit est accordé lorsque la case correspondante est cochée et
+n'est pas accordé lorsque la case est décochée.
+Lors d'une édition par lot, une case grisée signifie que le droit n'est accordé
+qu'à certains des utilisateurs sélectionnés.
 
 Un utilisateur ne peut donner plus de droits qu'il n'en a lui même (point
 rouge). Le signe "**i**" signifie qu'une fenêtre est accessible d'un clic pour
@@ -229,28 +232,30 @@ La première partie de la fenêtre des droits, la plus à gauche:
 * Cocher **Paniers** pour autoriser la création des Paniers.
 * Cocher **Voir Preview** pour autoriser la visualisation des images de choix.
 * Cocher **Watermark** pour définir si l'utilisateur voit les images de choix
-  avec un marquage.
-* Coche*Télécharger Haute Def** pour autoriser le téléchargement du
+  avec un marquage ou filigrane.
+* Cocher *Télécharger Haute Def** pour autoriser le téléchargement du
   document original
 * Cocher **Commander** pour autoriser la commande de documents
-* Cliquer sur **Quota** pour ouvrir la fenêtre Quota de téléchargements.
+* Cliquer sur **Quota** pour ouvrir la fenêtre *Quota de téléchargements*.
 
 Plusieurs options très fines sont à la disposition de l'utilisateur pour la
 limitation :
 
-**Limitation par les Quota**
+Limitation par les Quotas
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-La fenêtre "Quota des téléchargements" permet de définir pour l'utilisateur des
-quotas de téléchargement par base ou par collection.
+La fenêtre "Quota des téléchargements" permet de définir des limites de
+téléchargement par base ou par collection.
 
 * Cocher sur Oui pour activer la gestion des quotas.
-* Saisir le nombre de droits de téléchargements par mois pour cette collection.
+* Saisir le nombre de téléchargements admis par mois pour cette collection.
   Le "reste" se calcule automatiquement en fonction du droit initial et du
   nombre de téléchargements effectués.
 * Cliquer sur le bouton Valider pour enregistrer le paramétrage et fermer la
   fenêtre.
 
-**Limitation dans le temps**
+Limitation dans le temps
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Cliquer sur **Limité Temps** pour ouvrir la fenêtre *Durée de vie*
 
@@ -263,16 +268,11 @@ collection.
   fenêtre.
 * Cliquer sur **Status** pour ouvrir la fenêtre *Status*.
 
-**Limitation par les Status**
+Limitation par les Status
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Cette fenêtre permet de paramétrer les status des documents pour l'utilisateur.
-
-Un status peut être sur une des deux valeurs "une ou l'autre des cases cochées",
-l'utilisateur ne voit que les documents dont le status est sur la même valeur.
-
-Un status peut être sur les deux valeurs "les deux cases cochées", l'utilisateur
-voit aussi bien les documents dont le statut est sur l'une ou l'autre des
-valeurs.
+La limitation par les status permet de masquer des enregistrements à
+l'utilisateur en s'appuyant sur les états d'un ou de plusieurs status.
 
 *Se reporter aux réglages de la base pour la création et la gestion des status
 bits.*
