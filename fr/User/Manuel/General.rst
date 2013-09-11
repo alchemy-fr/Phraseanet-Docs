@@ -13,7 +13,7 @@ pour assurer la gestion et la diffusion de leurs images, vidéos, sons et autres
 documents multimédias ou bureautiques.
 
 Installée sur un serveur local ou distant, elle s'exécute à travers un
-navigateur internet client.
+navigateur internet.
 
 Pour utiliser Phraseanet
 ------------------------
@@ -120,8 +120,8 @@ Thésaurus
 *********
 
 La création et la gestion de :doc:`Thésaurus <Thesaurus>` est possible dans
-*Phraseanet*. Le *thésaurus Phraseanet* s'utilise conjointement au moteur de
-recherche *Phrasea engine*.
+*Phraseanet*. Le *Phraseanet Thésaurus* s'utilise conjointement au moteur de
+recherche *Phrasea*. Il n'est pas compatible avec le moteur *Sphinx*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques.
 Il représente un vrai *plus* dans l'utilisation d'une solution de gestion de médias numériques.

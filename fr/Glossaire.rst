@@ -9,6 +9,15 @@ Glossaire
 .. glossary::
     :sorted:
 
+    Stemme
+        Stemme est un néologisme désignant une configuration permettant
+        d'optimiser, de maximiser, les résultats de recherche.
+        `Racinisation <https://fr.wikipedia.org/wiki/Racinisation>`_,
+        `lemmatisation <https://fr.wikipedia.org/wiki/Lemmatisation>`_,
+        `flexion <https://fr.wikipedia.org/wiki/Flexion_%28linguistique%29>`_
+        ... Ces procédés mettent en oeuvre des algorithmes de traitement
+        automatique des langues.
+
     OAuth
         Protocole d'authentification ouvert permettant une authentification
         sécurisée sur des applications internet, mobiles ou de bureau.

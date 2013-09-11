@@ -2,7 +2,7 @@
 ======================
 
 Bien qu'il soit possible de consulter un fonds *Phraseanet* comme invité, ce qui
-reste un choix de paramétrage possible, l'utilisateur peut être amené à créer un
+est un choix de paramétrage possible, l'utilisateur peut être amené à créer un
 compte et à s'authentifier pour accéder à un fonds multimédia.
 
 Authentification
@@ -15,8 +15,7 @@ Authentification
 .. image:: ../../images/Authentification.jpg
     :align: center
 
-* Si elle ne convient pas, ajuster la langue d'interface dans la liste
-  déroulante.
+* Ajuster si besoin la langue d'interface avec le menu déroulant *Langue*.
 * Saisir l'identifiant.
 * Saisir le mot de passe.
 * Cliquer sur **Connexion**.
@@ -32,7 +31,7 @@ de s'authentifier au moyen du compte d'une application indépendante.
 .. image:: ../../images/Authentification-oauth.jpg
     :align: center
 
-Dans la version 3.8, la nouvelle page d'accueil permet de s'authentifier via les
+Dans la version 3.8, la  page d'accueil permet de s'authentifier *via* les
 applications web suivantes :
 
 * Facebook
@@ -84,15 +83,19 @@ Mot de passe perdu ?
 
 Cliquer sur le lien **Mot de Passe oublié ?**.
 Sur la page *Mot de passe oublié*, remplir le formulaire proposé avec l'adresse
-email lié au compte Phraseanet.
+email liée au compte Phraseanet.
 
-Une fois le formulaire complété et soumis, un email est envoyé. Il permet
-rejoindre, via un lien sécurisé, l'interface de ré-initialisation de mot de passe.
-**Attention** : ce lien n'est valide que pour une durée limitée dans le temps.
-Si l'email n'est pas reçu, consulter le dossier des courriers indésirables
-du programme de messagerie.
+Une fois le formulaire complété et soumis, un email est envoyé. Il contient un
+lient permettant de rejoindre, via un lien sécurisé, l'interface de
+ré-initialisation de mot de passe.
 
-Cliquer sur le lien proposé par l'email reçu pour rejoindre l'interface de
+.. note::
+
+    Le lien n'est valide que pour une durée limitée.
+    Si l'email n'est pas reçu, consulter le dossier des courriers indésirables
+    du programme de messagerie.
+
+Cliquer sur le lien proposé dans l'email reçu pour rejoindre l'interface de
 ré-initialisation de mot de passe.
 Suivre les instructions proposées à l'écran puis valider le formulaire
 pour réinitialiser le mot de passe.
@@ -111,8 +114,8 @@ Le compte invité est un compte comparable aux autres comptes *Phraseanet*. Il
 permet de consulter une ou plusieurs collections sans nécessiter
 d'authentification.
 
-Une fois l'accès invité configuré, un bouton apparaît en bas de la page de
-connexion.
+Une fois l'accès invité configuré, un bouton **Accès invité** apparaît en bas
+de la page de connexion.
 
 .. image:: ../../images/Authentification-invite.jpg
     :align: center
@@ -120,3 +123,10 @@ connexion.
 Se reporter à
 :doc:`cette section <../../FAQ/Personnalisation/Parametrer-le-compte-invite>`
 pour la mise en oeuvre de l'accès invité.
+
+
+.. note::
+
+    Lors de la connexion à *Phraseanet*, c'est la dernière application utilisée
+    qui se lance par défaut.
+

@@ -15,11 +15,6 @@ Le menu Phraseanet
 Accès aux interfaces
 ********************
 
-.. note::
-
-    Lors de la connexion à *Phraseanet*, c'est la dernière application utilisée
-    qui se lance par défaut.
-
 Toutes les interfaces *Phraseanet* proposent en haut de leurs fenêtres un menu
 identique au sein d'une barre de menu.
 
@@ -31,13 +26,13 @@ fenêtre.
 **Les rubriques de la barre de menu sont fonctions des droits de
 l'utilisateur.**
 
-Certains utilisateurs dont les droits se limitent à la consultation du fonds ont
+Les utilisateurs dont les droits se limitent à la consultation du fonds ont
 accès à un nombre limité de rubriques.
 
 .. image:: ../../images/General-menu0.jpg
     :align: center
 
-D'autres, tels les administrateurs disposent d'une barre de menu plus étoffée.
+D'autres, tels les administrateurs disposent d'une barre de menu plus complète.
 
 .. image:: ../../images/General-menu1.jpg
     :align: center
@@ -49,9 +44,9 @@ D'autres, tels les administrateurs disposent d'une barre de menu plus étoffée.
     Si l'utilisateur n'a pas accès à certaines fonctionnalités, le lien
     vers l'interface l'exploitant n'apparaît pas.
 
-**La partie droite de la barre de menu** affiche les notifications, l'identifiant
-du compte, l'aide en ligne avec les raccourcis clavier et le lien de
-déconnexion.
+**La partie droite de la barre de menu** affiche les notifications,
+l'identifiant du compte, l'aide en ligne avec les raccourcis clavier et le lien
+de déconnexion.
 
 .. image:: ../../images/General-menu2.jpg
     :align: center
@@ -74,7 +69,7 @@ Accès aux paramètres du compte
 ******************************
 
 Cliquer sur l'identifiant utilisateur affiché.
-Une nouvelle page s'ouvre et présente des formulaires et de listes groupés dans
+Une nouvelle page s'ouvre et présente des formulaires et des listes groupés dans
 des onglets thématiques.
 
 .. image:: ../../images/Moncompte.jpg
@@ -83,12 +78,12 @@ des onglets thématiques.
 Informations
 ^^^^^^^^^^^^
 
-L'onglet Informations regroupes les informations personnelles. Son formulaire
-permet de compléter ou de modifier les informations relatives à l'identité,
-aux coordonnées postales, téléphoniques, d'email, de paramétrer la réception des
-notifications *Phraseanet* adressées par email ou d'activer un compte
-:term:`FTP` permettant la réception de documents sur un serveur supportant ce
-type de connexion.
+L'onglet Informations regroupes les informations personnelles. Le formulaire
+proposé permet de compléter ou de modifier les informations relatives à
+l'identité, aux coordonnées postales, téléphoniques, d'email, de paramétrer la
+réception des notifications *Phraseanet* adressées par email ou d'activer un
+compte :term:`FTP` permettant la réception de documents sur un serveur
+supportant ce type de connexion.
 
 .. note::
 
@@ -124,6 +119,11 @@ et navigateurs utilisés.
 .. image:: ../../images/ListeSessions.jpg
     :align: center
 
+*Phraseanet* repose sur un système de sessions persistantes permettant à un
+utilisateur d'utiliser plusieurs navigateurs et plusieurs ordinateurs pour se
+connecter simultanément à une instance.
+Pour mettre fin à une des sessions listée utiliser le bouton prévu à cet effet.
+
 Applications
 ^^^^^^^^^^^^
 
@@ -156,13 +156,13 @@ En cliquant sur la flèche près de l'aide, deux sous-onglets apparaissent : les
 .. image:: ../../images/General-menu3.jpg
     :align: center
 
-La rubrique Raccourcis permet d'afficher un récapitulatif des raccourcis
+La rubrique *Raccourcis* permet d'afficher un récapitulatif des raccourcis
 claviers disponibles dans *Phraseanet*.
 
 .. image:: ../../images/General-raccourcis.jpg
     :align: center
 
-La rubrique A propos permet d'afficher les informations de version de
+La rubrique *A propos* permet d'afficher les informations de version de
 Phraseanet.
 
 .. image:: ../../images/General-Version.jpg
@@ -171,5 +171,5 @@ Phraseanet.
 Se déconnecter
 **************
 
-Cliquer sur le lien *Déconnexion* pour mettre fin à la session et quitter
-*Phraseanet*.
+Cliquer *Déconnexion* pour mettre fin à la session et quitter *Phraseanet*.
+

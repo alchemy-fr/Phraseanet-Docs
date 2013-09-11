@@ -28,7 +28,7 @@ utilisateur Phraseanet transmet un :doc:`Push ou une demande de validation
 Pour les utilisateurs authentifiés
 **********************************
 
-Lightbox est disponible dans la barre de lancement des applications Phraseanet.
+Lightbox est disponible dans la barre de menu des applications Phraseanet.
 
 .. image:: ../../images/General-menu0.jpg
     :align: center
@@ -50,12 +50,12 @@ L'interface de la Lightbox est simple et intuitive.
 .. image:: ../../images/Lightbox-interface.jpg
     :align: center
 
-* 1. La barre d'action renseigne sur le nom du fichier, permet de naviguer dans
-  les enregistrements et donne accès au téléchargement du média affiché.
-* 2. La table lumineuse, au centre, montre le média sa description et ses
-  caractéristiques. Cette zone varie selon que l'on visionne un Push ou une
-  demande de Validation.
-* 3. La zone d'affichage des vignettes liste les médias de la Lightbox
+* **1**. La barre d'action renseigne sur le titre du média affiché, permet de
+  naviguer dans les enregistrements et donne accès au téléchargement du média affiché.
+* **2**. La table lumineuse, au centre, montre le média sa description et ses
+  caractéristiques. Cette zone varie selon que l'on visionne un **Push** ou
+  **une demande de Validation**.
+* **3**. La zone d'affichage des vignettes liste les médias de la Lightbox
 
 Naviguer
 ********

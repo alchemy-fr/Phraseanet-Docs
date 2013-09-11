@@ -242,7 +242,7 @@ Plusieurs options très fines sont à la disposition de l'utilisateur pour la
 limitation :
 
 Limitation par les Quotas
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 La fenêtre "Quota des téléchargements" permet de définir des limites de
 téléchargement par base ou par collection.

@@ -190,7 +190,7 @@ Il permet de la renommer, de la désactiver (voir section
 Afficher les détails d'une collection
 *************************************
 
-Cliquer sur **Détail** pour afficher le détail du contenu de la collection.
+Cliquer sur **Détails** pour afficher un inventaire du contenu de la collection.
 
 .. image:: ../../images/Administration-afficherdetail.jpg
     :align: center
@@ -205,9 +205,8 @@ Gérer les gestionnaires de commande
 ***********************************
 
 Un gestionnaire de commande est un utilisateur disposant d'un droit de réponse
-aux demandes de téléchargement de documents originaux (images, vidéo en haute
-définition) émises par des utilisateurs ne bénéficiant pas des droits de
-téléchargements.
+aux demandes de téléchargement de documents originaux émises par des
+utilisateurs ne bénéficiant pas des droits de téléchargements.
 
 .. note::
 
@@ -216,7 +215,8 @@ téléchargements.
     email.
 
 **Pour ajouter un gestionnaire de commande**, sur la collection affichée, saisir
-le nom d'utilisateur ou son login dans le formulaire d'ajout d'un gestionnaire.
+le nom ou prénom de l'utilisateur ou son login dans le formulaire d'ajout d'un
+gestionnaire.
 
 .. image:: ../../images/Administration-gestionnairecommande.jpg
     :align: center
