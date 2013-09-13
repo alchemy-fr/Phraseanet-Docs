@@ -51,11 +51,13 @@ L'interface de la Lightbox est simple et intuitive.
     :align: center
 
 * **1**. La barre d'action renseigne sur le titre du média affiché, permet de
-  naviguer dans les enregistrements et donne accès au téléchargement du média affiché.
+  naviguer dans les enregistrements et donne accès au téléchargement du média
+  affiché.
 * **2**. La table lumineuse, au centre, montre le média sa description et ses
   caractéristiques. Cette zone varie selon que l'on visionne un **Push** ou
   **une demande de Validation**.
-* **3**. La zone d'affichage des vignettes liste les médias de la Lightbox
+* **3**. Une zone de menu permet de naviguer dans les Push et Validations
+* **4**. La zone d'affichage des vignettes liste les médias de la Lightbox
 
 Naviguer
 ********
@@ -91,6 +93,14 @@ située à gauche en bas de l'interface.
 .. image:: ../../images/Lightbox-enregister-tout.jpg
     :align: center
 
+Le téléchargement à partir de *Phraseanet Lightbox* propose des options
+similaires à celui de l'Export depuis *Phraseanet Production*.
+
+.. image:: ../../images/Lightbox-enregister-export.jpg
+    :align: center
+
+`Se reporter à la section consacrée à l'Export dans Phraseanet Production <Exporter>`_.
+
 Comparer deux médias
 ********************
 
@@ -101,7 +111,7 @@ Il peut être intéressant d'afficher deux médias côte à côte pour les compa
 
 * afficher un premier média sur la table lumineuse en cliquant sur sa vignette
 * en appuyant sur la touche **Ctrl** (PC Windows) ou **Cmd** (Mac OS) de l'
-  ordinateur, cliquer sur le média à comparer.
+  ordinateur, cliquer sur le média avec lequel comparer.
 
 Ce dispositif est très utile dans une démarche de
 :doc:`validation de documents <Push>`.

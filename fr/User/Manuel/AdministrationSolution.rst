@@ -54,12 +54,35 @@ Paramétrage du moteur de recherche
 ----------------------------------
 
 Cette rubrique permet de configurer le moteur de recherche utilisé par l'
-instance.
+instance au moyen d'interfaces graphiques.
+
+.. note::
+
+    Cette rubrique se destine aux administrateurs systèmes chargés de déployer
+    Phraseanet.
+
+    `Se reporter à la page consacrée à la configuration des moteurs dans la documentation Administrateur <../Admin/Configuration>`_.
+
+Configuration du moteur Phrasea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Le moteur Phrasea, moteur par défaut, comporte peu d'option de configuration.
+
+L'interface de paramétrage propose le paramétrage des champs de type date
+disponibles à la recherche ainsi que le choix de l'ordre d'affichage des
+enregistrements.
+
+Configuration du moteur Sphinx
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Le formulaire permet d'écrire la configuration du moteur de recherche Sphinx
+utilisé.
 
 Utilisateurs connectés
 ----------------------
 
-Cet écran liste les sessions utilisateurs actives sur le système Phraseanet.
+Affiché par défaut lors de la connexion à Phraseanet Admin, l'écran liste les
+sessions utilisateurs actives sur le système.
 
 Elle informe de l'application Phraseanet utilisée, de l'adresse IP, ainsi que
 de la date et de l'heure de connexion au système.
@@ -117,7 +140,7 @@ de stockage de la base de destination).
     :align: center
 
 Nouvelle tâche
-**************
+^^^^^^^^^^^^^^
 
 Le paramétrage de tâche dans Phraseanet permet de mettre en place des
 automatismes de traitement.

@@ -295,8 +295,12 @@ la collection.
 Supprimer une collection
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Cliquer sur *Supprimer* la collection pour supprimer totalement la collection de
-le base.
+Cliquer sur **Supprimer** la collection pour supprimer totalement la collection
+de la base.
+
+.. note::
+
+    Il est nécessaire qu'une collection soit vide pour être supprimée.
 
 Personnalisation d'une collection
 *********************************
@@ -311,7 +315,7 @@ interfaces *Classic* et *Production* sous les vignettes dans le coin inférieur
 droit) :
 
 * Cliquer sur le bouton **Parcourir** pour sélectionner le fichier contenant
-  le logo (taille maximum 30 x 30 pixels).
+  le logo (taille maximum conseillée : 30 pixels dans la hauteur).
 
 * Cliquer sur **Envoyer le logo** pour télécharger le logo dans les bases
   Phraseanet.
