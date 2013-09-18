@@ -3,8 +3,9 @@ Upgrade Procedure
 
 .. toctree::
 
-    Upgrade/3.6
+    Upgrade/3.8
     Upgrade/3.7
+    Upgrade/3.6
 
 To upgrade Phraseanet to the latest version, it is strongly recommended to
 follow this upgrade procedure:

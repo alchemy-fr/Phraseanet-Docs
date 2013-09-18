@@ -1,7 +1,7 @@
 Apache
 ======
 
-Apache Configuration sample.
+Apache 2 virtual host configuration for Phraseanet:
 
 .. code-block:: bash
 
@@ -13,44 +13,79 @@ Apache Configuration sample.
 
        <Directory "/var/www/Phraseanet/www">
            DirectoryIndex index.php
-           Options Indexes FollowSymLinks -Multiviews
+           Options Indexes FollowSymLinks
            AllowOverride All
        </Directory>
 
     </VirtualHost>
 
-Mod XSendFile
--------------
+.. _apache-xsendfile:
 
-XSendFile configuration
+XSendFile Configuration
+-----------------------
 
-Since Phraseanet 3.0.14, XSendFile configuration is not anymore provided in
-.htaccess file.
+.. topic:: The essential
 
-We removed because a BC break between version 0.9 and 0.10 of mod_xsendfile.
+    XSendfile allows PHP to move file download handling to Apache. It is
+    strongly recommended to use this feature. If XSendfile is disabled,
+    Phraseanet will work as expected.
 
-You will have to update your virtual host configuration.
+Since version 3.8, Phraseanet XSendFile configuration is much more simple.
+A command of `bin/console` generates mappings for Phraseanet configuration, a
+second one dumps Apache2 configuration.
 
-Here is an example of configuration with mod_xsendfile 0.10 :
+First step generates Phraseanet configuration mappings with the
+`bin/console xsendfile:generate-mapping` command.
+
+.. code-block:: none
+
+    bin/console xsendfile:generate-mapping apache --enable
+
+This command prompts a piece of Phraseanet configuration as it will be
+written. To do write, re execute the command with **--write** option.
+
+.. code-block:: none
+
+    bin/console xsendfile:generate-mapping apache --enable --write
+
+Once Phraseanet configuration has been written, Apache2 directives should be
+updated with the `xsendfile:dump-configuration` command.
+
+.. code-block:: none
+
+    bin/console xsendfile:dump-configuration
+
+Copy-paste the code in Apache virtual host and finally reload Apache.
+
+.. warning::
+
+    Generating mappings and virtual host update has to be done on any databox
+    creation or when a sub-definitions structure is modified.
+
+Example of Apache 2 virtual host configuration that includes an XSendfile
+configuration.
 
 .. code-block:: bash
 
-    <IfModule mod_xsendfile.c>
-      <Files *>
-        XSendFile on
-        XSendFilePath /var/www/phraseanet/datas
-        XSendFilePath /var/www/phraseanet/tmp/download
-        XSendFilePath /var/www/phraseanet/tmp/lazaret
-      </Files>
-    </IfModule>
+    #/etc/apache2/sites-available/phraseanet.conf
+    <VirtualHost *:80>
+       ServerName sub.domain.tld
 
-Here is an example of configuration with mod_xsendfile 0.9 and below :
+       DocumentRoot "/var/www/Phraseanet/www"
 
-.. code-block:: bash
+       <Directory "/var/www/Phraseanet/www">
+           DirectoryIndex index.php
+           Options Indexes FollowSymLinks
+           AllowOverride All
+       </Directory>
 
-    <IfModule mod_xsendfile.c>
-      <Files *>
-        XSendFile on
-        XSendFileAllowAbove on
-      </Files>
-    </IfModule>
+        <IfModule mod_xsendfile.c>
+          <Files *>
+              XSendFile on
+              XSendFilePath  /storage/phraseanet/lazaret
+              XSendFilePath  /storage/phraseanet/download
+              XSendFilePath  /storage/phraseanet/databox/documents
+              XSendFilePath  /storage/phraseanet/databox/subdefs
+          </Files>
+        </IfModule>
+    </VirtualHost>

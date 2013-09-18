@@ -3,8 +3,9 @@ Mise à jour
 
 .. toctree::
 
-    Upgrade/3.6
+    Upgrade/3.8
     Upgrade/3.7
+    Upgrade/3.6
 
 Lors de la publication d'une nouvelle version, pour procéder à la mise à jour
 de votre installation, suivre les étapes suivantes :
