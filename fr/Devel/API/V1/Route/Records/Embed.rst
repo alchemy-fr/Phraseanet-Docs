@@ -28,7 +28,7 @@ Paramètres
 Depuis la version 1.2, deux nouveaux paramètres sont disponibles : *devices*
 et *mimes*. S'ils sont fournis, ils restreignent les médias retournés.
 
-Par exemple, pour retourner toutes les videos compatibles HTML5 au format mobile,
+Par exemple, pour retourner toutes les vidéos compatibles HTML5 au format mobile,
 Il faut utiliser les paramètres :
 
 .. code-block:: bash
@@ -179,3 +179,5 @@ Exemple de réponse
             ]
         }
     }
+
+.. _RFC 5988: https://tools.ietf.org/html/rfc5988
