@@ -202,7 +202,7 @@ Cache services
 **************
 
 **cache** and **opcode-cache** cache services can be configures with the
-following adapters :
+following adapters:
 
 +----------------+----------------------+-----------------------------------------------------+------------+
 |  Name          | Service              |  Description                                        | Options    |
@@ -227,7 +227,7 @@ following adapters :
 Search Engine service
 *********************
 
-Two search engine services are available : Phrasea engine and SphinxSearch
+Two search engine services are available: Phrasea engine and SphinxSearch
 engine.
 
 +--------------------------------------------------------------+------------------------------+
@@ -343,7 +343,7 @@ Collections restrictions
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is possible to restrict the validation constraint on a set of collections by
-passing a list of base_id :
+passing a list of base_id:
 
 .. code-block:: yaml
 
@@ -364,7 +364,7 @@ passing a list of base_id :
 Databoxes restrictions
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The same restriction can be done at databoxes level :
+The same restriction can be done at databoxes level:
 
 .. code-block:: yaml
 
@@ -395,7 +395,7 @@ Checker's object are declared in the
 namespace and must implement `Alchemy\\Phrasea\\Border\\Checker\\Checker`
 interface.
 
-Example of GPS based checker :
+Example of GPS based checker:
 
 .. code-block:: php
 

@@ -1,7 +1,7 @@
 Apache
 ======
 
-Apache 2 virtual host configuration for Phraseanet :
+Apache 2 virtual host configuration for Phraseanet:
 
 .. code-block:: bash
 

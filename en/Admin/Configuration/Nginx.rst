@@ -1,7 +1,7 @@
 NGINX
 =====
 
-Nginx virtual host configuration for Phraseanet :
+Nginx virtual host configuration for Phraseanet:
 
 .. code-block:: none
 

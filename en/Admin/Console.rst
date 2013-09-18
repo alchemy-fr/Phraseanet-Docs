@@ -1,7 +1,7 @@
 Console
 =======
 
-Phraseanet provides two commandline tools : `bin/console` and `bin/setup`.
+Phraseanet provides two commandline tools: `bin/console` and `bin/setup`.
 `bin/console` can be executed once Phraseanet has been installed, whereas
 `bin/setup` can be executed at any moment, for example for troubleshooting.
 
@@ -9,13 +9,13 @@ Konsole Kommander
 -----------------
 
 Konsole Kommander is a commandline tool to manage Phraseanet. It is simple
-to use :
+to use:
 
 .. code-block:: bash
 
     php bin/console
 
-You will see something like :
+You will see something like:
 
 .. code-block:: bash
 
@@ -66,7 +66,7 @@ You will see something like :
       xsendfile:dump-configuration     Dump the virtual host configuration depending on Phraseanet configuration
       xsendfile:generate-mapping       Generates Phraseanet xsendfile mapping configuration depending on databoxes configuration
 
-Every command provides halp with the help command :
+Every command provides help with the help command:
 
 .. code-block:: bash
 
@@ -119,13 +119,13 @@ Setup
 
    The setup command has been added in version 3.8
 
-Phraseanet provides a setup command line utility :
+Phraseanet provides a setup command line utility:
 
 .. code-block:: bash
 
     php bin/setup
 
-This command results in such screen output :
+This command results in such screen output:
 
 .. code-block:: bash
 

@@ -327,7 +327,7 @@ Phraseanet requires `SphinxSearch Engine`_ 2.0.6 or higher.
 Advantages
 **********
 
-Main SphinxSearch advantages are :
+Main SphinxSearch advantages are:
 
 * speed
 * scalability

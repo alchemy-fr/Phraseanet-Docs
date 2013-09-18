@@ -68,7 +68,7 @@ Query Sample
 ------------
 
 Request all records, filter those on databox_id 58 on status 4 and those
-on databox_id 52 on status 5 : On databox_id 52, only records
+on databox_id 52 on status 5: On databox_id 52, only records
 with status number 5 “off” are returned, and on databox_id 58,
 only records with status number 4 “on” are returned.
 

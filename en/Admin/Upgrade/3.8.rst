@@ -100,7 +100,7 @@ Email notifications
 Console commands
 ----------------
 
-Some commands disappear :
+Some commands disappear:
 
 - `bin/console check:system` is replaced by `bin/setup check:system`.
 - `bin/console system:upgrade` is replaced by `bin/setup system:upgrade`.

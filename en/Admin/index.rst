@@ -15,7 +15,7 @@ their documentary structure.
 Phraseanet also provides a Task Manager. This component manages PHP daemons for
 Metadatas Writing, Subviews creation, indexation.
 
-Phraseanet can also be managed through 2 interfaces : `API <../../Devel>`_ and
+Phraseanet can also be managed through 2 interfaces: `API <../../Devel>`_ and
 `Konsole Kommander <Console>`_.
 
 .. toctree::
