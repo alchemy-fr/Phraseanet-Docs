@@ -119,10 +119,7 @@ et navigateurs utilisés.
 .. image:: ../../images/ListeSessions.jpg
     :align: center
 
-*Phraseanet* repose sur un système de sessions persistantes permettant à un
-utilisateur d'utiliser plusieurs navigateurs et plusieurs ordinateurs pour se
-connecter simultanément à une instance.
-Pour mettre fin à une des sessions listée utiliser le bouton prévu à cet effet.
+Pour mettre fin à une des sessions listées utiliser le bouton prévu à cet effet.
 
 Applications
 ^^^^^^^^^^^^

@@ -252,7 +252,6 @@ Ou
   ligne de pixels des fichiers (ceci nécessite un paramétrage des informations
   à afficher sur le bandeau "champs, logo").
 
-
 Autres actions sur les collections
 **********************************
 

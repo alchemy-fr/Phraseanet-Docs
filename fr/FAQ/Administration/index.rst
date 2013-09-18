@@ -6,8 +6,6 @@ FAQ Administration
     Cette section de la FAQ rassemble les questions relatives à l'administration
     de *Phraseanet*.
 
-    Cliquer sur les liens proposés pour accéder aux rubriques proposées.
-
 Je ne peux pas uploader des fichiers de plus de 2Mo
 ---------------------------------------------------
 

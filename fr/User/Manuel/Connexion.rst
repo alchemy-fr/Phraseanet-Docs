@@ -22,11 +22,11 @@ Authentification
 * En cas d'oubli du mot de passe, suivre la procédure de récupération en
   cliquant sur le lien *Mot de Passe oublié ?*.
 
-Authentification déportée *via* OAuth
--------------------------------------
+Authentification via des fournisseurs tiers
+-------------------------------------------
 
-:term:`OAuth` est un protocole d'authentification libre et sécurisé permettant
-de s'authentifier au moyen du compte d'une application indépendante.
+*Phraseanet* permet de déléguer l'authentification de l'utilisateur à une
+application tierce.
 
 .. image:: ../../images/Authentification-oauth.jpg
     :align: center
@@ -41,8 +41,7 @@ applications web suivantes :
 * Viadeo
 * Linkedin
 
-*OAuth* étant un standard ouvert, d'autres fournisseurs d'identité numérique
-peuvent s'ajouter.
+D'autres fournisseurs d'identité numérique peuvent s'ajouter.
 
 Inscription
 -----------
@@ -60,7 +59,7 @@ comme nouvel utilisateur peut exister sur la page de connexion de *Phraseanet*.
 
 **Ou bien**
 
-* Choisir de se connecter au moyen d'une authentification déportée OAuth en
+* Choisir de se connecter au moyen d'une authentification déportée en
   sélectionnant le service fournisseur d'authentification.
 
 .. image:: ../../images/Authentification-choix-inscription.jpg
@@ -74,8 +73,8 @@ administrateur *Phraseanet* finalise ensuite l'inscription.
 
 .. note::
 
-    Même avec OAuth il est nécessaire de fournir un mot de passe lors de l'
-    inscription.
+    Même avec un fournisseur d'authentification il est nécessaire de fournir
+    un mot de passe lors de l'inscription.
 
 
 Mot de passe perdu ?
@@ -86,8 +85,8 @@ Sur la page *Mot de passe oublié*, remplir le formulaire proposé avec l'adress
 email liée au compte Phraseanet.
 
 Une fois le formulaire complété et soumis, un email est envoyé. Il contient un
-lient permettant de rejoindre, via un lien sécurisé, l'interface de
-ré-initialisation de mot de passe.
+lient permettant de rejoindre, via un lien sécurisé, l'interface
+d'initialisation de mot de passe.
 
 .. note::
 

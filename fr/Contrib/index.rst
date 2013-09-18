@@ -7,13 +7,13 @@ Contributeur
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
 .. toctree::
-    :hidden:
+    :maxdepth: 2
 
     SignalerUnProbleme
     DocumentationGuidelines
 
-Phraseanet est *Open source*, qu'il s'agisse de la documentation, des traductions,
-des librairies ou du coeur applicatif.
+Phraseanet est *Open source*, qu'il s'agisse de la documentation, des
+traductions, des librairies ou du coeur applicatif.
 Comment contribuer à son amélioration ?
 
 Pour signaler un problème, demander de l'aide ou une nouvelle option, consulter

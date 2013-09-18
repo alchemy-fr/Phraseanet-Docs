@@ -87,8 +87,8 @@ Cette action permet de modifier :
 * les :term:`status <Status>` des enregistrements
 * les *types mimes* des documents sélectionnés
 
-Changer les status des documents
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Changer les status des enregistrements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Les :term:`status <Status>` permettent de caractériser des enregistrements en
 leurs affectants des indicateurs correspondants à des états.
@@ -195,7 +195,7 @@ vidéo), sur la substitution de documents orignaux ou de sous définitions, ou
 d’afficher toutes les informations de métadonnées existantes dans un document
 sélectionné.
 
-* Sélectionner une document, cliquer sur **Outils**.
+* Sélectionner un document ou plusieurs puis cliquer sur **Outils**.
 
 La fenêtre Outils s'ouvre.
 
@@ -205,7 +205,7 @@ La fenêtre Outils s'ouvre.
 Choisir un des onglets proposés :
 
 * **Régénération de sous-définitions** : pour recréer de nouvelles vignettes et
-  sous-définitions des médias sélectionnés.
+  sous-définitions les enregistrements sélectionnés.
 * **Outils vidéos** : Disponible si et seulement si le média sélectionné est
   sélectionné, l'onglet propose les outils permettant le choix d'une vignette
   de présentation personnalisée.
@@ -222,6 +222,7 @@ Choisir un des onglets proposés :
   choix par un autre fichier.
 * :term:`Métadonnées <Métadonnées>` : Permet d’afficher l’ensemble
   des informations de métadonnées :term:`EXIF <EXIF>`, :term:`IPTC <IPTC>`,
-  :term:`XMP <XMP>` lisibles dans le document sélectionné.
+  :term:`XMP <XMP>` lisibles dans un document sélectionné. Cet onglet n'est
+  disponible que si un seul document est sélectionné.
 
 Pour appliquer les modifications apportées, cliquer sur **Valider**.

@@ -26,10 +26,7 @@ scripts PHP tels que l'écriture des métadonnées, le calcul de sous-définitio
 ou l'indexation...
 
 *Phraseanet* peut être également administré en console via l'application
-bin/console
-
-Sélectionner une rubrique dans le menu de gauche pour parcourir cette
-documentation.
+bin/console.
 
 .. toctree::
     :maxdepth: 1
@@ -38,12 +35,10 @@ documentation.
     Telechargement
     Prerequis
     Installation
-    Indexeur
-    Extension
     MiseAJour
     Configuration
     MoteurDeTaches
     MoteurDeRecherche
     Console
     Maintenance
-    Optimisation
+    Plugins

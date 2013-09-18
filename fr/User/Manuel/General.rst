@@ -62,7 +62,9 @@ Complète, cette interface permet de :doc:`rechercher <Rechercher>`,
 :doc:`d'éditer <Editer>`, :doc:`de visualiser et d'organiser <Afficher>`,
 :doc:`de partager <Push>` vos documents.
 
-Selon les droits attribués, *Production* permet aux utilisateurs de parcourir des fonds et de télécharger, aux gestionnaires d'importer, de décrire, d'organiser et de diffuser leurs médias.
+Selon les droits attribués, *Production* permet aux utilisateurs de parcourir
+des fonds et de télécharger, aux gestionnaires d'importer, de décrire,
+d'organiser et de diffuser leurs médias.
 
 .. figure:: ../../images/Production-zones.jpg
     :align: center
@@ -94,7 +96,8 @@ Upload
 ******
 
 Disponible seulement à partir de l'interface Production, *Phraseanet Upload*
-permet aux utilisateurs qui en ont le droit, d'importer des fichiers multimédia dans Phraseanet à partir du disque dur de l'ordinateur.
+permet aux utilisateurs qui en ont le droit, d'importer des fichiers multimédia
+dans Phraseanet à partir du disque dur de l'ordinateur.
 Ce gestionnaire de téléchargement montant permet de transférer des médias sans
 requérir à un logiciel de transfert :term:`FTP <FTP>`.
 
@@ -124,7 +127,8 @@ La création et la gestion de :doc:`Thésaurus <Thesaurus>` est possible dans
 recherche *Phrasea*. Il n'est pas compatible avec le moteur *Sphinx*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques.
-Il représente un vrai *plus* dans l'utilisation d'une solution de gestion de médias numériques.
+Il représente un vrai *plus* dans l'utilisation d'une solution de gestion de
+médias numériques.
 
 .. image:: ../../images/General-Thesaurus.jpg
    :align: center

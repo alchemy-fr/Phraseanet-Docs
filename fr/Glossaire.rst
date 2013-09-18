@@ -36,7 +36,7 @@ Glossaire
 
     FTP
         Le FTP est un protocole de transfert de fichiers. Il est utilisé pour
-        vos envois massifs de documents.
+        les envois massifs de documents.
 
     Document
         Un document est le fichier d'origine ajouté à une Base/Collection.
@@ -65,15 +65,17 @@ Glossaire
         soit par extraction des métadonnées, soit par saisie de la description.
 
     Status
-        Critère paramétrable de caractérisation de type Oui/Non qui peut être
-        appliqué à des documents. Il est possible de définir et d’affecter
-        jusqu'à 28 status supplémentaires sur un document, 4 status étant
-        réservés (32 status au total).
+        Variable paramétrable de type booléenne (Oui/Non) permettant de
+        caractériser des enregistrements. Il est possible de définir et
+        d’affecter jusqu'à 28 status supplémentaires sur un document, 4 status
+        étant réservés (32 status au total).
 
     Enregistrement
-        Un enregistrement *Phraseanet* est constitué d'un document, de sa fiche
-        descriptive (en XML), et de ses sous définitions (vignette, image de
-        prévisualisation...*etc*.).
+        Un enregistrement *Phraseanet* correspond à un document ou à un
+        reportage. Entité unique, cet *Asset* ou actif numérique dispose d'une
+        fiche descriptive unique (en XML), d'un ou de plusieurs documents et
+        sous définitions associées (vignettes, images de prévisualisation,
+        images représentatives pour les reportages...*etc*.).
 
     Base
         Une base Phraseanet est un containeur de type MySQL (instance de base de
@@ -98,16 +100,28 @@ Glossaire
         d'un Push ou d'une Validation *Phraseanet*.
 
     Reportage
-        Un reportage est constitué d’un ensemble d’enregistrements, provenant
-        obligatoirement de la même base mais d’une ou plusieurs collections la
+        Un reportage est constitué d’un ensemble de documents, provenant
+        obligatoirement d'une même base mais d’une ou plusieurs collections la
         constituant. Un reportage dispose de sa propre fiche documentaire,
         il s’agit donc d’un enregistrement à part entière.
         Un document peut appartenir à plusieurs reportages.
 
+    IPTC (Métadonnées IPTC)
+        Les métadonnées IPTC sont un jeu d'attributs de métadonnées qui
+        permettent de décrire des données médias.
+
     IPTC
-        L'IPTC (International Press and Telecommunications Council) a défini le
-        format de transmission des documents (textes, images, sons, multimédia)
-        émis par les agences de presse.
+        L'IPTC (International Press and Telecommunications Council) est un
+        consortium réunissant des agences de presses, des éditeurs de presse et
+        de logiciels qui développe et maintient des normes d'échanges
+        d'informations largement utilisées dans l'industrie des médias.
+        Il y a plus de vingt ans, pour faciliter l'échange d'information
+        relatives aux médias, l'idée directrice de l'IPTC a été d'intégrer des
+        métadonnées aux documents eux-même, dans l'entête du fichier.
+        L'avantage du procédé est que la description du document voyage de façon
+        indissociable du document lui-même.
+        Depuis, les métadonnées IPTC n'ont cessé d'évoluer pour s'adapter aux
+        besoins de la société de l'Information.
 
         .. seealso::
 

@@ -14,4 +14,3 @@ Parametrage de Phraseanet
 
    type-des-champs-phrasea
    activer-ftp
-

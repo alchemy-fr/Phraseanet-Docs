@@ -58,11 +58,11 @@ Appliqué à une image, le filigrane donne le résultat suivant.
 A savoir
 --------
 
-Pour appliquer un filigrane à des images déjà présente dans la base, il est
-nécessaire de régénérer les sous-définitions.
+Après la mise à jour d'un filigranne vers un filigranne personalisé, et si des
+médias sont déjà présents dans *Phraseanet*, il faut supprimer les fichiers de
+caches préalablement créés par l'application.
+Utiliser la commande suivante :
 
-Il est nécessaire de purger le cache du serveur si l'on applique des watermarks
-différents.
+.. code-block::bash
 
-
-
+    find /path/to/subdefs -name 'watermark_*' -exec rm {} \;

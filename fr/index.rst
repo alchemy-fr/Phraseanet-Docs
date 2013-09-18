@@ -45,14 +45,14 @@ Quoi de neuf dans la version 3.8 ?
 
 .. todo:: Mettre le changelog ici. Communiqué à titre d'exemple
 
-La version 3.8 publiée en septembre 2013 succède à la version 3.7.
-Voici les principaux changements qu'elle apporte :
+Voici les principaux changements apportée par la version 3.8 :
 
 * Une nouvelle page de connexion
-* Le support de l'authentification déportée OAuth
+* Le support de l'authentification via des fournisseurs tiers
 * Le support de la racinisation *en standard* dans le moteur *Phrasea*
 * Nouvelle interface de gestion des champs de la structure documentaire
 * De nombreuses améliorations graphiques dans Administration, Production
+* Le support du moteur de recherche Sphinx en version stable
 
 
 Besoin d'aide ?

@@ -4,34 +4,41 @@ Gestion des médias
 A priori, Phraseanet est capable de cataloguer tous types de fichiers, surtout
 si le paramétrage de la tâche d'archivage ne donne pas de restriction.
 
-Phraseanet gère t'il tous les formats vidéo ?
+Phraseanet gère t-il tous les formats vidéo ?
 ---------------------------------------------
 
-Il n'y a pas de restriction de format ou de codec d'entrée dans Phraseanet.
+Il n'y a pas de restriction de format ou de codec d'entrée dans *Phraseanet*.
 Toutefois, vous aurez peut être une limite concernant l'affichage de vignettes
 ou de prévisualisations.
 
-Vous avez sûrement remarqué que Phraseanet délègue le processing video à FFmpeg.
+Vous avez sûrement remarqué que Phraseanet délègue le processing video à `FFmpeg <http://www.ffmpeg.org>`_.
 
-Si la version de FFMpeg utilisée par votre install Phraseanet supporte ces
-codecs, alors vous aurez accès à des imagettes dans l'application, sinon vous
-aurez une imagettes de substitution.
+Si la version de FFmpeg utilisée par votre installation *Phraseanet* supporte
+ces codecs, alors vous aurez accès à des imagettes dans l'application, sinon
+vous aurez une imagettes de substitution.
 
-L'intérêt de mettre à jour FFmpeg est donc certains. Commercer par faire ces
-mises à jour sur une install de test est une bonne pratique. C'est même un
-préalable raisonnable à tout passage en prod.
+L'intérêt de mettre à jour FFmpeg est donc certain. Commecer par faire ces
+mises à jour sur une installation Phraseanet de test est une bonne pratique.
+C'est même un préalable raisonnable à tout passage en prod.
 
 Quoi qu'il en soit, même si vignettes et prévisualisation ne sont pas
 disponibles, l'édition, le push, ainsi que l'ensemble des autres
-actions Phraseanet restent possible.
+actions Phraseanet restent possibles.
 
 Le rendu des documents multi calque est *bizarre*
 -------------------------------------------------
 
-Les exécutables en charge de la création des sous-définitions de ce type de
-documents ne sont pas assez doués pour extraire des vignettes et des
-prévisualisations fidèles pour ce type de documents.
+La fabrication des sous-définitions de documents de type image est dévolue aux
+logiciels `ImageMagick <http://www.imagemagick.org>`_, `GraphicsMagic <http://www.graphicsmagick.org/>`_
+ou à défaut la `librairie graphique GD <http://libgd.bitbucket.org/>`_.
+Seuls ImageMagick et GraphicsMagic peuvent manipuler les document multi calques
+(fichiers Photoshop psd ou Tiff non aplatis). Cependant ils ne sont pas en
+mesure d'extraire des vignettes et des images de choix parfaitement
+fidèles pour ce type de documents.
 
+.. note::
 
+    Essayer d'utiliser la substitution de sous-définition disponible dans la
+    fenêtre **Outils**.
 
 

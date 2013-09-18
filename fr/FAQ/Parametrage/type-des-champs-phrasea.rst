@@ -16,8 +16,7 @@ Le type TEXT
 ------------
 
 Le contenu des champs sont indexés par valeur, tel quel. Ce type est destiné aux
-recherches par contenu exact ("auteur=Paul Verlaine") ou pour trier par valeur
-alphabétique, alphanumérique...*etc*.
+recherches par contenu exact ("auteur=Paul Verlaine").
 
 Le type NUMBER
 --------------
@@ -34,5 +33,3 @@ exemple : 2009). Ce typage permet des comparaisons sur les dates ("date>=2000 et
 date<2012/12/20") ou le tri par date.
 Lorsqu'un champ est typé comme DATE, un calendrier permet d'assister la saisie
 d'une date dans le formulaire d'édition des notices.
-
-

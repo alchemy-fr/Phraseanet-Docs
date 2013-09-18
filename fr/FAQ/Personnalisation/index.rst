@@ -6,8 +6,6 @@ Personnaliser Phraseanet
     Cette section de la FAQ rassemble les questions relatives à la
     personnalisation de *Phraseanet*.
 
-    Cliquer sur les liens proposés pour accéder aux rubriques proposées.
-
 .. toctree::
    :maxdepth: 1
    :glob:
@@ -17,5 +15,3 @@ Personnaliser Phraseanet
    Activer-la-reception-par-ftp
    Parametrer-le-compte-invite
    Parametrer-le-titre
-   Formulaire-inscription
-

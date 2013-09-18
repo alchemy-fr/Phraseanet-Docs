@@ -3,7 +3,7 @@ Paramétrer le titre des documents
 
 Chaque champ documentaire peut être affiché au dessus des vignettes dans la
 zone d'affichage des résultats.
-Si aucun champ de la structure n'est selectioné pour être affiché au dessus des
+Si aucun champ de la structure n'est sélectionné pour être affiché au dessus des
 vignettes, c'est le nom d’origine du fichier qui est affiché.
 Plusieurs champs peuvent être affichés en même temps.
 Pour chaque champs il est possible de choisir la langue dans laquelle il sera
@@ -20,5 +20,3 @@ Comment paramétrer le titre ?
 * Répéter l'opération si nécessaire avec d'autres champs à afficher comme titre.
 * Cliquer sur le bouton **Sauvegarder toutes les modifications**, pour valider
   les modifications.
-
-
