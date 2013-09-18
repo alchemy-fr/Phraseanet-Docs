@@ -322,8 +322,9 @@ Stamp
 ^^^^^
 
 L'ajout d'un stamp ajoutera automatiquement un bandeau intégrant un logo et
-certaines metadonnées à l'export des prévisualisations. La configuration du
-stamp s'effectue via la vue XML des préférences de collections.
+certaines metadonnées à l'export des documents originaux des enregistrements
+de type image. La configuration du stamp s'effectue via la vue XML des 
+préférences de collections.
 
 .. code-block:: xml
 
