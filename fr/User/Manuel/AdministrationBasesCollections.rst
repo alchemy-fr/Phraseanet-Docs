@@ -318,6 +318,31 @@ résolution des documents de la collection :
   (ce dernier doit être une image Jpeg en niveau de gris).
 * Cliquer sur **Envoyer le logo** pour charger le fichier dans l’application.
 
+Stamp
+^^^^^
+
+L'ajout d'un stamp ajoutera automatiquement un bandeau intégrant un logo et
+certaines metadonnées à l'export des documents originaux des enregistrements
+de type image. La configuration du stamp s'effectue via la vue XML des 
+préférences de collections.
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <baseprefs>
+
+      <!-- ... -->
+
+      <stamp>
+        <logo position="left" width="25%"/>
+        <text size="50%">Record-id: <var name="RECORD_ID"/></text>
+        <text size="50%">Titre: <field name="SujetTitre"/></text>
+        <text size="50%">Legende: <field name="Legende"/></text>
+        <text size="50%">Copyright: <field name="Copyright"/></text>
+        <text size="50%">Date : <field name="Date"/></text>
+      </stamp>
+    </baseprefs>
+
 Préférences : Valeurs suggérées
 *******************************
 
