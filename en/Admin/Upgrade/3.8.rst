@@ -51,7 +51,7 @@ in the databox).
 
 ..warning::
 
-    Be careful, time litmits are now applied at template application.
+    Be careful, time limits are now applied at template application.
 
 Localization
 ************

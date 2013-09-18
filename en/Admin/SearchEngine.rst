@@ -3,10 +3,10 @@ Search Engine
 
 .. topic:: The essential
 
-    Phraseanet is bundled with Phrasea engine as defailt search engine.
+    Phraseanet is bundled with Phrasea engine as default search engine.
     Phrasea allows Phraseanet Thesaurus binding to search engine results.
     If Phraseanet Thésaurus is not activated, SphinxSearch can be enabled.
-    This section explains advantages of both and how they should be setup.
+    This section explains advantages of both and how they should be set.
 
 .. warning::
 
@@ -17,7 +17,7 @@ Phrasea Engine
 --------------
 
 Phrasea search engine is composed by an indexer and a PHP Phraseanet extension.
-One of the biggest advantages of this engine is thesaurus support.
+One of the biggest advantages of this engine is Phraseanet thesaurus support.
 
 Phraseanet Indexer
 ******************
@@ -205,7 +205,7 @@ Running with the Task-Manager
 
 The indexder can be executed by the "Indexer" task of the Phraseanet
 Task-Manager.
-Options can then be set via the gui of the task.
+Options can then be set via the GUI of the task.
 
 Linux and OSX specifics
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -273,7 +273,7 @@ The Phraseanet search engine is available with the PHP extension "php_phrasea2".
 Install
 ^^^^^^^
 
-After build and install of "Phraseanet-Extension" (see linux, OSX and Windws
+After build and install of "Phraseanet-Extension" (see linux, OSX and Windows
 specifics), check the requested extensions with php -m
 
 .. code-block:: none

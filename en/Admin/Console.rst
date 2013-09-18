@@ -66,7 +66,7 @@ You will see something like:
       xsendfile:dump-configuration     Dump the virtual host configuration depending on Phraseanet configuration
       xsendfile:generate-mapping       Generates Phraseanet xsendfile mapping configuration depending on databoxes configuration
 
-Every command provides help with the help command:
+Every command provides help with the *help* command:
 
 .. code-block:: bash
 

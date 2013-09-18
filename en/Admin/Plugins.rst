@@ -16,11 +16,15 @@ Two commands allow to add and remove plugins :
 
 Add a plugin:
 
- - bin/console plugin:add /path/to/plugin
+.. code-block:: none
+
+    bin/console plugin:add /path/to/plugin
 
 Remove a plugin:
 
- - bin/console plugin:remove plugin-name
+.. code-block:: none
+
+    bin/console plugin:remove plugin-name
 
 Plugin structure
 ----------------
