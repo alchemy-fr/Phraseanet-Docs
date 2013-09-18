@@ -13,15 +13,14 @@ disparaissent pour laisser place à un unique fichier *configuration.yml*.
 Il n'y a plus d'environnement à déclarer et la configuration est compilée en
 PHP afin de bénéficier d'un `cache opcode`_.
 
-La configuration est mise à jour automatiquement pendant le l'execution de la
-mise à jour. Les informations détaillées sont disponibles dans la
+La configuration est mise à jour automatiquement lors de l'execution des
+mises à jour. Les informations détaillées sont disponibles dans la
 :doc:`documentation<../Configuration>`.
 
 .. warning::
 
-    La configuration étant maintenant compilée, à chaque modification du fichier
-    config/configuration.yml. En contre partie il est nécessaire de recompiler
-    après une mise à jour.
+    La configuration étant maintenant compilée, il est nécessaire de recompiler
+    le fichier *config/configuration.yml* après chaque mise à jour.
     Utiliser la commande :ref:`bin/console compile:configuration<configuration-compilation>`
     pour cela.
 
@@ -67,7 +66,7 @@ sont maintenant localisables via leurs propriétés "label".
 Champs documentaires
 ********************
 
-L'interface de réglages des champs documentaires a été entièrement ré-ecrite.
+L'interface de réglages des champs documentaires a été ré-écrite.
 Outre la possibilité de localiser les noms des champs documentaires via les
 labels, il est désormais possible de les ré-ordonner.
 
@@ -91,7 +90,7 @@ Moteur de recherche
 - Le moteur de recherche SphinxSearch passe de l'integration en phase beta à
   stable. Se référer à la
   :ref:`documentation des moteurs de recherche <search-engine-service-configuration>`.
-- Le moteur Phrasea Engine s'enrichit du support de radicalisation. Ainsi, lors
+- Le moteur Phrasea Engine s'enrichit du support de la racinisation. Ainsi, lors
   de la recherche en full-text du terme "cheval", les documents indexés avec le
   terme "chevaux" apparaissent dans les résultats. Ces nouvelles fonctionalités
   requièrent l'activation de l'option dans la tâche "Indexation" ainsi que la
@@ -102,10 +101,11 @@ Notifications par Mail
 
 - Les notifications par email sont maintenant envoyées en HTML.
   (Utiliser les :doc:`plugins <../Plugins>` pour les personnaliser).
-- L'authentification TLS, en plus de SSL, est maintenant supporté pour la
-  connection à un serveur de mail.
-- Un prefix peut être configuré à l'attention du sujet des emails (pratique
-  pour les filtres d'emails).
+- L'authentification TLS, en plus de SSL, est maintenant supportée pour la
+  connexion à un serveur de mail.
+- Un préfixe peut être configuré à l'attention des sujets des emails ce qui 
+  peut être pratique pour mettre en place des filtres dans les clients de
+  messagerie.
 - La connexion au serveur de mail peut être testée via la commande
   `bin/console mail:test`.
 
@@ -114,15 +114,15 @@ Commandes de console
 
 Plusieurs commandes disparaissent :
 
-- `bin/console check:system` est remplacé par `bin/setup check:system`.
-- `bin/console system:upgrade` est remplacé par `bin/setup system:upgrade`.
+- `bin/console check:system` remplacé par `bin/setup check:system`.
+- `bin/console system:upgrade` remplacé par `bin/setup system:upgrade`.
 - `bin/console check:ensure-production-settings` et `bin/console check:ensure-dev-settings`
-  sont remplacées par `bin/console check:config`.
+  remplacées par `bin/console check:config`.
 
-- Il faut retenir que les commandes fournies par l'utilitaire console requièrent
-  une installation de Phraseanet fonctionnelle, tandis que l'utilitaire `setup`
+- Les commandes fournies par l'utilitaire console requièrent une installation 
+  de Phraseanet fonctionnelle, tandis que l'utilitaire `setup`
   s'éxecute sans même avoir installé Phraseanet.
-- L'application s'installe désormais aussi en ligne de commande via la commande
+- L'application s'installe désormais en ligne de commande via la commande
   `bin/setup system:install`.
 - Ajout de la compression gzip/bzip2 à la commande de
   `bin/console system:backup-db`.

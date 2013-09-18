@@ -41,7 +41,7 @@ Configuration Sendfile
 
 .. topic:: L'essentiel
 
-    Sendfile permet de delester PHP de l'envoi des fichiers aux navigateurs.
+    Sendfile permet de délester PHP de l'envoi des fichiers aux navigateurs.
     Il est fortement recommandé d'utiliser cette configuration pour alleger les
     process sur le serveur. Si Sendfile et désactivé, l'application Phraseanet
     fonctionnera normallement.
@@ -73,7 +73,7 @@ directives nginx avec la commande `xsendfile:dump-configuration`
 
     bin/console xsendfile:dump-configuration
 
-Il suffit de copier coller ce code dans le virtual host Nginx et de recharger
+Il suffit de copier-coller ce code dans le virtual host Nginx et de recharger
 Nginx.
 
 .. warning::

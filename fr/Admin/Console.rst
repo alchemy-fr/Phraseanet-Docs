@@ -69,7 +69,7 @@ Vous aurez sur votre écran une liste de commande de la sorte :
       xsendfile:dump-configuration     Dump the virtual host configuration depending on Phraseanet configuration
       xsendfile:generate-mapping       Generates Phraseanet xsendfile mapping configuration depending on databoxes configuration
 
-Chaque commande fourni une aide via la commande help:
+Chaque commande fourni une aide via la commande *help*:
 
 .. code-block:: bash
 
@@ -125,7 +125,7 @@ Setup s'exécute simplement :
 
     php bin/setup
 
-Une liste de commandes disponible s'affiche.
+Une liste de commandes disponibles s'affiche.
 
 .. code-block:: bash
 

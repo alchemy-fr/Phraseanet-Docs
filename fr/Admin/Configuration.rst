@@ -4,8 +4,12 @@ Configuration
 .. topic:: L'essentiel
 
     La configuration de Phraseanet se fait via le fichier
-    `config/configuration.yml`. A chaque mise à jour de celle-ci, il faut
-    la recompiler via la commande `bin/console compile:configuration`.
+    `config/configuration.yml`. A chaque mise à jour de celle-ci, il est
+    nécessaire de recompiler la configuration via la commande suivante :
+
+.. code-block:: none
+
+    `bin/console compile:configuration`.
 
 La configuration de Phraseanet est écrite dans un fichier
 `config/configuration.yml` qui est automatiquement généré à l'installation.
@@ -270,8 +274,8 @@ SphinxSearch engine.
 Proxies de confiance
 ********************
 
-Si Phraseanet est derrière un reverse-proxy, il faudra renseigner
-l'adresse du reverse proxy pour les adresses IP des utilisateurs soient
+Si Phraseanet est derrière un reverse-proxy, renseigner l'adresse du 
+reverse proxy pour que les adresses IP des utilisateurs soient
 reconnues.
 
 .. code-block:: yaml
@@ -340,7 +344,7 @@ Les plugins se configurent aussi dans ce fichier. Se référer à la
 Configuration du service de douane
 **********************************
 
-Les points de vérification du service de douane sont configurable. Il est aussi
+Les points de vérification du service de douane sont configurables. Il est aussi
 possible de créer son propre point de vérification.
 
 +---------------------+------------------------------------------------------+-----------------------------------+
@@ -372,7 +376,7 @@ Restriction sur collections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il est possible de restreindre la portée d'un point de vérification sur un
-ensemble de collection en fournissant une liste de base_id correspondant :
+ensemble de collections en fournissant une liste de base_id correspondant :
 
 .. code-block:: yaml
 
@@ -424,7 +428,7 @@ Tous les points de vérifications sont déclarés dans le namespace
 namespace. Cet objet doit implémenter l'interface
 `Alchemy\\Phrasea\\Border\\Checker\\Checker`
 
-Exemple d'un point de vérification qui filtre les documents sur leur données
+Exemple d'un point de vérification qui filtre les documents sur leurs données
 GPS :
 
 .. code-block:: php

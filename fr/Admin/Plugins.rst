@@ -2,7 +2,7 @@ Plugins
 =======
 
 Phraseanet est doté depuis la version 3.8 d'un méchanisme de plugin permettant
-de customiser aussi bien l'éxecution de services (log, authentification) de
+de personnaliser aussi bien l'éxecution de services (log, authentification) de
 Phraseanet que les vues (home page personalisées, etc ...).
 
 Un plugin Phraseanet est un dossier dans lequel se trouve un fichier
@@ -13,15 +13,19 @@ une arborescence à exposer publiquement (icônes, css, js, etc...).
 Ajout/Suppression de plugin
 ---------------------------
 
-Deux commandes sont à disposition pour ajouter et enlever des plugins :
+Deux commandes permettent d'ajouter et enlever des plugins :
 
 Ajouter un plugin :
 
- - bin/console plugin:add /chemin/vers/le/plugin
+.. code-block:: none
+
+    bin/console plugin:add /chemin/vers/le/plugin
 
 Enlever un plugin :
 
- - bin/console plugin:remove nom-du-plugin
+.. code-block:: none
+
+    bin/console plugin:remove nom-du-plugin
 
 Structure des plugin
 --------------------
@@ -102,7 +106,7 @@ Détails des propriétés possibles pour le fichier manifest.json :
 - maximum-phraseanet-version (string) : Le numéro de version maximum de
   Phraseanet compatible (exclue).
 - twig-paths (string) : Un tableau de chemin relatifs au plugin qui seront
-  utilisés comme path de Twig (permet de customiser les templates Phraseanet
+  utilisés comme path de Twig (permet de personnaliser les templates Phraseanet
   par défaut).
 - services : Un tableau d'objets de services de plugin à déclarer auprès de
   Phraseanet. Un service de plugin est configuré avec une propriété "class".
@@ -136,17 +140,17 @@ autoloader dédié.
         }
     }
 
-Le fichier précédent déclare ainsi que les sources du plugin seront
-automatiquement charger depuis le dossier **src** selon une structure `PSR-0`_.
+Le fichier précédent déclare ainsi que les sources du plugin sont
+automatiquement chargées depuis le dossier src selon une structure `PSR-0`_.
 Il est recommandé de consulter la documentation de `composer`_ pour davantage
 d'informations.
 
 Ecriture de plugin
 ------------------
 
-Beaucoup de personnalisations sont possibles via les plugins, la plupart d'entre
-elles requièrent une connaissance assez approfondi de `Silex`_, `Twig`_ et des
-autres composants utilisés par Phraseanet.
+Beaucoup de personnalisations sont possibles via les plugins. La plupart d'entre
+elles requièrent de bonnes connaissances de `Silex`_, `Twig`_ et d'autres
+composants utilisés par Phraseanet.
 
 La consultation de plugins existants comme `Mail log plugin`_ et
 `Syslog plugin`_  donne des pistes sur le développement de ceux ci.
@@ -163,7 +167,7 @@ doivent implémenter l'interface
 Ajout d'une commande de console
 *******************************
 
-Les commandes ajouteés via la propriété "commands" du fichier *manifest.json*
+Les commandes ajoutées via la propriété "commands" du fichier *manifest.json*
 doivent implémenter l'interface
 **Alchemy\Phrasea\Command\CommandInterface**. Une base simple est d'étendre la
 classe abstraite **Alchemy\Phrasea\Command\Command**.

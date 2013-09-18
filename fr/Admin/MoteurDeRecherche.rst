@@ -30,9 +30,9 @@ L'indexeur indexe le contenu des bases publiées dans une application Phraseanet
 et permet ainsi la recherche dans le contenu des fiches descriptives
 des documents.
 
-L'indexeur fonctionne en arrière plan, il "surveille" les bases à indexer
-(apparition ou disparition des bases) et maintient les index "full-text",
-"valeur" et "thésaurus".
+L'indexeur fonctionne en arrière plan. Il surveille les bases à indexer
+(apparition, modification ou disparition de documents) et maintient 
+les index "full-text", "valeur" et "thésaurus".
 
 Installation
 ^^^^^^^^^^^^
@@ -55,9 +55,6 @@ répertoire avec les droits d'éxécution.
 
 Arguments
 ^^^^^^^^^
-
-Ces arguments spécifient l' "application-box" (base SQL de l'application
-Phraseanet) dans laquelle sont publiées les bases à indexer.
 
 * --host: adresse de la base
 * --port: port (normalement 3306 pour MySQL)
@@ -116,7 +113,7 @@ fonctionnement sans trop charger les logs.
     L'option "nolog" permet d'envoyer les messages sur l'écran.
 
 * --help: L'option "help" détaille les différentes options précédemment citées ainsi que
-    les valeurs par défaut.
+    leurs valeurs par défaut.
 
 Exemples
 ~~~~~~~~
@@ -288,8 +285,12 @@ Installation
 ^^^^^^^^^^^^
 
 Après compilation et installation de "Phraseanet-Extension" (voir spécificités
-Linux, OSX et Windows), vérifier la présence des extensions pré-requises avec
-php -m
+Linux, OSX et Windows), vérifier la présence des extensions requises avec la
+commande :
+
+.. code-block:: none
+
+    php -m
 
 .. code-block:: none
 

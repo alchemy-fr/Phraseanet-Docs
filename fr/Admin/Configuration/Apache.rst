@@ -26,7 +26,7 @@ Configuration XSendFile
 
 .. topic:: L'essentiel
 
-    XSendfile permet de delester PHP de l'envoi des fichiers aux navigateurs.
+    XSendfile permet de délester PHP de l'envoi des fichiers aux navigateurs.
     Il est fortement recommandé d'utiliser cette configuration pour alleger les
     process sur le serveur. Si XSendfile et désactivé, l'application Phraseanet
     fonctionnera normallement.
@@ -58,7 +58,7 @@ directives apache 2 avec la commande `xsendfile:dump-configuration`
 
     bin/console xsendfile:dump-configuration
 
-Il suffit de copier coller ce code dans le virtual host Apache et de recharger
+Il suffit de copier-coller ce code dans le virtual host Apache et de recharger
 Apache.
 
 .. warning::

@@ -119,7 +119,7 @@ des programmes externes suivants :
   de fichiers RAW.
 
 * FFmpeg <= 0.8, Mplayer
-  Extraction d'imagettes, de preview et calcul de videos au format web à
+  Extraction d'imagettes, de preview et calcul de vidéos au format web à
   partir de vidéos.
 
 * Ghostscript >= 9

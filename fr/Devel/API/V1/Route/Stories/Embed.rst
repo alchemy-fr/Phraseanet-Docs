@@ -21,7 +21,7 @@ sélectionné.
 Parameters
 ----------
 
-Pour retourner toutes les videos compatibles HTML5 au format mobile,
+Pour retourner toutes les vidéos compatibles HTML5 au format mobile,
 Il faut utiliser les paramètres :
 
 .. code-block:: bash
