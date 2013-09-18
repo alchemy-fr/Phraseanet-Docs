@@ -4,7 +4,28 @@ Records Embed
 About
 -----
 
-Returns permalinks to medias attached to the record
+Returns permalinks to medias attached to the record.
+
+Permalink HTTP headers include a `Link` header (as described in `RFC 5988`_)
+that point to a json representation of the caption:
+
+.. code-block:: none
+
+    < HTTP/1.1 200 OK
+    < Server: nginx
+    < Content-Type: image/jpeg
+    < Content-Length: 55725
+    < Connection: keep-alive
+    < Cache-Control: max-age=0, must-revalidate, private
+    < Date: Thu, 04 Jul 2013 15:49:45 GMT
+    < Last-Modified: Wed, 15 May 2013 16:05:43 GMT
+    < Content-Disposition: inline; filename="8562183_preview.jpg"
+    < ETag: "38483a7bd5e3d83fec4336af2003814a"
+    < Link: https://domain.tld/permalink/v1/1/8562183/caption/?token=nlwvsIAo
+    < Accept-Ranges: bytes
+    < Content-Transfer-Encoding: binary
+
+HTTP HEAD requests are also supported by permalinks.
 
 .. note::
 
@@ -178,3 +199,5 @@ Response sample
             ]
         }
     }
+
+.. _RFC 5988: https://tools.ietf.org/html/rfc5988
