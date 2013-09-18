@@ -20,21 +20,19 @@ Phraseanet embarque aussi un moteur de tâche. Ce module sert à la gestion de
 scripts PHP tels que l'écriture des métadonnées, le calcul de sous-définitions
 l'indexation...
 
-Vous pouvez aussi piloter Phraseanet en console via l'application bin/console
+Phraseanet peut être piloté via deux autres interfaces : une `API REST <../../Devel>`_
+et via `Konsole Kommander <Console>`_.
 
 .. toctree::
-    :hidden:
 
-    Telechargement
     Prerequis
+    Telechargement
     Installation
-    Indexeur
-    Extension
     MiseAJour
     Configuration
-    MoteurDeTaches
     MoteurDeRecherche
+    MoteurDeTaches
+    Plugins
     Console
     Maintenance
-    Optimisation
     Faq

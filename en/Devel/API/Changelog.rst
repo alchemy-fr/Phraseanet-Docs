@@ -134,7 +134,7 @@ Version 1.2 of Phraseanet API is not backward compatible with the previous one.
                 "item_id": 1,
             },
             {
-                "item_id" : 3
+                "item_id": 3
             }
         ]
     }
@@ -622,7 +622,7 @@ You can now restrict to some devices and/or mime types in the
 A major schema enhancement happens for meta values. Multivalued stored
 serialized are now stored separatly.
 Two routes are modified: records/metadatas and records/setmetadatas.
-A route has been added to make it easy to display caption : records/caption.
+A route has been added to make it easy to display caption: records/caption.
 
 This enhancement allows to store ressource in multivalued fields like users,
 geoname entities, Thesaurus entries...
@@ -716,7 +716,7 @@ La route records/setmetadatas was working like this:
 
 .. code-block:: javascript
 
-    // HTTP parameters :
+    // HTTP parameters:
     metadatas = {
         //Add a value in a monovalued field
         {

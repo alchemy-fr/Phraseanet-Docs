@@ -40,4 +40,5 @@ et lancer le planificateur de tâches.
 L’installation est terminée et le système opérationnel.
 
 La structure documentaire peut être paramétrée pour s’adapter à vos besoins et
-des documents peuvent être importés via le module Phraseanet :doc:`Upload <../User/Manuel/Importer>`
+des documents peuvent être importés via le module Phraseanet
+:doc:`Upload <../User/Manuel/Importer>`.

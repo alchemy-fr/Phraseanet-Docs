@@ -43,7 +43,7 @@ L’indexer doit être paramétré avec les informations ci-dessous :
 
 * Hôte : Adresse du serveur MySQL
 * Port : Port du serveur MySQL
-* Database : Nom de la base de donnée MySQL de l'application (application-box)
+* Database : Nom de la base de données MySQL
 * Utilisateur : identifiant de l'utilisateur MySQL
 * Mot de passe : Mot de passe de l'utilisateur MySQL
 * MySQL charset : encodage
@@ -391,8 +391,9 @@ Exemples
     éxécution de la tâche.
 
     ex :
-    dans le cas précédent, si la date d'archivage d'un doc est antérieure à sa date
-    de fin de copyright (incohérent), le sb 4 va passer de 0 à 1 à chaque éxécution.
+    dans le cas précédent, si la date d'archivage d'un document est antérieure
+    à sa date de fin de copyright (incohérent), le sb 4 va passer de 0 à 1 à
+    chaque éxécution.
 
-    Ce type de problème peut être évité en s'assurant qu'aucune des clauses 'from'
-    ne se recouvrent, par ex. en levant un sb spécifique à chaque <task>
+    Ce type de problème peut être évité en s'assurant qu'aucune des clauses
+    'from' ne se recouvrent, par ex. en levant un sb spécifique à chaque <task>

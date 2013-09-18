@@ -8,9 +8,9 @@
  * :license: BSD, see LICENSE for details.
  *
  */
- 
+
 @import url("basic.css");
- 
+
 /* -- page layout ----------------------------------------------------------- */
 body {
     color: #6d6b6b;
@@ -181,7 +181,7 @@ div.sphinxsidebar a {
 /* -------------------------- */
 
 /* -- body styles ----------------------------------------------------------- */
- 
+
 a {
     text-decoration: none;
 }
@@ -288,8 +288,8 @@ img {
 	max-width: 100%;
 }
 table {
-    margin: 1.5em 5%;	
-} 
+    margin: 1.5em 5%;
+}
 pre {
     margin: 1.5em 5%;
     padding: 10px;
@@ -300,6 +300,8 @@ pre {
     background-color: #F5F5F5;
     color: #222;
     line-height: 1.2em;
+    white-space: pre;
+    word-wrap: normal;
 }
 tt {
     background-color: #ecf0f3;

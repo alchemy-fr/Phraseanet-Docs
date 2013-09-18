@@ -1,295 +1,354 @@
 Configuration
 =============
 
-Fichiers
---------
+.. topic:: L'essentiel
 
-Config.yml
-**********
+    La configuration de Phraseanet se fait via le fichier
+    `config/configuration.yml`. A chaque mise à jour de celle-ci, il est
+    nécessaire de recompiler la configuration via la commande suivante :
 
-Config.yml est le fichier de configuration principal de l'application, il permet
-de configurer un  "environnement" et de l'utiliser.
+.. code-block:: none
 
-Vous pouvez, dans ce fichier, décrire plusieurs environnements et passer de l'un
-à l'autre grâce à la variable "environment"
+    `bin/console compile:configuration`.
 
-Il utilise le format `YAML`_, très lisible et facilement compréhensible.
+La configuration de Phraseanet est écrite dans un fichier
+`config/configuration.yml` qui est automatiquement généré à l'installation.
 
-Ce fichier requiert deux blocs minimaux :
+Ce fichier est au format `YAML`_, qui a pour intérêt d'être très lisible.
+Pour des raisons de performance, et notamment de cache opcode, la configuration
+est compilée.
 
-Dans l'exemple ci-dessous, l'environnement choisi est "dev", et l'on trouve
-en dessous la déclaration de cet environnement.
+En contre partie il est nécessaire de recompiler après une mise à jour.
 
-.. code-block:: yaml
+.. _configuration-compilation:
 
-    #config.yml
-    environment: dev
-    dev:
-        phraseanet:
-            servername: 'http://dev.phrasea.net/'
-            maintenance: false
-            debug: true
-            display_errors: true
-            database: main_connexion
-            api-timers: true
-        template_engine: twig_debug
-        orm: doctrine_dev
-        cache: array_cache
-        opcodecache: array_cache
-        border-manager: border_manager
-        search-engine: phrasea
+Compilation
+-----------
 
-Détaillons la composition d'un environnement
+La compilation de la configuration est très facile et rapide à éxecuter. Il faut
+utiliser la commande `bin/console compile:configuration`.
 
-* phraseanet (configuration principale)
+.. code-block:: none
 
-    * servername: L'URI ou est installée l'application (requis)
-    * maintenance: Passer l'application en état de maintenance
-    * debug: Passer l'application en mode debug
-    * display_errors: Afficher les erreurs sur la sortie standard
-    * database: Nom de la connexion à la base de donnée (requis) voir
-      connexion.yml
-    * api-timers: Ajout de timers de debug dans les résultats retournés par
-      l'API
+    bin/console compile:configuration
 
-* template_engine : service de mise en page (requis)
-* orm : Service de mapping à la base de donnée (requis)
-* cache : service de cache principal :doc:`cache </Admin/Optimisation>`
-* opcodecache : service de cache opcode :doc:`opcodecache </Admin/Optimisation>`
-* border-manager : service de douane
-* search-engine : nom du service de moteur de recherche
+.. _configuration:
 
-Les différents services sont déclarés dans le fichier service.yml.
+Configuration.yml
+-----------------
 
-Connexions.yml
-**************
-
-Connexions.yml permet de déclarer et nommer des connexions vers des bases de
-données.
-La connexion est partagé par différent service (Phraseanet et ORM)
+Voici un exemple de fichier de configuration commenté
 
 .. code-block:: yaml
 
-    #connexions.yml
-    main_connexion:
-      host: localhost
-      port: 3306
-      user: phrasea_engine
-      password: s3cr3t
-      dbname: applicationBox
-      driver: pdo_mysql
-      charset: UTF8
+    main:
+        servername: 'http://phrasea.example.com/'  # (string)  L'URL à partir de laquelle sera accessible Phraseanet
 
-* host: adresse du serveur MySQL
-* port: port MySQL
-* user: utilisateur MySQL
-* password: mot de passe  MySQL
-* dbname:  nom de la base de donnée (application box)
-* driver: nom du driver voir la `liste complète des drivers doctrine`_
-* charset: encodage de la connexion
+        maintenance: false                         # (boolean) Activation du mode maintenance
 
-Services.yml
-************
+        database:                                  # (array)   Configuration du serveur de base de données
+            host: 'sql-host'                       # (string)  Adresse du serveur de base de données
+            port: 3306                             # (integer) Port du serveur de base de données
+            user: 'sql-user'                       # (string)  Nom d'utilisateur du serveur de base de données
+            password: 'sql-password'               # (string)  Mot de passe du serveur de base de données
+            dbname: ab_phraseanet                  # (string)  Nom de la base de données
+            driver: pdo_mysql                      # (string)  Driver de base de données
+            charset: UTF8                          # (string)  Encodage de la connection au serveur de base de données
 
-Le fichier service.yml décrit des services. Ces services sont utilisables dans
-le fichier config.yml.
+        database-test:                             # (array)   Configuration pour les tests (développeurs uniquement)
+            driver: pdo_sqlite
+            path: '/tmp/db.sqlite'
+            charset: UTF8
 
-Vous trouverez un exemple de fichier de service dans config/services.sample.yml.
+        api-timers: true                           # (boolean) Ajout de timers aux réponses de l'API (développeurs uniquement)
 
-Quatre groupes de services sont disponibles en standard dans l'application:
-ORM, TemplateEngine, Log, et Cache.
+        cache:                                     # (array)   Configuration du service de cache
+            type: MemcacheCache                    # (string)  Nom de l'adapter du service de cache
+            options:                               # (array)   Options de configuration du service de cache
+                host: localhost                    # (string)  Addresse du serveur de cache
+                port: 11211                        # (integer) Port du serveur de cache
 
-Voici la structure générale d'un service :
+        opcodecache:                               # (array)   Configuration du service de cache opcode
+            type: ArrayCache                       # (string)  Nom de l'adapter du service de cache
+            options: []                            # (array)   Options de configuration du service de cache
+
+        search-engine:                             # (array)   Configuration du service de moteur de recherche
+            type: Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine  # (string) Nom du service de moteur de recherche (FQCN)
+            options: []                            # (array)   Options de configuration du service de moteur de recherche
+
+    trusted-proxies: []                            # (array)   Configuration des proxies de confiance
+
+    debugger:                                      # (array)   Configuration du debugger (développeurs uniquement)
+        allowed-ips: []                            # (array)   Adresses IP autorisées à acceder au debugger.
+
+    binaries:                                      # (array)   Configuration des executables externes
+        ghostscript_binary: null                   # (string)  Chemin vers l'executable Ghostscript, null pour autodetecter (gs)
+        php_binary: null                           # (string)  Chemin vers l'executable PHP, null pour autodetecter (php)
+        swf_extract_binary: null                   # (string)  Chemin vers l'executable Pdf2Swf, null pour autodetecter (pdf2swf)
+        pdf2swf_binary: null                       # (string)  Chemin vers l'executable SwfExtract, null pour autodetecter (swfextract)
+        swf_render_binary: null                    # (string)  Chemin vers l'executable SwfRender, null pour autodetecter (swfrender)
+        unoconv_binary: null                       # (string)  Chemin vers l'executable Unoconv, null pour autodetecter (unoconv)
+        ffmpeg_binary: null                        # (string)  Chemin vers l'executable FFMpeg, null pour autodetecter (ffmpeg, avconv)
+        ffprobe_binary: null                       # (string)  Chemin vers l'executable FFProbe, null pour autodetecter (ffprobe, avprobe)
+        mp4box_binary: null                        # (string)  Chemin vers l'executable MP4Box, null pour autodetecter (MP4Box)
+        pdftotext_binary: null                     # (string)  Chemin vers l'executable PdfToText, null pour autodetecter (pdftotext)
+        phraseanet_indexer: null                   # (string)  Chemin vers l'executable Phraseanet Indexer, null pour autodetecter (phraseanet_indexer)
+        ffmpeg_timeout: 3600                       # (integer) Timeout pour FFMpeg
+        ffprobe_timeout: 60                        # (integer) Timeout pour FFProbe
+        gs_timeout: 60                             # (integer) Timeout pour Ghostscript
+        mp4box_timeout: 60                         # (integer) Timeout pour MP4Box
+        swftools_timeout: 60                       # (integer) Timeout pour SwfTools (swfrender, swfextract)
+        unoconv_timeout: 60                        # (integer) Timeout pour Unoconv
+
+    border-manager:                                # (array)   Configuration du service douanes
+        enabled: true                              # (boolean) Activation du service de douane
+        checkers:                                  # (array)   Liste de points de contrôle
+
+            -                                      # (array)   Verification de doublonnage par somme de côntrole
+                type: Checker\Sha256
+                enabled: true
+            -
+                type: Checker\UUID                 # (array)   Verification de doublonnage par métadonnée UUID
+                enabled: true
+            -
+                type: Checker\Colorspace           # (array)   Verification de colorspace
+                enabled: false
+                options:
+                    colorspaces: [cmyk, grayscale, rgb]
+            -
+                type: Checker\Dimension            # (array)   Verification de dimensions
+                enabled: false
+                options:
+                    width: 80
+                    height: 160
+            -
+                type: Checker\Extension            # (array)   Verification d'extension
+                enabled: false
+                options:
+                    extensions: [jpg, jpeg, bmp, tif, gif, png, pdf, doc, odt, mpg, mpeg, mov, avi, xls, flv, mp3, mp2]
+            -
+                type: Checker\Filename             # (array)   Verification de doublonnage par nom de fichier
+                enabled: false
+                options:
+                    sensitive: true
+            -
+                type: Checker\MediaType            # (array)   Vérification par type media
+                enabled: false
+                options:
+                    mediatypes: [Audio, Document, Flash, Image, Video]
+
+    authentication:                                # (array)   Configuration de l'authentification
+
+        auto-create:                               # (array)   Configuration de la création de compte automatique
+            enabled: false                         # (boolean) Activer la création de compte automatique
+            templates: {  }                        # (array)   Nom ou id des modèles à appliquer lors de la création automatique de comptes
+
+        captcha:                                   # (array)   Configuration du service de captchas
+            enabled: true                          # (boolean) Activation du service de captcha
+            trials-before-display: 9               # (integer) Nombre d'essais avant capctcha
+
+        providers:                                 # (array)   Configuration des fournisseurs d'authentification tiers
+
+            facebook:                              # (array)   Configuration de l'authentification via Facebook
+                enabled: false                     # (boolean) Activation du fournisseur
+                options:
+                    app-id: ''                     # (string)  Identifiant (id) Facebook
+                    secret: ''                     # (string)  Secret (secret) Facebook
+
+            twitter:                               # (array)   Configuration de l'authentification via Twitter
+                enabled: false                     # (boolean) Activation du fournisseur
+                options:
+                    consumer-key: ''               # (string)  Twitter consumer key
+                    consumer-secret: ''            # (string)  Twitter consumer secret
+
+            google-plus:                           # (array)   Configuration de l'authentification via Google Plus
+                enabled: false                     # (boolean) Activation du fournisseur
+                options:
+                    client-id: ''                  # (string)  Google Plus client-id
+                    client-secret: ''              # (string)  Google Plus client-secret
+
+            github:                                # (array)   Configuration de l'authentification via GitHub
+                enabled: false                     # (boolean) Activation du fournisseur
+                options:
+                    client-id: ''                  # (string)  GitHub client-id
+                    client-secret: ''              # (string)  GitHub client-secret
+
+            viadeo:                                # (array)   Configuration de l'authentification via Viadeo
+                enabled: false                     # (boolean) Activation du fournisseur
+                options:
+                    client-id: ''                  # (string)  Viadeo client-id
+                    client-secret: ''              # (string)  Viadeo client-secret
+
+            linkedin:                              # (array)   Configuration de l'authentification via LinkedIn
+                enabled: false                     # (boolean) Activation du fournisseur
+                options:
+                    client-id: ''                  # (string)  LinkedIn client-id
+                    client-secret: ''              # (string)  LinkedIn client-secret
+
+    registration-fields:                           # (array)   Configuration des champs disponible requis à l'inscription
+
+        -
+            name: company
+            required: false                        # (boolean) Le champ est proposé, mais pas obligatoire
+        -
+            name: firstname
+            required: true                         # (boolean) Le champ est proposé et obligatoire
+
+    xsendfile:                                     # (array)   Configuration Sendfile (Nginx) / XSendFile (Apache)
+
+        enabled: false                             # (boolean) Activation de la prise en charge SendFile/XSendFIle
+        type: nginx                                # (string)  Type XSendFile (`nginx` ou `apache`)
+        mapping: []                                # (array)   Mapping des dossiers (voir configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
+
+    plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`
+
+Fournisseurs d'authentification
+*******************************
+
+Les différents fournisseurs d'authentification se configurent simplement.
+Il suffit de créer une application "Phraseanet" chez le fournisseur en lui
+spécifiant l'URL de callback adéquate.
+
+.. note::
+
+    Les URLs de callback fournies sont des *exemples* présupposant que
+    Phraseanet est installé à l'adresse http://phraseanet.mondomaine.com. Il
+    faut adapter ces URLs en fonction de l'adresse réelle.
+
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Fournisseur | Gestion des applications                                               | URL de callback à fournir                                             |
++=============+========================================================================+=======================================================================+
+| Facebook    | https://developers.facebook.com/apps                                   | http://phraseanet.mondomaine.com/login/provider/facebook/callback/    |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Twitter     | https://dev.twitter.com/apps                                           | http://phraseanet.mondomaine.com/login/provider/twitter/callback/     |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Google Plus | https://code.google.com/apis/console/                                  | http://phraseanet.mondomaine.com/login/provider/google-plus/callback/ |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| GitHub      | https://github.com/settings/applications                               | http://phraseanet.mondomaine.com/login/provider/github/callback/      |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Viadeo      | http://dev.viadeo.com/documentation/authentication/request-an-api-key/ | http://phraseanet.mondomaine.com/login/provider/viadeo/callback/      |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| LinkedIn    | https://www.linkedin.com/secure/developer                              | http://phraseanet.mondomaine.com/login/provider/linkedin/callback/    |
++-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+Services de Cache
+*****************
+
+Les services de cache **cache** et **opcode-cache** peuvent être configurés avec
+les adapteurs suivants :
+
++----------------+----------------------+------------------------------------------------------+------------+
+|  Nom           | Service              |  Description                                         | Options    |
++================+======================+======================================================+============+
+| MemcacheCache  | cache                | Serveur de cache utilisant l'extension PHP Memcache  | host, port |
++----------------+----------------------+------------------------------------------------------+------------+
+| MemcachedCache | cache                | Serveur de cache utilisant l'extension PHP Memcached | host, port |
++----------------+----------------------+------------------------------------------------------+------------+
+| RedisCache     | Cache                | Serveur de cache utilisant l'extension PHP redis     | host, port |
++----------------+----------------------+------------------------------------------------------+------------+
+| ApcCache       | opcode-cache         | Cache opcode utilisant PHP APC                       |            |
++----------------+----------------------+------------------------------------------------------+------------+
+| XcacheCache    | opcode-cache         | Cache opcode utilisant PHP Xcache                    |            |
++----------------+----------------------+------------------------------------------------------+------------+
+| WinCacheCache  | opcode-cache         | Cache opcode utilisant PHP WinCache                  |            |
++----------------+----------------------+------------------------------------------------------+------------+
+| ArrayCache     | cache | opcode-cache | Cache désactivé                                      |            |
++----------------+----------------------+------------------------------------------------------+------------+
+
+.. _search-engine-service-configuration:
+
+Service de moteur de recherche
+******************************
+
+Deux services de moteurs de recherche sont disponibles : Phrasea engine et
+SphinxSearch engine.
+
++--------------------------------------------------------------+------------------------------+
+| Nom                                                          | Options                      |
++==============================================================+==============================+
+| Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine           |                              |
++--------------------------------------------------------------+------------------------------+
+| Alchemy\Phrasea\SearchEngine\SphinxSearch\SphinxSearchEngine | host, port, rt_host, rt_port |
++--------------------------------------------------------------+------------------------------+
+
+Proxies de confiance
+********************
+
+Si Phraseanet est derrière un reverse-proxy, renseigner l'adresse du 
+reverse proxy pour que les adresses IP des utilisateurs soient
+reconnues.
 
 .. code-block:: yaml
 
-    ServiceGroupe:
-      ServiceName:
-        type: Namespace\Classe
-        options:
-          parametre1: valeur
-          parametre2: valeur
+    trusted-proxies:
+        192.168.27.15
+        10.0.0.45
 
-Un service requiert un type , qui spécifie la classe PHP à charger.
-Le tableau d'option est optionnel et fonction du service.
+Champs optionnels à l'enregistrement
+************************************
 
-Voyons les options que vous pourrez trouver dans les principaux services de
-Phraseanet :
-
-Service d'ORM Doctrine
-^^^^^^^^^^^^^^^^^^^^^^
-
-Voici le service *doctrine_dev* :
+La section `registration-fields` permet de personnaliser les champs disponibles
+à l'inscription ainsi que leur caractère obligatoire.
 
 .. code-block:: yaml
 
-    #services.yml
-    Orm:
-      doctrine_dev:
-        type: Orm\Doctrine
-        options:
-          debug: true
-          dbal: test_connexion
-          cache:
-            query:
-              service: Cache\array_cache
-            result:
-              service: Cache\array_cache
-            metadata:
-              service: Cache\array_cache
-          log:
-            service: Log\query_logger
+    registration-fields:
+        -
+            name: company
+            required: false
+        -
+            name: firstname
+            required: true
 
-* debug : activation du debug
-* dbal : Nom d'une connexion déclarée dans connexions.yml
-* cache : paramètre des options de cache
++-----------+-------------+
+| id        | Nom         |
++-----------+-------------+
+| login     | Identifiant |
++-----------+-------------+
+| gender    | Sexe        |
++-----------+-------------+
+| firstname | Prénom      |
++-----------+-------------+
+| lastname  | Nom         |
++-----------+-------------+
+| address   | Adresse     |
++-----------+-------------+
+| zipcode   | Code Postal |
++-----------+-------------+
+| geonameid | Ville       |
++-----------+-------------+
+| position  | Poste       |
++-----------+-------------+
+| company   | Société     |
++-----------+-------------+
+| job       | Activité    |
++-----------+-------------+
+| tel       | Téléphone   |
++-----------+-------------+
+| fax       | Fax         |
++-----------+-------------+
 
-    * query : utilisation du service **Cache\\array_cache** (voir ci dessous)
-    * result : utilisation du service **Cache\\array_cache** (voir ci dessous)
-    * metadata : utilisation du service **Cache\\apc_cache** (voir ci dessous)
+Configuration Sendfile / XSendFile
+**********************************
 
-    * log : utilisation du service **Log\\query_logger** (voir ci dessous)
+La configuration xsendfile doit être manipulé à l'aide des outils en ligne de
+commandes. Les documentations pour :ref:`Nginx<nginx-sendfile>` et
+:ref:`Apache<apache-xsendfile>` sont disponibles.
 
-.. seealso::
+Configuration des plugins
+*************************
 
-    Pour plus d'informations sur les différents caches doctrine
-    http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html#integrating-with-the-orm
+Les plugins se configurent aussi dans ce fichier. Se référer à la
+:doc:`documentation des plugins <Plugins>` pour cette partie.
 
-Service de `Mise En Page Twig`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Configuration du service de douane
+**********************************
 
-Voici le service *twig_prod*
-
-.. code-block:: yaml
-
-    #services.yml
-    TemplateEngine:
-      twig_prod:
-        type: TemplateEngine\Twig
-        options:
-          debug: false
-          charset: utf-8
-          strict_variables: false
-          autoescape: true
-          optimizer: true
-
-* debug : activation du debug
-* charset : encodage du système de mise en page.
-* strict_variable : arrêter l'exécution lors de l'appel à une variable
-  inconnue (pour les développeurs)
-* autoescape: Activer la prise en charge automatiques des caractères
-  d'auto échappement.
-* optimizer : Activer l'`optimizer Twig`_
-
-.. seealso::
-
-    Pour plus de détails sur les options de l'environnement twig
-    http://twig.sensiolabs.org/doc/api.html#environment-options
-
-Service de Log Doctrine Monolog
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Voici le service de log Doctrine Monolog. Ce service n'est utilisable que
-pour le log du service Doctrine.
-
-.. code-block:: yaml
-
-    #services.yml
-    Log:
-      query_logger:
-        type: Log\Doctrine\Monolog
-        options:
-          output: json
-          channel: query-logger
-          handler: rotate
-          max_day: 2
-          filename: doctrine-query.log
-
-* output : Spécification du formatage de sortie.
-  Trois modes sont possibles.
-
-    * json : Formatage en `Json`_
-    * yaml : Formatage en `YAML`_
-    * vdump : Affiche les informations de la variable de sortie PHP de manière
-      à ce qu'elle soit lisible, voir `var_dump`_
-
-* channel : Nom du channel utilisé par le service de log.
-  C'est une façon d'identifier à quelle partie de l'application une entrée de
-  log est liée.
-* handler : Permet de spécifier le type de gestionnaire de log utilisé par le
-  service.
-
-    * stream : Ecrire les logs dans un fichier.
-    * rotate : Ecrire les logs dans un fichiers qui sont renouvelés tous
-      les jours et limiter le nombre de fichiers enregistrés.
-
-* filename: Le nom du fichier de log.
-* max_day : Spécifier en nombre de jour la fréquence de rotation opérée sur
-  les fichiers de logs dans le cas ou le gestionnaire de rotation est utilisé.
-
-Services de Cache ArrayCache
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: yaml
-
-    #services.yml
-    Cache:
-      array_cache:
-        type: Cache\ArrayCache
-
-Services de Cache ApcCache
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: yaml
-
-    #services.yml
-    Cache:
-      apc_cache:
-        type: Cache\ApcCache
-
-Services de Cache XCache
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: yaml
-
-    #services.yml
-    Cache:
-      xcache_cache:
-        type: Cache\XcacheCache
-
-Services de Cache MemcacheCache
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: yaml
-
-    #services.yml
-    Cache:
-      memcache_cache:
-        type: Cache\MemcacheCache
-        options:
-          host: localhost
-          port: 11211
-
-* host: Adresse du serveur Memcached
-* port: Port du serveur Memcached
-
-Services des douanes
-^^^^^^^^^^^^^^^^^^^^
-
-Ce service a pour but d'effectuer des vérifications pour chaque fichier
-entrant dans Phraseanet. Si le processus de validation échoue le document
-sera envoyé dans la quarantaine.
-
-Le service permet de configurer les processus de validation des fichiers à
-l'aide de "Checker".
-
-Un "Checker" permet d'ajouter une contrainte de validation au processus de
-validation.
-
-Checkers disponibles :
+Les points de vérification du service de douane sont configurables. Il est aussi
+possible de créer son propre point de vérification.
 
 +---------------------+------------------------------------------------------+-----------------------------------+
-|  Checker            |  Description                                         | Options                           |
+| Verification        |  Description                                         | Options                           |
 +=====================+======================================================+===================================+
 | Checker\Sha256      | Vérifie si le fichier n'est pas un doublon           |                                   |
 |                     | En se basant sur la somme de controle "sha256"       |                                   |
@@ -313,53 +372,11 @@ Checkers disponibles :
 |                     | (* si applicable)                                    | colorimétrique authorisés         |
 +---------------------+------------------------------------------------------+-----------------------------------+
 
-.. code-block:: yaml
-
-    #services.yml
-    Border:
-        border_manager:
-            type: Border\BorderManager
-            options:
-                enabled: true
-                checkers:
-                    -
-                        type: Checker\Sha256
-                        enabled: true
-                    -
-                        type: Checker\UUID
-                        enabled: true
-                    -
-                        type: Checker\Colorspace
-                        enabled: true
-                        options:
-                            colorspaces: [cmyk, grayscale, rgb]
-                    -
-                        type: Checker\Dimension
-                        enabled: false
-                        options:
-                            width: 80
-                            height: 80
-                    -
-                        type: Checker\Extension
-                        enabled: false
-                        options:
-                        extensions: [jpg, jpeg, png, pdf, doc, mpg, mpeg, avi, flv, mp3]
-                    -
-                        type: Checker\Filename
-                        enabled: true
-                        options:
-                            sensitive: true
-                    -
-                        type: Checker\MediaType
-                        enabled: false
-                        options:
-                            mediatypes: [Audio, Document, Flash, Image, Video]
-
 Restriction sur collections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Il est possible de restreindre la portée d'un checker sur un ensemble de
-collection en fournissant une liste de base_id correspondant:
+Il est possible de restreindre la portée d'un point de vérification sur un
+ensemble de collections en fournissant une liste de base_id correspondant :
 
 .. code-block:: yaml
 
@@ -376,6 +393,9 @@ collection en fournissant une liste de base_id correspondant:
                         collections:
                             - 4
                             - 5
+
+Restriction sur databoxes
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La même restriction peut être faite au niveau des databoxes :
 
@@ -400,37 +420,33 @@ La même restriction peut être faite au niveau des databoxes :
     Il n'est pas possible de restreindre à la fois sur des databoxes et
     des collections.
 
-**Comment implémenter un checker ?**
+Création d'un point de vérification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tous les checkers étant déclarés dans le namespace Alchemy\\Phrasea\\Border\\Checker,
-il suffit de créer un nouvel objet dans ce namespace.
-Cet objet doit implémenter l'interface Alchemy\\Phrasea\\Border\\Checker\\Checker
+Tous les points de vérifications sont déclarés dans le namespace
+`Alchemy\\Phrasea\\Border\\Checker`. Il suffit de créer un nouvel objet dans ce
+namespace. Cet objet doit implémenter l'interface
+`Alchemy\\Phrasea\\Border\\Checker\\Checker`
 
-Par exemple : Créons un checker qui filtre les documents sur leur données GPS.
+Exemple d'un point de vérification qui filtre les documents sur leurs données
+GPS :
 
 .. code-block:: php
 
     <?php
-    //Dans lib/Alchemy/Phrasea/Border/Checker/NorthPole.php
     namespace Alchemy/Phrasea/Border/Checker;
 
     use Alchemy\Phrasea\Border\File;
-
     use Doctrine\ORM\EntityManager;
+    use MediaVorus\Media\DefaultMedia as Media;
 
     class NorthPole implements Checker
     {
-        //Option bar
-        protected $bar;
+        private $options;
 
-        //Gestion des options
         public function __construct(Array $options)
         {
-            if( ! isset($options['bar']) {
-                throw new \InvalidArgumentException('Missing bar option');
-            }
-
-            $this->bar = $options['bar'];
+            $this->options = $options;
         }
 
         //Contrainte de validation, doit retourner un booleen
@@ -438,12 +454,8 @@ Par exemple : Créons un checker qui filtre les documents sur leur données GPS.
         {
             $media = $file->getMedia();
 
-            if ( null !== $latitude = $media->getLatitude()
-                    && null !== $ref = $media->getLatitudeRef()) {
-
-                if($latitude > 60
-                    && $ref == MediaVorus\Media\DefaultMedia::GPSREF_LATITUDE_NORTH) {
-
+            if (null !== $latitude = $media->getLatitude() && null !== $ref = $media->getLatitudeRef()) {
+                if($latitude > 60 && $ref == Media::GPSREF_LATITUDE_NORTH) {
                     return true;
                 }
             }
@@ -452,115 +464,15 @@ Par exemple : Créons un checker qui filtre les documents sur leur données GPS.
         }
     }
 
-Puis dans le fichier de configuration services.yml
+Déclaration du point de contrôle
 
 .. code-block:: yaml
 
-    #Dans le service Border
-    -
-        type: Checker\NorthPole
+    border-manager:
         enabled: true
-        options:
-            bar: foo
+        checkers:
+            -
+                type: Checker\NorthPole
+                enabled: true
 
-.. _search-engine-service-configuration:
-
-Service SearchEngine
-^^^^^^^^^^^^^^^^^^^^
-
-Ce service décrit une ou plusieurs configurations de moteur de recherche.
-Selon le moteur choisi, les fonctionnalités diffèrent.
-Ainsi, le moteur SphinxSearch supporte l'autocomplétion tandis que le moteur Phrasea
-supporte le thesaurus Phraseanet.
-
-Exemple :
-
-.. code-block:: yaml
-
-    #services.yml
-    SearchEngine:
-      phrasea:
-        type: SearchEngine\PhraseaEngine
-      sphinxsearch:
-        type: SearchEngine\SphinxSearch
-        options:
-          host: localhost
-          port: 9306
-          rt_host: localhost
-          rt_port: 9308
-
-.. note::
-
-    Une page dédiée à la :doc:`configuration des moteurs de recherche <MoteurDeRecherche>`
-    est disponible.
-
-Phrasea Engine
-~~~~~~~~~~~~~~
-
-Phrasea engine ne supporte aucune option particulière.
-
-SphinxSearch
-~~~~~~~~~~~~
-
-Il est nécessaire de spécifier quatre options pour l'utilisation de
-SphinxSearch :
-
-- host : le nom d'hote ou l'adresse IP du serveur SphinxSearch
-- port : le port du serveur SphinxSearch
-- rt_host : le nom d'hote ou l'adresse IP du serveur real-time SphinxSearch
-- rt_port : le port du serveur real-time SphinxSearch
-
-Réglages de collection
-----------------------
-
-* Ajout de valeurs suggérées
-
-Les valeurs suggérées sont des aides à la saisie que vous pouvez régler et que
-vous retrouverez lors de l'`editing </User/Manuel/Editer>`_
-
-* Minilogo
-
-Logo de la collection
-
-* Watermark (filigrane)
-
-Le Fichier de filigrane ou watermark s'applique sur les documents en
-prévisualisation.
-
-* Stamp
-
-Le Stamp est un logo ajouté au document et pouvant être associé à
-la description de celui-ci.
-
-Pour utiliser cette option :
-
-* Ajouter un logo de Stamp
-* Aller dans les réglages de collection
-* Dans la "Vue XML", editer le XML et ajouter le block "stamp" comme
-  ci-dessous
-
-.. code-block:: xml
-
-    <?xml version="1.0" encoding="UTF-8"?>
-    <baseprefs>
-
-      /**
-       * ....
-       */
-
-      <stamp>
-        <logo position="left" width="25%"/>
-        <text size="50%">Titre: <field name="SujetTitre"/></text>
-        <text size="50%">Legende: <field name="Legende"/></text>
-        <text size="50%">Copyright: <field name="Copyright"/></text>
-        <text size="50%">Date : <field name="Date"/></text>
-      </stamp>
-
-    </baseprefs>
-
-.. _Json: https://wikipedia.org/wiki/Json
 .. _YAML: https://wikipedia.org/wiki/Yaml
-.. _liste complète des drivers doctrine: http://docs.doctrine-project.org/projects/doctrine-dbal/en/2.0.x/reference/configuration.html#driver
-.. _Mise En Page Twig: http://en.wikipedia.org/wiki/Template_engine_%28web%29
-.. _optimizer Twig: http://twig.sensiolabs.org/doc/api.html#optimizer-extension
-.. _var_dump: http://www.php.net/manual/fr/function.var-dump.php

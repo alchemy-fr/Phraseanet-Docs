@@ -1,0 +1,117 @@
+Version 3.8
+===========
+
+Here are the main changes and new features in version 3.8.
+
+Configuration
+-------------
+
+One of the major changes in Phraseanet 3.8 is in the configuration.
+*config/config.yml*, *config/services.yml* and *config/connexions.yml* files
+disappear for a unique *configuration.yml* file.
+
+There is no more environment to declare and configuration is compiled in plain
+PHP to get the benefit of the `opcode cache`_.
+
+Configuration is automatically upgraded during the upgrade procedure. Detailed
+informations about the configuration are available in its
+:doc:`documentation<../Configuration>`.
+
+.. warning::
+
+    The configuration is now compiled. Each time file config/configuration.yml
+    is changed it is necessary to recompile to apply changes.
+    Use the :ref:`bin/console compile:configuration<configuration-compilation>`
+    command to do so.
+
+Virual host configuration
+-------------------------
+
+Virtual host configuration is now simplified. SendFile (Nginx) and XSendFile
+(Apache) are now easily configured with `bin/console xsendfile:dump-configuration`
+and `bin/console xsendfile:generate-mapping` commands.
+
+:doc:`Senfile (Nginx)<../Configuration/Nginx>` and
+:doc:`XSenfile (Apache)<../Configuration/Apache>` dedicated documentation will
+help to upgrade settings.
+
+Application
+-----------
+
+- Report loading duration has been improved. A new view about export by mail
+  has been added.
+- Baskets can now be deleted from the baskets browser.
+- Add plugins support, see :doc:`documentation <../Plugins>`.
+
+User account time limits
+************************
+
+User account time limits can now be edited per databox (updates all collections
+in the databox).
+
+..warning::
+
+    Be careful, time limits are now applied at template application.
+
+Localization
+************
+
+Collections, databoxes, status-bits and description fields are now localizables
+via their "label" property.
+
+Documentation structure
+***********************
+
+Documentation structure interface has been completely rewritten. Fields can now
+be localized and they can be sorted.
+
+Authentication
+**************
+
+Authentication now accepts providers (Facebook, Twitter, Viadeo, Github,
+Linkedin, Google-Plus). Read more in :doc:`configuration <../Configuration>` for
+activation.
+
+API
+---
+
+Permalinks HTTP headers now include a `Link` header that points to a JSON view
+of the caption.
+
+Search Engine
+-------------
+
+- SphinxSearch engine is now stable. See
+  :ref:`search-engine documentation <search-engine-service-configuration>`
+- Phrasea Engine now supports stemming. When searching for "conspiracy", documents
+  indexed with "conspirators" will be returned. This feature requires activation
+  of the option in "Indexation" task and full databoxes re-indexing.
+
+Email notifications
+-------------------
+
+- Email notifications are now sent in HTML format.
+  (Use :doc:`plugins <../Plugins>` to customize it).
+- TLS Authentication is now supported to email server (Only SSL was previously
+  supported)
+- A subject prefix can be configured (nice for email filters).
+- Mail server connection can be tested with `bin/console mail:test`.
+
+Console commands
+----------------
+
+Some commands disappear:
+
+- `bin/console check:system` is replaced by `bin/setup check:system`.
+- `bin/console system:upgrade` is replaced by `bin/setup system:upgrade`.
+- `bin/console check:ensure-production-settings` and `bin/console check:ensure-dev-settings`
+  are replaced by `bin/console check:config`.
+
+- `bin/console` requires functional Phraseanet install whereas `bin/setup`
+  can be executed without installation.
+- Phraseanet can now be installed with the command `bin/setup system:install`.
+- Add gzip and bzip2 compression to backup command `bin/console system:backup-db`
+
+.. _opcode cache: https://en.wikipedia.org/wiki/List_of_PHP_accelerators
+.. _bin/console compile:configuration: ../Console
+.. _RFC 5988: https://tools.ietf.org/html/rfc5988
