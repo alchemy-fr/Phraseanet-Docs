@@ -54,14 +54,14 @@ y figurer. Il indique le nombre de notifications n'ayant pas été encore lues.
 Les notifications rendent compte d'événements en temps réel dans l'application.
 Selon les droits de l'utilisateur, ces notifications peuvent porter sur :
 
-* les demandes d'inscription,
-* l'échec de transferts dans Bridge,
-* l'échec d'export par email,
-* la reception de Push ou de demande de validation,
-* la réception d'une commande ou son rejet par des gestionnaires de
+* les demandes d'inscriptions,
+* les échecs de transferts dans Bridge,
+* les échecs d'exports par email,
+* les réceptions de Push ou de demandes de validation,
+* les réception de commandes ou leurs rejets par des gestionnaires de
   collections,
-* la mise en quarantaine de documents uploadés,
-* la mise à disposition de nouvelles publications.
+* les mises en quarantaine de documents uploadés,
+* les mises à disposition de nouvelles publications.
 
 .. note::
 

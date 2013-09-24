@@ -45,7 +45,7 @@ Quoi de neuf dans la version 3.8 ?
 
 .. todo:: Mettre le changelog ici. Communiqué à titre d'exemple
 
-Voici les principaux changements apportée par la version 3.8 :
+Voici les principaux changements apportés par la version 3.8 :
 
 * Une nouvelle page de connexion
 * Le support de l'authentification via des fournisseurs tiers

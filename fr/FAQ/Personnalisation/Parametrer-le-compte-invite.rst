@@ -10,8 +10,10 @@ au moins un droit sur l’une des bases publiées.
 Paramétrer les droits du compte invité
 --------------------------------------
 
-Seul un administrateur *Phraseanet* est à même de pouvoir paramétrer les droits
-du compte invité.
+.. note::
+
+    Seul un administrateur *Phraseanet* est à même de pouvoir paramétrer les
+    droits du compte invité.
 
 * Se connecter à l'interface Admin
 * Dans le menu latéral, cliquer sur le noeud **Utilisateurs** puis...

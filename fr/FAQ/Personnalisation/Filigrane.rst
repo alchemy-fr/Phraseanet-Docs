@@ -18,7 +18,7 @@ Preview.
 Charger le fichier de filigrane
 -------------------------------
 
-Le filigrane est personnalisable pour chaque des collections Phraseanet.
+Le filigrane est personnalisable pour chacune des collections Phraseanet.
 Dans Phraseanet Admin, afficher la collection pour laquelle personnaliser le
 filigrane.
 A la section **Filigrane**, cliquer sur le bouton *Sélectionner* pour charger un
@@ -28,9 +28,9 @@ Comment est appliqué le filigrane ?
 -----------------------------------
 
 Le masque est appliqué tel quel au centre de la preview (sans mise à l'échelle).
-Il faut donc veiller à le watermark reste "compréhensible" même s'il est tronqué
-en haut, en bas, à gauche ou à droite selon que l'image soit horizontale,
-verticale ou panoramique.
+Il faut donc veiller à ce que le watermark reste "compréhensible" même s'il est
+tronqué en haut, en bas, à gauche ou à droite selon que l'image soit
+horizontale, verticale ou panoramique.
 
 Il est préférable d'avoir un watermark réduit au centre de l'image, ou un motif
 répété plusieurs fois.

@@ -67,15 +67,16 @@ comme nouvel utilisateur peut exister sur la page de connexion de *Phraseanet*.
 
 * Remplir et soumettre le formulaire.
 
-Lorsque le formulaire est soumis, la page d'accueil s'affiche et informe l'
-utilisateur que sa demande d'inscription a été prise en compte. Un
-administrateur *Phraseanet* finalise ensuite l'inscription.
-
 .. note::
 
     Même avec un fournisseur d'authentification il est nécessaire de fournir
-    un mot de passe lors de l'inscription.
+    un mot de passe lors de l'inscription. Ce mot de passe est destiné au compte
+    local *Phraseanet*. Il peut donc être différent de celui utilisé chez le
+    fournisseur d'identité.
 
+Lorsque le formulaire est soumis, la page d'accueil s'affiche et informe l'
+utilisateur que sa demande d'inscription a été prise en compte. Un
+administrateur *Phraseanet* finalise ensuite l'inscription.
 
 Mot de passe perdu ?
 --------------------
@@ -122,7 +123,6 @@ de la page de connexion.
 Se reporter à
 :doc:`cette section <../../FAQ/Personnalisation/Parametrer-le-compte-invite>`
 pour la mise en oeuvre de l'accès invité.
-
 
 .. note::
 
