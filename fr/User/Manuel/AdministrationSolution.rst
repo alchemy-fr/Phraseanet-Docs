@@ -24,12 +24,12 @@ En outre, le tableau de bord offre une vue sur l'état de la configuration du
 système de fichier, des exécutables, des extensions, des serveurs de caches et
 des serveurs web qui entrent dans la mise en oeuvre de la solution *Phraseanet*.
 
-Setup
------
+Paramétrage
+-----------
 
-**Accessible aux seuls administrateurs Phraseanet**, *Setup* propose une
-interface graphique permettant de modifier des paramètres d'installation et de
-configuration de Phraseanet.
+**Accessible aux seuls administrateurs Phraseanet**, l'écran de *Paramétrage*
+propose une interface graphique permettant de modifier des paramètres d'
+installation et de configuration de l'instance Phraseanet.
 
 .. image:: ../../images/Administration-setup.jpg
     :align: center
@@ -43,7 +43,6 @@ Setup propose un jeu de formulaires permettant notamment :
 * **D'activer ou de désactiver des connectivités à des réseaux sociaux** mis en
   oeuvre dans :ref:`bridge-share`
 * **D'activer ou de désactiver des fonctionnalités et options de l'application**
-* **De gérer les extensions de fichiers autorisés** en ajout dans Upload
 
 .. warning::
 
@@ -51,12 +50,41 @@ Setup propose un jeu de formulaires permettant notamment :
     installation de l'application. L'administrateur sera particulièrement
     attentif aux modifications apportées dans les formulaires proposés.
 
+Paramétrage du moteur de recherche
+----------------------------------
+
+Cette rubrique permet de configurer le moteur de recherche utilisé par l'
+instance au moyen d'interfaces graphiques.
+
+.. note::
+
+    Cette rubrique se destine aux administrateurs systèmes chargés de déployer
+    Phraseanet.
+
+    `Se reporter à la page consacrée à la configuration des moteurs dans la documentation Administrateur <../Admin/Configuration>`_.
+
+Configuration du moteur Phrasea
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Le moteur Phrasea, moteur par défaut, comporte peu d'option de configuration.
+
+L'interface de paramétrage propose le paramétrage des champs de type date
+disponibles à la recherche ainsi que le choix de l'ordre d'affichage des
+enregistrements.
+
+Configuration du moteur Sphinx
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Le formulaire permet d'écrire la configuration du moteur de recherche Sphinx
+utilisé.
+
 Utilisateurs connectés
 ----------------------
 
-Cet écran liste les sessions utilisateurs actives sur le système Phraseanet.
+Affiché par défaut lors de la connexion à Phraseanet Admin, l'écran liste les
+sessions utilisateurs actives sur le système.
 
-Elle informe de l'application Phraseanet utilisée, de l'adresse "IP", ainsi que
+Elle informe de l'application Phraseanet utilisée, de l'adresse IP, ainsi que
 de la date et de l'heure de connexion au système.
 
 .. image:: ../../images/Administration-utilisateurlive.jpg
@@ -78,7 +106,7 @@ diffusés à partir de l'application Phraseanet.
 .. image:: ../../images/Administration-publications.jpg
     :align: center
 
-L'écran Publications dresse la liste des flux média disponibles en publication
+L'écran Publications dresse la liste des flux médias disponibles en publication
 et permet d'en créer, d'en modifier et d'en supprimer.
 
 * **Pour créer un flux**, remplir puis valider le formulaire d'ajout
@@ -103,7 +131,7 @@ Le principe d’une *Tâche d’archivage* est de scruter un répertoire, d'en
 capturer  le contenu, de l'archiver (recopier les fichiers dans les répertoires
 de stockage de la base de destination).
 
-* **Pour démarrer une tâche**, cliquer sur le symbole, puis cliquer sur Start.
+* **Pour démarrer une tâche**, cliquer sur le symbole, puis cliquer sur *Start*.
 * **Pour éditer une tâche**, cliquer sur "Éditer".
 * **Pour arrêter une tâche**, cliquer sur "Stop".
 * **Pour créer une nouvelle tâche**, cliquer sur nouvelle tâche.
@@ -112,29 +140,36 @@ de stockage de la base de destination).
     :align: center
 
 Nouvelle tâche
-**************
+^^^^^^^^^^^^^^
 
-Le paramétrage des tâches dans Phraseanet permet de mettre en place des
+Le paramétrage de tâche dans Phraseanet permet de mettre en place des
 automatismes de traitement.
-
 La solution est livrée en standard avec un jeu de tâches exploitables et l'
 utilisateur peut en créer d'autres.
+Ces tâches sont stockés sous forme de fichiers XML dans l'application.
+
+* Sélectionner un des modèles de tâches disponibles dans le menu
+  **Nouvelle tâche**.
 
 .. image:: ../../images/Administration-nouvelletache.jpg
     :align: center
 
-Les paramètres des tâches sont stockés sous forme de fichiers XML. Dans certains
-cas, les fichiers XML de paramétrage proposent une interface de saisie.
+* Editer les paramètres de la tâche dans la vue XML.
 
-.. image:: ../../images/Administration-editertache.jpg
+.. image:: ../../images/Administration-editertache1.jpg
     :align: center
 
-Après avoir cliqué sur *nouvelle tâche* :
+* Cliquer sur **Valider** pour enregistrer les modifications.
 
-* Sélectionner un des modèles de tâches disponibles.
-* Renseigner les différents paramètres demandés.
-* Ou modifier les paramètres directement dans la vue XML.
-* Cliquer sur Valider pour enregistrer les modifications.
+La vue graphique simule l'exécution de la tâche.
+
+.. image:: ../../images/Administration-editertache2.jpg
+    :align: center
+
+* Lancer l'exécution de la tâche.
+
+.. image:: ../../images/Administration-demarrertache.jpg
+    :align: center
 
 .. note::
 

@@ -6,33 +6,39 @@ Administrateur
 
 .. moduleauthor:: Team Phraseanet <info@phraseanet.com>
 
-Phraseanet repose sur des bases de données MySQL/InnoDB : les ApplicationBoxes
+Le manuel administrateur est consacré aux problématiques d'installation et de
+configuration et de mise à jour du logiciel *Phraseanet*.
+Il s'adresse principalement aux administrateurs systèmes et à ceux qui
+souhaitent installer et maintenir *Phraseanet*
+
+*Phraseanet* repose sur des bases de données MySQL/InnoDB : les ApplicationBoxes
 et les DataBoxes.
 
 Les premières servent de base à l'applicatif Phraseanet et stockent les
-utilisateurs, leurs paniers, leurs droits sur les dfifférentes collections et
+utilisateurs, leurs paniers, leurs droits sur les différentes collections et
 des liens vers une ou plusieurs DataBoxes.
 
 Les databoxes sont des containers à enregistrements. Elles diffèrent par leurs
 structures documentaires.
 
-Phraseanet embarque aussi un moteur de tâche. Ce module sert à la gestion de
+*Phraseanet* embarque aussi un moteur de tâche. Ce module sert à la gestion de
 scripts PHP tels que l'écriture des métadonnées, le calcul de sous-définitions
-l'indexation...
+ou l'indexation...
 
-Phraseanet peut être piloté via deux autres interfaces : une `API REST <../../Devel>`_
-et via `Konsole Kommander <Console>`_.
+*Phraseanet* peut être également administré en console via l'application
+bin/console.
 
 .. toctree::
+    :maxdepth: 1
+    :glob:
 
-    Prerequis
     Telechargement
+    Prerequis
     Installation
     MiseAJour
     Configuration
-    MoteurDeRecherche
     MoteurDeTaches
-    Plugins
+    MoteurDeRecherche
     Console
     Maintenance
-    Faq
+    Plugins
