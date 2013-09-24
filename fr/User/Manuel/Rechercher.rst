@@ -45,12 +45,13 @@ possibles.
     :align: center
 
 Pour effectuer une recherche :
+
 * Inscrire le ou les termes recherchés dans le formulaire de recherche
 * Lancer la recherche en cliquant sur **Rechercher**
 
 .. note::
 
-    le moteur de recherche est insensible à la casse et ne fait pas la
+    Le moteur de recherche est insensible à la casse et ne fait pas la
     différence entre les caractères accentués et ceux qui ne le sont pas.
 
 Les résultats obtenus sont affichés dans la zone d'affichage. La pertinence des
@@ -77,7 +78,7 @@ France**.
 * L'opérateur ***** est l'opérateur de troncature. il permet une troncature à
 droite du terme recherché : une recherche telle **natur*** affiche des médias
 dont les notices descriptives contiennent des mots commençants par "natur" comme
-nature, naturel, nature-morte, naturisme...*etc*.
+nature, naturel, nature-morte, naturisme... *etc*.
 
 La recherche entre guillemets est possible : elle permet de rechercher des
 termes contiguës dans les notices descriptives des médias.
@@ -102,13 +103,21 @@ Recherche dans un champ précis
 ------------------------------
 
 Il est possible de limiter la recherche à un champ de la description.
-Le motif de recherche est le terme recherché *dans* un champ en particulier.
+Le motif de recherche est le terme recherché dans un champ en particulier.
 
-Une recherche **Marrakech *dans* Ville** affiche les documents qui
-contiennent le terme *marrakech dans un champs *Ville*.
+Une recherche **Londres dans Ville** affiche les documents qui
+contiennent le terme **Londres** dans un champs intitulé **Ville**.
+
+Une recherche **France dans Pays** affiche les documents qui
+contiennent le terme **France** dans un champs intitulé *Pays*.
 
 .. image:: ../../images/Rechercher-motdanslegende.jpg
     :align: center
+
+.. note::
+
+    Dans ce genre de recherche, veiller à employer le nom de champ tel que
+    déclaré dans la structure documentaire (respect de la casse).
 
 Recherche avancée
 -----------------
@@ -127,22 +136,25 @@ trois parties :
 
 La partie haute présente un formulaire similaire à celui de la recherche simple.
 
-La partie gauche présente la liste des bases et collections consultables par l'
-utilisateur.
+La partie gauche liste les bases et collections consultables par l'utilisateur.
 Cocher ou décocher les bases et collections sur lesquels doivent
-s'effectuer les recherche.
+s'effectuer les recherches.
+
+Il est possible de dé-sélectionner toutes les :term:`bases <Base>` et
+collections en cliquant sur "Aucune" ou de cliquer directement sur les
+noms des :term:`bases <Base>` pour les sélectionner ou dé-sélectionner
+individuellement ou encore dans les cases à cocher proposées pour
+chaque collection disponible.
 
 .. note::
 
-    Il est possible de dé-sélectionner toutes les :term:`bases <Base>` et
-    collections en cliquant sur "Aucune" ou de cliquer directement sur les
-    noms des :term:`bases <Base>` pour les sélectionner ou dé-sélectionner
-    individuellement ou encore dans les cases à cocher proposées pour
-    chaque collection disponible.
+    Si aucune collection n'est sélectionné alors la recherche porte sur toutes
+    les bases et collection de l'instance.
 
 La partie droite présente les différents filtres disponibles pour affiner les
 recherches :
 
+* Activer ou désactiver la recherche par :term:`Stemme`,
 * Trier par mots clés contenus dans un ou plusieurs champs spécifiques,
 * Trier par status,
 * Trier sur des intervalles de dates,...

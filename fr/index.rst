@@ -5,14 +5,14 @@ Le DAM Open source
 ------------------
 
 *Phraseanet* est une solution de gestion de médias numériques (en anglais :
-Digital Asset Management ou DAM en version abrégée) créée et maintenue par
+Digital Asset Management ou en abrégé DAM) créée et maintenue par
 `Alchemy <http://www.alchemy.fr>`_.
 
 Solution *full web*, elle s'exécute dans un navigateur internet.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
 serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
-courantes telles Mysql,Php et Apache.
+courantes telles MySQL,PHP et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
 *Phraseanet*.
 Certaines de ces librairies sont
@@ -33,26 +33,27 @@ commencer.
 .. toctree::
     :maxdepth: 1
 
-    Admin/index
-    User/index
-    Devel/index
     Glossaire
     Contrib/index
+    FAQ/index
+    Devel/index
+    User/index
+    Admin/index
 
-Quoi de neuf dans la version 3.7 ?
+Quoi de neuf dans la version 3.8 ?
 ----------------------------------
 
 .. todo:: Mettre le changelog ici. Communiqué à titre d'exemple
 
-La version 3.7 publiée le 24 juillet 2012 succède à la version 3.6. A l'occasion
-de cette version majeure, voici les principaux changements apportés :
+Voici les principaux changements apportés par la version 3.8 :
 
-* Un uploader HTML5 repousse les limites du dispositif précédent
-* La quarantaine est plus pratique à utiliser
-* Améliorations graphiques dans *Phraseanet Production*
-* Fonctionnalité du choix des vignettes de présentation des vidéos
-* Apparition du typage de champs comme champ métier
-* Amélioration significative des performances du Gestionnaire de tâches
+* Une nouvelle page de connexion
+* Le support de l'authentification via des fournisseurs tiers
+* Le support de la racinisation *en standard* dans le moteur *Phrasea*
+* Nouvelle interface de gestion des champs de la structure documentaire
+* De nombreuses améliorations graphiques dans Administration, Production
+* Le support du moteur de recherche Sphinx en version stable
+
 
 Besoin d'aide ?
 ---------------

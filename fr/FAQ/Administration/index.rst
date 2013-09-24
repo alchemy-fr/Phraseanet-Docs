@@ -1,5 +1,10 @@
-FAQ
-===
+FAQ Administration
+==================
+
+.. topic:: L'essentiel
+
+    Cette section de la FAQ rassemble les questions relatives à l'administration
+    de *Phraseanet*.
 
 Je ne peux pas uploader des fichiers de plus de 2Mo
 ---------------------------------------------------

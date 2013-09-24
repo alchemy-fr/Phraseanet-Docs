@@ -12,7 +12,7 @@ Pour ouvrir un rapport de bug, vérifier préalablement les conditions suivantes
   à jour ? </Admin/MiseAJour>` )
 * Le bug constaté est reproductible en enchainant une combinaison
   d'actions précises
-* La :doc:`FAQ </Admin/Faq>` ne traite pas du problème rencontré ou ne livre
+* La :doc:`FAQ <../FAQ/index>` ne traite pas du problème rencontré ou ne livre
   pas de remède approprié
 * Le problème n'est pas déjà reporté dans le `bug tracker`_.
 
