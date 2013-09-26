@@ -42,6 +42,4 @@ bin/console.
     Console
     Maintenance
     Plugins
-    Optimisation
     CustomHomepage
-    Faq

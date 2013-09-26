@@ -17,9 +17,7 @@ Pour habiller les pages d'accueil, Phraseanet utilise la technologie `LESS`_.
 Cette technologie permet de définir des variables au sein des feuilles de style.
 
 Il est très simple de personnaliser les couleurs des différentes pages via
-la configuration `LESS`_ des plugins.
-
-(@todo Ajouter un lien vers la doc plugin).
+la configuration `LESS`_ des :doc:`plugins<Plugins>`.
 
 Dans le plugin, le fichier **less/login.less** permet de personaliser les
 couleurs des pages d'accueil, **less/account.less** les pages de compte.
