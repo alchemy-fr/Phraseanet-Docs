@@ -1,39 +1,44 @@
-Personnalisation de la page d'accueil
-=====================================
+Personnaliser Phraseanet
+========================
 
-Sont personnalisables dans Phraseanet :
+.. topic:: L'essentiel
 
- - La page d'accueil.
- - Les pages d'inscription.
- - La page de récupération de mot de passe.
- - La page de changement de mot de passe.
- - La page de présentation des conditions générale d'utilisation.
- - Les pages d'authentification `oAuth`_.
+    Les pages suivantes sont personnalisables dans Phraseanet :
 
-Personnalisation simple : changer les couleurs
-----------------------------------------------
+    - La page d'accueil.
+    - Les pages d'inscription.
+    - La page de récupération de mot de passe.
+    - La page de changement de mot de passe.
+    - La page de présentation des conditions générales d'utilisation.
+    - Les pages d'authentification `oAuth`_.
 
-Pour habiller les pages d'accueil, Phraseanet utilise la technologie `LESS`_.
-Cette technologie permet de définir des variables au sein des feuilles de style.
+    Ces personnalisations s'appuient sur deux technologies distinctes : 
 
-Il est très simple de personnaliser les couleurs des différentes pages via
-la configuration `LESS`_ des plugins.
+    - `LESS`_ pour la mise en forme des styles de présentation
+    - `TWIG`_ pour la composition des éléments structurants les pages
 
-(@todo Ajouter un lien vers la doc plugin).
+Modifier l'aspect des pages de connexion
+----------------------------------------
 
-Dans le plugin, le fichier **less/login.less** permet de personaliser les
+Changer les couleurs des pages
+******************************
+
+Il est simple de personnaliser les couleurs des différentes pages via 
+la configuration `LESS`_ des :doc:`plugins<Plugins>`.
+
+Dans le plugin, le fichier **less/login.less** permet de personnaliser les
 couleurs des pages d'accueil, **less/account.less** les pages de compte.
 
-Les variables LESS ?
-~~~~~~~~~~~~~~~~~~~~
+Les variables LESS
+~~~~~~~~~~~~~~~~~~
 
 Ci-dessous la liste des variables `LESS`_ personnalisables.
 
-Les fichiers `LESS`_ des pages d'accueil définissent par défault des variables
-qui peuvent ainsi être réutilisées afin de garantir la consistence des
+Les fichiers `LESS`_ des pages d'accueil définissent par défaut les variables
+qui peuvent être réutilisées afin de garantir la constance des
 couleurs au sein de l'application.
 
-.. code-block:: javascript
+.. code-block:: css
 
     @black:                 #000;
     @grayDarker:            #222;
@@ -52,18 +57,18 @@ couleurs au sein de l'application.
     @purple:                #7a43b6;
 
 Les variables ci-dessous permettent de modifier l'aspect des éléments qui ne
-sont pas inhérent à `Twitter Bootstrap`_.
+sont pas inhérents à `Twitter Bootstrap`_.
 
-.. code-block:: javascript
+.. code-block:: css
 
-    // couleur des bordures exterieures des champs texte des formulaires
+    /** couleur des bordures exterieures des champs dans les formulaires */
     @inputOutsideBorder:                #4c4c4c;
 
-    // couleur du text des champs en cas d'echec ou de succés
+    /** couleur du texte des champs en cas d'erreur ou de succès */
     @colorError:                        #af3030;
     @colorSuccess:                      #108946;
 
-    // couleur des fournisseurs d'accés tierce
+    /** couleur des fournisseurs d'accès tiers */
     @colorFacebook:                     #3b5a97;
     @colorGooglePlus:                   #ba2828;
     @colorViadeo:                       #242424;
@@ -71,36 +76,36 @@ sont pas inhérent à `Twitter Bootstrap`_.
     @colorLinkedin:                     #025b8e;
     @colorGithub:                       #908c8b;
 
-    // couleur de fond de la barre d'authentification
+    /** couleur de fond de la barre d'authentification */
     @backgroundSideBar:                 #1a1a1a;
 
-    // couleur de fond de la page
+    /** couleur de fond de la page */
     @background:                        #141414;
 
-    // couleur ombrage de la barre d'authentification
+    /**  couleur de l'ombrage de la barre d'authentification */
     @sideBarGlow:                       0 0 15px rgba(0, 0, 0, 1);
 
-    // couleur ombrage de la liste déroulante des langages disponibles
+    /** couleur de l'ombrage de la liste déroulante des langues disponibles */
     @dropDownLanguageGlow:              0 0 15px rgba(0, 0, 0, 1);
 
-    // couleur des bordures de la barre d'authentification
+    /** couleur des bordures de la barre d'authentification */
     @sideBarBlockBorderColorBottom:     @black;
     @sideBarBlockBorderColorTop:        #232222;
 
-    // couleur badge phraseanet
+    /** couleur du badge Phraseanet */
     @identityPhraseanetBackgroundColor: #f2f2f2;
     @identityPhraseanetColor:           #323232;
     @identityPhraseanetIconColor:       #b3b3b3;
 
-    // couleur de la fleche de la liste déroulante des langages disponibles
+    /** couleur de la flèche de la liste déroulante des langues disponibles */
     @languageCaretColor:                @white;
 
-    // couleur de fond des inputs sous internet explorer
+    /** couleur de fond des champs de formulaire (inputs) sous Internet Explorer */
     @inputIEBackground:                 #6D6D6D;
 
-Les variables ci-dessous permettent de modifier l'aspect de la couleur du texte :
+Les variables ci-dessous permettent de modifier la couleur du texte :
 
-.. code-block:: javascript
+.. code-block:: css
 
     @textColor:             @white;
     @linkColor:             #fff;
@@ -108,7 +113,7 @@ Les variables ci-dessous permettent de modifier l'aspect de la couleur du texte 
 
 Les variables ci-dessous permettent de modifier l'aspect de la typographie :
 
-.. code-block:: javascript
+.. code-block:: css
 
     @sansFontFamily:        Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
     @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
@@ -117,7 +122,7 @@ Les variables ci-dessous permettent de modifier l'aspect de la typographie :
 
 Les variables ci-dessous permettent de modifier l'aspect des boutons :
 
-.. code-block:: javascript
+.. code-block:: css
 
     @btnBackground:                     @white;
     @btnBackgroundHighlight:            darken(@white, 10%);
@@ -141,9 +146,9 @@ Les variables ci-dessous permettent de modifier l'aspect des boutons :
     @btnInverseBackground:              #444;
     @btnInverseBackgroundHighlight:     @grayDarker;
 
-Les variables ci-dessous permettent de modifier l'aspect des boites d'alertes:
+Les variables ci-dessous permettent de modifier l'aspect des boîtes d'alertes :
 
-.. code-block:: javascript
+.. code-block:: css
 
     @warningText:             @white;
     @warningBackground:       @grayDark;
@@ -163,7 +168,7 @@ Les variables ci-dessous permettent de modifier l'aspect des boites d'alertes:
 
 Les variables ci-dessous permettent de modifier l'aspect des formulaires :
 
-.. code-block:: javascript
+.. code-block:: css
 
     @inputBackground:               @black;
     @inputBorder:                   none;
@@ -175,7 +180,7 @@ Les variables ci-dessous permettent de modifier l'aspect des formulaires :
 Les variables ci-dessous permettent de modifier l'aspect des listes
 déroulantes :
 
-.. code-block:: javascript
+.. code-block:: css
 
     @dropdownBackground:            @backgroundSideBar;
     @dropdownBorder:                rgba(0,0,0,.2);
@@ -192,7 +197,7 @@ déroulantes :
 Les variables ci-dessous permettent de modifier l'aspect des tooltips et des
 popovers :
 
-.. code-block:: javascript
+.. code-block:: css
 
     @tooltipColor:            #fff;
     @tooltipBackground:       #000;
@@ -207,12 +212,12 @@ popovers :
     @popoverArrowOuterWidth:  @popoverArrowWidth + 1;
     @popoverArrowOuterColor:  rgba(0,0,0,.25);
 
-Personnalisation générale : changer la structure de la page
------------------------------------------------------------
+Changer la structure des pages
+******************************
 
-Pour structurer les pages d'accueil, Phraseanet utilise le moteur de template
-`Twig`_ dont le mécanisme est basé sur le principe de l' `héritage`_ des
-templates. Ce mécanisme permet de redéfinir le template entier ou bien des
+Les structures des pages d'accueil dans Phraseanet reposent sur le moteur de 
+template `Twig`. Son mécanisme est basé sur le principe de l' `héritage`_ 
+des templates qui permet de redéfinir le template entier ou bien des
 portions de celui-ci.
 
 Le template principal de la page d'accueil reçoit des variables permettant
@@ -227,65 +232,62 @@ Voir :ref:`que-doit-on-afficher`.
 .. note::
 
     Tout template qui modifie la structure HTML des pages d'accueil doit au
-    minimum hérité du template de base qui par defaut définis les fondations
-    d'une page d'accueil phraseanet sans son contenu.
+    moins hériter du template de base, celui qui définit les
+    fondations d'une page d'accueil Phraseanet sans son contenu.
 
-Quels sont les différents mode de présentation ?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Quels sont les différents modes de présentation ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Phraseanet inclus trois type différents de layouts :
+Phraseanet inclut trois types de layouts :
 
-    - **side_bar**, présentation sur deux colonnes.
-    - **content_only**, présentation sans colonne.
-    - **middle_bar**, presentation une colonne centrale.
+- **side_bar**, présentation sur deux colonnes.
+- **content_only**, présentation sans colonne.
+- **middle_bar**, présentation une colonne centrale.
 
-Tous ces layouts étendent le layout principale ** base_layout** qui définis par
-défault les blocs suivants :
+Tous ces layouts étendent le layout principal ** base_layout** qui définit par
+défaut les blocs suivants :
 
-    - header
-        - title
-        - favicon
-        - header_rss
-        - header_meta
-        - header_stylesheet
-        - header_javascript
-        -
-    - google_chrome_frame
-    - content_scaffholding
-    - footer_scaffholding
-    - scripts
-    - analytics
+- header
+    - title
+    - favicon
+    - header_rss
+    - header_meta
+    - header_stylesheet
+    - header_javascript
+- content_scaffholding
+- footer_scaffholding
+- scripts
+- analytics
 
-Les variable TWIG ?
-~~~~~~~~~~~~~~~~~~~
+Les variables Twig
+~~~~~~~~~~~~~~~~~~
 
-Les variables commmunes a tous les templates sont :
+Les variables communes à tous les templates sont :
 
 - **instance_title**, string, retourne le titre de l'instance.
 - **has_terms_of_use**, booléen, retourne true si l'application à des conditions
   d'utilisation.
-- **display_google_chrome_frame**, booléen, retourne true si l'application doit
-  proposer google chrome frame.
 - **browser_version**, string, retourne la version du navigateur utilisé par
   l'utilisateur final.
 - **browser_name**, string, retourne le nom du navigateur utilisé par le
   navigateur final.
-- **locale**, string, retourne la locale courante.
+- **locale**, string, retourne la langue courante sour le format langage
+  + locale régionale (fr_FR, en_GB).
 - **available_language**, string, retourne la liste des langues disponibles.
 - **current_url**, string, retourne l'url de la page courante.
 - **flash_types**, array, retourne la liste des types de flash messages
   disponibles.
-- **recaptcha_display**, booléen, retourne true si il faut afficher le système de
+- **recaptcha_display**, booléen, retourne true s'il faut afficher le système de
   recaptcha aprés un nombre de tentative de connection infructueuse.
 - **unlock_usr_id**, entier, retourne l'identifiant du compte à dévérouiller.
   Si cette variable n'est pas vide c'est qu'elle indique que le compte avec
   lequel l'utilisateur final s'est connecté est vérouillé.
 - **guest_allowed**, booléen, retourne true si les invités sont autorisés à se
   connecter sur l'instance.
-- **register_enable**, booléan, retourne true si l'enregistrement des
+- **register_enable**, booléen, retourne true si l'enregistrement des
   utilisateurs est activé sur l'instance.
 - **authentication_providers**, array, retourne la liste des fournisseurs
-  d'authentification tierces disponibles.
+  d'authentification disponibles.
 - **home_publi**, string, retourne le type de diaporama à afficher sur la page
   d'accueil.
 - **registration_fields**, array, retourne la liste des champs du formulaire
@@ -295,7 +297,7 @@ Les variables commmunes a tous les templates sont :
 
 Les variables disponibles pour la page d'accueil :
 
-- **feeds**, object, représente la liste des flux RSS publiques à implementer
+- **feeds**, object, eprésente la liste des flux RSS publics à implementer
   sur la page d'accueil.
 
 .. note::
@@ -317,7 +319,7 @@ suivants :
 
 - Le lien d'accés invité (si activé).
 - Le lien d'enregistrement d'un nouveau compte (si activé).
-- Le recaptcha (protection anti-bot si activé).
+- Le recaptcha (protection anti-bot si activée).
 - Le lien de dévouraillage des comptes vérouillés
   (si le compte actuel est vérouillé).
 
@@ -325,7 +327,7 @@ Sur les pages d'enregistrement, il est nécessaire d'afficher les éléments
 suivants :
 
 - Le lien vers les conditions générales d'utilisation (si activé).
-- Le liens vers les fournisseurs d'authentifications tierces
+- Le liens vers les fournisseurs d'authentifications
   google, facebook etc ... (si activé).
 
 .. _Twig: http://twig.sensiolabs.org/
@@ -335,5 +337,3 @@ suivants :
 .. _Form: http://symfony.com/fr/doc/current/cookbook/form/form_customization.html
 .. _flash: http://symfony.com/fr/doc/current/components/http_foundation/sessions.html#messages-flash
 .. _héritage: http://twig.sensiolabs.org/doc/templates.html#template-inheritance
-
-
