@@ -42,3 +42,4 @@ bin/console.
     Console
     Maintenance
     Plugins
+    Personnalisation
