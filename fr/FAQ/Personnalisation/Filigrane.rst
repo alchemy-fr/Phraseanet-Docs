@@ -58,7 +58,7 @@ Appliqué à une image, le filigrane donne le résultat suivant.
 A savoir
 --------
 
-Après la mise à jour d'un filigranne vers un filigranne personalisé, et si des
+Après la mise à jour d'un filigrane vers un filigrane personalisé, et si des
 médias sont déjà présents dans *Phraseanet*, il faut supprimer les fichiers de
 caches préalablement créés par l'application.
 Utiliser la commande suivante :

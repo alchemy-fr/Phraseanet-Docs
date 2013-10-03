@@ -1,4 +1,4 @@
-Parametrage de Phraseanet
+Paramétrage de Phraseanet
 =========================
 
 .. topic:: L'essentiel
