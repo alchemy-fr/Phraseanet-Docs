@@ -1,8 +1,8 @@
 Stories Embed
 =============
 
-About
------
+A propos
+--------
 
 Retourne les permaliens des sous-définitions disponibles pour le reportage
 sélectionné.
@@ -18,11 +18,11 @@ sélectionné.
  Authentification requise  Oui
 ========================== =====
 
-Parameters
+Paramètres
 ----------
 
 Pour retourner toutes les vidéos compatibles HTML5 au format mobile,
-Il faut utiliser les paramètres :
+il faut utiliser les paramètres :
 
 .. code-block:: bash
 
