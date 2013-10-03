@@ -34,12 +34,12 @@ commencer.
 .. toctree::
     :maxdepth: 1
 
-    Admin/index
-    User/index
-    Devel/index
-    FAQ/index
-    Glossaire
     Contrib/index
+    Glossaire
+    FAQ/index
+    Devel/index
+    User/index
+    Admin/index
 
 Quoi de neuf dans la version 3.8 ?
 ----------------------------------
