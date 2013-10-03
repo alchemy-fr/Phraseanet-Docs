@@ -1,4 +1,4 @@
-Arréter une tâche
+Arrêter une tâche
 =================
 
 A propos

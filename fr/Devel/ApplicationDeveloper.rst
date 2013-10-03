@@ -54,13 +54,13 @@ Une fois l'application enregistrée elle apparaît dans un tableau de bord
     :align: center
 
 Le tableau de bord liste toutes les applications créées par l'utilisateur
-authentifié
+authentifié.
 
 Paramètres d'une application
 ----------------------------
 
 Dans le tableau de bord des applications développeurs cliquer sur le nom d'une
-application, La page des paramètres de l'application s'affiche.
+application ; la page des paramètres de l'application s'affiche.
 
 .. image:: ../images/MonCompteDeveloppeurApplication.png
     :align: center
@@ -72,9 +72,9 @@ application, La page des paramètres de l'application s'affiche.
   le propriétaire de l'application, ne jamais divulguer cette information.
 * L'url de rappel de l'application, celle-ci peut être édité à tout moment
   en passant la souris dessus.
-* Les points d'authentifiaction concernant l'authorisation et l'accés à l'API
-* L'activation du grant_type password qui permet à votre application d'identifier
-  les utilisateurs grâce à leurs identifiants Phraseanet.
+* Les points d'authentifiaction concernant l'autorisation et l'accès à l'API
+* L'activation du grant_type password qui permet à votre application
+  d'identifier les utilisateurs grâce à leurs identifiants Phraseanet
 
 .. warning::
 
