@@ -400,8 +400,8 @@ Demande d'identification
 ************************
 
 Pour obtenir directement un jeton d'accés, utiliser les informations
-d'indentification de l'utilisateur qui détient les ressources Phraseanet.
-(cf. un identifiant et un mot de passe)
+d'identification de l'utilisateur qui détient les ressources Phraseanet
+(*cf* un identifiant et un mot de passe).
 
 Cette méthode évite le besoin d'avoir à stocker un code d'autorisation.
 
