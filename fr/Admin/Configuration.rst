@@ -46,6 +46,8 @@ Voici un exemple de fichier de configuration commenté
 
         maintenance: false                         # (boolean) Activation du mode maintenance
 
+        languages: ['fr_FR', 'de_DE']              # (array)   Un tableau de code de langues actives. Toutes les langues sont activées si le tableau est vide
+
         database:                                  # (array)   Configuration du serveur de base de données
             host: 'sql-host'                       # (string)  Adresse du serveur de base de données
             port: 3306                             # (integer) Port du serveur de base de données
@@ -200,7 +202,21 @@ Voici un exemple de fichier de configuration commenté
         type: nginx                                # (string)  Type XSendFile (`nginx` ou `apache`)
         mapping: []                                # (array)   Mapping des dossiers (voir configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
 
+    user-settings:                                 # (array)   Un tableau de valeur par défaut pour les préférences utilisateurs
+        images_per_page: 60
+        images_size: 200
+
     plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`
+
+Langues
+*******
+
+Les langues disponibles ainsi que leurs codes respectifs sont les suivants :
+
+- Français : fr_FR
+- Anglais : en_GB
+- Allemand : de_DE
+- Néerlandais : nl_NL
 
 Fournisseurs d'authentification
 *******************************
@@ -274,7 +290,7 @@ SphinxSearch engine.
 Proxies de confiance
 ********************
 
-Si Phraseanet est derrière un reverse-proxy, renseigner l'adresse du 
+Si Phraseanet est derrière un reverse-proxy, renseigner l'adresse du
 reverse proxy pour que les adresses IP des utilisateurs soient
 reconnues.
 
@@ -474,5 +490,55 @@ Déclaration du point de contrôle
             -
                 type: Checker\NorthPole
                 enabled: true
+
+Préférences utilisateurs
+************************
+
+Il est possible de personnaliser les préférences utilisateur par défaut.
+Les paramètres suivants sont ajustables :
+
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| Nom                     | Description                                            | Valeur par défaut | Valeurs disponibles                                                                |
++=========================+========================================================+===================+====================================================================================+
+| view                    | Affichage des résultats                                | thumbs            | *thumbs* (en vignettes) *list* (en liste)                                          |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| images_per_page         | Nombre d'image par page de résultat                    | 20                |                                                                                    |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| images_size             | Taille des vignettes de résultat                       | 120               |                                                                                    |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| editing_images_size     | Taille des vignettes d'édition                         | 134               |                                                                                    |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| editing_top_box         | Taille du bloc supérieur d'édition (pourcentage)       | 30                |                                                                                    |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| editing_right_box       | Taille du bloc droit d'édition (pourcentage)           | 48                |                                                                                    |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| editing_left_box        | Taille du bloc gauche d'édition (pourcentage)          | 33                |                                                                                    |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| basket_sort_field       | Index de tri des paniers                               | name              | *name* (par nom) ou *date* (par date)                                              |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| basket_sort_order       | Ordre de tri des paniers                               | ASC               | *ASC* (ascendant) ou *DESC* (descendant)                                           |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| warning_on_delete_story | Alerter avant la suppression d'un reportage            | true              | *true* (oui) ou *false* (non)                                                      |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| client_basket_status    | Afficher les paniers dans *Classic*                    | 1                 | *1* (oui) ou *0* (non)                                                             |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| css                     | Theme CSS de production                                | 000000            | *000000* (sombre) ou *959595* (clair)                                              |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| start_page_query        | Question par défaut                                    | last              |                                                                                    |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| start_page              | Page de démarrage de production                        | QUERY             | *PUBLI* (publications) ou *QUERY* (recherche) ou *LAST_QUERY* (dernière recherche) |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| rollover_thumbnail      | Affichage au rollover                                  | caption           | *caption* (notice) ou *preview* (prévisualisaton)                                  |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| technical_display       | Afficher les informations techniques                   | 1                 | *1* (oui) ou *0* (non) ou *group* (groupé avec la notice)                          |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| doctype_display         | Afficher une icone correspondante au type de document  | 1                 | *1* (oui) ou *0* (non)                                                             |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| basket_caption_display  | Afficher la notice des enregistrements dans un panier  | 0                 | *1* (oui) ou *0* (non)                                                             |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| basket_status_display   | Afficher les status des enregistrements dans un panier | 0                 | *1* (oui) ou *0* (non)                                                             |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+| basket_title_display    | Afficher le titre des enregistrements dans un panier   | 0                 | *1* (oui) ou *0* (non)                                                             |
++-------------------------+--------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
