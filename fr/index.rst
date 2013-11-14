@@ -25,6 +25,7 @@ Le présent manuel aborde les questions liées à l'
 :doc:`administration<Admin/index>`, à l':doc:`utilisation<User/index>`
 et au :doc:`développement<Devel/index>` reposants sur le logiciel Open source
 *Phraseanet*.
+Une :doc:`FAQ<FAQ/index>` essaye de répondre aux questions fréquentes.
 Un :doc:`glossaire<Glossaire>` regroupe les termes propres au vocabulaire
 employé dans l'application.
 Envie de contribuer ? Consulter :doc:`cette section<Contrib/index>` avant de
@@ -33,8 +34,8 @@ commencer.
 .. toctree::
     :maxdepth: 1
 
-    Glossaire
     Contrib/index
+    Glossaire
     FAQ/index
     Devel/index
     User/index

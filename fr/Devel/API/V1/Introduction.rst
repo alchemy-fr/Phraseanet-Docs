@@ -16,7 +16,7 @@ Quotas
 
 Il n'y a pas de quotas en v1, Le nombre de requêtes n'est pas limité.
 
-Accés anonyme
+Accès anonyme
 -------------
 
 Il n’y a pas d’accès anonyme ou public dans l’API Phraseanet V1.

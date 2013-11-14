@@ -1,8 +1,8 @@
 Stories Story
 =============
 
-About
------
+A propos
+--------
 
 Retourne les informations d'un reportage enregistré dans Phraseanet.
 

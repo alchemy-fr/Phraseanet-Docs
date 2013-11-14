@@ -15,7 +15,8 @@ Phraseanet.
 Bibliothèques
 -------------
 
-Pour le développement en PHP, il est recommandé d'utiliser `Phraseanet PHP SDK`_.
+Pour le développement en PHP, il est recommandé d'utiliser
+`Phraseanet PHP SDK`_.
 
 Table of contents
 -----------------

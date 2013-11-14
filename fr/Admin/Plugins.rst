@@ -1,7 +1,7 @@
 Plugins
 =======
 
-Phraseanet est doté depuis la version 3.8 d'un méchanisme de plugin permettant
+Phraseanet est doté depuis la version 3.8 d'un mécanisme de plugin permettant
 de personnaliser aussi bien l'éxecution de services (log, authentification) de
 Phraseanet que les vues (home page personalisées, etc ...).
 
@@ -10,8 +10,8 @@ Un plugin Phraseanet est un dossier dans lequel se trouve un fichier
 la résolution des dépendances du plugin et d'un dossier **public** contenant
 une arborescence à exposer publiquement (icônes, css, js, etc...).
 
-Ajout/Suppression de plugin
----------------------------
+Ajout/Suppression de plugins
+----------------------------
 
 Deux commandes permettent d'ajouter et enlever des plugins :
 
@@ -27,17 +27,16 @@ Enlever un plugin :
 
     bin/console plugin:remove nom-du-plugin
 
-Structure des plugin
---------------------
+Structure des plugins
+---------------------
 
-Il est très simple d'écrire un plugin ; voici l'arborescence minimale du plugin
-qu'il doit avoir :
+Un plugin est simple à écrire. Il comporte une arborescence minimale :
 
 .. code-block:: none
 
-├── composer.json
-├── manifest.json
-└── public
+    ├── composer.json
+    ├── manifest.json
+    └── public
 
 manifest.json
 *************
@@ -95,10 +94,10 @@ Détails des propriétés possibles pour le fichier manifest.json :
 - name (requis, string) : Le nom du plugin. Doit être unique, en casse basse,
   ne peut contenir ni espace ni caractère spécial.
 - description (requis, string) : Une description texte du plugin.
-- keywords (array) : Un tableau de mot-clés propres au plugin.
+- keywords (array) : Un tableau de mot clés propres au plugin.
 - authors (array) : Un tableau d'objets authors. L'objet authors accepte les
   propriétés "name", "email" et "homepage".
-- homepage (string) : Un lien vers la home page du plugin.
+- homepage (string) : Un lien vers la page d'accueil du plugin.
 - license (string) : Un identifiant de license tel que fourni par `SPDX`_.
 - version (string) : Un numéro de version au format `semver`_.
 - minimum-phraseanet-version (string) : Le numéro de version minimum de
@@ -106,14 +105,13 @@ Détails des propriétés possibles pour le fichier manifest.json :
 - maximum-phraseanet-version (string) : Le numéro de version maximum de
   Phraseanet compatible (exclue).
 - twig-paths (string) : Un tableau de chemin relatifs au plugin qui seront
-  utilisés comme path de Twig (permet de personnaliser les templates Phraseanet
-  par défaut).
+  utilisés comme chemin pour charger les templates Twig (permet de personnaliser
+ les templates Phraseanet par défaut).
 - services : Un tableau d'objets de services de plugin à déclarer auprès de
   Phraseanet. Un service de plugin est configuré avec une propriété "class".
 - commands : Un tableau d'objets de commandes à déclarer auprès de Phraseanet
   Konsole. Une commande est configurée avec une propriété "class".
-- extra : Un object de propriétés personnalisable comme bon souhaite le
-  developpeur.
+- extra : Un objet de propriétés personnalisables par le développeur.
 
 .. note::
 
@@ -140,7 +138,7 @@ autoloader dédié.
         }
     }
 
-Le fichier précédent déclare ainsi que les sources du plugin sont
+Le fichier précédent déclare que les sources du plugin sont
 automatiquement chargées depuis le dossier src selon une structure `PSR-0`_.
 Il est recommandé de consulter la documentation de `composer`_ pour davantage
 d'informations.
