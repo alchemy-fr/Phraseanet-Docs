@@ -4,19 +4,16 @@ Bienvenue dans la documentation Phraseanet
 Le DAM Open source
 ------------------
 
-*Phraseanet* est une solution de gestion de médias numériques (en anglais :
-Digital Asset Management ou en abrégé DAM) créée et maintenue par
-`Alchemy <http://www.alchemy.fr>`_.
-
-Solution *full web*, elle s'exécute dans un navigateur internet.
+*Phraseanet* est une application en ligne de gestion de médias numériques
+(en anglais : Digital Asset Management ou en abrégé DAM) développée et
+maintenue par `Alchemy <http://www.alchemy.fr>`_.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
 serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
-courantes telles MySQL,PHP et Apache.
+courantes telles MySQL, PHP et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
-*Phraseanet*.
-Certaines de ces librairies sont
-`développées par Alchemy <http://phraseanet.github.com/>`_, d'autres pas.
+*Phraseanet*. Certaines de ces librairies sont
+`développées par Alchemy <http://phraseanet.github.com/>`_.
 
 A propos de cette documentation
 -------------------------------
