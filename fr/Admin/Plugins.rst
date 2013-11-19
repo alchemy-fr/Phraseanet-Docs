@@ -106,7 +106,7 @@ Détails des propriétés possibles pour le fichier manifest.json :
   Phraseanet compatible (exclue).
 - twig-paths (string) : Un tableau de chemin relatifs au plugin qui seront
   utilisés comme chemin pour charger les templates Twig (permet de personnaliser
- les templates Phraseanet par défaut).
+  les templates Phraseanet par défaut).
 - services : Un tableau d'objets de services de plugin à déclarer auprès de
   Phraseanet. Un service de plugin est configuré avec une propriété "class".
 - commands : Un tableau d'objets de commandes à déclarer auprès de Phraseanet
