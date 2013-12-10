@@ -41,6 +41,8 @@ Here is a commented configuration file
 
         maintenance: false                         # (boolean) Maintenance mode activation
 
+        languages: ['fr_FR', 'de_DE']              # (array)   An array of actives languages codes. All languages are activated if this array is empty.
+
         database:                                  # (array)   Database server configuration
             host: 'sql-host'                       # (string)  Database server address
             port: 3306                             # (integer) Database server port
@@ -195,8 +197,21 @@ Here is a commented configuration file
         type: nginx                                # (string)  XSendFile type (`nginx` ou `apache`)
         mapping: []                                # (array)   Directories mapping (see configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
 
+    user-settings:                                 # (array)   An array of default settings for user settings
+        images_per_page: 60
+        images_size: 200
+
     plugins: []                                    # (array)   :doc:`Plugins <Plugins>` configuration
 
+Languages
+*********
+
+Available languages with their respectives codes are:
+
+- French : fr_FR
+- English : en_GB
+- German : de_DE
+- Dutch : nl_NL
 
 Cache services
 **************
@@ -439,5 +454,54 @@ Enable the checker
             -
                 type: Checker\NorthPole
                 enabled: true
+
+Users settings
+**************
+
+It is possible to customize default users settings. Available parameters are:
+
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| Name                    | Description                      | Defaut value | Available values                                                                 |
++=========================+==================================+==============+==================================================================================+
+| view                    | Results display                  | thumbs       | *thumbs* (thumbnail view) *list* (list view)                                     |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| images_per_page         | Results quantity per page        | 20           |                                                                                  |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| images_size             | Result thumbnail size            | 120          |                                                                                  |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| editing_images_size     | Editing thumbnail size           | 134          |                                                                                  |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| editing_top_box         | Editing top block (percentage)   | 30           |                                                                                  |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| editing_right_box       | Editing right block (percentage) | 48           |                                                                                  |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| editing_left_box        | Editing left block (percentage)  | 33           |                                                                                  |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| basket_sort_field       | Basket sort index                | name         | *name* (by name) or *date* (by date)                                             |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| basket_sort_order       | Basket sort index                | ASC          | *ASC* (ascending) or *DESC* (descending)                                         |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| warning_on_delete_story | Alert before remove a story      | true         | *true* (yes) or *false* (no)                                                     |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| client_basket_status    | Display baskets in *Classic*     | 1            | *1* (yes) or *0* (no)                                                            |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| css                     | Production CSS theme             | 000000       | *000000* (dark) or *959595* (bright)                                             |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| start_page_query        | Default question                 | last         |                                                                                  |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| start_page              | Production start page            | QUERY        | *PUBLI* (publications) or *QUERY* (query) ou *LAST_QUERY* (last query)           |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| rollover_thumbnail      | Rollover display                 | caption      | *caption* (notice) or *preview* (preview)                                        |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| technical_display       | Display technical data           | 1            | *1* (yes) or *0* (no) or *group* (inside the caption)                            |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| doctype_display         | Display a record type icon       | 1            | *1* (yes) or *0* (no)                                                            |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| basket_caption_display  | Display basket records notice    | 0            | *1* (yes) or *0* (no)                                                            |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| basket_status_display   | Display basket records status    | 0            | *1* (yes) or *0* (no)                                                            |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
+| basket_title_display    | Display basket records title     | 0            | *1* (yes) or *0* (no)                                                            |
++-------------------------+----------------------------------+--------------+----------------------------------------------------------------------------------+
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
