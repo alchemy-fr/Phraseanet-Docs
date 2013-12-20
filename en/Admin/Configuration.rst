@@ -36,12 +36,14 @@ Here is a commented configuration file
 
 .. code-block:: yaml
 
+    servername: 'http://phrasea.example.com/'      # (string)  Phraseanet install URL
+
+    languages:
+        available: ['fr', 'de']                    # (array)   An array of actives languages codes. All languages are activated if this array is empty.
+        default: 'fr'                              # (string)  Application default language.
+
     main:
-        servername: 'http://phrasea.example.com/'  # (string)  Phraseanet install URL
-
         maintenance: false                         # (boolean) Maintenance mode activation
-
-        languages: ['fr_FR', 'de_DE']              # (array)   An array of actives languages codes. All languages are activated if this array is empty.
 
         database:                                  # (array)   Database server configuration
             host: 'sql-host'                       # (string)  Database server address
@@ -78,35 +80,69 @@ Here is a commented configuration file
             type: Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine  # (string) Search Engine service name (FQCN)
             options: []                            # (array)   Search Engine adapter options
 
+        binaries:                                  # (array)   Binaries configuration
+            ghostscript_binary: null               # (string)  Path to Ghostscript, null for autodetection (gs)
+            php_binary: null                       # (string)  Path to PHP, null for autodetection (php)
+            swf_extract_binary: null               # (string)  Path to Pdf2Swf, null for autodetection (pdf2swf)
+            pdf2swf_binary: null                   # (string)  Path to SwfExtract, null for autodetection (swfextract)
+            swf_render_binary: null                # (string)  Path to SwfRender, null for autodetection (swfrender)
+            unoconv_binary: null                   # (string)  Path to Unoconv, null for autodetection (unoconv)
+            ffmpeg_binary: null                    # (string)  Path to FFMpeg, null for autodetection (ffmpeg, avconv)
+            ffprobe_binary: null                   # (string)  Path to FFProbe, null for autodetection (ffprobe, avprobe)
+            mp4box_binary: null                    # (string)  Path to MP4Box, null for autodetection (MP4Box)
+            pdftotext_binary: null                 # (string)  Path to PdfToText, null for autodetection (pdftotext)
+            phraseanet_indexer: null               # (string)  Path to Phraseanet Indexer, null for autodetection (phraseanet_indexer)
+            ffmpeg_timeout: 3600                   # (integer) Timeout for FFMpeg
+            ffprobe_timeout: 60                    # (integer) Timeout for FFProbe
+            gs_timeout: 60                         # (integer) Timeout for Ghostscript
+            mp4box_timeout: 60                     # (integer) Timeout for MP4Box
+            swftools_timeout: 60                   # (integer) Timeout for SwfTools (swfrender, swfextract)
+            unoconv_timeout: 60                    # (integer) Timeout for Unoconv
+
         task-manager:
+            status: started
             logger:
                 level: INFO                        # (string)  The log level
                 max-files: 10                      # (integer) The maximum number of files to keep on disk
                 enabled: true                      # (boolean) Enable logs on filesystem
+            listener:
+                protocol: tcp
+                host: 127.0.0.1
+                port: 6700
+                linger: 500
+
+        websocket-server:
+            host: local.phrasea
+            port: 9090
+            ip: 0.0.0.0
+            subscriber:
+                protocol: tcp
+                host: 127.0.0.1
+                port: 13598
+
+        storage:
+            subdefs:
+                default-dir: /var/data/phraseanet  # (string)  Default path for file storage
+
+        bridge:
+            youtube:
+                enabled: false
+                client_id: null
+                client_secret: null
+                developer_key: null
+            flickr:
+                enabled: false
+                client_id: null
+                client_secret: null
+            dailymotion:
+                enabled: false
+                client_id: null
+                client_secret: null
 
     trusted-proxies: []                            # (array)   Trusted proxies configuration
 
     debugger:                                      # (array)   Debugger configuration (Developers only)
         allowed-ips: []                            # (array)   Debugger authorized IP address
-
-    binaries:                                      # (array)   Binaries configuration
-        ghostscript_binary: null                   # (string)  Path to Ghostscript, null for autodetection (gs)
-        php_binary: null                           # (string)  Path to PHP, null for autodetection (php)
-        swf_extract_binary: null                   # (string)  Path to Pdf2Swf, null for autodetection (pdf2swf)
-        pdf2swf_binary: null                       # (string)  Path to SwfExtract, null for autodetection (swfextract)
-        swf_render_binary: null                    # (string)  Path to SwfRender, null for autodetection (swfrender)
-        unoconv_binary: null                       # (string)  Path to Unoconv, null for autodetection (unoconv)
-        ffmpeg_binary: null                        # (string)  Path to FFMpeg, null for autodetection (ffmpeg, avconv)
-        ffprobe_binary: null                       # (string)  Path to FFProbe, null for autodetection (ffprobe, avprobe)
-        mp4box_binary: null                        # (string)  Path to MP4Box, null for autodetection (MP4Box)
-        pdftotext_binary: null                     # (string)  Path to PdfToText, null for autodetection (pdftotext)
-        phraseanet_indexer: null                   # (string)  Path to Phraseanet Indexer, null for autodetection (phraseanet_indexer)
-        ffmpeg_timeout: 3600                       # (integer) Timeout for FFMpeg
-        ffprobe_timeout: 60                        # (integer) Timeout for FFProbe
-        gs_timeout: 60                             # (integer) Timeout for Ghostscript
-        mp4box_timeout: 60                         # (integer) Timeout for MP4Box
-        swftools_timeout: 60                       # (integer) Timeout for SwfTools (swfrender, swfextract)
-        unoconv_timeout: 60                        # (integer) Timeout for Unoconv
 
     border-manager:                                # (array)   Border manager configuration
         enabled: true                              # (boolean) Border manager activation
@@ -221,10 +257,10 @@ Languages
 
 Available languages with their respectives codes are:
 
-- French : fr_FR
-- English : en_GB
-- German : de_DE
-- Dutch : nl_NL
+- French : fr
+- English : en
+- German : de
+- Dutch : nl
 
 Cache services
 **************
@@ -290,6 +326,20 @@ and SphinxSearch engine.
 +------------------------------------------------------------------+------------------------------+
 | Alchemy\\Phrasea\\SearchEngine\\SphinxSearch\\SphinxSearchEngine | host, port, rt_host, rt_port |
 +------------------------------------------------------------------+------------------------------+
+
+Configuration du Bridge
+***********************
+
+Flickr API account
+Pour FlickR : <a href="https://secure.flickr.com/services/apps/create/" target="_blank">https://secure.flickr.com/services/apps/create/</a>';
+
+Youtube dev key :
+        $dashboard_youtube = '<a href="https://code.google.com/apis/youtube/dashboard/" target="_blank">https://code.google.com/apis/youtube/dashboard/</a>';
+Youtube API account
+        $youtube_console_url = '<a href="https://code.google.com/apis/console/" target="_blank">https://code.google.com/apis/console/</a>';
+
+Dailymotion account :
+        $create_api_dailymotion = '<a href="http://www.dailymotion.com/profile/developer" target="_blank">http://www.dailymotion.com/profile/developer</a>';
 
 Trusted proxies
 ***************
