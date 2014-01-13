@@ -52,6 +52,11 @@ Here is a commented configuration file
             driver: pdo_mysql                      # (string)  Database driver name
             charset: UTF8                          # (string)  Database connection charset
 
+        session:                                   # (array)   Session handler options settings
+            type: 'file'                           # (string)  Session handler name
+            options: []                            # (array)   Session handler options
+            ttl: 86400                             # (string)  Session time-to-live
+
         database-test:                             # (array)   Database connection for tests (Developers only)
             driver: pdo_sqlite
             path: '/tmp/db.sqlite'
@@ -236,6 +241,29 @@ following adapters:
 +----------------+----------------------+-----------------------------------------------------+------------+
 | ArrayCache     | cache | opcode-cache | No cache                                            |            |
 +----------------+----------------------+-----------------------------------------------------+------------+
+
+Sessions handling
+*****************
+
+Sessions are stored on filesystem by default.
+It is possible to use another handling system:
+
++----------------+---------------------------------------------+------------+
+| Type           | Description                                 | Options    |
++================+=============================================+============+
+| file           | Filesystem handler                          |            |
++----------------+---------------------------------------------+------------+
+| memcache       | Memcached server handler, use PHP memcache  | host, port |
++----------------+---------------------------------------------+------------+
+| memcached      | Memcached server handler, use PHP memcached | host, port |
++----------------+---------------------------------------------+------------+
+| redis          | Redis server handler, use PHP redis         | host, port |
++----------------+---------------------------------------------+------------+
+
+.. warning::
+
+    Time-to-live setting (`ttl`) does not work with filesystem storage.
+    In that case, use PHP `gc_maxlifetime` setting.
 
 .. _search-engine-service-configuration:
 
