@@ -32,7 +32,7 @@ follow this upgrade procedure:
 
 .. code-block:: bash
 
-    bin/console system:upgrade
+    bin/setup system:upgrade
 
 After upgrading from old versions (before 3.6), the output asks to run more
 commands:
