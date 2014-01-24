@@ -153,14 +153,14 @@ Service customization
 *********************
 
 Services registered with the "services" property of *manifest.json* file
-must implement **Alchemy\Phrasea\Plugin\PluginProviderInterface** interface.
+must implement **Alchemy\\Phrasea\\Plugin\\PluginProviderInterface** interface.
 
 Console commands
 ****************
 
 Commands registered with the "commands" property of *manifest.json* file must
-implement **Alchemy\Phrasea\Command\CommandInterface** interface. The simplest
-way to do so is to extend the **Alchemy\Phrasea\Command\Command** abstract
+implement **Alchemy\\Phrasea\\Command\\CommandInterface** interface. The simplest
+way to do so is to extend the **Alchemy\\Phrasea\\Command\\Command** abstract
 class.
 
 .. _Mail log plugin: https://github.com/Phraseanet/mail-log-plugin

@@ -160,15 +160,15 @@ Personalisation de service
 
 Les services ajoutés via la propriété "services" du fichier *manifest.json*
 doivent implémenter l'interface
-**Alchemy\Phrasea\Plugin\PluginProviderInterface**.
+**Alchemy\\Phrasea\\Plugin\\PluginProviderInterface**.
 
 Ajout d'une commande de console
 *******************************
 
 Les commandes ajoutées via la propriété "commands" du fichier *manifest.json*
 doivent implémenter l'interface
-**Alchemy\Phrasea\Command\CommandInterface**. Une base simple est d'étendre la
-classe abstraite **Alchemy\Phrasea\Command\Command**.
+**Alchemy\\Phrasea\\Command\\CommandInterface**. Une base simple est d'étendre la
+classe abstraite **Alchemy\\Phrasea\\Command\\Command**.
 
 .. _Mail log plugin: https://github.com/Phraseanet/mail-log-plugin
 .. _Syslog plugin: https://github.com/Phraseanet/syslog-plugin
