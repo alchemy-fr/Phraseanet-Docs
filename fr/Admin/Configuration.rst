@@ -276,13 +276,15 @@ les adapteurs suivants :
 Service de moteur de recherche
 ******************************
 
-Deux services de moteurs de recherche sont disponibles : Phrasea engine et
-SphinxSearch engine.
+Trois services de moteurs de recherche sont disponibles : Phrasea engine,
+ElasticSearch et SphinxSearch engine.
 
 +------------------------------------------------------------------+------------------------------+
 | Nom                                                              | Options                      |
 +==================================================================+==============================+
 | Alchemy\\Phrasea\\SearchEngine\\Phrasea\\PhraseaEngine           |                              |
++------------------------------------------------------------------+------------------------------+
+| Alchemy\\Phrasea\\SearchEngine\\Elastic\\ElasticSearchEngine     | host, port, index            |
 +------------------------------------------------------------------+------------------------------+
 | Alchemy\\Phrasea\\SearchEngine\\SphinxSearch\\SphinxSearchEngine | host, port, rt_host, rt_port |
 +------------------------------------------------------------------+------------------------------+

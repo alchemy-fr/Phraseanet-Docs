@@ -6,7 +6,7 @@ Moteur de recherche
     Phraseanet est fourni par défaut avec le moteur de recherche Phrasea.
     Performant, il permet l'emploi du module thesaurus de Phraseanet.
     Toutefois, si l'utilisation du module Phraseanet Thésaurus n'est pas
-    envisagée, SphinxSearch peut être utilisé.
+    envisagée, ElasticSearch ou SphinxSearch peut être utilisé.
     Cette section explique les avantages de chacun et leur installation.
 
 .. warning::
@@ -31,7 +31,7 @@ et permet ainsi la recherche dans le contenu des fiches descriptives
 des documents.
 
 L'indexeur fonctionne en arrière plan. Il surveille les bases à indexer
-(apparition, modification ou disparition de documents) et maintient 
+(apparition, modification ou disparition de documents) et maintient
 les index "full-text", "valeur" et "thésaurus".
 
 Installation
@@ -333,6 +333,44 @@ Activer l'extension dans le fichier php.ini :
     En cas d'erreur "... icu*.dll introuvable ...", télécharger les ICU
     libraries requises par l'extension "php_intl" et copier les différents
     fichiers "icu*.dll" dans le répertoire principal de PHP.
+
+ElasticSearch Engine
+--------------------
+
+Il est nécessaire de disposer d'une version d'Elastic Search 0.90.7 ou supérieure
+pour utiliser le moteur ElasticSearch dans Phraseanet.
+
+Avantages
+*********
+
+Les principaux avantages de ElasticSearch Engine sont :
+
+* la rapidité
+* la scalabilité
+
+Configuration dans Phraseanet
+*****************************
+
+Après avoir installé ElasticSearch, Phraseanet doit être configuré.
+
+Il faudra renseigner l'adresse, le port et le nom d'index désiré de ElasticSearch
+dans la configuration de Phraseanet pour cela :
+
+.. code-block:: none
+
+    search-engine:
+        type: Alchemy\Phrasea\SearchEngine\Elastic\ElasticSearchEngine
+        options:
+            host: 127.0.0.1
+            port: 9200
+            index: phraseanet
+
+Une fois cette configuration effectuée, dans la console, executer la commande
+suivante pour reindexer Phraseanet.
+
+.. code-block:: none
+
+    bin/console searchengine:index
 
 Sphinx-Search Engine
 --------------------

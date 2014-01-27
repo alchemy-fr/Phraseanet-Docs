@@ -242,13 +242,15 @@ following adapters:
 Search Engine service
 *********************
 
-Two search engine services are available: Phrasea engine and SphinxSearch
-engine.
+Three search engine services are available: Phrasea engine, ElasticSearch
+and SphinxSearch engine.
 
 +------------------------------------------------------------------+------------------------------+
 | Name                                                             | Options                      |
 +==================================================================+==============================+
 | Alchemy\\Phrasea\\SearchEngine\\Phrasea\\PhraseaEngine           |                              |
++------------------------------------------------------------------+------------------------------+
+| Alchemy\\Phrasea\\SearchEngine\\Elastic\\ElasticSearchEngine     | host, port, index            |
 +------------------------------------------------------------------+------------------------------+
 | Alchemy\\Phrasea\\SearchEngine\\SphinxSearch\\SphinxSearchEngine | host, port, rt_host, rt_port |
 +------------------------------------------------------------------+------------------------------+
