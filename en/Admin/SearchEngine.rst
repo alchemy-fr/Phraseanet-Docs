@@ -22,7 +22,7 @@ One of the biggest advantages of this engine is Phraseanet thesaurus support.
 Phraseanet Indexer
 ******************
 
-The indexer indexes the content of the databses published in a Phraseanet
+The indexer indexes the content of the databases published in a Phraseanet
 application and allows searching into the captions of documents.
 
 The indexer runs in background, it monitors databases to index (upcoming or
