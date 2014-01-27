@@ -33,7 +33,7 @@ de votre installation, suivre les étapes suivantes :
 
 .. code-block:: bash
 
-    bin/console system:upgrade
+    bin/setup system:upgrade
 
 Lors de l'execution de cette commande depuis des version anciennes (antérieures
 à 3.6), il est demandé d'executer des commandes supplémentaires :

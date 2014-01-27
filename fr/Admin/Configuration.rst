@@ -279,13 +279,13 @@ Service de moteur de recherche
 Deux services de moteurs de recherche sont disponibles : Phrasea engine et
 SphinxSearch engine.
 
-+--------------------------------------------------------------+------------------------------+
-| Nom                                                          | Options                      |
-+==============================================================+==============================+
-| Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine           |                              |
-+--------------------------------------------------------------+------------------------------+
-| Alchemy\Phrasea\SearchEngine\SphinxSearch\SphinxSearchEngine | host, port, rt_host, rt_port |
-+--------------------------------------------------------------+------------------------------+
++------------------------------------------------------------------+------------------------------+
+| Nom                                                              | Options                      |
++==================================================================+==============================+
+| Alchemy\\Phrasea\\SearchEngine\\Phrasea\\PhraseaEngine           |                              |
++------------------------------------------------------------------+------------------------------+
+| Alchemy\\Phrasea\\SearchEngine\\SphinxSearch\\SphinxSearchEngine | host, port, rt_host, rt_port |
++------------------------------------------------------------------+------------------------------+
 
 Proxies de confiance
 ********************
