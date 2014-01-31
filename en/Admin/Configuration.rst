@@ -73,7 +73,13 @@ Here is a commented configuration file
             type: Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine  # (string) Search Engine service name (FQCN)
             options: []                            # (array)   Search Engine adapter options
 
-    trusted-proxies: []                            # (array)   Trusted proxies configuration.
+        task-manager:
+            logger:
+                level: INFO                        # (string)  The log level
+                max-files: 10                      # (integer) The maximum number of files to keep on disk
+                enabled: true                      # (boolean) Enable logs on filesystem
+
+    trusted-proxies: []                            # (array)   Trusted proxies configuration
 
     debugger:                                      # (array)   Debugger configuration (Developers only)
         allowed-ips: []                            # (array)   Debugger authorized IP address
