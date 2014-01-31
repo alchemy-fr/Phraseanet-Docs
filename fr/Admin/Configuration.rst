@@ -78,6 +78,12 @@ Voici un exemple de fichier de configuration commenté
             type: Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine  # (string) Nom du service de moteur de recherche (FQCN)
             options: []                            # (array)   Options de configuration du service de moteur de recherche
 
+        task-manager:
+            logger:
+                level: INFO                        # (string)  Le niveau de log minimum
+                max-files: 10                      # (integer) Le nombre maximum de fichiers de log à conserver
+                enabled: true                      # (boolean) Activer les logs dans le système de fichier
+
     trusted-proxies: []                            # (array)   Configuration des proxies de confiance
 
     debugger:                                      # (array)   Configuration du debugger (développeurs uniquement)
