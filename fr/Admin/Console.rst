@@ -81,8 +81,8 @@ Chaque commande fourni une aide via la commande *help*:
     utilisée pour exécuter des scripts automatisés.
 
 
-Code de retour de la commande scheduler:state
-*********************************************
+Code de retour de la commande task-manager:scheduler:state
+**********************************************************
 
 Cette commande retourne une valeur différente pour chaque état du gestionnaire de tache.
 
