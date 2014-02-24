@@ -57,10 +57,8 @@ tels :
 * `Dailymotion`_
 
 Pour publier des documents vers ces applications, sélectionner des documents,
-connecter un compte `Flickr <http://www.flickr.com/>`_,
-`YouTube <http://www.youtube.com/>`_ ou
-`Dailymotion <http://www.dailymotion.com/>`_, à Phraseanet, puis effectuer des
-publications avec **Bridge**.
+connecter un compte `Flickr`_, `YouTube`_ ou `Dailymotion`_, à Phraseanet, puis
+effectuer des publications avec **Bridge**.
 
 Sélection des médias
 ********************
@@ -124,3 +122,7 @@ Lancer *Flickr*. Les médias transférés de Phraseanet sont bien présents.
 
 .. image:: ../../images/Bridge-5.jpg
     :align: center
+
+.. _Flickr: https://www.flickr.com/
+.. _YouTube: http://www.youtube.com/
+.. _Dailymotion: http://www.dailymotion.com/
