@@ -20,51 +20,56 @@ You will see something like:
 .. code-block:: bash
 
     Available commands:
-      help                             Displays help for a command
-      list                             Lists commands
+      help                                  Displays help for a command
+      list                                  Lists commands
     about
-      about:authors                    Lists authors and contributors
-      about:license                    Displays this program license
+      about:authors                         Lists authors and contributors
+      about:license                         Displays this program license
     check
-      check:config                     Performs a check against the environment and configuration. Give some advices for production settings.
-      check:extension                  Performs a serie of tests against Phrasea Engine PHP Extension
+      check:config                          Performs a check against the environment and configuration. Give some advices for production settings.
+      check:extension                       Performs a serie of tests against Phrasea Engine PHP Extension
     collection
-      collection:create                Creates a collection in Phraseanet
+      collection:create                     Creates a collection in Phraseanet
     compile
-      compile:configuration            Compiles YAML configuration to plain PHP
+      compile:configuration                 Compiles YAML configuration to plain PHP
     fields
-      fields:delete                    Deletes a documentation field from a Databox
-      fields:list                      Lists all databoxes documentation fields
-      fields:merge                     Merges databox documentation fields
-      fields:rename                    Renames a documentation field from a Databox
+      fields:delete                         Deletes a documentation field from a Databox
+      fields:list                           Lists all databoxes documentation fields
+      fields:merge                          Merges databox documentation fields
+      fields:rename                         Renames a documentation field from a Databox
     mail
-      mail:test                        Sends an email to a given address to test mail-server configuration
+      mail:test                             Sends an email to a given address to test mail-server configuration
     plugins
-      plugins:add                      Installs a plugin to Phraseanet
-      plugins:remove                   Removes a plugin given its name
+      plugins:add                           Installs a plugin to Phraseanet
+      plugins:list                          Lists installed plugins
+      plugins:remove                        Removes a plugin given its name
     records
-      records:add                      Adds a record to Phraseanet
-      records:build-missing-subdefs    Builds subviews that previously failed to be generated / did not exist when records were added
-      records:rescan-technical-datas   Rescans records for technical datas
-    scheduler
-      scheduler:start                  Starts Phraseanet scheduler
-      scheduler:state                  Returns Phraseanet scheduler status
-      scheduler:stop                   Stops Phraseanet scheduler
+      records:add                           Adds a record to Phraseanet
+      records:build-missing-subdefs         Builds subviews that previously failed to be generated / did not exist when records were added
+      records:rescan-technical-datas        Rescans records for technical datas
     sphinx
-      sphinx:generate-suggestions      Generates suggestions for Sphinx Search Engine, useful for query auto-completion
+      sphinx:generate-suggestions           Generates suggestions for Sphinx Search Engine, useful for query auto-completion
     system
-      system:backup-db                 Backups Phraseanet Databases
-      system:clear-cache               Empties cache directories and cache-server data
-      system:export                    Exports all phraseanet records to a given directory
-      system:mail-check                Checks if email addresses are uniques (mandatory since 3.5)
-      system:upgrade-datas             Upgrades Phraseanet datas, useful after migrations
-    task
-      task:list                        Lists Phraseanet tasks
-      task:run                         Runs a Phraseanet task given its id
-      task:state                       Returns a Phraseanet task state given its id
+      system:backup-db                      Backups Phraseanet Databases
+      system:clear-cache                    Empties cache directories and cache-server data
+      system:export                         Exports all phraseanet records to a given directory
+      system:mail-check                     Checks if email addresses are uniques (mandatory since 3.5)
+      system:upgrade-datas                  Upgrades Phraseanet datas, useful after migrations
+    task-manager
+      task-manager:scheduler:pause-tasks    Pause scheduler started tasks jobs
+      task-manager:scheduler:resume-tasks   Resume scheduler started tasks jobs
+      task-manager:scheduler:run            Run the scheduler
+      task-manager:scheduler:state          Returns scheduler state
+      task-manager:task:list                Lists tasks
+      task-manager:task:run                 Runs a task
+      task-manager:task:start               Starts a task
+      task-manager:task:state               Returns the state of a task
+      task-manager:task:stop                Stops a task
+    ws-server
+      ws-server:run                         Runs the websocket server
     xsendfile
-      xsendfile:dump-configuration     Dump the virtual host configuration depending on Phraseanet configuration
-      xsendfile:generate-mapping       Generates Phraseanet xsendfile mapping configuration depending on databoxes configuration
+      xsendfile:dump-configuration          Dump the virtual host configuration depending on Phraseanet configuration
+      xsendfile:generate-mapping            Generates Phraseanet xsendfile mapping configuration depending on databoxes configuration
 
 Every command provides help with the *help* command:
 
@@ -137,6 +142,13 @@ This command results in such screen output:
       about:license          Displays this program license
     check
       check:system           Performs a check against the environment
+    plugins
+      plugins:add            Installs a plugin to Phraseanet
+      plugins:disable        Disables a plugin
+      plugins:enable         Enables a plugin
+      plugins:list           Lists installed plugins
+      plugins:remove         Removes a plugin given its name
+      plugins:reset          Reset plugins in case a failure occured
     system
       system:install         Installs Phraseanet
       system:upgrade         Upgrades Phraseanet to the latest version
