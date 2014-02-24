@@ -47,6 +47,17 @@ Voici un exemple de fichier de configuration commenté
         available: ['fr', 'de']                    # (array)   Un tableau de code de langues actives. Toutes les langues sont activées si le tableau est vide
         default: 'fr'                              # (string)  La langue par défaut de l'application
 
+    hosts-configuration:
+        another.hostname:
+            servername: 'http://another.hostname'
+            plugins:
+                a-nice-plugin:
+                    enabled: false
+            border-manager:
+                enabled: false
+            languages:
+                default: 'en'
+
     main:
 
         maintenance: false                         # (boolean) Activation du mode maintenance

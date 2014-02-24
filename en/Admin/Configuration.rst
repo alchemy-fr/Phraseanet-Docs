@@ -42,6 +42,17 @@ Here is a commented configuration file
         available: ['fr', 'de']                    # (array)   An array of actives languages codes. All languages are activated if this array is empty.
         default: 'fr'                              # (string)  Application default language.
 
+    hosts-configuration:
+        another.hostname:
+            servername: 'http://another.hostname'
+            plugins:
+                a-nice-plugin:
+                    enabled: false
+            border-manager:
+                enabled: false
+            languages:
+                default: 'en'
+
     main:
         maintenance: false                         # (boolean) Maintenance mode activation
 
