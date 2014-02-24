@@ -110,7 +110,7 @@ description.
 .. image:: ../../images/Bridge-2.jpg
     :align: center
 
-Il est possible de voir l'avancement du transfert par un simple clic sur
+Il est possible de suivre l'avancement du transfert par un simple clic sur
 l'onglet **Fichiers envoyés**.
 
 .. image:: ../../images/Bridge-4.jpg
