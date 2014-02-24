@@ -19,13 +19,13 @@ Ajouter un plugin :
 
 .. code-block:: none
 
-    bin/console plugin:add /chemin/vers/le/plugin
+    bin/setup plugin:add /chemin/vers/le/plugin
 
 Enlever un plugin :
 
 .. code-block:: none
 
-    bin/console plugin:remove nom-du-plugin
+    bin/setup plugin:remove nom-du-plugin
 
 Structure des plugins
 ---------------------

@@ -18,13 +18,13 @@ Add a plugin:
 
 .. code-block:: none
 
-    bin/console plugin:add /path/to/plugin
+    bin/setup plugin:add /path/to/plugin
 
 Remove a plugin:
 
 .. code-block:: none
 
-    bin/console plugin:remove plugin-name
+    bin/setup plugin:remove plugin-name
 
 Plugin structure
 ----------------
