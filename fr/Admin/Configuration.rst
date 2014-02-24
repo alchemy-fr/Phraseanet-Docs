@@ -115,6 +115,8 @@ Voici un exemple de fichier de configuration commenté
 
     border-manager:                                # (array)   Configuration du service douanes
         enabled: true                              # (boolean) Activation du service de douane
+        extension-mapping:                         # (array)   Un tableau de correspondance extension vers type mime personnalisé
+            mpeg: video/mpeg
         checkers:                                  # (array)   Liste de points de contrôle
 
             -                                      # (array)   Verification de doublonnage par somme de côntrole
@@ -424,6 +426,11 @@ possible de créer son propre point de vérification.
 | Checker\Colorspace  | Vérification sur l'espace de couleur du fichier      | colorspaces : les types d'espace  |
 |                     | (* si applicable)                                    | colorimétrique authorisés         |
 +---------------------+------------------------------------------------------+-----------------------------------+
+
+Le service de douane vous permet aussi de personnaliser la détection des types
+mime via le paramètre `extension-mapping`. Sur certains systèmes, des mauvais
+types mimes peuvent être détectés. Utiliser ce tableau pour forcer un type mime
+en fonction d'une extension de fichier.
 
 Restriction sur collections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

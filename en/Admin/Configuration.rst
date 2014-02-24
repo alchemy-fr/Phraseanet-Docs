@@ -110,6 +110,8 @@ Here is a commented configuration file
 
     border-manager:                                # (array)   Border manager configuration
         enabled: true                              # (boolean) Border manager activation
+        extension-mapping:                         # (array)   An array of custom extension to mime-type declaration
+            mpeg: video/mpeg
         checkers:                                  # (array)   Border manager checkers list
 
             -                                      # (array)   Checks duplicates on checksum
@@ -389,6 +391,10 @@ own checker.
 | Checker\Colorspace  | Checks colorspace (if applicable)                    | colorspaces : authorized          |
 |                     |                                                      | colorspaces                       |
 +---------------------+------------------------------------------------------+-----------------------------------+
+
+Border manager service allow to customize mime-type detection with the
+`extension-mapping` parameter. Mime type detection can be wrong on some
+platforms. Use this array to force a mime-type given a file extension.
 
 Collections restrictions
 ~~~~~~~~~~~~~~~~~~~~~~~~
