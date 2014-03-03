@@ -64,6 +64,29 @@ paramétrables :
 * L'ordre
 * ...etc.
 
+.. note:: A propos des types de champs
+
+    **Les types de champs sont liés au moteur Phrasea**.
+
+    **Le type STRING** est le type par défaut. Il ne produit pas d'indexation
+    par valeur. Il ne permet pas de rechercher avec des opérateurs de
+    comparaisons numériques =, <, >. Il n'est pas possible d'effectuer des tris
+    sur ce type de champ.
+
+    **Le type TEXT** indexe les termes par valeur exacte, "tel quel", pour
+    satisfaire des recherches sur le contenu exacte d'un champ
+    (par exemple "auteur=Hugo").
+
+    **Le type NUMBER** permet d'interpréter le contenu du champ comme un nombre
+    pour satisfaire les recherches avec les opérateurs de comparaisons
+    numériques =, <, > ("largeur>1000"). Le tri est possible sur ce type de
+    champ.
+
+    **Le type DATE** permet d'interpréter le contenu comme une date ISO
+    -même incomplète. Par exemple 2009-, permet les recherches "date>=2000 ou
+    date<2014/01/01" ou bien le tri par date.
+
+
 Sous définition
 ***************
 
@@ -337,7 +360,7 @@ Stamp
 
 L'ajout d'un stamp ajoutera automatiquement un bandeau intégrant un logo et
 certaines metadonnées à l'export des documents originaux des enregistrements
-de type image. La configuration du stamp s'effectue via la vue XML des 
+de type image. La configuration du stamp s'effectue via la vue XML des
 préférences de collections.
 
 .. code-block:: xml
