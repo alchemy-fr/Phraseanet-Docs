@@ -3,6 +3,7 @@ Routes
 
 .. toctree::
 
+    Route/Me
     Route/Search
     Route/Databox/List
     Route/Databox/Collections
@@ -56,6 +57,8 @@ Par exemple, les propriétés d'un enregistrement ou d'une databox :
 | api       |* :doc:`racine <../Root>`               |                                                |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | search    |* :doc:`search <Route/Search>`          |                                                |                                                      |
++-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
+| me        |* :doc:`search <Route/Me>`              |                                                |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | databox   |* :doc:`list <Route/Databox/List>`      |* :doc:`collections <Route/Databox/Collections>`|                                                      |
 |           |                                        |* :doc:`status <Route/Databox/Status>`          |                                                      |
