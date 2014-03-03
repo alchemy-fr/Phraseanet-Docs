@@ -56,7 +56,7 @@ de la commande `bin/console xsendfile:generate-mapping`
 
 .. code-block:: none
 
-    bin/console xsendfile:generate-mapping nginx --enable
+    bin/console xsendfile:generate-mapping nginx --enabled
 
 Cette commande va afficher à l'ecran la partie de la configuration telle qu'elle
 va être écrite. Pour l'écrire, re-executer la commande avec l'option
@@ -64,7 +64,7 @@ va être écrite. Pour l'écrire, re-executer la commande avec l'option
 
 .. code-block:: none
 
-    bin/console xsendfile:generate-mapping nginx --enable --write
+    bin/console xsendfile:generate-mapping nginx --enabled --write
 
 Une fois la configuration Phraseanet écrite, il faut mettre à jour les
 directives nginx avec la commande `xsendfile:dump-configuration`

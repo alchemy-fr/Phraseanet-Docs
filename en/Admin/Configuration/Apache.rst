@@ -34,19 +34,23 @@ Since version 3.8, Phraseanet XSendFile configuration is much more simple.
 A command of `bin/console` generates mappings for Phraseanet configuration, a
 second one dumps Apache2 configuration.
 
+.. note::
+
+    `XSendfile`_ module is required.
+
 First step generates Phraseanet configuration mappings with the
 `bin/console xsendfile:generate-mapping` command.
 
 .. code-block:: none
 
-    bin/console xsendfile:generate-mapping apache --enable
+    bin/console xsendfile:generate-mapping apache --enabled
 
 This command prompts a piece of Phraseanet configuration as it will be
 written. To do write, re execute the command with **--write** option.
 
 .. code-block:: none
 
-    bin/console xsendfile:generate-mapping apache --enable --write
+    bin/console xsendfile:generate-mapping apache --enabled --write
 
 Once Phraseanet configuration has been written, Apache2 directives should be
 updated with the `xsendfile:dump-configuration` command.

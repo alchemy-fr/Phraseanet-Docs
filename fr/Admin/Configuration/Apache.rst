@@ -36,12 +36,16 @@ Une commande de l'utilitaire `bin/console` permet de générer les mappings pour
 la configuration Phraseanet, une seconde permet d'en générer le supplément de
 configuration Apache 2.
 
+.. note::
+
+    Il est nécessaire d'installer le module `XSendfile`_.
+
 La première étape consiste à générer le mapping Phraseanet Sendfile à l'aide
 de la commande `bin/console xsendfile:generate-mapping`
 
 .. code-block:: none
 
-    bin/console xsendfile:generate-mapping apache --enable
+    bin/console xsendfile:generate-mapping apache --enabled
 
 Cette commande va afficher à l'ecran la partie de la configuration telle qu'elle
 va être écrite. Pour l'écrire, re-executer la commande avec l'option
@@ -49,7 +53,7 @@ va être écrite. Pour l'écrire, re-executer la commande avec l'option
 
 .. code-block:: none
 
-    bin/console xsendfile:generate-mapping apache --enable --write
+    bin/console xsendfile:generate-mapping apache --enabled --write
 
 Une fois la configuration Phraseanet écrite, il faut mettre à jour les
 directives apache 2 avec la commande `xsendfile:dump-configuration`
