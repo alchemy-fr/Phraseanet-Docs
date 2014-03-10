@@ -8,16 +8,12 @@ l'application.
 Mécanisme d'inscription
 -----------------------
 
-Les inscriptions reposent la permission d'accès d'utilisateurs à des collections
-désignées sur une ou plusieurs bases d'une instance Phraseanet.
-
 Le scénario d'inscription est semblable à celui proposé par d'autres
 applications. L'utilisateur remplit et soumet un formulaire d'inscription qui
 lui ouvre un accès à des ressources de l'applications.
 
 L'inscription est soit automatique, soit modérées par un administrateur
-fonctionnel chargé d'étudier, de valider (ou de rejeter) les demandes d'
-inscription.
+fonctionnel chargé d'étudier les demandes d'inscription.
 
 Inscription modérée ou inscription automatique ?
 ------------------------------------------------
@@ -75,12 +71,6 @@ Donner le choix de s'inscrire à des collections en particulier
 
 Les administrateurs peuvent donner le choix des collections sur lesquelles
 peuvent s'inscrire les utilisateurs.
-
-.. note::
-
-    Seul un administrateur *Phraseanet* est à même de pouvoir paramétrer l'
-    option permettant le choix des collections sur lesquelles portent les
-    inscriptions.
 
 * Se connecter à l'interface Admin comme *Administrateur*
 * Dans le menu latéral, cliquer sur le noeud **Paramétrage** puis...
