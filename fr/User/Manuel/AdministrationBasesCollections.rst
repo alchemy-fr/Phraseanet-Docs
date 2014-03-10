@@ -101,21 +101,21 @@ intégrés dans Phraseanet.
 Le tableau ci-dessous liste quelques exemples types de sous définitions
 fabriquées par l'application.
 
-+------------------------------------------------+---------------------------------------+
-| Nature du média original                       | Nature de la sous définition          |
-+================================================+============+==========+===============+
-| Image de type Jpeg, psd, gif, png...           | Sous définition au format Jpeg        |
-+------------------------------------------------+---------------------------------------+
-| Vidéo Mpeg, Avi, Mov...                        | Sous définition au format Mpeg4       |
-+------------------------------------------------+---------------------------------------+
-| Document sonore de type Wav, Mp3...            | Sous définition au format Mp3         |
-+------------------------------------------------+---------------------------------------+
-| Document bureautique Pdf, Word...              | Animation Flash (Swf)                 |
-+------------------------------------------------+---------------------------------------+
++------------------------------------------------+------------------------------------------------------------+
+| Nature du média original                       | Nature de la sous définition                               |
++================================================+============+==========+===============+=========+==========+
+| Image de type Jpeg, psd, gif, png...           | Sous définition au format Jpeg                             |
++------------------------------------------------+------------------------------------------------------------+
+| Vidéo Mpeg, Avi, Mov...                        | Sous définition au format Mpeg4, Jpeg ou Gif               |
++------------------------------------------------+------------------------------------------------------------+
+| Document sonore de type Wav, Mp3...            | Sous définition au format Mp3 ou Jpeg                      |
++------------------------------------------------+------------------------------------------------------------+
+| Document bureautique Pdf, Word...              | Animation Flash (Swf) ou Jpeg                              |
++------------------------------------------------+------------------------------------------------------------+
 
 .. warning::
 
-    Les sous définitions thumbnail et preview sont indispensables.
+    Les sous définitions *thumbnail* et *preview* sont indispensables.
     Elles sont utilisées dans les interfaces Phraseanet pour afficher
     les vignettes et images de choix des médias.
 
@@ -351,7 +351,7 @@ personnalisé à appliquer aux sous résolution des documents de la collection.
 .. note::
 
     Le filigrane est appliqué aux documents images visualisés par les
-    utilisateurs disposants du droits No watermark décoché.
+    utilisateurs disposants du droits *No watermark* décoché.
 
 :doc:`Se reporter à la section consacrée au filigrane dans la FAQ.<../../FAQ/Personnalisation/Filigrane>`
 
