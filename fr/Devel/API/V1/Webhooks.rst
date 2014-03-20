@@ -1,26 +1,26 @@
 Webhooks
 ========
 
-Chaque application cliente oauth2 de Phraseanet à la possibilité de recevoir des informations de la part de Phraseanet
-par l'intérmédiaire des "webhooks", il s'agit  d'envoyer une requête HTTP avec le verbe POST vers une URL donnée
-quand un évènement se produit sur Phraseanet.
-Ces "webhooks" peuvent être utilisés pour effectuer des actions particulières, des envoies de mails, des mises à jours etc...
-afin d'étendre les fonctionnalités d'une application cliente. Par exemple notifier tous les utilisateurs lorsqu'un
-nouveaux flux est disponible.
+Chaque application cliente oauth2 a la possibilité de recevoir des informations de la part de Phraseanet
+par l'intermédiaire des *webhooks*. Il s'agit d'envoyer une requête HTTP avec le verbe POST vers une URL donnée quand
+un évènement se produit sur Phraseanet.
+Ces *webhooks* peuvent être utilisés pour effectuer des actions particulières comme l'envois d'e-mails,
+l'exécution de mises à jours, la notification de nouveaux flux...etc. afin d'étendre les fonctionnalités d'une
+application cliente.
 
-Evènements
+Evénements
 ----------
 
-Un "webhook"  peut être configuré pour être déclencher pour un ou plusieurs événements en particulier.
-L'application cliente doit prendre en charge l'écoute de l'événement que l'on souhaite déclencher.
+Un *webhook* peut être configuré pour déclencher un ou plusieurs événements en particulier.
+L'application cliente doit prendre en charge l'écoute de l'événement à déclencher.
 
 .. note::
 
-    Pour l'instant Phraseanet ne déclenche un "webhooks" que lorsqu'une nouvelle entrée d'un flux RSS est créée.
-    Il n'est donc pas encore possible de configurer le type d'évnèment à déclencher. Mais il faut se tenir
-    préparé à cette eventualité dans un futur proche.
+    Pour l'instant Phraseanet ne déclenche de *webhooks* que lorsqu'une nouvelle entrée est créée dans un flux RSS.
+    Il n'est donc pas à ce jour possible de configurer le type d'événement à déclencher. Mais il faut se tenir préparé à
+    cette éventualité dans un futur proche.
 
-**Liste des évènements**
+**Un seul événement disponible**
 
 +------------------------------+--------------------------------------------------------------------------------------+
 | Name                         | Description                                                                          |
@@ -31,10 +31,10 @@ L'application cliente doit prendre en charge l'écoute de l'événement que l'on
 Les données
 -----------
 
-Les données envoyées pour chaque évènement sont au format JSON.
-Chaque évènement possède un schema JSON similaire.
+Les données envoyées pour chaque événement sont au format JSON.
+Chaque événement possède un schéma JSON similaire.
 
-Représentation commune d'un objet JSON envoyé par Phraseanet.
+Exemple d'objet JSON envoyé par Phraseanet.
 
 .. code-block:: javascript
 
@@ -43,11 +43,11 @@ Représentation commune d'un objet JSON envoyé par Phraseanet.
         "data" : {}
     }
 
-Seul les données utiles diffèrent, elle sont définis par la propriété "data" de l'objet JSON.
+Seules les données utiles diffèrent. Elle sont définies par la propriété **data** de l'objet JSON.
 
 **Liste des objets de données utiles par évènement**
 
-* NewFeedEntry
+* **NewFeedEntry**
 
 .. code-block:: javascript
 
