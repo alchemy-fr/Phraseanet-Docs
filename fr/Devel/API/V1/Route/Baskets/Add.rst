@@ -53,7 +53,7 @@ Exemple de réponse
         },
         "response": {
                 "basket": {
-                "basket_id": 148,,
+                "basket_id": 148,
                 "owner": {
                     "@entity@": "http://api.phraseanet.com/api/objects/user",
                     "id": 4,
