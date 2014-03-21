@@ -59,8 +59,8 @@ Response sample
         "response": {
             "feed": {
                 "id": 3978,
-                "title": "lolilol",
-                "subtitle": "loilol à l'huile de tournesol",
+                "title": "Phraseanet Breaking News",
+                "subtitle": "Get your Phraseanet daily news",
                 "total_entries": 1,
                 "icon": "/skins/icons/rss32.gif",
                 "public": true,
@@ -78,8 +78,8 @@ Response sample
                     "author_name": "user@example.com",
                     "created_on": "2012-06-25T17:58:58+02:00",
                     "updated_on": "2012-06-25T17:58:58+02:00",
-                    "title": "premier post lolilol",
-                    "subtitle": "super photo de promotion du feed lolilol",
+                    "title": "Phraseanet Open source salon",
+                    "subtitle": "Phraseanet will be present in Open source salon at Porte de Versailles",
                     "items": [
                         {
                             "item_id": 18408,
@@ -178,6 +178,7 @@ Response sample
                         }
                     ],
                     "feed_url": "/feeds/3978/content/",
+                    "feed_title":  "Phraseanet Breaking News",
                     "url": "/feeds/entry/3727/"
                 }
             ]
