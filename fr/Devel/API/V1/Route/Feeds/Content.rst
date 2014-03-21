@@ -178,6 +178,7 @@ Exemple de réponse
                         }
                     ],
                     "feed_url": "/feeds/3978/content/",
+                    "feed_title":  "lolilol",
                     "url": "/feeds/entry/3727/"
                 }
             ]
