@@ -176,7 +176,7 @@ Exemple de réponse
                 }
                 ],
                 "validation_end_date": "2012-07-18T14:54:02+02:00",
-                "validation_infos": "Vous avez envoyé cette demande à 1 utilisateurs",
+                "validation_infos": "Vous avez envoyé cette demande à 1 utilisateur",
                 "validation_confirmed": false,
                 "validation_initiator": true,
                 "validation_initiator_user": {
