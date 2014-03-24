@@ -76,8 +76,8 @@ Every command provides help with the *help* command:
 
     Every command returns an exit code that can be used for automated scripts.
 
-scheduler:state exit codes
-**************************
+task-manager:scheduler:state exit codes
+***************************************
 
 This command returns an exit code given the state of the :doc:`task scheduler </Admin/TaskManager>`.
 

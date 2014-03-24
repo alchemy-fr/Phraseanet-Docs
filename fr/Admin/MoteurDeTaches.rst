@@ -24,10 +24,10 @@ Pour automatiser des arrêts et des démarrages du planificateur de tâches, uti
 
 .. code-block:: bash
 
-    bin/console scheduler:start
-    bin/console scheduler:stop
-    bin/console scheduler:state
-    bin/console task:run
+    bin/console task-manager:scheduler:start
+    bin/console task-manager:scheduler:stop
+    bin/console task-manager:scheduler:state
+    bin/console task-manager:task:run
 
 Les tâches
 ----------
