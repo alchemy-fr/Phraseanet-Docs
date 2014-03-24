@@ -25,6 +25,7 @@ Paramètres
 ======================== ============== =================================
  offset_start             entier         La première entrée à trouver
  per_page                 entier         Le nombre d'entrée à trouver
+ feeds                    array          Un tableau de feed id, l'agrégat se fera sur les id donnés
 ======================== ============== =================================
 
 Attribut de la réponse
