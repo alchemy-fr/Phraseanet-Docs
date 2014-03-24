@@ -57,6 +57,11 @@ Voici un exemple de fichier de configuration commenté
             driver: pdo_mysql                      # (string)  Driver de base de données
             charset: UTF8                          # (string)  Encodage de la connection au serveur de base de données
 
+        session:                                   # (array)   Réglage de la gestion des sessions
+            type: 'file'                           # (string)  Nom du gestionnaire de sessions
+            options: []                            # (array)   Options du gestionnaire de sessions
+            ttl: 86400                             # (string)  Duree de vie de la session
+
         database-test:                             # (array)   Configuration pour les tests (développeurs uniquement)
             driver: pdo_sqlite
             path: '/tmp/db.sqlite'
@@ -279,18 +284,44 @@ les adapteurs suivants :
 | ArrayCache     | cache | opcode-cache | Cache désactivé                                      |            |
 +----------------+----------------------+------------------------------------------------------+------------+
 
+Gestion des sessions
+********************
+
+Les sessions sont par défaut stockées sur le disque, dans le système de fichiers.
+Il est possible d'utiliser d'autres types de stockage :
+
++----------------+------------------------------------------------------------------------------------+------------+
+| Type           | Description                                                                        | Options    |
++================+====================================================================================+============+
+| file           | Stockage des sessions sur le disque                                                |            |
++----------------+------------------------------------------------------------------------------------+------------+
+| memcache       | Stockage des sessions dans un serveur Memcached, utilise l'extension PHP memcache  | host, port |
++----------------+------------------------------------------------------------------------------------+------------+
+| memcached      | Stockage des sessions dans un serveur Memcached, utilise l'extension PHP memcached | host, port |
++----------------+------------------------------------------------------------------------------------+------------+
+| redis          | Stockage des sessions dans un serveur Redis, utilise l'extension PHP redis         | host, port |
++----------------+------------------------------------------------------------------------------------+------------+
+
+.. warning::
+
+    Le paramétrage de la durée de vie (`ttl`) de la session ne fonctionne pas avec la
+    gestion par le système de fichiers. Dans ce cas, utiliser le paramétrage
+    `gc_maxlifetime` de PHP.
+
 .. _search-engine-service-configuration:
 
 Service de moteur de recherche
 ******************************
 
-Deux services de moteurs de recherche sont disponibles : Phrasea engine et
-SphinxSearch engine.
+Trois services de moteurs de recherche sont disponibles : Phrasea engine,
+ElasticSearch et SphinxSearch engine.
 
 +------------------------------------------------------------------+------------------------------+
 | Nom                                                              | Options                      |
 +==================================================================+==============================+
 | Alchemy\\Phrasea\\SearchEngine\\Phrasea\\PhraseaEngine           |                              |
++------------------------------------------------------------------+------------------------------+
+| Alchemy\\Phrasea\\SearchEngine\\Elastic\\ElasticSearchEngine     | host, port, index            |
 +------------------------------------------------------------------+------------------------------+
 | Alchemy\\Phrasea\\SearchEngine\\SphinxSearch\\SphinxSearchEngine | host, port, rt_host, rt_port |
 +------------------------------------------------------------------+------------------------------+

@@ -5,8 +5,9 @@ Search Engine
 
     Phraseanet is bundled with Phrasea engine as default search engine.
     Phrasea allows Phraseanet Thesaurus binding to search engine results.
-    If Phraseanet Thésaurus is not activated, SphinxSearch can be enabled.
-    This section explains advantages of both and how they should be set.
+    If Phraseanet Thesaurus is not activated, SphinxSearch or ElasticSearch
+    can be enabled. This section explains advantages of both and how they
+    should be set.
 
 .. warning::
 
@@ -317,6 +318,41 @@ Activate the extension into php.ini:
     In case of error "... icu*.dll not found ...", download the ICU library
     files "icu*.dll" requested by the extension "php_intl", and copy the various
     files into the main directory of PHP.
+
+ElasticSearch Engine
+--------------------
+
+Phraseanet requires ElasticSearch Engine 0.90.7 or higher.
+
+Advantages
+**********
+
+Main ElasticSearch advantages are:
+
+* speed
+* scalability
+
+Configuration inside Phraseanet
+*******************************
+
+After having installed ElasticSearch, Phraseanet must be configured to use it.
+
+Then address, port and index name should be configured in Phraseanet:
+
+.. code-block:: none
+
+    search-engine:
+        type: Alchemy\Phrasea\SearchEngine\Elastic\ElasticSearchEngine
+        options:
+            host: 127.0.0.1
+            port: 9200
+            index: phraseanet
+
+Once the configuration is done, execute the next command to reindex Phraseanet.
+
+.. code-block:: none
+
+    bin/console searchengine:index
 
 Sphinx-Search Engine
 --------------------
