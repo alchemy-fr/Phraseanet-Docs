@@ -25,6 +25,7 @@ Parameters
 ======================== ============== =================================
  offset_start             integer        The first entry to retrieve
  per_page                 integer        The number of entry to retrieve
+ feeds                    array          An array of feed ids, aggregate will be on given ids
 ======================== ============== =================================
 
 Response Fields
