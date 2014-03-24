@@ -4,7 +4,7 @@ Me
 About
 -----
 
-Return information about the current authenticated user.
+Returns information about the authenticated user.
 
 .. code-block:: bash
 

@@ -4,7 +4,7 @@ Me
 A propos
 --------
 
-Retourne les information de l'utilisateur authentifié.
+Retourne les informations de l'utilisateur authentifié.
 
 .. code-block:: bash
 
