@@ -59,8 +59,8 @@ Exemple de réponse
         "response": {
             "feed": {
                 "id": 3978,
-                "title": "lolilol",
-                "subtitle": "loilol à l'huile de tournesol",
+                "title": "Les dernières nouvelles Phraseanet",
+                "subtitle": "Retrouvez des informations journalières concernant Phraseanet",
                 "total_entries": 1,
                 "icon": "/skins/icons/rss32.gif",
                 "public": true,
@@ -78,8 +78,8 @@ Exemple de réponse
                     "author_name": "user@example.com",
                     "created_on": "2012-06-25T17:58:58+02:00",
                     "updated_on": "2012-06-25T17:58:58+02:00",
-                    "title": "premier post lolilol",
-                    "subtitle": "super photo de promotion du feed lolilol",
+                    "title": "Phraseanet au salon open source de Porte de Versailles",
+                    "subtitle": "Phraseanet sera présenté au salon de l'open source.",
                     "items": [
                         {
                             "item_id": 18408,
@@ -178,7 +178,7 @@ Exemple de réponse
                         }
                     ],
                     "feed_url": "/feeds/3978/content/",
-                    "feed_title":  "lolilol",
+                    "feed_title":  "Les dernières nouvelles Phraseanet",
                     "url": "/feeds/entry/3727/"
                 }
             ]
