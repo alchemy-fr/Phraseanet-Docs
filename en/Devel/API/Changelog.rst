@@ -1,6 +1,26 @@
 API Changelog
 =============
 
+1.4.0
+-----
+
+Version 1.4.0 of Phraseanet API is brought with Phraseanet 3.8.4.
+This upgrade is fully backward compatible, adds a new route to get informations about the
+current authenticated user.
+
+New routes
+**********
+
+- :doc:`me <V1/Route/Me>` User route.
+
+Updated routes
+**************
+
+- :doc:`feeds/aggregated <V1/Route/Feeds/Aggregated>` adds a *feeds* attribute to restrict aggregated feeds
+    on given feed ids.
+- :doc:`feeds/entry <V1/Route/Feeds/Entry>` adds a *feed_title* attribute that refers to the title of the feed
+    where the entry is located.
+
 1.3.1
 -----
 
