@@ -11,7 +11,7 @@ Configuration
 
     `bin/console compile:configuration`.
 
-La configuration de Phraseanet est écrite dans un fichier
+La configuration de Phraseanet est écrite dans le fichier
 `config/configuration.yml` qui est automatiquement généré à l'installation.
 
 Ce fichier est au format `YAML`_, qui a pour intérêt d'être très lisible.
@@ -355,7 +355,7 @@ La section `registration-fields` permet de personnaliser les champs disponibles
 Configuration Sendfile / XSendFile
 **********************************
 
-La configuration xsendfile doit être manipulé à l'aide des outils en ligne de
+La configuration xsendfile doit être manipulée à l'aide des outils en ligne de
 commandes. Les documentations pour :ref:`Nginx<nginx-sendfile>` et
 :ref:`Apache<apache-xsendfile>` sont disponibles.
 
@@ -390,13 +390,13 @@ possible de créer son propre point de vérification.
 |                     | En se basant sur son nom                             | sensibilité à la casse            |
 +---------------------+------------------------------------------------------+-----------------------------------+
 | Checker\MediaType   | Vérification sur le type du fichier (Audio, Video...)| mediatypes : les types de         |
-|                     |                                                      | médias authorisés                 |
+|                     |                                                      | médias autorisés                  |
 +---------------------+------------------------------------------------------+-----------------------------------+
-| Checker\Colorspace  | Vérification sur l'espace de couleur du fichier      | colorspaces : les types d'espace  |
-|                     | (* si applicable)                                    | colorimétrique authorisés         |
+| Checker\Colorspace  | Vérification sur l'espace de couleur du fichier      | colorspaces : les types d'espaces |
+|                     | (* si applicable)                                    | colorimétriques autorisés         |
 +---------------------+------------------------------------------------------+-----------------------------------+
 
-Le service de douane vous permet aussi de personnaliser la détection des types
+Le service de douane permet également de personnaliser la détection des types
 mime via le paramètre `extension-mapping`. Sur certains systèmes, des mauvais
 types mimes peuvent être détectés. Utiliser ce tableau pour forcer un type mime
 en fonction d'une extension de fichier.
