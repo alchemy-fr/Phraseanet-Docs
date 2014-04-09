@@ -64,6 +64,29 @@ paramétrables :
 * L'ordre
 * ...etc.
 
+.. note:: A propos des types de champs
+
+    **Les types de champs sont liés au moteur Phrasea**.
+
+    **Le type STRING** est le type par défaut. Il ne produit pas d'indexation
+    par valeur. Il ne permet pas de rechercher avec des opérateurs de
+    comparaisons numériques =, <, >. Il n'est pas possible d'effectuer des tris
+    sur ce type de champ.
+
+    **Le type TEXT** indexe les termes par valeur exacte, "tel quel", pour
+    satisfaire des recherches sur le contenu exacte d'un champ
+    (par exemple "auteur=Hugo").
+
+    **Le type NUMBER** permet d'interpréter le contenu du champ comme un nombre
+    pour satisfaire les recherches avec les opérateurs de comparaisons
+    numériques =, <, > ("largeur>1000"). Le tri est possible sur ce type de
+    champ.
+
+    **Le type DATE** permet d'interpréter le contenu comme une date ISO
+    -même incomplète. Par exemple 2009-, permet les recherches "date>=2000 ou
+    date<2014/01/01" ou bien le tri par date.
+
+
 Sous définition
 ***************
 
@@ -78,21 +101,21 @@ intégrés dans Phraseanet.
 Le tableau ci-dessous liste quelques exemples types de sous définitions
 fabriquées par l'application.
 
-+------------------------------------------------+---------------------------------------+
-| Nature du média original                       | Nature de la sous définition          |
-+================================================+============+==========+===============+
-| Image de type Jpeg, psd, gif, png...           | Sous définition au format Jpeg        |
-+------------------------------------------------+---------------------------------------+
-| Vidéo Mpeg, Avi, Mov...                        | Sous définition au format Mpeg4       |
-+------------------------------------------------+---------------------------------------+
-| Document sonore de type Wav, Mp3...            | Sous définition au format Mp3         |
-+------------------------------------------------+---------------------------------------+
-| Document bureautique Pdf, Word...              | Animation Flash (Swf)                 |
-+------------------------------------------------+---------------------------------------+
++------------------------------------------------+------------------------------------------------------------+
+| Nature du média original                       | Nature de la sous définition                               |
++================================================+============+==========+===============+=========+==========+
+| Image de type Jpeg, psd, gif, png...           | Sous définition au format Jpeg                             |
++------------------------------------------------+------------------------------------------------------------+
+| Vidéo Mpeg, Avi, Mov...                        | Sous définition au format Mpeg4, Jpeg ou Gif               |
++------------------------------------------------+------------------------------------------------------------+
+| Document sonore de type Wav, Mp3...            | Sous définition au format Mp3 ou Jpeg                      |
++------------------------------------------------+------------------------------------------------------------+
+| Document bureautique Pdf, Word...              | Animation Flash (Swf) ou Jpeg                              |
++------------------------------------------------+------------------------------------------------------------+
 
 .. warning::
 
-    Les sous définitions thumbnail et preview sont indispensables.
+    Les sous définitions *thumbnail* et *preview* sont indispensables.
     Elles sont utilisées dans les interfaces Phraseanet pour afficher
     les vignettes et images de choix des médias.
 
@@ -328,7 +351,7 @@ personnalisé à appliquer aux sous résolution des documents de la collection.
 .. note::
 
     Le filigrane est appliqué aux documents images visualisés par les
-    utilisateurs disposants du droits No watermark décoché.
+    utilisateurs disposants du droits *No watermark* décoché.
 
 :doc:`Se reporter à la section consacrée au filigrane dans la FAQ.<../../FAQ/Personnalisation/Filigrane>`
 
@@ -337,7 +360,7 @@ Stamp
 
 L'ajout d'un stamp ajoutera automatiquement un bandeau intégrant un logo et
 certaines metadonnées à l'export des documents originaux des enregistrements
-de type image. La configuration du stamp s'effectue via la vue XML des 
+de type image. La configuration du stamp s'effectue via la vue XML des
 préférences de collections.
 
 .. code-block:: xml
