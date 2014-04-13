@@ -221,6 +221,19 @@ Voici un exemple de fichier de configuration commenté
 
     plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`
 
+    api_cors:
+      enabled: false                               # (boolean) Activation du CORS sur l'API
+      allow_credentials: false                     # (boolean) Inclus les cookies dans les requêtes CORS
+
+      allow_origin: ['*']                          # (array)   La liste des domaines authorisés à envoyer des requêtes sur l'API.
+                                                   #           '*' pour autoriser les demandes de toutes origines
+      allow_headers: []                            # (array)   La liste des headers supportés par le server.
+      allow_methods: ['GET', 'POST', 'PUT']        # (array)   La liste des methodes HTTP supportées.
+      expose_headers: ['X-Custom-Header']          # (array)   La liste des headers autres que (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
+                                                   #           à exposer au client.
+      max_age: 0                                   # (integer) Authorise la réponse "preflight" à être cachée pour X secondes.
+      hosts: ['api-cors.domain.com']               # (array)   Liste des noms de domaine ou le CORS est activé.
+
 Langues
 *******
 

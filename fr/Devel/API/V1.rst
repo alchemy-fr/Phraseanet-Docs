@@ -7,6 +7,7 @@ Documentation API v1
     V1/Introduction
     V1/Authentification
     V1/Routes
+    V1/CORS
     V1/Exemples
 
 L’API Phraseanet permet de développer des applications tierces exploitant les
