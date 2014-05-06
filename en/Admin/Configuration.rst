@@ -211,6 +211,10 @@ Here is a commented configuration file
 
     plugins: []                                    # (array)   :doc:`Plugins <Plugins>` configuration
 
+    session:
+        idle: 3600                                 # (integer) Inactivity before disconnection (in seconds)
+        lifetime: 604800                           # (integer) Maximum session time (in seconds)
+
 Languages
 *********
 
@@ -517,5 +521,21 @@ It is possible to customize default users settings. Available parameters are:
 +-------------------------+------------------------------------------------+--------------+----------------------------------------------------------------------------------+
 | basket_title_display    | Display basket records title                   | 0            | *1* (yes) or *0* (no)                                                            |
 +-------------------------+------------------------------------------------+--------------+----------------------------------------------------------------------------------+
+
+Session durations
+*****************
+
+idle
+~~~~
+Set the inactivity time (in seconds) before the user is automatically disconnected from application.
+
+The setting "idle" has priority over "lifetime". If "idle" is set, the option "remember me" is not displayed on the
+homepage.
+
+lifetime
+~~~~~~~~
+Checking "Remember me" on homepage allows to access the application later without authentifying again.
+Access is allowed for this duration (in seconds).
+
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
