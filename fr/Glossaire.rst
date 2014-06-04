@@ -9,6 +9,10 @@ Glossaire
 .. glossary::
     :sorted:
 
+    Webhooks
+        Technique de développement internet mettant en oeuvre des événements
+        ciblants des applications tierces dans le but d'interagir avec elles.
+
     Stemme
         Stemme est un néologisme désignant une configuration permettant
         d'optimiser, de maximiser, les résultats de recherche.
@@ -18,12 +22,12 @@ Glossaire
         ... Ces procédés mettent en oeuvre des algorithmes de traitement
         automatique des langues.
 
-    OAuth
+    OAuth2
         Protocole d'authentification ouvert permettant une authentification
         sécurisée sur des applications internet, mobiles ou de bureau.
-        OAuth permet de s'authentifier en exploitant des informations provenant
+        OAuth2 permet de s'authentifier en exploitant des informations provenant
         d'une base de compte distante mise à disposition par des fournisseurs
-        d'identité OAuth (on parle de OAuth provider).
+        d'identité OAuth2 (on parle de OAuth2 provider).
 
         .. seealso::
 
