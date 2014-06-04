@@ -28,10 +28,6 @@ effectuées dans les *repositories* correspondants :
 
   Consulter préalablement les :doc:`règles de codage <DocumentationGuidelines>`
 
-* **Traduction**
-
-  https://translations.launchpad.net/phraseanettranslation/trunk/+pots/phraseanettrunktemplate
-
 * **Documentation**
 
   https://github.com/alchemy-fr/Phraseanet-Docs
