@@ -27,10 +27,6 @@ You can contribute by pushing `pull-requests`_ into the following repositories:
 
   Please be sure to follow the :doc:`code guidelines <CodeGuidelines>`
 
-* **Translations**
-
-  https://translations.launchpad.net/phraseanettranslation/trunk/+pots/phraseanettrunktemplate
-
 * **Documentation**
 
   https://github.com/alchemy-fr/Phraseanet-Docs
