@@ -35,6 +35,8 @@ Vous aurez sur votre écran une liste de commande de la sorte :
       collection:create                Creates a collection in Phraseanet
     compile
       compile:configuration            Compiles YAML configuration to plain PHP
+    crossdomain
+      crossdomain:generate             Generate crossdomain.xml file according to configuration
     fields
       fields:delete                    Deletes a documentation field from a Databox
       fields:list                      Lists all databoxes documentation fields

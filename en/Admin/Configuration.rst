@@ -216,6 +216,33 @@ Here is a commented configuration file
 
     plugins: []                                    # (array)   :doc:`Plugins <Plugins>` configuration
 
+    crossdomain:
+        site-control: 'master-only'                # (string)  Define the meta-policy
+        allow-access-from:                         # (array) Define granted domains
+            -
+                domain: '*.example.com'
+                secure: 'false'
+            -
+                domain: 'www.example.com'
+                secure: 'true'
+                to-ports: '507,516-523'
+        allow-access-from-identity:                # (array) Define granted permission based on cryptographic credentials
+            -
+                fingerprint-algorithm: 'sha-1'
+                fingerprint: '01:23:45:67:89:ab
+            -
+                fingerprint-algorithm: 'sha256'
+                fingerprint: 'cd:ef:01:23:45:67'
+        allow-http-request-headers-from:           # (array) Define allowed headers
+            -
+                domain: '*.bar.com'
+                secure: 'true'
+                headers: 'SOAPAction, X-Foo*'
+            -
+                domain: 'foo.example.com'
+                secure: 'false'
+                headers: 'Authorization,X-Foo*'
+
 Languages
 *********
 
@@ -549,3 +576,23 @@ It is possible to customize default users settings. Available parameters are:
 +-------------------------+------------------------------------------------+--------------+----------------------------------------------------------------------------------+
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
+
+Cross Domain Flash Policy
+*************************
+
+`crossdomain` section allows to customize flash request policy.
+
+.. code-block:: yaml
+
+        crossdomain:
+            allow-access-from:
+                -
+                    domain: '*.example.com'
+
+Then you can run `bin/console crossdomain:generate` to generate the crossdomain.xml file.
+
+.. code-block:: none
+
+    bin/console crossdomain:generate
+
+
