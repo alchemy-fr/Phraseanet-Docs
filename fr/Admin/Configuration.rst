@@ -216,6 +216,33 @@ Voici un exemple de fichier de configuration commenté
 
     plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`
 
+    crossdomain:
+        site-control: 'master-only'                # (string)  Define the meta-policy
+        allow-access-from:                         # (array) Define granted domains
+            -
+                domain: '*.example.com'
+                secure: 'false'
+            -
+                domain: 'www.example.com'
+                secure: 'true'
+                to-ports: '507,516-523'
+        allow-access-from-identity:                # (array) Define granted permission based on cryptographic credentials
+            -
+                fingerprint-algorithm: 'sha-1'
+                fingerprint: '01:23:45:67:89:ab
+            -
+                fingerprint-algorithm: 'sha256'
+                fingerprint: 'cd:ef:01:23:45:67'
+        allow-http-request-headers-from:           # (array) Define allowed headers
+            -
+                domain: '*.bar.com'
+                secure: 'true'
+                headers: 'SOAPAction, X-Foo*'
+            -
+                domain: 'foo.example.com'
+                secure: 'false'
+                headers: 'Authorization,X-Foo*'
+
 Langues
 *******
 
@@ -557,3 +584,21 @@ Les paramètres suivants sont ajustables :
 +-------------------------+-----------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
+
+Cross Domain Flash Policy
+*************************
+
+La section `crossdomain` permet de régler les restrictions d'accés pour les requêtes flash.
+
+.. code-block:: yaml
+
+        crossdomain:
+            allow-access-from:
+                -
+                    domain: '*.example.com'
+
+La commande `bin/console crossdomain:generate` permet de générer le fichier crossdomain.xml.
+
+.. code-block:: none
+
+    bin/console crossdomain:generate
