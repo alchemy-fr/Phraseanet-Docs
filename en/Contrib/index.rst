@@ -10,7 +10,6 @@ Contributor
     :hidden:
 
     ReportAnIssue
-    CodeGuidelines
     DocumentationGuidelines
 
 To report an issue, ask for help or give ideas for new options, follow this link
@@ -24,8 +23,6 @@ You can contribute by pushing `pull-requests`_ into the following repositories:
 * **Phraseanet**
 
   https://github.com/alchemy-fr/Phraseanet
-
-  Please be sure to follow the :doc:`code guidelines <CodeGuidelines>`
 
 * **Documentation**
 

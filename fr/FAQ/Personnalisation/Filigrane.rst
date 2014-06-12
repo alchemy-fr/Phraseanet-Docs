@@ -33,11 +33,12 @@ Appliqué à une image, le filigrane donne le résultat suivant.
 A savoir
 --------
 
-Après la mise à jour d'un filigrane vers un filigrane personalisé, et si des
-médias sont déjà présents dans *Phraseanet*, il faut supprimer les fichiers de
-caches préalablement créés par l'application.
-Utiliser la commande suivante :
+Après la mise à jour d'un filigrane personnalisé, et si des médias sont déjà
+présents dans *Phraseanet*, il faut supprimer les fichiers de caches
+préalablement créés par l'application.
+Pour ce faire, utiliser la commande suivante :
 
-.. code-block::bash
+.. code-block:: bash
 
-    find /path/to/subdefs -name 'watermark_*' -exec rm {} \;
+    find $repertoire_de_stockage -type f -iname watermark_* -exec rm -rf {} \;
+
