@@ -32,7 +32,7 @@ Les données
 -----------
 
 Les données envoyées pour chaque événement sont au format JSON.
-Chaque événement possède un schéma JSON similaire.
+Chaque événement possède un schéma JSON avec pour une clé "name" pour représenter le type d'évènement.
 
 Exemple d'objet JSON envoyé par Phraseanet.
 
@@ -40,10 +40,10 @@ Exemple d'objet JSON envoyé par Phraseanet.
 
     {
         "name" : ":event_name",
-        "data" : {}
+        ...
     }
 
-Seules les données utiles diffèrent. Elle sont définies par la propriété **data** de l'objet JSON.
+Seules les données utiles diffèrent.
 
 **Liste des objets de données utiles par évènement**
 
@@ -52,6 +52,8 @@ Seules les données utiles diffèrent. Elle sont définies par la propriété **
 .. code-block:: javascript
 
     {
+        "name": "new_feed_entry",
+        "users_were_notified": false,
         "feed": {
             "title": "Cannes Festival",
             "description": "Your everyday news about cannes festival",
