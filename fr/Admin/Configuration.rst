@@ -216,6 +216,10 @@ Voici un exemple de fichier de configuration commenté
 
     plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`
 
+    session:
+        idle: 3600                                 # (integer) Durée d'inactivité (en secondes) avant déconnexion
+        lifetime: 604800                           # (integer) Durée maximum de session (en secondes)
+
 Langues
 *******
 
@@ -555,5 +559,21 @@ Les paramètres suivants sont ajustables :
 +-------------------------+-----------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
 | basket_title_display    | Afficher le titre des enregistrements dans un panier      | 0                 | *1* (oui) ou *0* (non)                                                             |
 +-------------------------+-----------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+
+Durées de session
+*****************
+
+idle
+~~~~
+Fixe (en secondes) la durée d'inactivité de l'utilisateur avant déconnexion automatique.
+
+Le réglage "idle" est prioritaire sur le réglage "lifetime" et l'option "Se souvenir de moi" n'est alors pas présente
+sur la page d'accueil.
+
+lifetime
+~~~~~~~~
+En cochant "Se souvenir de moi" à l'authentification, durant cette période (en secondes) l'accès à l'application est
+immédiat sans avoir à se ré-authentifier.
+
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
