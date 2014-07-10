@@ -1,24 +1,28 @@
 Webhooks
 ========
 
-Chaque application cliente oauth2 a la possibilité de recevoir des informations de la part de Phraseanet
-par l'intermédiaire des *webhooks*. Il s'agit d'envoyer une requête HTTP avec le verbe POST vers une URL donnée quand
-un évènement se produit sur Phraseanet.
-Ces *webhooks* peuvent être utilisés pour effectuer des actions particulières comme l'envois d'e-mails,
-l'exécution de mises à jours, la notification de nouveaux flux...etc. afin d'étendre les fonctionnalités d'une
-application cliente.
+Chaque application cliente OAuth2 a la possibilité de recevoir des informations
+de la part de Phraseanet par l'intermédiaire des *Webhooks*. Il s'agit
+d'envoyer une requête HTTP avec le verbe POST vers une URL donnée quand
+un évènement se produit.
+Ces *Webhooks* peuvent être utilisés pour effectuer des actions particulières
+comme l'envois d'e-mails, l'exécution de mises à jours, la notification de
+nouveaux flux. Cela permet fin d'étendre les fonctionnalités de l'application
+cliente.
 
 Evénements
 ----------
 
-Un *webhook* peut être configuré pour déclencher un ou plusieurs événements en particulier.
-L'application cliente doit prendre en charge l'écoute de l'événement à déclencher.
+Un *Webhook* peut être configuré pour déclencher un ou plusieurs événements.
+L'application cliente doit prendre en charge l'écoute d'événements à déclencher.
 
 .. note::
 
-    Pour l'instant Phraseanet ne déclenche de *webhooks* que lorsqu'une nouvelle entrée est créée dans un flux RSS.
-    Il n'est donc pas à ce jour possible de configurer le type d'événement à déclencher. Mais il faut se tenir préparé à
-    cette éventualité dans un futur proche.
+    Pour l'instant Phraseanet ne déclenche de *Webhooks* que lorsqu'une nouvelle
+    entrée est créée dans un flux RSS.
+    Il n'est pas possible dans la version courante de configurer le type
+    d'événement à déclencher. Cependant cette éventualité est envisagé dans les
+    versions à venir.
 
 **Un seul événement disponible**
 
@@ -32,7 +36,8 @@ Les données
 -----------
 
 Les données envoyées pour chaque événement sont au format JSON.
-Chaque événement possède un schéma JSON avec pour une clé "name" pour représenter le type d'évènement.
+Chaque événement possède un schéma JSON avec pour une clé "name" pour
+représenter le type d'évènement.
 
 Exemple d'objet JSON envoyé par Phraseanet.
 

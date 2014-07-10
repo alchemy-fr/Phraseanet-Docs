@@ -1,22 +1,25 @@
 Webhooks
 ========
 
-Each client application OAuth2 has the opportunity to receive information from Phraseanet through * webhooks *.
-It is to send an HTTP request with the POST verb to a given URL when an event occurs on Phraseanet.
-These *webhooks * can be used to perform specific actions such as sending e-mails, running updates, notification
-of new flows ... etc.. to extend the functionality of a client application.
+Each OAuth2 client application can receive information from Phraseanet through
+*Webhooks*. Its purpose is to send HTTP requests with the POST verb to a given
+URL when an event occurs in Phraseanet.
+These *Webhooks* can be used to perform specific actions in client application
+such as sending emails, running updates, notifiying of new flows...etc.
+Webhooks extend functionalities of the client application.
 
 Events
 ------
 
-A *webhook* can be configured to trigger one or more events in particular..
-The client application must support the listening to the event.
+A *webhook* can be configured to trigger one or more events.
+The client application must support the listening to these events.
 
 .. note::
 
-    Yet Phraseanet trigger *webhooks* only when a new entry is created in an RSS feed.
-    So it is not possible to configure the type of event to trigger.
-    But we must stand prepared for this possibility in the near future.
+    Phraseanet trigger *webhooks* only when a new entry is created in a
+    RSS feed.
+    For instant, It is not possible to configure the type of event to trigger.
+    But we stand prepared for this possibility in the near future.
 
 **One event available**
 
