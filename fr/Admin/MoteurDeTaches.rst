@@ -103,10 +103,16 @@ Ecriture des Métadonnées
 Cette tâche écrit les métadonnées dans un document en fonction des réglages de
 la structure documentaire.
 
+
+
+
+
+
+
 Archiver dans la collection
 ***************************
 
-Cette tache permet de scruter un répertoire (Hot Folder) et d'archiver son
+Cette tâche permet de scruter un répertoire (Hot Folder) et d'archiver son
 contenu dans une :term:`Collection`.
 
 Paramètrage
@@ -122,16 +128,80 @@ Paramètrage
 * Déplacer les documents non-archivés dans "_error" : garder
   ou pas un exemplaire du fichier en erreur
 
+Instructions propres à un (sous) répertoire du hotfolder
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Un fichier .phrasea.xml dans un répertoire permet d'adapter l'archivage des fichiers à partir de ce répertoire.
+
+- Rediriger l'archivage vers une autre collection
+
+Cette option permet d'avoir une tâche d'archivage unique tout en ayant des sous-répertoires du hot-folder comme
+autant de "boîtes de dépôt" vers autant de collections.
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!--
+        ici 68 est l'ID de la collection de destination.
+    -->
+    <record collection="68" />
+
+
+- Spécifier la langue des fichiers archivés
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!--
+        les meta-donnés des fichiers sont en français.
+    -->
+    <record lng="fr" />
+
+
+- Attendre l'APPARITION d'un fichier avant d'archiver
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!--
+        ici l'archivage ne commencera que lorsqu'un fichier "_ok.txt" est déposé
+        dans le répertoire concerné.
+        Ce fichier sera SUPPRIME par la tâche quand l'archivage est terminé.
+    -->
+    <record>
+      <magicfile method="unlock">_ok.txt</magicfile>
+    </record>
+
+
+- Attendre la DISPARITION d'un fichier avant d'archiver
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!--
+        ici l'archivage ne commencera que lorsque le fichier "_wait.txt" est supprimé
+        du répertoire concerné.
+        Un fichier sera RE-CREE par la tâche quand l'archivage est terminé.
+    -->
+    <record>
+      <magicfile method="lock">_wait.txt</magicfile>
+    </record>
+
+
 .. warning::
 
-    Pour des raisons de sécurité, il faut créér un fichier .phrasea.xml à la
+    Pour des raisons de sécurité, il FAUT créér un fichier .phrasea.xml (même vide) à la
     racine du HotFolder.
 
-Il est possible d'archiver des fichiers associés à une description xml. Pour
-cela, il faut utiliser la vue XML.
+Paramétrage étendu
+^^^^^^^^^^^^^^^^^^
 
-Exemple de configuration XML pour l'archivage de fichier `.jpg` et `.tif`
-associés à des fichiers de même nom `.xml` :
+Il est possible d'effectuer un paramétrage spécifique via la vue XML de la tâche d'archivage.
+
+- Description de fichiers archivés
+
+Les fichiers archivés peuvent être décrits par une fiche d'indexation (caption) en xml. La relation entre un fichier et sa
+fiche descriptive s'effectue dans la section <files>, par une expression régulière.
 
 .. code-block:: xml
 
@@ -139,7 +209,11 @@ associés à des fichiers de même nom `.xml` :
     <tasksettings>
 
       ...
-
+      <!--
+        configuration pour l'archivage de fichiers `.jpg` et `.tif`
+        décrits par des fichiers respectifs `.jpg.xml` et `.tif.xml`
+        Attention, la 'casse' est respectée par la tâche.
+      -->
       <files>
         <file mask="^(.*)\.jpg$" caption="$1.jpg.xml"/>
         <file mask="^(.*)\.JPG$" caption="$1.JPG.xml"/>
@@ -148,6 +222,51 @@ associés à des fichiers de même nom `.xml` :
         <file mask="^(.*\.xml)$" caption="$1"/>
       </files>
     </tasksettings>
+
+
+- Création de reportages
+
+Il est possible de créer un "reportage" dans Phraseanet, contenant les éléments à archiver. Comme les fichiers, ce
+reportage peut être accompagné d'une fiche descriptive au format xml.
+
+.. code-block:: xml
+
+    ...
+      <files>
+        <!--
+          Les répertoires ".grp" sont des reportages décrits par le fichier ".grp.xml"
+        -->
+        <grouping mask="^(.*)\.grp$" caption="$1.grp.xml" />
+      </files>
+    ...
+
+Ici tout répertoire nommé "xxxx.grp" sera considéré comme un reportage, tous les éléments contenus dans ce répertoire
+(et dans les sous-répertoires) seront archivés dans un reportage Phraseanet. Le reportage (répertoire) est décrit par
+un fichier "xxxx.grp.xml"
+
+- Ajout à un un reportage existant
+
+Si des fichiers sont ajoutés par la suite dans répertoire de reportage (répertoire ".grp" dans
+l'exemple précédent), ces fichiers seront ajoutés au reportage correspondant dans Phraseanet. Le lien entre le répertoire
+et le reportage existe via un fichier caché ".grouping.xml" ajouté par la tâche dans le répertoire lors de la
+création initiale du reportage.
+
+- Exemple de fichier ".xml" de description
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <record>
+      <titre>Une belle photo</titre>
+      <auteur>Paul Dupond</auteur>
+      <!-- les champs "date" sont au format yyyy-mm-jj hh:mm:ss -->
+      <date_pdv>2012-12-25</date_pdv>
+    </record>
+
+
+
+
+
 
 FTP Push
 ********
@@ -186,10 +305,8 @@ Paramètrage
 Déplacement des documents périmés
 *********************************
 
-Cette tache permet d'effectuer automatiquement une action ("changement de
-collection " ou "application d'un status") sur des documents
-présents dans une base/collection, à la condition que des critères
-de type date ou status bits, soient validés par ces documents.
+.. warning:: Cette tâche est obsolète et est remplacée par la tâche "RecordMover"
+
 
 API Bridge Uploader
 *******************
@@ -199,17 +316,8 @@ le module :term:`Bridge`, vers Youtube, DailyMotion ou Flickr.
 Workflow 01
 ***********
 
-Cette tache permet de déplacer un document d'une collection
-vers une autre. On peut aussi ajouter comme critère pour déplacer
-un document, un status-bit.
+.. warning:: Cette tâche est obsolète et est remplacée par la tâche "RecordMover"
 
-Paramètrage
-^^^^^^^^^^^
-
-* Database : choix de la Base de données (databox)
-* intervalle d’exécution :  intervalle d’exécution de la tache
-* Collection : collection d'origine ====> collection de destination
-* Status : status-bit à l'origine   ====> status-bit final
 
 RecordMover
 ***********
