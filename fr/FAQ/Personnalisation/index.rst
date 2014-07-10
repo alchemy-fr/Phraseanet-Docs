@@ -12,7 +12,6 @@ Personnaliser Phraseanet
 
    Filigrane
    Stamp-logo
-   Activer-la-reception-par-ftp
    Parametrer-le-compte-invite
    Parametrer-les-inscriptions-sur-des-collections
    Parametrer-le-titre
