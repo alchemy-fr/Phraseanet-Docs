@@ -209,24 +209,24 @@ Here is a commented configuration file
         images_per_page: 60
         images_size: 200
 
-    plugins: []                                    # (array)   :doc:`Plugins <Plugins>` configuration
+    plugins: []                                    # (array)   :doc:`Plugins <Plugins>` configuration.
 
     session:
         idle: 3600                                 # (integer) Inactivity before disconnection (in seconds)
         lifetime: 604800                           # (integer) Maximum session time (in seconds)
 
     api_cors:
-      enabled: false                               # (boolean) API CORS activation
-      allow_credentials: false                     # (boolean) Include cookies in CORS request
+      enabled: false                               # (boolean) API CORS activation.
+      allow_credentials: false                     # (boolean) Include cookies in CORS request.
 
-      allow_origin: ['*']                          # (array)   List of authorized origin domain to request the API
+      allow_origin: ['*']                          # (array)   List of authorized origin domain to request the API.
                                                    #           '*' to allow requets from any origin.
       allow_headers: []                            # (array)   List of supported headers by the server.
-      allow_methods: ['GET', 'POST', 'PUT']        # (array)   List of supported method
+      allow_methods: ['GET', 'POST', 'PUT']        # (array)   List of supported method.
       expose_headers: ['X-Custom-Header']          # (array)   List of headers different than (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
-                                                   #           to expose to the client
+                                                   #           to expose to the client.
       max_age: 0                                   # (integer) Allows the preflight response to be cached for a specified number of seconds.
-      hosts: ['api-cors.domain.com']               # (array)   List of domain where the CORS is activated
+      hosts: ['api-cors.domain.com']               # (array)   List of domain where the CORS is activated.
 
 Languages
 *********
