@@ -8,6 +8,7 @@ Documentation API v1
    V1/Authentication
    V1/Routes
    V1/Examples
+   V1/Webhooks
    V1/Recommendation
    V1/Disclaimer
 
