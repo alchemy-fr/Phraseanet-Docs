@@ -11,14 +11,14 @@ concernant l'utilisateur identifié.
 Nouvelle route
 **************
 
-- :doc:me <V1/Route/Me> Route utilisateur
+- :doc:`me <V1/Route/Me>` Route utilisateur
 
 Updated routes
 **************
 
-- :doc:feeds/aggregated <V1/Route/Feeds/Aggregated> ajout d'un attribut feeds pour restreindre
+- :doc:`feeds/aggregated <V1/Route/Feeds/Aggregated>` ajout d'un attribut feeds pour restreindre
     l'agrégation des flux aux flux sélectionnés.
-- :doc:feeds/entry <V1/Route/Feeds/Entry> ajout d'un attribut feed_title qui référence le titre du flux
+- :doc:`feeds/entry <V1/Route/Feeds/Entry>` ajout d'un attribut feed_title qui référence le titre du flux
     dans laquelle se trouve l'entrée.
 
 1.3.1

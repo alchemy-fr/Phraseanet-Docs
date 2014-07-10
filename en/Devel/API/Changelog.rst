@@ -11,14 +11,14 @@ about the current authenticated user.
 New routes
 **********
 
-- :doc:me <V1/Route/Me> User route
+- :doc:`me <V1/Route/Me>` User route
 
 Updated routes
 **************
 
-- :doc:feeds/aggregated <V1/Route/Feeds/Aggregated> adds feeds attribute to restrict aggregated feeds
+- :doc:`feeds/aggregated <V1/Route/Feeds/Aggregated>` adds feeds attribute to restrict aggregated feeds
     on given feed ids.
-- :doc:feeds/entry <V1/Route/Feeds/Entry> adds a feed_title attribute that refers to the title of the feed
+- :doc:`feeds/entry <V1/Route/Feeds/Entry>` adds a feed_title attribute that refers to the title of the feed
     where the entry is located.
 
 1.3.1
