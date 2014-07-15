@@ -6,21 +6,20 @@ Lightbox
 
 .. topic:: L'essentiel
 
-    *Phraseanet Lightbox* est une interface de consultation collaborative.
-    Elle propose des fonctions de comparaison, de diaporama, d'export, et
-    permet de valider et de commenter des médias.
-    Elle permet aux utilisateurs non authentifiés de visionner des images
-    sans avoir à s'identifier.
+    Lightbox est une interface de consultation collaborative. Elle propose des
+    fonctions de comparaison, de diaporama, d'export, et permet de valider ou
+    de commenter des médias. Les bénéficiaires de Push et Validation prennent
+    connaissance des contenus qui leurs sont adressés par cette interface.
 
-Accéder à la Lightbox
----------------------
+Accéder à Lightbox
+------------------
 
 Pour les utilisateurs non authentifiés
 **************************************
 
-Cette interface s'obtient en cliquant sur un lien HTML reçu par email lorsqu'un
-utilisateur Phraseanet transmet un :doc:`Push ou une demande de validation
-<Push>`.
+L'interface s'affiche en cliquant sur le lien HTML proposé dans les e-mails
+notifiant les :doc:`Push et demandes de validation <Push>`. Les utilisateurs
+peuvent avoir besoin de s'authentifier pour afficher les contenus poussés.
 
 .. image:: ../../images/Lightbox-reception_email.jpg
     :align: center
@@ -28,24 +27,23 @@ utilisateur Phraseanet transmet un :doc:`Push ou une demande de validation
 Pour les utilisateurs authentifiés
 **********************************
 
-Lightbox est disponible dans la barre de menu des applications Phraseanet.
+Dans l'application, cliquer sur la rubrique Lightbox de la barre de menu permet
+de rejoindre l'interface.
 
-.. image:: ../../images/General-menu0.jpg
-    :align: center
-
-Cliquer sur la rubrique **Lightbox** du menu pour rejoindre l'interface
-*Phraseanet Lightbox*.
+L'interface dresse la liste des Push et des demandes de validation que
+l'utilisateur a produit ou reçu. Cliquer sur un des éléments de la liste pour
+afficher son contenu.
 
 .. image:: ../../images/Lightbox-menu.jpg
     :align: center
 
-La fenêtre affichée dresse la liste des **Push** et de **demandes de
-validation** que l'utilisateur a produit ou reçu.
+Dans Production, la rubrique Lightbox du menu contextuel de chaque panier
+permet d'afficher son contenu dans cette interface.
 
 L'interface
 -----------
 
-L'interface de la Lightbox est simple et intuitive.
+L'interface de Lightbox est simple et intuitive.
 
 .. image:: ../../images/Lightbox-interface.jpg
     :align: center
@@ -54,10 +52,11 @@ L'interface de la Lightbox est simple et intuitive.
   naviguer dans les enregistrements et donne accès au téléchargement du média
   affiché.
 * **2**. La table lumineuse, au centre, montre le média sa description et ses
-  caractéristiques. Cette zone varie selon que l'on visionne un **Push** ou
-  **une demande de Validation**.
-* **3**. Une zone de menu permet de naviguer dans les Push et Validations
-* **4**. La zone d'affichage des vignettes liste les médias de la Lightbox
+  caractéristiques. Cette zone varie selon que l'on visionne un Push ou une
+  demande de Validation.
+* **3**. Une zone de menu permet de naviguer dans les Push et Validations.
+* **4**. La zone d'affichage des vignettes liste les médias du panier ou de la
+  validation
 
 Naviguer
 ********
@@ -67,13 +66,16 @@ Pour naviguer dans les médias d'une Lightbox :
 * Sélectionner l'image à afficher dans la zone d'affichage des vignettes avec la
   souris.
 * Utiliser les flèches de clavier.
-* Utiliser les flèches avancer et reculer situées à droite de la barre d'action
+
+**Ou bien**
+
+* Utiliser les flèches *Avancer* et *Reculer* à droite de la barre d'action
 
 Lancer le diaporama
 *******************
 
-Pour lancer un diaporama des médias présents dans une lightbox, cliquer sur le
-bouton **lecture** situé dans la barre d'action.
+Pour lancer un diaporama des médias listés, cliquer sur le bouton **lecture**
+dans la barre d'action.
 
 .. image:: ../../images/Lightbox-play.jpg
     :align: center
@@ -82,58 +84,61 @@ Téléchager des médias
 *********************
 
 Pour télécharger le média affiché sur la table lumineuse, cliquer sur l'icône
-d'enregistrement située dans la barre des actions.
+d'enregistrement dans la barre des actions.
 
 .. image:: ../../images/Lightbox-enregister.jpg
     :align: center
 
-Pour télécharger tous les médias contenus dans une lightbox, cliquer sur l'icône
-située à gauche en bas de l'interface.
+Pour télécharger tous les médias d'un panier ou d'une validation, cliquer sur
+l'icône d'export en bas à gauche de l'interface.
 
 .. image:: ../../images/Lightbox-enregister-tout.jpg
     :align: center
 
-Le téléchargement à partir de *Phraseanet Lightbox* propose des options
-similaires à celui de l'Export depuis *Phraseanet Production*.
+Le téléchargement à partir de Lightbox est identique à celui de l'Export dans
+Production.
 
 .. image:: ../../images/Lightbox-enregister-export.jpg
     :align: center
 
-`Se reporter à la section consacrée à l'Export dans Phraseanet Production <Exporter>`_.
+.. seealso::
+
+    `Se reporter à la section consacrée à l'Export dans Phraseanet Production <Exporter>`_.
 
 Comparer deux médias
 ********************
 
-Il peut être intéressant d'afficher deux médias côte à côte pour les comparer.
+Lightbox permet d'afficher deux médias côte à côte pour les comparer.
 
 .. image:: ../../images/Lightbox-comparer.jpg
     :align: center
 
-* afficher un premier média sur la table lumineuse en cliquant sur sa vignette
-* en appuyant sur la touche **Ctrl** (PC Windows) ou **Cmd** (Mac OS) de l'
-  ordinateur, cliquer sur le média avec lequel comparer.
+* Afficher un premier média sur la table lumineuse en cliquant sur sa vignette
+* En appuyant sur la touche **Ctrl** (PC Windows) ou **Cmd** (Mac OS) du
+  clavier, cliquer sur le média à comparer dans le train de vignettes.
 
 Ce dispositif est très utile dans une démarche de
-:doc:`validation de documents <Push>`.
+:ref:`validation de documents <Push-Validation-de-documents>`.
+
+.. _Push-Validation-de-documents:
 
 Valider des documents dans la Lightbox
 --------------------------------------
 
-La validation de documents dans *Phraseanet* est une demande d'appréciation
-formulée sur des médias.
-L'utilisateur à qui est adressée une demande de validation donne son avis par
-**oui** ou par **non** et peut s'il le souhaite donner un commentaire.
+La validation de documents est une demande d'appréciation formulée sur des
+médias. L'utilisateur à qui est adressée une demande de validation donne son
+avis par oui ou par non sur chaque média.
 
 .. image:: ../../images/Lightbox-validation.jpg
     :align: center
 
-Pour ajouter un commentaire, cliquer sur la bulle présente dans la barre d'
-actions
+Il peut, s'il le souhaite, donner un commentaire sur les médias. Pour ce faire,
+cliquer sur la bulle présente dans la barre d'actions.
 
 .. image:: ../../images/Lightbox-validation_appreciation.jpg
     :align: center
 
 Après validation, cliquer sur le bouton **Envoyer mon rapport**.
 
-L'émetteur de la demande de validation sera immédiatement averti des
+L'émetteur de la demande de validation est immédiatement averti des
 appréciations et commentaires.

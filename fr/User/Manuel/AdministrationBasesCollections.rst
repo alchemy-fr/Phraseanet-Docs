@@ -380,6 +380,8 @@ préférences de collections.
       </stamp>
     </baseprefs>
 
+.. _AdministrationBasesCollections-valeurs:
+
 Préférences : Valeurs suggérées
 *******************************
 

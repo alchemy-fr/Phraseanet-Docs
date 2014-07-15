@@ -1,0 +1,115 @@
+Personnaliser Production
+========================
+
+.. topic:: L'essentiel
+
+    L'interface Production peut être adaptée par l'utilisateur selon ses
+    besoins.
+
+Ajuster la zone de travail
+--------------------------
+
+Redimensionner la zone de travail
+*********************************
+
+* Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
+
+.. image:: ../../images/Onglet-Taille.jpg
+    :align: center
+
+* Déplacer le curseur vers la gauche ou la droite pour agir sur la taille des
+  zones d'affichage.
+
+Masquer ou afficher la zone de travail
+**************************************
+
+La zone de travail est rétractable :
+
+.. image:: ../../images/Onglets-Retractable1.jpg
+    :align: center
+
+* Cliquer sur l'icône présente sur le côté droit de la zone de travail pour la
+  réduire et maximiser la surface dédiée à la zone d'affichage.
+
+.. image:: ../../images/Onglets-Retractable.jpg
+    :align: center
+
+* Lorsque réduite, cliquer sur une partie du bandeau de la zone de travail pour
+  la déployer.
+
+Préférences d'affichage
+-----------------------
+
+Préférences d'affichage des résultats
+*************************************
+
+Cliquer sur le lien **Préférences** au bas de la zone d'affichage des résultats.
+
+Une fenêtre en surimpression rassemble des paramètres d'affichage et de
+configuration.
+
+.. image:: ../../images/Affichage-Preferences1.jpg
+    :align: center
+
+L'onglet **Affichage** permet d'intervenir sur :
+
+* Le mode d'affichage des résultats, en vignettes ou en liste
+* Le jeu de couleurs de l'interface (thème sombre par défaut)
+* Les informations affichées au survol des vignettes en cochant le mode
+  *Iconographe* ou *Graphiste*
+* L'affichage des informations techniques des documents dans la zone d'affichage
+  ou dans la vue détaillée
+* L'affichage d'icônes indicatives du type des documents
+* Le nombre de résultats affichés par page
+* La taille d'affichage des vignettes
+* La couleur de sélection des enregistrement dans les interfaces
+
+L'onglet **Configuration** permet de paramétrer la question posée par défaut
+lors d'une connexion aux interfaces *Production* et *Classic*.
+
+.. image:: ../../images/Affichage-Preferences2.jpg
+    :align: center
+
+Cliquer sur la croix pour quitter la fenêtre *Préférences*. Les changements
+effectués sont prises en compte lors du rafraîchissement de l'affichage.
+
+Préférences de tri et d'affichage des paniers et reportages
+***********************************************************
+
+Pour accéder aux préférences de tri et d'affichage des paniers et reportages,
+cliquer sur le menu contextuel des paniers.
+
+.. figure:: ../../images/General-prefpaniers.jpg
+   :align: center
+
+Le menu permet deux rubriques permettant d'altérer l'affichage par :
+
+* Ordre alphabétique
+* Date de création
+
+Cliquer sur la rubrique **Préférences** du menu contextuel des paniers pour
+modifier d'autres paramètres d'affichage.
+
+.. figure:: ../../images/General-Prefpaniers2.jpg
+   :align: center
+
+Des cases à cocher permettent d'agir les informations affichées dans les paniers
+et reportages. Cocher ou décocher les cases pour afficher ou masquer :
+
+* Les :term:`status <Status>`
+* Les notices
+* Les titres des documents
+
+Cliquer sur la croix pour quitter la fenêtre *Préférences*.
+
+Réglage des notifications
+-------------------------
+
+Les notifications sont complétées d'e-mails reçus à l'adresse de l'utilisateur.
+
+La réception de ces e-mails est paramétrable par événement dans la section
+**Notification par e-mail** de l'onglet *Informations* du compte utilisateur.
+
+Se reporter l'onglet *Informations* du
+:doc:`compte utilisateur <MenuPhraseanet>` pour agir sur la réception des
+notifications.

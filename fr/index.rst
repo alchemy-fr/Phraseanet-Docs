@@ -12,7 +12,7 @@ Elle permet de stocker, de gérer, de partager et de diffuser un large panel de
 ressources numériques de type image, vidéo, audio ou bureautique au sein de
 groupes de travail de toute dimension.
 
-Solution *full web*, elle s'exécute dans un navigateur internet.
+Solution *100% Web*, elle s'exécute dans un navigateur internet.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
 serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
@@ -64,7 +64,9 @@ Besoin d'aide ?
 ---------------
 
 `Alchemy`_, l'éditeur de Phraseanet commercialise un ensemble de prestations et
-de services autour de la solution *Phraseanet*.
+de services autour de la solution *Phraseanet*. Consulter
+`ces offres <http://alchemy.fr/spip.php?page=rubrique&id_rubrique=8>`_
+sur le site éditeur.
 
 L'équipe de Phraseanet consacre une partie de son temps libre à l'animation des
 forums et groupes. Consulter `cette page <http://www.phraseanet.com/support/>`_

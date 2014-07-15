@@ -99,6 +99,8 @@ Appliquer les modifications apportées en cliquant sur le bouton **Valider**.
     Dans le cas d'utilisateurs créés par l'interface de gestion d'utilisateurs,
     l'adresse e-mail est utilisée comme identifiant.
 
+.. _AdministrationUtilisateurs-Droits-Utilisateurs:
+
 Modifier les droits d'un utilisateur
 ************************************
 

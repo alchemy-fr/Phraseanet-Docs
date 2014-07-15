@@ -1,8 +1,10 @@
 Gestion des médias
 ==================
 
-A priori, Phraseanet est capable de cataloguer tous types de fichiers, surtout
-si le paramétrage de la tâche d'archivage ne donne pas de restriction.
+Si aucune restriction n'est effectuée dans le paramétrage, Phraseanet est
+capable de cataloguer tous types de fichiers. Seule la capacité de la plateforme
+hôte à produire des fichiers de vignettes et de prévisualisation peuvent
+présenter des limites d'utilisation.
 
 Phraseanet gère t-il tous les formats vidéo ?
 ---------------------------------------------
@@ -32,9 +34,9 @@ La fabrication des sous-définitions de documents de type image est dévolue aux
 logiciels `ImageMagick <http://www.imagemagick.org>`_, `GraphicsMagic <http://www.graphicsmagick.org/>`_
 ou à défaut la `librairie graphique GD <http://libgd.bitbucket.org/>`_.
 Seuls ImageMagick et GraphicsMagic peuvent manipuler les document multi calques
-(fichiers Photoshop psd ou Tiff non aplatis). Cependant ils ne sont pas en
-mesure d'extraire des vignettes et des images de choix parfaitement
-fidèles pour ce type de documents.
+(fichiers Photoshop psd ou Tiff non aplatis).
+Cependant ils ne sont pas en mesure d'extraire des vignettes et des images de
+choix parfaitement fidèles pour ce type de documents.
 
 .. note::
 
