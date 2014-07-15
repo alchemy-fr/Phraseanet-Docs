@@ -5,44 +5,41 @@
 
 .. topic:: L'essentiel
 
-    Les interfaces *Phraseanet Production* ou *Classic* permettent de consulter
-    et de parcourir un fonds de médias dans *Phraseanet*.
+    Les interfaces *Production* ou *Classic* permettent de consulter
+    et de parcourir un fonds médias.
 
     *Production* est une interface dédiée à la consultation, à la recherche,
-    gestion et à l'édition des documents, tandis que *Classic* n'est dévolue qu'
-    à la recherche et à la visualisation de documents dans des navigateurs
-    anciens.
+    à la gestion et à l'édition des documents, selon les droits de
+    l'utilisateur. Elle se lance par défaut lors d'une première connexion.
 
-.. figure:: ../../images/Production-general.jpg
+    *Classic* ne se destine qu'à la recherche et à la visualisation de documents
+    dans des navigateurs anciens. Les spécificités de cette interface ne sont
+    pas abordées dans ce manuel.
+
+L'interface Production
+----------------------
+
+L'espace de travail
+*******************
+
+L'espace de travail de Production se partage en quatre zones :
+
+.. figure:: ../../images/Production-zones.jpg
     :align: center
 
-*Interface Phraseanet Production*
+* **1. Le formulaire de recherche** permet de rechercher des médias et des
+  reportages
+* **2. La zone d'affichage** présente le contenu d'une recherche
+* **3. La zone de travail** rassemble les onglets de paniers et de reportages,
+  de suggestions et de thésaurus. Elle est rétractable, escamotable.
+* **4. La palette d'Actions** permet d'effectuer des actions sur les
+  enregistrements. Se référer à la page dédiée à la
+  :doc:`Palette des Actions <Actions>`.
 
-.. note::
-
-    La zone d'affichage des résultats, dans *Prod* (ci-dessus) ou dans
-    *Classic* (ci-dessous), est la zone centrale où apparaissent les
-    images.
-
-*Interface Phraseanet Classic*
-
-.. figure:: ../../images/Classic-interface2.jpg
-    :align: center
-
-Présentation de la zone d'affichage
------------------------------------
-
-Dans *Production*:
-La **Palette des Actions** figure en haut de page, au-dessus de la zone des
-résultats. Elle permet d'effectuer des actions sur les documents.
-Pour plus de détails, se référer à la page dédiée à la
-:doc:`Palette des Actions <Actions>`.
-
-Le bandeau inférieur permet d'accéder aux **Préférences d'affichage**, renseigne
-sur le nombre de réponses et affiche un index de pagination des résultats.
-La pagination permet de se déplacer de pages en pages en cliquant sur le numéro
-de la page, d'aller en fin de sélection en cliquant sur *Suivant* et de revenir
-en arrière en cliquant sur *Précédent*.
+Le bandeau inférieur de l'espace de travail permet d'accéder aux
+**Préférences d'affichage**, renseigne sur le nombre de réponses existantes et
+affiche un index de pagination des résultats. Cet index permet de se déplacer
+dans les résultats affichés.
 
 .. note::
 
@@ -54,141 +51,127 @@ puis valider en appuyant sur la touche **Entrée** du clavier.
 .. image:: ../../images/Afficher-Nbreponses.jpg
     :align: center
 
-Les vignettes sont surmontées d'un titre de présentation. Ce titre de
-présentation est paramétrable par les Admininistrateurs fonctionnels de l'
-application.
+Présentation des résultats de recherche
+***************************************
+
+Les résultats de recherche sont présentés sous forme de grille ou de liste,
+selon les :doc:`préférences utilisateurs <Personnaliser>`.
+Les vignettes sont surmontées d'un titre de présentation paramétrable par les
+administrateurs.
 
 .. note::
 
-    Comment paramétrer le titre des documents affichés sous les vignettes
-    dans Phraseanet ? :doc:`Se reporter à la section Administration du
-    manuel <AdministrationBasesCollections>`.
+    Pour paramétrer le titre des documents affichés sous les vignettes, voir
+    :doc:`la section Administration<AdministrationBasesCollections>`.
 
-**La :term: `Collection` d’appartenance du document est affichée dans le coin
-inférieur gauche:**
+**Le nom de la collection d’appartenance du document est affiché dans le coin
+inférieur gauche** de la vignette. Il peut être substitué par un mini logo.
 
 .. image:: ../../images/Affichage-nomcoll.jpg
     :align: center
 
-.. note::
-
-    Le nom de la collection peut être substitué par un minilogo de
-    collection.
-
-**Passer le curseur sur une vignette pour afficher la description du document.**
-Cette description est composée des champs documentaires non vides renseignés par
+**Placer la souris sur une vignette pour afficher la description du document.**
+Cette description se compose des champs documentaires non vides renseignés par
 les gestionnaires du fonds.
-
-Si vous en avez le droit, utiliser la fonction :doc:`Éditer <Editer>` pour
-modifier les informations affichées
-
 Les termes ayant servis comme critères de recherche sont surlignés.
 
 .. image:: ../../images/Affichage-surlignagemc.jpg
     :align: center
 
-**La "Loupe" permet d'afficher un prévisualisation du document** : il s'agit d'
-une image pour les documents de type image, d'une séquence vidéo pour les
-documents de type vidéo, d'une séquence sonore pour les documents de type audio,
-d'une animation flash pour certains types de documents bureautiques.
+**La loupe permet d'afficher la prévisualisation des médias**. Ces
+prévisualisations sont liées à la nature des sous-définitions *preview* définies
+dans le paramétrage des bases auxquelles appartiennent les médias affichés.
 
-.. image:: ../../images/Affichage-Loupe.jpg
-    :align: center
+Par défaut, il s'agit :
 
-La prévisualisation du document dans *Phraseanet* est lié à la sous-définitions
-*preview* telles que définis dans le paramétrage des bases auxquelles
-appartiennent les documents.
+* d'une image pour les documents de type image
+* d'une séquence vidéo pour les documents de type vidéo
+* d'une séquence sonore pour les documents de type audio
+* d'une animation flash pour certains types de documents bureautiques
+* d'une icône générique si le système ne reconnait pas le type de fichier ou
+  n'est pas en mesure de générer de fichiers sous-définitions
 
-.. note::
-
-    La loupe n’est pas visible ? Soit l'utilisateur n'a pas le droit
-    de voir les images de choix soit il n’existe pas de prévisualisation
-    pour le type de document consulté.
-
-**L'icône "i" permet d'obtenir des informations techniques sur le document
-original** : largeur et hauteur en pixels, type, poids, taille d’impression…
+**L'icône *i* permet d'afficher des informations techniques sur le média
+original** : largeur et hauteur en pixels, type, poids, taille d’impression...
+Les informations affichées sont fonctions de la nature du média.
 
 .. image:: ../../images/Affichage-i.jpg
     :align: center
 
-**Pour afficher une vue détaillée**, effectuer un double-clic sur la vignette
-d'un média affiché dans la zone des résultats ou dans un panier. Une fenêtre
-*overlay* affiche la prévisualisation du média.
+Effectuer un double-clic sur la vignette d'un média pour l'afficher dans la vue
+détaillée.
 
 La vue détaillée
 ----------------
 
-La vue détaillée affiche la liste des documents d'une page sous la forme d'un
-train de vignettes navigables.
-* La partie haute de la fenêtre présente le train de vignettes qui est navigable
-(à la souris ou au clavier) de droite à gauche.
-* L'image de choix du média sélectionné est présentée au centre.
-* Sur la partie droite, trois onglets présentent la description, l’historique
-depuis l’ajout du document dans la base, des statistiques de popularité.
-* Si le document appartient à des Paniers ou Reportages, l'information est
-mentionnée dans la partie droite de la fenêtre.
-
-Cliquer sur une vignette pour afficher l’image de choix ou utiliser les flèches
-"gauche" et "droite" du clavier pour naviguer dans le train de vignettes.
-
-Onglet Notice
-*************
-
-L'onglet *Notice* permet de visualiser les informations issues des champs
-documentaires remplis ainsi que des informations techniques sur le document.
-
 .. image:: ../../images/Affichage-vuedetaillee1.jpg
     :align: center
 
+La vue détaillée affiche une liste des documents d'une page de réponse sous la
+forme d'un train de vignettes navigables :
+
+* La partie haute de la fenêtre présente les vignettes navigables
+  à la souris ou au clavier, de gauche à droite
+* La prévisualisation du média sélectionné est présentée au centre
+* La partie droite rassemble trois onglets présentant la notice, l’historique
+  et des statistiques sur le média affiché
+* Dans le cas ou un média appartient à des Paniers ou Reportages, l'information
+  est mentionnée dans la partie droite de la fenêtre
+
+Cliquer sur la vignette de choix pour afficher les informations du média ou
+utiliser les flèches gauche et droite du clavier.
+
+L'onglet Notice
+***************
+
+L'onglet Notice affiche les informations issues des champs documentaires remplis
+ainsi que les informations techniques du média.
+
 .. note::
 
-    Selon la configuration de la solution et l’existence d’un thésaurus
-    attaché à la base, certains mots clés de la légende sont cliquables.
-    Soulignés de pointillés, ils permettent de rebondir sur d'autres
-    recherches.
+    S'il existe un thésaurus attaché à la base, certains termes de la notice
+    peuvent être cliquables. Ils permettent de rebondir sur d'autres recherches.
 
-Onglet Historique
-*****************
+.. _Afficher-Historique:
 
-Cliquer sur l’onglet *Historique* pour afficher le contenu.
+L'onglet Historique
+*******************
 
-Cet onglet liste l’historique de toutes les opérations réalisées par les
-utilisateurs sur le document depuis son ajout.
+L'onglet Historique liste les opérations réalisées par les utilisateurs sur le
+média depuis son ajout dans la base.
 
 .. image:: ../../images/Affichage-vuedetaillee2.jpg
     :align: center
 
-Onglet Popularité
-*****************
+.. _Afficher-Popularite:
 
-Cet onglet affiche les statistiques de consultation et de téléchargement du
-document en temps réel.
+L'onglet Popularité
+*******************
 
-* Les statistiques de visualisation montrent d'abord sous forme de courbe le
-    nombre total de visualisations.
-* Un diagramme à camembert montre les sources d’accès au document.
+L'onglet Popularité révèle des statistiques sur le média affiché :
+
+* Nombre de visualisations
+* Sources d'accès
+* Statistiques de téléchargement.
 
 .. image:: ../../images/Affichage-vuedetaillee3.jpg
     :align: center
 
-Les statistiques de téléchargement affichent jour par jour le nombre de
-téléchargements du document.
-
-Cliquer sur "Fermer" ou sur la touche "Echap" du clavier pour fermer la fenêtre.
-
 .. note::
 
-    Pour des rapports de statistiques détaillés concernant une base
-    *Phraseanet*, consulter la page consacrée aux :doc:`Statistiques
-    <Statistiques>`.
+    Pour des statistiques détaillées concernant une base, consulter la page
+    consacrée aux :doc:`Statistiques <Statistiques>`.
 
-Sélectionner des documents
+Cliquer sur "Fermer" ou sur la touche "Echap" du clavier pour quitter la vue
+détaillée.
+
+.. _Affichage-Selections:
+
+Sélection d'enregistrements
 ---------------------------
 
-Pour sélectionner des documents et effectuer ensuite des actions (export,
-édition, suppression, etc.), deux possibilités :
-
-* La sélection simple
+Sélection simple
+****************
 
 Sélectionner une vignette dans la zone des résultats, dans les paniers ou dans
 les reportages en cliquant dans son cadre. La couleur de fonds de la vignette
@@ -197,71 +180,155 @@ change.
 .. image:: ../../images/Affichage-selection1.jpg
     :align: center
 
-Cette couleur de sélection peut être modifiée par chaque utilisateur dans les
+Cette couleur de sélection est modifiable par chaque utilisateur dans les
 `Préférences d'affichage<PersonnaliserInterface>`.
 
-* La sélection multiple
+Sélection multiple
+******************
 
-**Pour sélectionner une série de documents "continues"**, appuyer sur la touche
-Maj (shift) du clavier et cliquer sur la première vignette de la série, puis sur
-la dernière vignette de la série à sélectionner.
-*Toutes les vignettes comprises entre ces deux vignettes sont sélectionnées.*
+**Pour sélectionner des enregistrements contigus**...
+
+* Cliquer sur la première vignette de la série
+* Enfoncer et maintenir la touche Maj (shift) du clavier
+* Cliquer sur la dernière vignette des enregistrements à sélectionner
+
+Tous les enregistrements compris dans l'intervalle sont sélectionnés.
 
 .. image:: ../../images/Affichage-selection2.jpg
     :align: center
 
-**Pour sélectionner plusieurs vignettes "en discontinu"**, appuyer sur la touche
-*Alt* du clavier et cliquer successivement sur les vignettes à sélectionner.
+**Pour sélectionner des enregistrements non contigus**...
+
+* Appuyer sur la touche Alt du clavier
+* Cliquer successivement sur les vignettes des enregistrements à sélectionner
 
 .. image:: ../../images/Affichage-selection3.jpg
     :align: center
 
-**Pour sélectionner plusieurs vignettes sur plusieurs pages de résultats**,
-sélectionner d’abord les images sur une page, cliquer sur la page à atteindre,
-maintenir enfoncer la touche "Alt" du clavier puis cliquer sur une vignette de
-la nouvelle page de résultats.
+**Pour sélectionner des enregistrements sur plusieurs pages de résultats**...
 
-Le nombre d'éléments sélectionnés est mentionné en bas à gauche dans l'
-interface.
+* Sélectionner les vignettes sur une première page
+* Cliquer sur la page à atteindre
+* Maintenir enfoncée la touche “Alt” du clavier
+* Sélectionner les vignettes de la nouvelle page de résultats
+* Répéter l'opération sur d'autres pages si nécessaire
+
+Le nombre d'éléments sélectionnés est mentionné en bas à gauche dans
+l'interface.
 
 .. image:: ../../images/Affichage-selection5.jpg
     :align: center
 
-* La sélection par type de médias
+.. note::
 
-Pour sélectionner tous les documents d’une recherche selon leur type, cliquer
-sur le menu de l'action de sélection (flèche à droite du carré blanc) puis
-cliquer sur le type de documents à sélectionner.
+    Le nombre d'enregistrements sélectionnés est limité à 400.
+
+
+Sélection par type de médias
+****************************
+
+Pour sélectionner tous les enregistrements d’une page de recherche par type de
+média, cliquer sur le menu de l'action de sélection (flèche à droite du carré
+blanc) puis cliquer sur le type de médias correspondant.
 
 .. image:: ../../images/Affichage-selectiontype.jpg
     :align: center
 
-Dans cet exemple, seuls les documents de type *images* sont sélectionnés.
+Panier de sélection
+-------------------
 
-Pour placer une sélection de documents dans un Panier :
+Un panier de sélection est destiné à rassembler des médias dans le but de s'y
+référer ultérieurement.
+Un panier existe par défaut. D'autres peuvent être créés.
+Des sélections simples et multiples peuvent être réalisées sur les documents
+d'un panier ouvert.
 
-* Créer un panier : Se placer dans la barre des Onglets, au niveau des
-  Paniers. Cliquer sur la flèche, puis cliquer sur le "plus" vert pour créer
-  un nouveau panier (ou un reportage, choisir). Une fenêtre s'affiche, le
-  nommer puis cliquer sur Valider.
+.. _Affichage-Panier-Creer:
+
+Créer un panier
+***************
+
+* Cliquer sur le Menu contextuel de l'onglet Panier / Reportage dans la zone de
+  travail
+* Cliquer sur **Nouveau panier**
+
+.. image:: ../../images/Paniers-Creation.jpg
+    :align: center
+
+Une fenêtre en surimpression présente un formulaire de création de panier.
 
 .. image:: ../../images/Affichage-Panier.jpg
     :align: center
 
-* Pour plus d'informations, se reporter à la section dédiée aux :doc:`Paniers
-  et aux Reportages <PaniersReportages>`.
+* Saisir un nom pour le nouveau panier et une description (facultatif).
+* Cocher la case **Ajouter ma sélection courante** pour ajouter des documents
+  préalablement sélectionnés dans les résultats.
+* Cliquer sur le bouton **Créer**.
 
-.. note::
+.. _Affichage-Panier-Ouverture:
 
-  Si une sélection de documents est effectuée et que l'utilisateur
-  crée un nouveau panier ou reportage, une case à cocher permet d’ajouter
-  *la sélection active* comme contenu du panier ou reportage.
+Ouvrir ou fermer un panier
+**************************
 
-* Pour faire une sélection de documents au sein d'un Panier :*
-  Dans :doc:`la zone de travail <Onglets>`, ouvrir ou déployer un panier en
-  cliquant sur son titre puis sélectionner les documents, comme vu
-  précédemment. Effectuer ensuite les actions souhaitées au moyen de la barre
-  des actions du panier.
+Pour ouvrir et révéler le contenu d'un panier, cliquer sur son nom. **Le panier
+est alors considéré comme actif**. Répéter l'opération pour le fermer.
 
 .. image:: ../../images/Affichage-Panier2.jpg
     :align: center
+
+Pour révéler le contenu d'un panier fermé, sans l'ouvrir, placer la souris sur
+nom du panier. Son contenu est affiché dans une fenêtre en surimpression.
+
+.. _Affichage-Panier-Ajouter:
+
+Ajouter des médias dans un panier
+*********************************
+
+A partir d'une sélection dans la zone d'affichage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Avec la souris, glisser-déposer la sélection de documents sur le panier choisi
+figurant dans la zone de travail.
+
+Il n'est pas nécessaire de glisser une sélection sur un panier ouvert pour
+que celle-ci soit ajoutée à un panier. Cette action peut aussi s'effectuer
+sur des paniers fermés.
+
+A partir de la vue détaillée
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Cliquer sur l'icône "Panier" pour ajouter le document affiché au panier actif.
+
+.. _Affichage-Panier-Detail:
+
+Afficher le contenu d'un panier dans la vue détaillée
+*****************************************************
+
+Pour afficher le contenu d'un panier dans la vue détaillée, effectuer un double
+clic sur une des vignettes d'un panier actif. La vue détaillée présente le
+contenu du panier actif.
+
+.. _Affichage-Panier-Suppression1:
+
+Supprimer des médias d'un panier
+********************************
+
+Dans un panier ouvert, cliquer sur la croix située sous la vignette des
+documents à supprimer du panier.
+
+.. _Affichage-Panier-Suppression2:
+
+Supprimer un panier
+*******************
+
+Pour supprimer un panier, cliquer sur la rubrique Supprimer du menu contextuel
+du panier à supprimer puis confirmer la suppression dans la fenêtre de
+confirmation.
+
+
+
+.. seealso::
+
+    Se reporter à la section dédiée aux
+    :doc:`Paniers et aux Reportages <PaniersReportages>` pour d'autres
+    fonctionnalités.

@@ -8,6 +8,8 @@
     Deux fonctionnalités de Phraseanet permettent de publier et de diffuser des
     médias issus d'un fonds : *Publication* et *Bridge*.
 
+.. _Publier-Publications:
+
 Publier des paniers et des reportages
 -------------------------------------
 
@@ -44,7 +46,7 @@ Les publications sont disponibles sous forme de flux mediaRSS hors de Phraseanet
 Production et des des applications tierces, comme Phraseanet Showcase, peuvent
 les exploiter.
 
-.. _bridge-share:
+.. _Publier-Bridge:
 
 Diffuser avec Bridge
 --------------------

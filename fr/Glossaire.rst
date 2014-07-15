@@ -9,6 +9,9 @@ Glossaire
 .. glossary::
     :sorted:
 
+    Identifiant universel unique (UUID)
+        Identifiant Unique universel ou UUID...
+
     Webhooks
         Technique de développement internet mettant en oeuvre des événements
         ciblants des applications tierces dans le but d'interagir avec elles.

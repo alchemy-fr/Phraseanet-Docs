@@ -3,252 +3,236 @@
 .. toctree::
    :maxdepth: 3
 
-Cette section du manuel rassemble les notions relatives à l'édition documentaire
-des notices de médias et de reportages dans *Phraseanet*.
+.. topic:: L'essentiel
+
+    L'action Editer permet d'éditer les notices descriptives des documents et
+    reportages d'une même base.
+
+    Les notices sont éditables à l'unité, en lots et sous lots à partir des
+    documents et des reportages sélectionnés dans la zone d'affichage ou dans la
+    zone de travail.
 
 Éditer des enregistrements
 --------------------------
 
-.. topic:: L'essentiel
-
-    L'action **Éditer** permet d'éditer la ou les fiches descriptives des
-    médias, des reportages, pour saisir, compléter ou modifier le contenu des
-    champs de description documentaire.
-
-    Il est possible d'éditer ces descriptions à l’unité ou en lots et sous lots
-    à partir d'enregistrements, de paniers, de reportages depuis la zone des
-    résultats ou depuis la zone travail.
+Sélectionner un ou plusieurs enregistrements dans la zone d'affichage ou dans
+un panier ou reportage ouvert dans la zone de travail puis cliquer sur l'un des
+boutons d'action Editer pour ouvrir le formulaire d'édition.
 
 Principes généraux sur l'édition
 ********************************
 
-La fenêtre est découpée en trois zones :
-
-* **La barre de défilement** affiche les documents sélectionnés. La taille
-  de la zone est modifiable. La taille des vignettes est modifiable en
-  déplaçant le curseur.
-* **La zone de saisie**  affiche la liste des champs descripteurs, la liste
-  des status, et réserve un espace pour afficher le contenu du champs actif.
-* **La zone des onglets d’assistance à la saisie** proposent des aides à la
-  saisie.
-
 .. image:: ../../images/Prod-Editer.jpg
     :align: center
 
-* Sélectionner des médias, un panier ou un reportage
+La fenêtre est découpée en trois zones :
 
-.. warning::
-    Seuls peuvent être édités simultanément des enregistrements provenants d'une
-    même base.
+* La barre de défilement affiche les documents sélectionnés. La taille des
+  vignettes et la taille de cette zone sont modifiables
+* La zone de saisie affiche les status, la liste des champs documentaires et
+  réserve un espace pour afficher le contenu du champ actif
+* La zone des onglets d'assistance à la saisie regroupe des outils d'aides à
+  la saisie
 
-* Cliquer sur le bouton **Éditer**
-* La fenêtre **Éditer** s'ouvre
+**Par défaut, tous les enregistrements sont sélectionnés.**
 
-Par défaut, toutes les vignettes sont sélectionnées.
+Les champs dont les contenus documentaires sont identiques pour tous les
+documents sélectionnés apparaissent en clair.
 
-**Les champs dont les contenus sont identiques** pour les documents sélectionnés
-apparaissent *en clair*.
+Les champs dont les contenus sont hétérogènes apparaissent avec des xxxxx
+en orange.
 
-**Les champs dont les contenus sont hétérogènes** apparaissent avec des xxxxx en
- orange.
+Il est possible de désélectionner ou sélectionner les documents dans la barre
+de défilement de la même façon que dans la zone d'affichage.
 
-Il est possible de dé-sélectionner / sélectionner les documents en cliquant
-sur les vignettes et en utilisant les combinaisons de touche "Maj" ou "Alt".
-Cette possibilité de sélection en lots et sous-lots permet de renseigner des
+.. seealso::
+
+    Se reporter à :ref:`la section consacrée aux sélections <Affichage-Selections>`
+    dans la zone d'affichage
+
+Cette possibilité de sélection en lots et en sous-lots permet de renseigner des
 informations communes à des médias et gagner ainsi en productivité.
 
-Aucune modification ou ajout n’est effectué tant que l’utilisateur n’a pas
-cliqué sur le bouton **Valider**.
+Pour passer d'un champ à un autre, **utiliser sur la touche de tabulation du
+clavier***
 
-* Pour passer d'un champ à un autre, utiliser sur la touche de tabulation (**
-  TAB**) du clavier.
-* **Pour annuler les modifications en cours**, cliquer sur **Annuler** ou
-  appuyer sur la touche **Echap** ce qui a pour effet de quitter le formulaire
-  d'édition.
+**Aucun ajout ou modification dans les notices n'est pris en compte tant que
+l'utilisateur n'a pas cliqué sur le bouton Valider**.
 
-Éditer des champs de type date
-******************************
+**Pour annuler les modifications en cours**, cliquer sur Annuler ou appuyer
+sur la touche Echap pour quitter le formulaire d'édition.
 
-L'édition d'un champ de type date, qui obéit à un formatage normalisé, est
-assisté par un calendrier d'aide à la saisie.
+Editer des champs de type texte
+*******************************
 
-Sélectionner le ou les documents pour lesquels la date doit être modifiée ou
-ajoutée.
-
-*  Saisir manuellement la date selon le format **aaaa/mm/jj**,
-* **Ou bien**, utiliser le calendrier proposé.
-
-Éditer des champs de type texte intégral
-****************************************
-
-Sélectionner le ou les documents sur lesquels apporter des modifications
+* Sélectionner le ou les enregistrements sur lesquels apporter des
+  modifications
 * Cliquer dans le champ à modifier
 * Saisir les informations souhaitées
 
 .. image:: ../../images/Prod-Editer-texte.jpg
     :align: center
 
-Pour rappel, si le champ contient déjà des valeurs et que celles sont
-hétérogènes, des "xxxxx" en orange sont affichés.
+Si le champ édité contient des informations hétérogènes, choisir si les
+informations saisies doivent remplacer ou s'ajouter au champ.
 
-Dans ce cas, après saisie, cliquer sur le bouton adéquat selon que les
-informations saisies doivent remplacer ou s'ajouter au champ courant, si
-celui-ci contient des informations.
+Editer des champs de type texte multi-valués
+********************************************
 
-.. image:: ../../images/Prod-Editer-texte-ajouter.jpg
-    :align: center
+* Sélectionner le ou les enregistrements sur lesquels apporter des
+  modifications.
+* Cliquer dans un champ texte multi-valué
+* Saisir le terme ou expression dans le champ de formulaire puis cliquer sur
+  le plus ou valider avec la touche Entrer pour ajouter le terme au champ
+  multi-valué
 
-Éditer des champs textuels multi-valués
-***************************************
+Les termes ou expressions déjà présents dans les notices des enregistrements
+sélectionnés sont tous affichés dans le champ. **En blanc**, ceux présents dans
+toutes les notices, **en orange** ceux présents dans au moins une des notices.
 
-Sélectionner le ou les documents sur lesquels apporter une modification.
+Pour ajouter ou supprimer un terme descripteur figurant dans la liste des
+termes utilisés à d'autres notices d'enregistrements sélectionnés :
 
-* Cliquer dans un champ textuel de type multi-valué
+* Cliquer sur un des termes de la liste des descripteurs utilisés
+* Cliquer sur les symboles "plus" pour ajouter le terme ou expression des
+  notices des enregistrements
+* Cliquer sur les symboles "moins" pour supprimer le terme ou expression des
+  notices des enregistrements
 
-Les informations déjà présentes dans les notices de chaque document sélectionné
-sont affichées dans le champ.
-Les termes descripteurs communs à toutes les notices sont inscrits en blanc,
-ceux présents seulement dans au moins une notice sont en Orange.
+Editer des champs de type date
+******************************
 
-.. image:: ../../images/Prod-Editer-textemulti.jpg
-    :align: center
+Un champ de type date obéit à un format normalisé. Il est nécessaire de
+respecter les règles de saisie.
 
-* Cliquer sur un des mots clés "Orange".
+Sélectionner le ou les enregistrements pour lesquels la date doit être ajoutée
+ou modifiée.
 
-* Le terme s’affiche dans le masque de saisie.
+* Saisir la date selon le format aaaa/mm/jj
 
-Sous chacune des vignettes des médias sélectionnés, si le terme est absent des
-notices, un symbole "plus" s'affiche.
-Inversement, un symbole "moins" signifie que le termes n'est pas utilisé dans
-le champ documentaire de la notice du média.
+**Ou bien**,
 
-* Cliquer sur le symbole "plus" pour ajouter le terme pour cet enregistrement.
+* Utiliser le calendrier d'aide à la saisie proposé
 
-* Le symbole "plus" se transforme alors en symbole "moins".
-
-Pour ajouter le terme à toutes les notices sélectionnées,
-
-* Appuyer sur la touche "entrée" du clavier ou cliquer sur le symbole "plus"
-  qui se trouve à droite du champ de formulaire de saisie.
-
-* Cliquer sur le symbole "moins" à gauche du masque de saisie pour
-  supprimer le terme du champs documentaire des notices des médias sélectionnés.
-
-Éditer un champ lié à une source de données
+Editer un champ lié à une source de données
 *******************************************
 
 Les champs documentaires liés à des sources de données bénéficient d'un
 dispositif d'auto-complétion. L'auto-complétion permet de sélectionner des
-valeurs issues d'une liste d'autorité.
-Le dispositif est cependant ouvert : la saisie de termes non présents dans la
-source de vocabulaire reste possible.
-
-.. image:: ../../images/Prod-Editer-source_de_donnees.jpg
-    :align: center
+valeurs issues d'une liste d'autorité. Le dispositif est cependant ouvert : la
+saisie de termes non présents dans la source de vocabulaire reste possible.
 
 Placé sur un champ lié à une source de données, ...
 
 * Saisir au moins trois caractères pour initialiser le dispositif
-* Le système propose une liste de valeurs contenant la chaîne de caractères
+  d'auto-complétion
 * Sélectionner la valeur souhaitée au clavier ou à la souris
 
-Éditer à partir du thésaurus
+Editer à partir du thésaurus
 ****************************
 
 Sous réserve qu'un thésaurus soit déployé sur la base à laquelle appartiennent
-les médias en cours d'édition, l'onglet Thésaurus permet d’indexer rapidement à
-partir des termes contenus dans le thésaurus associé à la :term:`base`.
-Les saisies sont assistées pour les champs qui sont liés à des branches de
+les enregistrements en cours d'édition, l'onglet Thésaurus permet d'indexer
+rapidement à partir des termes contenus dans le thésaurus associé à la base.
+La saisie est assistée pour les champs qui sont liés à des branches de
 thésaurus.
 
 * Cliquer sur l'onglet thésaurus
-* Sélectionner un champ du type textuel lié au thésaurus
+* Sélectionner un champ texte lié au thésaurus
 * Débuter la saisie d'un terme
-
 * L'onglet thésaurus s'actualise et affiche les termes commençants par les
   caractères saisis
 
 .. image:: ../../images/Prod-Editer-thesaurus.jpg
     :align: center
 
-* Effectuer un double clic sur le terme à ajouter au champ dans l'onglet
-  Thésaurus
-
-* Le terme est immédiatement ajouté aux documents sélectionnés.
+* Effectuer un double clic sur le terme à ajouter au champ dans l'onglet Thésaurus
+* Le terme est ajouté aux documents sélectionnés.
 
 .. note::
-    Il est aussi possible de déployer l'*arbre* du thésaurus pour
-    chercher et sélectionner des termes à indexer. Cliquer sur les
-    symboles *plus* qui se trouvent devant les termes.
 
-Éditer à partir des valeurs suggérées
+    Il est possible de parcourir l'arbre du thésaurus pour chercher et
+    sélectionner des termes souhaité. Cliquer sur les symboles plus et moins
+    qui se trouvent devant les termes du thésaurus.
+
+Editer à partir des valeurs suggérées
 *************************************
 
-Si des valeurs suggérées ont été définies pour le champ, la liste apparaît
-sous forme de menu contextuel dans la fenêtre à gauche du nom du champ.
+Une liste de valeurs suggérées apparaît sous la forme d'un menu contextuel dans
+la fenêtre de gauche listant les champs éditables de la structure documentaire
+de la base.
 
-:doc:`Se reporter à la section Préférences: Valeurs suggérées dans l'interface
-Phraseanet Administration <AdministrationBasesCollections>`
+.. Seealso::
 
-.. image:: ../../images/Prod-Editer-valeurssugg.jpg
-    :align: center
+    Se reporter à la section consacrée au
+    :ref:`paramétrage des valeurs suggérées <AdministrationBasesCollections-valeurs>`
+    dans l'interface Admin
 
 * Cliquer sur le menu contextuel
-* Faire un double clic pour sélectionner une valeur suggérée dans la liste
-* La valeur est ajoutée au champ.
+* Effectuer un double clic pour ajouter la valeur suggérée dans le contenu du
+  champ
 
 .. note::
 
-    Pour cumuler des valeurs, sélectionner une valeur dans la liste en
-    appuyant sur la touche "ctrl" ou "cmd" du clavier
+    Pour cumuler des valeurs suggérées dans un champ, sélectionner les valeurs
+    dans la liste en appuyant sur la touche "Ctrl" ou "Cmd" du clavier.
 
-Utiliser l'onglet Presse Papier
-*******************************
+Editer les Status
+*****************
 
-* Cliquer sur l'onglet Presse Papier
+Cliquer sur la rubrique Status dans la liste des champs pour éditer les status
+des enregistrements sélectionnés.
 
-Copier et coller des termes ou des expressions dans ou depuis le presse papier
-vers des masques de saisie de champs.
+* Modifier l'état des Status au moyen des boutons radio
 
-Utiliser l'onglet  Rechercher/Remplacer
-***************************************
+Utiliser les dispositifs d'aide à la saisie
+-------------------------------------------
 
-Cet onglet permet à l’utilisateur de chercher et remplacer des termes contenus
-sur les documents en cours d’édition.
+Le Presse Papier
+****************
 
-* Cliquer sur l’onglet Rechercher / Remplacer
+L'onglet Presse Papier dans la zone des onglets d'assistance permet de copier
+et de coller des termes ou des expressions à utiliser dans les notices
+d'enregistrements.
+
+Rechercher/Remplacer
+********************
+
+L'onglet permet de chercher et de remplacer des termes ou expressions contenus
+dans les notices d'enregistrements en cours d'édition.
+
+* Cliquer sur l'onglet Rechercher / Remplacer
 
 .. image:: ../../images/Prod-Editer-chercherremplacer.jpg
     :align: center
 
-* Restreindre si nécessaire la fonction à un champ en particulier,
-  à partir du menu déroulant, par défaut dans tous les champs
+* Restreindre si nécessaire la fonction à un champ en particulier, à partir du
+  menu déroulant, par défaut dans tous les champs
 * Saisir le terme à Rechercher dans les notices des documents en cours
-  d’édition
+  d'édition
 * Saisir le terme de remplacement
-* Appliquer les options si nécessaire
+* Appliquer des options si nécessaires
 * Cliquer sur Valider
-
 * Le nouveau terme remplace le précédent dans les notices
 
-Utiliser l'onglet Modèles
-**************************
+Modèles
+*******
+
+L'onglet permet de créer et d'appliquer des modèles de description à des
+notices d'enregistrements.
 
 Créer un modèle de description documentaire
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Cette fonction permet de créer et d'utiliser ensuite des modèles de description
-de notices pré remplies.
+**Un modèle se créé à partir d'une notice en cours d'édition**.
 
-Un modèle se créé à partir d'une notice en cours d'édition.
-
-* Cliquer sur l’onglet Modèles
-* Sélectionner une notice en cliquant sur une vignette
+* Cliquer sur l'onglet Modèles
+* Sélectionner l'enregistrement dont la notice sert de modèle.
 
 .. note::
 
-    Si plusieurs documents sont sélectionnés, le modèle ne pourra
-    reprendre que le contenu homogène des champs
+    Si plusieurs enregistrements sont sélectionnés, le modèle ne tient compte
+    que des champs dont les contenus sont homogènes.
 
 * Cliquer sur Ajouter
 
@@ -256,99 +240,47 @@ Un modèle se créé à partir d'une notice en cours d'édition.
     :align: center
 
 * Donner un titre au modèle
-* Choisir les champs à reprendre dans le modèle, les champs contenant des
-  valeurs sont sélectionnés par défaut
+* Choisir les champs à inclure dans le modèle en cochant ou décochant les
+  cases à cocher. Les champs contenant des valeurs sont sélectionnés par défaut
 * Cliquer sur Valider pour enregistrer le modèle
-
-* Le nouveau modèle est affiché dans la liste des modèles disponible
 
 Appliquer un modèle à une sélection de médias
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Sélectionner les documents
-* Sélectionner l'onglet **Modèles** puis effectuer un double clic sur le titre
-  du modèle à appliquer
-
-* L'ensemble des informations contenus dans le modèle est appliqué aux
-  documents
+* Sélectionner des enregistrements
+* Afficher l'onglet Modèles puis effectuer un double clic sur le titre
+  du modèle à appliquer aux enregistrements
 
 .. note::
-    Il est possible de revoir les valeurs des champs d'un modèle en cliquant sur
-    la flèche se trouvant devant le titre du modèle.
 
-.. warning::
-    Un modèle est la propriété de l'utilisateur qui l'a créé, il ne
-    peut être utilisé que par lui.
+    Un modèle est la propriété de l'utilisateur qui l'a créé, il ne peut être
+    utilisé que par lui. Cependant d'autres utilisateurs peuvent partager des
+    modèles à partir d'enregistrement de référence.
 
-Éditer des reportages
----------------------
+Particularités de l'édition des reportages
+------------------------------------------
 
-Chaque reportage dispose de sa propre notice descriptive. Elle est identique à
-celle des médias d'une base. Comme pour l'édition de documents, la description
-en lots des notices de reportage est possible.
+Reportages et documents partagent la même structure de notices documentaires.
+Les reportages s'éditent de la même façon que les documents et deux
+particularités sont à signaler.
 
-Éditer les notices de reportages
-********************************
+Notices des reportages et notices des documents
+***********************************************
 
-En mode recherche reportage
+L'édition de reportages présente les notices des reportages sélectionnés **et**
+les notices de leurs contenus.
 
-* Sélectionner un ou plusieurs reportages depuis la zone d'affichage des
-  résultats
-* Cliquer sur **Éditer**
+Les reportages et leurs contenus sont sélectionnés par défaut. La saisie peut
+s'appliquer à la notice des reportages et aux notices des documents qu'ils
+contiennent.
 
-* => la fenêtre Éditer s'ouvre
+Choix d'un image représentative
+*******************************
 
-**Dans le cas d'un seul reportage sélectionné** : Le reportage et son contenu
-sont sélectionnés par défaut. La saisie peut s'appliquer à la notice du
-reportage **ET** au notices des documents contenus dans le reportage.
+Par défaut les reportages sont représentés un dossier. Il est possible de
+leur attribuer la vignette d'un document de type image lors de l'édition.
 
-**Dans le cas d'une sélection de plusieurs reportages**, le principe est
-identique à celle de l'édition des documents et seules les notices des
-reportages sont modifiées.
+Dans la barre de défilement des documents du reportage...
 
-Éditer un reportage et son contenu
-**********************************
-
-* Sélectionner un seul reportage depuis la zone d'affichage des résultats ou
-  le menu contextuel du reportage affiché dans la zone de travail.
-* Cliquer sur Éditer
-
-ou
-
-* -> Cliquer sur Éditer depuis la barre d'action locale du reportage quand
-  celui-ci est dans la zone de travail.
-* => La fenêtre Éditer s'ouvre
-
-.. image:: ../../images/Prod-Editer-reportage.jpg
-    :align: center
-
-Les reportages ont par défaut une image de "dossier" pour les illustrer.
-
-* -> Cliquer sur le menu contextuel d’une des vignettes
-* -> Cliquer sur *Définir comme image principale*
-* -> L’image du dossier est remplacée par la vignette du document choisi
-
-Pour compléter la notice du reportage:
-
-* -> Cliquer sur l’image de représentation du reportage en haut à gauche de
-  la fenêtre *Éditer*
-* -> Seule la notice du reportage sera modifiée
-
-* -> Sélectionner l’image de représentation du reportage et les autres
-  vignettes pour modifier à la fois la notice reportage et les notices des
-  documents qui composent le reportage.
-* -> Compléter les champs à modifier
-
-* -> Cliquer sur Valider pour enregistrer les modifications.
-
-Éditer les Status
------------------
-
-La première ligne de la liste de champs permet de changer les status des
-documents sélectionnés.
-
-* -> Cliquer sur la première ligne de la liste de champs "Status".
-* -> Cocher les cases correspondant au changement d’état à appliquer sur les
-  documents.
-* -> Cliquer sur Valider pour enregistrer les modifications ou poursuivre
-  l’indexation.
+* Cliquer sur le menu contextuel d'une vignette de document de type image
+* Cliquer sur la rubrique Définir comme image principale
