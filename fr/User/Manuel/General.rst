@@ -45,28 +45,26 @@ diffusion de documents multimédia.
 La solution repose sur sept modules ou interfaces, accessibles selon les droits
 de l'utilisateur à partir d'une barre de menu principal :
 
-* Phraseanet `Production`_
-* Phraseanet `Classic`_
-* Phraseanet `Lightbox`_
-* Phraseanet `Upload`_
-* Phraseanet `Administration`_
-* Phraseanet `Thésaurus`_
-* Phraseanet `Report`_
+* `Production`_
+* `Classic`_
+* `Lightbox`_
+* `Upload`_
+* `Administration`_
+* `Thésaurus`_
+* `Report`_
 
 Production
 **********
 
 *Phraseanet Production* est l'interface la plus importante pour de nombreux
 utilisateurs.
-Complète, cette interface permet de :doc:`rechercher <Rechercher>`,
-:doc:`d'éditer <Editer>`, :doc:`de visualiser, d'organiser <Afficher>` et de
-:doc:`partager <Push>` vos documents.
+Complète, cette interface permet, selon les droits de l'utilisateur,
+d':doc:`importer <Importer>`, de :doc:`décrire <Editer>`, de
+:doc:`rechercher <Rechercher>`, :doc:`de visualiser, d'organiser <Afficher>`,
+de :doc:`partager <Push>` et de :doc:`diffuser <Publier>` des documents
+multimédias.
 
-Selon les droits attribués, *Production* permet aux utilisateurs de parcourir
-des fonds et de télécharger, aux gestionnaires d'importer, de décrire,
-d'organiser et de diffuser leurs médias.
-
-.. figure:: ../../images/Production-general.jpg
+.. image:: ../../images/Production-general.jpg
     :align: center
 
 Classic
@@ -76,7 +74,7 @@ Classic
 finaux disposants de navigateurs anciens. Elle permet de
 :doc:`consulter des documents <Afficher>`.
 
-.. figure:: ../../images/General-Classic.jpg
+.. image:: ../../images/General-Classic.jpg
    :align: center
 
 Lightbox
@@ -87,11 +85,13 @@ télécharger des documents spécifiques envoyés par des utilisateurs *Phrasean
 Des fonctionnalités de validation permettent de :doc:`connaître les avis
 d’utilisateurs sur des médias <Push>`.
 
-.. figure:: ../../images/General-Lightbox.jpg
+.. image:: ../../images/General-Lightbox.jpg
    :align: center
 
-Pour envoyer, partager, comparer des documents dans *Phraseanet Lightbox*,
-se reporter à la section consacrée au :doc:`Push et à la Validation<Push>`.
+.. seealso::
+
+    Pour envoyer, partager, comparer des documents dans *Lightbox*, se reporter
+    à la section consacrée au :doc:`Push et à la Validation<Push>`.
 
 Upload
 ******
@@ -102,30 +102,34 @@ Phraseanet à partir du disque dur de l'ordinateur.
 Ce gestionnaire de téléchargement montant permet de transférer des médias sans
 requérir à un logiciel de transfert :term:`FTP <FTP>`.
 
-.. figure:: ../../images/General-Upload.jpg
+.. image:: ../../images/General-Upload.jpg
    :align: center
 
-:doc:`Comment importer des documents dans Phraseanet ?<Importer>`
+.. seealso::
+
+    Se reporter à la section consacrée à :doc:`l'upload de documents<Importer>`.
 
 Administration
 **************
 
-:doc:`Phraseanet Administration <Administration>` est une interface métier
-permettant de gérer et de surveiller l'application, de créer des bases et des
+:doc:`Admin <Administration>` est une interface métier permettant de gérer et
+de surveiller l'application, de créer des bases et des
 :term:`collections <Collection>`, de déclarer des structures documentaires, de
 créer des utilisateurs ou de gérer leurs droits.
 
 .. image:: ../../images/General-Administration.jpg
     :align: center
 
-:doc:`Se reporter à la section dédiée à l'Administration <Administration>`.
+.. seealso::
+
+     :doc:`Se reporter à la section dédiée à l'Administration <Administration>`.
 
 Thésaurus
 *********
 
 La création et la gestion de :doc:`Thésaurus <Thesaurus>` est possible dans
 *Phraseanet*. Le *thésaurus* s'utilise conjointement au moteur de
-recherche *Phrasea*. Il n'est pas compatible avec le moteur *Sphinx*.
+recherche *Phrasea*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques. Il apporte
 un vrai plus dans l'utilisation de *Phraseanet*.
@@ -133,18 +137,22 @@ un vrai plus dans l'utilisation de *Phraseanet*.
 .. image:: ../../images/General-Thesaurus.jpg
    :align: center
 
-:doc:`Se reporter à la section dédiée au Thésaurus <Thesaurus>`.
+.. seealso::
+
+     :doc:`Se reporter à la section dédiée au Thésaurus <Thesaurus>`.
 
 Report
 ******
 
-Application de :doc:`Statistiques <Statistiques>`, *Report* présente en détail
+Application de :doc:`statistiques <Statistiques>`, *Report* présente en détail
 l’activité d'un système *Phraseanet* et rend compte des comportements des
 utilisateurs. C'est une mine d'informations pour optimiser l'accès aux fonds
 documentaires et mieux connaître les habitudes des utilisateurs.
 
-.. figure:: ../../images/General-Report.jpg
+.. image:: ../../images/General-Report.jpg
    :align: center
 
-Se reporter à la section :doc:`Statistiques <Statistiques>` pour une
-présentation de ce module.
+.. seealso::
+
+    Se reporter à la section :doc:`Statistiques <Statistiques>` pour une
+    présentation de ce module.

@@ -20,7 +20,9 @@ l'utilisateur à accès.** Cliquer sur le nom de l'application pour la lancer da
 un nouvel onglet ou une nouvelle fenêtre du navigateur.
 
 **Les rubriques de la barre de menu sont fonctions des droits de
-l'utilisateur.** Si l'utilisateur n'a pas accès à certaines fonctionnalités,
+l'utilisateur.**
+
+Si l'utilisateur n'a pas accès à certaines fonctionnalités,
 le lien vers l'interface l'exploitant n'apparaît pas dans la barre de menu.
 Ainsi, les utilisateurs dont les droits se limitent à la consultation du fonds
 ont accès à un nombre limité de rubriques.
@@ -28,7 +30,8 @@ ont accès à un nombre limité de rubriques.
 .. image:: ../../images/General-menu0.jpg
     :align: center
 
-D'autres, comme les administrateurs disposent d'une barre de menu plus complète.
+D'autres, comme les administrateurs fonctionnels disposent d'une barre de menu
+plus complète.
 
 .. image:: ../../images/General-menu1.jpg
     :align: center
@@ -48,11 +51,12 @@ interface *Production*.
 Elles renseignent l'utilisateur sur des événements : nouvelles publications,
 réceptions de paniers, demandes de validation, ... *etc*.
 
-**Cliquer sur la rubrique Notification pour les afficher**.
+**Cliquer sur la rubrique Notifications pour les afficher**.
 
 Les notifications affichées dans l'interface sont relayées par l'envoi
-d'e-mail. Pour gérer les notifications reçues, se reporter à la section
-:doc:`personnaliser l'interface <Personnaliser>`.
+d'e-mail. Pour gérer les notifications reçues, accéder à
+:ref:`l'onglet Informations <MenuPhraseanet-Informations>` des paramètres de
+compte.
 
 Accès aux paramètres du compte
 ------------------------------
@@ -63,6 +67,8 @@ des onglets thématiques.
 
 .. image:: ../../images/Moncompte.jpg
     :align: center
+
+.. _MenuPhraseanet-Informations:
 
 L'onglet Informations
 *********************
@@ -76,9 +82,9 @@ de modifier :
 * d'éditer un favori :term:`FTP` permettant la réception de documents sur un
   serveur supportant ce type de connexion.
 
-.. note::
+.. seealso::
 
-    :doc:`Comment activer la réception de documents sur un serveur FTP ? <../../FAQ/Parametrage/activer-ftp>`
+    :doc:`Activer la réception de documents sur un serveur FTP <../../FAQ/Parametrage/activer-ftp>`
 
 L'onglet Accès
 **************
@@ -90,7 +96,7 @@ Pour faire une demande d'accès à de nouvelles bases ou collections :
 
 * Cocher la ou les cases correspondantes aux accès aux nouvelles
   Bases/Collections
-* Valider la demande en cliquant sur le bouton *Valider*
+* Valider la demande en cliquant sur le bouton **Valider**
 
 Un message indique alors qu'une demande d'accès est en cours. Elle nécessite
 d'être examinée par un administrateur pour validation.
@@ -107,7 +113,7 @@ dates de connexion et d'accès, aux adresses IP, et navigateurs utilisés.
 .. image:: ../../images/ListeSessions.jpg
     :align: center
 
-Cliquer sur le bouton *Mettre fin à la session* pour supprimer une session
+Cliquer sur le bouton **Mettre fin à la session** pour supprimer une session
 active.
 
 L'onglet Applications
@@ -119,9 +125,9 @@ de l'utilisateur.
 .. image:: ../../images/ListeApplications.jpg
     :align: center
 
-.. note::
+.. seealso::
 
-  :doc:`Comment autoriser une application tierce à se connecter à un compte Phraseanet ? <../../FAQ/Utilisateurs/ajouter-application>`
+  :doc:`Autoriser une application tierce à se connecter à un compte Phraseanet <../../FAQ/Utilisateurs/ajouter-application>`
 
 L'onglet Développeur
 ********************

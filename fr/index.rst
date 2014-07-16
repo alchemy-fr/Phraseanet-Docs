@@ -68,9 +68,10 @@ de services autour de la solution *Phraseanet*. Consulter
 `ces offres <http://alchemy.fr/spip.php?page=rubrique&id_rubrique=8>`_
 sur le site éditeur.
 
-L'équipe de Phraseanet consacre une partie de son temps libre à l'animation des
-forums et groupes. Consulter `cette page <http://www.phraseanet.com/support/>`_
-pour une présentation de ces groupes.
+L'équipe de Phraseanet consacre une partie de son temps à l'animation de
+forums et de groupes. Consulter
+`cette page <http://www.phraseanet.com/support/>`_ pour une présentation de
+ces groupes.
 
 .. _Alchemy: http://www.alchemy.fr/
 .. _Phraseanet: https://www.phraseanet.com/

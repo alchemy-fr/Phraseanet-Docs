@@ -13,29 +13,24 @@ Redimensionner la zone de travail
 *********************************
 
 * Cliquer sur l’onglet séparant la zone de travail de celle des résultats.
+* Déplacer le curseur vers la gauche ou la droite pour agir sur la taille des
+  zones d'affichage.
 
 .. image:: ../../images/Onglet-Taille.jpg
     :align: center
-
-* Déplacer le curseur vers la gauche ou la droite pour agir sur la taille des
-  zones d'affichage.
 
 Masquer ou afficher la zone de travail
 **************************************
 
 La zone de travail est rétractable :
 
-.. image:: ../../images/Onglets-Retractable1.jpg
-    :align: center
-
 * Cliquer sur l'icône présente sur le côté droit de la zone de travail pour la
   réduire et maximiser la surface dédiée à la zone d'affichage.
-
-.. image:: ../../images/Onglets-Retractable.jpg
-    :align: center
-
 * Lorsque réduite, cliquer sur une partie du bandeau de la zone de travail pour
   la déployer.
+
+.. image:: ../../images/Onglets-Retractable1.jpg
+    :align: center
 
 Préférences d'affichage
 -----------------------
@@ -70,7 +65,7 @@ lors d'une connexion aux interfaces *Production* et *Classic*.
 .. image:: ../../images/Affichage-Preferences2.jpg
     :align: center
 
-Cliquer sur la croix pour quitter la fenêtre *Préférences*. Les changements
+Cliquer sur la croix pour quitter la fenêtre Préférences. Les changements
 effectués sont prises en compte lors du rafraîchissement de l'affichage.
 
 Préférences de tri et d'affichage des paniers et reportages
@@ -79,7 +74,7 @@ Préférences de tri et d'affichage des paniers et reportages
 Pour accéder aux préférences de tri et d'affichage des paniers et reportages,
 cliquer sur le menu contextuel des paniers.
 
-.. figure:: ../../images/General-prefpaniers.jpg
+.. image:: ../../images/General-prefpaniers.jpg
    :align: center
 
 Le menu permet deux rubriques permettant d'altérer l'affichage par :
@@ -90,7 +85,7 @@ Le menu permet deux rubriques permettant d'altérer l'affichage par :
 Cliquer sur la rubrique **Préférences** du menu contextuel des paniers pour
 modifier d'autres paramètres d'affichage.
 
-.. figure:: ../../images/General-Prefpaniers2.jpg
+.. image:: ../../images/General-Prefpaniers2.jpg
    :align: center
 
 Des cases à cocher permettent d'agir les informations affichées dans les paniers
@@ -107,9 +102,7 @@ Réglage des notifications
 
 Les notifications sont complétées d'e-mails reçus à l'adresse de l'utilisateur.
 
-La réception de ces e-mails est paramétrable par événement dans la section
-**Notification par e-mail** de l'onglet *Informations* du compte utilisateur.
+.. seealso::
 
-Se reporter l'onglet *Informations* du
-:doc:`compte utilisateur <MenuPhraseanet>` pour agir sur la réception des
-notifications.
+    Se reporter à :ref:`l'onglet Informations <MenuPhraseanet-Informations>`
+    des paramètres de compte pour agir sur la réception des notifications.

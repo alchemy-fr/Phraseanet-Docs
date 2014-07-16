@@ -5,8 +5,8 @@
 
 .. topic:: L'essentiel
 
-    Les interfaces *Production* ou *Classic* permettent de consulter
-    et de parcourir un fonds médias.
+    Les interfaces *Production* et *Classic* permettent de consulter et de
+    parcourir un fonds média.
 
     *Production* est une interface dédiée à la consultation, à la recherche,
     à la gestion et à l'édition des documents, selon les droits de
@@ -39,7 +39,7 @@ L'espace de travail de Production se partage en quatre zones :
 Le bandeau inférieur de l'espace de travail permet d'accéder aux
 **Préférences d'affichage**, renseigne sur le nombre de réponses existantes et
 affiche un index de pagination des résultats. Cet index permet de se déplacer
-dans les résultats affichés.
+dans les résultats.
 
 .. note::
 
@@ -64,7 +64,7 @@ administrateurs.
     Pour paramétrer le titre des documents affichés sous les vignettes, voir
     :doc:`la section Administration<AdministrationBasesCollections>`.
 
-**Le nom de la collection d’appartenance du document est affiché dans le coin
+**Le nom de la collection d'appartenance du document est affiché dans le coin
 inférieur gauche** de la vignette. Il peut être substitué par un mini logo.
 
 .. image:: ../../images/Affichage-nomcoll.jpg
@@ -89,7 +89,7 @@ Par défaut, il s'agit :
 * d'une séquence sonore pour les documents de type audio
 * d'une animation flash pour certains types de documents bureautiques
 * d'une icône générique si le système ne reconnait pas le type de fichier ou
-  n'est pas en mesure de générer de fichiers sous-définitions
+  n'est pas en mesure de générer de fichiers de sous-définitions
 
 **L'icône *i* permet d'afficher des informations techniques sur le média
 original** : largeur et hauteur en pixels, type, poids, taille d’impression...
@@ -125,7 +125,7 @@ L'onglet Notice
 ***************
 
 L'onglet Notice affiche les informations issues des champs documentaires remplis
-ainsi que les informations techniques du média.
+ainsi que les informations techniques du média selon paramétrage.
 
 .. note::
 
@@ -160,7 +160,7 @@ L'onglet Popularité révèle des statistiques sur le média affiché :
 .. note::
 
     Pour des statistiques détaillées concernant une base, consulter la page
-    consacrée aux :doc:`Statistiques <Statistiques>`.
+    consacrée aux :doc:`statistiques <Statistiques>`.
 
 Cliquer sur "Fermer" ou sur la touche "Echap" du clavier pour quitter la vue
 détaillée.
@@ -175,7 +175,7 @@ Sélection simple
 
 Sélectionner une vignette dans la zone des résultats, dans les paniers ou dans
 les reportages en cliquant dans son cadre. La couleur de fonds de la vignette
-change.
+change pour indiquer sa sélection.
 
 .. image:: ../../images/Affichage-selection1.jpg
     :align: center
@@ -189,7 +189,7 @@ Sélection multiple
 **Pour sélectionner des enregistrements contigus**...
 
 * Cliquer sur la première vignette de la série
-* Enfoncer et maintenir la touche Maj (shift) du clavier
+* Enfoncer et maintenir la touche Maj (Shift) du clavier
 * Cliquer sur la dernière vignette des enregistrements à sélectionner
 
 Tous les enregistrements compris dans l'intervalle sont sélectionnés.
@@ -257,9 +257,6 @@ Créer un panier
 
 Une fenêtre en surimpression présente un formulaire de création de panier.
 
-.. image:: ../../images/Affichage-Panier.jpg
-    :align: center
-
 * Saisir un nom pour le nouveau panier et une description (facultatif).
 * Cocher la case **Ajouter ma sélection courante** pour ajouter des documents
   préalablement sélectionnés dans les résultats.
@@ -324,8 +321,6 @@ Supprimer un panier
 Pour supprimer un panier, cliquer sur la rubrique Supprimer du menu contextuel
 du panier à supprimer puis confirmer la suppression dans la fenêtre de
 confirmation.
-
-
 
 .. seealso::
 
