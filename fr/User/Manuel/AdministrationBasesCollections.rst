@@ -224,6 +224,8 @@ la taille en giga-octets.
 
 Pour masquer les détails de la collection, cliquer sur **Retour**.
 
+.. _AdministrationBasesCollections-Gestionnaires:
+
 Gérer les gestionnaires de commande
 ***********************************
 

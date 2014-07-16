@@ -10,6 +10,8 @@
     Plusieurs modes d'export sont proposés : le téléchargement,
     l'envoi par e-mail ou encore la transmission via :term:`FTP <FTP>`.
 
+    Les documents non téléchargeables peuvent être commandés.
+
     L'action `Imprimer`_ est un type d'export particulier. Il s'agit
     d'une impression de notices au format PDF.
 
@@ -41,18 +43,16 @@ ou depuis la zone d'affichage des paniers et reportages.
 
 En cliquant sur **Exporter**, jusqu'à quatre options d'export sont proposées :
 
-* **Le téléchargement** : il permet de transférer les données sur le disque
-  dur de l'ordinateur dans un fichier Zip.
-* **L'envoi par E-mail** : il permet d'envoyer à des destinataires un lien
-  permettant de récupérer les médias dans un fichier Zip.
-* **L'onglet Commander** permet de commander des documents non disponibles au
-  téléchargement auprès des gestionnaires de collections.
-* **L'envoi par FTP** : si ce type d'export est mis en oeuvre, l'envoi
-  par FTP permet de déposer les médias exportés sur un serveur de fichiers
-  supportant des connexions FTP.
-
-.. image:: ../../images/Exporter-general.jpg
-    :align: center
+* :ref:`Le téléchargement <Telechargement>` : il permet de transférer les
+  données sur le disque dur de l'ordinateur dans un fichier Zip.
+* :ref:`L'envoi par E-mail <Export-Email>` : il permet d'envoyer à des
+  destinataires un lien pour récupérer les médias dans un fichier Zip.
+* :ref:`L'envoi par FTP <Export-FTP>` : si ce type d'export est mis en oeuvre,
+  l'envoi par FTP permet de déposer les médias exportés sur un serveur de
+  fichiers supportant ce type de connexion.
+* :ref:`L'onglet Commander <Export-Commande>` permet de commander des documents
+  non disponibles au téléchargement auprès des
+  :ref:`gestionnaires de collections <AdministrationBasesCollections-Gestionnaires>`.
 
 .. note::
 
@@ -65,30 +65,36 @@ Sélectionner une ou plusieurs enregistrements (documents ou reportages) puis
 cliquer sur le bouton Exporter. Les options de téléchargement sont présentées
 dans les onglets de la fenêtre en surimpression.
 
+.. _Telechargement:
+
 L'export par téléchargement
 ***************************
 
-* Utiliser les cases à cocher pour sélectionner quels éléments exporter.
-* Cliquer sur *Télécharger*.
-* Suivre la procédure proposée par le navigateur.
+* Utiliser les cases à cocher pour sélectionner quels éléments exporter
+* Cliquer sur **Télécharger**
+* Suivre la procédure proposée par le navigateur
 
 .. image:: ../../images/Exporter-telecharger.jpg
     :align: center
 
+.. _Export-Email:
+
 L'export par E-Mail
 *******************
 
-* Saisir l'adresse e-mail du destinataire, utiliser le point virgule " ; " en
-  cas d’envoi vers des destinataires multiples.
-* Saisir l'objet de l'e-mail.
+* Saisir l'adresse e-mail du destinataire, utiliser le point virgule en
+  cas d’envoi vers des destinataires multiples
+* Saisir l'objet de l'e-mail
 * Sélectionner quels fichiers doivent être joints à l'archive Zip téléchargeable
-  via le lien proposé dans le corps de l'e-mail.
-* Compléter si besoin le message de l'e-mail.
-* Cliquer sur Envoyer.
-* Un message confirmant l’envoi de l’e-mail apparaît.
+  via le lien proposé dans le corps de l'e-mail
+* Compléter si besoin le message de l'e-mail
+* Cliquer sur **Envoyer**
+* Un message confirmant l’envoi de l’e-mail apparaît
 
 .. image:: ../../images/Exporter-mail.jpg
     :align: center
+
+.. _Export-FTP:
 
 FTP
 ***
@@ -99,13 +105,16 @@ favori FTP.
 
 .. note::
 
-    Le favori FTP correspond à l'adresse FTP saisie dans la partie "Mon compte".
+    Le favori FTP est éditable dans :ref:`l'onglet Informations <MenuPhraseanet-Informations>`
+    des paramètres de compte.
 
 .. image:: ../../images/Exporter-FTP.jpg
     :align: center
 
-Demande de documents
-********************
+.. _Export-Commande:
+
+Commander des documents
+***********************
 
 Cet onglet permet d'adresser des demandes de téléchargement pour les
 utilisateurs ne bénéficiant pas des droits de téléchargement sur des médias.
@@ -123,17 +132,17 @@ utilisateurs ne bénéficiant pas des droits de téléchargement sur des médias
 
 Imprimer
 --------
+
 Cette Action permet d'imprimer les vignettes, les images de choix, les
 descriptions des médias dans un document PDF auto-généré.
 
 * Sélectionner un ou plusieurs médias puis cliquer sur "Imprimer".
 
-La fenêtre Imprimer s'ouvre.
-
 .. image:: ../../images/Actions-Imprimer1.jpg
     :align: center
 
-Cocher les cases correspondant aux choix souhaités:
+Dans la fenêtre **Imprimer**, cocher les cases correspondant aux choix
+souhaités:
 
 * **Image de choix**, pour n'imprimer que les images de choix.
 * **Image de choix et légende**, pour imprimer les images de choix et la

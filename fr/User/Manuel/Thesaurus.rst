@@ -7,7 +7,8 @@ Thésaurus
 .. topic:: L'essentiel
 
     Le Thésaurus est un outil de gestion de langage documentaire. Dans
-    Phraseanet, sa mise en place est optionnelle.
+    Phraseanet, sa mise en place est optionnelle. Il s'utilise avec le moteur
+    Phrasea et n'est pas compatible avec le moteur Sphinx.
 
     Dans Production, le thésaurus sert :
 

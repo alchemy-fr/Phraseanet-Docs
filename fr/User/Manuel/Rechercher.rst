@@ -53,8 +53,10 @@ Les résultats obtenus sont affichés dans la zone d'affichage. Leurs pertinence
 dépendent de la qualité d'indexation documentaire ainsi que de la requête
 formulée.
 
-Le nombre de résultats par page est ajustable. Se référer à la page
-consacrée à la :doc:`personnalisation de l'interface <Personnaliser>`.
+.. note::
+
+    Le nombre de résultats par page est ajustable. Se référer à la page
+    consacrée à la :doc:`personnalisation de l'interface <Personnaliser>`.
 
 Opérateurs booléens et troncature
 *********************************
@@ -82,8 +84,11 @@ D'autres opérateurs courants sont disponibles :
   "Avant-première"...etc.
 
 D'autres possibilités existent au moyen d'opérateurs avancés.
-:doc:`Voir la liste exhaustive de ces opérateurs <../../FAQ/Medias/Tous-les-operateurs-de-recherche>`
-dans la FAQ.
+
+.. seealso::
+
+    :doc:`Voir la liste exhaustive de ces opérateurs <../../FAQ/Medias/Tous-les-operateurs-de-recherche>`
+    dans la FAQ.
 
 Opérateurs spécifiques
 **********************
@@ -121,7 +126,7 @@ contiennent le terme **France** dans un champs intitulé **Pays**.
 .. note::
 
     Pour une recherche par champ, veiller à employer le nom du champ tel que
-    déclaré dans la structure documentaire (respect de la casse).
+    déclaré dans la structure documentaire (en respectant la casse).
 
 Recherche avancée
 -----------------
@@ -147,13 +152,13 @@ sélectionner ou désélectionner individuellement.
 
 .. note::
 
-    Si aucune collection n'est sélectionnée, la recherche porte alors sur toutes
+    Si aucune collection n'est sélectionnée, la recherche porte sur toutes
     les bases et collections disponibles.
 
 Les filtres disponibles apportent de la granularité aux équations de recherche :
 
 * Activer ou désactiver la recherche par :term:`Stemme`
-* Rechercher dans dans un ou plusieurs champs spécifiques
+* Rechercher dans un ou plusieurs champs spécifiques
 * Filtrer par status
 * Limiter les recherches à des intervalles de dates
 
@@ -178,15 +183,12 @@ zone de travail.
 .. image:: ../../images/Recherche-Thesaurus.jpg
     :align: center
 
-Il présente le ou les *thesauri* déployés sous forme d'un *arbre* dont les
+Il présente le ou les *thesauri* déployés sous forme d'arbres dont les
 noeuds et termes sont cliquables.
 
 * Cliquer sur les "+" des noeuds du thésaurus pour le déployer et naviguer dans
   les termes qu'il contient.
 * Double cliquer sur un des termes pour lancer la recherche.
-
-.. image:: ../../images/Rechercher-thesaurus2.jpg
-    :align: center
 
 **Une recherche dans les termes du thésaurus est possible** au moyen d'un
 formulaire.

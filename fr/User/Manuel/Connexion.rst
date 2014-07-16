@@ -18,7 +18,7 @@ Authentification
 * Cliquer sur **Connexion**
 
 En cas d'oubli du mot de passe, suivre la procédure de récupération en cliquant
-sur le lien *Mot de Passe oublié*.
+sur le lien :ref:`Mot de Passe oublié <Connexion-Mot-de-passe-oublie>`.
 
 Lors de la connexion à Phraseanet, la dernière application utilisée se lance
 ou, à défaut, :doc:`Production <Afficher>`.
@@ -77,8 +77,10 @@ Il informe l'utilisateur que sa demande d'inscription a été prise en compte.
 Notifié, un administrateur peut être amené à valider l'inscription dans le
 module d'Administration.
 
-Mot de passe perdu ?
---------------------
+.. _Connexion-Mot-de-passe-oublie:
+
+Mot de passe oublié ?
+---------------------
 
 * Cliquer sur le lien **Mot de Passe oublié ?**
 * Remplir et soumettre le formulaire proposé avec l'adresse e-mail liée au
@@ -87,15 +89,16 @@ Mot de passe perdu ?
 Une fois le formulaire complété et soumis, un email est envoyé. Il contient un
 lien permettant de rejoindre l'interface d'initialisation de mot de passe.
 
-.. note::
+.. warning::
 
     Le lien n'est valide que pour une durée limitée.
     Si l'e-mail n'est pas reçu, consulter le dossier des courriers indésirables
     du programme de messagerie.
 
 Cliquer sur le lien proposé dans l'e-mail reçu pour rejoindre l'interface
-d'initialisation de mot de passe. Suivre les instructions proposées puis
-valider le formulaire.
+d'initialisation de mot de passe.
+
+Suivre les instructions proposées puis valider le formulaire.
 
 .. warning::
 
@@ -115,6 +118,7 @@ bouton **Accès invité** pour se connecter au moyen de ce compte.
   Le compte invité est un compte comparable aux autres comptes Phraseanet. Il
   permet de consulter une ou plusieurs collections sans nécessiter
   d'authentification.
+
   Se reporter à
   :doc:`cette section <../../FAQ/Personnalisation/Parametrer-le-compte-invite>`
   pour la mise en oeuvre de l'accès invité.
