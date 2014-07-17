@@ -19,6 +19,9 @@
     Accessibles selon les droits des utilisateurs, certaines de ces commandes
     sont des fonctions de base, d'autres sont des fonctions étendues.
 
+.. image:: ../../images/Actions-PaletteBeta.jpg
+    :align: center
+
 Les fonctions de base
 ---------------------
 

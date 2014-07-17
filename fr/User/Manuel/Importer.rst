@@ -23,7 +23,7 @@ Importer
 .. image:: ../../images/Upload-Version-Flash.jpg
     :align: center
 
-Cliquer sur le bouton **Utiliser l'uploader Flash** pour exécuter ce mode.
+Cliquer sur le lien **Utiliser l'uploader Flash** pour exécuter ce mode.
 Le mode Flash est un mode d'affichage dégradé : il ne permet pas d'accéder à
 toutes les fonctionnalités développées sur le socle technologique de HTML5.
 
@@ -36,19 +36,13 @@ l'interface dans une fenêtre overlay.
 Sélectionner des fichiers
 *************************
 
-Cliquer sur **Sélectionner les fichiers**.
-
-.. image:: ../../images/Upload-zone1.jpg
-    :align: center
-
-L'explorateur de fichiers de l'ordinateur se lance. Sélectionner les fichiers à
-intégrer en navigant dans l'arborescence de répertoires puis cliquer sur Ouvrir.
-
-.. image:: ../../images/Upload-fichiers.jpg
-    :align: center
+* Cliquer sur **Sélectionner les fichiers** (1). L'explorateur de fichiers de
+  l'ordinateur se lance.
+* Sélectionner les fichiers à intégrer en navigant dans l'arborescence de
+  répertoires puis cliquer sur Ouvrir.
 
 Les fichiers sélectionnés apparaissent dans la partie gauche de l'interface
-Upload.
+Upload (2).
 
 .. image:: ../../images/Upload-fichiers2.jpg
     :align: center
@@ -56,21 +50,22 @@ Upload.
 Réordonner, supprimer des médias de la liste d'import
 *****************************************************
 
-Si besoin, **réordonner les médias** avant de les importer. Sélectionner un
-fichier et le glisser / déposer ailleurs dans la grille.
+* **Réordonner les médias** avant de les importer. Sélectionner un fichier et
+  le glisser / déposer ailleurs dans la grille.
 
 .. image:: ../../images/Upload-reordonner.jpg
     :align: center
 
-**Supprimer** éventuellement de la liste une ou plusieurs images en cliquant
-sur le bouton Annuler au-dessous des vignettes, ou bien **réinitialiser la
-liste d'envoi** en cliquant sur le bouton **Vider la liste**.
+* **Supprimer** de la liste un ou plusieurs médias en cliquant sur le bouton
+  Annuler au-dessous des vignettes, ou bien
+* **Réinitialiser la liste d'envoi** en cliquant sur le bouton
+  **Vider la liste**.
 
 Choisir la collection de destination
 ************************************
 
-Sélectionner la collection de destination dans la liste déroulante où figurent
-les collections disponibles.
+* Sélectionner la collection de destination dans la liste déroulante où
+  figurent les collections disponibles (3).
 
 .. image:: ../../images/Upload-prezone3.jpg
     :align: center
@@ -78,7 +73,7 @@ les collections disponibles.
 Appliquer des *status*
 **********************
 
-Si nécessaire, appliquer les :term:`status` aux médias.
+* Appliquer si nécessaire des :term:`status` aux médias.
 
 .. image:: ../../images/Upload-zone3.jpg
     :align: center
@@ -86,10 +81,11 @@ Si nécessaire, appliquer les :term:`status` aux médias.
 Transmettre les médias
 **********************
 
-Cliquer sur Envoyer pour verser les fichiers dans Phraseanet. Tous les médias
-sont transférés vers la collection sélectionnée. L'avancée du téléchargement
-est représentée par des barres de progression sur le côté droit dans la partie
-**Fichiers transmis**.
+* Cliquer sur **Envoyer** pour verser les fichiers dans Phraseanet.
+
+Tous les médias sont transférés vers la collection sélectionnée.
+Des barres de progression indiquent l'avancement du transfert dans la partie
+**Fichiers transmis** (4).
 
 .. image:: ../../images/Upload-zone4.jpg
     :align: center
@@ -116,8 +112,8 @@ notifications peuvent être diffusées par le système.
 .. note::
 
     Par défaut, entrent en quarantaine les fichiers dont l'
-    :term:`identifiant universel unique (UUID)` est déjà présent dans au moins
-    un des médias de la base de destination.
+    :term:`identifiant universel unique <Identifiant universel unique (UUID)>`
+    est déjà présent dans au moins un des médias de la base de destination.
 
     D'autres critères de mise en quarantaine peuvent être paramétrés par les
     administrateurs (format, espace colorimétrique, dimensions…*etc*.).

@@ -29,17 +29,17 @@ Généralités sur les paniers
 Les fonctions de base et sélections dans les paniers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Les paniers et leurs fonctions de base sont présentés sur la page consacrée
+à l'affichage des résultats.
+
 .. seealso::
 
-    Les paniers et leurs fonctions de base sont présentés sur la page consacrée
-    à l'affichage des résultats :
-
     * :ref:`La création <Affichage-Panier-Creer>`
-	* :ref:`L'ajout d'une sélection <Affichage-Panier-Ajouter>`
-	* :ref:`L'ouverture et la fermeture de paniers <Affichage-Panier-Ouverture>`
-	* :ref:`L'affichage dans le vue détaillée <Affichage-Panier-Detail>`
-	* :ref:`La suppression de médias dans un panier <Affichage-Panier-Suppression1>`
-	* :ref:`La suppression de panier <Affichage-Panier-Suppression2>`
+    * :ref:`L'ajout d'une sélection <Affichage-Panier-Ajouter>`
+    * :ref:`L'ouverture et la fermeture de paniers <Affichage-Panier-Ouverture>`
+    * :ref:`L'affichage dans le vue détaillée <Affichage-Panier-Detail>`
+    * :ref:`La suppression de médias dans un panier <Affichage-Panier-Suppression1>`
+    * :ref:`La suppression de panier <Affichage-Panier-Suppression2>`
 
 La sélection de documents dans un panier s'effectue de la même façon que dans
 la zone d'affichage.
@@ -172,6 +172,9 @@ documents présentés dans la zone d'affichage.
     Se reporter à la section consacrée à
     :doc:`la palette des Actions <Actions>`.
 
+Les reportages
+--------------
+
 .. topic:: L'essentiel
 
     Le reportage est un enregistrement dans une collection qui inclut d'autres
@@ -185,9 +188,6 @@ documents présentés dans la zone d'affichage.
 
     Les paniers et les reportages exploitent des fonctions en partie similaires.
     Seules les fonctions propres aux reportages sont documentées.
-
-Les reportages
---------------
 
 Créer un reportage
 ******************
