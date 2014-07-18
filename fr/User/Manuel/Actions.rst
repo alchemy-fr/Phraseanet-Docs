@@ -14,7 +14,7 @@
 
     Dans la zone de travail, la palette d'actions du panier ou du reportage
     ouvert permet d'intervenir sur les enregistrements qu'il contient ou qui
-    sont sélectionnés.
+    y sont sélectionnés.
 
     Accessibles selon les droits des utilisateurs, certaines de ces commandes
     sont des fonctions de base, d'autres sont des fonctions étendues.
@@ -35,13 +35,15 @@ Exporter et Imprimer
 
 Les fonctions étendues
 ----------------------
-Les fonctions étendues sont accessibles via les boutons des palettes d'actions ou via les menus contextuels de ces boutons.
+
+Les fonctions étendues sont accessibles via les boutons des palettes d'actions
+ou via les menus contextuels de ces boutons.
 
 Éditer
 ******
 
-Cette fonction permet d'éditer les notes des enregistrements. Compléter ou
-modifier les descriptions documentaires accompagnant les assets à l'unité ou
+Cette fonction permet d'éditer les notices des enregistrements. Compléter ou
+modifier les descriptions documentaires accompagnant les *assets* à l'unité ou
 en lots.
 
 .. seealso::
@@ -65,7 +67,7 @@ Modifier les status des enregistrements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Les status permettent de caractériser des enregistrements. Ils apportent des
-informations relatives à leurs états : état d'avancement dans un workflow,
+informations relatives à leurs états : état d'avancement dans un *workflow*,
 signalement de droits expirés, restriction d'accès à des populations
 d'utilisateurs.
 
@@ -95,9 +97,9 @@ Changer le type des documents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Cette action permet d'altérer le type des documents attribués automatiquement
-lors de l'import. Elle est utile si les types MIME des documents ajoutés n'ont
-pas été correctement interprétés par la plateforme sur laquelle Phraseanet
-est déployé.
+lors de l'import. Elle est utile pour corriger les types des documents importés
+au cas ou ils auraient été mal interprétés par la plateforme sur laquelle
+est déployé Phraseanet.
 
 * Sélectionner un ou plusieurs enregistrements dans la zone d'affichage ou dans
   un panier ou reportage ouvert
@@ -148,10 +150,10 @@ Le bouton Outils regroupe des actions qui permettent d'agir sur :
 
 * **Les vignettes ou images de choix** (régénération, substitution, rotation,
   choix de la vignette pour les vidéos)
-* La substitution de documents orignaux ou de sous définitions si la
+* **La substitution de documents orignaux ou de sous définitions** si la
   fonctionnalité est activée dans le paramétrage de l'application
-* D'afficher les informations de métadonnées existantes dans un document
-  sélectionné.
+* **D'afficher les informations de métadonnées** existantes dans un document
+  sélectionné
 
 Sélectionner un ou plusieurs documents dans la zone d'affichage ou dans un
 panier ou reportage ouvert dans la zone de travail puis cliquer sur le bouton
@@ -177,8 +179,8 @@ Outils. Choisir un des onglets proposés :
 Supprimer
 *********
 
-L'action Supprimer permet de supprimer des enregistrements (documents de la
-base/collection, paniers ou reportages).
+**Dans la zone d'affichage**, l'action Supprimer permet de supprimer des
+enregistrements (documents, paniers ou reportages).
 
 * Sélectionner un ou plusieurs enregistrements dans la zone d'affichage ou
   dans un panier ou reportage ouvert

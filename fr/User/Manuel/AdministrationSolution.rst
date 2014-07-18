@@ -24,15 +24,14 @@ Le tableau de bord offre une vue sur l'état de la configuration du système de
 fichier, des exécutables, des extensions, des serveurs de caches et des
 serveurs web qui entrent dans la mise en oeuvre de la solution Phraseanet.
 
+.. _Parametrage-applicatif:
+
 Paramétrage
 -----------
 
 **Accessible aux seuls administrateurs Phraseanet**, l'écran de Paramétrage
 propose une interface graphique permettant de modifier des paramètres
 d'installation et de configuration de l'instance Phraseanet.
-
-.. image:: ../../images/Administration-setup.jpg
-    :align: center
 
 Le jeu de formulaires permet :
 
@@ -42,6 +41,9 @@ Le jeu de formulaires permet :
 * D'activer ou de désactiver des connectivités à des services web et
   plateformes de partage mis en oeuvre avec le :ref:`Bridge <Publier-Bridge>`.
 * D'activer ou de désactiver des fonctionnalités et options de l'application
+
+.. image:: ../../images/Administration-setup.jpg
+    :align: center
 
 .. warning::
 
@@ -67,7 +69,7 @@ Le moteur Phrasea, moteur par défaut, comporte peu d'option de configuration.
 
 L'interface propose :
 
-* D'activer ou de désactiver les stemmes
+* D'activer ou de désactiver les :term:`stemmes <Stemme>`
 * De paramétrer l'ordre d'affichage des enregistrements
 
 Configuration du moteur Sphinx
@@ -97,6 +99,8 @@ diffusés à partir de l'application.
 
 L'écran liste les flux médias disponibles et permet d'en créer, d'en modifier
 et d'en supprimer.
+
+.. _Creer-un-flux-de-publication:
 
 Créer un flux de publication
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -143,10 +147,6 @@ Les administrateurs peuvent en ajouter d'autres :
 
 * Sélectionner un des modèles de tâches disponibles dans le menu déroulant
   **Nouvelle tâche**.
-
-.. image:: ../../images/Administration-nouvelletache.jpg
-    :align: center
-
 * Editer les paramètres de la tâche dans la vue XML ou le formulaire graphique
 
 .. image:: ../../images/Administration-editertache1.jpg
@@ -161,10 +161,6 @@ Dans certains cas, une vue graphique simule l'exécution de la tâche.
 
 * Lancer l'exécution de la tâche.
 
-.. image:: ../../images/Administration-demarrertache.jpg
-    :align: center
-
 .. seealso::
 
-    Se reporter à la page consacrée au
-    :doc:`moteur de tâches<../../Admin/MoteurDeTaches>`.
+    :doc:`Se reporter à la page consacrée au moteur de tâches<../../Admin/MoteurDeTaches>`.

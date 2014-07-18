@@ -103,7 +103,7 @@ Production.
 
 .. seealso::
 
-    `Se reporter à la section consacrée à l'Export dans Phraseanet Production <Exporter>`_.
+    Se reporter à la section consacrée à :doc:`l'export dans Production <Exporter>`_.
 
 Comparer deux médias
 ********************
@@ -122,8 +122,8 @@ Ce dispositif est très utile dans une démarche de
 
 .. _Push-Validation-de-documents:
 
-Valider des documents dans la Lightbox
---------------------------------------
+Valider des documents dans Lightbox
+-----------------------------------
 
 La validation de documents est une demande d'appréciation formulée sur des
 médias. L'utilisateur à qui est adressée une demande de validation donne son
