@@ -12,9 +12,10 @@ Thésaurus
 
     Dans Production, le thésaurus sert :
 
-	* Aux contributeurs, pour fournir un vocabulaire de références pour décrire
-	  les ressources documentaires de la base dans le formulaire d'édition
-	* Aux utilisateurs, pour parcourir le fonds et pour suggérer des
+	* **Aux contributeurs**, pour fournir un vocabulaire de références pour
+	  décrire les ressources documentaires de la base dans le formulaire
+	  d'édition
+	* **Aux utilisateurs**, pour parcourir le fonds et pour suggérer des
 	  propositions permettant d'affiner ou d'élargir des recherches
 
     L'application Thésaurus est l'interface dédiée à l'administration des
@@ -59,7 +60,7 @@ Activation des thésaurus sur une instance *Phraseanet*
 ******************************************************
 
 Le thésaurus Phraseanet s'active dans les modules additionnels de la rubrique
-Paramétrage de l'Administration.
+:ref:`Paramétrage de l'Administration <Parametrage-applicatif>`.
 
 Positionner le bouton radio sur *True* puis soumettre le formulaire pour
 activer le thésaurus.
@@ -101,11 +102,11 @@ le thésaurus.
 Pour créer un terme spécifique :
 
 * Effectuer un clic droit sur une branche, sur un terme
-* Cliquer sur Nouveau terme
+* Cliquer sur **Nouveau terme**
 * Saisir le terme dans le formulaire
 * Saisir si besoin un contexte pour lever un ambiguïté
 * Sélectionner la langue pour le terme ajouté
-* Cliquer sur Valider
+* Cliquer sur **Valider**
 
 Si le nouveau terme ne fait pas partie des termes candidats, un formulaire
 s'affiche.
@@ -176,7 +177,7 @@ Supprimer un terme synonyme
 * Effectuer un clic droit sur une branche ou nœud de thésaurus
 * Cliquer sur Propriété
 
-Dans la fenêtre de propriété...
+Dans la fenêtre des propriétés...
 
 * Effectuer un clic droit sur le terme à supprimer du noeud
 * Choisir la rubrique Supprimer puis confirmer la suppression dans la fenêtre
@@ -222,19 +223,19 @@ peuvent être intégrés comme thésaurus dans l'application.
 
 * Effectuer un clic droit sur le terme Thésaurus en haut à droite de
   l'interface
-* Sélectionner la rubrique Importer
+* Sélectionner la rubrique **Importer**
 
-Dans la fenêtre Importer…
+Dans la fenêtre Importer...
 
-* Sélectionner le fichier de thésaurus présent sur votre ordinateur puis
-  cliquer sur Valider
+* Sélectionner le fichier de thésaurus présent sur l'ordinateur puis
+  cliquer sur **Valider**
 
 .. note::
 
     En cas d'erreurs dans le fichier texte tabulé, l'import est suspendu et une
-    fenêtre d'alerte indique l'anomalie rencontrée.
+    fenêtre d'alerte indique (en anglais) l'anomalie rencontrée.
 
-Pour poursuivre l'intégration du thésaurus importé, Lier ses branches à des
+Pour poursuivre l'intégration du thésaurus importé, lier ses branches à des
 champs documentaires de la base.
 
 Lier une ou plusieurs branches du thésaurus à un champs documentaire
@@ -268,9 +269,10 @@ Les termes candidats sont des termes et expressions contenus dans champs
 documentaires liés à des branches de thésaurus et n'en faisant pas partie. Ces
 termes proviennent soit des métadonnées extraites des fichiers ajoutés, soit
 des informations saisies dans le formulaire d'éditions des enregistrements.
+
 Une part de l'entretien du thésaurus consiste à examiner ces candidats. S'ils
-sont pertinents, ils se destinent à y être intégrés. Dans le cas contraire, la
-correction de l'indexation peut être nécessaire pour employer des descripteurs
+sont pertinents, ils se destinent à y être intégrés. Dans le cas contraire, une
+correction des notices peut être nécessaire pour employer des descripteurs
 plus appropriés.
 
 Le travail d'ajout de termes candidats au thésaurus s'effectue soit dans
@@ -319,7 +321,7 @@ Supprimer un candidat
 * Cliquer sur la rubrique **Supprimer**
 * Confirmer la suppression dans la fenêtre d'alerte
 
-La suppression d'un terme candidat n'affecte pas les enregistrement. Un
+La suppression d'un terme candidat n'affecte pas les enregistrements. Un
 candidat supprimé peut être réintroduit :
 
 * S'il est réutilisé au cours de l'édition de notices d'enregistrements
@@ -343,7 +345,7 @@ présentés et le symbole + permet de déployer la liste des termes candidats
 classés par ordre alphabétique.
 
 Des recherches sur les termes candidats peuvent être lancées au moyen d'un
-double-clic. La recherche effectuée est sur une interrogation par champ.
+double-clic. La recherche effectuée est une interrogation par champ.
 
 L'onglet Candidat permet une administration ponctuelle du Thésaurus.
 
@@ -390,4 +392,4 @@ Pour remplacer un terme candidat dans des notices :
 .. note::
 
      Pour supprimer ou remplacer un terme dans plus de vingt-cinq fiches,
-     passer par le formulaire d'édition.
+     utiliser le formulaire d'édition.

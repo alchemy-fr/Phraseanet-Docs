@@ -6,24 +6,28 @@
 .. topic:: L'essentiel
 
     Deux fonctionnalités de Phraseanet permettent de publier et de diffuser des
-    médias issus d'un fonds : *Publication* et *Bridge*.
+    médias issus d'un fonds : *Publications* et *Bridge*.
 
 .. _Publier-Publications:
 
-Publier des paniers et des reportages
--------------------------------------
+Publier des médias
+------------------
 
-Les publications Phraseanet permettent de mettre à la disposition d'utilisateurs
-des :doc:`Paniers <PaniersReportages>` et des Reportages dans la page des
-publications.
-Ces publications sont également disponibles sous forme de flux mediaRSS
-exploitables hors de *Phraseanet* dans des applications tierces.
+Les publications mettent à la disposition d'utilisateurs des documents ou des
+reportages dans la page des publications. Ces publications sont aussi
+disponibles et exploitables hors de Phraseanet dans des applications tierces
+exploitant les flux Media RSS.
 
-* Sélectionner des documents ou ouvrir un panier dans *Phraseanet Production*.
-* Cliquer sur l'icône **Publier** dans le menu contextuel Push de la barre
-  d'action ou sur icône orange **RSS** dans le panier ouvert.
+Pour publier des médias :
 
-Une fenêtre s'ouvre:
+* Sélectionner des enregistrements dans la zone d'affichage puis cliquer sur
+  la rubrique publier du menu contextuel du bouton Push dans la palette des
+  actions.
+
+Ou bien,
+
+* Cliquer sur l'icône Publier dans le panier ou le reportage ouvert dans la
+  zone de travail.
 
 .. image:: ../../images/Publier-Panier2.jpg
     :align: center
@@ -33,26 +37,27 @@ Renseigner le formulaire :
 * Cocher ou décocher la case à cocher pour notifier les utilisateurs à propos de
   cette publication
 * Donner un titre, un sous titre,
-* Le nom de l'auteur et l'adresse correspondent aux renseignements du compte
-  utilisateur.
+* Les noms d'auteur et adresses correspondent aux renseignements du compte
+  utilisateur
+* Sélectionner le fil de publication
 
-Sélectionner le fil de publication (se reporter à la rubrique
-:doc:`Publications <AdministrationSolution>` de *Phraseanet Admin* pour créer
-des fils) puis cliquer sur **Publier**.
+.. seealso::
 
-La publication est visible dans la rubrique *Publications* de la barre de menu.
+    Se reporter à la rubrique Publications de Phraseanet Admin pour :ref:`créer
+    des flux<Creer-un-flux-de-publication>`.
 
-Les publications sont disponibles sous forme de flux mediaRSS hors de Phraseanet
-Production et des des applications tierces, comme Phraseanet Showcase, peuvent
-les exploiter.
+* Cliquer sur Publier
+
+La publication est visible dans la rubrique Publications de la barre de menu
+et est disponible sous forme de flux hors de l'application.
 
 .. _Publier-Bridge:
 
 Diffuser avec Bridge
 --------------------
 
-Le **Bridge Phraseanet** permet de publier des médias vers des sites extérieurs,
-tels :
+Le Bridge (Pont en anglais) permet de publier des médias vers des sites
+extérieurs, tels :
 
 * `FlickR`_
 * `YouTube`_
@@ -65,6 +70,12 @@ effectuer des publications avec **Bridge**.
 Sélection des médias
 ********************
 
+* Sélectionner une ou plusieurs médias dans Phraseanet Production. Ils peuvent
+  être regroupés dans des paniers ou des reportages.
+* Dans l'une des palette des Actions, développer le menu contextuel du bouton
+  **Push** puis cliquer sur la rubrique **Bridge**.
+
+
 * Sélectionner une ou plusieurs médias dans *Phraseanet Production*. Ils peuvent
   être regroupés dans des paniers ou des reportages.
 * Dans la :doc:`palette des Actions <Actions>`, développer le menu contextuel du
@@ -76,7 +87,7 @@ Sélection des médias
 S'authentifier
 **************
 
-La fenêtre du **Bridge** s'ouvre :
+Dans la fenêtre **Bridge** :
 
 * Cliquer sur **Nouveau** pour se connecter au choix à un compte Flickr, Youtube
   ou Dailymotion selon les possibilités de partage configurées dans le
@@ -85,9 +96,12 @@ La fenêtre du **Bridge** s'ouvre :
 .. image:: ../../images/Bridge-1b.jpg
     :align: center
 
-S'authentifier au service, puis autoriser Phraseanet de se connecter.
+* Cliquer sur Nouveau pour se connecter au choix à un compte Flickr, Youtube
+  ou Dailymotion selon les possibilités de partage configurées dans le
+  paramétrage Phraseanet Admin.
+* S'authentifier au service, puis autoriser Phraseanet de se connecter.
 
-**Bridge** récupère les informations existantes sur l'application distante.
+Bridge récupère les informations existantes sur l'application distante.
 
 Pour Flickr, les photos existantes sont affichées dans l'onglet "Photos" ou
 "Photosets" si organisées en albums.
@@ -98,12 +112,10 @@ Pour Flickr, les photos existantes sont affichées dans l'onglet "Photos" ou
 Publier sur Flickr
 ******************
 
-Sélectionner des médias dans le zone d'affichage, puis cliquer sur le bouton
-**Ajouter**.
-
-La fenêtre "Upload" de Bridge s'ouvre. Modifier les titres des images
-sélectionnées, ajouter des tags et décrire vos médias dans les formulaires de
-description.
+Sélectionner des médias dans la barre de défilement, puis cliquer sur le
+bouton Ajouter.
+Dans la fenêtre Upload de Bridge, modifier les titres des images sélectionnées,
+ajouter des tags et décrire vos médias dans les formulaires de description.
 
 * Cliquer sur le bouton **Ajouter** en bas à gauche.
 

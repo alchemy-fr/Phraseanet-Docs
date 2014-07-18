@@ -15,6 +15,10 @@
     Un `Gestionnaire de listes`_ de liste permet de constituer des listes
     d'envoi pour répondre à des envois répétitifs vers de mêmes destinataires.
 
+
+.. image:: ../../images/Push-feedback_layout-1.jpg
+    :align: center
+
 Le Push
 -------
 
@@ -27,26 +31,26 @@ qu'ils peuvent consulter et éventuellement télécharger.
 Pousser des documents
 *********************
 
-* Sélectionner un ou plusieurs documents dans la zone d'affichage des
+* **Sélectionner un ou plusieurs documents** dans la zone d'affichage des
   résultats ou dans un panier ouvert ou ouvrir un reportage dans la zone
   de travail.
-* Cliquer sur le bouton Push de l'une des palettes d'actions
+* **Cliquer sur le bouton Push** de l'une des palettes d'actions
 
-Dans la fenêtre de Push
+Dans la fenêtre de Push...
 
-* Sélectionner un ou plusieurs utilisateurs vers qui pousser les documents
+* **Sélectionner un ou plusieurs utilisateurs** vers qui pousser les documents
   sélectionnés.
 
-Pour ce faire, inscrire leurs noms, prénoms ou adresses email dans le champ de
+Pour ce faire, inscrire leurs noms, prénoms ou adresses e-mail dans le champ de
 formulaire proposé en haut à gauche de l'interface. Un dispositif
 d'auto-complétion entre en action à la saisie du troisième caractère pour
 faciliter la recherche d'utilisateurs.
 Une fois l'utilisateur Phraseanet repéré dans la liste proposé, cliquer sur son
 nom pour l'ajouter à la liste d'envoi.
 
-Pour ajouter un ou plusieurs utilisateurs non enregistrés dans la base de
-comptes Phraseanet à une liste d'envoi, cliquer sur le lien Ajouter un
-utilisateur.
+**Pour ajouter un ou plusieurs utilisateurs non enregistrés** dans la base de
+comptes Phraseanet à une liste d'envoi, cliquer sur le lien **Ajouter un
+utilisateur**.
 Renseigner au minimum les champs obligatoires signalés par des astérisques dans
 le formulaire de création d'utilisateur puis cliquer sur le bouton "Ajouter".
 Le contact crée est ajouté à la zone des destinataires de l'envoi et son
@@ -58,8 +62,8 @@ compte est créé.
     être regroupés et sauvegardés à la volée dans une liste d'envoi.
 
     Pour sauvegarder une liste d'envoi, renseigner le champ de formulaire situé
-    à gauche de la zone des destinataires de l'envoi puis l'enregistrer en
-    cliquant sur l'icône :
+    à gauche de la zone des destinataires puis l'enregistrer en cliquant
+    sur l'icône :
 
     .. image:: ../../images/Push-icone-disquette.jpg
         :align: center
@@ -81,8 +85,8 @@ Pour donner des droits spécifiques de téléchargement haute définition
 la liste d'envoi, deux méthodes sont proposées :
 
 * Sélectionner un ou plusieurs utilisateurs dans la zone des destinataires de
-  l'envoi puis cliquer sur le bouton Téléchargement HD à gauche de la liste
-  des destinataires de l'envoi
+  l'envoi puis cliquer sur le bouton **Téléchargement HD** à gauche de la liste
+  des destinataires de l'envoi.
 
 **Ou bien**,
 
@@ -92,7 +96,7 @@ la liste d'envoi, deux méthodes sont proposées :
 .. image:: ../../images/Push-download-badge.jpg
     :align: center
 
-* Cliquer sur le bouton Envoyer pour valider et transmettre le Push.
+* Cliquer sur le bouton **Envoyer** pour valider et transmettre le Push.
 
 Un formulaire permet de donner un nom, une description à l'envoi et de réclamer,
 si besoin, un accusé réception de l'e-mail si cette fonction est supportée par
@@ -101,16 +105,13 @@ la messagerie des destinataires.
 La Validation
 -------------
 
-Le mode opératoire de la Validation est presque identique à celui du Push. Il
+Le mode opératoire de la Validation est quasi identique à celui du Push. Il
 ne diffère que par l'attribution de privilèges supplémentaires ou optionnels.
 
 * Sélectionner un ou plusieurs documents dans la zone d'affichage des résultats
   ou dans un panier ouvert ou ouvrir un reportage dans la zone de travail.
 * Cliquer sur la rubrique Validation du menu Push de la palette des actions ou
   sur l'icône Push d'un panier ou reportage ouvert en zone de travail
-
-.. image:: ../../images/Push-feedback_layout-1.jpg
-    :align: center
 
 **Dans la fenêtre de validation**,
 
@@ -217,10 +218,10 @@ Par défaut, les droits de partage attribués correspondent à un niveau dit
 d'accès. Ces droits de partage sont modifiables via la liste déroulante
 figurant sur l'étiquette de l'utilisateur :
 
-* Le niveau Accès donne un accès en lecture seule de la liste d'envoi
-* Le niveau Éditeur donne des droits de lecture et modification du contenu de
+* **Le niveau Accès** donne un accès en lecture seule de la liste d'envoi
+* **Le niveau Éditeur** donne des droits de lecture et modification du contenu de
   la liste d'envoi
-* Le niveau Admin donne des droits de lecture, de modification et de
+* **Le niveau Admin** donne des droits de lecture, de modification et de
   suppression des listes partagées.
 
 Supprimer une liste

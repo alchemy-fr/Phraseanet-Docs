@@ -56,7 +56,7 @@ Le tableau de bord livre des informations générales sur :
 * Le nombre de téléchargements de documents originaux, de sous-définitions,
   des volumes de qu'ils représentent sur le réseau,
 * Le palmarès des utilisateurs les plus actifs en terme de questions posées
-* Les 10 questions les plus fréquemment posées
+* Les 10 questions les plus fréquentes
 * Les sites d'où les médias sont le plus consultés
 
 Ces statistiques sont détaillées dans les onglets Connexions, Téléchargements
@@ -163,6 +163,6 @@ masquer les contenus de colonnes.
 
 Certains entêtes de colonnes permettent d'effectuer des tris si besoin.
 
-La majorité des rapports générés sont exportables sous forme fichiers au format
-PDF ou CSV. Cliquer sur les icones dédiées à l'export pour obtenir les rapports
-au format souhaité.
+La majorité des rapports générés sont exportables sous forme de fichiers au
+format PDF ou CSV. Cliquer sur les icones dédiées à l'export pour obtenir les
+rapports au format souhaité.

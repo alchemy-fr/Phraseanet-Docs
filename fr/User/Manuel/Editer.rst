@@ -27,11 +27,11 @@ Principes généraux sur l'édition
 
 La fenêtre est découpée en trois zones :
 
-* La barre de défilement affiche les documents sélectionnés. La taille des
+* **La barre de défilement** affiche les documents sélectionnés. La taille des
   vignettes et la taille de cette zone sont modifiables
-* La zone de saisie affiche les status, la liste des champs documentaires et
+* **La zone de saisie** affiche les status, la liste des champs documentaires et
   réserve un espace pour afficher le contenu du champ actif
-* La zone des onglets d'assistance à la saisie regroupe des outils d'aides à
+* **La zone des onglets d'assistance à la saisie** regroupe des outils d'aides à
   la saisie
 
 **Par défaut, tous les enregistrements sont sélectionnés.**
@@ -54,7 +54,7 @@ Cette possibilité de sélection en lots et en sous-lots permet de renseigner de
 informations communes à des médias et gagner ainsi en productivité.
 
 Pour passer d'un champ à un autre, **utiliser sur la touche de tabulation du
-clavier***
+clavier**
 
 **Aucun ajout ou modification dans les notices n'est pris en compte tant que
 l'utilisateur n'a pas cliqué sur le bouton Valider**.
@@ -94,10 +94,10 @@ Pour ajouter ou supprimer un terme descripteur figurant dans la liste des
 termes utilisés à d'autres notices d'enregistrements sélectionnés :
 
 * Cliquer sur un des termes de la liste des descripteurs utilisés
-* Cliquer sur les symboles "plus" pour ajouter le terme ou expression des
-  notices des enregistrements
-* Cliquer sur les symboles "moins" pour supprimer le terme ou expression des
-  notices des enregistrements
+* Cliquer sur les symboles "plus" pour ajouter le terme aux notices
+  d'enregistrements sélectionné dans la barre de défilement
+* Cliquer sur les symboles "moins" pour supprimer le terme aux notices
+  d'enregistrements sélectionné dans la barre de défilement
 
 Editer des champs de type date
 ******************************
@@ -133,7 +133,7 @@ Editer à partir du thésaurus
 
 Sous réserve qu'un thésaurus soit déployé sur la base à laquelle appartiennent
 les enregistrements en cours d'édition, l'onglet Thésaurus permet d'indexer
-rapidement à partir des termes contenus dans le thésaurus associé à la base.
+rapidement à partir de termes contenus dans le thésaurus.
 La saisie est assistée pour les champs qui sont liés à des branches de
 thésaurus.
 
@@ -146,7 +146,8 @@ thésaurus.
 .. image:: ../../images/Prod-Editer-thesaurus.jpg
     :align: center
 
-* Effectuer un double clic sur le terme à ajouter au champ dans l'onglet Thésaurus
+* Effectuer un double clic sur le terme à ajouter au champ dans l'onglet
+  Thésaurus
 * Le terme est ajouté aux documents sélectionnés.
 
 .. note::
@@ -192,8 +193,7 @@ Le Presse Papier
 ****************
 
 L'onglet Presse Papier dans la zone des onglets d'assistance permet de copier
-et de coller des termes ou des expressions à utiliser dans les notices
-d'enregistrements.
+et de coller des termes ou des expressions à utiliser dans les notices.
 
 Rechercher/Remplacer
 ********************
@@ -254,8 +254,7 @@ Appliquer un modèle à une sélection de médias
 .. note::
 
     Un modèle est la propriété de l'utilisateur qui l'a créé, il ne peut être
-    utilisé que par lui. Cependant d'autres utilisateurs peuvent partager des
-    modèles à partir d'enregistrement de référence.
+    utilisé que par lui.
 
 Particularités de l'édition des reportages
 ------------------------------------------
@@ -278,9 +277,14 @@ Choix d'un image représentative
 *******************************
 
 Par défaut les reportages sont représentés un dossier. Il est possible de
-leur attribuer la vignette d'un document de type image lors de l'édition.
+leur attribuer la vignette d'un document lors de l'édition.
 
 Dans la barre de défilement des documents du reportage...
 
-* Cliquer sur le menu contextuel d'une vignette de document de type image
+* Cliquer sur le menu contextuel d'une vignette de document
 * Cliquer sur la rubrique Définir comme image principale
+
+.. note::
+
+    Jusqu'en version 3.8.5, seul les vignettes des documents de type image
+    pouvaient être attribuées aux reportages.
