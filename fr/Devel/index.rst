@@ -27,6 +27,7 @@ Table of contents
     API/V1
     API/Root
     API/Changelog
+    Vagrant
     Forums
     ApplicationDeveloper
 
