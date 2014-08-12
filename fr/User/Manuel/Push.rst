@@ -77,7 +77,7 @@ compte est créé.
 
 .. warning::
 
-    Pour pouvoir créer des utilisateurs à partir des Push et Validations,
+    Pour pouvoir créer des utilisateurs à partir des Pushs et Validations,
     l'utilisateur doit disposer des droits de gestion des utilisateurs.
 
 Pour donner des droits spécifiques de téléchargement haute définition
@@ -140,13 +140,13 @@ réception de la demande de Validation, cocher la case prévue.
 
 Réception d'un Push ou d'une Validation
 ---------------------------------------
-Push et Validation sont notifiés de deux façons :
+Pushs et Validations sont notifiés de deux façons :
 
 * Par les notifications dans l'interface Production
 * Par e-mail
 
 Chaque mode de notification présente un lien permettant l'affichage dans
-Lightbox. Les Push et de les Validations reçus sont affichés comme des paniers
+Lightbox. Les Pushs et de les Validations reçus sont affichés comme des paniers
 reçus dans la zone de travail de Production. Ils sont aussi regroupés dans
 Phraseanet Lightbox.
 
@@ -162,9 +162,9 @@ Gestionnaire de listes
 .. topic:: L'essentiel
 
     Le Gestionnaire de listes permet la mise en place et l'exploitation des
-    listes de destinataires pour la diffusion de Push et de Validation.
+    listes de destinataires pour la diffusion de Pushs et de Validations.
 
-Le Gestionnaire de listes est accessible à partir des fenêtres de Push et de
+Le Gestionnaire de listes est accessible à partir des fenêtres de Push ou de
 Validation. Cliquer sur le lien **Gestionnaire de listes** à gauche de la zone
 des destinataires de l'envoi.
 

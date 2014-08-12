@@ -8,8 +8,9 @@ Lightbox
 
     Lightbox est une interface de consultation collaborative. Elle propose des
     fonctions de comparaison, de diaporama, d'export, et permet de valider ou
-    de commenter des médias. Les bénéficiaires de Push et Validation prennent
-    connaissance des contenus qui leurs sont adressés par cette interface.
+    de commenter des médias. Les bénéficiaires de Pushs et de Validations
+    prennent connaissance des contenus qui leurs sont adressés par cette
+    interface.
 
 Accéder à Lightbox
 ------------------
@@ -18,7 +19,7 @@ Pour les utilisateurs non authentifiés
 **************************************
 
 L'interface s'affiche en cliquant sur le lien HTML proposé dans les e-mails
-notifiant les :doc:`Push et demandes de validation <Push>`. Les utilisateurs
+notifiant les :doc:`Pushs et demandes de validation <Push>`. Les utilisateurs
 peuvent avoir besoin de s'authentifier pour afficher les contenus poussés.
 
 .. image:: ../../images/Lightbox-reception_email.jpg
@@ -30,7 +31,7 @@ Pour les utilisateurs authentifiés
 Dans l'application, cliquer sur la rubrique Lightbox de la barre de menu permet
 de rejoindre l'interface.
 
-L'interface dresse la liste des Push et des demandes de validation que
+L'interface dresse la liste des Pushs et des demandes de validation que
 l'utilisateur a produit ou reçu. Cliquer sur un des éléments de la liste pour
 afficher son contenu.
 
