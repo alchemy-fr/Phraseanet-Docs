@@ -16,8 +16,7 @@ L'interface Admin comporte un cadre à gauche de l'écran qui affiche un menu
 répertoriant les rubriques d'administration.
 
 Si l'utilisateur ne voit pas certaines de ces rubriques, c'est que ses
-:ref:`droits <AdministrationUtilisateurs-Droits-Utilisateurs>` ne le lui
-permettent pas.
+:ref:`droits <Droits-Utilisateurs>` ne le lui permettent pas.
 
 .. image:: ../../images/Administration-gauche.jpg
     :align: center

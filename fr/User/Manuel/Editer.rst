@@ -284,7 +284,10 @@ Dans la barre de défilement des documents du reportage...
 * Cliquer sur le menu contextuel d'une vignette de document
 * Cliquer sur la rubrique Définir comme image principale
 
+.. image:: ../../images/Prod-Editer-reportage.jpg
+    :align: center
+
 .. note::
 
-    Jusqu'en version 3.8.5, seul les vignettes des documents de type image
+    Jusqu'en version 3.8.5, seules les vignettes des documents de type image
     pouvaient être attribuées aux reportages.

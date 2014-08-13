@@ -22,7 +22,7 @@ paramétrage et de maintenance applicative.
 
 Le tableau de bord offre une vue sur l'état de la configuration du système de
 fichier, des exécutables, des extensions, des serveurs de caches et des
-serveurs web qui entrent dans la mise en oeuvre de la solution Phraseanet.
+serveurs web qui entrent dans la mise en oeuvre de Phraseanet.
 
 .. _Parametrage-applicatif:
 
@@ -65,7 +65,7 @@ au moyen d'une interface graphique.
 Configuration du moteur Phrasea
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Le moteur Phrasea, moteur par défaut, comporte peu d'option de configuration.
+Le moteur Phrasea, moteur par défaut, comporte peu d'options de configuration.
 
 L'interface propose :
 
@@ -75,7 +75,8 @@ L'interface propose :
 Configuration du moteur Sphinx
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Le formulaire permet de configurer du moteur de recherche Sphinx utilisé.
+Le formulaire permet de configurer le paramétrage du moteur de recherche
+Sphinx utilisé.
 
 Utilisateurs connectés
 ----------------------
@@ -109,9 +110,12 @@ Remplir le formulaire de création de flux en y apportant les informations
 nécessaires.
 L'étendue de la publication restreint la publication aux utilisateurs accédant
 à une collection.
-**Cocher la case Publique** pour lever les restrictions d'accès. Les médias des
-publications publiques sont agrégés dans les animations proposées pour la page
-d'accueil.
+**Cocher la case Publique** pour lever les restrictions d'accès.
+
+.. note::
+
+  Les médias des publications publiques sont agrégés dans les animations
+  proposées par défaut sur la page de connexion.
 
 Modifier ou supprimer un flux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
