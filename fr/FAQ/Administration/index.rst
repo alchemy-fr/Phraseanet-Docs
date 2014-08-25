@@ -114,3 +114,30 @@ Relancer ensuite l'installation via la commande suivante :
 .. code-block:: bash
 
     bin/setup system:install
+
+Que se passe t'il lorsque qu'un média est ajouté dans une base Phraseanet ?
+---------------------------------------------------------------------------
+
+Le système lit dans la structure de cette base afin d'obtenir :
+
+* les champs d'indexations
+* Liens champs d'indexations et source de métadonnées (EXIF, XMP,
+  IPTC...*etc*.)
+* les répertoires destinés au stockage des données physiques (Médias originaux
+  et sous définitions)
+
+Il stocke ensuite le document original dans le répertoire de stockage des médias
+originaux.
+
+Le contenu des metadonnées (IPTC, XMP, EXIF...etc.) du fichier média original
+est alors lu et extrait en accord avec le paramétrage des champs de la structure
+documentaire.
+
+Les sous définitions sont générées puis sauvegardées dans le répertoire de
+stockage des sous définitions obtenu de la structure.
+
+Des métadonnées peuvent alors être écrites dans certaines sous définitions
+(selon paramètrage).
+
+Les métadonnées sont ensuite ajoutées à l'index du moteur de recherche.
+Cette opération permet rendre l'enregistrement créer disponible à la recherche.
