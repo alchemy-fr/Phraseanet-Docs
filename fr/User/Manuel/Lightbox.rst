@@ -104,7 +104,7 @@ Production.
 
 .. seealso::
 
-    Se reporter à la section consacrée à :doc:`l'export dans Production <Exporter>`_.
+    Se reporter à la section consacrée à :doc:`l'export dans Production <Exporter>`.
 
 Comparer deux médias
 ********************

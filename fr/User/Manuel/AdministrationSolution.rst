@@ -63,7 +63,7 @@ au moyen d'une interface graphique.
     :doc:`Se reporter à la page consacrée aux moteurs de recherche dans la documentation Administrateur <../../Admin/MoteurDeRecherche>`.
 
 Configuration du moteur Phrasea
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************
 
 Le moteur Phrasea, moteur par défaut, comporte peu d'options de configuration.
 
@@ -73,7 +73,7 @@ L'interface propose :
 * De paramétrer l'ordre d'affichage des enregistrements
 
 Configuration du moteur Sphinx
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+******************************
 
 Le formulaire permet de configurer le paramétrage du moteur de recherche
 Sphinx utilisé.
@@ -104,7 +104,7 @@ et d'en supprimer.
 .. _Creer-un-flux-de-publication:
 
 Créer un flux de publication
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+****************************
 
 Remplir le formulaire de création de flux en y apportant les informations
 nécessaires.
@@ -118,7 +118,7 @@ L'étendue de la publication restreint la publication aux utilisateurs accédant
   proposées par défaut sur la page de connexion.
 
 Modifier ou supprimer un flux
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*****************************
 
 * Cliquer sur le titre d'un flux pour y apporter une modification
 * Pour supprimer un flux, cliquer sur le bouton **Supprimer**
