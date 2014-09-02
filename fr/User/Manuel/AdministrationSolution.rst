@@ -123,6 +123,8 @@ Modifier ou supprimer un flux
 * Cliquer sur le titre d'un flux pour y apporter une modification
 * Pour supprimer un flux, cliquer sur le bouton **Supprimer**
 
+.. _Edition-de-taches:
+
 Gestionnaire de tâches
 ----------------------
 

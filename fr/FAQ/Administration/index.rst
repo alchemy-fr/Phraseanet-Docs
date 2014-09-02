@@ -40,8 +40,8 @@ Avec Nginx comme serveur web, il faut aussi autoriser les requêtes volumineuses
 Les vignettes des résultats représentent une montgolfière
 ---------------------------------------------------------
 
-La création des sous-définition peut parfois prendre du temps en fonction de la
-nature et du poids des documents ajoutés dans une base.
+La création des sous-définitions peut parfois prendre du temps en fonction de
+la nature et du poids des documents ajoutés dans une base.
 
 Aussi, vérifier que la tâche de création des sous-définitions est démarrée
 dans le gestionnaire des tâches du module Admin.
