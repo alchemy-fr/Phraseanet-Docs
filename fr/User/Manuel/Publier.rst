@@ -13,18 +13,18 @@
 Publier des médias
 ------------------
 
-Les publications mettent à la disposition d'utilisateurs des documents ou des
-reportages dans la page des publications. Ces publications sont aussi
+**Les publications** mettent à la disposition d'utilisateurs des documents ou
+des reportages dans la page des publications. Ces publications sont aussi
 disponibles et exploitables hors de Phraseanet dans des applications tierces
 exploitant les flux Media RSS.
 
-Pour publier des médias :
+**Pour publier des médias** :
 
 * Sélectionner des enregistrements dans la zone d'affichage puis cliquer sur
   la rubrique publier du menu contextuel du bouton Push dans la palette des
   actions.
 
-Ou bien,
+**Ou bien**,
 
 * Cliquer sur l'icône Publier dans le panier ou le reportage ouvert dans la
   zone de travail.
@@ -59,9 +59,9 @@ Diffuser avec Bridge
 Le Bridge (Pont en anglais) permet de publier des médias vers des sites
 extérieurs, tels :
 
-* `FlickR`_
-* `YouTube`_
-* `Dailymotion`_
+* FlickR
+* YouTube
+* Dailymotion
 
 Pour publier des documents vers ces applications, sélectionner des documents,
 connecter un compte `Flickr`_, `YouTube`_ ou `Dailymotion`_, à Phraseanet, puis
@@ -124,9 +124,6 @@ ajouter des tags et décrire vos médias dans les formulaires de description.
 
 Il est possible de suivre l'avancement du transfert par un simple clic sur
 l'onglet **Fichiers envoyés**.
-
-.. image:: ../../images/Bridge-4.jpg
-    :align: center
 
 * Le statut **OK** signale les médias images ou vidéos transférés
 * Une information de date indique depuis combien de temps l'envoi a été

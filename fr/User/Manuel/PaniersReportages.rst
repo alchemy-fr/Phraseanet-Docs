@@ -212,6 +212,10 @@ Ajouter, supprimer des documents à un reportage
 L'ajout et la suppression de documents à un reportage s'effectuent de la même
 manière que l'ajout ou la suppression dans un panier.
 
+.. seealso::
+
+    Voir :ref:`les paragraphes consacrés à la manipulation des paniers<Affichage-Panier-Ajouter>`.
+
 Détacher ou attacher un reportage de la zone de travail
 *******************************************************
 

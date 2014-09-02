@@ -9,6 +9,8 @@ Administration des bases et des collections
     A chacune des bases correspond une structure documentaire paramétrable, les
     collections pouvant être assimilées à des sous ensembles d'une base.
 
+.. _Parametrage-Structure:
+
 Paramétrage par base
 --------------------
 
