@@ -75,8 +75,12 @@ Le script lancé automatise la création des tables nécessaires dans le
 gestionnaire de base de données.
 
 A l'issue du processus de création, la structure de la base de données peut
-être paramétrée
-(:doc:`paramétrage des champs et des sous définitions <AdministrationBasesCollections>`)
+être paramétrée.
+
+.. seealso::
+
+    Se reporter à la page consacrée au :ref:`paramétrage d'une base<Parametrage-Structure>`.
+
 selon les besoins et pour publier dans la nouvelle base, il sera nécessaire de
 créer au moins une nouvelle collection.
 

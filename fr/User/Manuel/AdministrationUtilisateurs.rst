@@ -11,7 +11,7 @@ Gestion des utilisateurs
     les droits et les informations sur les utilisateurs.
 
 Cliquer sur la rubrique Utilisateurs pour accéder à l'interface de gestion des
-utilisateurs
+utilisateurs.
 
 .. image:: ../../images/General-Administration.jpg
     :align: center
@@ -45,7 +45,7 @@ Créer un nouvel utilisateur
 
 .. seealso::
 
-    `Se reporter à la section Edition des droits <Édition des droits>`.
+    :ref:`Se reporter à la section Edition des droits <Droits-Utilisateurs>`.
 
 * Pour éditer les renseignements relatifs aux coordonnées de l'utilisateur,
   cliquer sur l'onglet Informations puis éditer le formulaire proposé
@@ -87,7 +87,7 @@ Dans la liste des utilisateurs, un modèle est repéré par une icône **M**.
 Création de modèles utilisateurs
 ********************************
 
-* Cliquer sur **Nouveau modèle**.
+* Cliquer sur **Nouveau modèle**
 * Donner un nom au nouveau modèle puis valider le formulaire
 * Editer les droits du nouveau modèle puis valider le formulaire
 

@@ -5,10 +5,10 @@
 
 .. topic:: L'essentiel
 
-    Les recherches de médias dans Phraseanet s'effectuent au moyen d'un moteur
-    de recherche en texte intégral (ou plein texte). Le mode de fonctionnement
-    est similaire à celui des moteurs de recherche présents dans d'autres
-    applications ou sur le Net.
+    Les recherches de médias et de reportages dans Phraseanet s'effectuent au
+    moyen d'un moteur de recherche en texte intégral (ou plein texte). Le mode
+    de fonctionnement est similaire à celui des moteurs de recherche présents
+    dans d'autres applications ou sur le Net.
 
     Combinés avec des opérateurs de recherche courants, ces recherches
     permettent de gagner en pertinence. Des recherches approfondies se
@@ -31,6 +31,9 @@ Par défaut, **la recherche porte sur les documents** des bases et collections
 auxquelles à accès l'utilisateur et à la connexion, les médias affichés sont
 ceux résultants d'une
 :doc:`question initiale paramétrable <Personnaliser>`.
+
+.. image:: ../../images/Rechercheavancee1.jpg
+    :align: center
 
 **Pour rechercher des reportages**, placer le bouton radio du mode de recherche
 en position reportage. Dans ce mode, la recherche porte sur le contenu de la
@@ -217,4 +220,4 @@ Chaque proposition affichée est cliquable et permet de relancer une recherche.
 .. note::
 
     La pertinence des propositions faites dépend de la construction du
-    thésaurus déployé
+    thésaurus déployé.

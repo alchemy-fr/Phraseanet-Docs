@@ -8,7 +8,7 @@
     Les actions sur les enregistrements s'effectuent au moyen de commandes
     rassemblées dans des palettes d'actions.
 
-    La :term:`palette des actions principale <Palette des Actions>` placée sous
+    La :term:`palette principale <Palette des Actions>` placée sous
     le formulaire de recherche permet d'agir sur les enregistrements
     sélectionnés dans la zone d'affichage.
 
