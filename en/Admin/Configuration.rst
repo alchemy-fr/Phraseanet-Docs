@@ -549,3 +549,16 @@ It is possible to customize default users settings. Available parameters are:
 +-------------------------+------------------------------------------------+--------------+----------------------------------------------------------------------------------+
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
+
+Storage settings
+****************
+
+It is possible to configure storage path for:
+
+  - sub-definition (aka data path)
+  - cache
+  - logs
+  - download temporary files
+  - quarantined files
+  - caption files
+
