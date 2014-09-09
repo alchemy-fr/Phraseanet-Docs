@@ -1,18 +1,6 @@
 Documentation API v1
 ====================
 
-.. toctree::
-   :maxdepth: 2
-
-   V1/Overview
-   V1/Authentication
-   V1/Routes
-   V1/Examples
-   V1/Recommendation
-   V1/Disclaimer
-
-Hello world !
-
 Phraseanet API v1 gives you access to lots of Phraseanet data and lets
 you interact with them.
 Integrate the search engine, build your own applications and plugins!
@@ -25,6 +13,16 @@ we'll also do so.
 
 If you ever find bugs, please report them on the `mailing-list`_ or create a
 ticket on our `bug tracker`_.
+
+.. toctree::
+   :maxdepth: 2
+
+   V1/Overview
+   V1/Authentication
+   V1/Routes
+   V1/Examples
+   V1/Recommendation
+   V1/Disclaimer
 
 .. _bug tracker: https://github.com/alchemy-fr/Phraseanet/issues
 .. _mailing-list: https://groups.google.com/group/phraseanet-api
