@@ -5,7 +5,7 @@ Open source DAM system
 ----------------------
 
 `Phraseanet`_ is a Digital Asset Management system (DAM for short) targeting the
-professionals needs. It's created and maintained by the french company
+professionals needs. It's created and maintained by the French company
 `Alchemy`_.
 
 Phraseanet can store, manage and share a wide range of digital resources such as
@@ -17,7 +17,8 @@ Built upon standard components, *Phraseanet* settles on Linux, Mac OS X or
 Windows servers and is based on common software components such as MySQL, PHP or
 Apache.
 Other third-party software libraries participate to *Phraseanet*.
-Some of these are `developed by Alchemy`_ while others not.
+Some of these are `developed by Alchemy <http://phraseanet.github.com/>`_,
+while others not.
 
 About this documentation
 ------------------------
@@ -33,13 +34,25 @@ beginning.
 .. toctree::
     :maxdepth: 1
 
-    Contrib/index
-    Glossary
-    Devel/index
-    User/index
     Admin/index
+    User/index
+    Devel/index
+    FAQ/index
+    Glossary
+    Contrib/index
 
+What's new in version 3.8 ?
+---------------------------
 
+Here are the main changes in version 3.8 :
+
+* A new connection page
+* The support of the authentication using third party suppliers
+* The support of *standardised* inflection in the *Phrasea* engine
+* New interface to manage the documentary structure fields
+* Plenty graphical tweaks in Administration, Production
+* The support of a stable version of Sphinx search engine
+	
 Need help?
 ----------
 
