@@ -69,7 +69,7 @@ The Phrasea engine, which is the default engine, has few configuration options.
 
 The interface offers to :
 
-* Activate or de-activate the :term:`stems <Stemme>`
+* Activate or deactivate the :term:`stemming option <Stemm>`
 * Choose the display order of the records.
 
 Sphinx engine configuration
