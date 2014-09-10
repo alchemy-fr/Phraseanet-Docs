@@ -6,39 +6,40 @@ Import
 
 .. topic:: The essential
 
-    Relying on a :term:`HTML5` technology, the upload interface is accessible in
-    Production via a a link located in title bar of the Phraseanet menu. Upload
-    is an interface dedicated to adding media towards collections on which the
-    user has adding rights.
+    Relying on a :term:`HTML5` technology, the Upload interface is accessible in
+    Production via a link located in Phraseanet menu bar.
+
+    Upload is an interface dedicated to media addition towards collections on
+    which users have adding rights.
 
 .. image:: ../../images/Upload-zones.jpg
     :align: center
 
 .. note::
 
-    For browsers that don't have the full HTML5 support, a display mode lying on
-    the Adobe plug-in `FlashPlayer <http://get.adobe.com/fr/flashplayer/>`_ is
+    For browsers that don't have the full HTML5 support, a display mode relying
+    on Adobe plug-in `FlashPlayer <http://get.adobe.com/fr/flashplayer/>`_ is
     available.
 
 .. image:: ../../images/Upload-Version-Flash.jpg
     :align: center
 
 Click on the link **Use the Flash uploader** to use this mode.
-This Flash mode offers a downgraded display mode. It does not allow to access
-all the features developed with the HTML5 technology.
+This mode is a downgraded mode. It does not allow to access all the features
+developed with HTML5 technologies.
 
 Add media
 ---------
 
-Click on Upload in the :doc:`menu <General>` Phraseanet to start the interface
-in an overlay window.
+Click on the **Upload** link in the :doc:`Phraseanet menu bar <General>` to
+prime the upload interface in an overlay window.
 
 Select files
 ************
 
 * Click on **Select files** (1). The file browser starts.
-* Select the files to integrate by browsing through directories, then click on
-  Open.
+* Select the files to integrate by browsing through directories of your
+  computer, then click on **Open**.
 
 The selected files appear in the left side of the Upload interface (2).
 
@@ -61,8 +62,7 @@ Re-order, delete media from the import list
 Choose the collection of destination
 ************************************
 
-* Select the collection of destination, in the drop-down list of the available
-  collections (3).
+* Select the collection for destination in the drop-down menu (3).
 
 .. image:: ../../images/Upload-prezone3.jpg
     :align: center
@@ -78,17 +78,16 @@ Apply statuses
 Transmit the media
 ******************
 
-* Click on **Send** to import media in Phraseanet.
+* Click on the **Send** button to import media in Phraseanet.
 
-All  the media are transfer in the selected collection.
-Progress bars indicate the progress of the transfer in the **Files transmitted**
-section (4).
+All the media are transferred in the selected collection.
+A progress bars indicate the state of the transfer in the
+**Transmitted files** section (4).
 
 .. image:: ../../images/Upload-zone4.jpg
     :align: center
 
-After the transfer, the transmitted media are viewable in the Production and
-Classic interfaces.
+After transfer, media are viewable in Production and Classic interfaces.
 
 .. note::
 
@@ -96,11 +95,11 @@ Classic interfaces.
     consists in importing the files contained in a directory using an archiving
     task.
 
-The Quarantine
+The quarantine
 --------------
 
-During the addition of files, some files can be placed in **Quarantine** :
-they are notified by a red colour symbol and notifications can be sent by the
+During import procedure, some files can be placed in **Quarantine**:
+they are notified by a red colour label and notifications can be sent by the
 system.
 
 .. image:: ../../images/Upload-Quarantaine2.jpg
@@ -108,18 +107,18 @@ system.
 
 .. note::
 
-    By default, the files that are already in at least one media of the
-    destination base (checked using the
-    :term:`Universally Unique Identifier <Universally Unique Identifier (UUID)>`)
-    are quarantined.
+    By default, files that are already in the destination base are quarantined
+    (achieved by
+    :term:`Universally Unique Identifier <Universally Unique Identifier (UUID)>`
+    checking).
 
-    Other criteria to quarantine files can be set by administrators (format,
-    colorimetry, dimensions...*etc*.).
+    Other criteria to quarantine files can be set by administrators (file
+    format, color space, dimensions...*etc*.).
 
 .. seealso::
 
-    For more information about the setting of additional criteria of quarantine
-    retention, consult the dedicated paragraph at **Custom services** on
+    For more information about the setting of additional criteria for
+    quarantine, consult the dedicated paragraph at **Custom services** on
     :doc:`this page<../../../Admin/Configuration>`.
 
 Click on the Quarantine tab of the Upload window to display it contents.
@@ -128,18 +127,17 @@ Click on the Quarantine tab of the Upload window to display it contents.
     :align: center
 
 
-For each quarantined media, three options are possible :
+For each quarantined media, three options are possible:
 
 .. image:: ../../images/Upload-Quarantaine1.jpg
     :align: center
 
-* **Add** the file as a new record in the initially chosen collection.
+* **Add** the file as a new record in the initially chosen collection
 * **Remove** the file
 * **Substitute** the existing file
 
-The user decides what is the best action to do in order to empty the files
-queue in the quarantine space.
+The user decides what is the best option for files in quarantine.
 
 
-The Quarantine can also be entirely deleted using the button
-**Remove the quarantine** at the top left of the window.
+The Quarantine can also be entirely deleted using the **Empty quarantine**
+button on the top left side of the window.

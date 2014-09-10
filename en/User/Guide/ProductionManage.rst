@@ -2,16 +2,15 @@ Manage media in *Phraseanet Production*
 =======================================
 
 .. topic:: The essential
-    
-    Media management is in *Phraseanet Production*. This interface regroups all
-    the functions allowing to manage, broadcast and publish multimedia assets.
-    
-    The interface and the search possibilities are presented in the sections
-    dedicated to :doc:`display the results <Display>` and to
-    :doc:`search <Search>`.
 
-    In the following pages, only the advanced features are described. They
-    concern users whom have missions to manage and animate media assets.
+    Media management is done in *Phraseanet Production*. This interface regroups
+    all the functions allowing to manage, broadcast and publish media.
+
+    This interface and its search possibilities are presented in the sections
+    dedicated to :doc:`display results<Display>` and :doc:`search <Search>`.
+
+    In the following pages, only the advanced features are introduced. They
+    concern users who have the role in managing and animating media holdings.
 
 .. toctree::
    :maxdepth: 1

@@ -1,17 +1,18 @@
-Manage and animate an asset in *Phraseanet*
-===========================================
+Manage and animate media holdings in *Phraseanet*
+=================================================
 
 .. topic:: The essential
 
-    This section is for managing and animating a *Phraseanet* asset.
+    This section is dedicated to the organisation and management of media
+    holdings in *Phraseanet*.
 
-    It targets the **media asset managers** whom manage, organize and animate
-    collections of multimedia documents (pictures, videos, audio, office
-    documents and graphic arts... *etc*.) for companies or organizations
-    projects.
+    It targets **information specialists, picture reseachers or media
+    managers** who organize and animate multimedia holdings (pictures,
+    videos, audio, office documents and other graphic files...) in companies
+    or organizations' projects.
 
     Click on the suggested links to access the presentation of these essential
-    actions.
+    knowledges.
 
 .. toctree::
    :maxdepth: 2
