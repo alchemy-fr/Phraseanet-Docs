@@ -17,11 +17,11 @@ The Baskets
 
     A :term:`Basket<Basket>` allows to set aside media selections in order to
     work on them. A basket in not "searchable" like documents or stories and
-    belongs to the user who    created it. A basket can be transmitted to other
+    belongs to the user who created it. A basket can be transmitted to other
     users using the :doc:`Push and Validation<Push>` to make available a set of
     media.
 
-    
+
 Generalities on baskets
 ***********************
 
@@ -115,7 +115,7 @@ area.
 .. image:: ../../images/ArchivagePanier2.jpg
     :align: center
 
-The left side of the window allows to filter the baskets : 
+The left side of the window allows to filter the baskets :
 
 * By title
 * By source (received baskets, validations sent, validations received)
@@ -134,7 +134,7 @@ content**.
 
 Advanced features
 *****************
-  
+
 Move or duplicate documents between several baskets
 ***************************************************
 
@@ -152,7 +152,7 @@ Move or duplicate documents between several baskets
 Actions on the baskets or their content
 ***************************************
 
-Actions on the baskets work the same way as the actions on the documents from 
+Actions on the baskets work the same way as the actions on the documents from
 the results window.
 
 .. seealso::
@@ -167,7 +167,7 @@ The stories
     The story is a record in a collection that includes other records, located
     or not in the same collection. The descriptive note of a story is identical
     to a document's.
-    
+
     Unlike a basket, **a story can be searched** by every user than can access
     its collection.
 
@@ -189,7 +189,8 @@ Fill the form by indicating :
 
 Check the box to include the active selection as content of the story.
 
-Click on **Validate** to create the story. It appears as opened in the work area
+Click on **Validate** to create the story. It appears as opened in the work
+area.
 
 Add, delete documents from a story
 **********************************
@@ -208,7 +209,7 @@ click on the **Detach** section of the story's pop-up menu.
 
 **To attach a story** to the work area, edit its contents...
 
-* Research in the story mode and select one or several stories to attach to 
+* Research in the story mode and select one or several stories to attach to
   the work area.
 * Drag ad drop the stories from the displayed results area to the work area.
 

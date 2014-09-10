@@ -5,17 +5,17 @@ The Phraseanet menu
 
 .. topic:: The essential
 
-    The *Phraseanet* menu bar allows to access the different interfaces of the 
+    The *Phraseanet* menu bar allows to access the different interfaces of the
     application, the user account settings and some information and resources.
 
 Access to interfaces
 --------------------
 
-All the *Phraseanet* interfaces offer at the top of the window, a menu bar.
+All the *Phraseanet* interfaces offer a menu bar at the top of their windows.
 
 **The left part of the menu bar displays the list of the interfaces that the
-user can access.** Click on an application's name to launch the application in a
-new tab or a new window of the web navigator. 
+user can access.** Click on an application's name to launch the application in
+a new tab or a new window of the web navigator.
 
 **The sections in the menu bar depend on the users rights.**
 
@@ -27,13 +27,13 @@ of sections.
 .. image:: ../../images/General-menu0.jpg
     :align: center
 
-Others users, such as administrators, have a more complete menu bar.
+Other users, such as administrators, have a more complete menu bar.
 
 .. image:: ../../images/General-menu1.jpg
     :align: center
 
 **The right part of the menu bar** displays notifications, the account
-identifier, on-line help with the keyboard short-cuts and the disconnection 
+identifier, on-line help with the keyboard short-cuts and the disconnection
 link.
 
 .. image:: ../../images/General-menu2.jpg
@@ -42,32 +42,32 @@ link.
 Access to notifications
 -----------------------
 
-The notifications are some information messages displayed in real time in the 
+The notifications are some information messages displayed in real time in the
 interface *Phraseanet Production*.
-Notifications give some information about the new available publications, 
+Notifications give some information about the new available publications,
 validation requests, baskets receiving... *etc* to the user.
 
 **Click on the Notifications section to display them**.
 
 The notifications displayed in the interface are conveyed by the email's sending
-To manage the received notifications, access the 
-:ref:`Information tab<PhraseanetMenu-Information>` of the account settings.
+To manage the received notifications, access
+:ref:`the information tab<PhraseanetMenu-Information>` of the account settings.
 
 Account settings access
 -----------------------
 
 Click on the user identifier  to display the account settings.
-A new page opens and displays the forms and lists in thematic tabs.
+A new page opens and displays forms and lists in thematic tabs.
 
 .. image:: ../../images/Moncompte.jpg
     :align: center
 
 .. _PhraseanetMenu-Information:
-    
+
 Information tab
 ***************
 
-It regroups the personal information. The form allows to complete or modify :
+It regroups the personal information. The form allows to complete or modify:
 
 * The identification information
 * The postal address, phone number or email address
@@ -84,12 +84,12 @@ Access tab
 
 It lists the Phraseanet collections on which the user can do access requests.
 
-To make an access request to new Phraseanet bases or collections :
+To make an access request to new Phraseanet bases or collections:
 
-* Check the boxe(s) to request access to the new Phraseanet Bases/Collections
+* Check the boxe(s) to request access to a Phraseanet Bases/Collections
 * Validate the request by clicking on the *Validate* button.
 
-A message indicates that an access request is in progress. It needs to be
+A message indicates that an access request is in progress. It may need to be
 examined by an administrator to be validated.
 
 .. image:: ../../images/Accesbasescoll.jpg
@@ -98,8 +98,8 @@ examined by an administrator to be validated.
 Sessions tab
 ************
 
-It lists the user's sessions and gives information on the connections and access
-dates, IP addresses and web browsers used.
+It lists the user's sessions and gives information on connections and access
+dates, IP addresses and used web browsers.
 
 .. image:: ../../images/ListeSessions.jpg
     :align: center
@@ -109,8 +109,8 @@ Click on the button **End the session** to delete an active session.
 Applications tab
 ****************
 
-It lists the third party applications authorized to connect to the Phraseanet
-user's account.
+It lists the third party applications authorized to connect to Phraseanet
+using the user's account.
 
 .. image:: ../../images/ListeApplications.jpg
     :align: center
@@ -134,7 +134,7 @@ Help sections
 -------------
 
 Click on the *Help* tab to view the online documentation.
-Click on the arrow next the Help tab, to show two sub tabs :
+Click on the arrow next the Help tab, to show two sub tabs:
 
 .. image:: ../../images/General-menu3.jpg
     :align: center
@@ -145,5 +145,5 @@ Click on the arrow next the Help tab, to show two sub tabs :
 Disconnect
 ----------
 
-Click on *Disconnect* to end the session and exit *Phraseanet*.
+Click on **Sign Out** link to end the session and exit *Phraseanet*.
 

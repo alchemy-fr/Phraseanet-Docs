@@ -5,8 +5,8 @@ Thesaurus
     :maxdepth: 3
 
 .. topic:: The essential
-    
-    The Thesaurus is a documentary language manageemnt tool. In Phraseanet, its
+
+    Thesaurus is a documentary language management tool. In Phraseanet, its
     implementation is optional. It is used with the Phrasea engine and is not
     compatible with the Sphinx engine.
 
@@ -14,7 +14,7 @@ Thesaurus
 
     * **The contributors**, to give a reference vocabulary to describe the
       documentary resources of the base in the edition form.
-    * **The users**, to browse the assets and make suggestions allowing to 
+    * **The users**, to browse the assets and make suggestions allowing to
       narrow or expand the searches.
 
     The Thesaurus application is the interface dedicated to the thesaurus
@@ -38,7 +38,7 @@ the resources come along with their synonyms or quasi-synonyms.
 Relations in the Phraseanet thesaurus
 *************************************
 
-The Phraseanet thesaurus manages : 
+The Phraseanet thesaurus manages :
 
 * The relations between generic terms and specific terms
 * The synonymy relations, in the same language or to other languages of the
@@ -127,7 +127,7 @@ To create a synonym :
 * Right click on a branch
 * Click on **New synonym**.
 
-In the **New synonym** window : 
+In the **New synonym** window :
 
 * Type the term
 * Type if needed the context between brackets
@@ -174,20 +174,20 @@ In the property window...
 * Choose the Delete section then confirm the deletion in the alert window
 
 .. note::
-    
+
     In Firefox, a menu window can hide the Property window of the thesaurus.
-    
+
 Search for a term in the candidate terms or the Thesaurus
 *********************************************************
 
 * Right click on a branch or on a node of the candidate terms or the thesaurus
   then select the Search section
-  
+
 In the Search window,
 
 * Choose among the search options, type the searched term or expression then
   submit the form
-  
+
 The display refreshes and the terms searched are displayed in the tree structure
 of the candidate terms or the thesaurus.
 
@@ -224,8 +224,8 @@ In the Import window...
 To proceed with the integration of the imported thesaurus, link the branches
 to the documentary fields of the base.
 
-Link one or more branches of the thesaurus to a documentary field
-*****************************************************************
+Linking one or more branches of the thesaurus to a documentary field
+********************************************************************
 
 This action allows to link one or more documentary fields of the base to a
 branch of the thesaurus, to collect as candidate terms the vocabulary they
@@ -247,21 +247,20 @@ In the Link to field window of the thesaurus...
     added, or that the indexation will be modified, will appear as candidate
     terms in a branch named after the field.
 
-Work on the candidates
-----------------------
+Working on candidates
+---------------------
 
-The candidate terms are terms and expressions linked to branches of the
-thesaurus bu are not part of it. These terms can either come from information
-extracted from the metadatas of a file that was added, or from the information
-types from the Edit form of the records.
+Candidate terms are terms and expressions linked to branches of the thesaurus
+but are not part of it. These terms can either come from informations
+extracted from metadata of added files, or from informations added while
+captioning records notes.
 
-A part of the maintenance of the thesaurus consists in examining these
-candidates. If they are relevant, they are destined to be integrated. On the
-contrary, a correction of the notes can be necessary to use more appropriate
-descriptors.
+A part of the maintenance of thesaurus consists in examining these candidates.
+Relevant terms are destined to be integrated while irrelevant ones can justify
+corrections in notes in order to use more appropriate descriptors.
 
 Adding candidate terms to the thesaurus is made either in Thesaurus or in
-Production.
+Production interfaces.
 
 In Thesaurus
 ************
@@ -293,7 +292,7 @@ categorised as a candidate.
 **To display the rejected terms**, check the case *Display the rejected terms*
 in the interface.
 
-**Rejecting a candidate is not permanent** : 
+**Rejecting a candidate is not permanent** :
 
 * Display the rejected terms
 * Right click on the rejected term
@@ -307,20 +306,20 @@ Delete a candidate
 * Confirm the deletion in the alert window
 
 The deletion of a candidate term does not affect the records. A candidate can
-be deleted then re-added : 
+be deleted then re-added :
 
 * If it is reused during the edition of records notes
 * If it stays in the documentary notes and that the base is re-indexed
 
 .. Warning::
 
-    During the re-indexation of a base, the refused or deleted terms of a 
+    During the re-indexation of a base, the refused or deleted terms of a
     thesaurus reappear, this action reinitialises the candidates of the
     thesaurus.
 
 In Production
 *************
-  
+
 Candidates section
 ^^^^^^^^^^^^^^^^^^
 
@@ -336,7 +335,7 @@ The *Candidate* tab allow an ad-hoc of the Thesaurus.
 Accept a candidate
 ^^^^^^^^^^^^^^^^^^
 
-To add a candidate term to the Thesaurus : 
+To add a candidate term to the Thesaurus :
 
 * Right click (or click while pressing the "ctrl" key pressed) on a term to
   display the pop-up menu.
@@ -366,7 +365,7 @@ Replace a candidate
 This operation allows to correct a used candidate term in up to 25 documentary
 notes.
 
-To replace a candidate term in the notes : 
+To replace a candidate term in the notes :
 
 * Right click on the term to correct then select Replace by
 * Fill the form then click on Search

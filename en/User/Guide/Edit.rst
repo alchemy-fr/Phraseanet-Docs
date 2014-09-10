@@ -73,15 +73,15 @@ Edit multi-valued text fields
 * Select the record(s) to modify.
 * Click on a multi-valued field
 * Enter the term or expression in the form field then click on the "+" or
-  validate with the Enter key of the keyboard to add the term to the multi-valued
-  field.
+  validate with the Enter key of the keyboard to add the term to the
+  multi-valued field.
 
 The information contained in the notes of each selected document is displayed
 in this field. The common terms that are in all the notes are **in white**,
 the term that are at least in one note are **in orange**.
 
 To add or remove a descriptive term of the terms list used in other selected
-records notes : 
+records notes :
 
 * Click on one of the terms of the list of used descriptors
 * Click on the "+" symbol to add a term to the records notes selected in the
@@ -101,7 +101,7 @@ Select the document(s) that the date have to be modified or added.
 **or**
 
 * Use the calendar's input help.
-  
+
 Edit a field linked to a data source
 ************************************
 
@@ -170,7 +170,7 @@ selected records.
 
 Use the input help systems
 --------------------------
-    
+
 The paper block
 ***************
 
@@ -210,7 +210,7 @@ Create a documentary description template
 
 .. note::
 
-    If more than one document are selected, the template will only take the 
+    If more than one document are selected, the template will only take the
     common data of these fields.
 
 * Click on Add
@@ -232,7 +232,7 @@ Apply a template to a media selection
 
 .. note::
 
-    A template belongs to the user who created it, it can bu used only by him.
+    A template belongs to the user who created it, it can be used only by him.
 
 Particulars of editing stories
 ------------------------------

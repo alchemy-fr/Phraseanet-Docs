@@ -13,12 +13,12 @@ images, videos, audio or office documents within working groups of any size.
 
 As a *100% Web* application, it runs in a modern web browser.
 
-Built upon standard components, *Phraseanet* settles on Linux, Mac OS X or
-Windows servers and is based on common software components such as MySQL, PHP or
+Built upon standard components, *Phraseanet* settles on Linux, OS X or Windows
+servers and is based on common software components such as MySQL, PHP or
 Apache.
 Other third-party software libraries participate to *Phraseanet*.
 Some of these are `developed by Alchemy <http://phraseanet.github.com/>`_,
-while others not.
+while some others not.
 
 About this documentation
 ------------------------
@@ -34,17 +34,18 @@ beginning.
 .. toctree::
     :maxdepth: 1
 
-    Admin/index
-    User/index
-    Devel/index
-    FAQ/index
+    Contrib/index
     Glossary
     Contrib/index
+    FAQ/index
+    Devel/index
+    User/index
+    Admin/index
 
-What's new in version 3.8 ?
----------------------------
+What's new in version 3.8?
+--------------------------
 
-Here are the main changes in version 3.8 :
+Here are the main changes in version 3.8:
 
 * A new connection page
 * The support of the authentication using third party suppliers
@@ -52,7 +53,7 @@ Here are the main changes in version 3.8 :
 * New interface to manage the documentary structure fields
 * Plenty graphical tweaks in Administration, Production
 * The support of a stable version of Sphinx search engine
-	
+
 Need help?
 ----------
 

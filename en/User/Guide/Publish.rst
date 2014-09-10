@@ -5,10 +5,10 @@
 
 .. topic:: The essential
 
-    Two features of Phraseanet allows to publish and to broadcast media from an
-    asset : *Publication* and *Bridge*
+    Two features of Phraseanet allow to publish and to broadcast media :
+    *Publication* and *Bridge*
 
-.. _Publish-Publications:    
+.. _Publish-Publications:
 
 Publish media
 -------------
@@ -40,7 +40,7 @@ Fill the form :
 
 .. seealso::
 
-    Refer to the Publications section of Phraseanet Admin to 
+    Refer to the Publications section of Phraseanet Admin to
     :ref:`create feeds<Create-a-publication-feed>`.
 
 * Click on Publish
@@ -82,7 +82,7 @@ In the **Bridge** window :
 * Click on **New** to connect to a Flickr, Youtube, Dailymotion... account
   depending on the sharing settings configured in **Phraseanet Admin**.
 * Log in then authorize Phraseanet to connect.
-  
+
 .. image:: ../../images/Bridge-1b.jpg
     :align: center
 
@@ -109,7 +109,7 @@ tags and describe your media in the description forms.
 When the images are sent, it is possible to view the transfer progress by
 clicking on the tab **Sent files**.
 
-* The status **OK** tells the media pictures or videos have been transfered.
+* The status **OK** tells that media pictures or videos have been transferred.
 * A date information indicates since when the transfer was made.
 
 Start *Flickr*. The media transferred from Phraseanet are available.

@@ -1,7 +1,7 @@
 Actions on records
 ==================
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 3
 
 .. topic:: The essential
 
@@ -12,13 +12,13 @@ Actions on records
 
     In the work area, the actions palette of the opened basket or story allows
     to act on the records it contains or that are selected.
-    
+
     **The actions are accessible depending on the users rights**. Some of these
     actions are basic features while others are advanced features.
 
 
 .. image:: ../../images/Actions-PaletteBeta.jpg
-    :align: center
+   :align: center
 
 The basic features
 ------------------
@@ -28,7 +28,7 @@ Export and Print
 
 .. seealso::
 
-    :doc:`Refer to the Export and Printing section in Phraseanet<Export>` in the
+   :doc:`Refer to the Export and Printing section in Phraseanet<Export>` in the
     fundamentals.
 
 The advanced features
@@ -40,43 +40,43 @@ actions pop-up menus.
 Edit
 ****
 
-This function allows editing records in *Phraseanet* : media and baskets edition
+This function allows editing records in *Phraseanet*: media and baskets edition
 Complete or modify the documentary descriptions of the *assets*, either one by
 one or by batch.
 
 .. seealso::
 
-    :doc:`Refer to the Edit section <Edit>`.
+   :doc:`Refer to the Edit section <Edit>`.
 
 In the main palette, the pop-up menu of the button regroups the functions
-:ref:`Properties<Actions-Properties>` and :ref:`Move<Actions-Move>`.
+:ref:`Properties<Actions-Properties>` and:ref:`Move<Actions-Move>`.
 
 .. _Actions-Properties:
 
 Properties
 **********
 
-This action allows to modify : 
+This action allows to modify:
 
-* the :term:`statuses<Status>` of the records
+* the:term:`statuses<Status>` of the records
 * the type of the selected documents
 
 Modify the records status
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The :term:`statuses<Status>` allows to categorize records. They bring
-information on their statuses : progress in a *workflow*, alerts on expired
+The:term:`statuses<Status>` allows to categorize records. They bring
+information on their statuses: progress in a *workflow*, alerts on expired
 rights, restricts the access on a users range.
 
 .. note::
 
     28 statuses are customizable in Phraseanet Admin. They can be implemented
     for *workflow* needs or for access restrictions on records by custom tasks.
-    A status change is also directly available from the :doc:`Edit <Edit>`
+    A status change is also directly available from the:doc:`Edit <Edit>`
     window.
 
-To edit records statuses :
-    
+To edit records statuses:
+
 * Select one or more records in the display area or in the opened basket or
   story
 * Click on the Properties button in the corresponding actions palette
@@ -118,7 +118,7 @@ same Phraseanet base.
 * Click on Validate to save the changes
 
 .. note::
-    
+
     Asynchronous, the interface does not handle real time change of collections.
     Search again for the media to check if they were successfully moved.
 
@@ -139,7 +139,7 @@ applications.
 Tools
 *****
 
-Tools regroups the actions allowing to act on :
+Tools regroups the actions allowing to act on:
 
 * **The thumbnails or preview images** (re-generation, substitution, rotation,
   preview thumbnail for videos)
@@ -149,18 +149,18 @@ Tools regroups the actions allowing to act on :
 
 Select one or more records in the display area or in an opened basket or story
 of the work area then click on the Tools button. Choose one of the suggested
-tabs :
+tabs:
 
-* **Regenerating the sub-definition** : to re-generate new thumbnails and
+* **Regenerating the sub-definition**: to re-generate new thumbnails and
   sub-definitions for the selected records.
-* **Video tools** : Available only if the selected media is a video, the tab
+* **Video tools**: Available only if the selected media is a video, the tab
   shows the tools in order to choose a customized preview thumbnail.
-* **Rotation** : Rotate the thumbnails and preview images for the selected media
-* **Substitution** : Replace the original document by an other. A checkbox
+* **Rotation**: Rotate the thumbnails and preview images for the selected media
+* **Substitution**: Replace the original document by an other. A checkbox
   allows to choose if the thumbnail and the preview image have to be rebuilt.
-* **Substitution of the sub-definitions** : Replace the thumbnail and preview
+* **Substitution of the sub-definitions**: Replace the thumbnail and preview
   image by an other file.
-* **Metadatas** : Display all the metadatas informations read by the
+* **Metadatas**: Display all the metadatas informations read by the
   **Exiftool** tool in the original media of the selected document (this tab is
   available if only one document is selected)
 

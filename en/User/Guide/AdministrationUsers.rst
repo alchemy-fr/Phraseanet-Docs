@@ -51,7 +51,7 @@ Create a new user
 
 .. note::
 
-    If some users are created by the users management interface, the e-mail 
+    If some users are created by the users management interface, the e-mail
     address is used as the identifier.
 
 Modify the user's rights
@@ -87,10 +87,10 @@ Users templates creation
 * Click on **New template**
 * Enter a name for the template then validate the form
 * Edit the rights of the new template then validate the form
-    
+
 .. note::
 
-    Templates belong to users who created them. They will not be visible by the 
+    Templates belong to users who created them. They will not be visible by the
     other administrators.
 
 Apply templates to users
@@ -104,18 +104,20 @@ It is possible to apply templates to one or more users.
 
 .. image:: ../../images/Administration-appliquermodele.jpg
     :align: center
-    
-An alert window allows to choose an application option for the template : 
+
+An alert window allows to choose an application option for the template :
 
 * **Apply the template** : the rights of the template are added to the existing
   rights
 * **Reset and apply the template** : the rights are reset then applied to the
   user
 
+.. _Setting-Guest-Access:
+
 The guest access
 ----------------
 
-The guest access can be set up in Phraseanet, if desired. It allows to give 
+The guest access can be set up in Phraseanet, if desired. It allows to give
 access to the media assets to persons not registered in the system.
 
 To set up the guest access :
@@ -164,10 +166,10 @@ boxes on all the collections of a base.
 Viewing rights
 **************
 
-The first part and leftmost of the rights window : 
+The first part and leftmost of the rights window :
 
 * **Access** to allow access to a Phraseanet Base or to the collection
-* **Active** to activate the user account. Unchecking the box allows to 
+* **Active** to activate the user account. Unchecking the box allows to
   disable the user without loosing the settings.
 * **Baskets** to allow baskets creation.
 * **Sub-definition** allows to view and download the sub-definitions of the
@@ -205,7 +207,7 @@ Limitation through status allows to hide records from the user according to
 the state of one or several status.
 
 .. note::
-    Refer to the settings of the base for the creation and the management of the 
+    Refer to the settings of the base for the creation and the management of the
     status bits.
 
 Click on the statuses icon to set the access restrictions to the records.

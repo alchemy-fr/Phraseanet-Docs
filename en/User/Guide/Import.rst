@@ -17,14 +17,14 @@ Import
 .. note::
 
     For browsers that don't have the full HTML5 support, a display mode lying on
-    the Adobe plug-in `FlashPlayer <http://get.adobe.com/fr/flashplayer/>`_ is 
+    the Adobe plug-in `FlashPlayer <http://get.adobe.com/fr/flashplayer/>`_ is
     available.
-    
+
 .. image:: ../../images/Upload-Version-Flash.jpg
     :align: center
 
 Click on the link **Use the Flash uploader** to use this mode.
-This Flash mode offers a downgraded display mode. It does not allow to access 
+This Flash mode offers a downgraded display mode. It does not allow to access
 all the features developed with the HTML5 technology.
 
 Add media
@@ -37,7 +37,7 @@ Select files
 ************
 
 * Click on **Select files** (1). The file browser starts.
-* Select the files to integrate by browsing throuh directories, then click on
+* Select the files to integrate by browsing through directories, then click on
   Open.
 
 The selected files appear in the left side of the Upload interface (2).
@@ -57,11 +57,11 @@ Re-order, delete media from the import list
 * **Delete** from the list one or more media by clicking on Cancel below the
   thumbnails, or
 * **Reset the sending list** by clicking on the **Empty the list** button.
-    
+
 Choose the collection of destination
 ************************************
 
-* Select the collection of destination, in the drop-down list of the available 
+* Select the collection of destination, in the drop-down list of the available
   collections (3).
 
 .. image:: ../../images/Upload-prezone3.jpg
@@ -92,27 +92,27 @@ Classic interfaces.
 
 .. note::
 
-    Other adding possibilities are possible, like using a FTP directory. It
+    Other addition possibilities exist, like using a FTP directory. It
     consists in importing the files contained in a directory using an archiving
     task.
 
 The Quarantine
 --------------
 
-During the addition of files, some files can be placed in **Quarantine** : 
+During the addition of files, some files can be placed in **Quarantine** :
 they are notified by a red colour symbol and notifications can be sent by the
 system.
 
 .. image:: ../../images/Upload-Quarantaine2.jpg
     :align: center
 
-.. note::    
+.. note::
 
     By default, the files that are already in at least one media of the
-    destination base (checked using the 
+    destination base (checked using the
     :term:`Universally Unique Identifier <Universally Unique Identifier (UUID)>`)
     are quarantined.
-    
+
     Other criteria to quarantine files can be set by administrators (format,
     colorimetry, dimensions...*etc*.).
 
@@ -121,7 +121,7 @@ system.
     For more information about the setting of additional criteria of quarantine
     retention, consult the dedicated paragraph at **Custom services** on
     :doc:`this page<../../../Admin/Configuration>`.
-    
+
 Click on the Quarantine tab of the Upload window to display it contents.
 
 .. image:: ../../images/Upload-Quarantaine0.jpg
@@ -137,8 +137,8 @@ For each quarantined media, three options are possible :
 * **Remove** the file
 * **Substitute** the existing file
 
-The user decide what is the best action to do in order to empty the files queue
-in the quarantine space.
+The user decides what is the best action to do in order to empty the files
+queue in the quarantine space.
 
 
 The Quarantine can also be entirely deleted using the button
