@@ -6,9 +6,9 @@
 
 .. topic:: The essential
 
-    A lot of statistics are available in Phraseanet. In Production, stats on
-    the documents are published in the tabs of the detailed view.
-    
+    A lot of statistics are available in Phraseanet. In Production, statistics
+    on documents are available in tabs of the detailed view.
+
     **Report** gives more detailed informations on the site's activity.
 
 Statistics in Production
@@ -56,8 +56,8 @@ The dashboard gives general information about :
 * The 10 top frequently asked questions
 * The sites where the media are the most viewed
 
-These statistics are detailled in the Connections, Downloads and Site activity
-tabs .
+These statistics are detailed in the Connections, Downloads and Site activity
+tabs.
 
 Connections
 ***********
@@ -69,7 +69,7 @@ Three type of reports are available :
 * The connections history
 * The details on platforms and web browsers used by the users
 
-To generate these reports : 
+To generate these reports :
 
 * Choose a period
 * Select bases and collections on which the statistics are calculated
@@ -83,7 +83,7 @@ Downloads
 *********
 
 The Downloads tab lists the downloads for a specified period, by bases and
-collections : 
+collections :
 
 * By user
 * By chronological order
@@ -91,7 +91,7 @@ collections :
 * By documents of a base
 
 Links on the data of the **RecordID** column allows to display a note of the
-downloaded documents. This note contains : 
+downloaded documents. This note contains :
 
 * A preview
 * Metadatas like the date of creation in the base, the title or the size
@@ -115,7 +115,7 @@ collections
 Activity related to questions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Three types of reports are on questions asked : 
+Three types of reports are on questions asked :
 
 * **The questions history** lists the questions asked by the users in
   chronological order.
@@ -123,7 +123,7 @@ Three types of reports are on questions asked :
   the average number of answers.
 * **The unanswered questions** lists the searches with no results and the number
   of times they were asked.
-  
+
 Activity per hour
 ^^^^^^^^^^^^^^^^^
 
@@ -134,7 +134,7 @@ Documents
 ^^^^^^^^^
 
 This report allows to get information of the activity of documents. A list of
-choices allows to choose the actions made on the documents : 
+choices allows to choose the actions made on the documents :
 
 * Pushed documents
 * Added documents
@@ -158,5 +158,4 @@ of the columns.
 Some column headers allows to sort is needed.
 
 Most of the generated reports can be exported as PDF or CSV files. Click on the
-dedicated icons to export to obtain the reports in the desired format. 
-    
+dedicated icons to export to obtain the reports in the desired format.

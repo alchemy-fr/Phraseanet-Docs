@@ -17,16 +17,16 @@ Authentication
 * Click on **Connection**
 
 If the password is forgotten, follow the lost password procedure by clicking
-on the link :ref:`Password forgotten <Connection-password-forgotten>`.
+on the link :ref:`Forgot Password?<Connection-password-forgotten>`.
 
 When connecting to Phraseanet, the last used application is launched, or, by
 default, :doc:`Production <Display>`.
-  
+
 Authenticating using third party application
 --------------------------------------------
 
 *Phraseanet* allows to delegate the user authentication to a third party
-application, including the following web applications :
+application, including the following web applications:
 
 * Facebook
 * Twitter
@@ -39,18 +39,18 @@ Other identity suppliers can be added.
 
 .. note::
 
-    To set the list of authentication providers, see the 
+    To set the list of authentication providers, see the
     :doc:`settings section <../../Admin/Configuration>`.
 
-Subscription
-------------
+Register
+--------
 
 Depending on the system settings, a button allowing to sign up as a new user can
 exist in the connection page of *Phraseanet*.
 
-* Click on **Sign up** button to access the subscription form
+* Click on **Register** button to access the subscription form
 
-If the third party authentication is activated, there are two options :
+If the third party authentication is activated, there are two options:
 
 * Click on the **Create manually an account** button then fill and send the form
 
@@ -66,15 +66,15 @@ If the third party authentication is activated, there are two options :
     can be different from the one used with the identity provider.
 
 When the form is sent, a message appears on the connection page. It informs the
-user that his subscription request was received. Notified, an administrator can
-validate the subscription in the Administration module.
+user that his subscription request was received. Notified, an administrator may
+have to validate the subscription in the Administration module.
 
 .. _Connection-Password-Forgotten:
 
 Password forgotten ?
 --------------------
 
-* Click on the **Password forgotten ?** link.
+* Click on the **Forgot Password?** link.
 * Fill and submit the form using the email address linked to the Phraseanet
   account.
 
@@ -92,22 +92,21 @@ Follow the instructions then validate the form to reset the password.
 Follow the suggested steps then validate the form.
 
 .. warning::
-    
+
     The passwords are case sensitive.
 
 After resetting the password, connect using the homepage form of Phraseanet.
 
-The guest account
------------------
+Guest access
+------------
 
-The guest account is an account like any other *Phraseanet* account. It allows
-to view one or more collections without authentication.
+A guest access may be available on the homepage. Click on the **Guest access**
+button to connect using this account.
 
 .. note::
 
     The guest account is just like other Phraseanet accounts. It allows to view
     one or more collections without authentication.
 
-Refer to
-:doc:`this section <../../FAQ/Customization/Setting-guest-account>`
-to set the guest account.
+    Refer to
+    :ref:`this section <Setting-Guest-Access>` to set the guest account.

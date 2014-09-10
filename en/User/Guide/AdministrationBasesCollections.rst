@@ -10,7 +10,7 @@ Phraseanet bases and collections administration
     collections can be treated as base subsets.
 
 .. Setting-Structure:
-    
+
 Customization per base
 ----------------------
 
@@ -41,13 +41,13 @@ writeable XML file.
     :align: center
 
 It's unlikely to have to customize a base using this interface, the interfaces
-`Fields`_ , `Sub-definition`_ or `Statuses settings`_ are more convenient to
+`Fields`_ , `Subviews`_ or `Statuses settings`_ are more convenient to
 use to change the settings.
 
 Fields
 ******
 
-The section **Fields** allows to define and edit the documentary structure of a 
+The section **Fields** allows to define and edit the documentary structure of a
 Phraseanet base using forms in a graphical interface.
 
 .. image:: ../../images/Administration-structurechamps.jpg
@@ -70,10 +70,10 @@ properties :
     **The field types are linked to the Phrasea engine**.
     :doc:`Refer to the fields type information of the FAQ <../../FAQ/Settings/Phrasea-field-types>`.
 
-Sub-definition
-**************
+Subviews
+********
 
-The section *Sub-Definition* allows to add and edit the media sub-definitions
+The section *Subviews* allows to add and edit the media sub-definitions files
 for picture, videos, audio type integrated in Phraseanet.
 
 .. image:: ../../images/Administration-sousdefinitions.jpg
@@ -107,12 +107,12 @@ Statuses settings
 
 The :term:`Statuses<Status>` allows to set states on documents and to restrict
 the access to records to users regardless of the collection notions.
-Linked to the documentary structure of a base, it is possible to integrate up to
-28 statuses.
+Linked to the documentary structure of a base, it is possible to integrate up
+to 28 statuses.
 
-* To declare a status, click on the Page icon to edit a new status bit then fill
-  the form.    
-* To modify en existing status, click on the Pen icon.
+* To declare a status, click on the Page icon to edit a new status bit then
+  fill the form.
+* To modify an existing status, click on the Pen icon.
 * To delete a status, click on the Cross icon then confirm the deletion.
 
 General terms and conditions of use
@@ -189,7 +189,7 @@ the size in giga-bytes.
 
 To hide the details of a collection, click on **Back**.
 
-.. _AdministrationBasesCollections-Managers:
+.. _Collections-Order-Managers:
 
 Managing the order managers
 ***************************
@@ -228,7 +228,7 @@ Or
 Or
 
 * Check the box **Notification banner** to add a banner under the last pixels
-  line of the files (this requires setting up the "fields" and "logo" 
+  line of the files (this requires setting up the "fields" and "logo"
   information to display on the banner).
 
 Other actions on the collections
@@ -246,7 +246,7 @@ The labels allows to give names to the collections in each interface language of
 the application.
 To define or modify the labels of a collection, fill the form then click on the
 button **Define the labels**.
-    
+
 .. _activate-collection:
 
 Activate or de-activate a collection
@@ -312,7 +312,7 @@ sub-definitions of the collection's documents.
 Stamp
 ^^^^^
 
-A stamp adds a banner containing a logo and some metadatas to the export of 
+A stamp adds a banner containing a logo and some metadatas to the export of
 original image type documents.
 
 The configuration of the stamp must be completed by editing the XML tags in the

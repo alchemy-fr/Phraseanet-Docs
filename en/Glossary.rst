@@ -22,9 +22,9 @@ Glossary
     Webhooks
         Web development technique implementing events targeting third party
         applications in order to interact with them.
-    
-    Stemme
-        Stemme is a neologism defining a configuration allowing to optimise and
+
+    Stemm
+        Stemm is a neologism defining a configuration allowing to optimise and
         maximise search results.
         `Stemming <http://en.wikipedia.org/wiki/Stemming>`_,
         `lemmatisation <http://en.wikipedia.org/wiki/Lemmatisation>`_,
@@ -35,7 +35,7 @@ Glossary
     OAuth2
         Open authentication protocol allowing a secured authentication on web,
         mobiles or desktop applications.
-        OAuth2 allows to authenticate using information from a remote account 
+        OAuth2 allows to authenticate using information from a remote account
         base from supplied by OAuth2 providers.
 
         .. seealso::
@@ -43,20 +43,20 @@ Glossary
             http://www.oauth.net
 
     HTML5
-        HTML5 is the fifth major release of the HTML language. Executed in a 
+        HTML5 is the fifth major release of the HTML language. Executed in a
         browser using its advanced features, HTML5 allows to build feature-rich
         web interfaces.
 
     FTP
-        FTP is a file transfer protocol. It is used for massive documents 
-        sending.
+        FTP is a file transfer protocol. It is used for massive documents
+        sending over network.
 
     Document
         A document is the original file added to a Phraseanet Base/Collection.
 
     Sub-resolutions
         These files are generated when a document is added. They are classified
-        in three groups (Everybody/Sub resolutions/Documents) and are linked to 
+        in three groups (Everybody/Sub resolutions/Documents) and are linked to
         the user rights.
 
     Description
@@ -64,10 +64,10 @@ Glossary
 
     Metadatas
         A metadata is literally a data on a data.
-        More precisely, it's a package of structured information describing a 
+        More precisely, it's a package of structured information describing a
         random resource. Metadatas are located inside the file. The
-        :term:`IPTC`, the :term:`XMP` and the:term:`EXIF` are standards 
-        metadatas used in a JPEG file for example. Metadatas can be used, 
+        :term:`IPTC`, the :term:`XMP` and the:term:`EXIF` are standards
+        metadatas used in a JPEG file for example. Metadatas can be used,
         depending on their type, in read-only mode or read-write mode.
 
     Indexation
@@ -78,9 +78,9 @@ Glossary
         Customizable variable of boolean type (Yes/No) allowing to characterise
         some records. It is possible to define and allocate up to 28 more status
         on a document, 4 status are dedicated (for a total of 32 status).
-        
+
     Record
-        A record is a document or a story. As a single entity, this digital 
+        A record is a document or a story. As a single entity, this digital
         *Asset* has a unique descriptive sheet (in XML), of one or more
         documents and given sub resolutions (thumbnails, preview images, key
         images for stories...*etc*.).
@@ -92,16 +92,16 @@ Glossary
         Collections that will use the original Phraseanet base settings. The
         Phraseanet base fundamentals are highlighted in    *Phraseanet
         Administration* and *Thesaurus*.
-        
+
     Collection
         A collection is a subset of a Phraseanet base. They allow to implement a data
-        segmentation, based on workflow needs or even data separation in 
+        segmentation, based on workflow needs or even data separation in
         accordance with subjective criteria (type of document, year of the
         shooting...*etc*.).
 
     Basket
         A basket is a set including :term:`records <record>`.
-        A basket belongs to the user who created it. A basket can be 
+        A basket belongs to the user who created it. A basket can be
         transferred by Push or through a *Phraseanet* Feedback.
 
     Story
@@ -153,28 +153,28 @@ Glossary
     Overlay
         Overprinted window, Internet viewing technology that opens windows
         overprinted on an existing window.
-        
+
     Bridge
         Phraseanet features for setting and implementing bridges to third-party
         applications (YouTube, Flickr, Dailymotion).
         Available from the action menu.
-        
+
     Push
         Phraseanet action allowing to send documents to users or applications.
 
     Actions palette
         Tools available for the users depending on their user rights, enabling
         to execute actions on baskets documents...
-        
+
     API
-        An API (Application Programming Interface) is an interface provided by 
+        An API (Application Programming Interface) is an interface provided by
         a software to allow third party programs to interact with it.
-        
+
     Business field
         The Phraseanet *Business field* are fields that will receive business
         information. These internal information are shared by the users having
         editing rights on the documents. A business field is searchable only
-        by a user that have editing rights.
+        by a user that has editing rights.
 
     Dublin Core
         Standardised schema ISO 15836 for describing documentary resources.
@@ -182,4 +182,4 @@ Glossary
         .. seealso::
 
             http://www.dublincore.org/
-            
+

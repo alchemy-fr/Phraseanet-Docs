@@ -1,4 +1,4 @@
-Application's Administration 
+Application's Administration
 ============================
 .. toctree::
     :maxdepth: 3
@@ -35,7 +35,7 @@ settings of the Phraseanet instance.
 
 Setup have a set of forms allowing to :
 
-* Modify the addresses and the paths of the application or components that 
+* Modify the addresses and the paths of the application or components that
   allow its implementation.
 * Put the application in maintenance mode
 * Activate or deactivate connections to web services and to to social networks
@@ -47,8 +47,8 @@ Setup have a set of forms allowing to :
 
 .. warning::
 
-    "Setup" allows to deeply modify the installation settings of the 
-    application. The administrator must pay attention to modifications brought 
+    "Setup" allows to deeply modify the installation settings of the
+    application. The administrator must pay attention to modifications brought
     in the proposed forms.
 
 Search engine settings
@@ -90,8 +90,8 @@ and time of connection to the system.
 Publications
 ------------
 
-Accessible by users who have the publications management rights, the 
-publications section allows to manage mediaRSS feeds broadcast from the 
+Accessible by users who have the publications management rights, the
+publications section allows to manage mediaRSS feeds broadcast from the
 Phraseanet application.
 
 .. image:: ../../images/Administration-publications.jpg
@@ -103,7 +103,7 @@ create, modify or remove some media feeds.
 .. _Create-a-publication-feed:
 
 Create a publication feed
-***************************
+*************************
 
 Fill the feed creation form by entering the necessary information.
 The publication extent restricts the publication to users accessing a
@@ -116,7 +116,7 @@ collection.
   on the login page.
 
 Modify or delete a feed
-*************************
+***********************
 
 * Click on the title of a feed to modify it
 * To delete a feed, click on the button **Delete**
@@ -144,7 +144,7 @@ The standard version of the solution is delivered with a set usable of tasks :
 * Creation of sub-definitions
 * Writing metadatas
 
-Administrators can add others : 
+Administrators can add others :
 
 * Select one of the task templates available in the drop-down menu **New Task**
 * Edit the taks settings in the XML view or graphical form
@@ -158,9 +158,9 @@ In some cases, the graphical view simulates the task's execution.
 
 .. image:: ../../images/Administration-editertache2.jpg
     :align: center
-    
+
 * Start the task.
-    
+
 .. seealso::
 
     :doc:`Refer to the page dedicated to the tasks engine<../../Admin/TaskManager>`.
