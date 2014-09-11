@@ -1,16 +1,16 @@
-﻿Push and validation
-===================
+﻿Push and Feeback
+================
 
 .. toctree::
     :maxdepth: 3
 
 .. topic:: The essential
 
-    The *Push* and the *Validation* are two actions intended to transmit
-    documents to users, whether they have Phraseanet accounts or not.
+    *Push* and *Feedback* are two actions intended to transmit documents to
+    users, whether or not they have originally a Phrasenaet account.
 
-    The *Push* is used to push documents toward those users, the *Validation*,
-    is intended to collect advisory opinion from the users about media.
+    A *Push* is used to push media toward users. A *Feeback* is intended to
+    collect advisory opinion about media from them.
 
     A `Lists manager`_ allows to create sending lists to answer some
     repetitive sending towards the same users.
@@ -21,34 +21,32 @@
 The Push
 --------
 
-The Push is a submission of documents or baskets of documents. Reversely to an
-e-mail export, the *Push* does not physically transmit the documents. It
-notifies in the interface, and also notifies by e-mail, and leave at the users
-disposal some media selections coming from baskets that they can consult and
-eventually download.
+The Push is a submission of documents or selection of documents. Unlike an
+email export, the *Push* does not physically transmit documents. It
+notifies in the interface, notifies by email, and leave at the users
+disposal some media selections that they can consult and eventually download.
 
 Push documents
 **************
 
 * **Select one or several documents** in the results display area or in an
-  opened basket or open a story in the work area.
+  opened basket or story in the work zone.
 
-* **Click on the Push button** of one of the Actions palette :
+* **Click on the Push button** of one of the Actions palettes :
 
 In the Push window...
 
-* **Select one or several users*** to push toward them the selected
-  documents.
+* **Add one or several users** to push toward them the selected documents.
 
-To do so, enter their family names, first names or e-mail address in the form
+To do so, enter their names, first names or email address in the form
 field on the top left of the interface. An auto-completion system is activated
-as soon as the third character is entered in order to facilitate users search.
+as soon as the third character is entered in order to facilitate users searches.
 Once the Phraseanet user is detected in the suggested users list, click on his
-name in order to add him to the sending list.
+name to add him to the sending list.
 
-**To add one or several non registered users** in a Phraseanet account base to a
-sending list, click on the link **Add a user**.
-Fill in at least the mandatory fields recognizable by an asterisk then click
+**To add one or several non registered users** to a sending list, click on the
+link **Add a user**.
+Fill in at least the mandatory fields (those with an asterisk) then click
 on the "Add" button. The contact is created and added to the recipients area and
 his account is created.
 
@@ -57,41 +55,39 @@ his account is created.
     The users listed in the recipient area can be gathered and saved in the
     sending list.
 
-    To save a sending list, fill in the fields of the form located on the left
-    of the recipient area then save by clicking on the icon :
+    To save a sending list, fill in the form located on the left of the
+    recipient area then save by clicking on the icon:
 
     .. image:: ../../images/Push-icone-disquette.jpg
         :align: center
 
-    The created list is then displayed in the sending lists area.
-
 .. seealso::
 
-    Refer to the functionalities of the :ref:`list manager<Push-Manager>`.
+    Refer to the functionalities of the :ref:`list manager<List-Manager>`.
 
 .. warning::
 
-    To be able to create users from Pushes and Validations, the user must have
-    the required users management rights.
+    To be able to create users from Pushes and Feedbacks, the
+    **Users management rights** is required.
 
-To grant some specific rights on high definition downloads,(or *Grant rights*)
-on the documents pushed to users of the sending list, two methods are available:
+To allow recipients to download original documents, two methods are available:
 
 * Select one or several users in the recipient area, then click on the
-   *HD download* button located on the left of the sending users list.
+   *Download document* button located on the left of the recipients list.
 
 **Or**,
 
-* Click on the icon located on the representative sticker of each recipient to
-  grant the right for a high definition download.
+* Click on the icon located on each recipient label for grant them their
+  download rights.
 
 .. image:: ../../images/Push-download-badge.jpg
     :align: center
 
-* Click on the *Send* button to validate and to transmit the Push.
+* Click on the *Send* button to validate and transmit the Push.
 
-A form is available to give a name, a description to the sending and to request,
-if needed, an acknowledgement receipt of the email if this function is supported
+The following form is aimed to give a name and a description to the push. Those
+informations will part of the email notification addressed to recipients.
+If needed, an acknowledgement receipt of the email if this function is supported
 by the recipients mail boxes.
 
 The Validation
@@ -145,7 +141,7 @@ Lightbox.
 
     :doc:`Refer to the page dedicated to <Lightbox>`
 
-.. _Push-Manager:
+.. _Lists-Manager:
 
 Lists manager
 -------------
