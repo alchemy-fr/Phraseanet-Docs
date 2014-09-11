@@ -169,8 +169,8 @@ Outils. Choisir un des onglets proposés :
 * **Substitution** : Permet de remplacer le document original par un autre. Une
   case à cocher permet de choisir si la vignette et l'image de choix doivent
   être reconstruites
-* **Substitution des sous-défs** : pour remplacer la vignette et l'image de
-  choix par un autre fichier
+* **Substitution des sous-défs** : pour remplacer la vignette par un autre
+  visuel
 * **Métadonnées** : pour afficher l'ensemble des informations de métadonnées
   lues par l'utilitaire **Exiftool** dans le média original du document
   sélectionné (cet onglet n'est disponible que si un seul document est

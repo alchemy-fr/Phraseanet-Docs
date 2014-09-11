@@ -5,17 +5,20 @@ Edit the documentary notes
 
 .. topic:: The essential
 
-    The action **Edit** allows to edit the fact sheets of the media, stories,
-    to write, complete or modify the documentary description fields.
+    The action **Edit** allows to edit the documentary notes of documents and
+    stories.
+    The Edit form is aimed to write, complete or modify the documentary
+    description fields of records.
 
     It is possible to edit these descriptions either one by one or by batch
-    from records, baskets, stories from the results area or the work area.
+    from records.
 
 Edit records
 ------------
 
 Select one or more records in the display area or in an opened basket or story
-in the work area then click on one of the Edit buttons to open an edition form.
+in the work zone then click on one of the **Edit** buttons to open the edit
+form.
 
 Edition generalities
 ********************
@@ -25,11 +28,11 @@ Edition generalities
 
 The window has three parts :
 
-* **The scroll bar** displays the selected documents. The size of the area is
-  modifiable. The size of the thumbnails is modifiable by moving the cursor.
-* **The text-entry area** shows a list of descriptive fields, the status list,
+* **The scroll bar** displays the selected records. Its size is modifiable as
+  the thumbnail size by adjusting handles and cursors.
+* **The form area** shows the list of descriptive fields, the status list,
   and reserves some space to display the contents of the active field.
-* **The text-entry help tabs area** regroup help tools for the text-entry.
+* **The input help tabs area** regroup tools for text-entry.
 
 **By default, all the records are selected.**
 
@@ -38,28 +41,31 @@ bright.
 
 The fields that have different contents appear with orange xxxxx.
 
+It's possible to select or deselect the records in the scroll bar in the same
+way as in the display area.
+
 .. seealso::
 
     Refer to :ref:`the section dedicated to selections <Display-Selections>`
     in the display area.
 
-This batch selection mode allows to write common information for the media and
-be more productive.
+Batch selections allows to write common informations for media to be more
+productive.
 
 To go from one field to an other, **use the Tab key of the keyboard**.
 
 **No modification or insert is committed as long as the user do not click on the
-Validate** button**.
+Validate **button**.
 
 **To discard the ongoing modifications**, click on **Cancel** or press the
 Esc key to quit the edition form.
 
-Edit text-only fields
-*********************
+Edit text fields
+****************
 
 * Select the record(s) to modify
 * Click on the field to modify
-* Enter the information
+* Enter the information in text inputs
 
 .. image:: ../../images/Prod-Editer-texte.jpg
     :align: center
@@ -72,11 +78,11 @@ Edit multi-valued text fields
 
 * Select the record(s) to modify.
 * Click on a multi-valued field
-* Enter the term or expression in the form field then click on the "+" or
-  validate with the Enter key of the keyboard to add the term to the
+* Enter the term or expression in the form field then click on the "+" button or
+  validate with the Enter key on keyboard to add the term to the
   multi-valued field.
 
-The information contained in the notes of each selected document is displayed
+The information contained in the notes of each selected records is displayed
 in this field. The common terms that are in all the notes are **in white**,
 the term that are at least in one note are **in orange**.
 
@@ -92,43 +98,42 @@ records notes :
 Edit date type fields
 *********************
 
-A date field has a normalized format, it is mandatory to follow the input rules.
+A date field has a normalized format, it is mandatory to follow input rules.
 
 Select the document(s) that the date have to be modified or added.
 
-* Manually enter the date using the format yyyy/mm/dd,
+* Manually enter the date **using the format yyyy/mm/dd**,
 
 **or**
 
-* Use the calendar's input help.
+* Use the calendar's tooltip.
 
-Edit a field linked to a data source
-************************************
+Edit a field linked to data sources
+***********************************
 
 The documentary fields linked to data sources have a auto-completion system.
 The auto-completion allows to select values from a list of authorized values.
 This system is however opened : the entry of term that are not in the
 vocabulary source is still possible.
 
-Placed on a field linked to a data source, ...
+Placed cursor on a field linked to a data source:
 
 * Enter at least three characters to initialize the system
-* The system suggests a list of values containing the string
+* The system suggests a list of values containing the entered string
 * Select the value using the keyboard or the mouse
 
 Edit from thesaurus
 *******************
 
-If a thesaurus is installed on the Phraseanet base containing the media, the tab
-Thesaurus allows to rapidly index from terms contained in the thesaurus
-linked to the Phraseanet :term:`Phraseanet Base`.
+If a thesaurus is installed on the Phraseanet base containing the records, a
+Thesaurus tab allows to capture using terms contained in it.
 The entry is assisted for the fields linked to a thesaurus branch.
 
-* Click on the tab thesaurus
+* Click on the thesaurus tab
 * Select a text field linked to the thesaurus
 * Start typing a term
-* The tab Thesaurus is refreshed and displays the terms starting with the
-  characters typed.
+* The Thesaurus tab display is refreshed and the terms starting with the typed
+  characters are shown.
 
 .. image:: ../../images/Prod-Editer-thesaurus.jpg
     :align: center
@@ -137,14 +142,14 @@ The entry is assisted for the fields linked to a thesaurus branch.
 * The term is immediately added to the selected documents.
 
 .. note::
+
     It is also possible to deploy the thesaurus *tree* to search and select
-    terms to index. Click on the "+" in front of these terms.
+    terms for capture. Click on the "+" of nodes in front of these terms.
 
 Edit from suggested values
 **************************
 
-A list of suggested values is displayed as a pop-up menu in the left window
-listing the editable fields of the base's documentary structure.
+Suggested values lists ​​appear as a popup menu list in the left side of fields.
 
 .. Seealso::
 
@@ -152,59 +157,68 @@ listing the editable fields of the base's documentary structure.
     :ref:`setting suggested values<AdministrationBasesCollections-values>`
     in the Admin interface
 
-* Click on the pop-up menu
+* Click on the pop-up menu list
 * Double click on the suggested value to add to the field's contents.
 
 .. note::
 
-    To select multiple values, select a value in the list by pressing the "Ctrl"
-    key of the keyboard.
+    To select multiple values, select values in the list while pressing the
+    "Ctrl" key of the keyboard.
 
 Edit the statuses
 *****************
 
-Click on the Status section in the field list to edit the statuses of the
+Click on the Status section in the fields list to edit the statuses of the
 selected records.
 
 * Modify the statuses using the radio-buttons
 
-Use the input help systems
---------------------------
+Use the input help tabs
+-----------------------
 
-The paper block
-***************
+Up to four input help tabs are displayed on the right side of the interface.
 
-The Paper Block tab in the help tabs area allows to copy ans paste terms or
-expressions to use in the notes.
+Thesaurus
+*********
 
-Search/Replace
-**************
+The Thesaurus tab display thesaurus if used.
 
-This tab allows to search and replace the terms or expressions contained in the
-records notes being edited.
+Clipboard
+*********
 
-* Click on the Search/Replace tab
+This tab allows to copy and paste terms, expressions or sentences to use while
+capturing notes.
+
+Find/Replace
+************
+
+This tab allows to search and replace terms or expressions contained in the
+records' notes being edited.
+
+* Click on the Find/Replace tab
 
 .. image:: ../../images/Prod-Editer-chercherremplacer.jpg
     :align: center
 
-* Limit if necessary the function to a particular field using the menu, by
-  default to all the fields
-* Type the term to Search in the current document(s) notes
-* Type the replacing term
-* Apply the options if necessary
+* Limit, if necessary, the function to a particular field using the menu list
+  or, by default, to all fields
+* Type the term to find in the current document(s) notes
+* Type the replacing terms
+* Apply options if necessary
 * Click on Validate
-* The new term replaces the previous one in the notes
 
-Templates
-*********
+New terms replaces previous one in records notes.
 
-This tab allows to create and apply description templates to records notes.
+Caption templates
+*****************
 
-Create a documentary description template
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This tab allows to create and apply caption templates to records notes.
 
-* A template is created from a note being edited.
+Create a caption template
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A template is created from a note being edited:
+
 * Click on the Models tab
 * Select a note by clicking on the thumbnail
 
@@ -223,47 +237,47 @@ Create a documentary description template
   boxes. The fields that are not empty are selected by default.
 * Click on Validate to save the template
 
-Apply a template to a media selection
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Apply a template to records
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Select the records
-* Select the **Templates** tab then double click on the title of the template to
-  be applied
+* Select records
+* Select the **Caption templates** tab then double click on the title of the
+  template to apply
 
 .. note::
 
-    A template belongs to the user who created it, it can be used only by him.
+    A template belongs to the user who created it. It can only be used by him.
 
-Particulars of editing stories
-------------------------------
+Specific aspects for stories capture
+------------------------------------
 
-Stories and documents have the same structure for documentary notes. The stories
-are edited like documents and there are two particulars.
+Stories and documents have the same documentary structure for notes. Stories
+are edited like documents. However there are two particulars.
 
 Stories notes and documents notes
 *********************************
 
-The edition of stories presents the notes for selected stories **and** the notes
+The edition of stories presents notes of selected stories **and** the notes
 for their contents.
 
 The stories and their contents are selected by default. The input can be applied
-to the notes of the stories and the documents they contain.
+to the notes of the stories and the documents they contains.
 
-Select a thumbnail
-******************
+Select a thumbnail for stories
+******************************
 
-By default, the stories are represented as a directory. But it is possible to
-change to a document's thumbnail when editing.
+By default, the stories are represented by a directory image. It is possible to
+change for a document's thumbnail when editing.
 
 In the scroll bar of the stories documents...
 
 * Click on the pop-up menu of a document's thumbnail
-* Click on the Define as main picture section
+* Select the **Set as cover document** item
 
 .. image:: ../../images/Prod-Editer-reportage.jpg
     :align: center
 
 .. note::
 
-    Up to version 3.8.5, only the image type documents thumbnails could be
+    Up to version 3.8.5, only the image type documents thumbnails can be
     assigned to stories.
