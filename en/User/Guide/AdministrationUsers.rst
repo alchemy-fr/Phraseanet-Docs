@@ -6,8 +6,8 @@ Users Management
 
 .. topic:: The essential
 
-    Available for users who have the users management rights, the users section
-    allows to manage the subscription, the rights and information on the users.
+    Available for users who have the users management right, the users section
+    allows to manage subscription, rights and information on users.
 
 Click on the Users section to go to the users management interface.
 
@@ -17,141 +17,138 @@ Click on the Users section to go to the users management interface.
 Concepts related to users and their rights
 ------------------------------------------
 
-In Phraseanet, if a user does not see a function or section, it is certainly
-because he does not have the required access rights.
-Also, it is not possible for a user to give more rights than he has himself when
-he is validating a subscription or modifying rights.
+In Phraseanet, if a user does not see a function or section, it is because he
+does not have the required access rights.
+Also, it is not possible for a user to give more rights than he has himself.
 
 .. note::
 
-    A user who have no allocated rights is a ghost user.
+    An user who have no allocated rights is a ghost user.
     He is recognizable by a ghost icon in the users list.
 
     .. image:: ../../images/Administration-utilisateurfantome.jpg
         :align: center
 
 
-Create, modify, remove a user
------------------------------
+Create, modify, delete an user
+------------------------------
 
 Create a new user
 *****************
 
 * Click on the button  **New user**.
-* Enter the e-mail of the new user and click on  **Create a user**.
-* Grant rights to the created user
+* Enter the email of the new user to create and click on the **Create a user**
+  button.
+* Allocate rights to the created user
 
 .. seealso::
 
     :ref:`Refer to the Rights edition section<User-Rights>`.
 
-* To edit information relating to the user's details, click on the tab
-  **Information** then edit the proposed form.
-* Apply the changes by clicking on the **Validate** button.
+* To edit information related to the user's details, click on the Information
+  tab then edit the form.
+* Apply changes by clicking on the **Validate** button.
 
 .. note::
 
-    If some users are created by the users management interface, the e-mail
-    address is used as the identifier.
+    For users created *via* the users management interface, the email
+    address is used as unique identifier.
 
 Modify the user's rights
 ************************
 
 * Double click on the username in the list
-* Edit then validate the form
+* Edit then validate forms in Rights and Infos tabs
 
 Delete a user
 *************
 
 * Select a user in the list
-* Click on Delete
+* Click on Delete button
 
 Sort existing users
 -------------------
 
-It is possible to sort the users list by criteria such as the identifier,
-the family name/first name, email, country or the company.
+It is possible to sort users list by criteria such as the identifier,
+the name/first name, email, country or company.
 
 Users templates
 ---------------
 
-The users templates allows to apply the same rights on one or several users.
-In the users list, a template is marked with an **M** icon.
+User templates allows to apply the same rights on one or several users.
+In the users list, a template is indicated with an **M** icon.
 
 .. image:: ../../images/Administration-modeleutilisateur.jpg
     :align: center
 
-Users templates creation
-************************
+Create a User template
+**********************
 
-* Click on **New template**
+* Click on the **New template** link
 * Enter a name for the template then validate the form
-* Edit the rights of the new template then validate the form
+* Give rights to the new template then validate the form
 
 .. note::
 
-    Templates belong to users who created them. They will not be visible by the
-    other administrators.
+    Templates belong to user who created it. Template will not be visible or
+    usable by the other administrators.
 
 Apply templates to users
 ************************
 
 It is possible to apply templates to one or more users.
 
-* Select the users
-* Choose the template to apply in the templates view
+* Select users in the list
+* Choose the template to apply in the **Apply a template** menu list
 * Click on Apply
 
 .. image:: ../../images/Administration-appliquermodele.jpg
     :align: center
 
-An alert window allows to choose an application option for the template :
+An alert window allows to choose a rule to apply :
 
 * **Apply the template** : the rights of the template are added to the existing
   rights
-* **Reset and apply the template** : the rights are reset then applied to the
+* **Reset and apply the template** : the rights are reseted then applied to the
   user
 
 .. _Setting-Guest-Access:
 
-The guest access
-----------------
+Guest access setup
+------------------
 
-The guest access can be set up in Phraseanet, if desired. It allows to give
-access to the media assets to persons not registered in the system.
+A guest access can be setup in Phraseanet, if needed. It allows to give
+access to media to persons not registered in the system.
 
-To set up the guest access :
+To set up the guest access:
 
-* Click on the link **Guest access settings**.
+* Click on the **Guest access setup** link.
 
 .. image:: ../../images/Administration-Barre-invite.jpg
     :align: center
 
 * Edit the rights of the guest account then validate the form
 
-As a right is activated, the Guest access link is on the home page of the
-application.
+As a right is activated, the Guest access button is displayed on the login
+page of the Phraseaenet.
 
 .. _User-Rights:
 
-Edition Rights
+Rights edition
 --------------
 
-The rights edition concerns the users as well as the templates.
-To display the rights edition form of a user or a template, double click on the
-user's name or on the template's name in the users list.
+Rights editing concerns users as well as templates.
+To display the rights edition form of a user or of a template, double click
+on its names.
+The rights form allows viewing and managing rights per Phraseanet base and
+collection. Rights are granted when the corresponding boxes are checked.
 
-The rights form allows to give viewing, exploitation or managing rights per
-Phraseanet base and collection. The rights are granted when the corresponding
-boxes are checked.
-
-The form also gives access to the user's information. Click on the tab Sheet to
-display them.
+For users, the Info tab gives access to the user's information.
 
 .. note::
 
-    The modification of the user's rights access can be created in batches by
-    selecting several users.
+    The modification of the user's rights can be made in batches by selecting
+    several users.
 
 When editing by batch, a grayed box indicates that the right is at least granted
 to one of the selected users.
@@ -160,23 +157,23 @@ is impossible to give rights.
 
 The sign **i** indicates a secondary form. Click on the icon to display it.
 
-The headers on the columns are clickable. They allow to check or un-check the
-boxes on all the collections of a base.
+Headers on the columns are clickable. They allow to check or un-check the
+boxes on all the collections of a Phraseanet base.
 
 Viewing rights
 **************
 
-The first part and leftmost of the rights window :
+The first part and leftmost of the rights window:
 
-* **Access** to allow access to a Phraseanet Base or to the collection
+* **Access** to allow access to a Phraseanet Base or to a collection
 * **Active** to activate the user account. Unchecking the box allows to
   disable the user without loosing the settings.
-* **Baskets** to allow baskets creation.
-* **Sub-definition** allows to view and download the sub-definitions of the
-  class *Sub-definitions*
-* **No Watermark** acts on the watarmarks applied on the sub-definitions of the
-  image type documents. Check the box to delete the applied watermark.
-* Documents authorize the download of the original document
+* **Add to baskets** to allow baskets creation and edition.
+* **Access Subviews** allows to view and download the subviews of the
+  *Preview* class
+* **No Watermark** acts on the watermarks applied on the sub-definitions of the
+  image type documents. Check the box to delete the applied watermark
+* **Documents** authorize the download of the original document and sub
 * Order allows to order documents
 
 Other restrictive options exist :

@@ -5,8 +5,8 @@ Application's Administration
 
 .. topic:: The essential
 
-    The administration of the application consists in monitoring the solution's
-    operations and changing settings if necessary.
+    The administration of the application consists in monitoring operations
+    and changing settings if necessary.
 
 Dashboard
 ---------
@@ -14,32 +14,32 @@ Dashboard
 .. image:: ../../images/Administration-tableaudebord.jpg
     :align: center
 
-**Accessible only by Phraseanet administrators**, the dashboard allows to add
+**Accessible only by Phraseanet administrators**, **Dashboard** allows to add
 or remove Phraseanet administrators.
 
-Phraseanet administrators are users that have the rights to manage and maintain
-the application.
+**Phraseanet administrators** are users that have the higher level of
+applicative rights. They can manage and maintain the application.
 
-The dashboard displays an overview of the configuration state of the file
+Dashboard displays an overview of the configuration state of the file
 system, executables, extensions, cache servers and web servers involved in the
 implementation of *Phraseanet* solution.
 
 .. _Application-setting:
 
-Settings
---------
+Setup
+-----
 
-**Accessible only by Phraseanet administrators**, the *Settings* screen have
-a graphical interface that allows to modify the installation and configuration
+**Accessible only by Phraseanet administrators**, **Setup** propose a
+graphical interface that allows to modify the installation and configuration
 settings of the Phraseanet instance.
 
 Setup have a set of forms allowing to :
 
-* Modify the addresses and the paths of the application or components that
+* Modify the addresses and paths of the application, components and storage that
   allow its implementation.
 * Put the application in maintenance mode
-* Activate or deactivate connections to web services and to to social networks
-  implemented with the :ref:`Bridge<Publish-Bridge>`.
+* Activate or deactivate web services and social networks connections
+  implemented in :ref:`Phraseanet Bridge<Publish-Bridge>`.
 * Activate or deactivate features and options of the application
 
 .. image:: ../../images/Administration-setup.jpg
@@ -47,16 +47,15 @@ Setup have a set of forms allowing to :
 
 .. warning::
 
-    "Setup" allows to deeply modify the installation settings of the
-    application. The administrator must pay attention to modifications brought
-    in the proposed forms.
+    As **Setup** allows to modify in deep the settings of the application,
+    administrators must pay attention to modifications made in proposed forms.
+    Faulty settings may cause malfunctions.
 
 Search engine settings
 ----------------------
 
-Only for the system administrators in charge of the Phraseanet deployment, this
-section allows to configure the search engine used by the instance using a
-graphical interface.
+**Accessible only by Phraseanet administrators**, this section allows to
+configure the search engine used by the instance using a graphical interface.
 
 .. seealso::
 
@@ -67,21 +66,22 @@ Phrasea engine configuration
 
 The Phrasea engine, which is the default engine, has few configuration options.
 
-The interface offers to :
+The interface offers to:
 
 * Activate or deactivate the :term:`stemming option <Stemm>`
-* Choose the display order of the records.
+* Choose the display order of the records based on sortable fields .
 
 Sphinx engine configuration
 ***************************
 
-The form allows to write the configuration of the Sphinx search engine in use.
+The form allows to write the configuration of the Sphinx search engine when
+used.
 
 Connected users
 ---------------
 
-This screen lists the active users sessions on the system.
-It tells which Phraseanet application is used, the IP address, and also the date
+This screen lists active users sessions on the system.
+It indicate which Phraseanet application is used, IP address, and also the date
 and time of connection to the system.
 
 .. image:: ../../images/Administration-utilisateurlive.jpg
@@ -91,34 +91,34 @@ Publications
 ------------
 
 Accessible by users who have the publications management rights, the
-publications section allows to manage mediaRSS feeds broadcast from the
+**Publications** section allows to manage MediaRSS feeds broadcasted from the
 Phraseanet application.
 
 .. image:: ../../images/Administration-publications.jpg
     :align: center
 
 The screen displays the list of the available media feeds and allows to
-create, modify or remove some media feeds.
+create, modify or remove feeds.
 
 .. _Create-a-publication-feed:
 
 Create a publication feed
 *************************
 
-Fill the feed creation form by entering the necessary information.
-The publication extent restricts the publication to users accessing a
+Fill the form by entering the necessary information.
+The publication scope restricts the publication to users accessing a
 collection.
-**Check the Public box** to remove the access restrictions.
+**Check the Public box** to remove any access restrictions.
 
 .. note::
 
-  The public publications media are approved in the suggested default animations
-  on the login page.
+  The public publications media are used in default animations on the login
+  page.
 
 Modify or delete a feed
 ***********************
 
-* Click on the title of a feed to modify it
+* Click on the title of a feed to modify its properties
 * To delete a feed, click on the button **Delete**
 
 Task manager
@@ -126,33 +126,33 @@ Task manager
 
 **Accessible only by Phraseanet administrators**, this screen allows to manage
 tasks that help in operating the application.
-The tasks are listed in a table that indicates the task identifier, its name,
-and if it is active or not.
+The tasks are listed in a table that indicates the task identifier, its name
+and working state.
 
-Right click on the pop-up menu of the task to :
+Right click on the pop-up menu of the task to:
 
 * Start or stop a task
-* Edit the settings of a task (It has to be stopped first)
+* Edit the settings of a task (it has to be stopped first)
 
 New task
 ********
 
-The task settings in Phraseanet allows to set up treatments automatisms.
-The standard version of the solution is delivered with a set usable of tasks :
+The task settings in Phraseanet allows to set up automatic treatments.
+The standard version of the Phraseanet is delivered with a set usable of tasks:
 
 * Indexation task
-* Creation of sub-definitions
+* Creation of subview
 * Writing metadatas
 
-Administrators can add others :
+Administrators can add others:
 
-* Select one of the task templates available in the drop-down menu **New Task**
-* Edit the taks settings in the XML view or graphical form
+* Select a task template in the **New Task** drop-down menu
+* Edit the taks settings in the graphic interface or the XML
 
 .. image:: ../../images/Administration-editertache1.jpg
     :align: center
 
-* Click on **Validate** to save the changes
+* Click on **Validate** to save changes
 
 In some cases, the graphical view simulates the task's execution.
 
@@ -163,4 +163,4 @@ In some cases, the graphical view simulates the task's execution.
 
 .. seealso::
 
-    :doc:`Refer to the page dedicated to the tasks engine<../../Admin/TaskManager>`.
+    :doc:`Refer to the page dedicated to the Task manager in the Administration manual <../../Admin/TaskManager>`.

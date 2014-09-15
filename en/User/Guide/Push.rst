@@ -12,14 +12,14 @@
     A *Push* is used to push media toward users. A *Feeback* is intended to
     collect advisory opinion about media from them.
 
-    A `Lists manager`_ allows to create sending lists to answer some
-    repetitive sending towards the same users.
+    A :ref:`Lists manager <List-Manager>` allows to create sending lists to
+    answer some repetitive sending towards the same users.
 
 .. image:: ../../images/Push-feedback_layout-1.jpg
     :align: center
 
-The Push
---------
+Push
+----
 
 The Push is a submission of documents or selection of documents. Unlike an
 email export, the *Push* does not physically transmit documents. It
@@ -90,127 +90,122 @@ informations will part of the email notification addressed to recipients.
 If needed, an acknowledgement receipt of the email if this function is supported
 by the recipients mail boxes.
 
-The Validation
---------------
+Feedback
+--------
 
-The operating mode is nearly identical to a Push sending. The only difference is
-the giving out of additional or optional benefits.
+Feedback is almost identical to Push. It differs only in the allocation of
+additional privileges.
 
 * Select one or several documents in the results display area or an opened
   basket or open a story in the work area.
-* Click on the Validation section of the Phraseanet's actions palette of the
-  Push menu of a basket or opened story in the work area.
+* Click on the Feedback item of Push context menu in the Actions palette or on
+  the Feedback button of an opened basket or story in work zone.
 
 **In the validation window**,
 
-* Select the Phraseanet user(s) who will receive the Validation request. To
-  address this request to non-registered users on the application, the operating
-  mode is also the same as for a Push.
+* Select the Phraseanet user(s) who will receive the Feedback request. To
+  address this request to non-registered users on the application, the
+  operating mode the same as for a Push.
 
-The increase of additional rights (the *Grant Rights*) works the same way as a
-Push. Rights that can be elevated are more dense :
+Giving additional rights (the *Grant Rights*) works the same way as for a
+Push. Rights that can be elevated are wider:
 
-* **The High Definition download** to grant access to the sub-definitions of the
-  documents class
-* **The contribution** to validation, default option that allows to give an
-  opinion on the documents
-* **See others** allows the recipient to view the opinions and comments of the
-  other users part of the validation
+* **Document download** to grant access to original media and its subviews that
+  are part of the *Document* class attribute
+* **Contributor**, default option to allow to giving opinions on
+  the documents in feedbacks
+* **See others'choice** to allow recipients to view opinions and comments of
+  other users who take part to feedback sessions
 
-To validate and transmit a Validation request, click on the *Send* button.
-A form allows to set the period of validity of a Validation request, and
-to give it a friendly name and description, these items are included in the
-email received by the recipients.
-To request an acknowledgement receipt of the Validation request, check the
-appropriate box.
+To validate and transmit a Feedback request, click on the *Send* button.
+The following form allows to set the period of validity to the Feedback session,
+to give a name and description. Those infos will be part of the email
+notification received by recipients.
+To ask an acknowledgement, check the appropriate box.
 
-Push or Validation reception
-----------------------------
+Push and Feedback reception
+---------------------------
 
 Pushes and Validations are notified in two different ways :
 
 *  By notification in the Production interface
-*  By email
+*  By email notification
 
-Each notification mode has a permanent link allowing to display in Phraseanet
-Lightbox. The *Pushes* and *Validations*  received are displayed as received
-baskets in the Production work area. They are also regrouped in Phraseanet
-Lightbox.
+Each notification mode has a permanent link allowing to display Pushes and
+Feedbacks in Phraseanet Lightbox.
+In Production, received Pushes and Feedbacks are displayed as received
+baskets in the work zone and are regrouped in Phraseanet Lightbox.
 
 .. Seealso::
 
     :doc:`Refer to the page dedicated to <Lightbox>`
 
-.. _Lists-Manager:
+.. _List-Manager:
 
 Lists manager
 -------------
 
 .. topic:: The essential
 
-    The *Lists manager* allows to set up and administrate the recipients lists
-    for the diffusion of *Pushes* and *Validations*.
+    The *Lists manager* allows to set up and administrate recipients lists
+    for *Pushes* and *Feedbacks*.
 
-The *Lists manager* is accessible from the Push or Validation windows. Click on
-the link *Lists manager* on the left of the recipients area.
+The *Lists manager* is accessible from the Push or Feedback windows. Click on
+the **Lists manager** link on the left of the recipients area.
 
 Create and edit a list
 **********************
 
-To create a new list in the Lists manager, click on the link *Add*.
+To create a new list, click on the **Add** link.
 
-* Give a name to the new list in the displayed form, then validate the form. The
+* Give a name to the list in the displayed form, then validate the form. The
   name of the created list displayed in the list area on the left of the
-  interface. Click on its name to view its content.
-* Click on the *Edit* button on the left of the central area of the
-  Lists manager interface to edit a list's content. The list of the users of a
-  Phraseanet system is displayed.
+  interface. Click on its name to view and edit its content.
+* Click on the *Edit* button on the left of the display area to edit the list.
+  Phraseanet users accounts are displayed.
 
 .. image:: ../../images/Push-list_manager_editer.jpg
     :align: center
 
-* To add one or several users in a sending list, select the lines of the users
-  to add. The added users or those already in the edited list are highlighted in
-  ochre.
-* To remove a user from the sending list, click on the corresponding line.
+* To add one or several users in a list, click on the line of the user
+  to add. Added users or those already in the edited list are highlighted in
+  orange color.
+* To remove a user from the edited list, click on the corresponding line.
 
 .. note::
 
-    A research and filters system allows to limit the display of the users by
-    login, family name or first name, activity, company...*etc.*
+    Search and filters system allows to limit the displayed users by login,
+    name or first name, activity, company...*etc.*
 
-* To go back to the list's summary, click on the button *See*.
+* To go back to the list's summary, click on the **< View** button.
 
 Share a list
 ************
 
-To share sending lists with other Phraseanet users and allocate them some user,
-management or administration rights, display the list to share by
-selecting it in the list area.
+To share lists with other Phraseanet users and allocate them some management
+or administration rights, display the list to share by selecting it in the
+list area then click on the **Set sharing permission** link.
 
-**To share a list with a Phraseanet user**, search the user by his family name,
-first name, login, or e-mail address in the search form. An auto-completion
-device facilitate this research.
+**To share a list with a Phraseanet user**, search the user by his name,
+first name, login, or email address in the search form. An auto-completion
+device facilitate this.
 
-Once the user is identified, add him to the share by clicking on its
-presentation sticker. His name is added to the list of Phraseanet users who
-share that sending list.
+Once the user is identified, add him to the sharing by clicking on its
+presentation label. His name is added to the list of users who share the list.
 
-By default, sharing access are allocated in accordance with the level of access
-granted.
+By default sharing right is *Access level*:
 
-* The **Access level** grants access to read-only mode on the sending list
-* The **Editor level** grants access to read-write mode on the contents of
-  the sending list.
-* The **Admin level** grants access to read and write mode and also allows to
-  delete shared lists.
+* The **Access level** is a read-only (and use-only) mode
+* The **Editor level** is a read-write mode on the contents of the list
+* The **Admin level** is a read-write-delete mode that give full access to the
+  shared list
 
 Delete a list
 *************
 
-**To delete a sending list**, display it by selecting it in the list of the
-sending lists, then click on the **Delete** button on the top right of
-the interface. Confirm (or cancel) the deletion.
+**To delete a list**, display it by selecting it in the left menu, then click
+on the **Delete** button on the top right of the interface. Validate
+(or cancel) deletion.
 
 .. note::
 

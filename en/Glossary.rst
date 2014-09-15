@@ -94,8 +94,8 @@ Glossary
         Administration* and *Thesaurus*.
 
     Collection
-        A collection is a subset of a Phraseanet base. They allow to implement a data
-        segmentation, based on workflow needs or even data separation in
+        A collection is a subset of a Phraseanet base. They allow to implement
+        a data segmentation, based on workflow needs or even data separation in
         accordance with subjective criteria (type of document, year of the
         shooting...*etc*.).
 

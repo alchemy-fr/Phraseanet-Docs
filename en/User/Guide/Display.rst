@@ -95,6 +95,8 @@ In fact, displayed informations depend on media type.
 
 **Double click on the thumbnail of a displayed media for the detailed view**.
 
+.. _Detailed-View:
+
 The detailed view
 -----------------
 
@@ -116,21 +118,21 @@ and "right" arrows of the keyboard to browse.
 
 .. _Note-Tab:
 
-Note tab
-********
+Caption tab
+***********
 
 This tab displays information from the filled documentary fields
-and technical informations on the media depending on the settings.
+and technical details on the media.
 
 .. note::
 
     If a Thesaurus is linked to the base, some terms of the note may be
-    clickable. They allow to bounce on other searches.
+    clickable. They allow to bounce on other search queries.
 
-.. _Display-History:
+.. _Display-Timeline:
 
-History tab
-***********
+Timeline tab
+************
 
 This tab lists the history of all interactions made by users on the record
 since it was added to the Phraseanet base.
@@ -138,9 +140,9 @@ since it was added to the Phraseanet base.
 .. image:: ../../images/Affichage-vuedetaillee2.jpg
     :align: center
 
-.. _Display-Popularity:
+.. _Display-Statistics:
 
-Popularity tab
+Statistics tab
 **************
 
 This tab displays statistics of the displayed media:

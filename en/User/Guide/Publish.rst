@@ -5,7 +5,7 @@
 
 .. topic:: The essential
 
-    Two features of Phraseanet allow to publish and to broadcast media :
+    Two features of Phraseanet allow to publish and broadcast media :
     *Publication* and *Bridge*
 
 .. _Publish-Publications:
@@ -14,17 +14,21 @@ Publish media
 -------------
 
 **Publications** allows to give the users documents or stories in the
-publication page. These publications are also available and usable outside
-Phraseanet in third party applications using the RSS Media feeds.
+publications page. These publications are also available outside Phraseanet
+in third party applications using Media RSS feeds.
+
+.. seealso::
+
+    http://en.wikipedia.org/wiki/Media_RSS
 
 **To publish media** :
 
-* Select the records in the display area then click on the Publish section of
-  the pop-up menu of the Push button of the Actions palette.
+* Select the records in the display area then click on the **Publish** item of
+  the Push context menu of the main Actions palette.
 
 **Or**,
 
-* Click on the Publish icon in the opened basket or story of the work area.
+* Click on the Publish icon in the opened basket or story in the work zone.
 
 A window opens:
 
@@ -33,8 +37,9 @@ A window opens:
 
 Fill the form :
 
-* Check or un-check the boxes to notify the users about this publication
-* Give a title and a subtitle
+* Check or un-check the boxes to notify the users about this publication if
+  available
+* Give a title and a subtitle to the publication
 * The author's name and address are those of the users's account
 * Select the publication feed
 
@@ -43,17 +48,17 @@ Fill the form :
     Refer to the Publications section of Phraseanet Admin to
     :ref:`create feeds<Create-a-publication-feed>`.
 
-* Click on Publish
+* Click on **Publish** button
 
 The publication is visible in the Publications section of the menu bar and
-available via a feed outside the application.
+available *via* a the corresponding feed outside Phraseanet.
 
 .. _Publish-Bridge:
 
 Broadcast with Bridge
 ---------------------
 
-The Bridge allows to publish media to external sites, like :
+Phraseanet Bridge allows to publish media to external sites and apps, like :
 
 * FlickR
 * YouTube
@@ -68,8 +73,7 @@ Media selection
 
 * Select one or more media in *Phraseanet Production*. They can be regrouped in
   baskets or stories.
-* From one of the Actions palette, open the pop-up menu of the **Push** button
-  then click on the **Bridge** section.
+* Open the context menu of **Push** button then click on the **Bridge** item
 
 .. image:: ../../images/Bridge-1.jpg
     :align: center
@@ -79,17 +83,17 @@ Sign in
 
 In the **Bridge** window :
 
-* Click on **New** to connect to a Flickr, Youtube, Dailymotion... account
+* Click on **New** to connect to a Flickr, Youtube or Dailymotion account
   depending on the sharing settings configured in **Phraseanet Admin**.
 * Log in then authorize Phraseanet to connect.
 
 .. image:: ../../images/Bridge-1b.jpg
     :align: center
 
-Bridge retrieves the existing information from the remote application.
+Bridge retrieves the existing informations from the remote application.
 
-With Flickr, the existing pictures are displayed in the ""Photos" or "Photosets"
-tab if they are organized in albums.
+With Flickr, the existing pictures are displayed in "Photos" tab or "Photosets"
+tab if organized in albums.
 
 .. image:: ../../images/Bridge-3a.jpg
     :align: center
@@ -107,10 +111,10 @@ tags and describe your media in the description forms.
     :align: center
 
 When the images are sent, it is possible to view the transfer progress by
-clicking on the tab **Sent files**.
+clicking on the **Sent files** tab.
 
-* The status **OK** tells that media pictures or videos have been transferred.
-* A date information indicates since when the transfer was made.
+* The **OK** status tells that media pictures or videos have been transferred
+* A date information indicates since when the transfer has been made
 
 Start *Flickr*. The media transferred from Phraseanet are available.
 
