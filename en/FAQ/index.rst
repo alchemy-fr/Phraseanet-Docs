@@ -1,8 +1,8 @@
 FAQ
 ===
 
-The FAQ regroups the most frequent questions on *Phraseanet*. There is a wide
-variety of topics that cover specific use cases.
+The FAQ regroups the most frequent questions on *Phraseanet*. A wide variety
+of topics covers use cases.
 
 .. toctree::
    :maxdepth: 2

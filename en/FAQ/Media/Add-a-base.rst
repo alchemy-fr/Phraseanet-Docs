@@ -75,9 +75,9 @@ After this creation process, the structure of the database can be set.
 
 .. seealso::
 
-	Refer to the Phraseanet base setting<Setting-Structure>` section.
+	:ref:`Refer to the Phraseanet base setting <Setting-Structure>` section.
 
 Depending on the needs and to publish a new Phraseanet base, it is required to
-create at least one collection.	
+create at least one collection.
 
 .. _See the MySQL documentation: http://dev.mysql.com/doc/refman/5.0/fr/creating-database.html

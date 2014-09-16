@@ -130,7 +130,7 @@ To set up the guest access:
 * Edit the rights of the guest account then validate the form
 
 As a right is activated, the Guest access button is displayed on the login
-page of the Phraseaenet.
+page of Phraseaenet.
 
 .. _User-Rights:
 
@@ -140,8 +140,9 @@ Rights edition
 Rights editing concerns users as well as templates.
 To display the rights edition form of a user or of a template, double click
 on its names.
-The rights form allows viewing and managing rights per Phraseanet base and
-collection. Rights are granted when the corresponding boxes are checked.
+The rights form allows viewing and managing rights per available Phraseanet
+bases and collections. Rights are granted when the corresponding boxes are
+checked.
 
 For users, the Info tab gives access to the user's information.
 
@@ -155,122 +156,129 @@ to one of the selected users.
 A user cannot give more rights than he has himself : a red dot indicates that it
 is impossible to give rights.
 
-The sign **i** indicates a secondary form. Click on the icon to display it.
+The **i** icon indicates a secondary form. Click on it to display this
+subsidiary form.
 
 Headers on the columns are clickable. They allow to check or un-check the
 boxes on all the collections of a Phraseanet base.
 
-Viewing rights
-**************
+View rights
+***********
 
-The first part and leftmost of the rights window:
+The first and leftmost part of the rights window:
 
 * **Access** to allow access to a Phraseanet Base or to a collection
 * **Active** to activate the user account. Unchecking the box allows to
-  disable the user without loosing the settings.
-* **Add to baskets** to allow baskets creation and edition.
+  disable the user access without loosing other settings
+* **Add to baskets** to allow baskets creation and edition
 * **Access Subviews** allows to view and download the subviews of the
   *Preview* class
-* **No Watermark** acts on the watermarks applied on the sub-definitions of the
-  image type documents. Check the box to delete the applied watermark
-* **Documents** authorize the download of the original document and sub
+* **No Watermark** acts on the watermarks applied on the subviews of the
+  image type documents. Leave the box uncheck to applied watermark
+* **Documents** authorize the download of the original document and subviews of
+  the *Document* class
 * Order allows to order documents
 
-Other restrictive options exist :
+Other restrictive options exist:
 
 Limitation by Quotas
 ^^^^^^^^^^^^^^^^^^^^
 
-Quota allows to define the download limits per base or per collection. Click on
+Quota allows to define download limits per base or per collection. Click on
 the Quotas icon to set these limits.
 
-* Check **Restriction** to activate the download restrictions
-* Enter the number of authorized downloads per month for this collection.
+* Check the **Restriction** box to activate download restrictions
+* Enter the number of authorized downloads per month for the collection.
 * Click on the "Validate" button to save the setting and close the window.
 
-Limitation in time
-^^^^^^^^^^^^^^^^^^
+Date expiration
+^^^^^^^^^^^^^^^
 
-Limit Time allows to set a time limit for a user's access to a Phraseanet base
-or collection.
+Date expiration allows to set a time limit for user's access to a Phraseanet
+base or collection.
 
-* Check **Activate** to activate the system
+* Check the **Activate** box to activate the system
 * Fill the validity dates of the access then submit the form
 
-Limitation through Status
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Restrict on Status
+^^^^^^^^^^^^^^^^^^
 
-Limitation through status allows to hide records from the user according to
+Limitation through status allows to hide records for users according to
 the state of one or several status.
 
 .. note::
-    Refer to the settings of the base for the creation and the management of the
-    status bits.
+
+    Refer to the settings of the base for creation and management of status
+    bits.
 
 Click on the statuses icon to set the access restrictions to the records.
 
-* Check or uncheck the statuses restricting the visibility on records and submit
-  the form
+* Uncheck boxes to hide records to users the submit form
 
 Exploitation and management rights
 **********************************
 
-The left part of the rights form regroups the exploitation rights of documents
-and the managing rights of Phrasesanet bases and collections.
+The left part of the rights form form regroups exploitation and the managing
+rights on documents and on Phrasesanet bases and collections.
 
-Rights on the documents
-^^^^^^^^^^^^^^^^^^^^^^^
+Rights on documents and users
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Add authorizes to add documents and stories in the collection
-* Edit authorizes to edit the description of the records
-* Change status authorizes to edit records statuses
-* Delete authorizes records deletion in the collection
-* Image tools gives access to the Tools button actions
-* Users management gives access to the users management
-* View Reports gives access to Report
-* Push authorizes the documents broadcasting by Push and Validation
+* **Add** authorizes to add documents and stories in the collection
+* **Edit** authorizes capturing records
+* **Change status** authorizes to edit records statuses
+* **Delete** authorizes records deletion in the collection
+* **Image tools** gives access to the Tools button actions
+
+* **Manage users** gives access to the users management
+* **Access Reports** gives access to Report
+* **Push** authorizes documents broadcasting by Pushes and Feedbacks
 
 Rights on Phraseanet bases and collections management
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The managing rights are built upon each other to the setting access on
-Phraseanet bases and collections.
+Management rights are additional upon each other. They give access on
+Phraseanet bases and collections setup.
 
-* Coll. management reveals menus giving access to the base settings in Admin.
+* **Manage Collection** reveals access to collections settings in Admin.
   These rights must be completed by at least one of the following rights.
-* Manage suggested values allows to edit the suggested values by field and by
-  collection on a base.
-* Publication allows to publish with Bridge and the available RSS Streams
-* Mod. Thesaurus allows to edit the thesaurus
-* Base Management gives access to functions to manage the base including the
-  creation, the deletion or purge of bases
-* Base structure gives access to the setting of a base structure
+* **Manage value lists** allows to edit the suggested values for fields in a
+  Collection.
+* **Publications** allows to publish with Bridge and the available RSS Streams
+* **Manage thesaurus** allows to edit the thesaurus
+* **Manage database** gives access to bases management functions including
+  creation, purge and deletion
+* **Manage DB Fields** gives access to base fields setup
 
-"Access Requests"
------------------
+.. _Pending-Registration:
 
-The **Requests** section lists the subscription requests made through available
+Pending registration
+--------------------
+
+The **Demands** section lists the subscription requests made through available
 forms.
 
 .. image:: ../../images/Administration-demande.jpg
     :align: center
 
-The subscriptions are on collections and there are as many lines than access
-requests.
+The subscriptions are made on collections and there are as many lines than
+collections access requests.
 
 A rollover on the name allows to display the information related to the
 applicant.
 
-Select the rights to allocate per collections by checking the boxes.
+Select the rights to allocate per collections by clicking on icons.
 
-The possible choices are :
+The possible choices are:
 
-* Deny the access to the requested collection.
-* Give access to the requested collection, to the documents in sub-definitions.
-* Give access to the requested collection, with documents in high definition.
-* Give access to the requested collection, without documents in high definition.
+* **Deny the access** to the requested collection.
+* **Allows display and download for preview** give access to the requested
+  collection with download possibilities
+* **Allows display and download for previews and documents** give access to the
+  requested collection, with documents in high definition.
+* **Apply watermark on previews** add watermark on subview previews
 
 Click on **Validate** to apply the selected choices.
 
-The other option top accept a subscription request consists in applying a user
+The other option to accept a subscription request consists in applying a user
 template.

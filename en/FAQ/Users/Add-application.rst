@@ -9,8 +9,8 @@ a user account must be implemented.
 	You can either use your user account or create a new one with the specific
 	rights related to the features of the application that connects to
 	Phraseanet.
-	
-**To implement the OAth2 authentication of the application** :
+
+**To implement the OAth2 authentication for a third party application**:
 
 * Connect with the user account of the application
 * Show the *Developer* tab of the account settings

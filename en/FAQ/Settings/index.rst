@@ -1,10 +1,9 @@
-Setting up Phraseanet
-=====================
+Set up Phraseanet
+=================
 
 .. topic:: The essential
 
-    This section of the FAQ regroups the questions about setting up
-	*Phraseanet*.
+    This section of the FAQ regroups questions about Phraseanet set up.
 
     Click on the suggested links to access the different topics.
 

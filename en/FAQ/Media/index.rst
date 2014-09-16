@@ -4,7 +4,7 @@ Managing media in Phraseanet
 .. topic:: The essential
 
     This section of the FAQ regroups the questions about managing the media
-	in *Phraseanet*.
+	in Phraseanet.
 
 .. toctree::
    :maxdepth: 1

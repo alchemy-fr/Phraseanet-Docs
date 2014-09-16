@@ -1,56 +1,60 @@
-Activate subscriptions on Phraseanet bases and collections
-==========================================================
+Activate registration on Phraseanet bases and collections
+=========================================================
 
-It is possible to allow the subscription on one or more Phraseanet collections
-using a form accessible from the home page of the application.
+It is possible to allow user registration on one or more Phraseanet collections
+using a form accessible from the homepage of the application.
 
-Subscription process
+Registration process
 --------------------
 
-The subscription process is like any other applications. The user fills and
-submits a subscription form that gives him access to the application and its
+The registration process is like many other applications. Users fill and
+submits a registration form that gives him access to the application and its
 resources.
 
-The subscription is either automatic or goes through a functional administrator
-that will check every subscriptions demands.
+The registration is either automatic or goes through an administrator that
+will check every registration demands.
 
 
-Manual or automatic subscription?
+Manual or automatic registration?
 ---------------------------------
 
-By default, the subscriptions are manual. When a user submits a subscription
-form, the functional administrators receive a notification (on the screen and/or
-by email) indicating a new access request was created.
-They check in the Admin section that the inscription is legitimate then either
-validate of reject a subscription application by granting user rights or not.
-The users that subscribed are then notified of the decision on their application
-Refer to :doc:`this page <../../User/Guide/AdministrationUsers>`
-dedicated section on access requests.
+**By default, the subscriptions are manual**. When a user submits a registration
+form, functional administrators receive a notification (on the screen and/or
+by email) indicating a new access request.
+:ref:`They check in the Admin section that the registration is legitimate <Pending-Registration>`
+then either validate or reject a subscription application by granting user
+rights or not. The users that subscribed are then notified of the decision on
+their application
 
-The automatic subscription allows the user to request an access which is
-automatically granted.
+.. seealso::
 
-It is a choice on each instance and depending on the project, a strategy is
+    Refer to :doc:`this page <../../User/Guide/AdministrationUsers>`
+    dedicated section on access requests.
+
+**Automatic subscription allows user to request access which is automatically
+granted**.
+
+It is a choice for each instance and depending on the project, a strategy is
 better than the other.
 
 To activate the automatic subscription...
 
 * Connect to the Admin interface as *Administrator*
-* In the sidebar, click on the **Settings** node then...
-* In the section **Subscription** set to **True** the radio-button
-  *Activate the automatic subscription*
+* Click on the **Setup** item then...
+* In **Registration** section set the **Enable auto registration** radio-button
+  to **True**
 * Validate the form
 
 
-Implementing subscription on collections
-----------------------------------------
+Enable registration on collections
+----------------------------------
 
-The subscriptions are implemented in the collections by inserting a XML tag in
-the collection's settings. Having the **Collections management** right...
+To enable registration on collections insert a XML tag in the collection
+settings. With *Manage value list* right applied...
 
 * Click on the section *Collection settings* of the concerned collection
-* Activate the XML view
-* Insert a <caninscript> XML tag indicating the value 1 as indicated in
+* Switch to XML view
+* Insert a **<caninscript>** XML tag with the value 1 as indicated in
   this example :
 
 .. code-block:: xml
@@ -63,28 +67,33 @@ the collection's settings. Having the **Collections management** right...
 
 *  Validate the form
 
-A **Subscription** link is then available on the home page of the application.
+A **Subscription** link is then available on the homepage of Phraseanet.
 
-Letting choose which collection to subscribe to
------------------------------------------------
+Letting user choose collection to register on
+---------------------------------------------
 
-The administrators can give the users a choice of collections they can subscribe
-to.
+The administrators can give users a choice of collections on which they can
+register.
 
 * Connect to the Admin interface as *Administrator*
-* In the sidebar, click on the **Settings** node then...
-* In the section **Subscription**, act on the options suggested by the radio
-  buttons *Automatic selection of databases*.
-  
-This option will activate or de-activate the selection of Phraseanet bases and
-collections on which the user subscribes. If the option is de-activated, the
-subscription is made on all the available bases and collections.
+* Click on the **Setup** item then...
+* In **Registration** section set the **Auto select databases** parameter to
+  false
+
+This parameter will activate or de-activate the selection of Phraseanet bases
+and collections on which a user can subscribes.
+If the option is de-activated, the subscription is made on all the available
+bases and collections featuring the *Caninscript* XML tag.
 
 * Validate the form then apply the settings.
 
-Customizing the subscription form
+Customizing the registration form
 ---------------------------------
 
 It is possible to customize the fields of the subscription form.
-Refer to the section "Optional records fields" of
-:doc:`this page<../../Admin/Configuration>`.
+
+.. seealso ::
+
+    Refer to the section "Optional records fields" of
+    :doc:`this page<../../Admin/Configuration>`.
+
