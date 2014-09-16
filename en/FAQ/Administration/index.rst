@@ -3,16 +3,16 @@ FAQ Administration
 
 .. topic:: The essential
 
-    This section of the FAQ regroups the questions about *Phraseanet*
-	administration.
+    This section of the FAQ regroups the questions about Phraseanet
+    administration.
 
 I can not upload files of more than 2Mb
 ---------------------------------------
 
-Edit the settings *upload-max-filesize* and *post_max_size* in the PHP
+Edit the settings **upload-max-filesize** and **post_max_size** in the PHP
 configuration file then apply the new settings.
 
-Example to raise the limit to 1024Mb :
+Example to raise the limit up to 1024Mb:
 
 * In the file php.ini :
 
@@ -23,9 +23,9 @@ Example to raise the limit to 1024Mb :
 
 Restart your configuration (Apache or PHP-Fpm depending on the case).
 
-With Nginx for web server, large queries must be activated :
+With Nginx for web server, large queries must be activated:
 
-* In the file nginx.conf :
+* In the file nginx.conf:
 
 .. code-block:: bash
 
@@ -40,13 +40,13 @@ With Nginx for web server, large queries must be activated :
 The result thumbnails are hot-air-balloons
 ------------------------------------------
 
-The creation of sub-definitions sometime takes time depending on the nature and
-the size of the documents that were added to the base.
+The creation of sub-definitions sometime may take time depending on the nature
+and the size of the documents that were added to the base.
 
-Also make sure that the sub-definitions creation task is started in the Admin
-module task manager.
+Also make sure that the subview creation task is started in the task manager
+section in the Admin module.
 
-Restart the task if necessary.
+Restart **Subviews creation** task if necessary.
 
 .. seealso::
 
@@ -59,8 +59,8 @@ If there are no thumbnails in the results area, and that the records found are
 only displayed with their title, it is possible that the thumbnails directory is
 not correctly mounted on the web server.
 
-Check in the *Virtual Host* the Alias "/web" and check that it points to the
-directory used to stock thumbnails.
+Check the "/web" alias in the *Virtual Host* configuration and check that it
+points to the directory used to stock thumbnails.
 
 .. seealso::
 
@@ -69,19 +69,21 @@ directory used to stock thumbnails.
 When mass editing documents, error messages appear
 --------------------------------------------------
 
-**The suhosin is compiled with the version of PHP in use**, it is possible that
-it limits the number of arguments per query. To correct this malfunction, raise
-this limit in the PHP configuration file.
+Two cases:
+
+**If Suhosin extension is compiled with the version of PHP in use**, it is
+possible that it limits the number of arguments per query. To correct this
+malfunction, raise this limit in the PHP configuration file.
 Add the following lines in the php.ini file then restart the web server.
 
 .. code-block:: bash
 
     suhosin.post.max_vars=12000
     suhosin.request.max_vars=12000
-	
-**If the suhosin module is not there or that the PHP version is newer than or
-equal to 5.3.15**, add the following in the php.ini file then restart the web
-server.
+
+**If the suhosin module is not used or if PHP version is greater or
+equal to 5.3.15**, add the following line in the php.ini file then restart
+the web server.
 
 .. code-block:: bash
 
@@ -104,7 +106,7 @@ To resume an aborted installation, delete the following files :
 * config/connexions.yml
 * config/services.yml
 
-Restart the installation using the following command : 
+Restart the installation using the following command :
 
 .. code-block:: bash
 
@@ -113,7 +115,7 @@ Restart the installation using the following command :
 What happens when a media is added to a Phraseanet base ?
 ---------------------------------------------------------
 
-The system reads in the structure of the base to get :
+The system reads in the structure of the base to get:
 
 * the indexation fields
 * the indexation links and the metadatas source (EXIF,, XMP, IPTC...*etc*.)
@@ -121,14 +123,14 @@ The system reads in the structure of the base to get :
 
 Then it stores the original document in the directory for original media.
 
-The metadatas contents (IPTC, XMP, EXIF...etc.) of the original media file is
+The metadata contents (IPTC, XMP, EXIF...etc.) of the original media file is
 then read and extracted accordingly to the fields settings of the documentary
 structure.
 
-The sub-definitions are generated then saved in the storage directory of the
-sub-definitions obtained from the structure.
+The subviews are generated then saved in storage directories obtained from the
+structure.
 
-The metadatas can then be written in some sub-definitinos (depending on the
+The metadata can then be written in some subviews files (depending on the
 setting).
 
 The metadatas are then added to the index of the search engine.

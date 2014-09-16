@@ -3,8 +3,7 @@ Customize Phraseanet
 
 .. topic:: The essential
 
-    This section of the FAQ regroups the questions about customizing
-	*Phraseanet*
+    This section of the FAQ regroups questions about Phraseanet customization.
 
 .. toctree::
    :maxdepth: 1

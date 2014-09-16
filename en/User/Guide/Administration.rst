@@ -35,5 +35,5 @@ In order to present main features of *Phraseanet Admin*, we follow this outline:
     :glob:
 
     AdministrationSolution
-    AdministrationUsers
     AdministrationBasesCollections
+    AdministrationUsers

@@ -1,20 +1,22 @@
 Add a Stamp logo
 ================
 
-Using a stamp automatically adds a banner with a logo and metadatas when
-exporting sub-definitions and original pictures.
-The stamp configuration is a 2 step process.
+Using a stamp automatically adds a banner with a logo and metadata when
+exporting subviews and original pictures.
+A stamp configuration is a 2 step process.
 
 Upload a logo
 -------------
 
-Upload a *Stamp* logo using the Admin interface in the concerned collections.
+Upload a *Stamp* logo using the Admin interface in the corresponding
+collections.
 
 Edit the collection's settings
 ------------------------------
 
-Edit the collection's setting using the XML view of the collections preferences
-(the user must have editing rights on the *Suggested values*).
+To display metadata about media, edit the collection's setting using the XML
+view in Collection settings section (the user must have **Manage value lists**
+right applied).
 
 .. code-block:: xml
 
@@ -30,6 +32,4 @@ Edit the collection's setting using the XML view of the collections preferences
          <text size="50%">Date : <field name="Date"/></text>
        </stamp>
      </baseprefs>
-
-**Comments** :
 

@@ -9,28 +9,28 @@ Boolean operators
 The conjunction operator *AND*
 ******************************
 
-Used by default, it is not mandatory to type it, the operator *AND* displays the
+Used by default, it is not mandatory to type it. The operator *AND* displays the
 media that contains all the typed terms in their descriptive note.
 
-The join operator *OR*
-**********************
+The disjunction operator *OR*
+*****************************
 
 It allows to search for several terms in the media notes.
 If the search is **sweet OR sour** the descriptive sheets of the media will
 contain either the word sweet, or the word sour, or both.
 
-The negation operator *EXCEPT*
-******************************
+The negation operator *NOT*
+***************************
 
 It allows to exclude terms from the search.
 
 The common operators **ALL** and **LAST**
 -----------------------------------------
 
-* *all* : to search all the documents in the selected Phraseanet
+* **all**: to search all the documents in the selected Phraseanet
   :term:`bases <Phraseanet Base>` and collections.
 
-* *last* (with no specific number) displays by default the last 12 documents
+* **last** (with no specific number) displays by default the last 12 documents
   added in the Phraseanet base.
 
 The operator *last* is valid per opened Phraseanet :term:`bases <Phraseanet Base>`
@@ -42,7 +42,7 @@ The substitution operators
 The wildcard *****
 ******************
 
-Tue truncation character *****, used on the right of a string allows to search
+The truncation character *****, used on the right of a string allows to search
 descriptive notes that contains terms starting with the characters before the
 asterisks.
 
@@ -56,13 +56,13 @@ like *words* or *woods*.
 The proximity operators
 -----------------------
 
-The operator **PRES**
+The operator **NEAR**
 *********************
 
-It allows to fetch all the media in which the result of the term 1 is at a 
+It allows to fetch all the media in which the result of the term 1 is at a
 specific distance (n) of the term 2.
 
-For example, (Eiffel PRES 2 Tower) will select all the records in which there is
+For example, (Eiffel NEAR 2 Tower) will select all the records in which there is
 a maximum distance of 2 words between *Eiffel* and *Tower*.
 
 .. note::
@@ -103,13 +103,13 @@ after the word *Eiffel*.
 Numerical comparisons
 ---------------------
 
-It is possible to select documents comparing dates and numbers, for documentary
-fields typed as Date or Number.
-So, the search **date > 14/07/2012** displays the media that have a field
-labelled date containing a date before the 14th of July 2012.
+It is possible to select documents comparing dates and numbers, for fields typed
+as Date or Number.
+So, the search **date > 14/07/2014** displays media that have a field
+name date containing a date before the 14th of July 2014.
 
-The comparison operators are : >, <, =, <=, >=, between (the limits are included
-).
+The comparison operators are : >, <, =, <=, >=, between (the limits are
+included).
 
 The days (DD), months(MM), years (YYYY) can be staggered or separated with a
 slash /, a dash -, a space.
@@ -121,3 +121,4 @@ slash /, a dash -, a space.
 
 The dates fields type is strict. The user can prefer to search using an
 advanced search window.
+
