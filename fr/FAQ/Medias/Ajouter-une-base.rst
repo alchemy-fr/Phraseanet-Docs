@@ -102,7 +102,7 @@ Remplir le formulaire **Monter une base** :
 
     * Demander à l'Administrateur de base de données le nom de la base de
       données existante
-    * Indiquer le nom de la base données dans le formulaire
+    * Indiquer le nom de cette base dans le formulaire
     * Soumettre le formulaire
 
 * **Pour une base de données distante** :
