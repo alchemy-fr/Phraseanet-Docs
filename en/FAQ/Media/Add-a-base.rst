@@ -5,7 +5,7 @@ Add a base
 
 	After the installation, a Phraseanet base is available in the application
 	in order to receive media. However, for some reason, it might be necessary
-	to add an other. How to create a new Phraseanet base ?
+	to add an other. How to create a new Phraseanet base?
 
 Create a new database in the Database management system
 -------------------------------------------------------
@@ -77,8 +77,8 @@ After this creation process, the structure of the database can be set.
 
 	:ref:`Refer to the Phraseanet base setting <Setting-Structure>` section.
 
-It is required to create at least one collection to publish media in the created
-databox.
+It is required to create at least one collection to publish media in the
+created databox.
 
 Mount an existing database
 --------------------------
