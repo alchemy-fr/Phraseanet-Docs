@@ -84,4 +84,40 @@ A l'issue du processus de création, la structure de la base de données peut
 selon les besoins et pour publier dans la nouvelle base, il sera nécessaire de
 créer au moins une nouvelle collection.
 
+Monter une base existante
+-------------------------
+
+Monter une base signifie publier une *Databox* existante dans une instance
+Phraseanet.
+
+La Databox (base de données MariaDB / MySQL) peut être une base de données
+située sur le même serveur que l'Application box ou bien sur un autre serveur
+de bases de données. L'application Phraseanet doit être en mesure de se
+connecter à cette base avec un niveau de droits suffisants, selon le contexte
+de déploiement.
+
+Remplir le formulaire **Monter une base** :
+
+* **Pour une base de données locale** :
+
+    * Demander à l'Administrateur de base de données le nom de la base de
+      données existante
+    * Indiquer le nom de la base données dans le formulaire
+    * Soumettre le formulaire
+
+* **Pour une base de données distante** :
+
+    * Demander à l'Administrateur de base de données les informations de
+      connexion à la base :
+
+        * **Le nom d'hôte ou Hostname**
+        * **Le numéro de port** (3306 par défaut)
+        * **Le nom d'utilisateur de la base MySQL**
+        * **Le mot de passe de l'utilisateur de la base MySQL**
+        * **Le nom de la base existante**
+
+    * Remplir le formulaire au moyen des informations obtenues en cochant la
+      case appropriée
+    * Soumettre le formulaire
+
 .. _Consulter la documentation MySQL: http://dev.mysql.com/doc/refman/5.0/fr/creating-database.html
