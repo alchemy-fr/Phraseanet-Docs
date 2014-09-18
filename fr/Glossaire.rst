@@ -9,6 +9,18 @@ Glossaire
 .. glossary::
     :sorted:
 
+    Identifiant universel unique (UUID)
+        Identifiant numérique unique codé sur 128 bits conçu avec la
+        probabilité d'être unique dans le monde. Certains logiciels de la
+        chaine graphique (micrologiciel d'appareil photo numérique, logiciel
+        de traitement d'images) introduisent ces identifiants dans les
+        fichiers numériques de type image pour permettre de les distinguer
+        les un les autres.
+
+        .. seealso::
+
+            http://en.wikipedia.org/wiki/Universally_unique_identifier
+
     Webhooks
         Technique de développement internet mettant en oeuvre des événements
         ciblants des applications tierces dans le but d'interagir avec elles.

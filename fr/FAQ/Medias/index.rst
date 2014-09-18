@@ -11,3 +11,6 @@ Gestion des médias dans Phraseanet
    :glob:
 
    gerer-les-medias
+   Tous-les-operateurs-de-recherche
+   Supprimer-une-publication
+   Ajouter-une-base

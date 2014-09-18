@@ -1,38 +1,33 @@
 ﻿Connexion à Phraseanet
 ======================
 
-Bien qu'il soit possible de consulter un fonds *Phraseanet* comme invité, ce qui
-est un choix de paramétrage possible, l'utilisateur peut être amené à créer un
-compte et à s'authentifier pour accéder à un fonds multimédia.
-
-Authentification
-----------------
-
-* Se connecter à l'adresse internet de la solution Phraseanet au moyen d'un
-  navigateur Web.
-  La page d'accueil permettant la connexion s'affiche :
+Bien qu'il soit possible de consulter un fonds Phraseanet comme invité, un choix
+de paramétrage possible, l'utilisateur peut être amené à créer un compte et à
+s'authentifier pour accéder à un fonds multimédia.
 
 .. image:: ../../images/Authentification.jpg
     :align: center
 
-* Ajuster si besoin la langue d'interface avec le menu déroulant *Langue*.
-* Saisir l'identifiant.
-* Saisir le mot de passe.
-* Cliquer sur **Connexion**.
-* En cas d'oubli du mot de passe, suivre la procédure de récupération en
-  cliquant sur le lien *Mot de Passe oublié ?*.
+Authentification
+----------------
+
+* Afficher la page d'accueil de l'application Phraseanet au moyen d'un
+  navigateur Web
+* Ajuster si besoin la langue d'interface avec le menu déroulant *Langue*
+* Saisir l'identifiant et le mot de passe
+* Cliquer sur **Connexion**
+
+En cas d'oubli du mot de passe, suivre la procédure de récupération en cliquant
+sur le lien :ref:`Mot de Passe oublié <Connexion-Mot-de-passe-oublie>`.
+
+Lors de la connexion à Phraseanet, la dernière application utilisée se lance
+ou, à défaut, :doc:`Production <Afficher>`.
 
 Authentification via des fournisseurs tiers
 -------------------------------------------
 
-*Phraseanet* permet de déléguer l'authentification de l'utilisateur à une
-application tierce.
-
-.. image:: ../../images/Authentification-oauth.jpg
-    :align: center
-
-Dans la version 3.8, la  page d'accueil permet de s'authentifier *via* les
-applications web suivantes :
+*Phraseanet* permet de déléguer l'authentification d'utilisateurs à des
+fournisseurs d'authentification dont les applications web suivantes :
 
 * Facebook
 * Twitter
@@ -43,28 +38,31 @@ applications web suivantes :
 
 D'autres fournisseurs d'identité numérique peuvent s'ajouter.
 
+.. note::
+
+    Pour paramétrer une liste des fournisseurs d'authentification se reporter à
+    :doc:`la section configuration <../../Admin/Configuration>`.
+
 Inscription
 -----------
 
-Selon les choix de paramétrage du système, un lien permettant de s'inscrire
-comme nouvel utilisateur peut exister sur la page de connexion de *Phraseanet*.
+Selon les choix de paramétrage du système par les administrateurs, un bouton
+permettant de s'inscrire comme nouvel utilisateur peut figurer sur la page de
+connexion.
 
-* Cliquer sur **Inscription** dans la page d'accueil.
+* Cliquer sur le bouton **Inscription** pour accéder au formulaire
+  d'inscription.
 
-.. image:: ../../images/Authentification-inscription.jpg
-    :align: center
+Si l'authentification via des fournisseurs tiers est activée, deux
+possibilités :
 
 * Cliquer sur le bouton **Créer un compte manuellement** puis remplir et
   soumettre le formulaire.
 
 **Ou bien**
 
-* Choisir de se connecter au moyen d'une authentification déportée en
-  sélectionnant le service fournisseur d'authentification.
-
-.. image:: ../../images/Authentification-choix-inscription.jpg
-    :align: center
-
+* Choisir de se connecter au moyen d'une authentification tierce en
+  sélectionnant le service fournisseur.
 * Remplir et soumettre le formulaire.
 
 .. note::
@@ -74,58 +72,53 @@ comme nouvel utilisateur peut exister sur la page de connexion de *Phraseanet*.
     local *Phraseanet*. Il peut donc être différent de celui utilisé chez le
     fournisseur d'identité.
 
-Lorsque le formulaire est soumis, la page d'accueil s'affiche et informe l'
-utilisateur que sa demande d'inscription a été prise en compte. Un
-administrateur *Phraseanet* finalise ensuite l'inscription.
+Lorsque le formulaire est soumis, un message s'affiche sur la page de connexion.
+Il informe l'utilisateur que sa demande d'inscription a été prise en compte.
+Notifié, un administrateur peut être amené à valider l'inscription dans le
+module d'Administration.
 
-Mot de passe perdu ?
---------------------
+.. _Connexion-Mot-de-passe-oublie:
 
-Cliquer sur le lien **Mot de Passe oublié ?**.
-Sur la page *Mot de passe oublié*, remplir le formulaire proposé avec l'adresse
-email liée au compte Phraseanet.
+Mot de passe oublié ?
+---------------------
+
+* Cliquer sur le lien **Mot de Passe oublié ?**
+* Remplir et soumettre le formulaire proposé avec l'adresse e-mail liée au
+  compte Phraseanet
 
 Une fois le formulaire complété et soumis, un email est envoyé. Il contient un
-lient permettant de rejoindre, via un lien sécurisé, l'interface
-d'initialisation de mot de passe.
+lien permettant de rejoindre l'interface d'initialisation de mot de passe.
 
-.. note::
+.. warning::
 
     Le lien n'est valide que pour une durée limitée.
-    Si l'email n'est pas reçu, consulter le dossier des courriers indésirables
+    Si l'e-mail n'est pas reçu, consulter le dossier des courriers indésirables
     du programme de messagerie.
 
-Cliquer sur le lien proposé dans l'email reçu pour rejoindre l'interface de
-ré-initialisation de mot de passe.
-Suivre les instructions proposées à l'écran puis valider le formulaire
-pour réinitialiser le mot de passe.
+Cliquer sur le lien proposé dans l'e-mail reçu pour rejoindre l'interface
+d'initialisation de mot de passe.
+
+Suivre les instructions proposées puis valider le formulaire.
 
 .. warning::
 
     Les mots de passe sont sensibles à la casse.
 
-Après ré-initialisation du mot de passe, se connecter au moyen du formulaire
-disponible en page d’accueil de l'application Phraseanet.
+Après initialisation du mot de passe, se connecter au moyen du formulaire
+disponible en page d’accueil.
 
 Le compte invité
 ----------------
 
-Le compte invité est un compte comparable aux autres comptes *Phraseanet*. Il
-permet de consulter une ou plusieurs collections sans nécessiter
-d'authentification.
-
-Une fois l'accès invité configuré, un bouton **Accès invité** apparaît en bas
-de la page de connexion.
-
-.. image:: ../../images/Authentification-invite.jpg
-    :align: center
-
-Se reporter à
-:doc:`cette section <../../FAQ/Personnalisation/Parametrer-le-compte-invite>`
-pour la mise en oeuvre de l'accès invité.
+Un accès invité peut être disponible sur la page d'accueil. Cliquer sur le
+bouton **Accès invité** pour se connecter au moyen de ce compte.
 
 .. note::
 
-    Lors de la connexion à *Phraseanet*, c'est la dernière application utilisée
-    qui se lance par défaut.
+  Le compte invité est un compte comparable aux autres comptes Phraseanet. Il
+  permet de consulter une ou plusieurs collections sans nécessiter
+  d'authentification.
 
+  Se reporter à
+  :doc:`cette section <../../FAQ/Personnalisation/Parametrer-le-compte-invite>`
+  pour la mise en oeuvre de l'accès invité.
