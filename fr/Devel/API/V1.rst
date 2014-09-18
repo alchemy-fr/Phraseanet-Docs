@@ -22,6 +22,8 @@ de créer un ticket dans notre `bug tracker`_.
     V1/Introduction
     V1/Authentification
     V1/Routes
+    V1/CORS
+    V1/Webhooks
     V1/Exemples
 
 .. _bug tracker: https://github.com/alchemy-fr/Phraseanet/issues

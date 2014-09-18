@@ -214,7 +214,24 @@ Voici un exemple de fichier de configuration commenté
         images_per_page: 60
         images_size: 200
 
-    plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`
+    plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`.
+
+    session:
+        idle: 3600                                 # (integer) Durée d'inactivité (en secondes) avant déconnexion
+        lifetime: 604800                           # (integer) Durée maximum de session (en secondes)
+
+    api_cors:
+      enabled: false                               # (boolean) Activation du CORS sur l'API.
+      allow_credentials: false                     # (boolean) Inclus les cookies dans les requêtes CORS.
+
+      allow_origin: ['*']                          # (array)   La liste des domaines autorisés à envoyer des requêtes sur l'API.
+                                                   #           '*' pour autoriser les demandes de toutes origines.
+      allow_headers: []                            # (array)   La liste des headers supportés par le server.
+      allow_methods: ['GET', 'POST', 'PUT']        # (array)   La liste des methodes HTTP supportées.
+      expose_headers: ['X-Custom-Header']          # (array)   La liste des headers autres que (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
+                                                   #           à exposer au client.
+      max_age: 0                                   # (integer) Authorise la réponse "preflight" à être cachée pour X secondes.
+      hosts: ['api-cors.domain.com']               # (array)   Liste des noms de domaine ou le CORS est activé.
 
 Langues
 *******
@@ -555,5 +572,21 @@ Les paramètres suivants sont ajustables :
 +-------------------------+-----------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
 | basket_title_display    | Afficher le titre des enregistrements dans un panier      | 0                 | *1* (oui) ou *0* (non)                                                             |
 +-------------------------+-----------------------------------------------------------+-------------------+------------------------------------------------------------------------------------+
+
+Durées de session
+*****************
+
+idle
+~~~~
+Fixe (en secondes) la durée d'inactivité de l'utilisateur avant déconnexion automatique.
+
+Le réglage "idle" est prioritaire sur le réglage "lifetime" et l'option "Se souvenir de moi" n'est alors pas présente
+sur la page d'accueil.
+
+lifetime
+~~~~~~~~
+En cochant "Se souvenir de moi" à l'authentification, durant cette période (en secondes) l'accès à l'application est
+immédiat sans avoir à se ré-authentifier.
+
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
