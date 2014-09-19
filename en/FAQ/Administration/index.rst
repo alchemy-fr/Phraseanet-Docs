@@ -40,8 +40,8 @@ With Nginx for web server, large queries must be activated:
 The result thumbnails are hot-air-balloons
 ------------------------------------------
 
-The creation of sub-definitions sometime may take time depending on the nature
-and the size of the documents that were added to the base.
+The creation of subviews may take time depending on the nature and the size
+of the documents that were added to the base.
 
 Also make sure that the subview creation task is started in the task manager
 section in the Admin module.
