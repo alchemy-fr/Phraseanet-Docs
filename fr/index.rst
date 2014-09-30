@@ -12,11 +12,11 @@ Elle permet de stocker, de gérer, de partager et de diffuser un large panel de
 ressources numériques de type image, vidéo, audio ou bureautique au sein de
 groupes de travail de toute dimension.
 
-Solution *full web*, elle s'exécute dans un navigateur internet.
+Solution *100% Web*, elle s'exécute dans un navigateur internet.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
 serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
-courantes telles MySQL,PHP et Apache.
+courantes telles MySQL, PHP et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
 *Phraseanet*.
 Certaines de ces librairies sont
@@ -48,8 +48,6 @@ commencer.
 Quoi de neuf dans la version 3.8 ?
 ----------------------------------
 
-.. todo:: Mettre le changelog ici. Communiqué à titre d'exemple
-
 Voici les principaux changements apportés par la version 3.8 :
 
 * Une nouvelle page de connexion
@@ -64,11 +62,14 @@ Besoin d'aide ?
 ---------------
 
 `Alchemy`_, l'éditeur de Phraseanet commercialise un ensemble de prestations et
-de services autour de la solution *Phraseanet*.
+de services autour de la solution *Phraseanet*. Consulter
+`ces offres <http://alchemy.fr/spip.php?page=rubrique&id_rubrique=8>`_
+sur le site éditeur.
 
-L'équipe de Phraseanet consacre une partie de son temps libre à l'animation des
-forums et groupes. Consulter `cette page <http://www.phraseanet.com/support/>`_
-pour une présentation de ces groupes.
+L'équipe de Phraseanet consacre une partie de son temps à l'animation de
+forums et de groupes. Consulter
+`cette page <http://www.phraseanet.com/support/>`_ pour une présentation de
+ces groupes.
 
 .. _Alchemy: http://www.alchemy.fr/
 .. _Phraseanet: https://www.phraseanet.com/
