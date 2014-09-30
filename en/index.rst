@@ -36,7 +36,6 @@ beginning.
 
     Contrib/index
     Glossary
-    Contrib/index
     FAQ/index
     Devel/index
     User/index
