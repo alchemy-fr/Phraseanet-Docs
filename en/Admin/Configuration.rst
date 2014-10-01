@@ -62,8 +62,9 @@ Here is a commented configuration file
         cache:                                     # (array)   Cache service configuration
             type: MemcacheCache                    # (string)  Cache adapter name
             options:                               # (array)   Cache adapter options
-                host: localhost                    # (string)  Cache server address
+                host: 'localhost'                  # (string)  Cache server address
                 port: 11211                        # (integer) Cache server port
+                namespace: 'app_namespace'         # (integer) Override cache namespace
 
         opcodecache:                               # (array)   Opcode cache service configuration
             type: ArrayCache                       # (string)  Opcode cache adapter name
@@ -216,17 +217,24 @@ Here is a commented configuration file
         lifetime: 604800                           # (integer) Maximum session time (in seconds)
 
     api_cors:
-      enabled: false                               # (boolean) API CORS activation.
-      allow_credentials: false                     # (boolean) Include cookies in CORS request.
+        enabled: false                             # (boolean) API CORS activation.
+        allow_credentials: false                   # (boolean) Include cookies in CORS request.
 
-      allow_origin: ['*']                          # (array)   List of authorized origin domain to request the API.
+        allow_origin: ['*']                        # (array)   List of authorized origin domain to request the API.
                                                    #           '*' to allow requets from any origin.
-      allow_headers: []                            # (array)   List of supported headers by the server.
-      allow_methods: ['GET', 'POST', 'PUT']        # (array)   List of supported method.
-      expose_headers: ['X-Custom-Header']          # (array)   List of headers different than (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
+        allow_headers: []                          # (array)   List of supported headers by the server.
+        allow_methods: ['GET', 'POST', 'PUT']      # (array)   List of supported method.
+        expose_headers: ['X-Custom-Header']        # (array)   List of headers different than (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
                                                    #           to expose to the client.
-      max_age: 0                                   # (integer) Allows the preflight response to be cached for a specified number of seconds.
-      hosts: ['api-cors.domain.com']               # (array)   List of domain where the CORS is activated.
+        max_age: 0                                 # (integer) Allows the preflight response to be cached for a specified number of seconds.
+        hosts: ['api-cors.domain.com']             # (array)   List of domain where the CORS is activated.
+
+    static-file:
+        enabled: false                             # (boolean) static thumbnails activation.
+        type: nginx                                # (string) StaticFile type (`nginx` ou `apache`)
+        symlink-directory: ''                      # (string) The directory where symlynks to images will be created
+
+    lazyload: false                                # (boolean) thumbnail lazyload activation (obsolete if static file enabled)
 
 Languages
 *********
@@ -552,3 +560,23 @@ Access is allowed for this duration (in seconds).
 
  
 .. _YAML: https://wikipedia.org/wiki/Yaml
+
+Vignettes
+*********
+
+lazyload
+~~~~~~~~
+Boolean that triggers lazy load for thumbnails in production, this option is not obsolete if static
+file mode is enabled.
+
+static-file
+~~~~~~~~~~~
+If this option is enabled, the server will serve thumbnails as static content.
+Symlinks to images will be created.
+
+.. code-block:: yaml
+
+    static-file:
+        enabled: true
+        type: nginx
+        symlink-directory: ''
