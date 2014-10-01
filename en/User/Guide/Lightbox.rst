@@ -83,16 +83,13 @@ action menu.
 .. image:: ../../images/Lightbox-enregister.jpg
     :align: center
 
-To download all the media of a basket or feedback, click on the export button
+To download all the media from a basket or feedback, click on the export button
 on the bottom left of the interface.
 
 .. image:: ../../images/Lightbox-enregister-tout.jpg
     :align: center
 
 Downloading from Lightbox is identical to the export in Production.
-
-.. image:: ../../images/Lightbox-enregister-export.jpg
-    :align: center
 
 .. seealso::
 
