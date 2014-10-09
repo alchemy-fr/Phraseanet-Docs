@@ -160,12 +160,13 @@ panier ou reportage ouvert dans la zone de travail puis cliquer sur le bouton
 Outils. Choisir un des onglets proposés :
 
 * **Régénération de sous-définitions** : pour recréer les vignettes et
-  sous-définitions les enregistrements liés à la sélection
+  sous-définitions à partir des documents originaux des enregistrements
+  sélectionnés
 * **Outils vidéos** : Disponible si et seulement si l'unique média sélectionné
   est de type vidéo, l'onglet propose les outils permettant le choix d'une
   vignette de présentation personnalisée.
-* **Rotation** : permet des rotations de vignettes et d'images de choix pour
-  les médias sélectionnés
+* **Rotation** : permet des rotations des vignettes et des sous-définitions
+  pour les médias sélectionnés
 * **Substitution** : Permet de remplacer le document original par un autre. Une
   case à cocher permet de choisir si la vignette et l'image de choix doivent
   être reconstruites
