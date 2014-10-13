@@ -41,7 +41,7 @@ Select files
 * Select the files to integrate by browsing through directories of your
   computer, then click on **Open**.
 
-The selected files appear in the left side of the Upload interface (2).
+The selected files appear in the left side of the Upload interface (4).
 
 .. image:: ../../images/Upload-fichiers2.jpg
     :align: center
@@ -52,9 +52,6 @@ Re-order, delete media from the import list
 * **Re-order media** before importing them. Select a file and drag/drop it
   elsewhere in then grid.
 
-  .. image:: ../../images/Upload-reordonner.jpg
-    :align: center
-
 * **Delete** from the list one or more media by clicking on Cancel below the
   thumbnails, or
 * **Reset the sending list** by clicking on the **Empty the list** button.
@@ -62,7 +59,7 @@ Re-order, delete media from the import list
 Choose the collection of destination
 ************************************
 
-* Select the collection for destination in the drop-down menu (3).
+* Select the collection for destination in the drop-down menu (2).
 
 .. image:: ../../images/Upload-prezone3.jpg
     :align: center
@@ -70,7 +67,7 @@ Choose the collection of destination
 Apply statuses
 **************
 
-* If necessary, apply statuses to media.
+* If necessary, apply statuses to media (3).
 
 .. image:: ../../images/Upload-zone3.jpg
     :align: center
@@ -82,7 +79,7 @@ Transmit the media
 
 All the media are transferred in the selected collection.
 A progress bars indicate the state of the transfer in the
-**Transmitted files** section (4).
+**Transmitted files** section (5).
 
 .. image:: ../../images/Upload-zone4.jpg
     :align: center
