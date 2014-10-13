@@ -90,13 +90,13 @@ Click on the **Next** button to start the procedure.
   .. image:: ../images/Admin_Install_screen-03.jpg
       :align: center
 
-* Check and modify if required storage path for documents then folow
+* Check and modify if required storage path for documents then follow
 
   .. image:: ../images/Admin_Install_screen-04.jpg
       :align: center
 
 * Enter parameters for connection to the database dedicate to the Phraseanet
-Databox the click on the **Install** button
+  Databox then click on the **Install** button
 
   .. image:: ../images/Admin_Install_screen-05.jpg
       :align: center
