@@ -19,7 +19,6 @@ Phraseanet can also be managed through 2 interfaces: `API <../../Devel>`_ and
 `Konsole Kommander <Console>`_.
 
 .. toctree::
-    :hidden:
 
     Prerequisite
     Download
