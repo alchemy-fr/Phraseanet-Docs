@@ -561,8 +561,8 @@ Access is allowed for this duration (in seconds).
  
 .. _YAML: https://wikipedia.org/wiki/Yaml
 
-Vignettes
-*********
+Thumbnails
+**********
 
 lazyload
 ~~~~~~~~
@@ -571,7 +571,7 @@ file mode is enabled.
 
 static-file
 ~~~~~~~~~~~
-If this option is enabled, the server will serve thumbnails as static content.
+If this option is enabled, thumbnails are served as static content.
 Symlinks to images will be created.
 
 .. code-block:: yaml

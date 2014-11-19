@@ -609,7 +609,7 @@ si l'option "static-file" est activé pour l'affichage des vignettes.
 
 static-file
 ~~~~~~~~~~~
-En activant cette option les vignettes seront servies par le serveur comme contenu statique.
+En activant cette option, les vignettes sont servies comme contenu statique.
 Un lien symbolique est créé pour chaque image.
 
 .. code-block:: yaml
