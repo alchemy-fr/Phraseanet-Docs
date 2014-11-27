@@ -58,9 +58,12 @@ Glossaire
         Un document est le fichier d'origine ajouté à une Base/Collection.
 
     Sous résolutions
-        Les fichiers générés lors de l'ajout d'un document. Elles sont classées
-        selon trois groupes (Tout le monde/Sous résolutions/Documents) et sont
-        rattachées aux droits utilisateurs.
+        Les sous résolutions (ou sous définitions) sont les fichiers générés
+        lors de l'ajout d'un media dans une base. Elles sont mises en oeuvre
+        dans les interfaces pour donner des rendus fidèles aux documents
+        originaux. Classées par groupes ou *classes* (Tout le monde,
+        Sous résolutions ou Documents) rattachés aux droits utilisateurs, elles
+        sont paramétrables et peuvent être téléchargées lors de l'export.
 
     Description
         Fiche documentaire d'un document, composée de plusieurs champs

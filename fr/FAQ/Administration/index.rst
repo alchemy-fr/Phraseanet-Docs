@@ -118,26 +118,32 @@ Relancer ensuite l'installation via la commande suivante :
 Que se passe t'il lorsque qu'un média est ajouté dans une base Phraseanet ?
 ---------------------------------------------------------------------------
 
-Le système lit dans la structure de cette base afin d'obtenir :
+Lorsqu'un média est ajouté dans une base Phraseanet, une série de processus
+s'enclenchent selon le déroulé suivant :
 
-* les champs d'indexations
-* Liens champs d'indexations et source de métadonnées (EXIF, XMP,
-  IPTC...*etc*.)
-* les répertoires destinés au stockage des données physiques (Médias originaux
-  et sous définitions)
+* **Le système lit dans la structure de la base** afin d'obtenir :
 
-Il stocke ensuite le document original dans le répertoire de stockage des médias
-originaux.
+  * Les champs d'indexations qui forment la notice de l'enregistrement
+  * Les liens établis entre les champs d'indexations et des sources de
+    métadonnées (EXIF, XMP, IPTC...)
+  * Le chemin d'accès des répertoires destinés au stockage des données
+    physiques (Médias originaux et sous définitions)
 
-Le contenu des metadonnées (IPTC, XMP, EXIF...etc.) du fichier média original
-est alors lu et extrait en accord avec le paramétrage des champs de la structure
-documentaire.
 
-Les sous définitions sont générées puis sauvegardées dans le répertoire de
-stockage des sous définitions obtenu de la structure.
+* **Le système archive ensuite le document original** dans le répertoire de
+  stockage des médias originaux.
 
-Des métadonnées peuvent alors être écrites dans certaines sous définitions
-(selon paramètrage).
+* **Les metadonnées du fichier média original sont alors lues et extraites**,
+  en accord avec le paramétrage des champs de la structure documentaire. Elles
+  sont utilisées pour renseigner par automatisme la notice d'indexation
+  correspondante à l'enregistrement.
 
-Les métadonnées sont ensuite ajoutées à l'index du moteur de recherche.
-Cette opération permet rendre l'enregistrement créer disponible à la recherche.
+* **Les sous définitions sont générées** puis sauvegardées dans le répertoire de
+  stockage des sous définitions obtenu de la structure.
+  Des métadonnées peuvent alors être écrites dans certaines sous définitions
+  (selon paramètrage).
+
+* **Les métadonnées sont ensuite ajoutées à l'index du moteur de recherche**.
+  Cette opération permet rendre l'enregistrement créé disponible à la recherche
+  selon les informations présentes dans les champs indexables par le moteur de
+  recherche.
