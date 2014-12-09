@@ -153,10 +153,11 @@ of the work zone then click on the **Tools** button. Choose one of the
 suggested tabs:
 
 * **Regenerating the sub-definition**: to re-generate thumbnails and
-  subviews for the selected records.
-* **Video tools**: Available only if the selected media type is a video, this
-  tab propose a tool to customize the thumbnail of a video.
-* **Rotation**: Rotate thumbnails and previews images for the selected media
+  subviews from original documents for the selected records.
+* **Video tools**: Available only if the selected media is a video, this
+  tab propose tools to customize the thumbnail of the selected video.
+* **Rotation**: Rotate thumbnails and previews images for the selected media.
+  Rotation won't be applied to original documents.
 * **Substitution**: Replace the original document by an other. A checkbox
   allows to choose if the thumbnail and the preview image have to be rebuilt.
 * **Substitution for subview**: Replace the thumbnail image by an other file.
