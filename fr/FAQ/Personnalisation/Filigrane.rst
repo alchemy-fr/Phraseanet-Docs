@@ -38,6 +38,7 @@ présents dans *Phraseanet*, il faut supprimer les fichiers de caches
 préalablement créés par l'application.
 Pour ce faire, utiliser la commande suivante :
 
-.. code-block::bash
+.. code-block:: bash
 
     find $repertoire_de_stockage -type f -iname watermark_* -exec rm -rf {} \;
+

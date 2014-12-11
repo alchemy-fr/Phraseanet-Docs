@@ -9,10 +9,12 @@ Moteur de recherche
     envisagée, ElasticSearch ou SphinxSearch peut être utilisé.
     Cette section explique les avantages de chacun et leur installation.
 
-.. warning::
+.. note::
 
     Le paramétrage du moteur de recherche se fait à l'installation de
     Phraseanet. Par la suite les paramètres ne devraient pas être réajustés.
+
+.. _Phrasea-Engine:
 
 Phrasea Engine
 --------------
@@ -50,8 +52,8 @@ L'indexeur nécessite la présence des bibliothèques suivantes :
 * zlib1
 * libmysql
 
-Après compilation (voir spécificités Windows), copier l'éxécutable dans un
-répertoire avec les droits d'éxécution.
+Après compilation (:ref:`voir spécificités Windows<Phrasea-Indexeur-Windows>`),
+copier l'éxécutable dans un répertoire avec les droits d'éxécution.
 
 Arguments
 ^^^^^^^^^
@@ -222,12 +224,14 @@ Spécificités Linux et OSX
 Après compilation, "sudo make install" va copier l'éxécutable dans le répertoire
 des binaires (par ex . /usr/local/bin).
 
+.. _Phrasea-Indexeur-Windows:
+
 Spécificités Windows
 ^^^^^^^^^^^^^^^^^^^^
 
 L'indexeur est livré pré-compilé pour Windows.
 
-Télécharger la dernière version "https://github.com/alchemy-fr/Phraseanet-Indexer/blob/master/WIN32/Release_win32/",
+Télécharger la dernière version à l'adresse "https://github.com/alchemy-fr/Phraseanet-Indexer/blob/master/WIN32/Release_win32/",
 et placer l'éxécutable dans un répertoire distinct (par ex. dans "Program
 Files\\Phraseanet-Indexer\\phraseanet_indexer.exe").
 
@@ -285,8 +289,8 @@ Installation
 ^^^^^^^^^^^^
 
 Après compilation et installation de "Phraseanet-Extension" (voir spécificités
-Linux, OSX et Windows), vérifier la présence des extensions requises avec la
-commande :
+Linux, OSX et :ref:`Windows<Phrasea-Extension-Windows>`), vérifier la présence
+des extensions requises avec la commande :
 
 .. code-block:: none
 
@@ -306,6 +310,8 @@ Spécificités Linux et OSX
 
 Après compilation, "sudo make install" va copier l'extension à l'emplacement des
 extensions php.
+
+.. _Phrasea-Extension-Windows:
 
 Spécificités Windows
 ^^^^^^^^^^^^^^^^^^^^
@@ -421,7 +427,7 @@ Gestion de l'autocompletion
 Pour que l'autocompletion fonctionne à la recherche, il faut générer les
 propositions.
 
-Pour cela il faut utiliser la commande :
+Pour ce faire, utiliser la commande :
 
 .. code-block: bash
 

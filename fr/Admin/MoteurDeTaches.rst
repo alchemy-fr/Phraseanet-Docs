@@ -7,14 +7,17 @@ asynchrones.
 Ces différentes tâches sont gérées par un Planificateur (Scheduler),
 qui s'occupe de leur démarrage, et de leur arrêt.
 
-Pour la création des tâches, à la page :doc:`../User/Manuel/AdministrationSolution`
-dans la manuel utilisateur.
+Pour l'édition de tâches,
+:ref:`se reporter au paragraphe consacré aux tâches<Edition-de-taches>` dans
+le manuel utilisateur.
 
 Le Planificateur de taches
 ---------------------------
 
 Le menu contextuel du Gestionnaire de tâches (et de chacune des tâches) propose
 des rubriques pour démarrer, arrêter, ou consulter les logs des tâches.
+
+.. _Arrets-et-Demarrages-Alternatifs:
 
 Arrêts et démarrages alternatifs
 ********************************
@@ -67,8 +70,9 @@ L’indexer doit être paramétré avec les informations ci-dessous :
   Lors d'une recherche avec tri des résultats, les records dont le champ de tri
   n'est pas renseigné seront soit :
 
-  absents des réponses ; en tête des réponses ; à la fin des réponses.
-
+  * Absents des réponses
+  * En tête des réponses
+  * A la fin des réponses
 
 .. code-block:: bash
 

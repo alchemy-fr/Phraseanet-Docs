@@ -1,24 +1,49 @@
-Exploiter les fonctionnalités de FTP
-====================================
+Activer la réception de documents par FTP
+=========================================
 
-.. topic:: L'essentiel
+La réception de documents sur des serveurs de fichiers joignables par FTP est
+une option de paramétrage dans Phraseanet.
+Pour la rendre disponible auprès d'utilisateurs, il faut l'activer.
 
-  Phraseanet permet d'interagir avec des serveurs supportant le protocole de
-  transfert de fichiers FTP.
-  Voici quelques astuces permettant d'exploiter ces possibilités.
+Activer l'export FTP
+--------------------
 
-Activer les fonctionnalités FTP
+Authentifier comme administrateur...
+
+* Se rendre dans la rubrique Paramétrage de l'Admin
+* A la section Export FTP, placer le bouton radio sur la position *True*
+
+L'option **Activer l'export FTP** pour les utilisateurs permet de rendre
+disponible l'export par FTP à tous les utilisateurs. Activer cette option si
+souhaitée.
+
+* Valider les modifications de paramétrage en soumettant le formulaire
+
+
+Créer une tâche d'export FTP
+----------------------------
+
+Cette tâche est destinée à lancer à intervalle régulier les transferts FTP
+contenus dans une file d'attente.
+
+* Se rendre à la rubrique Gestionnaire de tâches de l'Admin
+* Créer et paramétrer une tâche FTP Push
+* Démarrer cette tâche
+
+
+Utilisation de l'export par FTP
 -------------------------------
 
-C'est un préalable obligatoire.
+L'activation de l'option de paramétrage ajoute un onglet FTP dans la fenêtre
+d'export présentée aux utilisateurs qui en bénéficient.
 
-* Comme Administrateur, se rendre dans l'Admin puis dans la rubrique Paramètre
-* Rechercher la ligne **Export FTP**
-* Activer l'export FTP en ajustant le bouton radio sur **True**
+* Renseigner les paramètres de connexion dans le formulaire d'export FTP
 
-.. image:: ../../images/Faq-activer-ftp0.jpg
-    :align: center
+Ou bien
 
-Par défaut, lorsqu'activées les fonctionnalités d'export FTP ne sont disponibles
-que pour les administrateurs. Ajuster si besoin le second bouton radio pour en
-faire bénéficier tous les utilisateurs.
+* Utiliser un préréglage préalablement édité dans la section Serveur FTP des
+  :doc:`préférences du compte utilisateur<../../User/Manuel/MenuPhraseanet>`
+
+Un bouton Essayer permet de tester la connexion au serveur FTP.
+Le bouton Envoyer permet d'envoyer les fichiers vers le serveur distant.
+

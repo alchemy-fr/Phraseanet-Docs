@@ -9,6 +9,18 @@ Glossaire
 .. glossary::
     :sorted:
 
+    Identifiant universel unique (UUID)
+        Identifiant numérique unique codé sur 128 bits conçu avec la
+        probabilité d'être unique dans le monde. Certains logiciels de la
+        chaine graphique (micrologiciel d'appareil photo numérique, logiciel
+        de traitement d'images) introduisent ces identifiants dans les
+        fichiers numériques de type image pour permettre de les distinguer
+        les un les autres.
+
+        .. seealso::
+
+            http://en.wikipedia.org/wiki/Universally_unique_identifier
+
     Webhooks
         Technique de développement internet mettant en oeuvre des événements
         ciblants des applications tierces dans le but d'interagir avec elles.
@@ -46,9 +58,12 @@ Glossaire
         Un document est le fichier d'origine ajouté à une Base/Collection.
 
     Sous résolutions
-        Les fichiers générés lors de l'ajout d'un document. Elles sont classées
-        selon trois groupes (Tout le monde/Sous résolutions/Documents) et sont
-        rattachées aux droits utilisateurs.
+        Les sous résolutions (ou sous définitions) sont les fichiers générés
+        lors de l'ajout d'un media dans une base. Elles sont mises en oeuvre
+        dans les interfaces pour donner des rendus fidèles aux documents
+        originaux. Classées par groupes ou *classes* (Tout le monde,
+        Sous résolutions ou Documents) rattachés aux droits utilisateurs, elles
+        sont paramétrables et peuvent être téléchargées lors de l'export.
 
     Description
         Fiche documentaire d'un document, composée de plusieurs champs

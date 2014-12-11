@@ -9,10 +9,12 @@ Administration des bases et des collections
     A chacune des bases correspond une structure documentaire paramétrable, les
     collections pouvant être assimilées à des sous ensembles d'une base.
 
+.. _Parametrage-Structure:
+
 Paramétrage par base
 --------------------
 
-Cliquer sur une base pour afficher le tableau d'état d'une base Phraseanet.
+Cliquer sur une base pour afficher son état.
 
 .. image:: ../../images/Administration-base.jpg
     :align: center
@@ -25,81 +27,59 @@ Cet écran montre l'état d'indexation de la base et permet des actions dont :
 * La purge des enregistrements de la base
 * La suppression de la base
 
-Système multibase, chacune des bases d'une solution Phraseanet est finement
-paramétrable. Pour cela, cliquer sur l'icône **+**.
+Système multibases, chacune des bases d'une solution Phraseanet est finement
+paramétrable. Pour ce faire, cliquer sur l'icône **+**.
 
 Réglage de la structure
 ***********************
 
-La rubrique **Réglage de la structure** permet d'afficher la structure
-documentaire de la base sélectionnée sous la forme d'un fichier xml éditable.
+La rubrique affiche la structure documentaire de la base sélectionnée sous la
+forme d'un fichier XML éditable.
 
 .. image:: ../../images/Administration-structurexml.jpg
     :align: center
 
-Il est rare de devoir manipuler le paramétrage d'une base par cette interface,
-les interfaces `Champs`_ , `Sous définition`_ ou `Réglage des status`_ étant
-bien plus conviviales pour effectuer des paramétrages.
+Il est rare de devoir manipuler le paramétrage d'une base par cette interface.
+Utilisez les interfaces `Champs`_, `Sous définition`_ ou `Réglage des Status`_.
 
 Champs
 ******
 
-La rubrique **Champ** permet de définir et d'éditer la structure documentaire d'
-une base Phraseanet au moyen de formulaires dans une interface graphique.
+Champ permet de définir et d'éditer la structure documentaire d'une base au
+moyen de formulaires dans une interface graphique.
 
 .. image:: ../../images/Administration-structurechamps.jpg
     :align: center
 
-Chacun des champs de la structure documentaire est défini par des propriétés
+Les champs de la structure documentaire sont définis par des propriétés
 paramétrables :
 
-* Un titre
-* Un type texte, texte multivalué ou date
+* Un nom unique
+* Un type texte, texte multivalué, date, ...etc.
 * Des labels ou intitulés localisés en fonction des langues d'interface
 * Une présence obligatoire ou non
 * Une source de données optionnelle
-* Une source :term:`Dublin Core <Dublin Core>` optionnelle
-* Une propriété de :term:`champ métier <Business field ou Champ métier>`
-  optionnelle
+* Une équivalence Dublin Core optionnelle
+* Une propriété de champ métier optionnelle
 * L'ordre
-* ...etc.
 
-.. note:: A propos des types de champs
+.. note::
 
     **Les types de champs sont liés au moteur Phrasea**.
-
-    **Le type STRING** est le type par défaut. Il ne produit pas d'indexation
-    par valeur. Il ne permet pas de rechercher avec des opérateurs de
-    comparaisons numériques =, <, >. Il n'est pas possible d'effectuer des tris
-    sur ce type de champ.
-
-    **Le type TEXT** indexe les termes par valeur exacte, "tel quel", pour
-    satisfaire des recherches sur le contenu exacte d'un champ
-    (par exemple "auteur=Hugo").
-
-    **Le type NUMBER** permet d'interpréter le contenu du champ comme un nombre
-    pour satisfaire les recherches avec les opérateurs de comparaisons
-    numériques =, <, > ("largeur>1000"). Le tri est possible sur ce type de
-    champ.
-
-    **Le type DATE** permet d'interpréter le contenu comme une date ISO
-    -même incomplète. Par exemple 2009-, permet les recherches "date>=2000 ou
-    date<2014/01/01" ou bien le tri par date.
-
+    :doc:`Se reporter aux explications relatives au typage des champs dans la FAQ <../../FAQ/Parametrage/type-des-champs-phrasea>`.
 
 Sous définition
 ***************
 
-La rubrique *Sous définition* permet d'ajouter et d'éditer les sous définitions
-des médias de type image, vidéo et audio intégrés dans Phraseanet.
+La rubrique Sous définition permet l'ajout et l'édition les sous définitions
+des médias intégrés dans Phraseanet.
 
 .. image:: ../../images/Administration-sousdefinitions.jpg
     :align: center
 
-La nature des sous définitions dépend de la nature des documents originaux
-intégrés dans Phraseanet.
-Le tableau ci-dessous liste quelques exemples types de sous définitions
-fabriquées par l'application.
+Les natures des sous définitions dépendent des documents originaux intégrés.
+Le tableau ci-dessous liste des exemples de sous définitions fabriquées par
+l'application.
 
 +------------------------------------------------+------------------------------------------------------------+
 | Nature du média original                       | Nature de la sous définition                               |
@@ -122,26 +102,14 @@ fabriquées par l'application.
 Réglage des Status
 ******************
 
-Les :term:`Status` sont des marqueurs qui indiquent des états sur des
-enregistrements.
-Ils interagissent ou non avec les droits des utilisateurs (voir **Limitation
-par les Status** sur la page consacré à la :doc:`Gestion des utilisateurs
-<AdministrationUtilisateurs>`).
-
-Dans Phraseanet, soit un status est baissé (l'état par défaut), soit il est
-levé.
-En pratique, les status permettent d'illustrer des états sur des documents et
-d'obtenir au besoin une granularité supplémentaire sur l'accès des
-utilisateurs à ces documents.
-
+Les :term:`status <Status>` permettent d'indiquer des états sur des documents
+et d'introduire des limitations d'accès aux enregistrements à des utilisateurs
+indépendamment de la notion de collection.
 Liés à la structure documentaire d'une base, il est possible d'intégrer
 jusqu'à 28 status.
 
-.. image:: ../../images/Administration-status.jpg
-    :align: center
-
 * Pour déclarer un status, cliquer sur l'icône page pour éditer un nouveau
-  status bit puis remplir le formulaire.
+  status puis remplir le formulaire.
 * Pour modifier un status existant, cliquer sur l'icône stylo.
 * Pour supprimer un status, cliquer sur l'icône croix puis confirmer la
   suppression.
@@ -152,13 +120,13 @@ CGU (Conditions générales d'utilisation)
 .. image:: ../../images/Administration-cgu.jpg
     :align: center
 
-Les conditions générales d’utilisation sont proposées aux utilisateurs au moment
-de leur inscription.
+Les conditions générales d'utilisation sont proposées aux utilisateurs lors
+de l'inscription.
 
-* Saisir ou copier et coller un texte dans les différentes langues proposées.
-* Cocher la case "Les utilisateurs…." pour faire valider aux utilisateurs déjà
-  inscrits des conditions générales mises à jour.
-* Cliquer sur Mettre à jour pour enregistrer les modifications.
+* Saisir ou copier-coller un texte dans les différentes langues proposées.
+* Cocher la case "Les utilisateurs doivent accepter..." pour faire valider aux
+  utilisateurs déjà inscrits des conditions générales mises à jour.
+* Cliquer sur **Mettre à jour** pour enregistrer les modifications.
 
 Ordre des Collections
 *********************
@@ -167,28 +135,25 @@ Ordre des Collections
     :align: center
 
 Par défaut, les collections sont affichées dans Phraseanet selon leur ordre de
-création. Il est donc possible d'altérer cette ordre.
+création. Il est possible d'altérer cette ordre.
 
 * Cliquer sur la rubrique **Ordre des collections**
 * Cliquer sur une collection
-* Cliquer sur Monter ou Descendre ou cliquer sur **Ordre Alphabétique**
-* Cliquer sur Valider pour enregistrer les changements
+* Cliquer sur **Monter** ou **Descendre** ou cliquer sur **Ordre Alphabétique**
+* Cliquer sur **Valider** pour enregistrer les changements
 
 Les collections
 ---------------
-Les collections sont des sous ensembles d'une base dont elles partagent le
-paramétrage. La mise en place de collections répond à des besoins de
-segmentation d'un fonds documentaire et/ou à l'attribution de droits
-utilisateurs particuliers.
+Les :term:`collections <Collection>` sont des sous ensembles d'une base dont
+elles partagent le paramétrage. La mise en place de collections répond à des
+besoins de segmentation d'un fonds documentaire et/ou à l'attribution de
+droits utilisateurs particuliers sur des fonds.
 
 Créer une collection
 ********************
 
 Pour créer une collection, cliquer sur le titre de la base dans laquelle créer
 la collection puis cliquer sur **Créer une collection**.
-
-.. image:: ../../images/Administration-creercollections.jpg
-    :align: center
 
 Indiquer le nom de la collection à créer dans le champ prévu à cet effet puis
 valider le formulaire.
@@ -206,7 +171,7 @@ Cliquer sur le titre de la collection pour afficher ses informations.
 .. image:: ../../images/Administration-affichercollection.jpg
     :align: center
 
-Cet écran donne les informations essentielles sur la collection.
+L'écran donne les informations essentielles sur la collection.
 Il permet de la renommer, de la désactiver (voir section
 :ref:`activate-collection`), de la vider ou de la supprimer.
 
@@ -224,6 +189,8 @@ la taille en giga-octets.
 
 Pour masquer les détails de la collection, cliquer sur **Retour**.
 
+.. _AdministrationBasesCollections-Gestionnaires:
+
 Gérer les gestionnaires de commande
 ***********************************
 
@@ -238,19 +205,11 @@ utilisateurs ne bénéficiant pas des droits de téléchargements.
     email.
 
 **Pour ajouter un gestionnaire de commande**, sur la collection affichée, saisir
-le nom ou prénom de l'utilisateur ou son login dans le formulaire d'ajout d'un
-gestionnaire.
-
-.. image:: ../../images/Administration-gestionnairecommande.jpg
-    :align: center
-
-Un dispositif d'auto-complétion guide l'utilisateur en lui proposant des choix
-d'utilisateurs. Cliquer sur l'utilisateur choisi puis appliquer le choix au
-moyen du bouton **Valider**.
+le nom, prénom ou identifiant de l'utilisateur dans le formulaire d'ajout de
+gestionnaires. Valider le choix proposé par le dispositif d'auto-complétion.
 
 **Pour supprimer un gestionnaire de commande**, décocher la case à cocher
-précédent son nom d'utilisateur puis appliquer le choix au moyen du bouton
-**Valider**.
+précédent son nom d'utilisateur puis **Valider**.
 
 Marquage d'une collection
 *************************
@@ -272,8 +231,8 @@ Ou
 Ou
 
 * Cocher la case **Bandeau de Notice** pour ajouter un bandeau sous la dernière
-  ligne de pixels des fichiers (ceci nécessite un paramétrage des informations
-  à afficher sur le bandeau "champs, logo").
+  ligne de pixels des fichiers images (ceci nécessite un paramétrage des
+  informations à afficher sur le bandeau "champs, logo").
 
 Autres actions sur les collections
 **********************************
@@ -283,6 +242,14 @@ Un formulaire regroupe d'autres actions sur la collection sélectionnée.
 .. image:: ../../images/Administration-collectionautresactions.jpg
     :align: center
 
+Définir des labels
+^^^^^^^^^^^^^^^^^^
+
+Les labels permettent d'attribuer des noms de collections dans chacune des
+langues d'interface de l'application.
+Pour définir ou modifier les labels d'une collection, remplir le formulaire
+puis cliquer sur le bouton **Définir les labels**.
+
 .. _activate-collection:
 
 Activer ou désactiver une collection
@@ -291,17 +258,14 @@ Activer ou désactiver une collection
 Par défaut, les collections crées sont activées. Cela signifie qu'elles sont
 publiées et que les utilisateurs qui y ont accès peuvent parcourir son contenu.
 
-**Pour désactiver une collection** et arrêter sa publication, cliquer sur
-**Désactiver la collection**.
-
-Inversement, **Pour activer une collection**, cliquer sur **Activer la
-collection**.
+* Pour désactiver une collection et arrêter sa publication, cliquer sur
+  **Désactiver la collection**.
+* Pour activer une collection, cliquer sur **Activer la collection**.
 
 Renommer une collection
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Cliquer sur *Renommer* pour changer le nom de la collection.
-Saisir le nouveau nom dans le champ qui s'affiche et cliquer sur **Envoyer**.
+Saisir un nouveau nom de collection puis cliquer Renommer.
 
 Vider une collection
 ^^^^^^^^^^^^^^^^^^^^
@@ -309,20 +273,20 @@ Vider une collection
 Vider une collection a pour effet de supprimer définitivement les
 enregistrements (documents, sous définitions et notices) d'une collection.
 
-Cette action est définitive.
+Cette action est définitive et s'applique sur les documents, les
+sous définitions et les notices.
 
-Cliquer sur **Vider la collection** pour supprimer tous les enregistrements de
-la collection.
+Cliquer sur **Vider la collection** pour supprimer les enregistrements
+d'une collection.
 
 Supprimer une collection
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Cliquer sur **Supprimer** la collection pour supprimer totalement la collection
-de la base.
+Cliquer sur **Supprimer** la collection pour supprimer la collection de la base.
 
 .. note::
 
-    Il est nécessaire qu'une collection soit vide pour être supprimée.
+    Pour être supprimée, la collection doit être vide.
 
 Personnalisation d'une collection
 *********************************
@@ -332,15 +296,12 @@ distinctifs.
 
 Minilogo
 ^^^^^^^^
-Pour ajouter un logo symbolisant la collection (il apparaîtra dans les
-interfaces *Classic* et *Production* sous les vignettes dans le coin inférieur
-droit) :
 
-* Cliquer sur le bouton **Parcourir** pour sélectionner le fichier contenant
-  le logo (taille maximum conseillée : 30 pixels dans la hauteur).
+Pour ajouter un logo symbolisant la collection :
 
-* Cliquer sur **Envoyer le logo** pour télécharger le logo dans les bases
-  Phraseanet.
+* Cliquer sur le bouton **Sélectionner des fichiers** pour sélectionner un logo
+  (fichier au format Gif ou Png, taille maximum conseillée : 30 pixels dans
+  la hauteur).
 
 Filigrane
 ^^^^^^^^^
@@ -351,63 +312,41 @@ personnalisé à appliquer aux sous résolution des documents de la collection.
 .. note::
 
     Le filigrane est appliqué aux documents images visualisés par les
-    utilisateurs disposants du droits *No watermark* décoché.
+    utilisateurs disposants de la case No watermark décochée.
 
-:doc:`Se reporter à la section consacrée au filigrane dans la FAQ.<../../FAQ/Personnalisation/Filigrane>`
+.. seealso::
+
+    :doc:`Se reporter à la section consacrée au filigrane dans la FAQ.<../../FAQ/Personnalisation/Filigrane>`
 
 Stamp
 ^^^^^
 
-L'ajout d'un stamp ajoutera automatiquement un bandeau intégrant un logo et
-certaines metadonnées à l'export des documents originaux des enregistrements
-de type image. La configuration du stamp s'effectue via la vue XML des
-préférences de collections.
+Un stamp ajoute un bandeau intégrant un logo et certaines metadonnées à
+l'export des documents originaux des enregistrements de type image.
 
-.. code-block:: xml
+La configuration du stamp doit être complétée par l'édition de balises XML dans
+les préférences de collections.
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <baseprefs>
+.. seealso::
 
-      <!-- ... -->
+    :doc:`Se reporter à la section consacrée à la mise en place d'un Stamp logo dans la FAQ.<../../FAQ/Personnalisation/Stamp-logo>`
 
-      <stamp>
-        <logo position="left" width="25%"/>
-        <text size="50%">Record-id: <var name="RECORD_ID"/></text>
-        <text size="50%">Titre: <field name="SujetTitre"/></text>
-        <text size="50%">Legende: <field name="Legende"/></text>
-        <text size="50%">Copyright: <field name="Copyright"/></text>
-        <text size="50%">Date : <field name="Date"/></text>
-      </stamp>
-    </baseprefs>
+.. _AdministrationBasesCollections-valeurs:
 
 Préférences : Valeurs suggérées
 *******************************
 
 Les valeurs suggérées sont des menus de choix déroulants qui apparaissent dans
-la fenêtre :doc:`Édition <Editer>` pour permettre une indexation rapide. Elles
-sont éditables par collections et par champs.
+le formulaire d'édition. Elles permettent une indexation rapide à partir d'un
+vocabulaire suggéré. Les valeurs sont éditables par collections et par champs.
 
-Les valeurs suggérées sont des menus de choix déroulants qui apparaissent dans la
-fenêtre :doc:`Édition <Editer>` pour permettre une indexation rapide. Elles sont
-éditables par collections et par champs.
+L'édition des valeurs suggérées s'effectue soit via un formulaire d'édition en
+ mode graphique soit dans une vue XML.
 
-L'édition de valeurs suggérées est possible via un formulaire d'édition en mode
-graphique.
+* Sélectionner le champ pour lequel éditer des valeurs
+* Renseigner les valeurs souhaitées
 
-.. image:: ../../images/Administration-valeursgraphicmode.jpg
-    :align: center
+Dans la vue graphique, il est possible de trier les valeurs en cliquant sur
+une valeur affichées.
 
-D'autres utilisateurs préfèrent utiliser le mode par vue XML.
-
-.. image:: ../../images/Administration-valeursxml.jpg
-    :align: center
-
-* Sélectionner le champ dans lequel vous souhaitez travailler
-* Pour ajouter une valeur, la saisir dans la zone prévue à cet effet, cliquer
-  sur Ajouter
-
-Il est possible de trier les valeurs en cliquant sur une valeur puis sur
-"monter" ou "descendre" ou de les classer par ordre Alphabétique en cliquant sur
-*Tri Alpha*.
-
-Pour supprimer, cliquer sur une valeur puis cliquer sur Supprimer.
+**Pour supprimer une valeur**, la sélectionner puis cliquer sur **Supprimer**.

@@ -1,273 +1,168 @@
 ﻿Statistiques
-=============
+============
 
 .. toctree::
     :maxdepth: 3
 
 .. topic:: L'essentiel
 
-    De nombreuses statistiques sont accessibles dans *Phraseanet*. Dans l'
-    interface *Phraseanet Production*, elles sont directement visibles dans
-    l'onglet *Popularité* du document (:doc:`voir section Afficher <Afficher>`).
-    Elles font également l'objet d'une interface dédiée, *Phraseanet Report*,
-    dans laquelle l'utilisateur peut trouver un tableau de bord général
-    permettant de visualiser l'activité du site et de consulter des rapports
-    détaillés. *Phraseanet Report* permet de révéler des statistiques sur une
-    période, sur un type d'information et sur pour une ou plusieurs bases et
-    collections.
+    De nombreuses statistiques sont accessibles dans Phraseanet. Dans Production
+    des statistiques sur les documents sont publiées dans des onglets de la vue
+    détaillée.
 
-Les rapports sont classés dans 4 onglets :
+    **Report** donne des informations plus larges sur l'activité du site.
 
-.. image:: ../../images/Statistiques-General.jpg
-    :align: center
+Statistiques dans Production
+----------------------------
 
-Au lancement du module, un *tableau de bord* propose sur une période d’un mois
-un ensemble de statistiques généralistes.
+Des statistiques sur les enregistrements sont disponibles dans deux onglets de
+la vue détaillée.
 
-Les trois autres onglets proposent des statistiques qui concernent
-respectivement les *connexions des utilisateurs*, les *téléchargements* de
-documents et enfin *l’activité du site*.
+Historique du document
+**********************
+
+.. seealso::
+
+    :ref:`Se reporter au paragraphe consacré à l'historique de l'enregistrement <Afficher-Historique>`.
+
+Popularité du document
+**********************
+
+.. seealso::
+
+    :ref:`Se reporter au paragraphe consacré à la popularité de l'enregistrement <Afficher-Popularite>`.
+
+Statistiques dans *Report*
+--------------------------
+
+Report regroupe des statistiques relatives aux connexions, aux téléchargements
+et à l'activité du site. Un tableau de bord synthétise ces informations
+principales.
+
+**Pour lancer Report**, cliquer sur la rubrique correspondante dans la barre de
+menu puis générer le rapport pour l'intervalle de dates choisi.
 
 Tableau de bord
----------------
-
-Les statistiques proposées par le tableau de bord sont globales pour toutes les
-:term:`bases <base>` et collections publiées à partir du site et sont données
-sur un mois glissant.
-
-.. image:: ../../images/Statistiques-Tableaudebord.jpg
-    :align: center
-
-La page du tableau de bord comprend de nombreuses données statistiques.
+***************
 
 .. image:: ../../images/Statistiques-Tableaudebord2.jpg
     :align: center
 
-Voici une liste des tableaux disponibles et significations
+Le tableau de bord livre des informations générales sur :
 
-* **Activité par heure** : Contenu et informations proposés non définitifs
-  (courbe).
-* **Activité par jour** : Contenu et informations proposés non définitifs
-  (courbe)
-* **Documents ajoutés** : Nombre de documents ajoutés par jour (Histogramme).
-* **Documents édités** : Nombre de documents édités par jour (Histogramme).
-* **Cumul téléchargements et connexions** : Nombre total de téléchargements,
-  documents toutes sous résolutions sur un mois.
-* **Nombre total de connexions utilisateurs**
-* **Utilisateurs les plus actifs** (Tableau)
-* **Prévisualisations des médias les plus téléchargées** (Tableau)
-* **Questions les plus fréquentes** : Liste des 10 questions les plus posées par
-  les utilisateurs
-* **Volumétrie des questions les plus posées sur Phraseanet** : Liste des
-  utilisateurs posant le plus de questions (Tableau)
-* Sites d'où les documents sont les plus consultés (Tableau)
+* Le nombre de connexions au site
+* L'ajout de documents
+* L'édition d'enregistrements
+* Le nombre de téléchargements de documents originaux, de sous-définitions,
+  des volumes de qu'ils représentent sur le réseau,
+* Le palmarès des utilisateurs les plus actifs en terme de questions posées
+* Les 10 questions les plus fréquentes
+* Les sites d'où les médias sont le plus consultés
 
-Les trois onglets suivants: `Connexion`_, `Téléchargements`_ et
-`Activité du Site`_, se présentent de la même façon : L'utilisateur doit
-sélectionner 3 critères afin d'accéder aux statistiques :
+Ces statistiques sont détaillées dans les onglets Connexions, Téléchargements
+et Activité du site.
 
-* `Période`_
-* `Bases`_
-* `Types de rapports`_
+Connexions
+**********
 
-* Questions les plus posées: (Tableau)
-  Liste des 10 questions les plus posées par les utilisateurs
-* Volumétrie des questions les plus posées sur Phraseanet: (Tableau)
-  Liste des utilisateurs posant le plus de questions
-* Sites d'où les documents sont les plus consultés (Tableau)
+L'onglet Connexions livre des informations relatives aux connexions sur
+l'instance Phraseanet. Trois types de rapports sont proposés :
 
-Les trois onglets suivants : `Connexion`_, `Téléchargements`_ et
-`Activité du Site`_, se présentent de la même façon : L'utilisateur doit
-sélectionner 3 critères afin d'accéder aux statistiques :
+* Le nombre de connexions par utilisateur
+* L'historique des connexions
+* Le détail des plateformes et navigateurs utilisés par ces utilisateurs
 
-* `Période`_
-* `Bases`_
-* `Types de rapports`_
+Pour générer ces rapports :
 
-Connexion
-----------
-
-L'utilisateur clique sur l'onglet "Connexion" s'il souhaite voir combien
-de connexions ont eu lieu sur son système Phraseanet.
-
-Période
-*******
-
-Par défaut, la période est définie sur le mois passé.
-Pour changer l’intervalle, cliquer sur l'une des deux zones de saisie de date.
-
-Utiliser un intervalle proposé par les trois calendriers.
-Il faut utiliser le premier calendrier de la liste pour remonter
-vers un passé plus lointain.
-
-.. image:: ../../images/Statistiques-Connexions1.jpg
-    :align: center
-
-Bases
-*****
-
-Sélectionner les :term:`bases <base>` et collections sur lesquelles on souhaite
-obtenir des statistiques.
-
-Cliquer sur **Toutes les bases** pour afficher la liste des bases de données
-disponibles.
-Deux boutons permettent de sélectionner/dé-sélectionner toutes les :term:`bases
-<base>`.
-
-.. image:: ../../images/Statistiques-Connexions2.jpg
-    :align: center
-
-Un menu contextuel (flèche dans le coin gauche en bas) permet d’afficher la
-liste des collections de la :term:`bases <base>`, afin d’affiner les rapports,
-en décochant les collections à exclure.
+* Choisir un intervalle de dates
+* Sélectionner les bases et collections sur lesquelles les statistiques sont
+  calculées
+* Sélectionner un type de rapport au choix
 
 .. note::
-    Les options sélectionnées pour les intervalles et bases / collections
-    sont mémorisées d’un onglet à l’autre.
 
-Types de rapports
-*****************
-
-Enfin, il est nécessaire de choisir le type de rapport. Trois choix :
-
-* Groupé par utilisateurs :
-
-Liste et fréquence de connexion des utilisateurs
-
-* Toutes les connexions :
-
-Liste de toutes les connexions faites par chaque utilisateur présentée
-par défaut sur un critère chronologique
-
-* Plateformes et navigateurs :
-
-Ensemble de listes et graphiques des connexions par type de navigateurs,
-systèmes d’exploitation ou résolutions d’affichage employés par les
-utilisateurs.
-Ce rapport liste aussi les modules Phraseanet utilisés lors des connexions.
-Enfin, une liste et un graphique avec les couples systèmes d’exploitation /
-navigateurs les plus fréquemment utilisés pour les connexions.
-
-En cliquant sur l'un de ces types de rapport, les statistiques s'affichent
-immédiatement.
-
-.. figure:: ../../images/Statistiques-Connexions3.jpg
-    :align: center
-
-    Exemple avec un rapport Plateformes et navigateurs
+    Les choix effectués persistent d'un onglet à l'autre.
 
 Téléchargements
----------------
+***************
 
-L'onglet **Téléchargement** se présente de la même manière que l'onglet
-`Connexion`_ :
-Sélectionner la période, puis les :term:`bases <base>` et collections.
+L'onglet Téléchargements dresse l'inventaire des téléchargements pour une
+période donnée, par bases et collections :
 
-Le choix pour le type de rapport change. En effet, il est possible d'afficher
-les statistiques en se basant sur les rapports :
+* Par utilisateur
+* Par ordre chronologique
+* Par jour
+* Par document d'un base
 
-* Par utilisateurs :
+Des liens sur les données de la colonne **RecordID** permettent d'afficher une
+notice des documents téléchargés. Cette notice comporte :
 
-Pour chaque utilisateur ayant réalisé des téléchargements, ce rapport
-affiche le nombre et poids des documents et des sous définitions.
+* Une prévisualisation
+* Des métadonnées comme la date d'ajout dans la base, le titre ou le poids
 
-* Tous les téléchargements :
+Cliquer sur la croix en haut à droite de la fenêtre overlay pour quitter la
+notice et revenir à la liste des téléchargements.
 
-Liste de l’ensemble des téléchargements réalisés sur l’intervalle.
-Ce tableau propose des fonctions de regroupement, de tri, ...*etc*.
+Activité du site
+****************
 
-* Par jour :
+.. image:: ../../images/Statistiques-Activite.jpg
+    :align: center
 
-Nombre total et ventilation par document et sous résolutions de téléchargements
-faits jour par jour.
+L'onglet **Activité du site** regroupe des statistiques sur les questions
+posées lors des recherches, sur les connexions la dernière heure écoulée et
+l'activité des documents.
 
-* Par document, sur la base :
+Les rapports sont générés à la demande après sélection d'un intervalle de dates
+et de bases et de collections.
 
-* **Par utilisateurs** : Pour chaque utilisateur ayant réalisé des
-  téléchargements, ce rapport affiche le nombre et poids des documents et sous
-  résolutions.
-* **Tous les téléchargements** : Liste de l’ensemble des téléchargements
-  réalisés sur l’intervalle. Ce tableau propose des fonctions de regroupement,
-  de tri, ...*etc*.
-* Par jour : Nombre total et ventilation par document et sous résolutions de
-  téléchargements faits jour par jour.
-* Par document, sur la base: Active une option permettant de rechercher si un
-  document en particulier à partir de son Recordid ou si un document pour lequel
-  un terme à chercher est présent dans un champs a été téléchargé sur la
-  période.
+Activité relatives aux questions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../images/Statistiques-Telechargements.jpg
-    :align:     center
+Trois types de reports portent sur les questions posées :
 
-    Exemple de rapport de statistiques par document sur la bases.
+* **L'historique des questions** liste les questions posées par les
+  utilisateurs par ordre chronologique.
+* **Les questions les plus posées** liste les recherches les plus fréquemment
+  posées ainsi que le nombre de réponses données en moyenne.
+* **Les questions sans réponses** inventorient les recherches ne donnant pas
+  résultats et le nombre de fois qu'elles ont été posées.
 
-Activité du Site
-----------------
+Activité par heure
+^^^^^^^^^^^^^^^^^^
 
-Cet onglet se présente de la même manière que les deux précédents.
-Sélectionner la période et la :term:`base` puis le type de rapports
-disponibles :
+Ce report donne le nombre de connexions moyennes par 24 heures sur la période
+sélectionnée sous forme d'une courbe.
 
-* **Toutes les questions** liste chronologique les questions posées par les
-  utilisateurs.
-* **Questions les plus posées** liste les questions les plus posées et nombre de
-  d'occurrences retournées.
-* **Questions sans réponses** liste des questions n’ayant fourni aucune réponse.
-* **Activité du site** fournit des informations relatives à l'activité par heure
-  (moyenne).
+Documents
+^^^^^^^^^
 
-.. figure:: ../../images/Statistiques-Activite.jpg
-    :align:     center
+Ce report permet d'obtenir des renseignements sur l'activité des documents.
+Une liste de choix permet de sélectionner au choix les actions effectuées sur
+les documents :
 
-    Exemple de rapport incluant les données relatives aux questions les plus
-    posées.
-
-Les rapports
-------------
-
-Les rapports sont présentés sous forme de tableaux, listes et graphiques qui
-affichent les informations attendues et proposent des options. Les rapports
-précisent l’intervalle de date du rapport.
-
-Ils affichent le nombre de résultat total du rapport demandé. Certains tableaux
-proposent des options pour afficher d’avantage ou réduire le nombre de colonnes.
-
-Cliquer sur la roue pour afficher la liste et sélectionner/désélectionner
-l’affichage de certaines colonnes.
-
-La plupart des tableaux, listes et graphiques sont imprimables en cliquant
-sur le symbole de l'imprimante.
-
-Les rapports sont générés par :term:`base` et tiennent compte des filtres
-d’exclusion de collections.
-
-Pour naviguer dans la liste "onglets" des :term:`bases <base>`, positionner
-le curseur en début ou fin de liste.
-
-.. figure:: ../../images/Statistiques-Bases.jpg
-    :align:     center
-
-Certaines colonnes des tableaux de rapports proposés sont implémentées de:
-
-* fonctions de tri
-* fonctions de filtres
-
-Les filtres sont en relation avec les valeurs disponibles dans la colonne.
-
-* regroupements logiques par valeurs identiques
-
-Certaines valeurs dans les colonnes sont des liens cliquables *soulignées*
-et réagissant au survol. Cliquables, ils affichent dans une fenêtre
-:term:`Overlay` des informations en relation avec la valeur du lien.
-
-Lorsqu’ils sont constitués d’un grand nombre de lignes, les rapports sont
-répartis sur plusieurs pages.
-
-Cette information est affichée en bas de page et il est possible :
-
-* De changer de page
-* D’afficher d’avantage de lignes en changeant la valeur saisie
+* Documents poussés
+* Documents ajoutés
+* Documents édités
+* Documents validés
+* Documents envoyés vers des destinataires
 
 .. note::
-    Le total du nombre de lignes disponibles correspond au nombre total de
-    résultats.
+
+    Une option de paramétrage permet d'anonymiser les rapports. Dans ce cas les
+    identifiants de compte n'apparaissent pas dans les rapports générés.
+    Se reporter à la section Options d'affichage du Report dans la rubrique
+    Paramétrage de l'Admin.
+
+Personnaliser et exporter des rapports
+**************************************
+
+Il est possible de masquer les contenus de colonnes dans les rapports générés.
+Cliquer sur la roue crantée pour afficher la fenêtre overlay permettant de
+masquer les contenus de colonnes.
+
+Certains entêtes de colonnes permettent d'effectuer des tris si besoin.
+
+La majorité des rapports générés sont exportables sous forme de fichiers au
+format PDF ou CSV. Cliquer sur les icones dédiées à l'export pour obtenir les
+rapports au format souhaité.

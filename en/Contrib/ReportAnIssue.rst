@@ -12,7 +12,7 @@ rules:
 * You are sure your system has been patched after the
   :doc:`update </Admin/Upgrade>`
 * Your issue can always be reproduced when chaining some simple actions.
-* You have read the :doc:`FAQ </Admin/Faq>` for help for known issues
+* You have read the :doc:`FAQ </FAQ/index>` for help for known issues
 * You are sure your problem has not already been reported in the `bug tracker`_
 
 If this is OK (pfiou!), open an issue in the `bug tracker`_ with a `gist`_ of

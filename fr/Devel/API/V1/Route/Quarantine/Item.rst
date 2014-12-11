@@ -56,7 +56,31 @@ Exemple de réponse
                 "id": 136,
                 "session": {
                     "id": 136,
-                    "usr_id": 3
+                    "usr_id": 3,
+                    "user": {
+                        "@entity@": "http://api.phraseanet.com/api/objects/user",
+                        "id": 4,
+                        "email": "imprec@gmail.com",
+                        "login": "admin",
+                        "first_name": "Romain",
+                        "last_name": "Neutron",
+                        "display_name": "imprec@gmail.com",
+                        "gender": "Mr",
+                        "address": null,
+                        "zip_code": null,
+                        "city": null,
+                        "country": null,
+                        "phone": null,
+                        "fax": null,
+                        "job": null,
+                        "position": null,
+                        "company": null,
+                        "geoname_id": null,
+                        "last_connection": "2014-03-02T12:01:22+02:00",
+                        "created_on": "2012-10-02T09:46:40+02:00",
+                        "updated_on": "2012-10-02T09:46:40+02:00",
+                        "locale": "en_GB"
+                    }
                 },
                 "base_id": 3,
                 "original_name": "Tree.jpg",

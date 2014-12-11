@@ -1,48 +1,23 @@
-﻿La Palette des Actions
-======================
+﻿Actions sur les enregistrements
+===============================
 .. toctree::
     :maxdepth: 3
 
 .. topic:: L'essentiel
 
-    La Palette des Actions dans *Phraseanet Production* permet d'effectuer des
-    actions sur les documents.
+    Les actions sur les enregistrements s'effectuent au moyen de commandes
+    rassemblées dans des palettes d'actions.
 
-    Plusieurs actions sont accessibles à partir de cette :term:`Palette
-    <Palette des Actions>`. Certaines sont des fonctions de base, d'autres des
-    fonctions étendues.
+    La :term:`palette principale <Palette des Actions>` placée sous
+    le formulaire de recherche permet d'agir sur les enregistrements
+    sélectionnés dans la zone d'affichage.
 
-    **Les actions sont accessibles en fonction des droits des utilisateurs**.
-    Ces droits sont tous paramétrables dans l'interface
-    :doc:`Phraseanet Administration <Administration>`.
+    Dans la zone de travail, la palette d'actions du panier ou du reportage
+    ouvert permet d'intervenir sur les enregistrements qu'il contient ou qui
+    y sont sélectionnés.
 
-**Les fonctions de base :**
-
-* :doc:`Exporter <Exporter>`
-* :doc:`Imprimer <Exporter>`
-
-**Les fonctions étendues :**
-
-* `Éditer`_
-* `Déplacer`_
-* `Propriétés`_
-* `Push`_
-* `Supprimer`_
-* `Outils`_
-
-Présentation de la Palette
---------------------------
-
-La Palette des Actions est située dans la partie haute la zone d'affichage,
-au-dessous du formulaire de recherche.
-Selon les droits de l'utilisateur, la palette peut proposer un nombre variable
-d'actions.
-
-.. image:: ../../images/Palette.jpg
-    :align: center
-
-A droite de certains boutons d'action se trouve une flèche permettant l'accès à
-un menu contextuel donnant davantage d'options.
+    Accessibles selon les droits des utilisateurs, certaines de ces commandes
+    sont des fonctions de base, d'autres sont des fonctions étendues.
 
 .. image:: ../../images/Actions-PaletteBeta.jpg
     :align: center
@@ -53,176 +28,167 @@ Les fonctions de base
 Exporter et Imprimer
 ********************
 
-Plusieurs modes d'export sont proposés : le téléchargement, envoyer par email ou
-encore envoyer via le :term:`FTP <FTP>`.
-L'impression complète les fonctions les plus élémentaires de la palette des
-actions.
+.. seealso::
 
-:doc:`Se reporter à la section dédiée à l'Export et à l'impression dans
-Phraseanet <Exporter>`.
+    Consulter :doc:`la page consacrée à l'export et à l'impression <Exporter>`
+    dans la partie consacrée aux fondamentaux.
 
 Les fonctions étendues
 ----------------------
 
-Les fonctions étendues sont accessibles via les boutons de la palette des
-actions ou via des menus contextuels d'actions.
+Les fonctions étendues sont accessibles via les boutons des palettes d'actions
+ou via les menus contextuels de ces boutons.
 
 Éditer
 ******
 
-Cette fonction permet d'éditer des enregistrements dans *Phraseanet* : édition
-des médias, des paniers. Compléter ou modifier les descriptions documentaires
-accompagnant les assets à l'unité ou en lots.
+Cette fonction permet d'éditer les notices des enregistrements. Compléter ou
+modifier les descriptions documentaires accompagnant les *assets* à l'unité ou
+en lots.
 
-:doc:`Se reporter à la section dédiée à l'édition <Editer>`.
+.. seealso::
 
-Le menu contextuel du bouton éditer regroupe également les fonctions *Propriétés*
-et *Déplacer*.
+    Se reporter à :doc:`la section dédiée à l'édition <Editer>`.
+
+Dans la palette principale, le menu contextuel du bouton regroupe les fonctions
+:ref:`Propriétés <Actions-Proprietes>` et :ref:`Déplacer <Actions-Deplacer>`.
+
+.. _Actions-Proprietes:
 
 Propriétés
-^^^^^^^^^^
+**********
 
 Cette action permet de modifier :
 
 * les :term:`status <Status>` des enregistrements
-* les *types mimes* des documents sélectionnés
+* les types des documents sélectionnés
 
-Changer les status des enregistrements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modifier les status des enregistrements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Les :term:`status <Status>` permettent de caractériser des enregistrements en
-leurs affectants des indicateurs correspondants à des états.
-Leurs mises en oeuvre s'effectuent dans *Phraseanet Administration* (définition
-et choix de minilogos associés).
-A travers la gestion des utilisateurs, il est possible de lier des droits
-utilisateurs en fonction de l'état de status.
+Les status permettent de caractériser des enregistrements. Ils apportent des
+informations relatives à leurs états : état d'avancement dans un *workflow*,
+signalement de droits expirés, restriction d'accès à des populations
+d'utilisateurs.
 
 .. note::
 
-    Il existe 32 :term:`status <Status>`. 28 sont paramétrables et
-    peuvent être utilisés pour des besoins de *workflow* ou de mise en place
-    de restrictions d’accès aux enregristrements.
-    Le changement d'état des status est aussi disponible directement
-    depuis la fenêtre :doc:`Éditer <Editer>`.
+    28 status sont paramétrables dans Phraseanet Admin. Ils peuvent mis en
+    oeuvre pour des besoins de workflow, de mise en place de restrictions
+    d'accès aux enregistrements ou de sélection d'enregistrements par des
+    tâches personnalisées.
 
-* Sélectionner une ou plusieurs vignettes, un :term:`panier <Panier>` ou un
-  :term:`reportage <Reportage>` puis cliquer sur Propriétés.
+Pour éditer les status d'enregistrements :
 
-La fenêtre s'ouvre.
+* Sélectionner un ou plusieurs enregistrements dans la zone d'affichage ou dans
+  un panier ou reportage ouvert
+* Cliquer sur le bouton Propriétés dans la palette d'actions correspondante
+* Manipuler les boutons radio pour agir sur l'état des status
+* Cliquer sur Valider pour sauvegarder les modifications
 
-.. image:: ../../images/Actions-Proprietes-status.jpg
-    :align: center
+.. note::
 
-* Cocher la case correspondante au nouveau :term:`status <Status>` (plusieurs
-  status possibles).
-* Cliquer sur **Valider** pour enregistrer les changements.
+    L'édition d'état des status est aussi possible depuis la fenêtre Éditer.
+
+    **Les interfaces étant asynchrones**, les symboles des status affichés sont
+    mis à jour lors du rafraîchissement de l'interface.
 
 Changer le type des documents
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Cette action permet de changer le type des documents attribués automatiquement
-lors de l'import dans *Phraseanet*.
+Cette action permet d'altérer le type des documents attribués automatiquement
+lors de l'import. Elle est utile pour corriger les types des documents importés
+au cas ou ils auraient été mal interprétés par la plateforme sur laquelle
+est déployé Phraseanet.
 
-Elle est utile si des documents ajoutés n’ont pas été correctement interprétés
-et qu’il faut les associer "au bon" type de fichier ou type *mime*.
+* Sélectionner un ou plusieurs enregistrements dans la zone d'affichage ou dans
+  un panier ou reportage ouvert
+* Cliquer sur le bouton Propriétés dans la palette d'actions correspondante
+* Sélectionner l'onglet Type des documents
+* Choix le type à appliquer aux documents. Cette action peut être effectuée à
+  l'unité ou par lot
+* Cliquer sur Valider pour sauvegarder les modifications
 
-* Sélectionner une ou plusieurs vignettes, un :term:`panier <Panier>` ou un
-  :term:`reportage <Reportage>` et cliquer sur **Propriétés**.
-
-La fenêtre s'ouvre.
-
-* Cliquer sur l’onglet **Type** puis changer le type des documents.
-* Cliquer sur **Valider** pour enregistrer les modifications.
-
-.. image:: ../../images/Actions-Proprietes-types.jpg
-    :align: center
+.. _Actions-Deplacer:
 
 Déplacer
-^^^^^^^^
+********
 
-**Déplacer** permet de déplacer des médias d'une :term:`collection <Collection>`
-à une autre.
+L'action déplacer permet de déplacer des médias d'une collection à une autre
+au sein d'une même base.
 
-* Sélectionner une ou plusieurs médias puis cliquer sur la rubrique
-  **Déplacer**.
-
-.. image:: ../../images/Actions-Deplacer.jpg
-    :align: center
-
-* Sélectionner la collection dans laquelle les médias doivent être déplacés
-* Cliquer sur **Valider** pour effectuer l'action.
-
-Les médias sont alors déplacés dans la collection sélectionnée.
+* Sélectionner un ou plusieurs enregistrements dans la zone d'affichage ou dans
+  un panier ou reportage ouvert
+* Cliquer sur le bouton **Déplacer**
+* Sélectionner la collection dans laquelle les enregistrements doivent être
+  déplacés
+* Cliquer sur **Valider** pour effectuer l'action
 
 .. note::
 
-    Asynchrone, l'interface ne rend pas compte du changement de
-    collection. Relancer la recherche sur les médias déplacés si vous voulez
-    contrôler les déplacements effectués.
+    Asynchrone, l'interface ne rend pas compte du changement de collection.
+    Rafraichir l'affichage pour contrôler les déplacements effectués.
 
-Push
-****
+Push, validation, bridge et publications
+****************************************
 
-Le bouton :term:`"push" <Push>` et son menu contextuel regroupe les fonctions de
-*Validation*, le *Bridge* et l'action *Publier*.
+Le bouton Push (et son menu contextuel dans la palette principale) regroupe les
+fonctions de Push, de validation, le Bridge et l'action Publier.
 Ces fonctionnalités permettant de pousser et de promouvoir des enregistrements
 vers des destinataires ou des applications.
 
-* :doc:`Consulter la section dédiée au Push et à la validation<Push>`.
-* :doc:`Consulter la section dédiée au Bridge<Push>`.
-* :doc:`Consulter la section dédiée aux publications<Push>`.
+.. seealso::
 
-Supprimer
-*********
-
-Cette action permet de supprimer des :term:`enregistrements <Enregistrement>`
-(Paniers, documents de la :term:`base`/Collection, Reportages).
-
-* Sélectionner les enregistrements à supprimer puis cliquer sur l'icône le
-  bouton **Supprimer**.
-
-.. image:: ../../images/Actions-Supprimer.jpg
-    :align: center
-
-Une boîte de dialogue demande la confirmation de la suppression.
+    * Consulter la section dédiée au :doc:`Push et à la validation <Push>`
+    * Consulter la section dédiée au :ref:`Bridge <Publier-Bridge>`
+    * Consulter la section dédiée aux :ref:`publications <Publier-Publications>`
 
 Outils
 ******
 
-Outils regroupe des actions permettant d'agir sur les vignettes ou images de
-choix (régénération, substitution, rotation, choix de la vignette pour les
-vidéo), sur la substitution de documents orignaux ou de sous définitions, ou
-d’afficher toutes les informations de métadonnées existantes dans un document
-sélectionné.
+Le bouton Outils regroupe des actions qui permettent d'agir sur :
 
-* Sélectionner un document ou plusieurs puis cliquer sur **Outils**.
+* **Les vignettes ou images de choix** (régénération, substitution, rotation,
+  choix de la vignette pour les vidéos)
+* **La substitution de documents orignaux ou de sous définitions** si la
+  fonctionnalité est activée dans le paramétrage de l'application
+* **D'afficher les informations de métadonnées** existantes dans un document
+  sélectionné
 
-La fenêtre Outils s'ouvre.
+Sélectionner un ou plusieurs documents dans la zone d'affichage ou dans un
+panier ou reportage ouvert dans la zone de travail puis cliquer sur le bouton
+Outils. Choisir un des onglets proposés :
 
-.. image:: ../../images/Actions-Outilsimages.jpg
-    :align: center
+* **Régénération de sous-définitions** : pour recréer les vignettes et
+  sous-définitions à partir des documents originaux des enregistrements
+  sélectionnés
+* **Outils vidéos** : Disponible si et seulement si l'unique média sélectionné
+  est de type vidéo, l'onglet propose les outils permettant le choix d'une
+  vignette de présentation personnalisée.
+* **Rotation** : permet des rotations des vignettes et des sous-définitions
+  pour les médias sélectionnés
+* **Substitution** : Permet de remplacer le document original par un autre. Une
+  case à cocher permet de choisir si la vignette et l'image de choix doivent
+  être reconstruites
+* **Substitution des sous-défs** : pour remplacer la vignette par un autre
+  visuel
+* **Métadonnées** : pour afficher l'ensemble des informations de métadonnées
+  lues par l'utilitaire **Exiftool** dans le média original du document
+  sélectionné (cet onglet n'est disponible que si un seul document est
+  sélectionné)
 
-Choisir un des onglets proposés :
+Supprimer
+*********
 
-* **Régénération de sous-définitions** : pour recréer de nouvelles vignettes et
-  sous-définitions les enregistrements sélectionnés.
-* **Outils vidéos** : Disponible si et seulement si le média sélectionné est
-  sélectionné, l'onglet propose les outils permettant le choix d'une vignette
-  de présentation personnalisée.
+**Dans la zone d'affichage**, l'action Supprimer permet de supprimer des
+enregistrements (documents, paniers ou reportages).
 
-.. image:: ../../images/Actions-OutilsThumbnailVideo.jpg
-    :align: center
+* Sélectionner un ou plusieurs enregistrements dans la zone d'affichage ou
+  dans un panier ou reportage ouvert
+* Cliquer sur le bouton Supprimer puis confirmer pour supprimer les éléments
+  sélectionnés
 
-* **Rotation** : permet des rotations de vignettes et d'images de
-  choix pour les médias sélectionnés.
-* **Substitution** : Permet de remplacer le document original par un
-  autre. Une case à cocher permet de choisir si la vignette et l’image de
-  choix doivent être reconstruites.
-* **Substitution des sous-défs** : Pour remplacer la vignette et l’image de
-  choix par un autre fichier.
-* :term:`Métadonnées <Métadonnées>` : Permet d’afficher l’ensemble
-  des informations de métadonnées :term:`EXIF <EXIF>`, :term:`IPTC <IPTC>`,
-  :term:`XMP <XMP>` lisibles dans un document sélectionné. Cet onglet n'est
-  disponible que si un seul document est sélectionné.
-
-Pour appliquer les modifications apportées, cliquer sur **Valider**.
+**Dans la zone de travail**, cliquer sur Supprimer dans la palette d'actions
+d'un panier ou reportage ouvert supprime le panier ou le reportage.
+Dans le cas d'un reportage, une case à cocher permet de choisir si les
+documents contenus dans le reportage doivent être supprimés.

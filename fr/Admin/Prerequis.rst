@@ -2,7 +2,7 @@ Pré-requis
 ==========
 
 Phraseanet est conçu pour fonctionner sur un système AMP dont la configuration
-nécessite quelques besoins spécifiques ou dépendances.
+nécessite des besoins spécifiques et des dépendances.
 
 Serveur HTTP
 ------------
@@ -15,15 +15,17 @@ L'un des serveurs au choix :
 Base de données
 ---------------
 
-Phraseanet requiert un moteur de stockage de type InnoDB. Sans être une obligation, l’équipe
-des développeurs de Phraseanet recommandent fortement l’usage du SGBD MariaDB en remplacement de MySQL.
+Phraseanet requiert un moteur de stockage de type InnoDB. Sans être une
+obligation, l’équipe des développeurs de Phraseanet recommandent fortement
+l’usage du SGBD MariaDB en remplacement de MySQL.
 
 * MariaDB >= 5.1
 
 PHP
 ---
 
-* PHP >= 5.3.4 avec les extensions :
+* Phraseanet requiert une version de PHP supérieure ou égale à 5.3.4 avec les
+  extensions suivantes :
 
     * Dom
     * exif
@@ -48,14 +50,17 @@ PHP
     * JSON
     * gettext
 
-Spécifique Phraseanet
----------------------
+Spécifique pour Phraseanet
+--------------------------
 
-* Extension php-phrasea
+.. _Installer-Extension:
 
-  Il est nécessaire d'installer l'extension php-phrasea pour utiliser Phraseanet.
+* **Extension php-phrasea**
 
-  Téléchargez et installez la :
+  Il est nécessaire d'installer l'extension php-phrasea pour utiliser
+  Phraseanet et son moteur d'indexation par défaut Phrasea Engine.
+
+  A télécharger et puis à installer de la façon suivante :
 
 .. code-block:: bash
 
@@ -66,11 +71,19 @@ Spécifique Phraseanet
     make
     make install
 
-* Phraseanet Indexer
+.. note::
 
-  Indexation texte-plein / thésaurus Phraseanet Indexer.
-  C’est notre moteur d’indexation, il est nécessaire autant pour l’indexation
-  texte-plein que pour l’indexation thésaurus.
+  Sous Linux et OSX, le processus d'installation copie l'extension à
+  l'emplacement des extensions PHP.
+
+.. _Installer-Indexeur:
+
+* **Phraseanet Indexer**
+
+  C’est le moteur d’indexation natif de Phraseanet. Il est utilisé pour
+  l’indexation "texte-plein", "valeur" et "thésaurus.
+
+  A télécharger et puis à installer de la façon suivante :
 
 .. code-block:: bash
 
@@ -80,6 +93,18 @@ Spécifique Phraseanet
     ./configure
     make
     sudo make install
+
+.. note::
+
+  Sous Linux et OSX, le processus d'installation copie l'indexeur à
+  l'emplacement des binaires.
+
+**Sous Windows**, les installations de l'extension et de l'indexeur sont
+différentes.
+
+.. seealso::
+
+  :ref:`Se reporter au paragraphe consacré au moteur de recherche Phrasea Engine<Phrasea-Engine>`.
 
 Locales
 -------
@@ -127,17 +152,17 @@ des programmes externes suivants :
   postscript.
 
 * XPDF
-  Extraction du text PDF pour son indexation
+  Extraction du text PDF pour son indexation.
 
 * SWFTools
-  Extraction de sous resolutions pour le format flash
+  Extraction de sous resolutions pour le format flash.
 
 * Unoconv
   Extraction d'imagettes et de preview sur les documents office.
 
 * MP4Box
   Déplacement des métadonnées des fichiers h264 en début de fichier en vue de
-  leur utilisation en pseudo-stream (voir documentation spécifique)
+  leur utilisation en pseudo-stream (voir documentation spécifique).
 
 Clefs d'APIs (optionnelles)
 ---------------------------

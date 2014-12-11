@@ -1,48 +1,40 @@
 Le menu Phraseanet
-------------------
+==================
 .. toctree::
     :maxdepth: 2
 
 .. topic:: L'essentiel
 
-    La barre de menu *Phraseanet* permet d'accéder aux différentes interfaces de
+    La barre de menu *Phraseanet* permet l'accès aux différentes interfaces de
     l'application, aux paramètres du compte utilisateur ainsi qu'à des
     informations et ressources.
 
-.. image:: ../../images/MenuPhraseanet.jpg
-    :align: center
-
 Accès aux interfaces
-********************
+--------------------
 
-Toutes les interfaces *Phraseanet* proposent en haut de leurs fenêtres un menu
-identique au sein d'une barre de menu.
+Les interfaces *Phraseanet* proposent en haut de leurs fenêtres une barre de
+menu.
 
-**La partie gauche de la barre de menu affiche la liste des interfaces
-auxquelles l'utilisateur à accès.** En cliquant sur le nom d'une application,
-le navigateur internet lance celle-ci dans un nouvel onglet ou une nouvelle
-fenêtre.
+**La partie gauche de la barre de menu liste les interfaces auxquelles
+l'utilisateur à accès.** Cliquer sur le nom de l'application pour la lancer dans
+un nouvel onglet ou une nouvelle fenêtre du navigateur.
 
 **Les rubriques de la barre de menu sont fonctions des droits de
 l'utilisateur.**
 
-Les utilisateurs dont les droits se limitent à la consultation du fonds ont
-accès à un nombre limité de rubriques.
+Si l'utilisateur n'a pas accès à certaines fonctionnalités,
+le lien vers l'interface l'exploitant n'apparaît pas dans la barre de menu.
+Ainsi, les utilisateurs dont les droits se limitent à la consultation du fonds
+ont accès à un nombre limité de rubriques.
 
 .. image:: ../../images/General-menu0.jpg
     :align: center
 
-D'autres, tels les administrateurs disposent d'une barre de menu plus complète.
+D'autres, comme les administrateurs fonctionnels disposent d'une barre de menu
+plus complète.
 
 .. image:: ../../images/General-menu1.jpg
     :align: center
-
-.. note::
-
-    Une interface est manquante dans la barre de menu ? C'est une question de
-    droits.
-    Si l'utilisateur n'a pas accès à certaines fonctionnalités, le lien
-    vers l'interface l'exploitant n'apparaît pas.
 
 **La partie droite de la barre de menu** affiche les notifications,
 l'identifiant du compte, l'aide en ligne avec les raccourcis clavier et le lien
@@ -52,121 +44,118 @@ de déconnexion.
     :align: center
 
 Accès aux notifications
-***********************
+-----------------------
 
 Les notifications sont des messages informatifs affichés en temps réel dans l'
-interface *Phraseanet Production*.
-Elles renseignent l'utilisateur sur les nouvelles publications disponibles, les
-demandes de validation, la réception de paniers... *etc*.
+interface *Production*.
+Elles renseignent l'utilisateur sur des événements : nouvelles publications,
+réceptions de paniers, demandes de validation, ... *etc*.
 
-.. image:: ../../images/General-notifications.jpg
-    :align: center
+**Cliquer sur la rubrique Notifications pour les afficher**.
 
-Se reporter à la section
-:doc:`personnaliser l'interface <PersonnaliserInterface>`.
+Les notifications affichées dans l'interface sont relayées par l'envoi
+d'e-mail. Pour gérer les notifications reçues, accéder à
+:ref:`l'onglet Informations <MenuPhraseanet-Informations>` des paramètres de
+compte.
 
 Accès aux paramètres du compte
-******************************
+------------------------------
 
-Cliquer sur l'identifiant utilisateur affiché.
+Cliquer sur l'identifiant utilisateur pour accéder aux paramètres du compte.
 Une nouvelle page s'ouvre et présente des formulaires et des listes groupés dans
 des onglets thématiques.
 
 .. image:: ../../images/Moncompte.jpg
     :align: center
 
-Informations
-^^^^^^^^^^^^
+.. _MenuPhraseanet-Informations:
 
-L'onglet Informations regroupes les informations personnelles. Le formulaire
-proposé permet de compléter ou de modifier les informations relatives à
-l'identité, aux coordonnées postales, téléphoniques, d'email, de paramétrer la
-réception des notifications *Phraseanet* adressées par email ou d'activer un
-compte :term:`FTP` permettant la réception de documents sur un serveur
-supportant ce type de connexion.
+L'onglet Informations
+*********************
 
-.. note::
+Il regroupe les informations personnelles. Le formulaire permet de compléter ou
+de modifier :
 
-    :doc:`Comment activer la réception de documents sur un serveur FTP ? <../../FAQ/Parametrage/activer-ftp>`
+* les informations d'identité,
+* les coordonnées postales, téléphoniques ou d'e-mail,
+* de paramétrer la réception de notifications par e-mail
+* d'éditer un favori :term:`FTP` permettant la réception de documents sur un
+  serveur supportant ce type de connexion.
 
-Accès
-^^^^^
+.. seealso::
 
-L'onglet *Accès* liste les bases et collections de l'application Phraseanet.
-Il mentionne les collections auxquelles l'utilisateur connecté a accès.
-L'utilisateur peut à tout moment effectuer une demande d'accès à des collections
-supplémentaire qui lui sont proposées.
+    :doc:`Activer la réception de documents sur un serveur FTP <../../FAQ/Parametrage/activer-ftp>`
 
-Pour faire une demande et accéder à de nouvelles bases ou collections de
-documents et en visualiser le contenu :
+L'onglet Accès
+**************
 
-* Cocher une ou plusieurs cases pour demander l'accès à de nouvelles
-  Bases/ Collections
-* Valider la demande en cliquant sur le bouton *Valider*
+Il liste les collections sur lesquelles l'utilisateur peut effectuer des
+demandes d'accès.
 
-Un message indique alors qu'une demande d'accès est en cours.
+Pour faire une demande d'accès à de nouvelles bases ou collections :
+
+* Cocher la ou les cases correspondantes aux accès aux nouvelles
+  Bases/Collections
+* Valider la demande en cliquant sur le bouton **Valider**
+
+Un message indique alors qu'une demande d'accès est en cours. Elle nécessite
+d'être examinée par un administrateur pour validation.
 
 .. image:: ../../images/Accesbasescoll.jpg
     :align: center
 
-Sessions
-^^^^^^^^
+L'onglet Sessions
+*****************
 
-La section *Sessions* liste les sessions Phraseanet de l'utilisateur. Elle donne
-des informations relatives aux dates de connexion et d'accès, aux adresses IP,
-et navigateurs utilisés.
+Il liste les sessions de l'utilisateur et donne des informations relatives aux
+dates de connexion et d'accès, aux adresses IP, et navigateurs utilisés.
 
 .. image:: ../../images/ListeSessions.jpg
     :align: center
 
-Pour mettre fin à une des sessions listées utiliser le bouton prévu à cet effet.
+Cliquer sur le bouton **Mettre fin à la session** pour supprimer une session
+active.
 
-Applications
-^^^^^^^^^^^^
+L'onglet Applications
+*********************
 
-La section *Applications* liste les applications tierces autorisées à se
-connecter au compte Phraseanet de l'utilisateur.
+Il liste les applications tierces autorisées à se connecter au compte Phraseanet
+de l'utilisateur.
 
 .. image:: ../../images/ListeApplications.jpg
     :align: center
 
-.. note::
+.. seealso::
 
-  :doc:`Comment autoriser une application tierce à se connecter à mon compte Phraseanet ? <../../FAQ/Utilisateurs/ajouter-application>`
+  :doc:`Autoriser une application tierce à se connecter à un compte Phraseanet <../../FAQ/Utilisateurs/ajouter-application>`
 
-Développeur
-^^^^^^^^^^^
+L'onglet Développeur
+********************
 
-La section *Développeur* permet la mise en place de clés d':term:`API` afin que
-des applications tierces puissent communiquer avec un compte Phraseanet. Un lien
-vers la documentation destinée aux développeurs est disponible dans cette
-section afin de découvrir comment mettre en oeuvre l'API *Phraseanet*.
+Il permet la mise en place des clés d':term:`API` pour que des applications
+tierces puissent communiquer avec Phraseanet.
 
-Accès à l'aide en ligne
-***********************
+.. seealso::
 
-En cliquant sur l'onglet "Aide", l'utilisateur est redirigé vers l'accueil de la
-documentation en ligne.
-En cliquant sur la flèche près de l'aide, deux sous-onglets apparaissent : les
-*Raccourcis claviers*, et *A propos*.
+  :doc:`Consulter la section API de la documentation Développeur <../../Devel/API/V1>`
+
+
+Rubriques d'aide
+----------------
+
+Cliquer sur *Aide* pour consulter la documentation en ligne.
+Cliquer sur la flèche contiguë à la rubrique d'aide donne accès à deux
+sous-rubriques :
 
 .. image:: ../../images/General-menu3.jpg
     :align: center
 
-La rubrique *Raccourcis* permet d'afficher un récapitulatif des raccourcis
-claviers disponibles dans *Phraseanet*.
-
-.. image:: ../../images/General-raccourcis.jpg
-    :align: center
-
-La rubrique *A propos* permet d'afficher les informations de version de
-Phraseanet.
-
-.. image:: ../../images/General-Version.jpg
-    :align: center
+* La rubrique *Raccourcis* affiche un récapitulatif des raccourcis claviers
+  disponibles
+* La rubrique *A propos* affiche les informations de version de Phraseanet
 
 Se déconnecter
-**************
+--------------
 
-Cliquer *Déconnexion* pour mettre fin à la session et quitter *Phraseanet*.
-
+Cliquer sur **Déconnexion** pour mettre fin à la session et quitter
+*Phraseanet*.
