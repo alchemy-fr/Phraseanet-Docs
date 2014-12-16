@@ -582,3 +582,16 @@ Access is allowed for this duration (in seconds).
 
  
 .. _YAML: https://wikipedia.org/wiki/Yaml
+
+Storage settings
+****************
+
+It is possible to configure storage path for:
+
+  - sub-definition (aka data path)
+  - cache
+  - logs
+  - download temporary files
+  - quarantined files
+  - caption files
+
