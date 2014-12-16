@@ -10,6 +10,15 @@ Un plugin Phraseanet est un dossier dans lequel se trouve un fichier
 la résolution des dépendances du plugin et d'un dossier **public** contenant
 une arborescence à exposer publiquement (icônes, css, js, etc...).
 
+Lister les plugins installés
+----------------------------
+
+Il est possible de lister les plugins installés :
+
+.. code-block:: none
+
+    bin/setup plugins:list
+
 Ajout/Suppression de plugins
 ----------------------------
 
@@ -19,13 +28,30 @@ Ajouter un plugin :
 
 .. code-block:: none
 
-    bin/console plugin:add /chemin/vers/le/plugin
+    bin/setup plugins:add /chemin/vers/le/plugin
 
 Enlever un plugin :
 
 .. code-block:: none
 
-    bin/console plugin:remove nom-du-plugin
+    bin/setup plugins:remove nom-du-plugin
+
+Activation/Désactivation de plugins
+-----------------------------------
+
+Deux commandes permettent d'activer et désactiver des plugins :
+
+Activer un plugin :
+
+.. code-block:: none
+
+    bin/setup plugins:enable /chemin/vers/le/plugin
+
+Désactiver un plugin :
+
+.. code-block:: none
+
+    bin/setup plugins:disable nom-du-plugin
 
 Structure des plugins
 ---------------------
