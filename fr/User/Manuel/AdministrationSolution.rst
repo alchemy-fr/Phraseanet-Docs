@@ -130,6 +130,7 @@ Gestionnaire de tâches
 
 **Accessible aux seuls administrateurs Phraseanet**, la rubrique permet de
 gérer les tâches qui concourent au fonctionnement de l'application.
+
 Les tâches sont listées dans un tableau qui indique leurs identifiants,
 activités et noms.
 
@@ -138,18 +139,20 @@ Effectuer un clic droit sur le menu contextuel de la tâche pour :
 * Démarrer ou arrêter une tâche
 * Editer les paramètres d'une tâche (elle doit être préalablement arrêtée)
 
+Tâches standards
+****************
+
+La solution est livrée en standard avec un jeu de tâches pour l'exploitation :
+
+* **Tâche d'indexation**
+* **Création de sous définitions**
+* **Ecriture de métadonnées**
+
 Nouvelle tâche
 **************
 
-Le paramétrage de tâches permet de mettre en place des automatismes de
-traitement. La solution est livrée en standard avec un jeu de tâches pour
-l'exploitation :
-
-* Tâche d'indexation
-* Création de sous définitions
-* Ecriture de métadonnées
-
-Les administrateurs peuvent en ajouter d'autres :
+Les administrateurs peuvent en ajouter d'autres et mettre en place des
+automatismes de traitement sur les enregistrements d'une base :
 
 * Sélectionner un des modèles de tâches disponibles dans le menu déroulant
   **Nouvelle tâche**.
