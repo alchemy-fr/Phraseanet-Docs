@@ -1,7 +1,9 @@
 Apache
 ======
 
-Configuration d'un virtual host Apache 2 pour Phraseanet :
+L'exemple suivant présente la configuration d'un *virtual host* Apache 2 pour
+Phraseanet dans le cas d'un répertoire d'installation nommé Phraseanet dans
+*/var/www/* :
 
 .. code-block:: bash
 
@@ -62,7 +64,7 @@ directives Apache 2 avec la commande `xsendfile:dump-configuration`
 
     bin/console xsendfile:dump-configuration
 
-Il suffit de copier-coller ce code dans le virtual host Apache et de recharger
+Il suffit de copier-coller ce code dans le *virtual host* Apache et de recharger
 Apache.
 
 .. warning::
@@ -71,7 +73,7 @@ Apache.
     à refaire à chaque création de databox ou lors de la modification de la
     structure des sous définitions de l'une d'elles.
 
-Example de virtual host Apache intégrant une configuraton sendfile :
+Exemple de *virtual host* Apache intégrant une configuraton sendfile :
 
 .. code-block:: bash
 
@@ -110,8 +112,8 @@ Configuration H264 Pseudo-streaming
 
 Depuis la version 3.8.4, la configuration H264 pseudostreaming de Phraseanet
 est simplifiée. Une commande de l'utilitaire `bin/console` permet de générer les
-mappings pour la configuration Phraseanet, une seconde permet d'en générer le
-supplément de configuration Apache 2.
+mappings pour la configuration Phraseanet. Une autre permet de générer le
+supplément de configuration pour Apache 2.
 
 .. note::
 
@@ -139,16 +141,17 @@ directives apache 2 avec la commande `h264-pseudo-streaming:dump-configuration`
 
     bin/console h264-pseudo-streaming:dump-configuration
 
-Il suffit de copier-coller ce code dans le virtual host Apache et de recharger
+Il suffit de copier-coller le code dans le *virtual host* Apache et de recharger
 Apache.
 
 .. warning::
 
-    L'opération de génération des mappings et de mise à jour du virtual host est
-    à refaire à chaque création de databox ou lors de la modification de la
+    L'opération de génération des mappings et de mise à jour du *virtual host*
+    est à refaire à chaque création de databox ou lors de la modification de la
     structure des sous définitions de l'une d'elles.
 
-Example de virtual host Apache intégrant une configuraton h254 pseudo-streaming :
+Exemple de *virtual host* Apache intégrant une configuraton h254
+pseudo-streaming :
 
 .. code-block:: bash
 

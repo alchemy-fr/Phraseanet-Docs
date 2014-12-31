@@ -20,13 +20,16 @@ et
 
     unzip alchemy-fr-Phraseanet-v3.8.x.zip
 
-Dans le répertoire d'installation *Phraseanet*, vérifier
-:doc:`les prérequis <Prerequis>` au moyen de la commande suivante, exécutée à
-la racine de l’installation :
+**Bien que cela ne soit pas obligatoire** (mais plutôt conseillé), vérifier
+:doc:`les prérequis <Prerequis>` au moyen de la commande suivante, à exécuter à
+la racine du répertoire d’installation :
 
 .. code-block:: bash
 
     php bin/setup check:system
+
+Cette commande effectue une vérification de l'environnement. Il liste les points
+qui nécessitent d'être corrigés pour installer l'application avec succès.
 
 .. seealso::
 
