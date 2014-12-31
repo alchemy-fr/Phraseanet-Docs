@@ -132,7 +132,7 @@ The installation process starts.
     :align: center
 
 To make the system operational, it is necessary to
-:ref:`start the task manager <start-scheduler>`.
+:ref:`start the tasks manager <start-tasks>`.
 
 .. _install-graphic-mode:
 
@@ -193,9 +193,9 @@ Click on the **Next** button to start the procedure.
 
 * At the end of the process the user is leaded to the Tasks Manager
   section of Phraseanet Admin. It remains
-  :ref:`to start the scheduler <start-scheduler>`.
+  :ref:`to start the tasks manager <start-tasks>`.
 
-.. _start-scheduler:
+.. _start-tasks:
 
 Tasks start
 -----------
