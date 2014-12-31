@@ -94,9 +94,9 @@ La procédure d'installation s'initialise.
   .. image:: ../images/Admin_Install_cli-01.jpg
     :align: center
 
+
 * Si les deux bases créées sont disponibles, **poursuivre**, sinon,
   :ref:`les créer <install-create-database>`
-
 
 * **Renseigner les informations de connexion au serveur de base de données**
   puis indiquer le nom de la base exploitée par l'*Application box*
@@ -106,7 +106,7 @@ La procédure d'installation s'initialise.
 * **Indiquer la langue à utiliser** (**fr** ou **en**) pour la structure
   documentaire initiale
 
-* **Créer un compte administrateur** : indiquer une adresse e-mail valide ansi
+* **Créer un compte administrateur** : indiquer une adresse e-mail valide ainsi
   qu'un mot de passe de connexion.
 
 .. note::
@@ -195,7 +195,8 @@ de l'écran d’accueil :
 * Cliquer sur le bouton *Install* pour lancer le script d'installation
 
 A l'issu du processus l'utilisateur est conduit à la rubrique **Gestionnaire de
-tâches** de l'Administration. Il reste à démarrer les tâches.
+tâches** de l'Administration. Il reste à
+:ref:`démarrer les tâches <demarrage-scheduler>`.
 
 .. _demarrage-scheduler:
 
@@ -209,6 +210,7 @@ Si l'installer en mode graphique conduit d'utilisateur à cette rubrique, les
 utilisateurs effectuant l'installation en ligne de commande doivent, à partir de
 la page d'accueil de l'application :
 
+* Avec un navigateur, **se rendre à l'url de l'application**
 * **S'authentifier avec le compte administrateur** créé lors de l'installation
 * **Cliquer sur la rubrique Admin** de :doc:`la barre de menu Phraseanet <../User/Manuel/MenuPhraseanet>`
 * **Cliquer sur la rubrique** :ref:`Gestionnaire de tâches <Edition-de-taches>`
@@ -235,9 +237,9 @@ Pour utiliser *Phraseanet* il est nécessaire de disposer d'au moins une
 :term:`collection <Collection>`. Une collection *test* est créée par les
 programmes d'installation pour effectuer les essais de fonctionnement.
 
-La structure documentaire peut être paramétrée pour s’adapter aux besoins du
-projet et des documents peuvent être importés via le module
-:doc:`Upload <../User/Manuel/Importer>`.
+La structure documentaire (champs documentaires, fichiers de sous-résolution)
+peut être paramétrée pour s’adapter aux besoins du projet et des documents
+peuvent être importés via le module :doc:`Upload <../User/Manuel/Importer>`.
 
 .. seealso::
 

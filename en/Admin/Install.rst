@@ -1,14 +1,35 @@
 Install
 =======
 
-After download, unpack the sources to a choosen install directory.
+Get the sources
+---------------
 
-Verify :doc:`prerequisite <Prerequisite>` using this command at the root of the
+On the server, download Phraseanet sources from the download page of
+`Phraseanet.com`_ then unpack the Zip file to the chosen install directory.
+
+**For example**, this can be done with the following commands:
+
+.. code-block:: bash
+
+    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v3.8.x.zip
+
+And
+
+.. code-block:: bash
+
+    unzip alchemy-fr-Phraseanet-v3.8.x.zip
+
+
+Although it is not mandatory (but highly recommended), verify
+:doc:`prerequisites <Prerequisite>` using the following command at the root of
 Phraseanet install directory:
 
 .. code-block:: bash
 
     php bin/setup check:system
+
+This command performs a check of the environment. It lists the points that need
+to be corrected to install successfully the application.
 
 .. seealso::
 
@@ -26,6 +47,8 @@ to configure it:
 
     Configuration/Nginx
     Configuration/Apache
+
+.. _install-create-database:
 
 Creating databases for Phraseanet
 ---------------------------------
@@ -46,29 +69,80 @@ The database server used can be a local or a remote server.
 Setup
 -----
 
-Setup is made in two steps. The first one consists in launching a setup
-commandline in a terminal, the second is a series of forms to fill in a web
-interface.
+*Phraseanet* can be installed in two ways:
 
-Initiate installation
-*********************
+* :ref:`In Command-line mode <install-cli>` since version 3.8
 
-Since 3.8, Phraseanet features a built in setup system commandline used to
-initiate install.
+**Or**
 
-Run the following command at the root of the Phraseanet install directory:
+* :ref:`In graphic mode <install-graphic-mode>`
+
+.. _install-cli:
+
+Install in command-line
+***********************
+
+Phraseanet features a built in setup system command-line.
+
+Run the following command at the root of Phraseanet install directory:
 
 .. code-block:: bash
 
     bin/setup system:install
 
-Installation settings
-*********************
+The installation process starts.
 
-To continue the install process, launch a browser and go to the root URL of
-the application.
+  .. image:: ../images/Admin_Install_cli-01.jpg
+    :align: center
 
-A set of screens containing forms helps to finalize setup by collecting
+* **If the two required databases are available, continue**, otherwise
+  :ref:`create them <install-create-database>`
+
+* **Provide the login information to the database server**, and specify the name
+  of the database operated by the *Phraseanet Application box*.
+
+* Indicate the name of the database operated by the *Phraseanet Data box*
+
+* **Indicate a language** (**en** for english, **fr** for french) to use for
+  documentaries fields
+
+* **Create an administrator account**: enter a valid email address and a
+  password for connection.
+
+.. note::
+
+    Please note that the provided email address is used as the account
+    identifier.
+
+* **Set the media storage path**
+
+.. note::
+
+    * **To use the default storage path**, answer **N**
+
+    * **To use another directory**, answer **y**. The directory must exists
+      and Phraseanet application must be able to read and write in it.
+
+* **Provide a name** to the Phraseanet instance server
+
+* **Start the installation process** and wait until the *Install successful*
+  message
+
+  .. image:: ../images/Admin_Install_cli-02.jpg
+    :align: center
+
+To make the system operational, it is necessary to
+:ref:`start the task manager <start-scheduler>`.
+
+.. _install-graphic-mode:
+
+Install in graphic mode
+***********************
+
+For a GUI installation, launch a browser and go to the root URL of the
+application. User is redirected to */setup/installer/* page.
+
+A set of screens containing forms helps to configure *Phraseaent* by collecting
 informations related to binaries and storage paths, admin account or databases
 connection parameters.
 
@@ -84,46 +158,85 @@ Click on the **Next** button to start the procedure.
   .. image:: ../images/Admin_Install_screen-02.jpg
       :align: center
 
+.. note::
+
+    The entered email address is used as the administrator account login.
+
 * Enter parameters for connection to the database dedicate to the Application
   box then follow
 
   .. image:: ../images/Admin_Install_screen-03.jpg
       :align: center
 
-* Check and modify if required storage path for documents then follow
+* Provide a storage path for documents then follow
 
   .. image:: ../images/Admin_Install_screen-04.jpg
       :align: center
 
-* Enter parameters for connection to the database dedicate to the Phraseanet
-  Databox then click on the **Install** button
+.. note::
+
+    The directory must exist and *Phraseanet* must be able to read and
+    write in it.
+
+* Enter the name of the database for the *Phraseanet Data box*
+
+* Select the language to use for the initial documentaries fields (**en** for
+  english, **fr** for french)
+
+* The installation program creates the necessary tasks to run the application.
+  **Leave the checkboxes checked**.
 
   .. image:: ../images/Admin_Install_screen-05.jpg
       :align: center
 
-Task start
-----------
+* **Click on the Install button** to start the installation script.
 
-The installation process takes care of launching the required tasks to run
+* At the end of the process the user is leaded to the Tasks Manager
+  section of Phraseanet Admin. It remains
+  :ref:`to start the scheduler <start-scheduler>`.
+
+.. _start-scheduler:
+
+Tasks start
+-----------
+
+Tasks start can be done in the Task manager section in the Admin module of
 Phraseanet.
 
-For a manual launch or a simple check by within the interface:
+If the GUI install mode leads to this section after performing the whole setup,
+user performing the installation in command-line must login from the homepage
+of the application:
 
-* Login using the Administrator account
-* Launch the Admin interface
-* Click on **Task Manager** item
-* Check the Scheduler and tasks states
+* Reach the homepage of the application
 
-Alternative method consists in using the **bin/console commandline** tool
-detailled :doc:`here <Console>`.
+* Login using the Administrator account created in the setup step
+
+* Click on the Admin item in
+  :doc:`the Phraseanet menu bar<../User/Guide/PhraseanetMenu>`
+
+* Click on the :ref:`Task Manager <Tasks-Manager>` item in the left side menu
+
+**To start tasks**, click on the *Start* item in the contextual menu of
+Scheduler.
+
+  .. image:: ../images/Admin_Scheduler_start.jpg
+    :align: center
+
+.. note::
+
+    Alternative method consists in using the **bin/console commandline** tool
+    detailled :ref:`here <alternative-scheduler-start>`.
 
 Congrats! Your install is finished!
 
 To start using Phraseanet it is necessary to
-:doc:`create at least one collection <../User/Guide/AdministrationBasesCollections>`.
+:doc:`have at least one collection <../User/Guide/AdministrationBasesCollections>`.
+Both set up procedures create a Phraseanet collection named *test* that can be
+used for tries.
 
-Documentaries fields can be adjusted to suit the needs of the project and
-documents can be added via Phraseanet Upload.
+Documentaries fields and subviews parameters can be adjusted to suit the needs
+of the project and documents can be added *via* Phraseanet
+:doc:`Upload <../User/Guide/Import>`.
 
 .. seealso::
 
@@ -131,3 +244,4 @@ documents can be added via Phraseanet Upload.
     :doc:`Phraseanet bases and collections administration <../User/Guide/AdministrationBasesCollections>`
     and about :doc:`documents upload <../User/Guide/Import>` in the user manual.
 
+.. _Phraseanet.com: https://www.phraseanet.com/en/download/
