@@ -141,7 +141,7 @@ directives apache 2 avec la commande `h264-pseudo-streaming:dump-configuration`
 
     bin/console h264-pseudo-streaming:dump-configuration
 
-Il suffit de copier-coller le code dans le *virtual host* Apache et de recharger
+Copier-coller le code affiché dans le *virtual host* Apache et recharger
 Apache.
 
 .. warning::
