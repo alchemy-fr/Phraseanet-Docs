@@ -64,7 +64,7 @@ The database server used can be a local or a remote server.
 .. note::
 
   Depending on your choices, it may be necessary to create a specific MySQL
-  user to exploit the created database for Phraseanet.
+  user to exploit the created databases for Phraseanet.
 
 Setup
 -----
@@ -75,7 +75,7 @@ Setup
 
 **Or**
 
-* :ref:`In graphic mode <install-graphic-mode>`
+* :ref:`In graphic mode <install-gui>`
 
 .. _install-cli:
 
@@ -134,7 +134,7 @@ The installation process starts.
 To make the system operational, it is necessary to
 :ref:`start the tasks manager <start-tasks>`.
 
-.. _install-graphic-mode:
+.. _install-gui:
 
 Install in graphic mode
 ***********************
