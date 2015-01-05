@@ -11,6 +11,8 @@ Scheduler
 You will find in the Scheduler context menu what you need to start, stop, watch
 logs of the tasks.
 
+.. _alternative-scheduler-start:
+
 Alternative starts and stops
 ****************************
 

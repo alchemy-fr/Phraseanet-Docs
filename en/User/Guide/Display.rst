@@ -28,10 +28,10 @@ The workspace of Production is divided in 4 parts:
 
 * **1. The search form** allows to search media and stories
 * **2. The display area** displays the results of a search
-* **3. The work zone** regroups the baskets and stories tab, the suggestions tab
-  and the Thesaurus tab. It is minimizable.
-* **4. The Actions palette** allows to act on records. Refer to the dedicated
+* **3. The Actions palette** allows to act on records. Refer to the dedicated
   page in :doc:`Actions Palette<Actions>`.
+* **4. The work zone** regroups the baskets and stories tab, the suggestions tab
+  and the Thesaurus tab. It is minimizable.
 
 The lower banner allows access to the **Display preferences**, informs on the
 results number and displays a pagination of the results. This index allows to

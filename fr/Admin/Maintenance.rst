@@ -10,7 +10,7 @@ La sauvegarde devra donc prendre en compte de façon synchrone ses
 deux éléments.
 S'ajoute à ces éléments, les fichiers sources de l'application.
 
-Les données Physiques
+Les données physiques
 *********************
 
 Les données physiques sont stockées dans des répertoires prédéfinis à
@@ -36,16 +36,16 @@ intégré à l'application permet de lancer une sauvegarde de l'ensemble des bas
 
 Cette commande peut être incluse dans un script de sauvegarde.
 
-Les sources de L'application
+Les sources de l'application
 ****************************
 
 Les sources de l'application ne sont en général modifiées qu'en cas de
-Mise à jour.
+mise à jour.
 
 Néanmoins il peut être judicieux de faire une sauvegarde ponctuelle des sources
 après l’installation ou le paramétrage.
 
-.. note:
+.. note::
 
     Vous ne devriez normallement juste avoir à sauvegarder que le dossier
     config  qui contient vos informations de setup

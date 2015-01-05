@@ -121,30 +121,44 @@ Modify or delete a feed
 * Click on the title of a feed to modify its properties
 * To delete a feed, click on the button **Delete**
 
-Task manager
-------------
+.. _Tasks-Manager:
+
+Tasks manager
+-------------
 
 **Accessible only by Phraseanet administrators**, this screen allows to manage
 tasks that help in operating the application.
+
 The tasks are listed in a table that indicates the task identifier, its name
 and working state.
+
+Basic tasks
+***********
+
+The :doc:`Phraseanet install process<../../Admin/Install>` set up three key
+tasks required for an operating system:
+
+* Indexation task
+* Creation of subview
+* Writing metadatas
+
+Those tasks are managed by a time-management tool: the TaskManager
+(or *Scheduler*).
+
+.. _start-scheduler:
+
+Start (or stop) a task
+**********************
 
 Right click on the pop-up menu of the task to:
 
 * Start or stop a task
 * Edit the settings of a task (it has to be stopped first)
 
-New task
-********
+Create additional tasks
+***********************
 
-The task settings in Phraseanet allows to set up automatic treatments.
-The standard version of the Phraseanet is delivered with a set usable of tasks:
-
-* Indexation task
-* Creation of subview
-* Writing metadatas
-
-Administrators can add others:
+Additional tasks can be set up to perform automatic treatments.
 
 * Select a task template in the **New Task** drop-down menu
 * Edit the taks settings in the graphic interface or the XML

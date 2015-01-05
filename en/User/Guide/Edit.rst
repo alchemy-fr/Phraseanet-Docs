@@ -28,11 +28,11 @@ Edition generalities
 
 The window has three parts :
 
-* **The scroll bar** displays the selected records. Its size is modifiable as
+* **1. The scroll bar** displays the selected records. Its size is modifiable as
   the thumbnail size by adjusting handles and cursors.
-* **The form area** shows the list of descriptive fields, the status list,
+* **2. The form area** shows the list of descriptive fields, the status list,
   and reserves some space to display the contents of the active field.
-* **The input help tabs area** regroup tools for text-entry.
+* **3. The input help tabs area** regroup tools for text-entry.
 
 **By default, all the records are selected.**
 
