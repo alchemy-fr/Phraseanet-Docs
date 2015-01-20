@@ -1,23 +1,36 @@
 Task Manager
 ============
 
-Phraseanet has a task manager to realize asynchronous operations.
+Phraseanet integrates a task engine to perform asynchronous operations.
 
-This different task are managed by a Scheduler.
+This different tasks are managed by a :ref:`Scheduler`.
+
+Access to the tasks manager
+---------------------------
+
+* Log in to the application **with a Phraseanet Administrator account**
+* Launch the **Admin** interface
+* Click on the *Task Manager* item in the left side menu
+
+  .. image:: ../images/Admin_tasks.jpg
+    :align: center
+
+.. _Scheduler:
 
 Scheduler
 ---------
 
-You will find in the Scheduler context menu what you need to start, stop, watch
-logs of the tasks.
+You will find in the Scheduler context menu list items to start, stop and
+watch logs of the tasks.
 
 .. _alternative-scheduler-start:
 
 Alternative starts and stops
 ****************************
 
-If you want to start and stop the Scheduler automatically, for example with
-cron, you can use `KonsoleKommander <Console>`_ and find the right command:
+If you want to start and stop the Scheduler automatically, for example in a
+cron script, you can use `KonsoleKommander <Console>`_ and find the right
+command:
 
 .. code-block:: bash
 
@@ -29,10 +42,15 @@ cron, you can use `KonsoleKommander <Console>`_ and find the right command:
 Tasks
 -----
 
-Indexation
-**********
+.. seealso::
 
-It indexes the datas with phraseanet_indexer.
+    For tasks editing, please refer to the
+    :ref:`Task manager paragraph in the User manual<Tasks-Manager>`.
+
+Indexation task
+****************
+
+This task indexes the datas using the *phraseanet_indexer* binary.
 
 Indexer requires parameters:
 
@@ -74,19 +92,20 @@ Indexer requires parameters:
 
     This task is required for common Phraseanet use
 
-Sub-definitions creation
-************************
+Subview creation
+****************
 
-This task creates sub-definitions (thumbnails and preview).
+This task creates sub-definitions (thumbnails, previews and other
+sub-definitions set in the setup structure).
 
 .. note::
 
     This task is required for common Phraseanet use
 
-Metadatas writing
-*****************
+Write metadatas
+***************
 
-This tasks writes metadatas inside the document, depending of the configuration
+This task writes metadatas inside documents, depending of the configuration
 you set up.
 
 Archive in collection
@@ -134,7 +153,8 @@ associated with their `.xml` description:
 FTP Push
 ********
 
-This tasks will upload your FTP export. It requires the activation of FTP export.
+This task will upload your FTP export. It requires the activation of FTP
+export.
 
 Settings
 ^^^^^^^^
@@ -146,8 +166,8 @@ Settings
 FTP Pull
 ********
 
-This tasks fetch data from FTP repository to a local storage. It can be
-combined with an archive task to fetch datas.
+This task fetch data from a remote FTP repository to a local storage. It can
+be combined with an archive task to fetch datas.
 
 Settings
 ^^^^^^^^
@@ -164,26 +184,223 @@ Settings
 * Passive mode
 * SSL connexion
 
-Déplacement des documents périmés
-*********************************
-
-This tasks do some actions (move to collection or chaneg status) on records
-depending of their status or some date fields.
-
 API Bridge Uploader
 *******************
 
-This tasks manages synchro with others APIs through the :term:`Bridge`.
+This task manages synchro with others APIs (Youtube, DailyMotion ou Flickr)
+through the :term:`Bridge`.
 
-Workflow 01
-***********
+Record mover
+************
 
-This tasks do some actions (move to collection or chaneg status) on records
+This task performs actions on records from a Phraseanet collection to another.
 depending of their status or some date fields.
+
+It is intended to move (or delete) records from a Phraseanet collection to
+another according to dates criteria or Phraseanet status-bits states.
+
+Typically it can be used to automate end licence issues in organizations to
+avoid the use of some media after an expiration date.
 
 Settings
 ^^^^^^^^
-* Databox
-* Period: time to wait between two checks
-* Collection: from =>to
-* Status-bit: from => to
+* Databox: the databox ID number
+* Period: time in seconds to wait between two checks
+* Collection: from original Phraseanet collection => to destination
+  Phraseanet collection
+* Status-bit: from initial Phraseanet Status-bit state => to final Phraseanet
+  Status-bit state
+
+Overview
+^^^^^^^^
+
+RecordMover execute a list of tasks.
+
+A job search for matching records to criteria (settings "from") and apply
+update on these records (settings "to") or deletion.
+
+The "RecordMover" task has replace a the "Workflow01" task from previous
+Phraseanet versions because it allows more criteria.
+
+Interface
+^^^^^^^^^
+The settings are editable in XML and the interface displays the corresponding
+XML grammar, the number of records affected by each task (if the task was
+performed now), and the first 10 affected record-id's.
+
+A task can be kept "off" during its development : a red cross is visible.
+
+XML Settings
+^^^^^^^^^^^^
+
+<tasks> lists all the <task>.
+
+A <task> act on a Phraseanet base/Databox (attribute "sbas_id") and can either
+update records or delete them ("action" attribute: update OR delete).
+
+A <task> can be named ("name" attribute) so that it name appears in logs.
+
+To execute a <task> it must have the attribute "active =" 1 "". Use 0 to keep
+the task off during its development.
+
+A <task> acts on ALL records corresponding to criterias listed in the
+<from> part of the script.
+
+Possible criteria:
+
+- The Phraseanet record type:
+
+.. code-block:: xml
+
+    <type type="RECORD" />
+    only documents
+
+    <type type="STORY" />
+    only stories
+
+- Phraseanet collections:
+
+.. code-block:: xml
+
+    <coll compare="=" id="3,5,7" />
+    records are in collections 3, 5 or 7
+
+    <coll compare="!=" id="8,9" />
+    records are in all collection, except collection 8 or 9
+
+- Phraseanet status-bits (sb):
+
+.. code-block:: xml
+
+    <status mask="1x0xxxx" />
+    status-bit number 4 is set to 0 AND status-bit number 6 is set 1
+    (please note sb 0 to 3 are reseved to Phraseanet so the xxxx at the end of
+    attribute <status mask> remain the same)
+
+- The value of a text field:
+
+.. code-block:: xml
+
+    <text field="City" compare="=" value="Paris"/>
+    value in the City filed is Paris
+
+    <text field="Author" compare="!=" value="Smith"/>
+    all value in the Author field except Smith
+
+- The value of a date in a Date type field, compared with the date of the day:
+
+.. code-block:: xml
+
+    <date direction="before" field="ONLINESINCE"/>
+    before the date indicated in ONLINESINCE fleid compared to the date of the
+    day (so where are before the indicated date)
+
+    <date direction="after" field="ONLINESINCE" delta="+30" />
+    the date in ONLINESINCE has passed since 30 days compared to the date of the
+    day (so where are more than 30 days after the indicated date in the
+    ONLINESINCE field)
+
+    <date direction="after" field="PURGE" delta="-2" />
+    2 days before the date indicated in a PURGE field
+
+For the "update" action, operations described in <to> markup can concern:
+
+- The Phraseanet collection
+
+.. code-block:: xml
+
+    <coll id="2" />
+    records are moved to phraseanet collection 2
+
+- Phraseanet Status-bits
+
+.. code-block:: xml
+
+    <status mask="0x1xxxx" />
+    lower status-bits number 6 to 0, raise status-bit number 4 to 1
+
+For the "delete", attribute *deletechildren="1"* calls for the removal of the
+contents of the deleted stories.
+
+Examples
+^^^^^^^^
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <tasksettings>
+    <period>10</period>
+    <logsql>0</logsql>
+    <tasks>
+
+        <!-- leave off line (sb4=1) all records before the date in COPYRIGHT_END-->
+        <task active="1" name="confidential" action="update" sbas_id="1">
+        <from>
+            <date direction="before" field="COPYRIGHT_END"/>
+        </from>
+        <to>
+            <status mask="x1xxxx"/>
+        </to>
+        </task>
+
+        <!-- keep on line (sb4=0) all records from 'public' collection between copyright date and archive date -->
+        <task active="1" name="visible" action="update" sbas_id="1">
+        <from>
+            <coll compare="=" id="5"/>
+            <date direction="after" field="COPYRIGHT_END"/>
+            <date direction="before" field="ARCHIVAGE_DATE"/>
+        </from>
+        <to>
+            <status mask="x0xxxx"/>
+        </to>
+        </task>
+
+        <!-- tell 10 day before archiving (lower sb5) -->
+        <task active="1" name="ending soon" action="update" sbas_id="1">
+        <from>
+            <coll compare="=" id="5"/>
+            <date direction="after" field="ARCHIVE_DATE" delta="-10"/>
+        </from>
+        <to>
+            <status mask="1xxxxx"/>
+        </to>
+        </task>
+
+        <!-- move in 'archive' collection -->
+        <task active="1" name="archiving" action="update" sbas_id="1">
+        <from>
+            <coll compare="=" id="5"/>
+            <date direction="after" field="ARCHIVAGE_DATE" />
+        </from>
+        <to>
+            <status mask="00xxxx"/>  <!-- clean status-bits states -->
+            <coll id="666" />
+        </to>
+        </task>
+
+        <!-- purge archived records since 1 year in 'archive' collection -->
+        <task active="1" name="purge archive" action="delete" sbas_id="1">
+        <from>
+            <coll compare="=" id="666"/>
+            <date direction="after" field="ARCHIVAGE_DATE" delta="+365" />
+        </from>
+        </task>
+
+    </tasks>
+    </tasksettings>
+
+.. warning::
+
+    In case of conflicts or overlaps between <task> criteria, successive records
+    may 'jump' from one state to another at each execution of the task.
+
+    ex :
+    In the previous example, if the archive date of a record is prior to its
+    copyright end date (inconsistent), sb 4 will go from 0 to 1 at each task
+    execution.
+
+    This kind of issue can be avoided by ensuring that none of the <from>
+    clauses are overlapped by raising a specific Phraseanet Status-bit in each
+    stage <to> of a <task>.
+
+

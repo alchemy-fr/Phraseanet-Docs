@@ -4,15 +4,24 @@ Gestionnaire de Tâches
 Phraseanet intègre un moteur de tâches afin de réaliser des opérations
 asynchrones.
 
-Ces différentes tâches sont gérées par un Planificateur (Scheduler),
-qui s'occupe de leur démarrage, et de leur arrêt.
+Ces différentes tâches sont gérées par un Planificateur
+(ou :ref:`Scheduler<Scheduler>`), qui s'occupe de leurs démarrages, et de leurs
+arrêts.
 
-Pour l'édition de tâches,
-:ref:`se reporter au paragraphe consacré aux tâches<Edition-de-taches>` dans
-le manuel utilisateur.
+Accès au gestionnaire de tâches
+-------------------------------
 
-Le Planificateur de taches
----------------------------
+* Se connecter à l'application **avec un compte Administrateur Phraseanet**
+* Lancer l'interface **Admin**
+* Cliquer sur la rubrique *Gestionnaire de tâches* dans le menu latéral
+
+  .. image:: ../images/Admin_tasks.jpg
+    :align: center
+
+.. _Scheduler:
+
+Le Planificateur de taches (Scheduler)
+--------------------------------------
 
 Le menu contextuel du Gestionnaire de tâches (et de chacune des tâches) propose
 des rubriques pour démarrer, arrêter, ou consulter les logs des tâches.
@@ -22,8 +31,9 @@ des rubriques pour démarrer, arrêter, ou consulter les logs des tâches.
 Arrêts et démarrages alternatifs
 ********************************
 
-Pour automatiser des arrêts et des démarrages du planificateur de tâches, utiliser l’utilitaire
-`KonsoleKommander <Console>`_ et l'une des commandes suivantes dans une tâche Cron par exemple.
+Pour automatiser des arrêts et des démarrages du planificateur de tâches,
+utiliser l’utilitaire `KonsoleKommander <Console>`_ et l'une des commandes
+suivantes dans une tâche Cron par exemple.
 
 .. code-block:: bash
 
@@ -35,8 +45,14 @@ Pour automatiser des arrêts et des démarrages du planificateur de tâches, uti
 Les tâches
 ----------
 
-Indexation
-**********
+.. seealso::
+
+    Pour l'édition de tâches,
+    :ref:`se reporter au paragraphe consacré aux tâches<Edition-de-taches>` dans
+    le manuel utilisateur.
+
+Tâche d'indexation
+******************
 
 Permet de lancer l’exécutable phraseanet_indexer.
 Cet exécutable indexe les informations descriptives des
@@ -156,8 +172,8 @@ associés à des fichiers de même nom `.xml` :
 FTP Push
 ********
 
-Permet de gérer une file d'attente de documents à envoyer par ftp.
-Cette fonction nécessite l'activation de la fonction d'export ftp.
+Permet de gérer une file d'attente de documents à envoyer par FTP.
+Cette fonction nécessite l'activation de la fonction d'export FTP.
 
 Paramètrage
 ^^^^^^^^^^^
@@ -169,8 +185,9 @@ Paramètrage
 FTP Pull
 ********
 
-Permet de récupérer en local des documents depuis un server FTP. Peut être
-combinées avec la tache d'archivage afin de rapatrier et archiver des documents.
+Permet de récupérer en local, sur l'instance, des documents depuis un server
+FTP. Elle peut être combinées avec la tache d'archivage afin de rapatrier et
+archiver des documents provenant d'un dépôt FTP distant.
 
 Paramètrage
 ^^^^^^^^^^^
@@ -187,48 +204,46 @@ Paramètrage
 * SSL: connexion en ssl (sécurisée)
 * périodicité de la tache : intervalle d’exécution de la tache
 
-Déplacement des documents périmés
-*********************************
-
-Cette tache permet d'effectuer automatiquement une action ("changement de
-collection " ou "application d'un status") sur des documents
-présents dans une base/collection, à la condition que des critères
-de type date ou status bits, soient validés par ces documents.
-
 API Bridge Uploader
 *******************
 Cette tache s'occupe de traiter la liste des documents à uploader via
 le module :term:`Bridge`, vers Youtube, DailyMotion ou Flickr.
 
-Workflow 01
-***********
+"Record Mover"
+**************
 
-Cette tache permet de déplacer un document d'une collection
-vers une autre. On peut aussi ajouter comme critère pour déplacer
-un document, un status-bit.
+Cette tache permet de déplacer (ou de supprimer) des enregistrement d'une
+collection vers une autre.
+
+Des critères de dates ou de status Phraseanet peuvent être pris en compte pour
+sélectionner des enregistrements.
+
+En pratique, cette tâche peut-être utilisée pour automatiser la gestions de
+médias dont les dates d'échéance des droits d'utilisation approchent ou
+sont dépassées.
 
 Paramètrage
 ^^^^^^^^^^^
 
-* Database : choix de la Base de données (databox)
-* intervalle d’exécution :  intervalle d’exécution de la tache
-* Collection : collection d'origine ====> collection de destination
-* Status : status-bit à l'origine   ====> status-bit final
+* Database : choix de la Base Phraseanet (databox)
+* intervalle d’exécution : intervalle d’exécution de la tâche
+* Collection : collection initiale ====> collection de destination
+* Status : status-bit initial ====> status-bit final
 
-RecordMover
-***********
+Principe de fonctionnement
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-RecordMover execute successivement une liste de tâches.
+La tâche Record Mover execute successivement une liste de tâches.
 
-Une tâche recherche les records correspondants à des critères (settings "from")
-et applique des traitements sur ces records (settings "to").
+Une tâche recherche des enregistrements correspondants à des critères
+(contenus dans "from"), les met à jour (critères "to") ou les supprime.
 
-Une tâche "RecordMover" peut remplacer un ensemble de tâches "Workflow01" et
-autorise des critères plus nombreux.
+Une tâche "RecordMover" remplace un ensemble de tâches "Workflow01"
+(dépréciée en version 3.8) et autorise des critères plus nombreux.
 
 Interface
 ^^^^^^^^^
-Les settings sont editable en XML, l'interface affiche le SQL correspondant, le
+Les settings sont editable en XML. L'interface affiche le SQL correspondant, le
 nombre de records impactés par chaque tâche (si cette tâche était exécutée
 maintenant), ainsi que les 10 premiers records-id's.
 
