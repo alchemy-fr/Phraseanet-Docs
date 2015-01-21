@@ -25,6 +25,7 @@ Routes
     Route/Records/SetCollection
     Route/Stories/Embed
     Route/Stories/Story
+    Route/Stories/Add
     Route/Baskets/Add
     Route/Baskets/Content
     Route/Baskets/Delete
