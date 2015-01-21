@@ -1,6 +1,17 @@
 API Changelog
 =============
 
+1.4.2
+-----
+
+Version 1.4.2 of Phraseanet API is brought with Phraseanet 3.8.7.
+This upgrade is fully backward compatible, adds a new route to create a story.
+
+New routes
+**********
+
+- :doc:`me <V1/Route/Stories/Add>` User route
+
 1.4.0
 -----
 
