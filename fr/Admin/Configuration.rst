@@ -221,17 +221,25 @@ Voici un exemple de fichier de configuration commenté
         lifetime: 604800                           # (integer) Durée maximum de session (en secondes)
 
     api_cors:
-      enabled: false                               # (boolean) Activation du CORS sur l'API.
-      allow_credentials: false                     # (boolean) Inclus les cookies dans les requêtes CORS.
+        enabled: false                             # (boolean) Activation du CORS sur l'API.
+        allow_credentials: false                   # (boolean) Inclus les cookies dans les requêtes CORS.
 
-      allow_origin: ['*']                          # (array)   La liste des domaines autorisés à envoyer des requêtes sur l'API.
+        allow_origin: ['*']                        # (array)   La liste des domaines autorisés à envoyer des requêtes sur l'API.
                                                    #           '*' pour autoriser les demandes de toutes origines.
-      allow_headers: []                            # (array)   La liste des headers supportés par le server.
-      allow_methods: ['GET', 'POST', 'PUT']        # (array)   La liste des methodes HTTP supportées.
-      expose_headers: ['X-Custom-Header']          # (array)   La liste des headers autres que (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
+        allow_headers: []                          # (array)   La liste des headers supportés par le server.
+        allow_methods: ['GET', 'POST', 'PUT']      # (array)   La liste des methodes HTTP supportées.
+        expose_headers: ['X-Custom-Header']        # (array)   La liste des headers autres que (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
                                                    #           à exposer au client.
-      max_age: 0                                   # (integer) Authorise la réponse "preflight" à être cachée pour X secondes.
-      hosts: ['api-cors.domain.com']               # (array)   Liste des noms de domaine ou le CORS est activé.
+        max_age: 0                                 # (integer) Authorise la réponse "preflight" à être cachée pour X secondes.
+        hosts: ['api-cors.domain.com']             # (array)   Liste des noms de domaine ou le CORS est activé.
+
+
+    static-file:
+        enabled: false                             # (boolean) Activation vignettes statiques.
+        type: nginx                                # (string) Type StaticFile (`nginx` ou `apache`)
+        symlink-directory: ''                      # (string) Le répertoire ou seront crées les liens symboliques vers les images
+
+    lazyload: false                                # (boolean) Activation du lazyload pour l'affichage des vignettes (obsolete si l'option static-file est activée)
 
 Langues
 *******
@@ -590,3 +598,23 @@ immédiat sans avoir à se ré-authentifier.
 
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
+
+Vignettes
+*********
+
+lazyload
+~~~~~~~~
+Booléan qui active ou désactive le lazyload des vignettes dans production, cette option est obsolète
+si l'option "static-file" est activé pour l'affichage des vignettes.
+
+static-file
+~~~~~~~~~~~
+En activant cette option, les vignettes sont servies comme contenu statique.
+Un lien symbolique est créé pour chaque image.
+
+.. code-block:: yaml
+
+    static-file:
+        enabled: true
+        type: nginx
+        symlink-directory: ''

@@ -1,6 +1,19 @@
 API Changelog
 =============
 
+1.4.1
+-----
+
+La version 1.4.1 est disponible depuis la version 3.8.6. Cette mise à jour est
+retro-compatible avec la précédente version et intègre de nouveaux headers accept:
+
+"application/vnd.phraseanet.record-extended+json"
+"application/vnd.phraseanet.record-extended+yaml"
+"application/vnd.phraseanet.record-extended+jsonp"
+
+Ils permettent de récupérer plus d'informations sur un enregistrement
+dans une même requête.
+
 1.4.0
 -----
 
