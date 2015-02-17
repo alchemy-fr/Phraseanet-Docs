@@ -258,6 +258,11 @@ paramétrage des bases et des collections.
   la suppression ou la purge de bases
 * Structure base donne accès au paramétrage de la structure d'une base
 
+.. note::
+
+    Pour utiliser **Bridge** l'utilisateur doit disposer des droits
+    *Publication* et *Push*.
+
 Demandes d'accès
 ----------------
 
