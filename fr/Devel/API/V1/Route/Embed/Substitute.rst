@@ -25,6 +25,8 @@ Paramètres
  databox_id      entier      Obligatoire - L'identifiant de la databox à laquelle appartient le document
  record_id       entier      Obligatoire - L'identifiant du document
  name            chaîne      Obligatoire - Le nom de la sous-résolution à changer (tel que dans la structure)
+ adapt           entier      Facultatif  - 0 : conserver le fichier injecté tel quel ; 1 [défaut] : adapter le fichier
+                             aux réglages (dimensions, type, ...) de la structure.
 =============== =========== =============
 
 
