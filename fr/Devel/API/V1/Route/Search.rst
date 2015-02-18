@@ -15,7 +15,7 @@ encore supportée.
 
 .. code-block:: bash
 
-    /api/v1/records/search/
+    /api/v1/search/
 
 ========================== ======
  Informations
@@ -34,11 +34,10 @@ Paramètres
  bases         tableau               Un tableau d'identifiants de collections. Si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections disponibles.
  offset_start  entier         1      Le numéro de la page recherchée (La première page est la page 1)
  per_page      entier         10     Le nombre d'items à retourner
- ord           chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "asc" et "desc"
- sort          chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "relevance","created_on" et "random".
+ sort          chaîne                Trier les résultats selon ce champ (type "date" ou "number")
+ ord           chaîne                Ordre de tri, "asc" ou "desc"
  record_type   chaîne                Le type de document recherché. Les valeurs disponibles sont "audio", "video", "image", "document" et "flash"
  search_type   entier         0      "0" pour rechercher des documents et "1" pour rechercher des reportages
- stemme        entier         1      Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". "1" pour activer la recherche morphologique
  date_field    chaîne                Sélectionner un champ pour rechercher avec les filtres "date_min" et "date_max"
  date_min      chaîne                La date minimum sous la forme 'Y/m/d' (Le paramètre "date_field" doit être renseigné)
  date_max      chaîne                La date maximum sous la forme 'Y/m/d' (Le paramètre "date_field" doit être renseigné)
@@ -75,13 +74,13 @@ ainsi que tous les enregistrements de la databox 52 qui ont le status 5 à "off"
 
     curl -v -d "oauth_token=xxxxxxx&status[4][on][]=58&status[5][off][]=52" https://mydomain.tld/api/v1/search/
 
-Rechercher tous les enregistrement sur la collection 85:
+Rechercher tous les enregistrements sur la collection 85:
 
 .. code-block:: bash
 
     curl -v -d "oauth_token=xxxxxxx&bases[]=85" https://mydomain.tld/api/v1/search/
 
-Rechercher les enregistrement qui correspondent à la requête "house" dans les champs "Object" ou "Credit"
+Rechercher les enregistrements qui correspondent à la requête "house" dans les champs "Object" ou "Credit"
 
 .. code-block:: bash
 
