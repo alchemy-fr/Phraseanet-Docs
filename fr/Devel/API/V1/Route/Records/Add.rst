@@ -28,7 +28,10 @@ Paramètres
 =============== =========== =============
  file            file        Obligatoire - Le document à ajouter
  base_id         entier      Obligatoire - L'identifiant de la collection de destination
- status          chaîne      Optionnel   - La liste des status sous la forme d'une chaîne binaire sur 64 bits
+ status          chaîne      Optionnel   - La liste des status sous la forme d'un nombre binaire sur 32 bits.
+                             ex. : "0b10110000": lever les status-bits 7, 5 et 4 ;
+                             nb. : les status-bits 3-0 sont réservés par Phraseanet et
+                             doivent être à 0
  forceBehavior   entier      Optionnel   - 0 : Force l'ajout du record ; 1 : Force le passage en quarantine
 =============== =========== =============
 
