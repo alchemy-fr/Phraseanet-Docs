@@ -23,6 +23,7 @@ Routes
     Route/Records/SetStatus
     Route/Records/SetMetadatas
     Route/Records/SetCollection
+    Route/Embed/Substitute
     Route/Stories/Embed
     Route/Stories/Story
     Route/Baskets/Add
@@ -70,6 +71,8 @@ Par exemple, les propriétés d'un enregistrement ou d'une databox :
 |           |                                        |* :doc:`embed <Route/Records/Embed>`            |* :doc:`setmetadatas <Route/Records/SetMetadatas>`    |
 |           |                                        |* :doc:`related <Route/Records/Related>`        |* :doc:`add <Route/Records/Add>`                      |
 |           |                                        |                                                |                                                      |
++-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
+| embed     |* :doc:`record <Route/Embed/Substitute>`|* :doc:`embed <Route/Records/Embed>`            |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | stories   |* :doc:`record <Route/Stories/Story>`   |* :doc:`embed <Route/Stories/Embed>`            |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+

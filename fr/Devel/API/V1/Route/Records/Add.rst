@@ -5,8 +5,8 @@ A propos
 --------
 
 Ajoute un document à Phraseanet.
-Si le fichier ne correspond pas aux caractéristiques des :doc:services
-des douanes <../../../../Admin/Configuration>, il est placé en quarantaine..
+Si le fichier ne correspond pas aux caractéristiques des
+:doc:`services des douanes <../../../../../Admin/Configuration>`, il est placé en quarantaine..
 Ce comportement peut être contourné avec le paramètre optionnel *forceBehavior*
 
 .. code-block:: bash
@@ -33,6 +33,7 @@ Paramètres
                              nb. : les status-bits 3-0 sont réservés par Phraseanet et
                              doivent être à 0
  forceBehavior   entier      Optionnel   - 0 : Force l'ajout du record ; 1 : Force le passage en quarantine
+ nosubdefs       entier      Optionnel   - 1 : Empêche la création des sous-définitions pour ce document
 =============== =========== =============
 
 Attribut de la réponse

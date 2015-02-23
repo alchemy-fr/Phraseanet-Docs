@@ -1,6 +1,24 @@
 API Changelog
 =============
 
+X.X.X
+-----
+
+Nouvelle route
+**************
+
+- :doc:`embed/substitute <V1/Route/Embed/Substitute>`
+    Substituer / injecter une sous-résolution à un record
+
+Updated routes
+**************
+
+- :doc:`record/add <V1/Route/Records/Add>`
+    ajout d'un attribut "nosubdefs" pour empêcher la création des sous-résolutions
+- :doc:`record/embed <V1/Route/Records/Embed>`
+    ajout des informations "substituted", "created_on", "updated_on" pour chaque embed.
+
+
 1.4.1
 -----
 
