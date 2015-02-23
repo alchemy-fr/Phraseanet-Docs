@@ -27,7 +27,7 @@ Parameters
 =============== =========== =============
  file            file        Mandatory - The file related to the record to add
  base_id         integer     Mandatory - The base_id related to the destination collection
- status          string      64 bit format binary string (optional)
+ status          string      32 bits format binary string (optional)
  forceBehavior   integer     0: force record ; 1: force quarantine (optional)
 =============== =========== =============
 
