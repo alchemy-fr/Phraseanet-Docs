@@ -27,7 +27,10 @@ Parameters
 =============== =========== =============
  file            file        Mandatory - The file related to the record to add
  base_id         integer     Mandatory - The base_id related to the destination collection
- status          string      64 bit format binary string (optional)
+ status          string      32 bits format binary string (optional)
+                             ex. : "0b10110000": rise status-bits 7, 5 and 4 ;
+                             note. : Status-bits 3 to 0 are reserved for Phraseanet and
+                             must be set to 0
  forceBehavior   integer     0: force record ; 1: force quarantine (optional)
 =============== =========== =============
 
