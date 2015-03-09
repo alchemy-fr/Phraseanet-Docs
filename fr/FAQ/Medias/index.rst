@@ -15,3 +15,4 @@ Gestion des médias dans Phraseanet
    Supprimer-une-publication
    Ajouter-une-base
    Tache-d-archivage
+
