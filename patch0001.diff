@@ -1,0 +1,25 @@
+From 873bf284b3fbb4036ba3cb4c8bba18a2e2370585 Mon Sep 17 00:00:00 2001
+From: Anthony Cabot <cabot.anthony@gmail.com>
+Date: Mon, 9 Mar 2015 15:24:50 +0100
+Subject: [PATCH] Prevents the creation of sub-definitions in
+ en/Devel/API/V1/Route/Records/Add
+
+---
+ en/Devel/API/V1/Route/Records/Add.rst | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/en/Devel/API/V1/Route/Records/Add.rst b/en/Devel/API/V1/Route/Records/Add.rst
+index 63a487b..2679872 100644
+--- a/en/Devel/API/V1/Route/Records/Add.rst
++++ b/en/Devel/API/V1/Route/Records/Add.rst
+@@ -32,6 +32,7 @@ Parameters
+                              note. : Status-bits 3 to 0 are reserved for Phraseanet and
+                              must be set to 0
+  forceBehavior   integer     0: force record ; 1: force quarantine (optional)
++ nosubdefs       entier      Optional - 1: Prevents the creation of sub-definitions files for this document
+ =============== =========== =============
+ 
+ Response Fields
+-- 
+1.8.4.2
+
