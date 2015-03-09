@@ -93,10 +93,8 @@ tif ou TIF sont pris en compte lors de l'archivage.
         <copy_spe>0</copy_spe>
         <cold>5</cold>
         <files> <!-- Mise en place d'un filtre dur la tache -->
-          <file mask="^(.*).jpg$" /> <!-- accepter les fichiers avec une extension jpg -->
-          <file mask="^(.*).JPG$" /> <!-- accepter les fichiers avec une extension JPG -->
-          <file mask="^(.*).tif$" /> <!-- accepter les fichiers avec une extension tif -->
-          <file mask="^(.*).TIF$" /> <!-- accepter les fichiers avec une extension TIF -->
+          <file mask="^(.*)\.(jpg|JPG)$" /> <!-- accepter les fichiers avec une extension jpg ou JPG -->
+          <file mask="^(.*)\.(tif|TIF)$" /> <!-- accepter les fichiers avec une extension tif ou TIF -->
         </files>
       </tasksettings>
 

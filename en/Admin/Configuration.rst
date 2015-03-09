@@ -558,7 +558,7 @@ lifetime
 Checking "Remember me" on homepage allows to access the application later without authentifying again.
 Access is allowed for this duration (in seconds).
 
- 
+
 .. _YAML: https://wikipedia.org/wiki/Yaml
 
 Thumbnails
