@@ -33,6 +33,7 @@ Paramètres
                              note. : Les status-bits 3 à 0 sont réservés à Phraseanet et
                              doivent être laissés à 0
  forceBehavior   entier      Optionnel   - 0 : Force l'ajout du record ; 1 : Force le passage en quarantine
+ nosubdefs       entier      Optionnel - 1 : Empêche la création des sous-définitions pour ce document
 =============== =========== =============
 
 Attribut de la réponse
