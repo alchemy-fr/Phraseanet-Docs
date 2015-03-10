@@ -1,4 +1,4 @@
-Gestionnaire de Tâches
+Gestionnaire de tâches
 ======================
 
 Phraseanet intègre un moteur de tâches afin de réaliser des opérations
@@ -123,6 +123,8 @@ Ecriture des Métadonnées
 Cette tâche écrit les métadonnées dans un document en fonction des réglages de
 la structure documentaire.
 
+.. _Archiver-dans-collection:
+
 Archiver dans la collection
 ***************************
 
@@ -145,7 +147,6 @@ Paramètrage
 Par défaut, TOUS les fichiers déposés dans le répetoire HotFolder (ou un sous-répertoire) sont archivés
 dans la collection, et décrits avec les éventuelles métadonnés incluses (IPTC, EXIF, XMP,...) en relation avec
 la structure de la base de destination.
-
 
 Instructions propres à un (sous) répertoire du hotfolder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -316,10 +317,6 @@ Si des fichiers sont ajoutés par la suite dans répertoire de reportage (réper
 l'exemple précédent), ces fichiers seront ajoutés au reportage correspondant dans Phraseanet. Le lien entre le répertoire
 et le reportage existe via un fichier caché ".grouping.xml" ajouté par la tâche dans le répertoire lors de la
 création initiale du reportage.
-
-
-
-
 
 FTP Push
 ********

@@ -1,12 +1,12 @@
-Paramétrage d'une tâche d'archivage
-===================================
+Mise en oeuvre d'une tâche d'archivage
+======================================
 
 .. topic:: L'essentiel
 
     Une tâche d'archivage est destinée à intégrer dans Phraseanet le contenu
-    média d'un répertoire monté sur un serveur exécutant l'application.
+    média d'un répertoire accessible à l'application sur un serveur.
     L'interface graphique de paramétrage d'une tâche d'archivage permet de
-    configurer l'archivage simple du contenu de répertoire avec quelques
+    configurer l'archivage simple du contenu du répertoire avec quelques
     options de contrôle.
     Il est possible d'ajouter davantage d'options en utilisant le mode
     d'édition XML.
@@ -46,7 +46,7 @@ Quatre cases à cocher permettent des options de traitement :
   données sur le serveur Phraseanet.
 * **Déplacer les documents non-archivés dans _error** déplace les fichiers
   non archivés dans un répertoire à coté du *hotfolder*. Cela permet d'examiner
-  les fichiers pouvant poser des problèmes lors de l'archivage.
+  les fichiers rejetés par la tâche lors de l'archivage.
 * **Déplacer les fichiers .phrasea.xml et .grouping.xml dans _archived**
   permet de déplacer les fichiers cachés contenant des instructions d'archivage
   en même temps que les fichiers archivés.
@@ -92,7 +92,7 @@ tif ou TIF sont pris en compte lors de l'archivage.
         <delfolder>0</delfolder>
         <copy_spe>0</copy_spe>
         <cold>5</cold>
-        <files> <!-- Mise en place d'un filtre dur la tache -->
+        <files> <!-- Mise en place d'un filtre sur la tache -->
           <file mask="^(.*)\.(jpg|JPG)$" /> <!-- accepter les fichiers avec une extension jpg ou JPG -->
           <file mask="^(.*)\.(tif|TIF)$" /> <!-- accepter les fichiers avec une extension tif ou TIF -->
         </files>
@@ -160,13 +160,14 @@ de l'expression régulière de *mask*).
     traitement.
 
     Les fichiers qui ne satisfont pas l'expression régulière *mask* ou qui ne
-    sont pas décrits sont déplacés dans le répertoire **_error**.
+    sont pas décrits par des notices sont déplacés dans le répertoire
+    **_error**.
 
 Archivage et regroupement en reportage
 **************************************
 
-Pour regrouper les médias à archiver dans des reportages Phraseanet, les
-rassembler dans des répertoires avec un suffixe **.grp**.
+Pour regrouper les médias dans des reportages Phraseanet lors de l'archivage,
+les rassembler dans des répertoires avec un suffixe **.grp**.
 
 .. image:: ../../images/FAQ-Archivage-reportage.jpg
     :align: center
@@ -196,15 +197,11 @@ permettant le regroupement de médias en reportage lors de l'archivage.
       </files>
     </tasksettings>
 
-La balise *<grouping>* peut prendre les arguments complémentaires :
+La balise *<grouping>* peut prendre l'argument complémentaire **Caption**.
+Il permet d'indiquer que des notices XML décrivent les reportages formés par
+les répertoires .grp.
 
-* **caption**, pour indiquer qu'une notice de reportage est associée aux
-  répertoires .grp
-* **representation**, pour indiquer qu'une image représentative est définie
-  pour les reportages archivés
-
-La balise *<grouping>* exploitant ces deux arguments peut ressembler à
-l'exemple suivant :
+Exemple de balise *<grouping>* exploitant cet arguments :
 
 .. code-block:: xml
 
@@ -248,4 +245,8 @@ paramétrage de la tâche d'archivage.
     Le fichier caché, vide *.phrasea.xml* à la racine du *hotfolder* demeure
     obligatoire.
 
+.. seealso::
+
+    Se reporter au paragraphe relatif à :ref:`la tâche d'archivage dans le
+    manuel Administrateur <Archiver-dans-collection>`.
 
