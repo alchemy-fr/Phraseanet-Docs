@@ -247,6 +247,6 @@ paramétrage de la tâche d'archivage.
 
 .. seealso::
 
-    Se reporter au paragraphe relatif à :ref:`la tâche d'archivage dans le
+    Consulter le paragraphe relatif à :ref:`la tâche d'archivage dans le
     manuel Administrateur <Archiver-dans-collection>`.
 
