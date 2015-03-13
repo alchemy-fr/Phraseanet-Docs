@@ -5,8 +5,9 @@ A propos
 --------
 
 Substituer (ou ajouter) une sous-définition à un record.
-Permet d'injecter des sous-définitions fabriquées hors Phraseanet lorsque un document a été rajouté avec l'option
-"nosubdefs" (voir route :doc:`records/add <../Records/Add>`)
+Permet d'injecter des sous-définitions fabriquées hors Phraseanet lorsque un
+document a été rajouté avec l'option "nosubdefs" (voir route
+:doc:`records/add <../Records/Add>`).
 
 ========================== ======
  Informations
@@ -36,8 +37,11 @@ Attribut de la réponse
 ========== ================================
  Attribut   Description
 ========== ================================
-  embed     La liste des sous-définitions disponibles pour le document modifié
+ embed     La liste des sous-définitions disponibles pour le document modifié
 ========== ================================
 
-(voir route :doc:`records/embed <../Records/Embed>`)
+.. Seealso::
+
+    Voir la page consacrée à la route :doc:`records/embed <../Records/Embed>`.
+
 
