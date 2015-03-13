@@ -5,14 +5,14 @@ API Changelog
 -----
 
 Version 1.4.1 of Phraseanet API is brought with Phraseanet 3.8.6.
-This upgrade is fully backward compatible and features new accept headers:
+This upgrade is fully backward compatible and features new *accept* headers:
 
-"application/vnd.phraseanet.record-extended+json"
-"application/vnd.phraseanet.record-extended+yaml"
-"application/vnd.phraseanet.record-extended+jsonp"
+* "application/vnd.phraseanet.record-extended+json"
+* "application/vnd.phraseanet.record-extended+yaml"
+* "application/vnd.phraseanet.record-extended+jsonp"
 
-It allows to get more information (sub-definitions, caption etc..)
-about a record in a single request.
+Those extended headers allows to get more information (sub-definitions,
+caption...*etc*.).about a record in a single request.
 
 1.4.0
 -----
