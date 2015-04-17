@@ -31,8 +31,8 @@ Parameters
 ============= =========== ========= =============
  query         string                Search query ; search query is the same syntax as in phraseanet. Default value is an string, which equals “all records”
  bases         array                 An array of base_ids ; If an empty array or no value are provided, the query is done on all collections
- offset_start  int         0         The number of the requested page (first page is page 1)
- per_page      int         10        The number of records per page
+ offset_start  int         0         The offset of the first record to return. The offset of the initial record is 0 (not 1).
+ per_page      int         10        The maximum number of records to return.
  ord           string                This feature is currently only available with SphinxSearch Engine. Available values are “asc” and “desc”
  sort          string                This feature is currently only available with SphinxSearch Engine. Available values are “relevance” and “created_on” and “random”
  record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”
