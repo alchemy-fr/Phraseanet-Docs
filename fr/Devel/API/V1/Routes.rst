@@ -24,8 +24,11 @@ Routes
     Route/Records/SetMetadatas
     Route/Records/SetCollection
     Route/Embed/Substitute
-    Route/Stories/Embed
     Route/Stories/Story
+    Route/Stories/Embed
+    Route/Stories/Add
+    Route/Stories/AddRecords
+    Route/Stories/SetCover
     Route/Baskets/Add
     Route/Baskets/Content
     Route/Baskets/Delete
@@ -70,11 +73,12 @@ Par exemple, les propriétés d'un enregistrement ou d'une databox :
 |           |* :doc:`record <Route/Records/Record>`  |* :doc:`status <Route/Records/Status>`          |* :doc:`setcollection <Route/Records/SetCollection>`  |
 |           |                                        |* :doc:`embed <Route/Records/Embed>`            |* :doc:`setmetadatas <Route/Records/SetMetadatas>`    |
 |           |                                        |* :doc:`related <Route/Records/Related>`        |* :doc:`add <Route/Records/Add>`                      |
-|           |                                        |                                                |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | embed     |* :doc:`record <Route/Embed/Substitute>`|* :doc:`embed <Route/Records/Embed>`            |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
-| stories   |* :doc:`record <Route/Stories/Story>`   |* :doc:`embed <Route/Stories/Embed>`            |                                                      |
+| stories   |* :doc:`record <Route/Stories/Story>`   |* :doc:`embed <Route/Stories/Embed>`            |* :doc:`add <Route/Stories/Add>`                      |
+|           |                                        |                                                |* :doc:`addrecords <Route/Stories/AddRecords>`        |
+|           |                                        |                                                |* :doc:`setcover <Route/Stories/SetCover>`            |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | baskets   |* :doc:`list <Route/Baskets/List>`      |* :doc:`content <Route/Baskets/Content>`        |* :doc:`setname <Route/Baskets/SetName>`              |
 |           |* :doc:`add <Route/Baskets/Add>`        |                                                |* :doc:`setdescription <Route/Baskets/SetDescription>`|

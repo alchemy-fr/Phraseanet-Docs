@@ -1,10 +1,10 @@
-Lister le contenu des flux agrégé
+Lister le contenu agrégé des flux
 =================================
 
 A propos
 --------
 
-Retourne le contenu agrégé de tous les fux disponibles
+Retourne le contenu agrégé de tous les flux disponibles
 
 .. code-block:: bash
 
