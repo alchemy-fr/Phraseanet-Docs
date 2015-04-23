@@ -1,40 +1,40 @@
-Substituer une sous-définition d'un document
-============================================
+Embed Substitute
+================
 
-A propos
---------
+About
+-----
 
-Substituer (ou ajouter) une sous-définition à un document.
-Permet d'injecter des sous-définitions fabriquées hors Phraseanet lorsqu'un
-document a été rajouté avec l'option "nosubdefs"
+Substitute (or add) an embed file (subdef) to a record.
+Allows to inject an embed file built out from Phraseanet when a document has been added
+with the parameter "nosubdefs".
 
-.. seealso:: :doc:`Ajouter un document dans Phraseanet <../Records/Add>`
+.. seealso:: :doc:`Add record <../Records/Add>`
 
 
 ========================== ======
  Informations
 ========================== ======
- Méthode HTTP               POST
- Authentification requise   Oui
+ HTTP Method                POST
+ Requires Authentication    Yes
 ========================== ======
 
-Paramètres
+Parameters
 ----------
 
 =============== =========== =============
- Paramètres      Type        Information
+ Parameter       Type        Information
 =============== =========== =============
- file            fichier     Obligatoire - Le fichier de sous-définition à remplacer/ajouter
- databox_id      entier      Obligatoire - L'identifiant de la databox à laquelle appartient le document
- record_id       entier      Obligatoire - L'identifiant du document
- name            chaîne      Obligatoire - Le nom de la sous-résolution à changer (tel que dans la structure)
- adapt           entier      Facultatif  - 0 : conserver le fichier injecté tel quel ; 1 [défaut] : adapter le fichier
-                             aux réglages (dimensions, type, ...) de la structure.
+ file            file        Mandatory - The embed file to add/replace
+ databox_id      integer     Mandatory - Id of the databox containig the record to be changed
+ record_id       integer     Mandatory - Id of the record to be changed
+ name            string      Mandatory - The name of the subdef to change (as defined in the databox structure)
+ adapt           integer     Optional  - 0 : keep the uploaded file 'as is' ; 1 [default] : adapt the file
+                             to the settings (size, type, ...) defined in the structure.
 =============== =========== =============
 
 
-Exemples de réponses
----------------------
+Response samples
+----------------
 
 .. code-block:: javascript
 
@@ -78,9 +78,8 @@ Exemples de réponses
         }
     }
 
-.. note:: Parceque les sous-définitions sont fabriquées de façon asynchrone, aucune information
-    concernant le fichier ne peut être retournée si "adapt":true est spécifié.
-
+.. note:: because subdefs are resized asynchronously, no information about the embed can be returned if
+    "adapt":true is specified.
 
 .. code-block:: javascript
 
@@ -101,6 +100,6 @@ Exemples de réponses
     }
 
 
-.. Seealso:: :doc:`Lister les sous-définitions d’un document <../Records/Embed>`
+.. Seealso:: :doc:`Records Eembed <../Records/Embed>`
 
 

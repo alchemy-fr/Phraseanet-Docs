@@ -1,5 +1,5 @@
-Stories Embed
-=============
+Sous-définitions d'un reportage
+===============================
 
 A propos
 --------
@@ -31,10 +31,10 @@ il faut utiliser les paramètres :
 ======================== ============== ==============================
  Paramètres               Type           Information
 ======================== ============== ==============================
- databox_id               entier         L'identifiant de la databox auquel appartient le reportage
+ databox_id               entier         L'identifiant de la databox à laquelle appartient le reportage
  record_id                entier         L'identifiant du reportage sélectionné
- devices                  tableau        Un tableau des devices sur lequel restreindre la query (optionnel)
- mimes                    tableau        Un tableau de type mime sur lequel restreindre la recherche (optionnel)
+ devices                  tableau        Un tableau des devices sur lesquels restreindre la query (optionnel)
+ mimes                    tableau        Un tableau de type mime sur lesquels restreindre la recherche (optionnel)
 ======================== ============== ==============================
 
 Attribut de la réponse
