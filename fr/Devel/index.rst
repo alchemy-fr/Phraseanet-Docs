@@ -9,7 +9,7 @@ Elle rassemble des informations, exemples et ressources complémentaires pour
 utiliser l’API Phraseanet.
 Des questions peuvent être posées dans le :doc:`forum </Devel/Forums>`.
 
-La version stable de l’API Phraseanet est la 1.3.1 sur les versions 3.7.9+ de
+La version stable de l’API Phraseanet est la 1.4.1 sur les versions 3.8.6+ de
 Phraseanet.
 
 Bibliothèques
@@ -27,6 +27,7 @@ Table of contents
     API/V1
     API/Root
     API/Changelog
+    Vagrant
     Forums
     ApplicationDeveloper
 

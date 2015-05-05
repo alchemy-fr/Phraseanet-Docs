@@ -1,13 +1,15 @@
-Chercher un document
-====================
+Chercher un enregistrement (déprécié)
+=====================================
+
+.. warning::
+
+    Bien que toujours disponible, cette route est dépréciée depuis la version
+    1.3 en faveur de :doc:`search <../Search>`.
 
 A propos
 --------
 
-Retourne la liste des documents trouvés
-
-Cette route est dépréciée depuis la version 1.3 en faveur de
-:doc:`search <../Search>`.
+Retourne la liste des documents trouvés.
 
 .. code-block:: bash
 

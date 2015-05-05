@@ -1,15 +1,15 @@
-Records Search
-==============
+Records Search (deprecated)
+===========================
+
+.. warning::
+
+    Although still available, this route is deprecated since version 1.3 in
+    favor of :doc:`search <../Search>`.
 
 About
 -----
 
 Return the result of record search.
-
-.. warning::
-
-    This route is deprecated since version 1.3 in favor of
-    :doc:`search <../Search>`.
 
 .. code-block:: bash
 

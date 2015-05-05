@@ -1,11 +1,11 @@
 Console
 =======
 
-Phraseanet fourni deux utilitaires en ligne de commande ; bin/console` et
+Phraseanet fournit deux utilitaires en ligne de commande ; `bin/console` et
 `bin/setup`.
 `console` ne peut être executée que si Phraseanet est installé ou mis à jour
-tandis que `setup` est à utiliser en amont, pour l'installation et la detection
-des pannes.
+tandis que `setup` est à utiliser en amont, pour
+:doc:`l'installation <Installation>` et la detection des pannes.
 
 Konsole Kommander
 -----------------
@@ -117,7 +117,7 @@ Setup
 
 .. versionadded:: 3.8
 
-   La commande setup a été ajoutée en version 3.8
+   La commande *setup* a été ajoutée en version 3.8
 
 Setup s'exécute simplement :
 
@@ -149,7 +149,7 @@ commande help.
 
     php bin/setup help nomdecommande
 
-..note ::
+.. note::
 
     L'ensemble des commandes disponibles dans cet utilitaire sont executables
     même lorsque Phraseanet n'est pas installé, contrairement à Konsole

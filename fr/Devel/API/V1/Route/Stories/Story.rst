@@ -1,5 +1,5 @@
-Stories Story
-=============
+Informations sur un reportage
+=============================
 
 A propos
 --------
@@ -23,7 +23,7 @@ Paramètres
 ======================== ============== ==============================
  Paramètres               Type           Information
 ======================== ============== ==============================
- databox_id               entier         L'identifiant de la databox auquel appartient le document
+ databox_id               entier         L'identifiant de la databox à laquelle appartient le document
  story_id                 entier         L'identifiant du reportage sélectionné
 ======================== ============== ==============================
 

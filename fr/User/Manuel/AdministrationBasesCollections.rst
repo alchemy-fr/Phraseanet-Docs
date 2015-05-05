@@ -163,6 +163,8 @@ valider le formulaire.
     Lors de la création d'une collection, il est possible d'appliquer
     (dupliquer) les droits utilisateurs d'une collection existante.
 
+.. _Afficher-Collection:
+
 Afficher une collection
 ***********************
 

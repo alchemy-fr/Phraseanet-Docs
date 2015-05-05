@@ -250,6 +250,10 @@ Phraseanet bases and collections setup.
   creation, purge and deletion
 * **Manage DB Fields** gives access to base fields setup
 
+.. note::
+
+    To use **Bridge** user must have *Publications* and *Push* rights activated.
+
 .. _Pending-Registration:
 
 Pending registration

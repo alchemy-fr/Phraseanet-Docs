@@ -14,3 +14,5 @@ Gestion des médias dans Phraseanet
    Tous-les-operateurs-de-recherche
    Supprimer-une-publication
    Ajouter-une-base
+   Tache-d-archivage
+
