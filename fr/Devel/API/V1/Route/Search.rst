@@ -1,17 +1,19 @@
-Recherche
-=========
+Recherche (search)
+==================
 
 A propos
 --------
 
-Retourne la liste des objets trouvés.
+Retourne la liste des enregistrements trouvés pour une recherche satisfaisant
+les paramètres donnés en argument.
 
-Cette route est distincte de :doc:`records/search <Records/Search>` car elle
-groupe les objets par type.
+.. note::
 
-Bien que cette route retourne différents types de resultats (enregistrements,
-reportages), la recherche simultanée de ces différents types n'est pas
-encore supportée.
+  Cette route est distincte de :doc:`records/search <Records/Search>` car elle
+  groupe les objets par type.
+
+Bien que cette route retourne différents types d'enregistrements (documents,
+reportages), **la recherche simultanée de ces types n'est pas possible**.
 
 .. code-block:: bash
 

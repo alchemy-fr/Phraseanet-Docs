@@ -1,20 +1,23 @@
 Search
-==============
+======
 
 About
 -----
 
-Return the result of a search.
+Returns the list of records found for a search whose parameters are given as
+arguments.
 
-This route is distinct of :doc:`records/search <Records/Search>` because
-results are grouped by type.
+.. note::
 
-Whereas this route returns different types of results (records, stories),
-there is currently no support to query both of these types at the same type.
+    This route is distinct of :doc:`records/search <Records/Search>` because
+    results are grouped by type.
+
+Whereas this route returns different types of records (documents, stories),
+**there is currently no support to query both of these types at the same time**.
 
 .. code-block:: bash
 
-    /api/v1/records/search/
+    /api/v1/search/
 
 ======================== ======
  Informations
