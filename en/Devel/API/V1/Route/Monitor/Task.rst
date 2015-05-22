@@ -4,14 +4,14 @@ Task Monitor
 About
 -----
 
-Returns all informations about a task
+Returns all information about a given task.
 
 .. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

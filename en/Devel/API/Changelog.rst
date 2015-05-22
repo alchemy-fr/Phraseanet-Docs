@@ -18,7 +18,7 @@ caption...*etc*.).about a record in a single request.
 -----
 
 Version 1.4.0 of Phraseanet API is brought with Phraseanet 3.8.4.
-This upgrade is fully backward compatible, adds a new route to get informations
+This upgrade is fully backward compatible, adds a new route to get information
 about the current authenticated user.
 
 New routes

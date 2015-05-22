@@ -4,14 +4,14 @@ Scheduler Monitor
 About
 -----
 
-Returns Scheduler informations for monitoring
+Returns Scheduler information for monitoring purposes.
 
 .. code-block:: bash
 
     /api/v1/monitor/scheduler/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes
@@ -28,7 +28,7 @@ Response Fields
 =============== ======================================
  Field           Description
 =============== ======================================
- scheduler       Scheduler informations
+ scheduler       Scheduler information
 =============== ======================================
 
 Response sample

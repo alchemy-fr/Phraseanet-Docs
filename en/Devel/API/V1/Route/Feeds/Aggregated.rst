@@ -4,14 +4,14 @@ Feeds Aggregated Content
 About
 -----
 
-Return the aggregated content of a all feeds available
+Returns the aggregated content of specified feeds.
 
 .. code-block:: bash
 
     /api/v1/feeds/content/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes
@@ -25,7 +25,7 @@ Parameters
 ======================== ============== =================================
  offset_start             integer        The first entry to retrieve
  per_page                 integer        The number of entry to retrieve
- feeds                    array          An array of feed ids, aggregate will be on given ids
+ feeds                    array          An array of feeds ids, aggregate will be on given ids
 ======================== ============== =================================
 
 Response Fields

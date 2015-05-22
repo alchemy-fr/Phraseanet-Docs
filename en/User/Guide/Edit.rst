@@ -49,7 +49,7 @@ way as in the display area.
     Refer to :ref:`the section dedicated to selections <Display-Selections>`
     in the display area.
 
-Batch selections allows to write common informations for media to be more
+Batch selections allows to write common information for media to be more
 productive.
 
 To go from one field to an other, **use the Tab key of the keyboard**.

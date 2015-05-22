@@ -7,8 +7,8 @@ Thesaurus
 .. topic:: The essential
 
     Thesaurus is a documentary language management tool. In Phraseanet, its
-    implementation is optional. It is used with the Phrasea engine and is not
-    compatible with the Sphinx search engine.
+    implementation is optional. It can be used with the Phrasea engine only (not
+    compatible with the Sphinx search engine).
 
     In Production, the thesaurus serves :
 
@@ -254,8 +254,8 @@ Working on candidates
 ---------------------
 
 Candidates are terms and expressions linked to branches of the thesaurus but
-are not part of it. These terms can either come from informations extracted
-from metadata of added files, or from informations added while capturing
+are not part of it. These terms can either come from information extracted
+from metadata of added files, or from information added while capturing
 records notes.
 
 A part of the maintenance of thesaurus consists in examining these candidates.

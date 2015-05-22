@@ -4,14 +4,14 @@ Feeds List
 About
 -----
 
-List all available feeds
+Lists all available feeds.
 
 .. code-block:: bash
 
     /api/v1/feeds/list/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

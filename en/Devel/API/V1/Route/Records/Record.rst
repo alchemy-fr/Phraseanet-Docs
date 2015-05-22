@@ -4,14 +4,14 @@ Records Record
 About
 -----
 
-Return all information about one record
+Returns all information about one record.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

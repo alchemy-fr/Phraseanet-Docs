@@ -4,14 +4,14 @@ Stories AddRecords
 About
 -----
 
-Add records to a story
+Adds records to a given story.
 
 .. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/addrecords
 
 ======================== ==================
- Informations
+ Information
 ======================== ==================
  HTTP Method              POST
  Requires Authentication  Yes

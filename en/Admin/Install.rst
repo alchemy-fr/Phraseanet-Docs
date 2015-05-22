@@ -143,7 +143,7 @@ For a GUI installation, launch a browser and go to the root URL of the
 application. User is redirected to */setup/installer/* page.
 
 A set of screens containing forms helps to configure *Phraseaent* by collecting
-informations related to binaries and storage paths, admin account or databases
+information related to binaries and storage paths, admin account or databases
 connection parameters.
 
 Click on the **Next** button to start the procedure.

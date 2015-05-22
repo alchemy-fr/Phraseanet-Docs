@@ -4,14 +4,14 @@ Records SetCollection
 About
 -----
 
-Moves a record to another collection
+Moves a record to another collection.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setcollection/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              POST
  Requires Authentication  Yes

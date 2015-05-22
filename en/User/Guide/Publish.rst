@@ -90,7 +90,7 @@ In the **Bridge** window :
 .. image:: ../../images/Bridge-1b.jpg
     :align: center
 
-Bridge retrieves the existing informations from the remote application.
+Bridge retrieves the existing information from the remote application.
 
 With Flickr, the existing pictures are displayed in "Photos" tab or "Photosets"
 tab if organized in albums.

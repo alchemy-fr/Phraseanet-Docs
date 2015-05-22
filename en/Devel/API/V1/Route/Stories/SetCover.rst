@@ -4,14 +4,14 @@ Stories SetCover
 About
 -----
 
-Set the cover of a story
+Sets the cover image of a given story.
 
 .. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/setcover
 
 ======================== ==================
- Informations
+ Information
 ======================== ==================
  HTTP Method              POST
  Requires Authentication  Yes

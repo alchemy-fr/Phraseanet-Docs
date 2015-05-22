@@ -4,14 +4,14 @@ Baskets Delete
 About
 -----
 
-Delete the basket
+Deletes a given basket.
 
 .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/delete/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              POST
  Requires Authentication  Yes

@@ -4,14 +4,14 @@ Records Caption
 About
 -----
 
-Returns the caption of a record
+Returns the caption of a record.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/caption/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

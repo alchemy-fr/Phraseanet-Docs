@@ -4,14 +4,14 @@ Records SetStatus
 About
 -----
 
-Set status to a record
+Sets status for a given record.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setstatus/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              POST
  Requires Authentication  Yes

@@ -4,15 +4,15 @@ Root
 About
 -----
 
-This route id available since Phraseanet 1.2 and provides  public informations
-about the API. This route is not versionned.
+Available since Phraseanet 1.2, this route provides public information
+about the Phraseanet API. This route is not versionned.
 
 .. code-block:: bash
 
     /api/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  NO

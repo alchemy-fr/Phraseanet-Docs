@@ -9,14 +9,14 @@ Records Search (deprecated)
 About
 -----
 
-Return the result of record search.
+Returns the result of a search query.
 
 .. code-block:: bash
 
     /api/v1/records/search/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              POST
  Requires Authentication  Yes

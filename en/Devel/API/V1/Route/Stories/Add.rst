@@ -4,14 +4,14 @@ Stories Add
 About
 -----
 
-Add stories
+Adds a new stories.
 
 .. code-block:: bash
 
     /api/v1/stories
 
 ======================== ==================
- Informations
+ Information
 ======================== ==================
  HTTP Method              POST
  Requires Authentication  Yes
