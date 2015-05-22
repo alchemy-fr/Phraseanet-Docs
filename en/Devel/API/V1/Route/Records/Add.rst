@@ -13,7 +13,7 @@ it goes to the quarantine. This behavior can be bypassed with the optional
     /api/v1/records/add/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              POST
  Requires Authentication  Yes

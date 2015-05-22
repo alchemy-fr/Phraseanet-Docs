@@ -4,14 +4,14 @@ Databox TermsOfUse
 About
 -----
 
-Return Terms Of Use in all languages available on specified databox
+Returns *Terms Of Use* in all available languages for a specified databox.
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/termsOfUse/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

@@ -11,7 +11,7 @@ Returns information about the authenticated user.
     /api/v1/me/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              GET
  Requires Authentication  Yes

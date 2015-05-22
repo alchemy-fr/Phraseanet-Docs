@@ -4,14 +4,14 @@ Databox List
 About
 -----
 
-Return available Databoxes
+Returns available *databoxes*.
 
 .. code-block:: bash
 
     /api/v1/databoxes/list/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

@@ -4,14 +4,14 @@ Baskets List
 About
 -----
 
-Return the baskets list of the authenticated user
+Returns the baskets list of the authenticated user.
 
 .. code-block:: bash
 
     /api/v1/baskets/list/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes
@@ -20,7 +20,7 @@ Return the baskets list of the authenticated user
 Parameters
 ----------
 
-No parameters for this route
+There is no parameters for this route.
 
 Response Fields
 ---------------

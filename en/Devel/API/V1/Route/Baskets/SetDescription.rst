@@ -4,14 +4,14 @@ Baskets SetDescription
 About
 -----
 
-Set the description of the basket
+Sets a description to a given basket.
 
 .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/setdescription/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              POST
  Requires Authentication  Yes

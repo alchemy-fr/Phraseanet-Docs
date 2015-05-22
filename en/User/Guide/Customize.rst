@@ -48,7 +48,7 @@ In the **Display** tab, the user can:
 
 * Change the display mode from *Thumbnails* to *List*
 * Modify the colour set of the interface (Dark theme by default).
-* Change the informations displayed when mousing-over thumbnails by checking
+* Change the information displayed when mousing-over thumbnails by checking
   the Iconograph or Graphist mode
 * Choose to display the documents technical information in the Display area or
   in the detailed view

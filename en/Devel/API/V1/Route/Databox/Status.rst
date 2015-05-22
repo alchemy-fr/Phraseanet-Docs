@@ -1,17 +1,17 @@
 Databox Status
-===================
+==============
 
 About
 -----
 
-Return available Status on specified databox
+Returns available Phraseanet Status for a specified databox.
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/status/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

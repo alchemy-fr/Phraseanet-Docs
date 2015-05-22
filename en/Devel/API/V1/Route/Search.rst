@@ -20,7 +20,7 @@ Whereas this route returns different types of records (documents, stories),
     /api/v1/search/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              POST
  Requires Authentication  Yes

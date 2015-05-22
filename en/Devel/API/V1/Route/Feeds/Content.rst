@@ -4,14 +4,14 @@ Feed Content
 About
 -----
 
-Return the content of a feed
+Returns the content of a feed.
 
 .. code-block:: bash
 
     /api/v1/feeds/{feed_id}/content/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

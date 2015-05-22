@@ -4,14 +4,14 @@ Records Metadatas
 About
 -----
 
-Returns the metadatas of a record
+Returns the metadatas of a given record.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/metadatas/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

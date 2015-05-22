@@ -4,14 +4,14 @@ Databox Collections
 About
 -----
 
-Return available Collections on specified databox
+Returns available collections on a specified databox.
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/collections/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

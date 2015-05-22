@@ -4,14 +4,14 @@ Records Status
 About
 -----
 
-List all status of a record
+Lists all status of a given record.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/status/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

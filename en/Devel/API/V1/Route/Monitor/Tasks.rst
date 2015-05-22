@@ -4,14 +4,14 @@ Tasks monitor
 About
 -----
 
-Returns all information about all tasks
+Returns all information about available tasks.
 
 .. code-block:: bash
 
     /api/v1/monitor/tasks/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

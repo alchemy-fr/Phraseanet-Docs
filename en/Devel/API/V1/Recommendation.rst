@@ -6,7 +6,7 @@ Use HTTPS
 
 Since Phraseanet APIs does not provide any public endpoint, all requests need
 to be signed, it results in the transmission of plain text credentials in the
-HTTP request, to protect this sensitive informations, the authorization server
+HTTP request, to protect this sensitive information, the authorization server
 must require the use of a transport-layer security mechanism when sending
 requests to any Phraseanet API endpoints.
 

@@ -161,9 +161,9 @@ suggested tabs:
 * **Substitution**: Replace the original document by an other. A checkbox
   allows to choose if the thumbnail and the preview image have to be rebuilt.
 * **Substitution for subview**: Replace the thumbnail image by an other file.
-* **Metadatas**: Display all the metadatas informations read by the
-  **Exiftool** tool in the original media of the selected document (this tab is
-  available if only one document is selected)
+* **Metadatas**: Display all the metadatas information read by the
+  **Exiftool** application in the original media of the selected document (this
+  tab is available if only one document is selected)
 
 Delete
 ******

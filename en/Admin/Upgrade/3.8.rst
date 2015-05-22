@@ -14,7 +14,7 @@ There is no more environment to declare and configuration is compiled in plain
 PHP to get the benefit of the `opcode cache`_.
 
 Configuration is automatically upgraded during the upgrade procedure. Detailed
-informations about the configuration are available in its
+information about the configuration are available in its
 :doc:`documentation<../Configuration>`.
 
 .. warning::

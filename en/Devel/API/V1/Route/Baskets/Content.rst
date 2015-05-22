@@ -4,14 +4,14 @@ Baskets Content
 About
 -----
 
-Returns the content of the basket
+Returns the content of the basket.
 
 .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/content/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

@@ -4,15 +4,15 @@ Embed Substitute
 About
 -----
 
-Substitute (or add) an embed file (subdef) to a record.
-Allows to inject an embed file built out from Phraseanet when a document has been added
-with the parameter "nosubdefs".
+Substitutes (or adds) an embed file (subdef) to a record.
+Allows to inject an embed file built out of Phraseanet when a document has been
+added with the parameter "nosubdefs".
 
 .. seealso:: :doc:`Add record <../Records/Add>`
 
 
 ========================== ======
- Informations
+ Information
 ========================== ======
  HTTP Method                POST
  Requires Authentication    Yes
