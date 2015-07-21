@@ -43,17 +43,17 @@ More parameters (records to delete from the story) are json encoded and must be 
         "story_records": [
             {
                 "databox_id": 3,
-                "record_id": 209,
+                "record_id": 209
             },
             {
                 "databox_id": 3,
-                "record_id": 210,
+                "record_id": 210
             }
         ]
     }
 
 .. note:: Even if a story can only contains elements from the same databox as itself, the parameters "databox_id"
-    in the json MUST all be specified, equals to the parameter "databox_id" of the url.
+    in the json **must** all be specified, equals to the parameter "databox_id" of the url.
 
 
 Response sample

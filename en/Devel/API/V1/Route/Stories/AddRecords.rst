@@ -55,7 +55,7 @@ More parameters (records to add to the story) are json encoded and must be passe
     }
 
 .. note:: Even if a story can only contains elements from the same databox as itself, the parameters "databox_id"
-    in the json MUST all be specified, equals to the parameter "databox_id" of the url.
+    in the json **must** all be specified, equals to the parameter "databox_id" of the url.
 
 .. note:: Only a record of type "image" can be used as a cover for a story, but to ease selection of cover,
     the "use_as_cover" parameter can be set to many (all) records : The first record of type "image" will be elected.

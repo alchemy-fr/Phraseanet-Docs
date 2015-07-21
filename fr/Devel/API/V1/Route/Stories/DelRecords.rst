@@ -35,7 +35,7 @@ D'autres paramètres (documents à retirer du reportage) doivent être encodés 
 ============== ============== ========================================================
  databox_id     entier         L'identifiant de la databox contenant le document à retirer du reportage
  record_id      entier         L'identifiant du document à retirer
- ============== ============== ========================================================
+============== ============== ========================================================
 
 .. code-block:: javascript
 
@@ -43,7 +43,7 @@ D'autres paramètres (documents à retirer du reportage) doivent être encodés 
         "story_records": [
             {
                 "databox_id": 3,
-                "record_id": 209,
+                "record_id": 209
             },
             {
                 "databox_id": 3,
@@ -53,7 +53,7 @@ D'autres paramètres (documents à retirer du reportage) doivent être encodés 
     }
 
 .. note:: Même si reportage ne peut contenir que des éléments de la même databox que celui-ci, les paramètres "databox_id"
-    dans le json DOIVENT être présents et égaux au paramètre "databox_id" de la route.
+    dans le json **doivent** être présents et égaux au paramètre "databox_id" de la route.
 
 
 

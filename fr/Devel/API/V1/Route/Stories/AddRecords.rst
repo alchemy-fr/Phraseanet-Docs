@@ -55,7 +55,7 @@ D'autres paramètres (documents à ajouter au reportage) doivent être encodés 
     }
 
 .. note:: Même si reportage ne peut contenir que des éléments de la même databox que celui-ci, les paramètres "databox_id"
-    dans le json DOIVENT être présents et égaux au paramètre "databox_id" de la route.
+    dans le json **doivent** être présents et égaux au paramètre "databox_id" de la route.
 
 .. note:: Seuls les documents de type "image" peuvent être utilisés comme image représentative pour un reportage.
     Pour faciliter la création, le paramètre "use_as_cover" peut être spécifié pour plusieurs (ou tous) documents :
