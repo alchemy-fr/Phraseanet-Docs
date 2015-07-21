@@ -1,14 +1,14 @@
-Ajouter des documents à un reportage
-====================================
+Supprimer des documents d'un reportage
+======================================
 
 About
 -----
 
-Ajouter des documents à un reportage existant
+Supprimer des documents d'un reportage
 
 .. code-block:: bash
 
-    /api/v1/stories/{databox_id}/{story_id}/addrecords
+    /api/v1/stories/{databox_id}/{story_id}/delrecords
 
 ======================== ==================
  Informations
@@ -28,15 +28,14 @@ Paramètres
  story_id       entier         L'identifiant du reportage
 ============== ============== ========================================================
 
-D'autres paramètres (documents à ajouter au reportage) doivent être encodés en json et passés dans le "body" de la requète.
+D'autres paramètres (documents à retirer du reportage) doivent être encodés en json et passés dans le "body" de la requète.
 
 ============== ============== ========================================================
  Paramètres     Type           Information
 ============== ============== ========================================================
- databox_id     entier         L'identifiant de la databox contenant le document à insérer dans le reportage
- record_id      entier         L'identifiant du document à insérer
- use_as_cover   booléen        Utiliser ce document comme image représentative
-============== ============== ========================================================
+ databox_id     entier         L'identifiant de la databox contenant le document à retirer du reportage
+ record_id      entier         L'identifiant du document à retirer
+ ============== ============== ========================================================
 
 .. code-block:: javascript
 
@@ -48,19 +47,13 @@ D'autres paramètres (documents à ajouter au reportage) doivent être encodés 
             },
             {
                 "databox_id": 3,
-                "record_id": 210,
-                "use_as_cover": true
+                "record_id": 210
             }
         ]
     }
 
 .. note:: Même si reportage ne peut contenir que des éléments de la même databox que celui-ci, les paramètres "databox_id"
     dans le json DOIVENT être présents et égaux au paramètre "databox_id" de la route.
-
-.. note:: Seuls les documents de type "image" peuvent être utilisés comme image représentative pour un reportage.
-    Pour faciliter la création, le paramètre "use_as_cover" peut être spécifié pour plusieurs (ou tous) documents :
-    Le premier document de type "image" sera élu. Si aucun document ne convient cela ne déclenche pas d'erreur
-    mais le reportage créé sera représenté par une icone de "dossier".
 
 
 
@@ -72,7 +65,7 @@ Exemple de réponse
     {
         "meta": {
             "api_version": "1.4.1",
-            "request": "POST /api/v1/stories/3/281/addrecords",
+            "request": "POST /api/v1/stories/3/281/delrecords",
             "response_time": "2015-04-22T13:31:46+02:00",
             "http_code": 200,
             "error_type": null,
