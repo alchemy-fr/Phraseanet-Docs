@@ -28,6 +28,7 @@ Routes
     Route/Stories/Embed
     Route/Stories/Add
     Route/Stories/AddRecords
+    Route/Stories/DelRecords
     Route/Stories/SetCover
     Route/Baskets/Add
     Route/Baskets/Content
