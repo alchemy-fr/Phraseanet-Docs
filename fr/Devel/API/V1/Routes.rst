@@ -78,6 +78,7 @@ Par exemple, les propriétés d'un enregistrement ou d'une databox :
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | stories   |* :doc:`record <Route/Stories/Story>`   |* :doc:`embed <Route/Stories/Embed>`            |* :doc:`add <Route/Stories/Add>`                      |
 |           |                                        |                                                |* :doc:`addrecords <Route/Stories/AddRecords>`        |
+|           |                                        |                                                |* :doc:`delrecords <Route/Stories/DelRecords>`        |
 |           |                                        |                                                |* :doc:`setcover <Route/Stories/SetCover>`            |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | baskets   |* :doc:`list <Route/Baskets/List>`      |* :doc:`content <Route/Baskets/Content>`        |* :doc:`setname <Route/Baskets/SetName>`              |

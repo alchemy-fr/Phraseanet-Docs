@@ -78,6 +78,7 @@ For example, you can get the permalinks of a record with the following route:
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | stories   |* :doc:`record <Route/Stories/Story>`   |* :doc:`embed <Route/Stories/Embed>`            |* :doc:`add <Route/Stories/Add>`                      |
 |           |                                        |                                                |* :doc:`addrecords <Route/Stories/AddRecords>`        |
+|           |                                        |                                                |* :doc:`delrecords <Route/Stories/DelRecords>`        |
 |           |                                        |                                                |* :doc:`setcover <Route/Stories/SetCover>`            |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | baskets   |* :doc:`list <Route/Baskets/List>`      |* :doc:`content <Route/Baskets/Content>`        |* :doc:`setname <Route/Baskets/SetName>`              |
