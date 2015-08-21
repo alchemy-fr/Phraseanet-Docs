@@ -19,7 +19,7 @@ displays a menu listing the different administration sections.
 **If a user does not see these sections, it is because its**
 :doc:`rights <AdministrationUsers>` **do not allow it.**
 
-.. image:: ../../images/Administration-gauche.jpg
+.. image:: ../../images/Administration-gauche-en.jpg
     :align: center
 
 Some of these sections have sub-sections. Click on the **+** buttons to display
