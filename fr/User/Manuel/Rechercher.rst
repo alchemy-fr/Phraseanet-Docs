@@ -28,12 +28,14 @@ permet d'afficher des documents ou des reportages selon les informations
 contenues dans les champs documentaires des notices descriptives.
 
 Par défaut, **la recherche porte sur les documents** des bases et collections
-auxquelles à accès l'utilisateur et à la connexion, les médias affichés sont
+auxquelles a accès l'utilisateur. A la connexion, les médias affichés sont
 ceux résultants d'une
 :doc:`question initiale paramétrable <Personnaliser>`.
 
 .. image:: ../../images/Rechercheavancee1.jpg
     :align: center
+
+.. _Rechercher-des-reportages:
 
 **Pour rechercher des reportages**, placer le bouton radio du mode de recherche
 en position reportage. Dans ce mode, la recherche porte sur le contenu de la
