@@ -178,3 +178,9 @@ In some cases, the graphical view simulates the task's execution.
 .. seealso::
 
     :doc:`Refer to the page dedicated to the Task manager in the Administration manual <../../Admin/TaskManager>`.
+
+Plugins
+-------
+
+From version 3.8.7, this section lists additional extensions installed on
+the instance.
