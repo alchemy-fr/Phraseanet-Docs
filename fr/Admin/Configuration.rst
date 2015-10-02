@@ -241,6 +241,33 @@ Voici un exemple de fichier de configuration commenté
 
     lazyload: false                                # (boolean) Activation du lazyload pour l'affichage des vignettes (obsolete si l'option static-file est activée)
 
+    crossdomain:
+        site-control: 'master-only'                # (string)  Define the meta-policy
+        allow-access-from:                         # (array) Define granted domains
+            -
+                domain: '*.example.com'
+                secure: 'false'
+            -
+                domain: 'www.example.com'
+                secure: 'true'
+                to-ports: '507,516-523'
+        allow-access-from-identity:                # (array) Define granted permission based on cryptographic credentials
+            -
+                fingerprint-algorithm: 'sha-1'
+                fingerprint: '01:23:45:67:89:ab
+            -
+                fingerprint-algorithm: 'sha256'
+                fingerprint: 'cd:ef:01:23:45:67'
+        allow-http-request-headers-from:           # (array) Define allowed headers
+            -
+                domain: '*.bar.com'
+                secure: 'true'
+                headers: 'SOAPAction, X-Foo*'
+            -
+                domain: 'foo.example.com'
+                secure: 'false'
+                headers: 'Authorization,X-Foo*'
+
 Langues
 *******
 
@@ -618,3 +645,22 @@ Un lien symbolique est créé pour chaque image.
         enabled: true
         type: nginx
         symlink-directory: ''
+Cross Domain Flash Policy
+*************************
+
+La section `crossdomain` permet de régler les restrictions d'accés pour les
+requêtes Flash.
+
+.. code-block:: yaml
+
+        crossdomain:
+            allow-access-from:
+                -
+                    domain: '*.example.com'
+
+La commande `bin/console crossdomain:generate` permet de générer le fichier
+crossdomain.xml.
+
+.. code-block:: none
+
+    bin/console crossdomain:generate
