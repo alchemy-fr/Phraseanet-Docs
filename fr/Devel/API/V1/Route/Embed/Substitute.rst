@@ -32,6 +32,10 @@ Paramètres
                              aux réglages (dimensions, type, ...) de la structure.
 =============== =========== =============
 
+.. note::
+
+    Le paramètre optionnel *adapt* se destine seulement aux documents de type
+    image.
 
 Exemples de réponses
 ---------------------
