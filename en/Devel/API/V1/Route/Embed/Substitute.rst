@@ -32,6 +32,9 @@ Parameters
                              to the settings (size, type, ...) defined in the structure.
 =============== =========== =============
 
+.. note::
+
+    The *adapt* parameter is intended only for image type documents.
 
 Response samples
 ----------------
