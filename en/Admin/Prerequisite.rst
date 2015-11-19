@@ -23,7 +23,7 @@ a replacement for MySQL.
 PHP
 ---
 
-* PHP >= 5.3.4 with:
+* PHP >= 5.4 with:
 
     * Dom
     * exif
