@@ -149,7 +149,8 @@ Outils
 Le bouton Outils regroupe des actions qui permettent d'agir sur :
 
 * **Les vignettes ou images de choix** (régénération, substitution, rotation,
-  choix de la vignette pour les vidéos)
+  options de partage des fichiers de sous-définition, choix de la vignette pour
+  les vidéos)
 * **La substitution de documents orignaux ou de sous définitions** si la
   fonctionnalité est activée dans le paramétrage de l'application
 * **D'afficher les informations de métadonnées** existantes dans un document
@@ -176,6 +177,9 @@ Outils. Choisir un des onglets proposés :
   lues par l'utilitaire **Exiftool** dans le média original du document
   sélectionné (cet onglet n'est disponible que si un seul document est
   sélectionné)
+* **Partage des sous-définitions** : pour désactiver ou activer les permaliens
+  des fichiers de sous-définition (depuis la version 3.8.7), les permaliens
+  désactivés retournant des codes d'erreur HTTP 404.
 
 Supprimer
 *********
