@@ -142,8 +142,8 @@ Tools
 
 Tools regroups the actions allowing to act on:
 
-* **The thumbnails or preview images** (re-generation, substitution, rotation,
-  preview thumbnail for videos)
+* **The thumbnails or preview images** (regeneration, substitution, rotation or
+  sharing options for preview and thumbnail, choice of thumbnail for videos)
 * **The substitution of original document or thumbnail** if the feature
   is activated in the application's settings
 * **To display all metadata** of a selected document
@@ -152,7 +152,7 @@ Select one or more records in the display area or in an opened basket or story
 of the work zone then click on the **Tools** button. Choose one of the
 suggested tabs:
 
-* **Regenerating the sub-definition**: to re-generate thumbnails and
+* **Regenerating the sub-definition**: to regenerate thumbnails and
   subviews from original documents for the selected records.
 * **Video tools**: Available only if the selected media is a video, this
   tab propose tools to customize the thumbnail of the selected video.
@@ -164,6 +164,9 @@ suggested tabs:
 * **Metadatas**: Display all the metadatas information read by the
   **Exiftool** application in the original media of the selected document (this
   tab is available if only one document is selected)
+* **Subviews sharing**: disabling (or enabling) permalinks for sub-definition
+  files of a selected document ; disabling permalinks giving HTTP 404 error
+  codes when reaching its URLs.
 
 Delete
 ******
