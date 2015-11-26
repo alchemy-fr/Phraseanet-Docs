@@ -164,9 +164,9 @@ suggested tabs:
 * **Metadatas**: Display all the metadatas information read by the
   **Exiftool** application in the original media of the selected document (this
   tab is available if only one document is selected)
-* **Subviews sharing**: disabling (or enabling) permalinks for sub-definition
-  files of a selected document ; disabling permalinks giving HTTP 404 error
-  codes when reaching its URLs.
+* **Subviews sharing**: since 3.8.7, disabling (or enabling) permalinks for
+  documents, sub-definitions or thumbnails files of a selected document ;
+  disabling permalinks giving HTTP 404 error codes when reaching its URLs.
 
 Delete
 ******
