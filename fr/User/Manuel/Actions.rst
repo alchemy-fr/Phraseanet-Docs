@@ -177,9 +177,10 @@ Outils. Choisir un des onglets proposés :
   lues par l'utilitaire **Exiftool** dans le média original du document
   sélectionné (cet onglet n'est disponible que si un seul document est
   sélectionné)
-* **Partage des sous-définitions** : pour désactiver ou activer les permaliens
-  des fichiers de sous-définition (depuis la version 3.8.7), les permaliens
-  désactivés retournant des codes d'erreur HTTP 404.
+* **Partage des sous-définitions** : depuis la version 3.8.7, pour désactiver
+  ou activer les permaliens pointant vers les fichiers ressources (documents
+  originaux, sous-définitions et vignettes). Les permaliens désactivés
+  retournent des codes d'erreur HTTP 404.
 
 Supprimer
 *********
