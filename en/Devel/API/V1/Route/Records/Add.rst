@@ -32,7 +32,7 @@ Parameters
                              note. : Status-bits 3 to 0 are reserved for Phraseanet and
                              must be set to 0
  forceBehavior   integer     0: force record ; 1: force quarantine (optional)
- nosubdefs       entier      Optional - 1: Prevents the creation of sub-definitions files for this document
+ nosubdefs       entier      Optional - 1: Prevents the creation of sub-definitions files for this document. If document goes to quarantine attribute **nosubdefs** will be lost
 =============== =========== =============
 
 Response Fields

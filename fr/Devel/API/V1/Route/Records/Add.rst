@@ -32,8 +32,8 @@ Paramètres
                              ex. : "0b10110000": lève les status-bits 7, 5 and 4 ;
                              note. : Les status-bits 3 à 0 sont réservés à Phraseanet et
                              doivent être laissés à 0
- forceBehavior   entier      Optionnel   - 0 : Force l'ajout du record ; 1 : Force le passage en quarantine
- nosubdefs       entier      Optionnel - 1 : Empêche la création des sous-définitions pour ce document
+ forceBehavior   entier      Optionnel   - 0 : Force l'ajout du record ; 1 : Force le passage du document en quarantine
+ nosubdefs       entier      Optionnel - 1 : Empêche la création des sous-définitions pour le document ajouté. Si le document entre en quarantaine, l'attribut **nosubdefs** est perdu
 =============== =========== =============
 
 Attribut de la réponse
