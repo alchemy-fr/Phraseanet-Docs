@@ -25,16 +25,16 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Phraseanet'
-copyright = u'2004-2014, <a href="http://www.alchemy.fr" target="_blank">Alchemy</a>'
+copyright = u'2004-2015, <a href="http://www.alchemy.fr" target="_blank">Alchemy</a>'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '3.9'
+version = '4.0'
 # The full version, including alpha/beta/rc tags.
-release = '3.9'
+release = '4.0'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:

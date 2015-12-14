@@ -68,8 +68,8 @@ Some properties can be added to the JSON document as follow:
         "homepage" : "http://example.com/project/example",
         "license"     : "MIT",
         "version"     : "0.1",
-        "minimum-phraseanet-version": "3.8",
-        "maximum-phraseanet-version": "3.9",
+        "minimum-phraseanet-version": "4.0",
+        "maximum-phraseanet-version": "4.1",
         "twig-paths": ["custom-twig-views"],
         "services" : [
             {
