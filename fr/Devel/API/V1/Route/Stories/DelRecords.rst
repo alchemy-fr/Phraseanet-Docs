@@ -13,7 +13,7 @@ Supprimer des documents d'un reportage
 ======================== ==================
  Informations
 ======================== ==================
- HTTP Method              POST
+ HTTP Method              DELETE
  Requires Authentication  Oui
  Content-Type             application/json
 ======================== ==================
@@ -65,7 +65,7 @@ Exemple de réponse
     {
         "meta": {
             "api_version": "1.4.1",
-            "request": "POST /api/v1/stories/3/281/delrecords",
+            "request": "DELETE /api/v1/stories/3/281/delrecords",
             "response_time": "2015-04-22T13:31:46+02:00",
             "http_code": 200,
             "error_type": null,
