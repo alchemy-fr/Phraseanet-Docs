@@ -1,7 +1,9 @@
 language: python
 
+sudo: false
+
 before_script:
-  - sudo easy_install sphinx
+  - pip install -U sphinx
 
 script:
   - sh -c "make clean && make htmlstrict"
