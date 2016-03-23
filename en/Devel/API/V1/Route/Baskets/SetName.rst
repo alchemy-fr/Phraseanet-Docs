@@ -4,14 +4,14 @@ Baskets SetName
 About
 -----
 
-Return
+Allows to update the name of a given basket.
 
 .. code-block:: bash
 
     /api/v1/baskets/{basket_id}/setname/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              POST
  Requires Authentication  Yes

@@ -9,7 +9,7 @@
     Statistics are available in Phraseanet. In Production, statistics
     on documents are available in a couple tabs in detailed view.
 
-    **Report** gives more detailed informations on the site's activity.
+    **Report** gives more detailed information on the site's activity.
 
 Statistics in Production
 ------------------------
@@ -35,7 +35,7 @@ Statistics in *Report*
 ----------------------
 
 Report regroups the statistics on connections, downloads, and site activity.
-A dashboard sums up these main informations.
+A dashboard sums up these main information.
 
 **To start a Report**, click on the corresponding section in the menu bar then
 generate the report for a chosen period.

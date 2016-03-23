@@ -4,14 +4,14 @@ Start a task
 About
 -----
 
-Start a task and return its status
+Starts a task and returns its state.
 
 .. code-block:: bash
 
     /api/v1/monitor/task/{task_id}/start/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              POST
  Requires Authentication  Yes

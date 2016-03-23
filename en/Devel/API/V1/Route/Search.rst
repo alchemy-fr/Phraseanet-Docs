@@ -1,23 +1,26 @@
 Search
-==============
+======
 
 About
 -----
 
-Return the result of a search.
+Returns the list of records found for a search whose parameters are given as
+arguments.
 
-This route is distinct of :doc:`records/search <Records/Search>` because
-results are grouped by type.
+.. note::
 
-Whereas this route returns different types of results (records, stories),
-there is currently no support to query both of these types at the same type.
+    This route is distinct of :doc:`records/search <Records/Search>` because
+    results are grouped by type.
+
+Whereas this route returns different types of records (documents, stories),
+**there is currently no support to query both of these types at the same time**.
 
 .. code-block:: bash
 
-    /api/v1/records/search/
+    /api/v1/search/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              POST
  Requires Authentication  Yes
@@ -31,8 +34,8 @@ Parameters
 ============= =========== ========= =============
  query         string                Search query ; search query is the same syntax as in phraseanet. Default value is an string, which equals “all records”
  bases         array                 An array of base_ids ; If an empty array or no value are provided, the query is done on all collections
- offset_start  int         0         The number of the requested page (first page is page 1)
- per_page      int         10        The number of records per page
+ offset_start  int         0         The offset of the first record to return. The offset of the initial record is 0 (not 1).
+ per_page      int         10        The maximum number of records to return.
  ord           string                This feature is currently only available with SphinxSearch Engine. Available values are “asc” and “desc”
  sort          string                This feature is currently only available with SphinxSearch Engine. Available values are “relevance” and “created_on” and “random”
  record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”

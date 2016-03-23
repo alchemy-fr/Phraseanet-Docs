@@ -123,6 +123,11 @@ rights on the media.
 * For delivered orders, the user is notified and receives the requested
   documents in Lightbox, using a link displayed in the notifications.
 
+.. note::
+
+    The order tab & form are available only if
+    :ref:`an order manager <Collections-Order-Managers>` is defined.
+
 Print
 -----
 

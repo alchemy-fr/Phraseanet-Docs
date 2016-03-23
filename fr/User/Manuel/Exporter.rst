@@ -130,6 +130,11 @@ utilisateurs ne bénéficiant pas des droits de téléchargement sur des médias
 * Pour les commandes délivrées, l'utilisateur réceptionne les documents demandés
   dans Lightbox, via un lien figurant dans les notifications.
 
+.. note::
+
+    Le formulaire de commande n'est accessible que si un :ref:`gestionnaire de
+    commande <AdministrationBasesCollections-Gestionnaires>` est défini.
+
 Imprimer
 --------
 

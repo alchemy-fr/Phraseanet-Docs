@@ -1,11 +1,24 @@
 API Changelog
 =============
 
+1.4.1
+-----
+
+Version 1.4.1 of Phraseanet API is brought with Phraseanet 3.8.6.
+This upgrade is fully backward compatible and features new *accept* headers:
+
+* "application/vnd.phraseanet.record-extended+json"
+* "application/vnd.phraseanet.record-extended+yaml"
+* "application/vnd.phraseanet.record-extended+jsonp"
+
+Those extended headers allows to get more information (sub-definitions,
+caption...*etc*.).about a record in a single request.
+
 1.4.0
 -----
 
 Version 1.4.0 of Phraseanet API is brought with Phraseanet 3.8.4.
-This upgrade is fully backward compatible, adds a new route to get informations
+This upgrade is fully backward compatible, adds a new route to get information
 about the current authenticated user.
 
 New routes

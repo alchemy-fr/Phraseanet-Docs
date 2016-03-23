@@ -13,7 +13,7 @@ it goes to the quarantine. This behavior can be bypassed with the optional
     /api/v1/records/add/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              POST
  Requires Authentication  Yes
@@ -27,8 +27,12 @@ Parameters
 =============== =========== =============
  file            file        Mandatory - The file related to the record to add
  base_id         integer     Mandatory - The base_id related to the destination collection
- status          string      64 bit format binary string (optional)
+ status          string      32 bits format binary string (optional)
+                             ex. : "0b10110000": rise status-bits 7, 5 and 4 ;
+                             note. : Status-bits 3 to 0 are reserved for Phraseanet and
+                             must be set to 0
  forceBehavior   integer     0: force record ; 1: force quarantine (optional)
+ nosubdefs       entier      Optional - 1: Prevents the creation of sub-definitions files for this document. If document goes to quarantine attribute **nosubdefs** will be lost
 =============== =========== =============
 
 Response Fields

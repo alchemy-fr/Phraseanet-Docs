@@ -136,7 +136,7 @@ dedicated autoloader.
 
 The file above declares that the plugin sources will be automatically loaded
 from the **src** directory and will follow a `PSR-0`_ structure.
-It is recommended to read `composer`_ documentation for more informations.
+It is recommended to read `composer`_ documentation for more information.
 
 Plugin authoring
 ----------------

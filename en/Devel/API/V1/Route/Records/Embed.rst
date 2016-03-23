@@ -36,7 +36,7 @@ HTTP HEAD requests are also supported by permalinks.
     /api/v1/records/{databox_id}/{record_id}/embed/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

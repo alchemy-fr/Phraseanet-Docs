@@ -4,14 +4,14 @@ Quarantine list
 About
 -----
 
-List the content of the quarantine
+Lists the content of the quarantine.
 
 .. code-block:: bash
 
     /api/v1/quarantine/list/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

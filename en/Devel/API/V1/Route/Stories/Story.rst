@@ -4,14 +4,14 @@ Stories Story
 About
 -----
 
-Return all information about one story
+Returns all information about a given story.
 
 .. code-block:: bash
 
     /api/v1/stories/{databox_id}/{story_id}/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

@@ -11,7 +11,7 @@ Returns permalinks to medias attached to the story.
     /api/v1/stories/{databox_id}/{story_id}/embed/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

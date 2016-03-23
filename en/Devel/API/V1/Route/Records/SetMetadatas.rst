@@ -4,14 +4,14 @@ Records SetMetadatas
 About
 -----
 
-Add, modify current record's metadatas
+Adds or modifies the metadatas for a given record.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/setmetadatas/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              POST
  Requires Authentication  Yes

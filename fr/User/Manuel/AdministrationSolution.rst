@@ -29,7 +29,7 @@ serveurs web qui entrent dans la mise en oeuvre de Phraseanet.
 Paramétrage
 -----------
 
-**Accessible aux seuls administrateurs Phraseanet**, l'écran de Paramétrage
+**Accessible aux seuls administrateurs Phraseanet**, l'écran Paramétrage
 propose une interface graphique permettant de modifier des paramètres
 d'installation et de configuration de l'instance Phraseanet.
 
@@ -54,9 +54,8 @@ Le jeu de formulaires permet :
 Paramétrage du moteur de recherche
 ----------------------------------
 
-Réservée aux administrateurs systèmes chargés de déployer Phraseanet, cette
-rubrique permet de configurer le moteur de recherche utilisé par l'instance
-au moyen d'une interface graphique.
+Réservée aux administrateurs Phraseanet, cette rubrique permet de configurer le
+moteur de recherche utilisé par l'instance au moyen d'une interface graphique.
 
 .. seealso::
 
@@ -75,8 +74,7 @@ L'interface propose :
 Configuration du moteur Sphinx
 ******************************
 
-Le formulaire permet de configurer le paramétrage du moteur de recherche
-Sphinx utilisé.
+Le formulaire permet de configurer le moteur de recherche Sphinx utilisé.
 
 Utilisateurs connectés
 ----------------------
@@ -99,7 +97,7 @@ diffusés à partir de l'application.
     :align: center
 
 L'écran liste les flux médias disponibles et permet d'en créer, d'en modifier
-et d'en supprimer.
+ou d'en supprimer.
 
 .. _Creer-un-flux-de-publication:
 
@@ -130,26 +128,35 @@ Gestionnaire de tâches
 
 **Accessible aux seuls administrateurs Phraseanet**, la rubrique permet de
 gérer les tâches qui concourent au fonctionnement de l'application.
-Les tâches sont listées dans un tableau qui indique leurs identifiants,
+
+Les tâches sont listées dans un tableau indiquant leurs identifiants,
 activités et noms.
+
+Tâches standards
+****************
+
+La solution est livrée en standard avec un jeu de tâches pour l'exploitation :
+
+* **Tâche d'indexation**
+* **Création de sous définitions**
+* **Ecriture de métadonnées**
+
+Ces tâches sont créées à l'issue de
+:doc:`l'installation de Phraseanet <../../Admin/Installation>`.
+
+Démarrer (ou arrêter) une tâche
+*******************************
 
 Effectuer un clic droit sur le menu contextuel de la tâche pour :
 
 * Démarrer ou arrêter une tâche
 * Editer les paramètres d'une tâche (elle doit être préalablement arrêtée)
 
-Nouvelle tâche
-**************
+Ajouter des tâches supplémentaires
+**********************************
 
-Le paramétrage de tâches permet de mettre en place des automatismes de
-traitement. La solution est livrée en standard avec un jeu de tâches pour
-l'exploitation :
-
-* Tâche d'indexation
-* Création de sous définitions
-* Ecriture de métadonnées
-
-Les administrateurs peuvent en ajouter d'autres :
+Les administrateurs peuvent en ajouter d'autres tâches pour mettre en place des
+automatismes de traitement sur les enregistrements d'une base :
 
 * Sélectionner un des modèles de tâches disponibles dans le menu déroulant
   **Nouvelle tâche**.
@@ -170,3 +177,9 @@ Dans certains cas, une vue graphique simule l'exécution de la tâche.
 .. seealso::
 
     :doc:`Se reporter à la page consacrée au moteur de tâches<../../Admin/MoteurDeTaches>`.
+
+Plugins
+-------
+
+Depuis la version 3.8.7, la rubrique Plugins liste les extensions
+complémentaires installées sur l'instance.

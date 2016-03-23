@@ -4,14 +4,14 @@ Records Related
 About
 -----
 
-Return all baskets that contains one specific record
+Returns all baskets that contains a specified record.
 
 .. code-block:: bash
 
     /api/v1/records/{databox_id}/{record_id}/related/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

@@ -4,14 +4,14 @@ Databox Metadatas
 About
 -----
 
-Return Metadatas settings on specified databox
+Returns Metadatas settings on a specified databox.
 
 .. code-block:: bash
 
     /api/v1/databoxes/{databox_id}/metadatas/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

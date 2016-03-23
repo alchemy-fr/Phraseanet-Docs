@@ -4,14 +4,14 @@ Baskets Add
 About
 -----
 
-Adds a new basket
+Adds a new basket.
 
 .. code-block:: bash
 
     /api/v1/baskets/add/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

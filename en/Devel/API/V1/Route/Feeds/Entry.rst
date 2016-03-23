@@ -4,14 +4,14 @@ Feeds Entry Content
 About
 -----
 
-Return the content of an entry, given an Id
+Returns the content of a selected entry.
 
 .. code-block:: bash
 
     /api/v1/feeds/entry/{entry_id}/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

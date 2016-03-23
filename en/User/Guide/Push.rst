@@ -86,7 +86,7 @@ To allow recipients to download original documents, two methods are available:
 * Click on the *Send* button to validate and transmit the Push.
 
 The following form is aimed to give a name and a description to the push. Those
-informations will part of the email notification addressed to recipients.
+information will part of the email notification addressed to recipients.
 If needed, an acknowledgement receipt of the email if this function is supported
 by the recipients mail boxes.
 

@@ -1,22 +1,22 @@
-Records Search
-==============
+Records Search (deprecated)
+===========================
+
+.. warning::
+
+    Although still available, this route is deprecated since version 1.3 in
+    favor of :doc:`search <../Search>`.
 
 About
 -----
 
-Return the result of record search.
-
-.. warning::
-
-    This route is deprecated since version 1.3 in favor of
-    :doc:`search <../Search>`.
+Returns the result of a search query.
 
 .. code-block:: bash
 
     /api/v1/records/search/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              POST
  Requires Authentication  Yes

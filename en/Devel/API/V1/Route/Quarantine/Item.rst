@@ -4,14 +4,14 @@ Quarantine item
 About
 -----
 
-Return an item of the quarantine given its Id
+Returns an item of the quarantine given its Id.
 
 .. code-block:: bash
 
     /api/v1/quarantine/item/{quarantine_id}/
 
 ======================== =====
- Informations
+ Information
 ======================== =====
  HTTP Method              GET
  Requires Authentication  Yes

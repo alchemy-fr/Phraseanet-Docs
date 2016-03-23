@@ -1,18 +1,27 @@
-Gestionnaire de Tâches
+Gestionnaire de tâches
 ======================
 
 Phraseanet intègre un moteur de tâches afin de réaliser des opérations
 asynchrones.
 
-Ces différentes tâches sont gérées par un Planificateur (Scheduler),
-qui s'occupe de leur démarrage, et de leur arrêt.
+Ces différentes tâches sont gérées par un Planificateur
+(ou :ref:`Scheduler<Scheduler>`), qui s'occupe de leurs démarrages, et de leurs
+arrêts.
 
-Pour l'édition de tâches,
-:ref:`se reporter au paragraphe consacré aux tâches<Edition-de-taches>` dans
-le manuel utilisateur.
+Accès au gestionnaire de tâches
+-------------------------------
 
-Le Planificateur de taches
----------------------------
+* Se connecter à l'application **avec un compte Administrateur Phraseanet**
+* Lancer l'interface **Admin**
+* Cliquer sur la rubrique *Gestionnaire de tâches* dans le menu latéral
+
+  .. image:: ../images/Admin_tasks.jpg
+    :align: center
+
+.. _Scheduler:
+
+Le Planificateur de taches (Scheduler)
+--------------------------------------
 
 Le menu contextuel du Gestionnaire de tâches (et de chacune des tâches) propose
 des rubriques pour démarrer, arrêter, ou consulter les logs des tâches.
@@ -22,8 +31,9 @@ des rubriques pour démarrer, arrêter, ou consulter les logs des tâches.
 Arrêts et démarrages alternatifs
 ********************************
 
-Pour automatiser des arrêts et des démarrages du planificateur de tâches, utiliser l’utilitaire
-`KonsoleKommander <Console>`_ et l'une des commandes suivantes dans une tâche Cron par exemple.
+Pour automatiser des arrêts et des démarrages du planificateur de tâches,
+utiliser l’utilitaire `KonsoleKommander <Console>`_ et l'une des commandes
+suivantes dans une tâche Cron par exemple.
 
 .. code-block:: bash
 
@@ -35,8 +45,14 @@ Pour automatiser des arrêts et des démarrages du planificateur de tâches, uti
 Les tâches
 ----------
 
-Indexation
-**********
+.. seealso::
+
+    Pour l'édition de tâches,
+    :ref:`se reporter au paragraphe consacré aux tâches<Edition-de-taches>` dans
+    le manuel utilisateur.
+
+Tâche d'indexation
+******************
 
 Permet de lancer l’exécutable phraseanet_indexer.
 Cet exécutable indexe les informations descriptives des
@@ -107,6 +123,8 @@ Ecriture des Métadonnées
 Cette tâche écrit les métadonnées dans un document en fonction des réglages de
 la structure documentaire.
 
+.. _Archiver-dans-collection:
+
 Archiver dans la collection
 ***************************
 
@@ -126,16 +144,88 @@ Paramètrage
 * Déplacer les documents non-archivés dans "_error" : garder
   ou pas un exemplaire du fichier en erreur
 
+Par défaut, TOUS les fichiers déposés dans le répetoire HotFolder (ou un sous-répertoire) sont archivés
+dans la collection, et décrits avec les éventuelles métadonnés incluses (IPTC, EXIF, XMP,...) en relation avec
+la structure de la base de destination.
+
+Instructions propres à un (sous) répertoire du hotfolder
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Un fichier .phrasea.xml dans un répertoire permet d'adapter l'archivage des fichiers à partir de ce répertoire.
+
+- Rediriger l'archivage vers une autre collection
+
+Cette option permet d'avoir une tâche d'archivage unique tout en ayant des sous-répertoires du hot-folder comme
+autant de "boîtes de dépôt" vers autant de collections.
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!--
+        ici 68 est l'ID de la collection de destination.
+    -->
+    <record collection="68" />
+
+
+- Spécifier la langue des fichiers archivés
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!--
+        les meta-donnés des fichiers sont en français.
+    -->
+    <record lng="fr" />
+
+
+- Attendre l'APPARITION d'un fichier avant d'archiver
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!--
+        ici l'archivage ne commencera que lorsqu'un fichier "_ok.txt" sera déposé
+        dans le répertoire concerné.
+        Ce fichier sera SUPPRIME par la tâche quand l'archivage sera terminé.
+    -->
+    <record>
+      <magicfile method="unlock">_ok.txt</magicfile>
+    </record>
+
+
+- Attendre la DISPARITION d'un fichier avant d'archiver
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+    <!--
+        ici l'archivage ne commencera que lorsque le fichier "_wait.txt" sera supprimé
+        du répertoire concerné.
+        Un fichier sera RE-CREE par la tâche quand l'archivage sera terminé.
+    -->
+    <record>
+      <magicfile method="lock">_wait.txt</magicfile>
+    </record>
+
+
 .. warning::
 
     Pour des raisons de sécurité, il faut créér un fichier .phrasea.xml à la
     racine du HotFolder.
 
-Il est possible d'archiver des fichiers associés à une description xml. Pour
-cela, il faut utiliser la vue XML.
 
-Exemple de configuration XML pour l'archivage de fichier `.jpg` et `.tif`
-associés à des fichiers de même nom `.xml` :
+Paramétrage étendu
+^^^^^^^^^^^^^^^^^^
+
+
+Un paramétrage spécifique via la vue XML de la tâche d'archivage permet d'affiner le traitement
+
+- Filtrage selon le nom de fichier
+
+Dans une section <files> il est possible de filtrer les noms acceptés en fonction d'un masque (expression régulière).
+Un fichier ne correspondant à aucun masque sera "en erreur" (supprimé ou déplacé dans le répertoire "_error")
+
+Exemple : n'accepter que les fichiers dont l'extension est ".jpg" ou ".JPG"
 
 .. code-block:: xml
 
@@ -143,21 +233,96 @@ associés à des fichiers de même nom `.xml` :
     <tasksettings>
 
       ...
-
+      <!--
+        n'accepter que les fichiers dont l'extension est `.jpg` ou `.JPG`
+        Attention, la 'casse' est respectée par la tâche.
+      -->
       <files>
-        <file mask="^(.*)\.jpg$" caption="$1.jpg.xml"/>
-        <file mask="^(.*)\.JPG$" caption="$1.JPG.xml"/>
-        <file mask="^(.*)\.tif$" caption="$1.tif.xml"/>
-        <file mask="^(.*)\.TIF$" caption="$1.TIF.xml"/>
-        <file mask="^(.*\.xml)$" caption="$1"/>
+        <file mask="^.*\.jpg$"/>
+        <file mask="^.*\.JPG$"/>
       </files>
     </tasksettings>
+
+
+- Description des fichiers archivés
+
+Les fichiers archivés peuvent être décrits par une fiche d'indexation (caption) en xml.
+La relation entre un fichier et sa fiche descriptive s'effectue par une expression "caption", fonction
+du masque.
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <tasksettings>
+
+      ...
+      <!--
+        configuration pour l'archivage de fichiers `.jpg` et `.tif`
+        décrits par des fichiers respectifs `.xml`
+      -->
+      <files>
+        <!--
+          le nom du fichier est extrait avec () pour être utilisé dans la recherche
+          du fichier de description correspondant.
+        -->
+        <file mask="^(.*)\.(jpg|tif)$" caption="$1.xml"/>
+      </files>
+    </tasksettings>
+
+
+- Exemple de fichier ".xml" de description
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <record>
+      <description>
+        <Objet>La Nature</Objet>
+        <MotsCles>arbre</MotsCles>
+        <MotsCles>terre</MotsCles>
+        <MotsCles>fleurs</MotsCles>
+        <Signature>Made by</Signature>
+        <TitreCredits>Photographe</TitreCredits>
+        <Pays>France</Pays>
+        <Titre>Ballade en forêt</Titre>
+        <Credit>Phraseanet</Credit>
+        <Source>www.phraseanet.com</Source>
+        <Date>2014-12-31</Date>
+      </description>
+    </record>
+
+- Création de reportages
+
+Il est possible de créer un "reportage" dans Phraseanet, contenant les éléments à archiver. Comme les fichiers, ce
+reportage peut être accompagné d'une fiche descriptive au format xml.
+
+.. code-block:: xml
+
+    ...
+      <files>
+        <!--
+          Les répertoires `.grp` sont des reportages décrits par le fichier `.grp.xml`
+        -->
+        <grouping mask="^(.*)\.grp$" caption="$1.grp.xml" />
+      </files>
+    ...
+
+Ici tout répertoire nommé "xxxx.grp" sera considéré comme un reportage, tous les éléments contenus dans ce répertoire
+(et dans les sous-répertoires) seront archivés dans un reportage Phraseanet. Le reportage (répertoire) est décrit par
+un fichier "xxxx.grp.xml"
+
+- Ajout à un un reportage existant
+
+Si des fichiers sont ajoutés par la suite dans répertoire de reportage (répertoire ".grp" dans
+l'exemple précédent), ces fichiers seront ajoutés au reportage correspondant dans Phraseanet. Le lien entre le répertoire
+et le reportage existe via un fichier caché ".grouping.xml" ajouté par la tâche dans le répertoire lors de la
+création initiale du reportage.
 
 FTP Push
 ********
 
-Permet de gérer une file d'attente de documents à envoyer par ftp.
-Cette fonction nécessite l'activation de la fonction d'export ftp.
+Permet de gérer une file d'attente de documents à envoyer par FTP.
+Cette fonction nécessite l'activation de la fonction d'export FTP.
 
 Paramètrage
 ^^^^^^^^^^^
@@ -169,8 +334,9 @@ Paramètrage
 FTP Pull
 ********
 
-Permet de récupérer en local des documents depuis un server FTP. Peut être
-combinées avec la tache d'archivage afin de rapatrier et archiver des documents.
+Permet de récupérer en local, sur l'instance, des documents depuis un server
+FTP. Elle peut être combinées avec la tache d'archivage afin de rapatrier et
+archiver des documents provenant d'un dépôt FTP distant.
 
 Paramètrage
 ^^^^^^^^^^^
@@ -187,48 +353,46 @@ Paramètrage
 * SSL: connexion en ssl (sécurisée)
 * périodicité de la tache : intervalle d’exécution de la tache
 
-Déplacement des documents périmés
-*********************************
-
-Cette tache permet d'effectuer automatiquement une action ("changement de
-collection " ou "application d'un status") sur des documents
-présents dans une base/collection, à la condition que des critères
-de type date ou status bits, soient validés par ces documents.
-
 API Bridge Uploader
 *******************
 Cette tache s'occupe de traiter la liste des documents à uploader via
 le module :term:`Bridge`, vers Youtube, DailyMotion ou Flickr.
 
-Workflow 01
-***********
+"Record Mover"
+**************
 
-Cette tache permet de déplacer un document d'une collection
-vers une autre. On peut aussi ajouter comme critère pour déplacer
-un document, un status-bit.
+Cette tache permet de déplacer (ou de supprimer) des enregistrement d'une
+collection vers une autre.
+
+Des critères de dates ou de status Phraseanet peuvent être pris en compte pour
+sélectionner des enregistrements.
+
+En pratique, cette tâche peut-être utilisée pour automatiser la gestions de
+médias dont les dates d'échéance des droits d'utilisation approchent ou
+sont dépassées.
 
 Paramètrage
 ^^^^^^^^^^^
 
-* Database : choix de la Base de données (databox)
-* intervalle d’exécution :  intervalle d’exécution de la tache
-* Collection : collection d'origine ====> collection de destination
-* Status : status-bit à l'origine   ====> status-bit final
+* Database : choix de la Base Phraseanet (databox)
+* intervalle d’exécution : intervalle d’exécution de la tâche
+* Collection : collection initiale ====> collection de destination
+* Status : status-bit initial ====> status-bit final
 
-RecordMover
-***********
+Principe de fonctionnement
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-RecordMover execute successivement une liste de tâches.
+La tâche Record Mover execute successivement une liste de tâches.
 
-Une tâche recherche les records correspondants à des critères (settings "from")
-et applique des traitements sur ces records (settings "to").
+Une tâche recherche des enregistrements correspondants à des critères
+(contenus dans "from"), les met à jour (critères "to") ou les supprime.
 
-Une tâche "RecordMover" peut remplacer un ensemble de tâches "Workflow01" et
-autorise des critères plus nombreux.
+Une tâche "RecordMover" remplace un ensemble de tâches "Workflow01"
+(dépréciée en version 3.8) et autorise des critères plus nombreux.
 
 Interface
 ^^^^^^^^^
-Les settings sont editable en XML, l'interface affiche le SQL correspondant, le
+Les settings sont editable en XML. L'interface affiche le SQL correspondant, le
 nombre de records impactés par chaque tâche (si cette tâche était exécutée
 maintenant), ainsi que les 10 premiers records-id's.
 

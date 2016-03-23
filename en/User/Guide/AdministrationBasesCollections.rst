@@ -77,8 +77,8 @@ properties:
 * Labels depending on the interface languages
 * A mandatory presence or not
 * An optional data source
-* An optional Dublin Core source
-* An optional Business field property
+* An optional :term:`Dublin Core` source
+* An optional :term:`business field <Business field>` property
 * The order
 
 .. note::

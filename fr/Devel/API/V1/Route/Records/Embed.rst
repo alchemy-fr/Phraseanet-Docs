@@ -94,6 +94,9 @@ Exemple de réponse
             "embed": [
             {
                 "name": "document",
+                "substitued": false,
+                "created_on": "2012-06-22T21:20:55+02:00",
+                "updated_on": "2012-06-22T21:20:55+02:00",
                 "permalink": {
                     "created_on": "2012-06-22T21:20:55+02:00",
                     "id": 1972,
@@ -115,6 +118,9 @@ Exemple de réponse
             },
             {
                 "name": "preview",
+                "substitued": false,
+                "created_on": "2012-06-25T18:07:20+02:00",
+                "updated_on": "2012-06-25T18:07:20+02:00",
                 "permalink": {
                     "created_on": "2012-06-25T18:07:20+02:00",
                     "id": 2039,
@@ -136,6 +142,9 @@ Exemple de réponse
             },
             {
                 "name": "thumbnail",
+                "substitued": false,
+                "created_on": "2012-06-25T18:07:20+02:00",
+                "updated_on": "2012-06-25T18:07:20+02:00",
                 "permalink": {
                     "created_on": "2012-06-25T18:05:20+02:00",
                     "id": 2027,
@@ -157,6 +166,9 @@ Exemple de réponse
             },
             {
                 "name": "preview_mobile",
+                "substitued": false,
+                "created_on": "2012-06-22T21:24:57+02:00",
+                "updated_on": "2012-06-22T21:24:57+02:00",
                 "permalink": {
                     "created_on": "2012-06-22T21:24:57+02:00",
                     "id": 1992,
@@ -178,6 +190,9 @@ Exemple de réponse
             },
             {
                 "name": "thumbnail_mobile",
+                "substitued": false,
+                "created_on": "2012-06-22T21:25:00+02:00",
+                "updated_on": "2012-06-22T21:25:00+02:00",
                 "permalink": {
                     "created_on": "2012-06-22T21:25:00+02:00",
                     "id": 1993,

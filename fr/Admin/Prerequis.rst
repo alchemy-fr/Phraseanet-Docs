@@ -24,7 +24,7 @@ l’usage du SGBD MariaDB en remplacement de MySQL.
 PHP
 ---
 
-* Phraseanet requiert une version de PHP supérieure ou égale à 5.3.4 avec les
+* Phraseanet requiert une version de PHP supérieure à 5.4.0 avec les
   extensions suivantes :
 
     * Dom

@@ -59,8 +59,9 @@ paramétrables :
 * Des labels ou intitulés localisés en fonction des langues d'interface
 * Une présence obligatoire ou non
 * Une source de données optionnelle
-* Une équivalence Dublin Core optionnelle
-* Une propriété de champ métier optionnelle
+* Une équivalence :term:`Dublin Core` optionnelle
+* Une propriété de :term:`champ métier <Business field ou Champ métier>`
+  optionnelle
 * L'ordre
 
 .. note::
@@ -162,6 +163,8 @@ valider le formulaire.
 
     Lors de la création d'une collection, il est possible d'appliquer
     (dupliquer) les droits utilisateurs d'une collection existante.
+
+.. _Afficher-Collection:
 
 Afficher une collection
 ***********************

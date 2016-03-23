@@ -88,7 +88,7 @@ By default, it is:
 
 **The "i" icon gives technical infos on the original document** : width
 and height in pixels, type, weight, printing size...
-In fact, displayed informations depend on media type.
+In fact, displayed information depend on media type.
 
 .. image:: ../../images/Affichage-i.jpg
     :align: center
