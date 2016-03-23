@@ -1,0 +1,6 @@
+Routes
+======
+
+.. toctree::
+
+    Route/Search

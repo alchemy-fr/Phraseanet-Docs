@@ -8,7 +8,7 @@ Welcome to the Phraseanet Developer Documentation.
 Documentation, examples and resources are available to access Phraseanet APIs.
 Question about it can be asked in the :doc:`forum </Devel/Forums>`.
 
-Currently stable version is API 1.4.1 available on Phraseanet v3.8.6+
+Currently stable versions are API 1.5.0 and API 2.0.0 available on Phraseanet v4.0.0+
 
 Libraries
 ---------
@@ -22,6 +22,7 @@ Table of contents
     :maxdepth: 3
 
     API/V1
+    API/V2
     API/Root
     API/Changelog
     Vagrant
