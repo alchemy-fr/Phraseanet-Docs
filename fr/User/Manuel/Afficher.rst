@@ -5,16 +5,13 @@
 
 .. topic:: L'essentiel
 
-    Les interfaces *Production* et *Classic* permettent de consulter et de
-    parcourir un fonds média.
+    L'interfaces *Production* permettent de consulter et de parcourir un
+    fonds média.
 
     *Production* est une interface dédiée à la consultation, à la recherche,
     à la gestion et à l'édition des documents, selon les droits de
     l'utilisateur. Elle se lance par défaut lors d'une première connexion.
 
-    *Classic* ne se destine qu'à la recherche et à la visualisation de documents
-    dans des navigateurs anciens. Les spécificités de cette interface ne sont
-    pas abordées dans ce manuel.
 
 L'interface Production
 ----------------------
@@ -30,26 +27,21 @@ L'espace de travail de Production se partage en quatre zones :
 * **1. Le formulaire de recherche** permet de rechercher des médias et des
   reportages
 * **2. La zone d'affichage** présente le contenu d'une recherche
-* **3. La zone de travail** rassemble les onglets de paniers et de reportages,
-  de suggestions et de thésaurus. Elle est rétractable, escamotable.
+* **3. La zone de travail** rassemble les onglets de facettes, de paniers et de
+  reportages, de thésaurus et de plugins, s'il y en a d'installés. Cette zone
+  est rétractable, escamotable.
 * **4. La palette d'Actions** permet d'effectuer des actions sur les
-  enregistrements. Se référer à la page dédiée à la
-  :doc:`Palette des Actions <Actions>`.
+  enregistrements et d'accéder aux **Préférences d'affichage**. Se référer à
+  la page dédiée à la :doc:`Palette des Actions <Actions>`.
 
-Le bandeau inférieur de l'espace de travail permet d'accéder aux
-**Préférences d'affichage**, renseigne sur le nombre de réponses existantes et
-affiche un index de pagination des résultats. Cet index permet de se déplacer
-dans les résultats.
+Un bandeau inférieur dans l'espace de travail renseigne sur le nombre de
+réponses existantes et affiche un index de pagination des résultats. Cet index
+permet de se déplacer dans les résultats.
 
 .. note::
 
     Ne pas utiliser les boutons reculer et avancer du navigateur.
 
-Pour accéder à une page en particulier, modifier le numéro de la page en cours
-puis valider en appuyant sur la touche **Entrée** du clavier.
-
-.. image:: ../../images/Afficher-Nbreponses.jpg
-    :align: center
 
 Présentation des résultats de recherche
 ***************************************
@@ -111,7 +103,7 @@ La vue détaillée affiche une liste des documents d'une page de réponse sous l
 forme d'un train de vignettes navigables :
 
 * La partie haute de la fenêtre présente les vignettes navigables
-  à la souris ou au clavier, de gauche à droite
+  à la souris ou au clavier, de gauche à droite ou inversement
 * La prévisualisation du média sélectionné est présentée au centre
 * La partie droite rassemble trois onglets présentant la notice, l’historique
   et des statistiques sur le média affiché
@@ -124,20 +116,16 @@ utiliser les flèches gauche et droite du clavier.
 L'onglet Notice
 ***************
 
-L'onglet Notice affiche les informations issues des champs documentaires remplis
-ainsi que les informations techniques du média selon paramétrage.
-
-.. note::
-
-    S'il existe un thésaurus attaché à la base, certains termes de la notice
-    peuvent être cliquables. Ils permettent de rebondir sur d'autres recherches.
+L'onglet Notice affiche les informations contenues des champs documentaires
+remplis. L'affichage complémentaire d'informations techniques est fonction du
+paramétrage.
 
 .. _Afficher-Historique:
 
 L'onglet Historique
 *******************
 
-L'onglet Historique liste les opérations réalisées par les utilisateurs sur le
+L'onglet Historique liste les opérations réalisées par des utilisateurs sur le
 média depuis son ajout dans la base.
 
 .. image:: ../../images/Affichage-vuedetaillee2.jpg
@@ -234,11 +222,11 @@ blanc) puis cliquer sur le type de médias correspondant.
 .. image:: ../../images/Affichage-selectiontype.jpg
     :align: center
 
-Panier de sélection
--------------------
+Paniers de sélection
+--------------------
 
-Un panier de sélection est destiné à rassembler des médias dans le but de s'y
-référer ultérieurement.
+Les paniers de sélection sont destinés à rassembler des médias dans le but de
+s'y référer ultérieurement.
 Un panier existe par défaut. D'autres peuvent être créés.
 Des sélections simples et multiples peuvent être réalisées sur les documents
 d'un panier ouvert.

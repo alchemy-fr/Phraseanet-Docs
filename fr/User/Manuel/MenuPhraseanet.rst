@@ -119,8 +119,8 @@ active.
 L'onglet Applications
 *********************
 
-Il liste les applications tierces autorisées à se connecter au compte Phraseanet
-de l'utilisateur.
+Il liste les applications tierces autorisées à se connecter à Phraseanet au
+moyen du compte de l'utilisateur.
 
 .. image:: ../../images/ListeApplications.jpg
     :align: center

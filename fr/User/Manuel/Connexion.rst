@@ -5,20 +5,20 @@ Bien qu'il soit possible de consulter un fonds Phraseanet comme invité, un choi
 de paramétrage possible, l'utilisateur peut être amené à créer un compte et à
 s'authentifier pour accéder à un fonds multimédia.
 
-.. image:: ../../images/Authentification.jpg
+.. image:: ../../images/Authentification-todo4.jpg
     :align: center
 
 Authentification
 ----------------
 
-* Afficher la page d'accueil de l'application Phraseanet au moyen d'un
-  navigateur Web
-* Ajuster si besoin la langue d'interface avec le menu déroulant *Langue*
-* Saisir l'identifiant et le mot de passe
+* Afficher la page d'accueil de l'application au moyen d'un navigateur Web
+* Ajuster si nécessaire la langue d'interface au moyen du menu déroulant
+  *Langue*
+* Saisir l'identifiant de connexion ainsi que le mot de passe
 * Cliquer sur **Connexion**
 
 En cas d'oubli du mot de passe, suivre la procédure de récupération en cliquant
-sur le lien :ref:`Mot de Passe oublié <Connexion-Mot-de-passe-oublie>`.
+sur le lien :ref:`Mot de Passe oublié ?<Connexion-Mot-de-passe-oublie>`.
 
 Lors de la connexion à Phraseanet, la dernière application utilisée se lance
 ou, à défaut, :doc:`Production <Afficher>`.
@@ -86,7 +86,7 @@ Mot de passe oublié ?
 * Remplir et soumettre le formulaire proposé avec l'adresse e-mail liée au
   compte Phraseanet
 
-Une fois le formulaire complété et soumis, un email est envoyé. Il contient un
+Une fois le formulaire complété et soumis, un e-mail est envoyé. Il contient un
 lien permettant de rejoindre l'interface d'initialisation de mot de passe.
 
 .. warning::

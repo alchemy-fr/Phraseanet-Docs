@@ -21,20 +21,15 @@ Pour utiliser Phraseanet
 L'utilisateur doit disposer d'un ordinateur équipé d'une connexion internet et
 d'un navigateur internet récent.
 Le support de Javascript doit être activé et le plug-in
-`Adobe Flash Player <http://get.adobe.com/fr/flashplayer/>`_ installé.
+`Adobe Flash Player <http://get.adobe.com/fr/flashplayer/>`_ peut être requis.
 
-Il dispose également d'une adresse email valide à laquelle il a accès.
+Il dispose également d'une adresse e-mail valide à laquelle il a accès.
 
 .. note::
 
-    Sur les PC Windows, Internet Explorer 7 est la version minimum
-    conseillée du navigateur Microsoft. Toutefois, *Phraseanet Classic*
-    permet de consulter le fonds au moyen de navigateurs obsolètes
-    comme Internet Explorer 6.
+    Sur les PC Windows, Internet Explorer 9 est la version minimum
+    conseillée du navigateur Microsoft.
 
-    Il n'est pas conseillé d'utiliser Internet Explorer 6 dans les autres
-    modules de Phraseanet tout comme il n'est pas conseillé d'utiliser
-    *Phraseanet Classic* avec des navigateurs récents.
 
 Les modules Phraseanet
 ----------------------
@@ -42,11 +37,10 @@ Les modules Phraseanet
 Phraseanet est un système complet pour l'archivage, l'organisation et la
 diffusion de documents multimédia.
 
-La solution repose sur sept modules ou interfaces, accessibles selon les droits
+La solution repose sur des modules ou interfaces, accessibles selon les droits
 de l'utilisateur à partir d'une barre de menu principal :
 
 * `Production`_
-* `Classic`_
 * `Lightbox`_
 * `Upload`_
 * `Administration`_
@@ -64,18 +58,8 @@ d':doc:`importer <Importer>`, de :doc:`décrire <Editer>`, de
 de :doc:`partager <Push>` et de :doc:`diffuser <Publier>` des documents
 multimédias.
 
-.. image:: ../../images/Production-general.jpg
+.. image:: ../../images/Production-general-todo4.jpg
     :align: center
-
-Classic
-*******
-
-*Phraseanet Classic* est une interface de consultation dédiée aux utilisateurs
-finaux disposants de navigateurs anciens. Elle permet de
-:doc:`consulter des documents <Afficher>`.
-
-.. image:: ../../images/General-Classic.jpg
-   :align: center
 
 Lightbox
 ********
@@ -128,8 +112,7 @@ Thésaurus
 *********
 
 La création et la gestion de :doc:`Thésaurus <Thesaurus>` est possible dans
-*Phraseanet*. Le *thésaurus* s'utilise conjointement au moteur de
-recherche *Phrasea*.
+*Phraseanet*.
 Outre la gestion des termes génériques et des termes spécifiques, le thésaurus
 Phraseanet gère la synonymie et les relations inter linguistiques. Il apporte
 un vrai plus dans l'utilisation de *Phraseanet*.
@@ -145,7 +128,7 @@ Report
 ******
 
 Application de :doc:`statistiques <Statistiques>`, *Report* présente en détail
-l’activité d'un système *Phraseanet* et rend compte des comportements des
+l’activité d'un système *Phraseanet*. Il rend compte des comportements des
 utilisateurs. C'est une mine d'informations pour optimiser l'accès aux fonds
 documentaires et mieux connaître les habitudes des utilisateurs.
 

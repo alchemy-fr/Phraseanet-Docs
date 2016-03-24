@@ -48,11 +48,10 @@ commencer.
 Quoi de neuf dans la version 4.0 ?
 ----------------------------------
 
-Voici les principaux changements apportés par la version 4.0 :
+La version 4.0 introduit les changements suivants :
 
-* ...
-* ...
-* ...
+* Implémentation de Elasticsearch comme moteur de recherche unique
+* Refonte d'interfaces
 
 
 Besoin d'aide ?
