@@ -41,12 +41,26 @@ Voici un exemple de fichier de configuration commenté
 
 .. code-block:: yaml
 
+    servername: 'http://phrasea.example.com/'      # (string)  L'URL à partir de laquelle sera accessible Phraseanet
+
+    languages:
+        available: ['fr', 'de']                    # (array)   Un tableau de code de langues actives. Toutes les langues sont activées si le tableau est vide
+        default: 'fr'                              # (string)  La langue par défaut de l'application
+
+    hosts-configuration:
+        another.hostname:
+            servername: 'http://another.hostname'
+            plugins:
+                a-nice-plugin:
+                    enabled: false
+            border-manager:
+                enabled: false
+            languages:
+                default: 'en'
+
     main:
-        servername: 'http://phrasea.example.com/'  # (string)  L'URL à partir de laquelle sera accessible Phraseanet
 
         maintenance: false                         # (boolean) Activation du mode maintenance
-
-        languages: ['fr_FR', 'de_DE']              # (array)   Un tableau de code de langues actives. Toutes les langues sont activées si le tableau est vide
 
         database:                                  # (array)   Configuration du serveur de base de données
             host: 'sql-host'                       # (string)  Adresse du serveur de base de données
@@ -83,35 +97,69 @@ Voici un exemple de fichier de configuration commenté
             type: Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine  # (string) Nom du service de moteur de recherche (FQCN)
             options: []                            # (array)   Options de configuration du service de moteur de recherche
 
+        binaries:                                  # (array)   Configuration des executables externes
+            ghostscript_binary: null               # (string)  Chemin vers l'executable Ghostscript, null pour autodetecter (gs)
+            php_binary: null                       # (string)  Chemin vers l'executable PHP, null pour autodetecter (php)
+            swf_extract_binary: null               # (string)  Chemin vers l'executable Pdf2Swf, null pour autodetecter (pdf2swf)
+            pdf2swf_binary: null                   # (string)  Chemin vers l'executable SwfExtract, null pour autodetecter (swfextract)
+            swf_render_binary: null                # (string)  Chemin vers l'executable SwfRender, null pour autodetecter (swfrender)
+            unoconv_binary: null                   # (string)  Chemin vers l'executable Unoconv, null pour autodetecter (unoconv)
+            ffmpeg_binary: null                    # (string)  Chemin vers l'executable FFMpeg, null pour autodetecter (ffmpeg, avconv)
+            ffprobe_binary: null                   # (string)  Chemin vers l'executable FFProbe, null pour autodetecter (ffprobe, avprobe)
+            mp4box_binary: null                    # (string)  Chemin vers l'executable MP4Box, null pour autodetecter (MP4Box)
+            pdftotext_binary: null                 # (string)  Chemin vers l'executable PdfToText, null pour autodetecter (pdftotext)
+            phraseanet_indexer: null               # (string)  Chemin vers l'executable Phraseanet Indexer, null pour autodetecter (phraseanet_indexer)
+            ffmpeg_timeout: 3600                   # (integer) Timeout pour FFMpeg
+            ffprobe_timeout: 60                    # (integer) Timeout pour FFProbe
+            gs_timeout: 60                         # (integer) Timeout pour Ghostscript
+            mp4box_timeout: 60                     # (integer) Timeout pour MP4Box
+            swftools_timeout: 60                   # (integer) Timeout pour SwfTools (swfrender, swfextract)
+            unoconv_timeout: 60                    # (integer) Timeout pour Unoconv
+
         task-manager:
+            status: started
             logger:
                 level: INFO                        # (string)  Le niveau de log minimum
                 max-files: 10                      # (integer) Le nombre maximum de fichiers de log à conserver
                 enabled: true                      # (boolean) Activer les logs dans le système de fichier
+            listener:
+                protocol: tcp
+                host: 127.0.0.1
+                port: 6700
+                linger: 500
+
+        websocket-server:
+            host: local.phrasea
+            port: 9090
+            ip: 0.0.0.0
+            subscriber:
+                protocol: tcp
+                host: 127.0.0.1
+                port: 13598
+
+        storage:
+            subdefs:
+                default-dir: /var/data/phraseanet  # (string)  Chemin de stockage par défaut des fichiers.
+
+        bridge:
+            youtube:
+                enabled: false
+                client_id: null
+                client_secret: null
+                developer_key: null
+            flickr:
+                enabled: false
+                client_id: null
+                client_secret: null
+            dailymotion:
+                enabled: false
+                client_id: null
+                client_secret: null
 
     trusted-proxies: []                            # (array)   Configuration des proxies de confiance
 
     debugger:                                      # (array)   Configuration du debugger (développeurs uniquement)
         allowed-ips: []                            # (array)   Adresses IP autorisées à acceder au debugger.
-
-    binaries:                                      # (array)   Configuration des executables externes
-        ghostscript_binary: null                   # (string)  Chemin vers l'executable Ghostscript, null pour autodetecter (gs)
-        php_binary: null                           # (string)  Chemin vers l'executable PHP, null pour autodetecter (php)
-        swf_extract_binary: null                   # (string)  Chemin vers l'executable Pdf2Swf, null pour autodetecter (pdf2swf)
-        pdf2swf_binary: null                       # (string)  Chemin vers l'executable SwfExtract, null pour autodetecter (swfextract)
-        swf_render_binary: null                    # (string)  Chemin vers l'executable SwfRender, null pour autodetecter (swfrender)
-        unoconv_binary: null                       # (string)  Chemin vers l'executable Unoconv, null pour autodetecter (unoconv)
-        ffmpeg_binary: null                        # (string)  Chemin vers l'executable FFMpeg, null pour autodetecter (ffmpeg, avconv)
-        ffprobe_binary: null                       # (string)  Chemin vers l'executable FFProbe, null pour autodetecter (ffprobe, avprobe)
-        mp4box_binary: null                        # (string)  Chemin vers l'executable MP4Box, null pour autodetecter (MP4Box)
-        pdftotext_binary: null                     # (string)  Chemin vers l'executable PdfToText, null pour autodetecter (pdftotext)
-        phraseanet_indexer: null                   # (string)  Chemin vers l'executable Phraseanet Indexer, null pour autodetecter (phraseanet_indexer)
-        ffmpeg_timeout: 3600                       # (integer) Timeout pour FFMpeg
-        ffprobe_timeout: 60                        # (integer) Timeout pour FFProbe
-        gs_timeout: 60                             # (integer) Timeout pour Ghostscript
-        mp4box_timeout: 60                         # (integer) Timeout pour MP4Box
-        swftools_timeout: 60                       # (integer) Timeout pour SwfTools (swfrender, swfextract)
-        unoconv_timeout: 60                        # (integer) Timeout pour Unoconv
 
     border-manager:                                # (array)   Configuration du service douanes
         enabled: true                              # (boolean) Activation du service de douane
@@ -251,10 +299,10 @@ Langues
 
 Les langues disponibles ainsi que leurs codes respectifs sont les suivants :
 
-- Français : fr_FR
-- Anglais : en_GB
-- Allemand : de_DE
-- Néerlandais : nl_NL
+- Français : fr
+- Anglais : en
+- Allemand : de
+- Néerlandais : nl
 
 Fournisseurs d'authentification
 *******************************
@@ -350,6 +398,20 @@ ElasticSearch et SphinxSearch engine.
 +------------------------------------------------------------------+------------------------------+
 | Alchemy\\Phrasea\\SearchEngine\\SphinxSearch\\SphinxSearchEngine | host, port, rt_host, rt_port |
 +------------------------------------------------------------------+------------------------------+
+
+Configuration du Bridge
+***********************
+
+Flickr API account
+Pour FlickR : <a href="https://secure.flickr.com/services/apps/create/" target="_blank">https://secure.flickr.com/services/apps/create/</a>';
+
+Youtube dev key :
+        $dashboard_youtube = '<a href="https://code.google.com/apis/youtube/dashboard/" target="_blank">https://code.google.com/apis/youtube/dashboard/</a>';
+Youtube API account
+        $youtube_console_url = '<a href="https://code.google.com/apis/console/" target="_blank">https://code.google.com/apis/console/</a>';
+
+Dailymotion account :
+        $create_api_dailymotion = '<a href="http://www.dailymotion.com/profile/developer" target="_blank">http://www.dailymotion.com/profile/developer</a>';
 
 Proxies de confiance
 ********************
