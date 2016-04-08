@@ -23,16 +23,12 @@ Request Body
 .. code-block:: javascript
 
     {
-        "data": {
-            "usage": "Intended usage of the records",
-            "deadline": "2016-04-01T00:00:00Z",
-            "records": [
-                {
-                    "databox_id": 1,
-                    "record_id": 118
-                }
-            ]
-        }
+        "data": [
+            {
+                "databox_id": 1,
+                "record_id": 118
+            }
+        ]
     }
 
 Response Fields
