@@ -5,12 +5,10 @@
 
 .. topic:: L'essentiel
 
-    L'interfaces *Production* permettent de consulter et de parcourir un
-    fonds média.
-
     *Production* est une interface dédiée à la consultation, à la recherche,
     à la gestion et à l'édition des documents, selon les droits de
-    l'utilisateur. Elle se lance par défaut lors d'une première connexion.
+    l'utilisateur. Elle se lance par défaut lors d'une première connexion à
+    l'application.
 
 
 L'interface Production
@@ -65,14 +63,15 @@ inférieur gauche** de la vignette. Il peut être substitué par un mini logo.
 **Placer la souris sur une vignette pour afficher la description du document.**
 Cette description se compose des champs documentaires non vides renseignés par
 les gestionnaires du fonds.
-Les termes ayant servis comme critères de recherche sont surlignés.
+Les termes ayant servis comme critères de recherche peuvent être surlignés : il
+s'agit d'une option de paramétrage du moteur de recherche
 
 .. image:: ../../images/Affichage-surlignagemc.jpg
     :align: center
 
 **La loupe permet d'afficher la prévisualisation des médias**. Ces
-prévisualisations sont liées à la nature des sous-définitions *preview* définies
-dans le paramétrage des bases auxquelles appartiennent les médias affichés.
+prévisualisations sont liées aux natures des sous-définitions *preview* définies
+dans le paramétrage des bases auxquelles appartiennent les médias.
 
 Par défaut, il s'agit :
 
