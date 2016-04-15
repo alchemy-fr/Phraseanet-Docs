@@ -5,7 +5,7 @@ Bien qu'il soit possible de consulter un fonds Phraseanet comme invité, un choi
 de paramétrage possible, l'utilisateur peut être amené à créer un compte et à
 s'authentifier pour accéder à un fonds multimédia.
 
-.. image:: ../../images/Authentification-todo4.jpg
+.. image:: ../../images/Authentification.jpg
     :align: center
 
 Authentification
@@ -26,8 +26,8 @@ ou, à défaut, :doc:`Production <Afficher>`.
 Authentification via des fournisseurs tiers
 -------------------------------------------
 
-*Phraseanet* permet de déléguer l'authentification d'utilisateurs à des
-fournisseurs d'authentification dont les applications web suivantes :
+Une option de configuration permet de déléguer l'authentification
+d'utilisateurs à un ou plusieurs fournisseurs d'authentification dont :
 
 * Facebook
 * Twitter
@@ -37,6 +37,12 @@ fournisseurs d'authentification dont les applications web suivantes :
 * Linkedin
 
 D'autres fournisseurs d'identité numérique peuvent s'ajouter.
+
+Lorsque cette option est activé les badges des fournisseurs d'authentification
+apparaissent sur la page de connexion.
+
+.. image:: ../../images/Authentification-oauth.jpg
+    :align: center
 
 .. note::
 
@@ -50,8 +56,17 @@ Selon les choix de paramétrage du système par les administrateurs, un bouton
 permettant de s'inscrire comme nouvel utilisateur peut figurer sur la page de
 connexion.
 
+.. image:: ../../images/Authentification-inscription.jpg
+    :align: center
+
 * Cliquer sur le bouton **Inscription** pour accéder au formulaire
   d'inscription.
+
+.. note::
+
+    Pour paramétrer la liste des champs disponibles dans le formulaire
+    d'inscription, se reporter à
+    :doc:`la section configuration <../../Admin/Configuration>`.
 
 Si l'authentification via des fournisseurs tiers est activée, deux
 possibilités :
@@ -107,11 +122,16 @@ Suivre les instructions proposées puis valider le formulaire.
 Après initialisation du mot de passe, se connecter au moyen du formulaire
 disponible en page d’accueil.
 
+.. _Connexion-compte-invite:
+
 Le compte invité
 ----------------
 
 Un accès invité peut être disponible sur la page d'accueil. Cliquer sur le
 bouton **Accès invité** pour se connecter au moyen de ce compte.
+
+.. image:: ../../images/Authentification-invite.jpg
+    :align: center
 
 .. note::
 
