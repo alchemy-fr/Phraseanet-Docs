@@ -58,7 +58,7 @@ d':doc:`importer <Importer>`, de :doc:`décrire <Editer>`, de
 de :doc:`partager <Push>` et de :doc:`diffuser <Publier>` des documents
 multimédias.
 
-.. image:: ../../images/Production-general-todo4.jpg
+.. image:: ../../images/General-Production.jpg
     :align: center
 
 Lightbox

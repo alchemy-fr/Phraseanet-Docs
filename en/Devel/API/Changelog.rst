@@ -1,6 +1,24 @@
 API Changelog
 =============
 
+2.0.0
+-----
+
+Version 2.0.0 of Phraseanet API is brought with Phraseanet 4.0.0.
+
+New routes
+**********
+
+- :doc:`search v2 <V2/Route/Search>`.
+- :doc:`orders/create <V2/Route/Orders/Create>` Create an order for several records
+- :doc:`orders/index <V2/Route/Orders/Index>` List orders of current user.
+- :doc:`orders/{orderId}/{accept,deny} <V2/Route/Orders/Validate>` Handles validation
+
+1.5.0
+-----
+
+Version 1.5.0 of Phraseanet API is brought with Phraseanet 3.8.8.
+
 1.4.1
 -----
 
