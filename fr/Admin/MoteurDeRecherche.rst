@@ -3,57 +3,93 @@ Moteur de recherche
 
 .. topic:: L'essentiel
 
-    Phraseanet est fourni par défaut avec le moteur de recherche Phrasea.
-    Performant, il permet l'emploi du module thesaurus de Phraseanet.
-    Toutefois, si l'utilisation du module Phraseanet Thésaurus n'est pas
-    envisagée, ElasticSearch ou SphinxSearch peut être utilisé.
-    Cette section explique les avantages de chacun et leur installation.
+    Phraseanet utilise le moteur de recherche Elasticsearch.
+    Ses principaux avantages sont :
+
+    * la rapidité
+    * la scalabilité
+
+    Basé sur Apache Lucene, il permet, entre autre, la mise en oeuvre des
+    facettes Phraseanet.
+    Il s'installe sur le serveur hote de l'application ou sur un serveur
+    distant.
 
 .. note::
 
     Le paramétrage du moteur de recherche se fait à l'installation de
     Phraseanet. Par la suite les paramètres ne devraient pas être réajustés.
 
-.. _Phrasea-Engine:
+.. _Elasticsearch:
 
-Phrasea Engine
---------------
+Elasticsearch
+-------------
 
-Le moteur Phrasea se compose d'un indexeur (Phraseanet-Indexer) et de
-l'extension PHP Phraseanet-Extension qui permet d'effectuer des recherches dans
-l'index Phraseanet.
+Le moteur Elasticsearch permet l'indexation et la recherche des données.
 
-Un des principaux avantages de ce moteur est la prise en charge du thesaurus.
+Indexation
+**********
 
-Indexeur
-********
+L'indexation effectue la mise en index du contenu des bases publiées dans une
+application Phraseanet et permet ainsi la recherche dans le contenu des fiches
+descriptives des documents.
 
-L'indexeur indexe le contenu des bases publiées dans une application Phraseanet
-et permet ainsi la recherche dans le contenu des fiches descriptives
-des documents.
-
-L'indexeur fonctionne en arrière plan. Il surveille les bases à indexer
+L'indexation fonctionne en arrière plan. Elle surveille les bases à indexer
 (apparition, modification ou disparition de documents) et maintient
-les index "full-text", "valeur" et "thésaurus".
+des index de recherche à jour.
 
-Installation
-^^^^^^^^^^^^
+Il est nécessaire de disposer d'une version d'Elasticsearch 0.90.7 ou supérieure
+pour utiliser le moteur Elasticsearch dans Phraseanet.
 
-L'indexeur est un éxécutable en ligne de commande, "phraseanet_indexer".
+Configuration dans Phraseanet
+*****************************
 
-Il peut être éxécuté directement en console, planifié (cron, tâche planifiée...)
-ou bien via le "Task-manager" de Phraseanet.
+Après avoir installé Elasticsearch, Phraseanet doit être configuré.
 
-L'indexeur nécessite la présence des bibliothèques suivantes :
+Il faudra renseigner l'adresse, le port et le nom d'index désiré de
+Elasticsearch dans la configuration de Phraseanet pour cela :
 
-* libexpat
-* iconv
-* libxml2
-* zlib1
-* libmysql
+.. code-block:: none
 
-Après compilation (:ref:`voir spécificités Windows<Phrasea-Indexeur-Windows>`),
-copier l'éxécutable dans un répertoire avec les droits d'éxécution.
+    search-engine:
+        type: Alchemy\Phrasea\SearchEngine\Elastic\ElasticSearchEngine
+        options:
+            host: 127.0.0.1
+            port: 9200
+            index: phraseanet
+
+Une fois cette configuration effectuée, executer dans la console la commande
+suivante pour indexer Phraseanet.
+
+.. code-block:: none
+
+    bin/console searchengine:index
+
+
+.. _Operations-sur-les-index:
+
+Opérations sur les index
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Pour supprimer les index** :
+
+.. code-block:: none
+
+    bin/console s:i:d
+
+
+**Pour construire les index** :
+
+.. code-block:: none
+
+    bin/console s:i:d
+
+
+**Pour alimenter, "peupler", les index** :
+
+.. code-block:: none
+
+    bin/console s:i:p
+
 
 Arguments
 ^^^^^^^^^
@@ -117,322 +153,11 @@ fonctionnement sans trop charger les logs.
 * --help: L'option "help" détaille les différentes options précédemment citées ainsi que
     leurs valeurs par défaut.
 
-Exemples
-~~~~~~~~
-
-L'indexeur peut être testé avec l'option '-?' qui doit afficher l'aide :
-
-.. code-block:: none
-
-    phraseanet_indexer -?
-    phraseanet_indexer version 3.10.2.3
-    Usage : phraseanet_indexer <options>
-    [-?     | --help]                   : this help
-    [-v     | --version                 : display version and quit
-    [-h     | --host]=<addr>            : host addr. of applicationBox (default '127.0.0.1')
-    [-P     | --port]=<port>            : port of applicationBox (default '3306')
-    [-b     | --base]=<base>            : database of applicationBox (default 'phrasea')
-    [-u     | --user]=<user>            : user account for connection to applicationBox
-                                        : (default 'root')
-    [-p     | --password]=<pwd>         : password for connection to applicationBox
-                                        : (default '')
-    [-s     | --socket]=<port>          : port for telnet control (default none)
-    [-f     | --flush]=<n>              : flush every n records (default 50)
-    [-o     | --old]                    : use old 'sbas' table instead of 'xbas'
-    [         --quit]                   : index once and quit
-    [-c     | --clng]=<lng>             : default language for new candidates terms
-                                        : (default 'fr')
-    [         --stem]=<lng>,<lng>,..    : stemm for those languages
-    [-n     | --nolog]                  : do not log, but out to console
-    [         --sort-empty]=<a|n|z>     : default value for unset fields with type
-                                        : (default 'a')  //=sort position
-                               a        : beginning (default)
-                               n        : none (=record not shown when sorting)
-                               z        : end
-    [-d     | --debug]=<mask>           : debug mask (to console)
-                               1        : xml parsing
-                               2        : sql errors
-                               4        : sql ok
-                               8        : memory alloc.
-                              16        : record ops.
-                              32        : structure ops.
-                              64        : flush ops.
-    [-@     | --optfile]=<file>         : read (more) arguments from text file
-                                        : (see 'sample_args.txt')
-    [--default-character-set]=<charset> : charset of applicationBox AND dataBoxes
-                                        : (default none)
-
-    /----- stemmers --------------
-    | danish     : da   dan
-    | german     : de   deu  ger
-    | dutch      : dut  nl   nld
-    | english    : en   eng
-    | spanish    : es   esl  spa
-    | finnish    : fi   fin
-    | french     : fr   fra  fre
-    | hungarian  : hu   hun
-    | italian    : it   ita
-    | norwegian  : no   nor
-    | portuguese : por  pt
-    | porter     :
-    | romanian   : ro   ron  rum
-    | russian    : ru   rus
-    | swedish    : sv   swe
-    | turkish    : tr   tur
-    \-----------------------------
-
-Exemple d'arguments dans un fichier "indexerargs.txt"
-
-.. code-block:: none
-
-    phraseanet_indexer --debug=64 --nolog --optfile=indexerargs.txt
-
-.. code-block:: none
-
-    #  connection to application-box...
-    # ...host, port, base, user, password
-    --host=127.0.0.1
-    --port=3306
-    --base=phrasea
-    --user=phraseanet
-    --password=xxxxxxxxx
-
-    # socket to talk (telnet) to indexer
-    --socket=2055
-
-    # use 'sbas' table (mandatory)
-    -o
-
-    # sql connections encoding
-    --default-character-set=utf8
-
-    # candidates default language
-    --clng=fr
-
-    # stemming languages
-    --stemm=fr,en
 
 Exécution par le Task-Manager
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*****************************
 
-L'indexeur peut être éxécuté par la tâche "Indexation", les réglages des
+L'indexation peut être éxécutée par la tâche "Indexation", les réglages des
 attributs sont alors disponibles via l'interface graphique de la tâche.
 
-Spécificités Linux et OSX
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Après compilation, "sudo make install" va copier l'éxécutable dans le répertoire
-des binaires (par ex . /usr/local/bin).
-
-.. _Phrasea-Indexeur-Windows:
-
-Spécificités Windows
-^^^^^^^^^^^^^^^^^^^^
-
-L'indexeur est livré pré-compilé pour Windows.
-
-Télécharger la dernière version à l'adresse "https://github.com/alchemy-fr/Phraseanet-Indexer/blob/master/WIN32/Release_win32/",
-et placer l'éxécutable dans un répertoire distinct (par ex. dans "Program
-Files\\Phraseanet-Indexer\\phraseanet_indexer.exe").
-
-.. note::
-
-    Certaines versions (comportant des corrections pour des versions
-    précédentes de l'application) sont également disponibles au téléchargement.
-
-Pour des raisons de concordance de versions il est recommandé de copier les dll
-des bibliothèques requises dans le répertoire de l'éxécutable (à coté de
-phraseanet_indexer.exe).
-
-Ces bibliothèques peuvent être téléchargées dans :
-
-* libexpat.dll (http://sourceforge.net/projects/expat/files/expat_win32/2.0.1/expat-win32bin-2.0.1.exe/download),
-  installer
-* iconv.dll (http://xmlsoft.org/sources/win32/iconv-1.9.2.win32.zip)
-* libxml2.dll (http://xmlsoft.org/sources/win32/libxml2-2.7.8.win32.zip)
-* zlib1.dll (http://xmlsoft.org/sources/win32/zlib-1.2.3.win32.zip)
-* libmysql.dll (http://dev.mysql.com/downloads/mysql/ ; download Windows (x86,
-  32-bit), MSI Installer "mysql-5.5.21-win32.msi"), installer
-
-Installation en service
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Classiquement l'indexeur est éxécuté par une tâche Phraseanet "Indexation".
-Sous Windows l'indexeur peut également être installé en service via 3 options
-spécifiques
-
-.. code-block:: none
-
-    --install : installe le service "Phraseanet-Indexer"
-    --remove : désinstalle le service
-    --run : éxécute simplement en ligne de commande (à utiliser impérativement
-    pour l'éxécution en tâche)
-
-ex :
-
-.. code-block:: none
-
-    C:\Phraseanet-Indexer\phraseanet_indexer.exe -h=localhost -P=3306 -b=ab_test
-    -u=phuser -p=**** --socket=25200 --default-character-set=utf8 -o -n
-    -d=0 --install
-
-Si l'indexeur est installé comme service Windows, supprimer -ou ne pas activer-
-la tâche "Indexeur" correspondante
-
-Extension
-*********
-
-Le moteur de recherche Phraseanet est disponible par l'intermédiaire de
-l'extension PHP "php_phrasea2".
-
-Installation
-^^^^^^^^^^^^
-
-Après compilation et installation de "Phraseanet-Extension" (voir spécificités
-Linux, OSX et :ref:`Windows<Phrasea-Extension-Windows>`), vérifier la présence
-des extensions requises avec la commande :
-
-.. code-block:: none
-
-    php -m
-
-.. code-block:: none
-
-    [PHP Modules]
-    ...
-    phrasea2
-    ...
-
-Redémarrer le serveur web.
-
-Spécificités Linux et OSX
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Après compilation, "sudo make install" va copier l'extension à l'emplacement des
-extensions php.
-
-.. _Phrasea-Extension-Windows:
-
-Spécificités Windows
-^^^^^^^^^^^^^^^^^^^^
-
-L'extension est livrée pré-compilée pour Windows.
-
-Télécharger l'extension correspondant à votre version de PHP
-(ex. "https://github.com/alchemy-fr/Phraseanet-Extension/tree/master/_WIN32%20(visual%20C++%202008)/Release_TS_php-5.4.0")
-, prendre la dernière version disponible
-d'après son numéro de version (par ex. "php_phrasea2_UTF-8_1.20.1.0.dll").
-
-Renommer le fichier en "php_phrasea2.dll" et copier dans le répertoire "ext" de
-PHP (normalement "C:\\Program Files\\PHP\\ext" si PHP a été installé avec les
-settings par défaut).
-
-Activer l'extension dans le fichier php.ini :
-
-.. code-block:: none
-
-    [PHP_PHRASEA]
-    extension=php_phrasea2.dll
-
-.. warning::
-
-    En cas d'erreur "... icu*.dll introuvable ...", télécharger les ICU
-    libraries requises par l'extension "php_intl" et copier les différents
-    fichiers "icu*.dll" dans le répertoire principal de PHP.
-
-ElasticSearch Engine
---------------------
-
-Il est nécessaire de disposer d'une version d'Elastic Search 0.90.7 ou supérieure
-pour utiliser le moteur ElasticSearch dans Phraseanet.
-
-Avantages
-*********
-
-Les principaux avantages de ElasticSearch Engine sont :
-
-* la rapidité
-* la scalabilité
-
-Configuration dans Phraseanet
-*****************************
-
-Après avoir installé ElasticSearch, Phraseanet doit être configuré.
-
-Il faudra renseigner l'adresse, le port et le nom d'index désiré de ElasticSearch
-dans la configuration de Phraseanet pour cela :
-
-.. code-block:: none
-
-    search-engine:
-        type: Alchemy\Phrasea\SearchEngine\Elastic\ElasticSearchEngine
-        options:
-            host: 127.0.0.1
-            port: 9200
-            index: phraseanet
-
-Une fois cette configuration effectuée, dans la console, executer la commande
-suivante pour reindexer Phraseanet.
-
-.. code-block:: none
-
-    bin/console searchengine:index
-
-Sphinx-Search Engine
---------------------
-
-SphinxSearch repose sur une technologie tierce qu'il est nécessaire d'installer.
-Phraseanet requiert `SphinxSearch Engine`_ 2.0.6 ou supérieur.
-
-Avantages
-*********
-
-Les principaux avantages de SphinxSearch Engine sont :
-
-* la rapidité
-* la scalabilité
-* l'autocompletion
-
-Configuration dans Phraseanet
-*****************************
-
-Après avoir installé SphinxSearch, Phraseanet doit être configuré.
-Le paramétrage de Phraseanet pour SphinxSearch permet de générer un fichier
-de configuration dédié à ce moteur de recherche.
-
-Pour cela, consulter la documentation de configuration
-:ref:`search-engine-service-configuration`.
-
-Une fois cette configuration effectuée, dans un navigateur, se connecter à
-l'interface admin. Un gestionnaire de configuration permet de générer un fichier
-de configuration Sphinx.
-
-.. note::
-
-    Notez que la configuration générée par Phraseanet pour SphinxSearch est
-    complète. Si le serveur SphinxSearch est partagé avec d'autres applications
-    il faudra prendre soin d'exclure la partie *server* au pied du fichier
-    de configuration.
-
-Ce fichier peut être maintenant utilisé avec le serveur SphinxSearch
-(généralement **/usr/local/etc/sphinx.conf**).
-Redémarrer SphinxSearch pour appliquer la configuration.
-En cas d'erreur avec SphinxSearch, consulter la `documentation SphinxSearch`_.
-Les sections suivantes apportent des réponses à des questions fréquemment
-posées.
-
-Gestion de l'autocompletion
-***************************
-
-Pour que l'autocompletion fonctionne à la recherche, il faut générer les
-propositions.
-
-Pour ce faire, utiliser la commande :
-
-.. code-block: bash
-
-    bin/console sphinx:generate-suggestions
-
-.. _documentation SphinxSearch: http://sphinxsearch.com/docs/manual-2.0.6.html
-.. _SphinxSearch Engine: http://sphinxsearch.com/downloads/release/
 

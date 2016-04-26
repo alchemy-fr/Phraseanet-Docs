@@ -5,7 +5,7 @@
 
 .. topic:: L'essentiel
 
-    *Production* est une interface dédiée à la consultation, à la recherche,
+    *Production* est l'interface dédiée à la consultation, à la recherche,
     à la gestion et à l'édition des documents, selon les droits de
     l'utilisateur. Elle se lance par défaut lors d'une première connexion à
     l'application.

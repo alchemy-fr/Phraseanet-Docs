@@ -90,18 +90,21 @@ D'autres possibilités existent au moyen de requêtes avancées.
 
 .. seealso::
 
-    :doc:`Voir la page consacrées aux recherches avec Elasticsearch <../../FAQ/Medias/Les-operateurs-de-recherche-elasticsearch>`
+    :doc:`Voir la page consacrées aux recherches avec Elasticsearch <../../FAQ/Medias/Recherches-Elasticsearch-dans-phraseanet>`
     dans la FAQ.
 
 Naviguer avec les facettes
 --------------------------
 
 Les informations contenues dans des champs documentaires peuvent être mises en
-facettes. Cette technique permet à l'utilisateur un accès au fonds par filtrage
-des résultats.
+facettes. Cette technique permet à l'utilisateur un accès au fonds par
+filtrage des résultats.
 
 Le contenu de chaque facette est mis à jour au rafraîchissement des résultats
 d'une recherche.
+
+Cliquer sur l'une des facettes proposées dans l'onglet Facettes de la zone de
+travail pour filtrer les résultats d'une recherche.
 
 Les facettes sont déterminées par le paramétrage de la structure documentaire.
 
@@ -110,7 +113,8 @@ Recherche dans un champ précis
 ------------------------------
 
 Pour une recherche dans un champ précis, la syntaxe à indiquer dans le champ de
-recherche est nom du champ, l'opérateur, la valeur recherchée.
+recherche est nom du champ, tel que déclaré dans la structure documentaire,
+l'opérateur, la valeur recherchée.
 
 TitreEn: Limelight
 
@@ -122,14 +126,15 @@ par des guillemets.
 
 TitreFr: "Les feux de la rampe"
 
-Pour l'opérateur, deux possibilités :
+Pour l'opérateur, deux possibilités : le signe de ponctuation deux-points (:)
+ou le signe égal (=).
 
 Le contenu du champ **contient**
 ********************************
 
 Utiliser l'opérateur : (deux-points) pour rechercher un terme seul ou une
-expression entre guillemets faisant partie du champ dans lequel effectuer la
-recherche.
+expression entre guillemets faisant partie des inforamtions saisies dans le
+champ dans lequel effectuer la recherche.
 
 Exemple : Une recherche TitreFr: "Les feux" peut remonter des résultats comme
 "Les feux de la rampe", "Les Feux de l'été", "Les feux de l'Amour"

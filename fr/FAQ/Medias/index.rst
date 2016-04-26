@@ -11,7 +11,7 @@ Gestion des médias dans Phraseanet
    :glob:
 
    gerer-les-medias
-   Tous-les-operateurs-de-recherche
+   Recherches-Elasticsearch-dans-phraseanet
    Supprimer-une-publication
    Ajouter-une-base
    Tache-d-archivage

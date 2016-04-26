@@ -188,6 +188,15 @@ Dans la fenêtre des propriétés...
     Dans Firefox, une fenêtre de menu peut masquer la fenêtre Propriété du
     thésaurus.
 
+.. warning::
+
+    L'édition du thésaurus (ajouts de termes ou de synonyme, suppression de
+    termes) réclame la reconstruction des index Elasticsearch pour que les
+    modifications soient prises en compte.
+
+    :ref:`Se reporter au paragraphe relatif à la construction des index
+    Elasticsearch dans l'Administration <Operations-sur les index>`.
+
 Rechercher un terme dans les termes candidats ou le Thésaurus
 *************************************************************
 
