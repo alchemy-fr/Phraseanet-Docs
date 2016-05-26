@@ -37,10 +37,15 @@ suivantes dans une tâche Cron par exemple.
 
 .. code-block:: bash
 
-    bin/console task-manager:scheduler:start
-    bin/console task-manager:scheduler:stop
-    bin/console task-manager:scheduler:state
-    bin/console task-manager:task:run
+    task-manager:scheduler:pause-tasks        Pause scheduler started tasks jobs
+    task-manager:scheduler:resume-tasks       Resume scheduler started tasks jobs
+    task-manager:scheduler:run                Run the scheduler
+    task-manager:scheduler:state              Returns scheduler state
+    task-manager:task:list                    Lists tasks
+    task-manager:task:run                     Runs a task
+    task-manager:task:start                   Starts a task
+    task-manager:task:state                   Returns the state of a task
+    task-manager:task:stop                    Stops a task
 
 Les tâches
 ----------
@@ -54,54 +59,9 @@ Les tâches
 Tâche d'indexation
 ******************
 
-Permet de lancer l’exécutable phraseanet_indexer.
-Cet exécutable indexe les informations descriptives des
-documents dans les bases de données.
-
-L’indexer doit être paramétré avec les informations ci-dessous :
-
-* Hôte : Adresse du serveur MySQL
-* Port : Port du serveur MySQL
-* Database : Nom de la base de données MySQL
-* Utilisateur : identifiant de l'utilisateur MySQL
-* Mot de passe : Mot de passe de l'utilisateur MySQL
-* MySQL charset : encodage
-* Port de contrôle : Port de contrôle de l'indexer
-
-* Default language for thesaurus candidates : langue par défaut des nouveaux
-  termes (placés en candidats), ex: "fr"
-
-* Enable stemming languages : langues pour lesquelles indexer par "stemmes", ex:
-  fr,en
-
-  Le "stemming" (racinisation, voir http://fr.wikipedia.org/wiki/Racinisation)
-  permet de rechercher en full-text différentes formes d'un mot comme le pluriel
-  ou les conjugaisons.
-
-  ex. : chercher "oiseau vole" trouvera les documents renseignés avec "oiseaux volants".
-
-* Sort records with an empty fields : Comment trier les records dont le champ de
-  tri n'est pas renseigné.
-
-  Lors d'une recherche avec tri des résultats, les records dont le champ de tri
-  n'est pas renseigné seront soit :
-
-  * Absents des réponses
-  * En tête des réponses
-  * A la fin des réponses
-
-.. code-block:: bash
-
-    /usr/local/bin/phraseanet_indexer -h=host \
-                                      -P=port \
-                                      -b=database \
-                                      -u=user \
-                                      -p=password \
-                                      --socket=13800 \
-                                      --clng=fr \
-                                      --stem=fr,en \
-                                      -o \
-                                      --default-character-set=utf8 \
+Permet de synchroniser des informations entre les bases de données Phraseanet
+et les index Elasticsearch sur des événements de renommage de collections ou
+d'altération de structure documentaire (Champs, status-bits) ou l'edition du thésaurus.
 
 .. note::
 
@@ -387,12 +347,9 @@ La tâche Record Mover execute successivement une liste de tâches.
 Une tâche recherche des enregistrements correspondants à des critères
 (contenus dans "from"), les met à jour (critères "to") ou les supprime.
 
-Une tâche "RecordMover" remplace un ensemble de tâches "Workflow01"
-(dépréciée en version 3.8) et autorise des critères plus nombreux.
-
 Interface
 ^^^^^^^^^
-Les settings sont editable en XML. L'interface affiche le SQL correspondant, le
+Les settings sont éditable en XML. L'interface affiche le SQL correspondant, le
 nombre de records impactés par chaque tâche (si cette tâche était exécutée
 maintenant), ainsi que les 10 premiers records-id's.
 
@@ -565,3 +522,9 @@ Exemples
 
     Ce type de problème peut être évité en s'assurant qu'aucune des clauses
     'from' ne se recouvrent, par ex. en levant un sb spécifique à chaque <task>
+
+API Webhook
+***********
+
+Cette tache permet d'exploiter les événements listés dans la table
+**api_webhooks** de l'application box.

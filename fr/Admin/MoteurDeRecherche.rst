@@ -102,12 +102,12 @@ Arguments
 * --default-character-set: jeu de caractères de la connexion
 * --old: argument obligatoire !
 
-Ces 7 précédentes options sélectionnent l'"application-box" (base SQL de Phraseanet)
-où les bases ("data-boxes") à indexer sont publiées.
+Ces 7 précédentes options sélectionnent l'"application-box" (base SQL de
+Phraseanet) où les bases ("data-boxes") à indexer sont publiées.
 
 * --socket: port de contrôle via telnet
-    En cours d'éxécution, l'indexeur peut être interrompu par Ctrl-C (ou sous linux
-    et OSX par l'envoi du signal sigint).
+    En cours d'éxécution, l'indexeur peut être interrompu par Ctrl-C (ou sous
+    linux et OSX par l'envoi du signal sigint).
     L'argument "socket" permet d'interrompre également l'indexeur via telnet.
 * --flush: Ecrire les index tous les 'n' documents.
     Pour optimiser les performances, l'indexeur indexe les documents par lots

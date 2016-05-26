@@ -11,17 +11,17 @@
     Combinés avec des opérateurs de recherche courants, ces recherches
     permettent de gagner en pertinence. Des recherches approfondies se
     pratiquent au moyen d'opérateurs moins fréquemment utilisés et il demeure
-    possible de recherche dans des champs précis si besoin.
+    possible de rechercher dans des champs précis si besoin.
 
     Les facettes permettent de parcourir le fonds selon un mode exploratoire
-    laissant à l'utilisateur le choix d'ajouter ou de supprimer des critères de
-    l'équation de recherche.
+    laissant à l'utilisateur la possibilité de cumuler des critères de
+    recherche.
 
     Le thésaurus, s'il est activé, aide également à présenter les ressources
-    médias.
+    médias du fonds.
 
-    Reste que la qualité de l'indexation demeure un critère déterminant dans la
-    capacité d'accéder aux richesses d'un fonds.
+    Il n'en demeure pas moins que la qualité de l'indexation reste le critère
+    déterminant pour l'accès aux richesses d'un fonds.
 
 La recherche en texte intégral
 ------------------------------
