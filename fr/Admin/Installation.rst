@@ -12,13 +12,13 @@ d'installation.
 
 .. code-block:: bash
 
-    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v3.8.x.zip
+    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v4.0.x.zip
 
 et
 
 .. code-block:: bash
 
-    unzip alchemy-fr-Phraseanet-v3.8.x.zip
+    unzip alchemy-fr-Phraseanet-v4.0.x.zip
 
 **Bien que cela ne soit pas obligatoire** (mais plutôt conseillé), vérifier
 :doc:`les prérequis <Prerequis>` au moyen de la commande suivante, à exécuter à
@@ -72,7 +72,7 @@ Setup
 
 *Phraseanet* s’installe de deux façons :
 
-* :ref:`En ligne de commande <install-cli>` depuis la version 3.8
+* :ref:`En ligne de commande <install-cli>` depuis la version 4.0
 
 **Ou bien**
 
@@ -123,7 +123,7 @@ La procédure d'installation s'initialise.
     exister et l'application *Phraseanet* doit pouvoir y acceder en lecture et
     écriture.
 
-* **Indiquer un nom** pour l'instance *Phraseanet*
+* **Indiquer une URL** pour l'instance *Phraseanet*
 
 * **Lancer la procédure d'installation** et patienter jusqu'au message
   *Install successful*

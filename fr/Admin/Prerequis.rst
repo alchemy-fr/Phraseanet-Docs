@@ -15,16 +15,16 @@ L'un des serveurs au choix :
 Base de données
 ---------------
 
-Phraseanet requiert un moteur de stockage de type InnoDB. Sans être une
-obligation, l’équipe des développeurs de Phraseanet recommandent fortement
-l’usage du SGBD MariaDB en remplacement de MySQL.
+Phraseanet requiert un moteur de stockage de type InnoDB.
 
-* MariaDB >= 5.1
+Les SGBD MySQL, MariaDB ou Percona fournissent ce service.
+
+* MySQL >= 5.5
 
 PHP
 ---
 
-* Phraseanet requiert une version de PHP supérieure à 5.4.0 avec les
+* Phraseanet requiert une version de PHP supérieure à 5.5.0 avec les
   extensions suivantes :
 
     * Dom
@@ -41,7 +41,6 @@ PHP
     * SimpleXML
     * sockets
     * xsl +zlib
-    * mail
     * mcrypt
     * twig (https://github.com/fabpot/Twig/tree/master/ext/)
     * intl
@@ -49,26 +48,19 @@ PHP
     * CURL
     * JSON
     * gettext
+    * amqp
 
 Elasticsearch
 -------------
 
 .. _Installer-Elasticsearch:
 
-* **TO DO**
+Phraseanet 4.0 s'appuie sur le moteur Elasticsearch. Il est obligatoire
+de l'utiliser en respectant les spécifications suivantes :
 
-  Oui, il est nécessaire d'installer Elasticsearch.
+    * Version 1.7 à 2.0
+    * Plugins `Analysis-icu`_ correspondant à la version Elasticsearch utilisée
 
-  A télécharger et puis à installer de la façon suivante :
-
-.. code-block:: bash
-
-    git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
-    cd php-phrasea
-    phpize
-    ./configure
-    make
-    make install
 
 Locales
 -------
@@ -98,20 +90,19 @@ Programmes Externes
 Pour calculer des sous-résolutions dans le navigateur, Phraseanet s'appuie sur
 des programmes externes suivants :
 
-* Imagemagick >= 6.3.7
-  Extraction d'imagettes et de preview à partir d'images bitmap.
-  Téléchargement
-  License
-
 * Ufraw
   Utilisation via Imagemagick ; Extraction d'imagettes et de previews à partir
   de fichiers RAW.
 
-* FFmpeg <= 0.8, Mplayer
+* FFmpeg de 1.2.12 "Magic" à 2.0.7 "Nameless" (versions testées)
   Extraction d'imagettes, de preview et calcul de vidéos au format web à
   partir de vidéos.
 
-* Ghostscript >= 9
+  .. note::
+
+      Ajouter les codecs nécessaires :
+
+* Ghostscript
   Extraction d'imagettes, de preview à partir de fichiers vectoriels et
   postscript.
 
@@ -121,8 +112,8 @@ des programmes externes suivants :
 * SWFTools
   Extraction de sous resolutions pour le format flash.
 
-* Unoconv
-  Extraction d'imagettes et de preview sur les documents office.
+* Unoconv >= 6
+  Extraction d'imagettes et de preview sur les documents Office.
 
 * MP4Box
   Déplacement des métadonnées des fichiers h264 en début de fichier en vue de
@@ -135,3 +126,6 @@ Clefs d'APIs (optionnelles)
 * Dailymotion
 * FlickR
 * Recpatcha
+
+
+.. _Analysis-icu: https://github.com/elastic/elasticsearch-analysis-icu
