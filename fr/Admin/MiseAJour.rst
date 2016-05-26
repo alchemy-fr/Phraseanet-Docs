@@ -1,6 +1,10 @@
 Mise à jour
 ===========
 
+.. warning::
+
+    A réécrire.
+
 .. toctree::
 
     Upgrade/3.8
@@ -21,10 +25,6 @@ de votre installation, suivre les étapes suivantes :
 
     bin/console system:backup-db
 
-* :ref:`Compiler et mettre à jour l'extension php_phrasea <Installer-Extension>`
-  si nécessaire.
-* :ref:`Compiler et remplacer le nouveau binaire indexeur <Installer-Indexeur>`
-  si nécessaire.
 * **Remplacer les anciennes sources** en suivant la procédure :
     * Renommer le dossiers contentant les anciennes sources
       (par exemple : phraseanet-backup-date).

@@ -209,13 +209,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	margin-top: 0;
-    background-color: #64CAFF; /* #0088CC; 19B2FF; 32BAFF; 4BC2FF; 64CAFF; 7DD3FF; 96DBFF; AFE4FF; C8ECFF; E1F5FF; FAFDFF*/
+    background-color: #64FF99; /* #0088CC; 19B2FF; 32BAFF; 4BC2FF; 64CAFF; 7DD3FF; 96DBFF; AFE4FF; C8ECFF; E1F5FF; FAFDFF*/
 }
 h2 {
-	background-color: #AFE4FF;
+	background-color: #64CAFF;
 }
-h3, h4, h5, h6 {
-	background-color: #E1F5FF;
+h3 {
+	background-color: #FF64CA;
+}
+h4, h5, h6 {
+	background-color: #FF9964;
 }
 a.headerlink {
     color: #6D6B6B;

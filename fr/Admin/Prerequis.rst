@@ -50,15 +50,14 @@ PHP
     * JSON
     * gettext
 
-Spécifique pour Phraseanet
---------------------------
+Elasticsearch
+-------------
 
-.. _Installer-Extension:
+.. _Installer-Elasticsearch:
 
-* **Extension php-phrasea**
+* **TO DO**
 
-  Il est nécessaire d'installer l'extension php-phrasea pour utiliser
-  Phraseanet et son moteur d'indexation par défaut Phrasea Engine.
+  Oui, il est nécessaire d'installer Elasticsearch.
 
   A télécharger et puis à installer de la façon suivante :
 
@@ -70,41 +69,6 @@ Spécifique pour Phraseanet
     ./configure
     make
     make install
-
-.. note::
-
-  Sous Linux et OSX, le processus d'installation copie l'extension à
-  l'emplacement des extensions PHP.
-
-.. _Installer-Indexeur:
-
-* **Phraseanet Indexer**
-
-  C’est le moteur d’indexation natif de Phraseanet. Il est utilisé pour
-  l’indexation "texte-plein", "valeur" et "thésaurus.
-
-  A télécharger et puis à installer de la façon suivante :
-
-.. code-block:: bash
-
-    git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
-    cd phraseanet_indexer
-    autoreconf --force --install
-    ./configure
-    make
-    sudo make install
-
-.. note::
-
-  Sous Linux et OSX, le processus d'installation copie l'indexeur à
-  l'emplacement des binaires.
-
-**Sous Windows**, les installations de l'extension et de l'indexeur sont
-différentes.
-
-.. seealso::
-
-  :ref:`Se reporter au paragraphe consacré au moteur de recherche Phrasea Engine<Phrasea-Engine>`.
 
 Locales
 -------
