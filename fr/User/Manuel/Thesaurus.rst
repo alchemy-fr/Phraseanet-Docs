@@ -195,7 +195,7 @@ Dans la fenêtre des propriétés...
     modifications soient prises en compte.
 
     :ref:`Se reporter au paragraphe relatif à la construction des index
-    Elasticsearch dans l'Administration <Operations-sur les index>`.
+    Elasticsearch dans l'Administration <Operations-sur-les-index>`.
 
 Rechercher un terme dans les termes candidats ou le Thésaurus
 *************************************************************
