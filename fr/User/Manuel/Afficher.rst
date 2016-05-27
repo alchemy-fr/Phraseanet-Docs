@@ -210,6 +210,7 @@ l'interface.
 
     Le nombre d'enregistrements sélectionnés est limité à 400.
 
+.. _Affichage-Selections-Type:
 
 Sélection par type de médias
 ****************************
