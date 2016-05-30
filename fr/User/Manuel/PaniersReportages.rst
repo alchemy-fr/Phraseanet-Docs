@@ -7,9 +7,12 @@ Les Paniers et les Reportages sont regroupés dans trouvent dans
 :doc:`la zone de travail <Afficher>` sur un même onglet. Ils sont différenciés
 par leurs couleurs :
 
-* *Gris* pour les paniers
+* *Azur* pour les paniers
 * *Doré* pour les paniers reçus tant qu’ils n’ont pas été ouverts
-* *Bleu* pour les reportages
+* *Vert* pour les demandes de validation adressées
+* *Bleu marine* pour les reportages
+
+.. _Paniers:
 
 Les paniers
 -----------
@@ -17,7 +20,7 @@ Les paniers
 .. topic:: L'essentiel
 
     Un :term:`Panier <Panier>` permet de mettre de côté des sélections de
-    médias en vue de les exploiter. Il appartient à l'utilisateur qui l'a créé
+    médias. Il appartient à l'utilisateur qui l'a créé
     et n'entre pas dans le périmètre de recherche du moteur de recherche
     comme les documents ou les reportages. Un panier peut être transmis *via*
     le :doc:`Push et la Validation <Push>` à d'autres utilisateurs pour mettre
@@ -57,26 +60,27 @@ barre de titre.
 Des icônes affichées dans la barre de titre peuvent donner des informations
 complémentaires :
 
-* **Le symbole Push** indique un panier reçu
-* **L'infobulle bleue** indique un panier reçu comme demande de validation
-* **L'infobulle rouge** indique que la demande de validation correspondante a
-  été transmise par l'utilisateur
+* **Le symbole Push**, doré, à gauche du titre, indique un panier reçu
+* **L'infobulle bleue**, à droite du titre, indique un panier reçu comme
+  demande de validation
+* **L'infobulle rouge**, à droite du titre, indique que la demande de
+  validation correspondante a été transmise par l'utilisateur
 
 Le menu contextuel des paniers
 ******************************
 
 Chaque panier dispose d'un menu contextuel accessible à droite du titre et
-permettant d'effectuer des actions :
+permettant d'effectuer des actions en fonction des droits de l'utilisateur :
 
 * Exporter pour télécharger le contenu du panier
 * Lightbox pour afficher le contenu du panier dans
   :doc:`l'interface Lightbox <Lightbox>`
 * :ref:`Renommer <Panier-Renommer>` pour modifier le nom du panier
-* :ref:`Ordonner <Panier-Ordonner>`, pour altérer l'ordre d'affichage des
-  documents dans un panier
 * :ref:`Archiver <Panier-Archiver>` pour détacher le panier de la zone de
   travail
 * Supprimer pour supprimer le panier, sans supprimer son contenu de la base
+* :ref:`Ordonner <Panier-Ordonner>`, pour altérer l'ordre d'affichage des
+  documents dans un panier
 
 Cliquer sur l'une des rubriques du menu pour effectuer une action sur le panier
 ou son contenu.
@@ -172,6 +176,8 @@ documents présentés dans la zone d'affichage.
     Se reporter à la section consacrée à
     :doc:`la palette des Actions <Actions>`.
 
+.. _Reportages:
+
 Les reportages
 --------------
 
@@ -182,12 +188,14 @@ Les reportages
     d'un reportage est identique à celle d'un document.
 
     A la différence d'un panier, un reportage peut être recherché par tout
-    utilisateur disposant d'un accès à sa collection.
+    utilisateur ayant accès à la collection du reportage.
 
 .. note::
 
     Les paniers et les reportages exploitent des fonctions en partie similaires.
     Seules les fonctions propres aux reportages sont documentées.
+
+.. _Reportages-Creer:
 
 Créer un reportage
 ******************
@@ -206,6 +214,8 @@ reportage.
 Cliquer sur **Valider** pour créer le reportage. Il apparait ouvert dans la
 zone de travail.
 
+.. _Reportages-Ajout:
+
 Ajouter, supprimer des documents à un reportage
 ***********************************************
 
@@ -215,6 +225,8 @@ manière que l'ajout ou la suppression dans un panier.
 .. seealso::
 
     Voir :ref:`les paragraphes consacrés à la manipulation des paniers<Affichage-Panier-Ajouter>`.
+
+.. _Reportages-Detacher:
 
 Détacher ou attacher un reportage de la zone de travail
 *******************************************************
@@ -229,6 +241,8 @@ du reportage.
   à attacher à la zone de travail
 * Glisser et déposer le ou les reportages depuis la zone d'affichage des
   résultats vers la zone de travail
+
+.. _Reportages-Supprimer:
 
 Supprimer un reportage
 **********************

@@ -5,10 +5,12 @@ Sauvegarde
 ----------
 
 Phraseanet dissocie le stockage des documents physiques
-(images, vidéos, audio, pdf ect ...) et les bases de données MySQL.
+(images, vidéos, audio, pdf ect ...), les bases de données MySQL, et les index
+de recherche Elasticsearch.
 La sauvegarde devra donc prendre en compte de façon synchrone ses
-deux éléments.
-S'ajoute à ces éléments, les fichiers sources de l'application.
+trois éléments.
+S'ajoute à ces éléments, les fichiers sources de l'application qui n'évoluent
+qu'après une mise à jour.
 
 Les données physiques
 *********************
@@ -22,7 +24,7 @@ Une sauvegarde différentielle est préconisée pour ces fichiers.
 Les Bases MySQL
 ***************
 
-L'ApplicationBox et les DataBoxes sont les bases MySQL ou MariaDB associées
+L'ApplicationBox et les DataBoxes sont les bases MySQL associées
 à une installation Phraseanet.
 
 Une sauvegarde à chaud de ces bases est envisageable.
@@ -36,6 +38,11 @@ intégré à l'application permet de lancer une sauvegarde de l'ensemble des bas
 
 Cette commande peut être incluse dans un script de sauvegarde.
 
+Les index de recherche Elasticsearch
+************************************
+
+Se référer à `la documentation Elasticsearch`_
+
 Les sources de l'application
 ****************************
 
@@ -47,13 +54,15 @@ après l’installation ou le paramétrage.
 
 .. note::
 
-    Vous ne devriez normallement juste avoir à sauvegarder que le dossier
-    config  qui contient vos informations de setup
+    Vous ne devriez avoir à sauvegarder que le dossier config  qui contient
+    vos informations de setup.
 
 Etat de maintenance
 -------------------
 
-Le bloc "Etat de maintenance" dans la  configuration de l'application
-, permet d'activer les logs et d'alerter les utilisateurs (ex: maintenance en
-cours). Ce paramètrage se fait dans le fichier *config.yml*.
-Referez vous au :doc:`manuel administrateur </Admin/Configuration>`.
+Le bloc "Etat de maintenance" dans la configuration de l'application,
+permet d'activer les logs et d'alerter les utilisateurs (ex: maintenance en
+cours). Ce paramètrage se fait dans le fichier *configuration.yml*.
+Se référer au :doc:`manuel administrateur </Admin/Configuration>`.
+
+.. _la documentation Elasticsearch: https://www.elastic.co/guide

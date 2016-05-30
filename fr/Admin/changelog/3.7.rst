@@ -1,12 +1,12 @@
 Version 3.7
 ===========
 
-Les changements :
------------------
+Changements
+-----------
 
 * Changement API V1.2 (:doc:`Changelog <../../Devel/API/Changelog>`)
 * Changement de code de retour de la console
-* tf-filename tf-basename tf-duration
+* tf-filename, tf-basename, tf-duration évoluent ou sont introduits
 
 Quoi de neuf ?
 --------------

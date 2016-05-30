@@ -19,11 +19,20 @@
     Accessibles selon les droits des utilisateurs, certaines de ces commandes
     sont des fonctions de base, d'autres sont des fonctions étendues.
 
-.. image:: ../../images/Actions-PaletteBeta.jpg
+.. image:: ../../images/Actions-Palette.jpg
     :align: center
 
 Les fonctions de base
 ---------------------
+
+Sélection d'enregistrements par type
+************************************
+
+.. seealso::
+
+    Consulter :ref:`la page consacrée aux sélections
+    <Affichage-Selections-Type>` dans les fondamentaux.
+
 
 Exporter et Imprimer
 ********************
@@ -31,7 +40,7 @@ Exporter et Imprimer
 .. seealso::
 
     Consulter :doc:`la page consacrée à l'export et à l'impression <Exporter>`
-    dans la partie consacrée aux fondamentaux.
+    dans les fondamentaux.
 
 Les fonctions étendues
 ----------------------
@@ -115,7 +124,8 @@ Déplacer
 ********
 
 L'action déplacer permet de déplacer des médias d'une collection à une autre
-au sein d'une même base.
+au sein d'une même base (il n'est pas possible de déplacer des enregistrements
+d'une base à une autre).
 
 * Sélectionner un ou plusieurs enregistrements dans la zone d'affichage ou dans
   un panier ou reportage ouvert
@@ -146,7 +156,7 @@ vers des destinataires ou des applications.
 Outils
 ******
 
-Le bouton Outils regroupe des actions qui permettent d'agir sur :
+Le bouton **Outils** regroupe des actions qui permettent d'agir sur :
 
 * **Les vignettes ou images de choix** (régénération, substitution, rotation,
   options de partage des fichiers de sous-définition, choix de la vignette pour
@@ -163,24 +173,24 @@ Outils. Choisir un des onglets proposés :
 * **Régénération de sous-définitions** : pour recréer les vignettes et
   sous-définitions à partir des documents originaux des enregistrements
   sélectionnés
-* **Outils vidéos** : Disponible si et seulement si l'unique média sélectionné
-  est de type vidéo, l'onglet propose les outils permettant le choix d'une
-  vignette de présentation personnalisée.
+* **Outils vidéos** : Disponible si et seulement si un unique média sélectionné
+  est un document de type vidéo, l'onglet propose les outils permettant le
+  choix d'une vignette de présentation personnalisée.
 * **Rotation** : permet des rotations des vignettes et des sous-définitions
   pour les médias sélectionnés
-* **Substitution** : Permet de remplacer le document original par un autre. Une
-  case à cocher permet de choisir si la vignette et l'image de choix doivent
-  être reconstruites
-* **Substitution des sous-défs** : pour remplacer la vignette par un autre
-  visuel
+* **Substitution** (activé selon paramétrage) : Permet de remplacer le document
+  original par un autre. Une case à cocher permet de choisir si la vignette et
+  l'image de choix doivent être reconstruites
+* **Substitution des sous-défs** (activé selon paramétrage) : pour remplacer la
+  vignette par un autre visuel
 * **Métadonnées** : pour afficher l'ensemble des informations de métadonnées
   lues par l'utilitaire **Exiftool** dans le média original du document
   sélectionné (cet onglet n'est disponible que si un seul document est
   sélectionné)
-* **Partage des sous-définitions** : depuis la version 3.8.7, pour désactiver
-  ou activer les permaliens pointant vers les fichiers ressources (documents
-  originaux, sous-définitions et vignettes). Les permaliens désactivés
-  retournent des codes d'erreur HTTP 404.
+* **Partage des sous-définitions** : pour désactiver ou activer les permaliens
+  pointant vers les fichiers ressources (documents originaux, sous-définitions
+  et vignettes). Les permaliens désactivés retournent des codes d'erreur
+  HTTP 404.
 
 Supprimer
 *********

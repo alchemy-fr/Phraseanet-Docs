@@ -3,13 +3,9 @@ Mise à jour
 
 .. warning::
 
-    A réécrire.
-
-.. toctree::
-
-    Upgrade/3.8
-    Upgrade/3.7
-    Upgrade/3.6
+    Pour mettre à jour en version 4.0 il est impératif de disposer d'une
+    version 3.8.8.
+    `Se reporter aux procédures de mise à jour en version 3.8`_
 
 Lors de la publication d'une nouvelle version, pour procéder à la mise à jour
 de votre installation, suivre les étapes suivantes :
@@ -19,6 +15,7 @@ de votre installation, suivre les étapes suivantes :
   :ref:`en ligne de commande<Arrets-et-Demarrages-Alternatifs>`. Stopper toutes
   les tâches en cours d'exécution.
 * **Déconnecter tous les utilisateurs** de l'application (y compris vous).
+* Facultatif : Passer en mode maintenance (faire le lien en configuration.yml)
 * **Sauvegarder les bases de données** via l'outil prévu :
 
 .. code-block:: bash
@@ -48,26 +45,6 @@ de votre installation, suivre les étapes suivantes :
 
       bin/setup system:upgrade
 
-  Lors de l'execution de cette commande depuis des version anciennes
-  (antérieures à 3.6), il est demandé d'executer des commandes supplémentaires :
-
-  .. code-block:: bash
-
-      Your install requires data migration, please execute the following command
-
-              bin/setup system:upgrade-datas --from=3.1
-
-      Your install might need to re-read technical datas
-
-              bin/console records:rescan-technical-datas
-
-      Your install might need to re-read technical datas
-
-              bin/console records:build-missing-subdefs
-
-  L'execution de ces commandes dans l'ordre indiqué est alors impératif pour que
-  la mise à jour soit correctement effectuée.
-
 * **Verifier que Phraseanet est mis à jour** via la commande :
 
   .. code-block:: bash
@@ -76,3 +53,5 @@ de votre installation, suivre les étapes suivantes :
 
 * Pour finir, **relancer les tâches** via le
   :doc:`gestionnaire de tâches<MoteurDeTaches>`.
+
+.. _Se reporter aux procédures de mise à jour en version 3.8: https://docs.phraseanet.com/3.8/fr/Admin/MiseAJour.html

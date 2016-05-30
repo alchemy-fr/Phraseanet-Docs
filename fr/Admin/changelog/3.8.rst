@@ -1,17 +1,16 @@
 Version 3.8
 ===========
 
-Voici les principaux changements et nouveautés dans la version 3.8.
+Voici les principaux changements et nouveautés apportés par la version 3.8.
 
-Configuration
--------------
+Changements dans la configuration
+---------------------------------
 
-Un des changements majeurs de Phraseanet 3.8 réside dans la configuration. Les
-fichiers *config/config.yml*, *config/services.yml* et *config/connexions.yml*
+Les fichiers *config/config.yml*, *config/services.yml* et *config/connexions.yml*
 disparaissent pour laisser place à un unique fichier *configuration.yml*.
 
 Il n'y a plus d'environnement à déclarer et la configuration est compilée en
-PHP afin de bénéficier d'un `cache opcode`_.
+PHP pour bénéficier d'un `cache opcode`_.
 
 La configuration est mise à jour automatiquement lors de l'execution des
 mises à jour. Les informations détaillées sont disponibles dans la
@@ -103,7 +102,7 @@ Notifications par Mail
   (Utiliser les :doc:`plugins <../Plugins>` pour les personnaliser).
 - L'authentification TLS, en plus de SSL, est maintenant supportée pour la
   connexion à un serveur de mail.
-- Un préfixe peut être configuré à l'attention des sujets des emails ce qui 
+- Un préfixe peut être configuré à l'attention des sujets des emails ce qui
   peut être pratique pour mettre en place des filtres dans les clients de
   messagerie.
 - La connexion au serveur de mail peut être testée via la commande
@@ -119,7 +118,7 @@ Plusieurs commandes disparaissent :
 - `bin/console check:ensure-production-settings` et `bin/console check:ensure-dev-settings`
   remplacées par `bin/console check:config`.
 
-- Les commandes fournies par l'utilitaire console requièrent une installation 
+- Les commandes fournies par l'utilitaire console requièrent une installation
   de Phraseanet fonctionnelle, tandis que l'utilitaire `setup`
   s'éxecute sans même avoir installé Phraseanet.
 - L'application s'installe désormais en ligne de commande via la commande

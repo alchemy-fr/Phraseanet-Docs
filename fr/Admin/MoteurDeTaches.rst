@@ -528,3 +528,5 @@ API Webhook
 
 Cette tache permet d'exploiter les événements listés dans la table
 **api_webhooks** de l'application box.
+Le paramétrage proposé consiste à indiquer la périodicité d'exploitation de
+la tâche.
