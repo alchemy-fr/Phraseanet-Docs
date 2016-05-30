@@ -12,7 +12,7 @@ Personnaliser Phraseanet
     - La page de présentation des conditions générales d'utilisation.
     - Les pages d'authentification `oAuth`_.
 
-    Ces personnalisations s'appuient sur deux technologies distinctes : 
+    Ces personnalisations s'appuient sur deux technologies distinctes :
 
     - `LESS`_ pour la mise en forme des styles de présentation
     - `TWIG`_ pour la composition des éléments structurants les pages
@@ -23,8 +23,8 @@ Modifier l'aspect des pages de connexion
 Changer les couleurs des pages
 ******************************
 
-Il est simple de personnaliser les couleurs des différentes pages via 
-la configuration `LESS`_ des :doc:`plugins<Plugins>`.
+Pour personnaliser les couleurs des différentes pages intervenir sur la
+configuration `LESS`_ des :doc:`plugins<Plugins>`.
 
 Dans le plugin, le fichier **less/login.less** permet de personnaliser les
 couleurs des pages d'accueil, **less/account.less** les pages de compte.
@@ -57,7 +57,7 @@ couleurs au sein de l'application.
     @purple:                #7a43b6;
 
 Les variables ci-dessous permettent de modifier l'aspect des éléments qui ne
-sont pas inhérents à `Twitter Bootstrap`_.
+sont pas inhérents à `Bootstrap`_.
 
 .. code-block:: css
 
@@ -215,8 +215,8 @@ popovers :
 Changer la structure des pages
 ******************************
 
-Les structures des pages d'accueil dans Phraseanet reposent sur le moteur de 
-template `Twig`. Son mécanisme est basé sur le principe de l' `héritage`_ 
+Les structures des pages d'accueil dans Phraseanet reposent sur le moteur de
+template `Twig`. Son mécanisme est basé sur le principe de l' `héritage`_
 des templates qui permet de redéfinir le template entier ou bien des
 portions de celui-ci.
 
@@ -331,7 +331,7 @@ suivants :
   google, facebook etc ... (si activé).
 
 .. _Twig: http://twig.sensiolabs.org/
-.. _Twitter Bootstrap: http://twitter.github.io/bootstrap/
+.. _Bootstrap: http://getbootstrap.com/
 .. _LESS: http://lesscss.org
 .. _oAuth: http://oauth.net/
 .. _Form: http://symfony.com/fr/doc/current/cookbook/form/form_customization.html

@@ -45,8 +45,16 @@ Configuration dans Phraseanet
 
 Après avoir installé Elasticsearch, Phraseanet doit être configuré.
 
-Il faudra renseigner l'adresse, le port et le nom d'index désiré de
+Configuration avec l'interface graphique
+
+Comme admin, Aller à Admin / Paramètres du moteur de recherche
+
+Renseigner l'adresse, le port et le nom d'index désiré de
 Elasticsearch dans la configuration de Phraseanet pour cela :
+
+Configurer en éditant le fichier de configuration
+
+[Source]/config/confuguration.yml
 
 .. code-block:: none
 
@@ -57,12 +65,13 @@ Elasticsearch dans la configuration de Phraseanet pour cela :
             port: 9200
             index: phraseanet
 
-Une fois cette configuration effectuée, executer dans la console la commande
-suivante pour indexer Phraseanet.
+Une fois cette configuration effectuée, executer dans la console les commandes
+suivantes pour valider la configuration, créer l'index Phraseanet.
 
 .. code-block:: none
 
-    bin/console searchengine:index
+    bin/console compile:configuration
+    bin/console searchengine:index:create
 
 
 .. _Operations-sur-les-index:
@@ -81,83 +90,32 @@ Opérations sur les index
 
 .. code-block:: none
 
-    bin/console s:i:d
+    bin/console s:i:c
 
 
-**Pour alimenter, "peupler", les index** :
+**Pour alimenter, "peupler/populate", les index** :
 
 .. code-block:: none
 
     bin/console s:i:p
 
+Options pour "populate"
 
-Arguments
-^^^^^^^^^
+.. code-block:: none
 
-* --host: adresse de la base
-* --port: port (normalement 3306 pour MySQL)
-* --base: nom de la base "application-box"
-* --user: compte SQL pour la connexion
-* --password: mot de passe du compte de connexion
-* --default-character-set: jeu de caractères de la connexion
-* --old: argument obligatoire !
+    Usage:
+      searchengine:index:populate [options]
 
-Ces 7 précédentes options sélectionnent l'"application-box" (base SQL de
-Phraseanet) où les bases ("data-boxes") à indexer sont publiées.
-
-* --socket: port de contrôle via telnet
-    En cours d'éxécution, l'indexeur peut être interrompu par Ctrl-C (ou sous
-    linux et OSX par l'envoi du signal sigint).
-    L'argument "socket" permet d'interrompre également l'indexeur via telnet.
-* --flush: Ecrire les index tous les 'n' documents.
-    Pour optimiser les performances, l'indexeur indexe les documents par lots
-    (par défaut 50).
-    Si la mémoire consommée est trop importante il est possible de diminuer ce
-    nombre avec l'option "flush" (au détriment de la vitesse).
-* --clng: Langue par défaut des termes candidats
-    Lors de l'indexation de champs liés à un thésaurus, les nouveaux termes sont
-    placés comme "termes candidats".
-    L'option "clng" permet de spécifier la langue à attribuer par défaut aux termes
-    candidats.
-* --stem: indexe les racines (voir http://fr.wikipedia.org/wiki/Racinisation)
-    des mots, permettant de rechercher en full-text différentes formes d'un mot
-    comme le pluriel ou les conjugaisons.
-
-La liste des langues disponibles est affichée avec l'option --help
-
-La recherche par racine est disponible dans Phraseanet Production / recherche avancée..
-ex. : chercher "oiseau vole" trouvera les documents renseignés avec "oiseaux volants".
-
-* --optfile: lire les arguments dans un fichier
-    Il peut être souhaitable de ne pas afficher certaines options de la ligne de
-    commmande (notamment le mot de passe).
-    L'indexeur peut lire des options dans un fichier, ce fichier devant être placé
-    dans le même répertoire que l'éxécutable.
-* --quit:
-    L'indexeur est censé fonctionner en continu.
-    Cette option permet d'indexer les documents concernés puis de quitter l'indexeur
-    immédiatement.
-* --version: Affiche la version
-* --debug: A des fins de contrôle, l'indexeur peut écrire différents types d'opérations
-    effectuées (traitement xml, opérations sql...).
-    Ces 7 types de messages peuvent être filtrés par les 7 bits (masque) de la
-    valeur de debug.
-
-Un masque de log réglé à --debug=64 (flush ops.) permet de contrôler le
-fonctionnement sans trop charger les logs.
-
-* --nolog: Les "logs" sont normalement envoyés au système (syslog pour linux ou OSX,
-    journal des événements pour Windows).
-    L'option "nolog" permet d'envoyer les messages sur l'écran.
-
-* --help: L'option "help" détaille les différentes options précédemment citées ainsi que
-    leurs valeurs par défaut.
-
-
-Exécution par le Task-Manager
-*****************************
-
-L'indexation peut être éxécutée par la tâche "Indexation", les réglages des
-attributs sont alors disponibles via l'interface graphique de la tâche.
+    Options:
+          --thesaurus                Only populate thesaurus data
+          --records                  Only populate record data
+          --databox_id[=DATABOX_ID]  Only populate chosen databox (multiple values allowed)
+      -h, --help                     Display this help message
+      -q, --quiet                    Do not output any message
+      -V, --version                  Display this application version
+          --ansi                     Force ANSI output
+          --no-ansi                  Disable ANSI output
+      -n, --no-interaction           Do not ask any interactive question
+      -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 
 

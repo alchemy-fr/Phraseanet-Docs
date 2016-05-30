@@ -70,20 +70,11 @@ chemin d'accès au répertoire de stockage des vignettes.
 Lors de l'édition d'un grand nombre de documents des messages d'erreur apparaissent
 -----------------------------------------------------------------------------------
 
-**Si le module suhosin est compilé avec la version de PHP utilisée**, il est
-possible qu'il limite le nombre de paramètres passés par requêtes. Pour
+Le nombre de paramètres passés par requêtes est sans doute insuffisant. Pour
 corriger le dysfonctionnement, augmenter cette limite dans le fichier de
 configuration de PHP.
-Ajouter les lignes suivantes dans le fichier php.ini puis relancer/redémarrer
-le serveur web.
 
-.. code-block:: bash
-
-    suhosin.post.max_vars=12000
-    suhosin.request.max_vars=12000
-
-**Si le module suhosin n'est pas présent et que la version de PHP est supérieure
-ou égale à 5.3.15**, ajouter la ligne suivante dans le fichier php.ini puis
+Ajouter la ligne suivante dans le fichier php.ini puis
 relancer/redémarrer le serveur web.
 
 .. code-block:: bash
