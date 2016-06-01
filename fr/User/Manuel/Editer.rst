@@ -27,11 +27,11 @@ Principes généraux sur l'édition
 
 La fenêtre est découpée en trois zones :
 
-* **La barre de défilement** affiche les documents sélectionnés. La taille des
+* **1. La barre de défilement** affiche les documents sélectionnés. La taille des
   vignettes et la taille de cette zone sont modifiables
-* **La zone de saisie** affiche les status, la liste des champs documentaires et
+* **2. La zone de saisie** affiche les status, la liste des champs documentaires et
   réserve un espace pour afficher le contenu du champ actif
-* **La zone des onglets d'assistance à la saisie** regroupe des outils d'aides à
+* **3. La zone des onglets d'assistance à la saisie** regroupe des outils d'aides à
   la saisie
 
 **Par défaut, tous les enregistrements sont sélectionnés.**
@@ -73,8 +73,9 @@ Editer des champs de type texte
 .. image:: ../../images/Prod-Editer-texte.jpg
     :align: center
 
-Si le champ édité contient des informations hétérogènes, choisir si les
-informations saisies doivent remplacer ou s'ajouter au champ.
+Dans le cas d'une sélection multiple, si le champ édité contient des
+informations hétérogènes, choisir si la saisie doit remplacer
+ou s'ajouter (compléter) les informations existantes dans le champ.
 
 Editer des champs de type texte multi-valués
 ********************************************

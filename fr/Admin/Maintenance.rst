@@ -63,6 +63,7 @@ Etat de maintenance
 Le bloc "Etat de maintenance" dans la configuration de l'application,
 permet d'activer les logs et d'alerter les utilisateurs (ex: maintenance en
 cours). Ce paramètrage se fait dans le fichier *configuration.yml*.
-Se référer au :doc:`manuel administrateur </Admin/Configuration>`.
+
+Se référer à :doc:`la page consacrée à la configuration </Admin/Configuration>`.
 
 .. _la documentation Elasticsearch: https://www.elastic.co/guide

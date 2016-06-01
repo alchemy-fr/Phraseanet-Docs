@@ -72,7 +72,7 @@ Setup
 
 *Phraseanet* s’installe de deux façons :
 
-* :ref:`En ligne de commande <install-cli>` depuis la version 4.0
+* :ref:`En ligne de commande <install-cli>`
 
 **Ou bien**
 
@@ -99,12 +99,12 @@ La procédure d'installation s'initialise.
   :ref:`les créer <install-create-database>`
 
 * **Renseigner les informations de connexion au serveur de base de données**
-  puis indiquer le nom de la base exploitée par l'*Application box*
+  puis indiquer le nom de la base exploitée pour l'*Application box*
 
-* **Indiquer le nom de la base exploitée par la** *Data Box*
+* **Indiquer le nom de la base exploitée pour la** *Databox*
 
-* **Indiquer la langue à utiliser** (**fr** ou **en**) pour la structure
-  documentaire initiale
+* **Indiquer la structure documentaire initiale à utiliser** (trois modèles
+  proposés)
 
 * **Créer un compte administrateur** : indiquer une adresse e-mail valide ainsi
   qu'un mot de passe de connexion.

@@ -3,8 +3,9 @@ Mise à jour
 
 .. warning::
 
-    Pour mettre à jour en version 4.0 il est impératif de disposer d'une
-    version 3.8.8.
+    Pour mettre à jour en version 4.0, il est impératif de disposer d'une
+    version 3.8.8 installée.
+
     `Se reporter aux procédures de mise à jour en version 3.8`_
 
 Lors de la publication d'une nouvelle version, pour procéder à la mise à jour
@@ -30,7 +31,7 @@ de votre installation, suivre les étapes suivantes :
 * **Recharger le serveur web** Apache ou Nginx, et éventuellement de PHP-FPM
   pour la prise en charge de la nouvelle extension.
 * **Vérifier que l'environnement de déploiement est conforme aux prérequis**
-  de la version de Phraseanet que vous installez. Dans un terminal, à la
+  de la version de Phraseanet que vous mettez à jour. Dans un terminal, à la
   racine des sources, éxecuter la commande suivante :
 
   .. code-block:: bash
