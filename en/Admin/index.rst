@@ -22,6 +22,7 @@ Phraseanet can also be managed through 2 interfaces: `API <../../Devel>`_ and
     :maxdepth: 1
     :glob:
 
+    Changelog
     Prerequisite
     Download
     Install

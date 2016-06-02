@@ -4,8 +4,12 @@ Maintenance
 Backups
 -------
 
-Phraseanet uses MySQL as database and stores documents n the filesystem.
-Backups should take care of both data stores, and application sources.
+Phraseanet stores documents (images, audio, videos, pdf...) in the filesystem
+uses MySQL as database to store information, and relies on Elasticsearch
+indexes.
+
+Backups should take care of those three synchronised elements, and also the
+application sources
 
 Filesystem datas
 ****************
@@ -30,6 +34,11 @@ Live backups should work.
 
 This command can be included in a backup script.
 
+Elasticsearch indexes
+*********************
+
+Please, refer to `Elasticsearch guide and documentation`_
+
 Application sources
 *******************
 
@@ -38,15 +47,18 @@ Applciation sources are genrally only modified when updating Phraseanet.
 It can nevertheless be good to save at one time the sources after install and
 setup.
 
-.. note:
+.. note::
 
-    You may just save the config/ directory as everything you setup is
+    You may just save the config/ directory because everything you setup is
     stored in it.
 
 Maintenance
 -----------
 
-You can setup your application in maintenance mode to prevent user from login
+You can setup your application in maintenance state to prevent user from login
 and display an alert message on the frontpage.
 This configuration has to be done in the *config.yml* file.
-Please refer to the :doc:`admin manual </Admin/Configuration>`.
+
+Please refer to the :doc:`configuration page </Admin/Configuration>`.
+
+.. _Elasticsearch guide and documentation: https://www.elastic.co/guide

@@ -11,13 +11,13 @@ On the server, download Phraseanet sources from the download page of
 
 .. code-block:: bash
 
-    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v3.8.x.zip
+    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v4.0.x.zip
 
 And
 
 .. code-block:: bash
 
-    unzip alchemy-fr-Phraseanet-v3.8.x.zip
+    unzip alchemy-fr-Phraseanet-v4.0.x.zip
 
 
 Although it is not mandatory (but highly recommended), verify
@@ -71,7 +71,7 @@ Setup
 
 *Phraseanet* can be installed in two ways:
 
-* :ref:`In Command-line mode <install-cli>` since version 3.8
+* :ref:`In Command-line mode <install-cli>`
 
 **Or**
 
@@ -123,7 +123,7 @@ The installation process starts.
     * **To use another directory**, answer **y**. The directory must exists
       and Phraseanet application must be able to read and write in it.
 
-* **Provide a name** to the Phraseanet instance server
+* **Provide an URL** for the Phraseanet instance server
 
 * **Start the installation process** and wait until the *Install successful*
   message

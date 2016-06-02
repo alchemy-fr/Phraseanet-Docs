@@ -15,15 +15,16 @@ One of these
 Database
 --------
 
-Phraseanet requires an InnoDB storage engine. We strongly recommend MariaDB as
-a replacement for MySQL.
+Phraseanet requires an InnoDB storage engine. MySQL, MariaDB or Percona can be
+used for this.
 
-* MariaDB >= 5.1
+* MySQL >= 5.5
 
 PHP
 ---
 
-* PHP > 5.4.0 with:
+* Phraseanet requires PHP version 5.5.0 (or greater) with the following
+  extensions:
 
     * Dom
     * exif
@@ -38,47 +39,26 @@ PHP
     * pcntl (unix)
     * SimpleXML
     * sockets
-    * xsl
-    * zlib
-    * mail
+    * xsl +zlib
     * mcrypt
+    * twig (https://github.com/fabpot/Twig/tree/master/ext/)
+    * intl
     * pdo
     * CURL
     * JSON
     * gettext
-    * twig (https://github.com/fabpot/Twig/tree/master/ext/)
-    * Intl
+    * amqp
 
-Phraseanet Specific
--------------------
+.. _Installer-Elasticsearch:
 
-* PHP-phrasea Extension
+Elasticsearch
+-------------
 
-  You have to install PHP-Phrasea to use Phraseanet.
+Phraseanet 4.0 builds on the ElasticSearch engine with the following
+specifications:
 
-  Download and Install:
-
-.. code-block:: bash
-
-    git clone https://github.com/alchemy-fr/Phraseanet-Extension php-phrasea
-    cd php-phrasea
-    phpize
-    ./configure
-    make
-    make install
-
-* Phraseanet Indexer
-
-  It is our Index engine. It is required for thesaurus and full-text indexation.
-
-.. code-block:: bash
-
-    git clone https://github.com/alchemy-fr/Phraseanet-Indexer phraseanet_indexer
-    cd phraseanet_indexer
-    autoreconf --force --install
-    ./configure
-    make
-    sudo make install
+    * Version 1.7 à 2.0
+    * `Analysis-icu`_ plugin corresponding to the used Elasticsearcher engine release
 
 Locales
 -------
@@ -107,16 +87,17 @@ Third Party Programs
 To generate subviews, Phraseanet uses third party programs, depending
 on their type
 
-* Imagemagick >= 6.3.7
-  Thumbnails and previews extraction from bitmap.
-
 * Ufraw
   ImageMagick deleagtion for RAW images
 
-* FFmpeg <= 0.8, Mplayer
+* FFmpeg from version 1.2.12 "Magic" to 2.0.7 "Nameless" (Tested versions)
   Previews and Thumbnails extraction from videos and audios.
 
-* Ghostscript >= 9
+  .. note::
+
+      Add codecs:
+
+* Ghostscript
   Previews and thumbnails extraction from graphix vectors and postscript.
 
 * XPDF
@@ -128,7 +109,7 @@ on their type
 * Exiftool
   RDF metadatas extraction.
 
-* Unoconv
+* Unoconv >= 6
   Preview and thumbnails extraction from office documents.
 
 * MP4Box
@@ -141,3 +122,5 @@ API keys (optional)
 * Dailymotion
 * FlickR
 * Recpatcha
+
+.. _Analysis-icu: https://github.com/elastic/elasticsearch-analysis-icu

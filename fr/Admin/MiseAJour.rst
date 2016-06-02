@@ -16,7 +16,7 @@ de votre installation, suivre les étapes suivantes :
   :ref:`en ligne de commande<Arrets-et-Demarrages-Alternatifs>`. Stopper toutes
   les tâches en cours d'exécution.
 * **Déconnecter tous les utilisateurs** de l'application (y compris vous).
-* Facultatif : Passer en mode maintenance (faire le lien en configuration.yml)
+* Facultatif : Passer en mode maintenance (dans `config/configuration.yml`)
 * **Sauvegarder les bases de données** via l'outil prévu :
 
 .. code-block:: bash
@@ -28,8 +28,7 @@ de votre installation, suivre les étapes suivantes :
       (par exemple : phraseanet-backup-date).
     * Placer les nouvelles sources à l'emplacement des précedentes.
 * **Ecraser le dossier 'config'** par celui de l'ancienne installation.
-* **Recharger le serveur web** Apache ou Nginx, et éventuellement de PHP-FPM
-  pour la prise en charge de la nouvelle extension.
+* **Recharger le serveur web** Apache ou Nginx, et éventuellement de PHP-FPM.
 * **Vérifier que l'environnement de déploiement est conforme aux prérequis**
   de la version de Phraseanet que vous mettez à jour. Dans un terminal, à la
   racine des sources, éxecuter la commande suivante :

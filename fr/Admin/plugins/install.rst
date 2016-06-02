@@ -120,7 +120,7 @@ autoloader dédié.
 
     {
         "name": "vendor/phraseanet-plugin-name",
-        "description": "A test plugin",
+        "description": "A Hello world plugin",
         "license" : "MIT",
         "autoload": {
             "psr-0": {
