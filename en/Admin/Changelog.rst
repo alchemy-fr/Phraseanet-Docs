@@ -1,5 +1,5 @@
-Changelog de l'application
-==========================
+Changelog application
+=====================
 
 .. toctree::
 
@@ -7,4 +7,3 @@ Changelog de l'application
     Changelog/3.8
     Changelog/3.7
     Changelog/3.6
-

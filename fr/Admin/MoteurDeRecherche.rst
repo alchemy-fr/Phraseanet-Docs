@@ -3,7 +3,7 @@ Moteur de recherche
 
 .. topic:: L'essentiel
 
-    Phraseanet utilise le moteur de recherche Elasticsearch.
+    Phraseanet 4.0 utilise le moteur de recherche Elasticsearch.
     Ses principaux avantages sont :
 
     * la rapidité
@@ -46,13 +46,16 @@ Configuration dans Phraseanet
 Après avoir installé Elasticsearch, Phraseanet doit être configuré.
 
 Configuration avec l'interface graphique
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Comme admin, Aller à Admin / Paramètres du moteur de recherche
+Comme administrateur Phraseanet, Aller à Admin / Paramètres du moteur de
+recherche.
 
 Renseigner l'adresse, le port et le nom d'index désiré de
-Elasticsearch dans la configuration de Phraseanet pour cela :
+Elasticsearch dans le formulaire de paramétrage.
 
 Configurer en éditant le fichier de configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [Source]/config/confuguration.yml
 

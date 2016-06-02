@@ -34,10 +34,15 @@ command:
 
 .. code-block:: bash
 
-    bin/console task-manager:scheduler:start
-    bin/console task-manager:scheduler:stop
-    bin/console task-manager:scheduler:state
-    bin/console task-manager:task:run
+    task-manager:scheduler:pause-tasks        Pause scheduler started tasks jobs
+    task-manager:scheduler:resume-tasks       Resume scheduler started tasks jobs
+    task-manager:scheduler:run                Run the scheduler
+    task-manager:scheduler:state              Returns scheduler state
+    task-manager:task:list                    Lists tasks
+    task-manager:task:run                     Runs a task
+    task-manager:task:start                   Starts a task
+    task-manager:task:state                   Returns the state of a task
+    task-manager:task:stop                    Stops a task
 
 Tasks
 -----
@@ -50,43 +55,9 @@ Tasks
 Indexation task
 ****************
 
-This task indexes the datas using the *phraseanet_indexer* binary.
-
-Indexer requires parameters:
-
-* Path to indexer binary
-* Host: MySQL server hostname / address
-* Port: MySQL port
-* Database: MySQL dbname
-* User: MySQL user
-* Password: MySQL password
-* Socket port: socket port to stop the indexer
-
-* Default language for thesaurus candidates : Default language for unknown terms
-  inserted in candidates, ex: en
-
-* Enable stemming languages : languages for indexing by "stems", ex: en, fr
-
-  The "stemming" (see http://en.wikipedia.org/wiki/Stemming) allows searching
-  different forms of words as plural or conjugation
-
-  ex. : searching "running wolf" will match records containing "wolfes run"
-
-* Sort records with an empty fields : When searching, records where the field
-  used for sorting is not set can be :
-
-  not on result ; in the begining of results ; in the end of results
-
-.. code-block:: bash
-
-    /usr/local/bin/phraseanet_indexer -h=host \
-                                      -P=port \
-                                      -b=database \
-                                      -u=user \
-                                      -p=password \
-                                      --socket=13800 \
-                                      --default-character-set=utf8 \
-                                      -o
+It synchronizes information between Phraseanet database and ElasticSearch
+indexes on events such as collections renaming, alteration of document
+structure (fields, status-bit) or edition of Phraseanet thesaurus
 
 .. note::
 
@@ -106,7 +77,7 @@ Write metadatas
 ***************
 
 This task writes metadatas inside documents, depending of the configuration
-you set up.
+you set up for subviews files.
 
 Archive in collection
 *********************
@@ -403,4 +374,9 @@ Examples
     clauses are overlapped by raising a specific Phraseanet Status-bit in each
     stage <to> of a <task>.
 
+API Webhook
+***********
 
+This task allows to exploit the events listed in the Api_webhooks MySQL table
+from the application box.
+The proposed setting is to indicate the operating frequency of this task.

@@ -112,6 +112,9 @@ des programmes externes suivants :
 * SWFTools
   Extraction de sous resolutions pour le format flash.
 
+* Exiftool
+  Extraction de métadonnées RDF.
+
 * Unoconv >= 6
   Extraction d'imagettes et de preview sur les documents Office.
 

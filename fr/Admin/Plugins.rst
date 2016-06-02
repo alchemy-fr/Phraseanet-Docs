@@ -12,5 +12,5 @@ une arborescence à exposer publiquement (icônes, css, js, etc...).
 
 .. toctree::
 
-    plugins/install
-    plugins/configure
+    Plugins/install
+    Plugins/configure
