@@ -38,7 +38,7 @@ Préférences d'affichage
 Préférences d'affichage des résultats
 *************************************
 
-Cliquer sur le lien **Préférences** au bas de la zone d'affichage des résultats.
+Cliquer sur le bouton **Préférences** à droite de la barre d'action.
 
 Une fenêtre en surimpression rassemble des paramètres d'affichage et de
 configuration.
@@ -59,8 +59,8 @@ L'onglet **Affichage** permet d'intervenir sur :
 * La taille d'affichage des vignettes
 * La couleur de sélection des enregistrement dans les interfaces
 
-L'onglet **Configuration** permet de paramétrer la question posée par défaut
-lors d'une connexion aux interfaces *Production* et *Classic*.
+L'onglet **Configuration** permet de paramétrer l'affichage de documents ou
+de publication lors d'une connexion à *Production*.
 
 .. image:: ../../images/Affichage-Preferences2.jpg
     :align: center

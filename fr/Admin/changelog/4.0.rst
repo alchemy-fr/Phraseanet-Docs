@@ -3,4 +3,14 @@ Version 4.0
 
 Voici les principaux changements et nouveautés apportés par la version 4.0.
 
+Introduction du moteur Elasticsearch
+------------------------------------
+
+Le moteur Elasticsearch remplace le moteur Phrasea engine comme moteur de
+recherche exclusif de l'application.
+
+Refonte des interfaces
+----------------------
+
+Les interfaces ont été remaniées.
 

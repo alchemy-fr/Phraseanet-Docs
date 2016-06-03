@@ -25,7 +25,7 @@ Cette action permet d'exporter, au choix et selon les droits de l'utilisateur ou
 les attributs des sous-définitions :
 
 * le document original
-* les sous-définitions de documents
+* les sous-définitions téléchargeables des documents
 * les notices au format `XML`_ ou `YAML`_
 
 **Près de chaque format figurent les poids respectifs de l'ensemble des éléments
