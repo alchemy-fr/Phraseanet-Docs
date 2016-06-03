@@ -53,8 +53,8 @@ et est disponible sous forme de flux hors de l'application.
 
 .. _Publier-Bridge:
 
-Diffuser avec Bridge
---------------------
+Diffuser avec Bridge - **Déprécié**
+-----------------------------------
 
 Le Bridge (Pont en anglais) permet de publier des médias vers des sites
 extérieurs, tels :
