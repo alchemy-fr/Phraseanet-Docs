@@ -57,8 +57,9 @@ Elasticsearch
 Phraseanet 4.0 builds on the ElasticSearch engine with the following
 specifications:
 
-    * Version 1.7 à 2.0
-    * `Analysis-icu`_ plugin corresponding to the used Elasticsearcher engine release
+    * Elasticsearch version 1.7 to 2.0
+    * `Analysis-icu`_ plugin corresponding to the used Elasticsearcher engine
+      release
 
 Locales
 -------
@@ -95,7 +96,38 @@ on their type
 
   .. note::
 
-      Add codecs:
+      The following audiovideo codecs are mandatory for proper application:
+
+      * libfaac
+      * libmp3lame
+      * libtheora
+      * libvorbis
+      * libx264
+      * libopencore-amrnb
+      * libopencore-amrwb
+
+      Suggested compiler options are:
+
+      .. code-block:: bash
+
+          /configure --enable-gpl \
+            --enable-nonfree \
+            --enable-libfaac \
+            --enable-libgsm \
+            --enable-libmp3lame \
+            --enable-libtheora \
+            --enable-libvorbis \
+            --enable-libx264 \
+            --enable-libxvid \
+            --enable-zlib \
+            --enable-postproc \
+            --enable-swscale \
+            --enable-pthreads \
+            --enable-x11grab \
+            --enable-libdc1394 \
+            --enable-version3 \
+            --enable-libopencore-amrnb \
+            --enable-libopencore-amrwb
 
 * Ghostscript
   Previews and thumbnails extraction from graphix vectors and postscript.
@@ -105,9 +137,6 @@ on their type
 
 * SWFTools
   Previews and thumbnails extraction from Adobe Flash files.
-
-* Exiftool
-  RDF metadatas extraction.
 
 * Unoconv >= 6
   Preview and thumbnails extraction from office documents.
