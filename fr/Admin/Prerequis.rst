@@ -75,7 +75,7 @@ Exemple pour debian :
 
     dpkg-reconfigure locales
 
-Exemple pour ubuntu :
+Exemple pour Ubuntu :
 
 * Activation des locales désirées via le fichier /etc/locale.gen
 * execution de la commande /usr/sbin/locale-gen
@@ -100,7 +100,39 @@ des programmes externes suivants :
 
   .. note::
 
-      Ajouter les codecs nécessaires :
+      Les codecs suivants sont nécessaires au bon fonctionnement de
+      l'application :
+
+      * libfaac
+      * libmp3lame
+      * libtheora
+      * libvorbis
+      * libx264
+      * libopencore-amrnb
+      * libopencore-amrwb
+
+      Les options de compilation conseillées sont les suivantes :
+
+      .. code-block:: bash
+
+          /configure --enable-gpl \
+            --enable-nonfree \
+            --enable-libfaac \
+            --enable-libgsm \
+            --enable-libmp3lame \
+            --enable-libtheora \
+            --enable-libvorbis \
+            --enable-libx264 \
+            --enable-libxvid \
+            --enable-zlib \
+            --enable-postproc \
+            --enable-swscale \
+            --enable-pthreads \
+            --enable-x11grab \
+            --enable-libdc1394 \
+            --enable-version3 \
+            --enable-libopencore-amrnb \
+            --enable-libopencore-amrwb
 
 * Ghostscript
   Extraction d'imagettes, de preview à partir de fichiers vectoriels et
@@ -111,9 +143,6 @@ des programmes externes suivants :
 
 * SWFTools
   Extraction de sous resolutions pour le format flash.
-
-* Exiftool
-  Extraction de métadonnées RDF.
 
 * Unoconv >= 6
   Extraction d'imagettes et de preview sur les documents Office.

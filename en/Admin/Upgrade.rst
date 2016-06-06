@@ -6,7 +6,7 @@ Upgrade Procedure
     To upgrade to Phraseanet version 4.0, installed version of Phraseanet
     must be 3.8.8.
 
-    Please have a look to `Phraseanet 3.8 upgrade procedure`_ if required.
+    Please, have a look to `Phraseanet 3.8 upgrade procedure`_ if required.
 
 To upgrade Phraseanet to the latest version, it is strongly recommended to
 follow this upgrade procedure:
