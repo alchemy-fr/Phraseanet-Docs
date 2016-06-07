@@ -37,7 +37,7 @@ L'indexation fonctionne en arrière plan. Elle surveille les bases à indexer
 (apparition, modification ou disparition de documents) et maintient
 des index de recherche à jour.
 
-Il est nécessaire de disposer d'une version d'Elasticsearch 0.90.7 ou supérieure
+Il est nécessaire de disposer d'une version d'Elasticsearch 1.7 ou supérieure
 pour utiliser le moteur Elasticsearch dans Phraseanet.
 
 Configuration dans Phraseanet

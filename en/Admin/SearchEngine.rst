@@ -25,8 +25,7 @@ Indexing runs in background. It monitors bases to index
 (Appearance, disappearance or alteration of documents) and maintains up to date
 search indexes.
 
-It is necessary to have ElasticSearch 0.90.7 or greater to use ElasticSearch
-engine in Phraseanet.
+It is necessary to have ElasticSearch 1.7 or greater to use it in Phraseanet.
 
 Configuration in Phraseanet
 ***************************

@@ -5,15 +5,9 @@
 
 .. topic:: The essential
 
-    The interfaces *Phraseanet Production* or *Classic* allows to consult and
-    browse through media assets in *Phraseanet*.
-
-    *Production* is an interface dedicated to viewing, searching, managing and
-    editing documents, depending on the user rights. It as the default interface
-    when connection for the first time.
-
-    **Classic is only for searching and viewing documents with older
-    browsers**. The specifics of this interface are not covered in this guide.
+    The *Phraseanet Production* interface is dedicated to viewing, searching,
+    managing and editing documents, depending on the user rights. It as the
+    default interface when connection for the first time.
 
 Production Interface
 --------------------
@@ -30,16 +24,15 @@ The workspace of Production is divided in 4 parts:
 * **2. The display area** displays the results of a search
 * **3. The Actions palette** allows to act on records. Refer to the dedicated
   page in :doc:`Actions Palette<Actions>`.
-* **4. The work zone** regroups the baskets and stories tab, the suggestions tab
-  and the Thesaurus tab. It is minimizable.
+* **4. The work zone** regroups facets, thesaurus, baskets and stories tabs.
+  It is minimizable.
 
-The lower banner allows access to the **Display preferences**, informs on the
-results number and displays a pagination of the results. This index allows to
-move through the results.
+A lower banner displays results number and displays a pagination of the
+results. This index allows to move through the results.
 
 .. note::
 
-    Do not use the back and forward buttons of the web browser.
+    Do not use the back and forward buttons of the browser.
 
 To access a specific page, modify the page number then validate by pressing the
 **Enter** key of the keyboard.

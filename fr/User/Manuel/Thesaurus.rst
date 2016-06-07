@@ -287,8 +287,8 @@ plus appropriés.
 Le travail d'ajout de termes candidats au thésaurus s'effectue soit dans
 Thésaurus, soit dans Production.
 
-Dans Thésaurus
-**************
+Dans l'interface Thésaurus
+**************************
 
 Accepter un candidat
 ^^^^^^^^^^^^^^^^^^^^
@@ -342,8 +342,8 @@ candidat supprimé peut être réintroduit :
     thésaurus réapparaissent, cette action réinitialisant les candidats du
     thésaurus.
 
-Dans Production
-***************
+Dans l'interface Production
+***************************
 
 La rubrique Candidats
 ^^^^^^^^^^^^^^^^^^^^^
