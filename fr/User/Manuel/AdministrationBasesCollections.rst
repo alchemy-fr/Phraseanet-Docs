@@ -74,7 +74,7 @@ Pour déclarer une facette pour un champ :
 * Sélectionner le champ dans la partie gauche du formulaire
 * Fixer un nombre de valeurs dans le champs *Agrégation* du formulaire de
   paramétrage
-* Recréeer les index ElasticSearch
+* Recréer les index ElasticSearch
 
 .. note::
 

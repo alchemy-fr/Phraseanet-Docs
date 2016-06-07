@@ -7,15 +7,14 @@ Thesaurus
 .. topic:: The essential
 
     Thesaurus is a documentary language management tool. In Phraseanet, its
-    implementation is optional. It can be used with the Phrasea engine only (not
-    compatible with the Sphinx search engine).
+    implementation is optional.
 
-    In Production, the thesaurus serves :
+    In Production, the thesaurus serves:
 
     * **Contributors**, to give a reference vocabulary to describe resources
       of the base in the edition form.
-    * **Users** (all kind), to browse assets and make suggestions allowing to
-      narrow or expand searches.
+    * **Users** (all kind), to browse assets allowing to narrow or expand
+    searches.
 
     The Thesaurus application is the interface dedicated to the thesaurus
     administration. However some maintenance actions are possible in Production.
@@ -38,7 +37,7 @@ used to describe the resources come along with their synonyms or quasi-synonyms.
 Relations in the Phraseanet thesaurus
 *************************************
 
-The Phraseanet thesaurus manages :
+The Phraseanet thesaurus manages:
 
 * The relations broader terms (BT) terms and narrow terms (NT)
 * The synonymy relations, in the same language or to other languages of the
@@ -69,12 +68,12 @@ Access the thesaurus of a base
 Click on the Thesaurus item in the menu bar then...
 
 * Choose the Thesaurus base to edit in the drop-down menu list
-* Choose a the language to work with then click on validate
+* Choose a language to work with then click on validate
 
 .. image:: ../../images/Thesaurus-general.jpg
     :align: center
 
-The Thesaurus application window is in two parts.
+The Thesaurus application window is in two parts:
 
 * The left side of the window displays the list of **candidates**,
   terms and expressions resulting from the indexation and the list of **rejected
@@ -95,7 +94,7 @@ Adding a narrower term to a branch or to an existing term of the thesaurus
 means adding a strictly subordinate term in the semantic relation.
 Broader terms in the thesaurus can be added on any existing branch from
 the main branch called **Thesaurus**.
-To create a term :
+To create a term:
 
 * Right click on a branch, on a term
 * Click on **New term**.
@@ -181,6 +180,14 @@ In the properties window...
 
     In Firefox, a menu window can hide the Property window of the thesaurus.
 
+.. warning::
+
+    The edition of thesaurus (additions of terms or synonymous, removing words)
+    requiere reconstruction of ElasticSearch index for changes to take effect.
+    Depending on the volume of data to be indexed, this may take several hours.
+
+    :Ref: `See paragraph on building ElasticSearch index in Administration manual<Operations-on-indexes>`
+
 Search for a term in Candidates or Thesaurus
 ********************************************
 
@@ -195,8 +202,8 @@ In the Search window,
 The display refreshes and the searched term are displayed in the tree structure
 of Candidates or Thesaurus depending of search root.
 
-Export the candidates or the Thesaurus
-**************************************
+Exporting candidates or Thesaurus
+*********************************
 
 * Right click on a branch or on the node Candidates or Thesaurus then select
   the **Export** item in pop-up menu
@@ -207,8 +214,8 @@ In the Export window,
 
 The exported terms are displayed in a new tab, new window of the Web browser.
 
-Import an existing thesaurus
-****************************
+Importing an existing thesaurus
+*******************************
 
 Thesaurus consists od a tabulated text files encoded in UTF-8. This kind of
 file can be integrated as thesaurus in the application.
@@ -265,8 +272,8 @@ corrections in notes in order to use more appropriate descriptors.
 Adding candidates to thesaurus can be made either in Thesaurus or in Production
 interfaces.
 
-In Thesaurus
-************
+In Thesaurus interface
+**********************
 
 Accept candidates
 ^^^^^^^^^^^^^^^^^
@@ -320,8 +327,8 @@ be deleted then re-added:
     thesaurus reappear, this action reinitialises the candidates of the
     thesaurus.
 
-In Production
-*************
+In Production interface
+***********************
 
 Accept candidates
 ^^^^^^^^^^^^^^^^^

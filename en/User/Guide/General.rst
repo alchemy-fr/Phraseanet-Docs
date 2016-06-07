@@ -25,13 +25,7 @@ The user must also have a valid email address.
 
 .. note::
 
-    On Windows PC, Internet Explorer 7 is the minimum recommended version.
-    However, Phraseanet Classic allows access using obsolete Web browsers such
-    as Internet Explorer 6.
-
-    The use of Internet Explorer 6 is not recommended for the other Phraseanet
-    interfaces, as it is not recommended to use *Phraseanet Classic* with recent
-    browsers.
+    On Windows PC, Internet Explorer 9 is the minimum recommended version.
 
 The Phraseanet modules
 ----------------------
@@ -43,7 +37,6 @@ The solution is based on seven interfaces (or modules), accessible from the main
 menu bar, depending on the user rights:
 
 * `Production`_
-* `Classic`_
 * `Lightbox`_
 * `Upload`_
 * `Administration`_
@@ -60,16 +53,6 @@ This interface is complete and allows to :doc:`import <Import>`,
 
 .. image:: ../../images/Production-general.jpg
     :align: center
-
-Classic
-*******
-
-*Phraseanet Classic* is a viewing interface for the final users who have older
-web browsers. It allows to :doc:`view <Display>` and :doc:`download<Export>`
-documents.
-
-.. image:: ../../images/General-Classic.jpg
-   :align: center
 
 Lightbox
 ********
@@ -120,7 +103,6 @@ Thesaurus
 *********
 
 :doc:`Thesaurus<Thesaurus>` creation and management is possible in *Phraseanet*.
-The *thesaurus* is used jointly with *Phrasea* search engine.
 Along the management of generic and specific keywords, the Phraseanet Thesaurus
 handles synonyms and linguistic relations. It is really useful to *Phraseanet*
 utilization.
@@ -137,7 +119,7 @@ Report
 
 Using :doc:`Statistics <Stats>`, *Phraseanet Report* gives a detailed view
 of a *Phraseanet* system activity and sums up some users behaviour. A datamine
-to optimize the access to the assets and know better the users habits.
+to optimize the access to the assets and know better users's habits.
 
 .. image:: ../../images/General-Report.jpg
    :align: center

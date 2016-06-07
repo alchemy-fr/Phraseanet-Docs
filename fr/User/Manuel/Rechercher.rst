@@ -26,7 +26,7 @@
 La recherche en texte intégral
 ------------------------------
 
-*Phraseanet* propose par défaut un mode de recherche en texte intégral
+*Phraseanet* propose un mode de recherche en texte intégral
 permettant de questionner des documents ou des reportages selon les informations
 contenues dans les champs documentaires des notices descriptives.
 
@@ -232,24 +232,3 @@ dispositif d'auto-complétion.
 
 .. image:: ../../images/Rechercher-thesaurus3.jpg
     :align: center
-
-Utiliser les propositions
-*************************
-
-Cet onglet affiche des propositions en rapport avec la recherche de
-l'utilisateur et les termes de référence contenus dans le ou les thésaurus des
-bases interrogées.
-
-En remontant des termes issus du thésaurus lors des recherches, les propositions
-suggèrent des termes permettant de préciser davantage la recherche ou au
-contraire de l'étendre à un champ cognitif plus large.
-
-Chaque proposition affichée est cliquable et permet de relancer une recherche.
-
-.. image:: ../../images/Onglet-Propositions.jpg
-    :align: center
-
-.. note::
-
-    La pertinence des propositions faites dépend de la construction du
-    thésaurus déployé.
