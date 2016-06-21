@@ -91,7 +91,7 @@ To edit records statuses:
     are refreshed when the interface is refreshed.
 
 Modify the documents types
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action allows to change the documents types that are automatically set when
 importing in *Phraseanet*. It is useful when some documents were not correctly

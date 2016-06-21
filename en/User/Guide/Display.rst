@@ -22,20 +22,17 @@ The workspace of Production is divided in 4 parts:
 
 * **1. The search form** allows to search media and stories
 * **2. The display area** displays the results of a search
-* **3. The Actions palette** allows to act on records. Refer to the dedicated
-  page in :doc:`Actions Palette<Actions>`.
-* **4. The work zone** regroups facets, thesaurus, baskets and stories tabs.
+* **3. The work zone** regroups facets, thesaurus, baskets and stories tabs.
   It is minimizable.
+* **4. The Actions palette** allows to act on records. Refer to the dedicated
+  page in :doc:`Actions Palette<Actions>`.
 
-A lower banner displays results number and displays a pagination of the
-results. This index allows to move through the results.
+A lower banner displays results number on the left side of the display area.
+When the bottom of the results page is reached, a pagination index appears on
+the right side. This index allows to move through the results.
 
-.. note::
-
-    Do not use the back and forward buttons of the browser.
-
-To access a specific page, modify the page number then validate by pressing the
-**Enter** key of the keyboard.
+To access a specific page, select and modify the colored background page number
+in pagination index then press **Enter** key on keyboard.
 
 .. image:: ../../images/Afficher-Nbreponses.jpg
     :align: center

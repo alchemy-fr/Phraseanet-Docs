@@ -79,7 +79,7 @@ Other options exists using advanced operators.
 
 .. seealso::
 
-    :doc:`See the page dedicated to Elasticsearch in FAQ<../../FAQ/Media/Elasticseach-supported-search-operators>`.
+    :doc:`See the page dedicated to Elasticsearch in FAQ<../../FAQ/Media/Elasticseach-supported-operators>`.
 
 Navigating with facets
 ----------------------

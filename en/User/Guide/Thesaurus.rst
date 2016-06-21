@@ -14,7 +14,7 @@ Thesaurus
     * **Contributors**, to give a reference vocabulary to describe resources
       of the base in the edition form.
     * **Users** (all kind), to browse assets allowing to narrow or expand
-    searches.
+      searches.
 
     The Thesaurus application is the interface dedicated to the thesaurus
     administration. However some maintenance actions are possible in Production.

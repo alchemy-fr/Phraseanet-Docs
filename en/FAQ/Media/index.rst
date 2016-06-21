@@ -11,6 +11,6 @@ Managing media in Phraseanet
    :glob:
 
    Manage-media
-   All-search-operators
+   Elasticseach-supported-operators
    Delete-a-publication
    Add-a-base
