@@ -46,10 +46,8 @@ What's new in version 4.0?
 
 Here are the main changes in version 4.0:
 
-* ...
-* ...
-* ...
-
+* Introduce Elasticsearch as unique engine for Phraseanet
+* Redesign of some interfaces
 
 Need help?
 ----------
