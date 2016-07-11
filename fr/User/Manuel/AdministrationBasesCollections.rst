@@ -287,6 +287,11 @@ Renommer une collection
 
 Saisir un nouveau nom de collection puis cliquer Renommer.
 
+.. warning::
+
+    Renommer une collection implique la réindexation de la base. Privilégier un
+    changement de label à la place peut être plus judicieux.
+
 Vider une collection
 ^^^^^^^^^^^^^^^^^^^^
 
