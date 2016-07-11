@@ -302,6 +302,11 @@ Rename a collection
 
 Enter a new name for the collection then click on Rename.
 
+.. warning::
+
+    Rename a collection requiere to drop / create and populate Elasticsearch
+    search index. Favour a label change instead could be wiser.
+
 Empty a  collection
 ^^^^^^^^^^^^^^^^^^^
 
