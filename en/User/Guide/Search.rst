@@ -218,6 +218,3 @@ clickable.
 Include at least the first three characters of a term to trigger the
 auto-completion system.
 
-.. image:: ../../images/Rechercher-thesaurus3.jpg
-    :align: center
-
