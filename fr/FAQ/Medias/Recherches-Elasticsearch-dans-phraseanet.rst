@@ -57,10 +57,10 @@ L'opérateur de négation *SAUF*
 
 Il permet d'exclure des termes de la recherche.
 
-Exemples
+.. code::
 
-* Hiver SAUF Neige
-* Winter EXCEPT Snow
+    Hiver SAUF Neige
+    Winter EXCEPT Snow
 
 Les opérateurs ordinaux **TOUT** et **DERNIERS**
 ------------------------------------------------
@@ -117,8 +117,10 @@ Rechercher avec les deux points (:)
 Exemple pour une recherche dans un champ nommé TitreEn dans le structure
 documentaire :
 
-* TitreEn: Limelight (identique à field.TitreEn: Limelight)
-* TitreEn: Rambo (identique à field.TitreEn: Rambo)
+.. code::
+
+    TitreEn: Limelight (identique à field.TitreEn: Limelight)
+    TitreEn: Rambo (identique à field.TitreEn: Rambo)
 
 Le moteur effectue des césures automatique sur les espaces et caractères vides.
 Le terme recherché est le premier terme compris entre l'opérateur saisi et
@@ -129,8 +131,10 @@ entourer l'expression recherchée de guillemets.
 
 Exemple :
 
-* TitreFr: "Les feux de la rampe"
-* TitreFr: "Rambo 2"
+.. code::
+
+    TitreFr: "Les feux de la rampe"
+    TitreFr: "Rambo 2"
 
 .. note::
 
@@ -146,9 +150,11 @@ Utiliser l'opérateur = (égal) pour rechercher des valeurs exactes et stricte
 
 Exemples :
 
-* TitreEn= Limelight
-* TitreFr= Rio
-* TitreFr= "Et Dieu... créa la Femme"
+.. code::
+
+    TitreEn= Limelight
+    TitreFr= Rio
+    TitreFr= "Et Dieu... créa la Femme"
 
 .. note::
 
@@ -163,10 +169,12 @@ ou de comparaison sur le champ donné.
 
 Exemples pour l'interrogation d'un champ nommé Date :
 
-* Date < "2016/01/01"
-* Date = "2016/01/01"
-* Date "2015/07/01"
-* Date >= "2015/12/31"
+.. code::
+
+    Date < 2016/01/01
+    Date = 2016/01/01
+    Date > 2015/07/01
+    Date >= 2015/12/31
 
 .. _Recherches-sur-dates-d-archivage-et-de-mise-a-jour:
 
@@ -186,13 +194,23 @@ notice de l'asset.
 
 Exemples de recherche :
 
-* created_on> 2016/04/18 pour les enregistrements créé après le 18 avril 2016
-* updated_on< 2016/03/18 pour les enregistrements créé avant le 03 mars 2016
-* created_on= 2016/04/18 pour les enregistrements créé le 18 avril 2016
-* created_on= 2016/04 pour les enregistrements créés en avril 2016 (> ou < ne
-  fonctionnent pas sur ce critère d'interrogation)
-* created_on= 2015 pour les enregistrements créés en 2015 (> ou < ne
-  fonctionnent pas sur ce critère d'interrogation)
+.. code::
+
+    created_on> 2016/04/18 pour les enregistrements créé après le 18 avril 2016
+    updated_on< 2016/03/18 pour les enregistrements créé avant le 03 mars 2016
+    created_on= 2016/04/18 pour les enregistrements créé le 18 avril 2016
+    created_on= 2016/04 pour les enregistrements créés en avril 2016 (> ou < ne
+    fonctionnent pas sur ce critère d'interrogation)
+    created_on= 2015 pour les enregistrements créés en 2015 (> ou < ne
+    fonctionnent pas sur ce critère d'interrogation)
+
+.. note::
+
+    Bien que ces interrogations portent sur des dates, les opérateurs de
+    comparaisons arithmétiques ne fonctionnent pas.
+    Pour effectuer ce genre de recherche, déclarer des champs de date d'ajout /
+    date d'édition dans la structure documentaire de la base avec les sources
+    de métadonnées Phraseanet Tf-Archivedate et Tf-Editdate.
 
 Rechercher au moyen du thésaurus
 --------------------------------
@@ -206,8 +224,10 @@ formulaire de recherche d'un terme ou d'une expression entre crochets.
 
 Exemples :
 
-* [Aéronautique]
-* [Cinéma français]
+.. code::
+
+    [Aéronautique]
+    [Cinéma français]
 
 Recherche sur les status
 ------------------------
@@ -218,7 +238,11 @@ L'état du status peut être *true* ou *false*.
 
 Exemple :
 
-* flag.media-renseigné:false pour l'état d'un status média renseigné baissé
+.. code::
+
+    flag.media-renseigné:false
+
+    (pour l'état d'un status média renseigné baissé)
 
 Recherche sur des champs techniques
 -----------------------------------
@@ -269,7 +293,7 @@ Phraseanet image :
 
        meta.ColorDepth> 8 (Toutes les images dont les canaux de codage de la
        couleurs sont supérieurs à 8 bits)
-   * - meta.CameraMode
+   * - meta.CameraModel
      - Nom du dispositif de prise de vue
 
        meta.CameraModel: iphone (tous les documents capturés par un appareil
@@ -294,7 +318,6 @@ Phraseanet image :
        inférieure à 400 ISO
    * - meta.LightValue
      - Valeur de l'illuminant
-
 
    * - meta.ColorSpace
      - Espace colorimétrique de l'image
@@ -385,8 +408,12 @@ Recherche d'un enregistrement par son identifiant Phraseanet
 
 La syntaxe est : recordid: (le numéro d'enregistrement)
 
-Exemple : **recordid: 804** pour afficher le document dont le numéro
-d'enregistrement unique dans la base est 804.
+Exemple pour afficher le document dont le numéro d'enregistrement unique dans
+la base est 804.
+
+.. code::
+
+    recordid: 804
 
 .. note::
 
@@ -399,7 +426,11 @@ Recherche d'enregistrements pour une base
 Pour la recherche d'enregistrement appartenant à une base, utiliser la syntaxe
 *database:"l'alias de la base"*
 
-Exemple : **database:"Base Parade Test"**
+Exemple :
+
+.. code::
+
+    database:"Base Parade Test"
 
 **Important** : Respecter l'intitulé exact et la casse de l'alias donné à
 la base.
