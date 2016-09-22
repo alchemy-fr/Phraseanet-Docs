@@ -176,8 +176,8 @@ Outils. Choisir un des onglets proposés :
 * **Outils vidéos** : Disponible si et seulement si un unique média sélectionné
   est un document de type vidéo, l'onglet propose les outils permettant le
   choix d'une vignette de présentation personnalisée.
-* **Rotation** : permet des rotations des vignettes et des sous-définitions
-  pour les médias sélectionnés
+* **Rotation** : permet des rotations des vignettes, des sous-définitions et des
+  documents originaux pour les médias sélectionnés, lorsque cela est possible
 * **Substitution** (activé selon paramétrage) : Permet de remplacer le document
   original par un autre. Une case à cocher permet de choisir si la vignette et
   l'image de choix doivent être reconstruites

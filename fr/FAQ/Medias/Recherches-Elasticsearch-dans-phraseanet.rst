@@ -415,6 +415,7 @@ la base est 804.
 
     recordid: 804
 
+
 .. note::
 
     Les opérateurs de comparaison =, < ou > ne sont pas implémentés.

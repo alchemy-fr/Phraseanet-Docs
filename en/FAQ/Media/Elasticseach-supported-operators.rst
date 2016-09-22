@@ -382,17 +382,16 @@ Search a record by its Phraseanet identifier
 
 Syntax is: recordid: the_record_id
 
-Example:
+Example, to display the record unique number id 804 in a database:
 
 .. code::
 
     recordid: 804
-    (Display the record unique number id is 804 in a database)
+
 
 .. note::
 
     Comparison operators =, < ou > are not implemented.
-
 
 Finding records for a base
 --------------------------
