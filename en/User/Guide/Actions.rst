@@ -156,8 +156,8 @@ suggested tabs:
   subviews from original documents for the selected records.
 * **Video tools**: Available only if the selected media is a video, this
   tab propose tools to customize the thumbnail of the selected video.
-* **Rotation**: Rotate thumbnails and previews images for the selected media.
-  Rotation won't be applied to original documents.
+* **Rotation**: Rotate thumbnails, previews images and original documents
+  for the selected media when possible
 * **Substitution**: Replace the original document by an other. A checkbox
   allows to choose if the thumbnail and the preview image have to be rebuilt.
 * **Substitution for subview**: Replace the thumbnail image by an other file.
