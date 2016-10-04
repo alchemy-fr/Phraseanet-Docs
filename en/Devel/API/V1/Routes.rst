@@ -23,6 +23,7 @@ Routes
     Route/Records/SetStatus
     Route/Records/SetMetadatas
     Route/Records/SetCollection
+    Route/Records/Delete
     Route/Embed/Substitute
     Route/Stories/Story
     Route/Stories/Embed
@@ -74,6 +75,7 @@ For example, you can get the permalinks of a record with the following route:
 |           |* :doc:`record <Route/Records/Record>`  |* :doc:`status <Route/Records/Status>`          |* :doc:`setcollection <Route/Records/SetCollection>`  |
 |           |                                        |* :doc:`embed <Route/Records/Embed>`            |* :doc:`setmetadatas <Route/Records/SetMetadatas>`    |
 |           |                                        |* :doc:`related <Route/Records/Related>`        |* :doc:`add <Route/Records/Add>`                      |
+|           |                                        |                                                |* :doc:`delete <Route/Records/Delete>`                |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+
 | embed     |* :doc:`record <Route/Embed/Substitute>`|* :doc:`embed <Route/Records/Embed>`            |                                                      |
 +-----------+----------------------------------------+------------------------------------------------+------------------------------------------------------+

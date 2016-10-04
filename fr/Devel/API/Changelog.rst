@@ -1,8 +1,24 @@
 API Changelog
 =============
 
-X.X.X
+2.0.0
 -----
+
+Version 2.0.0 of Phraseanet API is brought with Phraseanet 4.0.0.
+
+Nouvelles routes
+****************
+
+- :doc:`search v2 <V2/Route/Search>`.
+- :doc:`orders/create <V2/Route/Orders/Create>` Crée un bon de commande pour plusieurs documents
+- :doc:`orders/index <V2/Route/Orders/Index>` Liste les commandes de l'utilisateur.
+- :doc:`orders/{orderId}/{accept,deny} <V2/Route/Orders/Validate>` Gère les validations
+- :doc:`records/{databox_id}/{record_id} <V1/Route/Records/Delete>` Supprime un document
+
+1.5.0
+-----
+
+La version 1.5.0 de Phraseanet API est disponible avec Phraseanet 3.8.8.
 
 Nouvelle route
 **************
@@ -10,8 +26,8 @@ Nouvelle route
 * :doc:`embed/substitute <V1/Route/Embed/Substitute>`
     Substituer / injecter une sous-résolution pour un record de type document
 
-Updated routes
-**************
+Routes modifiées
+****************
 
 * :doc:`record/add <V1/Route/Records/Add>`
     Ajout d'un attribut "nosubdefs" pour empêcher la création des

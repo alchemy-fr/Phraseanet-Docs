@@ -25,6 +25,7 @@ Table of contents
     :maxdepth: 3
 
     API/V1
+    API/V2
     API/Root
     API/Changelog
     Vagrant
