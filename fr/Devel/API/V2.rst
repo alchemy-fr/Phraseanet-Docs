@@ -8,7 +8,7 @@ Give us your feedback and if you publish your code, let us know and
 we'll also do so.
 
 * Read the :doc:`overview <V2/Overview>`
-* Get familiar with :doc:`oAuth2 <V1/Authentication>`
+* Get familiar with :doc:`oAuth2 <V1/Authentification>`
 
 If you ever find bugs, please report them on the `mailing-list`_ or create a
 ticket on our `bug tracker`_.
