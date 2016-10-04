@@ -245,8 +245,7 @@ Possible criteria:
 
     <status mask="1x0xxxx" />
     status-bit number 4 is set to 0 AND status-bit number 6 is set 1
-    (please note sb 0 to 3 are reseved to Phraseanet so the xxxx at the end of
-    attribute <status mask> remain the same)
+    (please note sb 0 to 3 are reseved to Phraseanet so the xxxx at the end of attribute)
 
 - The value of a text field:
 
