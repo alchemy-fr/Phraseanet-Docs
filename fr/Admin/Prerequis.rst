@@ -48,7 +48,8 @@ PHP
     * CURL
     * JSON
     * gettext
-    * amqp
+    * amqp (utilisé en cas d'utilisation d'une application Parade)
+    * ZeroMQ (ZMQ)
 
 Elasticsearch
 -------------
@@ -58,7 +59,7 @@ Elasticsearch
 Phraseanet 4.0 s'appuie sur le moteur Elasticsearch. Il est obligatoire
 de l'utiliser en respectant les spécifications suivantes :
 
-    * Version 1.7 à 2.0
+    * Version 2.x (2.3 conseillé)
     * Plugins `Analysis-icu`_ correspondant à la version Elasticsearch utilisée
 
 
