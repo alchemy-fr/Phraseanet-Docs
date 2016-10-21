@@ -47,7 +47,8 @@ PHP
     * CURL
     * JSON
     * gettext
-    * amqp
+    * amqp (if you plan to use a Parade front office)
+    * ZeroMQ (ZMQ)
 
 .. _Installer-Elasticsearch:
 
@@ -57,7 +58,7 @@ Elasticsearch
 Phraseanet 4.0 builds on the ElasticSearch engine with the following
 specifications:
 
-    * Elasticsearch version 1.7 to 2.0
+    * Elasticsearch version 2.x (version 2.3 is recommanded)
     * `Analysis-icu`_ plugin corresponding to the used Elasticsearcher engine
       release
 
