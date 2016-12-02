@@ -1,0 +1,20 @@
+Documentation API v2
+====================
+
+L'API Phraseanet v2 donne accès et permet d'interagir avec les données de
+Phraseanet 4.0.0.
+
+* Lire la :doc:`Présentation <V2/Overview>`
+* Se familiariser avec :doc:`oAuth2 <V1/Authentification>`
+
+Si vous trouvez des bugs, merci de les rapporter sur la `mailing-list`_ ou de
+créer un ticket sur le `bug tracker`_.
+
+.. toctree::
+   :maxdepth: 2
+
+   V2/Overview
+   V2/Routes
+
+.. _bug tracker: https://github.com/alchemy-fr/Phraseanet/issues
+.. _mailing-list: https://groups.google.com/group/phraseanet-api
