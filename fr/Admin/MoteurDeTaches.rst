@@ -398,7 +398,8 @@ Les critères possibles sont
 .. code-block:: xml
 
     <status mask="1x0xxxx" />
-    le sb 4 = 0 ET le sb 6 = 1 (nb les sb 0-3 réservés, donc à xxxx)
+    le status 4 est à 0 ET le status 6 est à 1 (les status 0 à 3 sont réservés
+    à Phraseanet, d'ou les xxxx en fin de valeur de l'attribut *status mask*)
 
 - la valeur d'un champ texte :
 
@@ -415,7 +416,8 @@ Les critères possibles sont
 .. code-block:: xml
 
     <date direction="before" field="MISEENLIGNE"/>
-    la date de mise en ligne n'est pas atteinte (= on est AVANT la date de mise en ligne)
+    la date de mise en ligne n'est pas atteinte (= on est AVANT la date de mise
+    en ligne)
 
     <date direction="after" field="MISEENLIGNE" delta="+30" />
     la date de mise en ligne est passée de 30 jours (= on est APRES la date+30j)

@@ -4,7 +4,7 @@ API Changelog
 2.0.0
 -----
 
-Version 2.0.0 of Phraseanet API is brought with Phraseanet 4.0.0.
+La version 2.0.0 de l'API Phraseanet est disponible dans Phraseanet 4.0.0.
 
 Nouvelles routes
 ****************

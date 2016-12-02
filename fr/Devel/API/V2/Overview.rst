@@ -1,39 +1,42 @@
-API v2 Overview
-==================
+Présentation de l'API v2
+========================
 
-Phraseanet API uses standard HTTP v1.1. Requests are
-GET, POST, PUT or POST requests, returning JSON.
+L'API Phraseanet utilise le standard HTTP v1.1. Les requêtes sont de type
+GET, POST, PUT ou POST, et retournent une réponse en JSON.
 
-Parameters must be sent as a JSON Body or Http query parameters depending on the used route.
-Clients *MUST* set Content-Type header to application/json when a body is required.
-Clients *MUST* set Accept header to application/json for all requests.
+Les paramètres doivent être envoyés en tant que paramètres de requête JSON Body
+ou HTTP selon la route utilisée.
+Le Client *DOIT* paramétrer le header Content-Type à application/json lorsqu'une
+requête JSON est requise.
+Le Client *DOIT* paraméter le header Accept à application/json pour toutes
+les requêtes.
 
-As Phraseanet API uses oAuth2 for authentication, you have to setup your
-server/do you requests with https.
+L'API Phraseanet utilisant oAuth2 pour l'authentification, le serveur web doit
+être paramétré pour utiliser le protocole HTTPS.
 
 Quotas
 ------
 
-There are no Rate Limits in v2, so you do as many requests as you wish.
+Il n'y a pas de quota ou de limite dans l'API v2.
 
-Public Access
--------------
+Accès public
+------------
 
-There are no public access to Phraseanet API for the moment
+Il n'y a pas d'accès public aux ressources exposées par l'API.
 
-Responses
----------
+Réponses
+--------
 
-All responses are wrapped in an object containing two fields: response and
-meta. Response is by default sent as JSON data.
+Toutes les réponses sont fournies comme un objet contenant deux champs :
+**response** et **meta**.
+Response est adressé comme donnée JSON.
 
 .. note::
 
-    An optional **timers** fields, providing an array of timers, can be
-    retrieved by activating this feature. Read the
-    :doc:`configuration <../../../Admin/Configuration>` doc to enable it.
+    Des champs **timers** fournissant des données temporelles peuvent être activés dans la configuration Phraseanet. Se reporter à
+    :doc:`cette page <../../../Admin/Configuration>` pour l'activer.
 
-Timer example:
+Exemple avec les *timers* activés :
 
 .. code-block:: javascript
 
@@ -61,13 +64,13 @@ Timer example:
 Json
 ~~~~
 
-Request:
+Requête:
 
 .. code-block:: bash
 
     curl -H 'Accept: application/json' ...
 
-Response:
+Réponse:
 
 .. code-block:: javascript
 
@@ -87,27 +90,27 @@ Response:
         }
     }
 
-Errors
-------
+Erreurs
+-------
 
-The meta section contains few values, among "http_code", "error_message" and
-"error details".
+Le section meta fournit des informations comme les codes de retour HTTP, les
+messages d'erreur ou des détails sur les erreurs.
 
-Phraseanet API uses the appropriate HTTP status codes.
+L'API Phrasenaet utilise les codes de statut HTTP.
 
-This code is repeated in the meta of the response, and the error_message is
-added.
+Le code de statut est retourné dans la section meta de la réponse (http_code),
+et, s'il y a lieu, un message d'erreur peut être donné (error_message).
 
-You will find explanation below:
+Aperçu des codes d'erreurs HTTP retournés :
 
 =========== =======
 HTTP Code   Meaning
 =========== =======
-400         Parameter is invalid or missing
-401         The OAuth token was provided but was invalid
-403         Access to the requested resource is forbidden
-404         Requested resource is not found
-405         Attempting to use POST with a GET-only endpoint, or vice versa
-500         Internal Server Error
+400         La syntaxe de la requête est erronée, Paramètre de la requête invalide ou manquant
+401         L'authentification est nécessaire pour accéder à la ressource Le jeton OAuth fournis est invalide
+403         Le serveur a compris la requête, mais refuse de l'exécuter
+404         Ressource non trouvée
+405         Méthode de requête non autorisée (POST est utilisé à la place de GET, ou inversement)
+500         Erreur interne du serveur
 =========== =======
 

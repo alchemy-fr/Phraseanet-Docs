@@ -1,17 +1,14 @@
 Documentation API v2
 ====================
 
-Phraseanet API v2 gives you access to lots of Phraseanet data and lets
-you interact with them.
-Integrate the search engine, build your own applications and plugins!
-Give us your feedback and if you publish your code, let us know and
-we'll also do so.
+L'API Phraseanet v2 donne accès et permet d'interagir avec les données de
+Phraseanet 4.0.0.
 
-* Read the :doc:`overview <V2/Overview>`
-* Get familiar with :doc:`oAuth2 <V1/Authentification>`
+* Lire la :doc:`Présentation <V2/Overview>`
+* Se familiariser avec :doc:`oAuth2 <V1/Authentification>`
 
-If you ever find bugs, please report them on the `mailing-list`_ or create a
-ticket on our `bug tracker`_.
+Si vous trouvez des bugs, merci de les rapporter sur la `mailing-list`_ ou de
+créer un ticket sur le `bug tracker`_.
 
 .. toctree::
    :maxdepth: 2
