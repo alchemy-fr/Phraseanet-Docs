@@ -1,10 +1,10 @@
-Basket Remove Element
-=====================
+Supprime un élément du panier
+=============================
 
-About
------
+A propos
+--------
 
-Removes an existing element from a basket
+Supprime un enregistrement d'un panier.
 
 .. code-block:: bash
 
@@ -13,12 +13,12 @@ Removes an existing element from a basket
 ======================== ======
  Information
 ======================== ======
- HTTP Method              DELETE
- Requires Authentication  Yes
+ Méthode HTTP             DELETE
+ Authentification         Requise
 ======================== ======
 
-Request Body
-------------
+Corps de la requête
+-------------------
 
 .. code-block:: javascript
 
@@ -31,17 +31,17 @@ Request Body
         ]
     }
 
-Response Fields
----------------
+Champ dans le corps de la réponse
+---------------------------------
 
 ============= ================================
- Field         Description
+ Champ        Description
 ============= ================================
- elements     The removed elements
+ elements     L'enregistrement supprimé
 ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
 .. code-block:: javascript
 
@@ -149,12 +149,12 @@ Response sample
                         "user": {
                             "@entity@": "http://api.phraseanet.com/api/objects/user",
                             "id": 3,
-                            "email": "imprec@gmail.com",
+                            "email": "support@alchemy.fr",
                             "login": "admin",
-                            "first_name": "Romain",
-                            "last_name": "Neutron",
-                            "display_name": "imprec@gmail.com",
-                            "gender": "Mr",
+                            "first_name": "Louise",
+                            "last_name": "Laferrière",
+                            "display_name": "support@alchemy.fr",
+                            "gender": "Mlle",
                             "address": null,
                             "zip_code": null,
                             "city": null,
@@ -165,10 +165,10 @@ Response sample
                             "position": null,
                             "company": null,
                             "geoname_id": null,
-                            "last_connection": "2014-03-02T12:01:22+02:00",
+                            "last_connection": "2016-12-02T12:01:22+02:00",
                             "created_on": "2012-10-02T09:46:40+02:00",
                             "updated_on": "2012-10-02T09:46:40+02:00",
-                            "locale": "en_GB"
+                            "locale": "fr_FR"
                         },
                         "confirmed": false,
                         "can_agree": true,

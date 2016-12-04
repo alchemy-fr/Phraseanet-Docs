@@ -1,10 +1,10 @@
-Orders Create
-=============
+Créer une commande
+==================
 
-About
------
+A propos
+--------
 
-Creates a new order.
+Créer une nouvelle commande.
 
 .. code-block:: bash
 
@@ -13,12 +13,12 @@ Creates a new order.
 ======================== ======
  Information
 ======================== ======
- HTTP Method              POST
+ Méthode HTTP             POST
  Requires Authentication  Yes
 ======================== ======
 
-Request Body
-------------
+Corps de la requête
+-------------------
 
 .. code-block:: javascript
 
@@ -31,17 +31,17 @@ Request Body
         ]
     }
 
-Response Fields
----------------
+Champ dans le corps de la réponse
+---------------------------------
 
 ============= ================================
- Field         Description
+ Champs        Description
 ============= ================================
- data          The created order
+ data          La commande créée
 ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
 .. code-block:: javascript
 

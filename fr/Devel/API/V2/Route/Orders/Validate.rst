@@ -1,10 +1,10 @@
-Orders Validation
-=================
+Valider une commande
+====================
 
-About
------
+A propos
+--------
 
-Validate or Reject Order Elements.
+Valider ou rejeter les éléments d'une commande.
 
 .. code-block:: bash
 
@@ -14,14 +14,15 @@ Validate or Reject Order Elements.
 ======================== ======
  Information
 ======================== ======
- HTTP Method              POST
+ Méthode HTTP             POST
  Requires Authentication  Yes
 ======================== ======
 
-Request Body
-------------
+Corps de la requête
+-------------------
 
-Request body contains a list of order element ids to accept/deny
+Le corps de la requête contient la liste des identifiants d'éléments à
+accepter ou à refuser.
 
 .. code-block:: javascript
 
@@ -30,10 +31,10 @@ Request body contains a list of order element ids to accept/deny
         {"id": 2}
     ]
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
-The accept endpoint returns a list of actually accepted elements.
+Le point d'acceptation renvoie une liste d'éléments réellement acceptés.
 
 .. code-block:: javascript
 
@@ -62,4 +63,4 @@ The accept endpoint returns a list of actually accepted elements.
         }
     }
 
-Currently deny endpoint returns an empty response.
+Pour les éléments refusés font l'objet d'une réponse vide.

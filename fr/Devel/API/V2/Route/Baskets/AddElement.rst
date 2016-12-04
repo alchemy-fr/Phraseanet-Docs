@@ -1,10 +1,10 @@
-Basket Add Element
-==================
+Ajouter un enregistrement au panier
+===================================
 
-About
------
+A propos
+--------
 
-Adds a new element to an existing basket.
+Ajoute un enregistrement à un panier existant.
 
 .. code-block:: bash
 
@@ -17,8 +17,8 @@ Adds a new element to an existing basket.
  Requires Authentication  Yes
 ======================== ======
 
-Request Body
-------------
+Corps de la requête
+-------------------
 
 .. code-block:: javascript
 
@@ -31,17 +31,17 @@ Request Body
         ]
     }
 
-Response Fields
----------------
+Champ dans le corps de la réponse
+---------------------------------
 
-============= ================================
- Field         Description
-============= ================================
- elements     The newly added basket elements
-============= ================================
+============= ====================================
+ Champ         Description
+============= ====================================
+ elements     Renseignement sur l'élément ajouté
+============= ====================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
 .. code-block:: javascript
 
@@ -145,16 +145,16 @@ Response sample
                 {
                     "validation_user": {
                         "usr_id": 3,
-                        "usr_name": "user@example.com",
+                        "usr_name": "support@alchemy.fr",
                         "user": {
                             "@entity@": "http://api.phraseanet.com/api/objects/user",
                             "id": 3,
-                            "email": "imprec@gmail.com",
+                            "email": "support@alchemy.fr",
                             "login": "admin",
-                            "first_name": "Romain",
-                            "last_name": "Neutron",
-                            "display_name": "imprec@gmail.com",
-                            "gender": "Mr",
+                            "first_name": "Louise",
+                            "last_name": "Laferrière",
+                            "display_name": "Louise Laferrière",
+                            "gender": "Mlle",
                             "address": null,
                             "zip_code": null,
                             "city": null,
@@ -165,10 +165,10 @@ Response sample
                             "position": null,
                             "company": null,
                             "geoname_id": null,
-                            "last_connection": "2014-03-02T12:01:22+02:00",
+                            "last_connection": "2016-12-02T12:01:22+02:00",
                             "created_on": "2012-10-02T09:46:40+02:00",
                             "updated_on": "2012-10-02T09:46:40+02:00",
-                            "locale": "en_GB"
+                            "locale": "fr_FR"
                         },
                         "confirmed": false,
                         "can_agree": true,
