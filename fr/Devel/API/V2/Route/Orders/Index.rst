@@ -1,10 +1,10 @@
-Orders Index
-============
+Index des commandes
+===================
 
 About
 -----
 
-Returns  orders of the authenticated user.
+Liste de commande de l'utilisateur authentifié.
 
 .. code-block:: bash
 
@@ -13,32 +13,32 @@ Returns  orders of the authenticated user.
 ======================== =====
  Information
 ======================== =====
- HTTP Method              GET
+ méthode HTTP             GET
  Requires Authentication  Yes
 ======================== =====
 
-Parameters
+Paramètres
 ----------
 
 ======================== ============== =============
- Parameters               Type           Information
+ Paramètres               Type           Information
 ======================== ============== =============
- page                     integer        page number of listing
- per_page                 integer        number of orders to list per page
+ page                     integer        numéro de la page courante
+ per_page                 integer        nombre de commande par page
  includes                 string         inclusion of sub-data. Currently only 'elements' supported
 ======================== ============== =============
 
-Response Fields
----------------
+Champ dans le corps de la réponse
+---------------------------------
 
 ============= ================================
- Field         Description
+ Champ         Description
 ============= ================================
- data          The list of orders
+ data          La liste des commandes de l'utilisateur
 ============= ================================
 
-Response sample
----------------
+Exemple de réponse
+------------------
 
 .. code-block:: javascript
 
@@ -46,7 +46,7 @@ Response sample
       "meta": {
         "api_version": "2.0.0",
         "request": "GET /api/v2/orders/",
-        "response_time": "2016-03-23T19:43:43+01:00",
+        "response_time": "2016-12-23T19:43:43+01:00",
         "http_code": 200,
         "error_type": null,
         "error_message": null,
@@ -58,15 +58,15 @@ Response sample
           {
             "id": 1,
             "owner_id": 1,
-            "created": "2016-02-09T14:26:20+01:00",
+            "created": "2016-10-09T14:26:20+01:00",
             "usage": "",
-            "deadline": "2016-02-11T00:00:00+01:00"
+            "deadline": "2016-10-11T00:00:00+01:00"
           },
           {
             "id": 9,
             "owner_id": 1,
-            "created": "2016-03-02T17:57:40+01:00",
-            "usage": "I can do what I wish with these records",
+            "created": "2016-11-02T17:57:40+01:00",
+            "usage": "Pour le rapport annuel de l'entreprise",
             "deadline": "2016-03-02T16:57:29+01:00"
           }
         ],
