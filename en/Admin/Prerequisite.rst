@@ -58,7 +58,7 @@ Elasticsearch
 Phraseanet 4.0 builds on the ElasticSearch engine with the following
 specifications:
 
-    * Elasticsearch version 2.x (version 2.3 is recommanded)
+    * Elasticsearch version 2.3 (mandatory)
     * `Analysis-icu`_ plugin corresponding to the used Elasticsearcher engine
       release
 
@@ -144,6 +144,9 @@ on their type
 
 * MP4Box
   Preview extraction from videos.
+
+* RabbitMQ
+  Message broker using AMQP (Advanced Message Queuing Protocol).
 
 API keys (optional)
 --------------------

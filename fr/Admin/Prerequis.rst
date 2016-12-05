@@ -59,7 +59,7 @@ Elasticsearch
 Phraseanet 4.0 s'appuie sur le moteur Elasticsearch. Il est obligatoire
 de l'utiliser en respectant les spécifications suivantes :
 
-    * Version 2.x (2.3 conseillé)
+    * Version 2.3 (obligatoire)
     * Plugins `Analysis-icu`_ correspondant à la version Elasticsearch utilisée
 
 
@@ -151,6 +151,10 @@ des programmes externes suivants :
 * MP4Box
   Déplacement des métadonnées des fichiers h264 en début de fichier en vue de
   leur utilisation en pseudo-stream (voir documentation spécifique).
+
+* RabbitMQ
+  Agent de messagerie utilisant AMQP (Advanced Message Queuing Protocol).
+
 
 Clefs d'APIs (optionnelles)
 ---------------------------
