@@ -4,7 +4,7 @@ Index des commandes
 About
 -----
 
-Liste de commande de l'utilisateur authentifié.
+Liste les commandes de l'utilisateur authentifié.
 
 .. code-block:: bash
 
