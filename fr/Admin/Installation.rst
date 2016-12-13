@@ -36,6 +36,17 @@ qui nécessitent d'être corrigés pour installer l'application avec succès.
     Voir la page consacrée à l'utilisation des applications en ligne de
     commande :doc:`Setup et Console <Console>`.
 
+.. note::
+
+    Si des sources non packagées sont utilisées pour installer Phraseanet
+    (par exemple celles récupérées à partir du repository GitHub du projet),
+    jouer la commande *make* depuis le répertoire d'installation.
+
+    .. code-block:: bash
+
+     make
+
+
 Configuration du serveur web
 ----------------------------
 
@@ -131,8 +142,35 @@ La procédure d'installation s'initialise.
   .. image:: ../images/Admin_Install_cli-02.jpg
     :align: center
 
-Pour rendre le système opérationnel, il est nécessaire de
-:ref:`démarrer le planificateur de tâches <demarrage-scheduler>`.
+.. note::
+
+    La configuration générée lors de l'installation renseigne le paramétrage
+    pour un serveur Elasticsearch local, sur le port 9200.
+
+    Si nécessaire, éditer le fichier **config/configuration.yml** puis
+    compiler la configuration.
+
+    Se reporter à :doc:`la page consacrée à la Configuration<Configuration>`.
+
+* **Créer l'index** de recherche Elasticsearch
+
+.. code-block:: bash
+
+    bin/console s:i:c
+
+* **Lister les tâches**
+
+.. code-block:: bash
+
+    bin/console task-manager:task:list
+
+* **Démarrer le scheduler** dans un screen :
+
+.. code-block:: bash
+
+    bin/console task-manager:scheduler:run -vvv
+
+Phraseanet est à présent opérationnel.
 
 .. _install-graphique:
 
@@ -194,9 +232,22 @@ de l'écran d’accueil :
 
 * Cliquer sur le bouton *Install* pour lancer le script d'installation
 
-A l'issu du processus l'utilisateur est conduit à la rubrique **Gestionnaire de
-tâches** de l'Administration. Il reste à
-:ref:`démarrer les tâches <demarrage-scheduler>`.
+A l'issu du processus l'utilisateur est conduit à la page d'authentification de
+l'application.
+
+* S'authentifier avec le compte créé
+
+* Dans Phraseanet Admin, cliquer sur la rubrique **Paramètre du moteur de
+  recherche**
+
+  .. image:: ../images/Admin_Install_Set_ES.jpg
+    :align: center
+
+* **Ajuster le paramétrage du serveur Elasticsearch** selon contexte.
+
+* Créer l'index au moyen du bouton proposé
+
+Il reste à :ref:`démarrer les tâches <demarrage-scheduler>`.
 
 .. _demarrage-scheduler:
 
