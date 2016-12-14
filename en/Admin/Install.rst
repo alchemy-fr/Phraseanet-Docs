@@ -36,6 +36,18 @@ to be corrected to install successfully the application.
     See the page dedicated to commandline applications
     :doc:`Setup and Console <Console>`
 
+.. note::
+
+    If non packaged sources are used to install Phraseanet (for example those
+    from the GitHub project repository) run the *make* command for the
+    installation directory.
+
+    .. code-block:: bash
+
+     make
+
+
+
 Web server configuration
 ------------------------
 
@@ -131,8 +143,36 @@ The installation process starts.
   .. image:: ../images/Admin_Install_cli-02.jpg
     :align: center
 
-To make the system operational, it is necessary to
-:ref:`start the tasks manager <start-tasks>`.
+.. note::
+
+    The build-in sample configuration fill parameters for a local Elasticsearch
+    server using port 9200.
+
+    If necessary, edit the configuration file **config/configuration.yml** then
+    compile the modified configuration.
+
+    Please, have a look to :doc:`the Configuration page<Configuration>` for more
+    info.
+
+* **Create Elasticsearch index**
+
+.. code-block:: bash
+
+    bin/console s:i:c
+
+* **List Phrasenaet tasks**
+
+.. code-block:: bash
+
+    bin/console task-manager:task:list
+
+* **Start Scheduler** in a screen:
+
+.. code-block:: bash
+
+    bin/console task-manager:scheduler:run -vvv
+
+Phraseanet is now operational.
 
 .. _install-gui:
 
