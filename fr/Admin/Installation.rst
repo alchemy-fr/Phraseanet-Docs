@@ -235,7 +235,7 @@ de l'écran d’accueil :
 A l'issu du processus l'utilisateur est conduit à la page d'authentification de
 l'application.
 
-* S'authentifier avec le compte créé
+* S'authentifier avec le compte créé.
 
 * Dans Phraseanet Admin, cliquer sur la rubrique **Paramètre du moteur de
   recherche**
@@ -245,7 +245,7 @@ l'application.
 
 * **Ajuster le paramétrage du serveur Elasticsearch** selon contexte.
 
-* Créer l'index au moyen du bouton proposé
+* Créer l'index au moyen du bouton proposé.
 
 Il reste à :ref:`démarrer les tâches <demarrage-scheduler>`.
 
