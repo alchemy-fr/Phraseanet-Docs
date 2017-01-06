@@ -24,60 +24,79 @@ Previous example displays the available commands:
 
 .. code-block:: bash
 
+.. code-block:: bash
+
+    Usage:
+      command [options] [arguments]
+
+    Options:
+      -h, --help            Display this help message
+      -q, --quiet           Do not output any message
+      -V, --version         Display this application version
+          --ansi            Force ANSI output
+          --no-ansi         Disable ANSI output
+      -n, --no-interaction  Do not ask any interactive question
+      -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
     Available commands:
-      help                                       Displays help for a command
-      list                                       Lists commands
-    about
-      about:authors                              Lists authors and contributors
-      about:license                              Displays this program license
-    check
-      check:config                               Performs a check against the environment and configuration. Give some advices for production settings.
-      check:extension                            Performs a serie of tests against Phrasea Engine PHP Extension
-    collection
-      collection:create                          Creates a collection in Phraseanet
-    compile
-      compile:configuration                      Compiles YAML configuration to plain PHP
-    fields
-      fields:delete                              Deletes a documentation field from a Databox
-      fields:list                                Lists all databoxes documentation fields
-      fields:merge                               Merges databox documentation fields
-      fields:rename                              Renames a documentation field from a Databox
-    h264-pseudo-streaming
-      h264-pseudo-streaming:dump-configuration   Dump the virtual host configuration depending on Phraseanet configuration
-      h264-pseudo-streaming:generate-mapping     Generates Phraseanet H264 pseudo streaming mapping configuration depending on databoxes configuration
-    mail
-      mail:test                                  Sends an email to a given address to test mail-server configuration
-    plugins
-      plugins:add                                Installs a plugin to Phraseanet
-      plugins:list                               Lists installed plugins
-      plugins:remove                             Removes a plugin given its name
-    records
-      records:add                                Adds a record to Phraseanet
-      records:build-missing-subdefs              Builds subviews that previously failed to be generated / did not exist when records were added
-      records:build-subdefs                      Build subviews for given subview names and record types
-      records:rescan-technical-datas             Rescans records for technical datas
-    scheduler
-      scheduler:start                            Starts Phraseanet scheduler
-      scheduler:state                            Returns Phraseanet scheduler status
-      scheduler:stop                             Stops Phraseanet scheduler
-    sphinx
-      sphinx:generate-suggestions                Generates suggestions for Sphinx Search Engine, useful for query auto-completion
-    static-file
-      static-file:dump-configuration             Dump the virtual host configuration depending on Phraseanet configuration
-      static-file:generate-mapping               Generates Phraseanet Static file configuration
-    system
-      system:backup-db                           Backups Phraseanet Databases
-      system:clear-cache                         Empties cache directories and cache-server data
-      system:export                              Exports all phraseanet records to a given directory
-      system:mail-check                          Checks if email addresses are uniques (mandatory since 3.5)
-      system:upgrade-datas                       Upgrades Phraseanet datas, useful after migrations
-    task
-      task:list                                  Lists Phraseanet tasks
-      task:run                                   Runs a Phraseanet task given its id
-      task:state                                 Returns a Phraseanet task state given its id
-    xsendfile
-      xsendfile:dump-configuration               Dump the virtual host configuration depending on Phraseanet configuration
-      xsendfile:generate-mapping                 Generates Phraseanet xsendfile mapping configuration depending on databoxes configuration
+      help                                      Displays help for a command
+      list                                      Lists commands
+     about
+      about:authors                             Lists authors and contributors
+      about:license                             Displays this program license
+     check
+      check:config                              Performs a check against the environment and configuration. Give some advices for production settings.
+     collection
+      collection:create                         Creates a collection in Phraseanet
+     compile
+      compile:configuration                     Compiles YAML configuration to plain PHP
+     fields
+      fields:delete                             Deletes a documentation field from a Databox
+      fields:list                               Lists all databoxes documentation fields
+      fields:merge                              Merges databox documentation fields
+      fields:rename                             Renames a documentation field from a Databox
+     h264-pseudo-streaming
+      h264-pseudo-streaming:dump-configuration  Dump the virtual host configuration depending on Phraseanet configuration
+      h264-pseudo-streaming:generate-mapping    Generates Phraseanet H264 pseudo streaming mapping configuration depending on databoxes configuration
+     mail
+      mail:test                                 Sends an email to a given address to test mail-server configuration
+     plugins
+      plugins:add                               Installs a plugin to Phraseanet
+      plugins:list                              Lists installed plugins
+      plugins:remove                            Removes a plugin given its name
+     records
+      records:add                               Adds a record to Phraseanet
+      records:build-missing-subdefs             Builds subviews that previously failed to be generated / did not exist when records were added
+      records:build-subdefs                     Build subviews for given subview names and record types
+      records:rescan-technical-datas            Rescans records for technical datas
+     searchengine
+      searchengine:index:create                 Creates search index
+      searchengine:index:drop                   Deletes the search index
+      searchengine:index:populate               Populate search index
+      searchengine:mapping:update               Update index mapping
+      searchengine:query:parse                  Debug a search query
+      searchengine:query:sample                 Generate sample queries from grammar
+     system
+      system:backup-db                          Backups Phraseanet Databases
+      system:clear-cache                        Empties cache directories and cache-server data
+      system:export                             Exports all phraseanet records to a given directory
+      system:mail-check                         Checks if email addresses are uniques (mandatory since 3.5)
+      system:upgrade-datas                      Upgrades Phraseanet datas, useful after migrations
+     task-manager
+      task-manager:scheduler:pause-tasks        Pause scheduler started tasks jobs
+      task-manager:scheduler:resume-tasks       Resume scheduler started tasks jobs
+      task-manager:scheduler:run                Run the scheduler
+      task-manager:scheduler:state              Returns scheduler state
+      task-manager:task:list                    Lists tasks
+      task-manager:task:run                     Runs a task
+      task-manager:task:start                   Starts a task
+      task-manager:task:state                   Returns the state of a task
+      task-manager:task:stop                    Stops a task
+     thesaurus
+      thesaurus:find:concepts                   Infer concepts using thesaurus
+     xsendfile
+      xsendfile:dump-configuration              Dump the virtual host configuration depending on Phraseanet configuration
+      xsendfile:generate-mapping                Generates Phraseanet xsendfile mapping configuration depending on databoxes configuration
 
 Every command provides its own help with the *help* argument:
 
@@ -91,8 +110,8 @@ Please refer to these helps for the use of available commands.
 
     Every command returns an exit code that can be used for automated scripts.
 
-scheduler:state exit codes
-**************************
+task-manager:scheduler:state exit codes
+***************************************
 
 This command returns an exit code given the state of the :doc:`task scheduler </Admin/TaskManager>`.
 
@@ -128,8 +147,6 @@ This command returns an exit code given the state of the :doc:`task scheduler </
 
 Setup
 -----
-
-.. versionadded:: 3.8
 
 Phraseanet provides a setup command line utility. From the Phraseanet install
 directory type:

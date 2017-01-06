@@ -6,18 +6,19 @@ Baskets and Stories
 Baskets and stories are located in the work zone area on the same tab.
 They are recognizable by their colours:
 
-* *Grey* for baskets
-* *Gold* for received baskets when not opened yet
-* *Blue* for the stories
+* *Light blue* for baskets
+* *Gold* for received baskets, when not opened yet
+* *Green* for sent feedback requests
+* *Dark Blue* for stories
 
 The Baskets
 -----------
 
 .. topic:: The essential
 
-    A :term:`Basket<Basket>` allows to set aside media selections in order to
+    A :term:`Basket<Basket>` allows to set aside media in order to
     retrieved and work on them. A basket in not "searchable" like documents or
-    stories. They belongs to the user who created it. A basket can be
+    stories. They belongs to the user who have created it. A basket can be
     transmitted to another users using :doc:`Push or Feedback<Push>`
     functionalities.
 
@@ -55,7 +56,7 @@ The icons displayed in title bars can give supplementary information:
 
 * **The Push symbol** indicates a received basket
 * **The blue tooltip** indicates a basket received as a feedback request
-* **The red tooltip** indicates that the validation request has been transmitted
+* **The red tooltip** indicates that the feedback request has been transmitted
   by the user.
 
 The baskets context menu
@@ -142,7 +143,7 @@ Move or duplicate documents between several baskets
 * Select the documents to move
 * Drag and drop the documents in the bar title of the destination basket
 
-**To duplicate one or several documents from a basket to another** :
+**To duplicate one or several documents from a basket to another**:
 
 * Keep the "Ctrl" key pressed on a PC or the "Cmd" key on a Macintosh
 * Select the documents to move
@@ -158,14 +159,14 @@ display area.
 
     Refer to the section about the :doc:`Actions palette <Actions>`.
 
-The stories
------------
+Stories
+-------
 
 .. topic:: The essential
 
-    A story is a record in a collection that includes other records, located
-    or not in the same collection. The descriptive note of a story is identical
-    to the one of a document.
+    A story is a record in a collection that includes document type records,
+    located or not in the same collection. The descriptive note of a story is
+    identical to the one of a document.
 
     Unlike baskets, **stories can be searched and displayed** by every user
     who can access its collection.
@@ -173,7 +174,7 @@ The stories
 .. note::
 
     Most of the available functions on baskets are available for stories.
-    Only the functions peculiar to the stories are documented.
+    Only the peculiar functions to the stories are documented.
 
 Create a story
 **************
@@ -181,7 +182,7 @@ Create a story
 * Display the context menu for *Baskets and Stories* tab
 * Click on **New story**
 
-Fill the form by indicating :
+Fill the form by indicating:
 
 * The collection of publication in the available collections list
 * The title given to the story
@@ -208,8 +209,8 @@ The stories can be detached for the work zone. To do so, click on the
 
 **To attach a story** to the work zone (and edit its contents for example):
 
-* Research in the Stories mode and select one or several stories to attach
-  to the work area.
+* Search in the Stories mode and select one or several stories to attach
+  to the work zone area.
 * Drag and drop stories from results display area to the work zone.
 
 Delete a story

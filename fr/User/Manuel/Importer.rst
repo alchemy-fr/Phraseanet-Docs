@@ -16,7 +16,7 @@ Importer
 
 .. note::
 
-    Pour les navigateurs qui ne bénéficient pas du plein support de
+    Pour les navigateurs anciens qui ne bénéficient pas du plein support de
     HTML5, un mode d'affichage reposant sur le plug-in Adobe `FlashPlayer
     <http://get.adobe.com/fr/flashplayer/>`_ est disponible.
 
@@ -46,6 +46,14 @@ Upload (2).
 
 .. image:: ../../images/Upload-fichiers2.jpg
     :align: center
+
+.. note::
+
+    Dans l'interface Upload, l'affiche des vignettes de rendu des médias
+    est généré par le navigateur lui-même (exploitation de l'API File de HTML5).
+    Certaines conditions peuvent faire que ces vignettes ne s'affichent pas
+    correctement sans qu'il s'agissent pour autant d'une anomalie de
+    fonctionnement de l'application.
 
 Réordonner, supprimer des médias de la liste d'import
 *****************************************************

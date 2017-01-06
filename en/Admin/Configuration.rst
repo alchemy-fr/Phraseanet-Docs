@@ -37,214 +37,219 @@ Here is a commented configuration file
 .. code-block:: yaml
 
     main:
-        servername: 'http://phrasea.example.com/'  # (string)  Phraseanet install URL
+        servername: 'http://phrasea.example.com/'  # (string)  L'URL à partir de laquelle sera accessible Phraseanet
 
-        maintenance: false                         # (boolean) Maintenance mode activation
+        maintenance: false                         # (boolean) Activation du mode maintenance
 
-        languages: ['fr_FR', 'de_DE']              # (array)   An array of actives languages codes. All languages are activated if this array is empty.
+        languages: ['fr_FR', 'de_DE']              # (array)   Un tableau de code de langues actives. Toutes les langues sont activées si le tableau est vide
 
-        database:                                  # (array)   Database server configuration
-            host: 'sql-host'                       # (string)  Database server address
-            port: 3306                             # (integer) Database server port
-            user: 'sql-user'                       # (string)  Database server user
-            password: 'sql-password'               # (string)  Database server password
-            dbname: ab_phraseanet                  # (string)  Database server db name
-            driver: pdo_mysql                      # (string)  Database driver name
-            charset: UTF8                          # (string)  Database connection charset
+        database:                                  # (array)   Configuration du serveur de base de données
+            host: 'sql-host'                       # (string)  Adresse du serveur de base de données
+            port: 3306                             # (integer) Port du serveur de base de données
+            user: 'sql-user'                       # (string)  Nom d'utilisateur du serveur de base de données
+            password: 'sql-password'               # (string)  Mot de passe du serveur de base de données
+            dbname: ab_phraseanet                  # (string)  Nom de la base de données
+            driver: pdo_mysql                      # (string)  Driver de base de données
+            charset: UTF8                          # (string)  Encodage de la connection au serveur de base de données
 
-        database-test:                             # (array)   Database connection for tests (Developers only)
+        session:                                   # (array)   Réglage de la gestion des sessions
+            type: 'file'                           # (string)  Nom du gestionnaire de sessions
+            options: []                            # (array)   Options du gestionnaire de sessions
+            ttl: 86400                             # (string)  Duree de vie de la session
+
+        database-test:                             # (array)   Configuration pour les tests (développeurs uniquement)
             driver: pdo_sqlite
             path: '/tmp/db.sqlite'
             charset: UTF8
 
-        api-timers: true                           # (boolean) Add timers to API responses (Developers only)
+        api-timers: true                           # (boolean) Ajout de timers aux réponses de l'API (développeurs uniquement)
 
-        cache:                                     # (array)   Cache service configuration
-            type: MemcacheCache                    # (string)  Cache adapter name
-            options:                               # (array)   Cache adapter options
-                host: 'localhost'                  # (string)  Cache server address
-                port: 11211                        # (integer) Cache server port
-                namespace: 'app_namespace'         # (integer) Override cache namespace
+        cache:                                     # (array)   Configuration du service de cache
+            type: MemcacheCache                    # (string)  Nom de l'adapter du service de cache
+            options:                               # (array)   Options de configuration du service de cache
+                host: localhost                    # (string)  Addresse du serveur de cache
+                port: 11211                        # (integer) Port du serveur de cache
 
-        opcodecache:                               # (array)   Opcode cache service configuration
-            type: ArrayCache                       # (string)  Opcode cache adapter name
-            options: []                            # (array)   Opcode cache adapter options
+        opcodecache:                               # (array)   Configuration du service de cache opcode
+            type: ArrayCache                       # (string)  Nom de l'adapter du service de cache
+            options: []                            # (array)   Options de configuration du service de cache
 
-        search-engine:                             # (array)   Search engine configuration
-            type: Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine  # (string) Search Engine service name (FQCN)
-            options: []                            # (array)   Search Engine adapter options
+        search-engine:                             # (array)   Configuration du service de moteur de recherche
+            type: Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine  # (string) Nom du service de moteur de recherche (FQCN)
+            options: []                            # (array)   Options de configuration du service de moteur de recherche
 
         task-manager:
             logger:
-                level: INFO                        # (string)  The log level
-                max-files: 10                      # (integer) The maximum number of files to keep on disk
-                enabled: true                      # (boolean) Enable logs on filesystem
+                level: INFO                        # (string)  Le niveau de log minimum
+                max-files: 10                      # (integer) Le nombre maximum de fichiers de log à conserver
+                enabled: true                      # (boolean) Activer les logs dans le système de fichier
 
-    trusted-proxies: []                            # (array)   Trusted proxies configuration
+    trusted-proxies: []                            # (array)   Configuration des proxies de confiance
 
-    debugger:                                      # (array)   Debugger configuration (Developers only)
-        allowed-ips: []                            # (array)   Debugger authorized IP address
+    debugger:                                      # (array)   Configuration du debugger (développeurs uniquement)
+        allowed-ips: []                            # (array)   Adresses IP autorisées à acceder au debugger.
 
-    binaries:                                      # (array)   Binaries configuration
-        ghostscript_binary: null                   # (string)  Path to Ghostscript, null for autodetection (gs)
-        php_binary: null                           # (string)  Path to PHP, null for autodetection (php)
-        swf_extract_binary: null                   # (string)  Path to Pdf2Swf, null for autodetection (pdf2swf)
-        pdf2swf_binary: null                       # (string)  Path to SwfExtract, null for autodetection (swfextract)
-        swf_render_binary: null                    # (string)  Path to SwfRender, null for autodetection (swfrender)
-        unoconv_binary: null                       # (string)  Path to Unoconv, null for autodetection (unoconv)
-        ffmpeg_binary: null                        # (string)  Path to FFMpeg, null for autodetection (ffmpeg, avconv)
-        ffprobe_binary: null                       # (string)  Path to FFProbe, null for autodetection (ffprobe, avprobe)
-        mp4box_binary: null                        # (string)  Path to MP4Box, null for autodetection (MP4Box)
-        pdftotext_binary: null                     # (string)  Path to PdfToText, null for autodetection (pdftotext)
-        phraseanet_indexer: null                   # (string)  Path to Phraseanet Indexer, null for autodetection (phraseanet_indexer)
-        ffmpeg_timeout: 3600                       # (integer) Timeout for FFMpeg
-        ffprobe_timeout: 60                        # (integer) Timeout for FFProbe
-        gs_timeout: 60                             # (integer) Timeout for Ghostscript
-        mp4box_timeout: 60                         # (integer) Timeout for MP4Box
-        swftools_timeout: 60                       # (integer) Timeout for SwfTools (swfrender, swfextract)
-        unoconv_timeout: 60                        # (integer) Timeout for Unoconv
+    binaries:                                      # (array)   Configuration des executables externes
+        ghostscript_binary: null                   # (string)  Chemin vers l'executable Ghostscript, null pour autodetecter (gs)
+        php_binary: null                           # (string)  Chemin vers l'executable PHP, null pour autodetecter (php)
+        swf_extract_binary: null                   # (string)  Chemin vers l'executable Pdf2Swf, null pour autodetecter (pdf2swf)
+        pdf2swf_binary: null                       # (string)  Chemin vers l'executable SwfExtract, null pour autodetecter (swfextract)
+        swf_render_binary: null                    # (string)  Chemin vers l'executable SwfRender, null pour autodetecter (swfrender)
+        unoconv_binary: null                       # (string)  Chemin vers l'executable Unoconv, null pour autodetecter (unoconv)
+        ffmpeg_binary: null                        # (string)  Chemin vers l'executable FFMpeg, null pour autodetecter (ffmpeg, avconv)
+        ffprobe_binary: null                       # (string)  Chemin vers l'executable FFProbe, null pour autodetecter (ffprobe, avprobe)
+        mp4box_binary: null                        # (string)  Chemin vers l'executable MP4Box, null pour autodetecter (MP4Box)
+        pdftotext_binary: null                     # (string)  Chemin vers l'executable PdfToText, null pour autodetecter (pdftotext)
+        phraseanet_indexer: null                   # (string)  Chemin vers l'executable Phraseanet Indexer, null pour autodetecter (phraseanet_indexer)
+        ffmpeg_timeout: 3600                       # (integer) Timeout pour FFMpeg
+        ffprobe_timeout: 60                        # (integer) Timeout pour FFProbe
+        gs_timeout: 60                             # (integer) Timeout pour Ghostscript
+        mp4box_timeout: 60                         # (integer) Timeout pour MP4Box
+        swftools_timeout: 60                       # (integer) Timeout pour SwfTools (swfrender, swfextract)
+        unoconv_timeout: 60                        # (integer) Timeout pour Unoconv
 
-    border-manager:                                # (array)   Border manager configuration
-        enabled: true                              # (boolean) Border manager activation
-        extension-mapping:                         # (array)   An array of custom extension to mime-type declaration
+    border-manager:                                # (array)   Configuration du service douanes
+        enabled: true                              # (boolean) Activation du service de douane
+        extension-mapping:                         # (array)   Un tableau de correspondance extension vers type mime personnalisé
             mpeg: video/mpeg
-        checkers:                                  # (array)   Border manager checkers list
+        checkers:                                  # (array)   Liste de points de contrôle
 
-            -                                      # (array)   Checks duplicates on checksum
+            -                                      # (array)   Verification de doublonnage par somme de côntrole
                 type: Checker\Sha256
                 enabled: true
             -
-                type: Checker\UUID                 # (array)   Checks duplicates on UUID metadata
+                type: Checker\UUID                 # (array)   Verification de doublonnage par métadonnée UUID
                 enabled: true
             -
-                type: Checker\Colorspace           # (array)   Checks colorspace
+                type: Checker\Colorspace           # (array)   Verification de colorspace
                 enabled: false
                 options:
                     colorspaces: [cmyk, grayscale, rgb]
             -
-                type: Checker\Dimension            # (array)   Checks media size
+                type: Checker\Dimension            # (array)   Verification de dimensions
                 enabled: false
                 options:
                     width: 80
                     height: 160
             -
-                type: Checker\Extension            # (array)   Checks file extension
+                type: Checker\Extension            # (array)   Verification d'extension
                 enabled: false
                 options:
                     extensions: [jpg, jpeg, bmp, tif, gif, png, pdf, doc, odt, mpg, mpeg, mov, avi, xls, flv, mp3, mp2]
             -
-                type: Checker\Filename             # (array)   Checks duplicates on file names.
+                type: Checker\Filename             # (array)   Verification de doublonnage par nom de fichier
                 enabled: false
                 options:
                     sensitive: true
             -
-                type: Checker\MediaType            # (array)   Checks duplicates on media types
+                type: Checker\MediaType            # (array)   Vérification par type media
                 enabled: false
                 options:
                     mediatypes: [Audio, Document, Flash, Image, Video]
 
-    authentication:                                # (array)   Authentication configuration
+    authentication:                                # (array)   Configuration de l'authentification
 
-        auto-create:                               # (array)   Automatic account creation configuration
-            enabled: false                         # (boolean) Automatic account creation activation
-            templates: {  }                        # (array)   Id / names of templates to apply on automatic account creation.
+        auto-create:                               # (array)   Configuration de la création de compte automatique
+            enabled: false                         # (boolean) Activer la création de compte automatique
+            templates: {  }                        # (array)   Nom ou id des modèles à appliquer lors de la création automatique de comptes
 
-        captcha:                                   # (array)   Captchas service configuration
-            enabled: true                          # (boolean) Captchas service activation
-            trials-before-display: 9               # (integer) Number of trials before captcha activation
+        captcha:                                   # (array)   Configuration du service de captchas
+            enabled: true                          # (boolean) Activation du service de captcha
+            trials-before-display: 9               # (integer) Nombre d'essais avant capctcha
 
-        providers:                                 # (array)   Authentication providers configuration
+        providers:                                 # (array)   Configuration des fournisseurs d'authentification tiers
 
-            facebook:                              # (array)   Facebook authentication configuration
-                enabled: false                     # (boolean) Facebook provider activation
+            facebook:                              # (array)   Configuration de l'authentification via Facebook
+                enabled: false                     # (boolean) Activation du fournisseur
                 options:
-                    app-id: ''                     # (string)  Facebook application id
-                    secret: ''                     # (string)  Facebook application secret
+                    app-id: ''                     # (string)  Identifiant (id) Facebook
+                    secret: ''                     # (string)  Secret (secret) Facebook
 
-            twitter:                               # (array)   Twitter authentication configuration
-                enabled: false                     # (boolean) Twitter provider activation
+            twitter:                               # (array)   Configuration de l'authentification via Twitter
+                enabled: false                     # (boolean) Activation du fournisseur
                 options:
                     consumer-key: ''               # (string)  Twitter consumer key
                     consumer-secret: ''            # (string)  Twitter consumer secret
 
-            google-plus:                           # (array)   Google Plus authentication configuration
-                enabled: false                     # (boolean) Google Plus provider activation
+            google-plus:                           # (array)   Configuration de l'authentification via Google Plus
+                enabled: false                     # (boolean) Activation du fournisseur
                 options:
                     client-id: ''                  # (string)  Google Plus client-id
                     client-secret: ''              # (string)  Google Plus client-secret
 
-            github:                                # (array)   GitHub authentication configuration
-                enabled: false                     # (boolean) GitHub provider activation
+            github:                                # (array)   Configuration de l'authentification via GitHub
+                enabled: false                     # (boolean) Activation du fournisseur
                 options:
                     client-id: ''                  # (string)  GitHub client-id
                     client-secret: ''              # (string)  GitHub client-secret
 
-            viadeo:                                # (array)   Viadeo authentication configuration
-                enabled: false                     # (boolean) Viadeo provider activation
+            viadeo:                                # (array)   Configuration de l'authentification via Viadeo
+                enabled: false                     # (boolean) Activation du fournisseur
                 options:
                     client-id: ''                  # (string)  Viadeo client-id
                     client-secret: ''              # (string)  Viadeo client-secret
 
-            linkedin:                              # (array)   LinkedIn authentication configuration
-                enabled: false                     # (boolean) LinkedIn provider activation
+            linkedin:                              # (array)   Configuration de l'authentification via LinkedIn
+                enabled: false                     # (boolean) Activation du fournisseur
                 options:
                     client-id: ''                  # (string)  LinkedIn client-id
                     client-secret: ''              # (string)  LinkedIn client-secret
 
-    registration-fields:                           # (array)   Registration fields configuration
+    registration-fields:                           # (array)   Configuration des champs disponible requis à l'inscription
 
         -
             name: company
-            required: false                        # (boolean) Field is displayed, not required
+            required: false                        # (boolean) Le champ est proposé, mais pas obligatoire
         -
             name: firstname
-            required: true                         # (boolean) Field is displayed and required
+            required: true                         # (boolean) Le champ est proposé et obligatoire
 
-    xsendfile:                                     # (array)   Sendfile (Nginx) / XSendFile (Apache) configuration
+    xsendfile:                                     # (array)   Configuration Sendfile (Nginx) / XSendFile (Apache)
 
-        enabled: false                             # (boolean) SendFile/XSendFIle activation
-        type: nginx                                # (string)  XSendFile type (`nginx` ou `apache`)
-        mapping: []                                # (array)   Directories mapping (see configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
+        enabled: false                             # (boolean) Activation de la prise en charge SendFile/XSendFIle
+        type: nginx                                # (string)  Type XSendFile (`nginx` ou `apache`)
+        mapping: []                                # (array)   Mapping des dossiers (voir configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
 
-    user-settings:                                 # (array)   An array of default settings for user settings
+    user-settings:                                 # (array)   Un tableau de valeur par défaut pour les préférences utilisateurs
         images_per_page: 60
         images_size: 200
 
-    plugins: []                                    # (array)   :doc:`Plugins <Plugins>` configuration.
+    plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`.
 
     session:
-        idle: 3600                                 # (integer) Inactivity before disconnection (in seconds)
-        lifetime: 604800                           # (integer) Maximum session time (in seconds)
+        idle: 3600                                 # (integer) Durée d'inactivité (en secondes) avant déconnexion
+        lifetime: 604800                           # (integer) Durée maximum de session (en secondes)
 
     api_cors:
-        enabled: false                             # (boolean) API CORS activation.
-        allow_credentials: false                   # (boolean) Include cookies in CORS request.
+        enabled: false                             # (boolean) Activation du CORS sur l'API.
+        allow_credentials: false                   # (boolean) Inclus les cookies dans les requêtes CORS.
 
-        allow_origin: ['*']                        # (array)   List of authorized origin domain to request the API.
-                                                   #           '*' to allow requets from any origin.
-        allow_headers: []                          # (array)   List of supported headers by the server.
-        allow_methods: ['GET', 'POST', 'PUT']      # (array)   List of supported method.
-        expose_headers: ['X-Custom-Header']        # (array)   List of headers different than (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
-                                                   #           to expose to the client.
-        max_age: 0                                 # (integer) Allows the preflight response to be cached for a specified number of seconds.
-        hosts: ['api-cors.domain.com']             # (array)   List of domain where the CORS is activated.
+        allow_origin: ['*']                        # (array)   La liste des domaines autorisés à envoyer des requêtes sur l'API.
+                                                   #           '*' pour autoriser les demandes de toutes origines.
+        allow_headers: []                          # (array)   La liste des headers supportés par le server.
+        allow_methods: ['GET', 'POST', 'PUT']      # (array)   La liste des methodes HTTP supportées.
+        expose_headers: ['X-Custom-Header']        # (array)   La liste des headers autres que (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
+                                                   #           à exposer au client.
+        max_age: 0                                 # (integer) Authorise la réponse "preflight" à être cachée pour X secondes.
+        hosts: ['api-cors.domain.com']             # (array)   Liste des noms de domaine ou le CORS est activé.
+
 
     static-file:
-        enabled: false                             # (boolean) static thumbnails activation.
-        type: nginx                                # (string) StaticFile type (`nginx` ou `apache`)
-        symlink-directory: ''                      # (string) The directory where symlynks to images will be created
+        enabled: false                             # (boolean) Activation vignettes statiques.
+        type: nginx                                # (string) Type StaticFile (`nginx` ou `apache`)
+        symlink-directory: ''                      # (string) Le répertoire ou seront crées les liens symboliques vers les images
 
-    lazyload: false                                # (boolean) thumbnail lazyload activation (obsolete if static file enabled)
+    lazyload: false                                # (boolean) Activation du lazyload pour l'affichage des vignettes (obsolete si l'option static-file est activée)
 
 Languages
 *********
 
 Available languages with their respectives codes are:
 
-- French : fr_FR
-- English : en_GB
-- German : de_DE
-- Dutch : nl_NL
+- French: fr_FR
+- English: en_GB
+- German: de_DE
+- Dutch: nl_NL
 
 Cache services
 **************
@@ -270,18 +275,43 @@ following adapters:
 | ArrayCache     | cache | opcode-cache | No cache                                            |            |
 +----------------+----------------------+-----------------------------------------------------+------------+
 
+Sessions handling
+*****************
+
+Sessions are stored on filesystem by default.
+It is possible to use another handling system:
+
++----------------+---------------------------------------------+------------+
+| Type           | Description                                 | Options    |
++================+=============================================+============+
+| file           | Filesystem handler                          |            |
++----------------+---------------------------------------------+------------+
+| memcache       | Memcached server handler, use PHP memcache  | host, port |
++----------------+---------------------------------------------+------------+
+| memcached      | Memcached server handler, use PHP memcached | host, port |
++----------------+---------------------------------------------+------------+
+| redis          | Redis server handler, use PHP redis         | host, port |
++----------------+---------------------------------------------+------------+
+
+.. warning::
+
+    Time-to-live setting (`ttl`) does not work with filesystem storage.
+    In that case, use PHP `gc_maxlifetime` setting.
+
 .. _search-engine-service-configuration:
 
 Search Engine service
 *********************
 
-Two search engine services are available: Phrasea engine and SphinxSearch
-engine.
+Three search engine services are available: Phrasea engine, ElasticSearch
+and SphinxSearch engine.
 
 +------------------------------------------------------------------+------------------------------+
 | Name                                                             | Options                      |
 +==================================================================+==============================+
 | Alchemy\\Phrasea\\SearchEngine\\Phrasea\\PhraseaEngine           |                              |
++------------------------------------------------------------------+------------------------------+
+| Alchemy\\Phrasea\\SearchEngine\\Elastic\\ElasticSearchEngine     | host, port, index            |
 +------------------------------------------------------------------+------------------------------+
 | Alchemy\\Phrasea\\SearchEngine\\SphinxSearch\\SphinxSearchEngine | host, port, rt_host, rt_port |
 +------------------------------------------------------------------+------------------------------+
@@ -548,15 +578,16 @@ Session durations
 
 idle
 ~~~~
-Set the inactivity time (in seconds) before the user is automatically disconnected from application.
+Set the inactivity time (in seconds) before the user is automatically
+disconnected from application.
 
-The setting "idle" has priority over "lifetime". If "idle" is set, the option "remember me" is not displayed on the
-homepage.
+The setting "idle" has priority over "lifetime". If "idle" is set, the option
+"Remember me" is not displayed on the homepage.
 
 lifetime
 ~~~~~~~~
-Checking "Remember me" on homepage allows to access the application later without authentifying again.
-Access is allowed for this duration (in seconds).
+Checking "Remember me" on homepage allows to access the application later
+without authentifying again. Access is allowed for this duration (in seconds).
 
 
 .. _YAML: https://wikipedia.org/wiki/Yaml
@@ -566,8 +597,8 @@ Thumbnails
 
 lazyload
 ~~~~~~~~
-Boolean that triggers lazy load for thumbnails in production, this option is not obsolete if static
-file mode is enabled.
+Boolean that triggers lazy load for thumbnails in Phraseanet production, this
+option is not obsolete if static file mode is enabled.
 
 static-file
 ~~~~~~~~~~~

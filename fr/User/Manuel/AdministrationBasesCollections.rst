@@ -36,9 +36,6 @@ Réglage de la structure
 La rubrique affiche la structure documentaire de la base sélectionnée sous la
 forme d'un fichier XML éditable.
 
-.. image:: ../../images/Administration-structurexml.jpg
-    :align: center
-
 Il est rare de devoir manipuler le paramétrage d'une base par cette interface.
 Utilisez les interfaces `Champs`_, `Sous définition`_ ou `Réglage des Status`_.
 
@@ -69,6 +66,28 @@ paramétrables :
     **Les types de champs sont liés au moteur Phrasea**.
     :doc:`Se reporter aux explications relatives au typage des champs dans la FAQ <../../FAQ/Parametrage/type-des-champs-phrasea>`.
 
+Déclarer une facette pour un champ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Pour déclarer une facette pour un champ :
+
+* Sélectionner le champ dans la partie gauche du formulaire
+* Fixer un nombre de valeurs dans le champs *Agrégation* du formulaire de
+  paramétrage
+* Recréer les index ElasticSearch
+
+.. note::
+
+    D'une manière générale, et à l'exception des changements de labels, les
+    opérations sur le structure documentaire, implique de recréer et de
+    reconstruire les index Elasticsearch.
+
+    :ref:`Se reporter aux opérations sur les index <Operations-sur-les-index>`.
+
+    L'opération "populate" peut, en fonction du volume du fonds archivé,
+    prendre plusieurs heures.
+
+
 Sous définition
 ***************
 
@@ -85,7 +104,7 @@ l'application.
 +------------------------------------------------+------------------------------------------------------------+
 | Nature du média original                       | Nature de la sous définition                               |
 +================================================+============+==========+===============+=========+==========+
-| Image de type Jpeg, psd, gif, png...           | Sous définition au format Jpeg                             |
+| Image de type Jpeg, psd, gif, png...           | Sous définition au format Jpeg, Png ou Tiff (paramétrable) |
 +------------------------------------------------+------------------------------------------------------------+
 | Vidéo Mpeg, Avi, Mov...                        | Sous définition au format Mpeg4, Jpeg ou Gif               |
 +------------------------------------------------+------------------------------------------------------------+
@@ -118,11 +137,9 @@ jusqu'à 28 status.
 CGU (Conditions générales d'utilisation)
 ****************************************
 
-.. image:: ../../images/Administration-cgu.jpg
-    :align: center
-
 Les conditions générales d'utilisation sont proposées aux utilisateurs lors
-de l'inscription.
+de l'inscription, lors d'une première connexion ou lors de modification
+de celles-ci.
 
 * Saisir ou copier-coller un texte dans les différentes langues proposées.
 * Cocher la case "Les utilisateurs doivent accepter..." pour faire valider aux
@@ -135,7 +152,7 @@ Ordre des Collections
 .. image:: ../../images/Administration-ordrecollections.jpg
     :align: center
 
-Par défaut, les collections sont affichées dans Phraseanet selon leur ordre de
+Par défaut, les collections sont affichées dans Phraseanet par ordre de
 création. Il est possible d'altérer cette ordre.
 
 * Cliquer sur la rubrique **Ordre des collections**
@@ -269,6 +286,11 @@ Renommer une collection
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Saisir un nouveau nom de collection puis cliquer Renommer.
+
+.. warning::
+
+    Renommer une collection implique la réindexation de la base. Privilégier un
+    changement de label à la place peut être plus judicieux.
 
 Vider une collection
 ^^^^^^^^^^^^^^^^^^^^

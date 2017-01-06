@@ -61,22 +61,6 @@ configure the search engine used by the instance using a graphical interface.
 
     :doc:`Refer to the page dedicated to the engines configuration in the Administrator documentation<../../Admin/SearchEngine>`.
 
-Phrasea engine configuration
-****************************
-
-The Phrasea engine, which is the default engine, has few configuration options.
-
-The interface offers to:
-
-* Activate or deactivate the :term:`stemming option <Stemm>`
-* Choose the display order of the records based on sortable fields .
-
-Sphinx engine configuration
-***************************
-
-The form allows to write the configuration of the Sphinx search engine when
-used.
-
 Connected users
 ---------------
 
@@ -182,5 +166,4 @@ In some cases, the graphical view simulates the task's execution.
 Plugins
 -------
 
-From version 3.8.7, this section lists additional extensions installed on
-the instance.
+This section lists additional extensions installed on the Phraseanet instance.

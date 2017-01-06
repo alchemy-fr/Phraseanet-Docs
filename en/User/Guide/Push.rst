@@ -1,5 +1,5 @@
-﻿Push and Feeback
-================
+﻿Push and Feedback
+=================
 
 .. toctree::
     :maxdepth: 3
@@ -10,7 +10,7 @@
     users, whether or not they have originally a Phrasenaet account.
 
     A *Push* is used to push media toward users. A *Feeback* is intended to
-    collect advisory opinion about media from them.
+    collect advisory opinions about media from them.
 
     A :ref:`Lists manager <List-Manager>` allows to create sending lists to
     answer some repetitive sending towards the same users.
@@ -21,9 +21,9 @@
 Push
 ----
 
-The Push is a submission of documents or selection of documents. Unlike an
+Push is a submission of documents or selection of documents. Unlike an
 email export, the *Push* does not physically transmit documents. It
-notifies in the interface, notifies by email, and leave at the users
+notifies in the interface and/or by email, and leave at the users
 disposal some media selections that they can consult and eventually download.
 
 Push documents
@@ -32,7 +32,7 @@ Push documents
 * **Select one or several documents** in the results display area or in an
   opened basket or story in the work zone.
 
-* **Click on the Push button** of one of the Actions palettes :
+* **Click on the Push button** of one of the Actions palettes:
 
 In the Push window...
 

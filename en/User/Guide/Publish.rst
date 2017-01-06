@@ -55,8 +55,8 @@ available *via* a the corresponding feed outside Phraseanet.
 
 .. _Publish-Bridge:
 
-Broadcast with Bridge
----------------------
+Broadcast with Bridge - **Deprecated**
+--------------------------------------
 
 Phraseanet Bridge allows to publish media to external sites and apps, like :
 

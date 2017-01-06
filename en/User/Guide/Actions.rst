@@ -90,10 +90,10 @@ To edit records statuses:
     **The interfaces is asynchronous**. Statuses symbols displayed for records
     are refreshed when the interface is refreshed.
 
-Modify the documents type
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Modify the documents types
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This action allows to change the documents type that are automatically set when
+This action allows to change the documents types that are automatically set when
 importing in *Phraseanet*. It is useful when some documents were not correctly
 interpreted when imported by the host platform.
 

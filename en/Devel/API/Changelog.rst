@@ -1,6 +1,39 @@
 API Changelog
 =============
 
+2.0.0
+-----
+
+Version 2.0.0 of Phraseanet API is brought with Phraseanet 4.0.0.
+
+New routes
+**********
+
+- :doc:`search v2 <V2/Route/Search>`.
+- :doc:`orders/create <V2/Route/Orders/Create>` Create an order for several records
+- :doc:`orders/index <V2/Route/Orders/Index>` List orders of current user.
+- :doc:`orders/{orderId}/{accept,deny} <V2/Route/Orders/Validate>` Handles validation
+- :doc:`records/{databox_id}/{record_id} <V1/Route/Records/Delete>` Delete one record
+
+1.5.0
+-----
+
+Version 1.5.0 of Phraseanet API is brought with Phraseanet 3.8.8.
+
+New route
+*********
+
+* :doc:`embed/substitute <V1/Route/Embed/Substitute>`
+    Substitute / inject a sub-definition for a record of type document
+
+Updated routes
+**************
+
+* :doc:`record/add <V1/Route/Records/Add>`
+    Add an attribute "nosubdefs" to prevent creation of sub-definitions
+* :doc:`record/embed <V1/Route/Records/Embed>`
+    Add informations "substituted", "created_on", "updated_on" for embeds
+
 1.4.1
 -----
 

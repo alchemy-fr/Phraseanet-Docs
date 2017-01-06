@@ -1,5 +1,5 @@
-Bienvenue dans la documentation Phraseanet
-==========================================
+Bienvenue dans la documentation Phraseanet 4.0
+==============================================
 
 Le DAM Open source
 ------------------
@@ -16,7 +16,7 @@ Solution *100% Web*, elle s'exécute dans un navigateur internet.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
 serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
-courantes telles MySQL, PHP et Apache.
+courantes telles Elasticsearch, MySQL, PHP et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
 *Phraseanet*.
 Certaines de ces librairies sont
@@ -45,17 +45,13 @@ commencer.
     User/index
     Admin/index
 
-Quoi de neuf dans la version 3.8 ?
+Quoi de neuf dans la version 4.0 ?
 ----------------------------------
 
-Voici les principaux changements apportés par la version 3.8 :
+La version 4.0 introduit les changements suivants :
 
-* Une nouvelle page de connexion
-* Le support de l'authentification via des fournisseurs tiers
-* Le support de la racinisation *en standard* dans le moteur *Phrasea*
-* Nouvelle interface de gestion des champs de la structure documentaire
-* De nombreuses améliorations graphiques dans Administration, Production
-* Le support du moteur de recherche Sphinx en version stable
+* Implémentation de Elasticsearch comme moteur de recherche unique
+* Refonte d'interfaces
 
 
 Besoin d'aide ?

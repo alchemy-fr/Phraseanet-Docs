@@ -32,9 +32,9 @@ copyright = u'2004-2016, <a href="http://www.alchemy.fr" target="_blank">Alchemy
 # built documents.
 #
 # The short X.Y version.
-version = '3.8'
+version = '4.0'
 # The full version, including alpha/beta/rc tags.
-release = '3.8'
+release = '4.0'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:

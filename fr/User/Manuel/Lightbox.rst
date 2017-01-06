@@ -31,14 +31,14 @@ Pour les utilisateurs authentifiés
 Dans l'application, cliquer sur la rubrique Lightbox de la barre de menu permet
 de rejoindre l'interface.
 
-L'interface dresse la liste des Pushs et des demandes de validation que
+L'interface dresse la liste des paniers, Pushs et des demandes de validation que
 l'utilisateur a produit ou reçu. Cliquer sur un des éléments de la liste pour
 afficher son contenu.
 
 .. image:: ../../images/Lightbox-menu.jpg
     :align: center
 
-Dans Production, la rubrique Lightbox du menu contextuel de chaque panier
+Dans Production, la rubrique **Lightbox** du menu contextuel de chaque panier
 permet d'afficher son contenu dans cette interface.
 
 L'interface
@@ -98,9 +98,6 @@ l'icône d'export en bas à gauche de l'interface.
 
 Le téléchargement à partir de Lightbox est identique à celui de l'Export dans
 Production.
-
-.. image:: ../../images/Lightbox-enregister-export.jpg
-    :align: center
 
 .. seealso::
 

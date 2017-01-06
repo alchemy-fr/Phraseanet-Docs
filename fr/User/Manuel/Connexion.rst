@@ -11,14 +11,14 @@ s'authentifier pour accéder à un fonds multimédia.
 Authentification
 ----------------
 
-* Afficher la page d'accueil de l'application Phraseanet au moyen d'un
-  navigateur Web
-* Ajuster si besoin la langue d'interface avec le menu déroulant *Langue*
-* Saisir l'identifiant et le mot de passe
+* Afficher la page d'accueil de l'application au moyen d'un navigateur Web
+* Ajuster si nécessaire la langue d'interface au moyen du menu déroulant
+  *Langue*
+* Saisir l'identifiant de connexion ainsi que le mot de passe
 * Cliquer sur **Connexion**
 
 En cas d'oubli du mot de passe, suivre la procédure de récupération en cliquant
-sur le lien :ref:`Mot de Passe oublié <Connexion-Mot-de-passe-oublie>`.
+sur le lien :ref:`Mot de Passe oublié ?<Connexion-Mot-de-passe-oublie>`.
 
 Lors de la connexion à Phraseanet, la dernière application utilisée se lance
 ou, à défaut, :doc:`Production <Afficher>`.
@@ -26,8 +26,8 @@ ou, à défaut, :doc:`Production <Afficher>`.
 Authentification via des fournisseurs tiers
 -------------------------------------------
 
-*Phraseanet* permet de déléguer l'authentification d'utilisateurs à des
-fournisseurs d'authentification dont les applications web suivantes :
+Une option de configuration permet de déléguer l'authentification
+d'utilisateurs à un ou plusieurs fournisseurs d'authentification dont :
 
 * Facebook
 * Twitter
@@ -37,6 +37,12 @@ fournisseurs d'authentification dont les applications web suivantes :
 * Linkedin
 
 D'autres fournisseurs d'identité numérique peuvent s'ajouter.
+
+Lorsque cette option est activé les badges des fournisseurs d'authentification
+apparaissent sur la page de connexion.
+
+.. image:: ../../images/Authentification-oauth.jpg
+    :align: center
 
 .. note::
 
@@ -50,8 +56,17 @@ Selon les choix de paramétrage du système par les administrateurs, un bouton
 permettant de s'inscrire comme nouvel utilisateur peut figurer sur la page de
 connexion.
 
+.. image:: ../../images/Authentification-inscription.jpg
+    :align: center
+
 * Cliquer sur le bouton **Inscription** pour accéder au formulaire
   d'inscription.
+
+.. note::
+
+    Pour paramétrer la liste des champs disponibles dans le formulaire
+    d'inscription, se reporter à
+    :doc:`la section configuration <../../Admin/Configuration>`.
 
 Si l'authentification via des fournisseurs tiers est activée, deux
 possibilités :
@@ -86,7 +101,7 @@ Mot de passe oublié ?
 * Remplir et soumettre le formulaire proposé avec l'adresse e-mail liée au
   compte Phraseanet
 
-Une fois le formulaire complété et soumis, un email est envoyé. Il contient un
+Une fois le formulaire complété et soumis, un e-mail est envoyé. Il contient un
 lien permettant de rejoindre l'interface d'initialisation de mot de passe.
 
 .. warning::
@@ -107,11 +122,16 @@ Suivre les instructions proposées puis valider le formulaire.
 Après initialisation du mot de passe, se connecter au moyen du formulaire
 disponible en page d’accueil.
 
+.. _Connexion-compte-invite:
+
 Le compte invité
 ----------------
 
 Un accès invité peut être disponible sur la page d'accueil. Cliquer sur le
 bouton **Accès invité** pour se connecter au moyen de ce compte.
+
+.. image:: ../../images/Authentification-invite.jpg
+    :align: center
 
 .. note::
 

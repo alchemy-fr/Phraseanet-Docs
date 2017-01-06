@@ -21,7 +21,7 @@
 Full text search
 ----------------
 
-*Phraseanet* suggests by default a full text search that allows to display media
+*Phraseanet* feature a full text search mode that allows to retrieve assets
 depending on the information contained in the documentary fields of their
 descriptive note.
 
@@ -56,8 +56,8 @@ indexation quality of the media and the search query.
     :ref:`Customize the interface <Customize-Display-Settings>` for more
     information.
 
-Boolean operators and wildcards
-*******************************
+Supported boolean operators
+***************************
 
 By default, the operator between two terms is the boolean operator **AND**.
 Therefore it's not necessary to type it.
@@ -72,10 +72,6 @@ media.
   the word mountain, or both.
 * The operator **EXCEPT** allows to exclude a term from the search. If the
   search is on beaches not in France, type **beach EXCEPT France**.
-* The operator ***** is a wildcard. It allows to truncate the characters on the
-  right of the searched term : a search like **natur*** displays the media which
-  descriptive notes contain the words starting with "natur" like nature, natures
-  ... *etc*.
 * **The search between double quotes** is possible : it allows to search for
   contiguous terms or exact match expression in the media descriptive notes.
 
@@ -83,49 +79,86 @@ Other options exists using advanced operators.
 
 .. seealso::
 
-    :doc:`See the full list of these operators in the FAQ<../../FAQ/Media/All-search-operators>`.
+    :doc:`See the page dedicated to Elasticsearch in FAQ<../../FAQ/Media/Elasticseach-supported-operators>`.
 
-Specific operators
-******************
+Navigating with facets
+----------------------
 
-*Phraseanet* has other specific operators:
+The information in documentary fields for a given search can be stored into
+facets. This technique allows the user to access to funds by filtering
+characteristics.
 
-* **All**, to search all the documents of the selected Phraseanet
-  bases or collections.
-* **Last** ( with or without specifying a number) displays by
-  default the 12 last documents added by Phraseanet base in the selected
-  collections. Combined with an integer, the *n* last documents will be
-  displayed.
+The contents of each facet is updated as results are refreshed.
 
-In a **Last 100** search with 3 opened Phraseanet bases/collection, the
-number of displayed media can be up to 300 (3 times the last 100 added media),
-considering the number of documents for each base or collection is more than 100
+Click on one of the facets in the proposed Facets tab in the workzone to filter
+search results.
+
+.. note::
+
+    The facets are determined by the setting of the document structure.
 
 Search in a specific field
 --------------------------
 
 It is possible to limit the search to a field of the description.
-The search pattern is the term searched IN a specific field.
+The syntax to indicate in the search field is the field name (as stated in the
+documentary structure), the operator and the searched value.
 
-A search **London in City** will display the documents that contain the term
-**London** in a field named **City**.
+TitleEn: Limelight
 
-A search **France in Country** will display the documents that contain the term
-**France** in the field named **Country**.
+**The engine performs automatic hyphenation on the spaces and voided
+characters**: the searched term in the specified field is between
+the operator and the first space after the search term.
+To search for a phrase contained in a field, surround it with quotes.
 
-.. image:: ../../images/Rechercher-motdanslegende.jpg
-    :align: center
+TitleEn: "Modern Times"
 
 .. note::
 
     For a field search, be sure to use the field name as stated in the
-    documentary structure. Field names are case sensitive.
+    documentary structure. **Field names are case sensitive**.
+
+For the operator, two possibilities: the colon punctuation mark (:)
+or the equal sign (=).
+
+Field **Contains**
+******************
+
+Use the operator **:** (colon) to search for a single term or a phrase in
+quotes that is part of information entered in the field to search to.
+
+Examples:
+
+* TitleEn: Rocky
+* TitleEn: "Star Wars"
+* TitleEn: "Naked gun"
+
+.. note::
+
+    In this kind of searches, language analyzers integrated in the engine are
+    used to maximize response results.
+
+Field **Is**
+************
+
+Use the **=** (equal) to search for accurate and strict values (including
+case sensitivity).
+
+Examples:
+
+* TitleEn= Rocky
+* TitleEn= "Star Wars"
+* TitleEn= "The Naked gun 33⅓: the final insult"
+
+.. note::
+
+    This kind of searches do not implement any language or syntax analyzers.
 
 Advanced search
 ---------------
 
 To display the advanced search form, click on the geared wheel between
-the search field and the button **Search**.
+the search field and the **Search** button.
 
 .. image:: ../../images/Rechercheavancee0.jpg
     :align: center
@@ -144,19 +177,20 @@ deselect them.
 
 .. note::
 
-    If no collection is selected, then the search apply on all Phraseanet bases
-    and collections available to user.
+    If no collection are selected, searches apply on all Phraseanet bases
+    and collections available according to user's rights.
 
 The available filters allow to narrow the search results:
 
-* Activate or de-activate the search by :term:`Stemm`
+* Sort by relevance, date added, numerical values or dates from parameterized
+  fields in the database structure
 * Search one or more specific fields
 * Filter by status
 * Limit the searches with periods
 
 **The options of the advanced search stay**. The choices used in the advanced
 search window are kept as long as they are not modified.
-If there are search options, the form background will be yellow.
+If there are search options, the search form background will be yellow.
 
 Search using the Thesaurus
 --------------------------
@@ -180,28 +214,7 @@ clickable.
   contains.
 * **Double click on a term to start searching**.
 
-**A search in the thesaurus terms is possible** using a form.
+**Searching in the thesaurus is possible** using the dedicated form.
 Include at least the first three characters of a term to trigger the
 auto-completion system.
 
-.. image:: ../../images/Rechercher-thesaurus3.jpg
-    :align: center
-
-Use the proposals
-*****************
-
-The proposals tab displays suggestions related to the user search and the terms
-contained in the thesaurus of the searched bases.
-
-By going up the terms in Thesaurus, the user is advised to specify its
-research or to widen it to a larger cognitive scope with suggested terms.
-
-Each proposal is clickable and allows to launch a new *Thesaurus* search.
-
-.. image:: ../../images/Onglet-Propositions.jpg
-    :align: center
-
-.. note::
-
-    The relevance of the proposals in this tab are linked to the construction
-    of the deployed thesaurus.

@@ -53,6 +53,9 @@ réceptions de paniers, demandes de validation, ... *etc*.
 
 **Cliquer sur la rubrique Notifications pour les afficher**.
 
+.. image:: ../../images/General-notifications.jpg
+    :align: center
+
 Les notifications affichées dans l'interface sont relayées par l'envoi
 d'e-mail. Pour gérer les notifications reçues, accéder à
 :ref:`l'onglet Informations <MenuPhraseanet-Informations>` des paramètres de
@@ -65,7 +68,7 @@ Cliquer sur l'identifiant utilisateur pour accéder aux paramètres du compte.
 Une nouvelle page s'ouvre et présente des formulaires et des listes groupés dans
 des onglets thématiques.
 
-.. image:: ../../images/Moncompte.jpg
+.. image:: ../../images/General-Moncompte.jpg
     :align: center
 
 .. _MenuPhraseanet-Informations:
@@ -81,6 +84,9 @@ de modifier :
 * de paramétrer la réception de notifications par e-mail
 * d'éditer un favori :term:`FTP` permettant la réception de documents sur un
   serveur supportant ce type de connexion.
+
+.. image:: ../../images/General-Moncompte-Information.jpg
+    :align: center
 
 .. seealso::
 
@@ -101,7 +107,7 @@ Pour faire une demande d'accès à de nouvelles bases ou collections :
 Un message indique alors qu'une demande d'accès est en cours. Elle nécessite
 d'être examinée par un administrateur pour validation.
 
-.. image:: ../../images/Accesbasescoll.jpg
+.. image:: ../../images/General-Accesbasescoll.jpg
     :align: center
 
 L'onglet Sessions
@@ -110,7 +116,7 @@ L'onglet Sessions
 Il liste les sessions de l'utilisateur et donne des informations relatives aux
 dates de connexion et d'accès, aux adresses IP, et navigateurs utilisés.
 
-.. image:: ../../images/ListeSessions.jpg
+.. image:: ../../images/General-ListeSessions.jpg
     :align: center
 
 Cliquer sur le bouton **Mettre fin à la session** pour supprimer une session
@@ -119,10 +125,10 @@ active.
 L'onglet Applications
 *********************
 
-Il liste les applications tierces autorisées à se connecter au compte Phraseanet
-de l'utilisateur.
+Il liste les applications tierces autorisées à se connecter à Phraseanet au
+moyen du compte de l'utilisateur.
 
-.. image:: ../../images/ListeApplications.jpg
+.. image:: ../../images/General-ListeApplications.jpg
     :align: center
 
 .. seealso::

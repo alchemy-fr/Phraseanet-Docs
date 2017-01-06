@@ -61,21 +61,6 @@ moteur de recherche utilisé par l'instance au moyen d'une interface graphique.
 
     :doc:`Se reporter à la page consacrée aux moteurs de recherche dans la documentation Administrateur <../../Admin/MoteurDeRecherche>`.
 
-Configuration du moteur Phrasea
-*******************************
-
-Le moteur Phrasea, moteur par défaut, comporte peu d'options de configuration.
-
-L'interface propose :
-
-* D'activer ou de désactiver les :term:`stemmes <Stemme>`
-* De paramétrer l'ordre d'affichage des enregistrements
-
-Configuration du moteur Sphinx
-******************************
-
-Le formulaire permet de configurer le moteur de recherche Sphinx utilisé.
-
 Utilisateurs connectés
 ----------------------
 
@@ -181,5 +166,5 @@ Dans certains cas, une vue graphique simule l'exécution de la tâche.
 Plugins
 -------
 
-Depuis la version 3.8.7, la rubrique Plugins liste les extensions
-complémentaires installées sur l'instance.
+La rubrique Plugins liste les extensions complémentaires installées sur
+l'instance.

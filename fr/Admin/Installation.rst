@@ -12,13 +12,13 @@ d'installation.
 
 .. code-block:: bash
 
-    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v3.8.x.zip
+    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v4.0.x.zip
 
 et
 
 .. code-block:: bash
 
-    unzip alchemy-fr-Phraseanet-v3.8.x.zip
+    unzip alchemy-fr-Phraseanet-v4.0.x.zip
 
 **Bien que cela ne soit pas obligatoire** (mais plutôt conseillé), vérifier
 :doc:`les prérequis <Prerequis>` au moyen de la commande suivante, à exécuter à
@@ -35,6 +35,17 @@ qui nécessitent d'être corrigés pour installer l'application avec succès.
 
     Voir la page consacrée à l'utilisation des applications en ligne de
     commande :doc:`Setup et Console <Console>`.
+
+.. note::
+
+    Si des sources non packagées sont utilisées pour installer Phraseanet
+    (par exemple celles récupérées à partir du repository GitHub du projet),
+    jouer la commande *make* depuis le répertoire d'installation.
+
+    .. code-block:: bash
+
+     make
+
 
 Configuration du serveur web
 ----------------------------
@@ -72,7 +83,7 @@ Setup
 
 *Phraseanet* s’installe de deux façons :
 
-* :ref:`En ligne de commande <install-cli>` depuis la version 3.8
+* :ref:`En ligne de commande <install-cli>`
 
 **Ou bien**
 
@@ -99,12 +110,12 @@ La procédure d'installation s'initialise.
   :ref:`les créer <install-create-database>`
 
 * **Renseigner les informations de connexion au serveur de base de données**
-  puis indiquer le nom de la base exploitée par l'*Application box*
+  puis indiquer le nom de la base exploitée pour l'*Application box*
 
-* **Indiquer le nom de la base exploitée par la** *Data Box*
+* **Indiquer le nom de la base exploitée pour la** *Databox*
 
-* **Indiquer la langue à utiliser** (**fr** ou **en**) pour la structure
-  documentaire initiale
+* **Indiquer la structure documentaire initiale à utiliser** (trois modèles
+  proposés)
 
 * **Créer un compte administrateur** : indiquer une adresse e-mail valide ainsi
   qu'un mot de passe de connexion.
@@ -123,7 +134,7 @@ La procédure d'installation s'initialise.
     exister et l'application *Phraseanet* doit pouvoir y acceder en lecture et
     écriture.
 
-* **Indiquer un nom** pour l'instance *Phraseanet*
+* **Indiquer une URL** pour l'instance *Phraseanet*
 
 * **Lancer la procédure d'installation** et patienter jusqu'au message
   *Install successful*
@@ -131,8 +142,35 @@ La procédure d'installation s'initialise.
   .. image:: ../images/Admin_Install_cli-02.jpg
     :align: center
 
-Pour rendre le système opérationnel, il est nécessaire de
-:ref:`démarrer le planificateur de tâches <demarrage-scheduler>`.
+.. note::
+
+    La configuration générée lors de l'installation renseigne le paramétrage
+    pour un serveur Elasticsearch local, sur le port 9200.
+
+    Si nécessaire, éditer le fichier **config/configuration.yml** puis
+    compiler la configuration.
+
+    Se reporter à :doc:`la page consacrée à la Configuration<Configuration>`.
+
+* **Créer l'index** de recherche Elasticsearch
+
+.. code-block:: bash
+
+    bin/console s:i:c
+
+* **Lister les tâches**
+
+.. code-block:: bash
+
+    bin/console task-manager:task:list
+
+* **Démarrer le scheduler** dans un screen :
+
+.. code-block:: bash
+
+    bin/console task-manager:scheduler:run -vvv
+
+Phraseanet est à présent opérationnel.
 
 .. _install-graphique:
 
@@ -194,9 +232,22 @@ de l'écran d’accueil :
 
 * Cliquer sur le bouton *Install* pour lancer le script d'installation
 
-A l'issu du processus l'utilisateur est conduit à la rubrique **Gestionnaire de
-tâches** de l'Administration. Il reste à
-:ref:`démarrer les tâches <demarrage-scheduler>`.
+A l'issu du processus l'utilisateur est conduit à la page d'authentification de
+l'application.
+
+* S'authentifier avec le compte créé.
+
+* Dans Phraseanet Admin, cliquer sur la rubrique **Paramètre du moteur de
+  recherche**
+
+  .. image:: ../images/Admin_Install_Set_ES.jpg
+    :align: center
+
+* **Ajuster le paramétrage du serveur Elasticsearch** selon contexte.
+
+* Créer l'index au moyen du bouton proposé.
+
+Il reste à :ref:`démarrer les tâches <demarrage-scheduler>`.
 
 .. _demarrage-scheduler:
 

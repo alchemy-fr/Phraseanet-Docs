@@ -65,7 +65,7 @@ Modifier les droits d'un utilisateur
 Supprimer un utilisateur
 ************************
 
-* Sélectionnez l'utilisateur dans la liste
+* Sélectionner l'utilisateur dans la liste
 * Cliquer sur le bouton Supprimer
 
 Filtrer la liste des utilisateurs

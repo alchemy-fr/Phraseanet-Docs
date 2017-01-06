@@ -32,6 +32,7 @@ bin/console.
     :maxdepth: 1
     :glob:
 
+    Changelog
     Telechargement
     Prerequis
     Installation

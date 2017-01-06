@@ -188,6 +188,15 @@ Dans la fenêtre des propriétés...
     Dans Firefox, une fenêtre de menu peut masquer la fenêtre Propriété du
     thésaurus.
 
+.. warning::
+
+    L'édition du thésaurus (ajouts de termes ou de synonyme, suppression de
+    termes) réclame la reconstruction des index Elasticsearch pour que les
+    modifications soient prises en compte.
+
+    :ref:`Se reporter au paragraphe relatif à la construction des index
+    Elasticsearch dans l'Administration <Operations-sur-les-index>`.
+
 Rechercher un terme dans les termes candidats ou le Thésaurus
 *************************************************************
 
@@ -278,8 +287,8 @@ plus appropriés.
 Le travail d'ajout de termes candidats au thésaurus s'effectue soit dans
 Thésaurus, soit dans Production.
 
-Dans Thésaurus
-**************
+Dans l'interface Thésaurus
+**************************
 
 Accepter un candidat
 ^^^^^^^^^^^^^^^^^^^^
@@ -333,8 +342,8 @@ candidat supprimé peut être réintroduit :
     thésaurus réapparaissent, cette action réinitialisant les candidats du
     thésaurus.
 
-Dans Production
-***************
+Dans l'interface Production
+***************************
 
 La rubrique Candidats
 ^^^^^^^^^^^^^^^^^^^^^

@@ -11,13 +11,13 @@ On the server, download Phraseanet sources from the download page of
 
 .. code-block:: bash
 
-    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v3.8.x.zip
+    wget --no-check-certificate https://www.phraseanet.com/builds/alchemy-fr-Phraseanet-v4.0.x.zip
 
 And
 
 .. code-block:: bash
 
-    unzip alchemy-fr-Phraseanet-v3.8.x.zip
+    unzip alchemy-fr-Phraseanet-v4.0.x.zip
 
 
 Although it is not mandatory (but highly recommended), verify
@@ -35,6 +35,18 @@ to be corrected to install successfully the application.
 
     See the page dedicated to commandline applications
     :doc:`Setup and Console <Console>`
+
+.. note::
+
+    If non packaged sources are used to install Phraseanet (for example those
+    from the GitHub project repository) run the *make* command from the
+    installation directory.
+
+    .. code-block:: bash
+
+     make
+
+
 
 Web server configuration
 ------------------------
@@ -71,7 +83,7 @@ Setup
 
 *Phraseanet* can be installed in two ways:
 
-* :ref:`In Command-line mode <install-cli>` since version 3.8
+* :ref:`In Command-line mode <install-cli>`
 
 **Or**
 
@@ -123,7 +135,7 @@ The installation process starts.
     * **To use another directory**, answer **y**. The directory must exists
       and Phraseanet application must be able to read and write in it.
 
-* **Provide a name** to the Phraseanet instance server
+* **Provide an URL** for the Phraseanet instance server
 
 * **Start the installation process** and wait until the *Install successful*
   message
@@ -131,8 +143,36 @@ The installation process starts.
   .. image:: ../images/Admin_Install_cli-02.jpg
     :align: center
 
-To make the system operational, it is necessary to
-:ref:`start the tasks manager <start-tasks>`.
+.. note::
+
+    The build-in sample configuration fills parameters for a local Elasticsearch
+    server using port 9200.
+
+    If necessary, edit the configuration file **config/configuration.yml** then
+    compile the modified configuration.
+
+    Please, have a look to :doc:`the Configuration page<Configuration>` for more
+    info.
+
+* **Create Elasticsearch index**
+
+.. code-block:: bash
+
+    bin/console s:i:c
+
+* **List Phrasenaet tasks**
+
+.. code-block:: bash
+
+    bin/console task-manager:task:list
+
+* **Start Scheduler** in a new Screen:
+
+.. code-block:: bash
+
+    bin/console task-manager:scheduler:run -vvv
+
+Phraseanet is now operational.
 
 .. _install-gui:
 
@@ -191,9 +231,20 @@ Click on the **Next** button to start the procedure.
 
 * **Click on the Install button** to start the installation script.
 
-* At the end of the process the user is leaded to the Tasks Manager
-  section of Phraseanet Admin. It remains
-  :ref:`to start the tasks manager <start-tasks>`.
+* At the end of the process the user is leaded to the authentication page.
+
+* Login to Phraseanet with the account set previously.
+
+* In Phraseanet Admin, click on **Search engine parameters** item
+
+  .. image:: ../images/Admin_Install_Set_ES.jpg
+    :align: center
+
+* **Adjust Elasticsearch setting** according to context.
+
+* Create Elasticsearch index using the dedicated button.
+
+:ref:`Starting tasks manager <start-tasks>`.. is now required.
 
 .. _start-tasks:
 
