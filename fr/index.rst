@@ -63,7 +63,7 @@ Besoin d'aide ?
 
 `Alchemy`_, l'éditeur de Phraseanet commercialise un ensemble de prestations et
 de services autour de la solution *Phraseanet*. Consulter
-`ces offres <http://alchemy.fr/spip.php?page=rubrique&id_rubrique=8>`_
+`ces offres <http://www.alchemy.fr/fr/rubrique/accompagnements/>`_
 sur le site éditeur.
 
 L'équipe de Phraseanet consacre une partie de son temps à l'animation de
