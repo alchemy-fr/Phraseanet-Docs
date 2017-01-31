@@ -38,6 +38,7 @@ Le **ET** (AND) par défaut demeure. L'espace équivaut à un ET.
     Chien ET Chat
     Dogs AND Cats
 
+
 L'opérateur de disjonction *OU*
 *******************************
 
@@ -52,6 +53,7 @@ fois.
     Chien OU Chat
     Dogs OR Cats
 
+
 L'opérateur de négation *SAUF*
 ******************************
 
@@ -61,6 +63,7 @@ Il permet d'exclure des termes de la recherche.
 
     Hiver SAUF Neige
     Winter EXCEPT Snow
+
 
 Les opérateurs ordinaux **TOUT** et **DERNIERS**
 ------------------------------------------------
@@ -75,6 +78,7 @@ vide).
 
     Pour remplacer une recherche DERNIERS / LAST, utiliser des recherche sur
     :ref:`les dates d'archivage de documents ou de modification de notices <Recherches-sur-dates-d-archivage-et-de-mise-a-jour>`.
+
 
 Les opérateurs de substitution
 ------------------------------
@@ -122,6 +126,7 @@ documentaire :
     TitreEn: Limelight (identique à field.TitreEn: Limelight)
     TitreEn: Rambo (identique à field.TitreEn: Rambo)
 
+
 Le moteur effectue des césures automatique sur les espaces et caractères vides.
 Le terme recherché est le premier terme compris entre l'opérateur saisi et
 l'espace suivant.
@@ -136,11 +141,13 @@ Exemple :
     TitreFr: "Les feux de la rampe"
     TitreFr: "Rambo 2"
 
+
 .. note::
 
     Dans les recherches avec les deux points, des analyseurs de langues intégrés
     au moteur de recherche sont mis en oeuvre pour de maximiser les résultats
     de réponse.
+
 
 Le champ est
 ************
@@ -156,10 +163,12 @@ Exemples :
     TitreFr= Rio
     TitreFr= "Et Dieu... créa la Femme"
 
+
 .. note::
 
     Ce type de recherche ne met en oeuvre aucun traitement de langue ou de
     syntaxe.
+
 
 Rechercher une date
 *******************
@@ -175,6 +184,7 @@ Exemples pour l'interrogation d'un champ nommé Date :
     Date = 2016/01/01
     Date > 2015/07/01
     Date >= 2015/12/31
+
 
 .. _Recherches-sur-dates-d-archivage-et-de-mise-a-jour:
 
@@ -204,6 +214,7 @@ Exemples de recherche :
     created_on= 2015 pour les enregistrements créés en 2015 (> ou < ne
     fonctionnent pas sur ce critère d'interrogation)
 
+
 .. note::
 
     Bien que ces interrogations portent sur des dates, les opérateurs de
@@ -211,6 +222,7 @@ Exemples de recherche :
     Pour effectuer ce genre de recherche, déclarer des champs de date d'ajout /
     date d'édition dans la structure documentaire de la base avec les sources
     de métadonnées Phraseanet Tf-Archivedate et Tf-Editdate.
+
 
 Rechercher au moyen du thésaurus
 --------------------------------
@@ -229,6 +241,7 @@ Exemples :
     [Aéronautique]
     [Cinéma français]
 
+
 Recherche sur les status
 ------------------------
 
@@ -236,13 +249,12 @@ La recherche sur les status peut s'effectuer dans le formulaire de recherche
 avec l'espace de nom *flag* et le nom du status.
 L'état du status peut être *true* ou *false*.
 
-Exemple :
+Exemple, pour l'état d'un status média renseigné baissé :
 
 .. code::
 
     flag.media-renseigné:false
 
-    (pour l'état d'un status média renseigné baissé)
 
 Recherche sur des champs techniques
 -----------------------------------
@@ -432,6 +444,7 @@ Exemple :
 .. code::
 
     database:"Base Parade Test"
+
 
 **Important** : Respecter l'intitulé exact et la casse de l'alias donné à
 la base.
