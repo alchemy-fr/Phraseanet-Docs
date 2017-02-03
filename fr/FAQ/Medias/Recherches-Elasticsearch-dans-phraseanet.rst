@@ -77,7 +77,7 @@ vide).
 .. note::
 
     Pour remplacer une recherche DERNIERS / LAST, utiliser des recherche sur
-    :ref:`les dates d'archivage de documents ou de modification de notices <Recherches-sur-dates-d-archivage-et-de-mise-a-jour>`.
+    les dates d'archivage de documents ou de modification de notices.
 
 
 Les opérateurs de substitution
