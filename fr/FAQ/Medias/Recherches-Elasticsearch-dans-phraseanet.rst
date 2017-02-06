@@ -33,7 +33,7 @@ L'opérateur de conjonction *ET*
 
 Le **ET** (AND) par défaut demeure. L'espace équivaut à un ET.
 
-.. code::
+.. code-block::
 
     Chien ET Chat
     Dogs AND Cats
@@ -48,7 +48,7 @@ Ainsi, pour une recherche **mer OU montagne** les fiches descriptives des média
 affichées contiennent soit le mot mer, soit le mot montagne, soit les deux à la
 fois.
 
-.. code::
+.. code-block::
 
     Chien OU Chat
     Dogs OR Cats
@@ -59,7 +59,7 @@ L'opérateur de négation *SAUF*
 
 Il permet d'exclure des termes de la recherche.
 
-.. code::
+.. code-block::
 
     Hiver SAUF Neige
     Winter EXCEPT Snow
@@ -74,7 +74,7 @@ Les opérateurs TOUT (ALL) et DERNIERS (LAST) n'existent pas avec Elasticsearch.
 recherche vide (cliquer sur le bouton Rechercher avec le champs de recherche
 vide).
 
-.. note::
+.. code-block::
 
     Pour remplacer une recherche DERNIERS / LAST, utiliser des recherche sur
     les dates d'archivage de documents ou de modification de notices.
@@ -121,7 +121,7 @@ Rechercher avec les deux points (:)
 Exemple pour une recherche dans un champ nommé TitreEn dans le structure
 documentaire :
 
-.. code::
+.. code-block::
 
     TitreEn: Limelight (identique à field.TitreEn: Limelight)
     TitreEn: Rambo (identique à field.TitreEn: Rambo)
@@ -136,13 +136,13 @@ entourer l'expression recherchée de guillemets.
 
 Exemple :
 
-.. code::
+.. code-block::
 
     TitreFr: "Les feux de la rampe"
     TitreFr: "Rambo 2"
 
 
-.. note::
+.. code-block::
 
     Dans les recherches avec les deux points, des analyseurs de langues intégrés
     au moteur de recherche sont mis en oeuvre pour de maximiser les résultats
@@ -157,7 +157,7 @@ Utiliser l'opérateur = (égal) pour rechercher des valeurs exactes et stricte
 
 Exemples :
 
-.. code::
+.. code-block::
 
     TitreEn= Limelight
     TitreFr= Rio
@@ -178,7 +178,7 @@ ou de comparaison sur le champ donné.
 
 Exemples pour l'interrogation d'un champ nommé Date :
 
-.. code::
+.. code-block::
 
     Date < 2016/01/01
     Date = 2016/01/01
@@ -204,7 +204,7 @@ notice de l'asset.
 
 Exemples de recherche :
 
-.. code::
+.. code-block::
 
     created_on> 2016/04/18 pour les enregistrements créé après le 18 avril 2016
     updated_on< 2016/03/18 pour les enregistrements créé avant le 03 mars 2016
@@ -236,7 +236,7 @@ formulaire de recherche d'un terme ou d'une expression entre crochets.
 
 Exemples :
 
-.. code::
+.. code-block::
 
     [Aéronautique]
     [Cinéma français]
@@ -251,7 +251,7 @@ L'état du status peut être *true* ou *false*.
 
 Exemple, pour l'état d'un status média renseigné baissé :
 
-.. code::
+.. code-block::
 
     flag.media-renseigné:false
 
@@ -423,7 +423,7 @@ La syntaxe est : recordid: (le numéro d'enregistrement)
 Exemple pour afficher le document dont le numéro d'enregistrement unique dans
 la base est 804.
 
-.. code::
+.. code-block::
 
     recordid: 804
 
@@ -441,7 +441,7 @@ Pour la recherche d'enregistrement appartenant à une base, utiliser la syntaxe
 
 Exemple :
 
-.. code::
+.. code-block::
 
     database:"Base Parade Test"
 
