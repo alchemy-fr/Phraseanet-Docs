@@ -30,7 +30,7 @@ Conjunction operator *AND*
 The **AND** (ET in french) is used by default between words in queries. Using a
 space is similar to an **AND**.
 
-.. code-block::
+.. code-block:: none
 
     Dogs AND Cats
     Dogs Cats
@@ -41,7 +41,7 @@ Disjunction operator *OR*
 
 It allows to alternately search for multiple terms in Records notes.
 
-.. code-block::
+.. code-block:: none
 
     Dogs OR Cats
     Chien OU Chat
@@ -54,7 +54,7 @@ Negation operator *EXCEPT*
 
 It allows to exclude search terms.
 
-.. code-block::
+.. code-block:: none
 
     Winter EXCEPT Snow
     Hiver SAUF Neige
@@ -113,7 +113,7 @@ Search with the colon caracter (:)
 
 Example for searching in a field named Title in the databox structure:
 
-.. code-block::
+.. code-block:: none
 
     Title: Limelight (similar to field.Title: Limelight)
     Title: Rambo (similar to field.Title: Rambo)
@@ -126,7 +126,7 @@ searched phrase with quotes.
 
 Example :
 
-.. code-block::
+.. code-block:: none
 
     Title: "For Whom the Bell Tolls"
     Title: "Annie Hall"
@@ -144,7 +144,7 @@ Operator = (equal) can be used to search for exact match value in a field
 
 Examples :
 
-.. code-block::
+.. code-block:: none
 
     Title= Limelight
     Title= Rio
@@ -163,7 +163,7 @@ comparison operators for a given field.
 
 Examples for a query in a field named Date :
 
-.. code-block::
+.. code-block:: none
 
     Date < "2016/01/01" (before 2016/01/01)
     Date = "2016/01/01" (is 2016/01/01)
@@ -188,7 +188,7 @@ document in a databox or the creation date of a Phraseanet story.
 
 Examples:
 
-.. code-block::
+.. code-block:: none
 
     created_on> 2016/04/18     (for records created after 2016/04/18)
     updated_on< 2016/03/18     (for records updated before 2016/03/18)
@@ -208,7 +208,7 @@ form of a term or phrase into brackets.
 
 Examples:
 
-.. code-block::
+.. code-block:: none
 
     [Aerospace]
     [Hong Kong cinema]
@@ -222,7 +222,7 @@ The state of the status can be *true* or *false*.
 
 Example for a status named Checked:
 
-.. code-block::
+.. code-block:: none
 
     flag.Checked:true (to match records with the Checked status raised)
 
@@ -384,7 +384,7 @@ Syntax is: recordid: the_record_id
 
 Example, to display the record unique number id 804 in a database:
 
-.. code-block::
+.. code-block:: none
 
     recordid: 804
 
@@ -401,7 +401,7 @@ To search records belonging to a database, use the syntax
 
 Example:
 
-.. code-block::
+.. code-block:: none
 
     database:"Parade Test Database"
 
