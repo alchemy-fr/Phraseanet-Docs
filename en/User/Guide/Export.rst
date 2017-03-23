@@ -26,7 +26,7 @@ subviews attributes. Download can consist of:
 
 * the original document
 * subviews
-* captions notes in `XML`_ or `YAML`_
+* captions notes in `XML`_ or TXT
 
 **The size of the elements to export are displayed next to each formats.**
 
@@ -159,4 +159,3 @@ Print the PDF document or save it on the computer's hard disk.
     :align: center
 
 .. _XML: https://wikipedia.org/wiki/Xml
-.. _YAML: https://wikipedia.org/wiki/Yaml

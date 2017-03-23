@@ -26,7 +26,7 @@ les attributs des sous-définitions :
 
 * le document original
 * les sous-définitions téléchargeables des documents
-* les notices au format `XML`_ ou `YAML`_
+* les notices au format `XML`_ ou TXT
 
 **Près de chaque format figurent les poids respectifs de l'ensemble des éléments
 à exporter.**
@@ -169,4 +169,3 @@ Imprimer le fichier PDF ou l'enregistrer sur le disque dur du poste de travail.
     :align: center
 
 .. _XML: https://wikipedia.org/wiki/Xml
-.. _YAML: https://wikipedia.org/wiki/Yaml
