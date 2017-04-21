@@ -173,16 +173,17 @@ Outils. Choisir un des onglets proposés :
 * **Régénération de sous-définitions** : pour recréer les vignettes et
   sous-définitions à partir des documents originaux des enregistrements
   sélectionnés
-* **Outils vidéos** : Disponible si et seulement si un unique média sélectionné
-  est un document de type vidéo, l'onglet propose les outils permettant le
-  choix d'une vignette de présentation personnalisée.
-* **Rotation** : permet des rotations des vignettes, des sous-définitions et des
-  documents originaux pour les médias sélectionnés, lorsque cela est possible
-* **Substitution** (activé selon paramétrage) : Permet de remplacer le document
-  original par un autre. Une case à cocher permet de choisir si la vignette et
-  l'image de choix doivent être reconstruites
-* **Substitution des sous-défs** (activé selon paramétrage) : pour remplacer la
-  vignette par un autre visuel
+* **Outils vidéos** : Disponible si et seulement si l'unique média sélectionné
+  est de type vidéo, l'onglet propose les outils permettant le choix d'une
+  vignette de présentation personnalisée.
+* **Rotation** : permet des rotations des vignettes, des sous-définitions et
+  des documents originaux pour les médias sélectionnés, lorsque cela est 
+  possible.
+* **Substitution** : Permet de remplacer le document original par un autre. Une
+  case à cocher permet de choisir si la vignette et l'image de choix doivent
+  être reconstruites
+* **Substitution des sous-défs** : pour remplacer la vignette par un autre
+  visuel
 * **Métadonnées** : pour afficher l'ensemble des informations de métadonnées
   lues par l'utilitaire **Exiftool** dans le média original du document
   sélectionné (cet onglet n'est disponible que si un seul document est
