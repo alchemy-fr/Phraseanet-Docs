@@ -23,8 +23,11 @@ used for this.
 PHP
 ---
 
-* Phraseanet requires PHP version 5.5.0 (or greater) with the following
-  extensions:
+* Phraseanet requires PHP version 5.5.x (greater than 5.5.0) or 5.6.x.
+
+  **Please note**: PHP versions 7.0.0 or greater are not suitable at the moment.
+
+  **Following extensions must be enable**:
 
     * Dom
     * exif
