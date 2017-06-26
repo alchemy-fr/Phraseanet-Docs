@@ -40,7 +40,6 @@ Parameters
  sort          string                Sort the results of the request. Available values are “relevance” and “created_on” and “updated_on” or any other documentary field part of the requested Databox
  record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”
  search_type   int         0         A toggle to switch records search or stories search. Available values are 0 for records and 1 for stories
- stemme        int         1         This feature is currently only available with SphinxSearch Engine. Enable stemmed search
  date_field    string                Select a field to search with datemin and datemax filters
  date_min      string                The minimum date as string formated as follow 'Y/m/d' (you need to set a datefield value to use this feature)
  date_max      string                The maximum date formated as follow 'Y/m/d' (you need to set a datefield value to use this feature)
