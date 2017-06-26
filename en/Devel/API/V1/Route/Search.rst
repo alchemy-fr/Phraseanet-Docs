@@ -36,8 +36,8 @@ Parameters
  bases         array                 An array of base_ids ; If an empty array or no value are provided, the query is done on all collections
  offset_start  int         0         The offset of the first record to return. The offset of the initial record is 0 (not 1).
  per_page      int         10        The maximum number of records to return.
- ord           string                This feature is currently only available with SphinxSearch Engine. Available values are “asc” and “desc”
- sort          string                This feature is currently only available with SphinxSearch Engine. Available values are “relevance” and “created_on” and “random”
+ ord           string                Order results of the request. Available values are “asc” and “desc”
+ sort          string                Sort the results of the request. Available values are “relevance” and “created_on” and “updated_on” or any other documentary field part of the requested Databox
  record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”
  search_type   int         0         A toggle to switch records search or stories search. Available values are 0 for records and 1 for stories
  stemme        int         1         This feature is currently only available with SphinxSearch Engine. Enable stemmed search
@@ -56,7 +56,7 @@ Response Fields
 ================== ================================
 offset_start        The start offset
 per_page            The number of results per page
-available_results   The amount of results available through this query. This number may be lower than available results ; SphinxSearch Engine has a limited number of results which can be retrieved and is, by default 1000. However, this limit can be configured
+available_results   The amount of results available through this query. This number may be lower than available results
 total_results       The amount of results corresponding to the query
 error               A string with an error from the searchengine
 warning             A string with a warning from the searchengine

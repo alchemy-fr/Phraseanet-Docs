@@ -36,8 +36,8 @@ Paramètres
  bases         tableau               Un tableau d'identifiants de collections. Si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections disponibles.
  offset_start  entier         1      Le décalage du premier enregistrement à retourner. Le décalage de l'enregistrement initial est 0 (pas 1).
  per_page      entier         10     Le nombre maximum d'enregistrements à retourner.
- ord           chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "asc" et "desc"
- sort          chaîne                Cette option n'est disponible qu'avec le moteur de recherche "Sphinx". Les valeurs possibles sont "relevance","created_on" et "random".
+ ord           chaîne                Ordonne les résultats d'une recherche. Les valeurs possibles sont "asc" et "desc"
+ sort          chaîne                Trie les résultats d'une recherche. Les valeurs possibles sont "relevance", "created_on" et "updated_on" ou tout autre champ déclaré dans la structure documentaire de la Databox interrogée.
  record_type   chaîne                Le type de document recherché. Les valeurs disponibles sont "audio", "video", "image", "document" et "flash"
  search_type   entier         0      "0" pour rechercher des documents et "1" pour rechercher des reportages
  date_field    chaîne                Sélectionner un champ pour rechercher avec les filtres "date_min" et "date_max"
@@ -55,7 +55,7 @@ Attribut de la réponse
 ================== ================================
 offset_start        Le numéro du premier document recherché
 per_page            Le nombre de résultats par page
-available_results   La quantité de résultats disponibles dans la requête. Ce nombre peut être inférieur à celui des résultats disponibles. Le moteur de recherche "Sphinx" limite par défaut le nombre de résultats à 1000. Toutefois, cette limite est paramétrable.
+available_results   La quantité de résultats disponibles dans la requête.
 total_results       Le nombre total des résultats disponibles
 error               Erreur du moteur de recherche sous la forme d'une chaîne si il y a
 warning             Avertissement du moteur de recherche sous la forme d'une chaîne si il y a
