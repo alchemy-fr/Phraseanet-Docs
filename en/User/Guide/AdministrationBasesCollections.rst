@@ -90,7 +90,7 @@ properties:
 Declaring a facet for a field
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To declare a facet for a field:
+To declare a :term:`facet <facet>` for a field:
 
 * Select one field on the left side of the form
 * Set a number of values in the fields *Aggregation* of the form setting

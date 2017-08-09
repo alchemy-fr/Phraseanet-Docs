@@ -25,9 +25,9 @@ L'espace de travail de Production se partage en quatre zones :
 * **1. Le formulaire de recherche** permet de rechercher des médias et des
   reportages
 * **2. La zone d'affichage** présente le contenu d'une recherche
-* **3. La zone de travail** rassemble les onglets de facettes, de paniers et de
-  reportages, de thésaurus et de plugins, s'il y en a d'installés. Cette zone
-  est rétractable, escamotable.
+* **3. La zone de travail** rassemble les onglets des :term:`facettes <Facette>`,
+  de thésaurus, des paniers et de reportages, et des plugins, s'il y en a
+  d'installés. Cette zone est rétractable, escamotable.
 * **4. La palette d'Actions** permet d'effectuer des actions sur les
   enregistrements et d'accéder aux **Préférences d'affichage**. Se référer à
   la page dédiée à la :doc:`Palette des Actions <Actions>`.

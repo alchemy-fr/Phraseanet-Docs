@@ -9,15 +9,16 @@ Moteur de recherche
     * la rapidité
     * la scalabilité
 
-    Basé sur Apache Lucene, il permet, entre autre, la mise en oeuvre des
-    facettes Phraseanet.
-    Il s'installe sur le serveur hote de l'application ou sur un serveur
+    Basé sur Apache Lucene, il permet, entre autre, la mise en oeuvre de
+    recherches à :term:`facettes <Facette>` dans Phraseanet.
+    Il s'installe sur le serveur hôte de l'application ou sur un serveur
     distant.
 
 .. note::
 
     Le paramétrage du moteur de recherche se fait à l'installation de
-    Phraseanet. Par la suite les paramètres ne devraient pas être réajustés.
+    Phraseanet. Par la suite les paramètres ne devraient pas nécessiter de
+    réajustements.
 
 .. _Elasticsearch:
 
