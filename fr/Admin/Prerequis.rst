@@ -63,7 +63,7 @@ Elasticsearch
 Phraseanet 4.0 s'appuie sur le moteur Elasticsearch. Il est obligatoire
 de l'utiliser en respectant les spécifications suivantes :
 
-    * Version 2.3 (obligatoire)
+    * Version 2.1, 2.2, 2.3 ou 2.4 (obligatoire)
     * Plugins `Analysis-icu`_ correspondant à la version Elasticsearch utilisée
 
 

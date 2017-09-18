@@ -173,6 +173,14 @@ Glossary
         users having editing rights on records. A business field is searchable
         only by a user that has editing rights.
 
+    Facet
+        In Information Sciences, category of classification and indexation
+        based on a single characteristic, a single property or attribute.
+
+        .. seealso::
+
+            https://en.wikipedia.org/wiki/Faceted_search
+
     Dublin Core
         Standardised schema ISO 15836 for describing documentary resources.
 

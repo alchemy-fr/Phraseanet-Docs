@@ -197,6 +197,14 @@ Glossaire
         Un business field n'est "recherchable" que par un utilisateur disposant
         des droits d'édition.
 
+    Facette
+        En Sciences de l'Information, catégorie de classement et d'indexation
+        reposant sur une seule caractéristique, une seule propriété.
+
+        .. seealso::
+
+            https://fr.wikipedia.org/wiki/Recherche_%C3%A0_facettes
+
     Dublin Core
         Schéma normalisé ISO 15836 destiné à la description de ressources
         documentaires.

@@ -61,7 +61,7 @@ Elasticsearch
 Phraseanet 4.0 builds on the ElasticSearch engine with the following
 specifications:
 
-    * Elasticsearch version 2.3 (mandatory)
+    * Elasticsearch version 2.1, 2.2, 2.3 or 2.4 (mandatory)
     * `Analysis-icu`_ plugin corresponding to the used Elasticsearcher engine
       release
 
