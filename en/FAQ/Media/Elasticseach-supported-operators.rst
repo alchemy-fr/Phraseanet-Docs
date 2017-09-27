@@ -393,11 +393,28 @@ Example, to display the record unique number id 804 in a database:
 
     Comparison operators =, < ou > are not implemented.
 
+
+Finding records for a collection
+--------------------------------
+
+To search records belonging to a phraseanet collection, use the syntax
+*collection:"the given name for the collection"*.
+
+Example:
+
+.. code-block:: none
+
+    collection:"Alchemy support"
+
+**Important** : Respect case sensitivity and the exact name given to the
+phraseanet collection.
+
+
 Finding records for a base
 --------------------------
 
 To search records belonging to a database, use the syntax
-*database:"the base alias"*
+*database:"the base alias"*.
 
 Example:
 
