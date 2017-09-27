@@ -433,11 +433,27 @@ la base est 804.
     Les opérateurs de comparaison =, < ou > ne sont pas implémentés.
 
 
+Recherche d'enregistrements pour une collection
+-----------------------------------------------
+
+Pour la recherche d'enregistrements appartenant à une collection, utiliser la
+syntaxe *collection:"le nom de la collection"*.
+
+Exemple :
+
+.. code-block:: none
+
+    collection:"Support Alchemy"
+
+
+**Important** : Respecter l'intitulé exact et la casse du nom donné à la
+collection.
+
 Recherche d'enregistrements pour une base
 -----------------------------------------
 
-Pour la recherche d'enregistrement appartenant à une base, utiliser la syntaxe
-*database:"l'alias de la base"*
+Pour la recherche d'enregistrements appartenant à une base, utiliser la syntaxe
+*database:"l'alias de la base"*.
 
 Exemple :
 
