@@ -176,7 +176,7 @@ Multiple selection
 **To select a continuous set of documents**:
 
 * Click on the first thumbnail of the series
-* Press and maintain the Shift key of the keyboard
+* Press and maintain the **Shift** key of the keyboard
 * Click on the last thumbnail of the series of records to select
 
 All the thumbnails between these two thumbnails are selected.
@@ -186,7 +186,8 @@ All the thumbnails between these two thumbnails are selected.
 
 **To select several thumbnails in batch**:
 
-* Press on the "Alt" key of the keyboard
+* Press on the **Ctrl** key of the keyboard for Windows PCs or **Cmd** key for
+  MacOS computers
 * Click consecutively on the thumbnails to select.
 
 .. image:: ../../images/Affichage-selection3.jpg
@@ -195,7 +196,8 @@ All the thumbnails between these two thumbnails are selected.
 **To select several thumbnails on several results pages**:
 
 * Select the thumbnails on the first page
-* Click on the next page while pressing the "Alt" key of the keyboard
+* Click on the next page while pressing the **Ctrl** key of the keyboard for
+  Windows PCs or **Cmd** key for MacOS computers
 * Select thumbnails on the new results page
 * Repeat the operation on other pages is necessary
 
