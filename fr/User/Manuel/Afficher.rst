@@ -176,7 +176,7 @@ Sélection multiple
 **Pour sélectionner des enregistrements contigus**...
 
 * Cliquer sur la première vignette de la série
-* Enfoncer et maintenir la touche Maj (Shift) du clavier
+* Enfoncer et maintenir la touche **Maj** (Shift) du clavier
 * Cliquer sur la dernière vignette des enregistrements à sélectionner
 
 Tous les enregistrements compris dans l'intervalle sont sélectionnés.
@@ -186,7 +186,8 @@ Tous les enregistrements compris dans l'intervalle sont sélectionnés.
 
 **Pour sélectionner des enregistrements non contigus**...
 
-* Appuyer sur la touche Alt du clavier
+* Appuyer sur la touche clavier **Ctrl** pour les PC sous Windows ou **Cmd**
+  pour les ordinateurs sous MacOS
 * Cliquer successivement sur les vignettes des enregistrements à sélectionner
 
 .. image:: ../../images/Affichage-selection3.jpg
@@ -196,7 +197,8 @@ Tous les enregistrements compris dans l'intervalle sont sélectionnés.
 
 * Sélectionner les vignettes sur une première page
 * Cliquer sur la page à atteindre
-* Maintenir enfoncée la touche “Alt” du clavier
+* Maintenir enfoncée la touche clavier **Ctrl** pour les PC sous Windows ou
+  **Cmd** pour les ordinateurs sous MacOS
 * Sélectionner les vignettes de la nouvelle page de résultats
 * Répéter l'opération sur d'autres pages si nécessaire
 
