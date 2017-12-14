@@ -1,21 +1,20 @@
-Créez des applications en utilisant l'API Phraseanet
+Créer des applications en utilisant l'API Phraseanet
 ====================================================
 
 Phraseanet dispose d'une API publique, permettant aux développeurs d'intégrer
-les documents (vidéos, photos etc ...) et fonctionnalités Phraseanet sur une
-application tierce.
+les documents (vidéos, photos etc ...) et fonctionnalités Phraseanet sur des
+applications tierces.
 
 * site internet
 * application mobile
 * application de bureau
 
-Voici la marche à suivre :
+Pour commencer :
 
 * Lire la :doc:`documentation de l'API <index>` et bénéficier de l'aide
   de :doc:`l'équipe Phraseanet et de la communauté <Forums>`.
 
-* Pour pouvoir utiliser les fonctionnalités de l'API Phraseanet, Il faut
-  enregistrer une nouvelle application et obtenir une clé d'API.
+* Enregistrer une nouvelle application et obtenir une clé d'API.
 
 Enregistrer une application auprés de l'API phraseanet
 ------------------------------------------------------
@@ -24,7 +23,7 @@ Cliquer sur le login dans le :doc:`menu <../User/Manuel/General>` Phraseanet.
 
 Dans la rubrique *Phraseanet mon compte*
 
-Cliquer sur l'onglet *développeur*
+Cliquer sur l'onglet *Développeur*
 
 .. image:: ../images/MonCompteDeveloppeur.png
     :align: center
@@ -78,26 +77,24 @@ application ; la page des paramètres de l'application s'affiche.
 
 .. warning::
 
-    Eviter ce type d'authentification il est conseillé de l'utiliser
-    lorsque le propriétaire de la ressource à une grande relation de
-    confiance avec le client, comme le système d'exploitation ou un dispositif
-    hautement privilégiée avec Phraseanet.
+    N'utiliser le grant_type password que si et seulement si le propriétaire de
+    la ressource à une grande relation de confiance avec l'application cliente.
 
-* Le jeton d'accés développeur est un jeton qui identifie le propriétaire de
+* Le jeton d'accés développeur est le token qui identifie le propriétaire de
   l'application sur l'API phraseanet.
 
 .. note::
 
     Le jeton développeur peut être utilisé lors du développement de
-    l'applicatio ou bien pour effectuer des requêtes sur l'API par
+    l'application ou bien pour effectuer des requêtes sur l'API par
     l'intermediaire d'un processus automatisé qui ne nécessite pas
     d'authentification.
 
 .. seealso::
 
     Phraseanet s'appuie sur le protocole d'authentification oAuth2.0.
-    Afin de mieux appréhender le processus de création et
-    d'authentification des applications clientes à l'API Phraseanet nous
-    invitons les développeurs à lire la RFC du protocole `Oauth2`_.
+    Pour une meilleure connaissance des processus de création et
+    d'authentification des applications clientes à l'API Phraseanet, consulter
+    la RFC du protocole `Oauth2`_.
 
 .. _Oauth2: http://tools.ietf.org/html/draft-ietf-oauth-v2
