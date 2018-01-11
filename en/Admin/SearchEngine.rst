@@ -25,18 +25,22 @@ Indexing runs in background. It monitors bases to index
 (Appearance, disappearance or alteration of documents) and maintains up to date
 search indexes.
 
-It is necessary to have ElasticSearch 1.7 or greater to use it in Phraseanet.
-
 Configuration in Phraseanet
 ***************************
+
+Elasticsearch is a prerequisite and Phraseanet installers offer
+to fill hostname and port to establish the communication.
+
+These parameters can be edited after installation by the GUI or the
+configuration file.
 
 Set by editing Search engine settings form
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As Phraseanet administrator, go to **Admin** / **Search engine settings** item.
 
-Fill the address, port, and name of the desired ElasticSearch index in the
-settings form.
+In the **Elasticsearch configuration** tab, fill the address, port, and name of
+the search index in the settings form.
 
 Set by editing the configuration file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
