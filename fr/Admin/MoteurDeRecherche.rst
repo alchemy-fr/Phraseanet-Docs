@@ -38,13 +38,15 @@ L'indexation fonctionne en arrière plan. Elle surveille les bases à indexer
 (apparition, modification ou disparition de documents) et maintient
 des index de recherche à jour.
 
-Il est nécessaire de disposer d'une version d'Elasticsearch 1.7 ou supérieure
-pour utiliser le moteur Elasticsearch dans Phraseanet.
-
 Configuration dans Phraseanet
 *****************************
 
-Après avoir installé Elasticsearch, Phraseanet doit être configuré.
+Elasticsearch est un prérequis et les installeurs Phraseanet proposent de
+renseigner le nom d'hôte (Host) ainsi que le port pour établir la
+communication.
+
+Ces paramètres peuvent être édités après installation par l'interface graphique
+ou l'édition du fichier de configuration.
 
 Configuration avec l'interface graphique
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,8 +54,8 @@ Configuration avec l'interface graphique
 Comme administrateur Phraseanet, Aller à Admin / Paramètres du moteur de
 recherche.
 
-Renseigner l'adresse, le port et le nom d'index désiré de
-Elasticsearch dans le formulaire de paramétrage.
+Dans l'onglet **Configuration Elasticsearch**, renseigner l'adresse, le port et
+le nom d'index désiré dans le formulaire de paramétrage.
 
 Configurer en éditant le fichier de configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,7 +72,7 @@ Configurer en éditant le fichier de configuration
             index: phraseanet
 
 Une fois cette configuration effectuée, executer dans la console les commandes
-suivantes pour valider la configuration, créer l'index Phraseanet.
+suivantes pour valider la configuration et créer l'index de recherche.
 
 .. code-block:: none
 
