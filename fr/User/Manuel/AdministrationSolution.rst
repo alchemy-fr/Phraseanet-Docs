@@ -54,12 +54,36 @@ Le jeu de formulaires permet :
 Paramétrage du moteur de recherche
 ----------------------------------
 
-Réservée aux administrateurs Phraseanet, cette rubrique permet de configurer le
+Réservée aux administrateurs Phraseanet, cette rubrique permet :
+
+* Le paramétrage du moteur Elasticsearch utilisé par l'instance
+* Le paramétrage de facettes issues d'informations logiques ou techniques
+
+Paramétrage du moteur de recherche
+**********************************
+
+L'onglet **Configuration Elasticsearch** permet de configurer le
 moteur de recherche utilisé par l'instance au moyen d'une interface graphique.
 
 .. seealso::
 
     :doc:`Se reporter à la page consacrée aux moteurs de recherche dans la documentation Administrateur <../../Admin/MoteurDeRecherche>`.
+
+Réglage des Agrégats
+********************
+
+L'onglet **Réglage des Agrégats** présente un formulaire pour le déploiement
+de facettes :
+
+.. image:: ../../images/Administration-agregats.jpg
+    :align: center
+
+* Les **facettes logiques** reposent sur la répartition des enregistrements
+  dans les bases et collections de l'instance
+
+* Les **Facettes techniques** se composent de caractéristiques techniques
+  extraites des documents archivés dans l'instance (type de documents,
+  informations de prise de vue, codecs audiovidéo, ...*etc*.)
 
 Utilisateurs connectés
 ----------------------
