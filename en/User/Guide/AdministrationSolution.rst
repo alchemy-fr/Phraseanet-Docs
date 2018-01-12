@@ -54,12 +54,35 @@ Setup have a set of forms allowing to :
 Search engine settings
 ----------------------
 
-**Accessible only by Phraseanet administrators**, this section allows to
-configure the search engine used by the instance using a graphical interface.
+**Accessible only by Phraseanet administrators**, this section allows :
+
+* The setting of the Elasticsearch engine used by the instance
+* The setting of facets resulting from logical or technical information
+
+Elasticsearch configuration
+***************************
+
+The **Elasticsearch configuration** tab allows to configure the
+search engine parameters used by the instance through a graphical interface.
 
 .. seealso::
 
     :doc:`Refer to the page dedicated to the engines configuration in the Administrator documentation<../../Admin/SearchEngine>`.
+
+Aggregates setting
+******************
+
+The **Aggregates Setup** tab presents a form for deployment of facets
+
+.. image:: ../../images/Administration-agregats.jpg
+    :align: center
+
+* **Logical facets** are based on the distribution of the records in databases
+  and collections of the instance
+
+* **Technical facets** consist of technical characteristics extracted from
+  the documents archived in the instance (type of documents, shooting
+  information, audio-video codecs,...)
 
 Connected users
 ---------------
