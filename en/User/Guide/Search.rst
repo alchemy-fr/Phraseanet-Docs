@@ -84,18 +84,46 @@ Other options exists using advanced operators.
 Navigating with facets
 ----------------------
 
-The information in documentary fields for a given search can be stored into
-facets. This technique allows the user to access to funds by filtering
-characteristics.
+Information contained in documentary fields or metadata of the
+original documents can be faceted according to the choices of
+parameterization in fields setting or in search engine aggregates.
 
-The contents of each facet is updated as results are refreshed.
+Facets allows the user to navigate through a collection of documents
+filtering the results..
 
-Click on one of the facets in the proposed Facets tab in the workzone to filter
-search results.
+The content of each facet is updated when applying a new search or a new
+filter.
 
-.. note::
+Click on one of the facets proposed on the Facets tab of the work aera to
+filter the results of a search.
 
-    The facets are determined by the setting of the document structure.
+.. image:: ../../images/Recherche-Facette-01.jpg
+    :align: center
+
+The facets can be cumulated:
+
+* With a facet from another faceted documentary field or from another faceted
+  technical characteristic of the document
+* With another facets from the same documentary filed if this one is
+  multivalued
+
+To apply a complementary facet filter to the results of a search, click on
+the desired facets.
+
+.. image:: ../../images/Recherche-Facette-02.jpg
+    :align: center
+
+It is possible to subtract results from a search corresponding to one or
+more facets.
+
+Holding the **Alt** key of keybord, click on the corresponding facet(s)
+filter(s) to subtract displayed results.
+
+.. image:: ../../images/Recherche-Facette-03.jpg
+    :align: center
+
+This action can be applied to criteria contained in a facets or on one
+already applied as a filter.
 
 Search in a specific field
 --------------------------
