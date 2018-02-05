@@ -96,18 +96,47 @@ D'autres possibilités existent au moyen de requêtes avancées.
 Naviguer avec les facettes
 --------------------------
 
-Les informations contenues dans des champs documentaires peuvent être mises en
-facettes. Cette technique permet à l'utilisateur un accès au fonds par
-filtrage des résultats.
+Les informations contenues dans des champs documentaires ou des métadonnées des
+documents originaux peuvent être mises en facettes selon les choix de
+paramétrage de la structure documentaire de la base ou ceux du moteur de
+recherche.
+
+Cette technique permet à l'utilisateur de naviguer dans un fonds documentaire
+par filtrage des résultats.
 
 Le contenu de chaque facette est mis à jour au rafraîchissement des résultats
-d'une recherche.
+d'une recherche ou de l'application d'un filtre.
 
 Cliquer sur l'une des facettes proposées dans l'onglet Facettes de la zone de
 travail pour filtrer les résultats d'une recherche.
 
-Les facettes sont déterminées par le paramétrage de la structure documentaire.
+.. image:: ../../images/Recherche-Facette-01.jpg
+    :align: center
 
+Les facettes peuvent être cumulées :
+
+* Avec un facette issue d'un autre champ documentaire, d'une autre
+  caractéristique technique du document
+* Avec une facette issue d'un même champ documentaire si celui-ci est
+  multivalué
+
+Pour appliquer un filtre de facette complémentaire sur les résultats d'une
+recherche, cliquer sur la et les facettes souhaitées.
+
+.. image:: ../../images/Recherche-Facette-02.jpg
+    :align: center
+
+Il est possible de soustraire des résultats d'une recherche les
+enregistrements correspondants à une ou plusieurs facettes.
+
+En maintenant la touche **Alt**, cliquer sur la ou les facettes correspondantes
+au filtre à soustraire des résultats affichés.
+
+.. image:: ../../images/Recherche-Facette-03.jpg
+    :align: center
+
+Cette action peut être appliquée sur des critères contenus dans une
+facettes ou bien sur une facette déjà appliquées comme filtre.
 
 Recherche dans un champ précis
 ------------------------------

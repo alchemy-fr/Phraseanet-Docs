@@ -41,226 +41,408 @@ Voici un exemple de fichier de configuration commenté
 
 .. code-block:: yaml
 
+    servername: 'http://192.168.1.170/'       # (string)  L'URL à partir de laquelle est accessible Phraseanet
+
+    languages:
+        available:                            # (array)   Un tableau de code de langues actives. Toutes les langues sont activées si le tableau est vide
+            - fr
+            - en
+        default: fr                           # (string)  La langue de l'application par défaut
+
     main:
-        servername: 'http://phrasea.example.com/'  # (string)  L'URL à partir de laquelle sera accessible Phraseanet
+        maintenance: false                    # (boolean) Activation du mode maintenance
 
-        maintenance: false                         # (boolean) Activation du mode maintenance
+        api_require_ssl: false                # (boolean) Force SSL pour les requêtes d'API Phraseanet
 
-        languages: ['fr_FR', 'de_DE']              # (array)   Un tableau de code de langues actives. Toutes les langues sont activées si le tableau est vide
-
-        database:                                  # (array)   Configuration du serveur de base de données
-            host: 'sql-host'                       # (string)  Adresse du serveur de base de données
-            port: 3306                             # (integer) Port du serveur de base de données
-            user: 'sql-user'                       # (string)  Nom d'utilisateur du serveur de base de données
-            password: 'sql-password'               # (string)  Mot de passe du serveur de base de données
-            dbname: ab_phraseanet                  # (string)  Nom de la base de données
-            driver: pdo_mysql                      # (string)  Driver de base de données
-            charset: UTF8                          # (string)  Encodage de la connection au serveur de base de données
-
-        session:                                   # (array)   Réglage de la gestion des sessions
-            type: 'file'                           # (string)  Nom du gestionnaire de sessions
-            options: []                            # (array)   Options du gestionnaire de sessions
-            ttl: 86400                             # (string)  Duree de vie de la session
-
-        database-test:                             # (array)   Configuration pour les tests (développeurs uniquement)
-            driver: pdo_sqlite
-            path: '/tmp/db.sqlite'
+        database:                             # (array)   Configuration du serveur de base de données
+            host: 127.0.0.1
+            port: '3306'
+            user: phraseanet
+            password: phraseanet
+            dbname: ab_alch_phraseavm
+            driver: pdo_mysql
             charset: UTF8
 
-        api-timers: true                           # (boolean) Ajout de timers aux réponses de l'API (développeurs uniquement)
+        database-test:                        # (array)   Configuration pour les tests (développeurs uniquement)
+            driver: pdo_sqlite
+            path: /tmp/db.sqlite
+            charset: UTF8
 
-        cache:                                     # (array)   Configuration du service de cache
-            type: MemcacheCache                    # (string)  Nom de l'adapter du service de cache
-            options:                               # (array)   Options de configuration du service de cache
-                host: localhost                    # (string)  Addresse du serveur de cache
-                port: 11211                        # (integer) Port du serveur de cache
+        cache:                                # (array)   Configuration du service de cache
+            type: MemcacheCache
+            options:
+                host: localhost
+                port: 11211
 
-        opcodecache:                               # (array)   Configuration du service de cache opcode
-            type: ArrayCache                       # (string)  Nom de l'adapter du service de cache
-            options: []                            # (array)   Options de configuration du service de cache
+        opcodecache:                          # (array)   Configuration du service de cache opcode
+            type: ArrayCache
+            options: {  }
 
-        search-engine:                             # (array)   Configuration du service de moteur de recherche
-            type: Alchemy\Phrasea\SearchEngine\Phrasea\PhraseaEngine  # (string) Nom du service de moteur de recherche (FQCN)
-            options: []                            # (array)   Options de configuration du service de moteur de recherche
+        search-engine:                        # (array)   Configuration Elasticsearch
+            type: elasticsearch
+            options:
+                host: 127.0.0.1
+                port: 9200
+                index: phraseanet_86a108b98a5aa92431bf94a42e8d3d3f
+                shards: 3
+                replicas: 0
+                minScore: 2
+                highlight: false
+                maxResultWindow: 500000
+                populate_order: RECORD_ID
+                populate_direction: DESC
+                activeTab: '#elastic-search'  # (string)    Nom de l'onglet actif pour la rubrique Paramètre du moteur de recherche
+                base_aggregate_limit: 10      # (integer)   Paramétrage de la facette base à 10 valeurs
+                collection_aggregate_limit: 10# (integer)   Paramétrage de la facette collections à 10 valeurs
+                doctype_aggregate_limit: 10   # (integer)   Paramétrage de la facette type de documents à 10 valeurs
+                camera_model_aggregate_limit: 0
+                iso_aggregate_limit: 0
+                aperture_aggregate_limit: 0
+                shutterspeed_aggregate_limit: 0
+                flashfired_aggregate_limit: 0
+                framerate_aggregate_limit: 0
+                audiosamplerate_aggregate_limit: 0
+                videocodec_aggregate_limit: 0
+                audiocodec_aggregate_limit: 0
+                orientation_aggregate_limit: 0
+                colorspace_aggregate_limit: 0
+                mimetype_aggregate_limit: 0
+
+        key: 86a108b98a5aa92431bf94a42e8d3d3f # (string)  La clé de l'application
 
         task-manager:
             logger:
-                level: INFO                        # (string)  Le niveau de log minimum
-                max-files: 10                      # (integer) Le nombre maximum de fichiers de log à conserver
-                enabled: true                      # (boolean) Activer les logs dans le système de fichier
+                enabled: true                 # (boolean) Active les logs dans le système de fichier
+                max-files: 10                 # (integer) Le nombre maximum de fichiers de log à conserver
+                level: INFO                   # (string)  Le niveau de log minimum
+            enabled: true
+            status: started
+            options:
+                protocol: tcp
+                host: 127.0.0.1
+                port: 6660
+                linger: 500
 
-    trusted-proxies: []                            # (array)   Configuration des proxies de confiance
+        storage:                              # (array)   Configuration des chemins de stockage
+            cache: /var/www/Phraseanet/cache
+            log: /var/www/Phraseanet/logs
+            download: /var/www/Phraseanet/tmp/download                   # (string)  Le répertoire de stockage des fichiers en téléchargement
+            lazaret: /var/www/Phraseanet/tmp/lazaret                     # (string)  Le répertoire de stockage des fichiers en quarantaine
+            caption: /var/www/Phraseanet/tmp/caption                     # (string)  Le répertoire de stockage des éléments affichés au survol d'un enregistrement
+            subdefs: /var/www/phrasea_datas/                             # (string)  Le répertoire de stockage générique pour les fichiers de sous-définition
 
-    debugger:                                      # (array)   Configuration du debugger (développeurs uniquement)
-        allowed-ips: []                            # (array)   Adresses IP autorisées à acceder au debugger.
+        binaries:                             # (array)   Configuration des executables externes
+            php_binary: /usr/bin/php
+            phraseanet_indexer: /usr/local/bin/phraseanet_indexer
+            swf_extract_binary: /usr/local/bin/swfextract
+            pdf2swf_binary: /usr/local/bin/pdf2swf
+            swf_render_binary: /usr/local/bin/swfrender
+            unoconv_binary: /usr/bin/unoconv
+            ffmpeg_binary: /usr/bin/ffmpeg
+            mp4box_binary: /usr/bin/MP4Box
+            pdftotext_binary: /usr/bin/pdftotext
+            recess_binary: /usr/local/bin/recess
 
-    binaries:                                      # (array)   Configuration des executables externes
-        ghostscript_binary: null                   # (string)  Chemin vers l'executable Ghostscript, null pour autodetecter (gs)
-        php_binary: null                           # (string)  Chemin vers l'executable PHP, null pour autodetecter (php)
-        swf_extract_binary: null                   # (string)  Chemin vers l'executable Pdf2Swf, null pour autodetecter (pdf2swf)
-        pdf2swf_binary: null                       # (string)  Chemin vers l'executable SwfExtract, null pour autodetecter (swfextract)
-        swf_render_binary: null                    # (string)  Chemin vers l'executable SwfRender, null pour autodetecter (swfrender)
-        unoconv_binary: null                       # (string)  Chemin vers l'executable Unoconv, null pour autodetecter (unoconv)
-        ffmpeg_binary: null                        # (string)  Chemin vers l'executable FFMpeg, null pour autodetecter (ffmpeg, avconv)
-        ffprobe_binary: null                       # (string)  Chemin vers l'executable FFProbe, null pour autodetecter (ffprobe, avprobe)
-        mp4box_binary: null                        # (string)  Chemin vers l'executable MP4Box, null pour autodetecter (MP4Box)
-        pdftotext_binary: null                     # (string)  Chemin vers l'executable PdfToText, null pour autodetecter (pdftotext)
-        phraseanet_indexer: null                   # (string)  Chemin vers l'executable Phraseanet Indexer, null pour autodetecter (phraseanet_indexer)
-        ffmpeg_timeout: 3600                       # (integer) Timeout pour FFMpeg
-        ffprobe_timeout: 60                        # (integer) Timeout pour FFProbe
-        gs_timeout: 60                             # (integer) Timeout pour Ghostscript
-        mp4box_timeout: 60                         # (integer) Timeout pour MP4Box
-        swftools_timeout: 60                       # (integer) Timeout pour SwfTools (swfrender, swfextract)
-        unoconv_timeout: 60                        # (integer) Timeout pour Unoconv
+        bridge:                               # (array)   Configuration pour le Bridge Phraseanet (dépréciée)
+            youtube:
+                enabled: false
+                client_id: ''
+                client_secret: ''
+                developer_key: ''
+            flickr:
+                enabled: false
+                client_id: ''
+                client_secret: ''
+            dailymotion:
+                enabled: false
+                client_id: ''
+                client_secret: ''
 
-    border-manager:                                # (array)   Configuration du service douanes
-        enabled: true                              # (boolean) Activation du service de douane
-        extension-mapping:                         # (array)   Un tableau de correspondance extension vers type mime personnalisé
-            mpeg: video/mpeg
-        checkers:                                  # (array)   Liste de points de contrôle
+    trusted-proxies: {  }                     # (array)   Configuration des proxies de confiance
 
-            -                                      # (array)   Verification de doublonnage par somme de côntrole
-                type: Checker\Sha256
+    debugger:
+        allowed-ips: {  }
+
+    border-manager:                           # (array)   Configuration du service douanes Phraseanet
+        enabled: true                         # (boolean) Activation du service de douane
+        checkers:
+            -
+                type: Checker\Sha256          # (array)   Verification de doublonnage par somme de contrôle
                 enabled: true
             -
-                type: Checker\UUID                 # (array)   Verification de doublonnage par métadonnée UUID
+                type: Checker\UUID            # (array)   Verification de doublonnage par métadonnée UUID
                 enabled: true
             -
-                type: Checker\Colorspace           # (array)   Verification de colorspace
+                type: Checker\Colorspace      # (array)   Verification de l'espace colorimétrique par le profil ICC
                 enabled: false
                 options:
-                    colorspaces: [cmyk, grayscale, rgb]
+                    colorspaces:
+                        - cmyk
+                        - grayscale
+                        - rgb
             -
-                type: Checker\Dimension            # (array)   Verification de dimensions
+                type: Checker\Dimension       # (array)   Verification pour des dimensions minimales requises
                 enabled: false
                 options:
                     width: 80
                     height: 160
             -
-                type: Checker\Extension            # (array)   Verification d'extension
+                type: Checker\Extension       # (array)   Verification d'extension
                 enabled: false
                 options:
-                    extensions: [jpg, jpeg, bmp, tif, gif, png, pdf, doc, odt, mpg, mpeg, mov, avi, xls, flv, mp3, mp2]
+                    extensions:
+                        - jpg
+                        - jpeg
+                        - bmp
+                        - tif
+                        - gif
+                        - png
+                        - pdf
+                        - doc
+                        - odt
+                        - mpg
+                        - mpeg
+                        - mov
+                        - avi
+                        - xls
+                        - flv
+                        - mp3
+                        - mp2
             -
-                type: Checker\Filename             # (array)   Verification de doublonnage par nom de fichier
+                type: Checker\Filename        # (array)   Verification de doublonnage par nom de fichier
                 enabled: false
                 options:
                     sensitive: true
             -
-                type: Checker\MediaType            # (array)   Vérification par type media
+                type: Checker\MediaType       # (array)   Verification du type de document
                 enabled: false
                 options:
-                    mediatypes: [Audio, Document, Flash, Image, Video]
+                    mediatypes:
+                        - Audio
+                        - Document
+                        - Flash
+                        - Image
+                        - Video
 
-    authentication:                                # (array)   Configuration de l'authentification
-
-        auto-create:                               # (array)   Configuration de la création de compte automatique
-            enabled: false                         # (boolean) Activer la création de compte automatique
-            templates: {  }                        # (array)   Nom ou id des modèles à appliquer lors de la création automatique de comptes
-
-        captcha:                                   # (array)   Configuration du service de captchas
-            enabled: true                          # (boolean) Activation du service de captcha
-            trials-before-display: 9               # (integer) Nombre d'essais avant capctcha
-
-        providers:                                 # (array)   Configuration des fournisseurs d'authentification tiers
-
-            facebook:                              # (array)   Configuration de l'authentification via Facebook
-                enabled: false                     # (boolean) Activation du fournisseur
+    authentication:                           # (array)   Configuration de l'authentification
+        auto-create:
+            templates: {  }                   # (string)  Nom du modèle de droits appliqué lorsque l'auto-inscription est activé
+        captcha:
+            enabled: true
+            trials-before-display: 9
+        providers:                            # (array)   Configuration de l'authentification par des services tiers (à tester)
+            facebook:                         # (array)   Configuration de l'authentification via Facebook (à tester)
+                enabled: false                # (boolean) Active ou désactive l'authentification par le fournisseur
                 options:
-                    app-id: ''                     # (string)  Identifiant (id) Facebook
-                    secret: ''                     # (string)  Secret (secret) Facebook
-
-            twitter:                               # (array)   Configuration de l'authentification via Twitter
-                enabled: false                     # (boolean) Activation du fournisseur
+                    app-id: ''                # (string)  Identifiant (id) Facebook
+                    secret: ''                # (string)  Secret (secret) Facebook
+            twitter:                          # (array)   La configuration de l'authentification par twitter (à tester)
+                enabled: false
                 options:
-                    consumer-key: ''               # (string)  Twitter consumer key
-                    consumer-secret: ''            # (string)  Twitter consumer secret
-
-            google-plus:                           # (array)   Configuration de l'authentification via Google Plus
-                enabled: false                     # (boolean) Activation du fournisseur
+                    consumer-key: ''
+                    consumer-secret: ''
+            google-plus:                      # (array)   La configuration de l'authentification par google-plus (testé et fonctionnel)
+                enabled: false
                 options:
-                    client-id: ''                  # (string)  Google Plus client-id
-                    client-secret: ''              # (string)  Google Plus client-secret
-
-            github:                                # (array)   Configuration de l'authentification via GitHub
-                enabled: false                     # (boolean) Activation du fournisseur
+                    client-id: ''
+                    client-secret: ''
+            github:                           # (array)   La configuration de l'authentification par github (testé et fonctionnel)
+                enabled: false
                 options:
-                    client-id: ''                  # (string)  GitHub client-id
-                    client-secret: ''              # (string)  GitHub client-secret
-
-            viadeo:                                # (array)   Configuration de l'authentification via Viadeo
-                enabled: false                     # (boolean) Activation du fournisseur
+                    client-id: ''
+                    client-secret: ''
+            viadeo:                           # (array)   La configuration de l'authentification par Viadeo est dépréciée
+                enabled: false
                 options:
-                    client-id: ''                  # (string)  Viadeo client-id
-                    client-secret: ''              # (string)  Viadeo client-secret
-
-            linkedin:                              # (array)   Configuration de l'authentification via LinkedIn
-                enabled: false                     # (boolean) Activation du fournisseur
+                    client-id: ''
+                    client-secret: ''
+            linkedin:                         # (array)   La configuration de l'authentification par linkedin (à tester)
+                enabled: false
                 options:
-                    client-id: ''                  # (string)  LinkedIn client-id
-                    client-secret: ''              # (string)  LinkedIn client-secret
+                    client-id: ''
+                    client-secret: ''
 
-    registration-fields:                           # (array)   Configuration des champs disponible requis à l'inscription
-
-        -
-            name: company
-            required: false                        # (boolean) Le champ est proposé, mais pas obligatoire
+    registration-fields:                      # (array)   Configuration des champs optionnels disponibles sur le formulaire d'inscription lorsqu'activé
         -
             name: firstname
-            required: true                         # (boolean) Le champ est proposé et obligatoire
+            required: true
+        -
+            name: lastname
+            required: true
+        -
+            name: geonameid
+            required: true
+        -
+            name: company
+            required: true
 
-    xsendfile:                                     # (array)   Configuration Sendfile (Nginx) / XSendFile (Apache)
+    xsendfile:                              # (array)   Configuration Sendfile (Nginx) / XSendFile (Apache)
+        enabled: false                      # (array)   Active, désactive Sendfile
+        type: nginx                         # (string)  Type XSendFile (`nginx` ou `apache`)
+        mapping: {  }                       # (array)   Mapping des dossiers (voir configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
 
-        enabled: false                             # (boolean) Activation de la prise en charge SendFile/XSendFIle
-        type: nginx                                # (string)  Type XSendFile (`nginx` ou `apache`)
-        mapping: []                                # (array)   Mapping des dossiers (voir configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
+    plugins: {  }                           # (array)   Configuration des :doc:`plugins <Plugins>`.
 
-    user-settings:                                 # (array)   Un tableau de valeur par défaut pour les préférences utilisateurs
+    h264-pseudo-streaming:
+        enabled: false
+        type: null
+        mapping: {  }
+
+    api_cors:
+        enabled: false                      # (boolean) Activation du CORS sur l'API
+        allow_credentials: false            # (boolean) Inclus les cookies dans les requêtes CORS
+        allow_origin: {  }                  # (array)   La liste des domaines autorisés à envoyer des requêtes sur l'API
+                                            #           '*' pour autoriser les demandes de toutes origines
+        allow_headers: {  }                 # (array)   La liste des headers supportés par le serveur
+        allow_methods: {'GET', 'POST', 'PUT'}                            # (array)   La liste des methodes HTTP supportées
+        expose_headers: {  }                # (array)   La liste des headers exposés autres que Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma
+        max_age: 0                          # (integer) Autorise la réponse "preflight" à être cachée pour X secondes
+        hosts: {  }                         # (array)   Liste des noms de domaine ou le CORS est activé
+
+    session:                                # (array)   Configuration des validés des sessions
+        idle: 0
+        lifetime: 604800
+
+    crossdomain:                            # (array)   Configuration de cross-domain
+        allow-access-from:
+            -
+                domain: '*.cooliris.com'
+                secure: 'false'
+
+    static-file:
+        enabled: true                       # (boolean)  Active les vignettes statiques
+        type: apache                        # (string)   Type StaticFile (`nginx` ou `apache`)
+        mapping:
+            mount-point: /thumb
+            directory: ''
+
+    registry:                               # (array)   Paramètres de l'application
+        general:
+            title: 'Phraseanet V4.0 (VM)'   # (string)  Nom donné à l'instance
+            keywords: null                  # (string)  Contenu de la balise META NAME="keywords"
+            description: null               # (string)  Contenu de la balise META NAME="description"
+            analytics: null
+            allow-indexation: true
+            home-presentation-mode: CAROUSEL
+            default-subdef-url-ttl: 7200
+        modules:
+            thesaurus: true
+            stories: true
+            doc-substitution: true
+            thumb-substitution: true
+            anonymous-report: false
+        actions:
+            download-max-size: 120
+            validation-reminder-days: 2
+            validation-expiration-days: 10
+            auth-required-for-export: true
+            tou-validation-required-for-export: false      # (boolean)  Faire valider par l'utilisateur les Conditions générales d'utilisation lors des téléchargements
+            export-title-choice: false                     # (boolean)  Permettre le choix par l'utilisateur des noms de fichiers lors de téléchargement
+            default-export-title: title                    # (string)   Nom attribué de fichier téléchargé
+            social-tools: all
+            enable-push-authentication: false
+            force-push-authentication: false
+            enable-feed-notification: true
+            export-stamp-choice: false
+            download-link-validity: 24      # (integer)   Durée de validité des liens de téléchargement en heures
+        ftp:
+            ftp-enabled: true
+            ftp-user-access: true
+        registration:
+            auto-select-collections: true
+            auto-register-enabled: true
+        maintenance:
+            message: 'Under maintenance'
+            enabled: false
+        api-clients:
+            api-enabled: true
+            navigator-enabled: true
+            office-enabled: true
+        webservices:
+            google-charts-enabled: true
+            geonames-server: 'https://geonames.alchemyasp.com/'          # (string)   Adresse du serveur Geonames Alchemy (mettre null si non accessible)
+            captchas-enabled: false
+            recaptcha-public-key: ''
+            recaptcha-private-key: ''
+            captcha-enabled: false
+        executables:
+            h264-streaming-enabled: false
+            auth-token-directory: null
+            auth-token-directory-path: null
+            auth-token-passphrase: null
+            php-conf-path: null
+            imagine-driver: ''
+            ffmpeg-threads: 2
+            pdf-max-pages: 5
+        searchengine:
+            min-letters-truncation: 1
+            default-query: all
+            default-query-type: 0
+        email:                                # (array)   Paramétrage optionnel, selon contexte, pour l'envoi des e-mails
+            emitter-email: vm@alchemy.fr
+            prefix: 'Phraseanet VM -'
+            smtp-enabled: true
+            smtp-auth-enabled: true
+            smtp-host: smtp.gmail.com
+            smtp-port: '465'
+            smtp-secure-mode: ssl
+            smtp-user: vm@alchemy.fr
+            smtp-password: 'mysmtppassword'
+            admin-email: nobody@nodomaine
+        web-applications:
+            email-optional-for-login: false
+        custom-links:                         # (array)   Paramétrage pour liens optionnels dans la barre de menu ou le menu d'aide
+            -
+                linkName: 'Phraseanet store'
+                linkLanguage: fr
+                linkUrl: 'https://alchemy.odoo.com/shop'
+                linkLocation: help-menu
+                linkOrder: 1
+                linkBold: false
+                linkColor: ''
+            -
+                linkName: 'Phraseanet store'
+                linkLanguage: en
+                linkUrl: 'https://alchemy.odoo.com/en_US/shop'
+                linkLocation: navigation-bar
+                linkOrder: 1
+                linkBold: false
+                linkColor: ''
+
+    user-settings:                                 # (array)   Tableau de valeurs par défaut pour les préférences utilisateurs
         images_per_page: 60
         images_size: 200
 
-    plugins: []                                    # (array)   Configuration des :doc:`plugins <Plugins>`.
-
-    session:
-        idle: 3600                                 # (integer) Durée d'inactivité (en secondes) avant déconnexion
-        lifetime: 604800                           # (integer) Durée maximum de session (en secondes)
-
-    api_cors:
-        enabled: false                             # (boolean) Activation du CORS sur l'API.
-        allow_credentials: false                   # (boolean) Inclus les cookies dans les requêtes CORS.
-
-        allow_origin: ['*']                        # (array)   La liste des domaines autorisés à envoyer des requêtes sur l'API.
-                                                   #           '*' pour autoriser les demandes de toutes origines.
-        allow_headers: []                          # (array)   La liste des headers supportés par le server.
-        allow_methods: ['GET', 'POST', 'PUT']      # (array)   La liste des methodes HTTP supportées.
-        expose_headers: ['X-Custom-Header']        # (array)   La liste des headers autres que (Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma)
-                                                   #           à exposer au client.
-        max_age: 0                                 # (integer) Authorise la réponse "preflight" à être cachée pour X secondes.
-        hosts: ['api-cors.domain.com']             # (array)   Liste des noms de domaine ou le CORS est activé.
-
-
-    static-file:
-        enabled: false                             # (boolean) Activation vignettes statiques.
-        type: nginx                                # (string) Type StaticFile (`nginx` ou `apache`)
-        symlink-directory: ''                      # (string) Le répertoire ou seront crées les liens symboliques vers les images
-
-    lazyload: false                                # (boolean) Activation du lazyload pour l'affichage des vignettes (obsolete si l'option static-file est activée)
+    embed_bundle:
+        video_player: videojs                 # (string)   Paramétrage pour le lecteur audiovidéo videojs
+        video_autoplay: false                 # (boolean)  Active ou désactive la lancement automatique de la lecture
+        video_available_speeds:               # (array)    Vitesses de lecture disponibles dans le lecteur videojs
+            - '0.5'
+            - 1
+            - 2
+            - 3
+            - 4
+        audio_player: videojs
+        audio_autoplay: false
+        coverSubdef: thumbnailx4              # (string)   Nom de la sous-définition présentée dans le lecteur lors de la lecture d'un document audio
+        document:
+            enable_pdfjs: true                # (boolean)  Active la visionneuse pdfjs pour l'affichage des documents PDF
 
 Langues
 *******
 
 Les langues disponibles ainsi que leurs codes respectifs sont les suivants :
 
-- Français : fr_FR
-- Anglais : en_GB
-- Allemand : de_DE
-- Néerlandais : nl_NL
+- Français : fr
+- Anglais : en
+- Allemand : de
+- Néerlandais : nl
 
 Fournisseurs d'authentification
 *******************************
 
 Les différents fournisseurs d'authentification se configurent simplement.
-Il suffit de créer une application "Phraseanet" chez le fournisseur en lui
+Il suffit de créer une application "Phraseanet" chez le fournisseur en
 spécifiant l'URL de callback adéquate.
 
 .. note::
@@ -312,7 +494,9 @@ les adapteurs suivants :
 Gestion des sessions
 ********************
 
-Les sessions sont par défaut stockées sur le disque, dans le système de fichiers.
+Les sessions sont stockées par défaut sur le disque, dans le système de
+fichiers.
+
 Il est possible d'utiliser d'autres types de stockage :
 
 +----------------+------------------------------------------------------------------------------------+------------+
@@ -338,17 +522,12 @@ Il est possible d'utiliser d'autres types de stockage :
 Service de moteur de recherche
 ******************************
 
-Trois services de moteurs de recherche sont disponibles : Phrasea engine,
-ElasticSearch et SphinxSearch engine.
+Seul le moteur de recherche Elasticsearch est disponible.
 
 +------------------------------------------------------------------+------------------------------+
 | Nom                                                              | Options                      |
 +==================================================================+==============================+
-| Alchemy\\Phrasea\\SearchEngine\\Phrasea\\PhraseaEngine           |                              |
-+------------------------------------------------------------------+------------------------------+
 | Alchemy\\Phrasea\\SearchEngine\\Elastic\\ElasticSearchEngine     | host, port, index            |
-+------------------------------------------------------------------+------------------------------+
-| Alchemy\\Phrasea\\SearchEngine\\SphinxSearch\\SphinxSearchEngine | host, port, rt_host, rt_port |
 +------------------------------------------------------------------+------------------------------+
 
 Proxies de confiance
@@ -368,45 +547,63 @@ Champs optionnels à l'enregistrement
 ************************************
 
 La section `registration-fields` permet de personnaliser les champs disponibles
-à l'inscription ainsi que leur caractère obligatoire.
+dans le formulaire de la page d'inscription ainsi que leur caractère
+obligatoire.
 
 .. code-block:: yaml
 
     registration-fields:
         -
-            name: company
-            required: false
-        -
             name: firstname
             required: true
+        -
+            name: lastname
+            required: true
+        -
+            name: company
+            required: false
 
-+-----------+-------------+
-| id        | Nom         |
-+-----------+-------------+
-| login     | Identifiant |
-+-----------+-------------+
-| gender    | Sexe        |
-+-----------+-------------+
-| firstname | Prénom      |
-+-----------+-------------+
-| lastname  | Nom         |
-+-----------+-------------+
-| address   | Adresse     |
-+-----------+-------------+
-| zipcode   | Code Postal |
-+-----------+-------------+
-| geonameid | Ville       |
-+-----------+-------------+
-| position  | Poste       |
-+-----------+-------------+
-| company   | Société     |
-+-----------+-------------+
-| job       | Activité    |
-+-----------+-------------+
-| tel       | Téléphone   |
-+-----------+-------------+
-| fax       | Fax         |
-+-----------+-------------+
++-----------+-----------------------+
+| id        | Nom (déprécié)        |
++-----------+-----------------------+
+| login     | Identifiant           |
++-----------+-----------------------+
+| gender    | Sexe                  |
++-----------+-----------------------+
+| firstname | Prénom                |
++-----------+-----------------------+
+| lastname  | Nom                   |
++-----------+-----------------------+
+| address   | Adresse               |
++-----------+-----------------------+
+| zipcode   | Code Postal           |
++-----------+-----------------------+
+| geonameid | Ville, Pays           |
++-----------+-----------------------+
+| position  | Poste                 |
++-----------+-----------------------+
+| company   | Société               |
++-----------+-----------------------+
+| job       | Activité              |
++-----------+-----------------------+
+| tel       | Téléphone             |
++-----------+-----------------------+
+| fax       | Fax                   |
++-----------+-----------------------+
+
+.. note::
+
+    Dans le formulaire d'inscription, il n'est possible de remplir la
+    ville et pays de l'utilisateur que par le Geonameid.
+    Geonameid n'est fonctionnel que si le webservice
+    https://geonames.alchemyasp.com est utilisé.
+
+    **Dans le cas ou l'instance Phraseanet ne peut pas accéder au serveur
+    Geonames** indiquer *null* comme adresse du serveur Geonames dans la
+    configuration.
+
+    Dans ce contexte, ne pas indiquer geonameid dans le formulaire
+    d'inscription.
 
 Configuration Sendfile / XSendFile
 **********************************
@@ -436,8 +633,8 @@ possible de créer son propre point de vérification.
 | Checker\UUID        | Vérifie si le fichier n'est pas un doublon           |                                   |
 |                     | En se basant sur l'identifiant unique du fichier     |                                   |
 +---------------------+------------------------------------------------------+-----------------------------------+
-| Checker\Dimension   | Vérification sur les dimensions du fichier           | width  : largeur du fichier       |
-|                     | (* si applicable)                                    | height : hauteur du fichier       |
+| Checker\Dimension   | Vérification sur les dimensions du fichier           | width  : largeur mini du fichier  |
+|                     | (* si applicable)                                    | height : hauteur mini du fichier  |
 +---------------------+------------------------------------------------------+-----------------------------------+
 | Checker\Extension   | Vérification sur les extensions du fichiers          | extensions : les extensions       |
 |                     |                                                      | de fichiers autorisées            |
@@ -649,3 +846,54 @@ Un lien symbolique est créé pour chaque image.
         enabled: true
         type: nginx
         symlink-directory: ''
+
+Paquets intégrés
+****************
+
+Lecteur audiovidéo videojs
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Phraseanet inclut le lecteur videojs pour la prévisualisation de documents de
+type audio et vidéo.
+
+Il peut être personnalisé :
+
+.. code-block:: yaml
+
+    embed_bundle:
+        video_player: videojs                 # (string)   Paramétrage pour le lecteur audiovidéo videojs
+        video_autoplay: false                 # (boolean)  Active le lancement automatique de la lecture des documents vidéo
+        video_available_speeds:               # (array)    Vitesses de lecture proposées dans le lecteur videojs
+            - '0.5'
+            - 1
+            - 2
+            - 3
+            - 4
+        audio_player: videojs
+        audio_autoplay: false                 # (boolean)  Active le lancement automatique de la lecture de documents audio
+        coverSubdef: thumbnailx4              # (string)   Nom de la sous-définition présentée dans le lecteur lors de la lecture d'un document audio
+
+.. note::
+
+    La lecture à haute vitesse a des impacts sur la consomation de
+    bande passante.
+
+Visionneuse pdfjs
+~~~~~~~~~~~~~~~~~
+
+La visionneuse pdfjs peut être utilisée pour l'affichage de prévisualisations
+des documents PDF en remplacement de la visionneuse FlexPaper utilisée
+par defaut.
+
+Pdfjs permet la lecture de fichiers PDF par le navigateur tandis que
+FlexPaper nécessite que le plugin Adobe Flash Player soit installé et activé
+dans le navigateur ainsi qu'autorisé, cas échéant, pour l'instance Phraseanet
+consultée.
+
+.. code-block:: yaml
+
+    embed_bundle:
+        document:
+            enable_pdfjs: true                # (boolean)  Active la visionneuse pdfjs pour l'affichage des documents PDF
+
+
