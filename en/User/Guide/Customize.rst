@@ -46,6 +46,8 @@ An overlay window regroups the display and configuration settings.
 
 In the **Display** tab, the user can:
 
+* Choose to apply its latest search settings when connecting to *Production*
+* Change its language setting
 * Change the display mode from *Thumbnails* to *List*
 * Modify the colour set of the interface (Dark theme by default).
 * Change the information displayed when mousing-over thumbnails by checking
@@ -59,8 +61,12 @@ In the **Display** tab, the user can:
 
 .. _Customize-Initial-Question:
 
-The **Configuration** tab allows users to configure the question asked by
-default when login in to *Phraseanet Production* and *Classic* interfaces.
+The **Configuration** tab allows users to :
+
+* Choose to display documents (with or without optional query) or Publications
+* Choose its Collection order
+* Hide facets with only one result (experimental)
+
 
 .. image:: ../../images/Affichage-Preferences2.jpg
     :align: center
