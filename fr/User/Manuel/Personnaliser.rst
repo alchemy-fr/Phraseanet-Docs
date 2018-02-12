@@ -48,6 +48,8 @@ configuration.
 
 L'onglet **Affichage** permet d'intervenir sur :
 
+* La mémorisation de la dernière question posée au lancement de *Production*
+* La langue d'interface
 * Le mode d'affichage des résultats, en vignettes ou en liste
 * Le jeu de couleurs de l'interface (thème sombre par défaut)
 * Les informations affichées au survol des vignettes en cochant le mode
@@ -59,8 +61,12 @@ L'onglet **Affichage** permet d'intervenir sur :
 * La taille d'affichage des vignettes
 * La couleur de sélection des enregistrement dans les interfaces
 
-L'onglet **Configuration** permet de paramétrer l'affichage de documents ou
-de publication lors d'une connexion à *Production*.
+L'onglet **Configuration** permet de paramétrer :
+
+* L'affichage de documents (avec ou sans recherche par défaut) ou de
+  publications au lancement de *Production*
+* L'ordre d'affichage des collections dans la recherche avancée
+* De masquer les facettes correspondantes à un seul résultat
 
 .. image:: ../../images/Affichage-Preferences2.jpg
     :align: center
