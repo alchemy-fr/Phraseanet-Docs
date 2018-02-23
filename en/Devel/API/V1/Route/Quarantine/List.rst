@@ -89,6 +89,9 @@ Response sample
                         }
                     },
                     "base_id": 1,
+                    "record_id": [
+                        52
+                    ],
                     "original_name": "Forest.jpg",
                     "sha256": "0571c9928d44b9de11ae37807a6461e77a5f8f35df464bd2c612cb0a27a14ae7",
                     "uuid": "b5e70c18-75af-4a24-be55-f6babb7d7548",
@@ -130,6 +133,9 @@ Response sample
                         }
                     },
                     "base_id": 1,
+                    "record_id": [
+                        427
+                    ],
                     "original_name": "Desert Landscape.jpg",
                     "sha256": "1e955a3e781bf1ceb9e0a58363f6fe63521bcb45d2d0eead7cd435dda921206c",
                     "uuid": "0524a31e-00ae-4632-9bcd-a2493001817b",
