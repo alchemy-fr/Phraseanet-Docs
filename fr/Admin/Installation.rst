@@ -235,10 +235,18 @@ de l'écran d’accueil :
 A l'issu du processus l'utilisateur est conduit à la page d'authentification de
 l'application.
 
-* S'authentifier avec le compte créé.
+* S'authentifier avec le compte Administrateur Phraseanet créé.
+
+.. _Post-Installation-settings:
+
+Paramétrage complémentaire après installation
+---------------------------------------------
+
+Paramètre du moteur de recherche
+********************************
 
 * Dans Phraseanet Admin, cliquer sur la rubrique **Paramètre du moteur de
-  recherche**
+  recherche**.
 
   .. image:: ../images/Admin_Install_Set_ES.jpg
     :align: center
@@ -246,6 +254,19 @@ l'application.
 * **Ajuster le paramétrage du serveur Elasticsearch** selon contexte.
 
 * Créer l'index au moyen du bouton proposé.
+
+Paramétrage de la tâche de création de sous-définition
+******************************************************
+
+* Dans Phraseanet Admin, cliquer sur la rubrique **Gestionnaire de tâches**.
+
+* Sélectionner la rubrique **Editer** dans le menu contextuel de la tâche de
+  création des fichiers de sous-définitions.
+
+* Cocher les cases à cocher correspondantes aux bases et types de documents
+  devant être traités par la tâche de création de sous-définitions.
+
+* Valider le formulaire.
 
 Il reste à :ref:`démarrer les tâches <demarrage-scheduler>`.
 
