@@ -233,7 +233,16 @@ Click on the **Next** button to start the procedure.
 
 * At the end of the process the user is leaded to the authentication page.
 
-* Login to Phraseanet with the account set previously.
+* Login to Phraseanet with the account set previously to perform some
+  post-installation settings.
+
+.. _Post-Installation-settings:
+
+Post-Installation settings
+--------------------------
+
+Setting search engine parameters
+********************************
 
 * In Phraseanet Admin, click on **Search engine parameters** item
 
@@ -243,6 +252,18 @@ Click on the **Next** button to start the procedure.
 * **Adjust Elasticsearch setting** according to context.
 
 * Create Elasticsearch index using the dedicated button.
+
+Configure the Subview creation task
+***********************************
+
+* In Phraseanet Admin, click on **Task Manager** item
+
+* Select **Edit** item on the subviews creation task contextual drop down menu
+
+* Configure Databoxes and record types to be treated by the subviews
+  creation task checking the appropriate checkboxes
+
+* Validate the form
 
 :ref:`Starting tasks manager <start-tasks>`.. is now required.
 
