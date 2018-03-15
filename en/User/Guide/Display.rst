@@ -209,7 +209,7 @@ display area.
 
 .. note::
 
-    The number of records that can be selected is limited to 400.
+    The number of records that can be selected is limited to 800.
 
 
 Selection by media type

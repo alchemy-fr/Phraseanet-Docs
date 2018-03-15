@@ -210,7 +210,7 @@ l'interface.
 
 .. note::
 
-    Le nombre d'enregistrements sélectionnés est limité à 400.
+    Le nombre d'enregistrements sélectionnés est limité à 800.
 
 .. _Affichage-Selections-Type:
 
