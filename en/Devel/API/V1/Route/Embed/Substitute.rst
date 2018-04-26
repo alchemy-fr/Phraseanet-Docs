@@ -8,6 +8,10 @@ Substitutes (or adds) an embed file (subdef) to a record.
 Allows to inject an embed file built out of Phraseanet when a document has been
 added with the parameter "nosubdefs".
 
+.. code-block:: bash
+
+    /api/v1/embed/substitute/
+
 .. seealso:: :doc:`Add record <../Records/Add>`
 
 
@@ -103,6 +107,6 @@ Response samples
     }
 
 
-.. Seealso:: :doc:`Records Eembed <../Records/Embed>`
+.. Seealso:: :doc:`Records Embed <../Records/Embed>`
 
 
