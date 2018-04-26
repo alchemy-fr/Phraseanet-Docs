@@ -8,6 +8,10 @@ Substituer (ou ajouter) une sous-définition à un document.
 Permet d'injecter des sous-définitions fabriquées hors Phraseanet lorsqu'un
 document a été rajouté avec l'option "nosubdefs"
 
+.. code-block:: bash
+
+    /api/v1/embed/substitute/
+
 .. seealso:: :doc:`Ajouter un document dans Phraseanet <../Records/Add>`
 
 
