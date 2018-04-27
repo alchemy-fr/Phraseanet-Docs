@@ -418,14 +418,14 @@ documents :
 Recherche d'un enregistrement par son identifiant Phraseanet
 ------------------------------------------------------------
 
-La syntaxe est : recordid: (le numéro d'enregistrement)
+La syntaxe est : **recordid:le-numéro-de-l-enregistrement**
 
 Exemple pour afficher le document dont le numéro d'enregistrement unique dans
 la base est 804.
 
 .. code-block:: none
 
-    recordid: 804
+    recordid:804
 
 
 .. note::
@@ -437,7 +437,7 @@ Recherche d'enregistrements pour une collection
 -----------------------------------------------
 
 Pour la recherche d'enregistrements appartenant à une collection, utiliser la
-syntaxe *collection:"le nom de la collection"*.
+syntaxe **collection:"le nom de la collection"**.
 
 Exemple :
 
@@ -453,7 +453,7 @@ Recherche d'enregistrements pour une base
 -----------------------------------------
 
 Pour la recherche d'enregistrements appartenant à une base, utiliser la syntaxe
-*database:"l'alias de la base"*.
+**database:"l'alias de la base"**.
 
 Exemple :
 
@@ -464,5 +464,37 @@ Exemple :
 
 **Important** : Respecter l'intitulé exact et la casse de l'alias donné à
 la base.
+
+
+Recherche de documents par UIID
+-------------------------------
+
+Pour rechercher des enregistrements de type document pour leurs Identifiants
+uniques universels (UIID pour
+:term:`Universal Unique IDentifier<Identifiant universel unique (UUID)>`),
+utiliser la syntaxe **uuid:"the-Universally-Unique-IDentifier**".
+
+Exemple:
+
+.. code-block:: none
+
+    uuid:"4d006e01-bc38-4aac-9a5b-2c90ffe3a8a2"
+
+**Important** : L'UIID contenant des caractères vides (des tirets) ces
+recherches doivent être effectuées entre guillemets.
+
+
+Finding records by SHA256
+-------------------------
+
+Pour rechercher des documents par leurs :term:`clés de hachage SHA256<SHA256>`,
+utiliser la syntaxe **sha256:thesha256numbersequence**.
+
+Exemple:
+
+.. code-block:: none
+
+    sha256:a7f3ec01c4c5efcadc639d494d432006f13b28b9a576afaee4d3b7508c4be074
+
 
 

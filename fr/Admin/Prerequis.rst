@@ -92,8 +92,8 @@ Exemple pour Ubuntu :
 Programmes Externes
 -------------------
 
-Pour calculer des sous-résolutions dans le navigateur, Phraseanet s'appuie sur
-des programmes externes suivants :
+Pour la génération de fichiers de sous-résolutions, Phraseanet s'appuie sur
+des programmes externes selon la nature des documents :
 
 * Ufraw
   Utilisation via Imagemagick ; Extraction d'imagettes et de previews à partir
