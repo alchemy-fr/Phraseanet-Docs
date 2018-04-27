@@ -380,13 +380,13 @@ Examples of metadata attributes for Phraseanet document type documents:
 Search a record by its Phraseanet identifier
 --------------------------------------------
 
-Syntax is: recordid: the_record_id
+Syntax is: **recordid:the_record_id**
 
 Example, to display the record unique number id 804 in a database:
 
 .. code-block:: none
 
-    recordid: 804
+    recordid:804
 
 
 .. note::
@@ -398,7 +398,7 @@ Finding records for a collection
 --------------------------------
 
 To search records belonging to a phraseanet collection, use the syntax
-*collection:"the given name for the collection"*.
+**collection:"the given name for the collection"**.
 
 Example:
 
@@ -414,7 +414,7 @@ Finding records for a base
 --------------------------
 
 To search records belonging to a database, use the syntax
-*database:"the base alias"*.
+**database:"the base alias"**.
 
 Example:
 
@@ -424,5 +424,34 @@ Example:
 
 **Important** : Respect case sensitivity and the exact alias name given to the
 base.
+
+
+Finding documents by UIID
+-------------------------
+
+To search for documents by their :term:`Universally Unique IDentifier (UUID)`,
+use the syntax **uuid:"the-Universally-Unique-IDentifier"**.
+
+Example:
+
+.. code-block:: none
+
+    uuid:"4d006e01-bc38-4aac-9a5b-2c90ffe3a8a2"
+
+**Important** : Because UIID contains empty characters (dashes) it must be
+surrounded by quotation marks.
+
+
+Finding documents by SHA256
+---------------------------
+
+To search for documents by their :term:`SHA256 hash keys<SHA256>`, use the
+syntax **sha256:thesha256numbersequence**.
+
+Example:
+
+.. code-block:: none
+
+    sha256:a7f3ec01c4c5efcadc639d494d432006f13b28b9a576afaee4d3b7508c4be074
 
 

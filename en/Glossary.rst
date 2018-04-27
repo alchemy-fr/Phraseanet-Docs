@@ -9,6 +9,14 @@ Glossary
 .. glossary::
     :sorted:
 
+    SHA256
+        In Phraseanet, calculated key for a document entering a base using a
+        hash algorithm.
+        This key attributed to added document makes an easy way to discriminate
+        it from other similar media in appearance.
+        This function is implemented as a Border Manager checker for Quarantine
+        to determine the presence of duplicate files.
+
     Universally Unique Identifier (UUID)
         Unique numerical identifier coded on 128 bytes conceived to be unique
         worldwide. Some graphic softwares (camera firmware, image processing

@@ -9,6 +9,15 @@ Glossaire
 .. glossary::
     :sorted:
 
+    SHA256
+        Dans Phraseanet, clé calculée pour un document entrant dans
+        une base au moyen d'un algorithme de hachage.
+        Cette clé attribuée au document ajouté permet une méthode de
+        discrimination simple.
+        Cette fonction est mise en oeuvre notament comme point de vérification
+        du service de douane (quarantaine) pour déterminer la présence de
+        fichiers en doublons.
+
     Identifiant universel unique (UUID)
         Identifiant numérique unique codé sur 128 bits conçu avec la
         probabilité d'être unique dans le monde. Certains logiciels de la
@@ -47,7 +56,7 @@ Glossaire
 
     HTML5
         HTML5 est la cinquième révision majeure du langage HTML. Exécuté dans un
-        navigateur exploitant ses caractéristiques avancées, HTML5 permet de
+        navigateur exploitant ses caractéristiques, HTML5 permet de
         bâtir des interfaces web riches en fonctionnalités.
 
     FTP
@@ -57,13 +66,14 @@ Glossaire
     Document
         Un document est le fichier d'origine ajouté à une Base/Collection.
 
-    Sous résolutions
-        Les sous résolutions (ou sous définitions) sont les fichiers générés
+    Sous définitions
+        Les sous définitions (ou sous résolutions) sont les fichiers générés
         lors de l'ajout d'un media dans une base. Elles sont mises en oeuvre
         dans les interfaces pour donner des rendus fidèles aux documents
         originaux. Classées par groupes ou *classes* (Tout le monde,
         Sous résolutions ou Documents) rattachés aux droits utilisateurs, elles
-        sont paramétrables et peuvent être téléchargées lors de l'export.
+        sont paramétrables et peuvent être téléchargées dans les fenêtres
+        d'export.
 
     Description
         Fiche documentaire d'un document, composée de plusieurs champs
