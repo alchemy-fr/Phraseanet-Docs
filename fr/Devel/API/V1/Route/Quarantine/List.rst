@@ -45,9 +45,9 @@ Exemple de réponse
 
     {
         "meta": {
-            "api_version": "1.3",
+            "api_version": "2.0.0",
             "request": "GET /api/v1/quarantine/list/",
-            "response_time": "2012-06-29T17:53:35+02:00",
+            "response_time": "2018-04-25T10:39:32+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -58,94 +58,90 @@ Exemple de réponse
             "offset_start": 0,
             "per_page": 10,
             "quarantine_items": [
-            {
-                "id": 214,
-                "quarantine_session": {
-                    "id": 214,
-                    "usr_id": 3,
-                    "user": {
-                        "@entity@": "http://api.phraseanet.com/api/objects/user",
-                        "id": 4,
-                        "email": "imprec@gmail.com",
-                        "login": "admin",
-                        "first_name": "Romain",
-                        "last_name": "Neutron",
-                        "display_name": "imprec@gmail.com",
-                        "gender": "Mr",
-                        "address": null,
-                        "zip_code": null,
-                        "city": null,
-                        "country": null,
-                        "phone": null,
-                        "fax": null,
-                        "job": null,
-                        "position": null,
-                        "company": null,
-                        "geoname_id": null,
-                        "last_connection": "2014-03-02T12:01:22+02:00",
-                        "created_on": "2012-10-02T09:46:40+02:00",
-                        "updated_on": "2012-10-02T09:46:40+02:00",
-                        "locale": "en_GB"
-                    }
+                {
+                    "id": 25,
+                    "quarantine_session": {
+                        "id": 30,
+                        "usr_id": 3,
+                        "user": {
+                            "@entity@": "http://api.phraseanet.com/api/objects/user",
+                            "id": 3,
+                            "email": "nobody@nodomaine",
+                            "login": "admin",
+                            "first_name": "Louise",
+                            "last_name": "Laferrière",
+                            "display_name": "Louise Laferrière",
+                            "gender": "Miss",
+                            "address": "30 place Saint-Georges",
+                            "zip_code": "75009",
+                            "city": "Paris 09 Opéra",
+                            "country": "FR",
+                            "phone": "No way!",
+                            "fax": null,
+                            "job": null,
+                            "position": "Stunt",
+                            "company": "Alchemy",
+                            "geoname_id": 2989487,
+                            "last_connection": "-0001-11-30T00:00:00+00:09",
+                            "created_on": "2013-11-06T08:54:32+01:00",
+                            "updated_on": "2018-04-25T09:53:44+02:00",
+                            "locale": "en"
+                        }
+                    },
+                    "base_id": 53,
+                    "original_name": "picjumbo.com_foodiesfeed.com_DSC_0002.jpg",
+                    "sha256": "7053b29a28a637161b0966983a2f49206fe2ec59131341048f3c6e7089aed654",
+                    "uuid": "ea01375e-3f67-4734-b54d-967d269e3ba9",
+                    "forced": false,
+                    "checks": [
+                        "Un fichier avec la même somme de contrôle existe déjà dans la base de données",
+                        "Un fichier avec le même UUID existe déjà dans la base de données"
+                    ],
+                    "created_on": "2018-04-25T10:39:16+02:00",
+                    "updated_on": "2018-04-25T10:39:16+02:00"
                 },
-                "base_id": 1,
-                "record_id": [
-                    1020
-                ],
-                "original_name": "Forest.jpg",
-                "sha256": "0571c9928d44b9de11ae37807a6461e77a5f8f35df464bd2c612cb0a27a14ae7",
-                "uuid": "b5e70c18-75af-4a24-be55-f6babb7d7548",
-                "forced": false,
-                "checks": [
-                "A file with the same checksum already exists in database"
-                ],
-                "created_on": "2012-06-18T15:34:58+02:00",
-                "updated_on": "2012-06-18T15:34:58+02:00"
-            },
-            {
-                "id": 213,
-                "quarantine_session": {
-                    "id": 213,
-                    "usr_id": 3,
-                    "user": {
-                        "@entity@": "http://api.phraseanet.com/api/objects/user",
-                        "id": 4,
-                        "email": "imprec@gmail.com",
-                        "login": "admin",
-                        "first_name": "Romain",
-                        "last_name": "Neutron",
-                        "display_name": "imprec@gmail.com",
-                        "gender": "Mr",
-                        "address": null,
-                        "zip_code": null,
-                        "city": null,
-                        "country": null,
-                        "phone": null,
-                        "fax": null,
-                        "job": null,
-                        "position": null,
-                        "company": null,
-                        "geoname_id": null,
-                        "last_connection": "2014-03-02T12:01:22+02:00",
-                        "created_on": "2012-10-02T09:46:40+02:00",
-                        "updated_on": "2012-10-02T09:46:40+02:00",
-                        "locale": "en_GB"
-                    }
-                },
-                "base_id": 1,
-                "record_id": [
-                    573
-                ],
-                "original_name": "Desert Landscape.jpg",
-                "sha256": "1e955a3e781bf1ceb9e0a58363f6fe63521bcb45d2d0eead7cd435dda921206c",
-                "uuid": "0524a31e-00ae-4632-9bcd-a2493001817b",
-                "forced": false,
-                "checks": [
-                "A file with the same checksum already exists in database"
-                ],
-                "created_on": "2012-06-18T15:34:50+02:00",
-                "updated_on": "2012-06-18T15:34:50+02:00"
-            }
+                {
+                    "id": 24,
+                    "quarantine_session": {
+                        "id": 29,
+                        "usr_id": 3,
+                        "user": {
+                            "@entity@": "http://api.phraseanet.com/api/objects/user",
+                            "id": 3,
+                            "email": "nobody@nodomaine",
+                            "login": "admin",
+                            "first_name": "Louise",
+                            "last_name": "Laferrière",
+                            "display_name": "Louise Laferrière",
+                            "gender": "Miss",
+                            "address": "30 place Saint-Georges",
+                            "zip_code": "75009",
+                            "city": "Paris 09 Opéra",
+                            "country": "FR",
+                            "phone": "No way!",
+                            "fax": null,
+                            "job": null,
+                            "position": "Stunt",
+                            "company": "Alchemy",
+                            "geoname_id": 2989487,
+                            "last_connection": "-0001-11-30T00:00:00+00:09",
+                            "created_on": "2013-11-06T08:54:32+01:00",
+                            "updated_on": "2018-04-25T09:53:44+02:00",
+                            "locale": "en"
+                        }
+                    },
+                    "base_id": 53,
+                    "original_name": "picjumbo.com_20140314-DSC_0138.jpg",
+                    "sha256": "87586a092ccde3c4b386e26aeed4eed6f7fa31b751eeaf37632a1d5b3cf0d85a",
+                    "uuid": "c50c29d1-6cc7-4cf0-9cb1-0a3ada880463",
+                    "forced": false,
+                    "checks": [
+                        "Un fichier avec la même somme de contrôle existe déjà dans la base de données",
+                        "Un fichier avec le même UUID existe déjà dans la base de données"
+                    ],
+                    "created_on": "2018-04-25T09:55:29+02:00",
+                    "updated_on": "2018-04-25T09:55:29+02:00"
+                }
             ]
         }
     }
