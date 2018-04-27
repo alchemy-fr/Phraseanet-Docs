@@ -83,6 +83,9 @@ Response sample
                     }
                 },
                 "base_id": 3,
+                "record_id": [
+                    42
+                ],
                 "original_name": "Tree.jpg",
                 "sha256": "eda6790b95f6fbeeba32e120d9113fd8f71070a16c110c1018d2accd2b3175e0",
                 "uuid": "bec1c9b3-4812-4f31-acc6-621f3f664760",
