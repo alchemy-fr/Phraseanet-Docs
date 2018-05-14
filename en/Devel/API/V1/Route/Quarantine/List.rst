@@ -130,20 +130,10 @@ Response sample
                             "locale": "en"
                         }
                     },
-<<<<<<< 2535655e7c352a24d0946ff14186e742888426d1
-                    "base_id": 1,
-                    "record_id": [
-                        427
-                    ],
-                    "original_name": "Desert Landscape.jpg",
-                    "sha256": "1e955a3e781bf1ceb9e0a58363f6fe63521bcb45d2d0eead7cd435dda921206c",
-                    "uuid": "0524a31e-00ae-4632-9bcd-a2493001817b",
-=======
                     "base_id": 53,
                     "original_name": "picjumbo.com_20140314-DSC_0138.jpg",
                     "sha256": "87586a092ccde3c4b386e26aeed4eed6f7fa31b751eeaf37632a1d5b3cf0d85a",
                     "uuid": "c50c29d1-6cc7-4cf0-9cb1-0a3ada880463",
->>>>>>> Updating Quarantine/Item & Quarantine/List example for FR & EN Devel manual
                     "forced": false,
                     "checks": [
                         "Un fichier avec la même somme de contrôle existe déjà dans la base de données",

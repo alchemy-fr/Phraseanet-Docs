@@ -6,8 +6,11 @@ A propos
 
 Ajoute un document à Phraseanet.
 Si le fichier ne correspond pas aux caractéristiques des
-:doc:`services des douanes <../../../../../Admin/Configuration>`, il est placé en quarantaine..
-Ce comportement peut être contourné avec le paramètre optionnel *forceBehavior*
+:doc:`services des douanes <../../../../../Admin/Configuration>`, il est placé
+en quarantaine.
+
+Ce comportement peut être contourné avec le paramètre optionnel
+**forceBehavior**.
 
 .. code-block:: bash
 
@@ -26,6 +29,7 @@ Paramètres
 =============== =========== =============
  Paramètres      Type        Information
 =============== =========== =============
+ oauth_token     chaîne      Obligatoire - Le jeton d'authentification
  file            file        Obligatoire - Le document à ajouter
  base_id         entier      Obligatoire - L'identifiant de la collection de destination
  status          chaîne      Optionnel   - La liste des status-bits sous la forme d'une chaîne binaire sur 32 bits
@@ -39,25 +43,26 @@ Paramètres
 Attribut de la réponse
 ----------------------
 
-Dans le cas ou le document a été ajouté avec succès
+Dans le cas ou le document a été ajouté avec succès le code de retour **entity**
+indique si le document a été ajouté à la collection ou à la quarantaine.
 
 ================== ================================
  Attribut           Description
 ================== ================================
- entity             Code de retour de l'opération : 0 => Le document a été ajouté à la collection ; 1 => Le document a été placé dans la quarantaine
+ entity             Code de retour de l'opération : 0 => Le document ajouté à la collection ; 1 => Le document placé dans la quarantaine
  url                L'URL de l'item nouvellement créé
 ================== ================================
 
-Exemple de réponse
-------------------
+Exemple de réponse pour un document ajouté à la collection
+**********************************************************
 
 .. code-block:: javascript
 
     {
         "meta": {
-            "api_version": "1.3",
+            "api_version": "1.0",
             "request": "POST /api/v1/records/add/",
-            "response_time": "2012-06-13T15:59:58+02:00",
+            "response_time": "2018-05-14T17:37:24+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -65,7 +70,31 @@ Exemple de réponse
             "charset": "UTF-8"
         },
         "response": {
-            "entity": 1,
-            "url": '/quarantine/item/136/',
+            "entity": "0",
+            "url": "/records/68/148/"
         }
     }
+
+Exemple de réponse pour un document placé en quarantaine
+********************************************************
+
+.. code-block:: javascript
+
+    {
+        "meta": {
+            "api_version": "1.0",
+            "request": "POST /api/v1/records/add/",
+            "response_time": "2018-05-14T17:47:41+02:00",
+            "http_code": 200,
+            "error_type": null,
+            "error_message": null,
+            "error_details": null,
+            "charset": "UTF-8"
+        },
+        "response": {
+            "entity": "1",
+            "url": "/quarantine/item/512/"
+        }
+    }
+
+
