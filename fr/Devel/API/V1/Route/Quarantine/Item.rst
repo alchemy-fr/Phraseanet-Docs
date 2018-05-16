@@ -87,9 +87,20 @@ Exemple de réponse
                 "sha256": "87586a092ccde3c4b386e26aeed4eed6f7fa31b751eeaf37632a1d5b3cf0d85a",
                 "uuid": "c50c29d1-6cc7-4cf0-9cb1-0a3ada880463",
                 "forced": false,
-                "checks": [
-                    "Un fichier avec la même somme de contrôle existe déjà dans la base de données",
-                    "Un fichier avec le même UUID existe déjà dans la base de données"
+                "checks": {
+                    "Sha256": "A file with the same checksum already exists in the database",
+                    "UUID": "A file with the same UUID already exists in the database",
+                    "Extension": "The file does not match available extensions"
+                },
+                "records_match": [
+                    {
+                        "record_id": 81,
+                        "collection": "foodista",
+                        "checks": {
+                            "Sha256": "A file with the same checksum already exists in the database",
+                            "UUID": "A file with the same UUID already exists in the database"
+                        }
+                    }
                 ],
                 "created_on": "2018-04-25T09:55:29+02:00",
                 "updated_on": "2018-04-25T09:55:29+02:00"
