@@ -6,7 +6,7 @@ About
 
 Add a record to Phraseanet. If the file does not fit all install constraints,
 it goes to the quarantine. This behavior can be bypassed with the optional
-*forceBehavior* parameter
+**forceBehavior** parameter.
 
 .. code-block:: bash
 
@@ -25,6 +25,7 @@ Parameters
 =============== =========== =============
  Parameters      Type        Information
 =============== =========== =============
+ oauth_token     string      Mandatory - The authentication token
  file            file        Mandatory - The file related to the record to add
  base_id         integer     Mandatory - The base_id related to the destination collection
  status          string      32 bits format binary string (optional)
@@ -38,25 +39,27 @@ Parameters
 Response Fields
 ---------------
 
-In case a record is created, the following
+If the document has been successfully added to Phraseanet the return code
+**entity** indicates whether the document has been added to the collection or
+to the quarantine.
 
 ================== ================================
  Field              Description
 ================== ================================
- entity             A code corresponding to the created entity (record => 0 ; quarantine => 1)
+ entity             A code corresponding to the created entity (0 => Added to collection ; 1 => placed in quarantine)
  url                The url of the created item
 ================== ================================
 
-Response sample
----------------
+Response sample for a document added to collection
+**************************************************
 
 .. code-block:: javascript
 
     {
         "meta": {
-            "api_version": "1.3",
+            "api_version": "1.0",
             "request": "POST /api/v1/records/add/",
-            "response_time": "2012-06-13T15:59:58+02:00",
+            "response_time": "2018-05-14T17:37:24+02:00",
             "http_code": 200,
             "error_type": null,
             "error_message": null,
@@ -64,7 +67,30 @@ Response sample
             "charset": "UTF-8"
         },
         "response": {
-            "entity": 1,
-            "url": '/quarantine/item/136/',
+            "entity": "0",
+            "url": "/records/68/148/"
         }
     }
+
+Response sample for a document added to quarantine
+**************************************************
+
+.. code-block:: javascript
+
+    {
+        "meta": {
+            "api_version": "1.0",
+            "request": "POST /api/v1/records/add/",
+            "response_time": "2018-05-14T17:47:41+02:00",
+            "http_code": 200,
+            "error_type": null,
+            "error_message": null,
+            "error_details": null,
+            "charset": "UTF-8"
+        },
+        "response": {
+            "entity": "1",
+            "url": "/quarantine/item/512/"
+        }
+    }
+
