@@ -89,15 +89,25 @@ Exemple de réponse
                     }
                 },
                 "base_id": 1,
-                "record_id": [
-                    1020
-                ],
                 "original_name": "Forest.jpg",
+                "collection": "paysage",
                 "sha256": "0571c9928d44b9de11ae37807a6461e77a5f8f35df464bd2c612cb0a27a14ae7",
                 "uuid": "b5e70c18-75af-4a24-be55-f6babb7d7548",
                 "forced": false,
-                "checks": [
-                "A file with the same checksum already exists in database"
+                "checks": {
+                    "Sha256": "A file with the same checksum already exists in the database",
+                    "UUID": "A file with the same UUID already exists in the database",
+                    "Extension": "The file does not match available extensions"
+                },
+                "records_match": [
+                    {
+                        "record_id": 103,
+                        "collection": "Nature",
+                        "checks": {
+                            "Sha256": "A file with the same checksum already exists in the database",
+                            "UUID": "A file with the same UUID already exists in the database"
+                        }
+                    }
                 ],
                 "created_on": "2012-06-18T15:34:58+02:00",
                 "updated_on": "2012-06-18T15:34:58+02:00"
@@ -133,15 +143,25 @@ Exemple de réponse
                     }
                 },
                 "base_id": 1,
-                "record_id": [
-                    573
-                ],
                 "original_name": "Desert Landscape.jpg",
+                "collection": "paysage",
                 "sha256": "1e955a3e781bf1ceb9e0a58363f6fe63521bcb45d2d0eead7cd435dda921206c",
                 "uuid": "0524a31e-00ae-4632-9bcd-a2493001817b",
                 "forced": false,
-                "checks": [
-                "A file with the same checksum already exists in database"
+                "checks": {
+                    "Sha256": "A file with the same checksum already exists in the database",
+                    "UUID": "A file with the same UUID already exists in the database",
+                    "Extension": "The file does not match available extensions"
+                },
+                "records_match": [
+                    {
+                        "record_id": 67,
+                        "collection": "paysage",
+                        "checks": {
+                            "Sha256": "A file with the same checksum already exists in the database",
+                            "UUID": "A file with the same UUID already exists in the database"
+                        }
+                    }
                 ],
                 "created_on": "2012-06-18T15:34:50+02:00",
                 "updated_on": "2012-06-18T15:34:50+02:00"

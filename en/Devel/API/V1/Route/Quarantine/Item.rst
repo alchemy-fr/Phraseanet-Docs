@@ -83,15 +83,25 @@ Response sample
                     }
                 },
                 "base_id": 3,
-                "record_id": [
-                    42
-                ],
                 "original_name": "Tree.jpg",
+                "collection": "forest",
                 "sha256": "eda6790b95f6fbeeba32e120d9113fd8f71070a16c110c1018d2accd2b3175e0",
                 "uuid": "bec1c9b3-4812-4f31-acc6-621f3f664760",
                 "forced": false,
-                "checks": [
-                    "A file with the same checksum already exists in database"
+                "checks": {
+                    "Sha256": "A file with the same checksum already exists in the database",
+                    "UUID": "A file with the same UUID already exists in the database",
+                    "Extension": "The file does not match available extensions"
+                },
+                "records_match": [
+                    {
+                        "record_id": 81,
+                        "collection": "forest",
+                        "checks": {
+                            "Sha256": "A file with the same checksum already exists in the database",
+                            "UUID": "A file with the same UUID already exists in the database"
+                        }
+                    }
                 ],
                 "created_on": "2012-06-01T12:35:14+02:00",
                 "updated_on": "2012-06-01T12:35:14+02:00"
