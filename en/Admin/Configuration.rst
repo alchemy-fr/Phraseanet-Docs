@@ -611,3 +611,58 @@ Symlinks to images will be created.
         enabled: true
         type: nginx
         symlink-directory: ''
+
+Embed bundle
+************
+
+Videojs audiovideo player
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Phraseanet includes `Videojs`_ player for audio and video type document preview.
+
+It can be customized in the configuration.yml file:
+
+.. code-block:: yaml
+
+    embed_bundle:
+        video_player: videojs                 # (string)   Enable Videojs player for video type document preview
+        video_autoplay: false                 # (boolean)  Enables automatic launch of video playback
+        video_available_speeds:               # (array)    Reading speeds proposed in Videojs player
+            - '0.5'
+            - 1
+            - 2
+            - 3
+            - 4
+        audio_player: videojs                 # (string)   Enable Videojs player for audio type document preview
+        audio_autoplay: false                 # (boolean)  Enables automatic launch of audio playback
+        coverSubdef: AlbumCoverImage          # (string)   The name of the sub-definition image presented in the player when playing an audio document preview
+.. note::
+
+    High speed playbacks increases bandwidth consumption.
+
+Pdf.js viewer
+~~~~~~~~~~~~~
+
+The `Pdf.js`_ viewer can be used to display previews of PDF documents instead of
+the default FlexPaper viewer.
+
+Pdf.js allows a native display of PDF files in modern browsers while default
+FlexPaper viewer requires Adobe Flash Player plugin to be installed, enabled
+as well as allowed in it.
+
+.. code-block:: yaml
+
+    embed_bundle:
+        document:
+            player: flexpaper
+            enable_pdfjs: true                # (boolean)  Enable pdfjs to display PDF document preview
+
+.. note::
+
+    FlexPaper is still needed to display Office based documents
+    previews (for FlexPaper type sub-definition previews)
+
+
+.. _Pdf.js: https://mozilla.github.io/pdf.js/
+.. _Videojs: https://videojs.com/
+
