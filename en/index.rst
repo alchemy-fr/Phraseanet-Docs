@@ -52,13 +52,14 @@ Here are the main changes in version 4.0:
 Need help?
 ----------
 
-`Alchemy`_, editor of Phraseanet sells a range of services around the
+`Alchemy`_, editor of Phraseanet sells
+`a range of services <https://www.alchemy.fr/en/rubrique/services/>`_ around the
 application.
 
 The Phraseanet team spends part of his time in dedicate forums and groups.
 Please consult `this page <http://www.phraseanet.com/en/support/>`_ for a
 presentation of these groups.
 
-.. _Alchemy: http://www.alchemy.fr/
+.. _Alchemy: https://www.alchemy.fr/en
 .. _Phraseanet: https://www.phraseanet.com/
 .. _developed by Alchemy: http://phraseanet.github.com/

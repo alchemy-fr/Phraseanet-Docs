@@ -850,11 +850,11 @@ Un lien symbolique est créé pour chaque image.
 Paquets intégrés
 ****************
 
-Lecteur audiovidéo videojs
+Lecteur audiovidéo Videojs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Phraseanet inclut le lecteur videojs pour la prévisualisation de documents de
-type audio et vidéo.
+Phraseanet inclut le lecteur `Videojs`_ pour la prévisualisation de documents
+de type audio et vidéo.
 
 Il peut être personnalisé :
 
@@ -878,10 +878,10 @@ Il peut être personnalisé :
     La lecture à haute vitesse a des impacts sur la consomation de
     bande passante.
 
-Visionneuse pdfjs
+Visionneuse pdf.js
 ~~~~~~~~~~~~~~~~~
 
-La visionneuse pdfjs peut être utilisée pour l'affichage de prévisualisations
+La visionneuse `Pdf.js`_ peut être utilisée pour l'affichage de prévisualisations
 des documents PDF en remplacement de la visionneuse FlexPaper utilisée
 par defaut.
 
@@ -894,6 +894,18 @@ consultée.
 
     embed_bundle:
         document:
+            player: flexpaper
             enable_pdfjs: true                # (boolean)  Active la visionneuse pdfjs pour l'affichage des documents PDF
+
+
+.. note::
+
+    FlexPaper reste utilisé pour l'affichage des prévisualisations de documents
+    Office lorsque FlexPaper est le type de rendu utilisé pour la
+    sous-définition Preview des médias de type document.
+
+
+.. _Pdf.js: https://mozilla.github.io/pdf.js/
+.. _Videojs: https://videojs.com/
 
 
