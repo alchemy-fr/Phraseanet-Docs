@@ -52,16 +52,12 @@ Tasks
     For tasks editing, please refer to the
     :ref:`Task manager paragraph in the User manual<Tasks-Manager>`.
 
-Indexation task
-****************
-
-It synchronizes information between Phraseanet database and ElasticSearch
-indexes on events such as collections renaming, alteration of document
-structure (fields, status-bit) or edition of Phraseanet thesaurus
+Indexation task (deprecated)
+****************************
 
 .. note::
 
-    This task is required for common Phraseanet use
+    There is no need to use the Indexation task with Elasticsearch engine.
 
 Subview creation
 ****************

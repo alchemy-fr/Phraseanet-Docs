@@ -879,7 +879,7 @@ Il peut être personnalisé :
     bande passante.
 
 Visionneuse pdf.js
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 La visionneuse `Pdf.js`_ peut être utilisée pour l'affichage de prévisualisations
 des documents PDF en remplacement de la visionneuse FlexPaper utilisée

@@ -56,16 +56,12 @@ Les tâches
     :ref:`se reporter au paragraphe consacré aux tâches<Edition-de-taches>` dans
     le manuel utilisateur.
 
-Tâche d'indexation
-******************
-
-Permet de synchroniser des informations entre les bases de données Phraseanet
-et les index Elasticsearch sur des événements de renommage de collections ou
-d'altération de structure documentaire (Champs, status-bits) ou l'edition du thésaurus.
+Tâche d'indexation (obsolète)
+*****************************
 
 .. note::
 
-    Cette tâche est nécessaire au bon fonctionnement de l'application
+    Cette tâche n'est plus nécessaire avec le moteur Elasticsearch.
 
 Création des Sous Définitions
 *****************************
