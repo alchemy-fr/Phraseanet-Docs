@@ -111,6 +111,7 @@ field is the field name, the operator and the desired value
 Search with the colon caracter (:)
 **********************************
 
+It works like "the field value CONTAINS".
 Example for searching in a field named Title in the databox structure:
 
 .. code-block:: none
@@ -121,8 +122,8 @@ Example for searching in a field named Title in the databox structure:
 The engine performs automatic hyphenation on the empty spaces and characters.
 The searched term is the first term between the operator and the next space.
 
-**Important** : To search for a phrase contained in a field, surround the
-searched phrase with quotes.
+**Important** : To search for an expression contained in a field, surround the
+searched expression with quotes.
 
 Example :
 
@@ -139,6 +140,7 @@ Example :
 The content of the field is
 ***************************
 
+It works like "the field value IS".
 Operator = (equal) can be used to search for exact match value in a field
 (including case sensitivity).
 
@@ -212,6 +214,15 @@ Examples:
 
     [Aerospace]
     [Hong Kong cinema]
+
+
+Searches can be restricted to a particular field from the documentary structure
+by mixing the field query "contains" syntax and the thesaurus query syntax.
+
+.. code-block:: none
+
+    PersonInImage:[Members of the House of Windsor]
+
 
 Search on status
 ----------------
