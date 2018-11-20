@@ -118,6 +118,7 @@ recherche est nom du champ, opérateur, valeur recherchée.
 Rechercher avec les deux points (:)
 ***********************************
 
+Cette recherche est du type le champ "contient".
 Exemple pour une recherche dans un champ nommé TitreEn dans le structure
 documentaire :
 
@@ -149,11 +150,12 @@ Exemple :
     de réponse.
 
 
-Le champ est
-************
+Le champ est avec l'opérateur =
+*******************************
 
-Utiliser l'opérateur = (égal) pour rechercher des valeurs exactes et strictes
-(y compris le respect de la casse).
+C'est une recherche stricte sur le contenu d'un champ.
+Utiliser l'opérateur = (égal) pour rechercher la valeur exacte d'un champ,
+casse comprise.
 
 Exemples :
 
@@ -240,6 +242,15 @@ Exemples :
 
     [Aéronautique]
     [Cinéma français]
+
+
+Il est possible de restreindre la recherche à un champ particulier en combinant
+la syntaxe d'interrogation par champ et la syntaxe propre à l'interrogation
+du thésaurus :
+
+.. code-block:: none
+
+    MotsCles:[Animal domestique]
 
 
 Recherche sur les status
