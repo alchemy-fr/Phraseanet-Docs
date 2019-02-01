@@ -1,5 +1,5 @@
-Manage and animate media holdings in *Phraseanet*
-=================================================
+Manage and animate media funds in *Phraseanet*
+==============================================
 
 .. topic:: The essential
 
@@ -21,5 +21,6 @@ Manage and animate media holdings in *Phraseanet*
    Import
    ProductionManage
    Thesaurus
+   Orders
    Stats
 
