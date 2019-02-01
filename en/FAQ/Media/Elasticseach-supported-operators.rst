@@ -137,10 +137,9 @@ Example :
     In research with colons, the search engine use integrated languages
     analyzers to maximize results.
 
-The content of the field is
+The content of the field IS
 ***************************
 
-It works like "the field value IS".
 Operator = (equal) can be used to search for exact match value in a field
 (including case sensitivity).
 

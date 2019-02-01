@@ -21,5 +21,6 @@ Cliquer sur les liens proposés pour accéder à la rubrique souhaitée :
    Importer
    ProductionGerer
    Thesaurus
+   Commandes
    Statistiques
 
