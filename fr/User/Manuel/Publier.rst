@@ -5,8 +5,21 @@
 
 .. topic:: L'essentiel
 
-    Deux fonctionnalités de Phraseanet permettent de publier et de diffuser des
-    médias issus d'un fonds : *Publications* et *Bridge*.
+    Des fonctionnalités de Phraseanet permettent de diffuser des médias issus
+    d'un fonds :
+
+    * *Publications* permet de publier des médias dans un flux Media RSS
+    * **Déprécié**, *Bridge* permet de publier sur les réseaux sociaux Flikr,
+      YouTube ou Dailymotion
+
+    Ces fonctionnalités sont liées au droit utilisateur **Publication**.
+
+    La fonctionnalité **Partager** permet la diffusion de médias sur les
+    réseaux sociaux Facebook et Twitter et révèle les URLs des permaliens des
+    médias archivés dans Phraseanet.
+
+    **Partager** s'active dans le paramétrage de l'instance.
+
 
 .. _Publier-Publications:
 
@@ -134,6 +147,31 @@ Lancer *Flickr*. Les médias transférés de Phraseanet sont bien présents.
 .. image:: ../../images/Bridge-5.jpg
     :align: center
 
+.. _Publier-Partage:
+
+Partager des médias
+-------------------
+
+Située dans le menu contextuel de chaque enregistrement de type document,
+la rubrique **Partager** donne accès à une fenêtre en surimpression.
+
+.. image:: ../../images/Publier-Partager.jpg
+    :align: center
+
+Celle-ci révèle :
+
+* Des liens de partages vers les réseaux sociaux `Facebook`_, `Twitter`_
+* Des permaliens vers des ressources médias (fichiers de sous-définition ou
+  documents originaux)
+* Des URLs vers la vue détaillé du médias
+* Une proposition de code d'intégration du média dans des pages HTML
+
+Le lien *Réglage avancé* permet de sélectionner dans une liste la ressource
+média (fichier de sous-définition ou document original) concernée par les
+informations de partage.
+
 .. _Flickr: https://www.flickr.com/
-.. _YouTube: http://www.youtube.com/
-.. _Dailymotion: http://www.dailymotion.com/
+.. _YouTube: https://www.youtube.com/
+.. _Dailymotion: https://www.dailymotion.com/
+.. _Facebook: https://www.facebook.com/
+.. _Twitter: https://www.twitter.com/
