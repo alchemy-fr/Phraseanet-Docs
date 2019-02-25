@@ -5,8 +5,19 @@
 
 .. topic:: The essential
 
-    Two features of Phraseanet allow to publish and broadcast media :
-    *Publication* and *Bridge*
+    Some features of Phraseanet allow to publish and broadcast media.
+
+    * *Publish* allows to publish media in a Media RSS feed
+    * **Deprcated**, *Bridge* allows to publish on Flikr, YouTube or
+      Dailymotion
+
+    These features are related to the user right **Publications**.
+
+    The **Share** feature allows to broadcast media on Facebook and Twitter
+    networks and reveals the URLs of the permalinks of archived media in
+    Phraseanet.
+
+     **Share** is activated in the setting of the Phraseanet instance.
 
 .. _Publish-Publications:
 
@@ -21,7 +32,7 @@ in third party applications using Media RSS feeds.
 
     http://en.wikipedia.org/wiki/Media_RSS
 
-**To publish media** :
+**To publish media**:
 
 * Select the records in the display area then click on the **Publish** item of
   the Push context menu of the main Actions palette.
@@ -81,7 +92,7 @@ Media selection
 Sign in
 *******
 
-In the **Bridge** window :
+In the **Bridge** window:
 
 * Click on **New** to connect to a Flickr, Youtube or Dailymotion account
   depending on the sharing settings configured in **Phraseanet Admin**.
@@ -121,6 +132,31 @@ Start *Flickr*. The media transferred from Phraseanet are available.
 .. image:: ../../images/Bridge-5.jpg
     :align: center
 
+.. _Publish-Share:
+
+Share media
+-----------
+
+Located in the contextual menu of each document type record, ** Share ** gives
+access to a window overlay.
+
+.. image:: ../../images/Publier-Partager.jpg
+    :align: center
+
+This reveals:
+
+* Links to social networks `Facebook`_, `Twitter`_
+* Permalinks to media resources (this could be a sub-definition files or
+  original documents)
+* URLs to a detailed media view
+* A proposal of code for embedding media in a HTML page
+
+The *Advanced Setting* link allows you to select from a list the resource
+media (sub-definition file or original document) concerned by the shared
+information.
+
 .. _Flickr: https://www.flickr.com/
 .. _YouTube: http://www.youtube.com/
 .. _Dailymotion: http://www.dailymotion.com/
+.. _Facebook: https://www.facebook.com/
+.. _Twitter: https://www.twitter.com/
