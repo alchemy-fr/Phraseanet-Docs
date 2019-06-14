@@ -218,7 +218,7 @@ The available filters allow to narrow the search results:
 
 **The options of the advanced search stay**. The choices used in the advanced
 search window are kept as long as they are not modified.
-If there are search options, the search form background will be yellow.
+If there are search options applied, the search form background turns blue.
 
 Search using the Thesaurus
 --------------------------
