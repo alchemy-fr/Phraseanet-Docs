@@ -6,26 +6,25 @@ Importer
 
 .. topic:: L'essentiel
 
-    Reposant sur la technologie :term:`HTML5` l'interface Upload est accessible
-    dans Production via un lien placé dans la barre de menu. Upload est dédié à
-    l'ajout de médias vers les collections sur lesquelles l'utilisateur dispose
-    des droits d'ajout.
+    Accessible dans Production via un lien placé dans la barre de menu, Upload
+    est dédié à l'ajout de médias dans les collections sur lesquelles
+    l'utilisateur dispose de droits d'ajout.
 
 .. image:: ../../images/Upload-zones.jpg
     :align: center
 
+
+Pour les anciens navigateurs qui ne bénéficient pas du plein support de
+HTML5, un mode d'affichage reposant sur le plug-in Adobe `FlashPlayer
+<http://get.adobe.com/fr/flashplayer/>`_ est disponible.
+
+Sélectionner la rubrique **Utiliser l'uploader Flash** dans la liste déroulante
+proposée en bas à droite de l'écran pour exécuter ce mode.
+
 .. note::
 
-    Pour les navigateurs anciens qui ne bénéficient pas du plein support de
-    HTML5, un mode d'affichage reposant sur le plug-in Adobe `FlashPlayer
-    <http://get.adobe.com/fr/flashplayer/>`_ est disponible.
-
-.. image:: ../../images/Upload-Version-Flash.jpg
-    :align: center
-
-Cliquer sur le lien **Utiliser l'uploader Flash** pour exécuter ce mode.
-Le mode Flash est un mode d'affichage dégradé : il ne permet pas d'accéder à
-toutes les fonctionnalités développées sur le socle technologique de HTML5.
+    Le mode Flash est un mode d'affichage dégradé : il ne permet pas d'accéder à
+    toutes les fonctionnalités développées sur le socle technologique HTML5.
 
 Ajouter des médias
 ------------------
@@ -33,8 +32,8 @@ Ajouter des médias
 Cliquer sur Upload dans la :doc:`barre de menu <General>` pour lancer
 l'interface dans une fenêtre overlay.
 
-Sélectionner des fichiers
-*************************
+Ajouts de fichiers
+******************
 
 * Cliquer sur **Sélectionner les fichiers** (1). L'explorateur de fichiers de
   l'ordinateur se lance.
@@ -50,10 +49,15 @@ Upload (2).
 .. note::
 
     Dans l'interface Upload, l'affiche des vignettes de rendu des médias
-    est généré par le navigateur lui-même (exploitation de l'API File de HTML5).
+    est généré par le navigateur lui-même.
     Certaines conditions peuvent faire que ces vignettes ne s'affichent pas
-    correctement sans qu'il s'agissent pour autant d'une anomalie de
-    fonctionnement de l'application.
+    sans qu'il s'agissent d'une anomalie de fonctionnement de l'application.
+
+A partir de la version 4.0.8 il est possible d'ajouter un fichier par son URL :
+
+* Renseigner l'URL de la ressource dans le champ de formulaire
+* Cliquer sur le bouton **Ajouter cette URL**
+
 
 Réordonner, supprimer des médias de la liste d'import
 *****************************************************
@@ -98,8 +102,8 @@ Des barres de progression indiquent l'avancement du transfert dans la partie
 .. image:: ../../images/Upload-zone4.jpg
     :align: center
 
-Après transfert, les médias transmis sont consultables dans les interfaces
-Production et Classic.
+Après transfert, les médias transmis sont consultables dans l'interface
+Production.
 
 .. note::
 

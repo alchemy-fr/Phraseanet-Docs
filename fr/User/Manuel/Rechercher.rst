@@ -229,7 +229,7 @@ recherche :
 **Les options de la recherche avancée sont persistantes**. Les choix adoptés
 dans la fenêtre de recherche avancée restent valables tant qu'ils ne sont pas
 modifiés.
-La présence d'options de recherche se matérialise par la teinte jaune du
+La présence d'options de recherche se matérialise par la teinte bleue du
 formulaire de recherche.
 
 Recherche avec le Thésaurus
