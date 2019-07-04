@@ -121,7 +121,7 @@ Using :doc:`Statistics <Stats>`, *Phraseanet Report* gives a detailed view
 of a *Phraseanet* system activity and sums up some users behaviour. A datamine
 to optimize the access to the assets and know better users's habits.
 
-.. image:: ../../images/General-Report.jpg
+.. image:: ../../images/Statistiques-General.jpg
    :align: center
 
 .. seealso::

@@ -34,129 +34,59 @@ Document's statistics
 Statistics in *Report*
 ----------------------
 
-Report regroups the statistics on connections, downloads, and site activity.
-A dashboard sums up these main information.
+** Report ** provides information about connections, downloads and documentary
+contents.
 
-**To start a Report**, click on the corresponding section in the menu bar then
-generate the report for a chosen period.
-
-Dashboard
-*********
-
-.. image:: ../../images/Statistiques-Tableaudebord2.jpg
+.. image:: ../../images/Statistiques-General.jpg
     :align: center
 
-The dashboard gives general details about:
+It proposes pre-established queries that, for a range of dates, deliver results
+as CSV files. These data can be manipulated outside Phraseanet in spreadsheets
+or DBMS.
 
-* The number of connections to the site
-* Addition of documents
-* Records edition
-* The number of original documents download, of sub-definitions, and the
-  bandwidth they represent on the network.
-* The most active users (questions asked)
-* The 10 top frequently asked questions
-* The sites where the media are the most viewed
-
-These statistics are detailed in the Connections, Downloads and Site activity
-tabs.
+Click on **Report** item to launch interface.
 
 Connections
 ***********
 
-The Connections tab gives details about connections on Phraseanet instance.
-Three type of reports are available :
+The **Connections** tab delivers, for dates, information on users connections
+grouped or not by browsers, systems operating or screen definition.
 
-* The number of connections per user
-* The connections history
-* The details on platforms and web browsers used by the users
+**To get a report on connections**:
 
-To generate these reports:
-
-* Choose a period
-* Select bases and collections on which the statistics are calculated
-* Select a type of report
-
-.. note::
-
-    Chosen dates are persistent from one tab to one other.
+* Select a date range
+* Depending on context, select a databox
+* Choose the type of report
+* Click the Download button
 
 Downloads
 *********
 
-The Downloads tab lists the downloads for a specified period, by bases and
-collections:
+The **Downloads** tab provides information about downloads by databases
+and collections on dates intervals.
 
-* By user
-* By chronological order
-* By day
-* By documents of a base
+These reports can be grouped by user or by record from a databox.
 
-Links on the infos in the **RecordID** column allows to display a note of the
-downloaded documents. This note contains:
+**To get a report on Downloads**:
 
-* A preview
-* Metadatas like the date of creation in the base, title or filesize
+* Select a date range
+* Depending on context, select a dataox
+* Select one or more collections
+* Choose the type of report
+* Click the Download button
 
-Click on the cross on the top right of the overlay window to quit the note and
-go back to the downloads list.
+Databox content
+***************
 
-Site Activity
-*************
+The **Databox content** tab allows access to documentary contents of created
+or modified records in a date range in databoxes and collections.
 
-.. image:: ../../images/Statistiques-Activite.jpg
-    :align: center
+**To get a report on Databox content**:
 
-The **Site activity** tab regroups details on queries made during searches,
-connections during the last hours and activities on documents.
+* Select a date range
+* Depending on context, select a databox
+* Select one or more collections
+* Choose the document fields to be included in the report
+* Click the Download button
 
-The reports are generated on demand after selecting date interval, bases and
-collections
 
-Activity related to questions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Three types of reports are on search queries:
-
-* **The questions history** lists the questions asked by the users in
-  chronological order.
-* **The most frequently asked questions** lists the most frequent searches and
-  the average number of answers.
-* **The unanswered questions** lists the queries with no results and the number
-  of times they were made.
-
-Activity per hour (Site activity)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This report gives a graph of the number of average connections per 24 hour
-period in over the selected dates.
-
-Documents
-^^^^^^^^^
-
-This report allows to get details of the activity of documents. A list of
-choices allows to choose the actions made on documents:
-
-* Pushed documents
-* Added documents
-* Caption edited documents
-* *Feedbacked* documents
-* Documents sent to recipients
-
-.. note::
-
-    A setting option allows to anonymize reports. In this case the account IDs
-    do not appear in the generated reports.
-    Refer to the Report display options section of the
-    :ref:`Admin Settings <Application-setting>`.
-
-Customize and export reports
-****************************
-
-It is possible to hide the contents of columns in the generated reports.
-Click on the cogwheel to display the overlay window allowing to hide the
-contents of the columns.
-
-Some column headers allows to sort if needed.
-
-Most of the generated reports can be exported as PDF or CSV files. Click on the
-dedicated icons to export to obtain the reports in the desired format.
