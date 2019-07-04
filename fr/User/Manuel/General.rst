@@ -131,7 +131,7 @@ Report
 téléchargements et aux contenus documentaires des bases et collections selon
 des intervalles de dates.
 
-.. image:: ../../images/General-Report.jpg
+.. image:: ../../images/Statistiques-General.jpg
    :align: center
 
 .. seealso::
