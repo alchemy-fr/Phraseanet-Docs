@@ -127,10 +127,9 @@ un vrai plus dans l'utilisation de *Phraseanet*.
 Report
 ******
 
-Application de :doc:`statistiques <Statistiques>`, *Report* présente en détail
-l’activité d'un système *Phraseanet*. Il rend compte des comportements des
-utilisateurs. C'est une mine d'informations pour optimiser l'accès aux fonds
-documentaires et mieux connaître les habitudes des utilisateurs.
+*Report* permet l'export de données relatives aux connexions, aux
+téléchargements et aux contenus documentaires des bases et collections selon
+des intervalles de dates.
 
 .. image:: ../../images/General-Report.jpg
    :align: center
