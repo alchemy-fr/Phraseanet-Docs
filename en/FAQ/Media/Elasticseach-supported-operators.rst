@@ -82,6 +82,11 @@ ElasticSearch for Phraseanet.
 * No truncation by character *
 * No substitution by character ?
 
+.. note::
+
+    Truncation activates or deactivates using the checkbox **Use truncation**
+    in the advanced search window.
+
 Proximity operators
 -------------------
 
