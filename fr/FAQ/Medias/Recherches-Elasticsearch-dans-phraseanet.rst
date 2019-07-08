@@ -89,6 +89,11 @@ d'Elasticsearch pour Phraseanet.
 * Pas de troncature par le caractère *
 * Pas de substitution de caractère par ?
 
+.. note::
+
+    La troncature s'active ou se désactive au moyen de la case à cocher
+    **Troncature activée** dans la fenêtre de recherche avancée.
+
 Les opérateurs de proximité
 ---------------------------
 
