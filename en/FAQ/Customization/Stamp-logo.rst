@@ -2,7 +2,7 @@ Add a Stamp logo
 ================
 
 Using a stamp automatically adds a banner with a logo and metadata when
-exporting subviews and original pictures.
+exporting document classed subviews and original documents for still images.
 A stamp configuration is a 2 step process.
 
 Upload a logo

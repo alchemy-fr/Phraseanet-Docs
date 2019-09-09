@@ -2,15 +2,17 @@ Mettre en place un Stamp logo
 =============================
 
 L'utilisation d'un stamp ajoute automatiquement un bandeau intégrant un logo et
-des métadonnées à l'export des sous-définitions et des documents originaux de
-type image.
-La configuration du stamp s'effectue en deux temps
+des métadonnées à l'export des sous-définitions de la classe document et des
+documents originaux de type image.
+La configuration du stamp s'effectue en deux temps.
 
 Charger un logo
 ---------------
 
 Charger un logo de *Stamp* via l'interface d'administration dans les collections
 concernées.
+
+**Remarques** : Le logo n'est pas obligatoire.
 
 Editer les réglages de la collection
 ------------------------------------
@@ -34,5 +36,4 @@ collections (l'utilisateur doit disposer des droits d'édition des
        </stamp>
      </baseprefs>
 
-**Remarques** :
 
