@@ -20,6 +20,9 @@ used for this.
 
 * MySQL >= 5.5
 
+** Important **: Disable the strict mode (please refer to the documentation
+  of the implemented DBMS).
+
 PHP
 ---
 
