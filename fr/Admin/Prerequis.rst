@@ -21,6 +21,9 @@ Les SGBD MySQL, MariaDB ou Percona fournissent ce service.
 
 * MySQL >= 5.5
 
+  **Important** : Désactiver le mode strict (se reporter à la documentation
+  du SGBD).
+
 PHP
 ---
 
