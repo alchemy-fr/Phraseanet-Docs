@@ -110,9 +110,9 @@ Configuration H264 Pseudo-streaming
     H264 Pseudo-streaming permet d'émuler un serveur de stream et la navigation
     dans le flux video avant le chargement complet de celui-ci.
 
-Depuis la version 3.8.4, la configuration H264 pseudostreaming de Phraseanet
-est simplifiée. Une commande de l'utilitaire `bin/console` permet de générer les
-mappings pour la configuration Phraseanet. Une autre permet de générer le
+La configuration H264 pseudostreaming de Phraseanet est simplifiée. Une
+commande de l'utilitaire `bin/console` permet de générer les mappings pour la
+configuration Phraseanet. Une autre permet de générer le
 supplément de configuration pour Apache 2.
 
 .. note::

@@ -87,6 +87,84 @@ bases and collections featuring the *Caninscript* XML tag.
 
 * Validate the form then apply the settings.
 
+Accept registrations by whitelists
+----------------------------------
+
+Implementation of the white lists allows to automatically validate users
+registrations based on a list of allowed domains.
+
+To these authorized domains may correspond models of rights applied to the
+user requesting the registration.
+
+Registrations by whitelists are set on collections or on databox:
+
+For a collection :
+
+.. code-block:: xml
+
+   <?xml version="1.0" encoding="UTF-8"?>
+     <baseprefs> <status>0</status>
+       <caninscript>1</caninscript>
+         <registration>
+           <auto_register>
+             <email_whitelist>
+               <email pattern="/^.*@alchemy\.fr$/" user_model="model_alchemy_fr"/>
+               <email pattern="/^.*@phraseanet\.fr$/" user_model="model_phraseanet_fr"/>
+             </email_whitelist>
+           </auto_register>
+         </registration>
+          ...
+     </baseprefs>
+
+For a databox :
+
+.. code-block:: xml
+
+   <?xml version="1.0" encoding="UTF-8"?>
+     <record modification_date="20180612182722">
+       <caninscript>1</caninscript>
+         <registration>
+           <auto_register>
+             <email_whitelist>
+               <email pattern="/^.*@(alchemy|phraseanet)\..*$/" user_model="model_alchemy"/>
+             </email_whitelist>
+           </auto_register>
+     </registration>
+     ...
+     </record>
+
+With such configuration, requests are granted according to the provided email
+address:
+
++------------------------+----------------------------------+
+| Provided email         | Applied model                    |
++========================+==================================+
+| dupond@alchemy.fr      | model_alchemy_fr                 |
++------------------------+----------------------------------+
+| dupond@phraseanet.fr   | model_phraseanet_fr              |
++------------------------+----------------------------------+
+| durand@alchemy.eu      | model_alchemy                    |
++------------------------+----------------------------------+
+| durand@phraseanet.com  | model_alchemy                    |
++------------------------+----------------------------------+
+| doe@gmail.com          | No applied model                 |
+|                        |                                  |
+|                        | *Goes through an access request* |
++------------------------+----------------------------------+
+
+In the case where the regular expression would satisfy several filters, only
+the first user model is applied.
+
+At the end of templates/pattern applications (for each requested collection,
+with or without whitelist), collections on which the requested
+are not granted are subject to a request for access.
+
+.. note::
+
+    Whitelisting registration requires to enable auto-registration in
+    configuration file.
+
+
 Customizing the registration form
 ---------------------------------
 

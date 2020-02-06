@@ -1,4 +1,4 @@
-Bienvenue dans la documentation Phraseanet 4.0
+Bienvenue dans la documentation Phraseanet 4.1
 ==============================================
 
 Le DAM Open source
@@ -15,8 +15,8 @@ groupes de travail de toute dimension.
 Solution *100% Web*, elle s'exécute dans un navigateur internet.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
-serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
-courantes telles Elasticsearch, MySQL, PHP et Apache.
+serveurs Linux et repose sur les briques logicielles courantes telles
+Elasticsearch, MySQL, PHP et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
 *Phraseanet*.
 Certaines de ces librairies sont
@@ -45,10 +45,10 @@ commencer.
     User/index
     Admin/index
 
-Quoi de neuf dans la version 4.0 ?
+Quoi de neuf dans la version 4.1 ?
 ----------------------------------
 
-La version 4.0 introduit les changements suivants :
+La version 4.1 introduit les changements suivants :
 
 * Implémentation de Elasticsearch comme moteur de recherche unique
 * Refonte d'interfaces
