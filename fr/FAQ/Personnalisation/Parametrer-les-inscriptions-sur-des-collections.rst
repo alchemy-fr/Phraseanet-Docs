@@ -84,6 +84,84 @@ collections rendues disponibles.
 
 * Valider le formulaire pour appliquer la configuration.
 
+Accepter des inscriptions par des listes blanches
+-------------------------------------------------
+
+La mise en place des listes blanches permet de valider automatiquement des
+inscriptions d'utilisateurs en fonction d'une liste de domaines autorisés.
+
+A ces domaines autorisés peuvent correspondre des modèles de droits appliqués à
+l'utilisateur qui sollicite l'inscription.
+
+Le dispositif se paramètre au niveau de la collection ou de la base :
+
+Pour une collection :
+
+.. code-block:: xml
+
+   <?xml version="1.0" encoding="UTF-8"?>
+     <baseprefs> <status>0</status>
+       <caninscript>1</caninscript>
+         <registration>
+           <auto_register>
+             <email_whitelist>
+               <email pattern="/^.*@alchemy\.fr$/" user_model="modele_alchemy_fr"/>
+               <email pattern="/^.*@phraseanet\.fr$/" user_model="modele_phraseanet_fr"/>
+             </email_whitelist>
+           </auto_register>
+         </registration>
+          ...
+     </baseprefs>
+
+Pour une base :
+
+.. code-block:: xml
+
+   <?xml version="1.0" encoding="UTF-8"?>
+     <record modification_date="20180612182722">
+       <caninscript>1</caninscript>
+         <registration>
+           <auto_register>
+             <email_whitelist>
+               <email pattern="/^.*@(alchemy|phraseanet)\..*$/" user_model="modele_alchemy"/>
+             </email_whitelist>
+           </auto_register>
+     </registration>
+     ...
+     </record>
+
+Avec une telle configuration, les demandes sont accordées suivant l'adresse
+e-mail fourni :
+
++------------------------+----------------------------------+
+| E-mail fourni          | Modèle appliqué                  |
++========================+==================================+
+| dupond@alchemy.fr      | modele_alchemy_fr                |
++------------------------+----------------------------------+
+| dupond@phraseanet.fr   | modele_phraseanet_fr             |
++------------------------+----------------------------------+
+| durand@alchemy.eu      | modele_alchemy                   |
++------------------------+----------------------------------+
+| durand@phraseanet.com  | modele_alchemy                   |
++------------------------+----------------------------------+
+| doe@gmail.com          | pas de modèle appliqué           |
+|                        |                                  |
+|                        | *l'accès passe par une demande*  |
++------------------------+----------------------------------+
+
+Dans le cas ou l'expression régulière satisferait plusieurs filtres de
+recherche, seul le premier modèle est appliqué.
+
+A la fin de l'applications des modèles d'utilisateur (pour chaque collection
+demandée, avec ou sans whitelist), les collections demandées dont l'accès
+n'est accordé font l'objet d'une demande d'accès.
+
+.. note::
+
+    L'inscription par listes blanches requiert d'activer l'inscription
+    automatique dans le paramétrage de l'instance.
+
+
 Personnaliser le formulaire d'inscription
 -----------------------------------------
 
