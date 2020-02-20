@@ -413,20 +413,21 @@ Voici un exemple de fichier de configuration commenté
         images_per_page: 60
         images_size: 200
 
-    embed_bundle:
-        video_player: videojs                 # (string)   Paramétrage pour le lecteur audiovidéo videojs
-        video_autoplay: false                 # (boolean)  Active ou désactive la lancement automatique de la lecture
-        video_available_speeds:               # (array)    Vitesses de lecture disponibles dans le lecteur videojs
-            - '0.5'
-            - 1
-            - 2
-            - 3
-            - 4
-        audio_player: videojs
-        audio_autoplay: false
-        coverSubdef: thumbnailx4              # (string)   Nom de la sous-définition présentée dans le lecteur lors de la lecture d'un document audio
+    embed_bundle:                                  # (array)     Configuration de Embed Bundle
+        video:
+            player: videojs                        # (array)     Active le lecteur videojs (seul choix possible)
+            autoplay: false                        # (boolean)   Active, désactive la lecture automatique des vidéos dans le lecteur
+            coverSubdef: previewx4                 # (string)    Sous-définition utilisée pour la présentation hors lecture dans le lecteur
+            available-speeds:                      # (array)     Vitesses de lecture disponibles dans le lecteur
+                - 1
+                - 1.5
+                - 3
+        audio:
+            player: videojs                        # (array)     Active le lecteur videojs pour la lecture audio (seul choix possible)
+            autoplay: false                        # (boolean)   AActive, désactive la lecture automatique des documents audio dans le lecteur
         document:
-            enable_pdfjs: true                # (boolean)  Active la visionneuse pdfjs pour l'affichage des documents PDF
+            player: flexpaper
+            enable-pdfjs: true                     # (boolean)   Utiliser pdfjs comme visionneuse pour les documents PDF
 
 Langues
 *******
@@ -847,31 +848,31 @@ Un lien symbolique est créé pour chaque image.
         type: nginx
         symlink-directory: ''
 
-Paquets intégrés
-****************
+Embed bundle
+************
 
 Lecteur audiovidéo Videojs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Phraseanet inclut le lecteur `Videojs`_ pour la prévisualisation de documents
-de type audio et vidéo.
+Phraseanet inclut le lecteur `Videojs`_ pour lecture des prévisualisations
+des documents de type audio et vidéo.
 
 Il peut être personnalisé :
 
 .. code-block:: yaml
 
-    embed_bundle:
-        video_player: videojs                 # (string)   Paramétrage pour le lecteur audiovidéo videojs
-        video_autoplay: false                 # (boolean)  Active le lancement automatique de la lecture des documents vidéo
-        video_available_speeds:               # (array)    Vitesses de lecture proposées dans le lecteur videojs
-            - '0.5'
-            - 1
-            - 2
-            - 3
-            - 4
-        audio_player: videojs
-        audio_autoplay: false                 # (boolean)  Active le lancement automatique de la lecture de documents audio
-        coverSubdef: thumbnailx4              # (string)   Nom de la sous-définition présentée dans le lecteur lors de la lecture d'un document audio
+    embed_bundle:                                  # (array)     Configuration de embed bundle
+        video:
+            player: videojs                        # (array)     Active videojs comme lecteur de prévisualisations vidéos - seul choix possible
+            autoplay: false                        # (boolean)   Active la lecture automatique de la prévisualisation vidéo
+            coverSubdef: previewx4                 # (string)    Définit la sous-définition de type image utilisé pour présenter le lecteur hors lecture
+            available-speeds:                      # (array)     Vitesses de défilement disponibles dans le lecteur
+                - 1
+                - 1.5
+                - 3
+        audio:
+            player: videojs                        # (array)     Active vidéojs comme lecteur de prévisualisations audio
+            autoplay: false                        # (boolean)   Active la lecture automatique de la prévisualisation audio
 
 .. note::
 
@@ -881,28 +882,29 @@ Il peut être personnalisé :
 Visionneuse pdf.js
 ~~~~~~~~~~~~~~~~~~
 
-La visionneuse `Pdf.js`_ peut être utilisée pour l'affichage de prévisualisations
-des documents PDF en remplacement de la visionneuse FlexPaper utilisée
-par defaut.
+La visionneuse `Pdf.js`_ peut être utilisée pour l'affichage de
+prévisualisations des documents PDF en remplacement de la visionneuse FlexPaper
+utilisée par defaut.
 
 Pdfjs permet la lecture de fichiers PDF par le navigateur tandis que
 FlexPaper nécessite que le plugin Adobe Flash Player soit installé et activé
-dans le navigateur ainsi qu'autorisé, cas échéant, pour l'instance Phraseanet
+pour le navigateur ainsi qu'autorisé, cas échéant, pour l'instance Phraseanet
 consultée.
 
 .. code-block:: yaml
 
     embed_bundle:
         document:
-            player: flexpaper
-            enable_pdfjs: true                # (boolean)  Active la visionneuse pdfjs pour l'affichage des documents PDF
+            player: flexpaper                      # (string)    Pour les documents Office, utiliser flexpaper ou pdfjs
+            enable-pdfjs: true                     # (boolean)   Utiliser pdfjs comme lecteur de prévisualisation pour les documents PDF
 
 
 .. note::
 
-    FlexPaper reste utilisé pour l'affichage des prévisualisations de documents
-    Office lorsque FlexPaper est le type de rendu utilisé pour la
-    sous-définition Preview des médias de type document.
+    Flexpaper ou Pdfjs peuvent être utilisés pour la lecture des fichiers de
+    prévisualisation de documents Microsoft Office. Paramétrer la
+    sous-définition Preview pour les documents de type Document en fonction du
+    choix de paramétrage du lecteur utilisé.
 
 
 .. _Pdf.js: https://mozilla.github.io/pdf.js/
