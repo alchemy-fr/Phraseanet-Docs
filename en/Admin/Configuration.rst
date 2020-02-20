@@ -412,6 +412,7 @@ Here is a commented configuration file
         video:
             player: videojs                        # (array)     Set active player for video - videojs only
             autoplay: false                        # (boolean)   Autoplay setting for video
+            video_message_start: StartOfMessage    # (string)    The field name where the start reading value (in second) is stored
             coverSubdef: previewx4                 # (string)    Cover sub-definition to be used in player
             available-speeds:                      # (array)     Set available speed in player
                 - 1
@@ -806,6 +807,7 @@ It can be customized in the configuration.yml file:
         video:
             player: videojs                        # (array)     Set active player for video - videojs only
             autoplay: false                        # (boolean)   Autoplay setting for video
+            video_message_start: StartOfMessage    # (string)    The field name where the start reading value (in second) is stored
             coverSubdef: previewx4                 # (string)    Cover sub-definition to be used in player
             available-speeds:                      # (array)     Set available speed in player
                 - 1
