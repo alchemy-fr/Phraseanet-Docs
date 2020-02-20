@@ -417,6 +417,7 @@ Voici un exemple de fichier de configuration commenté
         video:
             player: videojs                        # (array)     Active le lecteur videojs (seul choix possible)
             autoplay: false                        # (boolean)   Active, désactive la lecture automatique des vidéos dans le lecteur
+            video_message_start: StartOfMessage    # (string)    Le nom du champ documentaire ou est stockée la valeur de début de lecture en seconde
             coverSubdef: previewx4                 # (string)    Sous-définition utilisée pour la présentation hors lecture dans le lecteur
             available-speeds:                      # (array)     Vitesses de lecture disponibles dans le lecteur
                 - 1
@@ -865,6 +866,7 @@ Il peut être personnalisé :
         video:
             player: videojs                        # (array)     Active videojs comme lecteur de prévisualisations vidéos - seul choix possible
             autoplay: false                        # (boolean)   Active la lecture automatique de la prévisualisation vidéo
+            video_message_start: StartOfMessage    # (string)    Le nom du champ documentaire ou est stockée la valeur de début de lecture en seconde
             coverSubdef: previewx4                 # (string)    Définit la sous-définition de type image utilisé pour présenter le lecteur hors lecture
             available-speeds:                      # (array)     Vitesses de défilement disponibles dans le lecteur
                 - 1
