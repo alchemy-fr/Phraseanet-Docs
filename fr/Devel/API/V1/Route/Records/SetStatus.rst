@@ -4,7 +4,7 @@ Appliquer un status
 A propos
 --------
 
-Applique un status à un enregistrement.
+Applique un status à un enregistrement (document ou reportage)
 
 .. code-block:: bash
 
