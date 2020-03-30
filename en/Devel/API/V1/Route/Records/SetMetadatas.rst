@@ -4,7 +4,8 @@ Records SetMetadatas
 About
 -----
 
-Adds or modifies the metadatas for a given record.
+Adds or modifies the metadatas for a given record. The record can be a document
+or a story.
 
 .. code-block:: bash
 
