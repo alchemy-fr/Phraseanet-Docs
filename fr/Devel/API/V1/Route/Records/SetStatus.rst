@@ -4,7 +4,7 @@ Appliquer un status
 A propos
 --------
 
-Applique un status à un document
+Applique un status à un enregistrement (document ou reportage)
 
 .. code-block:: bash
 
@@ -23,8 +23,8 @@ Paramètres
 ================ ========= ==============================
  Paramètres       Type      Information
 ================ ========= ==============================
- databox_id       entier    L'identifiant de la databox auquel appartient le document
- record_id        entier    L'identifiant du document sélectionné
+ databox_id       entier    L'identifiant de la databox auquel appartient l'enregistrement
+ record_id        entier    L'identifiant de l'enregistrement sélectionné
  status           tableau   Les status à modifier
 ================ ========= ==============================
 
@@ -47,11 +47,11 @@ est equivalent à
 Attribut de la réponse
 ----------------------
 
-========== ================================
+========== =========================================
  Attribut    Description
-========== ================================
- status      La liste des status du document
-========== ================================
+========== =========================================
+ status      La liste des status de l'enregistrement
+========== =========================================
 
 Exemple de réponse
 ------------------
