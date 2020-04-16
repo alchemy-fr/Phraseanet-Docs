@@ -159,8 +159,7 @@ Outils
 Le bouton **Outils** regroupe des actions qui permettent d'agir sur :
 
 * **Les vignettes ou images de choix** (régénération, substitution, rotation,
-  options de partage des fichiers de sous-définition, choix de la vignette pour
-  les vidéos)
+  options de partage des fichiers de sous-définition)
 * **La substitution de documents orignaux ou de sous définitions** si la
   fonctionnalité est activée dans le paramétrage de l'application
 * **D'afficher les informations de métadonnées** existantes dans un document
@@ -173,9 +172,6 @@ Outils. Choisir un des onglets proposés :
 * **Régénération de sous-définitions** : pour recréer les vignettes et
   sous-définitions à partir des documents originaux des enregistrements
   sélectionnés
-* **Outils vidéos** : Disponible si et seulement si un unique média sélectionné
-  est un document de type vidéo, l'onglet propose les outils permettant le
-  choix d'une vignette de présentation personnalisée.
 * **Rotation** : permet des rotations des vignettes, des sous-définitions et des
   documents originaux pour les médias sélectionnés, lorsque cela est possible
 * **Substitution** (activé selon paramétrage) : Permet de remplacer le document
