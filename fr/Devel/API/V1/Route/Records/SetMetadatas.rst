@@ -1,10 +1,10 @@
-Modifier une métadonnée d'un document
-=====================================
+Modifier les métadonnées d'un enregistrement
+============================================
 
 A propos
 --------
 
-Modifie, ajoute une métadonnée à un document
+Modifie, ajoute une métadonnée à un enregistrement (document ou reportage)
 
 .. code-block:: bash
 
@@ -23,7 +23,7 @@ Paramètres
 ================== ========= =============
  Paramètres         Type      Information
 ================== ========= =============
- databox_id         entier    L'identifiant de la databox auquel appartient le document
+ databox_id         entier    L'identifiant de la databox auquel appartient l'enregistrement
  record_id          entier    L'identifiant du document sélectionné
  metadatas          tableau   Un tableau de métadonnées. Chaque métadonnées est un tableau avec trois clés : meta_struct_id (entier), meta_id (entier ou null) and value (tableau)
 ================== ========= =============
@@ -43,13 +43,13 @@ Attribut de la réponse
 
     metadatas[0][meta_struct_id]=1&
     metadatas[0][meta_id]=&
-    metadatas[0][value]=prettystring&
+    metadatas[0][value]=A pretty string&
     metadatas[1][meta_struct_id]=3&
     metadatas[1][meta_id]=487&
-    metadatas[1][value]=onekeyword&
+    metadatas[1][value]=first keyword&
     metadatas[2][meta_struct_id]=3&
     metadatas[2][meta_id]=488&
-    metadatas[2][value]=twokeyword&
+    metadatas[2][value]=second keyword&
     metadatas[3][meta_struct_id]=7&
     metadatas[3][meta_id]=489&
     metadatas[3][value]=&
@@ -66,13 +66,13 @@ est équivalent à
         },
         {
             meta_struct_id: 3,
-            meta_id: 487,          // meta_id n'est pas nul car il ya actuellement déjà des données, le champ sera mis à jour
-            value: 'one key word'
+            meta_id: 487,          // meta_id n'est pas nul car il y a actuellement déjà des données, le champ sera mis à jour
+            value: 'first keyword'
         },
         {
             meta_struct_id: 3,
             meta_id: 488,
-            value: 'two key word'
+            value: 'second keyword'
         },
         {
             meta_struct_id: 7,
@@ -103,19 +103,19 @@ Exemple de réponse
                     "meta_id": 6271,
                     "meta_structure_id": 1,
                     "name": "Objet",
-                    "value": "prettystring"
+                    "value": "A pretty string"
                 },
                 "487": {
                     "meta_id": 487,
                     "meta_structure_id": 3,
                     "name": "Categorie",
-                    "value": "onekeyword"
+                    "value": "first keyword"
                 },
                 "488": {
                     "meta_id": 488,
                     "meta_structure_id": 3,
                     "name": "Categorie",
-                    "value": "twokeyword"
+                    "value": "second keyword"
                 }
             }
         }

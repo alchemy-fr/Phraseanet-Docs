@@ -40,6 +40,16 @@ Paramètres
  nosubdefs       entier      Optionnel - 1 : Empêche la création des sous-définitions pour le document ajouté. Si le document entre en quarantaine, l'attribut **nosubdefs** est perdu
 =============== =========== =============
 
+Alternativement, il est possible d'ajouter un fichier par son URL.
+
+Le paramètre **url** remplace alors le paramètre **file** dans ce contexte.
+
+=============== =========== =============
+ Paramètres      Type        Information
+=============== =========== =============
+ url             chaîne      Obligatoire - L'URL de la ressource à ajouter
+=============== =========== =============
+
 Attribut de la réponse
 ----------------------
 

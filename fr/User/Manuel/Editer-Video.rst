@@ -15,7 +15,7 @@ Choix de la vignette *thumbnail*
 L'onglet Outils vidéo permet l'extraction de captures vidéo ainsi que le choix
 de la vignette thumbnail d'un document vidéo.
 
-.. image:: ../../images/Prod-Editer.jpg
+.. image:: ../../images/Outils-Video-Choix-Capture.jpg
     :align: center
 
 Extraction de captures
@@ -53,8 +53,7 @@ Pour éditer les chapitre d'une vidéo...
 
 * Lancer la lecture de la vidéo
 * Cliquer sur le bouton Nouveau Chapitre pour créer un nouveau chapitre
-* Donner un titre au chapitre en cliquant sur l'expression *entrez
-  un titre*
+* Donner un titre au chapitre en cliquant sur *entrez un titre*
 * Cliquer sur **Sauvegarder** pour enregistrer le découpage dans le champ
   documentaire prévue dans la configuration
 
@@ -66,7 +65,7 @@ dans les découpages.
 
 * 1. Lecture ou pause
 * 2. Contrôle du volume
-* 3. Barre de défilement de la lecture
+* 3. Barre de défilement de lecture
 * 4. Temps restant avant fin de la vidéo
 * 5. Vitesse de défilement de la lecture
 * 6. Affichage du mode plein écran
@@ -87,7 +86,7 @@ dans les découpages.
 .. note::
 
     Lorsque la case à cocher "Pas de recouvrement entre les chapitres" est
-    activée le début d'un chapitre demeure consécutive à la fin du chapitre
+    activée le début d'un chapitre demeure consécutif à la fin du chapitre
     précédent.
 
 
