@@ -26,7 +26,7 @@ used for this.
 PHP
 ---
 
-* Phraseanet requires PHP version 5.5.x (greater than 5.5.0), 5.6.x or 7.0.x.
+* Phraseanet requires PHP version 7.0.x.
 
   **Please note**: PHP versions 7.1.0 or greater are not suitable at the moment.
 

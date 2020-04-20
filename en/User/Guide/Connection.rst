@@ -25,6 +25,9 @@ default, :doc:`Production <Display>`.
 Authenticating using third party application
 --------------------------------------------
 
+.. image:: https://demo.alchemyasp.com/permalink/v1/68/530/preview/530.jpg?token=V5QUadUsedqbP2x9TqZGgme1cGjNNWRUQLOTBgJ7FyyNuyVLnc909OvmVKWNKvp9
+    :align: center
+
 *Phraseanet* allows to delegate the user authentication to a third party
 application, including the following web applications:
 

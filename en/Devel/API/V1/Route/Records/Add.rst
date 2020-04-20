@@ -36,6 +36,16 @@ Parameters
  nosubdefs       entier      Optional - 1: Prevents the creation of sub-definitions files for this document. If document goes to quarantine attribute **nosubdefs** will be lost
 =============== =========== =============
 
+Alternately it is possible to add a file by its URL.
+
+The **url** parameter then replaces the **file** parameter in this context.
+
+=============== =========== =============
+ Paramètres      Type        Information
+=============== =========== =============
+ url             string      Mandatory - The URL of the resource to add
+=============== =========== =============
+
 Response Fields
 ---------------
 

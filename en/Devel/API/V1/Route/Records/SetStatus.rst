@@ -4,7 +4,7 @@ Records SetStatus
 About
 -----
 
-Sets status for a given record.
+Sets status for a given record (can be a document or a story)
 
 .. code-block:: bash
 

@@ -27,8 +27,7 @@ Les SGBD MySQL, MariaDB ou Percona fournissent ce service.
 PHP
 ---
 
-* Phraseanet requiert une version de PHP supérieure à 5.5.0 (versions 5.5.1 et
-  suivantes, versions 5.6.x, versions 7.0.x).
+* Phraseanet requiert une version de PHP 7.0.x.
 
   **Important** : Les versions 7.1.0 et suivantes sont exclues.
 
