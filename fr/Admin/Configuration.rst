@@ -41,50 +41,60 @@ Voici un exemple de fichier de configuration commenté
 
 .. code-block:: yaml
 
-    servername: Phraseanet
+    servername: 'http://192.168.1.170/'       # (string)  L'URL à partir de laquelle est accessible Phraseanet
+
     languages:
-        available:
+        available:                            # (array)   Un tableau de code de langues actives. Toutes les langues sont activées si le tableau est vide
             - fr
             - en
-            - de
-            - nl
-        default: fr
+        default: fr                           # (string)  La langue de l'application par défaut
+
     main:
-        maintenance: false
-        key: KAYhwdXdnOqEcnyH
-        api_require_ssl: true
-        database:
-            host: localhost
+        maintenance: false                    # (boolean) Activation du mode maintenance
+
+        api_require_ssl: false                # (boolean) Force SSL pour les requêtes d'API Phraseanet
+
+        database:                             # (array)   Configuration du serveur de base de données
+            host: 127.0.0.1
             port: '3306'
             user: phraseanet
             password: phraseanet
-            dbname: ab_phrasea_vm
+            dbname: ab_alch_phraseavm
             driver: pdo_mysql
             charset: UTF8
-        database-test:
+
+        database-test:                        # (array)   Configuration pour les tests (développeurs uniquement)
             driver: pdo_sqlite
             path: /tmp/db.sqlite
             charset: UTF8
-        cache:
-            type: ArrayCache
-            options: {  }
-        search-engine:
-            type: elasticsearch
+
+        cache:                                # (array)   Configuration du service de cache
+            type: MemcacheCache
             options:
                 host: localhost
+                port: 11211
+
+        opcodecache:                          # (array)   Configuration du service de cache opcode
+            type: ArrayCache
+            options: {  }
+
+        search-engine:                        # (array)   Configuration Elasticsearch
+            type: elasticsearch
+            options:
+                host: 127.0.0.1
                 port: 9200
-                index: ''
+                index: phraseanet_86a108b98a5aa92431bf94a42e8d3d3f
                 shards: 3
                 replicas: 0
                 minScore: 2
-                highlight: true
+                highlight: false
                 maxResultWindow: 500000
                 populate_order: RECORD_ID
                 populate_direction: DESC
-                activeTab: '#elastic-search'
-                base_aggregate_limit: 10
-                collection_aggregate_limit: 10
-                doctype_aggregate_limit: 0
+                activeTab: '#elastic-search'  # (string)    Nom de l'onglet actif pour la rubrique Paramètre du moteur de recherche
+                base_aggregate_limit: 10      # (integer)   Paramétrage de la facette base à 10 valeurs
+                collection_aggregate_limit: 10# (integer)   Paramétrage de la facette collections à 10 valeurs
+                doctype_aggregate_limit: 10   # (integer)   Paramétrage de la facette type de documents à 10 valeurs
                 camera_model_aggregate_limit: 0
                 iso_aggregate_limit: 0
                 aperture_aggregate_limit: 0
@@ -97,62 +107,73 @@ Voici un exemple de fichier de configuration commenté
                 orientation_aggregate_limit: 0
                 colorspace_aggregate_limit: 0
                 mimetype_aggregate_limit: 0
+
+        key: 86a108b98a5aa92431bf94a42e8d3d3f # (string)  La clé de l'application
+
         task-manager:
-            status: started
+            logger:
+                enabled: true                 # (boolean) Active les logs dans le système de fichier
+                max-files: 10                 # (integer) Le nombre maximum de fichiers de log à conserver
+                level: INFO                   # (string)  Le niveau de log minimum
             enabled: true
+            status: started
             options:
                 protocol: tcp
                 host: 127.0.0.1
                 port: 6660
                 linger: 500
-            logger:
-                max-files: 10
-                enabled: true
-                level: INFO
-        session:
-            type: file
-            options: {  }
-            ttl: 86400
-        binaries:
+
+        storage:                              # (array)   Configuration des chemins de stockage
+            cache: /var/www/Phraseanet/cache
+            log: /var/www/Phraseanet/logs
+            download: /var/www/Phraseanet/tmp/download                   # (string)  Le répertoire de stockage des fichiers en téléchargement
+            lazaret: /var/www/Phraseanet/tmp/lazaret                     # (string)  Le répertoire de stockage des fichiers en quarantaine
+            caption: /var/www/Phraseanet/tmp/caption                     # (string)  Le répertoire de stockage des éléments affichés au survol d'un enregistrement
+            subdefs: /var/www/phrasea_datas/                             # (string)  Le répertoire de stockage générique pour les fichiers de sous-définition
+
+        binaries:                             # (array)   Configuration des executables externes
             php_binary: /usr/bin/php
-            pdf2swf_binary: /usr/local/bin/pdf2swf
+            phraseanet_indexer: /usr/local/bin/phraseanet_indexer
             swf_extract_binary: /usr/local/bin/swfextract
+            pdf2swf_binary: /usr/local/bin/pdf2swf
             swf_render_binary: /usr/local/bin/swfrender
             unoconv_binary: /usr/bin/unoconv
             ffmpeg_binary: /usr/bin/ffmpeg
-            ffprobe_binary: /usr/bin/ffprobe
             mp4box_binary: /usr/bin/MP4Box
             pdftotext_binary: /usr/bin/pdftotext
-            ghostscript_binary: /usr/bin/gs
-        storage:
-            subdefs: /var/www/phrasea_datas
-            cache: /var/www/Phraseanet/cache
-            log: /var/www/Phraseanet/logs
-            download: /var/www/Phraseanet/tmp/download
-            lazaret: /var/www/Phraseanet/tmp/lazaret
-            caption: /var/www/Phraseanet/tmp/caption
-    trusted-proxies: {  }
+            recess_binary: /usr/local/bin/recess
+
+        bridge:                               # (array)   Configuration pour le Bridge Phraseanet (dépréciée)
+            youtube:
+                enabled: false
+                client_id: ''
+                client_secret: ''
+                developer_key: ''
+            flickr:
+                enabled: false
+                client_id: ''
+                client_secret: ''
+            dailymotion:
+                enabled: false
+                client_id: ''
+                client_secret: ''
+
+    trusted-proxies: {  }                     # (array)   Configuration des proxies de confiance
+
     debugger:
         allowed-ips: {  }
-    border-manager:
-        enabled: true
-        extension-mapping:
-            otc: application/vnd.oasis.opendocument.chart-template
-            ttc: application/x-font-ttf
-            xlsx: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-            docx: application/msword
-            pptx: application/vnd.ms-powerpoint
-            mxf: application/mxf
-            mp4: video/mp4
+
+    border-manager:                           # (array)   Configuration du service douanes Phraseanet
+        enabled: true                         # (boolean) Activation du service de douane
         checkers:
             -
-                type: Checker\Sha256
+                type: Checker\Sha256          # (array)   Verification de doublonnage par somme de contrôle
                 enabled: true
             -
-                type: Checker\UUID
+                type: Checker\UUID            # (array)   Verification de doublonnage par métadonnée UUID
                 enabled: true
             -
-                type: Checker\Colorspace
+                type: Checker\Colorspace      # (array)   Verification de l'espace colorimétrique par le profil ICC
                 enabled: false
                 options:
                     colorspaces:
@@ -160,13 +181,13 @@ Voici un exemple de fichier de configuration commenté
                         - grayscale
                         - rgb
             -
-                type: Checker\Dimension
+                type: Checker\Dimension       # (array)   Verification pour des dimensions minimales requises
                 enabled: false
                 options:
                     width: 80
                     height: 160
             -
-                type: Checker\Extension
+                type: Checker\Extension       # (array)   Verification d'extension
                 enabled: false
                 options:
                     extensions:
@@ -188,12 +209,12 @@ Voici un exemple de fichier de configuration commenté
                         - mp3
                         - mp2
             -
-                type: Checker\Filename
+                type: Checker\Filename        # (array)   Verification de doublonnage par nom de fichier
                 enabled: false
                 options:
                     sensitive: true
             -
-                type: Checker\MediaType
+                type: Checker\MediaType       # (array)   Verification du type de document
                 enabled: false
                 options:
                     mediatypes:
@@ -202,105 +223,224 @@ Voici un exemple de fichier de configuration commenté
                         - Flash
                         - Image
                         - Video
-    user_account:
-        deleting_policies:
-            email_confirmation: true
-    authentication:
+
+    authentication:                           # (array)   Configuration de l'authentification
         auto-create:
-            templates: {  }
+            templates: {  }                   # (string)  Nom du modèle de droits appliqué lorsque l'auto-inscription est activé
         captcha:
             enabled: true
             trials-before-display: 9
-        providers:
-            facebook:
-                enabled: false
+        providers:                            # (array)   Configuration de l'authentification par des services tiers (à tester)
+            facebook:                         # (array)   Configuration de l'authentification via Facebook (à tester)
+                enabled: false                # (boolean) Active ou désactive l'authentification par le fournisseur
                 options:
-                    app-id: ''
-                    secret: ''
-            twitter:
+                    app-id: ''                # (string)  Identifiant (id) Facebook
+                    secret: ''                # (string)  Secret (secret) Facebook
+            twitter:                          # (array)   La configuration de l'authentification par twitter (à tester)
                 enabled: false
                 options:
                     consumer-key: ''
                     consumer-secret: ''
-            google-plus:
+            google-plus:                      # (array)   La configuration de l'authentification par google-plus (testé et fonctionnel)
                 enabled: false
                 options:
                     client-id: ''
                     client-secret: ''
-            github:
+            github:                           # (array)   La configuration de l'authentification par github (testé et fonctionnel)
                 enabled: false
                 options:
                     client-id: ''
                     client-secret: ''
-            viadeo:
+            viadeo:                           # (array)   La configuration de l'authentification par Viadeo est dépréciée
                 enabled: false
                 options:
                     client-id: ''
                     client-secret: ''
-            linkedin:
+            linkedin:                         # (array)   La configuration de l'authentification par linkedin (à tester)
                 enabled: false
                 options:
                     client-id: ''
                     client-secret: ''
-    registration-fields:
+
+    registration-fields:                      # (array)   Configuration des champs optionnels disponibles sur le formulaire d'inscription lorsqu'activé
         -
-            name: company
+            name: firstname
             required: true
         -
             name: lastname
             required: true
         -
-            name: firstname
-            required: true
-        -
             name: geonameid
             required: true
-    xsendfile:
-        enabled: false
-        type: nginx
-        mapping: {  }
+        -
+            name: company
+            required: true
+
+    xsendfile:                              # (array)   Configuration Sendfile (Nginx) / XSendFile (Apache)
+        enabled: false                      # (array)   Active, désactive Sendfile
+        type: nginx                         # (string)  Type XSendFile (`nginx` ou `apache`)
+        mapping: {  }                       # (array)   Mapping des dossiers (voir configuration for :ref:`Apache<apache-xsendfile>` and :ref:`Nginx<nginx-sendfile>`)
+
+    plugins: {  }                           # (array)   Configuration des :doc:`plugins <Plugins>`.
+
     h264-pseudo-streaming:
         enabled: false
-        type: nginx
+        type: null
         mapping: {  }
-    plugins: {  }
+
     api_cors:
-        enabled: false
-        allow_credentials: false
-        allow_origin: {  }
-        allow_headers: {  }
-        allow_methods: {  }
-        expose_headers: {  }
-        max_age: 0
-        hosts: {  }
-    session:
+        enabled: false                      # (boolean) Activation du CORS sur l'API
+        allow_credentials: false            # (boolean) Inclus les cookies dans les requêtes CORS
+        allow_origin: {  }                  # (array)   La liste des domaines autorisés à envoyer des requêtes sur l'API
+                                            #           '*' pour autoriser les demandes de toutes origines
+        allow_headers: {  }                 # (array)   La liste des headers supportés par le serveur
+        allow_methods: {'GET', 'POST', 'PUT'}                            # (array)   La liste des methodes HTTP supportées
+        expose_headers: {  }                # (array)   La liste des headers exposés autres que Cache-Control, Content-Language, Content-Type, Expires, Last-Modified, Pragma
+        max_age: 0                          # (integer) Autorise la réponse "preflight" à être cachée pour X secondes
+        hosts: {  }                         # (array)   Liste des noms de domaine ou le CORS est activé
+
+    session:                                # (array)   Configuration des validés des sessions
         idle: 0
         lifetime: 604800
-    crossdomain:
+
+    crossdomain:                            # (array)   Configuration de cross-domain
         allow-access-from:
             -
                 domain: '*.cooliris.com'
                 secure: 'false'
-    embed_bundle:
+
+    static-file:
+        enabled: true                       # (boolean)  Active les vignettes statiques
+        type: apache                        # (string)   Type StaticFile (`nginx` ou `apache`)
+        mapping:
+            mount-point: /thumb
+            directory: ''
+
+    registry:                               # (array)   Paramètres de l'application
+        general:
+            title: 'Phraseanet V4.0 (VM)'   # (string)  Nom donné à l'instance
+            keywords: null                  # (string)  Contenu de la balise META NAME="keywords"
+            description: null               # (string)  Contenu de la balise META NAME="description"
+            analytics: null
+            allow-indexation: true
+            home-presentation-mode: CAROUSEL
+            default-subdef-url-ttl: 7200
+        modules:
+            thesaurus: true
+            stories: true
+            doc-substitution: true
+            thumb-substitution: true
+            anonymous-report: false
+        actions:
+            download-max-size: 120
+            validation-reminder-days: 2
+            validation-expiration-days: 10
+            auth-required-for-export: true
+            tou-validation-required-for-export: false      # (boolean)  Faire valider par l'utilisateur les Conditions générales d'utilisation lors des téléchargements
+            export-title-choice: false                     # (boolean)  Permettre le choix par l'utilisateur des noms de fichiers lors de téléchargement
+            default-export-title: title                    # (string)   Nom attribué de fichier téléchargé
+            social-tools: all
+            enable-push-authentication: false
+            force-push-authentication: false
+            enable-feed-notification: true
+            export-stamp-choice: false
+            download-link-validity: 24      # (integer)   Durée de validité des liens de téléchargement en heures
+        ftp:
+            ftp-enabled: true
+            ftp-user-access: true
+        registration:
+            auto-select-collections: true
+            auto-register-enabled: true
+        maintenance:
+            message: 'Under maintenance'
+            enabled: false
+        api-clients:
+            api-enabled: true
+            navigator-enabled: true
+            office-enabled: true
+        webservices:
+            google-charts-enabled: true
+            geonames-server: 'https://geonames.alchemyasp.com/'          # (string)   Adresse du serveur Geonames Alchemy (mettre null si non accessible)
+            captchas-enabled: false
+            recaptcha-public-key: ''
+            recaptcha-private-key: ''
+            captcha-enabled: false
+        executables:
+            h264-streaming-enabled: false
+            auth-token-directory: null
+            auth-token-directory-path: null
+            auth-token-passphrase: null
+            php-conf-path: null
+            imagine-driver: ''
+            ffmpeg-threads: 2
+            pdf-max-pages: 5
+        searchengine:
+            min-letters-truncation: 1
+            default-query: all
+            default-query-type: 0
+        email:                                # (array)   Paramétrage optionnel, selon contexte, pour l'envoi des e-mails
+            emitter-email: vm@alchemy.fr
+            prefix: 'Phraseanet VM -'
+            smtp-enabled: true
+            smtp-auth-enabled: true
+            smtp-host: smtp.gmail.com
+            smtp-port: '465'
+            smtp-secure-mode: ssl
+            smtp-user: vm@alchemy.fr
+            smtp-password: 'mysmtppassword'
+            admin-email: nobody@nodomaine
+        web-applications:
+            email-optional-for-login: false
+        custom-links:                         # (array)   Paramétrage pour liens optionnels dans la barre de menu ou le menu d'aide
+            -
+                linkName: 'Phraseanet store'
+                linkLanguage: fr
+                linkUrl: 'https://alchemy.odoo.com/shop'
+                linkLocation: help-menu
+                linkOrder: 1
+                linkBold: false
+                linkColor: ''
+            -
+                linkName: 'Phraseanet store'
+                linkLanguage: en
+                linkUrl: 'https://alchemy.odoo.com/en_US/shop'
+                linkLocation: navigation-bar
+                linkOrder: 1
+                linkBold: false
+                linkColor: ''
+
+    user-settings:                                 # (array)   Tableau de valeurs par défaut pour les préférences utilisateurs
+        images_per_page: 60
+        images_size: 200
+
+    embed_bundle:                                  # (array)     Configuration de Embed Bundle
         video:
-            player: videojs
-            autoplay: false
-            cover_subdef: thumbnail
-            message_start: StartOfMessage
-            available_speeds:
+            player: videojs                        # (array)     Active le lecteur videojs (seul choix possible)
+            autoplay: false                        # (boolean)   Active, désactive la lecture automatique des vidéos dans le lecteur
+            video_message_start: StartOfMessage    # (string)    Le nom du champ documentaire ou est stockée la valeur de début de lecture en seconde
+            coverSubdef: previewx4                 # (string)    Sous-définition utilisée pour la présentation hors lecture dans le lecteur
+            available-speeds:                      # (array)     Vitesses de lecture disponibles dans le lecteur
                 - 1
-                - '1.5'
+                - 1.5
                 - 3
         audio:
-            player: videojs
-            autoplay: false
-            cover_subdef: thumbnail
+            player: videojs                        # (array)     Active le lecteur videojs pour la lecture audio (seul choix possible)
+            autoplay: false                        # (boolean)   AActive, désactive la lecture automatique des documents audio dans le lecteur
         document:
-            enable_pdfjs: true
-    geocoding-providers:
+            player: flexpaper
+            enable-pdfjs: true                     # (boolean)   Utiliser pdfjs comme visionneuse pour les documents PDF
+    video-editor:                                  # (array)     Configuration des options de chapitrage de l'outil vidéo
+        ChapterVttFieldName: VideoTextTrackChapters
+        seekBackwardStep: 500 # in ms
+        seekForwardStep: 500  # in ms
+        playbackRates:
+            - 1
+            - '1.5'
+            - 3
+    geocoding-providers:                           # (array)     Configuration de la géolocalisation dans Production
         -
             map-provider: mapboxWebGL
-            enabled: true
+            enabled: false
             public-key: ''
             map-layers:
                 -
@@ -324,115 +464,14 @@ Voici un exemple de fichier de configuration commenté
                     speed: '2.2'
                     curve: '1.42'
             default-position:
-                - '2.335062'
                 - '48.879162'
-            default-zoom: 2
-            marker-default-zoom: 11
-            position-fields: {  }
+                - '2.335062'
+            default-zoom: 5
+            marker-default-zoom: 9
             geonames-field-mapping: true
-            cityfields: 'City, Ville'
+            cityfields: City, Ville
             provincefields: Province
-            countryfields: 'Country, Pays'
-    video-editor:
-        vttFieldName: VideoTextTrackChapters
-        seekBackwardStep: 500
-        seekForwardStep: 500
-        playbackRates:
-            - 1
-            - '1.5'
-            - 3
-    rabbitmq:
-        server:
-            host: localhost
-            port: 5672
-            user: ''
-            password: ''
-            vhost: /
-    Console_logger_enabled_environments:
-        - test
-    registry:
-        general:
-            title: Phraseanet
-            keywords: null
-            description: null
-            analytics: null
-            allow-indexation: true
-            home-presentation-mode: GALLERIA
-            default-subdef-url-ttl: 7200
-        modules:
-            thesaurus: true
-            stories: true
-            doc-substitution: true
-            thumb-substitution: true
-            anonymous-report: false
-        actions:
-            download-max-size: 120
-            validation-reminder-days: 2
-            validation-expiration-days: 10
-            auth-required-for-export: true
-            tou-validation-required-for-export: false
-            export-title-choice: false
-            default-export-title: title
-            social-tools: none
-            enable-push-authentication: false
-            force-push-authentication: false
-            enable-feed-notification: true
-        ftp:
-            ftp-enabled: false
-            ftp-user-access: false
-        registration:
-            auto-select-collections: true
-            auto-register-enabled: false
-        maintenance:
-            message: 'The application is down for maintenance'
-            enabled: false
-        api-clients:
-            api-enabled: true
-            navigator-enabled: true
-            office-enabled: true
-            adobe_cc-enabled: true
-        webservices:
-            google-charts-enabled: true
-            geonames-server: 'https://geonames.alchemyasp.com/'
-            captchas-enabled: false
-            recaptcha-public-key: ''
-            recaptcha-private-key: ''
-        executables:
-            h264-streaming-enabled: false
-            auth-token-directory: null
-            auth-token-directory-path: null
-            auth-token-passphrase: null
-            php-conf-path: null
-            imagine-driver: ''
-            ffmpeg-threads: 2
-            pdf-max-pages: 5
-        searchengine:
-            min-letters-truncation: 1
-            default-query: ''
-            default-query-type: 0
-        email:
-            emitter-email: phraseanet@example.com
-            prefix: null
-            smtp-enabled: false
-            smtp-auth-enabled: false
-            smtp-host: null
-            smtp-port: null
-            smtp-secure-mode: tls
-            smtp-user: null
-            smtp-password: null
-        custom-links:
-            -
-                linkName: 'Phraseanet store'
-                linkLanguage: fr
-                linkUrl: 'https://alchemy.odoo.com/shop'
-                linkLocation: help-menu
-                linkOrder: '1'
-            -
-                linkName: 'Phraseanet store'
-                linkLanguage: en
-                linkUrl: 'https://alchemy.odoo.com/en_US/shop'
-                linkLocation: help-menu
-                linkOrder: '1'
+            countryfields: Country, Pays
 
 Langues
 *******
@@ -853,31 +892,32 @@ Un lien symbolique est créé pour chaque image.
         type: nginx
         symlink-directory: ''
 
-Paquets intégrés
-****************
+Embed bundle
+************
 
 Lecteur audiovidéo Videojs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Phraseanet inclut le lecteur `Videojs`_ pour la prévisualisation de documents
-de type audio et vidéo.
+Phraseanet inclut le lecteur `Videojs`_ pour lecture des prévisualisations
+des documents de type audio et vidéo.
 
 Il peut être personnalisé :
 
 .. code-block:: yaml
 
-    embed_bundle:
-        video_player: videojs                 # (string)   Paramétrage pour le lecteur audiovidéo videojs
-        video_autoplay: false                 # (boolean)  Active le lancement automatique de la lecture des documents vidéo
-        video_available_speeds:               # (array)    Vitesses de lecture proposées dans le lecteur videojs
-            - '0.5'
-            - 1
-            - 2
-            - 3
-            - 4
-        audio_player: videojs
-        audio_autoplay: false                 # (boolean)  Active le lancement automatique de la lecture de documents audio
-        coverSubdef: thumbnailx4              # (string)   Nom de la sous-définition présentée dans le lecteur lors de la lecture d'un document audio
+    embed_bundle:                                  # (array)     Configuration de embed bundle
+        video:
+            player: videojs                        # (array)     Active videojs comme lecteur de prévisualisations vidéos - seul choix possible
+            autoplay: false                        # (boolean)   Active la lecture automatique de la prévisualisation vidéo
+            video_message_start: StartOfMessage    # (string)    Le nom du champ documentaire ou est stockée la valeur de début de lecture en seconde
+            coverSubdef: previewx4                 # (string)    Définit la sous-définition de type image utilisé pour présenter le lecteur hors lecture
+            available-speeds:                      # (array)     Vitesses de défilement disponibles dans le lecteur
+                - 1
+                - 1.5
+                - 3
+        audio:
+            player: videojs                        # (array)     Active vidéojs comme lecteur de prévisualisations audio
+            autoplay: false                        # (boolean)   Active la lecture automatique de la prévisualisation audio
 
 .. note::
 
@@ -887,31 +927,91 @@ Il peut être personnalisé :
 Visionneuse pdf.js
 ~~~~~~~~~~~~~~~~~~
 
-La visionneuse `Pdf.js`_ peut être utilisée pour l'affichage de prévisualisations
-des documents PDF en remplacement de la visionneuse FlexPaper utilisée
-par defaut.
+La visionneuse `Pdf.js`_ peut être utilisée pour l'affichage de
+prévisualisations des documents PDF en remplacement de la visionneuse FlexPaper
+utilisée par defaut.
 
 Pdfjs permet la lecture de fichiers PDF par le navigateur tandis que
 FlexPaper nécessite que le plugin Adobe Flash Player soit installé et activé
-dans le navigateur ainsi qu'autorisé, cas échéant, pour l'instance Phraseanet
+pour le navigateur ainsi qu'autorisé, cas échéant, pour l'instance Phraseanet
 consultée.
 
 .. code-block:: yaml
 
     embed_bundle:
         document:
-            player: flexpaper
-            enable_pdfjs: true                # (boolean)  Active la visionneuse pdfjs pour l'affichage des documents PDF
+            player: flexpaper                      # (string)    Pour les documents Office, utiliser flexpaper ou pdfjs
+            enable-pdfjs: true                     # (boolean)   Utiliser pdfjs comme lecteur de prévisualisation pour les documents PDF
 
 
 .. note::
 
-    FlexPaper reste utilisé pour l'affichage des prévisualisations de documents
-    Office lorsque FlexPaper est le type de rendu utilisé pour la
-    sous-définition Preview des médias de type document.
+    Flexpaper ou Pdfjs peuvent être utilisés pour la lecture des fichiers de
+    prévisualisation de documents Microsoft Office. Paramétrer la
+    sous-définition Preview pour les documents de type Document en fonction du
+    choix de paramétrage du lecteur utilisé.
 
+Video Editor
+************
+
+La section permet le paramétrage d'options dans l'outil d'édition vidéo proposé
+dans Production.
+
+.. code-block:: yaml
+
+    video-editor:
+        ChapterVttFieldName: VideoTextTrackChapters # (string)   Le nom du champ documentaire stockant les données de chapitrage
+        seekBackwardStep: 500                       # (integer)  En millisecondes, la valeur de déplacement de la tête de lecture en arrière
+        seekForwardStep: 500                        # (integer)  En millisecondes, la valeur de déplacement de la tête de lecture en avant
+        playbackRates:                              # (array)    Les vitesses de défilement disponibles dans le lecteur
+            - 1
+            - '1.5'
+            - 3
+
+Geocoding providers
+*******************
+
+La section permet le paramétrage des options de la géolocalisation dans
+Production.
+
+Une clé publique MapBox API est requise pour utiliser l'affichage par
+géolocalisation. Cette clé peut être obtenue sur le site `Mapbox`_.
+
+Pour utiliser l'aide à la saisie proposée par `GeoNames`_ dans le formulaire
+d'édition de Phraseanet, fournir une adresse geonames-server dans la section
+Webservice du fichier de configuration.
+
+.. code-block:: yaml
+
+    geocoding-providers:                           # (array)     Configuration de la géolocalisation dans Production
+        -
+            map-provider: mapboxWebGL              # (string)    La bibliothèque utilisée pour l'affichage de cartes
+            enabled: false                         # (string)    Active ou désactive la fonctionnalité dans Production
+            public-key: ''                         # (string)    La clé d'API MapBox à utiliser
+            map-layers:                            # (array)     Tableau regroupant les fonds de cartes proposées
+                -
+                    name: Streets
+                    value: 'mapbox://styles/mapbox/streets-v9'
+                -
+                    name: Basic
+                    value: 'mapbox://styles/mapbox/basic-v9'
+            transition-mapboxgl:
+                -
+                    animate: true
+                    speed: '2.2'
+                    curve: '1.42'
+            default-position:                      # (array)     La postion par défaut de la carte
+                - '48.879162'
+                - '2.335062'
+            default-zoom: 5
+            marker-default-zoom: 9
+            geonames-field-mapping: true           # (boolean)   Active, désactive l'assistance à la saisie Geoname dans le formulaire d'édition
+            cityfields: City, Ville                # (array)     Mapping des champs Phraseanet pour la propriété Name (la ville)
+            provincefields: Province               # (array)     Mapping des champs Phraseanet pour la propriété Region
+            countryfields: Country, Pays           # (array)     Mapping des champs Phraseanet pour la propriété Country
 
 .. _Pdf.js: https://mozilla.github.io/pdf.js/
 .. _Videojs: https://videojs.com/
-
+.. _Mapbox: https://www.mapbox.com/
+.. _GeoNames: https://www.geonames.org/
 
