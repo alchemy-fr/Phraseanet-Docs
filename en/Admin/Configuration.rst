@@ -414,7 +414,7 @@ Here is a commented configuration file
             autoplay: false                        # (boolean)   Autoplay setting for video
             video_message_start: StartOfMessage    # (string)    The field name where the start reading value (in second) is stored
             coverSubdef: previewx4                 # (string)    Cover sub-definition to be used in player
-            available-speeds:                      # (array)     Set available speed in player
+            available_speeds:                      # (array)     Set available speed in player
                 - 1
                 - 1.5
                 - 3
@@ -434,9 +434,9 @@ Here is a commented configuration file
             - 3
     geocoding-providers:                           # (array)     Configuration for geoloc in Production
         -
-            map-provider: mapboxWebGL
+            map-provider: mapboxWebGL              # "mapboxWebGL" for webGl implementation Or "mapboxJs" for standard Js implementation
             enabled: false
-            public-key: ''
+            public-key: ''                         # Require an a app key on mapbox service https://mapbox.com
             map-layers:
                 -
                     name: Light
