@@ -138,21 +138,6 @@ Here is a commented configuration file
             pdftotext_binary: /usr/bin/pdftotext
             recess_binary: /usr/local/bin/recess
 
-        bridge:                               # (array)   Configuration for Phraseanet Bridge (deprecated)
-            youtube:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-                developer_key: ''
-            flickr:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-            dailymotion:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-
     trusted-proxies: {  }                     # (array)   Trusted proxies configuration
 
     debugger:
