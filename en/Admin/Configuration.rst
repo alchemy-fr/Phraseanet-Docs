@@ -87,22 +87,22 @@ Here is a commented configuration file
                 populate_order: RECORD_ID
                 populate_direction: DESC
                 activeTab: '#elastic-search'  # (string)    Name of the active tab for the Search engine parameter section
-                base_aggregate_limit: 10      # (integer)   Parameter setting of the "Base" facet with 10 values
-                collection_aggregate_limit: 10# (integer)   Parameter setting for the "Collection" facet with 10 values
-                doctype_aggregate_limit: 10   # (integer)   Parameter setting for the "Document type" facet with 10 values
-                camera_model_aggregate_limit: 0
-                iso_aggregate_limit: 0
-                aperture_aggregate_limit: 0
-                shutterspeed_aggregate_limit: 0
-                flashfired_aggregate_limit: 0
-                framerate_aggregate_limit: 0
-                audiosamplerate_aggregate_limit: 0
-                videocodec_aggregate_limit: 0
-                audiocodec_aggregate_limit: 0
-                orientation_aggregate_limit: 0
-                colorspace_aggregate_limit: 0
-                mimetype_aggregate_limit: 0
-
+                facets:                       # This section contains all fields define in all databases structure in the instance.
+                    _base:                    # (integer)   Parameter setting of the "Base" facet with 10 values
+                        limit: 10             
+                    _collection:              # (integer)   Parameter setting for the "Collection" facet with all values
+                        limit: -1
+                    _doctype:                 # (integer)   Parameter setting for the "Document type" facet with 10 values
+                        limit: 10
+                    _camera_model:
+                        limit: 10
+                    _iso:
+                        limit: 0
+                    _aperture:
+                        limit: 0
+                    _shutterspeed:
+                        limit: 0
+                        
         key: 86a108b98a5aa92431bf94a42e8d3d3f # (string)  Application key
 
         task-manager:
