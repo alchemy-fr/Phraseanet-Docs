@@ -421,7 +421,7 @@ Here is a commented configuration file
         -
             map-provider: mapboxWebGL              # "mapboxWebGL" for webGl implementation Or "mapboxJs" for standard Js implementation
             enabled: false
-            public-key: ''                         # Require an a app key on mapbox service https://mapbox.com
+            public-key: ''                         # This app key is provide by mapbox service https://mapbox.com, active subscription is required
             map-layers:
                 -
                     name: Light
