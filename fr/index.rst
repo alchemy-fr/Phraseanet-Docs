@@ -50,8 +50,15 @@ Quoi de neuf dans la version 4.1 ?
 
 La version 4.1 introduit les changements suivants :
 
-* Implémentation de Elasticsearch comme moteur de recherche unique
-* Refonte d'interfaces
+* Déploiement simplifié sous `Docker`_ (`Voir les images officielles`_)
+* Worker : ce service permet des gains de performance dans la gestion des
+  fichiers de sous-définition
+* Géolocalisation : Recherche d'enregistrements par sélection d'emplacements
+  sur des cartes, ajout de localisations dans la notice de l'enregistrement
+* Outils vidéos : Découpage et création de chapitres
+* Sous titrage vidéo : Ajout de sous titres au format WebVTT pour une ou
+  plusieurs langues
+* Améliorations graphiques
 
 
 Besoin d'aide ?
@@ -69,3 +76,5 @@ ces groupes.
 
 .. _Alchemy: https://www.alchemy.fr/
 .. _Phraseanet: https://www.phraseanet.com/
+.. _Voir les images officielles: https://hub.docker.com/u/alchemyfr
+.. _Docker: https://www.docker.com/

@@ -41,13 +41,19 @@ beginning.
     User/index
     Admin/index
 
-What's new in version 4.0?
+What's new in version 4.1?
 --------------------------
 
-Here are the main changes in version 4.0:
+Here are the main changes in version 4.1:
 
-* Introduce Elasticsearch as unique engine for Phraseanet
-* Redesign of some interfaces
+* Simplified deployment under `Docker`_ (`See official images`_)
+* Worker: this service allows performance gains in the management of
+  sub-definition files
+* Geolocation: Search for records by selecting locations on maps,
+  add of locations in the record note via it edit form
+* Video tools: Cutting and creating chapters
+* Video subtitling: Add subtitles in WebVTT format for one or more languages
+* Graphics improvements
 
 Need help?
 ----------
@@ -63,3 +69,5 @@ presentation of these groups.
 .. _Alchemy: https://www.alchemy.fr/en
 .. _Phraseanet: https://www.phraseanet.com/
 .. _developed by Alchemy: http://phraseanet.github.com/
+.. _See official images: https://hub.docker.com/u/alchemyfr
+.. _Docker: https://www.docker.com/
