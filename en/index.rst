@@ -1,4 +1,4 @@
-Welcome to Phraseanet 4.0's documentation
+Welcome to Phraseanet 4.1's documentation
 =========================================
 
 Open source DAM system

@@ -25,8 +25,8 @@ Certaines de ces librairies sont
 A propos de cette documentation
 -------------------------------
 
-Le présent manuel aborde les questions liées à l'
-:doc:`administration<Admin/index>`, à l':doc:`utilisation<User/index>`
+Le présent manuel aborde les questions liées à
+:doc:`l'administration<Admin/index>`, à :doc:`l'utilisation<User/index>`
 et au :doc:`développement<Devel/index>` reposants sur le logiciel Open source
 *Phraseanet*.
 Une :doc:`FAQ<FAQ/index>` essaye de répondre aux questions fréquentes.
