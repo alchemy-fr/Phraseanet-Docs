@@ -1,4 +1,4 @@
-Welcome to Phraseanet 4.0's documentation
+Welcome to Phraseanet 4.1's documentation
 =========================================
 
 Open source DAM system
@@ -24,8 +24,8 @@ About this documentation
 ------------------------
 
 This manual discusses about the :doc:`administration<Admin/index>`, the
-:doc:`utilisation<User/index>` and the :doc:`advanced developments<Devel/index>`
-sitting on *Phraseanet*.
+:doc:`use<User/index>` and the :doc:`advanced developments<Devel/index>`
+settings on *Phraseanet*.
 A :doc:`glossary<Glossary>` introduces specific terms and concepts used in the
 application.
 Want to contribute? Great! Please see :doc:`this section<Contrib/index>` before

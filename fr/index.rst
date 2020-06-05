@@ -10,7 +10,7 @@ créée et maintenue par `Alchemy`_.
 
 Elle permet de stocker, de gérer, de partager et de diffuser un large panel de
 ressources numériques de type image, vidéo, audio ou bureautique au sein de
-groupes de travail de toute dimension.
+groupes de travail de toutes dimensions.
 
 Solution *100% Web*, elle s'exécute dans un navigateur internet.
 
@@ -25,8 +25,8 @@ Certaines de ces librairies sont
 A propos de cette documentation
 -------------------------------
 
-Le présent manuel aborde les questions liées à l'
-:doc:`administration<Admin/index>`, à l':doc:`utilisation<User/index>`
+Le présent manuel aborde les questions liées à
+:doc:`l'administration<Admin/index>`, à :doc:`l'utilisation<User/index>`
 et au :doc:`développement<Devel/index>` reposants sur le logiciel Open source
 *Phraseanet*.
 Une :doc:`FAQ<FAQ/index>` essaye de répondre aux questions fréquentes.
@@ -52,11 +52,11 @@ La version 4.1 introduit les changements suivants :
 
 * Déploiement simplifié sous `Docker`_ (`Voir les images officielles`_)
 * Worker : ce service permet des gains de performance dans la gestion des
-  fichiers de sous-définition
-* Géolocalisation : Recherche d'enregistrements par sélection d'emplacements
+  sous-définition de fichiers
+* Géolocalisation : recherche d'enregistrements par sélection d'emplacements
   sur des cartes, ajout de localisations dans la notice de l'enregistrement
-* Outils vidéos : Découpage et création de chapitres
-* Sous titrage vidéo : Ajout de sous titres au format WebVTT pour une ou
+* Outils vidéos : découpage et création de chapitres
+* Sous titrage vidéo : ajout de sous titres au format WebVTT pour une ou
   plusieurs langues
 * Améliorations graphiques
 
