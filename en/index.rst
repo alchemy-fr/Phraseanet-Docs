@@ -50,7 +50,7 @@ Here are the main changes in version 4.1:
 * Worker: this service allows performance gains in the management of
   sub-definition files
 * Geolocation: Search for records by selecting locations on maps,
-  add of locations in the record note via it edit form
+  add of locations in the record note via the edit form
 * Video tools: Cutting and creating chapters
 * Video subtitling: Add subtitles in WebVTT format for one or more languages
 * Graphics improvements
