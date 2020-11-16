@@ -17,6 +17,16 @@ Migrate Lazaret , download , custom and datas directories
 
 Copy your lazaret, download, custom and datas directories directory to the new destination (on your Phraseanet fresh install, take note note of the path define inside your env.local file).
 
+ex:
+
+.. code-block:: bash
+
+    ~/Phraseanet$ cp -rf ~/migration/datas/ .
+    
+.. warning::
+
+    When copying datas directly inside the fpm container, the operation should be performed as the user app:app.
+
 
 Importing application box and databoxes
 ***************************************
@@ -41,7 +51,7 @@ On  the ‘Sbas’ table in the application box report the changes made inside t
 
 .. code-block:: bash
 
-    docker exec -i <mysql_container_tag> -uuser -ppass -e "USE <ab_name>; UPDATE sbas SET host='host', user='user', pwd='pwd';"
+    docker exec -i <mysql_container_tag> -uuser -ppass -e "USE <ab_name>; UPDATE sbas SET host='host', dbname='dbname', user='user', pwd='pwd';"
 
 Change the storage path to reflect the paths defined inside your env.local on your dbs:
 
@@ -51,9 +61,9 @@ Change the storage path to reflect the paths defined inside your env.local on yo
 
 .. code-block:: bash
  
-    docker exec -i <mysql_container_tag> mysql -uuser -p -e "USE <db_name_of_the_databox>; UPDATE pref SET value=REPLACE(value,'<OLD_PATH>','<NEW_PATH>');"
+    docker exec -i <mysql_container_tag> mysql -uuser -ppass -e "USE <db_name_of_the_databox>; UPDATE pref SET value=REPLACE(value,'<OLD_PATH>','<NEW_PATH>') WHERE prop="structure";"
 
-Set the key inside configuration file
+Set the key and the application box name inside the configuration file
 *************************************
 
 Copy and pass the key from the older configuration.yml file inside the newly created configuration file:
@@ -66,6 +76,10 @@ Copy and pass the key from the older configuration.yml file inside the newly cre
 
     main:
         key: mysecretkey
+        
+    ...
+    
+    dbname: <ab_name>
 
 Then compile the configuration from the worker container:
 
