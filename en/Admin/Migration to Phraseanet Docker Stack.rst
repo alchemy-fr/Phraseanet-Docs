@@ -87,7 +87,7 @@ Then compile the configuration from the worker container:
 
     docker-compose -f docker-compose.yml run --rm worker bin/console comp:conf
 
-Upgrade application 
+Upgrade the application 
 *******************
 
 Launch the “builder” container and plays the upgrade:
