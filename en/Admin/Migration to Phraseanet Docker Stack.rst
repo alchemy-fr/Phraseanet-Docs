@@ -5,17 +5,17 @@ Migration to Phraseanet Docker Stack
 
     Phraseanet Docker stack up and running. For more information on how to install Phraseanet with Docker go to https://github.com/alchemy-fr/Phraseanet#phraseanet-with-docker.
 
-    A dump of the application box and databoxes of the Phraseanet install you whish to migrate.
+    A dump of the application box and databoxes of the Phraseanet install you wish to migrate.
 
-    A backup of the following diretories : custom, lazaret, download as well as the datas directories ("db_name_of_the_databox").
+    A backup of the following directories : custom, lazaret, download as well as the datas directories ("db_name_of_the_databox").
 
     A backup of your previous configuration file.
 
 
-Migrate Lazaret , download , custom and datas directories
+Migrate Lazaret, download, custom and datas directories
 *********************************************************
 
-Copy your lazaret, download, custom and datas directories directory to the new destination (on your Phraseanet fresh install, take note note of the path define inside your env.local file).
+Copy your lazaret, download, custom and datas directories to the new destination on your Phraseanet fresh install (take note note of the path define inside your env.local file).
 
 ex:
 
@@ -31,7 +31,7 @@ ex:
 Importing application box and databoxes
 ***************************************
 
-Import the ab and dbs to the mysql container using the following commands
+Import the ab and dbs to the mysql container using the following commands:
 
 Ab:
 
@@ -47,7 +47,7 @@ Dbs:
 
 Apply the changes to the newly imported ab and dbs to reflect the configuration inside your env.local:
 
-On  the ‘Sbas’ table in the application box report the changes made inside the  env.local in accordance to the env variables:
+On  the ‘Sbas’ table in the application box report the changes made inside the env.local in accordance to the env variables:
 
 .. code-block:: bash
 
@@ -90,7 +90,7 @@ Then compile the configuration from the worker container:
 Upgrade the application 
 *******************
 
-Launch the “builder” container and plays the upgrade:
+Launch the “builder” container and lauch the upgrade:
 
 .. code-block:: bash
  
@@ -99,7 +99,7 @@ Launch the “builder” container and plays the upgrade:
 Launch the populate of the index
 ********************************
 
-you can populate the inex using the builder container with:
+You can then populate the index using the builder container with:
 
 .. code-block:: bash
 
