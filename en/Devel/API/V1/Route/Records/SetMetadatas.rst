@@ -5,7 +5,7 @@ About
 -----
 
 Adds or modifies the metadatas for a given record. The record can be a document
-or a story.
+or a story
 
 .. code-block:: bash
 
