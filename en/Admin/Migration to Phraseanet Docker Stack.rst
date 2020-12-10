@@ -1,4 +1,4 @@
-Migration to Phraseanet data to Docker Stack orchestrated by Docker-Compose
+Migration to Phraseanet data to Docker orchestrated by Docker-Compose
 ====================================
 
 .. topic:: Requirements
@@ -37,13 +37,13 @@ Ab:
 
 .. code-block:: bash
 
-    docker exec -i <mysql_container_tag> mysql -uuser -ppass <ab_name_of_the_applicationbox_to_import> < <db_name_of_the_applicationbox_to_import>.sql
+    docker exec -i <mysql_container_tag> mysql -uuser -ppass <ab_name_of_the_applicationbox_to_import>.sql < <db_name_of_the_applicationbox_to_import>.sql
 
 Dbs:
 
 .. code-block:: bash
 
-    docker exec -i <mysql_container_tag> mysql -uuser -ppass <db_name_of_the_databox_to_import> < <db_name_of_the_databox_to_import>.sql
+    docker exec -i <mysql_container_tag> mysql -uuser -ppass <db_name_of_the_databox_to_import>.sql < <db_name_of_the_databox_to_import>.sql
 
 Apply the changes to the newly imported ab and dbs to reflect the configuration inside your env.local:
 
