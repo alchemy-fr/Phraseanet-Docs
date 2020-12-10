@@ -34,8 +34,8 @@ Parameters
 ============= =========== ========= =============
  query         string                Search query ; search query is the same syntax as in phraseanet. Default value is an string, which equals “all records”
  bases         array                 An array of base_ids ; If an empty array or no value are provided, the query is done on all collections
- offset_start  int         0         The offset of the first record to return. The offset of the initial record is 0 (not 1).
- per_page      int         10        The maximum number of records to return.
+ offset_start  int         0         The offset of the first record to return. The offset of the initial record is 0 (not 1)
+ per_page      int         10        The maximum number of records to return
  ord           string                Order results of the request. Available values are “asc” and “desc”
  sort          string                Sort the results of the request. Available values are “relevance” and “created_on” and “updated_on” or any other documentary field part of the requested Databox
  record_type   string                The type of records to query. Available values are “audio”, “video”, “image”, “document”, “flash”
@@ -43,8 +43,9 @@ Parameters
  date_field    string                Select a field to search with datemin and datemax filters
  date_min      string                The minimum date as string formated as follow 'Y/m/d' (you need to set a datefield value to use this feature)
  date_max      string                The maximum date formated as follow 'Y/m/d' (you need to set a datefield value to use this feature)
- status        array
- fields        array
+ status        array                 An array of status-bits to restrict the search to the given status-bits
+ fields        array                 An array of fileds to restrict the search selected fields
+ truncation    int         1         Activates truncation for the search if the parameter is equal to 1. By default, the truncation is not activated and the parameter is equal to 0
 ============= =========== ========= =============
 
 Response Fields
