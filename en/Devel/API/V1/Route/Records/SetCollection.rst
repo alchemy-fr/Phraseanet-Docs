@@ -4,7 +4,7 @@ Records SetCollection
 About
 -----
 
-Moves a record to another collection.
+Moves a record to another collection
 
 .. code-block:: bash
 

@@ -33,11 +33,11 @@ Paramètres
  Paramètres    Type        Exemple   Information
 ============= =========== ========= =============
  query         chaîne                La requête de recherche est la même syntaxe que dans Phraseanet, La valeur par défaut est une chaîne égale à "all records"
- bases         tableau               Un tableau d'identifiants de collections. Si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections disponibles.
- offset_start  entier         1      Le décalage du premier enregistrement à retourner. Le décalage de l'enregistrement initial est 0 (pas 1).
+ bases         tableau               Un tableau d'identifiants de collections. Si aucun identifiant de collection n'est donné, la requête est exécutée sur toute les collections disponibles
+ offset_start  entier         1      Le décalage du premier enregistrement à retourner. Le décalage de l'enregistrement initial est 0 (pas 1)
  per_page      entier         10     Le nombre maximum d'enregistrements à retourner.
  ord           chaîne                Ordonne les résultats d'une recherche. Les valeurs possibles sont "asc" et "desc"
- sort          chaîne                Trie les résultats d'une recherche. Les valeurs possibles sont "relevance", "created_on" et "updated_on" ou tout autre champ déclaré dans la structure documentaire de la Databox interrogée.
+ sort          chaîne                Trie les résultats d'une recherche. Les valeurs possibles sont "relevance", "created_on" et "updated_on" ou tout autre champ déclaré dans la structure documentaire de la Databox interrogée
  record_type   chaîne                Le type de document recherché. Les valeurs disponibles sont "audio", "video", "image", "document" et "flash"
  search_type   entier         0      "0" pour rechercher des documents et "1" pour rechercher des reportages
  date_field    chaîne                Sélectionner un champ pour rechercher avec les filtres "date_min" et "date_max"
@@ -45,6 +45,7 @@ Paramètres
  date_max      chaîne                La date maximum sous la forme 'Y/m/d' (Le paramètre "date_field" doit être renseigné)
  status        tableau               Un tableau qui restreint les documents recherchés aux status donnés
  fields        tableau               un tableau qui restreint le champ de recherche aux champs sélectionnés
+ truncation    entier         1      Active la troncature pour la recherche si le paramètre vaut 1. Par défaut la troncature n'est pas activée et le paramètre vaut 0
 ============= =========== ========= =============
 
 Attribut de la réponse
