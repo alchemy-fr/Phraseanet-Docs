@@ -70,7 +70,7 @@ Change the storage path to reflect the paths defined inside your env.local on yo
 
 .. code-block:: bash
  
-    docker exec -i <mysql_container_id> mysql -uuser -ppass -e "USE <db_name_of_the_databox>; UPDATE pref SET value=REPLACE(value,'<OLD_PATH>','<NEW_PATH>') WHERE prop="structure";"
+    docker exec -i <mysql_container_id> mysql -uuser -ppass -e "USE <db_name_of_the_databox>; UPDATE pref SET value=REPLACE(value,'<OLD_PATH>','<NEW_PATH>') WHERE prop='structure';"
 
 
 Set the key and the application box name inside the configuration file
