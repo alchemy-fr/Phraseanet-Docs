@@ -8,9 +8,13 @@ Migration to Phraseanet data to Docker orchestrated by Docker-Compose
     A dump of the application box and databoxes of the Phraseanet install you wish to migrate ("db_name_of_the_databox").
 
     A backup of the following directories : custom, lazaret, download (located inside the)as well as the datas directories.
+    
     - "download" inside the ./tmp of your Phraseanet source directory
+    
     - "lazaret" inside the ./tmp of your Phraseanet source directory
+    
     - "custom" inside the ./config of your Phraseanet source directory
+    
     - "datas" located by default inside the source of Phraseanet but can be located inside a seperate volume depending on your setup 
     
 
