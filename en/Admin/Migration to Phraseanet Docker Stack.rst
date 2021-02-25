@@ -1,4 +1,4 @@
-Migration to Phraseanet data to Docker orchestrated by Docker-Compose
+Migration of Phraseanet data to Docker orchestrated by Docker-Compose
 ====================================
 
 .. topic:: Requirements
