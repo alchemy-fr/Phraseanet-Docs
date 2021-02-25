@@ -1,7 +1,7 @@
 Migration of Phraseanet data to Docker orchestrated by Docker-Compose
 ====================================
 
-.. topic:: Requirements
+.. topic:: Requirements:
 
     Phraseanet Docker stack up and running. For more information on how to install Phraseanet with Docker go to https://github.com/alchemy-fr/Phraseanet#phraseanet-with-docker.
 
