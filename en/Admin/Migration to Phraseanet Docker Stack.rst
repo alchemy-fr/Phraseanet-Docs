@@ -24,7 +24,7 @@ Migration of Phraseanet data to Docker orchestrated by Docker-Compose
 Migrate Lazaret, download, custom and datas directories
 *********************************************************
 
-Copy your lazaret, download, custom and datas directories to the new destination on your Phraseanet fresh install (take note note of the path define inside your env.local file).
+Copy your lazaret, download, custom and datas directories to the new destination on your Phraseanet fresh install (take note of the path define inside your env.local file).
 
 ex:
 
