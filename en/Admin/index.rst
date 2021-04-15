@@ -33,3 +33,4 @@ Phraseanet can also be managed through 2 interfaces: `API <../../Devel>`_ and
     Plugins
     Console
     Maintenance
+    Migration to Phraseanet Docker Stack
