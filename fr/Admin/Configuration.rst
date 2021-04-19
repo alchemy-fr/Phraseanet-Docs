@@ -413,20 +413,65 @@ Voici un exemple de fichier de configuration commenté
         images_per_page: 60
         images_size: 200
 
-    embed_bundle:
-        video_player: videojs                 # (string)   Paramétrage pour le lecteur audiovidéo videojs
-        video_autoplay: false                 # (boolean)  Active ou désactive la lancement automatique de la lecture
-        video_available_speeds:               # (array)    Vitesses de lecture disponibles dans le lecteur videojs
-            - '0.5'
-            - 1
-            - 2
-            - 3
-            - 4
-        audio_player: videojs
-        audio_autoplay: false
-        coverSubdef: thumbnailx4              # (string)   Nom de la sous-définition présentée dans le lecteur lors de la lecture d'un document audio
+    embed_bundle:                                  # (array)     Configuration de Embed Bundle
+        video:
+            player: videojs                        # (array)     Active le lecteur videojs (seul choix possible)
+            autoplay: false                        # (boolean)   Active, désactive la lecture automatique des vidéos dans le lecteur
+            video_message_start: StartOfMessage    # (string)    Le nom du champ documentaire ou est stockée la valeur de début de lecture en seconde
+            coverSubdef: previewx4                 # (string)    Sous-définition utilisée pour la présentation hors lecture dans le lecteur
+            available-speeds:                      # (array)     Vitesses de lecture disponibles dans le lecteur
+                - 1
+                - 1.5
+                - 3
+        audio:
+            player: videojs                        # (array)     Active le lecteur videojs pour la lecture audio (seul choix possible)
+            autoplay: false                        # (boolean)   AActive, désactive la lecture automatique des documents audio dans le lecteur
         document:
-            enable_pdfjs: true                # (boolean)  Active la visionneuse pdfjs pour l'affichage des documents PDF
+            player: flexpaper
+            enable-pdfjs: true                     # (boolean)   Utiliser pdfjs comme visionneuse pour les documents PDF
+    video-editor:                                  # (array)     Configuration des options de chapitrage de l'outil vidéo
+        ChapterVttFieldName: VideoTextTrackChapters
+        seekBackwardStep: 500 # in ms
+        seekForwardStep: 500  # in ms
+        playbackRates:
+            - 1
+            - '1.5'
+            - 3
+    geocoding-providers:                           # (array)     Configuration de la géolocalisation dans Production
+        -
+            map-provider: mapboxWebGL
+            enabled: false
+            public-key: ''
+            map-layers:
+                -
+                    name: Light
+                    value: 'mapbox://styles/mapbox/light-v9'
+                -
+                    name: Streets
+                    value: 'mapbox://styles/mapbox/streets-v9'
+                -
+                    name: Basic
+                    value: 'mapbox://styles/mapbox/basic-v9'
+                -
+                    name: Satellite
+                    value: 'mapbox://styles/mapbox/satellite-v9'
+                -
+                    name: Dark
+                    value: 'mapbox://styles/mapbox/dark-v9'
+            transition-mapboxgl:
+                -
+                    animate: true
+                    speed: '2.2'
+                    curve: '1.42'
+            default-position:
+                - '48.879162'
+                - '2.335062'
+            default-zoom: 5
+            marker-default-zoom: 9
+            geonames-field-mapping: true
+            cityfields: City, Ville
+            provincefields: Province
+            countryfields: Country, Pays
 
 Langues
 *******
@@ -847,31 +892,32 @@ Un lien symbolique est créé pour chaque image.
         type: nginx
         symlink-directory: ''
 
-Paquets intégrés
-****************
+Embed bundle
+************
 
 Lecteur audiovidéo Videojs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Phraseanet inclut le lecteur `Videojs`_ pour la prévisualisation de documents
-de type audio et vidéo.
+Phraseanet inclut le lecteur `Videojs`_ pour lecture des prévisualisations
+des documents de type audio et vidéo.
 
 Il peut être personnalisé :
 
 .. code-block:: yaml
 
-    embed_bundle:
-        video_player: videojs                 # (string)   Paramétrage pour le lecteur audiovidéo videojs
-        video_autoplay: false                 # (boolean)  Active le lancement automatique de la lecture des documents vidéo
-        video_available_speeds:               # (array)    Vitesses de lecture proposées dans le lecteur videojs
-            - '0.5'
-            - 1
-            - 2
-            - 3
-            - 4
-        audio_player: videojs
-        audio_autoplay: false                 # (boolean)  Active le lancement automatique de la lecture de documents audio
-        coverSubdef: thumbnailx4              # (string)   Nom de la sous-définition présentée dans le lecteur lors de la lecture d'un document audio
+    embed_bundle:                                  # (array)     Configuration de embed bundle
+        video:
+            player: videojs                        # (array)     Active videojs comme lecteur de prévisualisations vidéos - seul choix possible
+            autoplay: false                        # (boolean)   Active la lecture automatique de la prévisualisation vidéo
+            video_message_start: StartOfMessage    # (string)    Le nom du champ documentaire ou est stockée la valeur de début de lecture en seconde
+            coverSubdef: previewx4                 # (string)    Définit la sous-définition de type image utilisé pour présenter le lecteur hors lecture
+            available-speeds:                      # (array)     Vitesses de défilement disponibles dans le lecteur
+                - 1
+                - 1.5
+                - 3
+        audio:
+            player: videojs                        # (array)     Active vidéojs comme lecteur de prévisualisations audio
+            autoplay: false                        # (boolean)   Active la lecture automatique de la prévisualisation audio
 
 .. note::
 
@@ -881,31 +927,91 @@ Il peut être personnalisé :
 Visionneuse pdf.js
 ~~~~~~~~~~~~~~~~~~
 
-La visionneuse `Pdf.js`_ peut être utilisée pour l'affichage de prévisualisations
-des documents PDF en remplacement de la visionneuse FlexPaper utilisée
-par defaut.
+La visionneuse `Pdf.js`_ peut être utilisée pour l'affichage de
+prévisualisations des documents PDF en remplacement de la visionneuse FlexPaper
+utilisée par defaut.
 
 Pdfjs permet la lecture de fichiers PDF par le navigateur tandis que
 FlexPaper nécessite que le plugin Adobe Flash Player soit installé et activé
-dans le navigateur ainsi qu'autorisé, cas échéant, pour l'instance Phraseanet
+pour le navigateur ainsi qu'autorisé, cas échéant, pour l'instance Phraseanet
 consultée.
 
 .. code-block:: yaml
 
     embed_bundle:
         document:
-            player: flexpaper
-            enable_pdfjs: true                # (boolean)  Active la visionneuse pdfjs pour l'affichage des documents PDF
+            player: flexpaper                      # (string)    Pour les documents Office, utiliser flexpaper ou pdfjs
+            enable-pdfjs: true                     # (boolean)   Utiliser pdfjs comme lecteur de prévisualisation pour les documents PDF
 
 
 .. note::
 
-    FlexPaper reste utilisé pour l'affichage des prévisualisations de documents
-    Office lorsque FlexPaper est le type de rendu utilisé pour la
-    sous-définition Preview des médias de type document.
+    Flexpaper ou Pdfjs peuvent être utilisés pour la lecture des fichiers de
+    prévisualisation de documents Microsoft Office. Paramétrer la
+    sous-définition Preview pour les documents de type Document en fonction du
+    choix de paramétrage du lecteur utilisé.
 
+Video Editor
+************
+
+La section permet le paramétrage d'options dans l'outil d'édition vidéo proposé
+dans Production.
+
+.. code-block:: yaml
+
+    video-editor:
+        ChapterVttFieldName: VideoTextTrackChapters # (string)   Le nom du champ documentaire stockant les données de chapitrage
+        seekBackwardStep: 500                       # (integer)  En millisecondes, la valeur de déplacement de la tête de lecture en arrière
+        seekForwardStep: 500                        # (integer)  En millisecondes, la valeur de déplacement de la tête de lecture en avant
+        playbackRates:                              # (array)    Les vitesses de défilement disponibles dans le lecteur
+            - 1
+            - '1.5'
+            - 3
+
+Geocoding providers
+*******************
+
+La section permet le paramétrage des options de la géolocalisation dans
+Production.
+
+Une clé publique MapBox API est requise pour utiliser l'affichage par
+géolocalisation. Cette clé peut être obtenue sur le site `Mapbox`_.
+
+Pour utiliser l'aide à la saisie proposée par `GeoNames`_ dans le formulaire
+d'édition de Phraseanet, fournir une adresse geonames-server dans la section
+Webservice du fichier de configuration.
+
+.. code-block:: yaml
+
+    geocoding-providers:                           # (array)     Configuration de la géolocalisation dans Production
+        -
+            map-provider: mapboxWebGL              # (string)    La bibliothèque utilisée pour l'affichage de cartes
+            enabled: false                         # (string)    Active ou désactive la fonctionnalité dans Production
+            public-key: ''                         # (string)    La clé d'API MapBox à utiliser
+            map-layers:                            # (array)     Tableau regroupant les fonds de cartes proposées
+                -
+                    name: Streets
+                    value: 'mapbox://styles/mapbox/streets-v9'
+                -
+                    name: Basic
+                    value: 'mapbox://styles/mapbox/basic-v9'
+            transition-mapboxgl:
+                -
+                    animate: true
+                    speed: '2.2'
+                    curve: '1.42'
+            default-position:                      # (array)     La postion par défaut de la carte
+                - '48.879162'
+                - '2.335062'
+            default-zoom: 5
+            marker-default-zoom: 9
+            geonames-field-mapping: true           # (boolean)   Active, désactive l'assistance à la saisie Geoname dans le formulaire d'édition
+            cityfields: City, Ville                # (array)     Mapping des champs Phraseanet pour la propriété Name (la ville)
+            provincefields: Province               # (array)     Mapping des champs Phraseanet pour la propriété Region
+            countryfields: Country, Pays           # (array)     Mapping des champs Phraseanet pour la propriété Country
 
 .. _Pdf.js: https://mozilla.github.io/pdf.js/
 .. _Videojs: https://videojs.com/
-
+.. _Mapbox: https://www.mapbox.com/
+.. _GeoNames: https://www.geonames.org/
 

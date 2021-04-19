@@ -1,4 +1,4 @@
-Bienvenue dans la documentation Phraseanet 4.0
+Bienvenue dans la documentation Phraseanet 4.1
 ==============================================
 
 Le DAM Open source
@@ -10,13 +10,13 @@ créée et maintenue par `Alchemy`_.
 
 Elle permet de stocker, de gérer, de partager et de diffuser un large panel de
 ressources numériques de type image, vidéo, audio ou bureautique au sein de
-groupes de travail de toute dimension.
+groupes de travail de toutes dimensions.
 
 Solution *100% Web*, elle s'exécute dans un navigateur internet.
 
 Construite à partir de composants standards, *Phraseanet* s'installe sur des
-serveurs Linux, Mac Os X ou Windows et repose sur les briques logicielles
-courantes telles Elasticsearch, MySQL, PHP et Apache.
+serveurs Linux et repose sur les briques logicielles courantes telles
+Elasticsearch, MySQL, PHP et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
 *Phraseanet*.
 Certaines de ces librairies sont
@@ -25,8 +25,8 @@ Certaines de ces librairies sont
 A propos de cette documentation
 -------------------------------
 
-Le présent manuel aborde les questions liées à l'
-:doc:`administration<Admin/index>`, à l':doc:`utilisation<User/index>`
+Le présent manuel aborde les questions liées à
+:doc:`l'administration<Admin/index>`, à :doc:`l'utilisation<User/index>`
 et au :doc:`développement<Devel/index>` reposants sur le logiciel Open source
 *Phraseanet*.
 Une :doc:`FAQ<FAQ/index>` essaye de répondre aux questions fréquentes.
@@ -45,13 +45,20 @@ commencer.
     User/index
     Admin/index
 
-Quoi de neuf dans la version 4.0 ?
+Quoi de neuf dans la version 4.1 ?
 ----------------------------------
 
-La version 4.0 introduit les changements suivants :
+La version 4.1 introduit les changements suivants :
 
-* Implémentation de Elasticsearch comme moteur de recherche unique
-* Refonte d'interfaces
+* Déploiement simplifié sous `Docker`_ (`Voir les images officielles`_)
+* Worker : ce service permet des gains de performance dans la gestion des
+  sous-définition de fichiers
+* Géolocalisation : recherche d'enregistrements par sélection d'emplacements
+  sur des cartes, ajout de localisations dans la notice de l'enregistrement
+* Outils vidéos : découpage et création de chapitres
+* Sous titrage vidéo : ajout de sous titres au format WebVTT pour une ou
+  plusieurs langues
+* Améliorations graphiques
 
 
 Besoin d'aide ?
@@ -69,3 +76,5 @@ ces groupes.
 
 .. _Alchemy: https://www.alchemy.fr/
 .. _Phraseanet: https://www.phraseanet.com/
+.. _Voir les images officielles: https://hub.docker.com/u/alchemyfr
+.. _Docker: https://www.docker.com/

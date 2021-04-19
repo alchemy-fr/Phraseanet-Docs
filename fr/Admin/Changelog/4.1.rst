@@ -1,0 +1,4 @@
+Version 4.1
+===========
+
+Voici les principaux changements et nouveautés apportés par la version 4.1.

@@ -45,6 +45,7 @@ Paramètres
  date_max      chaîne                La date maximum sous la forme 'Y/m/d' (Le paramètre "date_field" doit être renseigné)
  status        tableau               Un tableau qui restreint les documents recherchés aux status donnés
  fields        tableau               un tableau qui restreint le champ de recherche aux champs sélectionnés
+ truncation    entier         1      Active la troncature pour la recherche si le paramètre vaut 1. Par défaut la troncature n'est pas activée et le paramètre vaut 0
 ============= =========== ========= =============
 
 Attribut de la réponse
