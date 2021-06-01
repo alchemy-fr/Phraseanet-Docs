@@ -31,6 +31,7 @@ services:
     restart: on-failure
     volumes:
     - ./_build/html:/usr/share/nginx/html
+    - ./site.conf:/etc/nginx/conf.d/site.conf
     environment:
     - PHRASEANET_DOC_NGINX_PORT
     #- GATEWAY_SEND_TIMEOUT
@@ -41,3 +42,12 @@ services:
     networks:
       - internal
 
+  php-fpm:
+    build:
+      context: .
+      target: phraseanet-doc-nginx
+    image: php:7-fpm
+    volumes:
+      - ./_build/html:/usr/share/nginx/html:rw
+    networks:
+      - internal
