@@ -5,6 +5,31 @@
 
 Thanks to CakePHP Team for their multinlingual Makefile script !
 
+## How to use with docker 
+
+git clone 
+
+git checkout the branch you want to work on.
+
+adapt .env to your local setting
+
+```
+docker-compose build 
+docker-compose up
+```
+
+
+### Workflow 
+
+Made your change on RST file 
+
+and launch for see modification
+
+```
+docker-compose build 
+docker-compose up -d
+```
+
 ## How to Generate
 ```
 apt-get install python25 python25-dev
