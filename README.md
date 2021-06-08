@@ -5,7 +5,40 @@
 
 Thanks to CakePHP Team for their multinlingual Makefile script !
 
-## How to Generate
+## How to use with docker 
+
+git clone 
+
+git checkout the branch you want to work on.
+
+adapt .env to your local setting
+
+```
+docker-compose build 
+docker-compose up -d
+```
+
+Default url is 
+
+http://127.0.0.1:4041/en/index.html
+
+or 
+
+http://127.0.0.1:4041/fr/index.html
+
+
+### Workflow 
+
+Make your changes to the RST files.
+To view the changes, run:
+
+```
+docker-compose build 
+docker-compose up -d
+```
+
+## How to Generate in traditional environment
+
 ```
 apt-get install python25 python25-dev
 easy_install sphinx
