@@ -159,7 +159,7 @@ class.
 .. _Syslog plugin: https://github.com/Phraseanet/syslog-plugin
 .. _PSR-0: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 .. _composer: http://getcomposer.org/doc/
-.. _Silex: http://silex.sensiolabs.org/
-.. _Twig: http://twig.sensiolabs.org/
+.. _Silex: https://silex.symfony.com/
+.. _Twig: https://twig.symfony.com/
 .. _semver: http://semver.org/
 .. _SPDX: https://spdx.org/licenses/

@@ -156,7 +156,7 @@ media (sub-definition file or original document) concerned by the shared
 information.
 
 .. _Flickr: https://www.flickr.com/
-.. _YouTube: http://www.youtube.com/
-.. _Dailymotion: http://www.dailymotion.com/
+.. _YouTube: https://www.youtube.com/
+.. _Dailymotion: https://www.dailymotion.com/
 .. _Facebook: https://www.facebook.com/
 .. _Twitter: https://www.twitter.com/

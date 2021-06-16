@@ -29,7 +29,7 @@ Alternative starts and stops
 ****************************
 
 If you want to start and stop the Scheduler automatically, for example in a
-cron script, you can use `KonsoleKommander <Console>`_ and find the right
+cron script, you can use `KonsoleKommander <Console.html>`_ and find the right
 command:
 
 .. code-block:: bash
