@@ -68,6 +68,6 @@ presentation of these groups.
 
 .. _Alchemy: https://www.alchemy.fr/en
 .. _Phraseanet: https://www.phraseanet.com/
-.. _developed by Alchemy: http://phraseanet.github.com/
+.. _developed by Alchemy: https://github.com/alchemy-fr/Phraseanet
 .. _See official images: https://hub.docker.com/u/alchemyfr
 .. _Docker: https://www.docker.com/

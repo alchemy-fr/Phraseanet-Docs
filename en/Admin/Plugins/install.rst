@@ -158,8 +158,8 @@ class.
 .. _Mail log plugin: https://github.com/Phraseanet/mail-log-plugin
 .. _Syslog plugin: https://github.com/Phraseanet/syslog-plugin
 .. _PSR-0: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
-.. _composer: http://getcomposer.org/doc/
+.. _composer: https://getcomposer.org/doc/
 .. _Silex: https://silex.symfony.com/
 .. _Twig: https://twig.symfony.com/
-.. _semver: http://semver.org/
+.. _semver: https://semver.org/
 .. _SPDX: https://spdx.org/licenses/

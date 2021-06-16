@@ -112,4 +112,4 @@ Fill the Mount database form:
     information by the DBA
   * Validate the form
 
-.. _See the MySQL documentation: http://dev.mysql.com/doc/refman/5.0/fr/creating-database.html
+.. _See the MySQL documentation: https://dev.mysql.com/doc/refman/8.0/en/create-database.html
