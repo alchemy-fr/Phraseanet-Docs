@@ -97,4 +97,4 @@ application ; la page des paramètres de l'application s'affiche.
     d'authentification des applications clientes à l'API Phraseanet, consulter
     la RFC du protocole `Oauth2`_.
 
-.. _Oauth2: http://tools.ietf.org/html/draft-ietf-oauth-v2
+.. _Oauth2: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2

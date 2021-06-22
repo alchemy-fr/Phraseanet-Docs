@@ -32,7 +32,7 @@ Arrêts et démarrages alternatifs
 ********************************
 
 Pour automatiser des arrêts et des démarrages du planificateur de tâches,
-utiliser l’utilitaire `KonsoleKommander <Console>`_ et l'une des commandes
+utiliser l’utilitaire `KonsoleKommander <Console.html> et l'une des commandes
 suivantes dans une tâche Cron par exemple.
 
 .. code-block:: bash

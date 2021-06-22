@@ -149,11 +149,11 @@ Meta Markups
 
         .. seealso::
 
-            documentation en ligne sur http://http://sphinx.pocoo.org/
+            documentation en ligne sur https://www.sphinx-doc.org/fr/master/
 
     .. seealso::
 
-        documentation en ligne sur http://http://sphinx.pocoo.org/
+        documentation en ligne sur https://www.sphinx-doc.org/fr/master/
 
   * Topic  ::
 

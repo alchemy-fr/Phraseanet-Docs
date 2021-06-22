@@ -200,22 +200,24 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 h1, h2, h3, h4, h5, h6 {
     margin: 30px 0px 10px 0px;
     padding: 5px 0 5px 10px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-    -webkit-box-shadow: 1px 1px 1px #d8d8d8;
-    -moz-box-shadow: 1px 1px 1px #d8d8d8;
-    box-shadow: 1px 1px 1px #d8d8d8;
+	/*-webkit-border-radius: 4px;*/
+	/*-moz-border-radius: 4px;*/
+	/*border-radius: 4px;*/
+    /*-webkit-box-shadow: 1px 1px 1px #d8d8d8;*/
+    /*-moz-box-shadow: 1px 1px 1px #d8d8d8;*/
+    /*box-shadow: 1px 1px 1px #d8d8d8;*/
 }
 h1 {
 	margin-top: 0;
-    background-color: #799EA8; /* #0088CC; 19B2FF; 32BAFF; 4BC2FF; 64CAFF; 7DD3FF; 96DBFF; AFE4FF; C8ECFF; E1F5FF; FAFDFF*/
+    background-color: transparent; /*#799EA8; #0088CC; 19B2FF; 32BAFF; 4BC2FF; 64CAFF; 7DD3FF; 96DBFF; AFE4FF; C8ECFF; E1F5FF; FAFDFF*/
+    border-bottom:1px solid #cccccc;
 }
 h2 {
 	background-color: #A7DAE8;
 }
 h3 {
 	background-color: #4B6269;
+	color:white;
 }
 h4, h5, h6 {
 	background-color: #B0E6F5;
