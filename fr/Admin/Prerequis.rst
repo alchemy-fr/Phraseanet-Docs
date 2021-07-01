@@ -4,6 +4,10 @@ Pré-requis
 Phraseanet est conçu pour fonctionner sur un système AMP dont la configuration
 nécessite des besoins spécifiques et des dépendances.
 
+.. note::
+
+    Pour plus de facilité, nous vous recommandons fortement de :doc:`déployer Phraseanet avec Docker <InstallationDocker>`.
+
 Serveur HTTP
 ------------
 
@@ -19,10 +23,16 @@ Phraseanet requiert un moteur de stockage de type InnoDB.
 
 Les SGBD MySQL, MariaDB ou Percona fournissent ce service.
 
-* MySQL >= 5.5
+* MariaDB >= 10.4.5
 
   **Important** : Désactiver le mode strict (se reporter à la documentation
   du SGBD).
+
+Agent de messages
+-----------------
+
+Phraseanet requiert un agent de messages type `RabbitMQ <https://www.rabbitmq.com>`_ (version >= 3.8.16).
+
 
 PHP
 ---
@@ -62,7 +72,7 @@ Elasticsearch
 
 .. _Installer-Elasticsearch:
 
-Phraseanet 4.0 s'appuie sur le moteur Elasticsearch. Il est obligatoire
+Phraseanet s'appuie sur le moteur Elasticsearch. Il est obligatoire
 de l'utiliser en respectant les spécifications suivantes :
 
     * Version 2.1, 2.2, 2.3 ou 2.4 (obligatoire)
@@ -148,9 +158,6 @@ des programmes externes selon la nature des documents :
 * XPDF
   Extraction du text PDF pour son indexation.
 
-* SWFTools
-  Extraction de sous resolutions pour le format flash.
-
 * Unoconv >= 6
   Extraction d'imagettes et de preview sur les documents Office.
 
@@ -165,10 +172,8 @@ des programmes externes selon la nature des documents :
 Clefs d'APIs (optionnelles)
 ---------------------------
 
-* Youtube
-* Dailymotion
-* FlickR
-* Recpatcha
+* `Google reCAPTCHA <https://developers.google.com/recaptcha/intro>`_
+* `Mapbox <https://docs.mapbox.com/help/getting-started/access-tokens/>`_
 
 
 .. _Analysis-icu: https://github.com/elastic/elasticsearch-analysis-icu

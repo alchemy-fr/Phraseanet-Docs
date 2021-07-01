@@ -20,4 +20,4 @@ What's new?
   in PHP allowing you to develop your applications by exploiting the Phraseanet
   API.
 
-.. _Phraseanet SDK: http://phraseanet-php-sdk.readthedocs.org/
+.. _Phraseanet SDK: https://phraseanet-php-sdk.readthedocs.io

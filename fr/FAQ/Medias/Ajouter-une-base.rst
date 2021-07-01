@@ -120,4 +120,26 @@ Remplir le formulaire **Monter une base** :
       case appropriée
     * Soumettre le formulaire
 
-.. _Consulter la documentation MySQL: http://dev.mysql.com/doc/refman/5.0/fr/creating-database.html
+Créer un index ElasticSearch
+----------------------------
+
+.. warning::
+   Dans une configuration multi-bases, les champs de même libellés doivent avoir strictement les mêmes définitions (mêmes types, mêmes formats, etc.)
+
+Pour créer un index ElasticSearch :
+
+Depuis l'interface d'administration
+***********************************
+* Se rendre dans **Worker Manager**, onglet **indexation**
+* Choisissez la ou les bases à indexer
+* Cliquez sur le bouton **indexation**
+
+Depuis la console d'administration
+**********************************
+.. code-block:: bash
+
+    php bin/console searchengine:index
+
+
+
+.. _Consulter la documentation MySQL: https://dev.mysql.com/doc/refman/8.0/en/create-database.html

@@ -238,5 +238,5 @@ Example de configuration Nginx intégrant une configuraton H264 pseudo-streaming
         }
     }
 
-.. _Secure link: http://nginx.org/en/docs/http/ngx_http_secure_link_module.html
-.. _MP4: http://nginx.org/en/docs/http/ngx_http_mp4_module.html
+.. _Secure link: https://nginx.org/en/docs/http/ngx_http_secure_link_module.html
+.. _MP4: https://nginx.org/en/docs/http/ngx_http_mp4_module.html

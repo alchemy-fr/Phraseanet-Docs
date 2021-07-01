@@ -4,19 +4,14 @@ Les types de champs dans Phraseanet
 L'utilisation du moteur Phrasea implique de typer les champs de la structure
 documentaire.
 
-Quatre types sont disponibles :
+Trois types sont disponibles :
 
 Le type STRING
 --------------
 
-C'est le type par défaut. Il ne produit pas d'indexation par valeur(*). Il ne
-permet ni la recherche avec les opérateurs de comparaison =, <, >... ni le tri.
-
-Le type TEXT
-------------
-
 Le contenu des champs sont indexés par valeur, tel quel. Ce type est destiné aux
-recherches par contenu exact ("auteur=Paul Verlaine").
+recherches par contenu exact (exemple : "auteur=Paul Verlaine") ou flou.
+Notez que seuls les premiers 32 000 caractères seront pris en compte pour l'indexation.
 
 Le type NUMBER
 --------------

@@ -19,4 +19,4 @@ Quoi de neuf ?
 * Sortie du `SDK Phraseanet`_. Cette SDK est une boîte à outils PHP prête à
   l’emploi pour développer vos applications en exploitant Phraseanet.
 
-.. _SDK Phraseanet: http://phraseanet-php-sdk.readthedocs.org/
+.. _SDK Phraseanet: https://phraseanet-php-sdk.readthedocs.io

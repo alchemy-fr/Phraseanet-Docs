@@ -28,11 +28,11 @@ You can contribute by pushing `pull-requests`_ into the following repositories:
 
   https://github.com/alchemy-fr/Phraseanet-Docs
 
-    * Sphinx Tutorial: http://matplotlib.sourceforge.net/sampledoc/
-    * Markups Sphinx: http://sphinx.pocoo.org/markup/
+    * Sphinx Tutorial: https://matplotlib.org/sampledoc/
+    * Markups Sphinx: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 
 * **Phraseanet API client libraries**
 
   https://github.com/alchemy-fr/Phraseanet-Clients/
 
-.. _pull-requests: http://help.github.com/send-pull-requests/
+.. _pull-requests: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request

@@ -8,6 +8,7 @@ of topics covers use cases.
    :maxdepth: 2
 
    Administration/index
+   Docker/index
    Customization/index
    Settings/index
    Media/index
