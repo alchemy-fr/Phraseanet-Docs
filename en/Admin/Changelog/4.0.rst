@@ -1,2 +1,21 @@
-Changelog 4.0
-=============
+Version 4.0
+===========
+
+===========
+What's new?
+===========
+
+* The Elasticsearch engine replaces the Phrasea engine as the application's exclusive search engine.
+* Interfaces redesign
+
+================
+Changelog Github
+================
+
+* `Version 4.0.9 <https://github.com/alchemy-fr/Phraseanet/releases/tag/4.0.9>`_
+* `Version 4.0.8 <https://github.com/alchemy-fr/Phraseanet/releases/tag/4.0.8>`_
+* `Version 4.0.7 <https://github.com/alchemy-fr/Phraseanet/releases/tag/4.0.7>`_
+* `Version 4.0.3 <https://github.com/alchemy-fr/Phraseanet/releases/tag/4.0.3>`_
+* `Version 4.0.2 <https://github.com/alchemy-fr/Phraseanet/releases/tag/4.0.2>`_
+* `Version 4.0.1 <https://github.com/alchemy-fr/Phraseanet/releases/tag/4.0.1>`_
+* `Version 4.0.0 <https://github.com/alchemy-fr/Phraseanet/releases/tag/4.0.0>`_

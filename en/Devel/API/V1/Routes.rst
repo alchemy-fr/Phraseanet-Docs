@@ -3,7 +3,10 @@ Routes
 
 .. toctree::
 
-    Route/Me
+    Route/Me/Me
+    Route/Me/MeCollections
+    Route/Me/MeStructures
+    Route/Me/MeSubdefs
     Route/Search
     Route/Databox/List
     Route/Databox/Collections

@@ -1,5 +1,5 @@
-Install
-=======
+Manual Install and configuration
+================================
 
 Get the sources
 ---------------

@@ -32,7 +32,7 @@ Le rendu des documents multi calque est *bizarre*
 
 La fabrication des sous-définitions de documents de type image est dévolue aux
 logiciels `ImageMagick <http://www.imagemagick.org>`_, `GraphicsMagic <http://www.graphicsmagick.org/>`_
-ou à défaut à la `librairie graphique GD <http://libgd.bitbucket.org/>`_.
+ou à défaut à la `librairie graphique GD <https://libgd.github.io/>`_.
 Seuls ImageMagick et GraphicsMagic peuvent manipuler les document multi calques
 (fichiers Photoshop PSD ou Tiff non aplatis).
 Cependant ils ne sont pas en mesure d'extraire des vignettes et des images de

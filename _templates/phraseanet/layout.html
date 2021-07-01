@@ -99,6 +99,7 @@
 					<li><a href="/3.7">Phraseanet 3.7</a></li>
 					<li><a href="/3.8">Phraseanet 3.8</a></li>
 					<li><a href="/4.0">Phraseanet 4.0</a></li>
+					<li><a href="/4.0">Phraseanet 4.1</a></li>
 				</ul>
 			</div>
 		</div>
@@ -279,12 +280,40 @@
             {%- endblock %}
 
         </div><!-- /container-->
+
         <script type="text/javascript">
+//<style>a{border: 3px solid red !important;}</style>
           $(document).ready(function(){
+
+          	/**
+			 * Remove /4.0 url prefix for local test
+			 */
+			let removePrefixNumberURL = function()
+			{
+			 	if(window.location.port !== 80)
+			 	{
+			 	 	let anchorList = document.querySelectorAll('a');
+
+			 	 	for(let i in anchorList)
+			 	 	{
+						/** {Element} anchor */
+			 	 		let anchor = anchorList[i];
+
+			 	 		if(anchor.href !== undefined)
+						{
+							anchor.href = anchor.href.replace('/4.0/', '/');
+						}
+			 	 	}
+			 	}
+			}
+
             if(window.console)
               console.log('loaded');
               $('#navigation li a').wrapInner('<span>');
+
+			  removePrefixNumberURL();
           });
+
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-3475486-25']);
           _gaq.push(['_setDomainName', '.phraseanet.com']);
@@ -295,6 +324,7 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+
 
         </script>
     </body>

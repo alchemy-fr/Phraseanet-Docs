@@ -1,0 +1,31 @@
+version: "3.4"
+
+networks:
+  internal:
+
+services:
+  sphinx:
+    build:
+      context: .
+      target: phraseanet-doc-sphinx
+    image: local/phraseanet-doc-sphinx:latest
+    restart: on-failure
+    volumes:
+    - ./_build:/docs/_build:rw
+    networks:
+      - internal
+
+  nginx:
+    build:
+      context: .
+      target: phraseanet-doc-nginx
+    image: local/nginx:latest
+    restart: on-failure
+    volumes:
+    - ./_build/html:/usr/share/nginx/html
+    environment:
+    - PHRASEANET_DOC_NGINX_PORT
+    ports:
+      - ${PHRASEANET_DOC_NGINX_PORT}:80
+    networks:
+      - internal

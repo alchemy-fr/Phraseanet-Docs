@@ -87,22 +87,22 @@ Here is a commented configuration file
                 populate_order: RECORD_ID
                 populate_direction: DESC
                 activeTab: '#elastic-search'  # (string)    Name of the active tab for the Search engine parameter section
-                base_aggregate_limit: 10      # (integer)   Parameter setting of the "Base" facet with 10 values
-                collection_aggregate_limit: 10# (integer)   Parameter setting for the "Collection" facet with 10 values
-                doctype_aggregate_limit: 10   # (integer)   Parameter setting for the "Document type" facet with 10 values
-                camera_model_aggregate_limit: 0
-                iso_aggregate_limit: 0
-                aperture_aggregate_limit: 0
-                shutterspeed_aggregate_limit: 0
-                flashfired_aggregate_limit: 0
-                framerate_aggregate_limit: 0
-                audiosamplerate_aggregate_limit: 0
-                videocodec_aggregate_limit: 0
-                audiocodec_aggregate_limit: 0
-                orientation_aggregate_limit: 0
-                colorspace_aggregate_limit: 0
-                mimetype_aggregate_limit: 0
-
+                facets:                       # This section contains all fields define in all databases structure in the instance.
+                    _base:                    # (integer)   Parameter setting of the "Base" facet with 10 values
+                        limit: 10             
+                    _collection:              # (integer)   Parameter setting for the "Collection" facet with all values
+                        limit: -1
+                    _doctype:                 # (integer)   Parameter setting for the "Document type" facet with 10 values
+                        limit: 10
+                    _camera_model:
+                        limit: 10
+                    _iso:
+                        limit: 0
+                    _aperture:
+                        limit: 0
+                    _shutterspeed:
+                        limit: 0
+                        
         key: 86a108b98a5aa92431bf94a42e8d3d3f # (string)  Application key
 
         task-manager:
@@ -137,21 +137,6 @@ Here is a commented configuration file
             mp4box_binary: /usr/bin/MP4Box
             pdftotext_binary: /usr/bin/pdftotext
             recess_binary: /usr/local/bin/recess
-
-        bridge:                               # (array)   Configuration for Phraseanet Bridge (deprecated)
-            youtube:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-                developer_key: ''
-            flickr:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-            dailymotion:
-                enabled: false
-                client_id: ''
-                client_secret: ''
 
     trusted-proxies: {  }                     # (array)   Trusted proxies configuration
 
@@ -414,7 +399,7 @@ Here is a commented configuration file
             autoplay: false                        # (boolean)   Autoplay setting for video
             video_message_start: StartOfMessage    # (string)    The field name where the start reading value (in second) is stored
             coverSubdef: previewx4                 # (string)    Cover sub-definition to be used in player
-            available-speeds:                      # (array)     Set available speed in player
+            available_speeds:                      # (array)     Set available speed in player
                 - 1
                 - 1.5
                 - 3
@@ -424,16 +409,59 @@ Here is a commented configuration file
         document:
             player: flexpaper
             enable-pdfjs: true                     # (boolean)   Use pdfjs as PDF viewer for PDFs
+    video-editor:                                  # (array)     Configuration for video chapter editing in Production
+        ChapterVttFieldName: VideoTextTrackChapters
+        seekBackwardStep: 500 # in ms
+        seekForwardStep: 500  # in ms
+        playbackRates:
+            - 1
+            - '1.5'
+            - 3
+    geocoding-providers:                           # (array)     Configuration for geoloc in Production
+        -
+            map-provider: mapboxWebGL              # "mapboxWebGL" for webGl implementation Or "mapboxJs" for standard Js implementation
+            enabled: false
+            public-key: ''                         # This app key is provide by mapbox service https://mapbox.com, active subscription is required
+            map-layers:
+                -
+                    name: Light
+                    value: 'mapbox://styles/mapbox/light-v9'
+                -
+                    name: Streets
+                    value: 'mapbox://styles/mapbox/streets-v9'
+                -
+                    name: Basic
+                    value: 'mapbox://styles/mapbox/basic-v9'
+                -
+                    name: Satellite
+                    value: 'mapbox://styles/mapbox/satellite-v9'
+                -
+                    name: Dark
+                    value: 'mapbox://styles/mapbox/dark-v9'
+            transition-mapboxgl:
+                -
+                    animate: true
+                    speed: '2.2'
+                    curve: '1.42'
+            default-position:
+                - '48.879162'
+                - '2.335062'
+            default-zoom: 5
+            marker-default-zoom: 9
+            geonames-field-mapping: true
+            cityfields: City, Ville
+            provincefields: Province
+            countryfields: Country, Pays
 
 Languages
 *********
 
 Available languages with their respectives codes are:
 
-- French: fr_FR
-- English: en_GB
-- German: de_DE
-- Dutch: nl_NL
+- French: fr
+- English: en
+- German: de
+- Dutch: nl
 
 Cache services
 **************
@@ -444,10 +472,6 @@ following adapters:
 +----------------+----------------------+-----------------------------------------------------+------------+
 |  Name          | Service              |  Description                                        | Options    |
 +================+======================+=====================================================+============+
-| MemcacheCache  | cache                | Cache server using PHP memcache extension           | host, port |
-+----------------+----------------------+-----------------------------------------------------+------------+
-| MemcachedCache | cache                | Cache server using PHP memcached extension          | host, port |
-+----------------+----------------------+-----------------------------------------------------+------------+
 | RedisCache     | Cache                | Cache server using PHP redis extension              | host, port |
 +----------------+----------------------+-----------------------------------------------------+------------+
 | ApcCache       | opcode-cache         | Opcode Cache that uses PHP APC                      |            |
@@ -470,10 +494,6 @@ It is possible to use another handling system:
 +================+=============================================+============+
 | file           | Filesystem handler                          |            |
 +----------------+---------------------------------------------+------------+
-| memcache       | Memcached server handler, use PHP memcache  | host, port |
-+----------------+---------------------------------------------+------------+
-| memcached      | Memcached server handler, use PHP memcached | host, port |
-+----------------+---------------------------------------------+------------+
 | redis          | Redis server handler, use PHP redis         | host, port |
 +----------------+---------------------------------------------+------------+
 
@@ -486,9 +506,7 @@ It is possible to use another handling system:
 
 Search Engine service
 *********************
-
-Elasticsearch is the only service that can be used with Phraseanet 4.0.
-
+Elasticsearch is the only service that can be used with Phraseanet.
 +------------------------------------------------------------------+------------------------------+
 | Name                                                             | Options                      |
 +==================================================================+==============================+
@@ -504,8 +522,8 @@ one so that users IP address will be correctly recognized.
 .. code-block:: yaml
 
     trusted-proxies:
-        192.168.27.15
-        10.0.0.45
+        - 192.168.27.15
+        - 10.0.0.45
 
 Optional registration fields
 ****************************
@@ -844,7 +862,66 @@ as well as allowed in it.
     previews. Please set Document Preview subdef according to your choice in
     each databox subdef setting.
 
+Video Editor
+************
+
+The section allows the configuration of options in the video editing tools
+in Production
+
+.. code-block:: yaml
+
+    video-editor:
+        ChapterVttFieldName: VideoTextTrackChapters # (string)   The name of the document field storing the chaptering data
+        seekBackwardStep: 500                       # (integer)  In milliseconds, the displacement value of the reading head back
+        seekForwardStep: 500                        # (integer)  In milliseconds, the displacement value of the reading head forward
+        playbackRates:                              # (array)    Available reading speeds in the player
+            - 1
+            - '1.5'
+            - 3
+
+Geocoding providers
+*******************
+
+The section allows the configuration of geolocation options in Production.
+
+A MapBox API public-key is required to use this service. It can be get on
+`Mapbox`_ web site.
+
+For using `GeoNames`_ input assistance in Phraseanet edit form, please provide
+a geonames-server address in Webservice section in configuration file.
+
+.. code-block:: yaml
+
+    geocoding-providers:                           # (array)     Configuration of geolocation options in Production
+        -
+            map-provider: mapboxWebGL              # (string)    The library used for displaying maps
+            enabled: false                         # (string)    Activate or deactivate the functionality in Production
+            public-key: ''                         # (string)    The required MapBox API key
+            map-layers:                            # (array)     An array grouping the proposed base maps
+                -
+                    name: Streets
+                    value: 'mapbox://styles/mapbox/streets-v9'
+                -
+                    name: Basic
+                    value: 'mapbox://styles/mapbox/basic-v9'
+            transition-mapboxgl:
+                -
+                    animate: true
+                    speed: '2.2'
+                    curve: '1.42'
+            default-position:                      # (array)     Default position on the map
+                - '48.879162'
+                - '2.335062'
+            default-zoom: 5
+            marker-default-zoom: 9
+            geonames-field-mapping: true           # (boolean)   Enable GeoNames input assistance in Phraseanet edit form
+            cityfields: City, Ville                # (array)     Mapping of Phraseanet fields for the GeoName Name property (the city)
+            provincefields: Province               # (array)     Mapping of Phraseanet fields for the GeoName Region property
+            countryfields: Country, Pays           # (array)     Mapping of Phraseanet fields for the GeoName Country property
+
 
 .. _Pdf.js: https://mozilla.github.io/pdf.js/
 .. _Videojs: https://videojs.com/
+.. _Mapbox: https://www.mapbox.com/
+.. _GeoNames: https://www.geonames.org/
 

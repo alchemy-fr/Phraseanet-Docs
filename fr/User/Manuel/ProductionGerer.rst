@@ -12,8 +12,8 @@ Gérer les médias dans *Production*
     :doc:`la recherche <Rechercher>`.
 
     Dans les pages suivantes, seules les fonctions avancées sont présentées.
-    Elles concernent les utilisateurs ayant des missions de gestion et
-    d'animation des fonds médias.
+    Elles concernent les utilisateurs ayant en charge la gestion et
+    l'animation du fonds médias.
 
 .. toctree::
    :maxdepth: 1
@@ -21,5 +21,6 @@ Gérer les médias dans *Production*
    PaniersReportages
    Actions
    Editer
+   Editer-Video
    Push
    Publier

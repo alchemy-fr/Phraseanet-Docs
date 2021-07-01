@@ -8,6 +8,7 @@ thématiques abordées sont larges et couvrent des cas d'utilisation particulier
    :maxdepth: 2
 
    Administration/index
+   Docker/index
    Personnalisation/index
    Parametrage/index
    Medias/index

@@ -3,7 +3,7 @@ Search Engine
 
 .. topic:: The essential
 
-    Phraseanet 4.0 relies exclusively on Elasticsearch search engine.
+    Phraseanet relies exclusively on Elasticsearch search engine.
 
      Based on Apache Lucene, it allows, among others, facets in Phraseanet.
      It installs on the host application server or on remote server.

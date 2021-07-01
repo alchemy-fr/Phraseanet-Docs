@@ -46,9 +46,9 @@ Configuration Sendfile
     process sur le serveur. Si Sendfile et désactivé, l'application Phraseanet
     fonctionnera normallement.
 
-Depuis la version 3.8, la configuration SendFile de Phraseanet est simplifiée.
-Une commande de l'utilitaire `bin/console` permet de générer les mappings pour
-la configuration Phraseanet, une seconde permet d'en générer le supplément de
+La configuration SendFile de Phraseanet est simplifiée. Une commande de
+l'utilitaire `bin/console` permet de générer les mappings pour la configuration
+Phraseanet, une seconde permet d'en générer le supplément de
 configuration Nginx.
 
 La première étape consiste à générer le mapping Phraseanet Sendfile à l'aide
@@ -150,8 +150,8 @@ Configuration H264 pseudo-streaming
     H264 Pseudo-streaming permet d'émuler un serveur de stream et la navigation
     dans le flux video avant le chargement complet de celui-ci.
 
-Depuis la version 3.8.4, la configuration H264 pseudo-streaming de Phraseanet est
-simplifiée. Une commande de l'utilitaire `bin/console` permet de générer les
+La configuration H264 pseudo-streaming de Phraseanet est simplifiée.
+Une commande de l'utilitaire `bin/console` permet de générer les
 mappings pour la configuration Phraseanet, une seconde permet d'en générer le
 supplément de configuration Nginx.
 
@@ -238,5 +238,5 @@ Example de configuration Nginx intégrant une configuraton H264 pseudo-streaming
         }
     }
 
-.. _Secure link: http://nginx.org/en/docs/http/ngx_http_secure_link_module.html
-.. _MP4: http://nginx.org/en/docs/http/ngx_http_mp4_module.html
+.. _Secure link: https://nginx.org/en/docs/http/ngx_http_secure_link_module.html
+.. _MP4: https://nginx.org/en/docs/http/ngx_http_mp4_module.html

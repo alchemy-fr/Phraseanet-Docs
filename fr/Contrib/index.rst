@@ -32,7 +32,7 @@ effectuées dans les *repositories* correspondants :
 
   https://github.com/alchemy-fr/Phraseanet-Docs
 
-    * Sphinx Tutorial : http://matplotlib.sourceforge.net/sampledoc/
+    * Sphinx Tutorial : https://matplotlib.org/sampledoc/
     * Markups Sphinx : http://sphinx.pocoo.org/markup/
 
 * **Librairies clientes de l'API Phraseanet**

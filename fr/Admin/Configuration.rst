@@ -143,21 +143,6 @@ Voici un exemple de fichier de configuration commenté
             pdftotext_binary: /usr/bin/pdftotext
             recess_binary: /usr/local/bin/recess
 
-        bridge:                               # (array)   Configuration pour le Bridge Phraseanet (dépréciée)
-            youtube:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-                developer_key: ''
-            flickr:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-            dailymotion:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-
     trusted-proxies: {  }                     # (array)   Configuration des proxies de confiance
 
     debugger:
@@ -429,6 +414,49 @@ Voici un exemple de fichier de configuration commenté
         document:
             player: flexpaper
             enable-pdfjs: true                     # (boolean)   Utiliser pdfjs comme visionneuse pour les documents PDF
+    video-editor:                                  # (array)     Configuration des options de chapitrage de l'outil vidéo
+        ChapterVttFieldName: VideoTextTrackChapters
+        seekBackwardStep: 500 # in ms
+        seekForwardStep: 500  # in ms
+        playbackRates:
+            - 1
+            - '1.5'
+            - 3
+    geocoding-providers:                           # (array)     Configuration de la géolocalisation dans Production
+        -
+            map-provider: mapboxWebGL
+            enabled: false
+            public-key: ''
+            map-layers:
+                -
+                    name: Light
+                    value: 'mapbox://styles/mapbox/light-v9'
+                -
+                    name: Streets
+                    value: 'mapbox://styles/mapbox/streets-v9'
+                -
+                    name: Basic
+                    value: 'mapbox://styles/mapbox/basic-v9'
+                -
+                    name: Satellite
+                    value: 'mapbox://styles/mapbox/satellite-v9'
+                -
+                    name: Dark
+                    value: 'mapbox://styles/mapbox/dark-v9'
+            transition-mapboxgl:
+                -
+                    animate: true
+                    speed: '2.2'
+                    curve: '1.42'
+            default-position:
+                - '48.879162'
+                - '2.335062'
+            default-zoom: 5
+            marker-default-zoom: 9
+            geonames-field-mapping: true
+            cityfields: City, Ville
+            provincefields: Province
+            countryfields: Country, Pays
 
 Langues
 *******
@@ -460,8 +488,6 @@ spécifiant l'URL de callback adéquate.
 +-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
 | Twitter     | https://dev.twitter.com/apps                                           | http://phraseanet.mondomaine.com/login/provider/twitter/callback/     |
 +-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
-| Google Plus | https://code.google.com/apis/console/                                  | http://phraseanet.mondomaine.com/login/provider/google-plus/callback/ |
-+-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
 | GitHub      | https://github.com/settings/applications                               | http://phraseanet.mondomaine.com/login/provider/github/callback/      |
 +-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------+
 | Viadeo      | http://dev.viadeo.com/documentation/authentication/request-an-api-key/ | http://phraseanet.mondomaine.com/login/provider/viadeo/callback/      |
@@ -478,10 +504,6 @@ les adapteurs suivants :
 +----------------+----------------------+------------------------------------------------------+------------+
 |  Nom           | Service              |  Description                                         | Options    |
 +================+======================+======================================================+============+
-| MemcacheCache  | cache                | Serveur de cache utilisant l'extension PHP Memcache  | host, port |
-+----------------+----------------------+------------------------------------------------------+------------+
-| MemcachedCache | cache                | Serveur de cache utilisant l'extension PHP Memcached | host, port |
-+----------------+----------------------+------------------------------------------------------+------------+
 | RedisCache     | Cache                | Serveur de cache utilisant l'extension PHP redis     | host, port |
 +----------------+----------------------+------------------------------------------------------+------------+
 | ApcCache       | opcode-cache         | Cache opcode utilisant PHP APC                       |            |
@@ -505,10 +527,6 @@ Il est possible d'utiliser d'autres types de stockage :
 | Type           | Description                                                                        | Options    |
 +================+====================================================================================+============+
 | file           | Stockage des sessions sur le disque                                                |            |
-+----------------+------------------------------------------------------------------------------------+------------+
-| memcache       | Stockage des sessions dans un serveur Memcached, utilise l'extension PHP memcache  | host, port |
-+----------------+------------------------------------------------------------------------------------+------------+
-| memcached      | Stockage des sessions dans un serveur Memcached, utilise l'extension PHP memcached | host, port |
 +----------------+------------------------------------------------------------------------------------+------------+
 | redis          | Stockage des sessions dans un serveur Redis, utilise l'extension PHP redis         | host, port |
 +----------------+------------------------------------------------------------------------------------+------------+
@@ -908,8 +926,67 @@ consultée.
     sous-définition Preview pour les documents de type Document en fonction du
     choix de paramétrage du lecteur utilisé.
 
+Video Editor
+************
+
+La section permet le paramétrage d'options dans l'outil d'édition vidéo proposé
+dans Production.
+
+.. code-block:: yaml
+
+    video-editor:
+        ChapterVttFieldName: VideoTextTrackChapters # (string)   Le nom du champ documentaire stockant les données de chapitrage
+        seekBackwardStep: 500                       # (integer)  En millisecondes, la valeur de déplacement de la tête de lecture en arrière
+        seekForwardStep: 500                        # (integer)  En millisecondes, la valeur de déplacement de la tête de lecture en avant
+        playbackRates:                              # (array)    Les vitesses de défilement disponibles dans le lecteur
+            - 1
+            - '1.5'
+            - 3
+
+Geocoding providers
+*******************
+
+La section permet le paramétrage des options de la géolocalisation dans
+Production.
+
+Une clé publique MapBox API est requise pour utiliser l'affichage par
+géolocalisation. Cette clé peut être obtenue sur le site `Mapbox`_.
+
+Pour utiliser l'aide à la saisie proposée par `GeoNames`_ dans le formulaire
+d'édition de Phraseanet, fournir une adresse geonames-server dans la section
+Webservice du fichier de configuration.
+
+.. code-block:: yaml
+
+    geocoding-providers:                           # (array)     Configuration de la géolocalisation dans Production
+        -
+            map-provider: mapboxWebGL              # (string)    La bibliothèque utilisée pour l'affichage de cartes
+            enabled: false                         # (string)    Active ou désactive la fonctionnalité dans Production
+            public-key: ''                         # (string)    La clé d'API MapBox à utiliser
+            map-layers:                            # (array)     Tableau regroupant les fonds de cartes proposées
+                -
+                    name: Streets
+                    value: 'mapbox://styles/mapbox/streets-v9'
+                -
+                    name: Basic
+                    value: 'mapbox://styles/mapbox/basic-v9'
+            transition-mapboxgl:
+                -
+                    animate: true
+                    speed: '2.2'
+                    curve: '1.42'
+            default-position:                      # (array)     La postion par défaut de la carte
+                - '48.879162'
+                - '2.335062'
+            default-zoom: 5
+            marker-default-zoom: 9
+            geonames-field-mapping: true           # (boolean)   Active, désactive l'assistance à la saisie Geoname dans le formulaire d'édition
+            cityfields: City, Ville                # (array)     Mapping des champs Phraseanet pour la propriété Name (la ville)
+            provincefields: Province               # (array)     Mapping des champs Phraseanet pour la propriété Region
+            countryfields: Country, Pays           # (array)     Mapping des champs Phraseanet pour la propriété Country
 
 .. _Pdf.js: https://mozilla.github.io/pdf.js/
 .. _Videojs: https://videojs.com/
-
+.. _Mapbox: https://www.mapbox.com/
+.. _GeoNames: https://www.geonames.org/
 

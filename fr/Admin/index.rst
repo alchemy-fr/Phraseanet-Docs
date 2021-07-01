@@ -35,9 +35,11 @@ bin/console.
     Changelog
     Telechargement
     Prerequis
+    InstallationDocker
     Installation
     MiseAJour
     Configuration
+    GestionnaireDeWorker
     MoteurDeTaches
     MoteurDeRecherche
     Console

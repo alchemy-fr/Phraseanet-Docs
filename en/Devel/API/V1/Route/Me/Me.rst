@@ -1,45 +1,44 @@
 Me
 ==
 
-A propos
---------
+About
+-----
 
-Retourne les informations de l'utilisateur authentifié, liste les collections
-auxquelles il a accès ainsi que les droits dont il dispose.
+Returns information about the authenticated user, lists collections he has
+access and the user's rights he has on them.
 
 .. code-block:: bash
 
     /api/v1/me/
 
 ======================== ======
- Informations
+ Information
 ======================== ======
  HTTP Method              GET
  Requires Authentication  Yes
 ======================== ======
 
 
-Attribut de la réponse
-----------------------
+Response Fields
+---------------
 
 ================== ================================
  Field              Description
 ================== ================================
-user                Information sur l'utilisateur
+user                User's information
 ================== ================================
 
-Exemple de requête
-------------------
+Query Sample
+------------
 
 .. code-block:: bash
 
     curl -v https://mydomain.tld/api/v1/me/?oauth_token=xxxxxxx
 
+Response sample
+---------------
 
-Exemple de réponse
-------------------
-
-.. code-block:: javascript
+.. code-block:: json
 
 
     {

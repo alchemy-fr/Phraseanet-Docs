@@ -330,7 +330,7 @@ suivants :
 - Le liens vers les fournisseurs d'authentifications
   google, facebook etc ... (si activé).
 
-.. _Twig: http://twig.sensiolabs.org/
+.. _Twig: https://twig.symfony.com/
 .. _Bootstrap: http://getbootstrap.com/
 .. _LESS: http://lesscss.org
 .. _oAuth: http://oauth.net/
