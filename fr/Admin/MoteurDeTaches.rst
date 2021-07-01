@@ -1,6 +1,15 @@
 Gestionnaire de tâches
 ======================
 
+.. warning::
+
+    Le gestionnaire de tâches est en parti abandonné au profit du :doc:`gestionnaire de workers <../../Admin/GestionnaireDeWorker>`.
+
+    Seules deux tâches nécessitent encore son usage :
+
+    * tâche "Archive dans la collection"
+    * tâche "Record Mover"
+
 Phraseanet intègre un moteur de tâches afin de réaliser des opérations
 asynchrones.
 

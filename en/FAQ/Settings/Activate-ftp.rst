@@ -1,7 +1,7 @@
-Activate the FTP documents reception
-====================================
+Activate FTP documents export
+=============================
 
-The documents reception on FTP file-servers is a setting in Phraseanet.
+The FTP documents export is a setting in Phraseanet.
 It must be activated to be available for users.
 
 Activate FTP export
@@ -18,16 +18,7 @@ for all the users.
 
 * Validate the settings modifications by submitting the form
 
-
-Create a FTP export task
-------------------------
-
-This task enable file transfers contained in a queue at regular intervals.
-
-* Go in the **Task manager section** in Admin
-* Create and set a FTP Push task
-* Start this task
-
+* Go to the **Worker Manager** section, **FTP** tab and make the required settings.
 
 Using the FTP export
 --------------------

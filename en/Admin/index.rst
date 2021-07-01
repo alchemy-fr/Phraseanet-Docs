@@ -25,10 +25,12 @@ Phraseanet can also be managed through 2 interfaces: `API <../Devel/>`_ and
     Changelog
     Prerequisite
     Download
+    InstallDocker
     Install
     Upgrade
     Configuration
     SearchEngine
+    WorkerManager
     TaskManager
     Plugins
     Console

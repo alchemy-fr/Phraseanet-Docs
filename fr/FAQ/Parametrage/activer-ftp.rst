@@ -1,14 +1,14 @@
-Activer la réception de documents par FTP
-=========================================
+Activer l'export de documents par FTP
+=====================================
 
-La réception de documents sur des serveurs de fichiers joignables par FTP est
+L'export de documents sur des serveurs de fichiers joignables par FTP est
 une option de paramétrage dans Phraseanet.
 Pour la rendre disponible auprès d'utilisateurs, il faut l'activer.
 
 Activer l'export FTP
 --------------------
 
-Authentifier comme administrateur...
+S'authentifier comme administrateur...
 
 * Se rendre dans la rubrique Paramétrage de l'Admin
 * A la section Export FTP, placer le bouton radio sur la position *True*
@@ -19,17 +19,7 @@ souhaitée.
 
 * Valider les modifications de paramétrage en soumettant le formulaire
 
-
-Créer une tâche d'export FTP
-----------------------------
-
-Cette tâche est destinée à lancer à intervalle régulier les transferts FTP
-contenus dans une file d'attente.
-
-* Se rendre à la rubrique Gestionnaire de tâches de l'Admin
-* Créer et paramétrer une tâche FTP Push
-* Démarrer cette tâche
-
+* Se rendre dans la rubrique **Worker Manager**, onglet **FTP** et effectuez le paramétrage requis.
 
 Utilisation de l'export par FTP
 -------------------------------

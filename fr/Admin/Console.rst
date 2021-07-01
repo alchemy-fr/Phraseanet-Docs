@@ -217,7 +217,7 @@ l'application :
 
     php bin/setup
 
-Une liste de commandes disponibles s'affiche.
+Une liste de commandes disponibles s'affiche :
 
 .. code-block:: bash
 

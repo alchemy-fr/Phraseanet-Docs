@@ -11,5 +11,4 @@ Changelog Github
 
 .. note::
 
-    Si votre version n'apparaît pas dans cette liste, veuillez utiliser la `recherche par tag depuis Github <https://github.com/alchemy-fr/Phraseanet/tags>`_.
-
+    If your version does not appear in this list, please use `Github tag search <https://github.com/alchemy-fr/Phraseanet/tags>`_.

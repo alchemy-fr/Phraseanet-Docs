@@ -1,6 +1,15 @@
 Task Manager
 ============
 
+.. warning::
+
+    The task manager is partly abandoned in favor of the :doc:`worker manager <../../Admin/WorkerManager>`.
+
+    Only two tasks still require its use:
+
+    * "Archive collection" task
+    * "Record Mover" task
+
 Phraseanet integrates a task engine to perform asynchronous operations.
 
 This different tasks are managed by a :ref:`Scheduler`.

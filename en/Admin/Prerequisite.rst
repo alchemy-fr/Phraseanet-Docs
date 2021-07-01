@@ -4,6 +4,10 @@ Prerequisite
 Phraseanet is supposed to work on an AMP system, which configuration has to
 be checked.
 
+.. note::
+
+    For convenience, we strongly recommend that you :doc:`deploy Phraseanet with Docker <InstallDocker>`.
+
 HTTP Server
 ------------
 
@@ -18,10 +22,15 @@ Database
 Phraseanet requires an InnoDB storage engine. MySQL, MariaDB or Percona can be
 used for this.
 
-* MySQL >= 5.5
+* MariaDB >= 10.4.5
 
 **Important**: Disable the strict mode (please refer to the documentation
   of the implemented DBMS).
+
+Message broker
+--------------
+
+Phraseanet requires an message broker like `RabbitMQ <https://www.rabbitmq.com>`_ (version >= 3.8.16).
 
 PHP
 ---
@@ -61,7 +70,7 @@ PHP
 Elasticsearch
 -------------
 
-Phraseanet 4.0 builds on the ElasticSearch engine with the following
+Phraseanet builds on the ElasticSearch engine with the following
 specifications:
 
     * Elasticsearch version 2.1, 2.2, 2.3 or 2.4 (mandatory)
@@ -142,9 +151,6 @@ on their type
 * XPDF
   Text extraction from PDFs.
 
-* SWFTools
-  Previews and thumbnails extraction from Adobe Flash files.
-
 * Unoconv >= 6
   Preview and thumbnails extraction from office documents.
 
@@ -157,9 +163,7 @@ on their type
 API keys (optional)
 --------------------
 
-* Youtube
-* Dailymotion
-* FlickR
-* Recpatcha
+* `Google reCAPTCHA <https://developers.google.com/recaptcha/intro>`_
+* `Mapbox <https://docs.mapbox.com/help/getting-started/access-tokens/>`_
 
 .. _Analysis-icu: https://github.com/elastic/elasticsearch-analysis-icu
