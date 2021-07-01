@@ -87,22 +87,22 @@ Here is a commented configuration file
                 populate_order: RECORD_ID
                 populate_direction: DESC
                 activeTab: '#elastic-search'  # (string)    Name of the active tab for the Search engine parameter section
-                base_aggregate_limit: 10      # (integer)   Parameter setting of the "Base" facet with 10 values
-                collection_aggregate_limit: 10# (integer)   Parameter setting for the "Collection" facet with 10 values
-                doctype_aggregate_limit: 10   # (integer)   Parameter setting for the "Document type" facet with 10 values
-                camera_model_aggregate_limit: 0
-                iso_aggregate_limit: 0
-                aperture_aggregate_limit: 0
-                shutterspeed_aggregate_limit: 0
-                flashfired_aggregate_limit: 0
-                framerate_aggregate_limit: 0
-                audiosamplerate_aggregate_limit: 0
-                videocodec_aggregate_limit: 0
-                audiocodec_aggregate_limit: 0
-                orientation_aggregate_limit: 0
-                colorspace_aggregate_limit: 0
-                mimetype_aggregate_limit: 0
-
+                facets:                       # This section contains all fields define in all databases structure in the instance.
+                    _base:                    # (integer)   Parameter setting of the "Base" facet with 10 values
+                        limit: 10             
+                    _collection:              # (integer)   Parameter setting for the "Collection" facet with all values
+                        limit: -1
+                    _doctype:                 # (integer)   Parameter setting for the "Document type" facet with 10 values
+                        limit: 10
+                    _camera_model:
+                        limit: 10
+                    _iso:
+                        limit: 0
+                    _aperture:
+                        limit: 0
+                    _shutterspeed:
+                        limit: 0
+                        
         key: 86a108b98a5aa92431bf94a42e8d3d3f # (string)  Application key
 
         task-manager:
@@ -137,21 +137,6 @@ Here is a commented configuration file
             mp4box_binary: /usr/bin/MP4Box
             pdftotext_binary: /usr/bin/pdftotext
             recess_binary: /usr/local/bin/recess
-
-        bridge:                               # (array)   Configuration for Phraseanet Bridge (deprecated)
-            youtube:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-                developer_key: ''
-            flickr:
-                enabled: false
-                client_id: ''
-                client_secret: ''
-            dailymotion:
-                enabled: false
-                client_id: ''
-                client_secret: ''
 
     trusted-proxies: {  }                     # (array)   Trusted proxies configuration
 
@@ -414,7 +399,7 @@ Here is a commented configuration file
             autoplay: false                        # (boolean)   Autoplay setting for video
             video_message_start: StartOfMessage    # (string)    The field name where the start reading value (in second) is stored
             coverSubdef: previewx4                 # (string)    Cover sub-definition to be used in player
-            available-speeds:                      # (array)     Set available speed in player
+            available_speeds:                      # (array)     Set available speed in player
                 - 1
                 - 1.5
                 - 3
@@ -434,9 +419,9 @@ Here is a commented configuration file
             - 3
     geocoding-providers:                           # (array)     Configuration for geoloc in Production
         -
-            map-provider: mapboxWebGL
+            map-provider: mapboxWebGL              # "mapboxWebGL" for webGl implementation Or "mapboxJs" for standard Js implementation
             enabled: false
-            public-key: ''
+            public-key: ''                         # This app key is provide by mapbox service https://mapbox.com, active subscription is required
             map-layers:
                 -
                     name: Light
