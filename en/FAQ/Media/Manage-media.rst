@@ -31,7 +31,7 @@ The creation of the subviews for pictures is handled by softwares such as
 `ImageMagick <http://www.imagemagick.org>`_,
 `GraphicsMagic <http://www.graphicsmagick.org/>`_
 or by default by the
-`GD graphics library <http://libgd.bitbucket.org/>`_.
+`GD graphics library <https://libgd.github.io//>`_.
 Only ImageMagick and GraphicsMagic can handle multi-layers documents (Photoshop
 psd files, or non flatten Tiff). However, they can not extract thumbnails and
 good sub-definitions for this type of document.

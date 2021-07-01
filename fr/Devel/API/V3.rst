@@ -1,0 +1,4 @@
+Documentation API v3
+====================
+
+Retrouvez l'API Phraseanet v3 sur `Swagger Hub <https://app.swaggerhub.com/apis-docs/alchemy-fr/phraseanet.api.v3/1.0.0-oas3>`_.

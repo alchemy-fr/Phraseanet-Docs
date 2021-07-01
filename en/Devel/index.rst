@@ -23,6 +23,7 @@ Table of contents
 
     API/V1
     API/V2
+    API/V3
     API/Root
     API/Changelog
     Vagrant

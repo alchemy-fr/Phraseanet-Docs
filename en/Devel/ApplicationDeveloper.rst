@@ -97,4 +97,4 @@ The settings page of the application is displayed.
     third-party applications with the Phraseanet API,
     we invite developers to read the protocol RFC `Oauth2`_.
 
-.. _Oauth2: http://tools.ietf.org/html/draft-ietf-oauth-v2
+.. _Oauth2: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2

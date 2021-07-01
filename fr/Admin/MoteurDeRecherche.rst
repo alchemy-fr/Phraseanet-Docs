@@ -3,7 +3,7 @@ Moteur de recherche
 
 .. topic:: L'essentiel
 
-    Phraseanet 4.0 utilise le moteur de recherche Elasticsearch.
+    Phraseanet utilise le moteur de recherche Elasticsearch.
     Ses principaux avantages sont :
 
     * la rapidité

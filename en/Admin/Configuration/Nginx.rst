@@ -231,5 +231,5 @@ pseudo-streaming configuration.
         }
     }
 
-.. _Secure link: http://nginx.org/en/docs/http/ngx_http_secure_link_module.html
-.. _MP4: http://nginx.org/en/docs/http/ngx_http_mp4_module.html
+.. _Secure link: https://nginx.org/en/docs/http/ngx_http_secure_link_module.html
+.. _MP4: https://nginx.org/en/docs/http/ngx_http_mp4_module.html

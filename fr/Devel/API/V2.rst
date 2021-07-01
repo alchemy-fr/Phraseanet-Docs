@@ -2,7 +2,7 @@ Documentation API v2
 ====================
 
 L'API Phraseanet v2 donne accès et permet d'interagir avec les données de
-Phraseanet 4.0.0.
+Phraseanet.
 
 * Lire la :doc:`Présentation <V2/Overview>`
 * Se familiariser avec :doc:`oAuth2 <V1/Authentification>`

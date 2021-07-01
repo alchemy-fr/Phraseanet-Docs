@@ -1,5 +1,5 @@
-Installation
-============
+Installation manuelle et paramétrage
+====================================
 
 Récupérer les sources
 ---------------------

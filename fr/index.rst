@@ -20,7 +20,7 @@ Elasticsearch, MySQL, PHP et Apache.
 D'autres bibliothèques ou logiciels tiers concourent au fonctionnement de
 *Phraseanet*.
 Certaines de ces librairies sont
-`développées par Alchemy <http://phraseanet.github.com/>`_, d'autres pas.
+`développées par Alchemy <https://github.com/alchemy-fr/>`_, d'autres pas.
 
 A propos de cette documentation
 -------------------------------
@@ -66,7 +66,7 @@ Besoin d'aide ?
 
 `Alchemy`_, l'éditeur de Phraseanet commercialise un ensemble de prestations et
 de services autour de la solution *Phraseanet*. Consulter
-`ces offres <https://www.alchemy.fr/fr/rubrique/accompagnements/>`_
+`ces offres <https://www.alchemy.fr/fr/publication/support-maintenance/>`_
 sur le site éditeur.
 
 L'équipe de Phraseanet consacre une partie de son temps à l'animation de

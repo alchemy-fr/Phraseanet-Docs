@@ -1,6 +1,15 @@
 Task Manager
 ============
 
+.. warning::
+
+    The task manager is partly abandoned in favor of the :doc:`worker manager <../../Admin/WorkerManager>`.
+
+    Only two tasks still require its use:
+
+    * "Archive collection" task
+    * "Record Mover" task
+
 Phraseanet integrates a task engine to perform asynchronous operations.
 
 This different tasks are managed by a :ref:`Scheduler`.
@@ -29,7 +38,7 @@ Alternative starts and stops
 ****************************
 
 If you want to start and stop the Scheduler automatically, for example in a
-cron script, you can use `KonsoleKommander <Console>`_ and find the right
+cron script, you can use `KonsoleKommander <Console.html>`_ and find the right
 command:
 
 .. code-block:: bash

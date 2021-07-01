@@ -112,4 +112,26 @@ Fill the Mount database form:
     information by the DBA
   * Validate the form
 
-.. _See the MySQL documentation: http://dev.mysql.com/doc/refman/5.0/fr/creating-database.html
+Create ElasticSearch index
+----------------------------
+
+.. warning::
+   In a multi-database configuration, the fields with the same label must have strictly the same definitions (same types, same formats, etc.)
+
+To create ElasticSearch index:
+
+From administration panel
+*************************
+* Go to **Worker Manager**, tab **indexation**
+* Choose the database(s) to index
+* Click on the ** indexing ** button
+
+From administration console
+***************************
+.. code-block:: bash
+
+    php bin/console searchengine:index
+
+
+
+.. _See the MySQL documentation: https://dev.mysql.com/doc/refman/8.0/en/create-database.html

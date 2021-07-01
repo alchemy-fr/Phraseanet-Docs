@@ -444,6 +444,6 @@ Par exemple :
 .. _authentification-password:
 
 .. _Phraseanet PHP SDK: https://github.com/alchemy-fr/Phraseanet-PHP-SDK
-.. _oAuth2.0: http://oauth.net/2/
-.. _oAuth2.0 libraries: http://oauth.net/code/
-.. _RFC oAuth v2 draft #10: http://tools.ietf.org/html/draft-ietf-oauth-v2-10#section-4.1.2
+.. _oAuth2.0: https://oauth.net/2/
+.. _oAuth2.0 libraries: https://oauth.net/code/
+.. _RFC oAuth v2 draft #10: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-10#section-4.1.2

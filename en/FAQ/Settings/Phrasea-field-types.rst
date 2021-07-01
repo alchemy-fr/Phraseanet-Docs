@@ -3,19 +3,14 @@ Fields type in Phraseanet
 
 Using Phrasea engine involves typing the fields of the Phraseanet base format.
 
-Four types are available:
+Three types are available:
 
 STRING
 ------
 
-It is the default type. There are no indexation by value(*). It neither allows
-searches with relational operators =, <, >... nor sorting.
-
-TEXT
-----
-
 The fields contents are indexed by value, as they are. This type is best used
-for exact searches ("author=William Shakespeare").
+for exact searches ("author=William Shakespeare") or fuzzy.
+Note that only the first 32 000 characters will be used for indexing.
 
 NUMBER
 ------

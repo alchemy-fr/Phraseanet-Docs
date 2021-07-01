@@ -530,7 +530,7 @@ It is possible to use another handling system:
 Search Engine service
 *********************
 
-Elasticsearch is the only service that can be used with Phraseanet 4.0.
+Elasticsearch is the only service that can be used with Phraseanet.
 
 +------------------------------------------------------------------+------------------------------+
 | Name                                                             | Options                      |

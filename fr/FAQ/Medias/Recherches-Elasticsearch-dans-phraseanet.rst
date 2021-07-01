@@ -16,8 +16,7 @@ Le moteur de recherche Elasticsearch est libre, open source et repose sur le
 projet Lucene de la fondation Apache. Ses avantages :
 
 * Il est distribué, taillé pour le Cloud computing
-* Il bénéficie de fonctionnalités avancées (indexation automatique, pertinence,
-  racinisation, stematisation, lemmatisation, pertinence)
+* Il bénéficie de fonctionnalités avancées (indexation automatique, racinisation, stematisation, lemmatisation, pertinence)
 
 Avec l'implémentation du moteur Elasticsearch dans Phraseanet, les syntaxes de
 recherche évoluent.
