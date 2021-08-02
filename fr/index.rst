@@ -51,7 +51,7 @@ Quoi de neuf dans la version 4.1 ?
 La version 4.1 introduit les changements suivants :
 
 * Déploiement simplifié sous `Docker`_ (`Voir les images officielles`_)
-* Worker : ce service permet des gains de performance dans la gestion des
+* :doc:`Worker <../../Admin/GestionnaireDeWorker>` : ce service permet des gains de performance dans la gestion des
   sous-définition de fichiers
 * Géolocalisation : recherche d'enregistrements par sélection d'emplacements
   sur des cartes, ajout de localisations dans la notice de l'enregistrement

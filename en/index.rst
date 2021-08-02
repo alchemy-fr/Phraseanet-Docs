@@ -47,7 +47,7 @@ What's new in version 4.1?
 Here are the main changes in version 4.1:
 
 * Simplified deployment under `Docker`_ (`See official images`_)
-* Worker: this service allows performance gains in the management of
+* :doc:`Worker <../../Admin/WorkerManager>`: this service allows performance gains in the management of
   sub-definition files
 * Geolocation: Search for records by selecting locations on maps,
   add of locations in the record note via the edit form
