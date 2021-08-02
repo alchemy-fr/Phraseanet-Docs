@@ -20,15 +20,23 @@ Creates a new order.
 Request Body
 ------------
 
-.. code-block:: javascript
+.. code-block:: json
 
     {
-        "data": [
-            {
-                "databox_id": 1,
-                "record_id": 118
-            }
-        ]
+        "data": {
+            "usage": "what I want",
+            "deadline": "2025-01-02T03:04:05-06:00",
+            "records": [
+                {
+                    "databox_id": 1,
+                    "record_id": 123
+                },
+                {
+                    "databox_id": 1,
+                    "record_id": 456
+                }
+            ]
+        }
     }
 
 Response Fields
