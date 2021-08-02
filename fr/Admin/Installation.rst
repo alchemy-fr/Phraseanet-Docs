@@ -1,6 +1,10 @@
 Installation manuelle et paramétrage
 ====================================
 
+.. warning::
+
+    Pour plus de facilité, nous vous recommandons fortement de :doc:`déployer Phraseanet avec Docker <InstallationDocker>`.
+
 Récupérer les sources
 ---------------------
 
