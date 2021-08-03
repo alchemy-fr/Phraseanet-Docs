@@ -104,6 +104,36 @@ Dans le répertoire d’installation *Phraseanet*, lancer la commande suivante :
 
     bin/setup system:install
 
+.. list-table:: Options d'installation
+   :widths: 17 40 43
+   :header-rows: 1
+
+   * - Nom
+     - Commentaire
+     - Valeur par défaut
+
+   * - **download-path**
+     - Utilisé pour le stockage et le téléchargement de fichiers zip
+     - /var/alchemy/Phraseanet/datas/download
+
+   * - **lazaret-path**
+     - Utilisé pour le stockage des fichiers en quarantaine
+     - /var/alchemy/Phraseanet/datas/lazaret
+
+   * - **caption-path**
+     - Utilisé comme cache pour les descriptions de record
+     - /var/alchemy/Phraseanet/tmp/caption
+
+   * - **worker-path**
+     - Utilisé par le worker pour construire des fichiers proxy
+     - /var/alchemy/Phraseanet/tmp
+
+Example d'installation avec option :
+
+.. code-block:: bash
+
+    bin/setup system:install --download-path=/var/my_download_folder
+
 La procédure d'installation s'initialise.
 
   .. image:: ../images/Admin_Install_cli-01.jpg
