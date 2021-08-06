@@ -136,6 +136,18 @@ Install option example:
 
     bin/setup system:install --download-path=/var/my_download_folder
 
+.. note::
+
+    Some options can be used for storage distribution:
+
+    .. code-block::bash
+
+     --download-path=/var/alchemy/Phraseanet/datas/download \ # use for store and serve exported zip file
+     --lazaret-path=/var/alchemy/Phraseanet/datas/lazaret \ # use for store and serve lazaret file
+     --caption-path=/var/alchemy/Phraseanet/tmp/caption \  # use for caching record description, display in production GUI
+     --worker-tmp-files=/var/alchemy/Phraseanet/tmp \ # used by worker for build proxy files
+
+
 The installation process starts.
 
   .. image:: ../images/Admin_Install_cli-01.jpg
@@ -200,7 +212,7 @@ The installation process starts.
 
     bin/console task-manager:task:list
 
-* **Start Scheduler** in a new Screen:
+* **Now deprecated due to Worker: Start Scheduler** in a new Screen:
 
 .. code-block:: bash
 
