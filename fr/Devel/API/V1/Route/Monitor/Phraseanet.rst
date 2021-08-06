@@ -36,225 +36,251 @@ Attribut de la réponse
 Exemple de réponse
 ------------------
 
-.. code-block:: javascript
+.. code-block:: json
 
     {
-        "meta": {
-            "api_version": "1.3",
-            "request": "GET /api/v1/monitor/phraseanet/",
-            "response_time": "2012-06-13T14:50:42+02:00",
-            "http_code": 200,
-            "error_type": null,
-            "error_message": null,
-            "error_details": null,
-            "charset": "UTF-8"
+      "meta": {
+        "api_version": "2.0.0",
+        "request": "GET /api/v1/monitor/phraseanet/",
+        "response_time": "2021-07-02T15:32:25+02:00",
+        "http_code": 200,
+        "error_type": null,
+        "error_message": null,
+        "error_details": null,
+        "charset": "UTF-8"
+      },
+      "response": {
+        "phraseanet": {
+          "version": {
+            "name": "Buxus",
+            "number": "4.1.3"
+          },
+          "environment": "prod",
+          "debug": false,
+          "maintenance": false,
+          "errorsLog": false,
+          "serverName": "https://demo.alchemyasp.com/"
         },
-        "response": {
-            "phraseanet": {
-                "version": {
-                    "name": "Carnosaurus",
-                    "number": "3.7.0.0.a7"
-                },
-                "environment": "prod",
-                "debug": false,
-                "maintenance": false,
-                "errorsLog": false,
-                "serverName": "https://library.net/"
-            },
-            "cache": {
-                "main": {
-                    "type": "memcache",
-                    "stats": {
-                        "hits": "26",
-                        "misses": "74",
-                        "uptime": "75335",
-                        "memory_usage": "22622",
-                        "memory_available": "67108864"
-                    }
-                },
-                "op_code": {
-                    "type": "memcache",
-                    "stats": {
-                        "hits": 0,
-                        "misses": 2,
-                        "uptime": 1339591842,
-                        "memory_usage": 53760,
-                        "memory_available": 22837792
-                    }
-                }
-            },
-            "global_values": {
-                "serverName": "https://library.net/",
-                "title": "Phraseanet",
-                "keywords": "",
-                "description": "",
-                "httpServer": {
-                    "logErrors": false,
-                    "phpTimezone": "Europe/Paris",
-                    "siteId": "2eff18ac12e65da2b49bc48f98fdb11f",
-                    "staticUrl": "",
-                    "defaultLanguage": false,
-                    "allowIndexing": false,
-                    "modes": {
-                        "XsendFile": false,
-                        "nginxXAccelRedirect": "",
-                        "nginxXAccelRedirectMountPoint": "noweb",
-                        "h264Streaming": false,
-                        "authTokenDirectory": "",
-                        "authTokenDirectoryPath": "",
-                        "authTokenPassphrase": ""
-                    },
-                    "files": {
-                        "owner": "",
-                        "group": ""
-                    }
-                },
-                "maintenance": {
-                    "alertMessage": "May the force be with you",
-                    "displayMessage": false
-                },
-                "webServices": {
-                    "googleApi": false,
-                    "googleAnalyticsId": "",
-                    "googleChromeFrameDisclaimer": false,
-                    "i18nWebService": "http://localization.webservice.alchemyasp.com/",
-                    "recaptacha": {
-                        "active": false,
-                        "publicKey": "",
-                        "privateKey": ""
-                    },
-                    "youtube": {
-                        "active": false,
-                        "clientId": "",
-                        "clientSecret": "",
-                        "devKey": ""
-                    },
-                    "flickr": {
-                        "active": false,
-                        "clientId": "",
-                        "clientSecret": ""
-                    },
-                    "dailymtotion": {
-                        "active": false,
-                        "clientId": "",
-                        "clientSecret": ""
-                    }
-                },
-                "navigator": {
-                    "active": false
-                },
-                "homepage": {
-                    "viewType": "COOLIRIS"
-                },
-                "report": {
-                    "anonymous": false
-                },
-                "events": {
-                    "events": [
-                        "eventsmanager_event_test"
-                    ],
-                    "notifications": [
-                        "eventsmanager_notify_feed",
-                        "eventsmanager_notify_validationreminder",
-                        "eventsmanager_notify_ordernotdelivered",
-                        "eventsmanager_notify_autoregister",
-                        "eventsmanager_notify_order",
-                        "eventsmanager_notify_downloadmailfail",
-                        "eventsmanager_notify_register",
-                        "eventsmanager_notify_push",
-                        "eventsmanager_notify_orderdeliver",
-                        "eventsmanager_notify_bridgeuploadfail",
-                        "eventsmanager_notify_validate",
-                        "eventsmanager_notify_validationdone"
-                    ]
-                },
-                "upload": {
-                    "allowedFileExtension": false
-                },
-                "filesystem": {
-                    "noWeb": "/home/grosroro/Documents/workspace/Phraseanet/datas/noweb/"
-                },
-                "searchEngine": {
-                    "configuration": {
-                        "defaultQuery": "all",
-                        "defaultQueryType": "0"
-                    },
-                    "sphinx": {
-                        "active": false,
-                        "host": "127.0.0.1",
-                        "port": 9306,
-                        "realtimeHost": "127.0.0.1",
-                        "realtimePort": 9308
-                    },
-                    "phrasea": {
-                        "minChar": 1,
-                        "sort": ""
-                    }
-                },
-                "binary": {
-                    "phpCli": "/usr/bin/php",
-                    "phpIni": "",
-                    "imagick": "/usr/bin/convert",
-                    "swfExtract": "",
-                    "pdf2swf": "",
-                    "swfRender": "",
-                    "unoconv": "",
-                    "ffmpeg": "",
-                    "mp4box": "",
-                    "pdftotext": "",
-                    "pdfmaxpages": 5
-                },
-                "mainConfiguration": {
-                    "adminMail": "support@alchemy.fr",
-                    "viewBasAndCollName": false,
-                    "chooseExportTitle": false,
-                    "defaultExportTitle": "support@alchemy.fr",
-                    "socialTools": "none"
-                },
-                "modules": {
-                    "thesaurus": false,
-                    "storyMode": false,
-                    "docSubsitution": false,
-                    "subdefSubstitution": false
-                },
-                "email": {
-                    "defaultMailAddress": "phraseanet@example.com",
-                    "smtp": {
-                        "active": false,
-                        "auth": false,
-                        "host": "",
-                        "port": "",
-                        "secure": false,
-                        "user": "",
-                        "password": ""
-                    }
-                },
-                "ftp": {
-                    "active": false,
-                    "activeForUser": false
-                },
-                "client": {
-                    "maxSizeDownload": 120,
-                    "tabSearchMode": 1,
-                    "tabAdvSearchPosition": 2,
-                    "tabTopicsPosition": 0,
-                    "tabOngActifPosition": 1,
-                    "renderTopicsMode": "tree",
-                    "displayRolloverPreview": false,
-                    "displayRolloverBasket": false,
-                    "collRenderMode": "checkbox",
-                    "viewSizeBaket": false,
-                    "clientAutoShowProposals": false,
-                    "needAuth2DL": false
-                },
-                "inscription": {
-                    "autoSelectDB": false,
-                    "autoRegister": false
-                },
-                "push": {
-                    "validationReminder": 2,
-                    "expirationValue": 10
-                }
+        "cache": {
+          "main": {
+            "type": "redis",
+            "online": true,
+            "stats": {
+              "hits": false,
+              "misses": false,
+              "uptime": 86676690,
+              "memory_usage": 12510208,
+              "memory_available": false
             }
+          },
+          "op_code": {
+            "type": "array",
+            "online": true,
+            "stats": {
+              "hits": 0,
+              "misses": 0,
+              "uptime": 1625232745,
+              "memory_usage": null,
+              "memory_available": null
+            }
+          },
+          "doctrine_metadatas": null,
+          "doctrine_query": null,
+          "doctrine_result": {
+            "type": "redis",
+            "online": true,
+            "stats": {
+              "hits": false,
+              "misses": false,
+              "uptime": 86676690,
+              "memory_usage": 12510208,
+              "memory_available": false
+            }
+          }
+        },
+        "global_values": {
+          "serverName": "https://demo.alchemyasp.com/",
+          "title": "Demo Phraseanet",
+          "keywords": "phrasea, phraseanet, alchemy,dam, phototheque, photo, photographie, photography, demo,Digital asset Management",
+          "description": "Site de demo du logiciel Phraseanet",
+          "httpServer": {
+            "phpTimezone": "Europe/Paris",
+            "siteId": "PhraseanetIVDemo",
+            "defaultLanguage": "fr",
+            "allowIndexing": true,
+            "modes": {
+              "XsendFile": false,
+              "XsendFileMapping": [],
+              "h264Streaming": false,
+              "authTokenDirectory": null,
+              "authTokenDirectoryPath": null,
+              "authTokenPassphrase": null
+            }
+          },
+          "maintenance": {
+            "alertMessage": "The application is down for maintenance",
+            "displayMessage": false
+          },
+          "webServices": {
+            "googleApi": true,
+            "googleAnalyticsId": "UA-3475486-6",
+            "i18nWebService": "https://geonames.alchemyasp.com",
+            "recaptacha": {
+              "active": null,
+              "publicKey": "",
+              "privateKey": ""
+            },
+            "youtube": {
+              "active": true,
+              "clientId": "815071393317-ubbvhsh2719olu208i5nnkrs4la5i01q.apps.googleusercontent.com",
+              "clientSecret": "IyGbMKG0MtkPC2vkpAWay_0f",
+              "devKey": "AI39si41k9lBXIOB81HbzezvzQ0k4EE9RvRQq2is4r_UvcfZvxU_Az8VKPJnaQBu_4tYod0eJpYzkuenSqeq5_dcZCDB93u3Uw"
+            },
+            "flickr": {
+              "active": true,
+              "clientId": "619fd87254fb1f70b1c6ed042cdd99b3",
+              "clientSecret": "b13cc4d7ce1eee82"
+            },
+            "dailymtotion": {
+              "active": true,
+              "clientId": "1c0d55ee32873e880e35",
+              "clientSecret": "6e2f506e35aabac1bc3e9d0b57979c6ceb0df1b1"
+            }
+          },
+          "navigator": {
+            "active": true
+          },
+          "office-plugin": {
+            "active": true
+          },
+          "homepage": {
+            "viewType": "GALLERIA"
+          },
+          "report": {
+            "anonymous": false
+          },
+          "storage": {
+            "documents": "/space/ofs/demo/datas"
+          },
+          "searchEngine": {
+            "configuration": {
+              "defaultQuery": "",
+              "defaultQueryType": 0,
+              "minChar": 1
+            },
+            "engine": {
+              "type": "ElasticSearch",
+              "status": [
+                [
+                  "name",
+                  "Threnody"
+                ],
+                [
+                  "cluster_name",
+                  "122649456891:preprod-23"
+                ],
+                [
+                  "tagline",
+                  "You Know, for Search"
+                ],
+                [
+                  "version:number",
+                  "2.3.2"
+                ],
+                [
+                  "version:build_hash",
+                  "62bfc1a3d7348a45970caf96b393a6536132d15a"
+                ],
+                [
+                  "version:build_timestamp",
+                  "2019-03-26T04:15:51Z"
+                ],
+                [
+                  "version:build_snapshot",
+                  false
+                ],
+                [
+                  "version:lucene_version",
+                  "5.5.0"
+                ]
+              ],
+              "configuration": null
+            }
+          },
+          "binary": {
+            "phpCli": "/usr/bin/php",
+            "phpIni": null,
+            "swfExtract": "/opt/swftools/bin/swfextract",
+            "pdf2swf": "/opt/swftools/bin/pdf2swf",
+            "swfRender": "/opt/swftools/bin/swfrender",
+            "unoconv": "/usr/bin/unoconv",
+            "ffmpeg": "/usr/bin/ffmpeg",
+            "ffprobe": "/usr/bin/ffprobe",
+            "mp4box": "/usr/bin/MP4Box",
+            "pdftotext": "/usr/bin/pdftotext",
+            "pdfmaxpages": 5
+          },
+          "mainConfiguration": {
+            "viewBasAndCollName": null,
+            "chooseExportTitle": false,
+            "defaultExportTitle": "title",
+            "socialTools": "publishers"
+          },
+          "modules": {
+            "thesaurus": true,
+            "storyMode": true,
+            "docSubsitution": true,
+            "subdefSubstitution": true
+          },
+          "email": {
+            "defaultMailAddress": "instance+demo@alchemy.fr",
+            "smtp": {
+              "active": false,
+              "auth": false,
+              "host": null,
+              "port": null,
+              "secure": "ssl",
+              "user": "alchemy",
+              "password": "amtfr23i30"
+            }
+          },
+          "custom-links": [
+            {
+              "linkName": "Phraseanet store",
+              "linkLanguage": "all",
+              "linkUrl": "https://www.alchemy.fr/fr/rubrique/store/",
+              "linkLocation": "help-menu",
+              "linkOrder": 1,
+              "linkBold": false,
+              "linkColor": ""
+            }
+          ],
+          "ftp": {
+            "active": false,
+            "activeForUser": false
+          },
+          "client": {
+            "maxSizeDownload": 120,
+            "tabSearchMode": null,
+            "tabAdvSearchPosition": null,
+            "tabTopicsPosition": null,
+            "tabOngActifPosition": null,
+            "renderTopicsMode": null,
+            "displayRolloverPreview": null,
+            "displayRolloverBasket": null,
+            "collRenderMode": null,
+            "viewSizeBaket": null,
+            "clientAutoShowProposals": null,
+            "needAuth2DL": true
+          },
+          "inscription": {
+            "autoSelectDB": true,
+            "autoRegister": false
+          },
+          "push": {
+            "validationReminder": null,
+            "expirationValue": 10
+          }
         }
+      }
     }
