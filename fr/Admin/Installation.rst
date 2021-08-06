@@ -100,6 +100,17 @@ Dans le répertoire d’installation *Phraseanet*, lancer la commande suivante :
 
     bin/setup system:install
 
+.. note::
+
+    Des options sont disponibles pour répartir les stockages :
+
+    .. code-block:: bash
+
+     --download-path=/var/alchemy/Phraseanet/datas/download \ # use for store and serve exported zip file
+     --lazaret-path=/var/alchemy/Phraseanet/datas/lazaret \ # use for store and serve lazaret file
+     --caption-path=/var/alchemy/Phraseanet/tmp/caption \  # use for caching record description, display in production GUI
+     --worker-tmp-files=/var/alchemy/Phraseanet/tmp \ # used by worker for build proxy files
+
 La procédure d'installation s'initialise.
 
   .. image:: ../images/Admin_Install_cli-01.jpg
@@ -164,7 +175,7 @@ La procédure d'installation s'initialise.
 
     bin/console task-manager:task:list
 
-* **Démarrer le scheduler** dans un screen :
+* **Obsolète avec Worker : Démarrer le scheduler** dans un screen :
 
 .. code-block:: bash
 
