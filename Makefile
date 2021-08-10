@@ -40,6 +40,7 @@ htmlhelp: $(foreach lang, $(LANGS), htmlhelp-$(lang))
 
 # Make the HTML version of the documentation with correctly nested language folders.
 html-%: $(SPHINX_DEPENDENCIES)
+	bash include-phraseanet-sources.sh
 	cd $* && make html LANG=$*
 
 htmlstrict-%: $(SPHINX_DEPENDENCIES)
