@@ -37,9 +37,9 @@ utiliser la commande `bin/console compile:configuration`.
 Configuration.yml
 -----------------
 
-Voici un exemple de fichier de configuration (/config/configuration.sample.yml) commenté :
+Voici un exemple de fichier de configuration (/lib/conf.d/configuration.yml) commenté :
 
-.. literalinclude:: ../../common/github_source/config/configuration.sample.yml
+.. literalinclude:: ../../common/github_source//lib/conf.d//configuration.yml
     :language: yaml
 
 Langues

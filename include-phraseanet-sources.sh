@@ -2,7 +2,7 @@
 
 # Files to copy from Phraseanet github repository
 GITHUB_FILE_LIST=(
-    "/config/configuration.sample.yml" \
+    "/lib/conf.d/configuration.yml" \
   )
 
 # Destination where to copy source files

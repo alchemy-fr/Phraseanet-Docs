@@ -31,9 +31,9 @@ Configuration compilation is very easy and fast to execute.
 
 Configuration.yml
 -----------------
-Here is a commented configuration file (/config/configuration.sample.yml) :
+Here is a commented configuration file (/lib/conf.d/configuration.yml) :
 
-.. literalinclude:: ../../common/github_source/config/configuration.sample.yml
+.. literalinclude:: ../../common/github_source//lib/conf.d//configuration.yml
     :language: yaml
 
 Languages
