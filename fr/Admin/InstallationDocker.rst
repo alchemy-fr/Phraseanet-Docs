@@ -21,7 +21,7 @@ Tout est dans le fichier README.md
 ----------------------------------
 
 Consultez le fichier `README.md`_ à la racine du projet Phraseanet.
-Il donne de précieuses infoermation pour démarrer une stack Docker
+Il donne de précieuses informations pour démarrer une stack Docker
 Phraseanet.
 
 
@@ -36,8 +36,12 @@ Elles reposent toutes sur des systèmes Linux.
 L'orchestration standard Docker compose est valide pour déployer des 
 environnements de développement ou de production.
 
+Pour les environnements destinés à la production, les départements IT préférerons sans doute s'appuyer sur des briques existantes de leurs infrastructures pour les SGBD et serveurs de stockage.
+
+Se référer au fichier `.env`_ pour éditer la ligne COMPOSE_FILE qui renseigne le contenu de la stack déployée en fonction du contexte.
+
 .. _Phraseanet: https://www.phraseanet.com/
 .. _Docker: https://www.docker.com/
 .. _README.md: https://github.com/alchemy-fr/Phraseanet/blob/master/README.md#phraseanet-with-docker
-
+.. _.env: https://github.com/alchemy-fr/Phraseanet/blob/master/.env
 
