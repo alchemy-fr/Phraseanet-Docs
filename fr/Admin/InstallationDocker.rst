@@ -1,7 +1,7 @@
 Installation sous Docker
 ========================
 
-.. topic:: The essential
+.. topic:: L'essentiel
 
     La version 4.1 permet de démarrer une Stack Phraseanet avec Docker.
 
