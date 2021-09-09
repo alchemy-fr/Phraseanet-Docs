@@ -132,7 +132,7 @@ Ce worker permet de mettre à jour, de déplacer, ou de supprimer des enregistre
 
 Des critères de contenu (texte ou date) ou de status Phraseanet peuvent être pris en compte pour sélectionner des enregistrements.
 
-En pratique, ces actions peuvent être utilisées pour automatiser la gestions d'actifs dont les dates d'échéance des droits d'utilisation approchent ou sont dépassées.
+En pratique, ces actions peuvent être utilisées pour automatiser la gestion d'actifs dont les dates d'échéance des droits d'utilisation approchent ou sont dépassées.
 
 Paramètrage
 ^^^^^^^^^^^
@@ -151,20 +151,20 @@ Une tâche sélectionne des enregistrements correspondants à des critères de r
 
 Interface
 ^^^^^^^^^
-Les settings sont éditable en XML. L'interface affiche le SQL correspondant, le
-nombre de records impactés par chaque tâche (si cette tâche était exécutée
+Les settings sont éditables en XML. L'interface affiche le SQL correspondant, 
+le nombre de records impactés par chaque tâche (si cette tâche était exécutée
 maintenant), ainsi que les identifiants des dix premiers enregistrements impactés.
 
 Une tâche peut être maintenue 'désactivée' durant sa mise au point
-(une croix rouge est visible ).
+(une croix rouge est visible).
 
 Settings XML
 ^^^^^^^^^^^^
 
-<tasks> énumère l'ensemble des tâches<task>
+<tasks> énumère l'ensemble des tâches <task>.
 
-Une <task> agit sur une base (attribut "sbas_id") et peut soit modifier des
-records, soit les supprimer (attribut "action" dont la valeur est "update" ou "delete")
+Une <task> agit sur une base (attribut "databoxId") et peut soit modifier des
+enregistrements, soit les supprimer (attribut "action" dont la valeur est "update" ou "delete").
 
 Une <task> peut être nommée (attribut "name").
 
@@ -256,7 +256,7 @@ Pour l'action "update", les opérations décrites dans <to> peuvent porter sur :
     <status mask="0x1xxxx" />
     baisser le sb 6, lever le sb 4
 
-L'action "trash" déplace des enregistrements décrits dans <to> vers la corbeille application \_TRASH\_ de la databox.
+L'action "trash" déplace des enregistrements décrits dans <to> vers la corbeille applicative \_TRASH\_ de la databox.
 
 .. code-block:: xml
 
