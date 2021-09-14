@@ -39,10 +39,11 @@ production environment.
 
 For environments intended for production, IT departments will undoubtedly prefer to rely on existing bricks of their infrastructure for DBMSs and storage servers.
 
-Refer to the `.env`_ file to edit the COMPOSE_FILE line which informs the content of the stack deployed according to the context. 
+Refer to the `.env`_ file and edit the COMPOSE_FILE line which informs on the components of the deployed stack according to the context.
 
 
 .. _Phraseanet: https://www.phraseanet.com/
 .. _Docker: https://www.docker.com/
 .. _README.md: https://github.com/alchemy-fr/Phraseanet/blob/master/README.md#phraseanet-with-docker
 .. _.env: https://github.com/alchemy-fr/Phraseanet/blob/master/.env
+
