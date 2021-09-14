@@ -38,7 +38,7 @@ environnements de développement ou de production.
 
 Pour les environnements destinés à la production, les départements IT préférerons sans doute s'appuyer sur des briques existantes de leurs infrastructures pour les SGBD et serveurs de stockage.
 
-Se référer au fichier `.env`_ pour éditer la ligne COMPOSE_FILE qui renseigne le contenu de la stack déployée en fonction du contexte.
+Se référer au fichier `.env`_, éditer la ligne COMPOSE_FILE qui renseigne les composants de la stack déployée en fonction du contexte.
 
 .. _Phraseanet: https://www.phraseanet.com/
 .. _Docker: https://www.docker.com/
