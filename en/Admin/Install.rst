@@ -1,6 +1,10 @@
 Manual Install and configuration
 ================================
 
+.. warning::
+
+    For convenience, we strongly recommend that you :doc:`deploy Phraseanet with Docker <InstallDocker>`.
+
 Get the sources
 ---------------
 
@@ -102,6 +106,36 @@ Run the following command at the root of Phraseanet install directory:
 
     bin/setup system:install
 
+.. list-table:: Install options
+   :widths: 20 40 40
+   :header-rows: 1
+
+   * - Name
+     - Comment
+     - Default value
+
+   * - **download-path**
+     - used for store and serve exported zip file
+     - /var/alchemy/Phraseanet/datas/download
+
+   * - **lazaret-path**
+     - used for store and serve lazaret file
+     - /var/alchemy/Phraseanet/datas/lazaret
+
+   * - **caption-path**
+     - used for caching record description, display in production GUI
+     - /var/alchemy/Phraseanet/tmp/caption
+
+   * - **worker-path**
+     - used by worker for build proxy files
+     - /var/alchemy/Phraseanet/tmp
+
+Install option example:
+
+.. code-block:: bash
+
+    bin/setup system:install --download-path=/var/my_download_folder
+
 .. note::
 
     Some options can be used for storage distribution:
@@ -112,6 +146,7 @@ Run the following command at the root of Phraseanet install directory:
      --lazaret-path=/var/alchemy/Phraseanet/datas/lazaret \ # use for store and serve lazaret file
      --caption-path=/var/alchemy/Phraseanet/tmp/caption \  # use for caching record description, display in production GUI
      --worker-tmp-files=/var/alchemy/Phraseanet/tmp \ # used by worker for build proxy files
+
 
 The installation process starts.
 
