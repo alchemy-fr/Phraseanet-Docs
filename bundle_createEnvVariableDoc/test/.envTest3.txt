@@ -1,0 +1,10 @@
+
+##
+## Section title (ce titre est reporté dans le doc final)
+##
+
+# Another text below title
+
+# Maximum Php input var (see [PHP documentation|https://www.php.net/manual/en/info.configuration.php#ini.max-input-vars])
+# @run @deprecated
+MAX_INPUT_VARS=12000
