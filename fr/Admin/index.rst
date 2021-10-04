@@ -46,3 +46,4 @@ bin/console.
     Maintenance
     Plugins
     Personnalisation
+    VariablesEnvironnement
