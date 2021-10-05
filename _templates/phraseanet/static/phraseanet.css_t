@@ -333,3 +333,134 @@ div.body img{
 .languages span{
   margin:0px 5px;
 }
+ul
+{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+/* Environment variable table */
+.environment_variable
+{
+    border-collapse: collapse;
+    margin: 25px 0 80px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width:100%;
+}
+
+.environment_variable caption
+{
+    display:none;
+}
+
+.environment_variable thead tr
+{
+    background-color: #0e6ba4;
+    color: #ffffff;
+    text-align: left;
+}
+.environment_variable th,
+.environment_variable td
+{
+    padding: 12px 15px;
+}
+.environment_variable tbody tr
+{
+    border-bottom: 1px solid #dddddd;
+    vertical-align: top;
+}
+
+.environment_variable tbody tr:nth-of-type(even)
+{
+    background-color: #f3f3f3;
+}
+
+.environment_variable tbody tr:last-of-type
+{
+    border-bottom: 2px solid #0e6ba4;
+}
+.environment_variable tbody tr.active-row
+{
+    font-weight: bold;
+    color: #0e6ba4;
+}
+
+/* head column 1 */
+.environment_variable thead tr th:nth-child(0n+2)
+{
+    text-align:center;
+}
+
+/* column 1 */
+.environment_variable tbody tr td:nth-child(0n+1)
+{
+    max-width: 300px;
+    overflow-wrap: break-word;
+}
+/* column 2 */
+.environment_variable tbody tr td:nth-child(0n+2)
+{
+    padding-top:9px;
+    text-align: center;
+}
+/* column 3 */
+.environment_variable tbody tr td:nth-child(0n+3)
+{
+
+}
+.environment_variable tbody tr td p
+{
+    padding: 0 0 5px;
+    margin:0;
+}
+.environment_variable tbody tr td p:last-child
+{
+    padding: 0;
+}
+
+.environment_variable div.flag
+{
+    display:inline-block;
+    font-size:11px;
+    color: #ffffff;
+    background-color: #7f0000;
+    text-transform: lowercase;
+    border-radius: 3px;
+    padding: 4px 8px;
+    padding:4px;
+    min-width:40px;
+    text-align:center;
+}
+.environment_variable div.flag.deprecated
+{
+    color:#ffffff;
+    background-color: #7f0000;
+}
+.environment_variable div.flag.run
+{
+    color:#ffffff;
+    background-color: #195a00;
+}
+.environment_variable div.flag.build
+{
+    color:#ffffff;
+    background-color: #b32a00;/*#0e6ba4;*/
+
+}
+.environment_variable div.flag.install
+{
+    color:#ffffff;
+    background-color: #7f0000;/*#828b00;*/
+}
+.environment_variable div.flag.none
+{
+    display:none;
+}
+.environment_variable ul
+{
+    margin-top:5px;
+    margin-bottom:5px;
+}
