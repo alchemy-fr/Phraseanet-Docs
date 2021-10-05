@@ -1,0 +1,43 @@
+<!-- template subtitle [$anchor, $title, $permanentLinkLib] -->
+<h2>$title
+    <a class="headerlink" href="#$anchor" title="$permanentLinkLib">¶</a>
+</h2>
+
+<!-- template paragraph [$content] -->
+<p>$content</p>
+
+<!-- template listUnordered_start -->
+<ul>
+<!-- template listUnordered_start [$bulletLib] -->
+    <li>$bulletLib</li>
+<!-- template listUnordered_end -->
+</ul>
+
+<!-- template table_start [$captionLib]-->
+<table class="environment_variable">
+    <caption>$captionLib</caption>
+<!-- template table_header_start -->
+    <thead>
+    <tr>
+<!-- template table_header_col [$headerLib] -->
+        <th>$headerLib</th>
+<!-- template table_header_end -->
+    </tr>
+    </thead>
+<!-- template table_body_start -->
+    <tbody>
+<!-- template table_body_line_start -->
+    <tr>
+<!-- template table_body_cell_text [$text]-->
+        <td>$text</td>
+<!-- template table_body_cell_var_flag [$text, $flagCSS, $flagLib] -->
+        <td>$text<br/><div class="flag $flagCSS">$flagLib</div></td>
+<!-- template table_body_cell_flag [$flagCSS, $flagLib] -->
+        <td><div class="flag $flagCSS">$flagLib</div></td>
+<!-- template table_body_line_end -->
+    </tr>
+<!-- template table_body_end -->
+    </tbody>
+<!-- template table_end -->
+</table>
+<!-- EOF -->
