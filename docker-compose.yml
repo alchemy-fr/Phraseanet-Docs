@@ -4,16 +4,6 @@ networks:
   internal:
 
 services:
-  sphinx:
-    build:
-      context: .
-      target: phraseanet-doc-sphinx
-    image: local/phraseanet-doc-sphinx:latest
-    restart: on-failure
-    volumes:
-    - ./_build:/docs/_build:rw
-    networks:
-      - internal
 
   nginx:
     build:
@@ -27,5 +17,16 @@ services:
     - PHRASEANET_DOC_NGINX_PORT
     ports:
       - ${PHRASEANET_DOC_NGINX_PORT}:80
+    networks:
+      - internal
+
+  phraseanet-doc-builder:
+    build:
+      context: .
+      target: phraseanet-doc-builder
+    image: phraseanet-doc-builder
+    restart: on-failure
+    volumes:
+      - ./_build:/docs/_build:rw
     networks:
       - internal
