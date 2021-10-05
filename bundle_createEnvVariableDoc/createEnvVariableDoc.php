@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 $bundleDirectory = __DIR__;
@@ -27,6 +28,15 @@ include($srcPath . 'Blocks/SectionBlock.php');
 include($srcPath . 'Blocks/BlockHelper.php');
 include($srcPath . 'HtmlGenerator.php');
 
+/**
+ * Get first parameter if exist
+ */
+$localFileTestPath = '';
+if(isset ($argv[1]))
+{
+	$localFileTestPath = $argv[1];
+}
+
 
 $includeEnvVariable = (new IncludeEnvVariable())
 	->setBundleDirectory($bundleDirectory)
@@ -34,4 +44,5 @@ $includeEnvVariable = (new IncludeEnvVariable())
 	->setVersionFilePath($versionFilePath)
 	->setRepoName($repoName)
 	->setFileToIncludeList($fileToIncludeList)
+    ->setTestFilePath($localFileTestPath)
 	->start();

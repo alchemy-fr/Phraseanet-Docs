@@ -1,67 +1,105 @@
 
 ###
-# Zone propre au .env, celle-ci peut expliquer par exemple la signification Always, Build, etc.
-# Cette zone n'est pas reportée dans le fichier de doc final
+# These comments are bypassed by documentation generator process :
+# they only exist for the .env text file.
+#
+# Environment variables are assigned at different times in docker.
+# 3 tags make it possible to distinguish them :
+#
+# - @install
+# - @build
+# - @run
+#
+# The "@deprecated" tag targets a deprecated variable.
+#
+# For better readability, see url below :
+# https://docs.phraseanet.com/4.1/en/EnvironnementVariables.html
+
+
+# --------------------------- Introduction ---------------------------
+
+# This could be an introduction.
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+# et quam dui. Donec urna dui, lacinia tincidunt erat ut :
+#
+# - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+#   et quam dui. Donec urna dui, lacinia tincidunt erat ut,
+#   ultrices vestibulum diam.
+# - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+#   et quam dui. Donec urna dui, lacinia tincidunt erat ut,
+#   ultrices vestibulum diam.
 #
 
-##
-## Section title (ce titre est reporté dans le doc final)
-##
+# --------------------------- Section A ---------------------------
 
+# The section A is so beautifull.
+
+# Let see an underored list of the section A:
+# - Item 1 of section A
+# - Item 2 of section A
+#
+
+
+VARIABLE_WITHOUT_FLAG=value
+
+# @run
+VARIABLE_WITH_FLAG_RUN=value
+
+# @build
+VARIABLE_WITH_FLAG_BUILD=value
+
+# @install
+VARIABLE_WITH_FLAG_INSTALL=value
+
+# @deprecated
+VARIABLE_DEPRECATED=value
+
+# @install @deprecated
+VARIABLE_WITH_FLAG_AND_DEPRECATED=value
+
+# @deprecated @build
+VARIABLE_WITH_FLAG_AND_DEPRECATED2=value
+
+# My comment
+VARIABLE_WITH_COMMENT=value
+
+# My comment
+# @build
+VARIABLE_WITH_FLAG_AND_COMMENT=value
+
+# Unordered list in Environmenr variable comment are supported :
+# - First item: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#   Phasellus et quam dui.
+#   Donec urna dui, lacinia tincidunt erat ut ultrices vestibulum diam.
+# - And don't forget the linefeed after unordered list
+#
+# @build
+VARIABLE_WITH_LONG_COMMENT=value
+
+###
+# These comments are bypassed by documentation generator process :
+# they only exist for the .env text file.
+
+
+# --------------------------- ANOTHER SECTION ---------------------------
+# lorem Ipsum is simply dummy text of the printing and typesetting industry.
+# Lorem Ipsum has been the industry's standard dummy text ever since the
+# 1500s, when an unknown printer took a galley of type and scrambled it to
+# make a type specimen book. It has survived not only five centuries, but
+# also the leap into electronic typesetting, remaining essentially unchanged.
+# It was popularised in the 1960s with the release of Letraset sheets containing
+# Lorem Ipsum passages, and more recently with desktop publishing software like
+# Aldus PageMaker including versions of Lorem Ipsum.
 
 # --------------- RabbitMQ SETTING ----------------------
 
-# Entrypoint of Phraseanet container : do an installation if Phraseanet
-# is not or lorem ipsum and bla bla bla installed.
-# Another sentence and bla bla blabla bla blabla bla blabla bla.
-# bla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla.
-# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue hendrerit cursus. Sed nunc ipsum, interdum
-# eu tincidunt sit amet, mollis et sem. Nullam maximus nunc purus, ut molestie lectus pharetra in. In blandit
-# fringilla leo, nec hendrerit arcu euismod placerat. Vestibulum ante ipsum primis in faucibus orci luctus et
-# ultrices posuere cubilia curae; Quisque rutrum velit arcu, in dictum erat euismod at. Pellentesque habitant morbi
-# tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ornare nunc nec varius tincidunt. Etiam
-# a scelerisque lacus, sit amet hendrerit turpis. Duis vehicula a nunc et cursus.
-#
-# Avaiable choice:
-# - uno
-# - dos on
-# two lines
-# - tres
-#
-# Another text below title
+RABBITMQ_DEFAULT_USER=alchemy
+RABBITMQ_DEFAULT_PASS=vdh4dpe5Wy3R
+RABBITMQ_MANAGEMENT_PORT=10811
 
-# Maximum Php input var (see [PHP documentation|https://www.php.net/manual/en/info.configuration.php#ini.max-input-vars])
-# @run @deprecated
-MAX_INPUT_VARS=12000
 
-# another section
+# --------------- GATEWAY SETTING (nginx) -----------------------
 
-TRUC_BIDULE=12000
-
-# Entrypoint of Phraseanet container : do an installation if Phraseanet is not installed. Seconde ligne lorem ipsum
-# bla bla bla:
-# - Entrypoint of Phraseanet container : do an installation if Phraseanet is not installed
-# (see [PHP documentation|https://www.php.net/manual/en/info.configuration.php#ini.max-input-vars]).
-# - Phraseanet another long sentence.
-# this is BR inside LI
-# - container
-#
-# @build
-PHRASEANET_INSTALL=12000
-
-# MySQL root password (le tag "@deprecated" permettra une mise en forme type warning)
-# @install @deprecated
-MYSQL_ROOT_PASSWORD=root
-#one line lost
-
-# MySQL root password (le tag "@deprecated" permettra une mise en forme type warning)
-# @require_customisation
-ANOTHER_VAR=root
-
-VAR_WITHOUT_COMMENT=root
-# @build
-VAR_NEEDLE=root
-ANOTHER_VAR_NEEDLE=root
-# lorem ipsum
-# @require_customisation
-VAR_WITHOUT_CARRIER_RETURN=root
+GATEWAY_SEND_TIMEOUT=120
+GATEWAY_PROXY_TIMEOUT=120
+GATEWAY_FASTCGI_TIMEOUT=300

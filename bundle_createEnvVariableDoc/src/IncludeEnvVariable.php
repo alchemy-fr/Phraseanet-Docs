@@ -17,6 +17,9 @@ class IncludeEnvVariable
 	/** @var string */
 	private $bundleDirectory;
 
+	/** @var string */
+	private $testFilePath;
+
 	public function __construct()
 	{
 
@@ -70,9 +73,19 @@ class IncludeEnvVariable
 			$logCLI->log('Local Path: '.$localPath);
 
 			$rawData = $githubLoader->getFile($this->repoName, $lastPatchVersion, $githubPath);
-			//$rawData = file_get_contents($this->bundleDirectory.'/test/.envTest2.txt');
 
-			$rawData = "\n# <!-- environment variable -->\n\n".$rawData;
+			if($this->testFilePath != '')
+			{
+				$logCLI->log('Test file provided: '.$this->testFilePath);
+				$rawData = file_get_contents($this->testFilePath);
+			}
+
+			$tmp = explode(' ', microtime());
+			$microseconds = substr($tmp[0],2,3);
+			$date = date("Y-m-d_H:i:s");
+			$datetime = $date.'.'.$microseconds;
+
+			$rawData = "\n# <!-- environment variable generated on ".$datetime." -->\n\n".$rawData;
 
 			$envFileParser = (new EnvFileParser())
 				->setBlockHelper((new BlockHelper())->setTemplateHtmlGenerator($templateHtmlGenerator))
@@ -80,16 +93,16 @@ class IncludeEnvVariable
 				->setRawData($rawData)
 				->parse();
 
-			$logCLI->log('Generating HTML page');
+			$logCLI->log('Generating HTML page...');
 
 			$html = (new HtmlGenerator())
 				->setTemplateHtmlGenerator($templateHtmlGenerator)
 				->setEnvFileParser($envFileParser)
 				->build();
 
-
 			$this->writeFile($localPath, $html);
-			//echo $html;
+			$logCLI->log('HTML page generated in: '.realpath($localPath));
+			$logCLI->log('HTML page data md5 hash: '.md5($html));
 		}
 
 		$logCLI->log('');
@@ -154,6 +167,24 @@ class IncludeEnvVariable
 	public function setBundleDirectory(string $bundleDirectory): IncludeEnvVariable
 	{
 		$this->bundleDirectory = $bundleDirectory;
+		return $this;
+	}
+
+	/**
+	 * @param string $testFilePath
+	 * @return $this
+	 * @throws Exception
+	 */
+	public function setTestFilePath(string $testFilePath): IncludeEnvVariable
+	{
+		if($testFilePath != '')
+		{
+			if(! file_exists($testFilePath))
+			{
+				throw new Exception('Test file path not found: '.$testFilePath);
+			}
+		}
+		$this->testFilePath = $testFilePath;
 		return $this;
 	}
 }
