@@ -1,6 +1,21 @@
 # Environement variable documentation generator
 
-## Patterns
+## Introduction
+
+Goal of *Environement variable documentation generator* is
+- Download last minor version of `/.env` text file.
+- Parse and generate an html file which will be integrated in sphinx documentation.
+
+## Local test
+
+See `create-env-variable-doc.sh` script file to override `/.env` 
+Github file with any local text file.
+Build/up stack (`dc build && dc up -d`) to see result and
+http://localhost:4041/en/Admin/EnvironnementVariables.html
+
+An text file example is provided in `bundle_createEnvVariableDoc/test/.envTest1.txt`
+
+## Parsing patterns
 
 ### Title
 

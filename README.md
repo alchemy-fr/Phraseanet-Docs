@@ -47,3 +47,6 @@ make html
 
 See http://sphinx.pocoo.org/ for documentation
 
+## About environment variable documentation generation
+
+[See dedicated page](bundle_createEnvVariableDoc/README.md)
