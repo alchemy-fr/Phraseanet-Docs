@@ -38,27 +38,42 @@ class IncludeEnvVariable
 			->setTemplatePath($this->templateHtmlPath)
 			->load();
 
-		/**
-		 * Get target version from __include__.php file
-		 */
-		$targetVersion = (new PackageVersion())
-			->setVersionFilePath($this->versionFilePath)
-			->getPackageVersion();
+		if($this->testFilePath !== '')
+		{
+			$logCLI->log('Test file mode');
+		}
+		else
+		{
+			try
+			{
+				/**
+				 * Get target version from __include__.php file
+				 */
+				$targetVersion = (new PackageVersion())
+					->setVersionFilePath($this->versionFilePath)
+					->getPackageVersion();
 
-		$logCLI->log('Package version found: '.$targetVersion);
+				$logCLI->log('Package version found: '.$targetVersion);
 
-		/**
-		 * Get last patched version (e.g. 4.1.3) of
-		 * repo from target version number (e.g. 4.1)
-		 */
-		$githubLoader = (new GithubLoader())
-			->setLogCli($logCLI)
-			->setRepoName($this->repoName)
-			->setTargetVersion($targetVersion);
+				/**
+				 * Get last patched version (e.g. 4.1.3) of
+				 * repo from target version number (e.g. 4.1)
+				 */
+				$githubLoader = (new GithubLoader())
+					->setLogCli($logCLI)
+					->setRepoName($this->repoName)
+					->setTargetVersion($targetVersion);
 
-		$lastPatchVersion = $githubLoader->getLastPatchVersion();
+				$lastPatchVersion = $githubLoader->getLastPatchVersion();
 
-		$logCLI->log('Last patched version founded: '.$lastPatchVersion);
+				$logCLI->log('Last patched version founded: '.$lastPatchVersion);
+			}
+			catch (Exception $exception)
+			{
+				$logCLI->log('Github access error: '.$exception->getMessage());
+				return ($this);
+			}
+		}
 
 		/**
 		 * Get & parse repo file and produce html file
@@ -69,15 +84,22 @@ class IncludeEnvVariable
 			$githubPath = $fileToInclude['githubPath'];
 			$localPath = $fileToInclude['localPath'];
 
-			$logCLI->log('Github Path: '.$githubPath);
 			$logCLI->log('Local Path: '.$localPath);
 
-			$rawData = $githubLoader->getFile($this->repoName, $lastPatchVersion, $githubPath);
-
-			if($this->testFilePath != '')
+			if($this->testFilePath !== '')
 			{
 				$logCLI->log('Test file provided: '.$this->testFilePath);
 				$rawData = file_get_contents($this->testFilePath);
+			}
+			else
+			{
+				$logCLI->log('Github Path: '.$githubPath);
+				$rawData = $githubLoader->getFile($this->repoName, $lastPatchVersion, $githubPath);
+				if(!$rawData)
+				{
+					throw new Exception('Github access error. Abort.');
+				}
+				$logCLI->log('Loaded '.strlen($rawData).' bytes from Github.');
 			}
 
 			$tmp = explode(' ', microtime());
