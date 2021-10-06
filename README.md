@@ -50,3 +50,24 @@ See http://sphinx.pocoo.org/ for documentation
 ## About environment variable documentation generation
 
 [See dedicated page](bundle_createEnvVariableDoc/README.md)
+
+## About Phraseanet source files import
+
+Some Phraseanet source files can be integrated in documentation from Github.
+
+E.g with `/lib/conf.d/configuration.yml` YAML file :
+```
+.. literalinclude:: ../../common/github_source/lib/conf.d//configuration.yml
+    :language: yaml
+```
+    
+This integration is based on a link to a local file which is downloaded during the build.
+Downloaded files are defined in `include-phraseanet-sources.sh`:
+```
+GITHUB_FILE_LIST=(
+    "/lib/conf.d/configuration.yml" \
+  )
+```
+
+> Note that `include-phraseanet-sources.sh` target the last minor version tag on Github. E.g : 
+> for a documentation defined for Phraseanet 4.0 (see `__version__.inc`), it will target 4.0.12 tag.
