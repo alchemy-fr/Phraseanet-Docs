@@ -26,7 +26,8 @@ RUN apt-get update \
     && add-apt-repository ppa:ondrej/php \
     && apt-get update \
     && apt-get install -y \
-    php7.1-cli
+    php7.3 \
+    php7.3-cli
 
 WORKDIR /docs
 COPY . .

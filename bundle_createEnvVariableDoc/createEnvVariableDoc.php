@@ -37,12 +37,18 @@ if(isset ($argv[1]))
 	$localFileTestPath = $argv[1];
 }
 
-
-$includeEnvVariable = (new IncludeEnvVariable())
-	->setBundleDirectory($bundleDirectory)
-	->setTemplateHtmlPath($templateHtmlPath)
-	->setVersionFilePath($versionFilePath)
-	->setRepoName($repoName)
-	->setFileToIncludeList($fileToIncludeList)
-    ->setTestFilePath($localFileTestPath)
-	->start();
+try
+{
+	$includeEnvVariable = (new IncludeEnvVariable())
+		->setBundleDirectory($bundleDirectory)
+		->setTemplateHtmlPath($templateHtmlPath)
+		->setVersionFilePath($versionFilePath)
+		->setRepoName($repoName)
+		->setFileToIncludeList($fileToIncludeList)
+		->setTestFilePath($localFileTestPath)
+		->start();
+}
+catch (Exception $exception)
+{
+	echo ('Html generation process error: '.$exception->getMessage());
+}

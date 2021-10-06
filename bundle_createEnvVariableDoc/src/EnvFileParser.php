@@ -29,8 +29,6 @@ class EnvFileParser
 		$this->rawData = $this->removeEnvSpecificComment($this->rawData);
 		$this->rawData = $this->addMissingLineFeedAfterTitle($this->rawData);
 
-		//$this->rawData = str_replace("\n\n\n", "\n\n", $this->rawData);
-
 		$this->logCLI->log('Build variables blocks');
 		$varBlockList = $this->getVarBlockList();
 
@@ -152,9 +150,6 @@ class EnvFileParser
 	private function getVarBlockList()
 	{
 		$pattern="~"
-			//."([\s\S]*?)\n\s*([^\s]*)\s?=\s?(.*)"
-			//."([\s\S]*?\s*)([^\s]*)\s?=\s?(.*)"
-			//."([\s\S]*?\n)([^\s]*)=\s?(.*)"
 			."([\s\S]*?\n)([^\s]*)=[[[:blank:]]*(.*)"
 			."~m";
 

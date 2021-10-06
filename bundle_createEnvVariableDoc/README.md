@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Goal of *Environement variable documentation generator* is
+Goal of *Environement variable documentation generator* is to :
 - Download last minor version of `/.env` text file.
 - Parse and generate an html file which will be integrated in sphinx documentation.
 
@@ -29,6 +29,20 @@ Example :
 ``` 
 ```
 # ------------------ Lorem ipsum ------------------
+```
+
+##### Pattern alternative
+
+Line **MUST** start with 2 sharp ("#") character.
+
+Examples :
+```
+## Another title pattern alternative
+```
+```
+##
+## Another title pattern alternative
+## 
 ```
 
 ### Link

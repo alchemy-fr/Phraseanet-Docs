@@ -15,13 +15,15 @@
 # For better readability, see url below :
 # https://docs.phraseanet.com/4.1/en/EnvironnementVariables.html
 
+# --------------------------- Introduction Title ---------------------------
 
-# --------------------------- Introduction ---------------------------
+##
+## Another title pattern alternative
+##
 
-# This could be an introduction.
+# This could be an introduction, See [Php Documentation|https://www.php.net/].
 # Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
 # et quam dui. Donec urna dui, lacinia tincidunt erat ut :
-#
 # - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
 #   et quam dui. Donec urna dui, lacinia tincidunt erat ut,
 #   ultrices vestibulum diam.
@@ -69,7 +71,7 @@ VARIABLE_WITH_FLAG_AND_COMMENT=value
 
 # Unordered list in Environmenr variable comment are supported :
 # - First item: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-#   Phasellus et quam dui.
+#   Phasellus et quam dui, see [Php Documentation|https://www.php.net/].
 #   Donec urna dui, lacinia tincidunt erat ut ultrices vestibulum diam.
 # - And don't forget the linefeed after unordered list
 #
@@ -81,7 +83,7 @@ VARIABLE_WITH_LONG_COMMENT=value
 # they only exist for the .env text file.
 
 
-# --------------------------- ANOTHER SECTION ---------------------------
+# ------------ ANOTHER SECTION ABOUT RABBITMQ SETTING -----------------
 # lorem Ipsum is simply dummy text of the printing and typesetting industry.
 # Lorem Ipsum has been the industry's standard dummy text ever since the
 # 1500s, when an unknown printer took a galley of type and scrambled it to
@@ -90,8 +92,6 @@ VARIABLE_WITH_LONG_COMMENT=value
 # It was popularised in the 1960s with the release of Letraset sheets containing
 # Lorem Ipsum passages, and more recently with desktop publishing software like
 # Aldus PageMaker including versions of Lorem Ipsum.
-
-# --------------- RabbitMQ SETTING ----------------------
 
 RABBITMQ_DEFAULT_USER=alchemy
 RABBITMQ_DEFAULT_PASS=vdh4dpe5Wy3R
