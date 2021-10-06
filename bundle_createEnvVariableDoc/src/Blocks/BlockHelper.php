@@ -33,9 +33,9 @@ class BlockHelper
 
 		$exploded = explode("\n", $rawString);
 
-		$exploded = $this->removeEmptyEntries($exploded);
-
 		$rawString = join('', $exploded);
+
+		$rawString = $this->removeBRAfterUL($rawString);
 
 		return($rawString);
 	}
@@ -97,11 +97,8 @@ class BlockHelper
 	private function addLI($rawString)
 	{
 		$pattern="~"
-			//."(#[ \t]*-[ \t])([\s\S]*?)(?=(#[ \t]*-|#[ \t]*\n))"
 			."(#[ \t]*-[ \t])([\s\S]*?)(?=(#[ \t]*-|<\/ul))"
 			."~m";
-
-		//$rawString = preg_replace($pattern, $LF.'<li>$2</li>', $rawString);
 
 		$rawString = preg_replace_callback($pattern,
 			function($match)
@@ -124,7 +121,7 @@ class BlockHelper
 			."(##\s*\n)"
 			."~m";
 
-		$rawString = preg_replace($pattern, '', $rawString);
+		$rawString = preg_replace($pattern, "\n", $rawString);
 
 		return($rawString);
 	}
@@ -154,7 +151,6 @@ class BlockHelper
 	private function injectBreakLines($rawString)
 	{
 		$pattern="~"
-			//."(^#\s)([^-].*)\.$"
 			."(\.|\:|\.\.\.)( *)(\n)(?!# -)"
 			."~m";
 
@@ -230,10 +226,12 @@ class BlockHelper
 	private function removeEmptyEntries($list)
 	{
 		return(array_filter($list, function($value) { return !is_null($value) && $value !== ''; }));
-
 	}
-
-
+	private function removeBRAfterUL($rawString)
+	{
+		$rawString = str_replace(array('</ul><br>', '</ul><br>'), array('</ul>', '</ul>'), $rawString);
+		return($rawString);
+	}
 
 	/**
 	 * @param TemplateHtmlGenerator $templateHtmlGenerator
@@ -244,8 +242,4 @@ class BlockHelper
 		$this->templateHtmlGenerator = $templateHtmlGenerator;
 		return $this;
 	}
-
-
-
-
 }
