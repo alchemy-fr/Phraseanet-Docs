@@ -116,17 +116,24 @@
 		    HAS_SOURCE: {{ has_source|lower }}
 		  };
 		</script>
+
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 		<script type="text/javascript" src="{{ pathto('_static/bootstrap.js', 1) }}"></script>
+
 		{%- for scriptfile in script_files %}
 		<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
 		{%- endfor %}
+
+		<!-- <script defer  type="text/javascript" src="{{ pathto('_static/cookieconsent/cookieconsent.js', 1) }}"></script> -->
+		<!-- <script defer  type="text/javascript" src="{{ pathto('_static/cookieconsent/cookieconsent-conf.js', 1) }}"></script> -->
+		<script defer  type="text/javascript" src="{{ pathto('_static/cookieconsent/cookieconsent-concat.min.js', 1) }}"></script>
 		{%- endmacro %}
 
 		{%- macro css() %}
 		<link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
 		<link rel="stylesheet" href="{{ pathto('_static/bootstrap.css', 1) }}" type="text/css" />
 		<link rel="stylesheet" href="{{ pathto('_static/bootstrap-responsive.css', 1) }}" type="text/css" />
+		<link rel="stylesheet" href="{{ pathto('_static/cookieconsent/cookieconsent.css', 1) }}" type="text/css" />
 		<link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
 		{%- for cssfile in css_files %}
 		<link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
@@ -258,8 +265,20 @@
             {%- block footer %}
             <div class="footer">
                 <div class="languages">
-                    <a href="/4.0/en/"><span>English</span></a>
-                    <a href="/4.0/fr/"><span>Français</span></a>
+
+					{%- if language == 'fr' %}
+						<a href="/4.1/en/"><span>Anglais</span></a>
+						<a href="/4.1/fr/"><span>Français</span></a>
+						<a id="cookie-management" href="#"><span>Préférences des cookies</span></a>
+						<a href="/4.1/fr/PolitiqueDeConfidentialite.html"><span>Politique de confidentialité</span></a>
+					{%- endif %}
+					{%- if language == 'en' %}
+						<a href="/4.1/en/"><span>English</span></a>
+						<a href="/4.1/fr/"><span>French</span></a>
+						<a id="cookie-management" href="#"><span>Cookie policy</span></a>
+						<a href="/4.1/en/PrivacyPolicy.html"><span>Privacy policy</span></a>
+					{%- endif %}
+
                 </div>
                 {%- if show_copyright %}
                 {% trans copyright=copyright %}&copy; Copyright {{ copyright }}.{% endtrans %}
@@ -275,12 +294,28 @@
 
         </div><!-- /container-->
 
-        <script type="text/javascript">
-//<style>a{border: 3px solid red !important;}</style>
-          $(document).ready(function(){
+		<script type="text/plain" data-cookiecategory="analytics">
+			/**
+			 * Please let type to type="text/plain" for cookie consent management
+			 */
+			 console.log('Googla analytics ON');
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-3475486-25']);
+			_gaq.push(['_setDomainName', '.phraseanet.com']);
+			_gaq.push(['_trackPageview']);
 
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+    	</script> 
+
+        <script type="text/javascript">
+          $(document).ready(function()
+		  {
           	/**
-			 * Remove /4.0 url prefix for local test
+			 * Remove /4.0, /4.1 url prefix from all links for local test
 			 */
 			let removePrefixNumberURL = function()
 			{
@@ -296,6 +331,7 @@
 			 	 		if(anchor.href !== undefined)
 						{
 							anchor.href = anchor.href.replace('/4.0/', '/');
+							anchor.href = anchor.href.replace('/4.1/', '/');
 						}
 			 	 	}
 			 	}
@@ -306,20 +342,11 @@
               $('#navigation li a').wrapInner('<span>');
 
 			  removePrefixNumberURL();
+
           });
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-3475486-25']);
-          _gaq.push(['_setDomainName', '.phraseanet.com']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+		</script>
 
 
-        </script>
+
     </body>
 </html>
