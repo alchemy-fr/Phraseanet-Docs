@@ -1,0 +1,12 @@
+/Dockerfile
+/docker-compose*.yml
+/.travis.yml
+/.dockerignore
+/.env
+/.env.*
+/env.*
+/.git
+/.gitignore
+/_build
+/infra
+/LICENSE
