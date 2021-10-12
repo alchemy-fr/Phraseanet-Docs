@@ -94,10 +94,12 @@
 			<div id="selectVersion" class="btn-group">
 				<a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Version <span class="caret"></span></a>
 				<ul class="dropdown-menu span1">
-					<li><a href="/3.5">Phraseanet 3.5</a></li>
-					<li><a href="/3.6">Phraseanet 3.6</a></li>
-					<li><a href="/3.8">Phraseanet 3.8</a></li>
-					<li><a href="/4.0">Phraseanet 4.0</a></li>
+					{%- if version != '3.5' %}<li><a href="/3.5/{{ language }}/">Phraseanet 3.5</a></li>{%- endif %}
+					{%- if version != '3.6' %}<li><a href="/3.6/{{ language }}/">Phraseanet 3.6</a></li>{%- endif %}
+					{%- if version != '3.7' %}<li><a href="/3.7/{{ language }}/">Phraseanet 3.7</a></li>{%- endif %}
+					{%- if version != '3.8' %}<li><a href="/3.8/{{ language }}/">Phraseanet 3.8</a></li>{%- endif %}
+					{%- if version != '4.0' %}<li><a href="/4.0/{{ language }}/">Phraseanet 4.0</a></li>{%- endif %}
+					{%- if version != '4.1' %}<li><a href="/4.1/{{ language }}/">Phraseanet 4.1</a></li>{%- endif %}
 				</ul>
 			</div>
 		</div>
