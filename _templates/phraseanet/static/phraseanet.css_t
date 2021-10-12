@@ -171,8 +171,8 @@ div.sphinxsidebar a {
 	font-style: italic;
 }
 #selectVersion {
-	margin-left: 2px;
-	display: inline;
+	margin-left: 68px;
+	/*display: inline;*/
 }
 #spanVersion {
 	display: inline;

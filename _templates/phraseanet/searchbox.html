@@ -17,7 +17,7 @@
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    {{ _('Enter search terms or a module, class or function name.') }}
+        {%- if language == 'fr' %}Saisissez des termes de recherche, un nom de module, de classe ou de fonction.{%- else %}Enter search terms or a module, class or function name.{%- endif %}
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
