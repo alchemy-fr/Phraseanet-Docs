@@ -89,17 +89,17 @@
 		        	{%- endblock %}
 		        {%- endif %}
 		    </div>
-		    <span>Vous consultez actuellement la version {{ release|e }}.</span>
-		    <span id="spanVersion">Consulter une autre version : </span>
+				<span>{%- if language == 'fr' %}Vous consultez actuellement la version{%- else %}You are currently viewing the version{%- endif %} {{ release|e }}.</span>
+				<span id="spanVersion">{%- if language == 'fr' %}Consulter une autre version{%- else %}View another version{%- endif %} :&nbsp;</span>
 			<div id="selectVersion" class="btn-group">
 				<a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Version <span class="caret"></span></a>
 				<ul class="dropdown-menu span1">
-					<li><a href="/3.5">Phraseanet 3.5</a></li>
-					<li><a href="/3.6">Phraseanet 3.6</a></li>
-					<li><a href="/3.7">Phraseanet 3.7</a></li>
-					<li><a href="/3.8">Phraseanet 3.8</a></li>
-					<li><a href="/4.0">Phraseanet 4.0</a></li>
-					<li><a href="/4.0">Phraseanet 4.1</a></li>
+					{%- if version != '3.5' %}<li><a href="/3.5/{{ language }}/">Phraseanet 3.5</a></li>{%- endif %}
+					{%- if version != '3.6' %}<li><a href="/3.6/{{ language }}/">Phraseanet 3.6</a></li>{%- endif %}
+					{%- if version != '3.7' %}<li><a href="/3.7/{{ language }}/">Phraseanet 3.7</a></li>{%- endif %}
+					{%- if version != '3.8' %}<li><a href="/3.8/{{ language }}/">Phraseanet 3.8</a></li>{%- endif %}
+					{%- if version != '4.0' %}<li><a href="/4.0/{{ language }}/">Phraseanet 4.0</a></li>{%- endif %}
+					{%- if version != '4.1' %}<li><a href="/4.1/{{ language }}/">Phraseanet 4.1</a></li>{%- endif %}
 				</ul>
 			</div>
 		</div>
@@ -207,7 +207,9 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="{{ pathto(master_doc) }}">Phraseanet Documentation</a>
+					<a class="brand" href="{{ pathto(master_doc) }}">
+						{%- if language == 'fr' %}Documentation Phraseanet{%- else %}Phraseanet Documentation{%- endif %}
+					</a>
 		            <div id="navigation" class="related">
 	                    {{ toctree(collapse=True, maxdepth=-1, titles_only=False) }}
 	                </div>
@@ -215,7 +217,9 @@
 		                <ul class="nav pull-right" style="margin-right:90px;">
 		                	<li class="divider-vertical"></li>
 		                	<li class="dropdown">
-		                		<a href="#" id="ddLinks" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+		                		<a href="#" id="ddLinks" class="dropdown-toggle" data-toggle="dropdown">
+									{%- if language == 'fr' %}Liens{%- else %}Links{%- endif %}
+									<b class="caret"></b></a>
 		                		<ul class="dropdown-menu">
 		                			<li><a href="http://www.phraseanet.com" target="_blank">Phraseanet</a></li>
 		                			<li><a href="http://www.alchemy.fr/" target="_blank">Alchemy</a></li>
@@ -267,16 +271,16 @@
                 <div class="languages">
 
 					{%- if language == 'fr' %}
-						<a href="/4.1/en/"><span>Anglais</span></a>
-						<a href="/4.1/fr/"><span>Français</span></a>
+						<a href="/{{ version }}/en/"><span>Anglais</span></a>
+						<a href="/{{ version }}/fr/"><span>Français</span></a>
 						<a id="cookie-management" href="#"><span>Préférences des cookies</span></a>
-						<a href="/4.1/fr/PolitiqueDeConfidentialite.html"><span>Politique de confidentialité</span></a>
+						<a href="/{{ version }}/fr/PolitiqueDeConfidentialite.html"><span>Politique de confidentialité</span></a>
 					{%- endif %}
 					{%- if language == 'en' %}
-						<a href="/4.1/en/"><span>English</span></a>
-						<a href="/4.1/fr/"><span>French</span></a>
+						<a href="/{{ version }}/en/"><span>English</span></a>
+						<a href="/{{ version }}/fr/"><span>French</span></a>
 						<a id="cookie-management" href="#"><span>Cookie policy</span></a>
-						<a href="/4.1/en/PrivacyPolicy.html"><span>Privacy policy</span></a>
+						<a href="/{{ version }}/en/PrivacyPolicy.html"><span>Privacy policy</span></a>
 					{%- endif %}
 
                 </div>
@@ -315,11 +319,11 @@
           $(document).ready(function()
 		  {
           	/**
-			 * Remove /4.0, /4.1 url prefix from all links for local test
+			 * Remove "/4.1/", "/4.0/", etc. url prefix from all links for local test
 			 */
 			let removePrefixNumberURL = function()
 			{
-			 	if(window.location.port !== 80)
+			 	if( (window.location.port !== 80) && (window.location.port !== 443) )
 			 	{
 			 	 	let anchorList = document.querySelectorAll('a');
 
@@ -330,6 +334,10 @@
 
 			 	 		if(anchor.href !== undefined)
 						{
+							anchor.href = anchor.href.replace('/3.5/', '/');
+							anchor.href = anchor.href.replace('/3.6/', '/');
+							anchor.href = anchor.href.replace('/3.7/', '/');
+							anchor.href = anchor.href.replace('/3.8/', '/');
 							anchor.href = anchor.href.replace('/4.0/', '/');
 							anchor.href = anchor.href.replace('/4.1/', '/');
 						}
