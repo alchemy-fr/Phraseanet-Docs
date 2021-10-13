@@ -323,8 +323,9 @@
 			 */
 			let removePrefixNumberURL = function()
 			{
-			 	if( (window.location.port !== 80) && (window.location.port !== 443) )
+			 	if( (window.location.port === '4041') )
 			 	{
+			 		console.log('Port detected:',window.location.port,'. Remove prefix version in url.');
 			 	 	let anchorList = document.querySelectorAll('a');
 
 			 	 	for(let i in anchorList)
