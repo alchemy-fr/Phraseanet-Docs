@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Phraseanet iFrame auto width example</title>
+    <meta charset="utf-8"/>
+
+    <!-- Add Phraseanet responsive iFrame js script -->
+    <script src="js/phraseanetResponsiveIFrame.js"></script>
+
+    <!-- Add some beautifull style -->
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+            background-color: #dddddd;
+            font-family:courier, courier new, serif;
+        }
+        body {
+            padding: 10px;
+        }
+        div#content {
+            width: auto;
+            margin: 10px auto auto;
+            border: 2px solid blue;
+            background-color: rgba(0, 0,255,.1);
+        }
+        iframe
+        {
+            margin:auto;
+            border:2px solid #00ff00;
+        }
+        span {
+            color: red;
+            font-weight: bold;
+        }
+        fieldset
+        {
+            margin:10px 0 10px 0;
+            border-color: green;
+            background-color: rgba(0,255,0,.1);
+        }
+        fieldset#content-properties
+        {
+            border-color: blue;
+            background-color: rgba(0, 0,255,.1);
+        }
+    </style>
+
+    <!-- Javascript used for demo -->
+    <script>
+
+		function updateContentWidth(width)
+		{
+			dom_content.style.width = width;
+			dom_labelContentWidth.textContent = width;
+		}
+
+		function updateIframeHeight(height)
+		{
+			document.querySelectorAll('iframe').forEach((domObjFrame) => {domObjFrame.style.height = height});
+			dom_labelFrameHeight.textContent = height;
+		}
+
+		function updateIframeSrc()
+		{
+			document.querySelectorAll('iframe').forEach((domObjFrame) => {domObjFrame.src = dom_inputSourceIFrame.value});
+		}
+
+		let dom_content,
+			dom_labelContentWidth,
+			dom_labelFrameHeight,
+			dom_inputSourceIFrame;
+
+		window.addEventListener("DOMContentLoaded", () => {
+			dom_content              = document.getElementById('content');
+			dom_labelContentWidth    = document.getElementById('labelContentWidth');
+			dom_labelFrameHeight     = document.getElementById('labelFrameHeight');
+			dom_inputSourceIFrame    = document.getElementById('inputSourceIFrame');
+			dom_inputSourceIFrame.value = document.querySelector('iframe').src;
+		});
+    </script>
+
+</head>
+<body>
+<h1>Phraseanet iFrame auto width example</h1>
+
+<a href="javascript:history.back()">Go back to Phraseanet documentation</a>
+
+<fieldset id="content-properties">
+    <legend>Content properties (dashed border)</legend>
+    Width = <span id="labelContentWidth">auto</span>
+    &nbsp;|&nbsp;
+    <button autofocus type="button" onclick="updateContentWidth('auto');">auto</button>
+    &nbsp;|&nbsp;
+    <button type="button" onclick="updateContentWidth('10%');">10 %</button>
+    <button type="button" onclick="updateContentWidth('20%');">20 %</button>
+    <button type="button" onclick="updateContentWidth('30%');">30 %</button>
+    <button type="button" onclick="updateContentWidth('40%');">40 %</button>
+    <button type="button" onclick="updateContentWidth('50%');">50 %</button>
+    <button type="button" onclick="updateContentWidth('60%');">60 %</button>
+    <button type="button" onclick="updateContentWidth('70%');">70 %</button>
+    <button type="button" onclick="updateContentWidth('80%');">80 %</button>
+    <button type="button" onclick="updateContentWidth('90%');">90 %</button>
+
+</fieldset>
+
+<fieldset>
+    <legend>All iFrames properties (green borders)</legend>
+    Height = <span id="labelFrameHeight">200px</span>
+    &nbsp;|&nbsp;
+    <button type="button" onclick="updateIframeHeight('50px');">50 px</button>
+    <button type="button" onclick="updateIframeHeight('100px');">100 px</button>
+    <button type="button" onclick="updateIframeHeight('150px');">150 px</button>
+    <button type="button" onclick="updateIframeHeight('200px');">200 px</button>
+    <button type="button" onclick="updateIframeHeight('300px');">300 px</button>
+    <button type="button" onclick="updateIframeHeight('400px');">400 px</button>
+    <button type="button" onclick="updateIframeHeight('500px');">500 px</button>
+    <br/>
+    <br/>
+    <label for="inputSourceIFrame">Src = </label>
+    <textarea id="inputSourceIFrame" style="vertical-align:top;width:800px;height:50px;"></textarea>
+    <button type="button" onclick="updateIframeSrc();">Update all iFrames</button>
+
+</fieldset>
+
+<div id="content">
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut diam sed enim porta egestas.
+    Duis eleifend dictum faucibus. Ut hendrerit, ipsum ut iaculis interdum, erat elit porttitor sem,
+    at ornare magna orci in nisl. Sed in turpis tellus. Curabitur tempor justo eget leo consequat,
+    vitae condimentum orci pellentesque. Mauris ut ornare libero. Cras eget nisl feugiat, fringilla
+    lorem sed, pretium turpis. Vivamus non ipsum fermentum, euismod sapien sit amet, pulvinar elit.
+    Vivamus vitae eleifend neque. Morbi et tortor in metus tincidunt tempus in sed sem. Praesent eget
+    ante eu quam pellentesque facilisis. Quisque elit tortor, tempus id libero eu, vestibulum posuere
+    erat. Nunc eget gravida risus. Morbi nec egestas nisi. Aliquam convallis vulputate mauris, vel
+    facilisis massa mattis et.
+
+    <div style="text-align: center;">
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/796/preview/796.mp4%3Ftoken%3DRVaKazI9F2Sr7NgdHwRmN1n6FjdeGllwXkOLobU1AhPKHM5Jj4y3rrxO7H5WHYzS"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/1/preview/PlantA-20170209_095735.jpg%3Ftoken%3Di89PQ3PIyfGUHNX3iDrG5bZgQO5dxGsqLrqzqyRkJ8oDz4F9jUQsdgsZmjVGnmYP"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/781/preview/781.swf%3Ftoken%3DNMJ6cJUPSMHVKDZhrLUpgGMU0UABPJBIlHsU5sNWxZMXhroTQLBSoa6zjITgzyPC"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/9/preview/20170220_082551.jpg%3Ftoken%3DMsrqkdmw9ro1r9RSXsWc9QWMU1E9PUMqn6VqHJ8aTfYUL7xIqM5rqFNRnMqA3qQr"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/8/preview/20170220_082542.jpg%3Ftoken%3DMOqcG8i8YGSOYHKjbCDOC5OBckkGMXarPAlEHgIOo3hKxJnHGJho05B2RrFYuqsO"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/1/preview/PlantA-20170209_095735.jpg%3Ftoken%3Di89PQ3PIyfGUHNX3iDrG5bZgQO5dxGsqLrqzqyRkJ8oDz4F9jUQsdgsZmjVGnmYP"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/9/preview/20170220_082551.jpg%3Ftoken%3DMsrqkdmw9ro1r9RSXsWc9QWMU1E9PUMqn6VqHJ8aTfYUL7xIqM5rqFNRnMqA3qQr"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/8/preview/20170220_082542.jpg%3Ftoken%3DMOqcG8i8YGSOYHKjbCDOC5OBckkGMXarPAlEHgIOo3hKxJnHGJho05B2RrFYuqsO"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/781/preview/781.swf%3Ftoken%3DNMJ6cJUPSMHVKDZhrLUpgGMU0UABPJBIlHsU5sNWxZMXhroTQLBSoa6zjITgzyPC"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/796/preview/796.mp4%3Ftoken%3DRVaKazI9F2Sr7NgdHwRmN1n6FjdeGllwXkOLobU1AhPKHM5Jj4y3rrxO7H5WHYzS"
+                allowfullscreen></iframe>
+
+        <iframe data-optimize-area="width"
+                src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/1/preview/PlantA-20170209_095735.jpg%3Ftoken%3Di89PQ3PIyfGUHNX3iDrG5bZgQO5dxGsqLrqzqyRkJ8oDz4F9jUQsdgsZmjVGnmYP"
+                allowfullscreen></iframe>
+
+    </div>
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut diam sed enim porta egestas.
+    Duis eleifend dictum faucibus. Ut hendrerit, ipsum ut iaculis interdum, erat elit porttitor sem,
+    at ornare magna orci in nisl. Sed in turpis tellus. Curabitur tempor justo eget leo consequat,
+    vitae condimentum orci pellentesque. Mauris ut ornare libero. Cras eget nisl feugiat, fringilla
+    lorem sed, pretium turpis. Vivamus non ipsum fermentum, euismod sapien sit amet, pulvinar elit.
+    Vivamus vitae eleifend neque. Morbi et tortor in metus tincidunt tempus in sed sem. Praesent eget
+    ante eu quam pellentesque facilisis. Quisque elit tortor, tempus id libero eu, vestibulum posuere
+    erat. Nunc eget gravida risus. Morbi nec egestas nisi. Aliquam convallis vulputate mauris, vel
+    facilisis massa mattis et.
+
+</div>
+
+</body>
+</html>

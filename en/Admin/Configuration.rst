@@ -55,17 +55,7 @@ following adapters:
 +----------------+----------------------+-----------------------------------------------------+------------+
 |  Name          | Service              |  Description                                        | Options    |
 +================+======================+=====================================================+============+
-| MemcacheCache  | cache                | Cache server using PHP memcache extension           | host, port |
-+----------------+----------------------+-----------------------------------------------------+------------+
-| MemcachedCache | cache                | Cache server using PHP memcached extension          | host, port |
-+----------------+----------------------+-----------------------------------------------------+------------+
 | RedisCache     | Cache                | Cache server using PHP redis extension              | host, port |
-+----------------+----------------------+-----------------------------------------------------+------------+
-| ApcCache       | opcode-cache         | Opcode Cache that uses PHP APC                      |            |
-+----------------+----------------------+-----------------------------------------------------+------------+
-| XcacheCache    | opcode-cache         | Opcode Cache that uses PHP Xcache                   |            |
-+----------------+----------------------+-----------------------------------------------------+------------+
-| WinCacheCache  | opcode-cache         | Opcode Cache that uses PHP WinCache                 |            |
 +----------------+----------------------+-----------------------------------------------------+------------+
 | ArrayCache     | cache | opcode-cache | No cache                                            |            |
 +----------------+----------------------+-----------------------------------------------------+------------+
@@ -80,10 +70,6 @@ It is possible to use another handling system:
 | Type           | Description                                 | Options    |
 +================+=============================================+============+
 | file           | Filesystem handler                          |            |
-+----------------+---------------------------------------------+------------+
-| memcache       | Memcached server handler, use PHP memcache  | host, port |
-+----------------+---------------------------------------------+------------+
-| memcached      | Memcached server handler, use PHP memcached | host, port |
 +----------------+---------------------------------------------+------------+
 | redis          | Redis server handler, use PHP redis         | host, port |
 +----------------+---------------------------------------------+------------+
