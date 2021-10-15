@@ -29,5 +29,6 @@ Table of contents
     Vagrant
     Forums
     ApplicationDeveloper
+    ThirdPartyIntegration
 
 .. _Phraseanet PHP SDK: https://github.com/alchemy-fr/Phraseanet-PHP-SDK

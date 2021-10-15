@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Phraseanet iFrame auto height example</title>
+    <meta charset="utf-8"/>
+
+    <!-- Add Phraseanet responsive iFrame js script -->
+    <script src="js/phraseanetResponsiveIFrame.js"></script>
+
+    <!-- Add some beautifull style -->
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+            background-color: #dddddd;
+            font-family:courier, courier new, serif;
+        }
+        body {
+            padding: 10px;
+        }
+        div#content {
+            width: auto;
+            margin: 10px auto auto;
+            border: 2px solid blue;
+            background-color: rgba(0, 0,255,.1);
+        }
+        span {
+            color: red;
+            font-weight: bold;
+        }
+        iframe {
+            display:block;
+            margin:auto;
+            border:2px solid #00ff00;
+            width: 200px;
+        }
+        fieldset
+        {
+            margin:10px 0 10px 0;
+            border-color: green;
+            background-color: rgba(0,255,0,.1);
+        }
+        fieldset#content-properties
+        {
+            border-color: blue;
+            background-color: rgba(0, 0,255,.1);
+        }
+    </style>
+
+    <!-- Javascript used for demo -->
+    <script>
+		function updateContentWidth(width)
+		{
+			dom_content.style.width = width;
+			dom_labelContentWidth.textContent = width;
+		}
+
+		function updateIframeWidth(width)
+		{
+			document.querySelectorAll('iframe').forEach((domObjFrame) => {domObjFrame.style.width = width});
+			dom_labelFrameWidth.textContent = width;
+		}
+
+		function updateIframeSrc()
+		{
+			console.log('updateIframeSrc');
+			document.querySelectorAll('iframe').forEach((domObjFrame) => {domObjFrame.src = dom_inputSourceIFrame.value});
+		}
+
+		let dom_content,
+			dom_labelContentWidth,
+			dom_labelFrameWidth,
+			dom_inputSourceIFrame;
+
+		window.addEventListener("DOMContentLoaded", () => {
+			dom_content              = document.getElementById('content');
+			dom_labelContentWidth    = document.getElementById('labelContentWidth');
+			dom_labelFrameWidth      = document.getElementById('labelFrameWidth');
+			dom_inputSourceIFrame    = document.getElementById('inputSourceIFrame');
+			dom_inputSourceIFrame.value = document.querySelector('iframe').src;
+		});
+
+    </script>
+
+</head>
+<body>
+<h1>Phraseanet iFrame auto height example</h1>
+
+<a href="javascript:history.back()">Go back to Phraseanet documentation</a>
+
+<fieldset id="content-properties">
+    <legend>Content properties (blue border)</legend>
+    Width = <span id="labelContentWidth">auto</span>
+    &nbsp;|&nbsp;
+    <button autofocus type="button" onclick="updateContentWidth('auto');">auto</button>
+    &nbsp;|&nbsp;
+    <button type="button" onclick="updateContentWidth('10%');">10 %</button>
+    <button type="button" onclick="updateContentWidth('30%');">30 %</button>
+    <button type="button" onclick="updateContentWidth('50%');">50 %</button>
+    <button type="button" onclick="updateContentWidth('70%');">70 %</button>
+    <button type="button" onclick="updateContentWidth('90%');">90 %</button>
+</fieldset>
+
+<fieldset>
+    <legend>All iFrames properties (green borders)</legend>
+    Width = <span id="labelFrameWidth">200px</span>
+    &nbsp;|&nbsp;
+    <button type="button" onclick="updateIframeWidth('200px');">200 px</button>
+    <button type="button" onclick="updateIframeWidth('400px');">400 px</button>
+    <button type="button" onclick="updateIframeWidth('800px');">800 px</button>
+    <button type="button" onclick="updateIframeWidth('1024px');">1024 px</button>
+    <button type="button" onclick="updateIframeWidth('1280px');">1280 px</button>
+    &nbsp;|&nbsp;
+    <button type="button" onclick="updateIframeWidth('50%');">50 %</button>
+    <button type="button" onclick="updateIframeWidth('100%');">100 %</button>
+    <br/>
+    <br/>
+    <label for="inputSourceIFrame">Src = </label>
+    <textarea id="inputSourceIFrame" style="vertical-align:top;width:800px;height:50px;" onkeyup="updateIframeSrc()"></textarea>
+    <button type="button" onclick="updateIframeSrc();">Update</button>
+
+</fieldset>
+
+<div id="content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut diam sed enim porta egestas.
+    Duis eleifend dictum faucibus. Ut hendrerit, ipsum ut iaculis interdum, erat elit porttitor sem,
+    at ornare magna orci in nisl. Sed in turpis tellus. Curabitur tempor justo eget leo consequat,
+    vitae condimentum orci pellentesque. Mauris ut ornare libero. Cras eget nisl feugiat, fringilla
+    lorem sed, pretium turpis. Vivamus non ipsum fermentum, euismod sapien sit amet, pulvinar elit.
+    Vivamus vitae eleifend neque. Morbi et tortor in metus tincidunt tempus in sed sem. Praesent eget
+    ante eu quam pellentesque facilisis. Quisque elit tortor, tempus id libero eu, vestibulum posuere
+    erat. Nunc eget gravida risus. Morbi nec egestas nisi. Aliquam convallis vulputate mauris, vel
+    facilisis massa mattis et.
+
+    <iframe data-optimize-area="height"
+            src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/796/preview/796.mp4%3Ftoken%3DRVaKazI9F2Sr7NgdHwRmN1n6FjdeGllwXkOLobU1AhPKHM5Jj4y3rrxO7H5WHYzS"
+            allowfullscreen></iframe>
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut diam sed enim porta egestas.
+    Duis eleifend dictum faucibus. Ut hendrerit, ipsum ut iaculis interdum, erat elit porttitor sem,
+    at ornare magna orci in nisl.
+
+    <iframe data-optimize-area="height"
+            src="https://demo.alchemyasp.com/embed/?url=https%3A//demo.alchemyasp.com/permalink/v1/68/8/preview/20170220_082542.jpg%3Ftoken%3DMOqcG8i8YGSOYHKjbCDOC5OBckkGMXarPAlEHgIOo3hKxJnHGJho05B2RrFYuqsO"
+            allowfullscreen></iframe>
+
+    Sed in turpis tellus. Curabitur tempor justo eget leo consequat,
+    vitae condimentum orci pellentesque. Mauris ut ornare libero. Cras eget nisl feugiat, fringilla
+    lorem sed, pretium turpis. Vivamus non ipsum fermentum, euismod sapien sit amet, pulvinar elit.
+    Vivamus vitae eleifend neque. Morbi et tortor in metus tincidunt tempus in sed sem. Praesent eget
+    ante eu quam pellentesque facilisis. Quisque elit tortor, tempus id libero eu, vestibulum posuere
+    erat. Nunc eget gravida risus. Morbi nec egestas nisi. Aliquam convallis vulputate mauris, vel
+    facilisis massa mattis et.
+</div>
+
+</body>
+</html>
