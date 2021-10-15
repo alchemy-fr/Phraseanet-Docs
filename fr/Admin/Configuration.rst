@@ -90,17 +90,7 @@ les adapteurs suivants :
 +----------------+----------------------+------------------------------------------------------+------------+
 |  Nom           | Service              |  Description                                         | Options    |
 +================+======================+======================================================+============+
-| MemcacheCache  | cache                | Serveur de cache utilisant l'extension PHP Memcache  | host, port |
-+----------------+----------------------+------------------------------------------------------+------------+
-| MemcachedCache | cache                | Serveur de cache utilisant l'extension PHP Memcached | host, port |
-+----------------+----------------------+------------------------------------------------------+------------+
 | RedisCache     | Cache                | Serveur de cache utilisant l'extension PHP redis     | host, port |
-+----------------+----------------------+------------------------------------------------------+------------+
-| ApcCache       | opcode-cache         | Cache opcode utilisant PHP APC                       |            |
-+----------------+----------------------+------------------------------------------------------+------------+
-| XcacheCache    | opcode-cache         | Cache opcode utilisant PHP Xcache                    |            |
-+----------------+----------------------+------------------------------------------------------+------------+
-| WinCacheCache  | opcode-cache         | Cache opcode utilisant PHP WinCache                  |            |
 +----------------+----------------------+------------------------------------------------------+------------+
 | ArrayCache     | cache | opcode-cache | Cache désactivé                                      |            |
 +----------------+----------------------+------------------------------------------------------+------------+
@@ -117,10 +107,6 @@ Il est possible d'utiliser d'autres types de stockage :
 | Type           | Description                                                                        | Options    |
 +================+====================================================================================+============+
 | file           | Stockage des sessions sur le disque                                                |            |
-+----------------+------------------------------------------------------------------------------------+------------+
-| memcache       | Stockage des sessions dans un serveur Memcached, utilise l'extension PHP memcache  | host, port |
-+----------------+------------------------------------------------------------------------------------+------------+
-| memcached      | Stockage des sessions dans un serveur Memcached, utilise l'extension PHP memcached | host, port |
 +----------------+------------------------------------------------------------------------------------+------------+
 | redis          | Stockage des sessions dans un serveur Redis, utilise l'extension PHP redis         | host, port |
 +----------------+------------------------------------------------------------------------------------+------------+
