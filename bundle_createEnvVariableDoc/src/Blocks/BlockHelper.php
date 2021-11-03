@@ -17,6 +17,10 @@ class BlockHelper
 
 		$rawString = $this->removeDoubleSharpEmptyLines($rawString);
 
+		$rawString = $this->capsStyle($rawString);
+		$rawString = $this->simpleQuoteStyle($rawString);
+		$rawString = $this->doubleQuoteStyle($rawString);
+
 		$rawString = $this->generateSubTitletitle_V1($rawString);
 
 		$rawString = $this->generateSubTitletitle_V2($rawString);
@@ -25,6 +29,7 @@ class BlockHelper
 
 		$rawString = $this->addUL($rawString);
 		$rawString = $this->addLI($rawString);
+
 
 		$rawString = $this->convertURL($rawString);
 
@@ -41,6 +46,58 @@ class BlockHelper
 	}
 
 	/**
+	 * Bold variable followed by equal symbol
+	 * @example : COMPOSE_FILE= => <b>COMPOSE_FILE</b>=
+	 * @param $rawString
+	 * @return string
+	 */
+	private function capsStyle($rawString)
+	{
+		$pattern="~"
+			."([A-Z_]*)="
+			."~m";
+
+		$rawString = preg_replace($pattern, '<b>$1</b>=', $rawString);
+
+		return($rawString);
+	}
+
+	/**
+	 * Add italic style on simple quoted text
+	 * @example : 'Test' => '<i>Test</i>='
+	 * @param $rawString
+	 * @return string
+	 */
+	private function simpleQuoteStyle($rawString)
+	{
+		$pattern="~"
+			."'([^']*)'"
+			."~m";
+
+		$rawString = preg_replace($pattern, '\'<i>$1</i>\'', $rawString);
+
+		return($rawString);
+	}
+
+	/**
+	 * Add italic style on double quoted text
+	 * @example : "Test" => "<i>Test</i>="
+	 * @param $rawString
+	 * @return string
+	 */
+	private function doubleQuoteStyle($rawString)
+	{
+		$pattern="~"
+			."\"([^\"]*)\""
+			."~m";
+
+		$rawString = preg_replace($pattern, '"<i>$1</i>"', $rawString);
+
+		return($rawString);
+	}
+
+	/**
+	 * @example : [alchemy|https://www.alchemy.fr] => <a href="https://www.alchemy.fr" title="" target="_blank">alchemy</a>
 	 * @param $rawString
 	 * @return string
 	 */
@@ -51,7 +108,7 @@ class BlockHelper
 			."~m";
 
 		$tmp = '$3';
-		$rawString = preg_replace($pattern, '<a href="'.$tmp.'" title="">$2</a>', $rawString);
+		$rawString = preg_replace($pattern, '<a href="'.$tmp.'" title="" target="_blank">$2</a>', $rawString);
 
 		return($rawString);
 	}

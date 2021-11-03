@@ -83,6 +83,8 @@ class HtmlGenerator
 
 		}
 
+		$html = '<div class="environment-variable-generation">'.$html.'</div>';
+
 		return $html;
 	}
 
