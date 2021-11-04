@@ -104,7 +104,7 @@ class BlockHelper
 	private function convertURL($rawString)
 	{
 		$pattern="~"
-			."(\[)([^|]*)\|([^\]]*)(\])"
+			."(\[)([^|\[]*)\|([^\]]*)(\])"
 			."~m";
 
 		$tmp = '$3';
@@ -112,6 +112,7 @@ class BlockHelper
 
 		return($rawString);
 	}
+
 
 	/**
 	 * Add ul markers :
