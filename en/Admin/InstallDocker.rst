@@ -39,7 +39,7 @@ production environment.
 
 For environments intended for production, IT departments will undoubtedly prefer to rely on existing bricks of their infrastructure for DBMSs and storage servers.
 
-Refer to the `.env`_ file and edit the COMPOSE_FILE line which informs on the components of the deployed stack according to the context.
+Refer to the `.env`_ file and overide the value of COMPOSE_FILE and COMPOSE_PROFILES which informs on the components of the deployed stack according to the context.
 
 
 .. _Phraseanet: https://www.phraseanet.com/
