@@ -217,6 +217,4 @@ class EnvFileParser
 		$this->blockHelper = $blockHelper;
 		return $this;
 	}
-
-
 }
