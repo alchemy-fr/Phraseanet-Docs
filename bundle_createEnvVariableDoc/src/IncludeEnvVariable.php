@@ -20,9 +20,12 @@ class IncludeEnvVariable
 	/** @var string */
 	private $testFilePath;
 
+	/** @var string */
+	private $appTitle;
+
 	public function __construct()
 	{
-
+		$this->appTitle = 'PHP create environment variable documentation';
 	}
 
 	/**
@@ -32,7 +35,8 @@ class IncludeEnvVariable
 	public function start()
 	{
 		$logCLI = new LogCLI();
-		$logCLI->log('Start PHP create environment variable documentation');
+		$logCLI->log('');
+		$logCLI->logTitle($this->appTitle.' | Start');
 
 		$templateHtmlGenerator = (new TemplateHtmlGenerator())
 			->setTemplatePath($this->templateHtmlPath)
@@ -44,34 +48,43 @@ class IncludeEnvVariable
 		}
 		else
 		{
-			try
+
+			/**
+			 * Get target version from __include__.php file
+			 */
+			$targetVersionOrBranchName = (new PackageVersion())
+				->setVersionFilePath($this->versionFilePath)
+				->getPackageVersion();
+
+			$logCLI->log('Package version found: '.$targetVersionOrBranchName);
+
+			$githubLoader = (new GithubLoader())
+				->setLogCli($logCLI)
+				->setRepoName($this->repoName)
+				->setTargetVersion($targetVersionOrBranchName);
+
+			if($this->isTargetVersionIsBranchName($targetVersionOrBranchName))
 			{
-				/**
-				 * Get target version from __include__.php file
-				 */
-				$targetVersion = (new PackageVersion())
-					->setVersionFilePath($this->versionFilePath)
-					->getPackageVersion();
-
-				$logCLI->log('Package version found: '.$targetVersion);
-
+				$lastPatchVersion = $targetVersionOrBranchName;
+				$logCLI->log('Branch mode: '.$lastPatchVersion);
+			}
+			else
+			{
 				/**
 				 * Get last patched version (e.g. 4.1.3) of
 				 * repo from target version number (e.g. 4.1)
 				 */
-				$githubLoader = (new GithubLoader())
-					->setLogCli($logCLI)
-					->setRepoName($this->repoName)
-					->setTargetVersion($targetVersion);
-
-				$lastPatchVersion = $githubLoader->getLastPatchVersion();
+				try
+				{
+					$lastPatchVersion = $githubLoader->getLastPatchVersion();
+				}
+				catch (Exception $exception)
+				{
+					$logCLI->log('Github access error: '.$exception->getMessage());
+					return ($this);
+				}
 
 				$logCLI->log('Last patched version founded: '.$lastPatchVersion);
-			}
-			catch (Exception $exception)
-			{
-				$logCLI->log('Github access error: '.$exception->getMessage());
-				return ($this);
 			}
 		}
 
@@ -80,7 +93,6 @@ class IncludeEnvVariable
 		 */
 		foreach ($this->fileToIncludeList as $fileToInclude)
 		{
-
 			$githubPath = $fileToInclude['githubPath'];
 			$localPath = $fileToInclude['localPath'];
 
@@ -127,8 +139,24 @@ class IncludeEnvVariable
 			$logCLI->log('HTML page data md5 hash: '.md5($html));
 		}
 
-		$logCLI->log('');
+		$logCLI->logTitle($this->appTitle.' | End');
 		return($this);
+	}
+
+	/**
+	 * Return true if $pPackageVersion is
+	 * not a version number ("4.2", "3.12", "98.90", etc.)
+	 *
+	 * @param $pPackageVersion
+	 * @return bool
+	 */
+	private function isTargetVersionIsBranchName($pPackageVersion)
+	{
+		$pattern="~"
+				."^[0-9]{1,}\.[0-9]{1,}$"
+				."~m";
+
+		return(! preg_match($pattern, $pPackageVersion));
 	}
 
 	private function writeFile($pathFile, $data)

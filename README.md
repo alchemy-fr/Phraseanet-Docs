@@ -69,5 +69,14 @@ GITHUB_FILE_LIST=(
   )
 ```
 
+`include-phraseanet-sources.sh` mode is based on `CURRENT_VERSION` value located in `__version__.inc` file:
+
+**Mode 'Phraseanet version'**
+ 
+`CURRENT_VERSION` represent a Phraseanet minor version (e.g. "4.1")
 > Note that `include-phraseanet-sources.sh` target the last minor version tag on Github. E.g : 
-> for a documentation defined for Phraseanet 4.0 (see `__version__.inc`), it will target 4.0.12 tag.
+> for a documentation defined for Phraseanet 4.0 (`CURRENT_VERSION=4.0` in `__version__.inc` file), it will target 4.0.12 tag.
+
+**Mode 'Phraseanet branch'**
+
+`CURRENT_VERSION` represent a Phraseanet branch (e.g. "master")
