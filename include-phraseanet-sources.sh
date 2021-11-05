@@ -272,28 +272,41 @@ copySourceFiles()
 #######################################
 start()
 {
-    local currentVersion
+    local currentVersionOrBranchName
     local lastVersionPatchNumber
     local tagList
+    local branchName
 
     echo
     display_title "Include Phraseanet Sources | Start"
 
-    currentVersion=$(get_current_version)
-    echo -e "Target Phraseanet version : "$(colorize "$currentVersion")
+    currentVersionOrBranchName=$(get_current_version)
 
+    # Switch "Version" or "Branch" mode by regex pattern
+    if [[ "$currentVersionOrBranchName" =~ ^[0-9]{1,}\.[0-9]{1,}$ ]]; then
 
-    getGithubTagsList tagList 'alchemy-fr/Phraseanet'
+        # Version mode (e.g: "4.2")
+        echo -e "Target Phraseanet version : "$(colorize "$currentVersionOrBranchName")
 
-    #showAllLastPatch "${tagList[@]}"
+        getGithubTagsList tagList 'alchemy-fr/Phraseanet'
 
-    lastVersionPatchNumber=$(getLastPatchFromVersion "$currentVersion" "${tagList[@]}")
+        #showAllLastPatch "${tagList[@]}"
 
-    if [[ -z "$lastVersionPatchNumber" ]]; then
-        echo "No last version patch number found... Exit."
+        lastVersionPatchNumber=$(getLastPatchFromVersion "$currentVersionOrBranchName" "${tagList[@]}")
+
+        if [[ -z "$lastVersionPatchNumber" ]]; then
+            echo "No last version patch number found... Exit."
+        else
+            echo "Last version patch number : "$(colorize "$lastVersionPatchNumber")
+            copySourceFiles "$lastVersionPatchNumber" "$DESTINATION_DIRECTORY" "${GITHUB_FILE_LIST[@]}"
+        fi
+
     else
-        echo "Last version patch number : "$(colorize "$lastVersionPatchNumber")
-        copySourceFiles "$lastVersionPatchNumber" "$DESTINATION_DIRECTORY" "${GITHUB_FILE_LIST[@]}"
+
+        # Branch mode (e.g: "master")
+        echo -e "Target Phraseanet branch : "$(colorize "$currentVersionOrBranchName")
+
+        copySourceFiles "$currentVersionOrBranchName" "$DESTINATION_DIRECTORY" "${GITHUB_FILE_LIST[@]}"
     fi
 
     display_title "Include Phraseanet Sources | End"
@@ -301,3 +314,6 @@ start()
 }
 
 start
+
+# https://raw.githubusercontent.com/alchemy-fr/Phraseanet/master/config/configuration.sample.yml
+# https://raw.githubusercontent.com/alchemy-fr/Phraseanet/4.1.3/lib/conf.d/configuration.yml
