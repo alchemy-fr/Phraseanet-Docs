@@ -3,8 +3,23 @@
 ## Introduction
 
 Goal of *Environement variable documentation generator* is to :
-- Download last minor version of `/.env` text file.
+- Download branch (or last minor version) of `/.env` text file.
 - Parse and generate an html file which will be integrated in sphinx documentation.
+
+## Mode "Version" / Mode "Branch"
+
+`create-env-variable-doc.sh` script file mode is based on `CURRENT_VERSION` value located in `__version__.inc` file:
+
+**Mode 'Phraseanet version'**
+ 
+`CURRENT_VERSION` represent a Phraseanet minor version (e.g. "4.1")
+> Note that the script target the last minor version tag on Github. E.g : 
+> for a documentation defined for Phraseanet 4.0 (`CURRENT_VERSION=4.0` in `__version__.inc` file), it will target 4.0.12 tag.
+
+**Mode 'Phraseanet branch'**
+
+`CURRENT_VERSION` represent a Phraseanet branch (e.g. "master")
+
 
 ## Local test
 
