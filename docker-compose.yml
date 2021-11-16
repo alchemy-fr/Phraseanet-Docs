@@ -1,7 +1,10 @@
-version: "3.4"
+version: "3.9"
 
 networks:
   internal:
+    ipam:
+      config:
+        - subnet: $PHR_DOC_SUBNET
 
 services:
 
@@ -14,9 +17,9 @@ services:
     volumes:
     - ./_build/html:/usr/share/nginx/html
     environment:
-    - PHRASEANET_DOC_NGINX_PORT
+    - PHR_DOC_NGINX_PORT
     ports:
-      - ${PHRASEANET_DOC_NGINX_PORT}:80
+      - ${PHR_DOC_NGINX_PORT}:80
     networks:
       - internal
 

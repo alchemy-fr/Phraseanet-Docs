@@ -18,13 +18,13 @@ docker-compose build
 docker-compose up -d
 ```
 
-Default url is 
+The stack url with default port mapping is 
 
-http://127.0.0.1:4041/en/index.html
+http://127.0.0.1:8680/en/index.html
 
 or 
 
-http://127.0.0.1:4041/fr/index.html
+http://127.0.0.1:8680/fr/index.html
 
 
 ### Workflow 
