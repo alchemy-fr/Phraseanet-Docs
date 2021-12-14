@@ -202,6 +202,27 @@ Examples:
     created_on= 2016/04        (for records created on April 2016 (> or < do not work))
     created_on= 2015           (for records created on 2015 (> or < do not work))
 
+Search on "not filled" or "filled" fields
+*****************************************
+
+The reserved value **_unset_** associated with a field is used to find all the
+records on which the value of this field has not been filled.
+
+Example "Find all the records whose *Title* field is not filled in":
+
+.. code-block:: none
+
+    Title=_unset_
+
+Conversely, the reserved value **_set_** associated with a field is used to
+find all the records on which a value has been entered for this field.
+
+Example "Find all the records for which the *Title* field is filled in":
+
+.. code-block:: none
+
+    Title=_set_
+
 Search using Phraseanet thesaurus
 ---------------------------------
 

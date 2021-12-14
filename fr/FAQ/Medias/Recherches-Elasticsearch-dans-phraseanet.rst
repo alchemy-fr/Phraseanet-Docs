@@ -230,6 +230,29 @@ Exemples de recherche :
     de métadonnées Phraseanet Tf-Archivedate et Tf-Editdate.
 
 
+Rechercher des champs "non renseignés" ou "renseignés"
+******************************************************
+
+La valeur réservée **_unset_** associée à un champ permet de retrouver tous les
+enregistrements sur lesquels la valeur de ce champ n'a pas été renseignée.
+
+Exemple "Rechercher tous les enregistrements dont le champ *Titre* est non renseigné" :
+
+.. code-block:: none
+
+    Titre=_unset_
+
+A l'inverse, la valeur réservée **_set_**  associée à un champ permet de
+retrouver tous les enregistrements sur lesquels une valeur à été renseignée
+pour ce champ.
+
+Exemple "Rechercher tous les enregistrements dont le champ *Titre* est renseigné" :
+
+.. code-block:: none
+
+    Titre=_set_
+
+
 Rechercher au moyen du thésaurus
 --------------------------------
 
