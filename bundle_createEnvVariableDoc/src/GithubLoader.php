@@ -60,7 +60,7 @@ class GithubLoader
 		}
 
 		// order array and extract last entry
-		sort($patchNumberList);
+		sort($patchNumberList, SORT_NATURAL);
 		$hiNumber = array_pop($patchNumberList);
 
 		$lastTag = $targetVersion . $hiNumber;
