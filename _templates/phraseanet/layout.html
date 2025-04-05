@@ -271,16 +271,16 @@
                 <div class="languages">
 
 					{%- if language == 'fr' %}
-						<a href="/{{ version }}/en/"><span>Anglais</span></a>
-						<a href="/{{ version }}/fr/"><span>Français</span></a>
+						<a href="{{ pathto('/', 1) }}en/"><span>Anglais</span></a>
+						<a href="{{ pathto('/', 1) }}fr/"><span>Français</span></a>
 						<a id="cookie-management" href="#"><span>Préférences des cookies</span></a>
-						<a href="/{{ version }}/fr/PolitiqueDeConfidentialite.html"><span>Politique de confidentialité</span></a>
+						<a href="{{ pathto('/', 1) }}fr/PolitiqueDeConfidentialite.html"><span>Politique de confidentialité</span></a>
 					{%- endif %}
 					{%- if language == 'en' %}
-						<a href="/{{ version }}/en/"><span>English</span></a>
-						<a href="/{{ version }}/fr/"><span>French</span></a>
+						<a href="{{ pathto('/', 1) }}en/"><span>English</span></a>
+						<a href="{{ pathto('/', 1) }}fr/"><span>French</span></a>
 						<a id="cookie-management" href="#"><span>Cookie policy</span></a>
-						<a href="/{{ version }}/en/PrivacyPolicy.html"><span>Privacy policy</span></a>
+						<a href="{{ pathto('/', 1) }}en/PrivacyPolicy.html"><span>Privacy policy</span></a>
 					{%- endif %}
 
                 </div>
@@ -318,44 +318,11 @@
         <script type="text/javascript">
           $(document).ready(function()
 		  {
-          	/**
-			 * Remove "/4.1/", "/4.0/", etc. url prefix from all links for local test
-			 */
-			let removePrefixNumberURL = function()
-			{
-			 	if( (window.location.port === '4041') )
-			 	{
-			 		console.log('Port detected:',window.location.port,'. Remove prefix version in url.');
-			 	 	let anchorList = document.querySelectorAll('a');
-
-			 	 	for(let i in anchorList)
-			 	 	{
-						/** {Element} anchor */
-			 	 		let anchor = anchorList[i];
-
-			 	 		if(anchor.href !== undefined)
-						{
-							anchor.href = anchor.href.replace('/3.5/', '/');
-							anchor.href = anchor.href.replace('/3.6/', '/');
-							anchor.href = anchor.href.replace('/3.7/', '/');
-							anchor.href = anchor.href.replace('/3.8/', '/');
-							anchor.href = anchor.href.replace('/4.0/', '/');
-							anchor.href = anchor.href.replace('/4.1/', '/');
-						}
-			 	 	}
-			 	}
-			}
-
             if(window.console)
               console.log('loaded');
               $('#navigation li a').wrapInner('<span>');
 
-			  removePrefixNumberURL();
-
           });
 		</script>
-
-
-
     </body>
 </html>
