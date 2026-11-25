@@ -18,6 +18,10 @@ Remove records from a story
  Content-Type             application/json
 ======================== ==================
 
+.. note::
+
+    Since Phraseanet 4.2: requires the edit right on the story collection. Otherwise the API returns an HTTP 403 error.
+
 Parameters
 ----------
 

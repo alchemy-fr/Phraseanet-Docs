@@ -18,6 +18,10 @@ Ajouter des documents à un reportage existant
  Content-Type             application/json
 ======================== ==================
 
+.. note::
+
+    Depuis Phraseanet 4.2 : requiert le droit d'édition sur la collection du reportage, ainsi que l'accès à chaque document ajouté. Sinon, l'API renvoie une erreur 403.
+
 Paramètres
 ----------
 

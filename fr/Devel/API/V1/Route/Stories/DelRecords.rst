@@ -18,6 +18,10 @@ Supprimer des documents d'un reportage
  Content-Type             application/json
 ======================== ==================
 
+.. note::
+
+    Depuis Phraseanet 4.2 : requiert le droit d'édition sur la collection du reportage. Sinon, l'API renvoie une erreur 403.
+
 Paramètres
 ----------
 

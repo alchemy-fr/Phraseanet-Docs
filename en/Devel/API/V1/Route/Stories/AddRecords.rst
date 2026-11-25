@@ -18,6 +18,10 @@ Adds records to a given story.
  Content-Type             application/json
 ======================== ==================
 
+.. note::
+
+    Since Phraseanet 4.2: requires the edit right on the story collection, and access to each added record. Otherwise the API returns an HTTP 403 error.
+
 Parameters
 ----------
 

@@ -20,6 +20,17 @@ Here are the steps to follow:
 Register a new application with the Phraseanet API
 --------------------------------------------------
 
+.. important::
+
+    Since Phraseanet 4.2, the *Developer* area is only available to users
+    holding the **API access** right (and to administrators). Without it,
+    the *Developer* tab is hidden and the ``/developers/...`` pages return an
+    HTTP 403 error. The right is granted by a user manager in Admin, **API**
+    tab of the user form (see :ref:`API access <API-Access>`).
+
+    Existing tokens and applications keep working without this right; only
+    creating and managing applications is restricted.
+
 Click on the login in the Phraseanet top :doc:`menu <../User/index>`.
 
 In *Phraseanet my account*
@@ -89,6 +100,20 @@ The settings page of the application is displayed.
     The developer token can be used during application development or
     to query the API by the intermediary of an automated process that
     does not require authentication..
+
+Rights applied to API calls
+---------------------------
+
+An API request runs with the rights of the user authenticated by the token:
+the API applies the same per-base and per-collection rights as the
+Phraseanet interfaces (view, add, edit, status change, delete...). An
+unauthorized action returns an HTTP 403 error.
+
+For example, since Phraseanet 4.2, the story edition routes
+:doc:`addrecords <API/V1/Route/Stories/AddRecords>`,
+:doc:`delrecords <API/V1/Route/Stories/DelRecords>` and
+:doc:`setcover <API/V1/Route/Stories/SetCover>` require the edit right on the
+story collection, and access to each added record.
 
 .. seealso::
 
