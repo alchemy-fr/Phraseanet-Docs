@@ -21,4 +21,4 @@ switch ($request->get('section'))
     break;
 }
 
-return header(sprintf('Location: /4.1/%s', $section));
+return header(sprintf('Location: /4.2/%s', $section));

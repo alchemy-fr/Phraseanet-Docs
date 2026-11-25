@@ -19,6 +19,19 @@ Pour commencer :
 Enregistrer une application auprés de l'API phraseanet
 ------------------------------------------------------
 
+.. important::
+
+    Depuis Phraseanet 4.2, l'espace *Développeur* n'est accessible qu'aux
+    utilisateurs disposant du droit **Accès API** (et aux administrateurs).
+    Sans ce droit, l'onglet *Développeur* n'est pas affiché et les pages
+    ``/developers/...`` répondent par une erreur 403. Ce droit est attribué
+    par un gestionnaire d'utilisateurs dans Admin, onglet **API** de la fiche
+    utilisateur (voir :ref:`Accès API <Acces-API>`).
+
+    Les jetons et applications existants continuent de fonctionner sans ce
+    droit ; seules la création et la gestion des applications sont
+    concernées.
+
 Cliquer sur le login dans le :doc:`menu <../User/Manuel/General>` Phraseanet.
 
 Dans la rubrique *Phraseanet mon compte*
@@ -89,6 +102,21 @@ application ; la page des paramètres de l'application s'affiche.
     l'application ou bien pour effectuer des requêtes sur l'API par
     l'intermediaire d'un processus automatisé qui ne nécessite pas
     d'authentification.
+
+Droits appliqués aux appels de l'API
+------------------------------------
+
+Une requête sur l'API est exécutée avec les droits de l'utilisateur
+authentifié par le jeton : l'API applique les mêmes droits par base et
+collection que les interfaces Phraseanet (consultation, ajout, édition,
+changement de status, suppression...). Une action non autorisée renvoie une
+erreur HTTP 403.
+
+Par exemple, depuis Phraseanet 4.2, les routes d'édition de reportage
+:doc:`addrecords <API/V1/Route/Stories/AddRecords>`,
+:doc:`delrecords <API/V1/Route/Stories/DelRecords>` et
+:doc:`setcover <API/V1/Route/Stories/SetCover>` exigent le droit d'édition
+sur la collection du reportage, et l'accès à chaque document ajouté.
 
 .. seealso::
 

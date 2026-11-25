@@ -1,6 +1,30 @@
 API Changelog
 =============
 
+Phraseanet 4.2.0
+----------------
+
+Les numéros de version de l'API sont inchangés (V1 et V2 : 2.0.0, V3 : 3.0.0).
+
+Droit Accès API
+***************
+
+La création et la gestion des applications API (espace *Développeur* de
+*Mon compte*, routes ``/developers/...``) sont réservées aux utilisateurs
+disposant du droit **Accès API** et aux administrateurs. Les jetons existants
+ne sont pas affectés. Voir :ref:`Accès API <Acces-API>`.
+
+Routes modifiées
+****************
+
+* :doc:`stories/{databox_id}/{story_id}/addrecords <V1/Route/Stories/AddRecords>`
+* :doc:`stories/{databox_id}/{story_id}/delrecords <V1/Route/Stories/DelRecords>`
+* :doc:`stories/{databox_id}/{story_id}/setcover <V1/Route/Stories/SetCover>`
+
+Ces routes exigent désormais le droit d'édition sur la collection du
+reportage (erreur 403 sinon). Pour addrecords, l'utilisateur doit aussi avoir
+accès à chaque document ajouté.
+
 2.0.0
 -----
 

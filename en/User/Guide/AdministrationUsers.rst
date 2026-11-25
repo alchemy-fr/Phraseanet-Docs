@@ -72,6 +72,9 @@ Sort existing users
 It is possible to sort users list by criteria such as the identifier,
 the name/first name, email, country or company.
 
+The **Users with an API application** checkbox restricts the list to users
+owning at least one API application.
+
 Users templates
 ---------------
 
@@ -253,6 +256,72 @@ Phraseanet bases and collections setup.
 .. note::
 
     To use **Bridge** user must have *Publications* and *Push* rights activated.
+
+.. _API-Access:
+
+API access
+----------
+
+Since Phraseanet 4.2, creating API applications and keys requires the
+**API access** right, granted on a per-user basis.
+
+What the API access right controls
+**********************************
+
+* Without this right, the **Developer** tab is hidden in *My account* and
+  direct access to the developer pages (``/developers/...``) is denied
+  (HTTP 403): the user can neither create, view nor edit an API application,
+  nor get a developer token.
+* Application administrators always have access to the developer area,
+  whether or not the right is granted to them.
+* The right only covers **creating and managing** keys. Tokens already
+  issued keep working, and a user without this right can still log in to a
+  third-party application using the API (oAuth2 authentication).
+* API calls remain subject to the user's rights on bases and collections
+  (view, add, edit, status, delete...): the API never grants more rights than
+  those defined in :ref:`Rights edition <User-Rights>`.
+
+.. seealso::
+
+    :doc:`Create third-party applications using Phraseanet API <../../Devel/ApplicationDeveloper>`
+
+Grant or revoke API access
+**************************
+
+* Double click on the user in the list
+* Click on the **API** tab
+* At the top of the tab, select **API access granted** or
+  **API access revoked**
+
+The change is saved immediately, there is no need to validate the form.
+
+.. note::
+
+    The API access right belongs to each user: it is not a per-collection
+    right and it is not copied when applying a user template. A new user has
+    no API access by default.
+
+The **API** tab also shows:
+
+* the user's API applications, flagged *owner* for those they created or
+  *user* for those they logged in to; for each one: ID, creation and update
+  dates, password grant_type activation, application type, webhook URL and
+  webhook activation,
+* the oAuth2 authorization codes issued for the user (application, redirect
+  URI, scope, creation date).
+
+Upgrading from a previous version
+*********************************
+
+To avoid locking anyone out when upgrading to Phraseanet 4.2, the upgrade
+patch automatically grants the API access right to:
+
+* every administrator,
+* every user owning at least one API application.
+
+The list of granted accounts is written to the application logs (lines
+prefixed with ``[patch 4.2.0 / API access]``). Review it after the upgrade
+and revoke access for accounts that no longer need it.
 
 .. _Pending-Registration:
 

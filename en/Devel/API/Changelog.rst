@@ -1,6 +1,30 @@
 API Changelog
 =============
 
+Phraseanet 4.2.0
+----------------
+
+API version numbers are unchanged (V1 and V2: 2.0.0, V3: 3.0.0).
+
+API access right
+****************
+
+Creating and managing API applications (*Developer* area of *My account*,
+``/developers/...`` routes) is restricted to users holding the **API access**
+right and to administrators. Existing tokens are not affected. See
+:ref:`API access <API-Access>`.
+
+Modified routes
+***************
+
+* :doc:`stories/{databox_id}/{story_id}/addrecords <V1/Route/Stories/AddRecords>`
+* :doc:`stories/{databox_id}/{story_id}/delrecords <V1/Route/Stories/DelRecords>`
+* :doc:`stories/{databox_id}/{story_id}/setcover <V1/Route/Stories/SetCover>`
+
+These routes now require the edit right on the story collection (HTTP 403
+otherwise). For addrecords, the user must also have access to each added
+record.
+
 2.0.0
 -----
 

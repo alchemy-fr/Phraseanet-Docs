@@ -74,6 +74,9 @@ Filtrer la liste des utilisateurs
 Il est possible de filtrer la liste des utilisateurs au moyen des critères
 comme l’identifiant, le nom/prénom, l’email, le pays, ou la société.
 
+La case **Utilisateurs avec une application API** restreint la liste aux
+utilisateurs propriétaires d'au moins une application API.
+
 Modèles utilisateurs
 --------------------
 
@@ -262,6 +265,77 @@ paramétrage des bases et des collections.
 
     Pour utiliser **Bridge** l'utilisateur doit disposer des droits
     *Publication* et *Push*.
+
+.. _Acces-API:
+
+Accès API
+---------
+
+Depuis Phraseanet 4.2, la création d'applications et de clés d'API est
+soumise au droit **Accès API**, attribué utilisateur par utilisateur.
+
+Ce que contrôle le droit Accès API
+**********************************
+
+* Sans ce droit, l'onglet **Développeur** n'apparaît pas dans *Mon compte*
+  et l'accès direct aux pages développeur (``/developers/...``) est refusé
+  (erreur 403) : l'utilisateur ne peut ni créer, ni consulter, ni modifier
+  d'application API, ni obtenir de jeton développeur.
+* Les administrateurs de l'application ont toujours accès à l'espace
+  développeur, que le droit leur soit attribué ou non.
+* Le droit ne concerne que la **création et la gestion** des clés.
+  Les jetons déjà émis continuent de fonctionner, et un utilisateur sans ce
+  droit peut toujours se connecter à une application tierce qui utilise l'API
+  (authentification oAuth2).
+* Les appels à l'API restent soumis aux droits de l'utilisateur sur les bases
+  et collections (consultation, ajout, édition, status, suppression...) :
+  l'API ne donne pas plus de droits que ceux définis dans la rubrique
+  :ref:`Édition des droits <Droits-Utilisateurs>`.
+
+.. seealso::
+
+    :doc:`Créer des applications en utilisant l'API Phraseanet <../../Devel/ApplicationDeveloper>`
+
+Accorder ou révoquer l'accès API
+********************************
+
+* Double cliquer sur l'utilisateur dans la liste
+* Cliquer sur l'onglet **API**
+* En haut de l'onglet, sélectionner **Accès API accordé** ou
+  **Accès API révoqué**
+
+Le changement est enregistré immédiatement, sans avoir à valider le
+formulaire.
+
+.. note::
+
+    Le droit Accès API est propre à chaque utilisateur : il ne fait pas partie
+    des droits par collection et n'est pas transmis par l'application d'un
+    modèle utilisateur. Un nouvel utilisateur n'a pas l'accès API par défaut.
+
+L'onglet **API** présente également :
+
+* la liste des applications API de l'utilisateur, avec la mention
+  *propriétaire* pour celles qu'il a créées ou *utilisateur* pour celles
+  auxquelles il s'est connecté ; pour chacune : identifiant, dates de
+  création et de modification, activation du grant_type password, type
+  d'application, URL de webhook et activation du webhook,
+* la liste des codes d'autorisation oAuth2 émis pour l'utilisateur
+  (application, URL de redirection, scope, date de création).
+
+Mise à jour depuis une version antérieure
+*****************************************
+
+Pour ne bloquer personne lors de la mise à jour vers Phraseanet 4.2, le
+patch de mise à jour attribue automatiquement le droit Accès API :
+
+* à tous les administrateurs,
+* à tous les utilisateurs propriétaires d'au moins une application API.
+
+La liste des comptes concernés est écrite dans les logs de l'application
+(lignes préfixées par ``[patch 4.2.0 / API access]``). Il est recommandé de
+la relire après la mise à jour et de révoquer l'accès des comptes qui n'en
+ont plus besoin.
 
 Demandes d'accès
 ----------------
