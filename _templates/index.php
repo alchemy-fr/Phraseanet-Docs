@@ -27,8 +27,8 @@ foreach ($request->getLanguages() as $language)
 {
   if (in_array($language, $available_languages))
   {
-    return header(sprintf('Location: /4.1/%s/%s', $language, $section));
+    return header(sprintf('Location: /4.2/%s/%s', $language, $section));
   }
 }
 
-return header(sprintf('Location: /4.1/fr/%s', $section));
+return header(sprintf('Location: /4.2/fr/%s', $section));
